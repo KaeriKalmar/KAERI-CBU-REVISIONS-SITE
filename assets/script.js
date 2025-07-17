@@ -88,7 +88,7 @@ const revokedAccessCodes = [];
 
 
 //global used codes management 
-let usedAccessCodes = [];
+let usedAccessCodes = ["CS110T3_MAIN001#A@","CS110T3_MAIN002!Z*","CS110T3_MAIN001#A@","CS110T3_MAIN002!Z*","CS110T2_MAIN002!Z*","BI110T1_MAIN001#A@",];
 let hasFullAccess = false;
 const EXPIRES_IN_DAYS = 20;
 const MILLISECONDS_IN_20_DAYS = EXPIRES_IN_DAYS * 24 * 60 * 60 * 1000;
