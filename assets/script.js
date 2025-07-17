@@ -15,7 +15,7 @@ const fullAccessCodes = {
     "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0"
   ],
 
-  "BI110_T2": [
+  "BI110_T2": ["test111",
     "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
     "BI110T2_MAIN003$K#",   "BI110T2_MAIN004&Y!",
     "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
@@ -84,7 +84,7 @@ const fullAccessCodes = {
 };
 
 //code killing section
-const revokedAccessCodes = [];
+const revokedAccessCodes = ["test111"];
 
 
 //global used codes management 
