@@ -1,0 +1,773 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0d1b2a;
+  margin: 0;
+  padding-top: 120px; /* Adjusted to make space for the fixed header */
+  padding-left: 20px; /* Keep existing horizontal padding */
+  padding-right: 20px; /* Keep existing horizontal padding */
+  padding-bottom: 30px; /* Keep existing bottom padding */
+  color: #e0e6ed;
+  line-height: 1.6;
+}
+
+/* New fixed header styles */
+#fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1b263b; /* Background matching quiz-container for seamless look */
+  z-index: 1001; /* Ensure it stays on top of other fixed elements */
+  padding: 10px 20px; /* Padding inside the fixed header */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.quiz-container {
+  max-width: 960px;
+  margin: auto;
+  background: #1b263b;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+  color: #72efdd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.mode-buttons {
+  display: grid; /* Use CSS Grid for a responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Auto-fit columns with min-width 180px */
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 30px;
+}
+
+.mode-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+.mode-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Quiz form and question styling */
+#quiz-form {
+  background-color: #0d1b2a;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.question-header h3 {
+  margin: 0;
+  text-align: left;
+  flex-basis: 100%; /* Take full width on smaller screens */
+  margin-bottom: 10px;
+}
+
+.question-header span {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-left: 10px;
+  margin-bottom: 5px; /* For wrapping */
+}
+.question-header span:first-of-type {
+  margin-left: 0; /* No left margin for the first tag */
+}
+
+
+.question-text {
+  font-size: 1.15em;
+  margin-bottom: 20px;
+  color: #cdd6e0;
+}
+
+.options label {
+  display: block;
+  background-color: #2b3a55;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+}
+
+.options label:hover {
+  background-color: #3e506e;
+  transform: translateX(5px);
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Slightly larger radio buttons */
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #3e506e;
+  border-radius: 8px;
+  background-color: #0d1b2a;
+  color: #e0e6ed;
+  font-size: 1em;
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #0d1b2a;
+  border: 1px solid #3e506e;
+}
+
+.feedback p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.feedback .explanation {
+  font-weight: normal;
+  color: #a0a8b4;
+  margin-top: 10px;
+}
+
+/* Result display */
+#result {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #0d1b2a;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#result h2 {
+  margin-bottom: 15px;
+}
+
+#result p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.restart-button, .reset-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.restart-button:hover, .reset-button:hover {
+  background-color: #e0a800;
+}
+
+/* Mode Banner */
+#mode-banner {
+  background-color: #2c3e50; /* Darker background for visibility */
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+#progress-container {
+  width: 100%;
+  background-color: #3e506e;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 20px;
+  overflow: hidden; /* Ensure fill stays within bounds */
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #28a745;
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out;
+}
+
+#progress-text {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #a0a8b4;
+}
+
+/* Flashcard Styles */
+.flashcard-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.flashcard-nav-header h3 {
+    margin: 0;
+    text-align: left;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+.flashcard-counter {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.flashcard-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.flashcard-nav-buttons button {
+    flex-grow: 1;
+    background-color: #007bff;
+}
+
+.flashcard-nav-buttons button:disabled {
+    background-color: #4a5460;
+    cursor: not-allowed;
+}
+
+.flashcard-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 500px; /* Max width for flashcard */
+    height: 300px; /* Fixed height for flashcard */
+    margin: 30px auto;
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.flashcard.back-active {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.card-front {
+    background-color: #2b3a55;
+    color: #e0e6ed;
+}
+
+.card-back {
+    background-color: #4a5460;
+    color: #e0e6ed;
+    transform: rotateY(180deg);
+}
+
+.flip-button {
+    background-color: #ffc107;
+    color: #333;
+    margin-top: 15px;
+}
+.flip-button:hover {
+    background-color: #e0a800;
+}
+
+.back-to-topics-button {
+    background-color: #6c757d;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.back-to-topics-button:hover {
+    background-color: #5a6268;
+}
+
+.flashcard-topic-list h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.flashcard-topic-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.flashcard-topic-buttons button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.flashcard-topic-buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Announcement and Price List */
+.announcement, .price-list {
+    background-color: #0d1b2a;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.announcement strong, .price-list strong {
+    color: #72efdd;
+}
+
+.announcement a, .price-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.announcement a:hover, .price-list a:hover {
+    text-decoration: underline;
+}
+
+/* GLOBAL Floating WhatsApp Button Style */
+.landing-whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+.landing-whatsapp-button:hover {
+  background-color: #1DA851;
+  transform: scale(1.05);
+}
+
+
+/* WhatsApp Buttons Container (now a regular content block, centered) */
+.whatsapp-buttons {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.whatsapp-buttons button {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-buttons button:hover {
+  background-color: #1DA851;
+  transform: translateY(-2px);
+}
+
+/* GLOBAL Price Banner Style - MOVED HERE from inline HTML */
+#price-banner {
+  position: fixed;
+  top: 60px; /* Adjust based on fixed header height */
+  right: 20px;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .quiz-container {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 110px; /* Adjust header space */
+  }
+
+  #fixed-header {
+    padding: 10px 15px;
+  }
+
+  .quiz-container {
+    margin: 30px 15px;
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .mode-buttons {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  .mode-buttons button {
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+
+  .options label {
+    padding: 10px;
+  }
+
+  .question-header h3 {
+    font-size: 1.2em;
+  }
+  .question-header span {
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+
+  .whatsapp-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center stacked buttons */
+    gap: 10px;
+    padding: 0 15px;
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    margin-bottom: 15px;
+  }
+  .whatsapp-buttons button {
+    width: auto; /* Allow buttons to size to content */
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+
+  .flashcard-wrapper {
+    height: 250px; /* Adjust flashcard height */
+  }
+  .card-face {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 100px; /* Adjust header space for very small screens */
+  }
+
+  #fixed-header {
+    padding: 8px 10px;
+  }
+
+  .quiz-container {
+    padding: 15px 10px;
+  }
+
+  .mode-buttons {
+    grid-template-columns: 1fr; /* Stack all mode buttons on very small screens */
+  }
+
+  .flashcard-topic-buttons,
+  .flashcard-nav-buttons {
+    grid-template-columns: 1fr; /* Stack flashcard buttons */
+    gap: 10px;
+  }
+
+  .flashcard {
+    margin: 15px auto; /* Reduce margin */
+  }
+}
+    
+    /* Burner mode button styles */
+.mode-button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #444;
+  color: white;
+  box-shadow: none;
+}
+
+.mode-button.active-mcq {
+  background-color: #28a745;
+  box-shadow: 0 0 12px 3px #28a745aa;
+}
+
+.mode-button.active-short {
+  background-color: #ffc107;
+  color: black;
+  box-shadow: 0 0 12px 3px #ffc107aa;
+}
+
+.mode-button.active-essay {
+  background-color: #17a2b8;
+  box-shadow: 0 0 12px 3px #17a2b8aa;
+}
+
+.mode-button.active-flashcard {
+  background-color: #6f42c1;
+  box-shadow: 0 0 12px 3px #6f42c1aa;
+}
+
+.mode-button:hover:not(.active-mcq):not(.active-short):not(.active-essay):not(.active-flashcard) {
+  background-color: #666;
+}
+
+/* Notification Section Styles */
+#app-notification {
+  position: fixed;
+  top: 10px; /* Adjust as needed, below fixed-header */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 2000; /* Higher than other fixed elements */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 90%; /* Ensure it's responsive */
+  text-align: center;
+  font-size: 0.95em;
+}
+
+#app-notification.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#app-notification .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  line-height: 1; /* Align 'x' vertically */
+}
+
+/* Specific notification types */
+#app-notification.success {
+  background-color: #28a745; /* Green */
+}
+#app-notification.error {
+  background-color: #dc3545; /* Red */
+}
+#app-notification.warning {
+  background-color: #ffc107; /* Yellow */
+  color: #333; /* Dark text for warning */
+}
+#app-notification.info {
+  background-color: #007bff; /* Blue */
+}
+.flashcard-wrapper {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 30px auto;
+  overflow: hidden; /* ✅ add this! */
+}
+.card-face {
+  overflow: auto; /* ✅ if face content overflows, scroll inside it */
+}
+.flashcard-wrapper {
+  /* your other styles... */
+  overflow: hidden; /* ✅ Must-have! */
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 1.3em;
+  text-align: left;
+  overflow-y: auto; /* ✅ allow vertical scroll */
+  display: block; /* ✅ better for text flow */
+}
+
+.flashcard {
+  transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.flashcard.back-active {
+  transform: rotateY(180deg);
+}
+
+.flashcard .card-face {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.flashcard.back-active .card-front {
+  opacity: 0;
+}
+
+.flashcard.back-active .card-back {
+  opacity: 1;
+}
+.card-back {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+@media (max-width: 480px) {
+  .mode-buttons button,
+  .flashcard-topic-buttons button,
+  .flashcard-nav-buttons button {
+    font-size: 1em;
+    padding: 14px 18px;
+  }
+
+  .card-face {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+}
+
+.card-face {
+  /* ...existing properties... */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+body {
+  overflow-y: auto;
+}
+
+.flashcard-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.card-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding: 20px;
+}
