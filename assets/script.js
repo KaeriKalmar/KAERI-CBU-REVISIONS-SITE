@@ -84,7 +84,7 @@ const fullAccessCodes = {
 };
 
 //code killing section
-const revokedAccessCodes = ["test111"];
+const revokedAccessCodes = ["test111","BI110T1_MAIN002!Z*"];
 
 
 //global used codes management 
