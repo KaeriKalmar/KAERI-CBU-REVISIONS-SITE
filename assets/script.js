@@ -31,7 +31,7 @@ const fullAccessCodes = {
     "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
    
     //fullkit
-    "FulLkit.-$100“ 
+    "FulLkit.-$100“
   ],
 
   "BI110_T3": [
@@ -77,7 +77,7 @@ const fullAccessCodes = {
     "CS110T2_BONUS013 #3",  "CS110T2_BONUS014 &4",
     "CS110T2_BONUS015 *5",  "CS110T2_BONUS016 ^6",
     "CS110T2_EXTRA017 ~7",  "CS110T2_EXTRA018 ?8",
-    "CS110T2_TEST019 |9",   "CS110T2_TEST020 <0"
+    "CS110T2_TEST019 |9",   "CS110T2_TEST020 <0",
 
 
     //full kit
