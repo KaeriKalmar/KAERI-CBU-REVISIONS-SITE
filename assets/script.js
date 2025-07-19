@@ -12,7 +12,10 @@ const fullAccessCodes = {
     "BI110T1_BONUS013 #3",  "BI110T1_BONUS014 &4",
     "BI110T1_BONUS015 *5",  "BI110T1_BONUS016 ^6",
     "BI110T1_EXTRA017 ~7",  "BI110T1_EXTRA018 ?8",
-    "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0"
+    "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0",
+ 
+  //fullkit k100 code 
+ "FulLkit.-$100“
   ],
 
   "BI110_T2": ["test111",
@@ -25,7 +28,10 @@ const fullAccessCodes = {
     "BI110T2_BONUS013 #3",  "BI110T2_BONUS014 &4",
     "BI110T2_BONUS015 *5",  "BI110T2_BONUS016 ^6",
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
-    "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0"
+    "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
+   
+    //fullkit
+    "FulLkit.-$100“ 
   ],
 
   "BI110_T3": [
@@ -38,7 +44,10 @@ const fullAccessCodes = {
     "BI110T3_BONUS013 #3",  "BI110T3_BONUS014 &4",
     "BI110T3_BONUS015 *5",  "BI110T3_BONUS016 ^6",
     "BI110T3_EXTRA017 ~7",  "BI110T3_EXTRA018 ?8",
-    "BI110T3_TEST019 |9",   "BI110T3_TEST020 <0"
+    "BI110T3_TEST019 |9",   "BI110T3_TEST020 <0",
+
+    //full kit
+    "FulLkit.-$100“
   ],
 
   // === CS110 ===
@@ -52,7 +61,10 @@ const fullAccessCodes = {
     "CS110T1_BONUS013 #3",  "CS110T1_BONUS014 &4",
     "CS110T1_BONUS015 *5",  "CS110T1_BONUS016 ^6",
     "CS110T1_EXTRA017 ~7",  "CS110T1_EXTRA018 ?8",
-    "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0"
+    "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0",
+
+    //full kit
+    "FulLkit.-$100“
   ],
 
   "CS110_T2": [
@@ -66,6 +78,10 @@ const fullAccessCodes = {
     "CS110T2_BONUS015 *5",  "CS110T2_BONUS016 ^6",
     "CS110T2_EXTRA017 ~7",  "CS110T2_EXTRA018 ?8",
     "CS110T2_TEST019 |9",   "CS110T2_TEST020 <0"
+
+
+    //full kit
+    "FulLkit.-$100“
   ],
 
   "CS110_T3": [
@@ -78,13 +94,16 @@ const fullAccessCodes = {
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
     "CS110T3_BONUS015 *5",  "CS110T3_BONUS016 ^6",
     "CS110T3_EXTRA017 ~7",  "CS110T3_EXTRA018 ?8",
-    "CS110T3_TEST019 |9",   "CS110T3_TEST020 <0"
+    "CS110T3_TEST019 |9",   "CS110T3_TEST020 <0",
+
+    //full kit
+    "FulLkit.-$100“
   ]
 
 };
 
 //code killing section
-const revokedAccessCodes = ["test111","BI110T1_MAIN002!Z*"];
+const revokedAccessCodes = ["test111"];
 
 
 //global used codes management 
