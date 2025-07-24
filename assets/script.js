@@ -14,7 +14,8 @@ const fullAccessCodes = {
     "BI110T1_EXTRA017 ~7",  "BI110T1_EXTRA018 ?8",
     "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0",
     
-    "All-terms@#<0"
+    "All-terms@#<0",
+   "Lizzy ❤️","becky @&_"
     
   ],
 
@@ -30,7 +31,8 @@ const fullAccessCodes = {
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
     "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
    
-    "All-terms@#<0"
+    "All-terms@#<0",
+    "Lizzy ❤️","becky @&_"
   ],
 
   "BI110_T3": [
@@ -45,7 +47,8 @@ const fullAccessCodes = {
     "BI110T3_EXTRA017 ~7",  "BI110T3_EXTRA018 ?8",
     "BI110T3_TEST019 |9",   "BI110T3_TEST020 <0",
     
-    "All-terms@#<0"
+    "All-terms@#<0",
+    "Lizzy ❤️","becky @&_"
   ],
 
   // === CS110 ===
@@ -61,10 +64,13 @@ const fullAccessCodes = {
     "CS110T1_EXTRA017 ~7",  "CS110T1_EXTRA018 ?8",
     "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0",
     
-    "All-terms@#<0"
+    "All-terms@#<0",
+    "Lizzy ❤️","becky @&_"
   ],
 
   "CS110_T2": [
+  
+  //all used 
     "CS110T2_MAIN001#A@",   "CS110T2_MAIN002!Z*",
     "CS110T2_MAIN003$K#",   "CS110T2_MAIN004&Y!",
     "CS110T2_MAIN005*X%",   "CS110T2_MAIN006^R&",
@@ -76,7 +82,21 @@ const fullAccessCodes = {
     "CS110T2_EXTRA017 ~7",  "CS110T2_EXTRA018 ?8",
     "CS110T2_TEST019 |9",   "CS110T2_TEST020 <0",
     
-    "All-terms@#<0"
+    "All-terms@#<0",
+    "Lizzy ❤️","becky @&_",
+    
+    //new ones 
+  "CS110T2_CORE041!A#", "CS110T2_CORE042#B$",
+  "CS110T2_CORE043%X&", "CS110T2_CORE044^Y*",
+  "CS110T2_CORE045*Z@", "CS110T2_CORE046~M%",
+  "CS110T2_CORE047?N^", "CS110T2_CORE048|P~",
+  "CS110T2_CORE049<QR", "CS110T2_CORE050>ST",
+  "CS110T2_BONUS051 +1", "CS110T2_BONUS052 -2",
+  "CS110T2_BONUS053 =3", "CS110T2_BONUS054 _4",
+  "CS110T2_BONUS055 :5", "CS110T2_BONUS056 ;6",
+  "CS110T2_EXTRA057 [7", "CS110T2_EXTRA058 ]8",
+  "CS110T2_TEST059 {9", "CS110T2_TEST060 }0",
+  
   ],
 
   "CS110_T3": [
@@ -91,7 +111,8 @@ const fullAccessCodes = {
     "CS110T3_EXTRA017 ~7",  "CS110T3_EXTRA018 ?8",
     "CS110T3_TEST019 |9",   "CS110T3_TEST020 <0",
     
-    "All-terms@#<0"
+    "All-terms@#<0",
+    "Lizzy ❤️","becky @&_"
   ]
 
 };
@@ -518,7 +539,8 @@ function renderEssaySimulation() {
     return;
   }
 
-  currentEssay = currentQuizData[0];
+  const randomIndex = Math.floor(Math.random() * currentQuizData.length);
+currentEssay = currentQuizData[randomIndex];
   currentStepIndex = 0;
   essayScore = 0;
 
