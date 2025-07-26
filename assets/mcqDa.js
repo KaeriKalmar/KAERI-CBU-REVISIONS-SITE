@@ -4005,8 +4005,393 @@ const mcqData = [
   },
 
 
+//const mcqData = [
+  // ... (existing MCQ data) ...
 
+  {
+    q: "The scientific study of heredity and variation in living organisms is known as:",
+    options: ["Ecology", "Genetics", "Physiology", "Cytology"],
+    correct: 1,
+    explanation: "Genetics is the specific field dedicated to understanding how traits are inherited and how individuals differ.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Definition"
+  },
+  {
+    q: "A segment of DNA that codes for a specific protein or functional RNA molecule, influencing a particular trait, is called a(n):",
+    options: ["Chromosome", "Allele", "Gene", "Nucleotide"],
+    correct: 2,
+    explanation: "A gene is the fundamental unit of heredity that carries instructions for a trait.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Definition"
+  },
+  {
+    q: "What term describes the differences in traits among individuals within a population?",
+    options: ["Heredity", "Dominance", "Variation", "Segregation"],
+    correct: 2,
+    explanation: "Variation accounts for the diversity observed among individuals of the same species.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Definition"
+  },
+  {
+    q: "An alternative form of a gene found at the same locus on a chromosome is a(n):",
+    options: ["Gene", "Chromosome", "Allele", "Locus"],
+    correct: 2,
+    explanation: "Alleles are different versions of a gene, such as an allele for blue eyes versus an allele for brown eyes.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Definition"
+  },
+  {
+    q: "If an organism has two identical alleles for a particular gene, its genetic condition is described as:",
+    options: ["Heterozygous", "Phenotypic", "Homozygous", "Dominant"],
+    correct: 2,
+    explanation: "Homozygous means having two copies of the same allele (e.g., AA or aa).",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Terms"
+  },
+  {
+    q: "The observable physical or biochemical characteristics of an organism, resulting from its genetic makeup and environment, is its:",
+    options: ["Genotype", "Phenotype", "Allele", "Chromosome"],
+    correct: 1,
+    explanation: "Phenotype is what you can see or measure, like eye color or height.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Terms"
+  },
+  {
+    q: "Which of Mendel's laws states that the two alleles for a heritable character separate during gamete formation?",
+    options: ["Law of Independent Assortment", "Law of Dominance", "Law of Segregation", "Law of Probability"],
+    correct: 2,
+    explanation: "The Law of Segregation explains why each gamete receives only one allele for a given trait.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Mendel's Laws"
+  },
+  {
+    q: "A Punnett Square is primarily used to predict:",
+    options: ["The age of an organism", "The environmental influences on a trait", "The genotypes and phenotypes of offspring from a genetic cross", "The exact mutation rate of a gene"],
+    correct: 2,
+    explanation: "Punnett Squares are a visual tool to calculate the probabilities of different genetic outcomes in offspring.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Tools"
+  },
+  {
+    q: "In a case of incomplete dominance, a cross between a homozygous red flower (RR) and a homozygous white flower (WW) would most likely produce offspring with which phenotype?",
+    options: ["All red flowers", "All white flowers", "All pink flowers", "Half red, half white flowers"],
+    correct: 2,
+    explanation: "Incomplete dominance results in a blended or intermediate phenotype in heterozygotes.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Non-Mendelian"
+  },
+  {
+    q: "When both alleles for a gene are fully expressed in the phenotype of a heterozygote, such as in human AB blood type, this is an example of:",
+    options: ["Incomplete dominance", "Recessive inheritance", "Codominance", "Polygenic inheritance"],
+    correct: 2,
+    explanation: "Codominance means both alleles are expressed equally and distinctly in the heterozygote.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Non-Mendelian"
+  },
+  {
+    q: "Traits controlled by genes located on the sex chromosomes (e.g., X chromosome) are referred to as:",
+    options: ["Autosomal traits", "Sex-linked traits", "Polygenic traits", "Mendelian traits"],
+    correct: 1,
+    explanation: "Sex-linked traits show different patterns of inheritance between males and females due to their location on sex chromosomes.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Non-Mendelian"
+  },
+  {
+    q: "A permanent, heritable change in the DNA sequence of an organism is called a:",
+    options: ["Allele", "Recombination", "Mutation", "Transcription"],
+    correct: 2,
+    explanation: "Mutations introduce new genetic variations into a population.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Definition"
+  },
+  {
+    q: "Which of the following describes a trait influenced by more than one gene, often resulting in a continuous range of phenotypes?",
+    options: ["Monogenic inheritance", "Sex-linked inheritance", "Codominance", "Polygenic inheritance"],
+    correct: 3,
+    explanation: "Polygenic inheritance leads to continuous variation, like human height or skin color, which are influenced by multiple genes.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "Notes",
+    tag: "Non-Mendelian"
+  },
 
+  // Short Answer 1
+{
+  type: "ShortAnswer",
+  topic: "Taxonomy",
+  year: "Taxonomy Handout",
+  tag: "Definition",
+  q: "Briefly define 'Taxonomy'.",
+  answer: ["The branch of science dealing with the description, identification, nomenclature, and classification of organisms."],
+  explanation: "Taxonomy is the scientific discipline focused on grouping, naming, and categorizing living organisms based on shared characteristics.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 2
+{
+  type: "ShortAnswer",
+  topic: "Taxonomy",
+  year: "Taxonomy Handout",
+  tag: "Hierarchy",
+  q: "List the main hierarchical taxonomic ranks from most inclusive to least inclusive, as outlined by Linnaeus (excluding Domain).",
+  answer: ["Kingdom, Phylum (or Division), Class, Order, Family, Genus, Species"],
+  explanation: "The Linnaean hierarchy organizes life into progressively more specific categories: Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 3
+{
+  type: "ShortAnswer",
+  topic: "Taxonomy",
+  year: "Taxonomy Handout",
+  tag: "Nomenclature",
+  q: "Explain the rule of binomial nomenclature regarding the capitalization and italicization/underlining of scientific names.",
+  answer: ["The genus name is capitalized, the species epithet is lowercase. Both names are italicized when typed or underlined when handwritten."],
+  explanation: "Binomial nomenclature ensures universal and unambiguous naming, with specific formatting rules for genus and species epithets.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 4
+{
+  type: "ShortAnswer",
+  topic: "Prokaryotes",
+  year: "Taxonomy Handout",
+  tag: "Characteristics",
+  q: "Name two fundamental characteristics that distinguish prokaryotic cells from eukaryotic cells.",
+  answer: ["Lack a membrane-bound nucleus", "Lack membrane-bound organelles"],
+  explanation: "Prokaryotic cells are structurally simpler than eukaryotic cells, lacking the internal compartmentalization provided by membrane-bound organelles and a true nucleus.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 5
+{
+  type: "ShortAnswer",
+  topic: "Prokaryotes",
+  year: "Taxonomy Handout",
+  tag: "Reproduction",
+  q: "Describe the process of binary fission in prokaryotes.",
+  answer: ["Asexual reproduction where a single cell divides into two identical daughter cells after replicating its genetic material."],
+  explanation: "Binary fission is an efficient form of asexual reproduction, allowing prokaryotes to rapidly multiply under favorable conditions.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 6
+{
+  type: "ShortAnswer",
+  topic: "Cyanobacteria",
+  year: "Taxonomy Handout",
+  tag: "Ecological Role",
+  q: "What significant ecological role do Cyanobacteria play in ecosystems, particularly regarding nutrients?",
+  answer: ["They perform nitrogen fixation, converting atmospheric nitrogen into usable forms."],
+  explanation: "Nitrogen fixation by cyanobacteria makes essential nitrogen compounds available to other organisms, supporting primary productivity in various ecosystems.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 7
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Characteristics",
+  q: "State three general characteristics of Protists.",
+  answer: ["Eukaryotic", "Can be unicellular or multicellular", "Diverse habitats (often aquatic/moist)", "Diverse modes of nutrition"], // Accept any three
+  explanation: "Protists are a highly heterogeneous group, making their definition broad but encompassing key eukaryotic features and varied lifestyles.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 8
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Amoeba",
+  q: "How does an Amoeba move and engulf food?",
+  answer: ["Using pseudopodia (false feet)"],
+  explanation: "Pseudopodia are temporary extensions of the cytoplasm that allow amoebas to crawl and surround food particles for phagocytosis.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 9
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Plasmodium",
+  q: "Which specific stage of Plasmodium is responsible for infecting human red blood cells and causing malaria symptoms?",
+  answer: ["Merozoite"],
+  explanation: "Merozoites are released from the liver and invade red blood cells, where they multiply, leading to the symptomatic phase of malaria.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 10
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Euglena",
+  q: "Explain why Euglena is considered a 'mixotrophic' organism.",
+  answer: ["It can perform photosynthesis (autotrophic) in the presence of light and absorb nutrients heterotrophically in the absence of light."],
+  explanation: "Mixotrophy combines both autotrophic and heterotrophic nutritional strategies, allowing Euglena flexibility in nutrient acquisition.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 11
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Green Algae",
+  q: "Name two examples of green algae mentioned in the handout that can be unicellular or multicellular.",
+  answer: ["Chlamydomonas", "Volvox", "Ulva"], // Any two
+  explanation: "Green algae exhibit a range of cellular organization, from single cells to complex multicellular forms.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 12
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Slime Molds",
+  q: "What do plasmodia of slime molds differentiate into during unfavorable conditions?",
+  answer: ["Fruiting bodies bearing spores"],
+  explanation: "Fruiting bodies are reproductive structures that produce resistant spores, enabling survival during harsh environmental conditions.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 13
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Economic Importance",
+  q: "Give two examples of commercial products derived from marine protists.",
+  answer: ["Algin", "Agar", "Carragean", "Antiseptics"], // Any two
+  explanation: "Marine algae are a valuable source of hydrocolloids and other compounds with various industrial applications.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 14
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Economic Importance",
+  q: "How do many protists act as primary producers in aquatic ecosystems?",
+  answer: ["They perform photosynthesis, forming the base of aquatic food chains and producing oxygen."],
+  explanation: "Photosynthetic protists are crucial for sustaining aquatic life by converting light energy into organic matter and releasing oxygen.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 15
+{
+  type: "ShortAnswer",
+  topic: "Prokaryotes",
+  year: "Taxonomy Handout",
+  tag: "Shapes",
+  q: "What are the three common shapes of bacteria mentioned in the handout?",
+  answer: ["Spherical (cocci)", "Rod-shaped (bacilli)", "Spiral-shaped (spirilla)"],
+  explanation: "Bacterial morphology is a key characteristic used for identification and classification.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 16
+{
+  type: "ShortAnswer",
+  topic: "Taxonomy",
+  year: "Taxonomy Handout",
+  tag: "Phylogeny",
+  q: "What are 'clades' in phylogenetic taxonomy?",
+  answer: ["Taxonomic groups of organisms based on homologous features derived from a common ancestor."],
+  explanation: "Clades represent monophyletic groups, reflecting true evolutionary relationships.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 17
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Plasmodium Life Cycle",
+  q: "Which specific stage of Plasmodium is ingested by the Anopheles mosquito from an infected human?",
+  answer: ["Gametocytes"],
+  explanation: "Gametocytes are the sexual forms that develop in human red blood cells and are taken up by mosquitoes to complete the parasite's life cycle.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 18
+{
+  type: "ShortAnswer",
+  topic: "Protists",
+  year: "Taxonomy Handout",
+  tag: "Economic Importance",
+  q: "Beyond food and commercial products, how else are protists useful, as mentioned in the handout?",
+  answer: ["Source of medicines", "Source of minerals", "Used in biological research", "Pathogens (causing diseases)"], // Any one or two
+  explanation: "Protists have diverse impacts, ranging from beneficial roles in medicine and industry to detrimental roles as disease agents.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 19
+{
+  type: "ShortAnswer",
+  topic: "Taxonomy",
+  year: "Taxonomy Handout",
+  tag: "Domain",
+  q: "When was the 'Domain' rank introduced, relative to Linnaeus's original classification system?",
+  answer: ["1990 (over 250 years after Linnaeus's system)"],
+  explanation: "The Domain rank is a relatively new addition to taxonomy, reflecting a deeper understanding of phylogenetic relationships, particularly among prokaryotes.",
+  course: "BI110",
+  term: "T2"
+},
+// Short Answer 20
+{
+  type: "ShortAnswer",
+  topic: "Prokaryotes",
+  year: "Taxonomy Handout",
+  tag: "Genetic Material",
+  q: "Where is the genetic material (DNA) primarily located in a prokaryotic cell?",
+  answer: ["In the cytoplasm, in a region called the nucleoid (or as a single circular chromosome in the cytoplasm)"],
+  explanation: "Unlike eukaryotes, prokaryotes do not compartmentalize their DNA within a membrane-bound nucleus.",
+  course: "BI110",
+  term: "T2"
+},
   
   
 
