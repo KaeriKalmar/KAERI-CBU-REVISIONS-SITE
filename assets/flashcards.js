@@ -1,5509 +1,2787 @@
 const flashcards = {
-
-  "Basics of Computer": [
-
+  "MODULE 6: NETWORKS AND NETWORK DEVICES": [
     {
-
-      "front": "What is 'digital literacy'?",
-
-      "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
-
+      "front": "What is a network?",
+      "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Interacting with a Network"
     },
-
     {
-
-      "front": "What is a 'digital citizen'?",
-
-      "back": "A digital citizen is a person familiar with how to use technology to become an educated and ethical participant in society.",
-
+      "front": "What do networks allow computers to share?",
+      "back": "Networks allow computers to share resources, such as hardware, software, data, and information.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Interacting with a Network"
     },
-
     {
-
-      "front": "What is 'convergence'?",
-
-      "back": "Convergence refers to the trend of digital devices having multiple functionalities, merging features of computers, mobile devices, and consumer electronics.",
-
+      "front": "What is a client in a network?",
+      "back": "A client is a computer or device on the network that relies on the server for its resources.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Client/Server Networks"
     },
-
     {
-
-      "front": "What is 'technology' in the context of digital devices?",
-
-      "back": "Technology refers to the practical application of science to achieve a commercial or industrial objective, typically through computer science.",
-
+      "front": "What is a server in a network?",
+      "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Client/Server Networks"
     },
-
     {
-
-      "front": "What is a 'computer'?",
-
-      "back": "A computer is an electronic device operating under the control of instructions stored in its own memory, that can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.",
-
+      "front": "What is a peer-to-peer (P2P) network?",
+      "back": "A peer-to-peer (P2P) network is a network that connects computers directly to each other without requiring a server.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Peer-to-Peer Networks"
     },
-
     {
-
-      "front": "What is a 'mobile device'?",
-
-      "back": "A mobile device is a computing device small enough to hold in your hand.",
-
+      "front": "What is a Personal Area Network (PAN)?",
+      "back": "A PAN (Personal Area Network) is a network that connects devices in an individual's workspace using Bluetooth or Wi-Fi.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "Differentiate between 'data' and 'information'.",
-
-      "back": "Data is a collection of unprocessed items, which can include text, numbers, images, audio, and video. Information is processed data that is organized, meaningful, and useful.",
-
+      "front": "What is a Local Area Network (LAN)?",
+      "back": "A LAN (Local Area Network) is a network that connects computers and devices in a limited geographical area, such as a home, school, office building, or closely positioned group of buildings.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "What is the 'information processing cycle'?",
-
-      "back": "The information processing cycle consists of four basic operations: input, process, output, and storage.",
-
+      "front": "What is a Wireless LAN (WLAN)?",
+      "back": "A WLAN (Wireless LAN) is a type of LAN that uses wireless media.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "What is 'storage' in computing?",
-
-      "back": "Storage holds data, instructions, and information for future use.",
-
+      "front": "What is a Metropolitan Area Network (MAN)?",
+      "back": "A MAN (Metropolitan Area Network) is a high-speed network that connects local area networks in a metropolitan area, such as a city or town.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "What is a 'network'?",
-
-      "back": "A network is a collection of computers and devices connected together, often wirelessly, via communications devices and transmission media, allowing users to share resources.",
-
+      "front": "What is a Wide Area Network (WAN)?",
+      "back": "A WAN (Wide Area Network) is a network that covers a large geographic area, such as a city, country, or the world, using a communications channel that combines many types of media.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "What is the 'Internet'?",
-
-      "back": "The Internet is a global collection of millions of computers and other electronic devices, linked together in a communications network.",
-
+      "front": "What is the largest WAN in the world?",
+      "back": "The Internet is the largest WAN in the world.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Types of Networks"
     },
-
     {
-
-      "front": "What are 'web servers'?",
-
-      "back": "Web servers are computers that deliver requested webpages to your computer or mobile device.",
-
+      "front": "What is an intranet?",
+      "back": "An intranet is an internal network that uses Internet technologies.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Structures"
     },
-
     {
-
-      "front": "What is a 'webpage'?",
-
-      "back": "A webpage is an electronic document on the web that can contain text, graphics, audio, and video.",
-
+      "front": "What is an extranet?",
+      "back": "An extranet is a portion of a company's intranet that allows customers or suppliers to access parts of its network.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Structures"
     },
-
     {
-
-      "front": "What is a 'website'?",
-
-      "back": "A website is a collection of related webpages stored on a web server.",
-
+      "front": "What is a network topology?",
+      "back": "A network topology refers to the layout of the computers and devices in a communications network.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Topologies"
     },
-
     {
-
-      "front": "What is a 'web browser'?",
-
-      "back": "A web browser is software that enables users to access and view webpages.",
-
+      "front": "What are network standards and protocols?",
+      "back": "Network standards and protocols are guidelines that specify the way computers access the network and communicate, the types of hardware used, the speed of data transmission, and the types of cables or wireless technology used.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is a 'search engine'?",
-
-      "back": "A search engine is software that finds websites, webpages, images, videos, news, maps, and other information related to a specific topic.",
-
+      "front": "What is Ethernet?",
+      "back": "Ethernet is a network standard that specifies no central computer or device on the network should control when data can be transmitted. Instead, network devices attempt to transmit data when they determine the network is available.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is an 'online social network (social networking site)'?",
-
-      "back": "An online social network (social networking site) is a website or app that encourages members to share their interests, ideas, stories, photos, music, and videos with other registered users.",
-
+      "front": "What is Wi-Fi?",
+      "back": "Wi-Fi identifies a network that uses radio signals to transmit data through the air over a network, usually for a short distance.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
-  {
-
-      "front": "What is 'malware'?",
-
-      "back": "Malware, short for malicious software, is software that acts without a user's knowledge and deliberately alters the computer's or mobile device's operations.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
     {
-
-      "front": "What are 'green computing' best practices?",
-
-      "back": "Green computing involves practices that minimize the environmental impact of technology, such as reducing electricity consumption, using energy-efficient hardware, and proper recycling of e-waste.",
-
+      "front": "What is Bluetooth?",
+      "back": "Bluetooth is a network protocol that defines how two Bluetooth devices use short-range radio waves to transmit data.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is 'e-waste'?",
-
-      "back": "E-waste (electronic waste) refers to discarded digital devices and their components.",
-
+      "front": "What is Zigbee?",
+      "back": "Zigbee is a network protocol that is used for home automation and to transmit data from a remote control to a digital television, for example.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is 'cyberwarfare'?",
-
-      "back": "Cyberwarfare is an attack whose purpose is to disrupt computer networks for military or political purposes.",
-
+      "front": "What is an RFID (Radio Frequency Identification) network?",
+      "back": "An RFID (Radio Frequency Identification) network uses radio signals to communicate with a tag placed in or attached to an object, an animal, or a person.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is 'artificial intelligence (AI)'?",
-
-      "back": "Artificial intelligence (AI) is the technological replication of human behaviors, knowledge, and intelligence.",
-
+      "front": "What is NFC (Near Field Communication)?",
+      "back": "NFC (Near Field Communication) is a network protocol that defines how two enabled devices use short-range radio waves to transmit data when the two devices are close to each other.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Network Standards and Protocols"
     },
-
     {
-
-      "front": "What is 'virtual reality (VR)'?",
-
-      "back": "Virtual reality (VR) is the use of computers to simulate a real or imagined environment that appears as a three-dimensional (3-D) space.",
-
+      "front": "What is the role of a network administrator?",
+      "back": "The role of a network administrator is to plan, design, purchase equipment for, set up, secure, and maintain a network.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is 'augmented reality (AR)'?",
-
-      "back": "Augmented reality (AR) is a type of virtual reality that uses an image of an actual place or thing and adds digital information to it.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is the 'Internet of Things (IoT)'?",
-
-      "back": "The Internet of Things (IoT) is a computing environment where everyday objects are connected to the Internet.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is 'digital data' vs. 'analog data'?",
-
-      "back": "Digital data is data that consists of individual discrete bits. Analog data is data that consists of continuous measurements or signals.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is 'the cloud' in computing?",
-
-      "back": "The cloud is a network of remote servers hosted on the Internet and used to store, manage, and process data, rather than a local server or personal computer.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is 'software' (or 'program' or 'app')?",
-
-      "back": "Software, also called a program or app, consists of a series of related instructions that tells the computer what tasks to perform and how to perform them.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is a 'software developer'?",
-
-      "back": "A software developer (or programmer) is someone who creates or develops apps or programs, which are detailed sets of instructions that tell the computer exactly what to do.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is 'communications device'?",
-
-      "back": "A communications device is hardware capable of transmitting data, instructions, and information between a sending device and a receiving device.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
-    },
-
-    {
-
-      "front": "What is the 'digital divide'?",
-
-      "back": "The digital divide is the gap between those who have access to technology and the Internet and those who do not.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Basics of Computer"
-
+      "term": "T2",
+      "topic": "Responsibilities of a Network Professional"
     }
-
   ],
-
-  "The Computer System Hardware": [
-
+  "MODULE 7: THE INTERNET: CONNECTING AND COMMUNICATING ONLINE": [
     {
-
-      "front": "What is a 'motherboard'?",
-
-      "back": "A motherboard is the main circuit board of the computer, to which many of the hardware components are attached.",
-
+      "front": "What is the World Wide Web (the web)?",
+      "back": "The web, originally known as the World Wide Web, is a service consisting of websites located on computers around the world, connected through the Internet.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "The Internet Evolution"
     },
-
     {
-
-      "front": "What is a 'chip'?",
-
-      "back": "A chip is a small piece of semiconducting material, usually silicon, on which integrated circuits are etched.",
-
+      "front": "What is the Internet?",
+      "back": "The Internet is a global collection of millions of computers and devices connected together to share information and resources.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "The Internet Evolution"
     },
-
     {
-
-      "front": "What is the 'Central Processing Unit (CPU)' or 'processor'?",
-
-      "back": "The CPU (Central Processing Unit), or processor, interprets and carries out the basic instructions that operate a computer.",
-
+      "front": "What is Web 2.0?",
+      "back": "Web 2.0 refers to websites that allow users to create, share, and organize information.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "The Internet Evolution"
     },
-
     {
-
-      "front": "What is the purpose of the 'control unit'?",
-
-      "back": "The control unit is the component of the processor that directs and coordinates most of the operations in the computer.",
-
+      "front": "What is Web 3.0?",
+      "back": "Web 3.0 focuses on allowing applications to access information on the web and other data sources and then combine it to create new tools and services.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "The Internet Evolution"
     },
-
     {
-
-      "front": "What is the purpose of the 'Arithmetic Logic Unit (ALU)'?",
-
-      "back": "The ALU (Arithmetic Logic Unit) is the component of the processor that performs arithmetic, comparison, and other operations.",
-
+      "front": "What is the main purpose of a web browser?",
+      "back": "A web browser is a program that displays pages on the World Wide Web and enables access to other resources. Its main purpose is to locate, retrieve, and display content from the web.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Using the Web"
     },
-
     {
-
-      "front": "What is the 'machine cycle'?",
-
-      "back": "The machine cycle is the series of four basic operations performed by the CPU: fetching, decoding, executing, and storing.",
-
+      "front": "What is a search engine?",
+      "back": "A search engine is a program that searches for information on the web by looking for keywords and then displaying a list of websites that contain those keywords.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Conducting Online Searches"
     },
-
     {
-
-      "front": "What is a 'register' in a CPU?",
-
-      "back": "A register is a small, high-speed storage location in the CPU that temporarily holds data and instructions.",
-
+      "front": "What is a domain name?",
+      "back": "A domain name is the text name corresponding to the numeric IP address of a server or computer on the Internet.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What is the 'system clock' and 'clock speed'?",
-
-      "back": "The system clock controls the timing of all computer operations. Clock speed is the pace of the system clock, measured in gigahertz (GHz), indicating how many instruction cycles the CPU can handle per second.",
-
+      "front": "What is an IP address?",
+      "back": "An IP address (Internet Protocol address) is a unique numeric address that identifies a computer or device on a network.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What are 'multi-core processors'?",
-
-      "back": "Multi-core processors are single chips with two or more separate processor cores, allowing for parallel processing and improved performance.",
-
+      "front": "What is a TLD (Top-Level Domain)?",
+      "back": "A TLD (Top-Level Domain) is the last part of a domain name, such as .com, .org, or .edu, indicating the type of organization or geographic origin.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What are 'heat sinks' and 'liquid cooling technology'?",
-
-      "back": "Heat sinks are components that absorb and disperse heat from CPUs and other hot components. Liquid cooling technology uses a continuous flow of fluid through pipes or channels to cool the processor.",
-
+      "front": "What is an Internet Service Provider (ISP)?",
+      "back": "An ISP (Internet Service Provider) is a business that provides individuals and organizations with access to the Internet.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What is 'cloud computing'?",
-
-      "back": "Cloud computing is an environment of servers that house and provide access to resources and services accessed via the Internet.",
-
+      "front": "What is Wi-Fi and how does it relate to the Internet?",
+      "back": "Wi-Fi is a wireless networking technology that uses radio waves to provide wireless high-speed Internet and network connections. Many public locations offer Wi-Fi access points.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What is 'firmware'?",
-
-      "back": "Firmware is a specialized type of software that controls a device's specific hardware functions, often stored on ROM chips (e.g., BIOS).",
-
+      "front": "What is a hotspot?",
+      "back": "A hotspot is a wireless network that provides Internet connections to mobile computers and devices.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What is the purpose of a 'port' on a computer?",
-
-      "back": "A port is an external connecting socket on a computer or mobile device where you plug in a peripheral device to connect it to the computer.",
-
+      "front": "What is tethering?",
+      "back": "Tethering is the process of connecting one digital device to another to share a network connection.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Connecting to the Internet"
     },
-
     {
-
-      "front": "What is a 'USB port'?",
-
-      "back": "A USB (Universal Serial Bus) port is a versatile port that can connect up to 127 different peripheral devices together with a single connector.",
-
+      "front": "What is a blog?",
+      "back": "A blog (short for weblog) is an informal website consisting of time-stamped articles or posts in a diary or journal format.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Online Activities and Services"
     },
-
     {
-
-      "front": "What is an 'HDMI port'?",
-
-      "back": "An HDMI (High-Definition Multimedia Interface) port is a type of port that combines audio and video into a single digital link.",
-
+      "front": "What is a wiki?",
+      "back": "A wiki is a collaborative website that allows users to add, modify, or delete content through their web browser.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Online Activities and Services"
     },
-
     {
-
-      "front": "What is a 'Bluetooth port'?",
-
-      "back": "A Bluetooth port is a wireless communication technology that uses short-range radio signals to transmit data between two Bluetooth-enabled devices.",
-
+      "front": "What is a podcast?",
+      "back": "A podcast is a digital audio file that includes episodes of a program, such as a news program or interview, which can be downloaded and listened to on a computer or mobile device.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Online Activities and Services"
     },
-
     {
-
-      "front": "What is an 'expansion slot' and 'expansion card'?",
-
-      "back": "An expansion slot is a socket on the motherboard that can hold an adapter card. An expansion card (or adapter card) is a circuit board that enhances functions of a component of the system unit or provides connections to peripheral devices.",
-
+      "front": "What is streaming in the context of online media?",
+      "back": "Streaming is the process of accessing media that begins playing as it downloads, rather than waiting for the entire file to download.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Online Activities and Services"
     },
-
     {
-
-      "front": "What is a 'bus' in a computer system?",
-
-      "back": "A bus is a channel on the motherboard along which data is transmitted between components.",
-
+      "front": "What is webcasting?",
+      "back": "Webcasting is the process of broadcasting audio or video over the Internet.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Online Activities and Services"
     },
-
     {
-
-      "front": "What is 'e-waste' and how should it be disposed of responsibly?",
-
-      "back": "E-waste is electronic waste from discarded digital devices. Responsible disposal methods include recycling facilities, donating to charity, or bringing it to technology stores for proper handling.",
-
+      "front": "What is intellectual property?",
+      "back": "Intellectual property refers to any original work, idea, or invention created by an individual or organization.",
       "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "The Computer System Hardware"
-
+      "term": "T2",
+      "topic": "Using Online Content Responsibly and Ethically"
+    },
+    {
+      "front": "What does it mean for content to be in the public domain?",
+      "back": "Content in the public domain means it is not subject to copyright.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Using Online Content Responsibly and Ethically"
     }
-
   ],
-
-  "Computer Memory": [
-
+  "MODULE 8: PROGRAMS AND APPS: USING APPS FOR PRODUCTIVITY, GRAPHICS, AND SECURITY": [
     {
-
-      "front": "Differentiate between 'memory' and 'storage'.",
-
-      "back": "Memory consists of electronic components that temporarily store instructions, data, and results. Storage holds data, instructions, and information for future use, typically on a more permanent basis.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is 'Random Access Memory (RAM)'?",
-
-      "back": "RAM (Random Access Memory) is volatile memory that temporarily stores instructions waiting to be executed and data needed by those instructions.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'volatile memory' and 'nonvolatile memory'.",
-
-      "back": "Volatile memory loses its contents when power is removed (e.g., RAM). Nonvolatile memory does not lose its contents when power is removed (e.g., ROM, hard disks, flash memory).",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is 'Read-Only Memory (ROM)'?",
-
-      "back": "ROM (Read-Only Memory) refers to memory chips storing permanent data and instructions. It is nonvolatile and cannot be modified by programs or users.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is 'flash memory'?",
-
-      "back": "Flash memory is a type of nonvolatile memory that can be erased electronically and rewritten. It is often used in solid-state drives, USB flash drives, and memory cards.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is 'cache'?",
-
-      "back": "Cache is a small, high-speed storage area that temporarily holds data and instructions that the processor is likely to reuse, speeding up processing.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'hard disk' or 'hard disk drive (HDD)'?",
-
-      "back": "A hard disk (or hard disk drive - HDD) is a storage device that contains one or more inflexible, circular platters that use magnetic particles to store data, instructions, and information.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'platter' in a hard disk?",
-
-      "back": "A platter is a circular, rigid metallic or glass plate coated with magnetic material, found inside a hard disk drive, where data is stored.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'solid-state drive (SSD)'?",
-
-      "back": "A solid-state drive (SSD) is a storage device that uses flash memory to store data, instructions, and information. It contains no moving parts.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'solid-state media'?",
-
-      "back": "Solid-state media refers to nonvolatile storage media that use flash memory chips to store data, such as solid-state drives, memory cards, and USB flash drives.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'internal hard drive' and 'external hard drive'.",
-
-      "back": "An internal hard drive is a hard drive that resides inside the system unit. An external hard drive is a separate free-standing hard disk that connects to the computer with a cable and can be easily transported.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is 'cloud storage'?",
-
-      "back": "Cloud storage is an Internet service that provides storage to computer users.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'compact disc (CD)'?",
-
-      "back": "A compact disc (CD) is a flat, round, portable metal disc with a plastic coating that is about 4.75 inches in diameter.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is a 'digital versatile disc (DVD)' or 'Blu-ray Disc (BD)'?",
-
-      "back": "A digital versatile disc (DVD) is a high-capacity optical disc that is commonly used to store high-quality video and audio. A Blu-ray Disc (BD) is a high-capacity optical disc format that can hold significantly more data than a DVD.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'CD-ROM', 'CD-R', and 'CD-RW'.",
-
-      "back": "CD-ROM (compact disc read-only memory) is an optical disc on which users can only read, but not write or erase. CD-R (compact disc-recordable) is an optical disc on which users can write once, but not erase. CD-RW (compact disc-rewritable) is an erasable optical disc on which users can write multiple times.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'DVD-ROM', 'DVD-R', 'DVD+R', 'DVD-RW', and 'DVD+RW'.",
-
-      "back": "DVD-ROM is a read-only DVD. DVD-R and DVD+R are recordable once. DVD-RW and DVD+RW are rewritable discs.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "What is the 'Internet of Things (IoT)'?",
-
-      "back": "The Internet of Things (IoT) is a global network of devices, vehicles, home appliances, and other items that are equipped with sensors, software, and other technologies that allow them to connect and exchange data over the internet.",
-
-      "course": "CS110",
-    
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    },
-
-    {
-
-      "front": "How does the 'Internet of Things (IoT)' relate to privacy?",
-
-      "back": "IoT devices often collect vast amounts of personal data, raising privacy concerns about how this data is stored, shared, and used by companies and other entities.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Computer Memory"
-
-    }
-
-  ],
-
-  "Input and Output Devices": [
-
-    {
-
-      "front": "Differentiate between 'input' and 'output'.",
-
-      "back": "Input is any data and instructions entered into the memory of a computer or mobile device. Output is data that has been processed into a useful form, such as text, graphics, audio, or video.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is an 'input device'?",
-
-      "back": "An input device is any hardware component that allows you to enter data and instructions into a computer or mobile device.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'keyboard'?",
-
-      "back": "A keyboard is a peripheral input device that contains keys users press to enter data and instructions into a computer or mobile device.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "Differentiate between a 'mouse' and a 'trackpad (touchpad)'.",
-
-      "back": "A mouse is a pointing device that fits under the palm of your hand. A trackpad (touchpad) is a flat, rectangular pointing device sensitive to pressure and motion, often found on laptops.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'pointing stick'?",
-
-      "back": "A pointing stick is a pressure-sensitive pointing device shaped like a pencil eraser that is positioned between keys on a keyboard.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'trackball'?",
-
-      "back": "A trackball is a stationary pointing device with a ball on its top or side.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'touch screen'?",
-
-      "back": "A touch screen is a touch-sensitive display device.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'digital pen' or 'stylus'?",
-
-      "back": "A digital pen (or stylus) is an input device that allows a user to write, draw, or make selections on a touch screen.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'game controller'?",
-
-      "back": "A game controller is a device used to control characters or objects in a video game.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'motion-sensing game controller'?",
-
-      "back": "A motion-sensing game controller allows users to control games by moving the controller in physical space.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'light sensor'?",
-
-      "back": "A light sensor is a device that detects the amount of light in the environment and can be used for automatic screen brightness adjustments or other functions.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'scanner'?",
-
-      "back": "A scanner is a light-sensing input device that reads printed text and graphics and translates the results into a form the computer can process.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'bar code reader'?",
-
-      "back": "A bar code reader is an optical reader that uses laser beams to read bar codes.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'QR code reader'?",
-
-      "back": "A QR code reader is an optical reader that decodes a Quick Response (QR) code, which stores information in a two-dimensional matrix.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'optical character recognition (OCR)'?",
-
-      "back": "OCR (optical character recognition) is technology that reads characters from ordinary documents and translates them into a form that the computer can process.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'magnetic ink character recognition (MICR)'?",
-
-      "back": "MICR (magnetic ink character recognition) devices read text printed with magnetized ink, commonly used for processing checks.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'data collection device'?",
-
-      "back": "A data collection device is a device that obtains data directly at the location where the transaction or event takes place.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is an 'output device'?",
-
-      "back": "An output device is any hardware component that conveys information from a computer or mobile device to one or more people.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'display device'?",
-
-      "back": "A display device is an output device that visually conveys text, graphics, and video information.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "Differentiate between a 'monitor' and a 'television'.",
-
-      "back": "A monitor is a display device that is packaged as a separate peripheral. A television is a display device that receives broadcast signals and displays them on a screen.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'resolution' in a display device?",
-
-      "back": "Resolution is the number of horizontal and vertical pixels in a display device. Higher resolution means a sharper, clearer image.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'printer'?",
-
-      "back": "A printer is an output device that produces text and graphics on a physical medium, such as paper.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'nonimpact printers' and 'impact printers'.",
-
-      "back": "Nonimpact printers form characters and graphics without striking a print medium (e.g., ink-jet, laser). Impact printers form characters and graphics by striking a mechanism against an inked ribbon, which contacts the paper (e.g., dot-matrix).",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is an 'ink-jet printer'?",
-
-      "back": "An ink-jet printer is a nonimpact printer that forms characters and graphics by spraying tiny drops of liquid ink onto a piece of paper.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'photo printer'?",
-
-      "back": "A photo printer is a color printer that produces photo-lab-quality pictures.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'laser printer'?",
-
-      "back": "A laser printer is a high-speed, high-quality nonimpact printer that creates images using a laser beam and powdered ink, called toner.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'multifunction peripheral (MFP)'?",
-
-      "back": "A multifunction peripheral (MFP), or all-in-one printer, is a single device that performs two or more functions, such as printing, scanning, copying, and faxing.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'plotter'?",
-
-      "back": "A plotter is a sophisticated printer used to produce high-quality drawings such as maps, architectural blueprints, and circuit diagrams.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'three-dimensional (3-D) printing'?",
-
-      "back": "Three-dimensional (3-D) printing is an additive manufacturing process that creates three-dimensional objects from a digital file by adding material layer by layer.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What are 'speakers' and 'headphones/earbuds'?",
-
-      "back": "Speakers are output devices that allow you to hear audio. Headphones are audio output devices worn on or around the head, and earbuds are small speakers that fit into the ear canal.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is a 'data projector'?",
-
-      "back": "A data projector is a device that takes the image from a computer screen and projects it onto a larger screen or surface.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is an 'interactive whiteboard'?",
-
-      "back": "An interactive whiteboard is a large display device that connects to a computer and allows users to control the computer and write on the screen using a pen, finger, or other device.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is an 'assistive technology'?",
-
-      "back": "Assistive technology is hardware and software designed for individuals with disabilities.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "Give examples of 'assistive technologies' for users with motor disabilities.",
-
-      "back": "Examples include specialized keyboards (e.g., expanded, mini, on-screen), head-mounted pointing devices, foot pedals, and pneumatic instruments controlled by puffs of air.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "Give examples of 'assistive technologies' for users with intellectual disabilities.",
-
-      "back": "Examples include speech recognition programs (for verbal input), graphic organizers (for structuring information), and audio books (to read information aloud).",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is the 'Americans with Disabilities Act (ADA)'?",
-
-      "back": "The Americans with Disabilities Act (ADA) is a law that requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is the 'Individuals with Disabilities Education Act (IDEA)'?",
-
-      "back": "The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    },
-
-    {
-
-      "front": "What is 'e-waste' and how to reduce its risks?",
-
-      "back": "E-waste is electronic waste that emits radiation. Risks can be reduced by replacing older equipment (like CRTs), sitting further from monitors, shielding from radiation, minimizing wireless connections, turning off devices when not in use, and recycling/donating old devices.",
-
-      "course": "CS110",
-
-      "term": "T1",
-
-      "topic": "Input and Output Devices"
-
-    }
-
-  ],
-
-  "Data Representation": [
-
-    {
-
-      "front": "Why is data represented in 0s and 1s in a digital computer?",
-
-      "back": "Digital computers can only understand two states, represented as 0 (off) and 1 (on), making binary the fundamental language for all data and instructions.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "What are the four common 'number systems' used in computers?",
-
-      "back": "The four common number systems are Decimal (base 10), Binary (base 2), Octal (base 8), and Hexadecimal (base 16).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "Explain the 'Decimal number system'.",
-
-      "back": "The Decimal number system is a base-10 system that uses digits from 0 to 9. It is the number system most commonly used by humans.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "Explain the 'Binary number system'.",
-
-      "back": "The Binary number system is a base-2 system that uses only two digits, 0 and 1. It is the number system directly understood by digital computers.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "Explain the 'Octal number system'.",
-
-      "back": "The Octal number system is a base-8 system that uses digits from 0 to 7.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "Explain the 'Hexadecimal number system'.",
-
-      "back": "The Hexadecimal number system is a base-16 system that uses digits from 0 to 9 and letters A to F (representing values 10 to 15). It is often used as a shorthand for binary numbers.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "What is a 'bit'?",
-
-      "back": "A bit (binary digit) is the smallest unit of data in a computer, represented by either a 0 or a 1.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "What is a 'byte'?",
-
-      "back": "A byte is a group of 8 bits, which typically represents a single character (like a letter, number, or symbol).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "What is 'ASCII'?",
-
-      "back": "ASCII (American Standard Code for Information Interchange) is a character encoding standard that uses 7 bits to represent 128 characters, primarily for English alphabet, numbers, and symbols.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "What is 'Unicode'?",
-
-      "back": "Unicode is a universal character encoding standard that can represent characters from almost all of the world's writing systems. It uses more bits per character than ASCII, allowing for a much larger set of characters.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "How is an 'image' represented digitally?",
-
-      "back": "An image is represented digitally as a grid of individual picture elements called pixels. Each pixel is assigned a binary code for its color.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "How is 'audio' represented digitally?",
-
-      "back": "Audio is represented digitally by converting sound waves into a series of binary numbers through a process called sampling, where the sound wave's amplitude is measured at regular intervals.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "How is 'video' represented digitally?",
-
-      "back": "Video is represented digitally as a sequence of individual still images (frames), each composed of pixels, along with corresponding audio data. These are then compressed for storage and transmission.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    },
-
-    {
-
-      "front": "How are 'text' and 'numbers' represented digitally?",
-
-      "back": "Text and numbers are represented digitally by assigning a unique binary code (e.g., using ASCII or Unicode) to each character or digit.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Data Representation"
-
-    }
-
-  ],
-
-  "Operating System": [
-
-    {
-
-      "front": "What is 'system software'?",
-
-      "back": "System software is the software that runs a computer, including the operating system and other programs.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is an 'Operating System (OS)' and its primary purpose?",
-
-      "back": "An Operating System (OS) is a set of programs that coordinates all the activities among computer or mobile device hardware. Its primary purpose is to manage hardware and software resources, and to provide a user interface.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "List some key functions of an Operating System.",
-
-      "back": "Key functions include: starting and shutting down a computer, providing a user interface, managing programs, managing memory, coordinating tasks, configuring devices, monitoring performance, updating system software, controlling networks, and administering security.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Differentiate between a 'Graphical User Interface (GUI)' and a 'Command-Line Interface (CLI)'.",
-
-      "back": "A Graphical User Interface (GUI) allows users to interact with visual elements like icons, menus, and windows. A Command-Line Interface (CLI) requires users to type commands to instruct the computer.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Describe the 'booting' process of a computer.",
-
-      "back": "Booting is the process of starting or restarting a computer or mobile device. It involves the power-on self-test (POST), loading the kernel (core of the OS), reading the registry (system settings), loading drivers (programs for devices), and running startup programs.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'sleep mode' and 'hibernate mode'.",
-
-      "back": "Sleep mode saves any open documents and running programs or apps to RAM, turns off all unneeded functions, and places the computer in a low-power state. Hibernate mode saves any open documents and running programs or apps to an internal hard drive before removing power from the computer or device.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Explain 'single-tasking' vs. 'multitasking' in operating systems.",
-
-      "back": "A single-tasking OS allows only one program or app to run at a time. A multitasking OS allows two or more programs or apps to run simultaneously.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is the difference between a 'foreground' and 'background' program?",
-
-      "back": "The program or app you are currently using is in the foreground. Other programs or apps that are running but not actively being used are in the background.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "How does an OS manage memory using 'virtual memory'?",
-
-      "back": "If a computer's RAM is insufficient, the OS uses virtual memory, which allocates a portion of a storage medium (usually the hard drive) to function as additional RAM. This involves paging (swapping data between RAM and the swap file) to make it appear as if the computer has more RAM.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is 'thrashing' in memory management?",
-
-      "back": "Thrashing occurs when an operating system spends too much time paging, causing the computer to operate slowly.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "How does an OS coordinate tasks using a 'scheduler' and 'spooling'?",
-
-      "back": "A scheduler determines the order in which tasks are processed. Spooling sends documents to a buffer (temporary storage) on a storage medium before they are processed by a device like a printer, allowing the CPU to process other tasks.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Name common 'desktop operating systems'.",
-
-      "back": "Common desktop operating systems include Windows, macOS, Linux, and Chrome OS.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Name common 'mobile operating systems'.",
-
-      "back": "Common mobile operating systems include Android, iOS, iPadOS, and Windows Mobile.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "Name common 'server operating systems'.",
-
-      "back": "Common server operating systems include Windows Server, macOS Server, Unix, and Linux.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is an 'embedded operating system'?",
-
-      "back": "An embedded operating system (often a real-time operating system or RTOS) is a specialized OS designed for specific tasks on devices like consumer electronics, industrial machines, and IoT devices.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What factors should be considered when 'selecting an operating system'?",
-
-      "back": "Considerations include: compatibility with existing hardware/software, available applications, cost, security features, and technical support.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "How do operating systems help with 'file management'?",
-
-      "back": "Operating systems provide tools like file managers to help users manage files (renaming, copying, moving, deleting) and organize them into folders (directories).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is the purpose of 'Disk Cleanup'?",
-
-      "back": "Disk Cleanup is an operating system utility that searches for and removes unnecessary files from a computer's hard drive to free up space.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What does 'Disk Defragmenter' do?",
-
-      "back": "Disk Defragmenter reorganizes the files and unused space on a computer’s hard disk so that the operating system accesses data more quickly and programs run faster.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is a 'screen saver' utility?",
-
-      "back": "A screen saver is a utility program that causes a display device’s screen to show a moving image or blank screen if no keyboard or mouse activity occurs for a specified time.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is a 'file compression utility'?",
-
-      "back": "A file compression utility shrinks the size of a file, making it easier to store or transmit.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is the purpose of 'backup and restore utilities'?",
-
-      "back": "Backup utilities allow users to copy files from their hard drive to another storage medium. Restore utilities allow users to retrieve these copied files in case of data loss.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is a 'crash' in computing and what is 'troubleshooting'?",
-
-      "back": "A crash occurs when the program or app stops functioning correctly. Troubleshooting refers to the steps you take to identify and solve a problem, such as a crash.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What are common 'operating system security features'?",
-
-      "back": "Common OS security features include: user accounts (for access control), firewalls, automatic updates, antivirus protection, spyware/adware removal, encryption, and backup capabilities.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What is a 'virtual machine'?",
-
-      "back": "A virtual machine is an emulation of a computer system. It runs on a physical computer system and behaves like a separate, independent computer.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    },
-
-    {
-
-      "front": "What are some uses of a virtual machine?",
-
-      "back": "Virtual machines can be used to run different operating systems simultaneously, test software in isolated environments, or run older applications that are incompatible with the host OS.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Operating System"
-
-    }
-
-  ],
-
-  "Computer Programming Fundamentals": [
-
-    {
-
-      "front": "What is 'computer programming'?",
-
-      "back": "Computer programming is the process of designing and writing instructions that a computer can execute to perform specific tasks.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What is a 'programming language'?",
-
-      "back": "A programming language is a formal language used to communicate instructions to a computer. It provides a structured way for programmers to write code that tells the computer what to do.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What are the main components of a programming language?",
-
-      "back": "Programming languages consist of a set of rules (syntax) and keywords that define how programs are written and interpreted.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "List examples of popular programming languages mentioned.",
-
-      "back": "Examples include Python, Java, C++, and JavaScript.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What is 'machine language'?",
-
-      "back": "Machine language is the most primitive form of computer instructions, represented by long strings of ones and zeroes, directly understood by the computer's CPU.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What is a 'variable' in programming?",
-
-      "back": "A variable is a named storage location that holds a value, which can be changed during program execution.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "List common 'data types' in C++.",
-
-      "back": "Common data types include `int` (integers), `float` (single-precision floating-point numbers), `double` (double-precision floating-point numbers), `char` (single characters), `bool` (Boolean values - true/false), and `string` (sequences of characters).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What are `cin` and `cout` used for in C++?",
-
-      "back": "`cin` (character input) is used to read input from the user (e.g., keyboard). `cout` (character output) is used to display output to the console.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "Name types of 'operators' in programming.",
-
-      "back": "Operators include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operator (=), and increment/decrement operators (++, --).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What is the purpose of 'control structures' in programming?",
-
-      "back": "Control structures dictate the flow of execution in a program, allowing specific blocks of code to be executed based on conditions or to be repeated.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "Differentiate between `if`, `if-else`, and `nested if` statements.",
-
-      "back": "An `if` statement executes code only if a condition is true. An `if-else` statement executes one block of code if the condition is true and another if it's false. A `nested if` statement places one `if` statement inside another.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "When would you use a `switch` statement?",
-
-      "back": "A `switch` statement is used to execute different blocks of code based on the value of a single variable or expression, offering a more concise alternative to multiple `if-else if` statements.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "Name different types of 'loops' in programming.",
-
-      "back": "Common types of loops include `while` loops (repeat as long as a condition is true), `do-while` loops (execute at least once, then repeat as long as a condition is true), and `for` loops (repeat a specific number of times or iterate over a collection).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What is a 'function' in programming?",
-
-      "back": "A function is a block of organized, reusable code that performs a specific task. It can take inputs (parameters) and produce an output (return value).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "What are 'arrays' in programming?",
-
-      "back": "An array is a data structure that stores a collection of elements of the same data type in contiguous memory locations, accessed using an index.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "How are 'comments' used in programming?",
-
-      "back": "Comments are non-executable lines of text within code, used to explain the code's purpose, functionality, or logic for human readers. They can be single-line (`//`) or multi-line (`/* */`).",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'syntax errors', 'logical errors', and 'runtime errors'.",
-
-      "back": "Syntax errors violate the programming language's rules, preventing compilation. Logical errors allow the program to run but produce incorrect results. Runtime errors occur during program execution, causing unexpected termination.",
-
-      "course": "CS110",
-
-      "term": "T2",
-
-      "topic": "Computer Programming Fundamentals"
-
-    }
-
-  ],
-
-  "Data Communication and Computer Network": [
-
-    {
-
-      "front": "What is a 'network' and its purpose?",
-
-      "back": "A network is a collection of computers and devices connected together, often wirelessly, via communications devices and transmission media. Its purpose is to allow users to share resources, such as data, hardware, and software.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'communications software'?",
-
-      "back": "Communications software consists of programs and apps that help users establish a connection to another computer, mobile device, or network; manage the transmission of data, instructions, and information; and provide an interface for users to communicate with one another.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "How are networks classified?",
-
-      "back": "Networks can be classified by their topology (physical arrangement), network architecture (logical design and roles of devices), and geographic reach.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'client/server networks' and 'peer-to-peer networks'.",
-
-      "back": "In client/server networks, one or more computers act as a server to which other computers (clients) connect to access resources. In peer-to-peer networks, each computer can act as both a client and a server, sharing resources directly with other computers.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'LAN (Local Area Network)', 'MAN (Metropolitan Area Network)', and 'WAN (Wide Area Network)'.",
-
-      "back": "A LAN (Local Area Network) connects computers and devices in a limited geographic area, such as a home or office. A MAN (Metropolitan Area Network) connects LANs in a metropolitan area, like a city or town. A WAN (Wide Area Network) covers a large geographic area, such as a country or the world, and often uses communication channels that combine many types of media.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'Personal Area Network (PAN)'?",
-
-      "back": "A Personal Area Network (PAN) is a network that connects devices in an individual's workspace using Bluetooth, Wi-Fi, or other wireless technologies.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'Body Area Network (BAN)'?",
-
-      "back": "A Body Area Network (BAN) is a network of devices worn by an individual, such as smartwatches, fitness trackers, and other sensors, that collect and transmit personal health data.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is the difference between 'intranet' and 'extranet'?",
-
-      "back": "An intranet is an internal network that uses Internet technologies to provide an organization with access to its own resources and information. An extranet is a portion of a company's intranet that is extended to authorized users outside the company, such as suppliers or customers.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'network architecture'?",
-
-      "back": "Network architecture refers to the logical design of all devices on a network, describing the roles of servers and users.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'network topology'?",
-
-      "back": "Network topology refers to the physical arrangement of computers and devices on a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Describe a 'bus network'.",
-
-      "back": "In a bus network, all devices attach to a single, central cable, and data is transmitted along this cable to all connected devices.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Describe a 'ring network'.",
-
-      "back": "In a ring network, devices are connected in a closed loop, and data flows in one direction around the ring.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Describe a 'star network'.",
-
-      "back": "In a star network, all devices connect to a central hub or switch, and all data passes through this central point.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Describe a 'mesh network'.",
-
-      "back": "In a mesh network, every node (device) is connected directly to every other node, providing multiple paths for data and high redundancy.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'wireless access point (WAP)'?",
-
-      "back": "A wireless access point (WAP) is a central communications device that allows computers and devices to transfer data wirelessly among themselves or to a wired network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'Wi-Fi'?",
-
-      "back": "Wi-Fi (Wireless Fidelity) is a wireless networking technology that uses radio waves to provide high-speed Internet and network connections.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'Bluetooth'?",
-
-      "back": "Bluetooth is a wireless technology standard for exchanging data over short distances using short-wavelength UHF radio waves, often for personal area networks.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'NFC (Near Field Communication)'?",
-
-      "back": "NFC (Near Field Communication) is a set of communication protocols for communication between two electronic devices typically within 4 cm (1.6 in) of each other.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'modem'?",
-
-      "back": "A modem is a communications device that converts analog signals to digital signals and vice versa, allowing computers to transmit data over telephone lines, cable lines, or other media.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'router'?",
-
-      "back": "A router is a communications device that connects multiple computers or other routers together and transmits data to its correct destination on a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'wireless router'?",
-
-      "back": "A wireless router is a device that performs the functions of a router and a wireless access point, allowing both wired and wireless devices to connect to a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'broadband modem'?",
-
-      "back": "A broadband modem is a communications device that sends and receives data and information to and from a digital line, such as a cable line or DSL (Digital Subscriber Line).",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'network card'?",
-
-      "back": "A network card (or network interface card - NIC) is a circuit board or card that enables computers and devices to access a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'hub' or 'switch'?",
-
-      "back": "A hub is a device that provides a central point for cables in a network. A switch is a more intelligent device than a hub, directing data only to the intended recipient on a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'bandwidth' in data communication?",
-
-      "back": "Bandwidth is the amount of data, instructions, and information that can travel over a communications channel per unit of time.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'latency' and 'bandwidth'.",
-
-      "back": "Bandwidth measures the capacity of a connection (how much data can pass per second). Latency measures the time it takes for a signal to travel from one point to another (the delay).",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is a 'protocol'?",
-
-      "back": "A protocol is a set of rules that defines how computers communicate on a network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'TCP/IP (Transmission Control Protocol/Internet Protocol)'?",
-
-      "back": "TCP/IP is a network protocol that defines how messages are routed from one end of a network to the other, ensuring reliable transmission of data across the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'Ethernet'?",
-
-      "back": "Ethernet is a network standard that specifies no central server or device on the network should control when data can be transmitted, and it is the most popular standard for wired LANs.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'Wi-Fi 6 (802.11ax)'?",
-
-      "back": "Wi-Fi 6 (802.11ax) is the latest generation of Wi-Fi technology, designed to improve performance in congested environments and provide faster speeds.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'Li-Fi'?",
-
-      "back": "Li-Fi (Light Fidelity) is a wireless communication technology that uses visible light communication (VLC) to transmit data, offering potential for very high speeds and security.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is '5G'?",
-
-      "back": "5G is the fifth generation of cellular technology, designed to deliver higher multi-Gbps peak data speeds, ultra-low latency, more reliability, massive network capacity, increased availability, and a more uniform user experience to more users.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'fiber optic cable'?",
-
-      "back": "Fiber optic cable consists of dozens or hundreds of thin strands of glass or plastic that transmit data as pulses of light.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'cellular radio'?",
-
-      "back": "Cellular radio is a form of broadcast radio that is used widely for mobile communications, especially for cell phones.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'microwaves (radio waves)'?",
-
-      "back": "Microwaves are radio waves that provide a high-speed signal transmission. They are often used for wireless communication over long distances.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'satellite' communication?",
-
-      "back": "Satellite communication is a wireless transmission medium that receives signals from an earth-based station, amplifies the signals, and transmits them over a wide area to other earth-based stations.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'GPS (Global Positioning System)'?",
-
-      "back": "GPS (Global Positioning System) is a navigation system that uses satellites to provide precise location and time information anywhere on Earth.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is 'cybersecurity' for networks?",
-
-      "back": "Cybersecurity for networks involves measures to protect computer networks and data from unauthorized access, use, disclosure, disruption, modification, or destruction.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What is the role of a 'network administrator'?",
-
-      "back": "A network administrator plans, designs, purchases equipment for, sets up, secures, and maintains a network, ensuring its efficient and secure operation.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    },
-
-    {
-
-      "front": "What guidelines are included in a 'code of conduct' for network professionals?",
-
-      "back": "A code of conduct includes guidelines for professionalism, social responsibility, personal integrity, privacy, adherence to laws and policies, effective communication, ensuring system integrity, continuous education, and ethical responsibility to the computing community.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Data Communication and Computer Network"
-
-    }
-
-  ],
-
-  "The Internet and Internet Services": [
-
-    {
-
-      "front": "What is 'the web (World Wide Web)'?",
-
-      "back": "The web (World Wide Web) is a worldwide collection of electronic documents (webpages) that can include text, graphics, audio, and video.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'the Internet'?",
-
-      "back": "The Internet is a global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "Who owns the Internet?",
-
-      "back": "No single person, company, or government agency owns the Internet; it is a collaborative effort and a public, cooperative, independent network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is an 'Internet Service Provider (ISP)'?",
-
-      "back": "An Internet Service Provider (ISP) is a business that provides organizations and individuals with access to the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'bandwidth' in the context of internet connection?",
-
-      "back": "Bandwidth is the capacity of a network connection to transmit a maximum amount of data over a network or Internet connection in a given amount of time.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'dial-up access' and 'broadband Internet service'.",
-
-      "back": "Dial-up access uses a modem to convert digital signals to analog over a telephone line. Broadband Internet service uses different technologies (like cable, DSL, fiber) to provide high-speed, always-on Internet connection.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'Wi-Fi' and how is it used for Internet access?",
-
-      "back": "Wi-Fi is a wireless networking technology that uses radio waves to provide network and Internet connections over short distances, typically via a wireless router.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'mobile broadband'?",
-
-      "back": "Mobile broadband is a high-speed Internet access service delivered through cellular networks, allowing devices to connect to the Internet while on the go.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is a 'hotspot'?",
-
-      "back": "A hotspot is a wireless network that provides Internet access to mobile computers and devices.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'tethering'?",
-
-      "back": "Tethering is the process of connecting a mobile device (like a smartphone) to a computer or other device to share the mobile device's Internet connection.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is a 'web address (URL)'?",
-
-      "back": "A web address (or Uniform Resource Locator - URL) is the unique address of a webpage.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is a 'domain name'?",
-
-      "back": "A domain name is a text-based name that corresponds to the IP address of a server that hosts a website.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is an 'IP address'?",
-
-      "back": "An IP address (Internet Protocol address) is a sequence of numbers that uniquely identifies the location of each computer or device connected to the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is a 'Domain Name System (DNS) server'?",
-
-      "back": "A Domain Name System (DNS) server is a computer that translates the domain name into its associated IP address so that data can be routed to the correct computer.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'web publishing'?",
-
-      "back": "Web publishing is the development and maintenance of webpages.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is a 'web developer'?",
-
-      "back": "A web developer is someone who designs, creates, and maintains websites.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What are 'e-commerce (electronic commerce)' categories?",
-
-      "back": "E-commerce categories include B2C (business-to-consumer), C2C (consumer-to-consumer), and B2B (business-to-business).",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'web scraping'?",
-
-      "back": "Web scraping is the process of extracting data from websites, often automatically.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'online education (e-learning)'?",
-
-      "back": "Online education (or e-learning) is the delivery of education through the Internet, often using web-based tools and resources.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'cybercrime'?",
-
-      "back": "Cybercrime is an illegal act committed using a computer and the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'netiquette'?",
-
-      "back": "Netiquette is the code of acceptable behaviors users should follow while on the Internet; it is the Internet equivalent of etiquette.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What are 'copyrights' and 'digital rights management (DRM)'?",
-
-      "back": "Copyrights are exclusive rights granted to authors and artists to reproduce, publish, and sell their intellectual property. Digital Rights Management (DRM) is a technology that prevents unauthorized access, use, or distribution of copyrighted material.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'public domain' in copyright?",
-
-      "back": "Public domain refers to works that are not subject to copyright, meaning anyone can use, copy, or distribute them without permission.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What is 'Creative Commons'?",
-
-      "back": "Creative Commons is a nonprofit organization that helps content creators keep the copyright to their materials while allowing others to use, copy, or distribute their work under specified terms.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    },
-
-    {
-
-      "front": "What are 'ethics' in relation to online content?",
-
-      "back": "Ethics are the moral principles that govern behavior, including responsible and legal use of online content, requiring proper citation for information that is not common knowledge.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "The Internet and Internet Services"
-
-    }
-
-  ],
-
-  "Applications and Security": [
-
-    {
-
-      "front": "What is 'software' or an 'app'?",
-
-      "back": "Software, also called a program or app, consists of a series of related instructions that tells the computer what tasks to perform and how to perform them.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
       "front": "What are the general categories of programs and apps?",
-
-      "back": "General categories include productivity, graphics and media, communications, and security.",
-
+      "back": "Apps are categorized according to productivity, graphics and media, personal interest, and communications.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'productivity software'?",
-
-      "back": "Productivity software is designed to help you be more effective and efficient while performing daily activities.",
-
+      "front": "What is the difference between local apps and portable apps?",
+      "back": "Local apps are apps that you install on your computer's hard drive. Portable apps run from a removable storage device such as an external hard drive, flash drive, or the cloud.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'word processing software'?",
-
-      "back": "Word processing software is an application that allows users to create and manipulate documents containing mostly text and sometimes graphics.",
-
+      "front": "Define a native app.",
+      "back": "A native app is an app written for a specific operating system and installed on a computer or mobile device.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'spreadsheet software'?",
-
-      "back": "Spreadsheet software is an application that allows users to organize data in rows and columns and perform calculations.",
-
+      "front": "What are web apps?",
+      "back": "Web apps are programs that you access via the Internet using a browser on a computer or mobile device.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'database software'?",
-
-      "back": "Database software is an application that allows users to create, access, and manage a database.",
-
+      "front": "What are mobile apps?",
+      "back": "Apps that you access on a smartphone or tablet are called mobile apps.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'presentation software'?",
-
-      "back": "Presentation software is an application that allows users to create visual aids for presentations to communicate ideas, facts, figures, and other information to an audience.",
-
+      "front": "What types of programs and apps fall under 'Productivity (business and personal)'?",
+      "back": "Productivity apps include word processing, presentation, spreadsheet, database, note-taking, calendar and contact management, project management, accounting, personal finance, legal, tax preparation, document management, support services, and enterprise computing.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'note-taking software'?",
-
-      "back": "Note-taking software is an application that enables users to enter typed text, handwritten comments, drawings, sketches, photos, and links anywhere on a page.",
-
+      "front": "List some types of 'Graphics and media' programs and apps.",
+      "back": "Graphics and media apps include Computer-Aided Design (CAD), desktop publishing, paint/image editing, photo editing and photo management, clip art/image gallery, video and audio editing, multimedia and website authoring, media player, and augmented and virtual reality.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'calendar and contact management software'?",
-
-      "back": "Calendar and contact management software is an application that helps you organize your calendar, contacts, and email, and manage your daily activities.",
-
+      "front": "What are some examples of 'Personal interest' programs and apps?",
+      "back": "Personal interest apps include lifestyle, entertainment, mapping, medical, convenience, and education apps.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps!"
     },
-
     {
-
-      "front": "What is 'project management software'?",
-
-      "back": "Project management software is an application that allows a user to plan, schedule, track, and analyze the events, resources, and costs of a project.",
-
+      "front": "Name some types of 'Communications' programs and apps.",
+      "back": "Communications apps include blog, file transfer, browser, Internet phone, chat room, Internet messaging, online discussion, mobile messaging, email, and videoconference.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps?"
     },
-
     {
-
-      "front": "What is 'accounting software'?",
-
-      "back": "Accounting software is an application that helps businesses of all sizes record and report financial transactions.",
-
+      "front": "What are some 'Security' tools?",
+      "back": "Security tools include personal firewall, antivirus, malware removers, and Internet filters.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps!"
     },
-
     {
-
-      "front": "What is 'personal finance software'?",
-
-      "back": "Personal finance software is a simplified accounting application that helps home users and small office/home office users manage their money.",
-
+      "front": "List some 'File, disk, and system management' tools.",
+      "back": "File, disk, and system management tools include file manager, search, image viewer, screen saver, file compression, PC maintenance, uninstaller, backup and restore, disk clean-up, and power management.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps!"
     },
-
     {
-
-      "front": "What is 'legal software'?",
-
-      "back": "Legal software is an application that assists in the preparation of legal documents and provides guidance on legal matters.",
-
+      "front": "What is m-commerce?",
+      "back": "Mobile commerce, or m-commerce, apps let you use your mobile device to make online purchases of goods and services.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "How Do You Use Programs and Apps!"
     },
-
     {
-
-      "front": "What is 'tax preparation software'?",
-
-      "back": "Tax preparation software is an application that guides individuals, families, or small businesses through the process of filing federal and state taxes.",
-
+      "front": "What is DRM in the context of programs and apps?",
+      "back": "Digital rights management (DRM) for programs and apps defines restrictions regarding their use, modification, and distribution.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "Acquire Programs and Apps Responsibly"
     },
-
     {
-
-      "front": "What is 'document management software'?",
-
-      "back": "Document management software is an application that provides a means for sharing, distributing, and searching for documents by converting them into a format that can be viewed by any user.",
-
+      "front": "Explain what shareware is.",
+      "back": "Shareware is copyrighted and distributed at no cost for a trial period. Payment is to be made to use shareware beyond that period unless you cancel within a specified period.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "Acquire Programs and Apps Responsibly"
     },
-
     {
-
-      "front": "What is 'multimedia software'?",
-
-      "back": "Multimedia software includes applications that allow users to create and edit sophisticated documents containing text, graphics, audio, and video.",
-
+      "front": "What is freeware?",
+      "back": "Freeware is copyrighted and provided at no cost by an individual or a company that retains all rights.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "Acquire Programs and Apps Responsibly"
     },
-
     {
-
-      "front": "What is 'desktop publishing (DTP) software'?",
-
-      "back": "Desktop publishing (DTP) software is an application that enables designers to create sophisticated publications that contain text, graphics, and many colors.",
-
+      "front": "How do open-source programs and apps differ from others?",
+      "back": "Open-source programs and apps have no restrictions from the copyright holder regarding modification and redistribution; users can add functionality and sell or give away their versions to others.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "Acquire Programs and Apps Responsibly"
     },
-
     {
-
-      "front": "What is 'image editing software'?",
-
-      "back": "Image editing software is an application that provides capabilities of paint software and also includes the capability to enhance and modify existing photos and images.",
-
+      "front": "What are public domain programs and apps?",
+      "back": "Public domain programs and apps have been donated for public use and have no copyright restrictions.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'photo editing software'?",
-
-      "back": "Photo editing software is a type of image editing software that allows users to edit and enhance digital photographs.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'video editing software'?",
-
-      "back": "Video editing software is an application that allows professionals to modify a segment of a video, called a clip, to create a finished video.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'audio editing software'?",
-
-      "back": "Audio editing software is an application that allows users to modify audio clips, including sound effects, music, and voice narrations.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'media player'?",
-
-      "back": "A media player is a program that allows you to view images and animations, listen to audio, and watch video files on your computer or mobile device.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'disc burning software'?",
-
-      "back": "Disc burning software is an application that writes content to a blank optical disc.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'communications software'?",
-
-      "back": "Communications software is a program or app that allows users to communicate with others via email, messaging, chat, video conferencing, and other methods.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'web browser'?",
-
-      "back": "A web browser is software that enables users to access and view webpages.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'email (electronic mail)'?",
-
-      "back": "Email (electronic mail) is the transmission of messages and files via a computer network.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'messaging apps'?",
-
-      "back": "Messaging apps are applications that enable instant real-time text-based communication over the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'chat rooms'?",
-
-      "back": "Chat rooms are websites or applications that allow users to communicate in real-time by typing messages.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is an 'online discussion forum (message board)'?",
-
-      "back": "An online discussion forum (or message board) is an online area in which users have written discussions about a particular subject.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'VoIP (Voice over IP)'?",
-
-      "back": "VoIP (Voice over IP) is a technology that allows users to make voice calls over a broadband Internet connection instead of a regular phone line.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'FTP (File Transfer Protocol)'?",
-
-      "back": "FTP (File Transfer Protocol) is an Internet standard that permits users to upload and download files to and from other computers on the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'web conferencing software'?",
-
-      "back": "Web conferencing software allows users to conduct live meetings or presentations over the Internet, often including features like screen sharing, chat, and webcam feeds.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'viruses'?",
-
-      "back": "Viruses are malicious programs that attach to other programs or files and spread by modifying other computer programs, often without the user's knowledge or permission.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'worms'?",
-
-      "back": "Worms are malicious programs that replicate themselves over a computer network without user intervention, consuming network bandwidth.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'Trojan horses'?",
-
-      "back": "Trojan horses are malicious programs that appear to be harmless but contain hidden malicious code, often performing unwanted actions after being installed.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'rootkits'?",
-
-      "back": "Rootkits are malicious programs that hide their presence and activities on a computer, often by modifying operating system processes, making them difficult to detect.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What are 'spyware' and 'adware'?",
-
-      "back": "Spyware is software that secretly collects information about you, often without your knowledge. Adware is software that automatically displays or downloads unwanted advertisements when you are online.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'ransomware'?",
-
-      "back": "Ransomware is malicious software that blocks access to your system or data and demands payment to restore access.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'anti-malware software'?",
-
-      "back": "Anti-malware software is a program that attempts to protect your computer from malware.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'firewall'?",
-
-      "back": "A firewall is hardware or software that protects a network’s resources from intrusion by users on another network, such as the Internet.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'search tool'?",
-
-      "back": "A search tool is a program that attempts to locate a file, contact, calendar event, app, or any other item stored on your computer or mobile device.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'file manager'?",
-
-      "back": "A file manager is a utility that performs functions related to file management, such as displaying a list of files on a storage medium; organizing files in folders; and copying, renaming, deleting, moving, and sorting files.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'compress/decompress utility'?",
-
-      "back": "A compress utility shrinks the size of a file, and a decompress utility restores a compressed file to its original size.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'PC maintenance tools'?",
-
-      "back": "PC maintenance tools are programs that identify and fix operating system problems, detect and repair disk problems, and improve a computer's performance.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'backup utility'?",
-
-      "back": "A backup utility allows users to copy files to another storage medium for safekeeping.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'restore utility'?",
-
-      "back": "A restore utility reverses the backup process, retrieving files from a backup storage medium and restoring them to their original location or a new one.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'augmented reality (AR)'?",
-
-      "back": "Augmented reality (AR) is a type of virtual reality that superimposes computer-generated images on a user's view of the real world, thus providing a composite view.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'virtual reality (VR)'?",
-
-      "back": "Virtual reality (VR) is the use of computer technology to create a simulated environment that can be explored and interacted with, often by wearing a headset.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is 'artificial intelligence (AI)'?",
-
-      "back": "Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'crash' and 'troubleshooting'?",
-
-      "back": "A crash occurs when a program or app stops functioning correctly. Troubleshooting refers to the steps taken to identify and solve a problem, such as a crash.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
-    },
-
-    {
-
-      "front": "What is a 'patch finder' and 'restorer'?",
-
-      "back": "Patch finders compare software versions to identify missing updates. Restorers allow you to revert your system to a previous state in case of issues.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Applications and Security"
-
+      "term": "T2",
+      "topic": "Acquire Programs and Apps Responsibly"
     }
-
   ],
-
-  "Computer Security": [
-
+  "MODULE 9: OPERATING SYSTEMS: MANAGING, COORDINATING, AND MONITORING RESOURCES": [
     {
-
-      "front": "What is a 'cybercrime'?",
-
-      "back": "A cybercrime is an illegal act perpetrated against computers, computer networks, or computer-related devices.",
-
+      "front": "What is system software?",
+      "back": "System software is the software that runs a computer, including the operating system.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "Differentiate between a 'hacker', 'cracker', and 'script kiddie'.",
-
-      "back": "A hacker is someone who accesses a computer or network illegally. A cracker is someone who accesses a computer or network illegally with the intent of destroying data, stealing information, or other malicious action. A script kiddie is a cracker who has limited technical skills and uses prewritten hacking programs.",
-
+      "front": "Define an Operating System (OS).",
+      "back": "An Operating System (OS) is a set of programs that coordinate all the activities of computer or mobile device hardware. The operating system and utility programs control the behind-the-scenes operations of a computer or mobile device. Some operating systems also allow users to control a network and administer security.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'cyberextortionist'?",
-
-      "back": "A cyberextortionist is someone who demands payment to stop an attack on an organization’s technology infrastructure.",
-
+      "front": "What are the common functions of an operating system?",
+      "back": "Common operating system functions include starting and shutting down, graphical user interface, file management, Internet connection, configuring settings, updating the system, providing security, and managing memory.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'cyberterrorist'?",
-
-      "back": "A cyberterrorist is someone who uses the Internet or network to destroy or damage computers for political reasons.",
-
+      "front": "How does an OS assist in starting a word processing program and opening a document?",
+      "back": "The OS starts the word processing program and provides tools to open the document file.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'rogue Wi-Fi hotspot'?",
-
-      "back": "A rogue Wi-Fi hotspot is a wireless network that appears legitimate but is actually set up by an attacker to eavesdrop on wireless communications.",
-
+      "front": "What is the OS's role when adding information to a document?",
+      "back": "The OS manages memory so the computer can run and saves unsaved work to temporary storage.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'zero-day attack'?",
-
-      "back": "A zero-day attack is an attack that occurs before the vendor of the software can release a patch to fix the vulnerability.",
-
+      "front": "How does an OS help save a document on the hard drive?",
+      "back": "The OS finds the hard drive, ensures enough storage space is available, saves the document, and stores its location and file name for future access.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'botnet'?",
-
-      "back": "A botnet is a group of compromised computers or mobile devices connected to a network, such as the Internet, that are controlled by a hacker or other cybercriminal.",
-
+      "front": "What is a Graphical User Interface (GUI)?",
+      "back": "A Graphical User Interface (GUI) is a collective term for all the ways you interact with a device. A GUI controls how you interact with menus, programs, apps, and visual images like icons by touching, pointing, tapping, or clicking buttons and other objects to issue commands.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'Denial of Service (DoS) attack'?",
-
-      "back": "A Denial of Service (DoS) attack disrupts computer access to an Internet service, such as a website or email.",
-
+      "front": "What is an icon in a GUI?",
+      "back": "An icon is a small picture that represents a program, file, or hardware device.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'Distributed Denial of Service (DDoS) attack'?",
-
-      "back": "A Distributed Denial of Service (DDoS) attack is a more powerful form of DoS attack where multiple compromised computers attack a single target.",
-
+      "front": "What is a button in a GUI?",
+      "back": "A button is a graphic that you click to execute commands you need to work with an app, such as on a toolbar, taskbar, or the ribbon.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is 'spoofing' in cyberattacks?",
-
-      "back": "Spoofing is a technique where an intruder attempts to gain unauthorized access to a computer or network by making it appear that the message came from a trusted source. This can include email spoofing (changing sender address) or IP spoofing (making data packets appear from a legitimate IP address).",
-
+      "front": "What is a menu in an operating system?",
+      "back": "A menu is a list of related items, including folders, applications, and commands. Many menus organize commands on a submenu, which is a list of additional commands associated with the selected command on a menu.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "How do 'firewalls' protect networks?",
-
-      "back": "A firewall is hardware or software that protects a network’s resources from intrusion by users on another network, such as the Internet, by examining incoming and outgoing network traffic.",
-
+      "front": "What is a shortcut menu?",
+      "back": "A shortcut menu is a list of frequently used commands that relate to an object.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is 'intrusion detection software'?",
-
-      "back": "Intrusion detection software analyzes network traffic, assesses system vulnerabilities, and identifies intrusions and suspicious behavior.",
-
+      "front": "What is a dialog box?",
+      "back": "A dialog box is a box with controls that lets you tell the operating system how you want to complete a command.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is a 'honeypot' in network security?",
-
-      "back": "A honeypot is a decoy server or system designed to attract and trap cyberattackers, allowing security professionals to study their tactics and improve defenses.",
-
+      "front": "What are option buttons in a dialog box?",
+      "back": "Option buttons are round buttons that present one choice; they are also called radio buttons.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is 'access control' and what does 'authentication' involve?",
-
-      "back": "Access control is a security measure that limits who can view or use data and programs. Authentication verifies an individual's identity, often through a user name and password or passphrase, and can be enhanced with two-step verification or biometric devices.",
-
+      "front": "What are check boxes in a dialog box?",
+      "back": "Check boxes are square boxes that present a yes/no choice and display a check mark or x when selected.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What are 'biometric devices'?",
-
-      "back": "Biometric devices authenticate a person's identity by verifying a personal characteristic, such as a fingerprint, face, or iris pattern.",
-
+      "front": "What are list boxes in a dialog box?",
+      "back": "List boxes are lists of options that appear when you click arrows in a dialog box; some list boxes allow you to make multiple selections.",
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
+      "term": "T2",
+      "topic": "Operating System Functions"
     },
-
     {
-
-      "front": "What is 'digital forensics'?",
-
+      "front": "List the standard operating system functions.",
+      "back": "Standard operating system functions include: Starting and shutting down a computer or device, managing programs, managing memory, coordinating tasks, configuring devices, establishing an Internet connection, monitoring performance, providing file management, updating operating system software, monitoring security, and controlling network access.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is the essential software on your computer or device?",
+      "back": "The operating system is the essential software or app on your computer or device. It also manages interactions between hardware and software.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is RAM and its significance?",
+      "back": "RAM is the storage location that temporarily stores open apps and document data while a computer or device is on. The more RAM a device has, the more efficiently it runs.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is virtual memory and paging?",
+      "back": "The operating system can allocate a portion of a storage medium, such as a hard disk, to become virtual memory to function as additional RAM. Virtual memory allows an operating system to temporarily store data on a storage medium until it can be 'swapped' into RAM. The technique of swapping items between memory and storage is called paging.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is input in the context of an operating system?",
+      "back": "Input is any data and instructions entered into the memory of a device. Input data and instructions can be provided in many ways, including interacting with your touch screen or using a keyboard.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is a buffer in an operating system?",
+      "back": "A buffer is an area of memory that stores data and information waiting to be sent to an input or output device.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is spooling?",
+      "back": "Placing data into a buffer is called spooling.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "Differentiate between a single-tasking and a multitasking operating system.",
+      "back": "A single-tasking operating system allows only one program or app to run at a time. A multitasking operating system allows two or more programs or apps to reside in memory at the same time.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is the difference between foreground and background programs?",
+      "back": "The program in the foreground is the active program, which is the one you are currently using. The other programs running but not in use are in the background. The foreground program is typically displayed on the screen, and the background programs are hidden partially or completely behind the foreground program.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What is a multiuser operating system?",
+      "back": "A multiuser operating system enables two or more users to run programs simultaneously.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Operating System Functions"
+    },
+    {
+      "front": "What are the three basic categories of operating systems?",
+      "back": "The three basic categories of operating systems on computers and mobile devices are desktop, server, and mobile.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What are multipurpose operating systems?",
+      "back": "Operating systems, such as UNIX and Linux, that function as both desktop and server operating systems are sometimes called multipurpose operating systems.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What is a personal computer (PC) operating system also known as?",
+      "back": "An operating system installed on a single computer is called a personal computer (PC) operating system or a desktop operating system. Desktop operating systems are also sometimes called stand-alone operating systems or client operating systems.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "Name some widely used desktop operating systems.",
+      "back": "Examples of widely used desktop operating systems include Windows, macOS, UNIX, Linux, and Chrome OS.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What are some notable features of Microsoft Windows as a desktop OS?",
+      "back": "Microsoft Windows supports the Cortana virtual assistant, touchscreen input, HoloLens headsets, and built-in apps such as the Microsoft Edge browser. It also includes Microsoft OneDrive and the Windows store for app purchases.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What are some notable features of macOS as a desktop OS?",
+      "back": "macOS includes the Siri virtual assistant, coordination with Apple mobile devices, cloud file storage (iCloud), and the Mac App Store for app purchases.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What are the characteristics of UNIX as an operating system?",
+      "back": "UNIX is a multitasking operating system with many versions, as its code is licensed to different developers. It functions as both a desktop and server operating system.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What is distinctive about Linux?",
+      "back": "Linux is distributed under the terms of a General Public License (GPL), which allows you to copy the OS for your own use, to give to others, or to sell. It functions as both a desktop and server operating system.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    },
+    {
+      "front": "What is Chrome OS based on and what are its primary features?",
+      "back": "Chrome OS is based on Linux, uses the Google Chrome browser as its user interface, and primarily runs web apps.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Types of Operating Systems"
+    }
+  ],
+  "MODULE 10: DIGITAL SECURITY, ETHICS, AND PRIVACY: AVOIDING AND RECOGNIZING THREATS": [
+    {
+      "front": "What is a risk in the context of technology use?",
+      "back": "A risk is any possibility that something might occur resulting in an injury or a loss.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Risks Associated with Technology Use"
+    },
+    {
+      "front": "Define a digital security risk.",
+      "back": "A digital security risk is any event or action that could cause a loss of or damage to computer or mobile device hardware, software, data, information, or processing capability.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Risks Associated with Technology Use"
+    },
+    {
+      "front": "What types of threats are included in digital security risks?",
+      "back": "Types of digital security risks include threats to our information, physical health, mental health, and the environment.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Risks Associated with Technology Use"
+    },
+    {
+      "front": "Who are state-sponsored attackers?",
+      "back": "State-sponsored attackers are employed by the government to launch computer attacks against their enemies through nation-state actors.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is cyberwarfare?",
+      "back": "Cyberwarfare describes an attack whose goal ranges from disabling a government's computer network to crippling a country.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is data mining in the context of cybercrime?",
+      "back": "Data mining is the process of sifting through Big Data to find the important questions that will yield fruitful results, often used by attackers to steal sensitive information like credit card numbers or Social Security numbers.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is a cyber extortionist?",
+      "back": "A cyber extortionist is an individual who threatens to expose confidential information, exploit a security flaw, or launch an attack that will compromise the organization's network.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is social engineering?",
+      "back": "Social engineering is a category of attack that attempts to trick the victim into giving valuable information to the attacker.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "Give examples of social engineering.",
+      "back": "Examples of social engineering include hoaxes and phishing.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is the difference between computer crime and cybercrime?",
+      "back": "A computer crime is any illegal act involving the use of a computer or related devices. Cybercrime specifically refers to online or Internet-based illegal acts, such as distributing malicious software or committing identity theft.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is crimeware?",
+      "back": "Crimeware is software used by cybercriminals.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
+    },
+    {
+      "front": "What is cybersecurity?",
+      "back": "Cybersecurity is the practice of protection against digital threats, including unauthorized or illegal access to data.",
+      "course": "CS110",
+      "term": "T2",
+      "topic": "Cybersecurity and Digital Forensics"
+    },
+    {
+      "front": "What is digital forensics (or cyber forensics)?",
       "back": "Digital forensics is the discovery, collection, and analysis of evidence found on computers and networks.",
-
       "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What are 'intellectual property rights'?",
-
-      "back": "Intellectual property rights are the legal rights granted to creators and owners of works, allowing them to control the use and distribution of their creations.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "Explain 'fair use' in copyright law.",
-
-      "back": "Fair use is a doctrine in copyright law that permits limited use of copyrighted material without permission from the rights holder, for purposes such as criticism, comment, news reporting, teaching, scholarship, or research.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is the 'Digital Millennium Copyright Act (DMCA)'?",
-
-      "back": "The Digital Millennium Copyright Act (DMCA) is a U.S. copyright law that criminalizes production and dissemination of technology, devices, or services intended to circumvent measures that control access to copyrighted works.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is 'green computing'?",
-
-      "back": "Green computing involves practices and technologies designed to reduce the environmental impact of computing, focusing on minimizing power usage, promoting recycling, and decreasing the energy consumption of data centers.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is 'ENERGY STAR'?",
-
-      "back": "ENERGY STAR is an international standard for energy-efficient consumer products originating in the United States, indicating that a product meets certain energy-saving criteria.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "How can you secure a 'wireless access point (WAP)'?",
-
-      "back": "To secure a wireless access point, you should change the default administrator password, turn off SSID broadcast, use a strong passphrase or encryption, and consider disabling Wi-Fi Protected Setup (WPS).",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is an 'electronic profile'?",
-
-      "back": "An electronic profile is data and information that you provide to websites and businesses, which can be used to build a profile about you.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "Differentiate between a 'session cookie' and a 'persistent cookie'.",
-
-      "back": "A session cookie is temporary and remains active only during your current Browse session. A persistent cookie is stored on your device and remains for a specified period or until you manually delete it, allowing websites to remember your preferences for future visits.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is 'social engineering' in security?",
-
-      "back": "Social engineering is the practice of manipulating people into performing actions or divulging confidential information, often by exploiting trust and common human behavior.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is 'employee monitoring'?",
-
-      "back": "Employee monitoring is the use of computers, digital devices, or networks to observe, record, and review an employee's use of a computer, including communications and websites visited.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What are 'privacy laws' in the digital age?",
-
-      "back": "Privacy laws are regulations designed to protect individuals' personal information and control how it is collected, stored, and used by organizations.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "Explain 'encryption' and its components (plaintext, ciphertext, encryption key).",
-
-      "back": "Encryption is the process of converting data into an unreadable form (ciphertext) to prevent unauthorized access. Plaintext is the original readable data. The encryption key is a set of characters that encrypts and decrypts the data.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "Differentiate between 'public key encryption' and 'private key encryption'.",
-
-      "back": "In public key encryption, a public key is used to encrypt data, and a corresponding private key (known only to the recipient) is used to decrypt it. In private key (or symmetric) encryption, the same key is used for both encryption and decryption.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is a 'digital signature'?",
-
-      "back": "A digital signature is an encrypted code that a person, website, or organization attaches to an electronic message to verify the identity of the sender.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is a 'digital certificate'?",
-
-      "back": "A digital certificate is a notice that guarantees a user or website is legitimate. It is issued by a certificate authority.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "Name and describe different types of 'backups'.",
-
-      "back": "Types of backups include: full backup (all files), differential backup (only files changed since last full backup), incremental backup (only files changed since last full or incremental backup), and selective backup (user chooses specific files).",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What are the risks associated with 'wireless data loss'?",
-
-      "back": "Wireless data loss can occur due to signal interference, range limitations, security vulnerabilities (e.g., unauthorized access to unsecured networks), or device theft/loss.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is a 'disaster recovery plan' for organizations?",
-
-      "back": "A disaster recovery plan is a written plan that describes the steps an organization would take to restore its computer operations in the event of a disaster, ensuring business continuity.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    },
-
-    {
-
-      "front": "What is 'digital inclusion'?",
-
-      "back": "Digital inclusion is the movement to ensure that all users, regardless of economic or geographic constraints, have access to the devices, data, and infrastructure required to receive high-speed, accurate, reliable information.",
-
-      "course": "CS110",
-
-      "term": "T3",
-
-      "topic": "Computer Security"
-
-    }
-
-  ],
-
-  
-  
-  
-  
-  //programing 
-  
-  "Introduction to Programming": [
-    {
-      "front": "What is 'Computer Programming'?",
-      "back": "The process of designing and writing instructions that a computer can execute to perform specific tasks. These instructions are known as code, written using programming languages.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybersecurity and Digital Forensics"
     },
     {
-      "front": "What is a 'Programming Language'?",
-      "back": "A formal language used to communicate instructions to a computer. It provides a structured way to write code that tells the computer what to do, consisting of rules (syntax) and keywords. Examples: Python, Java, C++, JavaScript.",
+      "front": "What qualities should a digital forensics examiner possess?",
+      "back": "A digital forensics examiner must have knowledge of the law, technical experience with many types of hardware and software products, superior communication skills, familiarity with corporate structures and policies, a willingness to learn and update skills, and a knack for problem-solving.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybersecurity and Digital Forensics"
     },
     {
-      "front": "What is 'Machine Language'?",
-      "back": "The most primitive computer instructions, represented by long strings of ones and zeroes.",
+      "front": "What is a digital detox?",
+      "back": "A digital detox is a period of time during which an individual refrains from using technology.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Risks Associated with Technology Use"
     },
     {
-      "front": "What are 'Assemblers'?",
-      "back": "Tools invented to map machine instructions to human-readable and -manageable mnemonics (e.g., ADD, MOV).",
+      "front": "What is a threat actor?",
+      "back": "A threat actor is a general and common term used to describe individuals who launch attacks against other users and their computers.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "Differentiate between an 'Interpreter' and a 'Compiler'.",
-      "back": "An Interpreter translates a program as it reads it, turning instructions directly into actions (easy for programmers). A Compiler translates code into an intermediary form (object file) in a step called compiling, then uses a linker to create an executable program (compiled programs run fast, executable can be distributed). C++ is a compiled language.",
+      "front": "What is the dark web?",
+      "back": "The dark web is a part of the web that is accessed using specialized software, where users and website operators can remain anonymous while performing illegal actions.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "What are the two main uses of the term 'Program' in computing?",
-      "back": "1. Individual instructions or source code created by the programmer. 2. An entire piece of executable software.",
+      "front": "Who are script kiddies?",
+      "back": "Script kiddies are individuals who want to attack computers.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "What is 'Source Code'?",
-      "back": "The human-readable form of program instructions, which cannot be executed directly until compiled or interpreted.",
+      "front": "Differentiate between a hacker and a cracker.",
+      "back": "A hacker is a person who intends to access a computer system without permission. A cracker is someone who accesses a computer or network illegally but has the intent of destroying data, stealing information, or other malicious action.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "Why is 'Program Design' important for complex problems?",
-      "back": "Thorough program design before writing code is crucial for solving problems on time and budget, and for creating relatively bug-free and easy-to-maintain programs. Debugging and maintenance account for an estimated 90% of software cost.",
+      "front": "Who are hacktivists?",
+      "back": "Hacktivists are attackers who are strongly motivated by principles or beliefs.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "What is an 'Integrated Development Environment (IDE)'?",
-      "back": "A software application that provides a comprehensive interface for writing, compiling, debugging, and executing programs. It combines tools like a code editor, compiler/interpreter, debugger, and often a GUI builder. Examples: Code::blocks, Visual Studio Code.",
+      "front": "What do cyberterrorists do?",
+      "back": "Cyberterrorists attack a nation's computer networks, like the electrical power grid, to cause disruption and panic among citizens.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Cybercrimes and Criminals"
     },
     {
-      "front": "What are 'Source Files'?",
-      "back": "Files created with an editor containing the human-readable program instructions (e.g., .CPP, .CP, or .C for C++).",
+      "front": "List the social engineering principles.",
+      "back": "Social engineering principles include Authority, Intimidation, Consensus, Scarcity, Urgency, Familiarity, and Trust.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Social Engineering Principles"
     },
     {
-      "front": "Describe the typical 'Development Cycle' for a program.",
-      "back": "Write program -> compile source code -> link program -> run it. Errors (bugs) often occur, requiring editing source code, recompiling, relinking, and rerunning.",
+      "front": "What are ethics in general?",
+      "back": "Ethics are the standards that determine whether an action is good or bad.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Ethics and Society"
     },
     {
-      "front": "What is 'Debugging'?",
-      "back": "The process of finding and fixing errors or 'bugs' in a program.",
+      "front": "Define technology ethics.",
+      "back": "Technology ethics are the moral guidelines that govern the use of computers, mobile devices, information systems, and related technologies.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Ethics and Society"
     },
     {
-      "front": "What are 'Compile-time Errors'?",
-      "back": "Errors typically resulting from typos or minor syntax errors that compilers identify, often pointing to the exact place of the mistake.",
+      "front": "What are some frequently discussed areas of computer ethics?",
+      "back": "Frequently discussed areas of computer ethics include information accuracy, intellectual property rights, and green computing.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Ethics and Society"
     },
     {
-      "front": "What is the traditional 'Hello World' program's purpose?",
-      "back": "A traditional first program in many programming books, demonstrating the basic development cycle of entering, compiling, and running a simple program.",
+      "front": "Why is information accuracy a concern today?",
+      "back": "Information accuracy is a concern today because many users access information maintained by other people or companies, such as on the Internet. Also, with graphics equipment and software, users can easily digitize photos and then add, change, or remove images.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Information Accuracy"
     },
     {
-      "front": "List some core components of a C++ Program.",
-      "back": "C++ programs consist of objects, functions, variables, and other component parts.",
+      "front": "What are intellectual property rights?",
+      "back": "Intellectual property rights are the rights to which creators are entitled to their work.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Intellectual Property Rights"
     },
     {
-      "front": "What is the purpose of the 'Preprocessor' in C++?",
-      "back": "Runs before the compiler, reading source code for lines beginning with `#` (pound symbol) and acting on them before compilation. For example, `#include` includes a specified file.",
+      "front": "What is Creative Commons?",
+      "back": "Creative Commons is a nonprofit organization that helps content creators keep the copyright to their materials while allowing others to use, copy, or distribute their work.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Intellectual Property Rights"
     },
     {
-      "front": "What is the significance of the `#include <iostream.h>` directive?",
-      "back": "It includes the `iostream.h` file, which contains definitions for standard input/output operations, used by `cout` for writing to the screen.",
+      "front": "What is piracy in the context of intellectual property?",
+      "back": "Piracy is a common infringement of copyright, where people illegally copy software, movies, and music.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Intellectual Property Rights"
     },
     {
-      "front": "What is the 'main()' function in C++?",
-      "back": "Every C++ program must have a `main()` function. It is the starting point of program execution and is called automatically.",
+      "front": "What is green computing?",
+      "back": "Green computing involves reducing electricity and environmental waste while using computers, mobile devices, and related technologies.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Green Computing"
     },
     {
-      "front": "What is a 'Function' in C++?",
-      "back": "A block of code that performs one or more actions. Functions begin with an opening brace (`{`) and end with a closing brace (`}`).",
+      "front": "Why do information transmitted over networks have higher security risks?",
+      "back": "Information transmitted over networks has a higher degree of security risk than information kept on an organization’s premises because these types of attacks can affect privacy, personal information, finances, and more.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Internet and Network Attacks"
     },
     {
-      "front": "What is the 'cout' object used for?",
-      "back": "Used to print messages and values to the screen.",
+      "front": "What is malware?",
+      "back": "Malware is short for malicious software which consists of programs that act without a user’s knowledge and deliberately alter the operations of computers and mobile devices.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Internet and Network Attacks"
     },
     {
-      "front": "What is the 'Output Redirection Operator' (`<<`) in C++?",
-      "back": "Used with `cout` to send data to the screen.",
+      "front": "How does malware deliver its payload?",
+      "back": "Malware can deliver its payload, or destructive event or prank, on a computer or mobile device in a variety of ways, commonly through users opening infected email attachments.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Internet and Network Attacks"
     },
     {
-      "front": "What is a 'Text String' in C++?",
-      "back": "A series of printable characters, enclosed in double quotes (`\"`) when used with `cout` (e.g., \"Hello World\").",
+      "front": "What is adware?",
+      "back": "Adware is a program that displays an online advertisement in a banner, pop-up window, or pop-under window on web pages, email messages, or other Internet services.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "What is the purpose of `\\n` and `endl` in C++ output?",
-      "back": "`\\n` (newline character) and `endl` (manipulator) both tell `cout` to move the cursor to a new line after printing.",
+      "front": "What is ransomware?",
+      "back": "Ransomware is a program that blocks or limits access to a computer, phone, or file until the user pays a specified amount of money.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "What does `return 0;` signify in the `main()` function?",
-      "back": "main() typically returns 0 to the operating system upon successful completion of the program, indicating that the program ran without errors.",
+      "front": "What is a rootkit?",
+      "back": "A rootkit is a program that hides in a computer or mobile device and allows someone from a remote location to take full control of the computer or device.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "What are 'Comments' in programming and why are they important?",
-      "back": "Text ignored by the compiler but used to inform the reader about the code. They explain *why* something is happening, not just *what*, improving readability and maintainability.",
+      "front": "What is spyware?",
+      "back": "Spyware is a program placed on a computer or mobile device without the user’s knowledge that secretly collects information about the user and then communicates the information it collects to some outside source while the user is online.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "Differentiate between C++-style (`//`) and C-style (`/* ... */`) comments.",
-      "back": "C++-style (`//`) comments ignore everything after `//` until the end of the line. C-style (`/* ... */`) comments ignore everything between `/*` and `*/`, allowing for multi-line comments.",
+      "front": "What is a Trojan horse?",
+      "back": "A Trojan horse is a program that hides within or looks like a legitimate program. Unlike a virus or worm, a Trojan horse does not replicate itself to other computers or devices.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "Is C++ case-sensitive?",
-      "back": "Yes, C++ is case-sensitive, meaning `age`, `Age`, and `AGE` are considered different.",
+      "front": "What is a computer virus?",
+      "back": "A virus is a potentially damaging program that affects, or infects, a computer or mobile device negatively by altering the way the computer or device works without the user’s knowledge or permission.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     },
     {
-      "front": "What are common 'Variable Naming Conventions' in C++?",
-      "back": "Many programmers use all lowercase (e.g., `age`); for two words, `my_car` (snake_case) or `myCar` (camelCase) are common.",
+      "front": "What is a worm?",
+      "back": "A worm is a program that copies itself repeatedly, for example, in memory or on a network, using up resources and possibly shutting down the computer, device, or network.",
       "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What are 'Keywords' in C++?",
-      "back": "Words reserved by C++ (e.g., `if`, `while`, `for`, `main`) that have special meaning and cannot be used as variable names.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "How do you perform 'Variable Declaration' and 'Initialization' in C++?",
-      "back": "Declaration defines a variable's type and name (e.g., `unsigned short Width;`). Initialization assigns a value to a variable when it is defined (e.g., `unsigned short Width = 5;`).",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What is the 'Assignment Operator' (`=`) in C++?",
-      "back": "Used to assign a value to a variable (e.g., `Width = 5;`).",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What is the purpose of the 'const' keyword?",
-      "back": "Used to declare symbolic constants whose values cannot be changed while the program is running.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What are 'Statements' in C++?",
-      "back": "Commands in C++ that control execution sequence, evaluate expressions, or do nothing. All C++ statements end with a semicolon `;`.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What is an 'Assignment Statement'?",
-      "back": "A statement that assigns the value of the right side of the `=` operator to the variable on the left side (e.g., `x = a + b;`).",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What is a 'Null Statement'?",
-      "back": "A statement that does nothing, represented only by a semicolon `;`.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What is the role of 'Whitespace' in C++?",
-      "back": "Tabs, spaces, and newlines that are generally ignored by the compiler in statements but are used to improve code readability and organization.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "What are 'Blocks' or 'Compound Statements'?",
-      "back": "A group of statements enclosed by curly braces `{}` that acts as a single statement, often used with control structures like `if` statements.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "Explain the 'Increment' (`++`) and 'Decrement' (`--`) Operators.",
-      "back": "Special operators to increase (`++`) or decrease (`--`) a variable's value by 1. They have prefix (`++myAge`) and postfix (`myAge++`) varieties, differing in when the operation is applied in complex expressions.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "How does the 'if' statement work in C++?",
-      "back": "The `if` statement enables branching of code based on a condition. If the `expression` in parentheses is 0 (false), the statement is skipped; if non-zero (true), the statement is executed. Blocks can be used for multiple actions.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
-    },
-    {
-      "front": "Why is 'Nesting Parentheses' important in C++ expressions?",
-      "back": "Used for complex expressions to control the order of operations, ensuring that calculations are performed in the intended sequence.",
-      "course": "CS110",
-      "term": "T3",
-      "topic": "Introduction to Programming"
+      "term": "T2",
+      "topic": "Types of Malware"
     }
   ],
-  
- 
-
-//bi110 term 1
-
- "MICROSCOPY & STAINING": [
-
+  "MODULE 11: INTRODUCTION TO PROGRAMMING": [
     {
-
-      "front": "What was the contribution of Zaccharias and Hans Janssen to microscopy?",
-
-      "back": "They are credited with discovering the first simple microscope by experimenting with lenses in a tube in the late 16th century, laying the groundwork for compound microscopes.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Their work with lenses in a tube was a foundational step in the development of optical instruments for magnification."
-
+      "front": "What is computer programming?",
+      "back": "Computer programming is the process of designing and writing instructions that a computer can execute to perform specific tasks. These instructions are known as code.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
     },
-
     {
-
-      "front": "How do a simple light microscope and a compound light microscope differ?",
-
-      "back": "A simple light microscope uses a single lens and offers low magnification. A compound light microscope uses multiple lenses (an objective lens and an eyepiece) in combination to achieve much higher magnification.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The combination of lenses in a compound microscope allows for sequential magnification, greatly increasing the total magnification possible."
-
+      "front": "What is a programming language?",
+      "back": "A programming language is a formal language used to communicate instructions to a computer. It provides a structured way for programmers to write code that tells the computer what to do.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
     },
-
     {
-
-      "front": "Describe the principle of a light microscope, focusing on how lenses bend light and the concept of refraction.",
-
-      "back": "A light microscope works on the principle of refraction, where light rays from an illuminator pass through lenses. These lenses bend (refract) the light, causing it to converge to a focal point, thereby magnifying the image of the specimen.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Refraction is the bending of light as it passes from one medium to another (e.g., from air to glass in a lens), which is the basis for image formation and magnification."
-
+      "front": "What do programming languages consist of?",
+      "back": "Programming languages consist of a set of rules (syntax) and keywords that define how programs are written and interpreted.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
     },
-
     {
-
-      "front": "Define 'focal point' and 'focal length' in microscopy. How does focal length relate to lens strength?",
-
-      "back": "The 'focal point' is the point where parallel light rays converge after passing through a lens. 'Focal length' is the distance from the center of the lens to its focal point. A shorter focal length indicates a stronger lens and thus higher magnification.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Lenses with shorter focal lengths bring light to a sharper, closer focus, resulting in greater enlargement of the image."
-
+      "front": "Name some examples of programming languages.",
+      "back": "Examples of programming languages include Python, Java, C++, and JavaScript.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
     },
-
     {
-
-      "front": "What is the Abbe equation, and what does it help calculate in microscopy?",
-
-      "back": "The Abbe equation (d = 0.5λ / NA) relates the minimum resolvable distance (d) to the wavelength of light (λ) and the numerical aperture (NA) of the lens. It helps calculate the theoretical limit of resolution for a microscope.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "This equation is fundamental to understanding the resolving power of a microscope – its ability to distinguish two closely spaced objects as separate."
-
+      "front": "What were the most primitive computer instructions used by early programmers?",
+      "back": "Early on, programmers worked with machine language, represented by long strings of ones and zeroes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "History of C++"
     },
-
     {
-
-      "front": "List four modern types of light microscopes.",
-
-      "back": "Phase Contrast Light Microscope, Dark-Field Light Microscope, Confocal Scanning Laser Microscope (CSLM), and Differential Interference Contrast (DIC) Microscope.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "These advanced light microscopy techniques offer different ways to enhance contrast and visualize specific features, often without staining, or to create 3D images."
-
+      "front": "What was the purpose of assemblers?",
+      "back": "Assemblers were invented to map machine instructions to human-readable and -manageable mnemonics, such as ADD and MOV.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "History of C++"
     },
-
     {
-
-      "front": "Identify and briefly describe three major parts of a bright-field microscope.",
-
-      "back": "Three major parts include: the **illuminator** (light source), the **condenser** (focuses light onto the specimen), the **stage** (where the specimen slide is placed), **objective lenses** (magnify the specimen), and the **eyepiece/ocular lens** (magnifies the image from the objectives). (Any three are acceptable)",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Each component plays a crucial role in directing light, magnifying the image, and allowing for specimen manipulation."
-
+      "front": "Differentiate between an interpreter and a compiler.",
+      "back": "An interpreter translates a program as it reads it, turning the program instructions, or code, directly into actions. A compiler translates the code into an intermediary form (compiling) which produces an object file, and then invokes a linker to turn it into an executable program.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interpreters and Compilers"
     },
-
     {
-
-      "front": "Explain how an aperture diaphragm controls contrast in a bright-field microscope.",
-
-      "back": "The aperture diaphragm controls the amount of light passing through the specimen. Closing it down increases contrast by reducing scattered light, but can also reduce resolution. Opening it increases resolution but lowers contrast.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Balancing contrast and resolution by adjusting the aperture diaphragm is a key skill in bright-field microscopy."
-
+      "front": "What is an advantage of using interpreters?",
+      "back": "Interpreters are easy for the programmer to work with because they read and execute code on the spot.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interpreters and Compilers"
     },
-
     {
-
-      "front": "State two applications of the Bright Field Light Microscope.",
-
-      "back": "Two applications include viewing stained plant and animal cell organelles and observing the morphology and arrangement of stained bacterial cells.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Its simplicity and ability to view stained samples make it widely used in educational and clinical settings."
-
+      "front": "What is an advantage of using compilers?",
+      "back": "Compilers produce a program that is very fast each time it is run because the time-consuming task of translating source code into machine language has already been accomplished. Also, compiled languages like C++ allow distribution of executable programs without requiring the compiler.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interpreters and Compilers"
     },
-
     {
-
-      "front": "What unique characteristic of the Phase Contrast Microscope allows it to view unstained cells, and why is this significant?",
-
-      "back": "It converts subtle differences in the refractive index and thickness within unstained cells (phase shifts) into observable differences in brightness and contrast. This is significant because it allows observation of living, unstained cells and their internal structures without killing or distorting them with stains.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Being able to observe living processes in real-time is a major advantage of phase contrast microscopy."
-
+      "front": "How is the word 'program' used in programming?",
+      "back": "The word 'program' is used in two ways: to describe individual instructions or source code created by the programmer, and to describe an entire piece of executable software.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Programs and Source Code"
     },
-
     {
-
-      "front": "List at least five parts that make up the Phase Contrast Microscope's instrumentation.",
-
-      "back": "Five parts include: Light Source, Condenser with Annular Ring, Specimen Stage, Objective Lens with Phase Plate, Eyepiece, Focus Knobs, Mechanical Stage.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The annular ring and phase plate are the key components that differentiate it from a standard bright-field microscope."
-
+      "front": "What is a 'bug' in programming?",
+      "back": "A 'bug' is an error in a program.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Development Cycle"
     },
-
     {
-
-      "front": "Describe the appearance of a specimen and its surrounding field when viewed under a Dark-Field Light Microscope.",
-
-      "back": "Under a Dark-Field Light Microscope, the specimen appears brightly illuminated (often white or light-colored) against a completely dark or black background. This occurs because only scattered light from the specimen enters the objective lens.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "This technique is particularly useful for visualizing unstained, transparent, or very thin specimens, such as spirochetes."
-
+      "front": "What is the estimated percentage of software cost attributed to debugging and maintenance?",
+      "back": "It has been estimated that fully 90 percent of the cost of software is the combined cost of debugging and maintenance.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Program Design"
     },
-
     {
-
-      "front": "How does Confocal Scanning Laser Microscopy (CSLM) reconstruct a complete image?",
-
-      "back": "CSLM uses a laser to scan the specimen point by point and line by line. Emitted fluorescent light from each scanned point is detected, and a computer then reconstructs these signals into a sharp, clear image, often in 3D, by assembling images from different focal planes.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The scanning and computational reconstruction allow CSLM to create optical sections, eliminating out-of-focus blur and enabling 3D rendering."
-
+      "front": "What is the first question to ask when designing any program?",
+      "back": "The first question to ask is, 'What is the problem I'm trying to solve?' Every program should have a clear, well-articulated goal.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Program Design"
     },
-
     {
-
-      "front": "Explain the role of the polariser and objective-specific prism in the working mechanism of Differential Interference Contrast (DIC) microscopy.",
-
-      "back": "The polariser generates linearly polarized light. This light then passes through a prism (often a Nomarski prism or Wollaston prism) that splits it into two distinct, linearly polarized rays that vibrate perpendicular to each other.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "These polarized light rays are then used to detect small differences in refractive index and thickness within the specimen."
-
+      "front": "What is the second question every good programmer asks regarding problem solving?",
+      "back": "The second question every good programmer asks is, 'Can this be accomplished without resorting to writing custom software?' Reusing old programs, using pen and paper, or buying off-the-shelf software are often better solutions.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Problem Solving"
     },
-
     {
-
-      "front": "What happens when the two split beams combine in DIC microscopy after passing through the specimen and a second prism?",
-
-      "back": "After passing through the specimen (where phase shifts occur due to variations in refractive index and thickness) and a second prism, the two split beams recombine. The interference between these two beams generates an image with differences in intensity and color, creating a pseudo-3D or 'shadow-cast' effect.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The pseudo-3D effect of DIC provides excellent visualization of surface details and intracellular organelles in unstained, living specimens."
-
+      "front": "What is an Integrated Development Environment (IDE)?",
+      "back": "An Integrated Development Environment (IDE) is a software application that provides a comprehensive interface for writing, compiling, and executing programs. It combines essential programming tools like a code editor, compiler/interpreter, and debugger into a single platform.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Development Environment (IDE)"
     },
-
     {
-
-      "front": "How does a Fluorescent Microscope differ from other light microscopes in terms of how the image is produced?",
-
-      "back": "Unlike brightfield or phase contrast microscopes that use transmitted light, a fluorescent microscope illuminates the specimen with specific wavelengths of light. This causes fluorescent molecules (fluorochromes) within the specimen to absorb the light and then re-emit it at a longer wavelength, which is then captured to form the image.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Fluorescence microscopy allows for specific labeling and visualization of molecules, structures, or processes within cells."
-
+      "front": "What are source files in C++ typically named with?",
+      "back": "For C++, source files typically are named with the extension .CPP, .CP, or .C. In this course, .CPP is used.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Development Environment (IDE)"
     },
-
     {
-
-      "front": "Briefly explain the function of the barrier filter in a fluorescent microscope.",
-
-      "back": "The barrier filter (or emission filter) is placed after the specimen and the objective lens. Its function is to block the excitation light (which would otherwise overwhelm the image) and only allow the longer-wavelength fluorescent light emitted by the specimen to pass through to the eyepiece or detector.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "This filter ensures that only the emitted light from the fluorochromes is seen, resulting in a clear fluorescent image against a dark background."
-
+      "front": "What is the primary function of a compiler in the development cycle?",
+      "back": "The compiler's primary function is to turn your human-readable source code into an executable program.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Compiling Source Code"
     },
-
     {
-
-      "front": "Name two applications of the Fluorescent Microscope.",
-
-      "back": "Two applications include detecting specific molecules or structures within cells using fluorescent labels (e.g., immunofluorescence to detect antigens/antibodies) and visualizing living cells tagged with fluorescent proteins.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Immunofluorescence is a powerful technique for localizing proteins and other molecules in cells and tissues."
-
+      "front": "What is the typical complete development cycle for a program?",
+      "back": "The complete development cycle involves writing the program, compiling the source code, linking the program, and running it.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Development Cycle"
     },
-
     {
-
-      "front": "What are two fundamental differences between electron microscopy and light microscopy, particularly concerning resolution and specimen use?",
-
-      "back": "Electron microscopy uses electron beams for imaging, offering significantly higher resolution and magnification than light microscopy due to the shorter wavelength of electrons. However, electron microscopy requires specimens to be dead and prepared in a vacuum, whereas light microscopy can often image living specimens.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The trade-off for higher resolution in EM is the inability to view living samples and the complex sample preparation."
-
+      "front": "What is the purpose of comments in programming?",
+      "back": "Comments are notes to yourself and other programmers, used to explain what the program does, how it works, the author's name, revision history, and other relevant information.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Program Comments"
     },
-
     {
-
-      "front": "Differentiate between Transmission Electron Microscope (TEM) and Scanning Electron Microscope (SEM) based on their basic function.",
-
-      "back": "TEM (Transmission Electron Microscope) is used to observe the internal structures of very thin specimens, as electrons pass *through* the sample. SEM (Scanning Electron Microscope) is used to visualize the detailed surface topography of specimens by scanning an electron beam *across* the surface and detecting secondary electrons.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "TEM provides 2D internal views, while SEM provides 3D surface views."
-
+      "front": "What is a variable?",
+      "back": "A variable is a named storage location in memory used to hold data that can change during the program's execution.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "How do you define a variable in C++?",
+      "back": "You define a variable by stating its type, followed by one or more spaces, followed by the variable name and a semicolon (e.g., `int myAge;`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "What are 'good' variable names?",
+      "back": "Good variable names tell you what the variables are for, making it easier to understand the flow of your program. Avoid cryptic names and restrict single-letter names to variables used very briefly.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "What is an unsigned integer?",
+      "back": "An unsigned integer is a type that holds only positive numbers.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "What happens when an unsigned integer 'wraps around'?",
+      "back": "When an unsigned integer's value exceeds its maximum capacity, it 'wraps around' to 0 (e.g., if max is 65,535 and it's incremented, it becomes 0).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "What is a signed integer?",
+      "back": "A signed integer is different from an unsigned integer in that half of the values it can represent are negative.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Variables and Data Types"
+    },
+    {
+      "front": "What is a symbolic constant declared with `const`?",
+      "back": "A symbolic constant declared with `const` is a value that cannot be changed after its initial definition. This method provides type enforcement by the compiler, aiding in code maintenance and bug prevention.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Constants"
+    },
+    {
+      "front": "What is an expression in programming?",
+      "back": "An expression is any statement that evaluates to a value.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Expressions and Operators"
+    },
+    {
+      "front": "What is the purpose of the `if` statement?",
+      "back": "The `if` statement enables you to test for a condition (e.g., whether two variables are equal) and branch to different parts of your code depending on the result.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Control Structures (If Statement)"
+    },
+    {
+      "front": "When is the statement within an `if` condition executed?",
+      "back": "If the expression in the parentheses of an `if` statement has a nonzero value, it is considered true, and the statement is executed. If it has the value 0, it is considered false, and the statement is skipped.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Control Structures (If Statement)"
+    },
+    {
+      "front": "What does nesting parentheses allow for in complex expressions?",
+      "back": "Nesting parentheses allows for the precise control of the order of operations in complex expressions, ensuring certain computations are performed before others.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Expressions and Operators"
     }
-
   ],
-
-  "CELL STRUCTURE & FUNCTIONS": [
-
+	
+	
+	
+	
+	//{
+  "MODULE 5: COMPUTER STORAGE": [
     {
-
-      "front": "What is the cell theory and what are its three main postulates?",
-
-      "back": "The cell theory states that the cell is the basic structural and functional unit of all known living organisms, all living organisms are composed of one or more cells, and all cells arise from pre-existing cells by division.",
-
-      "course": "BI110",
-
+      "front": "What are the key objectives of Module 5: Computer Storage?",
+      "back": "By the end of the module, you should be able to: Differentiate between storage and memory; Identify storage hardware types; Discuss cloud computing concepts; Evaluate cloud storage options; Explain how to secure your cloud data; Identify enterprise and other storage options; Explain how memory relates to storage; and Identify risks for the Internet of Things.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "This foundational theory in biology explains the fundamental unit of life and its origin."
-
+      "topic": "Module Objectives"
     },
-
     {
-
-      "front": "Name the scientists involved in the discovery and formulation of the cell theory.",
-
-      "back": "Theodor Schwann and Matthias Schleiden are credited with formulating the initial cell theory, stating that all plants and animals are made of cells. Rudolf Virchow later added the postulate that all cells arise from pre-existing cells.",
-
-      "course": "BI110",
-
+      "front": "How do computers and devices use storage and memory?",
+      "back": "Computers and devices use both storage and memory to access and save data and information.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Their collective contributions established the core principles of cell biology."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "Differentiate between prokaryotic and eukaryotic cells, providing at least three key differences.",
-
-      "back": "Prokaryotic cells lack a true nucleus and membrane-bound organelles, typically have a circular DNA in the cytoplasm, and are generally smaller. Eukaryotic cells have a true nucleus, membrane-bound organelles, linear DNA within the nucleus, and are generally larger.",
-
-      "course": "BI110",
-
+      "front": "What does memory consist of?",
+      "back": "Memory consists of electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These differences represent major evolutionary divergences and impact cellular complexity and function."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the primary function of the cell wall in plant cells and bacteria?",
-
-      "back": "The cell wall is a non-living and outermost covering of a cell in plants and bacteria. Its primary function is to provide structural support, protection, and prevent excessive water uptake.",
-
-      "course": "BI110",
-
+      "front": "What does storage refer to?",
+      "back": "Storage refers to long-term, permanent access to data and information.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The rigidity of the cell wall is essential for maintaining cell shape and preventing lysis in hypotonic environments."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "Describe the structure and main function of the Endoplasmic Reticulum (ER).",
-
-      "back": "The Endoplasmic Reticulum (ER) is a network of tubular and vesicular structures interconnected with one another. Rough ER (with ribosomes) is involved in protein synthesis and modification, while Smooth ER (without ribosomes) is involved in lipid synthesis, detoxification, and calcium storage.",
-
-      "course": "BI110",
-
+      "front": "Is a storage medium volatile or nonvolatile? How does it compare to most memory (RAM)?",
+      "back": "A storage medium is nonvolatile. Most memory (i.e., RAM), by contrast, holds data and instructions temporarily, thus it is volatile.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The ER is a central hub for the synthesis, folding, modification, and transport of proteins and lipids."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the 'powerhouse of the cell' and why is it given this name? Include a brief description of its structure.",
-
-      "back": "The Mitochondria are known as the 'powerhouse of the cell' because they are responsible for generating most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy, through cellular respiration. They are small, rod-shaped organelles bounded by two membranes – an outer and a highly folded inner membrane (cristae).",
-
-      "course": "BI110",
-
+      "front": "What is a storage medium also called, and what is its purpose?",
+      "back": "A storage medium, also called secondary storage, is the location where a computer keeps data, information, programs, and applications.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The extensive folding of the inner mitochondrial membrane (cristae) increases its surface area, maximizing ATP production."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "Explain the function of ribosomes in a cell.",
-
-      "back": "Ribosomes are small, granular structures primarily responsible for protein synthesis (translation), where they read messenger RNA (mRNA) sequences and build proteins by linking amino acids together.",
-
-      "course": "BI110",
-
+      "front": "What are some examples of storage media?",
+      "back": "Examples of storage media include digital storage (cloud), and storage hardware, such as hard disks, solid-state drives (internal or external), memory cards, USB flash drives, optical discs, and tags.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Ribosomes are essential for translating genetic information from RNA into functional proteins."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the primary role of the Golgi apparatus (or Golgi complex)?",
-
-      "back": "The Golgi apparatus is involved in modifying, sorting, and packaging proteins and lipids synthesized in the ER for secretion or delivery to other organelles.",
-
-      "course": "BI110",
-
+      "front": "Where does cloud storage keep information?",
+      "back": "Cloud storage keeps information on servers on the Internet.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The Golgi acts like a cellular 'post office,' directing molecules to their correct destinations."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the main role of the plasma membrane?",
-
-      "back": "The plasma membrane is a selectively permeable barrier that regulates the passage of substances into and out of the cell, and plays a role in cell communication and adhesion.",
-
-      "course": "BI110",
-
+      "front": "What is a storage device?",
+      "back": "A storage device is the hardware that records and/or retrieves items to and from storage media.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Its selective permeability is crucial for maintaining the cell's internal environment and communicating with its surroundings."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "Why are lysosomes considered the 'suicide bags' of the cell?",
-
-      "back": "Lysosomes contain powerful digestive enzymes capable of breaking down waste materials, cellular debris, and foreign invaders. If these enzymes are released into the cytoplasm, they can digest the cell itself, hence their nickname 'suicide bags'.",
-
-      "course": "BI110",
-
+      "front": "What is the process of 'writing' in terms of storage?",
+      "back": "Writing is the process of transferring data, instructions, and information from memory to a storage medium.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Lysosomes are vital for cellular waste disposal and recycling, but their contents must be carefully contained."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "Describe the function of the vacuole in plant cells.",
-
-      "back": "In plant cells, the large central vacuole maintains turgor pressure against the cell wall, providing structural support. It also stores water, nutrients, and waste products.",
-
-      "course": "BI110",
-
+      "front": "What is the process of 'reading' in terms of storage?",
+      "back": "Reading is the process of transferring these items from a storage medium into memory.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The vacuole's role in turgor pressure is critical for maintaining plant rigidity and upright growth."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the function of chloroplasts and in which type of cells are they primarily found?",
-
-      "back": "Chloroplasts are organelles responsible for photosynthesis, the process by which light energy is converted into chemical energy (food). They are primarily found in plant cells and algal cells.",
-
-      "course": "BI110",
-
+      "front": "What does 'capacity' refer to in storage?",
+      "back": "Capacity is the number of bytes (characters) a storage medium can hold.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Chloroplasts are unique to photosynthetic organisms and contain the pigments (like chlorophyll) necessary for light absorption."
-
+      "topic": "Storage and Memory Uses"
     },
-
     {
-
-      "front": "What is the main difference in DNA organization between prokaryotic and eukaryotic cells?",
-
-      "back": "In prokaryotic cells, DNA is typically a single, circular chromosome located in a region called the nucleoid in the cytoplasm. In eukaryotic cells, DNA is linear, organized into multiple chromosomes, and enclosed within a membrane-bound nucleus.",
-
-      "course": "BI110",
-
+      "front": "How many bytes are in a Gigabyte (GB) and a Terabyte (TB)?",
+      "back": "A gigabyte (GB) equals approximately 1 billion bytes. A terabyte (TB) is equal to approximately 1 trillion bytes.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "This difference in DNA organization reflects the varying complexities of prokaryotic and eukaryotic cellular structures."
-
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Kilobyte (KB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 thousand bytes; Exact: 2^10 or 1,024 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Megabyte (MB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 million bytes; Exact: 2^20 or 1,048,576 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Gigabyte (GB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 billion bytes; Exact: 2^30 or 1,073,741,824 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Terabyte (TB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 trillion bytes; Exact: 2^40 or 1,099,511,627,776 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Petabyte (PB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 quadrillion bytes; Exact: 2^50 or 1,125,899,906,842,624 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Exabyte (EB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 quintillion bytes; Exact: 2^60 or 1,152,921,504,606,846,976 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Zettabyte (ZB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 sextillion bytes; Exact: 2^70 or 1,180,591,620,717,411,303,424 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "Define Yottabyte (YB) in terms of approximate and exact bytes.",
+      "back": "Approximate: 1 septillion bytes; Exact: 2^80 or 1,208,925,819,614,629,174,706,176 bytes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Units"
+    },
+    {
+      "front": "How is the speed of storage devices and memory defined?",
+      "back": "The speed of storage devices and memory is defined by access time.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Speed"
+    },
+    {
+      "front": "What does 'access time' measure?",
+      "back": "Access time measures: 1. The amount of time it takes for a storage device to locate an item on a storage medium. 2. The time required to deliver an item from memory to the processor.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Speed"
+    },
+    {
+      "front": "What is 'transfer rate'?",
+      "back": "Transfer rate is the speed with which data, instructions, and information transfer to and from a device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Speed"
+    },
+    {
+      "front": "How are transfer rates for storage stated?",
+      "back": "Transfer rates for storage are stated in KBps, MBps, and GBps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage and Memory Speed"
+    },
+    {
+      "front": "What is the most common storage medium?",
+      "back": "The most common storage medium is the internal hard drive.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Drives"
+    },
+    {
+      "front": "How can hard drives store data?",
+      "back": "Hard drives can store data either magnetically or using solid-state storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Drives"
+    },
+    {
+      "front": "Can files stored on an internal hard drive be accessed on other devices?",
+      "back": "No, the files stored on the internal hard drive cannot be accessed on other devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Drives"
+    },
+    {
+      "front": "How do Magnetic hard disk drives (HDDs) compare to solid-state equivalents in terms of storage capacity and cost?",
+      "back": "Magnetic hard disk drives (HDDs) have greater storage capacity and are less expensive than their solid-state equivalents.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Drives"
+    },
+    {
+      "front": "What does the term 'hard drive' refer to collectively?",
+      "back": "The term, 'hard drive', refers collectively to hard disks and SSDs.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Drives"
+    },
+    {
+      "front": "What is a hard disk (HDD)?",
+      "back": "A hard disk, or hard disk drive (HDD), is a storage device that contains one or more inflexible, circular platters that use magnetic particles to store data, instructions, and information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What factors determine the storage capacity of hard disks?",
+      "back": "The storage capacity of hard disks is determined by: the number of platters that the hard disk contains; the composition of the magnetic coating on the platters; whether it uses longitudinal or perpendicular recording; and its density.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is a platter made of and what is its function?",
+      "back": "A platter is made of aluminum, glass, or ceramic and has a thin coating of alloy material that allows items to be recorded magnetically on its surface.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is longitudinal recording?",
+      "back": "Longitudinal recording aligns the magnetic particles horizontally around the surface of the disk.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is perpendicular recording?",
+      "back": "With perpendicular recording, hard disks align the magnetic particles vertically or perpendicular to the disk's surface.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is 'density' in the context of a storage medium and how does it relate to storage capacity?",
+      "back": "Density is the number of bits in an area on a storage medium. A higher density means more storage capacity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is 'formatting' in relation to a disk?",
+      "back": "Formatting is the process of dividing the disk into tracks and sectors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is a 'track' on a magnetic hard disk platter?",
+      "back": "A track is one of the series of concentric circles on one of the surfaces of a magnetic hard disk platter.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What are 'sectors'?",
+      "back": "The disk’s storage locations consist of wedge-shaped sections, which break the tracks into small arcs called sectors. A sector is an individual block of data or a segment of a track.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What forms a 'cluster'?",
+      "back": "Several sectors form a cluster.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "How many read/write heads does a typical hard disk have per platter?",
+      "back": "Each platter has two read/write heads, one for each side.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is a 'read/write head'?",
+      "back": "A read/write head is the mechanism that reads items and writes items to the drive.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is the function of a hard disk head actuator?",
+      "back": "A hard disk head actuator connects to arms that move the read/write heads to the correct location on the platter.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "How does a hard disk operate while the computer is running?",
+      "back": "While the computer is running, the platters in the hard disk rotate at a high rate of speed. This spinning allows nearly instant access to all tracks and sectors on the platters.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What prevents direct contact between the read/write head and the platter surface?",
+      "back": "The spinning motion creates a cushion of air between the platter and its read/write head. This cushion ensures that the read/write head floats above the platter instead of making direct contact with the platter surface.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Hard Disks"
+    },
+    {
+      "front": "What is an external hard drive?",
+      "back": "An external hard drive is a separate, free-standing storage device that connects with a cable to a USB port or other port on any device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: External Hard Drives"
+    },
+    {
+      "front": "What is an SSD?",
+      "back": "An SSD (solid-state drive) is a flash memory storage device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: SSDs"
+    },
+    {
+      "front": "What is flash memory?",
+      "back": "Flash memory is a type of nonvolatile memory that can be erased electronically and rewritten.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: SSDs"
+    },
+    {
+      "front": "What are flash memory chips classified as and what does it mean?",
+      "back": "Flash memory chips are a type of solid-state media, which means they consist entirely electronic components and contain no moving parts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: SSDs"
+    },
+    {
+      "front": "What is a memory card?",
+      "back": "A memory card is a removable flash memory storage device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Portable Flash Memory"
+    },
+    {
+      "front": "What is the purpose of memory cards?",
+      "back": "Memory cards enable mobile users to easily transport digital photos, music, videos, or other files to and from mobile devices and computers or other devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Portable Flash Memory"
+    },
+    {
+      "front": "What is a USB flash drive?",
+      "back": "A USB flash drive (universal serial bus) is a removable storage device for folders and files that plug in a USB port on a computer, making it easy to transport folders and files to other computers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Portable Flash Memory"
+    },
+    {
+      "front": "What do optical media include, and what is their current usage trend?",
+      "back": "Optical media include CDs, DVDs, and Blu-ray discs (BDs), but their use as storage media is declining.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Optical Media"
+    },
+    {
+      "front": "What is an optical disc?",
+      "back": "An optical disc is a type of storage medium that consists of a flat, round, portable disc made of metal, plastic, and lacquer that is written and read by a laser.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Optical Media"
+    },
+    {
+      "front": "What are the typical uses for CD optical disc formats (CD-ROM, CD-R, CD-RW)?",
+      "back": "Audio, photo.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Optical Media"
+    },
+    {
+      "front": "What are the typical uses for DVD optical disc formats (DVD-ROM, DVD-R, DVD+R, DVD-RW, DVD+RW, DVD+RAM)?",
+      "back": "Video.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Optical Media"
+    },
+    {
+      "front": "What is the typical use for Blu-ray disc format?",
+      "back": "Video (higher capacity disc than DVD).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Hardware: Optical Media"
+    },
+    {
+      "front": "Why do home and business users choose cloud computing?",
+      "back": "Home and business users choose cloud computing for accessibility, cost saving, space saving, and scalability.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "What does cloud computing consist of?",
+      "back": "Cloud computing consists of a front end and a back end, connected to each other through a network.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "What does the 'front end' of cloud computing include?",
+      "back": "The front end includes the hardware and software with which a user interacts to access the cloud.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "What does the 'back end' of cloud computing consist of?",
+      "back": "The back end consists of the servers and storage devices that manage and store the resources accessed by users.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "How does cloud computing benefit companies?",
+      "back": "Cloud computing allows companies to outsource, or contract to third party providers, elements of their information technology infrastructure.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "What services do cloud storage providers enable users to do?",
+      "back": "Cloud storage providers enable you to synchronize files, write documents, backup files on your computer or mobile device, share project work, stream music, post photos, and play games online.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "In addition to SaaS, what other cloud computing services do consumers and organizations rely on?",
+      "back": "Consumers and organizations rely on cloud computing services to manage: Infrastructure as a service (IaaS), Storage as service (STaaS), Desktop as a service, and Data as a service (DaaS).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Computing Services"
     }
-
   ],
-
-  "CELL DIVISION": [
-
+	//{
+  "MODULE 4: DATA REPRESENTATION ": [
     {
-
-      "front": "Define cell division and name its two main forms.",
-
-      "back": "Cell division is the process by which a parent cell divides into two or more daughter cells. Its two main forms are mitosis and meiosis.",
-
-      "course": "BI110",
-
+      "front": "How is data input represented in a digital computer?",
+      "back": "Since a digital computer can only understand 0 and 1, the data input, which can be in the form of alphabets, digits, symbols, audio, video, magnetic cards, fingerprints, etc., must be represented in the computer using 0s and 1s.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Cell division is fundamental for growth, repair, and reproduction in all living organisms."
-
+      "topic": "Data Representation Basics"
     },
-
     {
-
-      "front": "What is the main purpose of mitosis?",
-
-      "back": "The main purpose of mitosis is to produce two daughter cells that are genetically identical to the parent cell. This process is crucial for growth, tissue repair, and asexual reproduction in multi-cellular organisms, maintaining the diploid (or haploid) chromosome number.",
-
-      "course": "BI110",
-
+      "front": "Why is it important to study number systems in the context of computers?",
+      "back": "Data in a computer is stored using a number system, making it important to study the number systems used in computers.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Mitosis ensures that new cells have the same genetic information as the original cell."
-
+      "topic": "Data Representation Basics"
     },
-
     {
-
-      "front": "Briefly describe the key events of Interphase, the stage preceding mitosis.",
-
-      "back": "Interphase is divided into three sub-phases: G1 (cell grows and synthesizes proteins), S phase (DNA replication occurs, duplicating chromosomes), and G2 (cell continues to grow and prepares for division, synthesizing necessary proteins). Chromosomes are uncoiled during Interphase.",
-
-      "course": "BI110",
-
+      "front": "What are the four number systems discussed in this module?",
+      "back": "The four number systems are: Decimal number system, Binary number system, Octal number system, and Hexadecimal number system.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Interphase is a period of intense cellular activity and growth, preparing the cell for successful division."
-
+      "topic": "Number Systems Overview"
     },
-
     {
-
-      "front": "List the four main phases of mitosis in order.",
-
-      "back": "The four main phases of mitosis are: Prophase, Metaphase, Anaphase, and Telophase.",
-
-      "course": "BI110",
-
+      "front": "What is a number system?",
+      "back": "A number system is a writing system for expressing numbers, essentially a mathematical notation for representing numbers of a given set.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These phases represent a continuous process of chromosome condensation, alignment, separation, and decondensation, culminating in cell division."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "What happens during Prophase of mitosis?",
-
-      "back": "During Prophase, the chromosomes condense and become visible, the nuclear membrane begins to disintegrate, and the spindle fibers (part of the mitotic spindle apparatus) start to form.",
-
-      "course": "BI110",
-
+      "front": "How does a number system in base 'r' work?",
+      "back": "A number system in base 'r' uses unique symbols for 'r' digits, and one or more digits are combined to form a number.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Prophase sets the stage for chromosome segregation by preparing the chromosomes and the cellular machinery."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "Describe the key event that characterizes Metaphase in mitosis.",
-
-      "back": "Metaphase is characterized by the alignment of all condensed chromosomes along the metaphase plate (or equatorial plane) in the center of the cell, equidistant from the two poles of the spindle.",
-
-      "course": "BI110",
-
+      "front": "How is the position of a digit determined in a number system?",
+      "back": "The position of a digit starts from the right-hand side of the number. The rightmost digit has position 0, the next digit on its left has position 1, and so on.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "This precise alignment is critical to ensure that each daughter cell receives a complete set of chromosomes."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "What critical event occurs during Anaphase of mitosis that leads to chromosome separation?",
-
-      "back": "During Anaphase, the sister chromatids of each chromosome separate at the centromere and are pulled apart by the shortening spindle fibers towards opposite poles of the cell. This effectively doubles the chromosome number temporarily.",
-
-      "course": "BI110",
-
+      "front": "What are the two kinds of values digits of a number have?",
+      "back": "Face value and Position value.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The separation of sister chromatids ensures that each new cell receives a full complement of single chromosomes."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "What are the main events of Telophase and Cytokinesis?",
-
-      "back": "In Telophase, the separated chromosomes arrive at the poles and begin to uncoil. New nuclear membranes form around the two sets of chromosomes, and the spindle apparatus disassembles. Cytokinesis, the division of the cytoplasm, typically overlaps with Telophase, resulting in two distinct daughter cells.",
-
-      "course": "BI110",
-
+      "front": "Define the 'face value' of a digit.",
+      "back": "The face value of a digit is the digit located at that position. For example, in the decimal number 52, the face value at position 0 is 2, and the face value at position 1 is 5.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Telophase reverses the events of prophase, and cytokinesis physically separates the two nascent cells."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "How does meiosis differ from mitosis in terms of the number of daughter cells produced and their ploidy?",
-
-      "back": "Mitosis produces two diploid (2N) daughter cells that are genetically identical to the parent cell. Meiosis, on the other hand, produces four haploid (N) daughter cells that are genetically distinct from the parent cell, primarily for sexual reproduction.",
-
-      "course": "BI110",
-
+      "front": "Define the 'position value' of a digit.",
+      "back": "The position value of a digit is (base^position). For example, in the decimal number 52, the position value of digit 2 is 10^0 and the position value of digit 5 is 10^1.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Meiosis reduces the chromosome number by half and introduces genetic variation, both essential for sexual reproduction."
-
+      "topic": "Number Systems Concepts"
     },
-
     {
-
-      "front": "What is the significance of cell cycle checkpoints?",
-
-      "back": "Cell cycle checkpoints are control mechanisms that monitor the progression of the cell cycle at various stages (e.g., G1, G2, M) to ensure that critical events like DNA replication and chromosome segregation occur accurately and completely. They prevent errors that could lead to mutations, abnormal cell growth, or cancer.",
-
-      "course": "BI110",
-
+      "front": "How is a number calculated using face and position values?",
+      "back": "The number is calculated as the sum of (face value * base^position) for each of the digits. For example, for decimal number 52, the number is 5 * 10^1 + 2 * 10^0 = 50 + 2 = 52.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These checkpoints are crucial for maintaining genomic integrity and preventing uncontrolled cell proliferation."
-
+      "topic": "Number Systems Concepts"
+    },
+    {
+      "front": "How is a number in a particular base typically written?",
+      "back": "A number in a particular base is written as (number)base. For example, (23)₁₀ means the number 23 is a decimal number, and (345)₈ shows that 345 is an octal number.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Number Systems Notation"
+    },
+    {
+      "front": "What digits comprise the Decimal Number System?",
+      "back": "It consists of 10 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal Number System"
+    },
+    {
+      "front": "What is the base of the Decimal Number System?",
+      "back": "Base 10.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal Number System"
+    },
+    {
+      "front": "What digits comprise the Octal Number System?",
+      "back": "The octal number system consists of eight digits: 0 to 7.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Octal Number System"
+    },
+    {
+      "front": "What is the base of the Octal Number System?",
+      "back": "Base 8.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Octal Number System"
+    },
+    {
+      "front": "What digits comprise the Hexadecimal Number System?",
+      "back": "The hexadecimal number system consists of sixteen digits: 0 to 9, A, B, C, D, E, F, where A is for 10, B is for 11, C for 12, D for 13, E for 14, and F for 15.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hexadecimal Number System"
+    },
+    {
+      "front": "What is the base of the Hexadecimal Number System?",
+      "back": "Base 16.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hexadecimal Number System"
+    },
+    {
+      "front": "How are decimal numbers structured for conversion purposes?",
+      "back": "A decimal number has two parts: an integer part and a fraction part. For example, in 23.078, 23 is the integer part and 0.078 is the fraction part.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal Conversion"
+    },
+    {
+      "front": "How do you convert the integer part of a decimal number to another base (e.g., Binary, Octal, Hexadecimal)?",
+      "back": "1. Divide the number by the 'to Base'.\n2. After each division, write the remainder on the right-side column and the quotient in the next line in the middle column.\n3. Continue dividing until the quotient is 0.\n4. Write the digits in the remainder column starting from downwards to upwards.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal to Other Base Conversion"
+    },
+    {
+      "front": "How do you convert a decimal fraction to another base (binary, octal, or hexadecimal)?",
+      "back": "1. Multiply the fractional number by the 'to Base' to get a resulting number.\n2. The resulting number has a non-fractional part and a fractional part.\n3. Record the non-fractional part of the resulting number.\n4. Repeat the above steps at least four times.\n5. Write the digits in the non-fractional part starting from upwards to downwards.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal Fraction Conversion"
+    },
+    {
+      "front": "What are the steps to convert a decimal number with both an integer and fractional part to another base?",
+      "back": "1. Convert the decimal integer part to the desired base.\n2. Convert the decimal fraction part to the desired base.\n3. Combine the integer and fraction parts in the desired base.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Decimal Conversion"
+    },
+    {
+      "front": "What method is used to convert the integer and fractional parts of binary, octal, or hexadecimal numbers to decimal?",
+      "back": "Multiplication operation is used for the conversion.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Other Base to Decimal Conversion"
+    },
+    {
+      "front": "What is the general rule for converting numbers from binary, octal, or hexadecimal to decimal?",
+      "back": "Find the sum of the Face Value * (from Base)^position for each digit in the number.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Other Base to Decimal Conversion"
+    },
+    {
+      "front": "How are positions assigned to digits in a non-fractional number when converting to decimal?",
+      "back": "In a non-fractional number, the rightmost digit has position 0, and the position increases as you go towards the left.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Positioning in Conversion"
+    },
+    {
+      "front": "How are positions assigned to digits in a fractional number when converting to decimal?",
+      "back": "In a fractional number, the first digit to the left of the decimal point has position 0, and the position increases as you go towards the left. The first digit to the right of the decimal point has position –1, and it decreases as you go towards the right (–2, –3, etc.).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Positioning in Conversion"
+    },
+    {
+      "front": "What is the shortcut method for converting binary numbers to octal or hexadecimal?",
+      "back": "The shortcut method is based on the fact that an octal digit (0-7) can be represented as a combination of 3 bits (since 2^3 = 8), and a hexadecimal digit (0-15) can be represented as a combination of 4 bits (since 2^4 = 16).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Binary to Octal/Hexadecimal Conversion"
     }
-
   ],
-
-  "MACROMOLECULES": [
-
+	
+//	{
+  "MODULE 3 INPUT AND OUTPUT: ENTERING DATA AND PRODUCING INFORMATION": [
     {
-
-      "front": "Name the four major classes of biological macromolecules essential for life.",
-
-      "back": "The four major classes of biological macromolecules are carbohydrates, lipids, proteins, and nucleic acids.",
-
-      "course": "BI110",
-
+      "front": "What are the key objectives of Module 3: Input and Output?",
+      "back": "By the end of this module, you should be able to: Differentiate between input and output; Identify manual input devices; Identify digital input devices; Identify physical output methods; Identify digital output methods; Identify uses of various assistive technology input and output methods; Explain how to customize and manage input and output devices; and Identify e-waste risks and strategies.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These four classes comprise the fundamental building blocks and functional molecules of all living organisms."
-
+      "topic": "Module Objectives"
     },
-
     {
-
-      "front": "What are the building blocks (monomers) of carbohydrates, and what is their primary function?",
-
-      "back": "The building blocks of carbohydrates are monosaccharides (simple sugars). Their primary function is to serve as a readily available energy source for cells.",
-
-      "course": "BI110",
-
+      "front": "What is data?",
+      "back": "Data is a collection of unprocessed items, including text, numbers, images, audio, and video.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Monosaccharides like glucose are direct fuel for cellular respiration."
-
+      "topic": "Input/Output Basics"
     },
-
     {
-
-      "front": "What distinguishes lipids from other macromolecules, and what are their main functions?",
-
-      "back": "Lipids are largely nonpolar and hydrophobic, meaning they do not dissolve in water. Their main functions include long-term energy storage, forming cell membranes (phospholipids), and acting as hormones.",
-
-      "course": "BI110",
-
+      "front": "What is a command?",
+      "back": "A command is an instruction that causes a program or app to perform a specific action.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Their insolubility in water is key to their roles in energy storage and membrane structure."
-
+      "topic": "Input/Output Basics"
     },
-
     {
-
-      "front": "What are the monomers of proteins, and what is their most diverse function?",
-
-      "back": "The monomers of proteins are amino acids. Proteins have the most diverse functions among macromolecules, including catalyzing biochemical reactions (enzymes), structural support, transport, defense, and cell signaling.",
-
-      "course": "BI110",
-
+      "front": "What is a user response?",
+      "back": "A user response is an instruction a user issues by responding to a message displayed by a program or app.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "The sequence and folding of amino acids determine a protein's specific 3D structure and, thus, its diverse functions."
-
+      "topic": "Input/Output Basics"
     },
-
     {
-
-      "front": "What are the building blocks of nucleic acids, and what are the two main types?",
-
-      "back": "The building blocks of nucleic acids are nucleotides. The two main types are Deoxyribonucleic Acid (DNA) and Ribonucleic Acid (RNA).",
-
-      "course": "BI110",
-
+      "front": "What are the four basic types of output?",
+      "back": "The four basic types of output are Text (text messages, email messages, memos, books, etc.), Graphics (photos, clip art, charts, GIFs, etc.), Audio (sporting events, radio, audio clips, news, music, etc.), and Video (movies, weather conditions, live performances, etc.).",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Nucleotides consist of a sugar, a phosphate group, and a nitrogenous base, which are linked to form the polynucleotide chains of DNA and RNA."
-
+      "topic": "Input/Output Basics"
     },
-
     {
-
-      "front": "What is the primary function of DNA?",
-
-      "back": "The primary function of DNA is to store and transmit genetic information. It carries the instructions for the development, functioning, growth, and reproduction of all known organisms.",
-
-      "course": "BI110",
-
+      "front": "What is a manual input device?",
+      "back": "A manual input device is one in which you enter data directly into the device.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "DNA's double helix structure provides a stable and reliable way to store hereditary information."
-
+      "topic": "Manual Input"
     },
-
     {
-
-      "front": "What are the key roles of RNA?",
-
-      "back": "RNA has several key roles, including carrying genetic information from DNA to ribosomes (mRNA), forming part of ribosomes (rRNA), and transferring amino acids during protein synthesis (tRNA). Some RNA molecules also have catalytic activity (ribozymes).",
-
-      "course": "BI110",
-
+      "front": "What are traditional types of manual input devices?",
+      "back": "Keyboards and pointing devices are traditional types of manual input devices.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "RNA acts as an intermediary and a functional molecule in gene expression."
-
+      "topic": "Manual Input"
     },
-
     {
-
-      "front": "How do dehydration synthesis (condensation) and hydrolysis reactions relate to macromolecules?",
-
-      "back": "Dehydration synthesis (condensation) is a reaction where monomers are joined together to form polymers, with the removal of a water molecule. Hydrolysis is the opposite, where polymers are broken down into monomers by the addition of a water molecule.",
-
-      "course": "BI110",
-
+      "front": "What is a function key on a keyboard?",
+      "back": "Function keys, labeled with the letter F followed by a number, are special keys programmed to issue commands to a computer.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These two types of reactions are fundamental to the synthesis and breakdown of all biological macromolecules."
-
+      "topic": "Keyboard"
     },
-
     {
-
-      "front": "What is the significance of the 3D structure of proteins?",
-
-      "back": "The specific 3D structure (conformation) of a protein is critical for its function. If a protein loses its correct 3D shape (denaturation), it typically loses its biological activity. This shape is determined by the sequence of amino acids and various levels of folding (primary, secondary, tertiary, quaternary).",
-
-      "course": "BI110",
-
+      "front": "What is a toggle key and provide examples.",
+      "back": "A Toggle key is a key that will alternate views or turn a feature on or off each time you press it. Caps Lock and Num Lock are examples of toggle keys. ",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "Protein function is highly dependent on its precise spatial arrangement of atoms."
-
+      "topic": "Keyboard"
     },
-
     {
-
-      "front": "Name the four nitrogenous bases found in DNA and how they pair.",
-
-      "back": "The four nitrogenous bases in DNA are Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). In DNA, Adenine pairs with Thymine (A-T), and Guanine pairs with Cytosine (G-C).",
-
-      "course": "BI110",
-
+      "front": "What are navigation keys?",
+      "back": "Navigation keys, such as arrow keys and Page Up/Pg Up and Page Down/Pg Dn on the keyboard, are used to move the insertion point in a program or app left, right, up, or down.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "This specific base pairing (Chargaff's rules) is fundamental to DNA structure and replication."
-
+      "topic": "Keyboard"
     },
-
     {
-
-      "front": "How does RNA differ from DNA in terms of its sugar and one of its nitrogenous bases?",
-
-      "back": "RNA contains ribose sugar, while DNA contains deoxyribose sugar. Also, RNA contains Uracil (U) instead of Thymine (T). Uracil pairs with Adenine in RNA (A-U).",
-
-      "course": "BI110",
-
+      "front": "What is a keyboard shortcut?",
+      "back": "A keyboard shortcut is a key or combination of keys used to access a feature to perform a command.",
+      "course": "CS110",
       "term": "T1",
-
-      "explanation": "These differences contribute to RNA's diverse roles and its generally less stable nature compared to DNA."
-
+      "topic": "Keyboard"
+    },
+    {
+      "front": "What is a pointer in a graphical user interface?",
+      "back": "In a graphical user interface, a pointer is a small symbol on the screen that takes different shapes depending on the task you are performing, the application you are using, and the pointer's location on the screen.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pointing Devices"
+    },
+    {
+      "front": "What is a mouse and its types?",
+      "back": "A mouse is a pointing device that fits under the palm of a hand comfortably. Types include optical mouse (uses optical sensors), touch mouse (touch-sensitive), laser mouse (uses laser sensors), and ergonomic mouse (reduces pain/discomfort from RSIs).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pointing Devices"
+    },
+    {
+      "front": "What is a touchpad?",
+      "back": "A touchpad is a small, flat, rectangular pointing device that is sensitive to pressure and motion, often found on laptops and convertible tablets. Some touchpads also recognize touch gestures.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pointing Devices"
+    },
+    {
+      "front": "How do you use finger input on a touch screen?",
+      "back": "You use a touch screen by touching areas of the screen with your finger or a stylus to make selections or to begin typing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Touch Screens"
+    },
+    {
+      "front": "What is a gesture on a touch screen?",
+      "back": "A gesture is a motion you make on a touch screen with the tip of one or more fingers or your hand.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Touch Screens"
+    },
+    {
+      "front": "List and describe common touch screen gestures.",
+      "back": "Common gestures include: Tap (quick touch to activate), Double Tap (quick double touch to run app or zoom in), Press and hold (to display shortcut menu or move item), Drag/Slide (move finger with pressure to move items or scroll), Swipe (horizontal/vertical movement to scroll or display commands), Stretch (move two fingers apart to zoom in), and Pinch (move two fingers together to zoom out).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Touch Screens"
+    },
+    {
+      "front": "What is pen input?",
+      "back": "With pen input, you touch a stylus or digital pen on a flat surface to write, draw, or make selections.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pen Input"
+    },
+    {
+      "front": "Differentiate between a stylus and a digital pen.",
+      "back": "A stylus is a small metal or plastic device that looks like a tiny ink pen but uses pressure instead of ink. A digital pen captures and converts a user’s handwriting or drawings into a digital format.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pen Input"
+    },
+    {
+      "front": "What is a graphics tablet?",
+      "back": "A graphics tablet, also called a digitizer, is a hardware device used to create drawings with a pressure-sensitive pen using an electronic plastic board that detects and converts movements of the stylus or digital pen into digital signals that are sent to the computer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Pen Input"
+    },
+    {
+      "front": "What is voice input?",
+      "back": "Voice input is the process of entering input by speaking into a microphone, which may be built-in or external.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is audio input?",
+      "back": "Audio input encompasses entering any sound into the computer, such as speech, music, and sound effects.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is video input and what devices are used?",
+      "back": "Video input involves capturing full-motion images and storing them on a computer or mobile device’s storage medium or in the cloud. Devices include digital video (DV) cameras and webcams.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is motion input or gesture recognition?",
+      "back": "With motion input or gesture recognition, users can guide on-screen elements using air gestures, which involve moving your body or a handheld input device through the air.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is NFC?",
+      "back": "NFC (near-field communication) is a close-distance network protocol used by smartphones and other devices to read data from another device or an item, such as a credit card or ticket.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is an optical scanner and how is its quality measured?",
+      "back": "An optical scanner, usually called a scanner, is a light-sensing input device that reads printed text and graphics and then translates the results into a form the computer can process. Its quality is measured by its resolution (number of bits it stores in a pixel and pixels per inch).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is an optical reader and its technologies?",
+      "back": "An optical reader is a device that uses a light source to read characters, marks, and codes and then converts them into digital data that a computer can process. Technologies include Optical Character Recognition (OCR) and Optical Mark Recognition (OMR).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is a bar code and a QR code?",
+      "back": "A bar code is an identification code that often consists of either a set of vertical lines and spaces of different widths or a two-dimensional pattern of dots, squares, and other images. A QR code (quick response code) is a 2-D bar code that stores information in both a vertical and horizontal direction in a square-shaped graphic, often representing a web address or other content.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
+    },
+    {
+      "front": "What is RFID?",
+      "back": "RFID (radio frequency identification) is a technology that uses radio signals to communicate with a tag placed on or attached to an object, an animal, or a person. An RFID reader reads information on the tag via radio waves.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Input"
     }
-
-  ]
-
+  ],
+	//{
+  "MODULE 2:COMPUTER HARDWARE": [
+    {
+      "front": "What are the key objectives of Module 2: Computer Hardware?",
+      "back": "By the end of this module, you should be able to: Explain considerations when purchasing technology devices; Describe the characteristics and uses of input and output devices; Evaluate hardware; Prevent and troubleshoot hardware theft or failure; Distinguish among internal, external, and cloud-based storage; Describe network hardware; Explain the uses of cases, motherboard components, system clock, processor cooling, the arithmetic logic unit, the machine cycle, and registers; Discuss ways to prevent health-related injuries and disorders caused by technology use; and Identify responsible e-waste and technology disposal techniques.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Module Objectives"
+    },
+    {
+      "front": "What is hardware?",
+      "back": "Hardware refers to the device itself and its components, such as wires, cases, switches, and electronic circuits.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Hardware Basics"
+    },
+    {
+      "front": "What are the main components of computer hardware?",
+      "back": "Components of computer hardware include memory, storage devices, CPU, input and output devices, and communication devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Hardware Components"
+    },
+    {
+      "front": "How does virtual memory work?",
+      "back": "The operating system transfers the least recently used data and program instructions from RAM to the hard drive (swap file or paging file) when RAM is needed for other functions. It then transfers data and program instructions from the hard drive back to RAM when they are needed.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Memory Management"
+    },
+    {
+      "front": "What is a processor core?",
+      "back": "A processor core is a unit on the processor with the circuitry necessary to execute instructions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Processor"
+    },
+    {
+      "front": "What is a multi-core processor?",
+      "back": "A processor with multiple cores is a multi-core processor; processors with more cores generally perform better.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Processor"
+    },
+    {
+      "front": "What is the function of computer memory?",
+      "back": "Computer memory is responsible for holding data and programs as they are being processed by the CPU.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Memory"
+    },
+    {
+      "front": "What is RAM?",
+      "back": "RAM (Random Access Memory) is a temporary storage location, stored on chips connected to the motherboard, and is volatile memory.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "RAM"
+    },
+    {
+      "front": "What is the motherboard?",
+      "back": "The motherboard is a circuit board inside a computer that contains the microprocessor, the computer memory, and other internal devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Motherboard"
+    },
+    {
+      "front": "What is ROM?",
+      "back": "ROM (Read-Only Memory) is a permanent storage location, stored on a chip containing BIOS connected to the motherboard, and is non-volatile memory. Computer manufacturers update instructions on the ROM chip, referred to as firmware.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "ROM"
+    },
+    {
+      "front": "Differentiate between volatile and non-volatile memory.",
+      "back": "Volatile memory (like DRAM and Static RAM) needs to be constantly recharged or its contents will be erased in the absence of power. Non-volatile memory (like Magneto-resistive RAM and Flash memory) can retain its contents in the absence of power.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Memory Types"
+    },
+    {
+      "front": "What factors should be considered when buying a computer?",
+      "back": "Factors to consider include: platform compatibility, specific hardware requirements for tasks, hardware specifications for software, form factor (stationary or mobile), and necessary add-on devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Purchase Considerations"
+    },
+    {
+      "front": "How do you evaluate system requirements when choosing a computer?",
+      "back": "For processor, memory, and other hardware requirements, identify the program or app with the greater requirement and select a computer that meets or exceeds it. For storage, add the requirements for all programs/apps and choose a computer with capacity exceeding that sum.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Purchase Considerations"
+    },
+    {
+      "front": "What is 'form factor' in the context of computers?",
+      "back": "The form factor refers to the shape and size of the computer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Types"
+    },
+    {
+      "front": "Describe a desktop computer and an all-in-one computer.",
+      "back": "A desktop computer typically consists of the system unit, monitor, keyboard, and mouse, remaining in a stationary location. An all-in-one computer has the monitor and system unit housed together.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Types"
+    },
+    {
+      "front": "Describe a laptop and an ultrathin laptop.",
+      "back": "A laptop is a compact communicating device with input/output devices and storage. Ultrathin laptops are lighter, more expensive, less powerful, thinner with fewer parts, and have longer battery life.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Types"
+    },
+    {
+      "front": "What are the two popular form factors of tablets?",
+      "back": "The two popular form factors of tablets are slate and convertible.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Tablet Types"
+    },
+    {
+      "front": "Differentiate between a slate tablet and a convertible tablet.",
+      "back": "A slate tablet resembles a letter-sized pad and does not contain a physical keyboard. A convertible tablet has a screen on its lid and a keyboard on its base.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Tablet Types"
+    },
+    {
+      "front": "What is a scanner and how is a 3-D scanner different?",
+      "back": "A scanner is an input device that converts an existing paper image into an electronic file. A 3-D scanner can scan three-dimensional objects.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Input Devices"
+    },
+    {
+      "front": "What is a printer?",
+      "back": "A printer is an output device that creates hard copy output on paper, film, and other media, and can be linked to a computer wirelessly, over a network, or with a cable.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Output Devices"
+    },
+    {
+      "front": "List and describe different types of printers.",
+      "back": "Types of printers include: Inkjet (sprays ink dots), Laser (uses laser beam and toner), Multifunction device/All-in-one (copies, scans, faxes, prints), Mobile printer (small, lightweight for mobile devices), Plotter (large-format for high-quality drawings with continuous lines), and 3-D printer (creates objects from computer models using special materials).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Output Devices / Printers"
+    },
+    {
+      "front": "How can computers provide voice output?",
+      "back": "Computers can provide voice output using a voice synthesizer, which converts text to speech. Some apps and operating systems have a built-in voice synthesizer, which is convenient for some users and helpful for those with visual impairments.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Output Devices / Voice"
+    },
+    {
+      "front": "What is the function of a projector?",
+      "back": "Projectors can display output from a computer on a large surface, such as a wall or screen. They can be wired or wirelessly connected and produce an exact replica of the computer monitor.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Output Devices / Projectors"
+    },
+    {
+      "front": "What should you do before turning on a new computer or device for the first time?",
+      "back": "Before first use, ensure all necessary components are included and undamaged, read the manual for setup instructions, carefully unpack all components (and fully charge laptop battery), connect all components and accessories, then turn on the device and follow on-screen steps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hardware Installation"
+    },
+    {
+      "front": "What are Plug-and-Play devices?",
+      "back": "Plug-and-Play devices are peripheral devices that will begin functioning properly as soon as they are connected to your computer, often over a wireless network or directly through a port.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hardware Installation"
+    },
+    {
+      "front": "What is a device driver?",
+      "back": "A device driver is a program that allows your computer or device to issue controls to a separate device, such as a printer, monitor, or video card.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hardware Installation"
+    },
+    {
+      "front": "How is the efficiency of a CPU measured?",
+      "back": "The efficiency of a CPU is measured by instructions per cycle. The processor’s clock speed measures the speed at which it can execute instructions, and a cycle is the smallest unit of time a process can measure. The bus width, or word size, determines the speed at which data travels.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "CPU Performance"
+    },
+    {
+      "front": "What is a benchmark in computing?",
+      "back": "A benchmark is a test run by a laboratory or other organization to determine processor speed and other performance factors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "CPU Performance"
+    },
+    {
+      "front": "How can hardware theft be avoided?",
+      "back": "To avoid hardware theft, use a cable lock for laptops, keep mobile devices out of sight in high-crime areas, and minimize headphone use while being aware of surroundings.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hardware Security"
+    },
+    {
+      "front": "What measures can be taken to protect hardware from damage?",
+      "back": "To protect hardware: gently clean screens with a damp cloth, use compressed air for keyboards, avoid extreme temperatures/humidity, use an uninterruptible power supply (UPS) for power interruptions, and use a surge suppressor for power fluctuations.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Hardware Protection"
+    },
+    {
+      "front": "Explain different types of electrical changes that can affect computers.",
+      "back": "Electrical changes include: Blackout (total power loss), Brownout (voltage drop lasting minutes/hours), Spike (very short voltage increase), Surge (short voltage increase), and Noise (unwanted high-frequency energy).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Electrical Changes"
+    },
+    {
+      "front": "How can data and operating systems be protected against hardware risks?",
+      "back": "To protect against hardware risks, users can restore the operating system to default settings or a previous version, and perform data backups to protect against hardware malfunctions, user errors, software corruption, natural disasters, and cyber attacks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Data and OS Protection"
+    },
+    {
+      "front": "What are wireless routers and their vulnerabilities?",
+      "back": "Wireless routers are central connection devices for home Wi-Fi networks. Wi-Fi networks are vulnerable to risks such as reading wireless transmissions, viewing/stealing computer data, injecting malware, and downloading harmful content.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Security"
+    },
+    {
+      "front": "What are common storage media for computers?",
+      "back": "The most common storage medium for computers is the internal hard drive, which can store data magnetically (HDDs) or use solid state storage (SSDs). External hard drives can add storage capacity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Solutions"
+    },
+    {
+      "front": "Differentiate between magnetic hard disk drives (HDDs) and solid-state drives (SSDs).",
+      "back": "Magnetic hard disk drives (HDDs) typically have greater storage capacity, while solid-state drives (SSDs) are faster and more durable.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Types"
+    },
+    {
+      "front": "What are optical media and what are their alternatives for file transport?",
+      "back": "Optical media (CDs, DVDs, Blu-ray discs) use laser technology for storage and playback and were once used for software distribution. Today, USB flash drives, external hard drives, and cloud storage are more commonly used to transport files.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Storage Solutions"
+    },
+    {
+      "front": "What is cloud storage?",
+      "back": "Cloud storage involves storing electronic files on a remote server connected to the Internet, rather than on a local computer. It allows remote access to files from any computer or mobile device with an Internet connection, with cloud storage companies hosting and maintaining the servers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Cloud Storage"
+    },
+    {
+      "front": "What are the basic characteristics and benefits of networks?",
+      "back": "All networks share basic characteristics and hardware, allowing computers to share resources such as hardware, software, data, and information. Networks require a combination of hardware and software to operate.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Basics"
+    },
+    {
+      "front": "What are 'nodes' in a network?",
+      "back": "Devices on a network are called nodes, and include computers, tablets, mobile phones, printers, game consoles, and smart home devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Components"
+    },
+    {
+      "front": "Differentiate between a hub, a switch, and a router in a network.",
+      "back": "A hub provides a central point for cables and transfers all data to all devices. A switch is similar but more efficient as it directs data only to the intended device. A router connects two or more networks and directs the flow of information between them.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Hardware"
+    },
+    {
+      "front": "What is a modem and a network interface card?",
+      "back": "A modem is a communications device that connects a communications channel (like the Internet) to a sending or receiving device. For a computer to connect to a network, it should have a network interface card.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Hardware"
+    },
+    {
+      "front": "Describe different types of digital modems.",
+      "back": "Most modems today are digital, sending/receiving data over a digital line. Common types include cable modems (for cable TV connection) and DSL modems (using existing copper telephone wiring). The required modem type depends on the Internet service provider.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Network Hardware"
+    },
+    {
+      "front": "Why is processor cooling important and what technologies are used?",
+      "back": "Processor chips can generate significant heat, which can cause malfunction or failure. Heat sinks, liquid cooling technologies, and cooling pads are used to dissipate this heat.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Processor Cooling"
+    }
+  ],
+	
+	//{
+  "COMPUTER BASICS": [
+    {
+      "front": "What are the key objectives of this module?",
+      "back": "By the end of this module, you should be able to: Define digital literacy; explain society's reliance on technology; describe how to protect your personal information; explain the role of technology in the professional world; use technology to find a career; define convergence; describe the legal and ethical responsibilities of a digital citizen; and identify the uses of assistive technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Module Objectives"
+    },
+    {
+      "front": "Define digital literacy.",
+      "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Literacy"
+    },
+    {
+      "front": "Who is a digital citizen?",
+      "back": "A digital citizen is a person familiar with how to use technology to become an educated and productive member of the digital world.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen"
+    },
+    {
+      "front": "What is a computer?",
+      "back": "A computer is an electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information for future use.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Basics of Computer"
+    },
+    {
+      "front": "What is memory in the context of computers?",
+      "back": "Memory consists of electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Hardware"
+    },
+    {
+      "front": "Define the Internet.",
+      "back": "The Internet is a global collection of millions of computers linked together to share information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Networks / Internet"
+    },
+    {
+      "front": "What is a network?",
+      "back": "A network is a collection of two or more computers connected to share resources.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Networks"
+    },
+    {
+      "front": "What is Wi-Fi?",
+      "back": "Wi-Fi (short for wireless fidelity) is a wireless data network technology that provides high-speed data connections and is not attached to any device. It is used for mobile devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Networks"
+    },
+    {
+      "front": "What is a server?",
+      "back": "A server is a powerful, high-capacity computer you access using the Internet or other networks. It stores files and makes them available to users, typically grouped at a location called a data center.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Networks"
+    },
+    {
+      "front": "What is an online social network?",
+      "back": "An online social network is an online community where users can share their interests, ideas, stories, photos, music, and videos with other registered users via a social networking website, such as Facebook, Google Plus, Twitter, Instagram, or Snapchat.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Online Social Networks"
+    },
+    {
+      "front": "What is big data?",
+      "back": "Big data is a term that refers to large and complex data sources that defy easy management with traditional data processing methods.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Data Representation"
+    },
+    {
+      "front": "What type of tubes did the first generation of computers use, and what were their limitations?",
+      "back": "The first generation of computers used vacuum tubes, which are cylindrical glass tubes that control the flow of electrons. Their use and availability were constrained by their large size, the amount of power they consumed, the heat they generated, and how quickly they wore out. Examples include ENIAC and UNIVAC.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "History of Computers"
+    },
+    {
+      "front": "Who introduced the Apple II computer and what were its key features?",
+      "back": "In 1978, Steve Jobs and Steve Wozniak of Apple Computer Corporation introduced the Apple II, a preassembled computer with color graphics and popular spreadsheet software called VisiCalc.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "History of Computers"
+    },
+    {
+      "front": "Define the Internet of Things (IoT).",
+      "back": "The Internet of Things (IoT) is an environment in which processors are embedded in every imaginable product (things), and these things communicate with one another via the Internet or wireless networks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT)"
+    },
+    {
+      "front": "Why are IoT-enabled devices often called smart devices?",
+      "back": "IoT-enabled devices are often referred to as smart devices because of their capability to communicate, locate, and predict.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT)"
+    },
+    {
+      "front": "What is an embedded computer?",
+      "back": "An embedded computer is a computer that functions as one component in a larger product and has a specific purpose. They are small, have limited hardware, but enhance the capabilities of everyday devices by performing specific functions based on the product's requirements.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT)"
+    },
+    {
+      "front": "How are Automated Teller Machines (ATMs) related to the IoT?",
+      "back": "Automated teller machines (ATMs) are one of the more familiar uses of the IoT. ATMs are a type of kiosk, a freestanding booth usually placed in a public area.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "How can IoT enable remote management of home devices?",
+      "back": "IoT enables you to manage devices remotely in your home, such as starting the washing machine at a certain time, preparing a grocery list, viewing potential intruders via a webcam, or adjusting the room temperature.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "How does manufacturing use IoT?",
+      "back": "Manufacturing can use sensors to monitor processes and increase the quality of finished goods. Robotic arms can also help ensure precision during the manufacturing process.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "How does retail use IoT?",
+      "back": "Retail can use sensors to track inventory or send coupons to customers’ phones while they shop.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "How do shipping companies use IoT?",
+      "back": "Shipping companies can track the mileage and location of their trucks and monitor driving times to ensure the safety of their drivers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "How can healthcare providers use IoT?",
+      "back": "A healthcare provider can use IoT to connect to a patient’s wearable blood pressure or glucose monitor, send prescription updates and changes to a pharmacy, alert the patient of prescriptions, track and store data from wearable monitors for follow-up care, and send appointment or test reminders.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Internet of Things (IoT) Applications"
+    },
+    {
+      "front": "What is the digital divide?",
+      "back": "The digital divide is the gap between those who have access to technology and its resources and information, especially on the Internet, and those who do not.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Social Impact of Technology"
+    },
+    {
+      "front": "What factors contribute to the digital divide?",
+      "back": "Socioeconomic and demographic factors such as age, income, location, and education contribute to the digital divide, which can impact individuals, households, businesses, or geographic areas.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Social Impact of Technology"
+    },
+    {
+      "front": "Define privacy.",
+      "back": "Privacy is defined as the state or condition of being free from public attention to the degree that you determine. It is freedom from attention, observation, or interference, based on your decision, and the right to be left alone to the level that you choose.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Security / Privacy"
+    },
+    {
+      "front": "What is identity theft?",
+      "back": "Identity theft involves using someone’s personal information, such as their name, Social Security number, or credit card number, to commit financial fraud. The victim is charged for the purchases and suffers a damaged credit history that can lead to being denied loans for school, cars, and homes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Security / Identity Theft"
+    },
+    {
+      "front": "List techniques used for identity theft.",
+      "back": "Techniques for identity theft include: Dumpster diving (retrieving personal information from discarded documents), phishing (deceiving users into revealing information through emails or websites), change of address forms (diverting mail to a new address), pretexting (pretending to be from a legitimate firm to ask for personal information), stealing (wallets, purses), and data mining (guessing passwords or security questions from online social media).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Security / Identity Theft"
+    },
+    {
+      "front": "What safeguards can be used to protect personal privacy?",
+      "back": "To protect privacy, safeguards include: not carrying passwords in a wallet or writing them on a check; not providing personal information over the phone or via email; keeping personal information in a secure location; giving cautious notifications before allowing websites or apps to collect data; being cautious about information posted on social networking sites and who can view it; and carefully reviewing financial and billing statements monthly.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Security / Privacy Protection"
+    },
+    {
+      "front": "What is an intelligent workplace?",
+      "back": "An intelligent workplace makes use of technology to connect employees to the company's network, communicate with one another, use productivity software and apps, meet via web conferencing, and more.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World"
+    },
+    {
+      "front": "How do companies use online collaborative productivity software?",
+      "back": "Companies use online collaborative productivity software to enable employees to share documents and make edits or comments.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World"
+    },
+    {
+      "front": "How do schools use social networking tools and online productivity software?",
+      "back": "Schools use social networking tools to promote school events, work cooperatively on group projects, and teach concepts like anti-bullying. Online productivity software enables students to work collaboratively and submit assignments via email, reducing the need for printouts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World"
+    },
+    {
+      "front": "What is a learning management system (LMS) in higher education?",
+      "back": "A college or university might use a learning management system (LMS) to set up web-based training sites where students can check their progress, take practice tests, and exchange messages with instructors or other students.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Education"
+    },
+    {
+      "front": "What is the mobile health (mHealth) trend?",
+      "back": "The mobile health (mHealth) trend refers to healthcare professionals using smartphones or tablets to access cloud-stored health records, and patients using digital devices to monitor conditions and treatments, reducing the need for doctor visits.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Healthcare"
+    },
+    {
+      "front": "How are 3-D printers used in healthcare?",
+      "back": "Healthcare uses 3-D printers to manufacture skin for burn patients, as well as prosthetic devices and casts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Healthcare"
+    },
+    {
+      "front": "Define telemedicine.",
+      "back": "Telemedicine is the use of telecommunications technology, including secure web-based videoconferencing, to diagnose and treat patients remotely. This provides rural or remote patients access to doctors when an in-person medical visit is not possible.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Healthcare"
+    },
+    {
+      "front": "How do transportation workers use technology?",
+      "back": "Transportation workers use handheld computers to scan package codes, computers find efficient routes and track progress, and drivers use GPS to navigate to delivery destinations, avoiding traffic and hazards.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Transportation"
+    },
+    {
+      "front": "What is computer-aided manufacturing (CAM)?",
+      "back": "Manufacturers use computer-aided manufacturing (CAM) to streamline production and ship products more quickly. With CAM, robots perform tasks that are too dangerous, detailed, or monotonous for people.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Manufacturing"
+    },
+    {
+      "front": "How do companies monitor assembly lines and equipment?",
+      "back": "A company’s computers monitor assembly lines and equipment using machine-to-machine communications between machines, equipment, and devices to perform tasks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Manufacturing"
+    },
+    {
+      "front": "How can technology be used to find a career?",
+      "back": "By creating a profile on a career networking site or a personal website showcasing talents, hiring managers can learn more about you. Social media and job search websites can also be used to learn about technology careers and promote yourself to potential employers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology in Professional World / Job Search"
+    },
+    {
+      "front": "Why is a professional online presence important in a job search?",
+      "back": "Your professional online presence is often the first thing a recruiter or interviewer will see. Online professional networks help you keep up with former coworkers, instructors, potential employers, and others with professional connections.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "How to Use Technology in Your Job Search"
+    },
+    {
+      "front": "What is LinkedIn?",
+      "back": "LinkedIn is a social networking site designed to provide business and employment-oriented services.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "How to Use Technology in Your Job Search"
+    },
+    {
+      "front": "What are tips for creating an effective online presence for job searching?",
+      "back": "Tips for creating an effective online presence include: avoiding humorous or informal names for accounts; including a professional photo; uploading a PDF resume; including links to videos, publications, or digital content created; proofreading carefully; and enabling privacy settings on social media accounts, never posting anything inappropriate.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "How to Use Technology in Your Job Search"
+    },
+    {
+      "front": "How do computers process data?",
+      "back": "Electronic components in computers process data using instructions, which are the steps that tell the computer how to perform a particular task. A set of coded instructions that tell a computer or device what tasks to perform is referred to as software, a program, or an app.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Basics of Computer / Software"
+    },
+    {
+      "front": "Define convergence in technology.",
+      "back": "Convergence is the increasing integration of technological capabilities into a growing number of previously unrelated devices. For example, you can access some of the same email, social networking, and gaming apps and accounts on your laptop, tablet, and smartphone.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Technology Convergence"
+    },
+    {
+      "front": "Describe a laptop and a tablet.",
+      "back": "A laptop (also called a notebook) is a thin, lightweight mobile computer with a screen on its lid and a keyboard on its base. A tablet is a thin, lightweight mobile device that has a touch screen and is often associated with eBook readers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Types"
+    },
+    {
+      "front": "What is an eBook reader?",
+      "back": "An eBook reader, or e-reader, is a mobile device that is used primarily for reading digital media.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Mobile Devices"
+    },
+    {
+      "front": "Describe a desktop computer and an all-in-one desktop.",
+      "back": "A desktop, or desktop computer, is a personal computer designed for a stationary location where all its components fit on or under a desk or table. An all-in-one desktop does not contain a tower and instead uses the same case to house the display and processing circuitry.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Computer Types"
+    },
+    {
+      "front": "What is a mobile device?",
+      "back": "A mobile device is a portable or handheld computing device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Mobile Devices"
+    },
+    {
+      "front": "What is a smartphone?",
+      "back": "A smartphone is an Internet-capable phone that usually also includes a calendar, an address book, games, and other apps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Mobile Devices"
+    },
+    {
+      "front": "What are earbuds?",
+      "back": "Earbuds are small speakers that rest inside each ear canal, used to listen to phone calls or media without disturbing others.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Audio Devices"
+    },
+    {
+      "front": "What is a digital camera?",
+      "back": "A digital camera is a camera that creates a digital image of an object, person, or scene.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Media Devices"
+    },
+    {
+      "front": "What is a digital media player?",
+      "back": "A digital media player is an application that lets you play audio and video files; most tablets and smartphones include media players.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Media Devices"
+    },
+    {
+      "front": "What is 'streaming'?",
+      "back": "Streaming is a way of receiving audio and video content on your device as it is being downloaded from the web.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Media Consumption"
+    },
+    {
+      "front": "What is a wearable device (wearable)?",
+      "back": "A wearable device, or wearable, is a small, mobile computing consumer device designed to be worn.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Wearable Technology"
+    },
+    {
+      "front": "What is an activity tracker?",
+      "back": "An activity tracker is a device that monitors heart rate, measures pulse, counts steps, and tracks sleep patterns.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Wearable Technology"
+    },
+    {
+      "front": "What is a smartwatch?",
+      "back": "A smartwatch can communicate with a smartphone to make and answer phone calls, read and send messages, access the web, play music, and work with apps such as activity trackers and GPS.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Wearable Technology"
+    },
+    {
+      "front": "What is a game console?",
+      "back": "A game console is a hardware device that allows you to play video games, either single player or multiplayer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Gaming Devices"
+    },
+    {
+      "front": "What is a handheld game device?",
+      "back": "A handheld game device is small enough to fit in one hand, making it more portable than a game console.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Gaming Devices"
+    },
+    {
+      "front": "What is the difference between being digitally literate and being a digital citizen regarding copying and pasting information?",
+      "back": "Digitally literate people know how to copy and paste information from one source into another. Digital citizens, however, know when it is appropriate to copy and paste information, how to properly credit the source, and the ramifications of violating copyright restrictions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen / Ethics"
+    },
+    {
+      "front": "Define 'netiquette'.",
+      "back": "Netiquette is a term that describes the rules of Internet etiquette, which includes the code of acceptable behaviors users should follow while on the Internet. It covers all aspects of the Internet, including the web, social media, Internet messaging, chat rooms, online discussions, and methods to transfer or store files.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen / Netiquette"
+    },
+    {
+      "front": "What are digital ethics?",
+      "back": "Digital ethics is the set of legal and moral guidelines that govern the use of technology, including computers, mobile devices, information systems, and databases.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen / Ethics"
+    },
+    {
+      "front": "Define 'cyberbullying'.",
+      "back": "Cyberbullying is a form of bullying that involves digital devices and platforms such as social media sites, online forums, messaging apps, and email. In Zambia, it is defined as bullying 'through the transmission of a communication, including but not limited to, a message, text, sound, or image by means of an electronic device.'",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen / Cyberbullying"
+    },
+    {
+      "front": "What is 'distracted driving'?",
+      "back": "Distracted driving is the act of driving a vehicle while focusing on other activities, typically involving an electronic device like a cell phone.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Citizen / Safety"
+    },
+    {
+      "front": "What are the common digital health risks associated with technology use?",
+      "back": "Common digital health risks include repetitive strain injuries (RSI) like carpal tunnel syndrome, computer vision syndrome (CVS) from prolonged screen use, and tech addiction, which is when a user experiences a compulsive need to use technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Health / Ethics and Issues"
+    },
+    {
+      "front": "What are repetitive strain injuries (RSI) and how can they be prevented?",
+      "back": "Repetitive strain injuries (RSI) are conditions caused by repeated movements or continuous pressure on a part of the body, such as carpal tunnel syndrome, which affects the hand and wrist. Prevention involves using proper posture, taking breaks, performing exercises, using ergonomic keyboards, and setting up a comfortable workspace.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Health / Ergonomics"
+    },
+    {
+      "front": "What is computer vision syndrome (CVS) and how can it be alleviated?",
+      "back": "Computer vision syndrome (CVS) is a condition that affects eyesight due to prolonged computer use, causing symptoms like headaches, blurred vision, and dry eyes. It can be alleviated by blinking regularly, taking 20-second breaks every 20 minutes to look at something 20 feet away (the 20-20-20 rule), using proper lighting, adjusting screen settings, and ensuring good air circulation.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Health / Ergonomics"
+    },
+    {
+      "front": "What is technology addiction and its symptoms?",
+      "back": "Technology addiction is when a user experiences a compulsive need to use technology to the point where it interferes with daily life. Symptoms include feeling anxious or irritable when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Digital Health / Ethics and Issues"
+    },
+    {
+      "front": "What are the legal requirements for providing assistive technologies according to US laws?",
+      "back": "The Americans with Disabilities Act (ADA) requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers. The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies. These laws were put in place to ensure that people with disabilities can access resources, information, and services using the appropriate technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "Assistive Technologies / Legal Requirements"
+    }
+  ],
+	
 };

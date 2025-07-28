@@ -35,244 +35,223 @@ const shortData = [
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🔬",
-    q: "What is working distance in microscopy?",
-    keywords: ["working distance", "microscopy", "objective lens", "specimen"],
-    explanation: "Working distance is the distance between the front surface of the objective lens and the surface of the cover glass or specimen when the specimen is in sharp focus.",
+    tag: "💡", // Emoji for light
+    q: "Why is it important to adjust the diaphragm/iris aperture in a light microscope?",
+    keywords: ["diaphragm", "iris aperture", "adjust", "light", "contrast", "resolution"],
+    explanation: "Adjusting the diaphragm/iris aperture controls the amount of light reaching the specimen, which is crucial for optimizing contrast and resolution.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🧪", // Emoji for staining/chemistry
-    q: "Why is Gram staining considered a 'differential' stain?",
-    keywords: ["gram staining", "differential stain", "bacteria", "cell wall"],
-    explanation: "It's differential because it differentiates bacteria into two major groups (Gram-positive and Gram-negative) based on differences in their cell wall composition, leading to different color reactions.",
+    tag: "🧹", // Emoji for cleaning
+    q: "Why should you only use lens paper to clean microscope lenses?",
+    keywords: ["lens paper", "clean", "microscope lenses", "scratch", "damage"],
+    explanation: "Lens paper is specifically designed not to scratch or damage the delicate surfaces of optical lenses, unlike other tissues or cloths.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🧪",
-    q: "Name the four main reagents used in the Gram staining procedure in order.",
-    keywords: ["gram staining reagents", "crystal violet", "gram's iodine", "alcohol", "safranin"],
-    explanation: "The four main reagents are: Crystal Violet (primary stain), Gram's Iodine (mordant), Alcohol/Acetone (decolorizer), and Safranin (counterstain).",
+    tag: "🧪", // Emoji for stain
+    q: "What is the primary purpose of staining in microscopy?",
+    keywords: ["staining", "purpose", "microscopy", "visibility", "contrast", "differentiate"],
+    explanation: "Staining enhances the visibility of cells or cellular components, increases contrast, and can help differentiate between various structures or organisms.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🧪",
-    q: "What color do Gram-positive bacteria appear after a successful Gram stain?",
-    keywords: ["gram-positive", "gram stain", "color", "purple"],
-    explanation: "Gram-positive bacteria appear purple after a successful Gram stain.",
+    tag: "💜", // Emoji for Gram stain
+    q: "Differentiate between Gram-positive and Gram-negative bacteria in terms of cell wall structure and Gram stain reaction.",
+    keywords: ["gram-positive", "gram-negative", "cell wall", "peptidoglycan", "outer membrane", "crystal violet"],
+    explanation: "Gram-positive bacteria have a thick peptidoglycan layer and retain crystal violet stain, appearing purple. Gram-negative bacteria have a thin peptidoglycan layer and an outer membrane; they lose crystal violet but counterstain pink/red with safranin.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🧪",
-    q: "What color do Gram-negative bacteria appear after a successful Gram stain?",
-    keywords: ["gram-negative", "gram stain", "color", "pink", "red"],
-    explanation: "Gram-negative bacteria appear pink or red after a successful Gram stain.",
+    tag: "💧", // Emoji for immersion oil
+    q: "When and why is immersion oil used in microscopy?",
+    keywords: ["immersion oil", "when", "why", "100x", "refractive index", "light scattering", "resolution"],
+    explanation: "Immersion oil is used with the 100x objective lens to reduce light scattering and increase the numerical aperture, thereby improving the resolution of the image.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MICROSCOPY & STAINING",
     year: "Notes",
-    tag: "🔬",
-    q: "Briefly explain the principle of how a phase-contrast microscope works.",
-    keywords: ["phase-contrast microscope", "principle", "refractive index", "diffraction", "live specimens"],
-    explanation: "A phase-contrast microscope converts slight differences in refractive index and light diffraction from different parts of a specimen into differences in light intensity, making transparent live specimens visible without staining.",
+    tag: "🚫", // Emoji for caution
+    q: "Why should you never use the coarse adjustment knob with the high power objective lens (40x or 100x)?",
+    keywords: ["coarse adjustment knob", "high power", "crack slide", "damage lens"],
+    explanation: "Using the coarse adjustment knob with high power objectives can cause the lens to crash into the slide, potentially cracking the slide and damaging the lens.",
+    course: "BI110",
+    term: "T1"
+  },
+  {
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    tag: "🔄", // Emoji for focus
+    q: "What does it mean for a microscope to be 'parfocal'?",
+    keywords: ["parfocal", "microscope", "focus", "change objective"],
+    explanation: "A parfocal microscope means that once an object is in focus at one magnification, it remains approximately in focus when the magnification is changed to another objective lens.",
     course: "BI110",
     term: "T1"
   },
 
-  // Cell Structure & Functions
+  // Cells
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: "เซลล์", // Using a symbol that broadly represents cells
-    q: "State one of the three postulates of the Cell Theory.",
-    keywords: ["cell theory", "postulate", "basic unit of life", "pre-existing cells"],
-    explanation: "One postulate of the Cell Theory is: All living organisms are composed of one or more cells. (Other valid answers: The cell is the basic unit of structure and organization in organisms; All cells arise from pre-existing cells.)",
+    tag: "🔬",
+    q: "Name three structures found in plant cells but not in animal cells.",
+    keywords: ["plant cell", "animal cell", "cell wall", "chloroplasts", "large central vacuole"],
+    explanation: "Plant cells have a rigid cell wall, chloroplasts for photosynthesis, and a large central vacuole for storage and turgor pressure, which are absent in animal cells.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: "เซลล์",
-    q: "Give two differences between prokaryotic and eukaryotic cells.",
-    keywords: ["prokaryotic", "eukaryotic", "differences", "nucleus", "organelles"],
-    explanation: "Two differences are: Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells possess both. Eukaryotic cells are generally much larger and more complex than prokaryotic cells.",
+    tag: "🏭", // Emoji for factory
+    q: "Describe the primary function of the mitochondria.",
+    keywords: ["mitochondria", "function", "powerhouse", "ATP", "cellular respiration"],
+    explanation: "Mitochondria are often called the 'powerhouse' of the cell because their primary function is to generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy, through cellular respiration.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: " organelles",
-    q: "What is the primary function of the cell wall in plant cells?",
-    keywords: ["cell wall", "plant cells", "function", "structural support", "protection"],
-    explanation: "The cell wall in plant cells provides structural support, protection, and prevents excessive water uptake by maintaining turgor pressure.",
+    tag: "📦", // Emoji for packaging
+    q: "What is the function of the Golgi apparatus?",
+    keywords: ["golgi apparatus", "function", "modify", "pack", "proteins", "lipids"],
+    explanation: "The Golgi apparatus modifies, sorts, and packages proteins and lipids into vesicles for secretion or delivery to other organelles.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: " organelles",
-    q: "Which organelle is responsible for generating most of the cell's supply of adenosine triphosphate (ATP) through cellular respiration?",
-    keywords: ["mitochondria", "ATP", "cellular respiration", "powerhouse"],
-    explanation: "Mitochondria are responsible for generating most of the cell's ATP through cellular respiration.",
+    tag: "🚧", // Emoji for boundary
+    q: "Explain the fluid mosaic model of the cell membrane.",
+    keywords: ["fluid mosaic model", "cell membrane", "phospholipid bilayer", "proteins", "fluid", "mosaic"],
+    explanation: "The fluid mosaic model describes the cell membrane as a phospholipid bilayer with embedded and peripheral proteins, all able to move laterally (fluidity), forming a 'mosaic' pattern.",
+    course: "BI110",
+    term: "T1"
+  },
+  
+  {
+    topic: "CELLS",
+    year: "Notes",
+    tag: "💧", // Emoji for water
+    q: "Differentiate between osmosis and diffusion.",
+    keywords: ["osmosis", "diffusion", "difference", "water", "solute", "selectively permeable membrane"],
+    explanation: "Diffusion is the net movement of particles from an area of higher concentration to an area of lower concentration. Osmosis is a specific type of diffusion that involves the net movement of water across a selectively permeable membrane from an area of higher water concentration to an area of lower water concentration.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: " organelles",
-    q: "What is the main function of ribosomes?",
-    keywords: ["ribosomes", "protein synthesis", "translation"],
-    explanation: "The main function of ribosomes is protein synthesis (translation), where they assemble amino acids into proteins based on mRNA instructions.",
+    tag: "🚪", // Emoji for channel
+    q: "What is the role of active transport in cell biology?",
+    keywords: ["active transport", "role", "energy", "ATP", "against concentration gradient", "low to high"],
+    explanation: "Active transport is the movement of molecules across a cell membrane against their concentration gradient (from low to high concentration), requiring energy, typically in the form of ATP.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: " organelles",
-    q: "Differentiate between the rough endoplasmic reticulum (RER) and smooth endoplasmic reticulum (SER).",
-    keywords: ["RER", "SER", "endoplasmic reticulum", "ribosomes", "protein synthesis", "lipid synthesis", "detoxification"],
-    explanation: "The RER has ribosomes on its surface and is involved in protein synthesis and modification, while the SER lacks ribosomes and is involved in lipid synthesis, detoxification, and calcium ion storage.",
+    tag: "🗑️", // Emoji for waste
+    q: "What is the primary function of lysosomes?",
+    keywords: ["lysosomes", "function", "digest", "waste", "organelles", "enzymes"],
+    explanation: "Lysosomes are membrane-bound organelles containing digestive enzymes that break down waste materials, cellular debris, and foreign invaders.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: " organelles",
-    q: "What is the primary role of the Golgi apparatus?",
-    keywords: ["Golgi apparatus", "protein modification", "sorting", "packaging"],
-    explanation: "The Golgi apparatus modifies, sorts, and packages proteins and lipids synthesized in the ER for secretion or delivery to other organelles.",
+    tag: "🌱", // Emoji for plant
+    q: "How does the cell wall contribute to the support of a plant cell?",
+    keywords: ["cell wall", "plant cell", "support", "rigid", "turgor pressure", "prevent lysis"],
+    explanation: "The rigid cell wall provides structural support to the plant cell, maintains its shape, and prevents excessive water uptake (lysis) by maintaining turgor pressure against the cell membrane.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: "membrane",
-    q: "Why is the plasma membrane described as 'selectively permeable'?",
-    keywords: ["plasma membrane", "selectively permeable", "cell membrane", "regulation"],
-    explanation: "It is selectively permeable because it regulates the passage of substances into and out of the cell, allowing some to pass freely while restricting others.",
+    tag: "💧",
+    q: "Describe what happens to an animal cell when placed in a hypotonic solution.",
+    keywords: ["animal cell", "hypotonic solution", "swell", "lyse", "burst", "water influx"],
+    explanation: "When an animal cell is placed in a hypotonic solution, water will move by osmosis from the solution into the cell, causing the cell to swell and potentially lyse (burst) due to the lack of a cell wall.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL STRUCTURE & FUNCTIONS",
+    topic: "CELLS",
     year: "Notes",
-    tag: "👨‍🔬", // Emoji for scientists
-    q: "Name the three scientists credited with significant contributions to the development of the Cell Theory.",
-    keywords: ["cell theory", "scientists", "matthias schleiden", "theodor schwann", "rudolf virchow"],
-    explanation: "The three scientists are Matthias Schleiden, Theodor Schwann, and Rudolf Virchow.",
-    course: "BI110",
-    term: "T1"
-  },
-
-  // Cell Division
-  {
-    topic: "CELL DIVISION",
-    year: "Notes",
-    tag: "➗", // Emoji for division
-    q: "What is the main purpose of mitosis?",
-    keywords: ["mitosis", "purpose", "cell proliferation", "growth", "repair", "asexual reproduction"],
-    explanation: "The main purpose of mitosis is cell proliferation, producing two genetically identical diploid daughter cells for growth, repair, and asexual reproduction.",
+    tag: "💧",
+    q: "Describe what happens to a plant cell when placed in an isotonic solution.",
+    keywords: ["plant cell", "isotonic solution", "flaccid", "no net movement", "limp"],
+    explanation: "When a plant cell is placed in an isotonic solution, there is no net movement of water. The cell becomes flaccid (limp) as the cell membrane is not pressed against the cell wall, but the cell does not lyse.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL DIVISION",
+    topic: "CELLS",
     year: "Notes",
-    tag: "➗",
-    q: "What is the main purpose of meiosis?",
-    keywords: ["meiosis", "purpose", "sexual reproduction", "gametes", "genetic diversity"],
-    explanation: "The main purpose of meiosis is sexual reproduction, producing four genetically diverse haploid gametes (sperm or egg cells) from a diploid parent cell.",
+    tag: "🦠", // Emoji for bacteria
+    q: "Name the two main types of prokaryotes.",
+    keywords: ["prokaryotes", "bacteria", "archaea"],
+    explanation: "The two main types of prokaryotes are Bacteria and Archaea, which form two of the three domains of life.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL DIVISION",
+    topic: "CELLS",
     year: "Notes",
-    tag: "➗",
-    q: "In which phase of the cell cycle does DNA replication occur?",
-    keywords: ["dna replication", "cell cycle", "s phase", "interphase"],
-    explanation: "DNA replication occurs during the S (synthesis) phase of Interphase.",
+    tag: "🧬", // Emoji for DNA
+    q: "Where is the genetic material located in a eukaryotic cell?",
+    keywords: ["eukaryotic cell", "genetic material", "dna", "nucleus"],
+    explanation: "In eukaryotic cells, the genetic material (DNA) is primarily located within the membrane-bound nucleus.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL DIVISION",
+    topic: "CELLS",
     year: "Notes",
-    tag: "➗",
-    q: "What event characterizes Metaphase in mitosis?",
-    keywords: ["metaphase", "mitosis", "chromosome alignment", "metaphase plate"],
-    explanation: "During Metaphase in mitosis, the chromosomes align individually along the metaphase plate (equatorial plane) of the cell.",
+    tag: "🔗", // Emoji for connection
+    q: "What is the function of the rough endoplasmic reticulum (RER)?",
+    keywords: ["rough endoplasmic reticulum", "rer", "function", "protein synthesis", "ribosomes", "membrane proteins"],
+    explanation: "The RER is involved in the synthesis, folding, modification, and transport of proteins that are destined for secretion, insertion into membranes, or delivery to other organelles; its surface is studded with ribosomes.",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL DIVISION",
+    topic: "CELLS",
     year: "Notes",
-    tag: "➗",
-    q: "What separates during Anaphase I of meiosis?",
-    keywords: ["anaphase i", "meiosis", "homologous chromosomes", "separation"],
-    explanation: "During Anaphase I of meiosis, homologous chromosomes separate and move to opposite poles of the cell.",
+    tag: "💧",
+    q: "What is plasmolysis and in what type of cell does it occur?",
+    keywords: ["plasmolysis", "plant cell", "shrink", "pull away", "cell wall", "hypertonic"],
+    explanation: "Plasmolysis is the process in plant cells where the cytoplasm pulls away from the cell wall due to water loss when the cell is in a hypertonic solution. It occurs specifically in plant cells (or cells with cell walls like fungi, bacteria).",
     course: "BI110",
     term: "T1"
   },
   {
-    topic: "CELL DIVISION",
+    topic: "CELLS",
     year: "Notes",
-    tag: "➗",
-    q: "What separates during Anaphase II of meiosis?",
-    keywords: ["anaphase ii", "meiosis", "sister chromatids", "separation"],
-    explanation: "During Anaphase II of meiosis, sister chromatids separate and move to opposite poles of the cell.",
-    course: "BI110",
-    term: "T1"
-  },
-  {
-    topic: "CELL DIVISION",
-    year: "Notes",
-    tag: "➗",
-    q: "What is 'crossing over' and during which meiotic phase does it occur?",
-    keywords: ["crossing over", "meiosis", "prophase i", "genetic material exchange"],
-    explanation: "Crossing over is the exchange of genetic material between non-sister chromatids of homologous chromosomes. It occurs during Prophase I of meiosis.",
-    course: "BI110",
-    term: "T1"
-  },
-  {
-    topic: "CELL DIVISION",
-    year: "Notes",
-    tag: "➗",
-    q: "How many daughter cells are produced from one parent cell at the end of mitosis, and what is their ploidy?",
-    keywords: ["mitosis", "daughter cells", "ploidy", "diploid", "2n"],
-    explanation: "Two diploid (2N) daughter cells are produced from one parent cell at the end of mitosis.",
-    course: "BI110",
-    term: "T1"
-  },
-  {
-    topic: "CELL DIVISION",
-    year: "Notes",
-    tag: "➗",
-    q: "How many daughter cells are produced from one parent cell at the end of meiosis, and what is their ploidy?",
-    keywords: ["meiosis", "daughter cells", "ploidy", "haploid", "n", "gametes"],
-    explanation: "Four haploid (N) daughter cells (gametes) are produced from one parent cell at the end of meiosis.",
+    tag: "🌿", // Emoji for photosynthesis
+    q: "Describe the primary function of chloroplasts.",
+    keywords: ["chloroplasts", "function", "photosynthesis", "convert light energy", "sugars"],
+    explanation: "Chloroplasts are organelles found in plant cells and other eukaryotic photosynthetic organisms. Their primary function is to conduct photosynthesis, converting light energy into chemical energy in the form of sugars.",
     course: "BI110",
     term: "T1"
   },
@@ -281,80 +260,89 @@ const shortData = [
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🧬", // General science/life science emoji
-    q: "Name the four major classes of biological macromolecules.",
-    keywords: ["macromolecules", "carbohydrates", "lipids", "proteins", "nucleic acids"],
-    explanation: "The four major classes of biological macromolecules are Carbohydrates, Lipids, Proteins, and Nucleic Acids.",
+    tag: "🍚", // Emoji for carbs
+    q: "Name the three classes of carbohydrates.",
+    keywords: ["carbohydrates", "monosaccharides", "disaccharides", "polysaccharides"],
+    explanation: "The three classes of carbohydrates are monosaccharides (simple sugars), disaccharides (two monosaccharides linked), and polysaccharides (many monosaccharides linked).",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🍞", // Emoji for carbohydrates/food
-    q: "What is the monomer unit of carbohydrates?",
-    keywords: ["monomer", "carbohydrates", "monosaccharide"],
-    explanation: "The monomer unit of carbohydrates is the monosaccharide.",
-    course: "BI110",
-    term: "T1"
-  },
-  
-  
-  {
-    topic: "MACROMOLECULES",
-    year: "Notes",
-    tag: "🍞",
-    q: "What type of bond links monosaccharides together to form disaccharides and polysaccharides?",
-    keywords: ["bond", "monosaccharides", "disaccharides", "polysaccharides", "glycosidic bond"],
-    explanation: "Monosaccharides are linked by glycosidic bonds.",
+    tag: "🍬", // Emoji for sugar
+    q: "Give an example of a monosaccharide and a disaccharide.",
+    keywords: ["monosaccharide", "disaccharide", "glucose", "fructose", "galactose", "sucrose", "lactose", "maltose"],
+    explanation: "Examples: Monosaccharides - Glucose, Fructose, Galactose. Disaccharides - Sucrose (glucose+fructose), Lactose (glucose+galactose), Maltose (glucose+glucose).",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🍔", // Emoji for lipids/fats
-    q: "Name two primary functions of lipids.",
-    keywords: ["lipids", "functions", "energy storage", "cell membranes"],
-    explanation: "Two primary functions of lipids are long-term energy storage and forming the major components of cell membranes.",
+    tag: "🍞", // Emoji for starch
+    q: "What is the primary function of starch in plants?",
+    keywords: ["starch", "plants", "function", "energy storage"],
+    explanation: "The primary function of starch in plants is long-term energy storage.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🥩", // Emoji for proteins/meat
-    q: "What are the monomers of proteins?",
+    tag: "💪", // Emoji for protein
+    q: "Name the monomers that make up proteins.",
     keywords: ["monomers", "proteins", "amino acids"],
-    explanation: "The monomers of proteins are amino acids.",
+    explanation: "Proteins are polymers made up of amino acid monomers linked by peptide bonds.",
+    course: "BI110",
+    term: "T1"
+  },
+  
+  {
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    tag: "💧", // Emoji for water, for dehydration
+    q: "What type of reaction links monomers together to form polymers?",
+    keywords: ["reaction", "monomers", "polymers", "dehydration reaction", "condensation reaction"],
+    explanation: "Monomers are linked together to form polymers by a dehydration reaction (or condensation reaction), where a water molecule is removed.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🥩",
-    q: "Name the four levels of protein structure.",
-    keywords: ["protein structure", "primary", "secondary", "tertiary", "quaternary"],
-    explanation: "The four levels of protein structure are Primary, Secondary, Tertiary, and Quaternary.",
+    tag: "✂️", // Emoji for cutting, for hydrolysis
+    q: "What type of reaction breaks down polymers into monomers?",
+    keywords: ["reaction", "polymers", "monomers", "hydrolysis reaction", "add water"],
+    explanation: "Polymers are broken down into monomers by a hydrolysis reaction, where a water molecule is added, effectively breaking a bond.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🥩",
-    q: "What type of bond connects amino acids to form a polypeptide chain?",
-    keywords: ["bond", "amino acids", "polypeptide chain", "peptide bond"],
-    explanation: "Amino acids are connected by peptide bonds.",
+    tag: "🍳", // Emoji for denature
+    q: "What does it mean for a protein to be 'denatured', and what can cause it?",
+    keywords: ["denatured", "protein", "loss of shape", "loss of function", "heat", "pH change", "chemicals"],
+    explanation: "A denatured protein has lost its specific three-dimensional shape (conformation) due to disruptions of its weak chemical bonds and interactions, leading to a loss of its biological function. Causes include extreme heat, pH changes, and certain chemicals.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🧬",
-    q: "What are the two types of nucleic acids?",
+    tag: "💧", // Emoji for hydrophobic
+    q: "Why are lipids generally considered hydrophobic?",
+    keywords: ["lipids", "hydrophobic", "nonpolar", "fats", "oils", "water"],
+    explanation: "Lipids are largely composed of hydrocarbons, which form nonpolar covalent bonds. This makes them primarily nonpolar molecules, causing them to repel water (a polar molecule) and thus be hydrophobic.",
+    course: "BI110",
+    term: "T1"
+  },
+  {
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    tag: "🧬", // Emoji for DNA
+    q: "Name the two types of nucleic acids.",
     keywords: ["nucleic acids", "dna", "rna"],
     explanation: "The two types of nucleic acids are Deoxyribonucleic Acid (DNA) and Ribonucleic Acid (RNA).",
     course: "BI110",
@@ -363,20 +351,50 @@ const shortData = [
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🧬",
-    q: "Describe the basic structure of a nucleotide.",
-    keywords: ["nucleotide", "structure", "nitrogenous base", "sugar", "phosphate"],
-    explanation: "A nucleotide consists of a nitrogenous base, a five-carbon sugar (ribose or deoxyribose), and one or more phosphate groups.",
+    tag: "⛓️", // Emoji for chain
+    q: "What are the three components of a nucleotide?",
+    keywords: ["nucleotide", "components", "phosphate group", "pentose sugar", "nitrogenous base"],
+    explanation: "A nucleotide is composed of a phosphate group, a five-carbon sugar (pentose), and a nitrogenous base.",
     course: "BI110",
     term: "T1"
   },
   {
     topic: "MACROMOLECULES",
     year: "Notes",
-    tag: "🧬",
-    q: "State the base pairing rules for DNA.",
+    tag: "📄", // Emoji for template
+    q: "What is the primary function of DNA?",
+    keywords: ["dna", "function", "genetic information", "heredity", "template"],
+    explanation: "The primary function of DNA is to store and transmit genetic information, acting as the blueprint for all cellular activities and hereditary traits.",
+    course: "BI110",
+    term: "T1"
+  },
+  {
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    tag: "⚙️", // Emoji for function
+    q: "What is the primary function of RNA?",
+    keywords: ["rna", "function", "protein synthesis", "gene expression"],
+    explanation: "The primary function of RNA (various types like mRNA, tRNA, rRNA) is to play a crucial role in gene expression, primarily in the synthesis of proteins.",
+    course: "BI110",
+    term: "T1"
+  },
+  {
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    tag: "↔️", // Emoji for double helix
+    q: "Describe the basic structure of a DNA molecule.",
+    keywords: ["dna structure", "double helix", "two strands", "sugar-phosphate backbone", "base pairs"],
+    explanation: "A DNA molecule is typically a double helix, consisting of two polynucleotide strands coiled around a common axis. The backbone is formed by sugar and phosphate groups, with nitrogenous bases pairing in the interior.",
+    course: "BI110",
+    term: "T1"
+  },
+  {
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    tag: "🤝", // Emoji for pairing
+    q: "How do the base pairing rules in DNA work?",
     keywords: ["dna", "base pairing rules", "adenine", "thymine", "guanine", "cytosine"],
-    explanation: "In DNA, Adenine (A) pairs with Thymine (T), and Guanine (G) pairs with Cytosine (C).",
+    explanation: "In DNA, Adenine (A) always pairs with Thymine (T), and Guanine (G) always pairs with Cytosine (C).",
     course: "BI110",
     term: "T1"
   },
@@ -432,6 +450,7 @@ const shortData = [
     course: "BI110",
     term: "T1"
   },
+  
   {
     topic: "Genetics",
     year: "Notes",
@@ -584,243 +603,244 @@ const shortData = [
   },
   
   // Short Answer 1
-{
-  type: "ShortAnswer",
-  topic: "Taxonomy",
-  year: "Taxonomy Handout",
-  tag: "Definition",
-  q: "Briefly define 'Taxonomy'.",
-  answer: ["The branch of science dealing with the description, identification, nomenclature, and classification of organisms."],
-  explanation: "Taxonomy is the scientific discipline focused on grouping, naming, and categorizing living organisms based on shared characteristics.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 2
-{
-  type: "ShortAnswer",
-  topic: "Taxonomy",
-  year: "Taxonomy Handout",
-  tag: "Hierarchy",
-  q: "List the main hierarchical taxonomic ranks from most inclusive to least inclusive, as outlined by Linnaeus (excluding Domain).",
-  answer: ["Kingdom, Phylum (or Division), Class, Order, Family, Genus, Species"],
-  explanation: "The Linnaean hierarchy organizes life into progressively more specific categories: Kingdom, Phylum, Class, Order, Family, Genus, Species.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 3
-{
-  type: "ShortAnswer",
-  topic: "Taxonomy",
-  year: "Taxonomy Handout",
-  tag: "Nomenclature",
-  q: "Explain the rule of binomial nomenclature regarding the capitalization and italicization/underlining of scientific names.",
-  answer: ["The genus name is capitalized, the species epithet is lowercase. Both names are italicized when typed or underlined when handwritten."],
-  explanation: "Binomial nomenclature ensures universal and unambiguous naming, with specific formatting rules for genus and species epithets.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 4
-{
-  type: "ShortAnswer",
-  topic: "Prokaryotes",
-  year: "Taxonomy Handout",
-  tag: "Characteristics",
-  q: "Name two fundamental characteristics that distinguish prokaryotic cells from eukaryotic cells.",
-  answer: ["Lack a membrane-bound nucleus", "Lack membrane-bound organelles"],
-  explanation: "Prokaryotic cells are structurally simpler than eukaryotic cells, lacking the internal compartmentalization provided by membrane-bound organelles and a true nucleus.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 5
-{
-  type: "ShortAnswer",
-  topic: "Prokaryotes",
-  year: "Taxonomy Handout",
-  tag: "Reproduction",
-  q: "Describe the process of binary fission in prokaryotes.",
-  answer: ["Asexual reproduction where a single cell divides into two identical daughter cells after replicating its genetic material."],
-  explanation: "Binary fission is an efficient form of asexual reproduction, allowing prokaryotes to rapidly multiply under favorable conditions.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 6
-{
-  type: "ShortAnswer",
-  topic: "Cyanobacteria",
-  year: "Taxonomy Handout",
-  tag: "Ecological Role",
-  q: "What significant ecological role do Cyanobacteria play in ecosystems, particularly regarding nutrients?",
-  answer: ["They perform nitrogen fixation, converting atmospheric nitrogen into usable forms."],
-  explanation: "Nitrogen fixation by cyanobacteria makes essential nitrogen compounds available to other organisms, supporting primary productivity in various ecosystems.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 7
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Characteristics",
-  q: "State three general characteristics of Protists.",
-  answer: ["Eukaryotic", "Can be unicellular or multicellular", "Diverse habitats (often aquatic/moist)", "Diverse modes of nutrition"], // Accept any three
-  explanation: "Protists are a highly heterogeneous group, making their definition broad but encompassing key eukaryotic features and varied lifestyles.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 8
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Amoeba",
-  q: "How does an Amoeba move and engulf food?",
-  answer: ["Using pseudopodia (false feet)"],
-  explanation: "Pseudopodia are temporary extensions of the cytoplasm that allow amoebas to crawl and surround food particles for phagocytosis.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 9
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Plasmodium",
-  q: "Which specific stage of Plasmodium is responsible for infecting human red blood cells and causing malaria symptoms?",
-  answer: ["Merozoite"],
-  explanation: "Merozoites are released from the liver and invade red blood cells, where they multiply, leading to the symptomatic phase of malaria.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 10
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Euglena",
-  q: "Explain why Euglena is considered a 'mixotrophic' organism.",
-  answer: ["It can perform photosynthesis (autotrophic) in the presence of light and absorb nutrients heterotrophically in the absence of light."],
-  explanation: "Mixotrophy combines both autotrophic and heterotrophic nutritional strategies, allowing Euglena flexibility in nutrient acquisition.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 11
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Green Algae",
-  q: "Name two examples of green algae mentioned in the handout that can be unicellular or multicellular.",
-  answer: ["Chlamydomonas", "Volvox", "Ulva"], // Any two
-  explanation: "Green algae exhibit a range of cellular organization, from single cells to complex multicellular forms.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 12
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Slime Molds",
-  q: "What do plasmodia of slime molds differentiate into during unfavorable conditions?",
-  answer: ["Fruiting bodies bearing spores"],
-  explanation: "Fruiting bodies are reproductive structures that produce resistant spores, enabling survival during harsh environmental conditions.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 13
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Economic Importance",
-  q: "Give two examples of commercial products derived from marine protists.",
-  answer: ["Algin", "Agar", "Carragean", "Antiseptics"], // Any two
-  explanation: "Marine algae are a valuable source of hydrocolloids and other compounds with various industrial applications.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 14
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Economic Importance",
-  q: "How do many protists act as primary producers in aquatic ecosystems?",
-  answer: ["They perform photosynthesis, forming the base of aquatic food chains and producing oxygen."],
-  explanation: "Photosynthetic protists are crucial for sustaining aquatic life by converting light energy into organic matter and releasing oxygen.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 15
-{
-  type: "ShortAnswer",
-  topic: "Prokaryotes",
-  year: "Taxonomy Handout",
-  tag: "Shapes",
-  q: "What are the three common shapes of bacteria mentioned in the handout?",
-  answer: ["Spherical (cocci)", "Rod-shaped (bacilli)", "Spiral-shaped (spirilla)"],
-  explanation: "Bacterial morphology is a key characteristic used for identification and classification.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 16
-{
-  type: "ShortAnswer",
-  topic: "Taxonomy",
-  year: "Taxonomy Handout",
-  tag: "Phylogeny",
-  q: "What are 'clades' in phylogenetic taxonomy?",
-  answer: ["Taxonomic groups of organisms based on homologous features derived from a common ancestor."],
-  explanation: "Clades represent monophyletic groups, reflecting true evolutionary relationships.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 17
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Plasmodium Life Cycle",
-  q: "Which specific stage of Plasmodium is ingested by the Anopheles mosquito from an infected human?",
-  answer: ["Gametocytes"],
-  explanation: "Gametocytes are the sexual forms that develop in human red blood cells and are taken up by mosquitoes to complete the parasite's life cycle.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 18
-{
-  type: "ShortAnswer",
-  topic: "Protists",
-  year: "Taxonomy Handout",
-  tag: "Economic Importance",
-  q: "Beyond food and commercial products, how else are protists useful, as mentioned in the handout?",
-  answer: ["Source of medicines", "Source of minerals", "Used in biological research", "Pathogens (causing diseases)"], // Any one or two
-  explanation: "Protists have diverse impacts, ranging from beneficial roles in medicine and industry to detrimental roles as disease agents.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 19
-{
-  type: "ShortAnswer",
-  topic: "Taxonomy",
-  year: "Taxonomy Handout",
-  tag: "Domain",
-  q: "When was the 'Domain' rank introduced, relative to Linnaeus's original classification system?",
-  answer: ["1990 (over 250 years after Linnaeus's system)"],
-  explanation: "The Domain rank is a relatively new addition to taxonomy, reflecting a deeper understanding of phylogenetic relationships, particularly among prokaryotes.",
-  course: "BI110",
-  term: "T2"
-},
-// Short Answer 20
-{
-  type: "ShortAnswer",
-  topic: "Prokaryotes",
-  year: "Taxonomy Handout",
-  tag: "Genetic Material",
-  q: "Where is the genetic material (DNA) primarily located in a prokaryotic cell?",
-  answer: ["In the cytoplasm, in a region called the nucleoid (or as a single circular chromosome in the cytoplasm)"],
-  explanation: "Unlike eukaryotes, prokaryotes do not compartmentalize their DNA within a membrane-bound nucleus.",
-  course: "BI110",
-  term: "T2"
-}
+  {
+    type: "ShortAnswer",
+    topic: "Taxonomy",
+    year: "Taxonomy Handout",
+    tag: "Definition",
+    q: "Briefly define 'Taxonomy'.",
+    keywords: ["branch of science", "description", "identification", "nomenclature", "classification", "organisms"],
+    explanation: "Taxonomy is the scientific discipline focused on grouping, naming, and categorizing living organisms based on shared characteristics.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 2
+  {
+    type: "ShortAnswer",
+    topic: "Taxonomy",
+    year: "Taxonomy Handout",
+    tag: "Hierarchy",
+    q: "List the main hierarchical taxonomic ranks from most inclusive to least inclusive, as outlined by Linnaeus (excluding Domain).",
+    keywords: ["Kingdom", "Phylum", "Division", "Class", "Order", "Family", "Genus", "Species"],
+    explanation: "The Linnaean hierarchy organizes life into progressively more specific categories: Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 3
+  {
+    type: "ShortAnswer",
+    topic: "Taxonomy",
+    year: "Taxonomy Handout",
+    tag: "Nomenclature",
+    q: "Explain the rule of binomial nomenclature regarding the capitalization and italicization/underlining of scientific names.",
+    keywords: ["genus capitalized", "species lowercase", "italicized", "underlined"],
+    explanation: "Binomial nomenclature ensures universal and unambiguous naming, with specific formatting rules for genus and species epithets.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 4
+  {
+    type: "ShortAnswer",
+    topic: "Prokaryotes",
+    year: "Taxonomy Handout",
+    tag: "Characteristics",
+    q: "Name two fundamental characteristics that distinguish prokaryotic cells from eukaryotic cells.",
+    keywords: ["no nucleus", "no membrane-bound organelles", "lack nucleus", "lack organelles"], // Broaden keywords for common answers
+    explanation: "Prokaryotic cells are structurally simpler than eukaryotic cells, lacking the internal compartmentalization provided by membrane-bound organelles and a true nucleus.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 5
+  {
+    type: "ShortAnswer",
+    topic: "Prokaryotes",
+    year: "Taxonomy Handout",
+    tag: "Reproduction",
+    q: "Describe the process of binary fission in prokaryotes.",
+    keywords: ["asexual reproduction", "cell divides", "two identical daughter cells", "replicating genetic material"],
+    explanation: "Binary fission is an efficient form of asexual reproduction, allowing prokaryotes to rapidly multiply under favorable conditions.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 6
+  {
+    type: "ShortAnswer",
+    topic: "Cyanobacteria",
+    year: "Taxonomy Handout",
+    tag: "Ecological Role",
+    q: "What significant ecological role do Cyanobacteria play in ecosystems, particularly regarding nutrients?",
+    keywords: ["nitrogen fixation", "converting atmospheric nitrogen", "usable forms"],
+    explanation: "Nitrogen fixation by cyanobacteria makes essential nitrogen compounds available to other organisms, supporting primary productivity in various ecosystems.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 7
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Characteristics",
+    q: "State three general characteristics of Protists.",
+    keywords: ["Eukaryotic", "unicellular", "multicellular", "aquatic", "moist", "diverse nutrition"], // Accept any three
+    explanation: "Protists are a highly heterogeneous group, making their definition broad but encompassing key eukaryotic features and varied lifestyles.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 8
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Amoeba",
+    q: "How does an Amoeba move and engulf food?",
+    keywords: ["pseudopodia", "false feet", "engulfs food", "phagocytosis"],
+    explanation: "Pseudopodia are temporary extensions of the cytoplasm that allow amoebas to crawl and surround food particles for phagocytosis.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 9
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Plasmodium",
+    q: "Which specific stage of Plasmodium is responsible for infecting human red blood cells and causing malaria symptoms?",
+    keywords: ["Merozoite", "red blood cells", "malaria symptoms"],
+    explanation: "Merozoites are released from the liver and invade red blood cells, where they multiply, leading to the symptomatic phase of malaria.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 10
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Euglena",
+    q: "Explain why Euglena is considered a 'mixotrophic' organism.",
+    keywords: ["photosynthesis", "autotrophic", "absorb nutrients", "heterotrophically", "light", "absence of light"],
+    explanation: "Mixotrophy combines both autotrophic and heterotrophic nutritional strategies, allowing Euglena flexibility in nutrient acquisition.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 11
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Green Algae",
+    q: "Name two examples of green algae mentioned in the handout that can be unicellular or multicellular.",
+    keywords: ["Chlamydomonas", "Volvox", "Ulva"], // Any two
+    explanation: "Green algae exhibit a range of cellular organization, from single cells to complex multicellular forms.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 12
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Slime Molds",
+    q: "What do plasmodia of slime molds differentiate into during unfavorable conditions?",
+    keywords: ["Fruiting bodies", "spores"],
+    explanation: "Fruiting bodies are reproductive structures that produce resistant spores, enabling survival during harsh environmental conditions.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 13
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Economic Importance",
+    q: "Give two examples of commercial products derived from marine protists.",
+    keywords: ["Algin", "Agar", "Carragean", "Antiseptics"], // Any two
+    explanation: "Marine algae are a valuable source of hydrocolloids and other compounds with various industrial applications.",
+    course: "BI110",
+    term: "T2"
+  },
+  
+  // Short Answer 14
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Economic Importance",
+    q: "How do many protists act as primary producers in aquatic ecosystems?",
+    keywords: ["photosynthesis", "aquatic food chains", "producing oxygen", "primary producers"],
+    explanation: "Photosynthetic protists are crucial for sustaining aquatic life by converting light energy into organic matter and releasing oxygen.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 15
+  {
+    type: "ShortAnswer",
+    topic: "Prokaryotes",
+    year: "Taxonomy Handout",
+    tag: "Shapes",
+    q: "What are the three common shapes of bacteria mentioned in the handout?",
+    keywords: ["Spherical", "cocci", "Rod-shaped", "bacilli", "Spiral-shaped", "spirilla"],
+    explanation: "Bacterial morphology is a key characteristic used for identification and classification.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 16
+  {
+    type: "ShortAnswer",
+    topic: "Taxonomy",
+    year: "Taxonomy Handout",
+    tag: "Phylogeny",
+    q: "What are 'clades' in phylogenetic taxonomy?",
+    keywords: ["Taxonomic groups", "homologous features", "common ancestor"],
+    explanation: "Clades represent monophyletic groups, reflecting true evolutionary relationships.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 17
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Plasmodium Life Cycle",
+    q: "Which specific stage of Plasmodium is ingested by the Anopheles mosquito from an infected human?",
+    keywords: ["Gametocytes", "Anopheles mosquito", "infected human"],
+    explanation: "Gametocytes are the sexual forms that develop in human red blood cells and are taken up by mosquitoes to complete the parasite's life cycle.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 18
+  {
+    type: "ShortAnswer",
+    topic: "Protists",
+    year: "Taxonomy Handout",
+    tag: "Economic Importance",
+    q: "Beyond food and commercial products, how else are protists useful, as mentioned in the handout?",
+    keywords: ["medicines", "minerals", "biological research", "pathogens", "diseases"], // Any one or two
+    explanation: "Protists have diverse impacts, ranging from beneficial roles in medicine and industry to detrimental roles as disease agents.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 19
+  {
+    type: "ShortAnswer",
+    topic: "Taxonomy",
+    year: "Taxonomy Handout",
+    tag: "Domain",
+    q: "When was the 'Domain' rank introduced, relative to Linnaeus's original classification system?",
+    keywords: ["1990", "250 years after Linnaeus"],
+    explanation: "The Domain rank is a relatively new addition to taxonomy, reflecting a deeper understanding of phylogenetic relationships, particularly among prokaryotes.",
+    course: "BI110",
+    term: "T2"
+  },
+  // Short Answer 20
+  {
+    type: "ShortAnswer",
+    topic: "Prokaryotes",
+    year: "Taxonomy Handout",
+    tag: "Genetic Material",
+    q: "Where is the genetic material (DNA) primarily located in a prokaryotic cell?",
+    keywords: ["cytoplasm", "nucleoid", "single circular chromosome"],
+    explanation: "Unlike eukaryotes, prokaryotes do not compartmentalize their DNA within a membrane-bound nucleus.",
+    course: "BI110",
+    term: "T2"
+  }
 ];
