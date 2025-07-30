@@ -1040,5 +1040,284 @@
 
 
   // more topics here 
+  
+  
+  //Bi110 term 3
+  //const essayData = [
+  {
+    course: "BI110",
+    term: "T3",
+    title: "General Features and Classification of Bryophytes",
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    steps: [
+      {
+        q: "How do bryophytes primarily differ from algae in terms of their habitat, and what does this imply about their evolutionary position?",
+        options: [
+          "Bryophytes are exclusively aquatic, while algae are terrestrial; they are less evolved.",
+          "Bryophytes are terrestrial, while algae are aquatic; they represent a transitional form to land plants.",
+          "Both are aquatic; bryophytes are more complex.",
+          "Both are terrestrial; bryophytes are simpler."
+        ],
+        correct: 1,
+        explanation: "Unlike algae, bryophytes are terrestrial dwellers, making them a transitional form of plants placed between algae and vascular plants, demonstrating an adaptation to life on land."
+      },
+      {
+        q: "What is the specialized term used to describe bryophytes concerning their vascular tissue, and what structures do they use for absorption and anchorage?",
+        options: [
+          "Tracheophytes; true roots and stems.",
+          "Vascular plants; xylem and phloem.",
+          "Non-tracheophytes; rhizoids for absorption and anchorage.",
+          "Angiosperms; tap roots and fibrous roots."
+        ],
+        correct: 2,
+        explanation: "Bryophytes are best described as non-tracheophytes or non-vascular plants. They lack true roots but possess rhizoids, which serve the dual function of absorbing water and salts and anchoring the plant to its substratum."
+      },
+      {
+        q: "What is the primary function of the cutin-coated epidermis in bryophytes, and how do they facilitate gaseous exchange?",
+        options: [
+          "Photosynthesis; stomata.",
+          "Nutrient storage; lenticels.",
+          "Protection against desiccation; numerous air pores.",
+          "Water transport; xylem vessels."
+        ],
+        correct: 2,
+        explanation: "The cutin-coated epidermis in bryophytes primarily provides protection against desiccation (drying out). Gaseous exchange is facilitated by numerous air pores present on their surface."
+      },
+      {
+        q: "What constitutes the 'thallus body' of a bryophyte, and how do their gametophyte 'stems' and 'leaves' differ from those of vascular plants?",
+        options: [
+          "It is fully differentiated into true roots, stems, and leaves; they have true internal veins.",
+          "It is a plant body differentiated into true roots, stems, but not leaves; they lack internal veins.",
+          "It is a plant body not differentiated into roots, stems, and leaves; their 'stems' and 'leaves' are without internal 'veins'.",
+          "It is an undifferentiated blob; they have no stem-like or leaf-like structures."
+        ],
+        correct: 2,
+        explanation: "A 'thallus body' in bryophytes refers to a plant body not differentiated into true roots, stems, and leaves. While their gametophytes have structures resembling stems and leaves, a key distinction is that these structures are without internal 'veins' (vascular tissue)."
+      },
+      {
+        q: "Name the three phyla (divisions) of bryophytes and identify the class for Liverworts and Hornworts, along with a distinguishing morphological feature for each.",
+        options: [
+          "Hepatophyta (Liverworts), Pteridophyta (Ferns), Bryophyta (Mosses); Liverworts have true leaves; Hornworts have vascular tissue.",
+          "Hepatophyta (Liverworts), Anthocerophyta (Hornworts), Bryophyta (Mosses); Liverworts (Class Hepatopsida) have a thalloid body; Hornworts (Class Anthocerotopsida) have a thallus bearing a horn-like structure.",
+          "Bryophyta (Mosses), Hepatophyta (Liverworts), Angiosperms; Mosses are aquatic; Liverworts have rhizomes.",
+          "Anthocerophyta (Hornworts), Bryophyta (Mosses), Gymnosperms; Hornworts have true roots; Mosses are non-vascular."
+        ],
+        correct: 1,
+        explanation: "The three phyla of bryophytes are Phylum Hepatophyta (Liverworts, Class Hepatopsida), Phylum Anthocerophyta (Hornworts, Class Anthocerotopsida), and Phylum Bryophyta (Mosses). Liverworts are characterized by a thalloid plant body, while Hornworts are distinct due to their thallus bearing a horn-like (sporophyte) structure."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Reproduction and Life Cycle of Mosses",
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the ploidy level of the dominant stage in the moss life cycle, and what is this stage called?",
+        options: [
+          "Diploid; sporophyte.",
+          "Haploid; sporophyte.",
+          "Diploid; gametophyte.",
+          "Haploid; gametophyte."
+        ],
+        correct: 3,
+        explanation: "In the life cycle of mosses, the gametophyte (gamete-bearing structure) is the most dominant stage and is haploid (n)."
+      },
+      {
+        q: "What structures are released from the moss sporophyte capsule, and what do they germinate into upon landing in a suitable environment?",
+        options: [
+          "Zygotes; new sporophytes.",
+          "Gametophytes; antheridia and archegonia.",
+          "Spores; protonemata.",
+          "Seeds; young moss plants."
+        ],
+        correct: 2,
+        explanation: "The capsule of a moss sporophyte contains numerous spores. When these spores are released and land in a suitable moist environment, they germinate into filamentous green structures called protonemata (protonema)."
+      },
+      {
+        q: "What develops from the protonema, and where do the sexual reproductive organs form on this new structure?",
+        options: [
+          "Sporophyte; on the foot.",
+          "Zygote; within the venter.",
+          "Young moss plants (gametophytes); at the apex of the moss stems.",
+          "Seta; on the capsule."
+        ],
+        correct: 2,
+        explanation: "From the protonema, nodes develop, which then give rise to young moss plants, representing the mature gametophyte. Both antheridia (male sexual organs) and archegonia (female sexual organs) develop at the apex of these moss stems."
+      },
+      {
+        q: "What type of gametes do antheridia and archegonia produce, respectively, and what is essential for fertilization to occur?",
+        options: [
+          "Eggs and spores; wind.",
+          "Sperm cells and egg cells; water.",
+          "Spores and zygotes; insects.",
+          "Pollen and ovules; dry conditions."
+        ],
+        correct: 1,
+        explanation: "Antheridia contain motile sperm cells, while archegonia contain non-motile egg cells. Water is absolutely essential for fertilization, as it facilitates the movement of the sperm cells towards the archegonia to reach and fuse with the egg cell."
+      },
+      {
+        q: "What is the product of fertilization in mosses, and what is its nutritional relationship with the gametophyte?",
+        options: [
+          "A spore, which is independent of the gametophyte.",
+          "A protonema, which feeds on the gametophyte.",
+          "A zygote, which develops into a sporophyte that is nutritionally dependent on the gametophyte.",
+          "A gametophyte, which is nutritionally dependent on the sporophyte."
+        ],
+        correct: 2,
+        explanation: "The fusion of a sperm cell and an egg cell results in a diploid zygote. This zygote then develops into a sporophyte, which remains physically attached to the gametophyte and is thus nutritionally dependent on it throughout its existence."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Diversity and Ecological Roles of Bryophytes",
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the common morphological characteristic that distinguishes Hornworts from Liverworts?",
+        options: [
+          "Hornworts have true roots, while Liverworts do not.",
+          "Hornworts have a thallus bearing a horn-like structure, while Liverworts have a flattened thalloid body.",
+          "Hornworts are differentiated into stems and leaves, while Liverworts are not.",
+          "Hornworts are aquatic, while Liverworts are terrestrial."
+        ],
+        correct: 1,
+        explanation: "Hornworts are morphologically distinct from liverworts primarily because their plant body (thallus) bears a prominent horn-like sporophyte structure."
+      },
+      {
+        q: "Which specific blue-green algae often forms a symbiotic relationship within the internal cavities of the Anthoceros (hornwort) thallus?",
+        options: [
+          "Spirogyra",
+          "Chlamydomonas",
+          "Nostoc",
+          "Volvox"
+        ],
+        correct: 2,
+        explanation: "The thallus of Anthoceros, a common genus of hornwort, often contains extensive internal cavities that are inhabited by the blue-green algae Nostoc, forming a symbiotic relationship."
+      },
+      {
+        q: "What three structures are plants of the Division Bryophyta (Mosses) differentiated into, and what are the main components of a fertile moss sporophyte?",
+        options: [
+          "Roots, stems, and leaves; foot and rhizoids.",
+          "Rhizoids, stems, and leaves; seta and capsule.",
+          "Thallus, gemma, and archegonia; antheridia and spores.",
+          "Foot, seta, and capsule; rhizoids and leaves."
+        ],
+        correct: 1,
+        explanation: "Plants of the Division Bryophyta (Mosses) are differentiated into rhizoids, stems, and leaves. A fertile (mature) moss plant bears a sporophyte, which is comprised of a seta (stalk) and a capsule (sporangium)."
+      },
+      {
+        q: "What unique structures are contained within the capsule of a moss sporophyte, and what is the taxonomic significance of one of these features?",
+        options: [
+          "Gemma cups; their number indicates species age.",
+          "True leaves; their arrangement aids classification.",
+          "Numerous spores, Operculum, and a peristome with teeth; the number of teeth is a taxonomic character for identification.",
+          "Seeds; their shape defines the genus."
+        ],
+        correct: 2,
+        explanation: "The capsule of a moss sporophyte contains numerous spores, an Operculum, and a circular structure called the peristome, which bears teeth. The number of these peristome teeth is a crucial taxonomic character used for the identification of moss species."
+      },
+      {
+        q: "Explain two significant ecological roles of bryophytes, providing examples where applicable.",
+        options: [
+          "They are primary producers in oceans; they cause soil erosion.",
+          "They act as decomposers; they are sources of fossil fuels.",
+          "They serve as carbon sinks, playing a role in the carbon cycle; they are bioindicators of pollution, being absent from highly polluted areas.",
+          "They are major sources of timber; they enhance air pollution."
+        ],
+        correct: 2,
+        explanation: "Bryophytes are ecologically important as carbon sinks, contributing significantly to the carbon cycle by sequestering carbon. They also serve as bioindicators of pollution; certain species are highly sensitive to pollutants, and their absence from specific areas can indicate high levels of environmental contamination. For example, Funaria grows well on burnt areas, Campylopus savanarium forms extensive carpets in miombo woodlands, and Tortula porphyroneura prefers calcium-rich areas underlain by limestone rock."
+      }
+    ]
+  },
+  
+  //const essayData = [
+  {
+    q: "Describe the various tissue types found in vascular plants, focusing on their structure and specific functions, particularly xylem, phloem, epidermis, and parenchyma.",
+    steps: [
+      "Define what a 'tissue' is in plants (a group of cells of the same kind performing a specific function).",
+      "Explain the Epidermis: outermost protective layer, regulating gaseous exchange and water loss.",
+      "Describe Parenchyma: soft, thin-walled cells (ground tissue) involved in photosynthesis and storage.",
+      "Detail Xylem tissue: complex vascular tissue for water and solute transport, comprised of vessels (tube-like, angiosperms/Gnetophyta) and tracheids (elongate, tapered, all vascular plants).",
+      "Explain Phloem tissue: vascular tissue for transport of photosynthetic products (sugars, amino acids), mainly composed of sieve elements and companion cells.",
+      "Conclude by summarizing how these tissues contribute to the complexity and survival of vascular plants."
+    ],
+    course: "BI110",
+    term: "T3",
+    topic: "Plant Tissue Types",
+    year: "Notes",
+    tag: "Essay"
+  },
+  {
+    q: "Discuss the classification of pteridophytes into two major groups and elaborate on the life cycle of a true fern, including the roles of the sporophyte and gametophyte stages.",
+    steps: [
+      "Introduce pteridophytes as vascular cryptogams (seedless vascular plants) that disperse spores.",
+      "Classify pteridophytes into two groups: 'fern allies' (e.g., Equisetum, Lycopodium; characterized by microphylls with single unbranched veins) and 'true ferns' (e.g., Adiantum, Dryopteris; characterized by megaphylls with complex vein networks).",
+      "Describe the dominant Sporophyte stage (2n) of the true fern: produces spores in sporangia (often in sori on the underside of leaves), exhibits circinate vernation in young leaves (fiddleheads).",
+      "Explain the Gametophyte stage (n) (Prothallus): arises from germinated spores, small, heart-shaped, bears antheridia (male gametes/sperm) and archegonia (female gametes/egg).",
+      "Detail the fertilization process: sperm requires water to swim to the egg in the archegonium, leading to the formation of a zygote (2n), which develops into a young sporophyte, completing the life cycle.",
+      "Conclude by highlighting the alternation of generations in the fern life cycle."
+    ],
+    course: "BI110",
+    term: "T3",
+    topic: "Pteridophyte Classification and Life Cycle",
+    year: "Notes",
+    tag: "Essay"
+  },
+  {
+    q: "Explain the concept of apical dominance in plants, including the hormone responsible and its practical implications in horticulture (e.g., pruning).",
+    steps: [
+      "Define apical dominance as the phenomenon where the growth of the main central stem is dominant over other side stems or lateral buds, suppressing their growth.",
+      "Identify the hormone responsible: Auxin, specifically indole acetic acid (IAA), produced by the terminal bud of the stem apex.",
+      "Describe how IAA inhibits the development of lateral buds, maintaining the apical bud's dominance.",
+      "Explain the practical implication in horticulture: Pruning (removing the shoot tips or terminal buds) removes the source of IAA.",
+      "Conclude by explaining that removing apical dominance promotes the growth of lateral buds, leading to bushier plants and increased branching.",
+    ],
+    course: "BI110",
+    term: "T3",
+    topic: "Parts of the Stem",
+    year: "Notes",
+    tag: "Essay"
+  },
+  {
+    q: "Discuss the primary functions of roots in angiosperm plants, beyond just anchorage and absorption, and include examples of specialized root modifications.",
+    steps: [
+      "State the primary functions: anchorage of plants to their growth medium and absorption of water and mineral solutes.",
+      "Explain the role in hormone synthesis: Roots synthesize essential plant hormones like gibberellins (promote stem elongation) and cytokinins (promote cell division and expansion).",
+      "Describe storage function: Roots of many plants become modified into tubers for storing food reserves (e.g., cassava, sweet potato).",
+      "Mention synthesis of secondary metabolites: Roots can synthesize compounds like nicotine (in tobacco plants).",
+      "Conclude by summarizing the diverse and crucial roles of roots in overall plant physiology and survival.",
+    ],
+    course: "BI110",
+    term: "T3",
+    topic: "Function of Roots",
+    year: "Notes",
+    tag: "Essay"
+  },
+  {
+    q: "Compare and contrast the fibrous root system and the tap root system, providing examples of plants that exhibit each type.",
+    steps: [
+      "Define Tap Root System: Describe it as a root system where the initial root formed at germination persists as a main, dominant root growing vertically downwards.",
+      "Provide example for Tap Root System: Mention dicot plants like groundnuts (Arachis hypogea) and carrots.",
+      "Define Fibrous Root System: Describe it as a root system where the initial root degenerates, and numerous roots of the same diameter replace it, forming a dense, branching network.",
+      "Provide example for Fibrous Root System: Mention monocot plants like maize (Zea mays), sorghum (Sorghum bicolor), and finger millet.",
+      "Summarize the key differences: persistence of main root vs. degeneration, main root vs. numerous roots of same diameter, and association with dicots vs. monocots.",
+    ],
+    course: "BI110",
+    term: "T3",
+    topic: "Morphology of Roots",
+    year: "Notes",
+    tag: "Essay"
+  },
+
+
+
+
 ];
   

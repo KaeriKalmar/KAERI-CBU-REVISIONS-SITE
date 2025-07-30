@@ -1685,147 +1685,147 @@ const flashcards = {
         "front": "What is a network?",
         "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Interacting with a Network"
     },
     {
         "front": "What do networks allow computers to share?",
         "back": "Networks allow computers to share resources, such as hardware, software, data, and information.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Interacting with a Network"
     },
     {
         "front": "What is a client in a network?",
         "back": "A client is a computer or device on the network that relies on the server for its resources.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Client/Server Networks"
     },
     {
         "front": "What is a server in a network?",
         "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Client/Server Networks"
     },
     {
         "front": "What is a peer-to-peer (P2P) network?",
         "back": "A P2P network is a simple, inexpensive network that typically connects fewer than 10 computers, where each computer can act as both a client and a server.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Peer-to-Peer Networks"
     },
     {
         "front": "What are common types of wired transmission media?",
         "back": "Common types include twisted-pair cable, coaxial cable, and fiber-optic cable.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Transmission Media"
     },
     {
         "front": "What is 'bandwidth' in network terms?",
         "back": "Bandwidth is the maximum amount of data that can pass from one point to another in a unit of time.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Performance"
     },
     {
         "front": "What is 'latency'?",
         "back": "Latency is the time it takes for a signal to travel from one point to another.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Performance"
     },
     {
         "front": "What is an 'Ethernet network'?",
         "back": "An Ethernet network is a wired LAN technology that uses Ethernet cables to connect devices.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Standards"
     },
     {
         "front": "What is 'Wi-Fi'?",
         "back": "Wi-Fi is a wireless networking technology that uses radio waves to provide network and Internet connections.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Standards"
     },
     {
         "front": "What is 'Bluetooth'?",
         "back": "Bluetooth is a short-range wireless technology used for connecting devices like headsets, smartphones, and keyboards over short distances.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Standards"
     },
     {
         "front": "What is an 'RFID (Radio Frequency Identification) system'?",
         "back": "An RFID system uses radio waves to read information stored on RFID tags, often used for tracking inventory or access control.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Standards"
     },
     {
         "front": "What is an 'NFC (Near Field Communication) system'?",
         "back": "An NFC system enables two devices to communicate when they are touched together or brought within a few centimeters of each other, commonly used for mobile payments.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Standards"
     },
     {
         "front": "What is a 'router'?",
         "back": "A router is a network device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Devices"
     },
     {
         "front": "What is a 'modem'?",
         "back": "A modem (modulator-demodulator) is a device that converts digital signals into analog signals for transmission over communication lines, and vice versa.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Devices"
     },
     {
         "front": "What is a 'wireless access point (WAP)'?",
         "back": "A WAP is a networking hardware device that allows Wi-Fi devices to connect to a wired network.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Devices"
     },
     {
         "front": "What is a 'network interface card (NIC)'?",
         "back": "A NIC is a hardware component that connects a computer to a computer network.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Devices"
     },
     {
         "front": "What is a 'firewall'?",
         "back": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Security"
     },
     {
         "front": "What is 'encryption'?",
         "back": "Encryption is the process of converting information or data into a code, to prevent unauthorized access.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Security"
     },
     {
         "front": "What are 'protocols' in networking?",
         "back": "Protocols are sets of rules governing the exchange of information over a network.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "Network Concepts"
     },
     {
         "front": "What is the 'Internet of Things (IoT)'?",
         "back": "The IoT is a network of physical objects embedded with sensors, software, and other technologies that allow them to connect and exchange data over the Internet.",
         "course": "CS110",
-        "term": "T2",
+        "term": "T1",
         "topic": "IoT"
     },
     {
@@ -4105,708 +4105,844 @@ const flashcards = {
   }
 ],
 
-"MODULE 11: PROGRAMMING FUNDAMENTALS (ALGORITHMS, FLOWCHARTS, PSEUDOCODE, PROBLEM SOLVING)":[
+//{
+  "MODULE 11: PROGRAMMING FUNDAMENTALS (ALGORITHMS, FLOWCHARTS, PSEUDOCODE, PROBLEM SOLVING)": [
+    {
+      "front": "What is the difference between an interpreter and a compiler?",
+      "back": "An interpreter translates and executes code line by line, allowing for immediate execution. A compiler translates the entire source code into an executable program (object file) before execution, which then typically runs faster.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Is C++ an interpreted or compiled language?",
+      "back": "C++ is a compiled language.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Why is good program design important?",
+      "back": "Good program design is important for creating clear, logical, and efficient programs, which helps in solving complex problems, reducing bugs, and lowering maintenance costs.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "program design"
+    },
+    {
+      "front": "Is C++ case-sensitive?",
+      "back": "Yes, C++ is case-sensitive.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "data types"
+    },
+    {
+      "front": "What happens if an unsigned integer stores a value greater than its maximum capacity?",
+      "back": "If an unsigned integer stores a value greater than its maximum capacity, it \"wraps around\" to the smallest possible value (0) and begins counting up from there.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "data types"
+    },
+    {
+      "front": "What is the purpose of const keyword?",
+      "back": "The const keyword is used to declare a variable as a constant, ensuring that its value cannot be modified after initialization, which helps in program correctness, readability, and bug prevention.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "variables"
+    },
+    {
+      "front": "What are literal constants?",
+      "back": "Literal constants are values explicitly written in the code (e.g., 10, 3.14, \"Hello\").",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "variables"
+    },
+    {
+      "front": "What are symbolic constants?",
+      "back": "Symbolic constants are names given to constant values, typically declared using const or #define, making code more readable and easier to modify (e.g., const double PI = 3.14159;).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "variables"
+    },
+    {
+      "front": "What is an expression in programming?",
+      "back": "An expression is any statement that evaluates to a value.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "expressions and operators"
+    },
+    {
+      "front": "What is an operator?",
+      "back": "An operator is a symbol that causes the compiler or interpreter to perform some action (e.g., arithmetic calculations, comparisons).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "expressions and operators"
+    },
+    {
+      "front": "What are arithmetic operators in C++?",
+      "back": "Arithmetic operators in C++ perform mathematical calculations, such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "expressions and operators"
+    },
+    {
+      "front": "What is a control structure?",
+      "back": "A control structure is a programming construct that determines the order in which instructions are executed, allowing for conditional execution, looping, and branching.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "control structures (if statement)"
+    },
+    {
+      "front": "What is the purpose of the if statement?",
+      "back": "The if statement enables you to test for a condition (e.g., whether two variables are equal) and branch to different parts of your code depending on the result.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "control structures (if statement)"
+    },
+    {
+      "front": "How does an if statement work with a condition?",
+      "back": "An if statement evaluates a condition (an expression in parentheses); if the condition is true, the code block immediately following the if statement is executed.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "control structures (if statement)"
+    },
+    {
+      "front": "What happens if the expression in an if statement has a non-zero value?",
+      "back": "If the expression in the parentheses of an if statement has a non-zero value, it is considered true, and the statement (or block of statements) immediately following the if is executed.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "control structures (if statement)"
+    },
+    {
+      "front": "What happens if the expression in an if statement has a value of 0?",
+      "back": "If the expression in the parentheses of an if statement has a value of 0, it is considered false, and the statement (or block of statements) immediately following the if is skipped. (Completing the statement based on common programming logic for 'if' conditions).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "control structures (if statement)"
+    },
+    {
+      "front": "Which of the following is NOT a programming language?",
+      "back": "HTML",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "What is the primary role of a compiler?",
+      "back": "To translate source code into machine-executable code",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "In C++, which symbol begins a preprocessor directive?",
+      "back": "#",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Which of the following is an advantage of compiled languages over interpreted ones?",
+      "back": "Faster execution time",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "What is the function of a linker in program compilation?",
+      "back": "To produce an executable file",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "The traditional first program in C++ displays:",
+      "back": "Hello World",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "In the Hello World program, what is the output redirection symbol?",
+      "back": "<<",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "The correct extension for C++ source files is:",
+      "back": ".cpp",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Which component is NOT typically part of an IDE?",
+      "back": "Spreadsheet editor",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "The file 'iostream.h' is used for:",
+      "back": "Input/Output stream operations",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "What is the key difference between an interpreter and a compiler?",
+      "back": "Compilers translate the entire source code before execution",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Which of these accurately describes a program?",
+      "back": "Either source code or the final executable",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "What is the main reason modern programmers prefer well-written and maintainable code?",
+      "back": "Maintenance costs are high",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "program design"
+    },
+    {
+      "front": "Which statement about debugging is true?",
+      "back": "Most program costs come from debugging and maintenance",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "program design"
+    },
+    {
+      "front": "What is the first question a programmer should ask before writing a program?",
+      "back": "What is the problem I'm solving?",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "program design"
+    },
+    {
+      "front": "What component of an IDE helps trace logical errors in programs?",
+      "back": "Debugger",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "program design"
+    },
+    {
+      "front": "Which of the following is not a typical C++ source file extension?",
+      "back": ".JS",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "What is the function of 'main()' in a C++ program?",
+      "back": "Entry point for program execution",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Which of the following errors is most likely to be identified at compile time?",
+      "back": "Syntax error",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "debugging"
+    },
+    {
+      "front": "What is the output of: `cout << \"Area is:\\t\" << 5*4 << endl;`",
+      "back": "Area is: 20",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "expressions and operators"
+    },
+    {
+      "front": "What happens if a closing brace is missing in a function definition?",
+      "back": "Compiler throws a syntax error",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "debugging"
+    },
+    {
+      "front": "Which of these programs is easier to understand based on variable naming?",
+      "back": "`int Width, Height, Area; Area = Width * Height;`",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "variables"
+    },
+    {
+      "front": "What is an 'object' in the context of C++ I/O like cout?",
+      "back": "An instance of a class",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "programming fundamentals"
+    },
+    {
+      "front": "Which of the following is a correct way to use a symbolic constant?",
+      "back": "`const int MAX = 100;`",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "variables"
+    },
+    {
+      "front": "What happens when a signed short integer exceeds its maximum value?",
+      "back": "It wraps \naround to negative values",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "data types"
+    },
+    {
+      "front": "The size of an int in C++ is:",
+      "back": "Compiler-dependent",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "data types"
+    },
+    {
+      "front": "What is 'computer programming'?",
+      "back": "Computer programming is the process of designing and writing instructions that a computer can execute to perform specific tasks.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is a 'programming language'?",
+      "back": "A programming language is a formal language used to communicate instructions to a computer. It provides a structured way for programmers to write code that tells the computer what to do.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What are the main components of a programming language?",
+      "back": "Programming languages consist of a set of rules (syntax) and keywords that define how programs are written and interpreted.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "List examples of popular programming languages mentioned.",
+      "back": "Examples include Python, Java, C++, and JavaScript.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is 'machine language'?",
+      "back": "Machine language is the most primitive form of computer instructions, represented by long strings of ones and zeroes, directly understood by the computer's CPU.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is a 'variable' in programming?",
+      "back": "A variable is a named storage location that holds a value, which can be changed during program execution.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "List common 'data types' in C++.",
+      "back": "Common data types include `int` (integers), `float` (single-precision floating-point numbers), `double` (double-precision floating-point numbers), `char` (single characters), `bool` (Boolean values - true/false), and `string` (sequences of characters).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What are `cin` and `cout` used for in C++?",
+      "back": "`cin` (character input) is used to read input from the user (e.g., keyboard). `cout` (character output) is used to display output to the console.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "Name types of 'operators' in programming.",
+      "back": "Operators include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operator (=), and increment/decrement operators (++, --).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is the purpose of 'control structures' in programming?",
+      "back": "Control structures dictate the flow of execution in a program, allowing specific blocks of code to be executed based on conditions or to be repeated.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "Differentiate between `if`, `if-else`, and `nested if` statements.",
+      "back": "An `if` statement executes code only if a condition is true. An `if-else` statement executes one block of code if the condition is true and another if it's false. A `nested if` statement places one `if` statement inside another.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "When would you use a `switch` statement?",
+      "back": "A `switch` statement is used to execute different blocks of code based on the value of a single variable or expression, offering a more concise alternative to multiple `if-else if` statements.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "Name different types of 'loops' in programming.",
+      "back": "Common types of loops include `while` loops (repeat as long as a condition is true), `do-while` loops (execute at least once, then repeat as long as a condition is true), and `for` loops (repeat a specific number of times or iterate over a collection).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is a 'function' in programming?",
+      "back": "A function is a block of organized, reusable code that performs a specific task. It can take inputs (parameters) and produce an output (return value).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What are 'arrays' in programming?",
+      "back": "An array is a data structure that stores a collection of elements of the same data type in contiguous memory locations, accessed using an index.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "How are 'comments' used in programming?",
+      "back": "Comments are non-executable lines of text within code, used to explain the code's purpose, functionality, or logic for human readers. They can be single-line (`//`) or multi-line (`/* */`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "Differentiate between 'syntax errors', 'logical errors', and 'runtime errors'.",
+      "back": "Syntax errors violate the programming language's rules, preventing compilation. Logical errors allow the program to run but produce incorrect results. Runtime errors occur during program execution, causing unexpected termination.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Computer Programming Fundamentals"
+    },
+    {
+      "front": "What is 'Computer Programming'?",
+      "back": "The process of designing and writing instructions that a computer can execute to perform specific tasks. These instructions are known as code, written using programming languages.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is a 'Programming Language'?",
+      "back": "A formal language used to communicate instructions to a computer. It provides a structured way to write code that tells the computer what to do, consisting of rules (syntax) and keywords. Examples: Python, Java, C++, JavaScript.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is 'Machine Language'?",
+      "back": "The most primitive computer instructions, represented by long strings of ones and zeroes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Assemblers'?",
+      "back": "Tools invented to map machine instructions to human-readable and -manageable mnemonics (e.g., ADD, MOV).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Differentiate between an 'Interpreter' and a 'Compiler'.",
+      "back": "An Interpreter translates a program as it reads it, turning instructions directly into actions (easy for programmers). A Compiler translates code into an intermediary form (object file) in a step called compiling, then uses a linker to create an executable program (compiled programs run fast, executable can be distributed). C++ is a compiled language.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are the two main uses of the term 'Program' in computing?",
+      "back": "1. Individual instructions or source code created by the programmer. 2. An entire piece of executable software.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is 'Source Code'?",
+      "back": "The human-readable form of program instructions, which cannot be executed directly until compiled or interpreted.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Why is 'Program Design' important for complex problems?",
+      "back": "Thorough program design before writing code is crucial for solving problems on time and budget, and for creating relatively bug-free and easy-to-maintain programs. Debugging and maintenance account for an estimated 90% of software cost.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is an 'Integrated Development Environment (IDE)'?",
+      "back": "A software application that provides a comprehensive interface for writing, compiling, debugging, and executing programs. It combines tools like a code editor, compiler/interpreter, debugger, and often a GUI builder. Examples: Code::blocks, Visual Studio Code.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Source Files'?",
+      "back": "Files created with an editor containing the human-readable program instructions (e.g., .CPP, .CP, or .C for C++).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Describe the typical 'Development Cycle' for a program.",
+      "back": "Write program -> compile source code -> link program -> run it. Errors (bugs) often occur, requiring editing source code, recompiling, relinking, and rerunning.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is 'Debugging'?",
+      "back": "The process of finding and fixing errors or 'bugs' in a program.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Compile-time Errors'?",
+      "back": "Errors typically resulting from typos or minor syntax errors that compilers identify, often pointing to the exact place of the mistake.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the traditional 'Hello World' program's purpose?",
+      "back": "A traditional first program in many programming books, demonstrating the basic development cycle of entering, compiling, and running a simple program.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "List some core components of a C++ Program.",
+      "back": "C++ programs consist of objects, functions, variables, and other component parts.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the purpose of the 'Preprocessor' in C++?",
+      "back": "Runs before the compiler, reading source code for lines beginning with `#` (pound symbol) and acting on them before compilation. For example, `#include` includes a specified file.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the significance of the `#include <iostream.h>` directive?",
+      "back": "It includes the `iostream.h` file, which contains definitions for standard input/output operations, used by `cout` for writing to the screen.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the 'main()' function in C++?",
+      "back": "Every C++ program must have a `main()` function. It is the starting point of program execution and is called automatically.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is a 'Function' in C++?",
+      "back": "A block of code that performs one or more actions. Functions begin with an opening brace (`{`) and end with a closing brace (`}`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the 'cout' object used for?",
+      "back": "Used to print messages and values to the screen.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the 'Output Redirection Operator' (`<<`) in C++?",
+      "back": "Used with `cout` to send data to the screen.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is a 'Text String' in C++?",
+      "back": "A series of printable characters, enclosed in double quotes (`\"`) when used with `cout` (e.g., \"Hello World\").",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the purpose of `\\n` and `endl` in C++ output?",
+      "back": "`\\n` (newline character) and `endl` (manipulator) both tell `cout` to move the cursor to a new line after printing.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What does `return 0;` signify in the `main()` function?",
+      "back": "main() typically returns 0 to the operating system upon successful completion of the program, indicating that the program ran without errors.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Comments' in programming and why are they important?",
+      "back": "Text ignored by the compiler but used to inform the reader about the code. They explain *why* something is happening, not just *what*, improving readability and maintainability.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Differentiate between C++-style (`//`) and C-style (`/* ... */`) comments.",
+      "back": "C++-style (`//`) comments ignore everything after `//` until the end of the line. C-style (`/* ... */`) comments ignore everything between `/*` and `*/`, allowing for multi-line comments.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Is C++ case-sensitive?",
+      "back": "Yes, C++ is case-sensitive, meaning `age`, `Age`, and `AGE` are considered different.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are common 'Variable Naming Conventions' in C++?",
+      "back": "Many programmers use all lowercase (e.g., `age`); for two words, `my_car` (snake_case) or `myCar` (camelCase) are common.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Keywords' in C++?",
+      "back": "Words reserved by C++ (e.g., `if`, `while`, `for`, `main`) that have special meaning and cannot be used as variable names.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "How do you perform 'Variable Declaration' and 'Initialization' in C++?",
+      "back": "Declaration defines a variable's type and name (e.g., `unsigned short Width;`). Initialization assigns a value to a variable when it is defined (e.g., `unsigned short Width = 5;`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the 'Assignment Operator' (`=`) in C++?",
+      "back": "Used to assign a value to a variable (e.g., `Width = 5;`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the purpose of the 'const' keyword?",
+      "back": "Used to declare symbolic constants whose values cannot be changed while the program is running.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Statements' in C++?",
+      "back": "Commands in C++ that control execution sequence, evaluate expressions, or do nothing. All C++ statements end with a semicolon `;`.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is an 'Assignment Statement'?",
+      "back": "A statement that assigns the value of the right side of the `=` operator to the variable on the left side (e.g., `x = a + b;`).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is a 'Null Statement'?",
+      "back": "A statement that does nothing, represented only by a semicolon `;`.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What is the role of 'Whitespace' in C++?",
+      "back": "Tabs, spaces, and newlines that are generally ignored by the compiler in statements but are used to improve code readability and organization.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "What are 'Blocks' or 'Compound Statements'?",
+      "back": "A group of statements enclosed by curly braces `{}` that acts as a single statement, often used with control structures like `if` statements.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Explain the 'Increment' (`++`) and 'Decrement' (`--`) Operators.",
+      "back": "Special operators to increase (`++`) or decrease (`--`) a variable's value by 1. They have prefix (`++myAge`) and postfix (`myAge++`) varieties, differing in when the operation is applied in complex expressions.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "How does the 'if' statement work in C++?",
+      "back": "The `if` statement enables branching of code based on a condition. If the `expression` in parentheses is 0 (false), the statement is skipped; if non-zero (true), the statement is executed. Blocks can be used for multiple actions.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    {
+      "front": "Why is 'Nesting Parentheses' important in C++ expressions?",
+      "back": "Used for complex expressions to control the order of operations, ensuring that calculations are performed in the intended sequence.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Introduction to Programming"
+    },
+    
+   //[
   {
-    "front": "What is the difference between an interpreter and a compiler?",
-    "back": "An interpreter translates and executes code line by line, allowing for immediate execution. A compiler translates the entire source code into an executable program (object file) before execution, which then typically runs faster.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Is C++ an interpreted or compiled language?",
-    "back": "C++ is a compiled language.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Why is good program design important?",
-    "back": "Good program design is important for creating clear, logical, and efficient programs, which helps in solving complex problems, reducing bugs, and lowering maintenance costs.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "program design"
-  },
-  {
-    "front": "Is C++ case-sensitive?",
-    "back": "Yes, C++ is case-sensitive.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "data types"
-  },
-  {
-    "front": "What happens if an unsigned integer stores a value greater than its maximum capacity?",
-    "back": "If an unsigned integer stores a value greater than its maximum capacity, it \"wraps around\" to the smallest possible value (0) and begins counting up from there.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "data types"
-  },
-  {
-    "front": "What is the purpose of const keyword?",
-    "back": "The const keyword is used to declare a variable as a constant, ensuring that its value cannot be modified after initialization, which helps in program correctness, readability, and bug prevention.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "variables"
-  },
-  {
-    "front": "What are literal constants?",
-    "back": "Literal constants are values explicitly written in the code (e.g., 10, 3.14, \"Hello\").",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "variables"
-  },
-  {
-    "front": "What are symbolic constants?",
-    "back": "Symbolic constants are names given to constant values, typically declared using const or #define, making code more readable and easier to modify (e.g., const double PI = 3.14159;).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "variables"
-  },
-  {
-    "front": "What is an expression in programming?",
-    "back": "An expression is any statement that evaluates to a value.",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int a = 2;\n    int b = 3;\n    int c = 4;\n    std::cout << a + b * c << std::endl;\n    return 0;\n}\n```",
+    "back": "14",
     "course": "CS110",
     "term": "T3",
     "topic": "expressions and operators"
   },
   {
-    "front": "What is an operator?",
-    "back": "An operator is a symbol that causes the compiler or interpreter to perform some action (e.g., arithmetic calculations, comparisons).",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 10;\n    if (x > 5) {\n        std::cout << \"X is greater than 5\" << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "X is greater than 5",
+    "course": "CS110",
+    "term": "T3",
+    "topic": "control structures"
+  },
+  {
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int count = 0;\n    while (count < 3) {\n        std::cout << count << \" \";\n        count++;\n    }\n    std::cout << std::endl;\n    return 0;\n}\n```",
+    "back": "0 1 2 ",
+    "course": "CS110",
+    "term": "T3",
+    "topic": "control structures"
+  },
+  {
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    for (int i = 0; i < 2; ++i) {\n        std::cout << \"Loop \" << i << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "Loop 0\nLoop 1",
+    "course": "CS110",
+    "term": "T3",
+    "topic": "control structures"
+  },
+  {
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int age = 18;\n    if (age >= 18) {\n        std::cout << \"Eligible to vote.\" << std::endl;\n    } else {\n        std::cout << \"Not eligible to vote.\" << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "Eligible to vote.",
+    "course": "CS110",
+    "term": "T3",
+    "topic": "control structures"
+  },
+  {
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int num = 1;\n    num += 5;\n    std::cout << num << std::endl;\n    return 0;\n}\n```",
+    "back": "6",
     "course": "CS110",
     "term": "T3",
     "topic": "expressions and operators"
   },
   {
-    "front": "What are arithmetic operators in C++?",
-    "back": "Arithmetic operators in C++ perform mathematical calculations, such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 5;\n    x++;\n    std::cout << x << std::endl;\n    return 0;\n}\n```",
+    "back": "6",
     "course": "CS110",
     "term": "T3",
     "topic": "expressions and operators"
   },
   {
-    "front": "What is a control structure?",
-    "back": "A control structure is a programming construct that determines the order in which instructions are executed, allowing for conditional execution, looping, and branching.",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    std::cout << (10 > 5 && 7 < 3) << std::endl;\n    return 0;\n}\n```",
+    "back": "0",
     "course": "CS110",
     "term": "T3",
-    "topic": "control structures (if statement)"
+    "topic": "expressions and operators"
   },
   {
-    "front": "What is the purpose of the if statement?",
-    "back": "The if statement enables you to test for a condition (e.g., whether two variables are equal) and branch to different parts of your code depending on the result.",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int grade = 85;\n    if (grade > 90) {\n        std::cout << \"A\";\n    } else if (grade > 80) {\n        std::cout << \"B\";\n    } else {\n        std::cout << \"C\";\n    }\n    std::cout << std::endl;\n    return 0;\n}\n```",
+    "back": "B",
     "course": "CS110",
     "term": "T3",
-    "topic": "control structures (if statement)"
+    "topic": "control structures"
   },
   {
-    "front": "How does an if statement work with a condition?",
-    "back": "An if statement evaluates a condition (an expression in parentheses); if the condition is true, the code block immediately following the if statement is executed.",
+    "front": "What will be the output of this code?\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 10;\n    if (x == 10 || x == 20) {\n        std::cout << \"X is 10 or 20\" << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "X is 10 or 20",
     "course": "CS110",
     "term": "T3",
-    "topic": "control structures (if statement)"
+    "topic": "expressions and operators"
   },
   {
-    "front": "What happens if the expression in an if statement has a non-zero value?",
-    "back": "If the expression in the parentheses of an if statement has a non-zero value, it is considered true, and the statement (or block of statements) immediately following the if is executed.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "control structures (if statement)"
-  },
-  {
-    "front": "What happens if the expression in an if statement has a value of 0?",
-    "back": "If the expression in the parentheses of an if statement has a value of 0, it is considered false, and the statement (or block of statements) immediately following the if is skipped. (Completing the statement based on common programming logic for 'if' conditions).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "control structures (if statement)"
-  },
-  {
-    "front": "Which of the following is NOT a programming language?",
-    "back": "HTML",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "What is the primary role of a compiler?",
-    "back": "To translate source code into machine-executable code",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "In C++, which symbol begins a preprocessor directive?",
-    "back": "#",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Which of the following is an advantage of compiled languages over interpreted ones?",
-    "back": "Faster execution time",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "What is the function of a linker in program compilation?",
-    "back": "To produce an executable file",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "The traditional first program in C++ displays:",
-    "back": "Hello World",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "In the Hello World program, what is the output redirection symbol?",
-    "back": "<<",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "The correct extension for C++ source files is:",
-    "back": ".cpp",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Which component is NOT typically part of an IDE?",
-    "back": "Spreadsheet editor",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "The file 'iostream.h' is used for:",
-    "back": "Input/Output stream operations",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "What is the key difference between an interpreter and a compiler?",
-    "back": "Compilers translate the entire source code before execution",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Which of these accurately describes a program?",
-    "back": "Either source code or the final executable",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "What is the main reason modern programmers prefer well-written and maintainable code?",
-    "back": "Maintenance costs are high",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "program design"
-  },
-  {
-    "front": "Which statement about debugging is true?",
-    "back": "Most program costs come from debugging and maintenance",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "program design"
-  },
-  {
-    "front": "What is the first question a programmer should ask before writing a program?",
-    "back": "What is the problem I'm solving?",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "program design"
-  },
-  {
-    "front": "What component of an IDE helps trace logical errors in programs?",
-    "back": "Debugger",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "program design"
-  },
-  {
-    "front": "Which of the following is not a typical C++ source file extension?",
-    "back": ".JS",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "What is the function of 'main()' in a C++ program?",
-    "back": "Entry point for program execution",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "programming fundamentals"
-  },
-  {
-    "front": "Which of the following errors is most likely to be identified at compile time?",
-    "back": "Syntax error",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    STRING name = \"Alice\";\n    std::cout << name << std::endl;\n    return 0;\n}\n```",
+    "back": "The data type `STRING` is incorrect. C++ uses `std::string` (lowercase 's') for string variables. You also need to include `<string>` header.",
     "course": "CS110",
     "term": "T3",
     "topic": "debugging"
   },
   {
-    "front": "What is the output of: `cout << \"Area is:\\t\" << 5*4 << endl;`",
-    "back": "Area is: 20",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "expressions and operators"
-  },
-  {
-    "front": "What happens if a closing brace is missing in a function definition?",
-    "back": "Compiler throws a syntax error",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 5;\n    if (x = 10) { // Assignment instead of comparison\n        std::cout << \"X is 10\" << std::endl;\n    }\n    std::cout << \"X is now: \" << x << std::endl;\n    return 0;\n}\n```",
+    "back": "The `if` condition uses the assignment operator `=` instead of the comparison operator `==`. `x = 10` will assign 10 to `x` and then evaluate to `true` (since 10 is non-zero). The output will be \"X is 10\" and then \"X is now: 10\". The condition should be `if (x == 10)`.",
     "course": "CS110",
     "term": "T3",
     "topic": "debugging"
   },
   {
-    "front": "Which of these programs is easier to understand based on variable naming?",
-    "back": "`int Width, Height, Area; Area = Width * Height;`",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    int i;\n    for (i = 0; i > 5; i++) { // Incorrect loop condition\n        std::cout << i << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "The loop condition `i > 5` is initially false (0 is not greater than 5), so the loop body will never execute. The intended condition for iterating 0 to 4 times should likely be `i < 5`.",
     "course": "CS110",
     "term": "T3",
-    "topic": "variables"
+    "topic": "debugging"
   },
   {
-    "front": "What is an 'object' in the context of C++ I/O like cout?",
-    "back": "An instance of a class",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    std::string text = \"Hello\";\n    char firstChar = text[0];\n    char secondChar = text[10]; // Accessing out of bounds\n    std::cout << firstChar << secondChar << std::endl;\n    return 0;\n}\n```",
+    "back": "Accessing `text[10]` is an out-of-bounds error. The string \"Hello\" only has indices 0 through 4. This will likely cause a runtime error (segmentation fault) or undefined behavior.",
     "course": "CS110",
     "term": "T3",
-    "topic": "programming fundamentals"
+    "topic": "debugging"
   },
   {
-    "front": "Which of the following is a correct way to use a symbolic constant?",
-    "back": "`const int MAX = 100;`",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nvoid printMessage() { // Function defined but not called\n    std::cout << \"This is a message.\" << std::endl;\n}\n\nint main() {\n    return 0;\n}\n```",
+    "back": "The `printMessage()` function is defined but never called within the `main()` function, so its output will not appear when the program runs.",
     "course": "CS110",
     "term": "T3",
-    "topic": "variables"
+    "topic": "debugging"
   },
   {
-    "front": "What happens when a signed short integer exceeds its maximum value?",
-    "back": "It wraps \naround to negative values",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 5;\n    std::cout << \"Value is: \" x << std::endl; // Missing output operator\n    return 0;\n}\n```",
+    "back": "There is a missing output redirection operator `<<` between the string literal `\"Value is: \"` and the variable `x`. It should be `std::cout << \"Value is: \" << x << std::endl;`.",
     "course": "CS110",
     "term": "T3",
-    "topic": "data types"
+    "topic": "debugging"
   },
   {
-    "front": "The size of an int in C++ is:",
-    "back": "Compiler-dependent",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    double pi = 3.14159;\n    int radius = 5;\n    int area = pi * radius * radius; // Potential data loss (truncation)\n    std::cout << area << std::endl;\n    return 0;\n}\n```",
+    "back": "When `pi * radius * radius` (which is `3.14159 * 5 * 5 = 78.53975`) is assigned to an `int` variable `area`, the decimal part is truncated. The output will be 78, not 78.53975. To retain precision, `area` should be a `double`.",
     "course": "CS110",
     "term": "T3",
-    "topic": "data types"
+    "topic": "debugging"
   },
   {
-    "front": "What is 'computer programming'?",
-    "back": "Computer programming is the process of designing and writing instructions that a computer can execute to perform specific tasks.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is a 'programming language'?",
-    "back": "A programming language is a formal language used to communicate instructions to a computer. It provides a structured way for programmers to write code that tells the computer what to do.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What are the main components of a programming language?",
-    "back": "Programming languages consist of a set of rules (syntax) and keywords that define how programs are written and interpreted.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "List examples of popular programming languages mentioned.",
-    "back": "Examples include Python, Java, C++, and JavaScript.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is 'machine language'?",
-    "back": "Machine language is the most primitive form of computer instructions, represented by long strings of ones and zeroes, directly understood by the computer's CPU.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is a 'variable' in programming?",
-    "back": "A variable is a named storage location that holds a value, which can be changed during program execution.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "List common 'data types' in C++.",
-    "back": "Common data types include `int` (integers), `float` (single-precision floating-point numbers), `double` (double-precision floating-point numbers), `char` (single characters), `bool` (Boolean values - true/false), and `string` (sequences of characters).",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What are `cin` and `cout` used for in C++?",
-    "back": "`cin` (character input) is used to read input from the user (e.g., keyboard). `cout` (character output) is used to display output to the console.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "Name types of 'operators' in programming.",
-    "back": "Operators include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operator (=), and increment/decrement operators (++, --).",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is the purpose of 'control structures' in programming?",
-    "back": "Control structures dictate the flow of execution in a program, allowing specific blocks of code to be executed based on conditions or to be repeated.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "Differentiate between `if`, `if-else`, and `nested if` statements.",
-    "back": "An `if` statement executes code only if a condition is true. An `if-else` statement executes one block of code if the condition is true and another if it's false. A `nested if` statement places one `if` statement inside another.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "When would you use a `switch` statement?",
-    "back": "A `switch` statement is used to execute different blocks of code based on the value of a single variable or expression, offering a more concise alternative to multiple `if-else if` statements.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "Name different types of 'loops' in programming.",
-    "back": "Common types of loops include `while` loops (repeat as long as a condition is true), `do-while` loops (execute at least once, then repeat as long as a condition is true), and `for` loops (repeat a specific number of times or iterate over a collection).",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is a 'function' in programming?",
-    "back": "A function is a block of organized, reusable code that performs a specific task. It can take inputs (parameters) and produce an output (return value).",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What are 'arrays' in programming?",
-    "back": "An array is a data structure that stores a collection of elements of the same data type in contiguous memory locations, accessed using an index.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "How are 'comments' used in programming?",
-    "back": "Comments are non-executable lines of text within code, used to explain the code's purpose, functionality, or logic for human readers. They can be single-line (`//`) or multi-line (`/* */`).",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "Differentiate between 'syntax errors', 'logical errors', and 'runtime errors'.",
-    "back": "Syntax errors violate the programming language's rules, preventing compilation. Logical errors allow the program to run but produce incorrect results. Runtime errors occur during program execution, causing unexpected termination.",
-    "course": "CS110",
-    "term": "T2",
-    "topic": "Computer Programming Fundamentals"
-  },
-  {
-    "front": "What is 'Computer Programming'?",
-    "back": "The process of designing and writing instructions that a computer can execute to perform specific tasks. These instructions are known as code, written using programming languages.",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    int a = 10;\n    int b = 20;\n    if (a > b) {\n        std::cout << \"A is greater\";\n    }\n    std::cout << \"Done.\" << std::endl;\n    return 0;\n}\n```",
+    "back": "This code has no logical error but might be misleading. Since `a` is not greater than `b`, the `if` block is skipped. The program will simply output \"Done.\" There's no `else` block to handle the false condition, which might be an oversight depending on intent.",
     "course": "CS110",
     "term": "T3",
-    "topic": "Introduction to Programming"
+    "topic": "debugging"
   },
   {
-    "front": "What is a 'Programming Language'?",
-    "back": "A formal language used to communicate instructions to a computer. It provides a structured way to write code that tells the computer what to do, consisting of rules (syntax) and keywords. Examples: Python, Java, C++, JavaScript.",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    // This is a single-line comment\n    /* This is also a comment // This nested comment is problematic */\n    std::cout << \"Hello\" << std::endl;\n    return 0;\n}\n```",
+    "back": "C-style multi-line comments (`/* ... */`) do not nest. The `//` inside the `/* ... */` comment is treated as part of the comment, but the second `*/` closes the first multi-line comment, leaving the rest of the line as unclosed code, causing a compile-time error. You cannot nest `/* ... */` comments.",
     "course": "CS110",
     "term": "T3",
-    "topic": "Introduction to Programming"
+    "topic": "debugging"
   },
   {
-    "front": "What is 'Machine Language'?",
-    "back": "The most primitive computer instructions, represented by long strings of ones and zeroes.",
+    "front": "What's wrong with this code? (Debugging)\n```cpp\n#include <iostream>\n\nint main() {\n    int number = 5;\n    if (number % 2 = 0) { // Assignment in condition instead of comparison\n        std::cout << \"Even\" << std::endl;\n    } else {\n        std::cout << \"Odd\" << std::endl;\n    }\n    return 0;\n}\n```",
+    "back": "The condition `number % 2 = 0` uses the assignment operator `=` instead of the comparison operator `==`. This will attempt to assign `0` to the result of `number % 2`, which is an rvalue and cannot be assigned to, resulting in a compile-time error. It should be `if (number % 2 == 0)`.",
     "course": "CS110",
     "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Assemblers'?",
-    "back": "Tools invented to map machine instructions to human-readable and -manageable mnemonics (e.g., ADD, MOV).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Differentiate between an 'Interpreter' and a 'Compiler'.",
-    "back": "An Interpreter translates a program as it reads it, turning instructions directly into actions (easy for programmers). A Compiler translates code into an intermediary form (object file) in a step called compiling, then uses a linker to create an executable program (compiled programs run fast, executable can be distributed). C++ is a compiled language.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are the two main uses of the term 'Program' in computing?",
-    "back": "1. Individual instructions or source code created by the programmer. 2. An entire piece of executable software.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is 'Source Code'?",
-    "back": "The human-readable form of program instructions, which cannot be executed directly until compiled or interpreted.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Why is 'Program Design' important for complex problems?",
-    "back": "Thorough program design before writing code is crucial for solving problems on time and budget, and for creating relatively bug-free and easy-to-maintain programs. Debugging and maintenance account for an estimated 90% of software cost.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is an 'Integrated Development Environment (IDE)'?",
-    "back": "A software application that provides a comprehensive interface for writing, compiling, debugging, and executing programs. It combines tools like a code editor, compiler/interpreter, debugger, and often a GUI builder. Examples: Code::blocks, Visual Studio Code.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Source Files'?",
-    "back": "Files created with an editor containing the human-readable program instructions (e.g., .CPP, .CP, or .C for C++).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Describe the typical 'Development Cycle' for a program.",
-    "back": "Write program -> compile source code -> link program -> run it. Errors (bugs) often occur, requiring editing source code, recompiling, relinking, and rerunning.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is 'Debugging'?",
-    "back": "The process of finding and fixing errors or 'bugs' in a program.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Compile-time Errors'?",
-    "back": "Errors typically resulting from typos or minor syntax errors that compilers identify, often pointing to the exact place of the mistake.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the traditional 'Hello World' program's purpose?",
-    "back": "A traditional first program in many programming books, demonstrating the basic development cycle of entering, compiling, and running a simple program.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "List some core components of a C++ Program.",
-    "back": "C++ programs consist of objects, functions, variables, and other component parts.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the purpose of the 'Preprocessor' in C++?",
-    "back": "Runs before the compiler, reading source code for lines beginning with `#` (pound symbol) and acting on them before compilation. For example, `#include` includes a specified file.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the significance of the `#include <iostream.h>` directive?",
-    "back": "It includes the `iostream.h` file, which contains definitions for standard input/output operations, used by `cout` for writing to the screen.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the 'main()' function in C++?",
-    "back": "Every C++ program must have a `main()` function. It is the starting point of program execution and is called automatically.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is a 'Function' in C++?",
-    "back": "A block of code that performs one or more actions. Functions begin with an opening brace (`{`) and end with a closing brace (`}`).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the 'cout' object used for?",
-    "back": "Used to print messages and values to the screen.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the 'Output Redirection Operator' (`<<`) in C++?",
-    "back": "Used with `cout` to send data to the screen.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is a 'Text String' in C++?",
-    "back": "A series of printable characters, enclosed in double quotes (`\"`) when used with `cout` (e.g., \"Hello World\").",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the purpose of `\\n` and `endl` in C++ output?",
-    "back": "`\\n` (newline character) and `endl` (manipulator) both tell `cout` to move the cursor to a new line after printing.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What does `return 0;` signify in the `main()` function?",
-    "back": "main() typically returns 0 to the operating system upon successful completion of the program, indicating that the program ran without errors.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Comments' in programming and why are they important?",
-    "back": "Text ignored by the compiler but used to inform the reader about the code. They explain *why* something is happening, not just *what*, improving readability and maintainability.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Differentiate between C++-style (`//`) and C-style (`/* ... */`) comments.",
-    "back": "C++-style (`//`) comments ignore everything after `//` until the end of the line. C-style (`/* ... */`) comments ignore everything between `/*` and `*/`, allowing for multi-line comments.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Is C++ case-sensitive?",
-    "back": "Yes, C++ is case-sensitive, meaning `age`, `Age`, and `AGE` are considered different.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are common 'Variable Naming Conventions' in C++?",
-    "back": "Many programmers use all lowercase (e.g., `age`); for two words, `my_car` (snake_case) or `myCar` (camelCase) are common.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Keywords' in C++?",
-    "back": "Words reserved by C++ (e.g., `if`, `while`, `for`, `main`) that have special meaning and cannot be used as variable names.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "How do you perform 'Variable Declaration' and 'Initialization' in C++?",
-    "back": "Declaration defines a variable's type and name (e.g., `unsigned short Width;`). Initialization assigns a value to a variable when it is defined (e.g., `unsigned short Width = 5;`).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the 'Assignment Operator' (`=`) in C++?",
-    "back": "Used to assign a value to a variable (e.g., `Width = 5;`).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the purpose of the 'const' keyword?",
-    "back": "Used to declare symbolic constants whose values cannot be changed while the program is running.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Statements' in C++?",
-    "back": "Commands in C++ that control execution sequence, evaluate expressions, or do nothing. All C++ statements end with a semicolon `;`.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is an 'Assignment Statement'?",
-    "back": "A statement that assigns the value of the right side of the `=` operator to the variable on the left side (e.g., `x = a + b;`).",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is a 'Null Statement'?",
-    "back": "A statement that does nothing, represented only by a semicolon `;`.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What is the role of 'Whitespace' in C++?",
-    "back": "Tabs, spaces, and newlines that are generally ignored by the compiler in statements but are used to improve code readability and organization.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "What are 'Blocks' or 'Compound Statements'?",
-    "back": "A group of statements enclosed by curly braces `{}` that acts as a single statement, often used with control structures like `if` statements.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Explain the 'Increment' (`++`) and 'Decrement' (`--`) Operators.",
-    "back": "Special operators to increase (`++`) or decrease (`--`) a variable's value by 1. They have prefix (`++myAge`) and postfix (`myAge++`) varieties, differing in when the operation is applied in complex expressions.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "How does the 'if' statement work in C++?",
-    "back": "The `if` statement enables branching of code based on a condition. If the `expression` in parentheses is 0 (false), the statement is skipped; if non-zero (true), the statement is executed. Blocks can be used for multiple actions.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
-  },
-  {
-    "front": "Why is 'Nesting Parentheses' important in C++ expressions?",
-    "back": "Used for complex expressions to control the order of operations, ensuring that calculations are performed in the intended sequence.",
-    "course": "CS110",
-    "term": "T3",
-    "topic": "Introduction to Programming"
+    "topic": "debugging"
   }
-],
-
-  
-  
-  
-  
-  
-  
+  ],
   
   
   
@@ -6044,5 +6180,1055 @@ const flashcards = {
       topic: "Genetics"
     }
   ],
+  
+  
+
+
+
+
+
+//  bi110 term 
+//const flashcards = {
+  "MODULE 12: BRYOPHYTES": [
+    {
+      "front": "How do bryophytes differ from algae in terms of their habitat?",
+      "back": "Unlike algae, bryophytes are terrestrial dwellers.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "What is the geographical distribution of bryophytes?",
+      "back": "Bryophytes are cosmopolitan, found in temperate, tropical, and arctic regions of the world.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "Which group of plants is most dominant in the Arctic Circle among bryophytes?",
+      "back": "Mosses are the most dominant of all plants in the Arctic Circle.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "What is the transitional position of bryophytes in the plant kingdom?",
+      "back": "Bryophytes are considered transitional forms of plants and are placed between algae and vascular plants (ferns & seed plants).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "Why are bryophytes considered more advanced than algae?",
+      "back": "Bryophytes are more advanced than algae because they are adapted to life on land.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "What term is best used to describe bryophytes regarding their vascular tissue?",
+      "back": "The best term for bryophytes is non-tracheophytes, also known as non-vascular plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "What is a key environmental dependency for bryophytes' survival and reproduction?",
+      "back": "Bryophytes are extremely dependent on water for survival and reproduction.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "Where are bryophytes typically found due to their water dependency?",
+      "back": "They are typically found in moist habitats such as creeks and forests. Some species can survive in arid areas with little or no rainfall.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "THE BRYOPHYTES - Introduction"
+    },
+    {
+      "front": "What structures do bryophytes possess instead of roots, and what are their functions?",
+      "back": "Bryophytes lack roots but possess rhizoids, which are important for absorption of water & salts and anchoring plants to the substratum (soil).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "What is the role of the cutin-coated epidermis in bryophytes?",
+      "back": "The epidermis, coated with cutin, plays the role of protection against desiccation.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "How do bryophytes facilitate gaseous exchange?",
+      "back": "Numerous air pores facilitate gaseous exchange.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "Which stage is most dominant in the life cycle of bryophytes?",
+      "back": "In their life cycle, the gametophyte (gamete-bearing structure) is the most dominant.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "What structures do bryophyte gametophytes have that resemble stems and leaves, and what is notable about their internal veins?",
+      "back": "Gametophytes have structures that resemble stems & leaves, but they are without internal 'veins'.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "What are hydroids and leptoids in bryophytes, and what do they conduct?",
+      "back": "Hydroids conduct H₂O, and leptoids conduct food.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "What is a 'thallus body' in the context of bryophytes?",
+      "back": "A thallus is the body of a bryophyte.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "How does absorption occur in bryophytes?",
+      "back": "Absorption occurs through contact.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Bryophytes"
+    },
+    {
+      "front": "How do bryophytes reproduce, and what are they known as due to this method?",
+      "back": "Bryophytes reproduce by means of spores, hence they are known as cryptogams.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "What is the characteristic of the sporophyte in most bryophyte species regarding its lifespan?",
+      "back": "The sporophyte, which bears the spores, is ephemeral in the majority of species.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "What sexual structures are involved in sexual reproduction in bryophytes?",
+      "back": "Sexual reproduction involves the development of sexual structures called antheridia and archegonia.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "Describe the antheridium in bryophytes.",
+      "back": "The antheridium is the male sexual organ, either ellipsoidal or spherical. It contains numerous sperm cells with a single layer of sterile cells.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "Describe the sperm cells of bryophytes.",
+      "back": "The sperms are spirally curved cells bearing a pair of long flagella.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "Describe the archegonium in bryophytes.",
+      "back": "The archegonium is a flask-shaped female sexual organ which consists of a neck & the venter. The neck is freely projected to be accessible to sperm cells, and the venter encloses the egg cell.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "Why are bryophytes considered oogamous?",
+      "back": "Bryophytes are oogamous because they bear two types of gametes: the egg (large and non-motile) and sperm (small and motile).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "What is the product of sperm and egg fusion in bryophytes?",
+      "back": "Fusion of a sperm cell & egg gives rise to a zygote, which develops into a sporophyte.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "What is the nutritional relationship between gametophytes and sporophytes in bryophytes?",
+      "back": "Gametophytes are nutritionally independent of sporophytes. However, sporophytes are attached to the gametophytes and are thus nutritionally dependent on them.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Reproduction in Bryophytes"
+    },
+    {
+      "front": "From what structure do bryophyte sporophytes grow?",
+      "back": "Bryophyte sporophytes grow out of archegonia.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Bryophyte Sporophytes"
+    },
+    {
+      "front": "What are the components of a bryophyte sporophyte?",
+      "back": "A bryophyte sporophyte consists of a foot, a seta, and a sporangium (capsule).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Bryophyte Sporophytes"
+    },
+    {
+      "front": "Which bryophyte sporophytes have stomata?",
+      "back": "Hornwort and moss sporophytes have stomata.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Bryophyte Sporophytes"
+    },
+    {
+      "front": "What are the three phyla of bryophytes and their approximate number of extant species?",
+      "back": "The three phyla of bryophytes are Phylum Hepatophyta (Liverworts, ~9,000 species), Phylum Anthocerophyta (Hornworts, ~100 species), and Phylum Bryophyta (Mosses, ~15,000 species).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Classification - Bryophytes"
+    },
+    {
+      "front": "Under which division are Liverworts classified, and what is their common name?",
+      "back": "Liverworts are classified under division Hepatophyta and are commonly referred to as hepatics.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "What is the class name for the division Hepatophyta?",
+      "back": "The division Hepatophyta contains one class called Hepatopsida.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "What is the characteristic plant body of liverworts?",
+      "back": "These plants are characterized by a thalloid plant body. A thallus is defined as a plant body not differentiated into roots, stems, and leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "What is the most common liverwort in Zambia?",
+      "back": "The most common liverwort in Zambia is Marchantia polymorpha.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "What does it mean for Marchantia polymorpha to be 'dioecious'?",
+      "back": "Marchantia polymorpha is dioecious, meaning male & female gametes occur on separate male and female plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "How is asexual reproduction achieved in species of Marchantia?",
+      "back": "In species of Marchantia, asexual (vegetative) reproduction is achieved by means of gemma located in gemma cups. The gemma are dispersed by splashes of raindrops.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Liverworts"
+    },
+    {
+      "front": "Under which division and class are Hornworts classified?",
+      "back": "Hornworts are classified under division Anthocerotophyta in the Class Anthocerotopsida.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "What is the morphological characteristic that distinguishes hornworts from liverworts?",
+      "back": "Hornworts are morphologically different from liverworts; their plants have a thallus bearing a horn-like structure.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "How many species do Hornworts consist of, and what is their usual haploid chromosome number?",
+      "back": "Hornworts consist of ~100 species. Their haploid chromosome number is usually n=5.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "What is the most common and widespread genus of hornwort in Zambia and parts of Central Africa?",
+      "back": "Anthoceros is the most common and widespread genus in Zambia and some parts of Central Africa.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "Describe the thallus of Anthoceros and what inhabits its internal cavities.",
+      "back": "The thallus of Anthoceros is more or less circular and about 1-2cm across. It has extensive internal cavities inhabited by the blue-green algae Nostoc.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "What is the horn-like structure bearing spores in hornworts called, and what does it consist of?",
+      "back": "The horn-like structure bearing the spores is called the sporophyte. The sporophyte consists of the foot and capsule.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Hornworts"
+    },
+    {
+      "front": "What is the most advanced group of bryophytes, and what is their adaptation to terrestrial ecosystems?",
+      "back": "The most advanced group of bryophytes is the Division Bryophyta (Mosses). They are well adapted to terrestrial ecosystems.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "Are all moss species terrestrial? Provide an example.",
+      "back": "No, a few species, such as members of the genus Fissidens, are aquatic.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "How are plants of the Division Bryophyta differentiated?",
+      "back": "The plants are differentiated into rhizoids, stems, and leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "What does a fertile (mature) moss plant bear?",
+      "back": "Fertile (mature) plants bear a sporophyte consisting of the seta and capsule.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "What structures are contained within the capsule of a moss sporophyte?",
+      "back": "The capsule contains numerous spores and structures like the Operculum and a circular structure called the peristome (which bears teeth).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "What is the taxonomic significance of the number of teeth in mosses?",
+      "back": "The number of teeth is a taxonomic character for the identification of moss species.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "Name the three classes of mosses and provide an example for each.",
+      "back": "Mosses are made up of 3 classes: Sphagnopsida (e.g., Sphagnum), Andreaeopsida (e.g., Andreaea), and Bryopsida (e.g., Funaria hygrometrica).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "Where does Funaria hygrometrica commonly occur, and what percentage of Earth's surface does it occupy?",
+      "back": "Funaria hygrometrica occurs in dambos & occupies 1% of Earth's surface (most abundant).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Division Bryophyta (Mosses)"
+    },
+    {
+      "front": "Describe the composition of a moss gametophyte.",
+      "back": "The gametophyte of a moss consists of rhizoids, stems, and leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Life Cycle of Mosses"
+    },
+    {
+      "front": "What structures comprise the sporophyte of a fertile moss?",
+      "back": "A fertile moss bears a sporophyte comprised of the seta and capsule.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Life Cycle of Mosses"
+    },
+    {
+      "front": "What do spores germinate into when released from the capsule?",
+      "back": "When spores are released from the capsule, they germinate into protonemata (protonema).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Life Cycle of Mosses"
+    },
+    {
+      "front": "What develops from protonema, and where do antheridia and archegonia form?",
+      "back": "Protonema develop nodes to give rise to young moss plants. Both antheridia and archegonia develop at the apex of the moss stems.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Life Cycle of Mosses"
+    },
+    {
+      "front": "What do antheridia and archegonia contain, and what facilitates fertilization in mosses?",
+      "back": "Antheridia contain sperm cells while archegonia contain egg cells. Water facilitates the movement of sperm cells towards the archegonia to effect fertilization.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Life Cycle of Mosses"
+    },
+    {
+      "front": "What is the importance of bryophytes as a carbon sink?",
+      "back": "Bryophytes are an important component of plants that serve as a carbon sink, thus playing an important role in the carbon cycle.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Importance and Ecology of Bryophytes"
+    },
+    {
+      "front": "How do bryophytes serve as bioindicators of pollution?",
+      "back": "Some bryophyte species are very sensitive to pollution and are absent from highly polluted areas, making them bioindicators.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Importance and Ecology of Bryophytes"
+    },
+    {
+      "front": "Where does Funaria typically grow well?",
+      "back": "Funaria grows well on burnt areas, especially where charcoal has been harvested.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Importance and Ecology of Bryophytes"
+    },
+    {
+      "front": "Where does Campylopus savanarium form extensive carpets?",
+      "back": "Campylopus savanarium forms extensive carpets in miombo woodland.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Importance and Ecology of Bryophytes"
+    },
+    {
+      "front": "What type of environment does Tortula porphyroneura prefer?",
+      "back": "Tortula porphyroneura is a calcium lover and inhabits areas underlain by limestone rock.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Importance and Ecology of Bryophytes"
+    }
+  ],
+
+
+//module 13
+
+//const flashcards = {
+  "MODULE 13: PTERIDOPHYTES": [
+    {
+      "front": "What is a pteridophyte?",
+      "back": "A pteridophyte is a vascular plant with xylem and phloem tissues that disperses spores. They do not produce flowers or seeds.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Introduction"
+    },
+    {
+      "front": "What are pteridophytes also known as due to their seedless reproduction?",
+      "back": "Pteridophytes are also known as vascular cryptogams or lower vascular plants because they reproduce by means of spores rather than seeds.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Introduction"
+    },
+    {
+      "front": "What are the common examples of pteridophytes?",
+      "back": "Common examples of pteridophytes are ferns.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Introduction"
+    },
+    {
+      "front": "What essential structures do pteridophytes possess that distinguish them from simpler plants like algae and bryophytes?",
+      "back": "Pteridophytes, being vascular plants, have true root systems, stems, and leaves. They also contain xylem and phloem tissues.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - General Features"
+    },
+    {
+      "front": "What is a 'tissue' in plants?",
+      "back": "A tissue is a group of cells of the same kind that perform a specific function.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "What is the function of the epidermis in plants?",
+      "back": "The epidermis is the outermost protective layer of cells found on leaves, young stems, and young roots. It regulates gaseous exchange and water loss.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "Describe parenchyma tissue and its function.",
+      "back": "Parenchyma is a soft tissue composed of thin-walled cells, often referred to as ground tissue. Its main functions include photosynthesis and storage.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "What is the main function of xylem tissue?",
+      "back": "Xylem is a complex vascular tissue whose main function is to transport water and solutes.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "What are the two major types of cells that comprise xylem?",
+      "back": "Xylem is comprised of two major types of cells: vessels and tracheids.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "Differentiate between vessels and tracheids in xylem.",
+      "back": "Vessels are tube-like cells of xylem connected by perforations, found only in angiosperms and some members of division Gnetophyta. Tracheids are elongate cells of xylem characterized by their tapered ends and are found in all vascular plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "What is the function of phloem tissue?",
+      "back": "Phloem is a vascular tissue involved in the transport of photosynthetic products such as sugars and amino acids.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "What are the main components of phloem?",
+      "back": "Phloem is mainly composed of sieve elements and companion cells.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Tissue Types"
+    },
+    {
+      "front": "How do vascular plants (pteridophytes, gymnosperms, angiosperms) differ in complexity from algae and bryophytes?",
+      "back": "Vascular plants are more complex than algae and bryophytes because they contain xylem and phloem in addition to parenchyma and the epidermis.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Diversity and Tissue Types"
+    },
+    {
+      "front": "What are the two major groups of vascular plants?",
+      "back": "Vascular plants are comprised of two major groups: the seedless plants and the seed plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Classification"
+    },
+    {
+      "front": "What percentage of pteridophyte species occur in tropical regions?",
+      "back": "Just over two thirds (75%) of the 12,000 documented pteridophyte species occur in the tropical regions of the world.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Global Distribution"
+    },
+    {
+      "front": "How many pteridophyte species were initially documented in Zambia by Jan Kornas in 1979, and what is the updated number?",
+      "back": "Jan Kornas documented 146 pteridophytes in Zambia in 1979. After the publication of 'A checklist of Zambian vascular plants,' the floristic status was updated to 157 species in Zambia.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Pteridophytes - Zambian Distribution"
+    },
+    {
+      "front": "What are the two basic kinds of stems found in pteridophytes?",
+      "back": "Stems in pteridophytes are basically of two kinds: aerial stems and subterranean stems (rhizomes).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Pteridophytes"
+    },
+    {
+      "front": "Describe the stems of herbaceous ferns versus tree ferns.",
+      "back": "Stems of most herbaceous ferns are underground forms (rhizomes). In tree ferns, the stems are erect and thick trunks.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Pteridophytes"
+    },
+    {
+      "front": "Where do the roots of pteridophytes (ferns) typically arise?",
+      "back": "The roots of ferns arise adventitiously from the rhizome near the base of the fronds.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Pteridophytes"
+    },
+    {
+      "front": "What is 'circinate vernation' in fern leaves?",
+      "back": "Leaves of ferns exhibit a circinate vernation, which is a condition where the developing young leaves (fiddleheads) are coiled and uncoil when they become mature.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Pteridophytes"
+    },
+    {
+      "front": "Where are sporangia located on pteridophyte leaves?",
+      "back": "The sporangia (spore-bearing structures) are located on the abaxial (underside) side of the leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "General Features of Pteridophytes"
+    },
+    {
+      "front": "Into which two major groups are pteridophytes classified?",
+      "back": "Pteridophytes can be classified into two groups: the fern allies and the true ferns.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Pteridophyte Classification"
+    },
+    {
+      "front": "Name some genera included in the 'fern allies'.",
+      "back": "The fern allies include genera such as Equisetum, Isoetes, Lycopodiella, Lycopodium, Psilotum, and Selaginella.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Pteridophyte Classification"
+    },
+    {
+      "front": "What characterizes the leaves of fern allies?",
+      "back": "Fern allies usually bear relatively small leaves called microphylls, which have a single unbranched strand of vascular tissues.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Pteridophyte Classification"
+    },
+    {
+      "front": "Name some genera included in the 'true ferns'.",
+      "back": "The true ferns include genera such as Adiantum, Azolla, Dryopteris, Marsilea, Nephrolepis, Ophioglossum, Pteridium, and Salvinia.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Pteridophyte Classification"
+    },
+    {
+      "front": "What characterizes the leaves of true ferns?",
+      "back": "True ferns are characterized by comparatively large leaves called megaphylls, which contain a complex system (network) of veins.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Pteridophyte Classification"
+    },
+    {
+      "front": "In which phase of the true fern life cycle are the veins conspicuously seen, and what is their role?",
+      "back": "The veins conspicuously seen in the field are in the sporophyte phase, as they are involved in the production of spores.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "True Fern Life Cycle"
+    },
+    {
+      "front": "What does a spore germinate into in the true fern life cycle?",
+      "back": "Each spore will germinate to give rise to a gametophyte called the prothallus.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "True Fern Life Cycle"
+    },
+    {
+      "front": "Where are the male and female gametes borne on the true fern gametophyte (prothallus)?",
+      "back": "The gametophyte bears male gametes in the antheridia and female gametes in the archegonia.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "True Fern Life Cycle"
+    },
+    {
+      "front": "What does the fusion of sperm and egg cells produce in the true fern life cycle?",
+      "back": "The fusion of the sperm and the egg cells gives rise to a zygote, which then develops into a young sporophyte plant.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "True Fern Life Cycle"
+    }
+  ],
+
+
+
+
+
+//module 14
+
+
+
+
+
+//module 15
+  "MODULE 15: ANGIOSPERMS": [
+    {
+      "front": "What is the common name for Angiosperms?",
+      "back": "Angiosperms are commonly called flowering plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "How are angiosperms classified into two main classes based on their seedlings?",
+      "back": "Angiosperms are classified into Dicotyledoneae (dicots) and Monocotyledoneae (monocots) based on the number of cotyledons (embryonic leaves) in their seedlings.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "What is a cotyledon?",
+      "back": "A cotyledon is a part of the embryo found within a seed, from which the first leaf emerges.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "What characterizes dicot plants?",
+      "back": "Dicot plants are characterized by their seedlings bearing two cotyledons.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "Provide examples of dicot plants.",
+      "back": "Examples of dicot plants include groundnuts (Arachis hypogea), Tomato plants (Lycopersicon esculentum), beans (Phaseolus vulgaris), and Blackjack, Kanunka or Kasokopyo (Bidens pilosa).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "What characterizes monocot plants?",
+      "back": "Monocot plants are characterized by a seedling with a single cotyledon.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "Provide examples of monocot plants.",
+      "back": "Examples of monocot plants are Maize (Zea mays), Sorghum (Sorghum bicolor), and Finger millet (Eleusine caracana).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biology of Angiosperm Plants - Introduction"
+    },
+    {
+      "front": "What are the principal vegetative organs of an angiosperm plant?",
+      "back": "The principal vegetative organs of the angiosperm plant are roots, stems, and leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Plant Body"
+    },
+    {
+      "front": "When does the development of flowers typically occur in annual plants?",
+      "back": "The development of flowers occurs near the end of the plant's life cycle, particularly in annual plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Plant Body"
+    },
+    {
+      "front": "Who is credited with dividing plants into growth habits such as herbs, shrubs, and trees?",
+      "back": "Theophrastos is known to have divided plants into growth habits commonly referred to as herbs, shrubs, and trees.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Habits"
+    },
+    {
+      "front": "Describe the characteristics of herbs and provide examples.",
+      "back": "Herbs are plants with green and tender stems which contain a much higher proportion of parenchyma tissue compared to xylem tissue. Examples include sunflower (Helianthus annus), maize, and the majority of grasses.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Habits"
+    },
+    {
+      "front": "Describe the characteristics of shrubs and provide examples.",
+      "back": "Shrubs are woody plants that develop several stems arising from the ground level and sharing a single rootstock. Examples include Lantara camara, Hibiscus spp, and Cassava plant (Manihot esculenta).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Habits"
+    },
+    {
+      "front": "Describe the characteristics of trees and provide examples.",
+      "back": "Trees are a form of woody plants which develop a single main trunk arising from the soil level and a single rootstock. Examples include Mango (Mangifera indica), Avocado (Persea americana), and Pawpaw (Carica papaya).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Habits"
+    },
+    {
+      "front": "Who classified plants according to their life spans, and what are these classifications called?",
+      "back": "Theophrastos is credited for having classified plants according to their life spans or life forms, known as annuals, biennials, and perennials.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Life Forms"
+    },
+    {
+      "front": "Define annual plants and give examples.",
+      "back": "Annuals are plants which complete their life cycle from germination to the seed within a single growing season. Examples include maize, groundnuts, and sunflower.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Life Forms"
+    },
+    {
+      "front": "Define biennial plants and give an example.",
+      "back": "Biennials are plants which complete their life span in two years. An example is Spinach plants, which remain vegetative for two years and die after producing flowers and seeds at the end of the second year.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Life Forms"
+    },
+    {
+      "front": "Define perennial plants and give examples.",
+      "back": "Perennials are plants whose life span extends for more than two years. Examples include Cassava, Mango, and Guava (Psidium guajava).",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Life Forms"
+    },
+    {
+      "front": "What are the most important vegetative organs of flowering plants?",
+      "back": "The most important features of flowering plants are their possession of vegetative organs called roots, stems, and leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "How is the main plant axis differentiated?",
+      "back": "The main plant axis is differentiated into a root system and a shoot system.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "Describe the typical growth direction of roots.",
+      "back": "Typically, roots grow in the direction of gravity, hence such organs are said to be positively geotropic.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "What kind of soil conditions promote the best development and extensive branching of roots?",
+      "back": "The best development of roots and giving rise to the most extensive branching of these organs, is found in well-drained moist soils.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "Do roots possess chloroplasts, and is their development affected by sunlight?",
+      "back": "Roots do not possess chloroplasts, and sunlight has no effect on the development of the roots.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "What are root hairs, and what is their role?",
+      "back": "Root hairs are modified epidermal cells that usually lack a cuticle and are involved in the absorption of water and mineral elements.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Roots"
+    },
+    {
+      "front": "List the primary functions of roots.",
+      "back": "The primary functions of roots include providing anchorage of plants to their growth medium and the absorption of water and mineral solutes.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Function of Roots"
+    },
+    {
+      "front": "Besides anchorage and absorption, what other roles do roots play?",
+      "back": "Other roles of roots include the storage of synthesized compounds such as starch (e.g., in sweet potatoes and cassava tubers) and alkaloids (sources of medicines). Roots are also involved in the synthesis of hormones like cytokinins (promote cell division and expansion) and gibberellins (promote stem elongation), as well as nicotine in tobacco plants.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Function of Roots"
+    },
+    {
+      "front": "What governs growth in roots?",
+      "back": "Growth in roots is governed by the apical meristem.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "Name the prominent tissues found in the meristematic region of roots.",
+      "back": "Prominent tissues found in the region of the meristem are the root cap, the quiescent centre, the procambium, the protoderm, the ground meristem, and lateral meristem.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "What is the root cap composed of, and what does it secrete?",
+      "back": "The root cap consists of parenchyma cells that are specialized in the secretion of a slimy polysaccharide called mucigel.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "What is mucigel, and what is the root cap's role in geotropic growth?",
+      "back": "Mucigel is a lubricant rich in carbohydrates and amino acids. The root cap is also the site of perception of gravity and is thus involved in the control of geotropic growth of the roots.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "Describe the quiescent center in roots.",
+      "back": "The quiescent center (zone) is a hemispherical shaped tissue where cells exhibit low mitosis and even a complete lack of mitotic cell division.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "What does procambium develop into?",
+      "back": "Procambium is a juvenile tissue that gives rise to the development of the vascular cambium.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "What does protoderm develop into?",
+      "back": "The protoderm is the juvenile tissue that develops to give rise to the outermost protective tissue called epidermis.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "What does ground meristem develop into?",
+      "back": "Ground meristem is the portion of apical juvenile tissue that develops into the cortex or pith.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Primary Tissues in Roots"
+    },
+    {
+      "front": "Describe the morphology of roots in dicot plants.",
+      "back": "In dicot plants, the initial root that develops at the onset of germination is usually persistent and becomes the tap root. This is known as the tap root system.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Morphology of Roots"
+    },
+    {
+      "front": "Describe the morphology of roots in monocot plants.",
+      "back": "In monocot plants, the initial root formed at the onset of germination tends to degenerate and is replaced by numerous roots of the same diameter. This constitutes the fibrous root system.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Morphology of Roots"
+    },
+    {
+      "front": "Describe the arrangement of xylem tissue in dicot roots (e.g., Ranunculus).",
+      "back": "In roots of Ranunculus (a dicot), the xylem tissue exhibits four arms radiating from the center, a condition said to be tetrach.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "In dicot roots, what tissues surround the xylem, and what is external to the phloem?",
+      "back": "The xylem tissue is surrounded by the cambium, which is externally bounded by the phloem. The phloem tissue is externally surrounded by a meristematic tissue called pericycle, which is the origin of lateral roots.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "What is the endodermis, and what structure is associated with it in roots?",
+      "back": "External to the pericycle lies the uniseriate tissue called the endodermis, which is strapped by a band of suberin called the Casparian strip.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "What tissue is located between the endodermis and the epidermis in roots?",
+      "back": "The tissue located between the endodermis and the epidermis is called the cortex.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "Describe the arrangement of xylem tissues in monocot roots.",
+      "back": "In monocot roots, the xylem tissues exhibit numerous arms (bundles) giving rise to a polyarch condition.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "Is secondary growth present in monocot roots, and why or why not?",
+      "back": "In monocot roots, the cambium is absent, and hence there is no secondary growth in such roots.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "How do roots of many plants become modified, and what is their function in this modified form? Provide examples.",
+      "back": "Roots of many plants become modified into tubers to serve for the storage of food reserves. Examples include cassava, sweet potato (Ipomoea batatas), and ground orchids (Chikanda). The tap root of carrots (Daucus carota) is also modified into a fleshy structure consisting of storage parenchyma.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Anatomy of Roots"
+    },
+    {
+      "front": "What is the shoot primarily comprised of?",
+      "back": "The shoot is comprised of the stem, which ultimately bears the leaves.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Stems"
+    },
+    {
+      "front": "What are the forms a stem can take, besides aerial?",
+      "back": "The stem is either an aerial or underground organ, which is termed the rhizome.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Stems"
+    },
+    {
+      "front": "What is the main physical role of the stem?",
+      "back": "The main role of the stem is to bear the leaves and ensures that the leaves are elevated above the ground.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Stems"
+    },
+    {
+      "front": "In physiological terms, what are the stems involved in?",
+      "back": "In physiological terms, the stems are involved in the transport of water & mineral salts and the conduction of organic compounds through the phloem tissue.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Stems"
+    },
+    {
+      "front": "Besides transport, what other physiological roles do stems have, and provide examples?",
+      "back": "Stems are also involved in the storage of water, food reserves, and secondary compounds such as alkaloids. In some plants, like cassava and sweet potatoes, stems serve as a means of plant dispersal.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Stems"
+    },
+    {
+      "front": "What are the components of a stem in vascular plants?",
+      "back": "In vascular plants, the stem is comprised of the nodes and internodes.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Parts of the Stem"
+    },
+    {
+      "front": "What does the stem apex produce, and what is its chemical nature?",
+      "back": "The stem apex has a terminal bud which produces the auxin called indole acetic acid (IAA), which is a derivative of the amino acid tryptophan.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Parts of the Stem"
+    },
+    {
+      "front": "How does IAA promote apical dominance, and what is the practical implication of this?",
+      "back": "The IAA promotes apical dominance by inhibiting the development of lateral buds. This explains why pruning shoot tips promotes the development of lateral branches.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Parts of the Stem"
+    },
+    {
+      "front": "What are bud and leaf primordia?",
+      "back": "Both the bud and leaf primordia are the precursor (meristematic) tissues which give rise to the formation of the bud and leaves respectively.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Parts of the Stem"
+    },
+    {
+      "front": "Who developed the Tunica-Corpus theory, and in what year?",
+      "back": "The tunica-corpus theory was developed by the German scientist Schmidt in 1924.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Tunica-Corpus Theory"
+    },
+    {
+      "front": "What phenomenon does the Tunica-Corpus theory explain regarding the stem apex?",
+      "back": "The tunica-corpus theory explains the phenomenon that the stem apex exhibits two distinct zones called the tunica and the corpus. This means the vegetative stem apex of most flowering plants has the tunica-corpus type of organization.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Tunica-Corpus Theory"
+    },
+    {
+      "front": "Describe the tunica layer and the type of cell division that gives rise to it.",
+      "back": "The tunica is the outermost layer or layer of cells arising from the anticlinal division of cells. Anticlinal division is when the dividing line is perpendicular to the surface of the stem, giving rise to a plate of cells that constitute the epidermis.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Tunica-Corpus Theory"
+    },
+    {
+      "front": "What is periclinal division of cells?",
+      "back": "Periclinal division of cells is when the line of division of the cells is parallel to the surface of the tissue.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Tunica-Corpus Theory"
+    },
+    {
+      "front": "Describe the corpus and the type of cell divisions involved in its formation.",
+      "back": "The corpus is the product of both anticlinal and periclinal divisions of cells, which give rise to a volume of tissues. In the corpus, the cells divide in various planes to produce the bulk of the developing stem. This means the corpus consists of a body of cells located beneath the tunica.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "The Tunica-Corpus Theory"
+    }
+  ],
+  
+  
+  //
   
   };

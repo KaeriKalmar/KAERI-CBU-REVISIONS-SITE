@@ -842,5 +842,503 @@ const shortData = [
     explanation: "Unlike eukaryotes, prokaryotes do not compartmentalize their DNA within a membrane-bound nucleus.",
     course: "BI110",
     term: "T2"
-  }
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //Bi110 t3
+  
+  //const shortData = [
+  // --- BI110 Term 3 Data ---
+
+  // MODULE 12: BRYOPHYTES
+  {
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    tag: "🌿", // Emoji for plants
+    q: "How do bryophytes differ from algae in terms of habitat?",
+    keywords: ["bryophytes", "algae", "habitat", "terrestrial"],
+    explanation: "Unlike algae, bryophytes are terrestrial dwellers.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    tag: "🌎", // Emoji for global
+    q: "What is the geographical distribution of bryophytes?",
+    keywords: ["bryophytes", "distribution", "cosmopolitan", "temperate", "tropical", "arctic"],
+    explanation: "Bryophytes are cosmopolitan, found in temperate, tropical, and arctic regions of the world.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    tag: "🌱", // Emoji for plant
+    q: "Why are bryophytes considered transitional forms?",
+    keywords: ["bryophytes", "transitional", "algae", "vascular plants"],
+    explanation: "Bryophytes are considered transitional forms of plants, placed between algae and vascular plants (ferns & seed plants).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "THE BRYOPHYTES",
+    year: "Notes",
+    tag: "💧", // Emoji for water
+    q: "What is a key environmental dependency for bryophytes' survival and reproduction?",
+    keywords: ["bryophytes", "water", "dependency", "survival", "reproduction"],
+    explanation: "Bryophytes are extremely dependent on water for survival and reproduction.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "General Features of Bryophytes",
+    year: "Notes",
+    tag: "🌱",
+    q: "What structures do bryophytes possess instead of roots, and what are their functions?",
+    keywords: ["bryophytes", "roots", "rhizoids", "absorption", "anchoring"],
+    explanation: "Bryophytes lack roots but possess rhizoids, important for absorption of water & salts and anchoring plants to the substratum.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "General Features of Bryophytes",
+    year: "Notes",
+    tag: "🛡️", // Emoji for protection
+    q: "What is the role of the cutin-coated epidermis in bryophytes?",
+    keywords: ["epidermis", "cutin", "protection", "desiccation", "bryophytes"],
+    explanation: "The epidermis, coated with cutin, provides protection against desiccation.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "General Features of Bryophytes",
+    year: "Notes",
+    tag: "🌬️", // Emoji for gas
+    q: "How do bryophytes facilitate gaseous exchange?",
+    keywords: ["gaseous exchange", "air pores", "bryophytes"],
+    explanation: "Numerous air pores facilitate gaseous exchange.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "General Features of Bryophytes",
+    year: "Notes",
+    tag: "🌱",
+    q: "Which stage is most dominant in the life cycle of bryophytes?",
+    keywords: ["life cycle", "dominant", "gametophyte", "bryophytes"],
+    explanation: "In their life cycle, the gametophyte (gamete-bearing structure) is the most dominant.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Reproduction in Bryophytes",
+    year: "Notes",
+    tag: "孢", // Emoji for spore
+    q: "How do bryophytes reproduce, and what are they known as due to this method?",
+    keywords: ["reproduce", "spores", "cryptogams", "bryophytes"],
+    explanation: "Bryophytes reproduce by means of spores, hence they are known as cryptogams.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Reproduction in Bryophytes",
+    year: "Notes",
+    tag: "♂️", // Male sign
+    q: "Describe the antheridium in bryophytes.",
+    keywords: ["antheridium", "male sexual organ", "sperm cells", "bryophytes"],
+    explanation: "The antheridium is the male sexual organ, either ellipsoidal or spherical. It contains numerous sperm cells with a single layer of sterile cells.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Reproduction in Bryophytes",
+    year: "Notes",
+    tag: "♀️", // Female sign
+    q: "Describe the archegonium in bryophytes.",
+    keywords: ["archegonium", "female sexual organ", "egg cell", "bryophytes"],
+    explanation: "The archegonium is a flask-shaped female sexual organ which consists of a neck & the venter. The venter encloses the egg cell.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Reproduction in Bryophytes",
+    year: "Notes",
+    tag: "🥚", // Emoji for egg
+    q: "Why are bryophytes considered oogamous?",
+    keywords: ["oogamous", "egg", "sperm", "gametes", "bryophytes"],
+    explanation: "Bryophytes are oogamous because they bear two types of gametes: the egg (large and non-motile) and sperm (small and motile).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Bryophyte Sporophytes",
+    year: "Notes",
+    tag: "🌱",
+    q: "What are the components of a bryophyte sporophyte?",
+    keywords: ["sporophyte", "foot", "seta", "sporangium", "capsule", "bryophytes"],
+    explanation: "A bryophyte sporophyte consists of a foot, a seta, and a sporangium (capsule).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Bryophyte Sporophytes",
+    year: "Notes",
+    tag: "🌬️",
+    q: "Which bryophyte sporophytes have stomata?",
+    keywords: ["stomata", "hornwort", "moss", "sporophytes", "bryophytes"],
+    explanation: "Hornwort and moss sporophytes have stomata.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Classification - Bryophytes",
+    year: "Notes",
+    tag: "分類", // Emoji for classification
+    q: "Name the three phyla of bryophytes and their common names.",
+    keywords: ["phyla", "bryophytes", "Hepatophyta", "Liverworts", "Anthocerophyta", "Hornworts", "Bryophyta", "Mosses"],
+    explanation: "The three phyla of bryophytes are Phylum Hepatophyta (Liverworts), Phylum Anthocerophyta (Hornworts), and Phylum Bryophyta (Mosses).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Liverworts",
+    year: "Notes",
+    tag: "🌱",
+    q: "What is the characteristic plant body of liverworts?",
+    keywords: ["liverworts", "plant body", "thalloid", "thallus", "differentiated"],
+    explanation: "These plants are characterized by a thalloid plant body, meaning it is not differentiated into roots, stems, and leaves.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Liverworts",
+    year: "Notes",
+    tag: "🇿🇲", // Emoji for Zambia
+    q: "What is the most common liverwort in Zambia?",
+    keywords: ["liverwort", "Zambia", "Marchantia polymorpha"],
+    explanation: "The most common liverwort in Zambia is Marchantia polymorpha.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Liverworts",
+    year: "Notes",
+    tag: "⚤", // Emoji for dioecious
+    q: "What does it mean for Marchantia polymorpha to be 'dioecious'?",
+    keywords: ["Marchantia polymorpha", "dioecious", "male", "female", "gametes", "separate plants"],
+    explanation: "Marchantia polymorpha is dioecious, meaning male & female gametes occur on separate male and female plants.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Hornworts",
+    year: "Notes",
+    tag: "🌿",
+    q: "What distinguishes hornworts morphologically from liverworts?",
+    keywords: ["hornworts", "liverworts", "morphological", "thallus", "horn-like structure"],
+    explanation: "Hornworts are morphologically different from liverworts; their plants have a thallus bearing a horn-like structure.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Hornworts",
+    year: "Notes",
+    tag: "💙💚", // Emoji for blue-green algae
+    q: "What blue-green algae inhabits the internal cavities of Anthoceros thallus?",
+    keywords: ["Anthoceros", "thallus", "internal cavities", "blue-green algae", "Nostoc"],
+    explanation: "The thallus of Anthoceros has extensive internal cavities inhabited by the blue-green algae Nostoc.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Division Bryophyta (Mosses)",
+    year: "Notes",
+    tag: "🌲", // Emoji for tree-like
+    q: "Which group is considered the most advanced among bryophytes?",
+    keywords: ["advanced group", "bryophytes", "Division Bryophyta", "Mosses"],
+    explanation: "The most advanced group of bryophytes is the Division Bryophyta (Mosses).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Division Bryophyta (Mosses)",
+    year: "Notes",
+    tag: "📏", // Emoji for measure
+    q: "What is the taxonomic significance of the number of teeth in mosses?",
+    keywords: ["taxonomic significance", "teeth", "mosses", "identification"],
+    explanation: "The number of teeth is a taxonomic character for the identification of moss species.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Life Cycle of Mosses",
+    year: "Notes",
+    tag: "🌱",
+    q: "What do moss spores germinate into when released from the capsule?",
+    keywords: ["spores", "germinate", "capsule", "protonemata", "protonema", "mosses"],
+    explanation: "When spores are released from the capsule, they germinate into protonemata (protonema).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Life Cycle of Mosses",
+    year: "Notes",
+    tag: "💧",
+    q: "What facilitates fertilization in mosses?",
+    keywords: ["fertilization", "water", "sperm cells", "archegonia", "mosses"],
+    explanation: "Water facilitates the movement of sperm cells towards the archegonia to effect fertilization.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Importance and Ecology of Bryophytes",
+    year: "Notes",
+    tag: "🌍", // Emoji for ecology
+    q: "How do bryophytes serve as bioindicators of pollution?",
+    keywords: ["bioindicators", "pollution", "sensitive", "bryophytes"],
+    explanation: "Some bryophyte species are very sensitive to pollution and are absent from highly polluted areas, making them bioindicators.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Importance and Ecology of Bryophytes",
+    year: "Notes",
+    tag: "🔥", // Emoji for fire
+    q: "Where does Funaria typically grow well?",
+    keywords: ["Funaria", "grow", "burnt areas", "charcoal"],
+    explanation: "Funaria grows well on burnt areas, especially where charcoal has been harvested.",
+    course: "BI110",
+    term: "T3"
+  },
+
+  // MODULE 15: ANGIOSPERMS
+  {
+    topic: "Biology of Angiosperm Plants - Introduction",
+    year: "Notes",
+    tag: "🌸", // Emoji for flower
+    q: "What is the common name for Angiosperms?",
+    keywords: ["Angiosperms", "common name", "flowering plants"],
+    explanation: "Angiosperms are commonly called flowering plants.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Biology of Angiosperm Plants - Introduction",
+    year: "Notes",
+    tag: "🌱",
+    q: "What is a cotyledon?",
+    keywords: ["cotyledon", "embryo", "seed", "first leaf"],
+    explanation: "A cotyledon is a part of the embryo found within a seed, from which the first leaf emerges.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Biology of Angiosperm Plants - Introduction",
+    year: "Notes",
+    tag: "🌱",
+    q: "What characterizes dicot plants?",
+    keywords: ["dicot", "dicotyledoneae", "two cotyledons"],
+    explanation: "Dicot plants are characterized by their seedlings bearing two cotyledons.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Biology of Angiosperm Plants - Introduction",
+    year: "Notes",
+    tag: "🌱",
+    q: "What characterizes monocot plants?",
+    keywords: ["monocot", "monocotyledoneae", "single cotyledon"],
+    explanation: "Monocot plants are characterized by a seedling with a single cotyledon.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Plant Body",
+    year: "Notes",
+    tag: "🌿",
+    q: "What are the principal vegetative organs of an angiosperm plant?",
+    keywords: ["vegetative organs", "angiosperm", "roots", "stems", "leaves"],
+    explanation: "The principal vegetative organs of the angiosperm plant are roots, stems, and leaves.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Plant Habits",
+    year: "Notes",
+    tag: "🌳", // Emoji for tree
+    q: "Who classified plants into growth habits like herbs, shrubs, and trees?",
+    keywords: ["Theophrastos", "plant habits", "herbs", "shrubs", "trees", "classification"],
+    explanation: "Theophrastos is known to have divided plants into growth habits commonly referred to as herbs, shrubs, and trees.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Plant Life Forms",
+    year: "Notes",
+    tag: "⏳", // Emoji for time
+    q: "Define annual plants and give an example.",
+    keywords: ["annuals", "life cycle", "single growing season", "maize"],
+    explanation: "Annuals are plants which complete their life cycle from germination to the seed within a single growing season. Example: maize.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Plant Life Forms",
+    year: "Notes",
+    tag: "⏳",
+    q: "Define perennial plants and give an example.",
+    keywords: ["perennials", "life span", "more than two years", "mango"],
+    explanation: "Perennials are plants whose life span extends for more than two years. Example: Mango.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Roots",
+    year: "Notes",
+    tag: "⬇️", // Emoji for down
+    q: "What is the typical growth direction of roots called?",
+    keywords: ["roots", "growth direction", "gravity", "geotropic", "positively geotropic"],
+    explanation: "Typically, roots grow in the direction of gravity, hence such organs are said to be positively geotropic.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Roots",
+    year: "Notes",
+    tag: "💧",
+    q: "What are root hairs and their role?",
+    keywords: ["root hairs", "epidermal cells", "absorption", "water", "mineral elements"],
+    explanation: "Root hairs are modified epidermal cells that usually lack a cuticle and are involved in the absorption of water and mineral elements.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Function of Roots",
+    year: "Notes",
+    tag: "🍠", // Emoji for sweet potato
+    q: "Name two functions of roots besides anchorage and absorption.",
+    keywords: ["roots", "functions", "storage", "hormone synthesis", "starch", "alkaloids", "cytokinins", "gibberellins"],
+    explanation: "Roots are involved in the storage of synthesized compounds (e.g., starch, alkaloids) and the synthesis of hormones (e.g., cytokinins, gibberellins).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Primary Tissues in Roots",
+    year: "Notes",
+    tag: "🌱",
+    q: "What does the root cap secrete, and what is its role in root growth?",
+    keywords: ["root cap", "secrete", "mucigel", "lubricant", "gravity perception", "geotropic growth"],
+    explanation: "The root cap secretes mucigel, a slimy polysaccharide lubricant. It is also the site of perception of gravity, controlling geotropic growth.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Primary Tissues in Roots",
+    year: "Notes",
+    tag: "💤", // Emoji for sleep
+    q: "Describe the quiescent center in roots.",
+    keywords: ["quiescent center", "roots", "low mitosis", "no mitotic division"],
+    explanation: "The quiescent center (zone) is a hemispherical shaped tissue where cells exhibit low mitosis and even a complete lack of mitotic cell division.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Primary Tissues in Roots",
+    year: "Notes",
+    tag: "🌱",
+    q: "What does procambium develop into?",
+    keywords: ["procambium", "develop", "vascular cambium", "juvenile tissue"],
+    explanation: "Procambium is a juvenile tissue that gives rise to the development of the vascular cambium.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Morphology of Roots",
+    year: "Notes",
+    tag: "🌱",
+    q: "Differentiate between tap root system and fibrous root system.",
+    keywords: ["tap root system", "fibrous root system", "dicot", "monocot", "initial root", "persistent", "degenerate", "numerous roots"],
+    explanation: "Tap root system (dicots): initial root is persistent and becomes the main root. Fibrous root system (monocots): initial root degenerates, replaced by numerous roots of same diameter.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Anatomy of Roots",
+    year: "Notes",
+    tag: "✖️", // Emoji for X-shape
+    q: "Describe xylem arrangement in dicot roots (e.g., Ranunculus).",
+    keywords: ["xylem", "dicot roots", "Ranunculus", "tetrach", "four arms"],
+    explanation: "In roots of Ranunculus (a dicot), the xylem tissue exhibits four arms radiating from the center, a condition said to be tetrach.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Anatomy of Roots",
+    year: "Notes",
+    tag: "🚫", // Emoji for no
+    q: "Why is secondary growth typically absent in monocot roots?",
+    keywords: ["secondary growth", "monocot roots", "cambium", "absent"],
+    explanation: "In monocot roots, the cambium is absent, and hence there is no secondary growth in such roots.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Stems",
+    year: "Notes",
+    tag: "⬆️", // Emoji for up
+    q: "What is the main physical role of the stem?",
+    keywords: ["stem", "physical role", "bear leaves", "elevated", "ground"],
+    explanation: "The main role of the stem is to bear the leaves and ensures that the leaves are elevated above the ground.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Stems",
+    year: "Notes",
+    tag: "💧",
+    q: "What physiological processes are stems involved in?",
+    keywords: ["stems", "physiological", "transport", "water", "mineral salts", "conduction", "organic compounds", "phloem"],
+    explanation: "In physiological terms, the stems are involved in the transport of water & mineral salts and the conduction of organic compounds through the phloem tissue.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "Parts of the Stem",
+    year: "Notes",
+    tag: "🌱",
+    q: "What hormone does the stem apex produce, and what is its effect on lateral buds?",
+    keywords: ["stem apex", "hormone", "auxin", "IAA", "indole acetic acid", "apical dominance", "lateral buds", "inhibiting"],
+    explanation: "The stem apex produces the auxin called indole acetic acid (IAA), which promotes apical dominance by inhibiting the development of lateral buds.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Tunica-Corpus Theory",
+    year: "Notes",
+    tag: "🌱",
+    q: "Who developed the Tunica-Corpus theory and what does it explain?",
+    keywords: ["Tunica-Corpus theory", "Schmidt", "1924", "stem apex", "distinct zones", "tunica", "corpus"],
+    explanation: "The tunica-corpus theory was developed by Schmidt in 1924, explaining that the stem apex exhibits two distinct zones called the tunica and the corpus.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "The Tunica-Corpus Theory",
+    year: "Notes",
+    tag: "🔬",
+    q: "Differentiate between anticlinal and periclinal cell division.",
+    keywords: ["anticlinal division", "periclinal division", "cell division", "perpendicular", "parallel"],
+    explanation: "Anticlinal division: dividing line perpendicular to the surface. Periclinal division: line of division parallel to the surface.",
+    course: "BI110",
+    term: "T3"
+  },
 ];
