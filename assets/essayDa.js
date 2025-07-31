@@ -1239,83 +1239,293 @@
   
   //const essayData = [
   {
-    q: "Describe the various tissue types found in vascular plants, focusing on their structure and specific functions, particularly xylem, phloem, epidermis, and parenchyma.",
-    steps: [
-      "Define what a 'tissue' is in plants (a group of cells of the same kind performing a specific function).",
-      "Explain the Epidermis: outermost protective layer, regulating gaseous exchange and water loss.",
-      "Describe Parenchyma: soft, thin-walled cells (ground tissue) involved in photosynthesis and storage.",
-      "Detail Xylem tissue: complex vascular tissue for water and solute transport, comprised of vessels (tube-like, angiosperms/Gnetophyta) and tracheids (elongate, tapered, all vascular plants).",
-      "Explain Phloem tissue: vascular tissue for transport of photosynthetic products (sugars, amino acids), mainly composed of sieve elements and companion cells.",
-      "Conclude by summarizing how these tissues contribute to the complexity and survival of vascular plants."
-    ],
     course: "BI110",
     term: "T3",
-    topic: "Plant Tissue Types",
+    title: "Plant Tissue Types",
+    topic: "PLANT TISSUE TYPES",
     year: "Notes",
-    tag: "Essay"
+    steps: [
+      {
+        q: "What is a plant tissue?",
+        options: [
+          "A single cell performing all functions",
+          "A group of similar cells performing various unrelated functions",
+          "A group of cells of the same kind performing a specific function",
+          "All structures between the root and leaf"
+        ],
+        correct: 2,
+        explanation: "A tissue in plants is a group of similar cells working together to perform a specific function."
+      },
+      {
+        q: "Which of the following best describes the function of epidermal tissue in plants?",
+        options: [
+          "Photosynthesis",
+          "Structural support",
+          "Transport of water",
+          "Protection and regulation of water loss"
+        ],
+        correct: 3,
+        explanation: "The epidermis serves as the outermost protective layer, regulating gas exchange and preventing excessive water loss."
+      },
+      {
+        q: "What is the main role of parenchyma cells?",
+        options: [
+          "Support",
+          "Photosynthesis and storage",
+          "Transport",
+          "Reproduction"
+        ],
+        correct: 1,
+        explanation: "Parenchyma cells are soft, thin-walled ground tissue cells involved in photosynthesis and food storage."
+      },
+      {
+        q: "Which statement best defines xylem?",
+        options: [
+          "Vascular tissue that transports sugars",
+          "Ground tissue responsible for energy storage",
+          "Vascular tissue that transports water and minerals",
+          "Protective tissue layer in leaves"
+        ],
+        correct: 2,
+        explanation: "Xylem is a vascular tissue composed of tracheids and vessels, responsible for the upward transport of water and minerals."
+      },
+      {
+        q: "Which of the following is a primary component of phloem?",
+        options: [
+          "Tracheids",
+          "Xylem fibers",
+          "Sieve elements and companion cells",
+          "Epidermal cells"
+        ],
+        correct: 2,
+        explanation: "Phloem transports sugars and amino acids using sieve tubes supported by companion cells."
+      }
+    ]
   },
   {
-    q: "Discuss the classification of pteridophytes into two major groups and elaborate on the life cycle of a true fern, including the roles of the sporophyte and gametophyte stages.",
-    steps: [
-      "Introduce pteridophytes as vascular cryptogams (seedless vascular plants) that disperse spores.",
-      "Classify pteridophytes into two groups: 'fern allies' (e.g., Equisetum, Lycopodium; characterized by microphylls with single unbranched veins) and 'true ferns' (e.g., Adiantum, Dryopteris; characterized by megaphylls with complex vein networks).",
-      "Describe the dominant Sporophyte stage (2n) of the true fern: produces spores in sporangia (often in sori on the underside of leaves), exhibits circinate vernation in young leaves (fiddleheads).",
-      "Explain the Gametophyte stage (n) (Prothallus): arises from germinated spores, small, heart-shaped, bears antheridia (male gametes/sperm) and archegonia (female gametes/egg).",
-      "Detail the fertilization process: sperm requires water to swim to the egg in the archegonium, leading to the formation of a zygote (2n), which develops into a young sporophyte, completing the life cycle.",
-      "Conclude by highlighting the alternation of generations in the fern life cycle."
-    ],
     course: "BI110",
     term: "T3",
-    topic: "Pteridophyte Classification and Life Cycle",
+    title: "Pteridophyte Classification and Life Cycle",
+    topic: "PTERIDOPHYTES",
     year: "Notes",
-    tag: "Essay"
+    steps: [
+      {
+        q: "What are pteridophytes?",
+        options: [
+          "Seed-bearing flowering plants",
+          "Non-vascular plants",
+          "Seedless vascular plants that reproduce via spores",
+          "Fungi-like protists"
+        ],
+        correct: 2,
+        explanation: "Pteridophytes are vascular cryptogams, meaning they are seedless plants that reproduce via spores and have vascular tissue."
+      },
+      {
+        q: "Which group includes true ferns?",
+        options: [
+          "Bryophytes",
+          "Gymnosperms",
+          "Angiosperms",
+          "Pteridophytes"
+        ],
+        correct: 3,
+        explanation: "True ferns are a subgroup within pteridophytes, specifically those with complex leaf structures called megaphylls."
+      },
+      {
+        q: "What is the dominant generation in the fern life cycle?",
+        options: [
+          "Gametophyte",
+          "Sporophyte",
+          "Zygote",
+          "Embryo"
+        ],
+        correct: 1,
+        explanation: "The sporophyte is the dominant diploid generation in the fern life cycle and produces spores."
+      },
+      {
+        q: "What structure arises from a germinated spore in ferns?",
+        options: [
+          "Sporangium",
+          "Prothallus (gametophyte)",
+          "Frond",
+          "Rhizome"
+        ],
+        correct: 1,
+        explanation: "A germinated spore develops into a heart-shaped gametophyte known as the prothallus."
+      },
+      {
+        q: "How does fertilization occur in ferns?",
+        options: [
+          "Wind-pollination",
+          "Water-dependent sperm swimming to egg",
+          "Insect pollination",
+          "Self-fertilization without gametes"
+        ],
+        correct: 1,
+        explanation: "Fertilization in ferns is water-dependent; sperm swim through water to reach the egg in the archegonium."
+      }
+    ]
   },
   {
-    q: "Explain the concept of apical dominance in plants, including the hormone responsible and its practical implications in horticulture (e.g., pruning).",
-    steps: [
-      "Define apical dominance as the phenomenon where the growth of the main central stem is dominant over other side stems or lateral buds, suppressing their growth.",
-      "Identify the hormone responsible: Auxin, specifically indole acetic acid (IAA), produced by the terminal bud of the stem apex.",
-      "Describe how IAA inhibits the development of lateral buds, maintaining the apical bud's dominance.",
-      "Explain the practical implication in horticulture: Pruning (removing the shoot tips or terminal buds) removes the source of IAA.",
-      "Conclude by explaining that removing apical dominance promotes the growth of lateral buds, leading to bushier plants and increased branching.",
-    ],
     course: "BI110",
     term: "T3",
-    topic: "Parts of the Stem",
+    title: "Apical Dominance in Plants",
+    topic: "PARTS OF THE STEM",
     year: "Notes",
-    tag: "Essay"
+    steps: [
+      {
+        q: "What is apical dominance?",
+        options: [
+          "The ability of roots to grow deep into the soil",
+          "Suppression of lateral bud growth by the central stem",
+          "The dominance of leaves over flowers",
+          "Preferential nutrient transport to older tissues"
+        ],
+        correct: 1,
+        explanation: "Apical dominance is the phenomenon where the terminal bud suppresses the growth of lateral buds."
+      },
+      {
+        q: "Which plant hormone is responsible for apical dominance?",
+        options: [
+          "Cytokinin",
+          "Gibberellin",
+          "Abscisic acid",
+          "Auxin (Indole Acetic Acid)"
+        ],
+        correct: 3,
+        explanation: "Auxin (specifically IAA) produced in the terminal bud inhibits the outgrowth of lateral buds."
+      },
+      {
+        q: "What happens when the apical bud is removed?",
+        options: [
+          "Lateral buds remain suppressed",
+          "New apical buds form immediately",
+          "Lateral buds start to grow and branch out",
+          "The plant stops growing"
+        ],
+        correct: 2,
+        explanation: "Removal of the apical bud removes auxin influence, promoting lateral bud growth and bushier plant form."
+      },
+      {
+        q: "Why is apical dominance important in horticulture?",
+        options: [
+          "To delay flowering",
+          "To promote root development",
+          "To encourage lateral branching by pruning",
+          "To maintain leaf color"
+        ],
+        correct: 2,
+        explanation: "Pruning the apex stimulates lateral growth, resulting in fuller, bushier plants."
+      }
+    ]
   },
   {
-    q: "Discuss the primary functions of roots in angiosperm plants, beyond just anchorage and absorption, and include examples of specialized root modifications.",
-    steps: [
-      "State the primary functions: anchorage of plants to their growth medium and absorption of water and mineral solutes.",
-      "Explain the role in hormone synthesis: Roots synthesize essential plant hormones like gibberellins (promote stem elongation) and cytokinins (promote cell division and expansion).",
-      "Describe storage function: Roots of many plants become modified into tubers for storing food reserves (e.g., cassava, sweet potato).",
-      "Mention synthesis of secondary metabolites: Roots can synthesize compounds like nicotine (in tobacco plants).",
-      "Conclude by summarizing the diverse and crucial roles of roots in overall plant physiology and survival.",
-    ],
     course: "BI110",
     term: "T3",
-    topic: "Function of Roots",
+    title: "Functions and Modifications of Roots",
+    topic: "FUNCTION OF ROOTS",
     year: "Notes",
-    tag: "Essay"
+    steps: [
+      {
+        q: "Besides anchorage, what is a primary function of roots?",
+        options: [
+          "Photosynthesis",
+          "Transport of pollen",
+          "Storage of food and hormone production",
+          "Pollination"
+        ],
+        correct: 2,
+        explanation: "Roots not only anchor the plant but also store nutrients and produce hormones like cytokinins and gibberellins."
+      },
+      {
+        q: "Which hormones are synthesized in roots?",
+        options: [
+          "Auxins and ethylene",
+          "Gibberellins and cytokinins",
+          "Abscisic acid and ethylene",
+          "IAA and gibberellins"
+        ],
+        correct: 1,
+        explanation: "Gibberellins and cytokinins are synthesized in root tissues and influence plant development."
+      },
+      {
+        q: "What is an example of a root modified for food storage?",
+        options: [
+          "Carrot tap root",
+          "Maize fibrous root",
+          "Potato tuber",
+          "Onion bulb"
+        ],
+        correct: 0,
+        explanation: "Carrot is a classic example of a tap root modified for food storage."
+      },
+      {
+        q: "What is the role of roots in synthesizing secondary metabolites?",
+        options: [
+          "Production of chlorophyll",
+          "Formation of sugars",
+          "Synthesis of compounds like nicotine",
+          "Formation of xylem vessels"
+        ],
+        correct: 2,
+        explanation: "Roots can synthesize secondary metabolites like nicotine in tobacco."
+      }
+    ]
   },
   {
-    q: "Compare and contrast the fibrous root system and the tap root system, providing examples of plants that exhibit each type.",
-    steps: [
-      "Define Tap Root System: Describe it as a root system where the initial root formed at germination persists as a main, dominant root growing vertically downwards.",
-      "Provide example for Tap Root System: Mention dicot plants like groundnuts (Arachis hypogea) and carrots.",
-      "Define Fibrous Root System: Describe it as a root system where the initial root degenerates, and numerous roots of the same diameter replace it, forming a dense, branching network.",
-      "Provide example for Fibrous Root System: Mention monocot plants like maize (Zea mays), sorghum (Sorghum bicolor), and finger millet.",
-      "Summarize the key differences: persistence of main root vs. degeneration, main root vs. numerous roots of same diameter, and association with dicots vs. monocots.",
-    ],
     course: "BI110",
     term: "T3",
-    topic: "Morphology of Roots",
+    title: "Root System Types in Angiosperms",
+    topic: "MORPHOLOGY OF ROOTS",
     year: "Notes",
-    tag: "Essay"
+    steps: [
+      {
+        q: "What defines a tap root system?",
+        options: [
+          "Main root degenerates early",
+          "Main root persists as dominant root",
+          "All roots are of equal diameter",
+          "Only found in monocots"
+        ],
+        correct: 1,
+        explanation: "Tap root systems have a central, dominant root that grows vertically downward and is typical of dicots."
+      },
+      {
+        q: "Which of the following is an example of a plant with a tap root system?",
+        options: [
+          "Maize",
+          "Sorghum",
+          "Finger millet",
+          "Carrot"
+        ],
+        correct: 3,
+        explanation: "Carrot exhibits a tap root system with a thickened primary root used for storage."
+      },
+      {
+        q: "What defines a fibrous root system?",
+        options: [
+          "Dominant central root persists",
+          "Numerous roots of the same diameter arise",
+          "Root hairs are absent",
+          "Tap root forms many branches"
+        ],
+        correct: 1,
+        explanation: "In fibrous root systems, the main root degenerates and is replaced by many similar-sized roots, common in monocots."
+      },
+      {
+        q: "Which plants exhibit a fibrous root system?",
+        options: [
+          "Groundnut",
+          "Carrot",
+          "Sorghum and maize",
+          "Tobacco"
+        ],
+        correct: 2,
+        explanation: "Sorghum and maize (monocots) have fibrous root systems composed of many fine roots."
+      }
+    ]
   },
-
+  
 
 
 
