@@ -130,7 +130,7 @@ const revokedAccessCodes = ["test111"];
 
 // NEW: This array will store codes that have been "globally" activated/sold.
 // You will manually add codes to this array AFTER they have been initially activated by a user.
-const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$"
+const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4",
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
     // and you now want to prevent new people from using it, you'd add it here.
     // "CS110T2_MAIN001#A@",
