@@ -1526,7 +1526,135 @@
     ]
   },
   
-
+//const essayData = [
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Anatomy and Functions of Angiosperm Roots and Stems",
+    topic: "ANGIOSPERMS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What are primary functions of roots in angiosperm plants beyond anchorage and absorption?",
+        options: [
+          "Only water storage and sugar transport",
+          "Only support for stem and leaves",
+          "Storage, hormone synthesis, and metabolite production",
+          "Providing chloroplasts and photosynthesis"
+        ],
+        correct: 2,
+        explanation: "Roots store compounds (e.g. starch), synthesize hormones like gibberellins and cytokinins, and produce metabolites like nicotine in tobacco."
+      },
+      {
+        q: "What is the function of the root cap in angiosperms?",
+        options: [
+          "Photosynthesis and gas exchange",
+          "Perception of light",
+          "Secretion of mucigel and gravity sensing",
+          "Pollen reception during reproduction"
+        ],
+        correct: 2,
+        explanation: "The root cap secretes mucigel to help roots move through soil and is involved in gravity perception (positive geotropism)."
+      },
+      {
+        q: "Which meristematic tissues contribute to root development?",
+        options: [
+          "Tunica and corpus only",
+          "Procambium, protoderm, ground meristem, and quiescent center",
+          "Cambium and phloem",
+          "Mesophyll and sclerenchyma"
+        ],
+        correct: 1,
+        explanation: "Root development involves the procambium (vascular tissue), protoderm (epidermis), ground meristem (cortex/pith), and the quiescent center."
+      },
+      {
+        q: "Which function is NOT typically associated with stems in angiosperms?",
+        options: [
+          "Transport of water and nutrients",
+          "Vegetative propagation",
+          "Support of leaves and flowers",
+          "Carbon fixation through photosynthesis"
+        ],
+        correct: 3,
+        explanation: "While stems perform transport and support functions, they do not carry out carbon fixation, which is typically done in leaves."
+      },
+      {
+        q: "What is the main idea behind the Tunica-Corpus theory in plant stem development?",
+        options: [
+          "Growth from vascular cambium and cork cambium",
+          "Organization into tunica (outer) and corpus (inner) layers with specific division patterns",
+          "Only endodermis and cortex play roles",
+          "Meristematic activity happens only in the corpus"
+        ],
+        correct: 1,
+        explanation: "Tunica cells divide anticlinally for surface growth; corpus cells divide anticlinally and periclinally to increase volume."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Monocot vs. Dicot Comparisons in Angiosperms",
+    topic: "ANGIOSPERMS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary basis for classifying angiosperms into monocots and dicots?",
+        options: [
+          "Type of root system",
+          "Color of flowers",
+          "Number of cotyledons in the seed",
+          "Presence of vascular bundles"
+        ],
+        correct: 2,
+        explanation: "Monocots have one cotyledon; dicots have two. This is the main classification criterion."
+      },
+      {
+        q: "Which of the following is a characteristic of dicots?",
+        options: [
+          "Single cotyledon and fibrous roots",
+          "Two cotyledons and tap root system",
+          "Parallel venation and no cambium",
+          "Ring of vascular bundles and fibrous roots"
+        ],
+        correct: 1,
+        explanation: "Dicots have two cotyledons, tap roots, and ring-like vascular bundle arrangement."
+      },
+      {
+        q: "Which of the following plants is a monocot?",
+        options: [
+          "Bean (Phaseolus vulgaris)",
+          "Groundnut (Arachis hypogea)",
+          "Maize (Zea mays)",
+          "Tomato (Lycopersicon esculentum)"
+        ],
+        correct: 2,
+        explanation: "Monocots include maize, millet, and sorghum. Beans and groundnuts are dicots."
+      },
+      {
+        q: "How does the internal root anatomy differ between monocots and dicots?",
+        options: [
+          "Dicots lack xylem; monocots have polyarch xylem",
+          "Dicots have star-shaped xylem with cambium; monocots have ring-shaped xylem without cambium",
+          "Monocots and dicots both have secondary growth",
+          "Monocots have cambium; dicots don’t"
+        ],
+        correct: 1,
+        explanation: "Dicot roots have a star-like xylem core with cambium for secondary growth; monocots lack cambium and show polyarch xylem arrangement."
+      },
+      {
+        q: "Which description best fits a shrub?",
+        options: [
+          "Green, non-woody stem with high parenchyma",
+          "Tall woody plant with single main trunk",
+          "Woody plant with multiple stems from ground level",
+          "Herbaceous plant with tap roots"
+        ],
+        correct: 2,
+        explanation: "Shrubs are woody plants with multiple stems from a common base, unlike trees (single trunk) or herbs (soft stems)."
+      }
+    ]
+  },
 
 
 ];
