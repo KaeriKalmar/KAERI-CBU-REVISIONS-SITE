@@ -124,7 +124,7 @@ const fullAccessCodes = {
     // A code that unlocks everything
     "SUPER_USER_XYZ_789",
     "All-terms@#<0",
-    "Lizzy ❤️","becky @&_","KULIKA🌟"
+    "Lizzy@","becky @&_","KULIKA🌟"
   ],
   "CS110_ALL_TERMS": [
     "CS110_PRO_PASS_ABC", // Unlocks all terms for CS110
