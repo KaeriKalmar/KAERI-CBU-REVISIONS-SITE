@@ -218,7 +218,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "CS110T1_BONUS013 #3",  "CS110T1_BONUS014 &4",
     "CS110T1_BONUS015 *5",  "CS110T1_BONUS016 ^6",
     "CS110T1_EXTRA017 ~7",  "CS110T1_EXTRA018 ?8",
-    "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0"
+    "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0","Lizzy@"
     
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
