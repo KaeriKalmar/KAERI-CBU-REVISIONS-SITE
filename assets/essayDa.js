@@ -1654,6 +1654,148 @@
         explanation: "Shrubs are woody plants with multiple stems from a common base, unlike trees (single trunk) or herbs (soft stems)."
       }
     ]
+    },
+    //const essayData_revised = [
+  {
+    course: "BI110",
+    term: "T3",
+    title: "The Evolutionary Transition and Reproductive Biology of Gymnosperms",
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    steps: [
+      {
+        q: "Explain the evolutionary transition from seedless vascular plants to seed plants, focusing on the role of heterospory.",
+        options: ["Heterospory is the evolutionary step that leads to the production of microspores and megaspores, which is a prerequisite for seed production.", "Heterospory is only found in gymnosperms, not in seedless vascular plants.", "Heterospory allows for the production of bisexual gametophytes.", "Heterospory is the transition from sexual to asexual reproduction."],
+        correct: 1,
+        explanation: "Heterospory, the production of microspores and megaspores, is a key evolutionary step that transitions from the homospory of most seedless vascular plants to the biology of seed plants. This is the first step towards the development of a seed."
+      },
+      {
+        q: "Define what a seed is and describe its key components and their functions.",
+        options: ["A seed is a mature ovule with an embryo, a food reserve (endosperm), and a protective seed coat.", "A seed is a fertilized flower that contains an ovule.", "A seed is a non-vascular reproductive structure.", "A seed is a modified leaf that bears sporangia."],
+        correct: 0,
+        explanation: "A seed is a mature ovule containing a plant embryo, a food reserve (endosperm) that provides nutrition, and a protective seed coat. This provides protection and nourishment for the embryo, increasing its chances of survival."
+      },
+      {
+        q: "Explain why gymnosperms are referred to as 'naked seed' plants.",
+        options: ["Their seeds are enclosed in a fruit.", "Their seeds are exposed on the surface of a sporophyll, not enclosed in a fruit.", "They do not have a seed coat.", "The seeds are produced without fertilization."],
+        correct: 1,
+        explanation: "Gymnosperms are 'naked seed' plants because their ovules and seeds are not enclosed within a fruit. Instead, they are exposed on the surface of a sporophyll, a modified leaf-like structure."
+      },
+      {
+        q: "Describe the reproductive structures of pines, including the location and development of male and female cones.",
+        options: ["Pines are dioecious, with male and female cones on different plants.", "Pines are monoecious, with male and female cones on the same plant. Male cones are produced annually, while female cones take up to 5 years to mature.", "Pines have flowers that contain both male and female parts.", "Male cones are found on the roots, and female cones are found on the branches."],
+        correct: 1,
+        explanation: "Pines are monoecious, meaning both male (staminate) and female (ovulate) cones are found on the same individual plant. Male cones develop annually, while female cones can take up to five years to reach maturity."
+      },
+      {
+        q: "Explain the process of fertilization in pines, from pollination to the formation of a viable seed.",
+        options: ["Pollen is transported by insects, and the zygote immediately forms a viable seed.", "Pollen is dispersed by wind, a zygote forms after fertilization, and while multiple embryos may initially develop, only one matures into a viable seed.", "Pollen is transported by water, and the embryo develops without a food reserve.", "Fertilization is an immediate process that produces a fruit."],
+        correct: 1,
+        explanation: "Pollination occurs via wind, which carries winged pollen grains to the female cone. Fertilization results in a zygote, and while a seed may initially contain multiple embryos, only one will eventually mature into a viable seed."
+      },
+      {
+        q: "Outline the role of a sporophyll in the reproduction of seed plants.",
+        options: ["It is a root-like structure that anchors the plant.", "It is a modified leaf or leaf-like organ that bears sporangia, where spores are produced.", "It is the main photosynthetic organ of the plant.", "It is a male reproductive structure that produces pollen."],
+        correct: 1,
+        explanation: "A sporophyll is a modified leaf or leaf-like organ that bears sporangia. In gymnosperms, the sporophylls are the scales of the cones that bear either microsporangia (pollen sacs) or megasporangia (ovules)."
+      },
+      {
+        q: "Discuss the primary method of pollen dispersal in pines and the adaptation that aids in this process.",
+        options: ["Pollen is dispersed by water, and the adaptation is a waxy coating.", "Pollen is dispersed by animals, and the adaptation is a sticky surface.", "Pollen is dispersed by wind, and the adaptation is winged pollen grains.", "Pollen is dispersed by insects, and the adaptation is a sweet scent."],
+        correct: 2,
+        explanation: "The primary method of pollen dispersal in pines is wind. The winged pollen grains are a key adaptation that allows for efficient transport over long distances."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Anatomy and Adaptations of *Pinus* Species",
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    steps: [
+      {
+        q: "Describe the key anatomical adaptations of a *Pinus* leaf that enable it to survive in dry environments.",
+        options: ["Large, flat surface area and many stomata.", "Sunken stomata, a thick cuticle, and a hypodermis.", "A single layer of mesophyll cells.", "The absence of a vascular system."],
+        correct: 1,
+        explanation: "Key adaptations for dry environments include sunken stomata to reduce water loss, a thick waxy cuticle, and a protective hypodermis, which all help conserve water."
+      },
+      {
+        q: "Explain what is meant by a 'physiological drought' in pines and how they overcome it.",
+        options: ["It is a lack of rainfall in the summer months.", "It is a condition where the plant cannot absorb water because the ground is frozen. Pines overcome this with their evergreen leaves and adaptations to reduce water loss.", "It is a condition where the plant has too much water.", "It is a term for the plant's natural state of dormancy."],
+        correct: 1,
+        explanation: "A 'physiological drought' occurs because pines in temperate regions face a situation where water is present as snow but is frozen and unavailable to the plant. They overcome this with adaptations that minimize water loss."
+      },
+      {
+        q: "Describe the vascular tissue of pines and explain how it differs from that of angiosperms.",
+        options: ["Pine xylem is homogeneous with only tracheid cells, while angiosperm xylem has both tracheids and more efficient vessel elements.", "Pine xylem is composed of vessel elements, while angiosperm xylem has only tracheids.", "Pines have no vascular tissue, while angiosperms do.", "The vascular system of pines is always a eustele."],
+        correct: 0,
+        explanation: "The xylem of pines is homogenous, composed only of tracheid cells. In contrast, the xylem of angiosperms is heterogeneous and contains both tracheids and more efficient vessel elements, allowing for faster water transport."
+      },
+      {
+        q: "What is a mycorrhiza, and why is this symbiotic relationship so important for many exotic pine species?",
+        options: ["It is a parasitic relationship where the fungus harms the pine.", "It is a mutualistic relationship between pine roots and a fungus, which helps the tree absorb water and nutrients.", "It is a competitive relationship for water resources.", "It is a relationship that helps the pine tree reproduce."],
+        correct: 1,
+        explanation: "Mycorrhiza is a mutualistic relationship between pine roots and a fungus. The fungus assists the pine in absorbing water and nutrients from the soil. This relationship is so vital that many exotic pine species cannot grow without it."
+      },
+      {
+        q: "Discuss how the number of leaves per fascicle and the type of branching can be used to identify different *Pinus* species.",
+        options: ["All pines have the same number of leaves per fascicle and the same type of branching.", "The number of leaves per fascicle (e.g., unifoliate, bifoliate, trifoliate) is a key identifying characteristic. Branching can be either long shoots or spur shoots, each with different leaf types.", "The number of cones per tree is the key identifier.", "The color of the pollen is used for identification."],
+        correct: 1,
+        explanation: "The number of leaves per fascicle is a key characteristic for identification (*P. monophylla* is unifoliate, *P. sylvestris* is bifoliate, and *P. insularis* is trifoliate). Also, the presence of long shoots and spur shoots bearing different types of leaves is another defining feature."
+      },
+      {
+        q: "Describe the function of the transfusion tissue and the resin canals in a *Pinus* leaf.",
+        options: ["The transfusion tissue is for photosynthesis, and resin canals transport water.", "Transfusion tissue is a mixture of dead tracheids and living parenchyma that aids in transport, while resin canals contain a protective resin.", "Transfusion tissue is for anchorage, and resin canals are for gas exchange.", "Both tissues are for reproduction."],
+        correct: 1,
+        explanation: "Transfusion tissue, a mix of dead tracheids and living parenchyma, is found between the vascular tissue and endodermis and aids in transport. Resin canals, found in the mesophyll, contain a resinous substance that protects the plant from insects and pathogens."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T3",
+    title: "Diversity and Zambian Gymnosperms",
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    steps: [
+      {
+        q: "List and briefly describe the four main divisions of gymnosperms.",
+        options: ["Cycadophyta, Ginkgophyta, Coniferophyta, and Gnetophyta, all of which are flowering plants.", "Cycadophyta (cycads), Ginkgophyta (ginkgoes), Coniferophyta (conifers), and Gnetophyta, all of which are non-flowering seed plants.", "Bryophyta, Pteridophyta, Gymnosperms, and Angiosperms.", "All of the above are divisions of gymnosperms."],
+        correct: 1,
+        explanation: "The four divisions of gymnosperms are Cycadophyta (cycads), Ginkgophyta, Coniferophyta (conifers), and Gnetophyta. These are all non-flowering seed plants."
+      },
+      {
+        q: "Identify the indigenous gymnosperms found in Zambia and provide their local names where applicable.",
+        options: ["*Pinus insularis* and *Pinus sylvestris* are the indigenous species.", "*Podocarpus* and *Encephalartos* are the indigenous genera. *Podocarpus latifolius* is known as Mulushi or Mweye.", "There are no indigenous gymnosperms in Zambia.", "*Cycas* and *Ginkgo* are the indigenous gymnosperms."],
+        correct: 1,
+        explanation: "The only gymnosperms found in Zambia are the genera *Podocarpus* and *Encephalartos*. The indigenous pine species, *Podocarpus latifolius*, is locally known as Mulushi (Bemba, Bisa) and Mweye (Tumbuka)."
+      },
+      {
+        q: "Discuss the common pine genus found in Zambia and its naturalization in Africa.",
+        options: ["*Podocarpus* is the most common genus, and it is indigenous to Africa.", "*Pinus* is the most common genus, with 27 species introduced to Zambia and 8 species naturalized in Africa.", "*Pinus* is indigenous to Zambia, and all species are found in temperate climates.", "*Encephalartos* is the most common genus in Zambia."],
+        correct: 1,
+        explanation: "The most common pine genus in Zambia is *Pinus*, with 27 species introduced. While native to temperate regions, the notes state that 8 species have been naturalized in Africa."
+      },
+      {
+        q: "What is a 'sporophyll', and how does it relate to the reproductive cones of a gymnosperm?",
+        options: ["A sporophyll is a part of the root system.", "A sporophyll is a modified leaf that bears sporangia. In cones, these are the scales that hold either microsporangia or megasporangia.", "A sporophyll is a pollen grain.", "A sporophyll is the endosperm of the seed."],
+        correct: 1,
+        explanation: "A sporophyll is a modified leaf or leaf-like organ that bears sporangia. The scales of the male and female cones are examples of sporophylls, which bear either pollen sacs or ovules."
+      },
+      {
+        q: "Provide an example of a unifoliate, a bifoliate, and a trifoliate *Pinus* species.",
+        options: ["*Pinus sylvestris* (unifoliate), *Pinus insularis* (bifoliate), *Pinus monophylla* (trifoliate).", "*Pinus monophylla* (unifoliate), *Pinus sylvestris* (bifoliate), *Pinus insularis* (trifoliate).", "*Pinus insularis* (unifoliate), *Pinus monophylla* (bifoliate), *Pinus sylvestris* (trifoliate).", "All pine species have the same number of leaves per fascicle."],
+        correct: 1,
+        explanation: "Based on the notes, *Pinus monophylla* is unifoliate (one leaf), *Pinus sylvestris* is bifoliate (two leaves), and *Pinus insularis* is trifoliate (three leaves)."
+      },
+      {
+        q: "Discuss the structure of pine stems, including the types of branches and the vascular system.",
+        options: ["Pine stems have only one type of branch and a single vascular system throughout their life.", "Pine stems have long shoots and spur shoots. The vascular system is eustele in young stems and ectophloic siphonostele in older stems.", "Pine stems have no vascular system.", "Pine stems have a vascular system that is always a protostele."],
+        correct: 1,
+        explanation: "Pine stems have two kinds of branches: long shoots (bearing scale leaves) and spur shoots (bearing needle-like leaves). The vascular system is eustele in young stems and transitions to ectophloic siphonostele in older stems."
+      }
+    ]
   },
 
 

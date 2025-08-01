@@ -3009,4 +3009,456 @@ const shortData = [
     keywords: ["anticlinal division", "periclinal division", "cell division", "perpendicular", "parallel"],
     
   },
+  
+  //const shortData = [
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Explain the difference between homosporous and heterosporous plants.",
+    keywords: ["homosporous", "heterosporous", "spore type", "gametophyte"],
+    explanation: "Homosporous plants produce one type of spore, forming a bisexual gametophyte. Heterosporous plants produce two types of spores (microspores and megaspores), which form male and female gametophytes respectively.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is a seed, and what are its three main components?",
+    keywords: ["seed", "ovule", "embryo", "endosperm", "seed coat"],
+    explanation: "A seed is a mature ovule containing a plant embryo, a food reserve (endosperm), and a protective seed coat.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Why are gymnosperms called 'naked seed' plants?",
+    keywords: ["gymnosperm", "naked seeds", "ovules", "sporophylls"],
+    explanation: "The term 'gymnosperm' means 'naked seeds' because their ovules and resulting seeds are exposed on the surface of sporophylls, not enclosed in a fruit.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is a sporophyll?",
+    keywords: ["sporophyll", "modified leaf", "sporangia"],
+    explanation: "A sporophyll is a modified leaf or a leaf-like organ that bears sporangia, such as the fertile leaves of ferns or the stamens of angiosperms.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "List the four main divisions of gymnosperms.",
+    keywords: ["Cycadophyta", "Ginkgophyta", "Coniferophyta", "Gnetophyta"],
+    explanation: "The four divisions are Cycadophyta (Cycads), Ginkgophyta, Coniferophyta (Conifers), and Gnetophyta.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Which two genera of gymnosperms are indigenous to Zambia?",
+    keywords: ["Podocarpus", "Encephalartos", "Zambia"],
+    explanation: "*Podocarpus* and *Encephalartos* are the only gymnosperms found in Zambia.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Describe the composition of the xylem tissue in pines.",
+    keywords: ["xylem", "tracheid", "homogenous"],
+    explanation: "The xylem in pines is homogenous, meaning it is made up only of tracheid cells.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is a 'physiological drought' in pines?",
+    keywords: ["physiological drought", "temperate", "winter", "water"],
+    explanation: "This occurs because pines are found in temperate climates where winter snow makes water unavailable to the plant, even though it is present.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Name two anatomical adaptations of a *Pinus* leaf to dry environments.",
+    keywords: ["adaptations", "sunken stomata", "cuticle", "hypodermis"],
+    explanation: "Key adaptations include sunken stomata to reduce water loss, a thick cuticle, and a protective hypodermis.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is mycorrhiza, and why is it important for pine trees?",
+    keywords: ["mycorrhiza", "symbiotic", "fungus", "roots"],
+    explanation: "Mycorrhiza is a symbiotic mutual relationship between pine roots and a fungus, which is essential for the growth of many exotic pine species.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the function of resin canals in pine stems and leaves?",
+    keywords: ["resin canals", "resin", "protection"],
+    explanation: "Resin canals, found in the xylem and cortex, contain a resinous substance that protects the plant from insects and pathogens.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What two types of branches are found on pine stems, and what kind of leaves do they bear?",
+    keywords: ["long shoots", "spur shoots", "scale leaves", "needle-like leaves"],
+    explanation: "Pine stems have long shoots bearing non-photosynthetic scale leaves and spur shoots bearing photosynthetic needle-like leaves.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is transfusion tissue, and where is it located in a *Pinus* leaf?",
+    keywords: ["transfusion tissue", "tracheids", "parenchyma", "vascular system", "endodermis"],
+    explanation: "Transfusion tissue is a mixture of dead tracheids and living parenchyma located between the vascular system and the endodermis in a pine leaf.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How are *Pinus* species identified using their leaves?",
+    keywords: ["fascicle", "identification"],
+    explanation: "The number of leaves per fascicle (a small bundle of leaves) is a key characteristic used for species identification.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What does it mean for a pine species to be monoecious?",
+    keywords: ["monoecious", "male cone", "female cone", "same plant"],
+    explanation: "A monoecious pine tree has both male (staminate) and female (ovulate) cones on the same individual plant.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Where do ovules and pollen grains develop in pine trees?",
+    keywords: ["ovules", "pollen", "female cones", "male cones"],
+    explanation: "Ovules develop in female cones (ovulate strobili), while pollen grains are produced in male cones (staminate strobili).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the function of the wings on pine pollen grains?",
+    keywords: ["winged pollen", "wind dispersal"],
+    explanation: "The wings on the pollen grains aid in wind dispersal, which is the primary method of pollination in pines.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How long does it take for a female pine cone to mature?",
+    keywords: ["female cone", "ovulate strobilus", "maturity"],
+    explanation: "Ovulate strobili (female cones) can take up to five years to reach maturity.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Although a pine seed may have multiple embryos, what is the final outcome?",
+    keywords: ["multiple embryos", "viable seed"],
+    explanation: "While multiple embryos may form, only one embryo eventually matures into a viable seed.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the indigenous pine species in Zambia, and what is its local name?",
+    keywords: ["Podocarpus latifolius", "Mulushi", "Mweye"],
+    explanation: "The indigenous pine species is *Podocarpus latifolius*, locally known as Mulushi (Bemba, Bisa) or Mweye (Tumbuka).",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How does the evergreen nature of pine trees relate to their leaves?",
+    keywords: ["evergreen", "leaves", "persist"],
+    explanation: "Pine trees are evergreen because their leaves are long-lasting, persisting on the tree for 2-14 years.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the specific name of the longest-living pine species mentioned in the notes?",
+    keywords: ["Pinus longaeva", "long-living"],
+    explanation: "*Pinus longaeva* is a long-living pine species found in the southwestern USA.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How do the medullary rays of pine xylem appear?",
+    keywords: ["medullary rays", "uniseriate"],
+    explanation: "The medullary rays in pine xylem are uniseriate, meaning they are one cell thick.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the purpose of the endosperm in a seed?",
+    keywords: ["endosperm", "food reserves"],
+    explanation: "The endosperm holds food reserves that provide nutrition for the developing embryo.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the name of the most commonly cultivated *Pinus* species in Zambia?",
+    keywords: ["Pinus insularis", "cultivated"],
+    explanation: "The most commonly cultivated species in Zambia is *Pinus insularis*.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "In what part of a pine tree are both male and female cones found?",
+    keywords: ["monoecious", "same plant"],
+    explanation: "Both male and female cones are found on the same individual plant, which is why pines are described as monoecious.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the difference between a long shoot and a spur shoot?",
+    keywords: ["long shoot", "spur shoot", "scale leaves", "needle-like leaves"],
+    explanation: "Long shoots bear non-photosynthetic scale leaves, while spur shoots bear the photosynthetic needle-like leaves.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the term for the vascular system found in the young stems of pines?",
+    keywords: ["eustele", "vascular system", "young stems"],
+    explanation: "The vascular system in young stems is described as eustele.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How does the vascular system change in older pine stems?",
+    keywords: ["ectophloic siphonostele", "older stems"],
+    explanation: "In older stems, the vascular system changes to an ectophloic siphonostele.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How does the position of sporangia differ between male and female cones?",
+    keywords: ["microsporangia", "megasporangia", "abaxial", "adaxial"],
+    explanation: "Microsporangia (male) develop on the abaxial side, while megasporangia (female) develop on the adaxial side of the sporophylls.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What are the common names for the gymnosperm divisions Cycadophyta and Coniferophyta?",
+    keywords: ["Cycadophyta", "Coniferophyta", "Cycads", "Conifers"],
+    explanation: "Cycadophyta are commonly called Cycads, and Coniferophyta are commonly called Conifers.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the local name for the indigenous pine species in Bemba and Bisa?",
+    keywords: ["Podocarpus latifolius", "Mulushi"],
+    explanation: "The local name for *Podocarpus latifolius* in Bemba and Bisa is Mulushi.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the local name for the indigenous pine species in Tumbuka?",
+    keywords: ["Podocarpus latifolius", "Mweye"],
+    explanation: "The local name for *Podocarpus latifolius* in Tumbuka is Mweye.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Name an example of a cycad genus.",
+    keywords: ["cycad", "Cycas", "Encephalartos"],
+    explanation: "Examples of cycad genera include *Cycas* and *Encephalartos*.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How does the structure of a pine leaf's mesophyll contribute to its survival?",
+    keywords: ["mesophyll", "resin canals"],
+    explanation: "The mesophyll contains resin canals, which are part of the plant's defense against pests and diseases.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the difference between ovulate and staminate strobili?",
+    keywords: ["ovulate strobili", "staminate strobili"],
+    explanation: "Ovulate strobili are female cones, and staminate strobili are male cones.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How does the vascular system of an older pine stem differ from that of a young stem?",
+    keywords: ["eustele", "ectophloic siphonostele"],
+    explanation: "Young stems have a eustele vascular system, while older stems have an ectophloic siphonostele.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is a key difference in reproductive structures between seed plants and seedless vascular plants?",
+    keywords: ["seed plants", "seedless vascular plants", "seeds", "spores"],
+    explanation: "Seed plants reproduce using seeds, while seedless vascular plants reproduce using spores.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Why are pteridophytes often called vascular cryptogams?",
+    keywords: ["pteridophytes", "vascular cryptogams"],
+    explanation: "They are vascular plants that reproduce via spores, rather than seeds.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "Give an example of a bifoliate *Pinus* species.",
+    keywords: ["Pinus sylvestris", "bifoliate"],
+    explanation: "*Pinus sylvestris* is an example of a bifoliate pine species, meaning it has two leaves per fascicle.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the scientific name for a unifoliate pine species?",
+    keywords: ["Pinus monophylla", "unifoliate"],
+    explanation: "*Pinus monophylla* is an example of a unifoliate pine, with one leaf per fascicle.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the scientific name for a trifoliate pine species?",
+    keywords: ["Pinus insularis", "trifoliate"],
+    explanation: "*Pinus insularis* is an example of a trifoliate pine species, with three leaves per fascicle.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "How many species of *Pinus* were introduced to Zambia?",
+    keywords: ["Pinus", "introduced", "Zambia"],
+    explanation: "27 species of *Pinus* were introduced to Zambia.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is a key difference in reproductive output between male and female cones?",
+    keywords: ["staminate strobili", "ovulate strobili", "annually", "5 years"],
+    explanation: "Staminate strobili (male cones) develop annually, while ovulate strobili (female cones) can take up to 5 years to mature.",
+    course: "BI110",
+    term: "T3"
+  },
+  {
+    topic: "GYMNOSPERMS",
+    year: "Notes",
+    tag: "🌲",
+    q: "What is the end result of fertilization in a pine tree?",
+    keywords: ["fertilization", "zygote"],
+    explanation: "Fertilization leads to the formation of a zygote, which develops into an embryo.",
+    course: "BI110",
+    term: "T3"
+  },
 ];

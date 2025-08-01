@@ -6688,7 +6688,268 @@ const flashcards = {
 
 //module 14
 
-
+//const flashcards = {
+  "MODULE 14: GYMNOSPERMS": [
+    {
+      front: "What is the primary difference between a homosporous and a heterosporous plant?",
+      back: "A homosporous plant produces one type of spore, while a heterosporous plant produces two types: microspores and megaspores.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What does a homosporous spore germinate into?",
+      back: "A homosporous spore germinates to form a bisexual gametophyte.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What do microspores and megaspores develop into?",
+      back: "Microspores develop into male gametophytes, and megaspores develop into female gametophytes.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "Which seedless vascular plants exhibit heterospory?",
+      back: "Heterospory is seen in fern genera such as *Selaginella*, *Marsilea*, and *Salvinia*.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What reproductive structures do seedless vascular plants possess?",
+      back: "Seedless vascular plants have archegonia and antheridia.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What is the key essence of the biology of seed plants?",
+      back: "The production of seeds is the essence of the biology of seed plants.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "Define a seed.",
+      back: "A seed is a mature ovule with an embryo, a food reserve (endosperm), and a protective seed coat.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What is another name for seed plants, and what groups do they include?",
+      back: "Seed plants are also known as spermatophytes, and they include gymnosperms and angiosperms.",
+      course: "BI110",
+      term: "T3",
+      topic: "plant reproduction and seed development"
+    },
+    {
+      front: "What does the term 'gymnosperm' mean?",
+      back: "Gymnosperms means 'naked seeds'.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "Where are the ovules and seeds of gymnosperms located?",
+      back: "The ovules and resulting seeds are exposed on the surface of the sporophylls.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "What is a sporophyll?",
+      back: "A sporophyll is a modified leaf or leaf-like organ that bears sporangia.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "Why are gymnosperms referred to as non-flowering seed plants?",
+      back: "Gymnosperms do not bear flowers.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "Name the four divisions of gymnosperms.",
+      back: "The four divisions are Cycadophyta, Ginkgophyta, Coniferophyta, and Gnetophyta.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "Which two genera of gymnosperms are found in Zambia?",
+      back: "*Podocarpus* and *Encephalartos* are the only gymnosperms found in Zambia.",
+      course: "BI110",
+      term: "T3",
+      topic: "gymnosperms: the 'naked seed' plants"
+    },
+    {
+      front: "What is the common name for the division Coniferophyta?",
+      back: "The common name for Coniferophyta is conifers, which includes pines.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is the most common genus of pines in Zambia?",
+      back: "The most common genus of pines in Zambia is *Pinus*.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is the indigenous pine species in Zambia?",
+      back: "The only indigenous pine is *Podocarpus latifolius*, known as Mulushi or Mweye.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What makes the xylem of pines homogeneous?",
+      back: "Their xylem is made up only of tracheid cells.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What are the two types of leaves found on pine stems?",
+      back: "Pine stems have non-photosynthetic scale leaves and photosynthetic foliage leaves.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What are the photosynthetic leaves of pines shaped like?",
+      back: "Photosynthetic leaves are needle-shaped (acicular).",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "Name two anatomical features of a *Pinus* leaf that are adaptations to a dry environment.",
+      back: "Adaptations include sunken stomata, a thick cuticle, and a hypodermis.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is meant by a 'physiological drought' in *Pinus*?",
+      back: "It refers to their presence in temperate climates with summer rain and winter snow, where water is unavailable due to freezing.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is the most commonly cultivated *Pinus* species in Zambia?",
+      back: "The most commonly cultivated species is *Pinus insularis*.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What two types of branches are found on pine stems?",
+      back: "Pine stems have long shoots (bearing scale leaves) and spur shoots (bearing needle-like leaves).",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is a mycorrhiza in the context of pine roots?",
+      back: "Mycorrhiza is a symbiotic mutual relationship between pine branch roots and a fungus.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "Why are mycorrhizal fungi essential for many exotic pine species?",
+      back: "Most exotic species cannot grow without the mycorrhizal fungus.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is the main cell type found in pine xylem?",
+      back: "Pine xylem is composed of elongate tracheids with prominent pits on the radial walls.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "How long can *Pinus* leaves persist on the tree?",
+      back: "*Pinus* leaves can persist for 2-14 years, contributing to their evergreen state.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is a fascicle, and how is it used for species identification?",
+      back: "A fascicle is a small bundle of leaves; the number of leaves per fascicle is a characteristic used to identify *Pinus* species.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "Name the key anatomical features of a *Pinus* leaf.",
+      back: "Key features include resin canals in the mesophyll, an endodermis, transfusion tissue, hypodermis, and sunken stomata.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What is transfusion tissue in a *Pinus* leaf composed of?",
+      back: "Transfusion tissue is a mixture of dead tracheids and living parenchyma.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What structures produce seeds and pollen in gymnosperms?",
+      back: "Seeds and pollen are produced in structures called cones.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "Where do ovules and sporangia develop on female and male cones, respectively?",
+      back: "Ovules develop on the adaxial side of female sporophylls; microsporangia develop on the abaxial side of male sporophylls.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What kind of pollen grains do male cones bear?",
+      back: "Male cones bear winged pollen grains.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "What does it mean for a species to be 'monoecious'?",
+      back: "A monoecious species has both male and female reproductive structures (cones) on the same individual plant.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "How long can ovulate strobili take to mature?",
+      back: "Ovulate strobili (female cones) can take up to 5 years to reach maturity.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    },
+    {
+      front: "How many viable embryos typically mature in a single pine seed?",
+      back: "While a seed may initially contain multiple embryos, only one eventually matures into a viable seed.",
+      course: "BI110",
+      term: "T3",
+      topic: "the genus *pinus*"
+    }
+  ],
 
 
 
