@@ -3461,4 +3461,366 @@ const shortData = [
     course: "BI110",
     term: "T3"
   },
+  
+  //const mcqs = [
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐛",
+    "q": "What is the primary division of the Kingdom Animalia?",
+    "keywords": ["Kingdom Animalia", "division", "invertebrates", "vertebrates"],
+    "explanation": "The Kingdom Animalia is composed of invertebrates and vertebrates, a fundamental classification based on the presence or absence of a backbone.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐛",
+    "q": "Which of the following defines an invertebrate?",
+    "keywords": ["invertebrate", "definition", "backbone", "vertebral column"],
+    "explanation": "An invertebrate is an animal without a backbone or vertebral column.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐛",
+    "q": "What is the function of the vertebral column?",
+    "keywords": ["vertebral column", "function", "skeletal support", "backbone"],
+    "explanation": "The vertebral column serves as the main skeletal support for an animal.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🇿🇲",
+    "q": "Which of these phyla is found in Zambia?",
+    "keywords": ["phyla", "Zambia", "invertebrates", "Annelida"],
+    "explanation": "The notes list Annelida, Nematoda, Platyhelminthes, Cnidaria, Mollusks, Arthropoda, Loricifera, Cycliophora, and Micrognathozoa as invertebrate phyla found in Zambia.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🪱",
+    "q": "What is a characteristic feature of Phylum Annelida?",
+    "keywords": ["Annelida", "segmented worms", "soft bodies", "setae"],
+    "explanation": "Annelids are segmented worms with cylindrical soft bodies and rings that separate the segments. They possess setae and move using circular and longitudinal muscles.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🪱",
+    "q": "Based on the provided diagram of segmented worms (earthworms), what phylum do they belong to?",
+    "keywords": ["segmented worms", "earthworms", "diagram", "Annelida"],
+    "explanation": "The diagrams of earthworms and other segmented worms are used to illustrate the Phylum Annelida.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🪱",
+    "q": "Which of these are examples of annelids?",
+    "keywords": ["annelids", "examples", "earthworms", "leeches"],
+    "explanation": "The notes list earthworms and leeches as common examples of annelids.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "Which of the following describes a nematode?",
+    "keywords": ["nematode", "characteristics", "un-segmented", "tubular", "cylindrical"],
+    "explanation": "Nematodes are un-segmented, tubular worms that are cylindrical and taper at both ends.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the common name for the parasitic nematode *Ascaris lumbricoides*?",
+    "keywords": ["Ascaris lumbricoides", "nematode", "parasite", "intestinal worms"],
+    "explanation": "*Ascaris lumbricoides* is a parasitic nematode commonly known as an intestinal worm.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "Nematodes are known to cause diseases like elephantiasis and affect plants, particularly those in which family?",
+    "keywords": ["nematodes", "elephantiasis", "plants", "Solanaceae"],
+    "explanation": "The notes state that filarid nematodes cause elephantiasis and they can affect plants, particularly those in the Solanaceae family.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐠",
+    "q": "What phylum includes jellyfish, hydra, and corals?",
+    "keywords": ["jellyfish", "hydra", "corals", "Cnidaria"],
+    "explanation": "Cnidaria is the phylum for a group of aquatic animals with soft, gelatinous bodies, including jellyfish, hydra, and corals.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐠",
+    "q": "What is the key difference between jellyfish and corals?",
+    "keywords": ["jellyfish", "corals", "free-swimming", "sessile"],
+    "explanation": "Jellyfish are free-swimming, while corals are sessile (sedimentary).",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐠",
+    "q": "What is the ecological importance of coral reefs?",
+    "keywords": ["coral reefs", "ecological role", "protection", "ocean currents"],
+    "explanation": "Coral reefs provide protection for coastal buildings against ocean currents and tides.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐌",
+    "q": "Which of the following is a characteristic of Phylum Mollusca?",
+    "keywords": ["Mollusca", "soft bodies", "shell", "rasp"],
+    "explanation": "Mollusks have soft bodies, often with a rasping tongue-like file, and many species possess a hard shell made of calcium.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐌",
+    "q": "How many extant species are there in the Phylum Mollusca?",
+    "keywords": ["Mollusca", "extant species", "85,000"],
+    "explanation": "The notes state that there are about 85,000 extant species of mollusks.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐌",
+    "q": "What parasite can be transmitted by aquatic mollusks?",
+    "keywords": ["mollusks", "parasite", "vector", "Schistosoma", "bilharziasis"],
+    "explanation": "Aquatic mollusks can act as vectors for the parasite *Schistosoma*, which causes bilharziasis.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦀",
+    "q": "What are the defining characteristics of Phylum Arthropoda?",
+    "keywords": ["Arthropoda", "exoskeleton", "chitin", "jointed appendage", "segments"],
+    "explanation": "Arthropods are characterized by an exoskeleton made of chitin and a paired, jointed appendage, with a body plan of segments.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦀",
+    "q": "What is a cephalothorax?",
+    "keywords": ["cephalothorax", "definition", "head", "thorax", "fused"],
+    "explanation": "A cephalothorax is a fused body segment formed by the combination of the head and thorax, found in some arthropods.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🕷️",
+    "q": "Which class of arthropods includes spiders, scorpions, and ticks?",
+    "keywords": ["spiders", "scorpions", "ticks", "Arachnida"],
+    "explanation": "Spiders, scorpions, and ticks are all part of the class Arachnida.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🕷️",
+    "q": "How do spiders catch their prey?",
+    "keywords": ["spiders", "prey", "silk webs", "poison glands"],
+    "explanation": "Spiders catch their prey in silk webs and use poison glands to paralyze them.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🕷️",
+    "q": "What is the main function of the venom in scorpions?",
+    "keywords": ["scorpions", "venom", "neurotoxins", "enzyme inhibitors", "lethal"],
+    "explanation": "Scorpion venom is a mixture of neurotoxins and enzyme inhibitors that can be lethal to prey and in some cases, humans.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐞",
+    "q": "What is the key difference between centipedes and millipedes?",
+    "keywords": ["centipedes", "millipedes", "appendages", "legs", "body segments"],
+    "explanation": "Centipedes have one pair of legs on each body segment, while millipedes have two pairs on each segment.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦀",
+    "q": "Which class of arthropods are aquatic and include crabs and shrimp?",
+    "keywords": ["Crustacea", "aquatic", "crabs", "shrimp"],
+    "explanation": "The class Crustacea consists of aquatic arthropods such as crabs, crayfish, lobsters, and shrimp.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which phylum of microscopic marine animals was discovered in 1983 and is found in the spaces between sand grains?",
+    "keywords": ["Loricifera", "microscopic", "marine animals", "sand grains"],
+    "explanation": "Phylum Loricifera consists of tiny marine animals found in the spaces between sand grains, discovered in 1983.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦞",
+    "q": "Where are the microscopic metazoans from the Phylum Cycliophora known to live?",
+    "keywords": ["Cycliophora", "microscopic", "metazoans", "mouthparts", "clawed lobsters"],
+    "explanation": "Phylum Cycliophora organisms are known to inhabit the mouthparts of clawed lobsters.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the defining feature of Phylum Micrognathozoa?",
+    "keywords": ["Micrognathozoa", "microscopic", "jaws", "complicated jaws"],
+    "explanation": "Phylum Micrognathozoa is a group of microscopic animals with complicated jaws.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🪱",
+    "q": "How do annelids move?",
+    "keywords": ["annelids", "movement", "circular muscles", "longitudinal muscles"],
+    "explanation": "Annelids move using circular and longitudinal muscles.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the shape of a nematode's body?",
+    "keywords": ["nematode", "body shape", "cylindrical", "tapered"],
+    "explanation": "Nematodes have a cylindrical body that tapers at both ends.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐠",
+    "q": "How many species are in the Phylum Cnidaria?",
+    "keywords": ["Cnidaria", "species", "10,000", "aquatic"],
+    "explanation": "The Phylum Cnidaria contains about 10,000 species of aquatic animals.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🐌",
+    "q": "Besides soft bodies and shells, what is another significant feature of a mollusk's body?",
+    "keywords": ["mollusca", "body features", "foot", "mantle", "alimentary canal"],
+    "explanation": "Significant features of a mollusk's body include the foot, mantle, alimentary canal, and shell.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🕷️",
+    "q": "What is the exoskeleton of arthropods made of?",
+    "keywords": ["arthropods", "exoskeleton", "chitin", "cuticle"],
+    "explanation": "The exoskeleton, also known as the cuticle, is made of chitin.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🕷️",
+    "q": "What is the common diet of most arachnids?",
+    "keywords": ["arachnids", "diet", "carnivorous", "mites"],
+    "explanation": "Most arachnids are carnivorous, with the exception of mites which are largely herbivorous.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🦀",
+    "q": "Which class of arthropods has two pairs of antennae and a cephalothorax?",
+    "keywords": ["arthropods", "antennae", "cephalothorax", "Crustacea"],
+    "explanation": "Crustaceans typically have two pairs of antennae, and their head and thorax are fused into a cephalothorax.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "How many species of Phylum Cycliophora have been documented?",
+    "keywords": ["Cycliophora", "species", "documented", "three"],
+    "explanation": "Only three species of Cycliophora have been documented to date.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which phylum of microscopic animals with complicated jaws was discovered in Greenland in the year 2000?",
+    "keywords": ["Micrognathozoa", "microscopic", "jaws", "Greenland"],
+    "explanation": "Phylum Micrognathozoa was discovered in Greenland in the year 2000 and is known for its complicated jaws.",
+    "course": "BI110",
+    "term": "T3"
+  },
+  {
+    "topic": "Diversity of Animals : Invertebrates",
+    "year": "Notes",
+    "tag": "🪱",
+    "q": "Which phylum is represented by the diagram of a Planarian?",
+    "keywords": ["Planarian", "diagram", "phylum", "Platyhelminthes"],
+    "explanation": "The diagram of a Planarian, a type of flatworm, represents the Phylum Platyhelminthes.",
+    "course": "BI110",
+    "term": "T3"
+  },
 ];

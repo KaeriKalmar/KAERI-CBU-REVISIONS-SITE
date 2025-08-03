@@ -6948,7 +6948,8 @@ const flashcards = {
       course: "BI110",
       term: "T3",
       topic: "the genus *pinus*"
-    }
+    },
+    
   ],
 
 
@@ -7350,6 +7351,416 @@ const flashcards = {
   ],
   
   
-  //
-  
+  //module 16
+  //{
+"MODULE 16: THE VERTEBRATES": [
+
+   //const flashcards = [
+    {
+        "front": "How are vertebrates and invertebrates classified within the Kingdom Animalia?",
+        "back": "The Kingdom Animalia is comprised of invertebrates (lower animals) and vertebrates (higher animals).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Introduction to Vertebrates"
+    },
+    {
+        "front": "What phylum do all vertebrates belong to, and what is its defining characteristic?",
+        "back": "All vertebrates belong to the phylum Chordata, which is defined by the possession of a nerve chord at some stage in their development.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Phylum Chordata"
+    },
+    {
+        "front": "Name the key anatomical features that characterize a chordate at some stage of its development.",
+        "back": "Key features include a dorsal hollow nerve cord, a notochord, and pharyngeal gill slits.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Phylum Chordata"
+    },
+    {
+        "front": "What is a notochord, and what happens to it in most vertebrates?",
+        "back": "A notochord is a flexible rod of large cells surrounded by a stiff sheath. In most vertebrates, it is replaced by a vertebral column or backbone.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Phylum Chordata"
+    },
+    {
+        "front": "What is the name of the brain case that protects the brain in vertebrates?",
+        "back": "The brain is protected by a brain case called the cranium, which is formed by the fusion of several immovable bones.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Phylum Chordata"
+    },
+    {
+        "front": "Name the five major groups of vertebrates.",
+        "back": "The five major groups are fishes, amphibians, reptiles, birds, and mammals.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Major Groups of Vertebrates"
+    },
+    {
+        "front": "What are the three classes of fishes?",
+        "back": "The three classes of fishes are Agnatha (jawless fishes), Chondrichthyes (cartilaginous fishes), and Osteichthyes (bony fishes).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Fishes"
+    },
+    {
+        "front": "What is the key difference in the skeleton of fishes in the class Chondrichthyes compared to Osteichthyes?",
+        "back": "Chondrichthyes have a cartilaginous skeleton, while Osteichthyes have a bony endoskeleton.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Fishes"
+    },
+    {
+        "front": "What is a defining characteristic of amphibians regarding their reproduction and development?",
+        "back": "Amphibians lay eggs in water with external fertilization. Their larvae are aquatic with gills, while the adults have lungs.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Amphibians"
+    },
+    {
+        "front": "What adaptation allows reptiles to be fully terrestrial?",
+        "back": "Reptiles have dry, water-tight skin covered by horny scales made of keratin, which prevents desiccation.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Reptiles"
+    },
+    {
+        "front": "What is the difference between an ectothermic and an endothermic animal?",
+        "back": "Ectothermic animals (like reptiles) are cold-blooded and depend on the external environment for heat. Endothermic animals (like birds and mammals) are warm-blooded and can maintain a constant body temperature.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Reptiles, Birds, and Mammals"
+    },
+    {
+        "front": "What is the primary characteristic of birds that distinguishes them from other vertebrates?",
+        "back": "Birds are characterized by feathers, which are modified scales used for flight and heat conservation.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Class Aves: The Birds"
+    },
+    {
+        "front": "What is the study of birds called?",
+        "back": "The study of birds is called ornithology.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Class Aves: The Birds"
+    },
+    {
+        "front": "What are the two key characteristics of all mammals?",
+        "back": "All mammals have hair on their skin for insulation and mammary glands to produce milk for their young.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Mammals"
+    },
+    {
+        "front": "What are the three categories of mammals based on their reproductive strategies?",
+        "back": "The three categories are Monotremes (egg-laying), Marsupials (pouched mammals), and Placental Mammals (with a placenta).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Mammals"
+    },
+    {
+        "front": "What is the Kingdom Animalia composed of?",
+        "back": "Invertebrates and vertebrates.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is an invertebrate?",
+        "back": "An animal without a backbone or vertebral column.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is a vertebral column?",
+        "back": "A flexible bony column that extends down the long axis of an animal and serves as the main skeletal support.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the function of the vertebral column?",
+        "back": "The main skeletal support.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are vertebrates?",
+        "back": "Animals with a backbone.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are some examples of invertebrate phyla found in Zambia?",
+        "back": "Annelida, Nematoda, Platyhelminthes, Cnidaria, Mollusks or Molluscs, Arthropoda, Loricifera, Cycliophora, and Micrognathozoa.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are the characteristics of Phylum Annelida?",
+        "back": "Annelids are segmented worms with cylindrical, soft bodies. They have rings that separate the segments, possess setae, and move using circular and longitudinal muscles.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the phylum of the segmented worms shown in the diagram, such as earthworms?",
+        "back": "Phylum Annelida.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are some examples of annelids?",
+        "back": "Earthworms and leeches.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Describe the characteristics of Phylum Nematoda.",
+        "back": "Nematodes are un-segmented, tubular worms that are cylindrical and taper at both ends. They are found in soils and aquatic sediments.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Based on the diagrams showing male and female *Ascaris lumbricoides* and a microscopic view of *Helicotylenchus digonicus*, which phylum do these organisms belong to?",
+        "back": "Phylum Nematoda.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are some parasitic forms of nematodes?",
+        "back": "*Ascaris lumbricoides* (intestinal worms) and filarid forms that cause elephantiasis.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What family of plants do nematodes mostly affect?",
+        "back": "Solanaceae.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Based on the diagram of a Planarian, which phylum do these flatworms belong to?",
+        "back": "Phylum Platyhelminthes.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are the characteristics of Phylum Cnidaria?",
+        "back": "Cnidarians are a group of about 10,000 species of aquatic animals with soft, gelatinous bodies. They include jellyfish, hydra, and corals.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the phylum of the two jellyfish shown swimming in the diagram?",
+        "back": "Phylum Cnidaria.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the difference between jellyfish and hydra/corals?",
+        "back": "Jellyfish are free-swimming, while hydra and corals are sedimentary (sessile).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the ecological role of coral reefs?",
+        "back": "Coral reefs protect shore buildings against ocean currents and tides.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Describe the features of Phylum Mollusca.",
+        "back": "Mollusks have soft bodies, often with a rasping tongue-like file, and many species possess a hard shell made of calcium. The significant features of a snail's body include the foot, mantle, alimentary canal, and shell.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the phylum of the organism shown in the labeled diagram with a foot, mantle, shell, and gills?",
+        "back": "Phylum Mollusca.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the number of extant species in the Phylum Mollusca?",
+        "back": "About 85,000.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the characteristic diet of most mollusks?",
+        "back": "Most are herbivorous.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Which parasite can be a vector for aquatic mollusks?",
+        "back": "*Schistosoma*, which causes bilharziasis.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are the key characteristics of Phylum Arthropoda?",
+        "back": "Arthropods are invertebrates with an exoskeleton made of chitin (the cuticle), and a paired, jointed appendage. Their body plan consists of segments, each with a pair of appendages.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the function of the exoskeleton in arthropods?",
+        "back": "It is a protective outer covering.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are the three main groups within Phylum Arthropoda mentioned?",
+        "back": "Insects, arachnids, and crustaceans.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is a cephalothorax?",
+        "back": "A fused body segment formed by the combination of the head and thorax, found in some arthropods like arachnids and crustaceans.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Based on the diagram showing an arthropod with a cephalothorax and abdomen, which phylum does this organism belong to?",
+        "back": "Phylum Arthropoda.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Class Arachnida?",
+        "back": "Arachnids are a class of terrestrial arthropods with about 57,000 species. They include spiders, scorpions, and ticks.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the diet of most arachnids?",
+        "back": "Most are carnivorous, with the exception of mites, which are largely herbivorous.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is the role of ticks in the ecosystem?",
+        "back": "Ticks are ectoparasites of vertebrates that feed on blood and are vectors for many pathogens that affect domesticated animals.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "How do spiders catch their prey?",
+        "back": "Spiders catch their prey in silk webs. The silk is formed from a fluid protein in the posterior portion of the spider's abdomen.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "How do spiders paralyze their prey?",
+        "back": "They have poison glands.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What are scorpions known for?",
+        "back": "Scorpions are predatory animals with four pairs of legs. Their venom, a mixture of neurotoxins and enzyme inhibitors, can be lethal to small lizards and mice, and in about 25 species, it can be deadly to humans.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Class Chilopoda?",
+        "back": "This class consists of worm-like arthropods that bear legs. It includes centipedes and millipedes (chongololo).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "How do centipedes and millipedes differ in terms of appendages?",
+        "back": "Centipedes typically have one pair of legs on each body segment, while millipedes have two pairs on each segment.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Class Crustacea?",
+        "back": "Crustaceans are aquatic arthropods that include crabs, crayfish, lobsters, and shrimp.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Phylum Loricifera?",
+        "back": "A phylum of tiny marine animals known as Loriferans, discovered in 1983. They are found in the spaces between sand grains.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Phylum Cycliophora?",
+        "back": "A relatively new phylum of microscopic metazoans discovered by a Danish biologist in 1995. Only three species have been documented to date.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Based on the microscopic image of a cycliophoran, what is the phylum of this microscopic organism?",
+        "back": "Phylum Cycliophora.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Where are Cycliophorans found?",
+        "back": "They inhabit the mouthparts of clawed lobsters and are found on both sides of the North Atlantic Ocean.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "What is Phylum Micrognathozoa?",
+        "back": "A group of microscopic animals with complicated jaws, discovered in Greenland in the year 2000. Only one species has been documented.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    },
+    {
+        "front": "Based on the illustration of *Limnognathia maerski* with its complex jaw, which phylum does this microscopic animal belong to?",
+        "back": "Phylum Micrognathozoa.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Diversity of Animals : Invertebrates"
+    }
+ ], 
   };
