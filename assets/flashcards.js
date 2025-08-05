@@ -5091,338 +5091,477 @@ const flashcards = {
 
       "explanation": "TEM provides 2D internal views, while SEM provides 3D surface views."
 
-    }
+    },
+    
 
   ],
+
+  
+  
+  
+  //CELL STRUCTURE & FUNCTIONS
+  //
 
   "CELL STRUCTURE & FUNCTIONS": [
-
     {
-
       "front": "What is the cell theory and what are its three main postulates?",
-
       "back": "The cell theory states that the cell is the basic structural and functional unit of all known living organisms, all living organisms are composed of one or more cells, and all cells arise from pre-existing cells by division.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "This foundational theory in biology explains the fundamental unit of life and its origin."
-
     },
-
     {
-
       "front": "Name the scientists involved in the discovery and formulation of the cell theory.",
-
       "back": "Theodor Schwann and Matthias Schleiden are credited with formulating the initial cell theory, stating that all plants and animals are made of cells. Rudolf Virchow later added the postulate that all cells arise from pre-existing cells.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Their collective contributions established the core principles of cell biology."
-
     },
-
     {
-
       "front": "Differentiate between prokaryotic and eukaryotic cells, providing at least three key differences.",
-
       "back": "Prokaryotic cells lack a true nucleus and membrane-bound organelles, typically have a circular DNA in the cytoplasm, and are generally smaller. Eukaryotic cells have a true nucleus, membrane-bound organelles, linear DNA within the nucleus, and are generally larger.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "These differences represent major evolutionary divergences and impact cellular complexity and function."
-
     },
-
     {
-
       "front": "What is the primary function of the cell wall in plant cells and bacteria?",
-
       "back": "The cell wall is a non-living and outermost covering of a cell in plants and bacteria. Its primary function is to provide structural support, protection, and prevent excessive water uptake.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The rigidity of the cell wall is essential for maintaining cell shape and preventing lysis in hypotonic environments."
-
     },
-
     {
-
       "front": "Describe the structure and main function of the Endoplasmic Reticulum (ER).",
-
       "back": "The Endoplasmic Reticulum (ER) is a network of tubular and vesicular structures interconnected with one another. Rough ER (with ribosomes) is involved in protein synthesis and modification, while Smooth ER (without ribosomes) is involved in lipid synthesis, detoxification, and calcium storage.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The ER is a central hub for the synthesis, folding, modification, and transport of proteins and lipids."
-
     },
-
     {
-
       "front": "What is the 'powerhouse of the cell' and why is it given this name? Include a brief description of its structure.",
-
       "back": "The Mitochondria are known as the 'powerhouse of the cell' because they are responsible for generating most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy, through cellular respiration. They are small, rod-shaped organelles bounded by two membranes – an outer and a highly folded inner membrane (cristae).",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The extensive folding of the inner mitochondrial membrane (cristae) increases its surface area, maximizing ATP production."
-
     },
-
     {
-
       "front": "Explain the function of ribosomes in a cell.",
-
       "back": "Ribosomes are small, granular structures primarily responsible for protein synthesis (translation), where they read messenger RNA (mRNA) sequences and build proteins by linking amino acids together.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Ribosomes are essential for translating genetic information from RNA into functional proteins."
-
     },
-
     {
-
       "front": "What is the primary role of the Golgi apparatus (or Golgi complex)?",
-
       "back": "The Golgi apparatus is involved in modifying, sorting, and packaging proteins and lipids synthesized in the ER for secretion or delivery to other organelles.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The Golgi acts like a cellular 'post office,' directing molecules to their correct destinations."
-
     },
-
     {
-
       "front": "What is the main role of the plasma membrane?",
-
       "back": "The plasma membrane is a selectively permeable barrier that regulates the passage of substances into and out of the cell, and plays a role in cell communication and adhesion.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Its selective permeability is crucial for maintaining the cell's internal environment and communicating with its surroundings."
-
     },
-
     {
-
       "front": "Why are lysosomes considered the 'suicide bags' of the cell?",
-
       "back": "Lysosomes contain powerful digestive enzymes capable of breaking down waste materials, cellular debris, and foreign invaders. If these enzymes are released into the cytoplasm, they can digest the cell itself, hence their nickname 'suicide bags'.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Lysosomes are vital for cellular waste disposal and recycling, but their contents must be carefully contained."
-
     },
-
     {
-
       "front": "Describe the function of the vacuole in plant cells.",
-
       "back": "In plant cells, the large central vacuole maintains turgor pressure against the cell wall, providing structural support. It also stores water, nutrients, and waste products.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The vacuole's role in turgor pressure is critical for maintaining plant rigidity and upright growth."
-
     },
-
     {
-
       "front": "What is the function of chloroplasts and in which type of cells are they primarily found?",
-
       "back": "Chloroplasts are organelles responsible for photosynthesis, the process by which light energy is converted into chemical energy (food). They are primarily found in plant cells and algal cells.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Chloroplasts are unique to photosynthetic organisms and contain the pigments (like chlorophyll) necessary for light absorption."
-
     },
-
     {
-
       "front": "What is the main difference in DNA organization between prokaryotic and eukaryotic cells?",
-
       "back": "In prokaryotic cells, DNA is typically a single, circular chromosome located in a region called the nucleoid in the cytoplasm. In eukaryotic cells, DNA is linear, organized into multiple chromosomes, and enclosed within a membrane-bound nucleus.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "This difference in DNA organization reflects the varying complexities of prokaryotic and eukaryotic cellular structures."
-
+    },
+    {
+      "front": "What is a key feature that distinguishes living things from non-living things?",
+      "back": "The organization of molecules into cells.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The organization of molecules into cells is a feature that distinguishes living things from all other matter."
+    },
+    {
+      "front": "What is the cell defined as?",
+      "back": "The smallest unit of matter that can carry on all the processes of life.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cell is the smallest unit of matter that can carry on all the processes of life."
+    },
+    {
+      "front": "Who was the first person to see and draw 'cells' and what was his inspiration for the word?",
+      "back": "Robert Hooke, inspired by the rooms where monks lived.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Robert Hooke coined the word 'cells' to describe the empty spaces in a thin slice of cork, which reminded him of the rooms where monks lived."
+    },
+    {
+      "front": "When was 'Cell Theory' put forward, and what was the main idea that contradicted 'Spontaneous Generation'?",
+      "back": "1855; cells only come from other cells.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The idea of 'Cell Theory' came about in 1855 and stated that 'cells only come from other cells', which contradicted the earlier theory of 'Spontaneous Generation'."
+    },
+    {
+      "front": "Which of the following is NOT one of the three principles of Cell Theory?",
+      "back": "All cells contain a nucleus and other organelles.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The three principles of Cell Theory are: All living things are composed of one or more cells, cells are the basic units of structure and function, and cells come only from the replication of existing cells."
+    },
+    {
+      "front": "Why are most cells small?",
+      "back": "Because the nucleus can only control a certain volume of cytoplasm and cells are limited by their surface area to volume ratio.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Most cells are small because the nucleus can only control a certain volume of active cytoplasm and their size is limited by the surface area to volume ratio."
+    },
+    {
+      "front": "What is the significance of a high surface area to volume ratio in cells?",
+      "back": "It allows nutrients and oxygen to enter the cell quickly enough to meet its needs.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "A high surface area to volume ratio is important because the nutrients, oxygen, and other materials a cell needs must enter through its surface. A larger surface area relative to volume allows these materials to enter the cell quickly enough."
+    },
+    {
+      "front": "What is the largest cell in the human body?",
+      "back": "The human egg (ovum).",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The human egg (ovum) is the largest cell in the body, and can be seen (just) without the aid of a microscope."
+    },
+    {
+      "front": "What are internal structures within a cell that perform specific functions called?",
+      "back": "Organelles.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Cells contain a variety of internal structures called organelles, which are cell components that perform specific functions."
+    },
+    {
+      "front": "Which of the following organelles have double membranes, also known as envelopes?",
+      "back": "The nucleus, mitochondria, and chloroplasts.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The nucleus, mitochondria, and chloroplasts all have double membranes, which are more correctly called envelopes."
+    },
+    {
+      "front": "What is the cell membrane's basic structure and thickness?",
+      "back": "It is a fluid mosaic of proteins and phospholipids, but its thickness and basic structure are the same across all membranes.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The entire cell is surrounded by a thin cell membrane, and all membranes have the same thickness and basic structure."
+    },
+    {
+      "front": "What is the main difference between prokaryotes and eukaryotes?",
+      "back": "Eukaryotes have a nucleus and membrane-bound organelles, while prokaryotes do not.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Eukaryotes are organisms whose cells contain a nucleus, while prokaryotes are organisms whose cells lack a nucleus and have no membrane-bound organelles."
+    },
+    {
+      "front": "What type of ribosomes do prokaryotic cells have?",
+      "back": "70S ribosomes.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Prokaryotic cells have 70S ribosomes, while eukaryotic cells have 80S ribosomes."
+    },
+    {
+      "front": "Which type of cell division do prokaryotes use?",
+      "back": "Binary fission.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Prokaryotic cells divide by binary fission, which is a simple division process. Eukaryotic cells divide by mitosis and meiosis."
+    },
+    {
+      "front": "What is the typical size range of a prokaryotic cell?",
+      "back": "1-10 µm.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Prokaryotes typically have a size of ~1-10 µm, whereas eukaryotes are typically ~10-100 µm."
+    },
+    {
+      "front": "What is the function of the cell membrane?",
+      "back": "To regulate what passes into and out of the cell.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cell membrane is a complex barrier that separates the cell from its environment and regulates what passes into and out of the cell. It is selectively permeable."
+    },
+    {
+      "front": "What is the cell membrane primarily composed of?",
+      "back": "A phospholipid bilayer with floating proteins.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cell membrane is a fluid mosaic of proteins floating in a phospholipid bilayer."
+    },
+    {
+      "front": "In a phospholipid molecule, what are the properties of the head and tails in water?",
+      "back": "The phosphate head is hydrophilic and the fatty acid tails are hydrophobic.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The phosphate head is charged and polar, making it hydrophilic (water-loving). The fatty acid tails are non-polar, making them hydrophobic (water-fearing)."
+    },
+    {
+      "front": "What is the term for the arrangement of the cell membrane with heads facing the watery fluids inside and outside the cell and tails sandwiched in between?",
+      "back": "A phospholipid bilayer.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Because cells are bathed in an aqueous environment, and the inside of the cell is also aqueous, the phospholipids form two layers, a phospholipid bilayer, with the heads facing the water and the tails pointing inward."
+    },
+    
+    
+    {
+      "front": "Which statement is true about the proteins in the cell membrane?",
+      "back": "Some proteins act as hormone receptors or antigens, while others, like carrier proteins, transport molecules across the membrane.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "A variety of proteins are embedded in the bilayer. Some on the surface act as hormone receptors or antigens. Others, like carrier proteins, are embedded and transport molecules across the membrane through channels or by binding and carrying them."
+    },
+    {
+      "front": "What is the cytoplasm?",
+      "back": "Everything within the cell membrane that is not the nucleus.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cytoplasm is defined as everything within the cell membrane which is not the nucleus. Cytosol is the jelly-like mixture, so cytosol plus organelles equals cytoplasm."
+    },
+    {
+      "front": "Why is the modern view of membrane structure called the 'Fluid Mosaic Model'?",
+      "back": "Because the membrane is viscous like vegetable oil (fluid) and the proteins form a mosaic as they float amongst the phospholipids.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The term 'Fluid Mosaic Model' is used because membranes are fluid and viscous, with phospholipids able to drift. Proteins form a mosaic as they float within the phospholipid bilayer."
+    },
+    {
+      "front": "What is the function of the nucleus?",
+      "back": "To contain the cell's chromosomes and control cell activities.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The nucleus contains the cell's chromosomes, which are normally uncoiled to form a chromatinic network. It is not the 'brain' of the cell."
+    },
+    {
+      "front": "What is the double membrane surrounding the nucleus called, and what is its function?",
+      "back": "The nuclear envelope; it has nuclear pores that allow mRNA and proteins to pass through.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The nucleus is surrounded by a double membrane called the nuclear envelope, which has many nuclear pores through which substances like mRNA and proteins can pass."
+    },
+    {
+      "front": "Where are ribosomes synthesized?",
+      "back": "In the nucleolus.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Most nuclei contain at least one nucleolus, which is where ribosomes are synthesized."
+    },
+    {
+      "front": "What is the primary function of mitochondria?",
+      "back": "To serve as the site of aerobic respiration and transfer energy to ATP.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Mitochondria are the sites of aerobic respiration, where energy from organic compounds is transferred to ATP. They are often called the 'powerhouse' of the cell."
+    },
+    {
+      "front": "What are the folds of the inner mitochondrial membrane called and what is their purpose?",
+      "back": "Cristae, to greatly increase the surface area for ATP synthesis.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The inner mitochondrial membrane has many long folds called cristae, which greatly increase the surface area for ATP synthesis to occur."
+    },
+    {
+      "front": "What is the function of ribosomes?",
+      "back": "To be the site of protein synthesis.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Ribosomes are the site of protein synthesis in a cell."
+    },
+    {
+      "front": "Where are the two places ribosomes can be found in a eukaryotic cell?",
+      "back": "Free in the cytoplasm and attached to the rough endoplasmic reticulum.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Some ribosomes are free in the cytoplasm, while others line the membranes of the rough endoplasmic reticulum."
+    },
+    {
+      "front": "What is the primary function of the Endoplasmic Reticulum (ER)?",
+      "back": "To serve as an internal transport system for molecules.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The primary function of the ER is to act as an internal transport system, allowing molecules to move from one part of the cell to another."
+    },
+    {
+      "front": "What is the difference between rough ER and smooth ER?",
+      "back": "Rough ER is studded with ribosomes and is the site of protein synthesis, while smooth ER has no ribosomes and is the site of lipid and steroid synthesis.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Rough ER is studded with 80s ribosomes and is the site of protein synthesis. Smooth ER has no ribosomes and is the site of lipid and steroid synthesis, and also breaks down toxins."
+    },
+    {
+      "front": "What is the function of the Golgi apparatus?",
+      "back": "To process, package, and secrete organelles and proteins.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The Golgi apparatus is the processing, packaging, and secreting organelle of the cell. It works with the smooth ER to modify proteins for export."
+    },
+    {
+      "front": "What is the main function of lysosomes?",
+      "back": "To enclose hydrolytic enzymes for protein and food digestion, and to digest old cell parts and bacteria.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Lysosomes are small spherical organelles that enclose hydrolytic enzymes. They are the site of protein, food, and bacterial digestion, and recycle old cell parts."
+    },
+    {
+      "front": "What is the cytoskeleton and what is its function?",
+      "back": "An internal framework made of microfilaments and microtubules that maintains cell shape and assists in movement.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "In animal cells, the cytoskeleton is an internal framework that maintains the shape of the cell and helps it to move. It is composed of microfilaments and microtubules."
+    },
+    {
+      "front": "Which of the following is NOT a function of microtubules?",
+      "back": "To break down sugar molecules for energy.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The functions of microtubules are to maintain cell shape, serve as tracks for organelle movement, and form the centriole. Breaking down sugar molecules is the function of mitochondria."
+    },
+    {
+      "front": "What are the three additional structures found in plant cells but not in animal cells?",
+      "back": "The cellulose cell wall, chloroplasts, and a central vacuole.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Plant cells have three additional structures not found in animal cells: a cellulose cell wall, chloroplasts (and other plastids), and a central vacuole."
+    },
+    {
+      "front": "What is the function of the cellulose cell wall in a plant cell?",
+      "back": "To provide support and protection for the plant.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cell wall is freely permeable and has no direct effect on molecule movement. Its rigidity helps to support and protect the plant."
+    },
+    {
+      "front": "What is the main function of the large central vacuole in a plant cell?",
+      "back": "To serve as a storage area for organic molecules, inorganic ions, and waste.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The vacuole in a plant cell is a large membrane-bound sac that serves as a storage area for organic molecules, inorganic ions, and waste."
+    },
+    {
+      "front": "Where does photosynthesis occur in a plant cell?",
+      "back": "In the chloroplasts.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Chloroplasts are the site of photosynthesis. They contain a system of flattened sacs called thylakoids, which are arranged in stacks called grana."
     }
-
   ],
-
   "CELL DIVISION": [
-
     {
-
       "front": "Define cell division and name its two main forms.",
-
       "back": "Cell division is the process by which a parent cell divides into two or more daughter cells. Its two main forms are mitosis and meiosis.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Cell division is fundamental for growth, repair, and reproduction in all living organisms."
-
     },
-
     {
-
       "front": "What is the main purpose of mitosis?",
-
       "back": "The main purpose of mitosis is to produce two daughter cells that are genetically identical to the parent cell. This process is crucial for growth, tissue repair, and asexual reproduction in multi-cellular organisms, maintaining the diploid (or haploid) chromosome number.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Mitosis ensures that new cells have the same genetic information as the original cell."
-
     },
-
     {
-
       "front": "Briefly describe the key events of Interphase, the stage preceding mitosis.",
-
       "back": "Interphase is divided into three sub-phases: G1 (cell grows and synthesizes proteins), S phase (DNA replication occurs, duplicating chromosomes), and G2 (cell continues to grow and prepares for division, synthesizing necessary proteins). Chromosomes are uncoiled during Interphase.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Interphase is a period of intense cellular activity and growth, preparing the cell for successful division."
-
     },
-
     {
-
       "front": "List the four main phases of mitosis in order.",
-
       "back": "The four main phases of mitosis are: Prophase, Metaphase, Anaphase, and Telophase.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "These phases represent a continuous process of chromosome condensation, alignment, separation, and decondensation, culminating in cell division."
-
     },
-
     {
-
       "front": "What happens during Prophase of mitosis?",
-
       "back": "During Prophase, the chromosomes condense and become visible, the nuclear membrane begins to disintegrate, and the spindle fibers (part of the mitotic spindle apparatus) start to form.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Prophase sets the stage for chromosome segregation by preparing the chromosomes and the cellular machinery."
-
     },
-
     {
-
       "front": "Describe the key event that characterizes Metaphase in mitosis.",
-
       "back": "Metaphase is characterized by the alignment of all condensed chromosomes along the metaphase plate (or equatorial plane) in the center of the cell, equidistant from the two poles of the spindle.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "This precise alignment is critical to ensure that each daughter cell receives a complete set of chromosomes."
-
     },
-
     {
-
       "front": "What critical event occurs during Anaphase of mitosis that leads to chromosome separation?",
-
       "back": "During Anaphase, the sister chromatids of each chromosome separate at the centromere and are pulled apart by the shortening spindle fibers towards opposite poles of the cell. This effectively doubles the chromosome number temporarily.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "The separation of sister chromatids ensures that each new cell receives a full complement of single chromosomes."
-
     },
-
     {
-
       "front": "What are the main events of Telophase and Cytokinesis?",
-
       "back": "In Telophase, the separated chromosomes arrive at the poles and begin to uncoil. New nuclear membranes form around the two sets of chromosomes, and the spindle apparatus disassembles. Cytokinesis, the division of the cytoplasm, typically overlaps with Telophase, resulting in two distinct daughter cells.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Telophase reverses the events of prophase, and cytokinesis physically separates the two nascent cells."
-
     },
-
     {
-
       "front": "How does meiosis differ from mitosis in terms of the number of daughter cells produced and their ploidy?",
-
       "back": "Mitosis produces two diploid (2N) daughter cells that are genetically identical to the parent cell. Meiosis, on the other hand, produces four haploid (N) daughter cells that are genetically distinct from the parent cell, primarily for sexual reproduction.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "Meiosis reduces the chromosome number by half and introduces genetic variation, both essential for sexual reproduction."
-
     },
-
     {
-
       "front": "What is the significance of cell cycle checkpoints?",
-
       "back": "Cell cycle checkpoints are control mechanisms that monitor the progression of the cell cycle at various stages (e.g., G1, G2, M) to ensure that critical events like DNA replication and chromosome segregation occur accurately and completely. They prevent errors that could lead to mutations, abnormal cell growth, or cancer.",
-
       "course": "BI110",
-
       "term": "T1",
-
       "explanation": "These checkpoints are crucial for maintaining genomic integrity and preventing uncontrolled cell proliferation."
-
+    },
+    {
+      "front": "What are centrioles and what do they form during cell division?",
+      "back": "They are bundles of microtubules that form the spindle to pull chromosomes apart.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "A centriole consists of two bundles of microtubules. At the start of mitosis and meiosis, the centriole divides and forms the spindle, which pulls the chromosomes apart."
+    },
+    {
+      "front": "What is the difference between cilia and flagellae?",
+      "back": "Cilia are short, numerous, and hair-like, while flagellae are much longer, fewer, and whip-like.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "Cilia are short, numerous, and hair-like structures that project from the cell. Flagellae are much longer, fewer, and are whip-like. Both assist in movement."
+    },
+    {
+      "front": "What is the characteristic arrangement of microtubules in eukaryotic cilia and flagellae?",
+      "back": "A '9+2' arrangement.",
+      "course": "BI110",
+      "term": "T1",
+      "explanation": "The cilia and flagellae of all eukaryotes have a characteristic '9+2' arrangement of microtubules."
     }
-
   ],
 
   "MACROMOLECULES": [

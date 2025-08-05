@@ -9881,9 +9881,1083 @@ const mcqData = [
   },
 
 
+//cell structure and functionality 
 
+{
+    q: "Which of the following is NOT one of the three principles of Cell Theory?",
+    options: [
+      "All living things are composed of one or more cells.",
+      "Cells are the basic units of structure and function in an organism.",
+      "All cells contain a nucleus and other organelles.",
+      "Cells come only from the replication of existing cells."
+    ],
+    correct: 2,
+    explanation: "The three principles of Cell Theory are: All living things are composed of one or more cells, cells are the basic units of structure and function, and cells come only from the replication of existing cells.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Who was the first person to coin the word 'cells' after observing a thin slice of cork?",
+    options: [
+      "Anton van Leuwenhoek",
+      "Matthias Schleiden",
+      "Theodor Schwann",
+      "Robert Hooke"
+    ],
+    correct: 3,
+    explanation: "Robert Hooke coined the word 'cells' in 1665, after observing the empty spaces in a thin slice of cork which reminded him of the rooms where monks lived.",
+    topic: "MICROSCOPY & STAINING",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary reason why most cells are small?",
+    options: [
+      "To allow for easier movement of the organism.",
+      "To maintain a high surface area to volume ratio for efficient exchange of materials.",
+      "To reduce the energy consumption of the cell.",
+      "To prevent the cell from being seen by predators."
+    ],
+    correct: 1,
+    explanation: "Cells are limited in size by their surface area to volume ratio. A larger surface area to volume ratio is essential for efficient material exchange with the environment.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The internal structures within a cell that perform specific functions are known as:",
+    options: [
+      "Cytosol",
+      "Prokaryotes",
+      "Organelles",
+      "Membranes"
+    ],
+    correct: 2,
+    explanation: "Organelles are specialized structures within a cell that carry out a variety of cellular functions, similar to organs in a body.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following cellular structures have double membranes?",
+    options: [
+      "Ribosomes, Lysosomes, Vacuoles",
+      "Nucleus, Mitochondria, Chloroplasts",
+      "Cell membrane, Endoplasmic Reticulum, Golgi Apparatus",
+      "Cytoskeleton, Centrioles, Ribosomes"
+    ],
+    correct: 1,
+    explanation: "The nucleus, mitochondria, and chloroplasts are the key organelles surrounded by a double membrane, also known as an envelope.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary difference between a prokaryotic cell and a eukaryotic cell?",
+    options: [
+      "Prokaryotic cells have a cell wall, while eukaryotic cells do not.",
+      "Eukaryotic cells are always single-celled, while prokaryotic cells are multi-celled.",
+      "Prokaryotic cells lack a nucleus and membrane-bound organelles.",
+      "Eukaryotic cells are generally smaller than prokaryotic cells."
+    ],
+    correct: 2,
+    explanation: "The defining characteristic of a eukaryotic cell is the presence of a membrane-bound nucleus and other membrane-bound organelles, which are absent in prokaryotic cells.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What type of ribosomes are found in prokaryotic cells?",
+    options: [
+      "70S ribosomes",
+      "80S ribosomes",
+      "Both 70S and 80S ribosomes",
+      "They do not have ribosomes"
+    ],
+    correct: 0,
+    explanation: "Prokaryotic cells have smaller 70S ribosomes, while eukaryotic cells have larger 80S ribosomes.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Prokaryotic cells typically reproduce through which process?",
+    options: [
+      "Mitosis",
+      "Meiosis",
+      "Binary fission",
+      "Fertilization"
+    ],
+    correct: 2,
+    explanation: "Prokaryotic cells reproduce asexually through a simple process of cell division called binary fission.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The 'Fluid Mosaic Model' describes the cell membrane as a fluid structure with:",
+    options: [
+      "A rigid, static layer of proteins and lipids.",
+      "Proteins floating in a phospholipid bilayer.",
+      "A single layer of carbohydrates.",
+      "A solid cell wall that prevents movement."
+    ],
+    correct: 1,
+    explanation: "The Fluid Mosaic Model depicts the cell membrane as a dynamic and fluid structure, where proteins are embedded or attached to a mobile bilayer of phospholipids.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "In a phospholipid molecule, the phosphate head is ________, and the fatty acid tails are ________.",
+    options: [
+      "hydrophobic; hydrophilic",
+      "hydrophilic; hydrophobic",
+      "non-polar; polar",
+      "charged; uncharged"
+    ],
+    correct: 1,
+    explanation: "The phosphate head is polar and charged, making it hydrophilic (water-loving), while the fatty acid tails are non-polar and uncharged, making them hydrophobic (water-fearing).",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary function of the cell membrane?",
+    options: [
+      "To provide structural support to the cell.",
+      "To regulate the passage of substances into and out of the cell.",
+      "To synthesize proteins for the cell.",
+      "To store genetic information."
+    ],
+    correct: 1,
+    explanation: "The cell membrane is a selectively permeable barrier that controls the movement of molecules, maintaining the cell's internal environment.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the cytoplasm composed of?",
+    options: [
+      "The nucleus and all organelles.",
+      "Only the jelly-like cytosol.",
+      "Everything within the cell membrane that is not the nucleus.",
+      "Only the organelles."
+    ],
+    correct: 2,
+    explanation: "The cytoplasm is the term for all the material within a living cell, excluding the nucleus. It includes the cytosol (the jelly-like substance) and the organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is often referred to as the 'powerhouse of the cell'?",
+    options: [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondrion",
+      "Golgi apparatus"
+    ],
+    correct: 2,
+    explanation: "Mitochondria are the site of aerobic respiration, where they generate most of the cell's supply of ATP (energy).",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The folds of the inner mitochondrial membrane are called:",
+    options: [
+      "Thylakoids",
+      "Stroma",
+      "Cisternae",
+      "Cristae"
+    ],
+    correct: 3,
+    explanation: "Cristae are the folds of the inner mitochondrial membrane, which increase the surface area for cellular respiration and ATP production.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of ribosomes?",
+    options: [
+      "To break down waste products.",
+      "To synthesize proteins.",
+      "To store water and nutrients.",
+      "To produce ATP."
+    ],
+    correct: 1,
+    explanation: "Ribosomes are the cellular machines responsible for protein synthesis, where they read messenger RNA to build polypeptide chains.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is responsible for processing, packaging, and secreting proteins and lipids?",
+    options: [
+      "Endoplasmic Reticulum",
+      "Nucleus",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    correct: 2,
+    explanation: "The Golgi apparatus modifies, sorts, and packages molecules for secretion or delivery to other organelles, acting as the cell's 'post office'.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The smooth endoplasmic reticulum is primarily involved in:",
+    options: [
+      "Protein synthesis and modification.",
+      "Lipid and steroid synthesis.",
+      "Packaging and secretion of proteins.",
+      "Breaking down old cell parts."
+    ],
+    correct: 1,
+    explanation: "The smooth ER lacks ribosomes and is responsible for synthesizing lipids and steroids, as well as detoxifying the cell and storing calcium ions.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of a lysosome?",
+    options: [
+      "To produce energy for the cell.",
+      "To contain hydrolytic enzymes for digesting old organelles and waste.",
+      "To synthesize proteins.",
+      "To maintain the shape of the cell."
+    ],
+    correct: 1,
+    explanation: "Lysosomes are membrane-bound sacs containing powerful digestive enzymes that break down cellular waste, foreign particles, and old or damaged organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the cytoskeleton made of?",
+    options: [
+      "Lipids and proteins.",
+      "Microfilaments and microtubules.",
+      "A cell wall and a cell membrane.",
+      "A nucleolus and a nucleus."
+    ],
+    correct: 1,
+    explanation: "The cytoskeleton is a network of protein filaments, including microfilaments and microtubules, that gives the cell its shape and aids in movement.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "In plant cells, the large central vacuole is primarily responsible for:",
+    options: [
+      "Protein synthesis.",
+      "Maintaining turgor pressure and storing water.",
+      "Photosynthesis.",
+      "Regulating what enters and leaves the cell."
+    ],
+    correct: 1,
+    explanation: "The central vacuole in plant cells plays a vital role in maintaining turgor pressure, which gives the cell its rigidity and structural support, as well as storing water and nutrients.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of chloroplasts?",
+    options: [
+      "Cellular respiration.",
+      "Protein synthesis.",
+      "Photosynthesis.",
+      "Lipid metabolism."
+    ],
+    correct: 2,
+    explanation: "Chloroplasts are the sites of photosynthesis, where light energy is converted into chemical energy in the form of glucose.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following organelles is found in plant cells but not in animal cells?",
+    options: [
+      "Mitochondria",
+      "Nucleus",
+      "Endoplasmic Reticulum",
+      "Cell wall"
+    ],
+    correct: 3,
+    explanation: "Plant cells have a rigid cell wall, a large central vacuole, and chloroplasts, which are all absent in animal cells.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the main function of the nuclear envelope?",
+    options: [
+      "To produce ribosomes.",
+      "To contain the cell's genetic material.",
+      "To act as a selectively permeable barrier between the nucleus and cytoplasm.",
+      "To break down waste products."
+    ],
+    correct: 2,
+    explanation: "The nuclear envelope is the double membrane that surrounds the nucleus. It is perforated with nuclear pores that regulate the transport of molecules between the nucleus and the cytoplasm.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Where is the nucleolus located and what is its primary function?",
+    options: [
+      "In the cytoplasm; protein synthesis.",
+      "Inside the nucleus; ribosome synthesis.",
+      "On the rough ER; lipid synthesis.",
+      "On the Golgi apparatus; packaging proteins."
+    ],
+    correct: 1,
+    explanation: "The nucleolus is a dense structure found inside the nucleus. Its main function is the synthesis of ribosomes.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The main purpose of mitosis is to produce:",
+    options: [
+      "Two genetically identical daughter cells.",
+      "Four haploid cells.",
+      "Gametes for sexual reproduction.",
+      "Cells with half the number of chromosomes."
+    ],
+    correct: 0,
+    explanation: "Mitosis is a type of cell division that results in two daughter cells each having the same number and kind of chromosomes as the parent nucleus, typical of ordinary tissue growth.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which phase of mitosis is characterized by the alignment of chromosomes at the metaphase plate?",
+    options: [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    correct: 1,
+    explanation: "In metaphase, chromosomes align at the equatorial plate (also known as the metaphase plate) of the cell, ready for separation.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What event occurs during anaphase?",
+    options: [
+      "Chromosomes condense and become visible.",
+      "Sister chromatids separate and move to opposite poles of the cell.",
+      "The nuclear membrane re-forms.",
+      "The cell's cytoplasm divides."
+    ],
+    correct: 1,
+    explanation: "During anaphase, the centromeres of each chromosome split, and the sister chromatids are pulled to opposite poles of the cell by the spindle fibers.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the role of centrioles during cell division?",
+    options: [
+      "To produce ATP for the process.",
+      "To synthesize proteins for new cells.",
+      "To organize the spindle fibers that separate chromosomes.",
+      "To break down the nuclear envelope."
+    ],
+    correct: 2,
+    explanation: "Centrioles are part of the centrosome in animal cells, and they help organize the microtubules that form the spindle apparatus, which is essential for chromosome segregation during mitosis.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which term describes the division of the cytoplasm during cell division?",
+    options: [
+      "Mitosis",
+      "Meiosis",
+      "Cytokinesis",
+      "Interphase"
+    ],
+    correct: 2,
+    explanation: "Cytokinesis is the physical process by which the cytoplasm of a single cell is divided into two daughter cells, typically following mitosis or meiosis.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The arrangement of microtubules in eukaryotic cilia and flagellae is typically:",
+    options: [
+      "10+0",
+      "9+0",
+      "9+2",
+      "9+3"
+    ],
+    correct: 2,
+    explanation: "The characteristic arrangement of microtubules in the central core (axoneme) of eukaryotic cilia and flagellae is a ring of nine pairs of fused microtubules surrounding two central, single microtubules.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary function of the rough endoplasmic reticulum?",
+    options: [
+      "Lipid and steroid synthesis",
+      "Protein synthesis and modification",
+      "Calcium storage and detoxification",
+      "Packaging and secretion"
+    ],
+    correct: 1,
+    explanation: "The rough ER is studded with ribosomes, which are the sites of protein synthesis. Proteins are then modified and folded within the rough ER before being transported.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
 
+  {
+    q: "What is the main role of the Endoplasmic Reticulum as a whole?",
+    options: [
+      "To serve as an internal transport system for molecules.",
+      "To store food and water.",
+      "To break down old cell parts.",
+      "To provide structural support to the cell."
+    ],
+    correct: 0,
+    explanation: "The Endoplasmic Reticulum (both rough and smooth) forms a network of membranes that serves as a transport system within the cell.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The process of photosynthesis occurs in which organelle?",
+    options: [
+      "Mitochondrion",
+      "Chloroplast",
+      "Nucleus",
+      "Vacuole"
+    ],
+    correct: 1,
+    explanation: "Chloroplasts are the organelles that contain chlorophyll and are the sites of photosynthesis, the process by which plants use sunlight, water, and carbon dioxide to create their food.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The cell membrane is composed of a phospholipid bilayer with the heads facing outward and the tails facing inward. This arrangement is due to the heads being ________ and the tails being ________.",
+    options: [
+      "hydrophobic; hydrophilic",
+      "polar; non-polar",
+      "hydrophilic; hydrophobic",
+      "non-polar; polar"
+    ],
+    correct: 2,
+    explanation: "The hydrophilic (water-loving) phosphate heads face the aqueous environment inside and outside the cell, while the hydrophobic (water-fearing) fatty acid tails are sandwiched in the middle, away from the water.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is responsible for breaking down sugar molecules to produce energy in the form of ATP?",
+    options: [
+      "Ribosome",
+      "Lysosome",
+      "Chloroplast",
+      "Mitochondrion"
+    ],
+    correct: 3,
+    explanation: "Mitochondria are the site of aerobic respiration, a process that breaks down sugar molecules (glucose) to produce ATP, the cell's main energy currency.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary function of the cell wall in plant cells?",
+    options: [
+      "To regulate the passage of substances.",
+      "To provide structural support and protection.",
+      "To store water and nutrients.",
+      "To carry out photosynthesis."
+    ],
+    correct: 1,
+    explanation: "The rigid cellulose cell wall provides structural support and protection to the plant cell, helping it maintain its shape and preventing it from bursting in a hypotonic solution.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The movement of sister chromatids to opposite poles of the cell is the defining feature of which stage of mitosis?",
+    options: [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    correct: 2,
+    explanation: "Anaphase is the stage of mitosis where the sister chromatids separate and are pulled apart to opposite ends of the cell by the spindle fibers.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of the vacuole in animal cells?",
+    options: [
+      "They have a large central vacuole for storage.",
+      "They typically have small, temporary vacuoles for storing food and waste.",
+      "They have no vacuoles.",
+      "They are responsible for protein synthesis."
+    ],
+    correct: 1,
+    explanation: "Animal cells may have small, temporary vacuoles that are used for storing food, water, or waste products. They do not have the large central vacuole found in plant cells.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the difference between rough and smooth endoplasmic reticulum?",
+    options: [
+      "Rough ER synthesizes lipids, while smooth ER synthesizes proteins.",
+      "Rough ER is found in animal cells, while smooth ER is found in plant cells.",
+      "Rough ER is studded with ribosomes, while smooth ER is not.",
+      "Rough ER is a system of tubules, while smooth ER is a system of sacs."
+    ],
+    correct: 2,
+    explanation: "The key difference is the presence of ribosomes on the surface of the rough ER, which is the site of protein synthesis. Smooth ER lacks ribosomes and is involved in lipid synthesis.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of the cytoskeleton?",
+    options: [
+      "To provide the cell with energy.",
+      "To give the cell shape and assist in movement.",
+      "To control the cell's activities.",
+      "To store waste products."
+    ],
+    correct: 1,
+    explanation: "The cytoskeleton is a network of protein filaments that provides structural support to the cell, helps it maintain its shape, and plays a role in cell movement and transport of organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is responsible for making ribosomes?",
+    options: [
+      "Mitochondrion",
+      "Nucleolus",
+      "Golgi apparatus",
+      "Rough ER"
+    ],
+    correct: 1,
+    explanation: "The nucleolus, a dense structure within the nucleus, is the site of ribosome synthesis and assembly.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The primary role of the cell membrane's selectively permeable nature is to:",
+    options: [
+      "Prevent all substances from entering the cell.",
+      "Allow all substances to pass freely.",
+      "Regulate which molecules pass into and out of the cell.",
+      "Provide a rigid structure to the cell."
+    ],
+    correct: 2,
+    explanation: "The cell membrane is selectively permeable, meaning it chooses which substances can pass through it, allowing the cell to maintain a stable internal environment.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What happens during telophase?",
+    options: [
+      "The chromosomes condense and become visible.",
+      "The nuclear membrane re-forms around the separated chromosomes.",
+      "The chromosomes align at the metaphase plate.",
+      "The sister chromatids separate."
+    ],
+    correct: 1,
+    explanation: "Telophase is the final stage of mitosis, where the chromosomes arrive at the poles of the cell, and new nuclear envelopes form around them.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following is not a characteristic of a prokaryotic cell?",
+    options: [
+      "It has a cell wall.",
+      "It has a single, circular chromosome.",
+      "It has a nucleus.",
+      "It is typically smaller than a eukaryotic cell."
+    ],
+    correct: 2,
+    explanation: "Prokaryotic cells are defined by the absence of a membrane-bound nucleus. They do have a cell wall and a circular chromosome.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the function of the Golgi apparatus?",
+    options: [
+      "To produce ATP.",
+      "To package and sort proteins for transport.",
+      "To synthesize lipids.",
+      "To store genetic information."
+    ],
+    correct: 1,
+    explanation: "The Golgi apparatus modifies, sorts, and packages proteins and lipids, preparing them for secretion from the cell or delivery to other organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The term 'cytosol' refers to:",
+    options: [
+      "The entire contents of the cell.",
+      "The jelly-like fluid in which organelles are suspended.",
+      "The cell membrane and cell wall.",
+      "The nucleus and its contents."
+    ],
+    correct: 1,
+    explanation: "Cytosol is the jelly-like substance that fills the cell and suspends the organelles. Cytoplasm is the cytosol plus the organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the purpose of the cristae in the mitochondria?",
+    options: [
+      "To provide a space for the nucleus.",
+      "To store waste materials.",
+      "To increase the surface area for ATP synthesis.",
+      "To protect the organelle from damage."
+    ],
+    correct: 2,
+    explanation: "The cristae are the folds of the inner mitochondrial membrane, which significantly increase the surface area available for the reactions of cellular respiration that produce ATP.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is found in plant cells but not in animal cells and is responsible for photosynthesis?",
+    options: [
+      "Mitochondrion",
+      "Chloroplast",
+      "Nucleus",
+      "Vacuole"
+    ],
 
+    correct: 1,
+    explanation: "Chloroplasts are unique to plant cells and some protists. They contain the pigment chlorophyll and are the site where photosynthesis takes place.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following is true about centrioles?",
+    options: [
+      "They are found in plant cells and form the cell wall.",
+      "They are found in animal cells and help organize the spindle during cell division.",
+      "They are responsible for protein synthesis.",
+      "They are a key component of the cell membrane."
+    ],
+    correct: 1,
+    explanation: "Centrioles are bundles of microtubules that are found in animal cells. They organize the spindle fibers that are essential for pulling chromosomes apart during mitosis and meiosis.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The cell theory states that cells only come from the replication of existing cells. This contradicted the earlier theory of:",
+    options: [
+      "Natural selection.",
+      "Inheritance.",
+      "Spontaneous Generation.",
+      "Abiogenesis."
+    ],
+    correct: 2,
+    explanation: "The principle that 'cells only come from other cells' directly refuted the outdated idea of 'Spontaneous Generation', which proposed that living organisms could arise from non-living matter.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following is an example of a prokaryotic cell?",
+    options: [
+      "A human muscle cell.",
+      "A plant leaf cell.",
+      "A bacterium.",
+      "A yeast cell."
+    ],
+    correct: 2,
+    explanation: "Bacteria and archaea are prokaryotic organisms. All other options are examples of eukaryotic cells.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary function of the nuclear pores?",
+    options: [
+      "To produce ribosomes.",
+      "To synthesize DNA.",
+      "To allow the passage of molecules between the nucleus and the cytoplasm.",
+      "To provide structural support to the nucleus."
+    ],
+    correct: 2,
+    explanation: "Nuclear pores are channels through the nuclear envelope that regulate the transport of macromolecules, such as mRNA and proteins, into and out of the nucleus.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of these is a characteristic of plant cells but not animal cells?",
+    options: [
+      "Presence of a cell membrane.",
+      "Presence of mitochondria.",
+      "A large central vacuole.",
+      "Presence of a nucleus."
+    ],
+    correct: 2,
+    explanation: "Plant cells are characterized by their large central vacuole, which plays a role in turgor pressure, as well as a cell wall and chloroplasts.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the main role of the Endoplasmic Reticulum?",
+    options: [
+      "Protein synthesis",
+      "Lipid synthesis",
+      "Internal transport of molecules",
+      "Waste disposal"
+    ],
+    correct: 2,
+    explanation: "The Endoplasmic Reticulum is a network of membranes that serves as an internal transport system, moving molecules from one part of the cell to another.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The term 'cytokinesis' refers to the division of the:",
+    options: [
+      "Nucleus",
+      "Chromosomes",
+      "Cytoplasm",
+      "Cell wall"
+    ],
+    correct: 2,
+    explanation: "Cytokinesis is the process that physically divides the cytoplasm and all its contents, resulting in two separate daughter cells.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which organelle is responsible for breaking down old cell parts and foreign invaders?",
+    options: [
+      "Ribosomes",
+      "Lysosomes",
+      "Golgi apparatus",
+      "Mitochondria"
+    ],
+    correct: 1,
+    explanation: "Lysosomes contain powerful digestive enzymes that break down cellular waste, worn-out organelles, and engulfed pathogens, playing a vital role in cellular recycling and defense.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The two types of endoplasmic reticulum are differentiated by the presence or absence of:",
+    options: [
+      "A cell wall.",
+      "A nucleus.",
+      "Ribosomes.",
+      "A cell membrane."
+    ],
+    correct: 2,
+    explanation: "Rough ER is studded with ribosomes, which gives it its 'rough' appearance, while smooth ER lacks ribosomes.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following describes the function of flagellae?",
+    options: [
+      "Short, hair-like structures for feeding.",
+      "Whip-like structures for cell locomotion.",
+      "Rigid extensions for providing support.",
+      "Channels for transporting molecules."
+    ],
+    correct: 1,
+    explanation: "Flagellae are long, whip-like appendages that extend from the surface of a cell and are primarily used for cell movement.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary function of the nucleolus?",
+    options: [
+      "DNA replication.",
+      "Regulation of cell activities.",
+      "Synthesis of ribosomes.",
+      "Breakdown of cellular waste."
+    ],
+    correct: 2,
+    explanation: "The nucleolus is a small, dense region within the nucleus that is the site of ribosome synthesis and assembly.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "A cell that lacks a nucleus and membrane-bound organelles is classified as:",
+    options: [
+      "Eukaryotic",
+      "Prokaryotic",
+      "Multicellular",
+      "Animal cell"
+    ],
+    correct: 1,
+    explanation: "Prokaryotic cells, such as bacteria and archaea, are characterized by the absence of a nucleus and other membrane-bound organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The term 'chromatinic network' refers to:",
+    options: [
+      "The folded inner membrane of the mitochondria.",
+      "The genetic material in a prokaryotic cell.",
+      "The uncoiled chromosomes in a eukaryotic nucleus.",
+      "The proteins in the cell membrane."
+    ],
+    correct: 2,
+    explanation: "The chromatinic network is the mass of uncoiled genetic material (DNA and proteins) that makes up chromosomes in the non-dividing eukaryotic cell nucleus.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which of the following best describes the function of the cytoskeleton in animal cells?",
+    options: [
+      "It provides a rigid outer layer for protection.",
+      "It provides an internal framework for shape and movement.",
+      "It is a network of membranes for transport.",
+      "It is a storage site for waste and nutrients."
+    ],
+    correct: 1,
+    explanation: "The cytoskeleton, composed of microfilaments and microtubules, is a dynamic internal framework that maintains cell shape and is involved in cell movement and the transport of organelles.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The organelle responsible for breaking down sugar molecules into energy is the:",
+    options: [
+      "Chloroplast",
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome"
+    ],
+    correct: 2,
+    explanation: "Mitochondria are known as the 'powerhouses of the cell' because they are the site of cellular respiration, which breaks down sugar to produce ATP.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "What is the primary role of the Golgi apparatus?",
+    options: [
+      "To produce energy for the cell.",
+      "To transport materials within the cell.",
+      "To modify, sort, and package proteins and lipids.",
+      "To synthesize ribosomes."
+    ],
+    correct: 2,
+    explanation: "The Golgi apparatus is the organelle that processes, packages, and ships proteins and lipids, modifying them as needed for their final destination.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "A cell that has a nucleus, mitochondria, and chloroplasts is most likely a:",
+    options: [
+      "Bacterial cell",
+      "Animal cell",
+      "Fungal cell",
+      "Plant cell"
+    ],
+    correct: 3,
+    explanation: "The presence of a nucleus, mitochondria, and chloroplasts is characteristic of a eukaryotic plant cell.",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "Which phase of mitosis is characterized by the disappearance of the nuclear envelope and the formation of the spindle apparatus?",
+    options: [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    correct: 0,
+    explanation: "Prophase is the first stage of mitosis, during which the chromosomes condense, the nuclear envelope breaks down, and the mitotic spindle begins to form.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  {
+    q: "The function of cilia is best described as:",
+    options: [
+      "Long, whip-like structures for movement.",
+      "Short, numerous, hair-like structures for movement or sweeping materials.",
+      "Rigid structures for structural support.",
+      "Internal filaments for cell shape."
+    ],
+    correct: 1,
+    explanation: "Cilia are short, numerous, hair-like projections on the cell surface that are used for locomotion or to move fluid and particles over the cell surface.",
+    topic: "CELL DIVISION",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "MCQ"
+  },
+  
 
   
 ];

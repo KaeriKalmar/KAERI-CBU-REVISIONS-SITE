@@ -1,6 +1,761 @@
   const essayData = [// --- BI110 Term 1 Essay Simulations ---
 
   // 1) Microscopy & Staining
+  
+ {
+    course: "BI110",
+    term: "T1",
+    title: "How a Brightfield Microscope Works: From Illumination to Image Formation",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary function of the illuminator in a brightfield microscope?",
+        options: [
+          "To magnify the image.",
+          "To provide a consistent light source for the specimen.",
+          "To focus light onto the eyepiece.",
+          "To adjust the contrast of the image."
+        ],
+        correct: 1,
+        explanation: "The illuminator, typically a bulb in the base, provides the light that is the foundation of the image formation process."
+      },
+      {
+        q: "What is the role of the condenser lens system in a brightfield microscope?",
+        options: [
+          "To bend light rays to form a magnified image.",
+          "To collect light from the illuminator and focus it into a cone onto the specimen.",
+          "To physically hold the specimen slide in place.",
+          "To create a dark background for the specimen."
+        ],
+        correct: 1,
+        explanation: "The condenser gathers light from the source and focuses it into a concentrated beam on the specimen to ensure proper illumination."
+      },
+      {
+        q: "How does the aperture diaphragm affect the image in a brightfield microscope?",
+        options: [
+          "It changes the magnification level of the image.",
+          "It controls the amount of light, which balances the trade-off between image contrast and resolution.",
+          "It moves the stage to bring the specimen into focus.",
+          "It changes the color of the light passing through the specimen."
+        ],
+        correct: 1,
+        explanation: "The aperture diaphragm regulates the diameter of the light cone. Closing it increases contrast but decreases resolution, while opening it does the opposite."
+      },
+      {
+        q: "What is the function of the objective lens?",
+        options: [
+          "It provides the final magnification to the observer.",
+          "It produces the first, real, magnified image inside the microscope body.",
+          "It holds the specimen slide in place.",
+          "It controls the amount of light."
+        ],
+        correct: 1,
+        explanation: "The objective lens is the primary magnifying component, creating the initial magnified image that is then further magnified by the eyepiece."
+      },
+      {
+        q: "How are the coarse and fine adjustment knobs used to view a specimen?",
+        options: [
+          "They are used to adjust the light source's intensity.",
+          "The coarse knob makes large focusing adjustments, and the fine knob makes small, sharp adjustments.",
+          "They change the objective lens to a different magnification.",
+          "They control the position of the condenser."
+        ],
+        correct: 1,
+        explanation: "The coarse adjustment knob is used for initial focusing, bringing the specimen into a rough view. The fine adjustment knob is then used for precise adjustments to achieve a crisp, clear image."
+      },
+      {
+        q: "How is the total magnification of the microscope calculated?",
+        options: [
+          "By adding the magnification of the objective lens and the eyepiece.",
+          "By multiplying the magnification of the objective lens and the eyepiece.",
+          "By dividing the objective lens magnification by the eyepiece magnification.",
+          "By looking at the number printed on the base of the microscope."
+        ],
+        correct: 1,
+        explanation: "Total magnification is determined by multiplying the magnification of the objective lens by the magnification of the eyepiece (e.g., 40x objective × 10x eyepiece = 400x total magnification)."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Darkfield Microscopy: The Process of Creating High-Contrast Images",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the key component that distinguishes a darkfield from a brightfield microscope?",
+        options: [
+          "A special condenser with an opaque central stop.",
+          "A more powerful light source.",
+          "A different type of objective lens.",
+          "A stage that can be tilted."
+        ],
+        correct: 0,
+        explanation: "The opaque central stop in the darkfield condenser is essential, as it blocks the direct path of light to the objective lens."
+      },
+      {
+        q: "How does the light illuminate the specimen in darkfield microscopy?",
+        options: [
+          "Light is transmitted directly through the specimen.",
+          "Light is reflected off the surface of the specimen.",
+          "Light is directed at the specimen from the sides at an oblique angle.",
+          "The specimen itself emits light after being stained."
+        ],
+        correct: 2,
+        explanation: "The light is prevented from reaching the specimen head-on and is instead passed around it from the sides."
+      },
+      {
+        q: "What happens to the light that hits the specimen in a darkfield microscope?",
+        options: [
+          "It is all absorbed by the specimen.",
+          "It passes straight through the specimen to the objective lens.",
+          "It is scattered or refracted by the specimen's structures.",
+          "It is reflected away from the objective lens."
+        ],
+        correct: 2,
+        explanation: "The light interacts with the specimen's structures, causing it to be scattered and redirected. This scattered light is what creates the image."
+      },
+      {
+        q: "What forms the final image that the observer sees in a darkfield microscope?",
+        options: [
+          "The direct light that passed through the specimen.",
+          "Only the light that was scattered by the specimen.",
+          "A combination of direct and scattered light.",
+          "The light that was absorbed by the specimen."
+        ],
+        correct: 1,
+        explanation: "Since the direct light is blocked, the image is formed exclusively by the light that was scattered by the specimen, making it appear bright."
+      },
+      {
+        q: "What is the appearance of the background in a darkfield microscopic image?",
+        options: [
+          "It is bright and illuminated.",
+          "It is completely dark or black.",
+          "It is colored, depending on the stain used.",
+          "It is mottled and blurry."
+        ],
+        correct: 1,
+        explanation: "The background is dark because the light that did not interact with the specimen is blocked from entering the objective lens."
+      },
+      {
+        q: "For what type of specimens is darkfield microscopy particularly useful?",
+        options: [
+          "Thick tissue sections stained with dyes.",
+          "Large, opaque objects.",
+          "Live, unstained, and transparent specimens.",
+          "Specimens with a high refractive index."
+        ],
+        correct: 2,
+        explanation: "The high contrast generated by the scattered light makes it possible to visualize specimens that are difficult or impossible to see with a brightfield microscope without staining."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Transmission Electron Microscopy (TEM): From Thin Sectioning to Detector Imaging",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the first step in preparing a specimen for TEM?",
+        options: [
+          "Coating the specimen with a metal like gold.",
+          "Cutting the specimen into thick sections.",
+          "Chemically fixing the specimen and dehydrating it.",
+          "Mounting the specimen on a glass slide."
+        ],
+        correct: 2,
+        explanation: "Chemical fixation and dehydration are the initial steps to preserve the specimen's structure and remove water before it is embedded and sectioned."
+      },
+      {
+        q: "After dehydration, what process is used to cut the specimen into ultra-thin sections?",
+        options: [
+          "Using a standard microtome.",
+          "Embedding in plastic resin and using an ultramicrotome.",
+          "Using a razor blade to slice the specimen.",
+          "Slicing the specimen with a laser."
+        ],
+        correct: 1,
+        explanation: "For TEM, the specimen is embedded in a resin block to provide support and then cut into extremely thin sections (50–100 nm) with an ultramicrotome, allowing electrons to pass through."
+      },
+      {
+        q: "Why is the specimen stained with heavy metal salts for TEM?",
+        options: [
+          "To add color to the final image.",
+          "To make the specimen conductive for the electron beam.",
+          "To increase the electron density of certain structures for contrast.",
+          "To preserve the specimen and prevent it from degrading."
+        ],
+        correct: 2,
+        explanation: "Heavy metals, like uranium or lead, are used as stains because they scatter electrons. This creates contrast and allows the internal structures to be visualized."
+      },
+      {
+        q: "What is the primary function of the electromagnetic lenses in a TEM?",
+        options: [
+          "To magnify the image with glass lenses.",
+          "To generate the electron beam.",
+          "To focus and shape the electron beam.",
+          "To remove air from the microscope column."
+        ],
+        correct: 2,
+        explanation: "Electromagnetic lenses act like glass lenses in a light microscope, but they focus the electron beam instead of light to control magnification and focus."
+      },
+      {
+        q: "What type of image is produced by a TEM and what does it reveal?",
+        options: [
+          "A 3D image of the specimen's surface.",
+          "A 2D image of the internal ultrastructure of the specimen.",
+          "A live, color image of the specimen.",
+          "A low-resolution image of a living cell."
+        ],
+        correct: 1,
+        explanation: "TEM produces a high-resolution, two-dimensional image by transmitting electrons through the specimen, allowing for the visualization of organelles and other internal components."
+      },
+      {
+        q: "What is a major limitation of TEM that is shared with SEM?",
+        options: [
+          "It can only be used on living specimens.",
+          "It is very inexpensive and widely available.",
+          "It requires the specimen to be in a vacuum, so it cannot be used on living cells.",
+          "It has lower resolution than a light microscope."
+        ],
+        correct: 2,
+        explanation: "The electron beam requires a vacuum to travel without scattering. This means that both TEM and SEM are limited to non-living specimens."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Scanning Electron Microscopy (SEM): How Surface Topography is Mapped",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the first step in preparing a specimen for SEM to preserve its surface features?",
+        options: [
+          "Cutting the specimen into ultra-thin slices.",
+          "Embedding the specimen in resin.",
+          "Chemical fixation and critical point drying to remove water.",
+          "Staining the specimen with a heavy metal."
+        ],
+        correct: 2,
+        explanation: "SEM requires a dry specimen, and critical point drying is a method that removes water from the specimen without causing surface tension that would distort its shape."
+      },
+      {
+        q: "What is the purpose of coating the SEM specimen with a thin layer of a conductive material like gold?",
+        options: [
+          "To provide color to the image.",
+          "To increase the magnification.",
+          "To prevent the specimen from becoming electrically charged by the electron beam.",
+          "To make the specimen opaque."
+        ],
+        correct: 2,
+        explanation: "The electron beam can cause an electrical charge to build up on the specimen's surface. A conductive coating dissipates this charge, preventing image distortion."
+      },
+      {
+        q: "What is the operational process of the electron beam in an SEM?",
+        options: [
+          "It is transmitted straight through the specimen.",
+          "It is focused on a single point on the specimen.",
+          "It is scanned rapidly back and forth across the specimen's surface.",
+          "It is used to illuminate the specimen with a wide flood of electrons."
+        ],
+        correct: 2,
+        explanation: "The focused electron beam systematically scans the surface of the specimen, which is the 'scanning' part of the microscope's name."
+      },
+      {
+        q: "What is the key mechanism by which an SEM detects information from the specimen?",
+        options: [
+          "It detects electrons that are transmitted through the specimen.",
+          "It detects the light reflected from the specimen.",
+          "It detects secondary electrons that are knocked loose from the specimen's surface.",
+          "It measures the temperature of the specimen."
+        ],
+        correct: 2,
+        explanation: "The primary electron beam excites atoms on the surface, causing them to emit secondary electrons. A detector senses these electrons to gather information about the surface."
+      },
+      
+       {
+        q: "What type of information does an SEM image provide?",
+        options: [
+          "A 2D image of the internal structures of the specimen.",
+          "A high-resolution, 3D image of the specimen's surface topography.",
+          "A real-time video of living cells.",
+          "A color-enhanced image of a stained specimen."
+        ],
+        correct: 1,
+        explanation: "The signals from the secondary electrons are used to create a detailed, three-dimensional representation of the specimen's external surface."
+      },
+      {
+        q: "What is a major advantage of SEM over TEM?",
+        options: [
+          "It provides a view of the internal structures.",
+          "It requires less specimen preparation.",
+          "It produces a 3D image of the surface.",
+          "It can be used on living specimens."
+        ],
+        correct: 2,
+        explanation: "While TEM shows internal structures, SEM's key advantage is its ability to produce a highly detailed, three-dimensional image of the specimen's surface topography."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Gram Staining: A Four-Step Diagnostic Process",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the purpose of the first step in Gram staining, and what is the name of the reagent?",
+        options: [
+          "To fix the smear with heat, using a primary stain called Safranin.",
+          "To apply the primary stain, Crystal Violet, which stains all cells purple.",
+          "To act as a mordant, using Gram's Iodine.",
+          "To decolorize the cells with alcohol."
+        ],
+        correct: 1,
+        explanation: "The first step is the application of the primary stain, Crystal Violet, which stains both Gram-positive and Gram-negative cells purple."
+      },
+      {
+        q: "What is the function of Gram's Iodine in the second step of the Gram stain procedure?",
+        options: [
+          "It acts as a decolorizer.",
+          "It serves as a counterstain for Gram-negative bacteria.",
+          "It forms a crystal violet-iodine complex to fix the stain in the cells.",
+          "It washes the excess stain off the slide."
+        ],
+        correct: 2,
+        explanation: "Gram's iodine acts as a mordant, forming a large complex with the crystal violet that is too big to be washed out of the thick peptidoglycan layer of Gram-positive cells."
+      },
+      {
+        q: "What is the third step of Gram staining, and how does it differentiate the two types of bacteria?",
+        options: [
+          "The counterstain Safranin is applied, turning all cells red.",
+          "The decolorizer (alcohol/acetone) is applied, washing the crystal violet complex from Gram-negative cells.",
+          "The slide is heat-fixed to set the stain in the cells.",
+          "The slide is rinsed with water to remove excess iodine."
+        ],
+        correct: 1,
+        explanation: "The decolorization step with alcohol or acetone is the key to the differential stain. It dehydrates the thick peptidoglycan of Gram-positive cells, trapping the stain, but washes it from the thin peptidoglycan of Gram-negative cells."
+      },
+      {
+        q: "What is the purpose of the fourth step, and what reagent is used?",
+        options: [
+          "To apply the counterstain, Safranin, to turn Gram-negative cells red.",
+          "To apply more Crystal Violet to the Gram-positive cells.",
+          "To wash the slide with water and air dry it.",
+          "To add a mordant to the Gram-negative cells."
+        ],
+        correct: 0,
+        explanation: "Safranin is used as a counterstain. It stains the now colorless Gram-negative cells red, making them visible."
+      },
+      {
+        q: "What color would Gram-positive cells appear after the complete Gram staining procedure?",
+        options: [
+          "Red or pink.",
+          "Purple or blue.",
+          "Green.",
+          "Colorless."
+        ],
+        correct: 1,
+        explanation: "Gram-positive cells retain the crystal violet-iodine complex through the decolorization step, so they remain purple."
+      },
+      {
+        q: "What color would Gram-negative cells appear after the complete Gram staining procedure?",
+        options: [
+          "Red or pink.",
+          "Purple or blue.",
+          "Green.",
+          "Colorless."
+        ],
+        correct: 0,
+        explanation: "Gram-negative cells are decolorized and then take up the safranin counterstain, which makes them appear red or pink."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Acid-Fast Staining: The Process of Identifying *Mycobacterium*",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the key characteristic of bacteria that are identified using the acid-fast stain?",
+        options: [
+          "They have a very thin cell wall.",
+          "They are Gram-negative.",
+          "They have a waxy cell wall with mycolic acids.",
+          "They are large, spherical cells."
+        ],
+        correct: 2,
+        explanation: "The acid-fast stain is designed to identify bacteria, such as *Mycobacterium*, that have a waxy layer of mycolic acids in their cell walls, which resists decolorization by acid-alcohol."
+      },
+      {
+        q: "What is the primary stain used in the Ziehl-Neelsen method of acid-fast staining?",
+        options: [
+          "Crystal violet.",
+          "Safranin.",
+          "Carbolfuchsin.",
+          "Malachite green."
+        ],
+        correct: 2,
+        explanation: "Carbolfuchsin is the primary stain, and its phenolic content allows it to penetrate the waxy cell wall."
+      },
+      {
+        q: "What is the role of heat or steam in the Ziehl-Neelsen method?",
+        options: [
+          "To kill the bacteria in the specimen.",
+          "To create a mordant complex.",
+          "To force the primary stain into the waxy cell wall.",
+          "To fix the specimen to the slide."
+        ],
+        correct: 2,
+        explanation: "Heat is necessary to melt the waxy layer and force the carbolfuchsin stain into the cell."
+      },
+      {
+        q: "What is the decolorizer used in the acid-fast staining procedure?",
+        options: [
+          "Water.",
+          "Gram's iodine.",
+          "Acid-alcohol.",
+          "Acetone."
+        ],
+        correct: 2,
+        explanation: "Acid-alcohol is the decolorizer. Acid-fast bacteria resist this decolorization, while non-acid-fast bacteria lose the primary stain."
+      },
+      {
+        q: "What color do acid-fast bacteria appear after a complete acid-fast stain?",
+        options: [
+          "Blue.",
+          "Purple.",
+          "Red or pink.",
+          "Colorless."
+        ],
+        correct: 2,
+        explanation: "Acid-fast bacteria retain the carbolfuchsin primary stain through the acid-alcohol wash, so they appear red or pink."
+      },
+      {
+        q: "What is the final step in the acid-fast stain, and what is its purpose?",
+        options: [
+          "Applying a mordant to the cells.",
+          "Applying a counterstain, like Methylene Blue, to stain the non-acid-fast cells blue.",
+          "Washing the slide with water to remove all stains.",
+          "Drying the slide and viewing it with an electron microscope."
+        ],
+        correct: 1,
+        explanation: "Methylene Blue is used as a counterstain to stain any non-acid-fast cells that were decolorized by the acid-alcohol, making them appear blue."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Capsule Staining: The Negative Staining Workflow",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the purpose of capsule staining?",
+        options: [
+          "To stain the capsule of a bacterium a dark color.",
+          "To identify Gram-positive bacteria.",
+          "To differentiate between motile and non-motile bacteria.",
+          "To visualize the capsule, which is an unstained halo around the cell."
+        ],
+        correct: 3,
+        explanation: "The capsule is a mucoid outer layer that is difficult to stain directly. Capsule staining is a negative staining technique that stains the background, leaving the capsule as a clear halo."
+      },
+      {
+        q: "What type of stain is used in the first step of capsule staining?",
+        options: [
+          "A primary stain like Crystal Violet.",
+          "A basic stain like Safranin.",
+          "An acidic stain like India ink or Nigrosin.",
+          "A mordant like Gram's Iodine."
+        ],
+        correct: 2,
+        explanation: "Acidic dyes, like India ink or Nigrosin, are used because their negative charge is repelled by the negative charge of the cell and capsule, so they stain the background instead of the cell itself."
+      },
+      {
+        q: "In capsule staining, what is the appearance of the bacterial cell and the capsule after the background is stained?",
+        options: [
+          "The cell is stained dark, and the capsule is also stained dark.",
+          "The cell and capsule are both colorless, and the background is dark.",
+          "The cell is dark, and the capsule is a clear, unstained halo around it.",
+          "The cell is clear, and the capsule is dark."
+        ],
+        correct: 2,
+        explanation: "The acidic dye stains the background, while the capsule (and often the cell itself) remain unstained, creating a halo effect."
+      },
+      {
+        q: "What is the role of the counterstain in capsule staining?",
+        options: [
+          "To stain the background darker.",
+          "To stain the capsule so it becomes visible.",
+          "To stain the bacterial cell itself, making the capsule stand out as a clear halo.",
+          "To prevent the background from being stained."
+        ],
+        correct: 2,
+        explanation: "A basic counterstain, like Safranin, is often used to stain the bacterial cell itself. This makes the clear, unstained capsule more apparent as a halo around the stained cell."
+      },
+      {
+        q: "What is a key reason for performing a capsule stain?",
+        options: [
+          "To determine if a bacterium is Gram-positive or Gram-negative.",
+          "To assess the motility of a bacterium.",
+          "To identify a bacterium's virulence, as capsules are often related to its ability to cause disease.",
+          "To determine the shape of a bacterium."
+        ],
+        correct: 2,
+        explanation: "The capsule is a significant virulence factor for many pathogens. Capsule staining is a crucial diagnostic tool for identifying these pathogenic bacteria."
+      },
+      {
+        q: "Why is heat fixing not typically used in capsule staining?",
+        options: [
+          "Heat fixing would melt and destroy the capsule.",
+          "Heat fixing prevents the acidic stain from working.",
+          "Heat fixing is not necessary for this type of stain.",
+          "Heat fixing is only used for Gram staining."
+        ],
+        correct: 0,
+        explanation: "Capsules are often destroyed by heat. Therefore, air drying is used instead of heat fixing to preserve the capsule's structure."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Endospore Staining: Heat-Driven Penetration of Malachite Green",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is an endospore, and why is it difficult to stain?",
+        options: [
+          "An endospore is a reproductive cell, and it is easy to stain.",
+          "An endospore is a protective, dormant structure with a tough outer coat that resists staining.",
+          "An endospore is a type of flagella that requires a mordant.",
+          "An endospore is the capsule of a bacterium, and it is unstained."
+        ],
+        correct: 1,
+        explanation: "Endospores are highly resistant to heat, chemicals, and staining due to their thick, protective outer layer."
+      },
+      {
+        q: "In the Schaeffer-Fulton method, what is the primary stain used for endospores?",
+        options: [
+          "Crystal violet.",
+          "Safranin.",
+          "Malachite green.",
+          "Carbolfuchsin."
+        ],
+        correct: 2,
+        explanation: "Malachite green is the primary stain used to stain the endospore itself."
+      },
+      {
+        q: "What is the crucial role of heat (steam) in the endospore staining procedure?",
+        options: [
+          "To kill the vegetative cells.",
+          "To fix the specimen to the slide.",
+          "To force the primary stain into the resistant endospore.",
+          "To remove excess stain from the vegetative cells."
+        ],
+        correct: 2,
+        explanation: "Heat is applied to help the malachite green penetrate the tough, impermeable coat of the endospore."
+      },
+      {
+        q: "After applying the primary stain with heat, what is the next step?",
+        options: [
+          "Applying a decolorizer like alcohol.",
+          "Applying a mordant like Gram's iodine.",
+          "Rinsing the slide with water to remove the excess stain.",
+          "Applying a counterstain."
+        ],
+        correct: 2,
+        explanation: "After staining the endospores with heat, the slide is rinsed with water. This washes the malachite green from the vegetative cells, but not from the endospores."
+      },
+      {
+        q: "What is the counterstain used in the Schaeffer-Fulton method, and what does it stain?",
+        options: [
+          "Crystal violet, which stains the endospore.",
+          "Safranin, which stains the vegetative cell red or pink.",
+          "Malachite green, which stains the endospore.",
+          "Gram's iodine, which acts as a mordant."
+        ],
+        correct: 1,
+        explanation: "Safranin is used as a counterstain to stain the vegetative cells that were decolorized by the water wash. The vegetative cells will appear red or pink."
+      },
+      {
+        q: "What is the final appearance of a specimen containing both vegetative cells and endospores after the staining procedure?",
+        options: [
+          "Both the vegetative cells and endospores are purple.",
+          "The vegetative cells are green, and the endospores are red.",
+          "The vegetative cells are red, and the endospores are green.",
+          "Both the vegetative cells and endospores are colorless."
+        ],
+        correct: 2,
+        explanation: "The endospores retain the malachite green and appear green, while the vegetative cells are stained by the safranin and appear red or pink."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Light vs. Electron Microscopy: A Step-by-Step Comparison",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the fundamental difference in the source of illumination used in light microscopy versus electron microscopy?",
+        options: [
+          "Light microscopes use visible light, while electron microscopes use a focused beam of electrons.",
+          "Light microscopes use a focused beam of electrons, while electron microscopes use visible light.",
+          "Both use visible light, but with different wavelengths.",
+          "Both use electron beams, but with different levels of intensity."
+        ],
+        correct: 0,
+        explanation: "The primary difference lies in the source of illumination. Light microscopes use visible light, while electron microscopes use electron beams."
+      },
+      {
+        q: "How do the wavelengths of the illumination sources compare, and what is the effect on resolution?",
+        options: [
+          "Electrons have a much longer wavelength than light, leading to lower resolution.",
+          "Light has a much shorter wavelength than electrons, leading to higher resolution.",
+          "Electrons have a much shorter wavelength than light, leading to much higher resolution.",
+          "The wavelengths are similar, so the resolution is also similar."
+        ],
+        correct: 2,
+        explanation: "The much shorter wavelength of electrons compared to visible light is the reason electron microscopes can achieve a significantly higher resolution."
+      },
+      {
+        q: "How does the specimen preparation for a light microscope typically compare to that of an electron microscope?",
+        options: [
+          "Specimen preparation is much simpler for electron microscopy.",
+          "Specimen preparation for electron microscopy is much more complex and time-consuming.",
+          "The preparation steps are identical for both types of microscopy.",
+          "Light microscopy requires the specimen to be coated with a metal, while electron microscopy does not."
+        ],
+        correct: 1,
+        explanation: "Electron microscopy requires extensive and specific preparation, such as dehydration, embedding, ultra-thin sectioning, and coating, which is much more involved than the preparation for light microscopy (e.g., wet mounts, simple staining)."
+      },
+      {
+        q: "What is a significant limitation of electron microscopy that is not a limitation of light microscopy?",
+        options: [
+          "Electron microscopy cannot achieve high magnification.",
+          "Electron microscopy is limited to two-dimensional imaging.",
+          "Electron microscopy can only be used to view non-living specimens.",
+          "Electron microscopy has a very low resolution."
+        ],
+        correct: 2,
+        explanation: "Because electron microscopes operate in a vacuum, living specimens cannot be observed. Light microscopy, however, can be used to view living cells."
+      },
+      {
+        q: "What type of information can be obtained from a Transmission Electron Microscope (TEM) that cannot be obtained from a light microscope?",
+        options: [
+          "A three-dimensional view of the specimen's surface.",
+          "Detailed images of the internal ultrastructure of organelles and cells.",
+          "Real-time observation of living cells.",
+          "A colored image of a stained specimen."
+        ],
+        correct: 1,
+        explanation: "The high resolution of TEM allows for the visualization of internal cellular components at a level of detail that is not possible with a light microscope."
+      },
+      {
+        q: "How does the final image produced by a light microscope differ from that of a Scanning Electron Microscope (SEM)?",
+        options: [
+          "A light microscope produces a 3D image, while an SEM produces a 2D image.",
+          "A light microscope produces a black and white image, while an SEM produces a colored image.",
+          "A light microscope produces a 2D image, while an SEM produces a high-resolution 3D image of the surface.",
+          "A light microscope image is always blurry, while an SEM image is always sharp."
+        ],
+        correct: 2,
+        explanation: "A light microscope produces a two-dimensional image. In contrast, an SEM produces a striking three-dimensional image of the specimen's surface topography."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Wet Mount vs. Fixed Smears: Procedures for Live vs. Preserved Samples",
+    topic: "MICROSCOPY & STAINING",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary purpose of a wet mount preparation in microscopy?",
+        options: [
+          "To permanently preserve the specimen for long-term storage.",
+          "To view live microorganisms in their natural state and observe motility.",
+          "To prepare the specimen for Gram staining.",
+          "To embed the specimen in resin for ultra-thin sectioning."
+        ],
+        correct: 1,
+        explanation: "A wet mount is a simple and quick method used to observe living, unstained specimens to study their natural movement and behavior."
+      },
+      {
+        q: "What is the key difference in the composition of a wet mount compared to a fixed smear?",
+        options: [
+          "A wet mount uses a dye, while a fixed smear does not.",
+          "A wet mount contains a live specimen in a liquid medium, while a fixed smear contains a dried, dead specimen.",
+          "A wet mount is permanent, and a fixed smear is temporary.",
+          "A wet mount uses an electron beam, and a fixed smear uses light."
+        ],
+        correct: 1,
+        explanation: "A wet mount consists of a live specimen suspended in a drop of liquid (e.g., water or saline) on a slide. A fixed smear involves drying a specimen on a slide and then applying heat or a chemical to kill and adhere it to the slide."
+      },
+      {
+        q: "What is the purpose of 'fixation' in preparing a smear?",
+        options: [
+          "To keep the specimen alive and moving.",
+          "To add a stain to the specimen.",
+          "To kill the microorganisms, adhere them to the slide, and preserve their structures.",
+          "To add a mordant to the specimen."
+        ],
+        correct: 2,
+        explanation: "Fixation is a crucial step in preparing a smear for staining. It kills the cells, preventing them from moving or degrading, and ensures they remain attached to the slide during the staining process."
+      },
+      {
+        q: "What is the most common method of fixation for light microscopy, and how is it performed?",
+        options: [
+          "Chemical fixation, using a strong acid.",
+          "Heat fixation, by passing the slide through a flame a few times.",
+          "Freezing the specimen with liquid nitrogen.",
+          "Drying the specimen in a vacuum chamber."
+        ],
+        correct: 1,
+        explanation: "Heat fixation is the most common method for preparing bacterial smears. A dried smear is quickly passed through a flame, which kills the cells and coagulates their proteins, adhering them to the glass."
+      },
+      {
+        q: "Why is a fixed smear necessary for most staining procedures?",
+        options: [
+          "Stains only work on dead cells.",
+          "A fixed smear prevents the specimen from being washed off the slide during the multiple staining steps.",
+          "Stains are toxic to live cells.",
+          "Fixing the smear makes the cells larger and easier to see."
+        ],
+        correct: 1,
+        explanation: "Since staining involves multiple rinsing steps, fixation ensures that the microorganisms remain on the slide and are not washed away."
+      },
+      {
+        q: "What is a disadvantage of a fixed smear compared to a wet mount?",
+        options: [
+          "A fixed smear can be stored, while a wet mount cannot.",
+          "A fixed smear allows for the observation of living cells and their motility.",
+          "A fixed smear cannot be stained.",
+          "Fixation can cause some distortion of the cellular structures."
+        ],
+        correct: 3,
+        explanation: "While fixation is necessary for staining, it can sometimes cause minor distortions or shrinkage of the cellular components. Additionally, it kills the specimen, so motility cannot be observed."
+      }
+    ]
+  },
+
+
+
   {
     course: "BI110",
     term: "T1",
@@ -317,7 +1072,220 @@
       }
     ]
   },
-
+//const essayData = [
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Differentiating Cell Types and Organelles",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What are the three main postulates of the Cell Theory?",
+        options: [
+          "All living things have DNA, reproduce, and grow.",
+          "All cells are the same size, shape, and function.",
+          "The cell is the basic unit of life; all organisms are made of cells; all cells come from pre-existing cells.",
+          "Cells can spontaneously generate from non-living matter."
+        ],
+        correct: 2,
+        explanation: "The Cell Theory states that the cell is the basic structural and functional unit of all known living organisms, all living organisms are composed of one or more cells, and all cells arise from pre-existing cells by division."
+      },
+      {
+        q: "List three key differences between prokaryotic and eukaryotic cells.",
+        options: [
+          "Prokaryotic cells have a nucleus, eukaryotic cells do not; prokaryotic cells are larger; eukaryotic cells lack ribosomes.",
+          "Prokaryotic cells lack a true nucleus and membrane-bound organelles; eukaryotic cells have a true nucleus and membrane-bound organelles; prokaryotic DNA is circular, eukaryotic DNA is linear.",
+          "Prokaryotic cells perform photosynthesis, eukaryotic cells do not; prokaryotic cells have a cell wall, eukaryotic cells do not.",
+          "Prokaryotic cells are multicellular, eukaryotic cells are unicellular."
+        ],
+        correct: 1,
+        explanation: "Key differences include: prokaryotic cells lack a true nucleus and membrane-bound organelles (eukaryotic cells have them); prokaryotic DNA is typically circular in the nucleoid region (eukaryotic DNA is linear and in the nucleus); prokaryotic cells are generally smaller and simpler."
+      },
+      {
+        q: "Describe the interconnected functions of the Endoplasmic Reticulum (ER) and the Golgi apparatus in protein modification and transport.",
+        options: [
+          "ER stores proteins; Golgi produces ATP.",
+          "ER synthesizes proteins; Golgi breaks them down.",
+          "ER synthesizes and initially modifies proteins; Golgi further modifies, sorts, and packages them for delivery.",
+          "ER is for lipid synthesis; Golgi is for DNA replication."
+        ],
+        correct: 2,
+        explanation: "Proteins destined for secretion or other organelles are synthesized and undergo initial folding/modification in the ER (especially Rough ER). They then move to the Golgi apparatus, where they are further processed, sorted into vesicles, and dispatched to their final cellular or extracellular destinations."
+      },
+      {
+        q: "Explain why mitochondria are called the 'powerhouse of the cell' and mention a key structural feature related to their function.",
+        options: [
+          "They store light energy; they are green.",
+          "They carry genetic information; they are spiral-shaped.",
+          "They generate ATP through cellular respiration; they have a highly folded inner membrane (cristae).",
+          "They detoxify drugs; they are composed of flat sacs."
+        ],
+        correct: 2,
+        explanation: "Mitochondria are the 'powerhouse' because they are the primary sites of cellular respiration, producing most of the cell's ATP. Their inner membrane is extensively folded into 'cristae,' which increases the surface area for the enzymes involved in ATP synthesis, maximizing efficiency."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Key Cellular Structures and Their Roles",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary function of the cell membrane, and what is it primarily composed of?",
+        options: [
+          "Protein synthesis; DNA and RNA.",
+          "Energy production; carbohydrates.",
+          "Regulating passage of substances; phospholipid bilayer and proteins.",
+          "Genetic information storage; lipids only."
+        ],
+        correct: 2,
+        explanation: "The cell membrane (plasma membrane) is a selectively permeable barrier that controls what enters and exits the cell. It's primarily composed of a phospholipid bilayer with embedded and associated proteins."
+      },
+      {
+        q: "What are ribosomes, and what crucial process do they carry out in the cell?",
+        options: [
+          "Membrane-bound organelles; lipid synthesis.",
+          "Protein complexes; ATP synthesis.",
+          "Non-membrane-bound organelles; protein synthesis (translation).",
+          "Storage sacs; waste disposal."
+        ],
+        correct: 2,
+        explanation: "Ribosomes are molecular machines (made of ribosomal RNA and protein) responsible for protein synthesis, also known as translation, where they read mRNA and assemble amino acids into polypeptide chains."
+      },
+      {
+        q: "Differentiate between the smooth endoplasmic reticulum (SER) and the rough endoplasmic reticulum (RER) in terms of structure and function.",
+        options: [
+          "SER has ribosomes, RER does not; SER for protein synthesis, RER for lipid synthesis.",
+          "RER has ribosomes, SER does not; RER for protein synthesis and modification, SER for lipid synthesis, detoxification, and calcium storage.",
+          "Both have ribosomes; both are involved in protein synthesis.",
+          "SER is only found in plant cells; RER is only in animal cells."
+        ],
+        correct: 1,
+        explanation: "The RER is studded with ribosomes and is involved in the synthesis and folding of proteins that are destined for secretion or insertion into membranes. The SER lacks ribosomes and is involved in lipid synthesis, detoxification of drugs and poisons, and storage of calcium ions."
+      },
+      {
+        q: "What is the primary function of the nucleus in a eukaryotic cell, and what important genetic material does it contain?",
+        options: [
+          "Digestion of waste; enzymes.",
+          "Protein synthesis; ribosomes.",
+          "Controlling cell activities and housing genetic material; DNA.",
+          "Energy production; ATP."
+        ],
+        correct: 2,
+        explanation: "The nucleus is the control center of the eukaryotic cell, housing the cell's genetic material (DNA) organized into chromosomes. It regulates gene expression and controls cell growth and metabolism."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "The Cell Theory and its Founders",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "Who proposed that all plants are made of cells, and what was his contribution to Cell Theory?",
+        options: [
+          "Theodor Schwann; stated that animals are made of cells.",
+          "Rudolf Virchow; stated that cells come from pre-existing cells.",
+          "Matthias Schleiden; proposed that plants are composed of cells.",
+          "Robert Hooke; coined the term 'cell'."
+        ],
+        correct: 2,
+        explanation: "Matthias Schleiden, a botanist, concluded in 1838 that all plant tissues are composed of cells and that the embryo of a plant arises from a single cell. This was a crucial step in the formulation of the cell theory."
+      },
+      {
+        q: "Who extended the cell theory to animals, and what was his key finding?",
+        options: [
+          "Matthias Schleiden; found that plants are made of cells.",
+          "Theodor Schwann; concluded that all animals are composed of cells.",
+          "Rudolf Virchow; observed cells dividing.",
+          "Anton van Leeuwenhoek; observed 'animalcules'."
+        ],
+        correct: 1,
+        explanation: "Theodor Schwann, a zoologist, independently concluded in 1839 that all animal tissues are also composed of cells, thereby extending the cell theory to animals."
+      },
+      {
+        q: "Which scientist is credited with adding the third postulate to the Cell Theory: 'All cells arise from pre-existing cells'?",
+        options: [
+          "Robert Hooke",
+          "Louis Pasteur",
+          "Rudolf Virchow",
+          "Anton van Leeuwenhoek"
+        ],
+        correct: 2,
+        explanation: "Rudolf Virchow famously stated 'Omnis cellula e cellula,' meaning 'every cell from a cell,' which established that cells do not spontaneously generate but arise only from the division of existing cells."
+      },
+      {
+        q: "How did the combined work of Schleiden, Schwann, and Virchow fundamentally change the understanding of living organisms?",
+        options: [
+          "They discovered DNA.",
+          "They showed that all life forms are fundamentally composed of and arise from cells, establishing a unifying principle of biology.",
+          "They proved the theory of evolution.",
+          "They developed the first vaccines."
+        ],
+        correct: 1,
+        explanation: "Their combined contributions established the foundational Cell Theory, which provided a unifying concept for all living organisms, stating that cells are the basic units of life and that all life arises from pre-existing cells."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Understanding Mitosis and Cell Division",
+    topic: "CELL DIVISION",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary purpose of mitosis, and what kind of cells does it produce?",
+        options: [
+          "To produce gametes for sexual reproduction; haploid cells.",
+          "To create genetic diversity; four genetically distinct cells.",
+          "To produce two genetically identical daughter cells for growth and repair.",
+          "To reduce the number of chromosomes by half."
+        ],
+        correct: 2,
+        explanation: "Mitosis is the process of cell division that results in two daughter cells that are genetically identical to the parent cell. This is essential for growth, tissue repair, and asexual reproduction."
+      },
+      {
+        q: "What is the key event that occurs during metaphase of mitosis?",
+        options: [
+          "The nuclear membrane breaks down.",
+          "Chromosomes condense and become visible.",
+          "Chromosomes align along the metaphase plate (equator) of the cell.",
+          "Sister chromatids separate and move to opposite poles."
+        ],
+        correct: 2,
+        explanation: "During metaphase, all the chromosomes line up precisely at the center of the cell, forming the metaphase plate. This alignment ensures that each new cell will receive a complete set of chromosomes."
+      },
+      {
+        q: "Describe the events that take place during anaphase.",
+        options: [
+          "The cytoplasm divides, forming two new cells.",
+          "The nuclear envelope re-forms.",
+          "Sister chromatids separate at the centromere and are pulled to opposite poles of the cell.",
+          "Chromosomes uncoil and become less visible."
+        ],
+        correct: 2,
+        explanation: "Anaphase is the stage where the sister chromatids of each chromosome are pulled apart by the mitotic spindle to opposite ends of the cell. This ensures that each pole receives a complete set of genetic information."
+      },
+      {
+        q: "Explain the purpose of cytokinesis and its relationship to mitosis.",
+        options: [
+          "Cytokinesis is the division of the nucleus, which happens before mitosis begins.",
+          "Cytokinesis is the division of the cytoplasm, which usually overlaps with telophase and completes the formation of two separate daughter cells.",
+          "Cytokinesis is the process of DNA replication, which happens during anaphase.",
+          "Cytokinesis is the condensation of chromosomes, which happens during prophase."
+        ],
+        correct: 1,
+        explanation: "Cytokinesis is the physical division of the cytoplasm, which typically begins during telophase and concludes after mitosis, resulting in the formation of two distinct, new daughter cells from a single parent cell."
+      }
+    ]
+  },
+  
   {
     course: "BI110",
     term: "T1",
