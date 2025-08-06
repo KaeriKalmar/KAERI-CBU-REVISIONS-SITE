@@ -98,7 +98,7 @@ const fullAccessCodes = {
     "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
     "CS110T3_MAIN005*X%",   "CS110T3_MAIN006^R&",
-    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
+      "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -122,18 +122,78 @@ const fullAccessCodes = {
   // NEW GLOBAL AND COURSE-WIDE ACCESS CODES
   "GLOBAL_ALL_TERMS": [
     // A code that unlocks everything
-    "SUPER_USER_XYZ_789",
-    "All-terms@#<0",
-    "Lizzy@","becky @&_","KULIKA🌟","CS110T3_MAIN007~S+"
+"SUPER_USER_XYZ_789",
+"All-terms@#<0",
+"Lizzy@",
+"becky @&_",
+"KULIKA🌟",
+"FULL_UNLOCK_2025++",
+"ACCESS_GRANTED_GLOBAL$",
+"CBU_UNLOCK_CODE🔥",
+"MASTER_KEY_∞_ENTRY",
+"EVERYTHING_PASS_T1T2T3",
+"ULTRA_PASS_9999",
+"ONE_KEY_TO_RULE_THEM_ALL",
+"GLOBAL_MASTER_777🔐",
+"UNIVERSAL_ACCESS_VIP",
+"CBU_ELITE_KEY2025",
+"TOTAL_DOMINATOR_CODE",
+"UNLOCK_THIS_WORLD",
+"OPEN_ALL_LEVELS_📘",
+"ROOT_ACCESS_GRANTED!",
+"KAERI_GLOBAL_TERMS🔓"
   ],
+  
+  //all cs110
   "CS110_ALL_TERMS": [
-    "CS110_PRO_PASS_ABC", // Unlocks all terms for CS110
-    "CS110_GOLD_MEMBER"
+    "CS110_PRO_PASS_ABC",
+"CS110_GOLD_MEMBER", // Unlocks all terms for CS110
+"CS110_TERM_UNLOCKER_1",
+"CS110_T1_T2_T3_UNLOCK",
+"CS110_PREMIUM_2025!",
+"CS110_TOTAL_ACCESS+",
+"CS110_FULL_KIT_KEY",
+"CS110_ALL_YEARS_PASS",
+"CS110_GENIUS_MODE_🔓",
+"CS110_MERIT_GRANT2025",
+"CS110_TOP_SECRET_PASS",
+"CS110_ULTIMATE_KEY#",
+"CS110_QUANTUM_ENTRY",
+"CS110_ALL_TERM_ENTRY",
+"CS110_BRAINY_MODE_007",
+"CS110_UNLOCKZILLA🔥",
+"CS110_PASSCARD_24/7",
+"CS110_ELITE_ACADEMY",
+"CS110_MASTERCLASS_✓",
+"CS110_PRO_PLUS_TERMS"
+    
   ],
+  
+  //All for bi110
   "BI110_ALL_TERMS": [
-    "BI110_BUNDLE_PACK_123" // Unlocks all terms for BI110
+    "BI110_BUNDLE_PACK_123", // Unlocks all terms for BI110
+"BI110_TOTAL_ACCESS",
+"BI110_PRO_MODE",
+"BI110_FULL_SEMESTER_KEY",
+"BI110_TEST_PASS_XYZ",
+"BI110_T1_T2_T3_OKAY",
+"BI110_GRADEBOOST_2025",
+"BI110_FLASHCARDS_OPENALL",
+"BI110_MASTER_UNLOCK",
+"BI110_STAR_USER_KEY",
+"BI110_REVISION_KING",
+"BI110_TOP_MARKS_KEY",
+"BI110_ACCESS_ALL🌱",
+"BI110_FULL_POWER_CODE",
+"BI110_PASS_ANYTIME",
+"BI110_KNOWLEDGE_HUB🔓",
+"BI110_ALL_TERM_ENTRY",
+"BI110_SMART_PASS@2025",
+"BI110_UNLOCK_MY_BRAIN",
+"BI110_KAERI_SPECIAL_KEY"
   ]
 };
+
 
 //code killing section
 const revokedAccessCodes = ["test111"];
@@ -152,7 +212,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0",
     
     "test111",
-    "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
+    "BI110T2_MAIN002!Z*",
     "BI110T2_MAIN003$K#",   "BI110T2_MAIN004&Y!",
     "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
     "BI110T2_MAIN007~S+",   "BI110T2_MAIN008?D#",
@@ -163,7 +223,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
     "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
     
-    "BI110T3_MAIN001#A@",   "BI110T3_MAIN002!Z*",
+   "BI110T3_MAIN002!Z*",
     "BI110T3_MAIN003$K#",   "BI110T3_MAIN004&Y!",
     "BI110T3_MAIN005*X%",   "BI110T3_MAIN006^R&",
     "BI110T3_MAIN007~S+",   "BI110T3_MAIN008?D#",
@@ -201,8 +261,8 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
   
     "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
-    "CS110T3_MAIN006^R&",
-    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
+ 
+  "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -957,4 +1017,32 @@ function showFlashcardCompletion() {
   `;
   updateProgress(currentFlashcards.length, currentFlashcards.length);
 }
-  
+  function renderDocumentLinks() {
+  const quizForm = document.getElementById("quiz-form");
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "";
+
+  if (!hasFullAccess) {
+    quizForm.innerHTML = `<div class="feedback"><p><strong>🚫 Documents are locked.</strong><br>Please purchase access to unlock PDF downloads.</p></div>`;
+    return;
+  }
+
+  const currentCourse = document.body.getAttribute("data-course");
+  const currentTerm = document.body.getAttribute("data-term");
+
+  const filtered = allDocuments.filter(doc => doc.course === currentCourse && doc.term === currentTerm);
+
+  if (filtered.length === 0) {
+    quizForm.innerHTML = `<div class="feedback"><p>No documents found for ${currentCourse} ${currentTerm}.</p></div>`;
+    return;
+  }
+
+  let html = `<div class="feedback"><h3>📄 Available Documents</h3><ul>`;
+  filtered.forEach(doc => {
+    html += `<li><a href="${doc.filePath}" target="_blank">${doc.title}</a></li>`;
+  });
+  html += `</ul></div>`;
+
+  quizForm.innerHTML = html;
+}
+
