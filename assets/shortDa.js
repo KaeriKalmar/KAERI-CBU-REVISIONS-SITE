@@ -3823,4 +3823,819 @@ const shortData = [
     "course": "BI110",
     "term": "T3"
   },
+  
+  
+   {
+    q: "Define a biomolecule.",
+    keywords: ["organic compounds", "structural and functional components"],
+    explanation: "Biomolecules are organic compounds that serve as the basic structural and functional components of a cell.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a monomer and a polymer?",
+    keywords: ["monomer: single unit", "polymer: chain of monomers"],
+    explanation: "A monomer is a single, small molecular unit, while a polymer is a large molecule made up of a long chain of these repeating monomer units.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Explain the process of dehydration synthesis.",
+    keywords: ["joining monomers", "removal of water"],
+    explanation: "Dehydration synthesis is a reaction in which two monomers are covalently bonded together by removing a water molecule.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Explain the process of hydrolysis.",
+    keywords: ["breaking polymers", "addition of water"],
+    explanation: "Hydrolysis is a reaction that breaks the covalent bond in a polymer by adding a water molecule, thus separating it into its individual monomers.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the general chemical formula for carbohydrates?",
+    keywords: ["Cn(H2O)n"],
+    explanation: "The general chemical formula for a carbohydrate is Cn(H2O)n, which indicates that they are made of carbon, hydrogen, and oxygen with a 2:1 ratio of H to O.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the primary function of carbohydrates in living organisms?",
+    keywords: ["energy source", "structural components"],
+    explanation: "Carbohydrates serve as an immediate energy source for the body and provide structural components, such as cellulose in plants.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Name three monosaccharides and their common sources.",
+    keywords: ["glucose", "fructose", "galactose"],
+    explanation: "Three monosaccharides are: Glucose (energy), Fructose (fruit sugar), and Galactose (part of milk sugar).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Name three disaccharides and their constituent monosaccharides.",
+    keywords: ["sucrose: glucose + fructose", "lactose: glucose + galactose", "maltose: glucose + glucose"],
+    explanation: "Sucrose is made of glucose and fructose. Lactose is made of glucose and galactose. Maltose is made of two glucose molecules.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of starch and where is it found?",
+    keywords: ["energy storage", "plants"],
+    explanation: "Starch is a polysaccharide that functions as the primary form of energy storage in plants.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of glycogen and where is it found?",
+    keywords: ["energy storage", "animals"],
+    explanation: "Glycogen is a polysaccharide that serves as the main form of energy storage in animals, primarily in the liver and muscles.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of cellulose and where is it found?",
+    keywords: ["structural support", "plant cell walls"],
+    explanation: "Cellulose is a polysaccharide that provides structural support to plant cells, as it is the main component of their cell walls.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of chitin and where is it found?",
+    keywords: ["structural support", "fungal cell walls", "arthropod exoskeletons"],
+    explanation: "Chitin is a polysaccharide that provides structural support, forming the cell walls of fungi and the exoskeletons of arthropods.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a glycosidic linkage?",
+    keywords: ["covalent bond", "joins carbohydrates"],
+    explanation: "A glycosidic linkage is a covalent bond that joins a carbohydrate molecule to another group, such as another sugar.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the defining characteristic of lipids?",
+    keywords: ["hydrophobic", "insoluble in water"],
+    explanation: "The defining characteristic of lipids is that they are hydrophobic, meaning they repel water and are insoluble in it.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the three main types of lipids?",
+    keywords: ["fats", "phospholipids", "steroids"],
+    explanation: "The three main types of lipids are fats (for energy storage), phospholipids (for cell membranes), and steroids (for signaling and structure).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Explain the difference between saturated and unsaturated fatty acids.",
+    keywords: ["saturated: no double bonds", "unsaturated: at least one double bond"],
+    explanation: "Saturated fatty acids have no double bonds in their hydrocarbon chains, making them straight and solid at room temperature. Unsaturated fatty acids have one or more double bonds, which create kinks and make them liquid at room temperature.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the key role of phospholipids?",
+    keywords: ["cell membrane", "lipid bilayer"],
+    explanation: "Phospholipids are the main structural component of the cell membrane, forming a lipid bilayer with hydrophilic heads facing out and hydrophobic tails facing in.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Describe the basic structure of a steroid.",
+    keywords: ["four fused rings", "carbon skeleton"],
+    explanation: "A steroid is a type of lipid characterized by a carbon skeleton consisting of four fused rings.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the monomers of proteins and what bonds link them?",
+    keywords: ["amino acids", "peptide bonds"],
+    explanation: "The monomers of proteins are amino acids, which are linked together by covalent bonds called peptide bonds.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the primary structure of a protein?",
+    keywords: ["unique sequence of amino acids"],
+    explanation: "The primary structure is the unique, linear sequence of amino acids in a polypeptide chain.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the secondary structure of a protein?",
+    keywords: ["alpha helix", "beta pleated sheet", "hydrogen bonds"],
+    explanation: "The secondary structure refers to the local folding of the polypeptide chain into an alpha helix or a beta pleated sheet, stabilized by hydrogen bonds.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the tertiary structure of a protein?",
+    keywords: ["overall 3D shape", "R-group interactions"],
+    explanation: "The tertiary structure is the overall three-dimensional shape of a single polypeptide chain, determined by interactions between the R-groups of the amino acids.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the quaternary structure of a protein?",
+    keywords: ["multiple polypeptide chains", "subunits"],
+    explanation: "The quaternary structure is the arrangement of two or more polypeptide chains (subunits) into a single functional protein complex.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Define denaturation in the context of proteins.",
+    keywords: ["loss of 3D shape", "loss of function"],
+    explanation: "Denaturation is the process where a protein loses its native three-dimensional shape and, consequently, its biological function, due to changes in pH, temperature, or other factors.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the primary function of nucleic acids?",
+    keywords: ["store and transmit genetic information"],
+    explanation: "Nucleic acids are macromolecules whose primary function is to store, transmit, and express genetic or hereditary information.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the two types of nucleic acids?",
+    keywords: ["DNA", "RNA"],
+    explanation: "The two types of nucleic acids are deoxyribonucleic acid (DNA) and ribonucleic acid (RNA).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the three components of a nucleotide?",
+    keywords: ["five-carbon sugar", "phosphate group", "nitrogenous base"],
+    explanation: "A nucleotide, the monomer of a nucleic acid, is composed of a five-carbon sugar, a phosphate group, and a nitrogenous base.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference in sugar between DNA and RNA?",
+    keywords: ["DNA has deoxyribose", "RNA has ribose"],
+    explanation: "DNA contains the sugar deoxyribose, whereas RNA contains the sugar ribose.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference in nitrogenous bases between DNA and RNA?",
+    keywords: ["DNA: A, G, C, T", "RNA: A, G, C, U"],
+    explanation: "DNA contains adenine (A), guanine (G), cytosine (C), and thymine (T). RNA contains adenine (A), guanine (G), cytosine (C), and uracil (U) in place of thymine.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the structural difference between DNA and RNA?",
+    keywords: ["DNA: double helix", "RNA: single strand"],
+    explanation: "DNA is a double-stranded molecule that forms a double helix, while RNA is typically a single-stranded molecule.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a chromosome?",
+    keywords: ["thread-like structure", "carries genetic information", "DNA", "proteins"],
+    explanation: "A chromosome is a thread-like structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information in the form of genes.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of a histone protein?",
+    keywords: ["DNA packaging", "nucleosomes"],
+    explanation: "Histones are proteins around which DNA is wrapped, helping to package the long DNA molecule into the compact structure of a chromosome, forming units called nucleosomes.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are tumor suppressor genes?",
+    keywords: ["inhibit cell division", "prevent uncontrolled growth"],
+    explanation: "Tumor suppressor genes are genes that encode proteins that inactivate or inhibit cell division, thereby preventing uncontrolled cell growth and the development of cancer.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the main difference between a dominant and a recessive allele?",
+    keywords: ["dominant: expressed", "recessive: masked"],
+    explanation: "A dominant allele is one whose trait is fully expressed in an organism, while a recessive allele's trait is only expressed when a dominant allele is not present.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a locus?",
+    keywords: ["specific position", "gene on a chromosome"],
+    explanation: "A locus is the specific physical location or position of a gene on a chromosome.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a lethal gene?",
+    keywords: ["impairs biochemical function", "causes death"],
+    explanation: "A lethal gene is an allele that has the potential to cause the death of an organism, often by impairing a critical biochemical function.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the two major products of transcription in gene expression?",
+    keywords: ["messenger RNA (mRNA)", "transfer RNA (tRNA)"],
+    explanation: "Transcription produces messenger RNA (mRNA), which carries the genetic code from DNA to the ribosome, and transfer RNA (tRNA), which brings amino acids to the ribosome.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of an enzyme?",
+    keywords: ["biological catalyst", "speeds up reactions"],
+    explanation: "Enzymes are biological catalysts, which are proteins that speed up the rate of a specific biochemical reaction without being consumed in the process.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  
+  {
+    q: "What is a chromosome complement?",
+    keywords: ["haploid set", "diploid set"],
+    explanation: "A chromosome complement is the entire set of chromosomes in a cell, which can be either a haploid set (n) or a diploid set (2n).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What does the term 'heredity' mean?",
+    keywords: ["transmission of traits", "parents to offspring"],
+    explanation: "Heredity refers to the transmission of genetic traits from parents to their offspring.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a tetrad in the context of meiosis?",
+    keywords: ["four chromatids", "homologous chromosomes"],
+    explanation: "A tetrad is a group of four chromatids formed by the pairing of two homologous chromosomes during prophase I of meiosis.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the purpose of the mitotic spindle?",
+    keywords: ["microtubules", "separates sister chromatids"],
+    explanation: "The mitotic spindle is a structure made of microtubules that separates the sister chromatids during anaphase of mitosis and pulls them to opposite ends of the cell.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "How does binary fission differ from mitosis?",
+    keywords: ["binary fission: prokaryotes", "mitosis: eukaryotes"],
+    explanation: "Binary fission is the process of cell division in prokaryotic cells, which lack a nucleus. Mitosis is the process of nuclear division in eukaryotic cells.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the significance of the Law of Segregation?",
+    keywords: ["alleles separate", "meiosis", "gametes"],
+    explanation: "Mendel's Law of Segregation states that during meiosis, the alleles for each trait are separated into different gametes, so each gamete carries only one allele for each gene.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the Law of Independent Assortment?",
+    keywords: ["alleles for different traits", "separate independently"],
+    explanation: "Mendel's Law of Independent Assortment states that the alleles for different traits are sorted into gametes independently of one another, leading to a variety of genetic combinations.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a nucleoid and a nucleus?",
+    keywords: ["nucleoid: prokaryotes, no membrane", "nucleus: eukaryotes, membrane-bound"],
+    explanation: "A nucleoid is the region in a prokaryotic cell where the genetic material is concentrated, but it is not enclosed by a membrane. A nucleus is a membrane-bound organelle in eukaryotic cells that contains the genetic material.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the vacuole in a plant cell?",
+    keywords: ["stores water, food, waste", "maintains turgor pressure"],
+    explanation: "The large central vacuole in a plant cell stores water, food, and waste, and also helps to maintain turgor pressure, which gives the cell rigidity.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a non-reducing sugar?",
+    keywords: ["no free aldehyde or ketone group", "sucrose"],
+    explanation: "A non-reducing sugar is a sugar that cannot reduce other compounds. The most common example is sucrose, where the reactive groups of glucose and fructose are bonded together.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "Name two differences between DNA and RNA.",
+    keywords: ["sugar type", "nitrogenous bases", "structure"],
+    explanation: "DNA contains deoxyribose sugar and the base thymine, while RNA contains ribose sugar and the base uracil. DNA is a double helix, and RNA is typically single-stranded.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the ribosome?",
+    keywords: ["protein synthesis", "translation"],
+    explanation: "Ribosomes are cellular organelles responsible for protein synthesis through a process called translation, where they read messenger RNA (mRNA) to build a polypeptide chain.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the two major categories of carbohydrates?",
+    keywords: ["simple sugars", "complex carbohydrates"],
+    explanation: "Carbohydrates can be broadly categorized into simple sugars (monosaccharides and disaccharides) and complex carbohydrates (polysaccharides).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the smooth endoplasmic reticulum (ER)?",
+    keywords: ["lipid synthesis", "detoxification"],
+    explanation: "The smooth ER is involved in a variety of metabolic processes, including lipid synthesis, metabolism of carbohydrates, and detoxification of drugs and poisons.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the rough endoplasmic reticulum (ER)?",
+    keywords: ["protein synthesis", "ribosomes"],
+    explanation: "The rough ER is studded with ribosomes and is primarily responsible for the synthesis and modification of proteins that are destined for secretion or insertion into membranes.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the Golgi apparatus?",
+    keywords: ["modifies, sorts, packages proteins and lipids"],
+    explanation: "The Golgi apparatus modifies, sorts, and packages proteins and lipids for secretion or for delivery to other organelles.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are three examples of cellular organelles that are not membrane-bound?",
+    keywords: ["ribosomes", "nucleolus", "cytoskeleton"],
+    explanation: "Examples of non-membrane-bound organelles include ribosomes (for protein synthesis), the nucleolus (site of ribosome synthesis), and the cytoskeleton (for structural support).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference in function between the mitochondria and chloroplasts?",
+    keywords: ["mitochondria: cellular respiration", "chloroplasts: photosynthesis"],
+    explanation: "Mitochondria are responsible for cellular respiration, generating ATP from glucose. Chloroplasts are responsible for photosynthesis, converting light energy into chemical energy.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the centrosome?",
+    keywords: ["organizes microtubules", "cell division"],
+    explanation: "The centrosome is the main microtubule-organizing center of the cell and is responsible for organizing the mitotic spindle during cell division.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a centromere and a centriole?",
+    keywords: ["centromere: part of chromosome", "centriole: part of centrosome"],
+    explanation: "A centromere is the constricted region of a chromosome that links sister chromatids. A centriole is a cylindrical structure within an animal cell's centrosome that helps organize cell division.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a cell plate and in which type of cell does it form?",
+    keywords: ["dividing plant cells", "cytokinesis", "forms new cell wall"],
+    explanation: "A cell plate is a structure that forms during cytokinesis in dividing plant cells, which eventually develops into a new cell wall separating the two daughter cells.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the significance of 'crossing over' in meiosis?",
+    keywords: ["genetic recombination", "genetic diversity"],
+    explanation: "Crossing over is the exchange of genetic material between homologous chromosomes during meiosis, which leads to genetic recombination and increases genetic diversity among offspring.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the principle of segregation?",
+    keywords: ["alleles separate", "gamete formation"],
+    explanation: "According to Mendel's principle of segregation, alleles for a specific trait separate during the formation of gametes, so each gamete carries only one allele.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What are the stages of mitosis?",
+    keywords: ["prophase", "metaphase", "anaphase", "telophase"],
+    explanation: "The four stages of mitosis are prophase, metaphase, anaphase, and telophase.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the cell wall?",
+    keywords: ["structural support", "protects the cell"],
+    explanation: "The cell wall is a rigid outer layer of a plant, fungal, or prokaryotic cell that provides structural support, shape, and protection.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between an aldose and a ketose?",
+    keywords: ["aldose: aldehyde group", "ketose: ketone group"],
+    explanation: "An aldose is a monosaccharide with a free aldehyde group at one end, while a ketose is a monosaccharide with a ketone group, usually in the middle of the carbon chain.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the enzyme found in flower petals?",
+    keywords: ["synthesis of flower color"],
+    explanation: "The lecture notes specify that enzymes in flower petals are involved in the synthesis of the compounds responsible for flower color.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of transfer RNA (tRNA)?",
+    keywords: ["brings amino acids", "ribosome", "protein synthesis"],
+    explanation: "Transfer RNA (tRNA) is a type of RNA molecule that helps decode a messenger RNA (mRNA) sequence into a protein. It functions by bringing specific amino acids to the ribosome.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of messenger RNA (mRNA)?",
+    keywords: ["carries genetic code", "DNA to ribosome"],
+    explanation: "Messenger RNA (mRNA) is a type of RNA that carries the genetic code from DNA in the nucleus to the ribosomes in the cytoplasm for protein synthesis.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a nucleoid and a chromosome?",
+    keywords: ["nucleoid: region in prokaryote", "chromosome: structure in eukaryote"],
+    explanation: "A nucleoid is the irregular-shaped region in a prokaryotic cell where the genetic material is located. A chromosome is the tightly packed structure of DNA and proteins within a eukaryotic cell's nucleus.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the centromere?",
+    keywords: ["links sister chromatids", "attaches to spindle fibers"],
+    explanation: "The centromere is the region of a chromosome that links sister chromatids and serves as the attachment point for the mitotic spindle fibers during cell division.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the role of the cell plate in plant cell division?",
+    keywords: ["cytokinesis", "forms new cell wall", "dividing plant cells"],
+    explanation: "During cytokinesis in plant cells, a cell plate forms at the metaphase plate and grows outwards, eventually fusing with the existing plasma membrane to form a new cell wall that separates the two daughter cells.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a chromosome complement?",
+    keywords: ["entire set of chromosomes", "haploid or diploid"],
+    explanation: "A chromosome complement is the entire set of chromosomes possessed by an individual or a cell. This can be a haploid set (n) or a diploid set (2n).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the significance of the research by Walther Flemming?",
+    keywords: ["discovered chromosomes", "cell division", "mitosis"],
+    explanation: "Walther Flemming was a German anatomist who first discovered chromosomes in the nuclei of diving cells from salamander larvae and described the process of mitosis.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a homozygous genotype?",
+    keywords: ["identical alleles", "BB or bb"],
+    explanation: "A homozygous genotype is one where an organism has two identical alleles for a specific gene (e.g., BB or bb).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is a heterozygous genotype?",
+    keywords: ["different alleles", "Bb"],
+    explanation: "A heterozygous genotype is one where an organism has two different alleles for a specific gene (e.g., Bb).",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a gene and an allele?",
+    keywords: ["gene: unit of inheritance", "allele: form of a gene"],
+    explanation: "A gene is a segment of DNA that codes for a specific trait, while an allele is a different version or form of that gene.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the primary function of a triglyceride?",
+    keywords: ["long-term energy storage"],
+    explanation: "Triglycerides, or fats, are the primary form of long-term energy storage in many organisms.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "How does the structure of a steroid differ from a fatty acid?",
+    keywords: ["steroid: four fused rings", "fatty acid: long hydrocarbon chain"],
+    explanation: "A steroid has a characteristic carbon skeleton of four fused rings, whereas a fatty acid is a long, unbranched hydrocarbon chain with a carboxyl group at one end.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the key role of R-groups in protein structure?",
+    keywords: ["side chains", "tertiary structure"],
+    explanation: "The R-groups, or side chains, of amino acids determine the specific chemical properties and interactions that are crucial for the folding and overall three-dimensional shape (tertiary structure) of a protein.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference between a nucleolus and a nucleus?",
+    keywords: ["nucleolus: inside nucleus", "makes ribosomes"],
+    explanation: "The nucleus is the membrane-bound organelle that contains the cell's genetic material. The nucleolus is a dense structure found inside the nucleus that is responsible for synthesizing ribosomal RNA and assembling ribosomes.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the function of the cytoskeleton?",
+    keywords: ["structural support", "cell shape", "movement"],
+    explanation: "The cytoskeleton is a network of protein fibers that provides structural support to the cell, maintains its shape, and plays a role in cell movement and the transport of organelles.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  },
+  {
+    q: "What is the difference in function between the centrioles and the centrosome?",
+    keywords: ["centrosome: organizing center", "centrioles: components of centrosome"],
+    explanation: "The centrosome is the primary organizing center for microtubules in the cell. The centrioles are a pair of cylindrical structures found within the centrosome that help organize the mitotic spindle during cell division.",
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    tag: "Short"
+  }
+
+  
 ];

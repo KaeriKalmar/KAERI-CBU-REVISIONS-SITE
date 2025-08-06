@@ -5566,161 +5566,304 @@ const flashcards = {
 
   "MACROMOLECULES": [
 
-    {
-
-      "front": "Name the four major classes of biological macromolecules essential for life.",
-
-      "back": "The four major classes of biological macromolecules are carbohydrates, lipids, proteins, and nucleic acids.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "These four classes comprise the fundamental building blocks and functional molecules of all living organisms."
-
-    },
-
-    {
-
-      "front": "What are the building blocks (monomers) of carbohydrates, and what is their primary function?",
-
-      "back": "The building blocks of carbohydrates are monosaccharides (simple sugars). Their primary function is to serve as a readily available energy source for cells.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Monosaccharides like glucose are direct fuel for cellular respiration."
-
-    },
-
-    {
-
-      "front": "What distinguishes lipids from other macromolecules, and what are their main functions?",
-
-      "back": "Lipids are largely nonpolar and hydrophobic, meaning they do not dissolve in water. Their main functions include long-term energy storage, forming cell membranes (phospholipids), and acting as hormones.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Their insolubility in water is key to their roles in energy storage and membrane structure."
-
-    },
-
-    {
-
-      "front": "What are the monomers of proteins, and what is their most diverse function?",
-
-      "back": "The monomers of proteins are amino acids. Proteins have the most diverse functions among macromolecules, including catalyzing biochemical reactions (enzymes), structural support, transport, defense, and cell signaling.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "The sequence and folding of amino acids determine a protein's specific 3D structure and, thus, its diverse functions."
-
-    },
-
-    {
-
-      "front": "What are the building blocks of nucleic acids, and what are the two main types?",
-
-      "back": "The building blocks of nucleic acids are nucleotides. The two main types are Deoxyribonucleic Acid (DNA) and Ribonucleic Acid (RNA).",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Nucleotides consist of a sugar, a phosphate group, and a nitrogenous base, which are linked to form the polynucleotide chains of DNA and RNA."
-
-    },
-
-    {
-
-      "front": "What is the primary function of DNA?",
-
-      "back": "The primary function of DNA is to store and transmit genetic information. It carries the instructions for the development, functioning, growth, and reproduction of all known organisms.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "DNA's double helix structure provides a stable and reliable way to store hereditary information."
-
-    },
-
-    {
-
-      "front": "What are the key roles of RNA?",
-
-      "back": "RNA has several key roles, including carrying genetic information from DNA to ribosomes (mRNA), forming part of ribosomes (rRNA), and transferring amino acids during protein synthesis (tRNA). Some RNA molecules also have catalytic activity (ribozymes).",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "RNA acts as an intermediary and a functional molecule in gene expression."
-
-    },
-
-    {
-
-      "front": "How do dehydration synthesis (condensation) and hydrolysis reactions relate to macromolecules?",
-
-      "back": "Dehydration synthesis (condensation) is a reaction where monomers are joined together to form polymers, with the removal of a water molecule. Hydrolysis is the opposite, where polymers are broken down into monomers by the addition of a water molecule.",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "These two types of reactions are fundamental to the synthesis and breakdown of all biological macromolecules."
-
-    },
-
-    {
-
-      "front": "What is the significance of the 3D structure of proteins?",
-
-      "back": "The specific 3D structure (conformation) of a protein is critical for its function. If a protein loses its correct 3D shape (denaturation), it typically loses its biological activity. This shape is determined by the sequence of amino acids and various levels of folding (primary, secondary, tertiary, quaternary).",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "Protein function is highly dependent on its precise spatial arrangement of atoms."
-
-    },
-
-    {
-
-      "front": "Name the four nitrogenous bases found in DNA and how they pair.",
-
-      "back": "The four nitrogenous bases in DNA are Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). In DNA, Adenine pairs with Thymine (A-T), and Guanine pairs with Cytosine (G-C).",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "This specific base pairing (Chargaff's rules) is fundamental to DNA structure and replication."
-
-    },
-
-    {
-
-      "front": "How does RNA differ from DNA in terms of its sugar and one of its nitrogenous bases?",
-
-      "back": "RNA contains ribose sugar, while DNA contains deoxyribose sugar. Also, RNA contains Uracil (U) instead of Thymine (T). Uracil pairs with Adenine in RNA (A-U).",
-
-      "course": "BI110",
-
-      "term": "T1",
-
-      "explanation": "These differences contribute to RNA's diverse roles and its generally less stable nature compared to DNA."
-
-    }
-
-  ],
+   //const flashcardData = [
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are biomolecules?",
+    back: "Biomolecules are organic compounds that form the basic structural and functional components of a cell."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the four main classes of macromolecules?",
+    back: "Carbohydrates, lipids, proteins, and nucleic acids."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a polymer?",
+    back: "A large molecule composed of repeating smaller units called monomers."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a monomer?",
+    back: "A single, small molecular unit that can be linked to other monomers to form a polymer."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is dehydration synthesis (condensation)?",
+    back: "The process of joining two monomers by removing a water molecule."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is hydrolysis?",
+    back: "The process of breaking down a polymer by adding a water molecule."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the primary role of carbohydrates?",
+    back: "To provide energy for the body and to serve as structural components."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the chemical formula for carbohydrates?",
+    back: "Cn(H2O)n"
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the monomers of carbohydrates?",
+    back: "Monosaccharides, also known as simple sugars."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "Name three common monosaccharides.",
+    back: "Glucose, fructose, and galactose.                            MNEMONICS:FGG"
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a disaccharide?",
+    back: "A sugar formed when two monosaccharides are joined by dehydration synthesis."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "Name three common disaccharides and their components.",
+    back: "1. Sucrose (glucose + fructose); 2. Lactose (glucose + galactose); 3. Maltose (glucose + glucose).                    MNEMONICS (Lusaka Music Society)"
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a polysaccharide?",
+    back: "A long chain of monosaccharides linked together."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "Name four important polysaccharides and their functions.",
+    back: "1. Starch: energy storage in plants. 2. Glycogen: energy storage in animals. 3. Cellulose: structural component in plant cell walls. 4. Chitin: structural component in fungal cell walls and exoskeletons of arthropods."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a glycosidic bond?",
+    back: "The covalent bond that joins a carbohydrate to another group."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the primary characteristic of lipids?",
+    back: "They are hydrophobic (water-fearing) and insoluble in water."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the functions of lipids?",
+    back: "Energy storage, insulation, and forming cell membranes."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are fats?",
+    back: "Lipids composed of a glycerol molecule and three fatty acid chains."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the difference between saturated and unsaturated fatty acids?",
+    back: "Saturated fatty acids have no double bonds in their carbon chain and are solid at room temperature. Unsaturated fatty acids have one or more double bonds and are liquid at room temperature."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the structure and function of a phospholipid?",
+    back: "A phospholipid has a hydrophilic (water-loving) head and two hydrophobic (water-fearing) tails. They are the main component of cell membranes."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the basic structure of a steroid?",
+    back: "A lipid characterized by a carbon skeleton consisting of four fused rings."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are proteins?",
+    back: "Polymers made from monomers called amino acids."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "How many amino acids are there, and what distinguishes them?",
+    back: "There are 20 different amino acids, each distinguished by a unique 'R' group (side chain)."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is a peptide bond?",
+    back: "The covalent bond that links amino acids together to form a polypeptide chain."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the four levels of protein structure?",
+    back: "Primary, secondary, tertiary, and quaternary structure."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the primary structure of a protein?",
+    back: "The unique sequence of amino acids in a polypeptide chain."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the two main types of secondary protein structure?",
+    back: "Alpha (α) helix and beta (β) pleated sheet, formed by hydrogen bonding between the polypeptide backbone."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What determines the tertiary structure of a protein?",
+    back: "The overall three-dimensional shape of a single polypeptide chain, driven by interactions between the R groups (side chains)."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the quaternary structure of a protein?",
+    back: "The arrangement of multiple polypeptide chains (subunits) into a single functional protein complex."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is denaturation?",
+    back: "The process where a protein loses its native shape and becomes biologically inactive, often due to changes in pH or temperature."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are nucleic acids?",
+    back: "Polymers that store and transmit hereditary information."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the two types of nucleic acids?",
+    back: "Deoxyribonucleic acid (DNA) and ribonucleic acid (RNA)."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the monomers of nucleic acids?",
+    back: "Nucleotides."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What are the three components of a nucleotide?",
+    back: "A five-carbon sugar, a phosphate group, and a nitrogenous base."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the difference in sugar between DNA and RNA?",
+    back: "DNA contains deoxyribose sugar, while RNA contains ribose sugar."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the difference in nitrogenous bases between DNA and RNA?",
+    back: "DNA has adenine (A), guanine (G), cytosine (C), and thymine (T). RNA has adenine (A), guanine (G), cytosine (C), and uracil (U)."
+  },
+  {
+    topic: "MACROMOLECULES",
+    term: "T1",
+    course: "BI110",
+    year: "Notes",
+    front: "What is the structure of DNA?",
+    back: "A double helix composed of two polynucleotide strands wound around each other."
+  }
+],
   
   //const flashcards = {
   // ... (existing flashcards, including "Introduction to Programming" ones if you've added them) ...

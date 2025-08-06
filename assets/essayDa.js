@@ -1286,6 +1286,224 @@
     ]
   },
   
+  
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Differentiating Cell Types and Organelles",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What are the three main postulates of the Cell Theory?",
+        options: [
+          "All living things have DNA, reproduce, and grow.",
+          "All cells are the same size, shape, and function.",
+          "The cell is the basic unit of life; all organisms are made of cells; all cells come from pre-existing cells.",
+          "Cells can spontaneously generate from non-living matter."
+        ],
+        correct: 2,
+        explanation: "The Cell Theory states that the cell is the basic structural and functional unit of all known living organisms, all living organisms are composed of one or more cells, and all cells arise from pre-existing cells by division."
+      },
+      {
+        q: "List three key differences between prokaryotic and eukaryotic cells.",
+        options: [
+          "Prokaryotic cells have a nucleus, eukaryotic cells do not; prokaryotic cells are larger; eukaryotic cells lack ribosomes.",
+          "Prokaryotic cells lack a true nucleus and membrane-bound organelles; eukaryotic cells have a true nucleus and membrane-bound organelles; prokaryotic DNA is circular, eukaryotic DNA is linear.",
+          "Prokaryotic cells perform photosynthesis, eukaryotic cells do not; prokaryotic cells have a cell wall, eukaryotic cells do not.",
+          "Prokaryotic cells are multicellular, eukaryotic cells are unicellular."
+        ],
+        correct: 1,
+        explanation: "Key differences include: prokaryotic cells lack a true nucleus and membrane-bound organelles (eukaryotic cells have them); prokaryotic DNA is typically circular in the nucleoid region (eukaryotic DNA is linear and in the nucleus); prokaryotic cells are generally smaller and simpler."
+      },
+      {
+        q: "Describe the interconnected functions of the Endoplasmic Reticulum (ER) and the Golgi apparatus in protein modification and transport.",
+        options: [
+          "ER stores proteins; Golgi produces ATP.",
+          "ER synthesizes proteins; Golgi breaks them down.",
+          "ER synthesizes and initially modifies proteins; Golgi further modifies, sorts, and packages them for delivery.",
+          "ER is for lipid synthesis; Golgi is for DNA replication."
+        ],
+        correct: 2,
+        explanation: "Proteins destined for secretion or other organelles are synthesized and undergo initial folding/modification in the ER (especially Rough ER). They then move to the Golgi apparatus, where they are further processed, sorted into vesicles, and dispatched to their final cellular or extracellular destinations."
+      },
+      {
+        q: "Explain why mitochondria are called the 'powerhouse of the cell' and mention a key structural feature related to their function.",
+        options: [
+          "They store light energy; they are green.",
+          "They carry genetic information; they are spiral-shaped.",
+          "They generate ATP through cellular respiration; they have a highly folded inner membrane (cristae).",
+          "They detoxify drugs; they are composed of flat sacs."
+        ],
+        correct: 2,
+        explanation: "Mitochondria are the 'powerhouse' because they are the primary sites of cellular respiration, producing most of the cell's ATP. Their inner membrane is extensively folded into 'cristae,' which increases the surface area for the enzymes involved in ATP synthesis, maximizing efficiency."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Key Cellular Structures and Their Roles",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary function of the cell membrane, and what is it primarily composed of?",
+        options: [
+          "Protein synthesis; DNA and RNA.",
+          "Energy production; carbohydrates.",
+          "Regulating passage of substances; phospholipid bilayer and proteins.",
+          "Genetic information storage; lipids only."
+        ],
+        correct: 2,
+        explanation: "The cell membrane (plasma membrane) is a selectively permeable barrier that controls what enters and exits the cell. It's primarily composed of a phospholipid bilayer with embedded and associated proteins."
+      },
+      {
+        q: "What are ribosomes, and what crucial process do they carry out in the cell?",
+        options: [
+          "Membrane-bound organelles; lipid synthesis.",
+          "Protein complexes; ATP synthesis.",
+          "Non-membrane-bound organelles; protein synthesis (translation).",
+          "Storage sacs; waste disposal."
+        ],
+        correct: 2,
+        explanation: "Ribosomes are molecular machines (made of ribosomal RNA and protein) responsible for protein synthesis, also known as translation, where they read mRNA and assemble amino acids into polypeptide chains."
+      },
+      {
+        q: "Differentiate between the smooth endoplasmic reticulum (SER) and the rough endoplasmic reticulum (RER) in terms of structure and function.",
+        options: [
+          "SER has ribosomes, RER does not; SER for protein synthesis, RER for lipid synthesis.",
+          "RER has ribosomes, SER does not; RER for protein synthesis and modification, SER for lipid synthesis, detoxification, and calcium storage.",
+          "Both have ribosomes; both are involved in protein synthesis.",
+          "SER is only found in plant cells; RER is only in animal cells."
+        ],
+        correct: 1,
+        explanation: "The RER is studded with ribosomes and is involved in the synthesis and folding of proteins that are destined for secretion or insertion into membranes. The SER lacks ribosomes and is involved in lipid synthesis, detoxification of drugs and poisons, and storage of calcium ions."
+      },
+      {
+        q: "What is the primary function of the nucleus in a eukaryotic cell, and what important genetic material does it contain?",
+        options: [
+          "Digestion of waste; enzymes.",
+          "Protein synthesis; ribosomes.",
+          "Controlling cell activities and housing genetic material; DNA.",
+          "Energy production; ATP."
+        ],
+        correct: 2,
+        explanation: "The nucleus is the control center of the eukaryotic cell, housing the cell's genetic material (DNA) organized into chromosomes. It regulates gene expression and controls cell growth and metabolism."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "The Cell Theory and its Founders",
+    topic: "CELL STRUCTURE & FUNCTIONS",
+    year: "Notes",
+    steps: [
+      {
+        q: "Who proposed that all plants are made of cells, and what was his contribution to Cell Theory?",
+        options: [
+          "Theodor Schwann; stated that animals are made of cells.",
+          "Rudolf Virchow; stated that cells come from pre-existing cells.",
+          "Matthias Schleiden; proposed that plants are composed of cells.",
+          "Robert Hooke; coined the term 'cell'."
+        ],
+        correct: 2,
+        explanation: "Matthias Schleiden, a botanist, concluded in 1838 that all plant tissues are composed of cells and that the embryo of a plant arises from a single cell. This was a crucial step in the formulation of the cell theory."
+      },
+      {
+        q: "Who extended the cell theory to animals, and what was his key finding?",
+        options: [
+          "Matthias Schleiden; found that plants are made of cells.",
+          "Theodor Schwann; concluded that all animals are composed of cells.",
+          "Rudolf Virchow; observed cells dividing.",
+          "Anton van Leeuwenhoek; observed 'animalcules'."
+        ],
+        correct: 1,
+        explanation: "Theodor Schwann, a zoologist, independently concluded in 1839 that all animal tissues are also composed of cells, thereby extending the cell theory to animals."
+      },
+      {
+        q: "Which scientist is credited with adding the third postulate to the Cell Theory: 'All cells arise from pre-existing cells'?",
+        options: [
+          "Robert Hooke",
+          "Louis Pasteur",
+          "Rudolf Virchow",
+          "Anton van Leeuwenhoek"
+        ],
+        correct: 2,
+        explanation: "Rudolf Virchow famously stated 'Omnis cellula e cellula,' meaning 'every cell from a cell,' which established that cells do not spontaneously generate but arise only from the division of existing cells."
+      },
+      {
+        q: "How did the combined work of Schleiden, Schwann, and Virchow fundamentally change the understanding of living organisms?",
+        options: [
+          "They discovered DNA.",
+          "They showed that all life forms are fundamentally composed of and arise from cells, establishing a unifying principle of biology.",
+          "They proved the theory of evolution.",
+          "They developed the first vaccines."
+        ],
+        correct: 1,
+        explanation: "Their combined contributions established the foundational Cell Theory, which provided a unifying concept for all living organisms, stating that cells are the basic units of life and that all life arises from pre-existing cells."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Understanding Mitosis and Cell Division",
+    topic: "CELL DIVISION",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary purpose of mitosis, and what kind of cells does it produce?",
+        options: [
+          "To produce gametes for sexual reproduction; haploid cells.",
+          "To create genetic diversity; four genetically distinct cells.",
+          "To produce two genetically identical daughter cells for growth and repair.",
+          "To reduce the number of chromosomes by half."
+        ],
+        correct: 2,
+        explanation: "Mitosis is the process of cell division that results in two daughter cells that are genetically identical to the parent cell. This is essential for growth, tissue repair, and asexual reproduction."
+      },
+      {
+        q: "What is the key event that occurs during metaphase of mitosis?",
+        options: [
+          "The nuclear membrane breaks down.",
+          "Chromosomes condense and become visible.",
+          "Chromosomes align along the metaphase plate (equator) of the cell.",
+          "Sister chromatids separate and move to opposite poles."
+        ],
+        correct: 2,
+        explanation: "During metaphase, all the chromosomes line up precisely at the center of the cell, forming the metaphase plate. This alignment ensures that each new cell will receive a complete set of chromosomes."
+      },
+      {
+        q: "Describe the events that take place during anaphase.",
+        options: [
+          "The cytoplasm divides, forming two new cells.",
+          "The nuclear envelope re-forms.",
+          "Sister chromatids separate at the centromere and are pulled to opposite poles of the cell.",
+          "Chromosomes uncoil and become less visible."
+        ],
+        correct: 2,
+        explanation: "Anaphase is the stage where the sister chromatids of each chromosome are pulled apart by the mitotic spindle to opposite ends of the cell. This ensures that each pole receives a complete set of genetic information."
+      },
+      {
+        q: "Explain the purpose of cytokinesis and its relationship to mitosis.",
+        options: [
+          "Cytokinesis is the division of the nucleus, which happens before mitosis begins.",
+          "Cytokinesis is the division of the cytoplasm, which usually overlaps with telophase and completes the formation of two separate daughter cells.",
+          "Cytokinesis is the process of DNA replication, which happens during anaphase.",
+          "Cytokinesis is the condensation of chromosomes, which happens during prophase."
+        ],
+        correct: 1,
+        explanation: "Cytokinesis is the physical division of the cytoplasm, which typically begins during telophase and concludes after mitosis, resulting in the formation of two distinct, new daughter cells from a single parent cell."
+      }
+    ]
+  },
+  
+  
+
+
+
   {
     course: "BI110",
     term: "T1",
@@ -1458,6 +1676,297 @@
       }
     ]
   },
+    {
+    course: "BI110",
+    term: "T1",
+    title: "Discuss the Structure and Functions of the Four Major Classes of Macromolecules",
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What are the four major classes of macromolecules?",
+        options: [
+          "Vitamins, Minerals, Water, and Fiber",
+          "Proteins, Lipids, Carbohydrates, and Nucleic Acids",
+          "Simple Sugars, Fatty Acids, Amino Acids, and Nucleotides",
+          "Enzymes, Hormones, Antibodies, and Genes"
+        ],
+        correct: 1,
+        explanation: "The four major classes of organic compounds that form the basis of all life are proteins, lipids, carbohydrates, and nucleic acids."
+      },
+      {
+        q: "How do carbohydrates primarily function in living organisms?",
+        options: [
+          "To store genetic information.",
+          "To provide long-term energy storage and insulation.",
+          "To catalyze chemical reactions as enzymes.",
+          "To serve as a source of immediate energy and provide structural support."
+        ],
+        correct: 3,
+        explanation: "Carbohydrates are the body's main source of quick energy (e.g., glucose) and are also key structural components, such as cellulose in plants."
+      },
+      {
+        q: "Which of the following best describes the primary function of lipids?",
+        options: [
+          "Storing genetic information.",
+          "Long-term energy storage, insulation, and membrane structure.",
+          "Speeding up chemical reactions.",
+          "Providing a structural framework for muscles."
+        ],
+        correct: 1,
+        explanation: "Lipids are hydrophobic molecules that function as a long-term energy reserve, as thermal insulators, and are the primary component of cell membranes."
+      },
+      {
+        q: "What is the main role of proteins in the cell?",
+        options: [
+          "Long-term energy storage.",
+          "Acting as the building blocks for nucleic acids.",
+          "Carrying out most cellular functions, including catalysis and transport.",
+          "Maintaining the fluidity of the cell membrane."
+        ],
+        correct: 2,
+        explanation: "Proteins are versatile macromolecules that act as the 'molecular machinery' of the cell, functioning as enzymes, structural components, transporters, and signaling molecules."
+      },
+      {
+        q: "What is the primary function of nucleic acids?",
+        options: [
+          "Providing structural support to the cell.",
+          "Serving as the body's main energy source.",
+          "Storing and transmitting hereditary information.",
+          "Insulating and protecting internal organs."
+        ],
+        correct: 2,
+        explanation: "Nucleic acids, DNA and RNA, are responsible for storing the genetic code and using that code to direct the synthesis of proteins."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Explain Protein Structure and Denaturation",
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the monomer of a protein?",
+        options: [
+          "A monosaccharide",
+          "A nucleotide",
+          "An amino acid",
+          "A fatty acid"
+        ],
+        correct: 2,
+        explanation: "Amino acids are the monomers that link together via peptide bonds to form the polymer known as a protein."
+      },
+      {
+        q: "What is the primary structure of a protein?",
+        options: [
+          "The overall three-dimensional shape of the protein.",
+          "The folding of the polypeptide chain into helices and sheets.",
+          "The unique sequence of amino acids in a polypeptide chain.",
+          "The arrangement of multiple polypeptide subunits."
+        ],
+        correct: 2,
+        explanation: "The primary structure is the linear and specific sequence of amino acids, which is determined by the genetic code."
+      },
+      {
+        q: "What is denaturation?",
+        options: [
+          "The process of building a protein from amino acids.",
+          "The process where a protein loses its three-dimensional shape and function.",
+          "The breaking of peptide bonds in a protein.",
+          "The formation of a quaternary structure."
+        ],
+        correct: 1,
+        explanation: "Denaturation is the irreversible process where a protein unfolds and loses its functional shape, often due to extreme heat or pH changes."
+      },
+      {
+        q: "Why is a protein's specific shape so crucial for its function?",
+        options: [
+          "It determines the protein's ability to store energy.",
+          "The shape allows it to bind to a specific target molecule and perform its role.",
+          "The shape determines its solubility in water.",
+          "The shape is only important for structural proteins."
+        ],
+        correct: 1,
+        explanation: "A protein's unique, three-dimensional shape creates a specific active site or binding site, which is essential for its ability to interact with other molecules and perform its function."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Describe the Structure and Diversity of Carbohydrates",
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the basic chemical formula for carbohydrates?",
+        options: [
+          "CnH2nO",
+          "Cn(H2O)n",
+          "CHO",
+          "CH4"
+        ],
+        correct: 1,
+        explanation: "The formula Cn(H2O)n reflects the composition of carbohydrates, which are made of carbon, hydrogen, and oxygen, with the latter two in a 2:1 ratio, just like water."
+      },
+      {
+        q: "What is the difference between a monosaccharide and a polysaccharide?",
+        options: [
+          "A monosaccharide is a lipid, while a polysaccharide is a protein.",
+          "A monosaccharide is a polymer, while a polysaccharide is a monomer.",
+          "A monosaccharide is a single sugar unit, while a polysaccharide is a long chain of many sugar units.",
+          "A monosaccharide is found in animals, while a polysaccharide is found in plants."
+        ],
+        correct: 2,
+        explanation: "Monosaccharides are the simplest form of sugar, and polysaccharides are complex carbohydrates made up of long chains of these simple sugars joined together."
+      },
+      {
+        q: "Which of the following is an example of a polysaccharide that provides structural support?",
+        options: [
+          "Starch",
+          "Glycogen",
+          "Cellulose",
+          "Glucose"
+        ],
+        correct: 2,
+        explanation: "Cellulose is a polysaccharide found in the cell walls of plants, providing them with rigidity and structural support."
+      },
+      {
+        q: "How are carbohydrates broken down into smaller units?",
+        options: [
+          "By dehydration synthesis, removing a water molecule.",
+          "By hydrolysis, adding a water molecule.",
+          "By peptide bond formation.",
+          "By oxidation."
+        ],
+        correct: 1,
+        explanation: "The process of hydrolysis involves adding a water molecule to break the glycosidic bond that holds the carbohydrate monomers together."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Discuss the Structure and Functions of Lipids",
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the defining characteristic of all lipids?",
+        options: [
+          "They are soluble in water.",
+          "They are polymers of fatty acids.",
+          "They are hydrophobic and insoluble in water.",
+          "They are a primary source of immediate energy."
+        ],
+        correct: 2,
+        explanation: "The defining feature of lipids is their non-polar nature, which makes them repel water and be insoluble in it."
+      },
+      {
+        q: "What is the primary function of fats in the body?",
+        options: [
+          "To act as enzymes.",
+          "To store genetic information.",
+          "To provide long-term energy storage and insulation.",
+          "To form the structural components of cell walls."
+        ],
+        correct: 2,
+        explanation: "Fats, or triglycerides, are a concentrated form of energy storage and also serve as an insulating layer to protect the body."
+      },
+      {
+        q: "How do phospholipids arrange themselves to form the cell membrane?",
+        options: [
+          "In a single layer with hydrophilic heads facing inwards.",
+          "In a bilayer with hydrophobic tails facing outward toward water.",
+          "In a bilayer with hydrophilic heads facing outward and hydrophobic tails facing inward.",
+          "They randomly disperse throughout the membrane."
+        ],
+        correct: 2,
+        explanation: "The hydrophilic heads of phospholipids are attracted to water, so they face the aqueous environment, while the hydrophobic tails face each other, away from the water, forming a stable bilayer."
+      },
+      {
+        q: "What is the characteristic structure of a steroid?",
+        options: [
+          "A long hydrocarbon chain.",
+          "A single, large ring structure.",
+          "A carbon skeleton composed of four fused rings.",
+          "A glycerol backbone with three fatty acid chains."
+        ],
+        correct: 2,
+        explanation: "All steroids, such as cholesterol and many hormones, are characterized by their unique structure of four interconnected carbon rings."
+      }
+    ]
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    title: "Compare and Contrast DNA and RNA",
+    topic: "MACROMOLECULES",
+    year: "Notes",
+    steps: [
+      {
+        q: "What is the primary function of nucleic acids?",
+        options: [
+          "Energy storage.",
+          "Storing and transmitting genetic information.",
+          "Catalyzing chemical reactions.",
+          "Providing structural support."
+        ],
+        correct: 1,
+        explanation: "Nucleic acids, including DNA and RNA, are responsible for holding the genetic blueprint and enabling its expression."
+      },
+      {
+        q: "What are the three components of a nucleotide?",
+        options: [
+          "Glycerol, fatty acid, and phosphate group.",
+          "Amino acid, peptide bond, and R-group.",
+          "Five-carbon sugar, phosphate group, and nitrogenous base.",
+          "Monosaccharide, glycosidic bond, and carbon."
+        ],
+        correct: 2,
+        explanation: "The monomer of a nucleic acid, a nucleotide, is made up of a sugar, a phosphate group, and a nitrogenous base."
+      },
+      {
+        q: "What is the key difference in sugar between DNA and RNA?",
+        options: [
+          "DNA has glucose, while RNA has fructose.",
+          "DNA has ribose, while RNA has deoxyribose.",
+          "DNA has deoxyribose, while RNA has ribose.",
+          "DNA has galactose, while RNA has ribose."
+        ],
+        correct: 2,
+        explanation: "DNA contains the sugar deoxyribose (lacking one oxygen atom), whereas RNA contains the sugar ribose."
+      },
+      {
+        q: "Which nitrogenous base is found in RNA but not in DNA?",
+        options: [
+          "Adenine",
+          "Thymine",
+          "Guanine",
+          "Uracil"
+        ],
+        correct: 3,
+        explanation: "Uracil (U) is a pyrimidine base found only in RNA, where it replaces the thymine (T) found in DNA."
+      },
+      {
+        q: "What is a key difference in the overall structure of DNA and RNA?",
+        options: [
+          "DNA is typically a single-stranded molecule, while RNA is a double helix.",
+          "DNA is a double-stranded helix, while RNA is typically a single-stranded molecule.",
+          "DNA is linear, while RNA is circular.",
+          "DNA is always found in the nucleus, while RNA is only found in the cytoplasm."
+        ],
+        correct: 1,
+        explanation: "DNA is famously known for its double-helical structure, composed of two polynucleotide strands. RNA, in contrast, is usually a single strand of nucleotides."
+      }
+    ]
+  },
+
+
+
+  
   {
     course: "BI110",
     term: "T1",
