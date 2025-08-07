@@ -3907,6 +3907,862 @@
   },
 
 
+//taxonomy 
+
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Key Concepts in Taxonomy: Classification and Nomenclature",
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "steps": [
+      {
+        "q": "What is the primary purpose of taxonomy?",
+        "options": [
+          "To study the evolutionary history of organisms.",
+          "To describe, name, and classify organisms in a hierarchical system.",
+          "To understand how organisms interact with their environment.",
+          "To analyze the genetic makeup of organisms."
+        ],
+        "correct": 1,
+        "explanation": "To describe, name, and classify organisms in a hierarchical system."
+      },
+      {
+        "q": "Who is considered the 'father of taxonomy'?",
+        "options": [
+          "Charles Darwin.",
+          "Gregor Mendel.",
+          "Carl Linnaeus.",
+          "Louis Pasteur."
+        ],
+        "correct": 2,
+        "explanation": "Carl Linnaeus."
+      },
+      {
+        "q": "What is the highest and most general taxonomic rank in the modern classification system?",
+        "options": [
+          "Kingdom.",
+          "Family.",
+          "Class.",
+          "Domain."
+        ],
+        "correct": 3,
+        "explanation": "Domain."
+      },
+      {
+        "q": "What are the three domains of life?",
+        "options": [
+          "Fungi, Plantae, and Animalia.",
+          "Protista, Fungi, and Plantae.",
+          "Bacteria, Archaea, and Eukaryota.",
+          "Prokaryota, Eukaryota, and Protista."
+        ],
+        "correct": 2,
+        "explanation": "Bacteria, Archaea, and Eukaryota."
+      },
+      {
+        "q": "Which domain is Eukaryota more closely related to, Archaea or Bacteria?",
+        "options": [
+          "Bacteria.",
+          "Archaea.",
+          "Neither, they are equally related.",
+          "Both, they share common ancestors with both."
+        ],
+        "correct": 1,
+        "explanation": "Archaea."
+      },
+      {
+        "q": "In binomial nomenclature, what two taxonomic ranks make up an organism's scientific name?",
+        "options": [
+          "Kingdom and Phylum.",
+          "Family and Genus.",
+          "Genus and species.",
+          "Order and Class."
+        ],
+        "correct": 2,
+        "explanation": "Genus and species."
+      },
+      {
+        "q": "What is the scientific name for humans?",
+        "options": [
+          "Pan troglodytes.",
+          "Homo neanderthalensis.",
+          "Homo erectus.",
+          "Homo sapiens."
+        ],
+        "correct": 3,
+        "explanation": "Homo sapiens."
+      },
+      {
+        "q": "What does the Biological Species Concept (BSC) define a species as?",
+        "options": [
+          "A group of organisms with similar physical characteristics.",
+          "A group of populations whose members can interbreed successfully and are reproductively isolated from other groups.",
+          "A group of organisms that share a common evolutionary ancestor.",
+          "A group of organisms that live in the same geographic area."
+        ],
+        "correct": 1,
+        "explanation": "A group of populations whose members can interbreed successfully and are reproductively isolated from other groups."
+      },
+      {
+        "q": "Why is the BSC difficult to apply to bacteria?",
+        "options": [
+          "Because bacteria live in diverse environments.",
+          "Because bacteria have a nucleus.",
+          "Because bacteria reproduce asexually, and the concept is based on interbreeding.",
+          "Because bacteria are too small to be observed."
+        ],
+        "correct": 2,
+        "explanation": "Because bacteria reproduce asexually, and the concept is based on interbreeding."
+      },
+      {
+        "q": "How is the genus name formatted in binomial nomenclature?",
+        "options": [
+          "It is lowercase and italicized.",
+          "It is capitalized and not italicized.",
+          "It is capitalized and italicized.",
+          "It is lowercase and not italicized."
+        ],
+        "correct": 2,
+        "explanation": "It is capitalized and italicized."
+      },
+      {
+        "q": "What is the scientific name for the American toad?",
+        "options": [
+          "Rana catesbeiana.",
+          "Bufo americanus.",
+          "Anaxyrus boreas.",
+          "Lithobates sphenocephalus."
+        ],
+        "correct": 1,
+        "explanation": "Bufo americanus."
+      },
+      {
+        "q": "What is a 'clade'?",
+        "options": [
+          "A taxonomic rank above family.",
+          "A taxonomic group of organisms based on homologous features derived from a common ancestor.",
+          "A type of hybrid species.",
+          "A group of species that live in the same habitat."
+        ],
+        "correct": 1,
+        "explanation": "A taxonomic group of organisms based on homologous features derived from a common ancestor."
+      },
+      {
+        "q": "What is the scientific name for the American black bear?",
+        "options": [
+          "Ursus arctos.",
+          "Ursus americanus.",
+          "Ursus maritimus.",
+          "Ursus thibetanus."
+        ],
+        "correct": 1,
+        "explanation": "Ursus americanus."
+      },
+      {
+        "q": "What is a 'specific epithet' in binomial nomenclature?",
+        "options": [
+          "The first part of the scientific name.",
+          "The taxonomic rank of genus.",
+          "The second part of the scientific name, which is the species name.",
+          "The family name of an organism."
+        ],
+        "correct": 2,
+        "explanation": "The second part of the scientific name, which is the species name."
+      },
+      {
+        "q": "How many families are in the order Carnivora?",
+        "options": [
+          "10 families.",
+          "12 families.",
+          "15 families.",
+          "8 families."
+        ],
+        "correct": 1,
+        "explanation": "12 families."
+      },
+      {
+        "q": "What is the plural of 'genus'?",
+        "options": [
+          "Genuses.",
+          "Genera.",
+          "Genus.",
+          "Genui."
+        ],
+        "correct": 1,
+        "explanation": "Genera."
+      },
+      {
+        "q": "What is the taxonomic rank above Family?",
+        "options": [
+          "Class.",
+          "Order.",
+          "Phylum.",
+          "Kingdom."
+        ],
+        "correct": 1,
+        "explanation": "Order."
+      },
+      {
+        "q": "What is a 'hybrid zone'?",
+        "options": [
+          "A region where two species live without interacting.",
+          "A region where two species overlap and interbreed.",
+          "A habitat where only one species can survive.",
+          "A zone of rapid evolutionary change."
+        ],
+        "correct": 1,
+        "explanation": "A region where two species overlap and interbreed."
+      },
+      {
+        "q": "What is the plural form of the taxonomic rank 'phylum'?",
+        "options": [
+          "Phylums.",
+          "Phyla.",
+          "Phylae.",
+          "Phyloi."
+        ],
+        "correct": 1,
+        "explanation": "Phyla."
+      },
+      {
+        "q": "What is the taxonomic rank of 'Mammalia'?",
+        "options": [
+          "Phylum.",
+          "Order.",
+          "Class.",
+          "Family."
+        ],
+        "correct": 2,
+        "explanation": "Class."
+      },
+      {
+        "q": "What is the common name for the genus 'Juncus'?",
+        "options": [
+          "Moss.",
+          "Rush.",
+          "Fern.",
+          "Lichen."
+        ],
+        "correct": 1,
+        "explanation": "Rush."
+      },
+      {
+        "q": "In the five-kingdom classification system, what were the two main kingdoms for plants and animals?",
+        "options": [
+          "Monera and Protista.",
+          "Fungi and Protista.",
+          "Plantae and Animalia.",
+          "Plantae and Monera."
+        ],
+        "correct": 2,
+        "explanation": "Plantae and Animalia."
+      },
+      {
+        "q": "What is the scientific name for the gray wolf?",
+        "options": [
+          "Canis familiaris.",
+          "Canis lupus.",
+          "Canis latrans.",
+          "Vulpes vulpes."
+        ],
+        "correct": 1,
+        "explanation": "Canis lupus."
+      },
+      {
+        "q": "What is the full name of the order that contains humans?",
+        "options": [
+          "Hominidae.",
+          "Primates.",
+          "Chordata.",
+          "Mammalia."
+        ],
+        "correct": 1,
+        "explanation": "Primates."
+      },
+      {
+        "q": "What is the taxonomic rank of 'Felidae'?",
+        "options": [
+          "Class.",
+          "Order.",
+          "Family.",
+          "Genus."
+        ],
+        "correct": 2,
+        "explanation": "Family."
+      },
+      {
+        "q": "What is the scientific name for the common house cat?",
+        "options": [
+          "Panthera leo.",
+          "Panthera tigris.",
+          "Felis catus.",
+          "Canis familiaris."
+        ],
+        "correct": 2,
+        "explanation": "Felis catus."
+      },
+      {
+        "q": "How is the species name formatted in binomial nomenclature?",
+        "options": [
+          "It is capitalized and italicized.",
+          "It is capitalized and not italicized.",
+          "It is lowercase and italicized.",
+          "It is lowercase and not italicized."
+        ],
+        "correct": 2,
+        "explanation": "It is lowercase and italicized."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Viruses: Structure, Infection Cycle, and Characteristics",
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "steps": [
+      {
+        "q": "What are the two main components of a virus?",
+        "options": [
+          "A cell wall and a cell membrane.",
+          "A nucleic acid (DNA or RNA) core and a protein envelope (capsid).",
+          "Mitochondria and cytoplasm.",
+          "A flagella and a nucleus."
+        ],
+        "correct": 1,
+        "explanation": "A nucleic acid (DNA or RNA) core and a protein envelope (capsid)."
+      },
+      {
+        "q": "What is a bacteriophage?",
+        "options": [
+          "A type of harmful bacteria.",
+          "A virus that infects bacteria.",
+          "A fungus that lives on bacteria.",
+          "A cell organelle found in bacteria."
+        ],
+        "correct": 1,
+        "explanation": "A virus that infects bacteria."
+      },
+      {
+        "q": "What is the first step of a viral infection cycle?",
+        "options": [
+          "Release.",
+          "Synthesis.",
+          "Attachment, where the virus binds to a receptor on the host cell.",
+          "Assembly."
+        ],
+        "correct": 2,
+        "explanation": "Attachment, where the virus binds to a receptor on the host cell."
+      },
+      {
+        "q": "What is the 'protein ghost' in a viral infection?",
+        "options": [
+          "The new virus particles after release.",
+          "The empty protein shell of the virus that remains attached to the host cell wall after the nucleic acid has been injected.",
+          "The host cell's nucleus.",
+          "The virus's nucleic acid core."
+        ],
+        "correct": 1,
+        "explanation": "The empty protein shell of the virus that remains attached to the host cell wall after the nucleic acid has been injected."
+      },
+      {
+        "q": "What is the function of the enzyme 'late muramidase' in a viral infection?",
+        "options": [
+          "It helps the virus attach to the host cell.",
+          "It lyses the host cell wall, liberating new infectious phage particles.",
+          "It helps in the synthesis of new viral components.",
+          "It protects the viral nucleic acid."
+        ],
+        "correct": 1,
+        "explanation": "It lyses the host cell wall, liberating new infectious phage particles."
+      },
+      {
+        "q": "What is the function of the spiral protein sheath in a T-even bacteriophage?",
+        "options": [
+          "It protects the virus from the host's immune system.",
+          "It helps the virus attach to the host cell.",
+          "It retracts to allow the nucleic acid to pass into the host cell's cytoplasm.",
+          "It provides the virus with energy for replication."
+        ],
+        "correct": 2,
+        "explanation": "It retracts to allow the nucleic acid to pass into the host cell's cytoplasm."
+      },
+      {
+        "q": "How does the size of a virus compare to that of a bacterium?",
+        "options": [
+          "Viruses are much larger than bacteria.",
+          "Viruses are much smaller than bacteria.",
+          "Viruses and bacteria are approximately the same size.",
+          "The size comparison varies greatly depending on the specific virus and bacterium."
+        ],
+        "correct": 1,
+        "explanation": "Viruses are much smaller than bacteria."
+      },
+      {
+        "q": "What is the final stage of a viral infection cycle?",
+        "options": [
+          "Attachment.",
+          "Penetration.",
+          "Assembly.",
+          "Release, where new viruses are liberated from the host cell."
+        ],
+        "correct": 3,
+        "explanation": "Release, where new viruses are liberated from the host cell."
+      },
+      {
+        "q": "What are the two main types of nucleic acids found in viruses?",
+        "options": [
+          "Proteins and Lipids.",
+          "Carbohydrates and Fats.",
+          "DNA and RNA.",
+          "Amino acids and Sugars."
+        ],
+        "correct": 2,
+        "explanation": "DNA and RNA."
+      },
+      {
+        "q": "What is the purpose of the viral capsid?",
+        "options": [
+          "To replicate the viral nucleic acid.",
+          "To provide energy for the virus.",
+          "To protect the nucleic acid core from destruction.",
+          "To help the virus move around."
+        ],
+        "correct": 2,
+        "explanation": "To protect the nucleic acid core from destruction."
+      },
+      {
+        "q": "What happens during the 'synthesis' stage of a viral infection?",
+        "options": [
+          "The virus attaches to the host cell.",
+          "The host cell is directed to produce new viral components like proteins and nucleic acids.",
+          "New viruses are released from the host cell.",
+          "The virus injects its nucleic acid into the host cell."
+        ],
+        "correct": 1,
+        "explanation": "The host cell is directed to produce new viral components like proteins and nucleic acids."
+      },
+      {
+        "q": "What is the function of the enzyme that perforates the bacterial cell wall during viral injection?",
+        "options": [
+          "It assembles the new virus particles.",
+          "It allows the phage's nucleic acid to pass into the host cell's cytoplasm.",
+          "It protects the viral capsid.",
+          "It helps the virus to attach to the host cell."
+        ],
+        "correct": 1,
+        "explanation": "It allows the phage's nucleic acid to pass into the host cell's cytoplasm."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Protists: Diversity, Roles, and Examples",
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "steps": [
+      {
+        "q": "What is a key characteristic that distinguishes protists from other eukaryotes?",
+        "options": [
+          "Their ability to photosynthesize.",
+          "Their complex organ systems.",
+          "Their simple cellular organization and lack of specialized tissues.",
+          "Their lack of a nucleus."
+        ],
+        "correct": 2,
+        "explanation": "Their simple cellular organization and lack of specialized tissues."
+      },
+      {
+        "q": "How do protozoans obtain their food?",
+        "options": [
+          "Through photosynthesis.",
+          "They are heterotrophs, meaning they consume other organisms for food.",
+          "They absorb nutrients directly from their environment.",
+          "They produce their own food from inorganic materials."
+        ],
+        "correct": 1,
+        "explanation": "They are heterotrophs, meaning they consume other organisms for food."
+      },
+      {
+        "q": "Which group of protozoans moves using 'pseudopodia'?",
+        "options": [
+          "Ciliaphorans.",
+          "Zooflagellates.",
+          "Sporozoans.",
+          "Sarcodinians."
+        ],
+        "correct": 3,
+        "explanation": "Sarcodinians."
+      },
+      {
+        "q": "What are 'kelps'?",
+        "options": [
+          "Large red algae.",
+          "Types of marine fungi.",
+          "Large brown algae.",
+          "A group of protozoans."
+        ],
+        "correct": 2,
+        "explanation": "Large brown algae."
+      },
+      {
+        "q": "What phenomenon is caused by some species of dinoflagellates?",
+        "options": [
+          "The 'green tide' phenomenon.",
+          "The 'blue light' phenomenon.",
+          "The 'red tide' phenomenon.",
+          "The 'algal bloom' phenomenon."
+        ],
+        "correct": 2,
+        "explanation": "The 'red tide' phenomenon."
+      },
+      {
+        "q": "How do Ciliaphorans move?",
+        "options": [
+          "Using pseudopodia.",
+          "By a twisting motion.",
+          "With hair-like structures called cilia.",
+          "Using a single long flagella."
+        ],
+        "correct": 2,
+        "explanation": "With hair-like structures called cilia."
+      },
+      {
+        "q": "What is the primary role of plant-like protists in the aquatic ecosystem?",
+        "options": [
+          "They act as decomposers.",
+          "They are parasites, causing disease.",
+          "They are primary producers, providing food and oxygen.",
+          "They help in the breakdown of waste materials."
+        ],
+        "correct": 2,
+        "explanation": "They are primary producers, providing food and oxygen."
+      },
+      {
+        "q": "What substance derived from red algae is used as a medium for growing bacteria in labs?",
+        "options": [
+          "Agar.",
+          "Algin.",
+          "Carrageenan.",
+          "Gelatin."
+        ],
+        "correct": 0,
+        "explanation": "Agar."
+      },
+      {
+        "q": "What is 'diatomaceous earth' formed from?",
+        "options": [
+          "The shells of fossil dinoflagellates.",
+          "The shells of fossil diatoms.",
+          "The sediment from ancient volcanoes.",
+          "The remains of ancient protozoans."
+        ],
+        "correct": 1,
+        "explanation": "The shells of fossil diatoms."
+      },
+      {
+        "q": "What substance derived from brown algae is used in ice cream and lotion?",
+        "options": [
+          "Carrageenan.",
+          "Agar.",
+          "Algin.",
+          "Pectin."
+        ],
+        "correct": 2,
+        "explanation": "Algin."
+      },
+      {
+        "q": "What is a 'protozoan'?",
+        "options": [
+          "A plant-like single-celled organism.",
+          "A fungus-like organism.",
+          "An animal-like single-celled organism.",
+          "A multicellular organism that lacks specialized tissues."
+        ],
+        "correct": 2,
+        "explanation": "An animal-like single-celled organism."
+      },
+      {
+        "q": "What are 'algae'?",
+        "options": [
+          "Fungus-like single or multi-celled organisms.",
+          "Animal-like single-celled organisms.",
+          "Plant-like single or multi-celled organisms.",
+          "Prokaryotic organisms."
+        ],
+        "correct": 2,
+        "explanation": "Plant-like single or multi-celled organisms."
+      },
+      {
+       
+       
+        "q": "Which type of protist is non-motile and parasitic?",
+        "options": [
+          "Sarcodinians.",
+          "Ciliaphorans.",
+          "Sporozoans.",
+          "Zooflagellates."
+        ],
+        "correct": 2,
+        "explanation": "Sporozoans."
+      },
+      {
+        "q": "What is the purpose of 'cysts' formed by some protists?",
+        "options": [
+          "They are used for reproduction.",
+          "They are formed for survival during adverse environmental conditions.",
+          "They are used for locomotion.",
+          "They are a stage in their life cycle for feeding."
+        ],
+        "correct": 1,
+        "explanation": "They are formed for survival during adverse environmental conditions."
+      },
+      {
+        "q": "What is the taxonomic rank of 'Sarcodina'?",
+        "options": [
+          "Order.",
+          "Class.",
+          "Phylum.",
+          "Family."
+        ],
+        "correct": 2,
+        "explanation": "Phylum."
+      },
+      {
+        "q": "Which group of protozoans moves using 'flagella'?",
+        "options": [
+          "Sporozoans.",
+          "Sarcodinians.",
+          "Zooflagellates (Phylum Mastigophora).",
+          "Ciliaphorans."
+        ],
+        "correct": 2,
+        "explanation": "Zooflagellates (Phylum Mastigophora)."
+      },
+      {
+        "q": "What disease does the protozoan 'Plasmodium' cause?",
+        "options": [
+          "Sleeping sickness.",
+          "Giardiasis.",
+          "Dysentery.",
+          "Malaria."
+        ],
+        "correct": 3,
+        "explanation": "Malaria."
+      },
+      {
+        "q": "What are 'slime molds' an example of?",
+        "options": [
+          "Plant-like protists.",
+          "Fungus-like protists.",
+          "Animal-like protists.",
+          "A type of fungi."
+        ],
+        "correct": 1,
+        "explanation": "Fungus-like protists."
+      },
+      {
+        "q": "What is the function of 'algin' derived from brown algae?",
+        "options": [
+          "It is used as a medium for growing bacteria.",
+          "It is used as a water filter.",
+          "It is used as a food source for aquatic animals.",
+          "It is used in making products like ice cream, lotion, and plastics."
+        ],
+        "correct": 3,
+        "explanation": "It is used in making products like ice cream, lotion, and plastics."
+      },
+      {
+        "q": "What is the purpose of the cilia in Ciliaphorans?",
+        "options": [
+          "They are used for photosynthesis.",
+          "They are used for locomotion and for sweeping food particles into the organism.",
+          "They are used for reproduction.",
+          "They provide structural support."
+        ],
+        "correct": 1,
+        "explanation": "They are used for locomotion and for sweeping food particles into the organism."
+      },
+      {
+        "q": "What is 'diatomaceous earth' used for?",
+        "options": [
+          "As a fertilizer.",
+          "As a water filter, an abrasive, and to add sparkle to products.",
+          "As a food source.",
+          "As a medium for growing algae."
+        ],
+        "correct": 1,
+        "explanation": "As a water filter, an abrasive, and to add sparkle to products."
+      },
+      {
+        "q": "Which type of protozoan causes sleeping sickness?",
+        "options": [
+          "Plasmodium.",
+          "Amoeba.",
+          "Trypanosoma gambiense.",
+          "Giardia."
+        ],
+        "correct": 2,
+        "explanation": "Trypanosoma gambiense."
+      },
+      {
+        "q": "What is a 'cytoplasm'?",
+        "options": [
+          "The fluid inside a cell, excluding the nucleus.",
+          "The outer layer of a plant cell.",
+          "The genetic material of a cell.",
+          "A membrane-bound organelle."
+        ],
+        "correct": 0,
+        "explanation": "The fluid inside a cell, excluding the nucleus."
+      },
+      {
+        "q": "What is the role of Protista in the aquatic ecosystem?",
+        "options": [
+          "They are only decomposers.",
+          "They are parasites for aquatic animals.",
+          "They are primary producers and a major food source for other water organisms.",
+          "They have no significant role."
+        ],
+        "correct": 2,
+        "explanation": "As primary producers and a major food source for other water organisms."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Prokaryotes and Cyanobacteria: Structure and Function",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "steps": [
+      {
+        "q": "What are the three main phyla of Archaea?",
+        "options": [
+          "Firmicutes, Proteobacteria, and Actinobacteria.",
+          "Crenarchaeota, Euryarchaeota, and Korarchaeota.",
+          "Chloroflexi, Cyanobacteria, and Spirochaetes.",
+          "Spirochaetes, Chlamydiae, and Planctomycetes."
+        ],
+        "correct": 1,
+        "explanation": "Crenarchaeota, Euryarchaeota, and Korarchaeota."
+      },
+      {
+        "q": "What is the function of the bacteria that make up the human microbiota?",
+        "options": [
+          "They cause diseases.",
+          "They have no function.",
+          "They perform vital functions like aiding in digestion and nutrient absorption.",
+          "They are only present in unhealthy individuals."
+        ],
+        "correct": 2,
+        "explanation": "They perform vital functions like aiding in digestion and nutrient absorption."
+      },
+      {
+        "q": "What is a key characteristic of cyanobacteria?",
+        "options": [
+          "They are motile using flagella.",
+          "They are parasites of other organisms.",
+          "They are capable of photosynthesis.",
+          "They reproduce sexually."
+        ],
+        "correct": 2,
+        "explanation": "They are capable of photosynthesis."
+      },
+      {
+        "q": "What is the unique motion of Spirochetes?",
+        "options": [
+          "A gliding motion.",
+          "A twisting motion.",
+          "A tumbling motion.",
+          "A backward-and-forward motion."
+        ],
+        "correct": 1,
+        "explanation": "A twisting motion."
+      },
+      {
+        "q": "What is a 'ribosome'?",
+        "options": [
+          "A membrane-bound organelle.",
+          "The genetic material of a cell.",
+          "A small organelle in a cell where proteins are made.",
+          "The outer layer of a bacterial cell."
+        ],
+        "correct": 2,
+        "explanation": "A small organelle in a cell where proteins are made."
+      },
+      {
+        "q": "What is a 'prokaryote'?",
+        "options": [
+          "A multicellular organism with a nucleus.",
+          "An organism that has a membrane-bound nucleus.",
+          "A single-celled organism that lacks a membrane-bound nucleus.",
+          "An organism that cannot photosynthesize."
+        ],
+        "correct": 2,
+        "explanation": "A single-celled organism that lacks a membrane-bound nucleus."
+      },
+      {
+        "q": "What is a 'eukaryote'?",
+        "options": [
+          "An organism that has a membrane-bound nucleus.",
+          "A single-celled organism without a nucleus.",
+          "A virus.",
+          "An organism that can only reproduce asexually."
+        ],
+        "correct": 0,
+        "explanation": "An organism that has a membrane-bound nucleus."
+      },
+      {
+        "q": "What are the four kingdoms of the domain Eukarya?",
+        "options": [
+          "Bacteria, Archaea, Protista, and Fungi.",
+          "Plantae, Animalia, Fungi, and Viruses.",
+          "Protista, Fungi, Plantae, and Animalia.",
+          "Monera, Protista, Fungi, and Plantae."
+        ],
+        "correct": 2,
+        "explanation": "Protista, Fungi, Plantae, and Animalia."
+      },
+      {
+        "q": "What are the two main types of cells?",
+        "options": [
+          "Prokaryotic cells and eukaryotic cells.",
+          "Plant cells and animal cells.",
+          "Somatic cells and germ cells.",
+          "Differentiated cells and undifferentiated cells."
+        ],
+        "correct": 0,
+        "explanation": "Prokaryotic cells and eukaryotic cells."
+      },
+      {
+        "q": "What are the two main divisions of prokaryotes?",
+        "options": [
+          "Fungi and Protists.",
+          "Bacteria and Viruses.",
+          "Bacteria and Archaea.",
+          "Gram-positive and Gram-negative bacteria."
+        ],
+        "correct": 2,
+        "explanation": "Bacteria and Archaea."
+      },
+      {
+        "q": "How does the reproduction of bacteria differ from most animals?",
+        "options": [
+          "Bacteria reproduce sexually, while most animals reproduce asexually.",
+          "Bacteria reproduce asexually, while most animals reproduce sexually.",
+          "Bacteria do not reproduce, they only divide.",
+          "Bacteria reproduce by budding, while most animals reproduce by fission."
+        ],
+        "correct": 1,
+        "explanation": "Bacteria reproduce asexually, while most animals reproduce sexually."
+      }
+    ]
+  },
+
+
 
 
 ];

@@ -11499,6 +11499,2736 @@ const mcqData = [
     tag: "MCQ"
   },
 
+// term 2 
+
+  {
+    "q": "What is taxonomy?",
+    "options": [
+      "The study of the behavior of organisms.",
+      "The process of describing, naming, and classifying organisms.",
+      "The analysis of the genetic makeup of species.",
+      "The field of studying ancient life forms."
+    ],
+    "correct": 1,
+    "explanation": "Taxonomy is a field that deals with the process of describing, naming, and classifying organisms.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary aim of taxonomy?",
+    "options": [
+      "To classify organisms based on their habitats.",
+      "To discover new species.",
+      "To classify organisms in a hierarchical system based on shared characteristics.",
+      "To study the interactions between organisms."
+    ],
+    "correct": 2,
+    "explanation": "The aim of taxonomy is to classify organisms in a hierarchical system or in taxonomic ranks based on shared characteristics or phylogenetic relationships.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Who is referred to as a taxonomist?",
+    "options": [
+      "A person who studies the environment.",
+      "A person who specializes in the field of taxonomy.",
+      "A person who studies animal behavior.",
+      "A person who studies plant life."
+    ],
+    "correct": 1,
+    "explanation": "The person specializing in this particular field is called a taxonomist.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Who is considered the 'father of taxonomy'?",
+    "options": [
+      "Charles Darwin",
+      "Ernst Haeckel",
+      "Carl Linnaeus",
+      "Aristotle"
+    ],
+    "correct": 2,
+    "explanation": "The Swedish botanist Carl Linnaeus is considered the father of taxonomy.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What system of classification did Carl Linnaeus develop?",
+    "options": [
+      "The modern phylogenetic system.",
+      "The Linnaean classification system.",
+      "The five-kingdom system.",
+      "The binomial nomenclature system only."
+    ],
+    "correct": 1,
+    "explanation": "Carl Linnaeus developed a system of classification referred to as Linnaean classification where organisms are categorized into taxa.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the highest and most general taxonomic rank?",
+    "options": [
+      "Kingdom",
+      "Phylum",
+      "Domain",
+      "Class"
+    ],
+    "correct": 2,
+    "explanation": "Domain is the highest (most general) rank of organisms.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "When was the 'domain' rank first introduced?",
+    "options": [
+      "By Carl Linnaeus in 1735.",
+      "In the 1800s.",
+      "In 1990.",
+      "With the discovery of the microscope."
+    ],
+    "correct": 2,
+    "explanation": "The term 'domain' wasn't used until 1990, over 250 years after Linnaeus developed his classification system in 1735.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are the three domains of life?",
+    "options": [
+      "Plantae, Animalia, and Fungi.",
+      "Protista, Archaea, and Bacteria.",
+      "Eukarya, Protista, and Monera.",
+      "Bacteria, Archaea, and Eukaryota."
+    ],
+    "correct": 3,
+    "explanation": "The three domains of life are Bacteria, Archaea, and Eukaryota.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which domain is Eukaryota more closely related to?",
+    "options": [
+      "Bacteria",
+      "Protista",
+      "Archaea",
+      "Animalia"
+    ],
+    "correct": 2,
+    "explanation": "Eukaryota, or every living thing on earth that is not a bacterium or archaeon, is more closely related to the domain Archaea than to Bacteria.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How are taxonomic ranks generally capitalized?",
+    "options": [
+      "Only the first letter is capitalized.",
+      "All letters are capitalized.",
+      "They are always capitalized, except for the species name.",
+      "They are never capitalized."
+    ],
+    "correct": 2,
+    "explanation": "Taxonomic ranks are always capitalized, except for species.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the plural form of the taxonomic rank 'phylum'?",
+    "options": [
+      "Phylums",
+      "Phylia",
+      "Phylumus",
+      "Phyla"
+    ],
+    "correct": 3,
+    "explanation": "Phylum, plural phyla, is still a very broad classification.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is an example of a phylum in the animal kingdom?",
+    "options": [
+      "Mammalia",
+      "Carnivora",
+      "Arthropoda",
+      "Primates"
+    ],
+    "correct": 2,
+    "explanation": "An example of phyla from the animal kingdom is Arthropoda which includes all insects, spiders, crustaceans and more.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are the two taxonomic ranks that make up an organism's scientific name?",
+    "options": [
+      "Family and Genus",
+      "Order and Class",
+      "Genus and Species",
+      "Phylum and Kingdom"
+    ],
+    "correct": 2,
+    "explanation": "Genus is the first part of an organism's scientific name using binomial nomenclature; the second part is the species name.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How is the genus name formatted in binomial nomenclature?",
+    "options": [
+      "It is always lowercase and italicized.",
+      "It is always capitalized and not italicized.",
+      "It is always capitalized and italicized.",
+      "It is always lowercase and not italicized."
+    ],
+    "correct": 2,
+    "explanation": "An organism's scientific name is always italicized, and the genus name is capitalized while the species name is not.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the scientific name for humans?",
+    "options": [
+      "Homo erectus",
+      "Homo neanderthalensis",
+      "Homo sapiens",
+      "Hominidae"
+    ],
+    "correct": 2,
+    "explanation": "The scientific name for humans is Homo sapiens.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Can the same species name be used for different organisms?",
+    "options": [
+      "No, species names must be unique to avoid confusion.",
+      "Yes, the same species name can be used for different organisms, as long as the genus is different.",
+      "Yes, as long as they are from the same family.",
+      "No, only the genus name can be the same."
+    ],
+    "correct": 1,
+    "explanation": "While each genus name is unique, the same species names can be used for different organisms. For example, Ursus americanus is the American black bear, while Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How are scientific names abbreviated after the first full use?",
+    "options": [
+      "By using the first letter of both the genus and species names.",
+      "By using the full genus name and the first letter of the species name.",
+      "By using the first letter of the genus name with the full species name.",
+      "They are never abbreviated."
+    ],
+    "correct": 2,
+    "explanation": "The scientific name is abbreviated after the first full use by using just the first letter of the genus name along with the full species name. For example, Homo sapiens is abbreviated to H. sapiens.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the central idea of the Biological Species Concept (BSC)?",
+    "options": [
+      "Organisms are classified based on their physical appearance.",
+      "Species are defined as a group of populations that can interbreed successfully.",
+      "Organisms are defined by their geographical location.",
+      "Species are classified based on their genetic similarity alone."
+    ],
+    "correct": 1,
+    "explanation": "The concept of a species as a group of populations whose members are capable of interbreeding successfully and are reproductively isolated from other groups.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why is the Biological Species Concept difficult to apply to bacteria?",
+    "options": [
+      "Bacteria are too small to be observed.",
+      "Bacteria are multicellular organisms.",
+      "Bacteria reproduce primarily asexually.",
+      "Bacteria live in extreme environments."
+    ],
+    "correct": 2,
+    "explanation": "The concept cannot be applied to exclusively asexual organisms, such as certain groups of fungi and bacteria.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a key characteristic of organisms in the domain Archaea?",
+    "options": [
+      "They are all multicellular.",
+      "They are typically found in extreme environments.",
+      "They have a membrane-bound nucleus.",
+      "They have the same cell wall composition as bacteria."
+    ],
+    "correct": 1,
+    "explanation": "Archaea are extreme organisms that live under some of the most extreme environmental conditions.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a primary function of bacteria in the human microbiota?",
+    "options": [
+      "To cause infectious diseases.",
+      "To produce harmful toxins.",
+      "To aid in digestion and nutrient absorption.",
+      "To exclusively live on the skin's surface."
+    ],
+    "correct": 2,
+    "explanation": "These bacteria preform vital functions, such as enabling us to properly digest and absorb nutrients from the foods we eat.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a key feature of cyanobacteria?",
+    "options": [
+      "They are animal-like protists.",
+      "They are capable of photosynthesis.",
+      "They are known to be strictly anaerobic.",
+      "They are a type of fungus-like protist."
+    ],
+    "correct": 1,
+    "explanation": "Cyanobacteria are a type of bacteria that are capable of photosynthesis. They are also known as blue-green algae because of their color.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the Eukarya domain defined by?",
+    "options": [
+      "Organisms with a cell wall made of cellulose.",
+      "Organisms that are all multicellular.",
+      "Organisms that have a membrane-bound nucleus.",
+      "Organisms that are all plant-like."
+    ],
+    "correct": 2,
+    "explanation": "The Eukarya domain includes eukaryotes, or organisms that have a membrane bound nucleus.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a kingdom within the Eukarya domain?",
+    "options": [
+      "Bacteria",
+      "Archaea",
+      "Protista",
+      "All of the above"
+    ],
+    "correct": 2,
+    "explanation": "This domain is further subdivided into the kingdoms Protista, Fungi, Plantae, and Animalia.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are the two main components of a virus?",
+    "options": [
+      "A cell wall and a cell membrane.",
+      "A nucleic acid core and a protein envelope (capsid).",
+      "Mitochondria and ribosomes.",
+      "Cytoplasm and a nucleus."
+    ],
+    "correct": 1,
+    "explanation": "Viruses are composed solely of a nucleic acid (DNA or RNA) core, surrounded by a protein envelope called capsid.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Can a single virus have both DNA and RNA?",
+    "options": [
+      "Yes, all viruses have both DNA and RNA.",
+      "No, a virus is called either a 'DNA virus' or an 'RNA virus'.",
+      "Yes, but only if they are bacteriophages.",
+      "Only viruses that infect animals can have both."
+    ],
+    "correct": 1,
+    "explanation": "A virus is called either 'DNA virus' or 'RNA virus' depending on whether it contains the nucleic acid DNA or RNA. A virus cannot have both DNA and RNA.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why can viruses only be cultivated inside living cells?",
+    "options": [
+      "Because they are too small to be cultivated on non-living media.",
+      "Because they lack the necessary enzymatic and biosynthetic machinery for independent life.",
+      "Because they require specific nutrients only found in living cells.",
+      "Because they are strictly anaerobic."
+    ],
+    "correct": 1,
+    "explanation": "They are devoid of the sophisticated enzymatic and biosynthetic machinery essential for independent activities of cellular life. Therefore, they can grow only inside suitable living cells.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a bacteriophage?",
+    "options": [
+      "A type of pathogenic bacteria.",
+      "A virus that specifically infects bacteria.",
+      "A type of single-celled algae.",
+      "A fungus that lives in extreme environments."
+    ],
+    "correct": 1,
+    "explanation": "These viruses, which infect bacteria, are called 'bacteriophages' or 'phages'.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the viral capsid?",
+    "options": [
+      "To aid in the movement of the virus.",
+      "To protect the nucleic acid core from destruction.",
+      "To attach to the host cell's surface.",
+      "To produce new viral components."
+    ],
+    "correct": 1,
+    "explanation": "The capsid (protein coat) provides protection of nucleic acid from destruction by DNase.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the tail fibers on a bacteriophage?",
+    "options": [
+      "To carry genetic information.",
+      "To protect the nucleic acid.",
+      "To attach the phage to a specific host cell.",
+      "To inject the nucleic acid into the host cell."
+    ],
+    "correct": 2,
+    "explanation": "The tail fibers are used for attachment of phage to specific receptor sites on a susceptible host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the first step of a viral infection cycle?",
+    "options": [
+      "Synthesis",
+      "Injection (penetration)",
+      "Attachment",
+      "Release"
+    ],
+    "correct": 2,
+    "explanation": "The infection cycle begins with attachment, where the tail portion of the phage particle binds to receptor sites on the host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  
+  {
+    "q": "Who first used the term 'Protista'?",
+    "options": [
+      "Carl Linnaeus",
+      "Ernst Haeckel",
+      "Charles Darwin",
+      "Robert Hooke"
+    ],
+    "correct": 1,
+    "explanation": "The term Protista was first used by Ernst Haeckel in the year 1886.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a key characteristic that distinguishes protists from other eukaryotes?",
+    "options": [
+      "They are all multicellular.",
+      "They have a simple cellular organization and lack specialized tissue.",
+      "They are all parasitic.",
+      "They reproduce exclusively by sexual means."
+    ],
+    "correct": 1,
+    "explanation": "The simple cellular organization distinguishes the protists from other eukaryotes.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How do protozoans obtain nutrition?",
+    "options": [
+      "They are autotrophic, producing their own food.",
+      "They are heterotrophic, unable to produce their own food.",
+      "They are parasitic, only feeding on blood.",
+      "They use chemosynthesis."
+    ],
+    "correct": 1,
+    "explanation": "The characteristics similar to animals are - their ability to move and their inability to produce their own food (heterotrophs).",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which group of protists moves using 'pseudopodia'?",
+    "options": [
+      "Zooflagellates",
+      "Sarcodinians",
+      "Ciliaphorans",
+      "Sporozoans"
+    ],
+    "correct": 1,
+    "explanation": "Phylum Sarcodina - The movement in sarcodinians is by extending lobes of cytoplasm known as pseudopodia.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist causes sleeping sickness in humans and cattle?",
+    "options": [
+      "Amoeba",
+      "Trypanosoma gambiense",
+      "Paramecium",
+      "Plasmodium"
+    ],
+    "correct": 1,
+    "explanation": "Example: Trypanosoma gambiense causes sleeping sickness in cattle and human.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist causes malaria in humans?",
+    "options": [
+      "Amoeba",
+      "Trypanosoma gambiense",
+      "Paramecium",
+      "Plasmodium"
+    ],
+    "correct": 3,
+    "explanation": "Example: Plasmodium - this parasite causes malaria in humans.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of plant-like protists (algae) in aquatic ecosystems?",
+    "options": [
+      "They are decomposers.",
+      "They are parasitic.",
+      "They are primary producers, providing food and oxygen.",
+      "They are predators of other microorganisms."
+    ],
+    "correct": 2,
+    "explanation": "Many protists like algae are the primary producers in the aquatic ecosystem.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What substance derived from red algae is used as a medium for growing bacteria in labs?",
+    "options": [
+      "Carragean",
+      "Algin",
+      "Agar",
+      "Nori"
+    ],
+    "correct": 2,
+    "explanation": "Agar is a glue-like substance found in red-algae. Agar is used as a medium used for growing bacteria and other organisms under laboratory conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What phenomenon is caused by dinoflagellates?",
+    "options": [
+      "Bioluminescence",
+      "The 'red tide' phenomenon.",
+      "Kelp forests.",
+      "Diatomaceous earth."
+    ],
+    "correct": 1,
+    "explanation": "Some species causes the 'red tide phenomenon'. The dinoflagellates causing red tides are known as Gonyaulax, which contain a neurotoxin and are poisonous to marine fauna.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Slime molds are an example of what type of protist?",
+    "options": [
+      "Plant-like protists",
+      "Animal-like protists",
+      "Fungus-like protists",
+      "Protozoans"
+    ],
+    "correct": 2,
+    "explanation": "Slime molds are saprophytic protists classified as fungus-like protists.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'clade' in phylogenetic taxonomy?",
+    "options": [
+      "A taxonomic rank invented by Linnaeus.",
+      "A group of organisms with different ancestors.",
+      "A taxonomic group based on homologous features from a common ancestor.",
+      "A species that is difficult to classify."
+    ],
+    "correct": 2,
+    "explanation": "Organisms are classified into clades (i.e. a taxonomic group of organisms based on homologous features derived from a common ancestor) in phylogenetic taxonomy.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is 'binomial nomenclature'?",
+    "options": [
+      "A system for classifying organisms by their habitat.",
+      "A system of naming species using a generic name and a specific epithet.",
+      "The study of ancient names for organisms.",
+      "A system that only uses Greek language for naming."
+    ],
+    "correct": 1,
+    "explanation": "Binomial nomenclature is a system of naming a species often in a Latinized form and in two parts, i.e. the generic name genus and the specific epithet.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the spiral protein sheath in a T-even bacteriophage?",
+    "options": [
+      "To protect the nucleic acid core.",
+      "To attach to the host cell wall.",
+      "To carry genetic information.",
+      "To retract so the nucleic acid can pass into the host cell."
+    ],
+    "correct": 3,
+    "explanation": "The spiral protein sheath retracts, so that nucleic acid can pass from the capsid into the host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the second step of a viral infection, following attachment?",
+    "options": [
+      "Synthesis",
+      "Injection (penetration)",
+      "Assembly",
+      "Release"
+    ],
+    "correct": 1,
+    "explanation": "The second step is Injection (penetration). An enzyme perforates the bacterial cell wall, enabling the phage nucleic acid to pass into the host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'protozoans'?",
+    "options": [
+      "Plant-like protists.",
+      "Multicellular organisms.",
+      "Animal-like single-celled organisms.",
+      "Fungus-like protists."
+    ],
+    "correct": 2,
+    "explanation": "Protozoans are animal-like single-celled organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a use of agar?",
+    "options": [
+      "As a food source for fish.",
+      "As a primary producer in aquatic ecosystems.",
+      "As a medium for growing bacteria in laboratories.",
+      "As a blood coagulant."
+    ],
+    "correct": 2,
+    "explanation": "Agar is a glue-like substance...used as a medium used for growing bacteria and other organisms under laboratory conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a function of the spiral protein sheath in a bacteriophage?",
+    "options": [
+      "Protecting the nucleic acid.",
+      "Carrying genetic information.",
+      "Allowing nucleic acid to pass into the host cell.",
+      "Attaching to the host cell wall."
+    ],
+    "correct": 2,
+    "explanation": "The spiral protein sheath retracts, so that nucleic acid can pass from capsid into host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What does a bacteriophage leave attached to the host cell wall after injection?",
+    "options": [
+      "The nucleic acid core.",
+      "The spiral protein sheath.",
+      "The empty protein shell, called the protein ghost.",
+      "The tail fibers."
+    ],
+    "correct": 2,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the last stage of a viral infection cycle?",
+    "options": [
+      "Synthesis",
+      "Assembly",
+      "Release",
+      "Attachment"
+    ],
+    "correct": 2,
+    "explanation": "The final step is Release, where late muramidase lyses the cell wall, liberating infectious phage particles.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'algae'?",
+    "options": [
+      "Animal-like single-celled organisms.",
+      "Plant-like single or multi-celled organisms.",
+      "Fungus-like protists.",
+      "Parasitic organisms."
+    ],
+    "correct": 1,
+    "explanation": "Algae are plant-like single or multi-celled organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How do Sarcodinians move?",
+    "options": [
+      "Using cilia.",
+      "Using flagella.",
+      "Using pseudopodia.",
+      "They are non-motile."
+    ],
+    "correct": 2,
+    "explanation": "The movement in sarcodinians is by extending lobes of cytoplasm known as pseudopodia.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which phylum of protozoans is non-motile and parasitic?",
+    "options": [
+      "Sarcodina",
+      "Mastigophora",
+      "Ciliophora",
+      "Sporozoa"
+    ],
+    "correct": 3,
+    "explanation": "All members of this phylum (Sporozoa) are non-motile and parasitic.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary role of plant-like protists in the aquatic ecosystem?",
+    "options": [
+      "To act as decomposers.",
+      "To be a food source and produce oxygen.",
+      "To act as parasites on other organisms.",
+      "To produce neurotoxins."
+    ],
+    "correct": 1,
+    "explanation": "The plant-like protists are the major food source and primary producers for water organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is 'diatomaceous earth' formed from?",
+    "options": [
+      "Fossilized brown algae.",
+      "The shells of fossil diatoms.",
+      "An overgrowth of green algae.",
+      "The decomposition of slime molds."
+    ],
+    "correct": 1,
+    "explanation": "The shells of fossil diatoms form thick deposits on the sea floor known as 'diatomaceous earth'.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a characteristic of slime molds?",
+    "options": [
+      "They are parasitic protists.",
+      "They are saprophytic protists.",
+      "They are all multicellular with specialized tissues.",
+      "They are exclusively aquatic."
+    ],
+    "correct": 1,
+    "explanation": "Slime molds are saprophytic protists.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'hybrid zone'?",
+    "options": [
+      "A zone where different species of plants grow.",
+      "A region where two species overlap and interbreed.",
+      "A laboratory where genetic experiments are performed.",
+      "A region with a high concentration of different protists."
+    ],
+    "correct": 1,
+    "explanation": "Typically, individuals that contain some mixture of the species' genes are called hybrid individuals that live in a hybrid zone where the species overlap and interbreed.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary purpose of naming organisms?",
+    "options": [
+      "To make communication in science difficult.",
+      "To confuse people with complex names.",
+      "To avoid the use of descriptive words when referring to an object.",
+      "To make it easier for people to talk about common names."
+    ],
+    "correct": 2,
+    "explanation": "Naming organisms aids communication in science and avoids the use of descriptive words when referring to an object.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'protein ghost' in a viral infection?",
+    "options": [
+      "The viral nucleic acid core.",
+      "The empty protein shell that remains attached to the host cell wall.",
+      "The enzyme that perforates the cell wall.",
+      "The host cell after it has been lysed."
+    ],
+    "correct": 1,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which part of the virus carries the genetic information for replication?",
+    "options": [
+      "The capsid.",
+      "The spiral protein sheath.",
+      "The nucleic acid core.",
+      "The tail fibers."
+    ],
+    "correct": 2,
+    "explanation": "The nucleic acid core is the phage genome carrying genetic information necessary for replication of new phage.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'protozoans' classified based on?",
+    "options": [
+      "Their color.",
+      "The way they obtain food.",
+      "Their size.",
+      "The way they move."
+    ],
+    "correct": 3,
+    "explanation": "Protozoans are classified on the way they move into four categories.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a common use of 'diatomaceous earth'?",
+    "options": [
+      "As a food source for aquatic organisms.",
+      "As a fertilizer for plants.",
+      "As a water filter and abrasive.",
+      "As a medium for growing bacteria."
+    ],
+    "correct": 2,
+    "explanation": "It (diatomaceous earth) is used as water filters, abrasive and to add sparkling to products such as paint and fingernail polish.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How many total families are in the order Carnivora?",
+    "options": [
+      "5",
+      "8",
+      "12",
+      "26"
+    ],
+    "correct": 2,
+    "explanation": "There are 12 total families in the order Carnivora.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is not a phylum of Archaea?",
+    "options": [
+      "Crenarchaeota",
+      "Euryarchaeota",
+      "Proteobacteria",
+      "Korarchaeota"
+    ],
+    "correct": 2,
+    "explanation": "Archaea are divided into three main phyla: Crenarchaeota, Euryarchaeota, and Korarchaeota. Proteobacteria is a phylum of Bacteria.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  
+{
+    "q": "What is the scientific name of the American black bear?",
+    "options": [
+      "Homo sapiens",
+      "Bufo americanus",
+      "Ursus americanus",
+      "Ursidae"
+    ],
+    "correct": 2,
+    "explanation": "Ursus americanus is the American black bear.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the unique motion of Spirochetes?",
+    "options": [
+      "A twisting motion.",
+      "Movement using pseudopodia.",
+      "Movement using cilia.",
+      "Movement using flagella."
+    ],
+    "correct": 0,
+    "explanation": "Spirochetes are corkscrew-shaped bacteria that exhibit a unique twisting motion.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What substance derived from brown algae is used in ice cream and lotion?",
+    "options": [
+      "Agar",
+      "Carragean",
+      "Algin",
+      "Nori"
+    ],
+    "correct": 2,
+    "explanation": "Algin is a substance derived from some algae which is used in making ice cream, lotion and plastics.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How do Ciliaphorans move?",
+    "options": [
+      "Using pseudopodia.",
+      "Using flagella.",
+      "Using cilia.",
+      "They are non-motile."
+    ],
+    "correct": 2,
+    "explanation": "Protozoans of this phylum (Ciliophora) move with hair like structures called cilia.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the spiral protein sheath in a T-even bacteriophage?",
+    "options": [
+      "To protect the nucleic acid core.",
+      "To attach to the host cell wall.",
+      "To carry genetic information.",
+      "To retract so the nucleic acid can pass into the host cell."
+    ],
+    "correct": 3,
+    "explanation": "The spiral protein sheath retracts, so that nucleic acid can pass from the capsid into the host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the second step of a viral infection, following attachment?",
+    "options": [
+      "Synthesis",
+      "Injection (penetration)",
+      "Assembly",
+      "Release"
+    ],
+    "correct": 1,
+    "explanation": "The second step is Injection (penetration). An enzyme perforates the bacterial cell wall, enabling the phage nucleic acid to pass into the host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'protozoans'?",
+    "options": [
+      "Plant-like protists.",
+      "Multicellular organisms.",
+      "Animal-like single-celled organisms.",
+      "Fungus-like protists."
+    ],
+    "correct": 2,
+    "explanation": "Protozoans are animal-like single-celled organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a use of agar?",
+    "options": [
+      "As a food source for fish.",
+      "As a primary producer in aquatic ecosystems.",
+      "As a medium for growing bacteria in laboratories.",
+      "As a blood coagulant."
+    ],
+    "correct": 2,
+    "explanation": "Agar is a glue-like substance...used as a medium used for growing bacteria and other organisms under laboratory conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a function of the spiral protein sheath in a bacteriophage?",
+    "options": [
+      "Protecting the nucleic acid.",
+      "Carrying genetic information.",
+      "Allowing nucleic acid to pass into the host cell.",
+      "Attaching to the host cell wall."
+    ],
+    "correct": 2,
+    "explanation": "The spiral protein sheath retracts, so that nucleic acid can pass from capsid into host cell's cytoplasm.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What does a bacteriophage leave attached to the host cell wall after injection?",
+    "options": [
+      "The nucleic acid core.",
+      "The spiral protein sheath.",
+      "The empty protein shell, called the protein ghost.",
+      "The tail fibers."
+    ],
+    "correct": 2,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the last stage of a viral infection cycle?",
+    "options": [
+      "Synthesis",
+      "Assembly",
+      "Release",
+      "Attachment"
+    ],
+    "correct": 2,
+    "explanation": "The final step is Release, where late muramidase lyses the cell wall, liberating infectious phage particles.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'algae'?",
+    "options": [
+      "Animal-like single-celled organisms.",
+      "Plant-like single or multi-celled organisms.",
+      "Fungus-like protists.",
+      "Parasitic organisms."
+    ],
+    "correct": 1,
+    "explanation": "Algae are plant-like single or multi-celled organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How do Sarcodinians move?",
+    "options": [
+      "Using cilia.",
+      "Using flagella.",
+      "Using pseudopodia.",
+      "They are non-motile."
+    ],
+    "correct": 2,
+    "explanation": "The movement in sarcodinians is by extending lobes of cytoplasm known as pseudopodia.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which phylum of protozoans is non-motile and parasitic?",
+    "options": [
+      "Sarcodina",
+      "Mastigophora",
+      "Ciliophora",
+      "Sporozoa"
+    ],
+    "correct": 3,
+    "explanation": "All members of this phylum (Sporozoa) are non-motile and parasitic.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary role of plant-like protists in the aquatic ecosystem?",
+    "options": [
+      "To act as decomposers.",
+      "To be a food source and produce oxygen.",
+      "To act as parasites on other organisms.",
+      "To produce neurotoxins."
+    ],
+    "correct": 1,
+    "explanation": "The plant-like protists are the major food source and primary producers for water organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is 'diatomaceous earth' formed from?",
+    "options": [
+      "Fossilized brown algae.",
+      "The shells of fossil diatoms.",
+      "An overgrowth of green algae.",
+      "The decomposition of slime molds."
+    ],
+    "correct": 1,
+    "explanation": "The shells of fossil diatoms form thick deposits on the sea floor known as 'diatomaceous earth'.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a characteristic of slime molds?",
+    "options": [
+      "They are parasitic protists.",
+      "They are saprophytic protists.",
+      "They are all multicellular with specialized tissues.",
+      "They are exclusively aquatic."
+    ],
+    "correct": 1,
+    "explanation": "Slime molds are saprophytic protists.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'hybrid zone'?",
+    "options": [
+      "A zone where different species of plants grow.",
+      "A region where two species overlap and interbreed.",
+      "A laboratory where genetic experiments are performed.",
+      "A region with a high concentration of different protists."
+    ],
+    "correct": 1,
+    "explanation": "Typically, individuals that contain some mixture of the species' genes are called hybrid individuals that live in a hybrid zone where the species overlap and interbreed.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary purpose of naming organisms?",
+    "options": [
+      "To make communication in science difficult.",
+      "To confuse people with complex names.",
+      "To avoid the use of descriptive words when referring to an object.",
+      "To make it easier for people to talk about common names."
+    ],
+    "correct": 2,
+    "explanation": "Naming organisms aids communication in science and avoids the use of descriptive words when referring to an object.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'protein ghost' in a viral infection?",
+    "options": [
+      "The viral nucleic acid core.",
+      "The empty protein shell that remains attached to the host cell wall.",
+      "The enzyme that perforates the cell wall.",
+      "The host cell after it has been lysed."
+    ],
+    "correct": 1,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which part of the virus carries the genetic information for replication?",
+    "options": [
+      "The capsid.",
+      "The spiral protein sheath.",
+      "The nucleic acid core.",
+      "The tail fibers."
+    ],
+    "correct": 2,
+    "explanation": "The nucleic acid core is the phage genome carrying genetic information necessary for replication of new phage.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'protozoans' classified based on?",
+    "options": [
+      "Their color.",
+      "The way they obtain food.",
+      "Their size.",
+      "The way they move."
+    ],
+    "correct": 3,
+    "explanation": "Protozoans are classified on the way they move into four categories.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a common use of 'diatomaceous earth'?",
+    "options": [
+      "As a food source for aquatic organisms.",
+      "As a fertilizer for plants.",
+      "As a water filter and abrasive.",
+      "As a medium for growing bacteria."
+    ],
+    "correct": 2,
+    "explanation": "It (diatomaceous earth) is used as water filters, abrasive and to add sparkling to products such as paint and fingernail polish.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary function of taxonomy?",
+    "options": [
+      "To analyze the genetic makeup of species.",
+      "To describe, name, and classify organisms.",
+      "To study the behavior of organisms.",
+      "To predict future evolutionary paths."
+    ],
+    "correct": 1,
+    "explanation": "Taxonomy is a field that deals with the process of describing, naming, and classifying organisms.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Who is considered the 'father of taxonomy'?",
+    "options": [
+      "Charles Darwin",
+      "Aristotle",
+      "Carl Linnaeus",
+      "Ernst Haeckel"
+    ],
+    "correct": 2,
+    "explanation": "The Swedish botanist Carl Linnaeus developed the system of classification and is known as the father of taxonomy.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  
+  
+ 
+  {
+    "q": "Which of the following is the highest (most general) taxonomic rank?",
+    "options": [
+      "Kingdom",
+      "Phylum",
+      "Family",
+      "Domain"
+    ],
+    "correct": 3,
+    "explanation": "Domain is the highest and most general rank of organisms in modern classification.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "When was the 'domain' rank first introduced into the classification system?",
+    "options": [
+      "In 1735, by Linnaeus.",
+      "In 1990, long after Linnaeus's time.",
+      "In the 1800s, by Ernst Haeckel.",
+      "In the mid-20th century, with the five-kingdom system."
+    ],
+    "correct": 1,
+    "explanation": "The term 'domain' was not used until 1990, over 250 years after Linnaeus developed his system.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the three domains of life is most closely related to Eukaryota?",
+    "options": [
+      "Bacteria",
+      "Archaea",
+      "Protista",
+      "Animalia"
+    ],
+    "correct": 1,
+    "explanation": "Eukaryota, which includes all organisms with a nucleus, is more closely related to the domain Archaea than to Bacteria.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In the Linnaean system, how are taxonomic ranks, other than species, typically formatted?",
+    "options": [
+      "All lowercase.",
+      "Capitalized and italicized.",
+      "Capitalized only.",
+      "Lowercase and italicized."
+    ],
+    "correct": 2,
+    "explanation": "Taxonomic ranks are always capitalized, except for the species name.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the plural form of the taxonomic rank 'phylum'?",
+    "options": [
+      "Phylums",
+      "Phylumae",
+      "Phyla",
+      "Phylumus"
+    ],
+    "correct": 2,
+    "explanation": "The plural form of phylum is 'phyla'.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "An organism's scientific name is composed of which two taxonomic ranks?",
+    "options": [
+      "Family and Genus",
+      "Order and Class",
+      "Genus and Species",
+      "Phylum and Kingdom"
+    ],
+    "correct": 2,
+    "explanation": "In binomial nomenclature, the scientific name consists of the genus and species name.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In the scientific name *Homo sapiens*, what does 'sapiens' represent?",
+    "options": [
+      "The genus.",
+      "The family.",
+      "The species.",
+      "The kingdom."
+    ],
+    "correct": 2,
+    "explanation": "In binomial nomenclature, the second part of the name, 'sapiens', represents the species.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How is a scientific name written in binomial nomenclature?",
+    "options": [
+      "Both names are capitalized and italicized.",
+      "The genus is capitalized, and both names are italicized.",
+      "The species is capitalized, and both names are italicized.",
+      "Both names are capitalized but not italicized."
+    ],
+    "correct": 1,
+    "explanation": "The scientific name is always italicized, with the genus name capitalized and the species name lowercase.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why is the use of binomial nomenclature considered beneficial in science?",
+    "options": [
+      "It allows for multiple common names for one species.",
+      "It avoids the use of descriptive words, providing a single universal name.",
+      "It is a complex system that only experts can understand.",
+      "It is only used for plants and animals, not other organisms."
+    ],
+    "correct": 1,
+    "explanation": "Binomial nomenclature avoids the confusion of common names by providing a single, universal name for each species, aiding in scientific communication.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the key principle of the Biological Species Concept (BSC)?",
+    "options": [
+      "Species are defined by shared physical appearance.",
+      "Species are populations that can successfully interbreed and produce fertile offspring.",
+      "Species are classified based on their habitat.",
+      "Species are grouped solely by their genetic similarity."
+    ],
+    "correct": 2,
+    "explanation": "The BSC defines a species as a group of populations whose members can interbreed successfully and are reproductively isolated from other groups.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why is the Biological Species Concept difficult to apply to bacteria?",
+    "options": [
+      "Bacteria are too small to be classified.",
+      "Bacteria are multicellular organisms.",
+      "Bacteria reproduce primarily asexually.",
+      "Bacteria do not have a cell wall."
+    ],
+    "correct": 2,
+    "explanation": "The BSC cannot be applied to exclusively asexual organisms like bacteria because it is based on the concept of sexual reproduction and interbreeding.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a key characteristic of organisms in the domain Archaea?",
+    "options": [
+      "They are multicellular.",
+      "They are known to live in extreme environments.",
+      "They have a membrane-bound nucleus.",
+      "They have the same cell wall composition as bacteria."
+    ],
+    "correct": 1,
+    "explanation": "Archaea are single-celled organisms that are known to live under some of the most extreme environmental conditions, such as hydrothermal vents and acidic springs.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which statement correctly describes a difference between Archaea and Bacteria?",
+    "options": [
+      "Archaea have a nucleus, but Bacteria do not.",
+      "Archaea are always larger than Bacteria.",
+      "Archaea and Bacteria have different cell wall compositions.",
+      "Archaea are exclusively parasites, while Bacteria are not."
+    ],
+    "correct": 2,
+    "explanation": "Archaea differ from bacteria in their cell wall composition, membrane composition, and rRNA type.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the bacteria that make up the human microbiota?",
+    "options": [
+      "To produce toxins that cause illness.",
+      "To solely decompose dead cells in the body.",
+      "To help with the digestion and absorption of nutrients.",
+      "To live only on the skin's surface."
+    ],
+    "correct": 2,
+    "explanation": "Bacteria in the human microbiota perform vital functions, such as enabling the proper digestion and absorption of nutrients from food.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a characteristic of cyanobacteria?",
+    "options": [
+      "They are a type of protist.",
+      "They are capable of photosynthesis.",
+      "They are parasites that cause disease.",
+      "They are only found in extreme environments."
+    ],
+    "correct": 1,
+    "explanation": "Cyanobacteria are a type of bacteria that are capable of photosynthesis.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a kingdom within the domain Eukarya?",
+    "options": [
+      "Bacteria",
+      "Archaea",
+      "Protista",
+      "All of the above"
+    ],
+    "correct": 2,
+    "explanation": "The Eukarya domain is further subdivided into the kingdoms Protista, Fungi, Plantae, and Animalia.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the basic structure of a virus?",
+    "options": [
+      "A cell wall, cytoplasm, and nucleus.",
+      "A nucleus and a cell membrane.",
+      "A nucleic acid core and a protein envelope (capsid).",
+      "Mitochondria and ribosomes."
+    ],
+    "correct": 2,
+    "explanation": "A virus is composed solely of a nucleic acid (DNA or RNA) core, surrounded by a protein envelope called a capsid.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why can viruses only be grown inside living cells in a laboratory?",
+    "options": [
+      "They are too small to be seen on a non-living medium.",
+      "They lack the cellular machinery for independent life.",
+      "They require the specific nutrients found only in animal cells.",
+      "They can only replicate in the presence of sunlight."
+    ],
+    "correct": 1,
+    "explanation": "Viruses are non-cellular and lack the necessary enzymatic and biosynthetic machinery for independent life, so they must use a living host cell's machinery to replicate.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a bacteriophage?",
+    "options": [
+      "A type of harmful bacteria.",
+      "A virus that specifically infects bacteria.",
+      "An antibiotic that targets viruses.",
+      "A single-celled organism similar to a bacterium."
+    ],
+    "correct": 1,
+    "explanation": "Bacteriophages, or 'phages', are a type of virus that infects bacteria.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary function of the capsid in a virus?",
+    "options": [
+      "To provide energy for replication.",
+      "To attach to the host cell's surface.",
+      "To carry genetic information.",
+      "To protect the nucleic acid from destruction."
+    ],
+    "correct": 3,
+    "explanation": "The capsid, or protein coat, protects the viral nucleic acid from being destroyed by enzymes like DNase.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the tail fibers on a bacteriophage?",
+    "options": [
+      "To carry genetic information.",
+      "To protect the nucleic acid.",
+      "To attach the phage to a specific host cell.",
+      "To inject the nucleic acid into the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Tail fibers are used for the attachment of the phage to specific receptor sites on a susceptible host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Who first coined the term 'Protista'?",
+    "options": [
+      "Carl Linnaeus",
+      "Ernst Haeckel",
+      "Charles Darwin",
+      "Robert Hooke"
+    ],
+    "correct": 1,
+    "explanation": "The term 'Protista' was first used by Ernst Haeckel in 1886.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A key characteristic that distinguishes protists from other eukaryotes is their:",
+    "options": [
+      "Multicellular organization.",
+      "Simple cellular organization and lack of specialized tissue.",
+      "Ability to perform photosynthesis.",
+      "Exclusively sexual mode of reproduction."
+    ],
+    "correct": 1,
+    "explanation": "The simple cellular organization, lacking specialized tissues, distinguishes protists from other eukaryotes.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "How do protozoans, a type of protist, primarily obtain their nutrition?",
+    "options": [
+      "They are autotrophic, making their own food from sunlight.",
+      "They are heterotrophic, consuming other organisms for food.",
+      "They are saprophytic, absorbing nutrients from dead organic matter.",
+      "They use both photosynthesis and chemosynthesis."
+    ],
+    "correct": 1,
+    "explanation": "Protozoans are heterotrophs, meaning they are unable to produce their own food.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which group of protozoans moves using 'pseudopodia'?",
+    "options": [
+      "Zooflagellates",
+      "Sarcodinians",
+      "Ciliaphorans",
+      "Sporozoans"
+    ],
+    "correct": 1,
+    "explanation": "Movement in sarcodinians is by extending lobes of cytoplasm called pseudopodia.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist causes sleeping sickness in humans and cattle?",
+    "options": [
+      "Amoeba",
+      "Trypanosoma gambiense",
+      "Paramecium",
+      "Plasmodium"
+    ],
+    "correct": 1,
+    "explanation": "The flagellate *Trypanosoma gambiense* causes sleeping sickness.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist causes malaria in humans?",
+    "options": [
+      "Amoeba",
+      "Trypanosoma gambiense",
+      "Paramecium",
+      "Plasmodium"
+    ],
+    
+    "correct": 3,
+    "explanation": "*Plasmodium*, a sporozoan parasite, causes malaria in humans.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of plant-like protists (algae) in aquatic ecosystems?",
+    "options": [
+      "They are decomposers.",
+      "They are parasitic.",
+      "They are primary producers, providing food and oxygen for other water organisms.",
+      "They are predators of other microorganisms."
+    ],
+    "correct": 2,
+    "explanation": "Algae are primary producers, providing food and oxygen for other water organisms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What substance is derived from red algae and used in labs?",
+    "options": [
+      "Carragean",
+      "Algin",
+      "Agar",
+      "Nori"
+    ],
+    "correct": 2,
+    "explanation": "Agar is a glue-like substance found in red algae that is used as a medium for growing bacteria in laboratories.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What phenomenon is caused by dinoflagellates?",
+    "options": [
+      "An overgrowth of kelp forests.",
+      "The 'red tide' phenomenon.",
+      "The formation of diatomaceous earth.",
+      "The production of algin."
+    ],
+    "correct": 1,
+    "explanation": "Some species of dinoflagellates cause the 'red tide' phenomenon.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Slime molds are an example of which type of protist?",
+    "options": [
+      "Animal-like protists",
+      "Fungus-like protists",
+      "Plant-like protists",
+      "Protozoans"
+    ],
+    "correct": 1,
+    "explanation": "Slime molds are saprophytic protists classified as fungus-like protists.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the taxonomic rank above Family?",
+    "options": [
+      "Order",
+      "Genus",
+      "Class",
+      "Phylum"
+    ],
+    "correct": 0,
+    "explanation": "Order is more specific than class. Family is, in turn, more specific.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is not an order of Mammalia?",
+    "options": [
+      "Primates",
+      "Cetaceans",
+      "Carnivora",
+      "Arthropoda"
+    ],
+    "correct": 3,
+    "explanation": "Arthropoda is a phylum, while the others are orders of Mammalia.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the definition of a 'clade'?",
+    "options": [
+      "A group of organisms with a common ancestor.",
+      "A group of organisms that can interbreed.",
+      "A group of organisms that live in the same habitat.",
+      "A group of organisms that have the same physical appearance."
+    ],
+    "correct": 0,
+    "explanation": "A clade is a taxonomic group of organisms based on homologous features derived from a common ancestor.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the plural of 'genus'?",
+    "options": [
+      "Genuses",
+      "Genera",
+      "Genusi",
+      "Genum"
+    ],
+    "correct": 1,
+    "explanation": "Genus (plural: genera) is even more specific than family.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'specific epithet'?",
+    "options": [
+      "The first part of a scientific name.",
+      "The generic name of a species.",
+      "The second part of a scientific name, which is the species name.",
+      "The common name of a species."
+    ],
+    "correct": 2,
+    "explanation": "Binomial nomenclature is a system of naming a species...in two parts, i.e. the generic name genus and the specific epithet.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a problem in applying the Biological Species Concept?",
+    "options": [
+      "It can be applied to all organisms.",
+      "It works perfectly for asexual organisms.",
+      "It cannot be applied to asexual organisms.",
+      "It is too simple to be used."
+    ],
+    "correct": 2,
+    "explanation": "However, the concept cannot be applied to exclusively asexual organisms, such as certain groups of fungi and bacteria.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the late muramidase enzyme in a viral infection?",
+    "options": [
+      "To perforate the cell wall for injection.",
+      "To protect the nucleic acid.",
+      "To lyse the cell wall for the release of new viruses.",
+      "To attach the virus to the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Late muramidase lyses the cell wall, liberating infectious phage particles that are now capable of infecting new susceptible host cells, thereby starting the cycle over again.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a key difference between Archaea and Bacteria?",
+    "options": [
+      "Archaea have a nucleus.",
+      "Archaea are always larger.",
+      "Archaea have different cell wall composition.",
+      "Archaea reproduce sexually."
+    ],
+    "correct": 2,
+    "explanation": "Archaea differ from bacteria in cell wall composition and differ from both bacteria and eukaryotes in membrane composition and rRNA type.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which phylum of bacteria contains E.coli and Salmonella?",
+    "options": [
+      "Proteobacteria",
+      "Cyanobacteria",
+      "Firmicutes",
+      "Spirochetes"
+    ],
+    "correct": 0,
+    "explanation": "Proteobacteria: This phylum contains the largest group of bacteria and includes E.coli, Salmonella, Heliobacter pylori, and Vibrio. bacteria.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a characteristic of Protista?",
+    "options": [
+      "They are all unicellular.",
+      "They all have specialized tissues.",
+      "They are primarily aquatic in nature.",
+      "They are all parasitic."
+    ],
+    "correct": 2,
+    "explanation": "Members of Protista are primarily aquatic in nature.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of protist is a primary producer in the aquatic ecosystem?",
+    "options": [
+      "Protozoans",
+      "Slime molds",
+      "Algae",
+      "Sporozoans"
+    ],
+    "correct": 2,
+    "explanation": "Many protists like algae are the primary producers in the aquatic ecosystem.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name for large brown algae?",
+    "options": [
+      "Rockweed",
+      "Sargassum",
+      "Kelp",
+      "Nori"
+    ],
+    "correct": 2,
+    "explanation": "Large brown algae are called kelps.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the genus name for humans?",
+    "options": [
+      "sapiens",
+      "Homo",
+      "Hominidae",
+      "Primates"
+    ],
+    "correct": 1,
+    "explanation": "The scientific name for humans is Homo sapiens. Homo is the genus name, while sapiens is the species name.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a 'cytoplasm'?",
+    "options": [
+      "The outer wall of a cell.",
+      "The genetic material of a cell.",
+      "The fluid inside a cell, excluding the nucleus.",
+      "A type of protist."
+    ],
+    "correct": 2,
+    "explanation": "The cytoplasm streams into the lobe causing the lobe to 'ooze' and grow.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of protist causes sleeping sickness?",
+    "options": [
+      "Amoeba",
+      "Trypanosoma gambiense",
+      "Paramecium",
+      "Plasmodium"
+    ],
+    "correct": 1,
+    "explanation": "Trypanosoma gambiense causes sleeping sickness in cattle and human.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a characteristic of the phylum Mastigophora?",
+    "options": [
+      "They are non-motile.",
+      "They move with the help of flagella.",
+      "They move using cilia.",
+      "They move with pseudopodia."
+    ],
+    "correct": 1,
+    "explanation": "These protozoans (Phylum Mastigophora) move with the help of flagella.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the phylum Chlorophyta (Green Algae) food reserve?",
+    "options": [
+      "It is a protein that builds the cell wall.",
+      "It is a substance that is stored in pyrenoids.",
+      "It is a glue-like substance that is used as a medium for growing bacteria.",
+      "It is a neurotoxin."
+    ],
+    "correct": 1,
+    "explanation": "Food is reserve starch which is stored in pyrenoids.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a type of golden algae?",
+    "options": [
+      "Red algae",
+      "Brown algae",
+      "Diatoms",
+      "Green algae"
+    ],
+    "correct": 2,
+    "explanation": "There are three types of golden algae: yellow-green algae, golden brown algae, diatoms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary role of slime molds in the ecosystem?",
+    "options": [
+      "They are parasitic.",
+      "They are autotrophic.",
+      "They are saprophytic.",
+      "They are primary producers."
+    ],
+    "correct": 2,
+    "explanation": "Slime molds are saprophytic protists.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is an economic importance of protists?",
+    "options": [
+      "They are a source of food, like kelps.",
+      "They are all pathogenic to humans.",
+      "They cause red tides.",
+      "They are used to make plastics."
+    ],
+    "correct": 0,
+    "explanation": "Protists are useful in the following manners: Source of food - Some protists like kelps are edible.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the scientific name for the American toad?",
+    "options": [
+      "Bufo americanus",
+      "Ursus americanus",
+      "Homo sapiens",
+      "J. hyemalis"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the cilia in Ciliaphorans?",
+    "options": [
+      "To attach to a host.",
+      "For locomotion and sweeping food particles.",
+      "To produce toxins.",
+      "To protect the cell from destruction."
+    ],
+    "correct": 1,
+    "explanation": "The cilia stick out of their cells. The movement of cilia is paddle like, it sways back and forth for movement and fast beating of the cilia causes movement of the organism. The cilia is also used to sweep food particles into the organism.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are the three types of golden algae?",
+    "options": [
+      "Yellow-green algae, brown algae, red algae.",
+      "Green algae, golden brown algae, diatoms.",
+      "Yellow-green algae, golden brown algae, diatoms.",
+      "Red algae, brown algae, green algae."
+    ],
+    "correct": 2,
+    "explanation": "There are three types of golden algae: yellow-green algae, golden brown algae, diatoms.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is 'diatomaceous earth' used for?",
+    "options": [
+      "As a food source for aquatic organisms.",
+      "As a fertilizer for plants.",
+      "As water filters and an abrasive.",
+      "To make gelatin capsules."
+    ],
+    "correct": 2,
+    "explanation": "It is used as water filters, abrasive and to add sparkling to products such as paint and fingernail polish.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name of the genus for the American black bear?",
+    "options": [
+      "americanus",
+      "Ursus",
+      "Bufo",
+      "Ursidae"
+    ],
+    "correct": 1,
+    "explanation": "For example, Ursus americanus is the American black bear.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What are 'kelps'?",
+    "options": [
+      "Small green algae.",
+      "Large brown algae.",
+      "A type of red algae.",
+      "A type of dinoflagellate."
+    ],
+    "correct": 1,
+    "explanation": "Large brown algae are called kelps.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name of the species for the American black bear?",
+    "options": [
+      "americanus",
+      "Ursus",
+      "Bufo",
+      "Ursidae"
+    ],
+    "correct": 0,
+    "explanation": "For example, Ursus americanus is the American black bear.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a parasitic bacterium that reproduces inside a host's cells?",
+    "options": [
+      "E.coli",
+      "Chlamydiae",
+      "Cyanobacteria",
+      "Spirochetes"
+    ],
+    "correct": 1,
+    "explanation": "Chlamydiae: These parasitic bacteria reproduce inside their host's cells.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the tail fibers on a bacteriophage?",
+    "options": [
+      "To protect the nucleic acid core.",
+      "To carry genetic information.",
+      "To attach the phage to a host cell.",
+      "To inject the nucleic acid into the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Tail fibers are used for the attachment of the phage to specific receptor sites on a susceptible host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  
+  {
+    "q": "What is the name for the empty protein shell that remains attached to a host cell after injection?",
+    "options": [
+      "The capsid",
+      "The protein ghost",
+      "The nucleic acid core",
+      "The spiral protein sheath"
+    ],
+    "correct": 1,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the enzyme 'late muramidase' in a viral infection?",
+    "options": [
+      "To perforate the cell wall for injection.",
+      "To protect the nucleic acid.",
+      "To lyse the cell wall for the release of new viruses.",
+      "To attach the virus to the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Late muramidase lyses the cell wall, liberating infectious phage particles that are now capable of infecting new susceptible host cells, thereby starting the cycle over again.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of protozoan is non-motile and parasitic?",
+    "options": [
+      "Sarcodinians",
+      "Zooflagellates",
+      "Ciliaphorans",
+      "Sporozoans"
+    ],
+    "correct": 3,
+    "explanation": "All members of this phylum (Sporozoa) are non-motile and parasitic.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the purpose of 'cysts' formed by some protists?",
+    "options": [
+      "For movement in water.",
+      "For reproduction in favorable conditions.",
+      "For survival during adverse conditions.",
+      "For photosynthesis."
+    ],
+    "correct": 2,
+    "explanation": "They form cysts in adverse conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the genus name for the American toad?",
+    "options": [
+      "Bufo",
+      "americanus",
+      "Ursus",
+      "Anura"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the scientific name for the American toad?",
+    "options": [
+      "Bufo americanus",
+      "Ursus americanus",
+      "Homo sapiens",
+      "J. hyemalis"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a parasitic bacterium that reproduces inside a host's cells?",
+    "options": [
+      "E.coli",
+      "Chlamydiae",
+      "Cyanobacteria",
+      "Spirochetes"
+    ],
+    "correct": 1,
+    "explanation": "Chlamydiae: These parasitic bacteria reproduce inside their host's cells.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the tail fibers on a bacteriophage?",
+    "options": [
+      "To protect the nucleic acid core.",
+      "To carry genetic information.",
+      "To attach the phage to a host cell.",
+      "To inject the nucleic acid into the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Tail fibers are used for the attachment of the phage to specific receptor sites on a susceptible host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name for the empty protein shell that remains attached to a host cell after injection?",
+    "options": [
+      "The capsid",
+      "The protein ghost",
+      "The nucleic acid core",
+      "The spiral protein sheath"
+    ],
+    "correct": 1,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the enzyme 'late muramidase' in a viral infection?",
+    "options": [
+      "To perforate the cell wall for injection.",
+      "To protect the nucleic acid.",
+      "To lyse the cell wall for the release of new viruses.",
+      "To attach the virus to the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Late muramidase lyses the cell wall, liberating infectious phage particles that are now capable of infecting new susceptible host cells, thereby starting the cycle over again.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of protozoan is non-motile and parasitic?",
+    "options": [
+      "Sarcodinians",
+      "Zooflagellates",
+      "Ciliaphorans",
+      "Sporozoans"
+    ],
+    "correct": 3,
+    "explanation": "All members of this phylum (Sporozoa) are non-motile and parasitic.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the purpose of 'cysts' formed by some protists?",
+    "options": [
+      "For movement in water.",
+      "For reproduction in favorable conditions.",
+      "For survival during adverse conditions.",
+      "For photosynthesis."
+    ],
+    "correct": 2,
+    "explanation": "They form cysts in adverse conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the genus name for the American toad?",
+    "options": [
+      "Bufo",
+      "americanus",
+      "Ursus",
+      "Anura"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the scientific name for the American toad?",
+    "options": [
+      "Bufo americanus",
+      "Ursus americanus",
+      "Homo sapiens",
+      "J. hyemalis"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a parasitic bacterium that reproduces inside a host's cells?",
+    "options": [
+      "E.coli",
+      "Chlamydiae",
+      "Cyanobacteria",
+      "Spirochetes"
+    ],
+    "correct": 1,
+    "explanation": "Chlamydiae: These parasitic bacteria reproduce inside their host's cells.",
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the tail fibers on a bacteriophage?",
+    "options": [
+      "To protect the nucleic acid core.",
+      "To carry genetic information.",
+      "To attach the phage to a host cell.",
+      "To inject the nucleic acid into the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Tail fibers are used for the attachment of the phage to specific receptor sites on a susceptible host's cell wall.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name for the empty protein shell that remains attached to a host cell after injection?",
+    "options": [
+      "The capsid",
+      "The protein ghost",
+      "The nucleic acid core",
+      "The spiral protein sheath"
+    ],
+    "correct": 1,
+    "explanation": "The empty protein shell remains attached to the cell wall and is called the protein ghost.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the enzyme 'late muramidase' in a viral infection?",
+    "options": [
+      "To perforate the cell wall for injection.",
+      "To protect the nucleic acid.",
+      "To lyse the cell wall for the release of new viruses.",
+      "To attach the virus to the host cell."
+    ],
+    "correct": 2,
+    "explanation": "Late muramidase lyses the cell wall, liberating infectious phage particles that are now capable of infecting new susceptible host cells, thereby starting the cycle over again.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of protozoan is non-motile and parasitic?",
+    "options": [
+      "Sarcodinians",
+      "Zooflagellates",
+      "Ciliaphorans",
+      "Sporozoans"
+    ],
+    "correct": 3,
+    "explanation": "All members of this phylum (Sporozoa) are non-motile and parasitic.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the purpose of 'cysts' formed by some protists?",
+    "options": [
+      "For movement in water.",
+      "For reproduction in favorable conditions.",
+      "For survival during adverse conditions.",
+      "For photosynthesis."
+    ],
+    "correct": 2,
+    "explanation": "They form cysts in adverse conditions.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the genus name for the American toad?",
+    "options": [
+      "Bufo",
+      "americanus",
+      "Ursus",
+      "Anura"
+    ],
+    "correct": 0,
+    "explanation": "Bufo americanus is the American toad.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "Notes",
+    "tag": "MCQ"
+  },
+
 
 
 ];

@@ -6323,8 +6323,298 @@ const flashcards = {
     }
   ],
   
+  //term 2 work 
   
-
+"MODULE 6:TAXONOMY":[
+////const flashcards = [
+  {
+    "front": "What is taxonomy?",
+    "back": "Taxonomy is a field that deals with the process of describing, naming, and classifying organisms.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is the aim of taxonomy?",
+    "back": "The aim of taxonomy is to classify organisms in a hierarchical system or in taxonomic ranks based on shared characteristics or phylogenetic relationships.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is a 'taxonomist'?",
+    "back": "A taxonomist is a person specializing in the field of taxonomy.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "Who is considered the 'father of taxonomy'?",
+    "back": "The Swedish botanist Carl Linnaeus is considered the father of taxonomy.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What system of classification did Carl Linnaeus develop?",
+    "back": "Carl Linnaeus developed the Linnaean classification system, where organisms are categorized into taxa.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is the highest and most general taxonomic rank?",
+    "back": "Domain is the highest and most general rank of organisms.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "When was the 'domain' rank first used?",
+    "back": "The term 'domain' was not used until 1990, over 250 years after Linnaeus developed his system.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What are the three domains of life?",
+    "back": "The three domains of life are Bacteria, Archaea, and Eukaryota.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "Which domain is most closely related to Eukaryota?",
+    "back": "Eukaryota is more closely related to the domain Archaea than to Bacteria.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "How are taxonomic ranks capitalized?",
+    "back": "Taxonomic ranks are always capitalized, except for the species name.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is the plural form of the taxonomic rank 'phylum'?",
+    "back": "The plural of phylum is 'phyla'.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is an example of a phylum in the animal kingdom?",
+    "back": "Arthropoda is an example of a phylum from the animal kingdom, which includes all insects, spiders, and crustaceans.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What two taxonomic ranks make up an organism's scientific name?",
+    "back": "An organism's scientific name is composed of the genus and species name.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "In binomial nomenclature, how are the genus and species names formatted?",
+    "back": "The scientific name is always italicized, with the genus name capitalized and the species name lowercase.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is the scientific name for humans?",
+    "back": "The scientific name for humans is *Homo sapiens*.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "Can the same species name be used for different organisms?",
+    "back": "Yes, for example, *Ursus americanus* is the American black bear, while *Bufo americanus* is the American toad.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "How are scientific names abbreviated after the first full use?",
+    "back": "After the first full use, the scientific name is abbreviated by using just the first letter of the genus name with the full species name (e.g., *Homo sapiens* becomes *H. sapiens*).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is the central idea of the Biological Species Concept (BSC)?",
+    "back": "The Biological Species Concept defines a species as a group of populations whose members can interbreed successfully and are reproductively isolated from other groups.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is a major problem with applying the Biological Species Concept?",
+    "back": "The concept cannot be applied to exclusively asexual organisms, such as certain groups of fungi and bacteria, because it is centered on sexual reproduction.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "TAXONOMY"
+  },
+  {
+    "front": "What is a characteristic of Archaea?",
+    "back": "Archaea are single-celled, prokaryotic organisms that live under some of the most extreme environmental conditions.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "How do Archaea differ from Bacteria?",
+    "back": "Archaea differ from bacteria in cell wall composition, membrane composition, and rRNA type.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "What is the function of the bacteria in the human microbiota?",
+    "back": "Bacteria in the human microbiota perform vital functions, such as enabling the proper digestion and absorption of nutrients from food.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "What is a key feature of cyanobacteria?",
+    "back": "Cyanobacteria are a type of bacteria that are capable of photosynthesis and are also known as blue-green algae.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "What is the Eukarya domain?",
+    "back": "The Eukarya domain includes eukaryotes, which are organisms that have a membrane-bound nucleus.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "What kingdoms are in the Eukarya domain?",
+    "back": "The Eukarya domain is subdivided into the kingdoms Protista, Fungi, Plantae, and Animalia.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANBACTERIA"
+  },
+  {
+    "front": "What are the two main components of a virus?",
+    "back": "A virus is composed of a nucleic acid (DNA or RNA) core surrounded by a protein envelope called a capsid.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "Can a single virus have both DNA and RNA?",
+    "back": "No, a virus is called either a 'DNA virus' or an 'RNA virus' depending on the nucleic acid it contains.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "Why can viruses only be cultivated inside living cells?",
+    "back": "Viruses are non-cellular and lack the enzymatic and biosynthetic machinery for independent life, so they require a living host cell to grow.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "What is a bacteriophage?",
+    "back": "A bacteriophage is a virus that infects bacteria.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "What is the function of a viral capsid?",
+    "back": "The capsid (protein coat) protects the nucleic acid from being destroyed by enzymes like DNase.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "What is the function of the tail fibers on a bacteriophage?",
+    "back": "Tail fibers are used for the attachment of the phage to specific receptor sites on a susceptible host's cell wall.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "VIRUSES"
+  },
+  {
+    "front": "Who first used the term 'Protista'?",
+    "back": "The term 'Protista' was first used by Ernst Haeckel in 1886.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "What is a key characteristic of protists?",
+    "back": "Protists are a diverse group of eukaryotic organisms that are primarily aquatic and have a simple cellular organization, lacking specialized tissue.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "How do protozoans obtain nutrition?",
+    "back": "Protozoans are heterotrophic, meaning they are unable to produce their own food.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "Which group of protists moves using 'pseudopodia'?",
+    "back": "Sarcodinians, a type of protozoan, move by extending lobes of cytoplasm called pseudopodia.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "Which protist causes sleeping sickness in humans and cattle?",
+    "back": "The flagellate *Trypanosoma gambiense* causes sleeping sickness.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "Which protist causes malaria in humans?",
+    "back": "*Plasmodium*, a sporozoan parasite, causes malaria in humans.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "What is the function of plant-like protists (algae) in aquatic ecosystems?",
+    "back": "Algae are primary producers, providing food and oxygen for other water organisms.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "What substance is derived from red algae and used in labs?",
+    "back": "Agar is a glue-like substance found in red algae that is used as a medium for growing bacteria in laboratories.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "What phenomenon is caused by dinoflagellates?",
+    "back": "Some species of dinoflagellates cause the 'red tide' phenomenon.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+  {
+    "front": "What are slime molds an example of?",
+    "back": "Slime molds are saprophytic protists classified as fungus-like protists.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROTISTS"
+  },
+],
 
 
 

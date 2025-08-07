@@ -4635,7 +4635,1194 @@ const shortData = [
     course: "BI110",
     year: "Notes",
     tag: "Short"
-  }
+  },
+  
+  //Taxonomy 
+  
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the primary purpose of taxonomy?",
+    "keywords": [
+      "taxonomy",
+      "purpose",
+      "classify",
+      "organisms"
+    ],
+    "explanation": "To describe, name, and classify organisms in a hierarchical system.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "Who is considered the 'father of taxonomy'?",
+    "keywords": [
+      "father",
+      "taxonomy",
+      "Carl Linnaeus"
+    ],
+    "explanation": "Carl Linnaeus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the highest and most general taxonomic rank in the modern classification system?",
+    "keywords": [
+      "highest",
+      "general",
+      "taxonomic",
+      "rank",
+      "domain"
+    ],
+    "explanation": "Domain.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What are the three domains of life?",
+    "keywords": [
+      "three",
+      "domains",
+      "life",
+      "Bacteria",
+      "Archaea",
+      "Eukaryota"
+    ],
+    "explanation": "Bacteria, Archaea, and Eukaryota.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "Which domain is Eukaryota more closely related to, Archaea or Bacteria?",
+    "keywords": [
+      "Eukaryota",
+      "closely related",
+      "Archaea",
+      "Bacteria"
+    ],
+    "explanation": "Archaea.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "In binomial nomenclature, what two taxonomic ranks make up an organism's scientific name?",
+    "keywords": [
+      "binomial nomenclature",
+      "taxonomic ranks",
+      "scientific name",
+      "genus",
+      "species"
+    ],
+    "explanation": "Genus and species.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for humans?",
+    "keywords": [
+      "scientific name",
+      "humans",
+      "Homo sapiens"
+    ],
+    "explanation": "Homo sapiens.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What does the Biological Species Concept (BSC) define a species as?",
+    "keywords": [
+      "Biological Species Concept",
+      "BSC",
+      "species",
+      "interbreed",
+      "reproductively isolated"
+    ],
+    "explanation": "A group of populations whose members can interbreed successfully and are reproductively isolated from other groups.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "Why is the BSC difficult to apply to bacteria?",
+    "keywords": [
+      "BSC",
+      "difficult",
+      "bacteria",
+      "asexually",
+      "interbreeding"
+    ],
+    "explanation": "Because bacteria reproduce asexually, and the concept is based on interbreeding.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the two main components of a virus?",
+    "keywords": [
+      "virus",
+      "components",
+      "nucleic acid",
+      "DNA",
+      "RNA",
+      "protein envelope",
+      "capsid"
+    ],
+    "explanation": "A nucleic acid (DNA or RNA) core and a protein envelope (capsid).",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is a bacteriophage?",
+    "keywords": [
+      "bacteriophage",
+      "virus",
+      "infects",
+      "bacteria"
+    ],
+    "explanation": "A virus that infects bacteria.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the first step of a viral infection cycle?",
+    "keywords": [
+      "first step",
+      "viral infection",
+      "cycle",
+      "attachment",
+      "binds"
+    ],
+    "explanation": "Attachment, where the virus binds to a receptor on the host cell.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the 'protein ghost' in a viral infection?",
+    "keywords": [
+      "protein ghost",
+      "viral infection",
+      "empty protein shell"
+    ],
+    "explanation": "The empty protein shell of the virus that remains attached to the host cell wall after the nucleic acid has been injected.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the function of the enzyme 'late muramidase' in a viral infection?",
+    "keywords": [
+      "enzyme",
+      "late muramidase",
+      "function",
+      "lyses",
+      "host cell",
+      "liberating",
+      "new phage"
+    ],
+    "explanation": "It lyses the host cell wall, liberating new infectious phage particles.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is a key characteristic that distinguishes protists from other eukaryotes?",
+    "keywords": [
+      "protists",
+      "distinguishes",
+      "eukaryotes",
+      "simple cellular organization",
+      "lack of specialized tissues"
+    ],
+    "explanation": "Their simple cellular organization and lack of specialized tissues.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "How do protozoans obtain their food?",
+    "keywords": [
+      "protozoans",
+      "obtain food",
+      "heterotrophs",
+      "consume"
+    ],
+    "explanation": "They are heterotrophs, meaning they consume other organisms for food.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which group of protozoans moves using 'pseudopodia'?",
+    "keywords": [
+      "protozoans",
+      "moves",
+      "pseudopodia",
+      "Sarcodinians"
+    ],
+    "explanation": "Sarcodinians.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What are 'kelps'?",
+    "keywords": [
+      "kelps",
+      "large brown algae"
+    ],
+    "explanation": "Large brown algae.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What phenomenon is caused by some species of dinoflagellates?",
+    "keywords": [
+      "phenomenon",
+      "dinoflagellates",
+      "red tide"
+    ],
+    "explanation": "The 'red tide' phenomenon.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the three main phyla of Archaea?",
+    "keywords": [
+      "three",
+      "phyla",
+      "Archaea",
+      "Crenarchaeota",
+      "Euryarchaeota",
+      "Korarchaeota"
+    ],
+    "explanation": "Crenarchaeota, Euryarchaeota, and Korarchaeota.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the function of the bacteria that make up the human microbiota?",
+    "keywords": [
+      "function",
+      "bacteria",
+      "human microbiota",
+      "digestion",
+      "nutrient absorption"
+    ],
+    "explanation": "They perform vital functions like aiding in digestion and nutrient absorption.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is a key characteristic of cyanobacteria?",
+    "keywords": [
+      "characteristic",
+      "cyanobacteria",
+      "photosynthesis"
+    ],
+    "explanation": "They are capable of photosynthesis.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "How is the genus name formatted in binomial nomenclature?",
+    "keywords": [
+      "genus name",
+      "formatted",
+      "binomial nomenclature",
+      "capitalized",
+      "italicized"
+    ],
+    "explanation": "It is capitalized and italicized.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for the American toad?",
+    "keywords": [
+      "scientific name",
+      "American toad",
+      "Bufo americanus"
+    ],
+    "explanation": "Bufo americanus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "How do Ciliaphorans move?",
+    "keywords": [
+      "Ciliaphorans",
+      "move",
+      "cilia"
+    ],
+    "explanation": "With hair-like structures called cilia.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the primary role of plant-like protists in the aquatic ecosystem?",
+    "keywords": [
+      "primary role",
+      "plant-like protists",
+      "aquatic ecosystem",
+      "primary producers"
+    ],
+    "explanation": "They are primary producers, providing food and oxygen.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What substance derived from red algae is used as a medium for growing bacteria in labs?",
+    "keywords": [
+      "substance",
+      "red algae",
+      "medium",
+      "growing bacteria",
+      "agar"
+    ],
+    "explanation": "Agar.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is 'diatomaceous earth' formed from?",
+    "keywords": [
+      "diatomaceous earth",
+      "formed from",
+      "shells",
+      "fossil diatoms"
+    ],
+    "explanation": "The shells of fossil diatoms.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is a 'clade'?",
+    "keywords": [
+      "clade",
+      "taxonomic group",
+      "common ancestor"
+    ],
+    "explanation": "A taxonomic group of organisms based on homologous features derived from a common ancestor.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for the American black bear?",
+    "keywords": [
+      "scientific name",
+      "American black bear",
+      "Ursus americanus"
+    ],
+    "explanation": "Ursus americanus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is a 'specific epithet' in binomial nomenclature?",
+    "keywords": [
+      "specific epithet",
+      "binomial nomenclature",
+      "species name"
+    ],
+    "explanation": "The second part of the scientific name, which is the species name.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "How many families are in the order Carnivora?",
+    "keywords": [
+      "families",
+      "order Carnivora",
+      "12"
+    ],
+    "explanation": "12 families.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the plural of 'genus'?",
+    "keywords": [
+      "plural",
+      "genus",
+      "genera"
+    ],
+    "explanation": "Genera.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the unique motion of Spirochetes?",
+    "keywords": [
+      "unique motion",
+      "Spirochetes",
+      "twisting motion"
+    ],
+    "explanation": "A twisting motion.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What substance derived from brown algae is used in ice cream and lotion?",
+    "keywords": [
+      "substance",
+      "brown algae",
+      "ice cream",
+      "lotion",
+      "algin"
+    ],
+    "explanation": "Algin.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the taxonomic rank above Family?",
+    "keywords": [
+      "taxonomic rank",
+      "above Family",
+      "Order"
+    ],
+    "explanation": "Order.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is a 'hybrid zone'?",
+    "keywords": [
+      "hybrid zone",
+      "overlap",
+      "interbreed",
+      "species"
+    ],
+    "explanation": "A region where two species overlap and interbreed.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the plural form of the taxonomic rank 'phylum'?",
+    "keywords": [
+      "plural form",
+      "phylum",
+      "phyla"
+    ],
+    "explanation": "Phyla.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is a 'protozoan'?",
+    "keywords": [
+      "protozoan",
+      "animal-like",
+      "single-celled"
+    ],
+    "explanation": "An animal-like single-celled organism.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What are 'algae'?",
+    "keywords": [
+      "algae",
+      "plant-like",
+      "single-celled",
+      "multi-celled"
+    ],
+    "explanation": "Plant-like single or multi-celled organisms.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which type of protist is non-motile and parasitic?",
+    "keywords": [
+      "protist",
+      "non-motile",
+      "parasitic",
+      "Sporozoans"
+    ],
+    "explanation": "Sporozoans.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the function of the spiral protein sheath in a T-even bacteriophage?",
+    "keywords": [
+      "function",
+      "spiral protein sheath",
+      "T-even bacteriophage",
+      "retracts",
+      "nucleic acid"
+    ],
+    "explanation": "It retracts to allow the nucleic acid to pass into the host cell's cytoplasm.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the taxonomic rank of 'Mammalia'?",
+    "keywords": [
+      "taxonomic rank",
+      "Mammalia",
+      "Class"
+    ],
+    "explanation": "Class.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "How does the size of a virus compare to that of a bacterium?",
+    "keywords": [
+      "size",
+      "virus",
+      "bacterium",
+      "smaller"
+    ],
+    "explanation": "Viruses are much smaller than bacteria.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the final stage of a viral infection cycle?",
+    "keywords": [
+      "final stage",
+      "viral infection",
+      "release",
+      "liberated"
+    ],
+    "explanation": "Release, where new viruses are liberated from the host cell.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the purpose of 'cysts' formed by some protists?",
+    "keywords": [
+      "purpose",
+      "cysts",
+      "protists",
+      "survival",
+      "adverse conditions"
+    ],
+    "explanation": "They are formed for survival during adverse environmental conditions.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the common name for the genus 'Juncus'?",
+    "keywords": [
+      "common name",
+      "genus",
+      "Juncus",
+      "Rush"
+    ],
+    "explanation": "Rush.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "In the five-kingdom classification system, what were the two main kingdoms for plants and animals?",
+    "keywords": [
+      "five-kingdom",
+      "classification",
+      "plants",
+      "animals",
+      "Plantae",
+      "Animalia"
+    ],
+    "explanation": "Plantae and Animalia.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for the gray wolf?",
+    "keywords": [
+      "scientific name",
+      "gray wolf",
+      "Canis lupus"
+    ],
+    "explanation": "Canis lupus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the full name of the order that contains humans?",
+    "keywords": [
+      "full name",
+      "order",
+      "humans",
+      "Primates"
+    ],
+    "explanation": "Primates.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the taxonomic rank of 'Felidae'?",
+    "keywords": [
+      "taxonomic rank",
+      "Felidae",
+      "Family"
+    ],
+    "explanation": "Family.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for the common house cat?",
+    "keywords": [
+      "scientific name",
+      "house cat",
+      "Felis catus"
+    ],
+    "explanation": "Felis catus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "How is the species name formatted in binomial nomenclature?",
+    "keywords": [
+      "species name",
+      "formatted",
+      "binomial nomenclature",
+      "lowercase",
+      "italicized"
+    ],
+    "explanation": "It is lowercase and italicized.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the taxonomic rank of 'Sarcodina'?",
+    "keywords": [
+      "taxonomic rank",
+      "Sarcodina",
+      "Phylum"
+    ],
+    "explanation": "Phylum.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which group of protozoans moves using 'flagella'?",
+    "keywords": [
+      "group",
+      "protozoans",
+      "moves",
+      "flagella",
+      "Zooflagellates",
+      "Phylum Mastigophora"
+    ],
+    "explanation": "Zooflagellates (Phylum Mastigophora).",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What disease does the protozoan 'Plasmodium' cause?",
+    "keywords": [
+      "disease",
+      "protozoan",
+      "Plasmodium",
+      "Malaria"
+    ],
+    "explanation": "Malaria.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What are 'slime molds' an example of?",
+    "keywords": [
+      "slime molds",
+      "example",
+      "fungus-like protists"
+    ],
+    "explanation": "Fungus-like protists.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    
+   
+    "q": "What is the function of 'algin' derived from brown algae?",
+    "keywords": [
+      "function",
+      "algin",
+      "brown algae",
+      "ice cream",
+      "lotion",
+      "plastics"
+    ],
+    "explanation": "It is used in making products like ice cream, lotion, and plastics.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is a 'ribosome'?",
+    "keywords": [
+      "ribosome",
+      "organelle",
+      "proteins",
+      "made"
+    ],
+    "explanation": "A small organelle in a cell where proteins are made.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is a 'prokaryote'?",
+    "keywords": [
+      "prokaryote",
+      "single-celled",
+      "organism",
+      "lacks nucleus"
+    ],
+    "explanation": "A single-celled organism that lacks a membrane-bound nucleus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is a 'eukaryote'?",
+    "keywords": [
+      "eukaryote",
+      "organism",
+      "membrane-bound nucleus"
+    ],
+    "explanation": "An organism that has a membrane-bound nucleus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the four kingdoms of the domain Eukarya?",
+    "keywords": [
+      "four kingdoms",
+      "domain Eukarya",
+      "Protista",
+      "Fungi",
+      "Plantae",
+      "Animalia"
+    ],
+    "explanation": "Protista, Fungi, Plantae, and Animalia.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the two main types of nucleic acids found in viruses?",
+    "keywords": [
+      "two types",
+      "nucleic acids",
+      "viruses",
+      "DNA",
+      "RNA"
+    ],
+    "explanation": "DNA and RNA.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the purpose of the viral capsid?",
+    "keywords": [
+      "purpose",
+      "viral capsid",
+      "protect",
+      "nucleic acid"
+    ],
+    "explanation": "To protect the nucleic acid core from destruction.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What happens during the 'synthesis' stage of a viral infection?",
+    "keywords": [
+      "synthesis stage",
+      "viral infection",
+      "host cell",
+      "produce",
+      "viral components"
+    ],
+    "explanation": "The host cell is directed to produce new viral components like proteins and nucleic acids.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "VIRUSES",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What is the function of the enzyme that perforates the bacterial cell wall during viral injection?",
+    "keywords": [
+      "function",
+      "enzyme",
+      "perforates",
+      "bacterial cell wall",
+      "viral injection"
+    ],
+    "explanation": "It allows the phage's nucleic acid to pass into the host cell's cytoplasm.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the scientific name for the American toad?",
+    "keywords": [
+      "scientific name",
+      "American toad",
+      "Bufo americanus"
+    ],
+    "explanation": "Bufo americanus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the definition of a 'clade'?",
+    "keywords": [
+      "definition",
+      "clade",
+      "taxonomic group",
+      "common ancestor"
+    ],
+    "explanation": "A taxonomic group of organisms based on homologous features derived from a common ancestor.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "TAXONOMY",
+    "year": "Notes",
+    "tag": "🧬",
+    "q": "What is the plural of 'genus'?",
+    "keywords": [
+      "plural",
+      "genus",
+      "genera"
+    ],
+    "explanation": "Genera.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What are 'kelps'?",
+    "keywords": [
+      "kelps",
+      "large brown algae"
+    ],
+    "explanation": "Large brown algae.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the purpose of the cilia in Ciliaphorans?",
+    "keywords": [
+      "purpose",
+      "cilia",
+      "Ciliaphorans",
+      "locomotion",
+      "food particles"
+    ],
+    "explanation": "They are used for locomotion and for sweeping food particles into the organism.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is 'diatomaceous earth' used for?",
+    "keywords": [
+      "diatomaceous earth",
+      "used for",
+      "water filter",
+      "abrasive",
+      "sparkle"
+    ],
+    "explanation": "As a water filter, an abrasive, and to add sparkle to products.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "Which type of protozoan causes sleeping sickness?",
+    "keywords": [
+      "protozoan",
+      "causes",
+      "sleeping sickness",
+      "Trypanosoma gambiense"
+    ],
+    "explanation": "Trypanosoma gambiense.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is a 'cytoplasm'?",
+    "keywords": [
+      "cytoplasm",
+      "fluid",
+      "cell",
+      "excluding nucleus"
+    ],
+    "explanation": "The fluid inside a cell, excluding the nucleus.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROTISTS",
+    "year": "Notes",
+    "tag": "🔬",
+    "q": "What is the role of Protista in the aquatic ecosystem?",
+    "keywords": [
+      "role",
+      "Protista",
+      "aquatic ecosystem",
+      "primary producers",
+      "food source"
+    ],
+    "explanation": "As primary producers and a major food source for other water organisms.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the two main types of cells?",
+    "keywords": [
+      "two types",
+      "cells",
+      "Prokaryotic",
+      "eukaryotic"
+    ],
+    "explanation": "Prokaryotic cells and eukaryotic cells.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "What are the two main divisions of prokaryotes?",
+    "keywords": [
+      "two main divisions",
+      "prokaryotes",
+      "Bacteria",
+      "Archaea"
+    ],
+    "explanation": "Bacteria and Archaea.",
+    "course": "BI110",
+    "term": "T2"
+  },
+  {
+    "topic": "PROKARYOTES & CYANBACTERIA",
+    "year": "Notes",
+    "tag": "🦠",
+    "q": "How does the reproduction of bacteria differ from most animals?",
+    "keywords": [
+      "reproduction",
+      "bacteria",
+      "differ",
+      "animals",
+      "asexually",
+      "sexually"
+    ],
+    "explanation": "Bacteria reproduce asexually, while most animals reproduce sexually.",
+    "course": "BI110",
+    "term": "T2"
+  },
+
+
 
   
 ];
