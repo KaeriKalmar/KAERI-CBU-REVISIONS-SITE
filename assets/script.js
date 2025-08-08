@@ -282,7 +282,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     
     //added individually 
     "BI110_TOTAL_ACCESS",
-    "FULL_UNLOCK_2025++",
+    "FULL_UNLOCK_2025++","ACCESS_GRANTED_GLOBAL$",
     
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
