@@ -8335,4 +8335,190 @@ const flashcards = {
         "topic": "Diversity of Animals : Invertebrates"
     }
  ], 
+ 
+  "BI110 2020 SESSIONAL": [
+   {
+      "front": "Explain how Mendel’s dihybrid cross between round yellow peas (RRYY) and wrinkled green peas (rryy) resulted in a 9:3:3:1 ratio in the offspring. (10 marks)",
+      "back": "The cross between F₁ individuals (RrYy x RrYy) produced four phenotypes in a 9:3:3:1 ratio: 9/16 round-yellow, 3/16 round-green, 3/16 wrinkled-yellow, and 1/16 wrinkled-green. This is due to the independent assortment of alleles.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Mendelian Genetics"
+    },
+    {
+      "front": "What are the problems in applying the biological species concept? (5 marks)",
+      "back": "It cannot be applied to asexual organisms or fossils. It is also problematic for geographically isolated populations and for species that can interbreed to produce fertile hybrids.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Species Concepts"
+    },
+    {
+      "front": "Explain the Economic importance of protists. (5 marks)",
+      "back": "Protists are used in agriculture (pesticides, fertilizers), serve as a food source, are a source of medicines, and some are pathogens that cause diseases like malaria.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Protists"
+    },
+    {
+      "front": "Describe the process of chromosome condensation in eukaryotes. (6 marks)",
+      "back": "DNA wraps around histones to form nucleosomes, which coil into a 30-nm fiber. This fiber then forms looped domains, leading to the highly condensed metaphase chromosome structure.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Division"
+    },
+    {
+      "front": "Using your knowledge in cell division, discuss why despite having the same father and mother all the children have variations in the genetic makeup. (8 marks)",
+      "back": "Genetic variation is due to crossing over (exchange of DNA segments between homologous chromosomes) and independent assortment (random alignment of homologous chromosome pairs) during meiosis.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Meiosis & Genetics"
+    },
+    {
+      "front": "Explain how the p53 gene prevents cancer in human beings. (6 marks)",
+      "back": "The p53 gene, a tumor suppressor, halts the cell cycle to allow for DNA repair. If the damage is too severe, it triggers apoptosis (programmed cell death) to prevent cell proliferation.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Biology & Cancer"
+    },
+    {
+      "front": "Define the following terms: Taxon, character state, taxonomy, species concept, reproductive. isolation. (5 marks)",
+      "back": "Taxon: a named group of organisms. Character state: one form of a character. Taxonomy: the science of classification. Species concept: a theoretical framework for defining a species. Reproductive isolation: biological barriers that prevent interbreeding.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Taxonomy"
+    },
+    {
+      "front": "HIV is a retro-virus that attacks the CD4+ cells particularly T-helper cells which are responsible for mounting the response against foreign invaders. Explain in detail how this virus multiplies once it enters the T-helper cells. (10 marks)",
+      "back": "HIV uses reverse transcriptase to convert its RNA into DNA. This DNA integrates into the host's genome, becoming a provirus. The host cell then transcribes and translates the provirus DNA to produce new viral particles, which bud off and infect other cells.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Viruses & Pathogens"
+    },
+    {
+      "front": "Explain the importance of mycorrhizae in agriculture and forestry. (5 marks)",
+      "back": "Mycorrhizae are symbiotic fungi that increase a plant's surface area for absorbing water and nutrients like phosphorus and nitrogen, leading to healthier plant growth and higher yields.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Symbiotic Relationships"
+    },
+    {
+      "front": "Give a description of the two classes of starch. (4 marks)",
+      "back": "Amylose is the unbranched component of starch, while amylopectin is the branched component.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biochemistry"
+    },
+    {
+      "front": "After a cow is given antibiotics to treat an infection, a veterinary officer gives the animal a drink of \"gut culture\" containing various prokaryotes. Why is this necessary? (6 marks)",
+      "back": "Antibiotics kill beneficial gut prokaryotes essential for the cow's digestion of cellulose. The \"gut culture\" reintroduces these microbes to restore the cow's ability to digest food.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Microbiology"
+    },
+    {
+      "front": "Compare the structure of a fat (triglyceride) with that of a phospholipid. (3 marks)",
+      "back": "A fat has a glycerol and three fatty acid chains. A phospholipid has a glycerol, two fatty acid chains, and a phosphate group.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biochemistry"
+    },
+    {
+      "front": "Why are fats considered to have more energy than carbohydrates? (7 marks)",
+      "back": "Fats contain a higher proportion of energy-rich carbon-hydrogen (C-H) bonds and are less oxidized than carbohydrates, allowing them to store more energy per gram.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Energy & Metabolism"
+    },
+    {
+      "front": "Draw and label the general structure of an amino acid. (5 marks)",
+      "back": "The structure consists of a central carbon bonded to an amino group (-NH₂), a carboxyl group (-COOH), a hydrogen atom (H), and a variable R group.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Biochemistry"
+    },
+    {
+      "front": "What parts of a polypeptide participate in the bonds that hold together the... i) Secondary structure? (1 mark) ii) Tertiary structure? (1 mark)",
+      "back": "i) The polypeptide backbone. ii) The R groups (side chains) of the amino acids.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Protein Structure"
+    },
+    {
+      "front": "Briefly describe the primary structure of a protein. (3 marks)",
+      "back": "The primary structure is the linear sequence of amino acids in a polypeptide chain, held together by peptide bonds.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Protein Structure"
+    },
+    {
+      "front": "Using diagrams compare the structures of RNA and DNA nucleotides. (5 marks)",
+      "back": "DNA has deoxyribose sugar and the base Thymine. RNA has ribose sugar and the base Uracil.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Nucleic Acids"
+    },
+    {
+      "front": "In a DNA double helix, a region along one DNA strand has this sequence of nitrogenous bases: 5'-TAGGCCT-3'. Write down its complementary strand, clearly indicating the 5' and 3' ends. (2 marks)",
+      "back": "5'-TAGGCCT-3' becomes 3'-ATCCGGA-5'.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "DNA Structure"
+    },
+    {
+      "front": "Draw the structural formula of the nitrogenous base Cytosine. (3 marks)",
+      "back": "Cytosine is a pyrimidine base with a single ring. It has an amino group (NH₂) and a carbonyl group (C=O) attached to the ring structure.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Nucleic Acids"
+    },
+    {
+      "front": "Explain the functions of a cell wall in plants. (3 marks)",
+      "back": "A plant cell wall provides structural support, maintains cell shape, and protects the cell from mechanical stress and bursting from turgor pressure.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Plant Cells"
+    },
+    {
+      "front": "How do prokaryotic and eukaryotic cells differ? (6 marks)",
+      "back": "Eukaryotic cells have a nucleus and membrane-bound organelles, are generally larger, and have multiple linear chromosomes. Prokaryotic cells lack these features and have a single circular chromosome.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Types"
+    },
+    {
+      "front": "Describe the similarities between enzymes and receptors. (4 marks)",
+      "back": "Both are proteins that have a specific 3D shape with a unique binding site for a particular molecule (substrate or ligand), and both exhibit a high degree of specificity.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Molecular Biology"
+    },
+    {
+      "front": "Identify organelle B and what are its functions in a cell? (7 marks)",
+      "back": "Organelle B is the Mitochondrion. Its main functions are cellular respiration to produce ATP, heat generation, calcium storage, and a role in programmed cell death.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Organelles"
+    },
+    {
+      "front": "Describe how membrane receptors transmit messages across the cell membranes. (6 marks)",
+      "back": "The process is called signal transduction. A ligand binds to the receptor (Reception), causing a shape change that initiates a cascade of events inside the cell (Transduction), which then triggers a specific Response.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Signaling"
+    },
+    {
+      "front": "Discuss the primary functions of membranes. (6 marks)",
+      "back": "Membranes are selectively permeable, create compartments, and are involved in cell-cell recognition and signal transduction.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Membranes"
+    },
+    {
+      "front": "Describe what makes up the cytoskeleton of eukaryotic cells and its functions. (8 marks)",
+      "back": "The cytoskeleton consists of microtubules, microfilaments, and intermediate filaments. Its functions include providing structural support, enabling cell motility, and facilitating organelle movement.",
+      "course": "BI110",
+      "term": "T3",
+      "topic": "Cell Structure"
+    }
+  ],
+ 
   };
