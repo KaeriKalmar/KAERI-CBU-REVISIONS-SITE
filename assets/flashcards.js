@@ -6615,7 +6615,232 @@ const flashcards = {
     "topic": "PROTISTS"
   },
 ],
-
+"MODULE 7:PROKARYOTES & CYANOBACTERIA": [
+  {
+    "front": "What are prokaryotic organisms?",
+    "back": "Prokaryotes are the oldest, most dominant, and most successful forms of life on Earth. They are structurally the simplest life forms and were abundant for over a billion years before eukaryotes appeared.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the key characteristic of prokaryotic cells?",
+    "back": "Prokaryotic cells possess cells that lack membrane-bound nuclei and other membrane-bound organelles.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the composition of the single chromosome in a prokaryotic cell?",
+    "back": "Genetic information is located on a single chromosome which consists of a circular double strand of DNA.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the nuclear region in a prokaryotic cell called and why is it not distinct?",
+    "back": "The nuclear region where DNA is concentrated is not surrounded by a separate membrane envelope. The nucleus lacks a mitotic apparatus and nucleoli.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What cellular components do bacterial cells possess and what do they lack?",
+    "back": "Bacterial cells possess non-membrane bound ribosomes, but they lack nuclei, mitochondria, chloroplasts, endoplasmic reticulum, Golgi apparatus, and lysosomes.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the function of the rigid cell wall in bacteria?",
+    "back": "The rigid cell wall is a framework that supports the cell and maintains its characteristic cellular shape.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the function of the capsule in pathogenic bacteria?",
+    "back": "A capsule, in the form of a slime layer, is produced outside the cell wall and acts as a protective cover, especially in pathogenic bacteria. Antibiotics are often targeted to destroy this capsule.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What were the two superkingdoms in the older classification of prokaryotic organisms?",
+    "back": "The older classification system recognized two superkingdoms: Prokaryonta and Eukaryonta.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What two divisions made up the Kingdom Monera in the Superkingdom Prokaryonta?",
+    "back": "The Kingdom Monera was comprised of the divisions Schizophyta (the bacteria) and Cyanophyta (the blue-green algae).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What discovery led to the division of prokaryotes into two groups?",
+    "back": "Recent studies in the 1970s-1980s led to the discovery of new groups of prokaryotes, resulting in their division into Bacteria and Archaea.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What are the three domains of life in modern classification systems?",
+    "back": "In modern classification systems, the three domains of life are Domain Bacteria, Domain Archaea, and Domain Eukarya.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "Which domains contain prokaryotic organisms?",
+    "back": "The domains Bacteria and Archaea embrace the prokaryotic organisms.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the taxonomic marker for differentiating bacteria from archaea and eukaryotes?",
+    "back": "The cell wall of bacteria is composed of peptidoglycan, which does not occur in species of Archaea or Eukaryotes, making it a taxonomic marker.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is peptidoglycan composed of?",
+    "back": "Peptidoglycan consists of chains of amino sugars, specifically N-acetylglucosamine and N-acetylmuramic acid, linked to amino acids such as alanine, glutamic acid, and lysine.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the purpose of the Gram stain?",
+    "back": "The Gram stain is a cytological staining method used to differentiate bacteria into two major groups (Gram-positive and Gram-negative) based on the capacity of their cell walls to retain the Crystal Violet dye.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "Why do Gram-positive bacteria appear pink or bluish after Gram staining?",
+    "back": "Gram-positive bacteria have a thick layer of peptidoglycan that retains the first violet dye, causing them to appear pink or bluish under a microscope.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What are the three basic morphological shapes of prokaryotes?",
+    "back": "Prokaryotes exhibit three basic shapes: rod-shaped (bacillus), spherical or ovoid-shaped (coccus), and long and helical-shaped (spirillum or spirochetes).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the characteristic of Coccus bacteria?",
+    "back": "Coccus bacteria are spherical or ovoid-shaped and may occur singly, in pairs, in groups of four, in clusters (like *Staphylococcus*), or in chains (like *Streptococcus*).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the characteristic of Bacillus bacteria?",
+    "back": "Bacillus bacteria are rod-shaped and have a tendency to form chains. Many species are responsible for the rotting of stored food.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the characteristic of Spirillum bacteria?",
+    "back": "Spirillum forms, or spirochetes, are spirally-shaped or helical, Gram-negative, and highly motile.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What are the two modes of nutrition for bacteria?",
+    "back": "Bacteria can obtain nutrition by absorbing complex organic molecules (heterotrophic) or by photosynthesis (autotrophic).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "How do bacteria reproduce?",
+    "back": "Reproduction in bacteria is asexual, usually effected by binary fission or budding.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "How do some bacteria achieve motility?",
+    "back": "Some bacteria are motile due to filamentous appendages called flagella, while in some species, motility is achieved by gliding.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is a key characteristic of Cyanobacteria?",
+    "back": "Cyanobacteria are a category of algal-like and photosynthetic organisms, commonly referred to as blue-green algae.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "Why is the term 'blue-green algae' misleading for cyanobacteria?",
+    "back": "The term is misleading because cyanobacteria are prokaryotic, whereas algae are eukaryotic organisms (plants).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the classification of cyanobacteria?",
+    "back": "Cyanobacteria are classified under the division Cyanophyta, also known as Cyanochloronta.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What pigments do cyanobacteria contain?",
+    "back": "Cyanobacteria contain chlorophyll a and phycobilins, which include phycoerythrin (red) and phycocyanin (blue).",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  },
+  {
+    "front": "What is the function of heterocysts in cyanobacteria?",
+    "back": "Heterocysts are clear, enlarged cells within the filament that serve as the sites for nitrogen fixation.",
+    "course": "BI110",
+    "term": "T2",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "year": "Notes"
+  }
+],
 
 
 
