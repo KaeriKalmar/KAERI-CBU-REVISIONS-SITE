@@ -14228,7 +14228,1453 @@ const mcqData = [
     "year": "Notes",
     "tag": "MCQ"
   },
-
-
-
+//[
+  {
+    "q": "What is the correct order of taxonomic ranks from most to least inclusive?",
+    "options": [
+      "Kingdom > Phylum > Class > Order > Family > Genus > Species",
+      "Domain > Kingdom > Class > Phylum > Order > Family > Genus",
+      "Species > Genus > Family > Order > Class > Phylum > Kingdom",
+      "Phylum > Kingdom > Class > Order > Family > Genus > Species"
+    ],
+    "correct": 0,
+    "explanation": "The standard hierarchy is: Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species (DKPCOFGS).",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which naming convention requires italics for typed scientific names?",
+    "options": [
+      "Only at genus level",
+      "Only for subspecies",
+      "For both genus and species names",
+      "Only for handwritten names"
+    ],
+    "correct": 2,
+    "explanation": "Binomial nomenclature requires italics for both genus and species names when typed.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the science of classifying organisms called?",
+    "options": [
+      "Ecology",
+      "Taxonomy",
+      "Phylogenetics",
+      "Nomenclature"
+    ],
+    "correct": 1,
+    "explanation": "Taxonomy involves identification, naming and classification of organisms.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which best defines a species in biological terms?",
+    "options": [
+      "Organisms with similar DNA",
+      "Organisms that can interbreed and produce fertile offspring",
+      "Organisms sharing a habitat",
+      "Organisms with identical morphology"
+    ],
+    "correct": 1,
+    "explanation": "Biological species concept emphasizes reproductive compatibility.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "How should you write 'Escherichia coli' when handwriting?",
+    "options": [
+      "ESCHERICHIA COLI",
+      "Escherichia coli",
+      "Escherichia coli",
+      "Escherichia coli"
+    ],
+    "correct": 2,
+    "explanation": "Genus capitalized, species lowercase, and underlined.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "The plural of 'phylum' is:",
+    "options": [
+      "Phylum",
+      "Phyla",
+      "Phylae",
+      "Phylums"
+    ],
+    "correct": 1,
+    "explanation": "Latin-derived plural: phylum → phyla.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which is NOT a kingdom in Whittaker's five-kingdom system?",
+    "options": [
+      "Monera",
+      "Protista",
+      "Fungi",
+      "Archaea"
+    ],
+    "correct": 3,
+    "explanation": "Archaea were later separated from Monera.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which would be considered a tautonym?",
+    "options": [
+      "Homo sapiens",
+      "Bison bison",
+      "Escherichia coli",
+      "Canis lupus"
+    ],
+    "correct": 1,
+    "explanation": "A tautonym has identical genus and species names (e.g., Bison bison).",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary purpose of a dichotomous key?",
+    "options": [
+      "To show evolutionary relationships",
+      "To identify organisms based on characteristics",
+      "To classify viruses",
+      "To name new species"
+    ],
+    "correct": 1,
+    "explanation": "Dichotomous keys use paired statements to identify organisms through observable traits.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic rank is more specific than Family but more general than Species?",
+    "options": [
+      "Order",
+      "Class",
+      "Genus",
+      "Phylum"
+    ],
+    "correct": 2,
+    "explanation": "The sequence is: Family > Genus > Species.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic rank was added above Kingdom in modern systems?",
+    "options": [
+      "Phylum",
+      "Domain",
+      "Family",
+      "Order"
+    ],
+    "correct": 1,
+    "explanation": "The three-domain system (Bacteria, Archaea, Eukarya) sits above Kingdoms.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary purpose of binomial nomenclature?",
+    "options": [
+      "To show evolutionary relationships",
+      "To provide unique, universal names for species",
+      "To classify organisms by habitat",
+      "To identify viral strains"
+    ],
+    "correct": 1,
+    "explanation": "Ensures each species has a standardized two-part name globally.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the term for naming a species after its discoverer?",
+    "options": [
+      "Tautonym",
+      "Eponym",
+      "Synonym",
+      "Homonym"
+    ],
+    "correct": 1,
+    "explanation": "E.g., 'smithii' honors a person named Smith.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which is true about type specimens?",
+    "options": [
+      "They must be fossils",
+      "They can be photos or drawings",
+      "They serve as permanent references",
+      "They are only for plants"
+    ],
+    "correct": 2,
+    "explanation": "Preserved specimens anchor the definition of a species name.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Hybrid organisms are named by:",
+    "options": [
+      "Combining parent species names",
+      "Using the mother's species name",
+      "Creating a new genus",
+      "Adding 'x' before the species name"
+    ],
+    "correct": 3,
+    "explanation": "E.g., Quercus × alba for a hybrid oak.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "The International Code of Nomenclature for algae, fungi, and plants is abbreviated:",
+    "options": [
+      "ICZN",
+      "ICN",
+      "ICBN",
+      "ICNCP"
+    ],
+    "correct": 1,
+    "explanation": "ICN governs naming for these groups (was ICBN for plants).",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What happens if a scientific name is not underlined when handwritten?",
+    "options": [
+      "It becomes invalid",
+      "It is considered provisional",
+      "It violates nomenclature rules",
+      "It must be italicized instead"
+    ],
+    "correct": 2,
+    "explanation": "Handwritten scientific names must be underlined to substitute for italics.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which statement about type specimens is correct?",
+    "options": [
+      "They show evolutionary relationships",
+      "They serve as permanent references for species names",
+      "They are only used for fossil species",
+      "They represent hybrid organisms"
+    ],
+    "correct": 1,
+    "explanation": "Type specimens are preserved examples that anchor the definition of a species.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+//[
+  {
+    "q": "If two scientists name the same species differently, which name has priority?",
+    "options": [
+      "The more descriptive name",
+      "The name published first",
+      "The name in Latin",
+      "The longer name"
+    ],
+    "correct": 1,
+    "explanation": "Principle of priority favors the earliest validly published name.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which is NOT a requirement for a valid species name?",
+    "options": [
+      "Must be in Latin or Latinized",
+      "Must be underlined when handwritten",
+      "Must include the discoverer's name",
+      "Must be unique for the genus"
+    ],
+    "correct": 2,
+    "explanation": "Discoverer names are optional (e.g., in eponyms like 'smithii').",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why can't viruses be classified in the Linnaean system?",
+    "options": [
+      "They are too small",
+      "They lack cellular structure",
+      "They mutate too quickly",
+      "They are artificial"
+    ],
+    "correct": 1,
+    "explanation": "Viruses are non-cellular and excluded from traditional taxonomy.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic level is most inclusive after Domain?",
+    "options": [
+      "Phylum",
+      "Kingdom",
+      "Class",
+      "Order"
+    ],
+    "correct": 1,
+    "explanation": "Hierarchy: Domain → Kingdom → Phylum → Class → Order...",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic tool uses molecular data like DNA sequences?",
+    "options": [
+      "Dichotomous key",
+      "Phylogenetic tree",
+      "Binomial nomenclature",
+      "Type specimen"
+    ],
+    "correct": 1,
+    "explanation": "Phylogenetic trees visualize evolutionary relationships using genetic data.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the main advantage of DNA barcoding?",
+    "options": [
+      "Identifying species when morphology is unclear",
+      "Naming new species",
+      "Classifying viruses",
+      "Studying fossil specimens"
+    ],
+    "correct": 0,
+    "explanation": "DNA barcoding helps identify species using short genetic markers.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What does a phylogenetic tree's branch length typically represent?",
+    "options": [
+      "Physical size of organisms",
+      "Geographic distribution",
+      "Evolutionary time or divergence",
+      "Number of species in a group"
+    ],
+    "correct": 2,
+    "explanation": "Longer branches indicate greater evolutionary divergence.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which tool would you use to identify an unknown plant?",
+    "options": [
+      "Cladogram",
+      "Dichotomous key",
+      "Karyotype",
+      "Microscope slide"
+    ],
+    "correct": 1,
+    "explanation": "Dichotomous keys use paired statements for identification.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "DNA barcoding identifies species using:",
+    "options": [
+      "Mitochondrial genes",
+      "Ribosomal proteins",
+      "Cell wall composition",
+      "Flagellar structure"
+    ],
+    "correct": 0,
+    "explanation": "Typically uses CO1 gene in mitochondria for animals.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "A monophyletic group includes:",
+    "options": [
+      "An ancestor and some descendants",
+      "All descendants of a common ancestor",
+      "Species with similar traits",
+      "Unrelated species in a habitat"
+    ],
+    "correct": 1,
+    "explanation": "Also called a clade - a complete evolutionary branch.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "A paraphyletic group excludes:",
+    "options": [
+      "The common ancestor",
+      "Some descendants of a common ancestor",
+      "All extinct members",
+      "Species with different traits"
+    ],
+    "correct": 1,
+    "explanation": "E.g., Reptilia without birds is paraphyletic.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Cyanobacteria were reclassified from plants to bacteria due to:",
+    "options": [
+      "Lack of chloroplasts",
+      "Prokaryotic cell structure",
+      "Aquatic habitat",
+      "Photosynthetic ability"
+    ],
+    "correct": 1,
+    "explanation": "Their prokaryotic nature places them with bacteria.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following statements supports the argument that viruses are nonliving?",
+    "options": [
+      "They do not carry out metabolic processes.",
+      "Their DNA does not encode proteins.",
+      "They have RNA rather rather than DNA.",
+      "They do not evolve."
+    ],
+    "correct": 0,
+    "explanation": "Viruses lack the cellular machinery to perform their own metabolic processes, such as generating energy or synthesizing proteins. They are like 'biological robots' that can only function and replicate by hijacking the machinery of a host cell. This absolute dependency on a host for basic life functions is a key reason they are considered nonliving entities.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2023 Test 2 Q1.i",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following statements supports the argument that viruses are nonliving?",
+    "options": [
+      "They do not carry out metabolic processes.",
+      "Their DNA does not encode proteins.",
+      "They have RNA rather than DNA.",
+      "They do not evolve."
+    ],
+    "correct": 0,
+    "explanation": "Viruses lack the cellular machinery to perform their own metabolic processes, such as generating energy or synthesizing proteins. Think of them like 'biological USB drives'—they must plug into a host cell to function. This absolute dependency is why they’re considered nonliving.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "In the current taxonomic system, families are grouped into:",
+    "options": [
+      "classes",
+      "phyla",
+      "orders",
+      "Genus"
+    ],
+    "correct": 2,
+    "explanation": "The taxonomic hierarchy (from broadest to most specific) is Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species. Therefore, families are grouped into orders. Mnemonic: 'Dear King Philip Came Over For Good Soup' helps remember the order of taxonomic ranks.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2023 Test 2 Q1.x",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is not a protist?",
+    "options": [
+      "Paramecium",
+      "Plasmodium",
+      "Penicillium",
+      "Euglena"
+    ],
+    "correct": 2,
+    "explanation": "Paramecium, Plasmodium, and Euglena are all well-known examples of protists, a diverse kingdom of eukaryotic organisms. Penicillium, however, is a genus of fungi, known for producing the antibiotic penicillin. Think of it as 'P for Penicillium is P for Fungi', not Protista.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2015 Sessional Q4",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic group is the most specific?",
+    "options": [
+      "Phylum",
+      "Class",
+      "Genus",
+      "Species"
+    ],
+    "correct": 3,
+    "explanation": "In the standard taxonomic hierarchy, 'Species' is the most specific rank, representing a group of organisms capable of interbreeding and producing fertile offspring. It's like the most detailed address in a biological classification system, narrowing down to a very specific group.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2021 Test 1 Q3",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of these is used to stain bacterial cell walls for classification?",
+    "options": [
+      "Methylene blue",
+      "Safranin",
+      "Gram stain",
+      "Crystal violet"
+    ],
+    "correct": 2,
+    "explanation": "The Gram stain is a differential staining technique used to classify bacteria into two large groups (Gram-positive and Gram-negative) based on their cell wall composition. It's not a single dye but a multi-step process involving several reagents, including crystal violet, iodine, alcohol, and safranin. Mnemonic: 'Gram = Groups' for bacterial classification.",
+    "topic": "Bacteria",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2016 Sessional Q5",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Viruses are different from living organisms because they:",
+    "options": [
+      "Are cellular",
+      "Contain cytoplasm",
+      "Lack ribosomes",
+      "Reproduce independently"
+    ],
+    "correct": 2,
+    "explanation": "A defining characteristic of viruses is their acellular nature and lack of ribosomes. Ribosomes are essential for protein synthesis in all living cells, but viruses must rely on the host cell's ribosomes to produce their proteins. This makes them obligate intracellular parasites, unable to reproduce independently.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2023 Sessional Q6",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A virus that infects bacteria is called a:",
+    "options": [
+      "Phagocyte",
+      "Bacteriophage",
+      "Viroid",
+      "Plasmid"
+    ],
+    "correct": 1,
+    "explanation": "A bacteriophage is a type of virus that specifically infects and replicates within bacteria. The name literally means 'bacteria eater' (from 'bacteri-' and 'phagein', to devour). Think: 'Bacteria + Phage = Bacteriophage'.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2014 Test 2 Q11",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Trypanosoma is transmitted by which insect?",
+    "options": [
+      "Anopheles mosquito",
+      "Tsetse fly",
+      "Tick",
+      "Housefly"
+    ],
+    "correct": 1,
+    "explanation": "Trypanosoma brucei, the protist causing African sleeping sickness, is transmitted by the tsetse fly. It's a classic example of a vector-borne disease. Mnemonic: 'Tsetse for Trypanosoma'.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2017 Sessional Q4",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist shows both plant and animal characteristics?",
+    "options": [
+      "Amoeba",
+      "Euglena",
+      "Plasmodium",
+      "Paramecium"
+    ],
+    "correct": 1,
+    "explanation": "Euglena is unique because it can perform photosynthesis like plants (due to chloroplasts) and also ingest food like animals (heterotrophic) in the absence of light. It's like a 'biological hybrid' that can switch its nutritional strategy.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2019 Test 1 Q9",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Plasmodium vivax causes:",
+    "options": [
+      "Dengue",
+      "Yellow fever",
+      "Malaria",
+      "Typhoid"
+    ],
+    "correct": 2,
+    "explanation": "Plasmodium vivax is one of the protozoan parasites that causes malaria in humans. The Plasmodium genus is notorious for causing this widespread parasitic disease. Mnemonic: 'Plasmodium = Painful Malaria'.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2017 Test 2 Q6",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following groups is not a Kingdom in modern classification?",
+    "options": [
+      "Plantae",
+      "Monera",
+      "Protista",
+      "Virus"
+    ],
+    "correct": 3,
+    "explanation": "In modern biological classification, the main kingdoms are Plantae, Animalia, Fungi, Protista, and Bacteria (formerly Monera, but now often split into Bacteria and Archaea at the Domain level). Viruses are not considered a Kingdom because they are non-living entities and lack the cellular structure required for classification within the kingdoms of life.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2014 Sessional Q10",
+    "tag": "MCQ"
+  },
+  {
+    "q": "All viruses contain:",
+    "options": [
+      "Cytoplasm and cell wall",
+      "DNA or RNA",
+      "Ribosomes and nuclei",
+      "Mitochondria and chloroplasts"
+    ],
+    "correct": 1,
+    "explanation": "The core components of any virus are its genetic material (either DNA or RNA, but not both simultaneously) and a protein coat (capsid) that protects it. Viruses lack the complex cellular structures like cytoplasm, cell walls, ribosomes, nuclei, mitochondria, and chloroplasts found in living cells.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2021 Sessional Q7",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Ciliates are best represented by:",
+    "options": [
+      "Amoeba",
+      "Euglena",
+      "Plasmodium",
+      "Paramecium"
+    ],
+    "correct": 3,
+    "explanation": "Ciliates are a group of protists characterized by the presence of hair-like organelles called cilia, which they use for locomotion and feeding. Paramecium is the most well-known and classic example of a ciliate. Think: 'Cilia for Ciliates, like Paramecium'.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Test 2 Q4",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which scientist developed the system of binomial nomenclature?",
+    "options": [
+      "Aristotle",
+      "Linnaeus",
+      "Darwin",
+      "Pasteur"
+    ],
+    "correct": 1,
+    "explanation": "Carl Linnaeus, a Swedish botanist, zoologist, and physician, is known as the 'father of modern taxonomy' for formalizing binomial nomenclature, the system of naming organisms with two terms, which are the genus and species. Mnemonic: 'Linnaeus = Latin Names'.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2020 Sessional Q9",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The Kingdom Animalia consists of only one correct set of organisms hereby listed as:",
+    "options": [
+      "algae, amphibians, bacteria, fungi, snails",
+      "archaea, blue-green algae, earthworms, gymnosperms, pteridophytes",
+      "amphibians, cockroaches, earthworms, leeches, snails",
+      "algae, angiosperms, bacteria, gymnosperms, mosses",
+      "I do not know."
+    ],
+    "correct": 2,
+    "explanation": "The Kingdom Animalia comprises multicellular, eukaryotic organisms that are heterotrophic (obtain nutrition by consuming other organisms). From the given options, amphibians, cockroaches, earthworms, leeches, and snails are all examples of animals. Other options include non-animal organisms like algae (Protista), bacteria (Bacteria/Archaea), fungi (Fungi), gymnosperms (Plantae), and mosses (Plantae).",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2014 Sessional Q1",
+    "tag": "MCQ"
+  },
+  
+//[
+  {
+    "q": "What is the primary focus of taxonomy?",
+    "options": [
+      "Studying the behavior of organisms",
+      "Describing, naming, and classifying organisms",
+      "Analyzing the chemical composition of cells",
+      "Investigating ecological interactions"
+    ],
+    "correct": 1,
+    "explanation": "Taxonomy is the science of describing, identifying, naming, and classifying organisms into hierarchical groups based on shared characteristics or phylogenetic relationships. Option A focuses on behavior, C on chemistry, and D on ecology, which are not the primary focus of taxonomy.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which scientist is considered the father of taxonomy?",
+    "options": [
+      "Charles Darwin",
+      "Carl Linnaeus",
+      "Ernst Mayr",
+      "Gregor Mendel"
+    ],
+    "correct": 1,
+    "explanation": "Carl Linnaeus developed the Linnaean classification system and binomial nomenclature, earning him the title of the father of taxonomy. Darwin focused on evolution, Mayr on species concepts, and Mendel on genetics.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "In binomial nomenclature, how is the species name formatted?",
+    "options": [
+      "Capitalized and italicized",
+      "Lowercase and italicized",
+      "Capitalized and not italicized",
+      "Lowercase and not italicized"
+    ],
+    "correct": 1,
+    "explanation": "In binomial nomenclature, the species name is lowercase and italicized (e.g., sapiens in Homo sapiens), while the genus is capitalized and italicized. Options A, C, and D do not follow these rules.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which taxonomic rank was introduced after Linnaeus' time?",
+    "options": [
+      "Kingdom",
+      "Phylum",
+      "Domain",
+      "Class"
+    ],
+    "correct": 2,
+    "explanation": "The domain rank was introduced in 1990, long after Linnaeus' classification system in 1735. Kingdom, phylum, and class were part of his original system.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "How many domains of life are recognized in modern taxonomy?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correct": 1,
+    "explanation": "Modern taxonomy recognizes three domains: Bacteria, Archaea, and Eukarya. Viruses are not included in domains, and no additional domains are recognized.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which domain includes organisms with membrane-bound nuclei?",
+    "options": [
+      "Bacteria",
+      "Archaea",
+      "Eukarya",
+      "Viruses"
+    ],
+    "correct": 2,
+    "explanation": "Eukarya includes organisms with membrane-bound nuclei, such as protists, fungi, plants, and animals. Bacteria and Archaea are prokaryotic, lacking nuclei, and viruses are non-cellular.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Archaea are distinguished from Bacteria by their:",
+    "options": [
+      "Lack of a cell wall",
+      "Ether-linked membrane lipids",
+      "Presence of a nucleus",
+      "Larger cell size"
+    ],
+    "correct": 1,
+    "explanation": "Archaea have ether-linked lipids in their membranes, unlike the ester-linked lipids in Bacteria. Archaea have cell walls (not A), lack nuclei (not C), and are similar in size to Bacteria (not D).",
+    "topic": "Archaea",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which kingdom is considered a link between plants, animals, and fungi?",
+    "options": [
+      "Animalia",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    "correct": 1,
+    "explanation": "Protista includes organisms with traits resembling plants (algae), animals (protozoans), and fungi (slime molds), making it a link between these kingdoms. Animalia, Fungi, and Plantae are more specialized.",
+    "topic": "Protista",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the highest taxonomic rank in the classification hierarchy?",
+    "options": [
+      "Kingdom",
+      "Domain",
+      "Phylum",
+      "Class"
+    ],
+    "correct": 1,
+    "explanation": "Domain is the most general taxonomic rank, followed by kingdom, phylum, and class, organizing organisms by broad cellular characteristics.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which phylum includes all vertebrate animals?",
+    "options": [
+      "Arthropoda",
+      "Chordata",
+      "Mollusca",
+      "Annelida"
+    ],
+    "correct": 1,
+    "explanation": "Chordata includes vertebrates with a notochord or backbone. Arthropoda includes insects, Mollusca includes snails, and Annelida includes worms, none of which are vertebrates.",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "The order Lepidoptera includes which organisms?",
+    "options": [
+      "Bats",
+      "Butterflies and moths",
+      "Whales and dolphins",
+      "Dogs and wolves"
+    ],
+    "correct": 1,
+    "explanation": "Lepidoptera is the order of butterflies and moths, as established by Linnaeus. Bats (Chiroptera), whales (Cetaceans), and dogs (Carnivora) belong to different orders.",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "In the order Carnivora, which family includes cats?",
+    "options": [
+      "Canidae",
+      "Felidae",
+      "Ursidae",
+      "Mephitidae"
+    ],
+    "correct": 1,
+    "explanation": "Felidae is the family of cats in the order Carnivora. Canidae includes dogs, Ursidae includes bears, and Mephitidae includes skunks.",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the genus name for humans?",
+    "options": [
+      "Sapiens",
+      "Homo",
+      "Hominidae",
+      "Primates"
+    ],
+    "correct": 1,
+    "explanation": "The genus for humans is Homo, as in Homo sapiens. Sapiens is the species, Hominidae is the family, and Primates is the order.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "How many species are estimated to exist on Earth?",
+    "options": [
+      "8.7 million",
+      "1.2 million",
+      "15 million",
+      "5 million"
+    ],
+    "correct": 0,
+    "explanation": "The estimated number of species on Earth is 8.7 million, though most remain undiscovered. Other options are incorrect estimates.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "Which language is commonly used in binomial nomenclature?",
+    "options": [
+      "English",
+      "Greek",
+      "Latin",
+      "French"
+    ],
+    "correct": 2,
+    "explanation": "Binomial nomenclature uses Latin or Latinized forms for universal recognition, not English, Greek, or French.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "The biological species concept emphasizes:",
+    "options": [
+      "Physical appearance",
+      "Reproductive isolation",
+      "Ecological niche",
+      "Genetic diversity"
+    ],
+    "correct": 1,
+    "explanation": "The biological species concept defines species by their ability to interbreed and be reproductively isolated. Appearance, niche, and diversity are secondary.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Why is the biological species concept not applicable to bacteria?",
+    "options": [
+      "They lack a nucleus",
+      "They reproduce asexually",
+      "They are multicellular",
+      "They have no cell wall"
+    ],
+    "correct": 1,
+    "explanation": "Bacteria reproduce asexually via binary fission, making reproductive isolation irrelevant. They lack nuclei (A is false), are unicellular (C is false), and have cell walls (D is false).",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which organisms are known to reproduce by parthenogenesis?",
+    "options": [
+      "Some lizards",
+      "Mammals",
+      "Birds",
+      "Fungi"
+    ],
+    "correct": 0,
+    "explanation": "Some lizards reproduce parthenogenetically, producing unfertilized eggs. Mammals, birds, and fungi typically use sexual reproduction.",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the scientific name for the American black bear?",
+    "options": [
+      "Ursus americanus",
+      "Bufo americanus",
+      "Homo sapiens",
+      "Canis lupus"
+    ],
+    "correct": 0,
+    "explanation": "Ursus americanus is the scientific name for the American black bear. Bufo americanus is a toad, Homo sapiens is human, and Canis lupus is a wolf.",
+    "topic": "Animalia",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Hybrid zones complicate species classification because:",
+    "options": [
+      "They prevent reproduction",
+      "They allow interbreeding",
+      "They isolate populations",
+      "They reduce genetic diversity"
+    ],
+    "correct": 1,
+    "explanation": "Hybrid zones involve interbreeding between species, blurring reproductive isolation required by the biological species concept. They do not prevent reproduction, isolate populations fully, or reduce diversity.",
+    "topic": "Taxonomy",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which phylum of Archaea includes methanogens?",
+    "options": [
+      "Crenarchaeota",
+      "Euryarchaeota",
+      "Korarchaeota",
+      "Proteobacteria"
+    ],
+    "correct": 1,
+    "explanation": "Euryarchaeota includes methanogens, which produce methane. Crenarchaeota includes hyperthermophiles, Korarchaeota is less studied, and Proteobacteria is a bacterial phylum.",
+    "topic": "Archaea",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which type of bacteria is capable of photosynthesis?",
+    "options": [
+      "Spirochetes",
+      "Cyanobacteria",
+      "Firmicutes",
+      "Chlamydiae"
+    ],
+    "correct": 1,
+    "explanation": "Cyanobacteria, also called blue-green algae, perform photosynthesis. Spirochetes, Firmicutes, and Chlamydiae do not.",
+    "topic": "Bacteria",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Viruses are not classified in any domain because they:",
+    "options": [
+      "Are multicellular",
+      "Lack a cellular structure",
+      "Have a nucleus",
+      "Reproduce asexually"
+    ],
+    "correct": 1,
+    "explanation": "Viruses are non-cellular, consisting of a nucleic acid and capsid, excluding them from domains. They are not multicellular, lack nuclei, and can reproduce (in hosts).",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the protein coat of a virus called?",
+    "options": [
+      "Nucleoid",
+      "Capsid",
+      "Envelope",
+      "Sheath"
+    ],
+    "correct": 1,
+    "explanation": "The protein coat of a virus is the capsid. Nucleoid is a prokaryotic DNA region, envelope is an outer layer in some viruses, and sheath is a bacteriophage structure.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Bacteriophages primarily infect:",
+    "options": [
+      "Plants",
+      "Animals",
+      "Bacteria",
+      "Fungi"
+    ],
+    "correct": 2,
+    "explanation": "Bacteriophages (phages) infect bacteria, not plants, animals, or fungi, which may be infected by other viruses.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which structure in bacteriophages attaches to the host cell?",
+    "options": [
+      "Capsid",
+      "Nucleic acid core",
+      "Tail fibers",
+      "Spiral sheath"
+    ],
+    "correct": 2,
+    "explanation": "Tail fibers attach bacteriophages to bacterial cell wall receptors. Capsid protects nucleic acid, the core carries genes, and the sheath aids injection.",
+    "topic": "Viruses",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which kingdom was first described by Ernst Haeckel in 1886?",
+    "options": [
+      "Animalia",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    "correct": 1,
+    "explanation": "Ernst Haeckel first described the kingdom Protista in 1886. Animalia, Fungi, and Plantae were recognized earlier.",
+    "topic": "Protista",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "Most protists are characterized by being:",
+    "options": [
+      "Multicellular",
+      "Prokaryotic",
+      "Eukaryotic",
+      "Non-motile"
+    ],
+    "correct": 2,
+    "explanation": "Protists are eukaryotic, with membrane-bound nuclei. They can be unicellular or multicellular, motile or non-motile, and are not prokaryotic.",
+    "topic": "Protista",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protozoan category moves using pseudopodia?",
+    "options": [
+      "Sarcodinians",
+      "Zooflagellates",
+      "Ciliaphorans",
+      "Apicomplexa"
+    ],
+    "correct": 0,
+    "explanation": "Sarcodinians, such as Amoeba, move using pseudopodia (false feet), which are cytoplasmic extensions. Zooflagellates use flagella, Ciliaphorans use cilia, and Apicomplexa are non-motile parasites.",
+    "topic": "Protista",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary mode of nutrition for dinoflagellates?",
+    "options": [
+      "Heterotrophic only",
+      "Autotrophic or heterotrophic",
+      "Chemotrophic",
+      "Saprotrophic only"
+    ],
+    "correct": 1,
+    "explanation": "Dinoflagellates can be autotrophic (photosynthetic) or heterotrophic (e.g., filter-feeding), depending on the species and conditions. They are not exclusively chemotrophic or saprotrophic.",
+    "topic": "Protista",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which structure is used by Amoeba for locomotion?",
+    "options": [
+      "Flagellum",
+      "Cilia",
+      "Pseudopodia",
+      "Hyphae"
+    ],
+    "correct": 2,
+    "explanation": "Amoeba moves by extending pseudopodia (false feet), formed by cytoplasmic streaming. Flagella and cilia are used by other protists (e.g., Euglena and Paramecium), and hyphae are fungal structures.",
+    "topic": "Amoeba",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the Greek origin of the term 'Amoeba'?",
+    "options": [
+      "Movement",
+      "Change",
+      "Life",
+      "Water"
+    ],
+    "correct": 1,
+    "explanation": "The term 'Amoeba' comes from the Greek word 'amoibe,' meaning change, reflecting its ability to change shape during movement. It does not directly refer to movement, life, or water.",
+    "topic": "Amoeba",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the function of the contractile vacuole in Amoeba?",
+    "options": [
+      "Digestion of food",
+      "Regulation of water balance",
+      "Locomotion",
+      "Photosynthesis"
+    ],
+    "correct": 1,
+    "explanation": "The contractile vacuole in Amoeba pumps out excess water to maintain osmotic balance, preventing the cell from bursting in hypotonic environments. It is not involved in digestion, locomotion, or photosynthesis.",
+    "topic": "Amoeba",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist causes amoebic dysentery in humans?",
+    "options": [
+      "Entamoeba histolytica",
+      "Plasmodium falciparum",
+      "Trypanosoma brucei",
+      "Giardia lamblia"
+    ],
+    "correct": 0,
+    "explanation": "Entamoeba histolytica, an amoeba, causes amoebic dysentery through contaminated water. Plasmodium falciparum causes malaria, Trypanosoma brucei causes sleeping sickness, and Giardia lamblia causes giardiasis.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "How many species of Plasmodium are known to infect humans?",
+    "options": [
+      "5",
+      "11",
+      "20",
+      "200"
+    ],
+    "correct": 1,
+    "explanation": "Over 200 Plasmodium species exist, but only 11 are known to infect humans, with Plasmodium falciparum being the most severe. The other options are incorrect based on the notes.",
+    "topic": "Plasmodium",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which organism serves as a vector for Plasmodium in its life cycle?",
+    "options": [
+      "Tsetse fly",
+      "Anopheles mosquito",
+      "Housefly",
+      "Tick"
+    ],
+    "correct": 1,
+    "explanation": "Anopheles mosquitoes are the vectors that transmit Plasmodium to humans, causing malaria. The other insects are vectors for different diseases.",
+    "topic": "Plasmodium",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "The malaria-causing protist Plasmodium belongs to which group?",
+    "options": [
+      "Sarcodinians",
+      "Zooflagellates",
+      "Apicomplexa",
+      "Ciliates"
+    ],
+    "correct": 2,
+    "explanation": "Apicomplexa are obligate parasites, including Plasmodium, that have an apical complex for invading host cells. Sarcodinians, zooflagellates, and ciliates are not typically parasitic.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary characteristic of the kingdom Protista?",
+    "options": [
+      "Mostly prokaryotic and unicellular",
+      "Multicellular and non-motile",
+      "Mostly unicellular and eukaryotic",
+      "Heterotrophic and filamentous"
+    ],
+    "correct": 2,
+    "explanation": "Protists are primarily unicellular and eukaryotic, distinguishing them from prokaryotes, multicellular organisms, and filamentous fungi.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which group of protists is known for having glass-like cell walls made of silica?",
+    "options": [
+      "Amoebas",
+      "Diatoms",
+      "Dinoflagellates",
+      "Euglenoids"
+    ],
+    "correct": 1,
+    "explanation": "Diatoms have intricate, glass-like cell walls made of silica. Amoebas, dinoflagellates, and euglenoids have different cell coverings or lack them.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist is a major component of phytoplankton and a producer in aquatic ecosystems?",
+    "options": [
+      "Amoeba",
+      "Plasmodium",
+      "Euglena",
+      "Diatoms"
+    ],
+    "correct": 3,
+    "explanation": "Diatoms, along with dinoflagellates and algae, are major producers in aquatic ecosystems, forming the base of many food webs. Amoeba and Plasmodium are heterotrophic.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "What is the primary mode of nutrition for diatoms?",
+    "options": [
+      "Heterotrophic",
+      "Autotrophic",
+      "Saprotrophic",
+      "Parasitic"
+    ],
+    "correct": 1,
+    "explanation": "Diatoms are autotrophic, producing their own food through photosynthesis. This differs from heterotrophic, saprotrophic, and parasitic modes.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Brown algae, such as kelps, belong to which group?",
+    "options": [
+      "Red algae",
+      "Green algae",
+      "Oomycetes",
+      "Stramenopiles"
+    ],
+    "correct": 3,
+    "explanation": "Brown algae are part of the Stramenopiles, a group of protists that also includes diatoms. Red and green algae are in different groups, and oomycetes are water molds.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the primary role of algae in aquatic ecosystems?",
+    "options": [
+      "Decomposers",
+      "Primary consumers",
+      "Producers",
+      "Parasites"
+    ],
+    "correct": 2,
+    "explanation": "Algae, including diatoms, are photosynthetic producers that form the base of aquatic food webs, unlike decomposers, consumers, or parasites.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which protist is a water mold that caused the Irish potato famine?",
+    "options": [
+      "Phytophthora infestans",
+      "Plasmodium",
+      "Saprolegnia",
+      "Euglena"
+    ],
+    "correct": 0,
+    "explanation": "Phytophthora infestans, a water mold, caused the Irish potato famine, as mentioned in the notes. Plasmodium causes malaria, Saprolegnia infects aquatic organisms, and Euglena is not pathogenic.",
+    "topic": "Protists",
+    "term": "T2",
+    "course": "BI110",
+    "year": null,
+    "tag": "MCQ"
+  },
 ];
