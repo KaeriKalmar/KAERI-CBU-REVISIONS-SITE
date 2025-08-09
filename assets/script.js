@@ -596,7 +596,7 @@ function renderQuiz() {
   container.innerHTML = "";
   document.getElementById("result").innerHTML = "";
 
-  let q = hasFullAccess ? shuffle([...currentMcqData]).slice(0, 10) : shuffle([...currentMcqData]).slice(0, 3);
+  let q = hasFullAccess ? shuffle([...currentMcqData]).slice(0, 10) : shuffle([...currentMcqData]).slice(0, 10);
   currentQuizData = q;
   currentQuizType = 'mcq';
   currentQuestionIndex = 0;
@@ -704,7 +704,7 @@ function renderShortAnswers() {
   container.innerHTML = "";
   document.getElementById("result").innerHTML = "";
 
-  let q = hasFullAccess ? shuffle([...currentShortData]).slice(0, 10) : shuffle([...currentShortData]).slice(0, 2);
+  let q = hasFullAccess ? shuffle([...currentShortData]).slice(0, 10) : shuffle([...currentShortData]).slice(0, 10);
   currentQuizData = q;
   currentQuizType = 'shortAnswer';
   currentQuestionIndex = 0;
