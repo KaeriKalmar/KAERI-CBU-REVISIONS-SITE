@@ -333,6 +333,8 @@ function denyAccess(message, codeToClear = null) {
     localStorage.removeItem("accessCodeExpires_" + currentTermKey);
     
     updateModeBanner("🔒 Demo Mode: Limited Access");
+    document.getElementById('mode-banner').classList.add('demo-mode-banner');
+    document.getElementById('mode-banner').classList.remove('full-access-banner');
     showAppNotification(message, "error");
 }
 
@@ -391,6 +393,9 @@ window.onload = () => {
             const global = usedAccessCodes.find(e => e.code === code);
             if (global && Date.now() < global.globalExpiry && Date.now() < storedExpiry) {
                 hasFullAccess = true;
+                updateModeBanner("✅ FULL ACCESS");
+                document.getElementById('mode-banner').classList.add('full-access-banner');
+                document.getElementById('mode-banner').classList.remove('demo-mode-banner');
                 showAppNotification(`✅ Full Access Mode (Re-activated via ${type})`, "success");
                 clearDemoLocks();
                 return true;
@@ -402,6 +407,9 @@ window.onload = () => {
         
         if (Date.now() < storedExpiry) {
             hasFullAccess = true;
+            updateModeBanner("✅ FULL ACCESS");
+            document.getElementById('mode-banner').classList.add('full-access-banner');
+            document.getElementById('mode-banner').classList.remove('demo-mode-banner');
             showAppNotification(`✅ Full Access Mode (${type})`, "success");
             clearDemoLocks();
             return true;
@@ -452,6 +460,8 @@ window.onload = () => {
         const userCode = prompt("Enter Access Code (or blank for Demo):");
         if (!userCode) {
             updateModeBanner("🔒 Demo Mode");
+            document.getElementById('mode-banner').classList.add('demo-mode-banner');
+            document.getElementById('mode-banner').classList.remove('full-access-banner');
             showAppNotification("🔒 Demo Mode", "info");
         } else if (revokedAccessCodes.includes(userCode)) {
             denyAccess(`❌ "${userCode}" is revoked.`, userCode);
@@ -492,6 +502,9 @@ window.onload = () => {
                     localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
                     localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, global.globalExpiry);
                     hasFullAccess = true;
+                    updateModeBanner("✅ FULL ACCESS");
+                    document.getElementById('mode-banner').classList.add('full-access-banner');
+                    document.getElementById('mode-banner').classList.remove('demo-mode-banner');
                     showAppNotification(`✅ Full Access (Re-activated via ${accessType})`, "success");
                     clearDemoLocks();
                 } else if (global && Date.now() >= global.globalExpiry) {
@@ -505,6 +518,9 @@ window.onload = () => {
                     localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
                     localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, newExpiry);
                     hasFullAccess = true;
+                    updateModeBanner("✅ FULL ACCESS");
+                    document.getElementById('mode-banner').classList.add('full-access-banner');
+                    document.getElementById('mode-banner').classList.remove('demo-mode-banner');
                     showAppNotification(`✅ Full Access (${accessType})`, "success");
                     clearDemoLocks();
                 }
@@ -586,7 +602,6 @@ function updateProgress(current, total) {
     if (fill) fill.style.width = `${percent}%`;
     if (text) text.textContent = `Progress: ${current} of ${total}`;
 }
-
 // === MCQ MODE ===
 
 function renderQuiz() {
