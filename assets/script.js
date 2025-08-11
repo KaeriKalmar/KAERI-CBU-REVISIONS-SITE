@@ -98,7 +98,7 @@ const fullAccessCodes = {
     "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
     "CS110T3_MAIN005*X%",   "CS110T3_MAIN006^R&",
-    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
+      "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -194,12 +194,13 @@ const fullAccessCodes = {
   ]
 };
 
+
 //code killing section
 const revokedAccessCodes = ["test111"];
 
 // NEW: This array will store codes that have been "globally" activated/sold.
 // You will manually add codes to this array AFTER they have been initially activated by a user.
-const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@",   "BI110T1_MAIN002!Z*",
+const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@",   
     "BI110T1_MAIN003$K#",   "BI110T1_MAIN004&Y!",
     "BI110T1_MAIN005*X%",   "BI110T1_MAIN006^R&",
     "BI110T1_MAIN007~S+",   "BI110T1_MAIN008?D#",
@@ -211,7 +212,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0",
     
     "test111",
-    "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
+    
     "BI110T2_MAIN003$K#",   "BI110T2_MAIN004&Y!",
     "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
     "BI110T2_MAIN007~S+",   "BI110T2_MAIN008?D#",
@@ -222,8 +223,8 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
     "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
     
-    "BI110T3_MAIN001#A@",   "BI110T3_MAIN002!Z*",
-    "BI110T3_MAIN003$K#",   "BI110T3_MAIN004&Y!",
+   "BI110T3_MAIN002!Z*",
+      "BI110T3_MAIN004&Y!",
     "BI110T3_MAIN005*X%",   "BI110T3_MAIN006^R&",
     "BI110T3_MAIN007~S+",   "BI110T3_MAIN008?D#",
     "BI110T3_MAIN009|Q$",   "BI110T3_MAIN010<>P",
@@ -260,8 +261,8 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
   
     "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
-    "CS110T3_MAIN006^R&",
-    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
+ 
+  "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -278,11 +279,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "CS110T1_BONUS015 *5",  "CS110T1_BONUS016 ^6",
     "CS110T1_EXTRA017 ~7",  "CS110T1_EXTRA018 ?8",
     "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0","Lizzy@",
-    "CS110T3_MAIN005*X%",
-    
-    //added individually 
-    "BI110_TOTAL_ACCESS",
-    "FULL_UNLOCK_2025++","ACCESS_GRANTED_GLOBAL$","BI110_BUNDLE_PACK_123","SUPER_USER_XYZ_789","CBU_UNLOCK_CODE🔥"
+    "CS110T3_MAIN005*X%"
     
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
@@ -602,6 +599,7 @@ function updateProgress(current, total) {
     if (fill) fill.style.width = `${percent}%`;
     if (text) text.textContent = `Progress: ${current} of ${total}`;
 }
+
 // === MCQ MODE ===
 
 function renderQuiz() {
@@ -1035,4 +1033,32 @@ function showFlashcardCompletion() {
   `;
   updateProgress(currentFlashcards.length, currentFlashcards.length);
 }
-  
+  function renderDocumentLinks() {
+  const quizForm = document.getElementById("quiz-form");
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "";
+
+  if (!hasFullAccess) {
+    quizForm.innerHTML = `<div class="feedback"><p><strong>🚫 Documents are locked.</strong><br>Please purchase access to unlock PDF downloads.</p></div>`;
+    return;
+  }
+
+  const currentCourse = document.body.getAttribute("data-course");
+  const currentTerm = document.body.getAttribute("data-term");
+
+  const filtered = allDocuments.filter(doc => doc.course === currentCourse && doc.term === currentTerm);
+
+  if (filtered.length === 0) {
+    quizForm.innerHTML = `<div class="feedback"><p>No documents found for ${currentCourse} ${currentTerm}.</p></div>`;
+    return;
+  }
+
+  let html = `<div class="feedback"><h3>📄 Available Documents</h3><ul>`;
+  filtered.forEach(doc => {
+    html += `<li><a href="${doc.filePath}" target="_blank">${doc.title}</a></li>`;
+  });
+  html += `</ul></div>`;
+
+  quizForm.innerHTML = html;
+}
+
