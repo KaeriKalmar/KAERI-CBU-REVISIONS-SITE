@@ -15677,4 +15677,439 @@ const mcqData = [
     "year": null,
     "tag": "MCQ"
   },
+  //[
+  {
+    "q": "Which type of microscope would be best for observing the dynamic changes in a living white blood cell without staining? (2018 Sessional)",
+    "options": [
+      "Brightfield microscope",
+      "Scanning electron microscope (SEM)",
+      "Transmission electron microscope (TEM)",
+      "Phase-contrast microscope"
+    ],
+    "correct": 3,
+    "explanation": "A phase-contrast microscope is specifically designed to create high-contrast images of transparent, living specimens like unstained cells by exploiting differences in refractive index.",
+    "topic": "MICROSCOPY & STAINING",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "To study the intricate surface texture of a hair with high magnification, which microscope would you use? (2018 Sessional)",
+    "options": [
+      "Compound light microscope",
+      "Transmission electron microscope (TEM)",
+      "Scanning electron microscope (SEM)",
+      "Fluorescence microscope"
+    ],
+    "correct": 2,
+    "explanation": "A scanning electron microscope (SEM) provides highly detailed, three-dimensional images of a specimen's surface topography.",
+    "topic": "MICROSCOPY & STAINING",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The natural and programmed death of skin cells, which are then replaced by new cells, is an example of what process? (2018 Sessional)",
+    "options": [
+      "Necrosis",
+      "Apoptosis",
+      "Mitosis",
+      "Meiosis"
+    ],
+    "correct": 1,
+    "explanation": "Apoptosis, or programmed cell death, is a crucial process for an organism's development and homeostasis, such as the controlled turnover of skin cells.",
+    "topic": "CELL DIVISION",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Homologous chromosomes are a pair of chromosomes that contain the same... (2018 Sessional)",
+    "options": [
+      "Alleles at different loci",
+      "Genes at the same loci",
+      "Number of nucleotides",
+      "Physical length and shape"
+    ],
+    "correct": 1,
+    "explanation": "Homologous chromosomes are pairs of chromosomes that have the same genes arranged in the same order along their length, though they may carry different alleles for those genes.",
+    "topic": "GENETICS",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "During which phase of the cell cycle does the cell primarily focus on growth and synthesizing proteins and RNA in preparation for DNA replication? (2018 Sessional)",
+    "options": [
+      "G1 phase",
+      "S phase",
+      "G2 phase",
+      "M phase"
+    ],
+    "correct": 0,
+    "explanation": "The G1 phase is a period of significant cell growth and synthesis of proteins and RNA before the cell enters the S phase to replicate its DNA.",
+    "topic": "CELL DIVISION",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "To what group of macromolecules does the hormone insulin, which is composed of amino acid chains, belong? (2018 Sessional)",
+    "options": [
+      "Carbohydrates",
+      "Lipids",
+      "Proteins",
+      "Nucleic acids"
+    ],
+    "correct": 2,
+    "explanation": "Insulin is a polypeptide hormone, and since polypeptides are polymers of amino acids, it is classified as a protein.",
+    "topic": "MACROMOLECULES",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In sexually reproducing organisms, what is the role of meiosis in maintaining the chromosome count? (2018 Sessional)",
+    "options": [
+        "It doubles the chromosome number.",
+        "It reduces the chromosome number by half.",
+        "It keeps the chromosome number constant.",
+        "It only occurs in somatic cells."
+    ],
+    "correct": 1,
+    "explanation": "Meiosis is a cell division process that produces haploid gametes (n), each with half the number of chromosomes. This reduction is necessary to prevent the chromosome number from doubling with each generation after fertilization.",
+    "topic": "GENETICS",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the expected proportion of homozygous dominant offspring from a cross between a homozygous dominant (AA) and a heterozygous (Aa) parent? (2018 Sessional)",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "100%"
+    ],
+    "correct": 2,
+    "explanation": "A Punnett square for a cross between AA and Aa parents shows that 50% of the offspring will have the homozygous dominant genotype (AA) and the other 50% will be heterozygous (Aa).",
+    "topic": "GENETICS",
+    "term": "T1",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "What is the primary environment where most protists are found? (2018 Sessional)",
+    "options": [
+      "Terrestrial environments",
+      "Aquatic or moist habitats",
+      "Arid desert climates",
+      "Volcanic springs"
+    ],
+    "correct": 1,
+    "explanation": "Protists are predominantly found in aquatic or moist environments, as they are typically single-celled and require water for survival and reproduction.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which structural feature in Euglena enables it to perform photosynthesis? (2018 Sessional)",
+    "options": [
+      "Pellicle",
+      "Flagellum",
+      "Chloroplast",
+      "Eyespot"
+    ],
+    "correct": 2,
+    "explanation": "The presence of chloroplasts is the key indicator of a Euglena's ability to be an autotroph, as these organelles contain chlorophyll and are the site of photosynthesis.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A defining characteristic that is common to all protists is that they are all what? (2018 Sessional)",
+    "options": [
+      "Motile",
+      "Single-celled",
+      "Eukaryotic",
+      "Heterotrophic"
+    ],
+    "correct": 2,
+    "explanation": "Protists are a diverse group, but they are all eukaryotes, meaning their cells contain a membrane-bound nucleus and other organelles.",
+    "topic": "PROTISTS",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Viruses are unable to synthesize their own energy molecules. Which molecule are they unable to generate on their own? (2018 Sessional)",
+    "options": [
+      "Nucleic acids",
+      "Proteins",
+      "ATP",
+      "Lipids"
+    ],
+    "correct": 2,
+    "explanation": "Viruses are obligate intracellular parasites, meaning they must use a host cell's metabolic machinery to synthesize ATP (adenosine triphosphate) and other essential components.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What two components make up a viral nucleocapsid? (2018 Sessional)",
+    "options": [
+      "Nucleic acid and protein",
+      "Lipid and carbohydrate",
+      "Protein and envelope",
+      "Nucleic acid and lipid"
+    ],
+    "correct": 0,
+    "explanation": "A nucleocapsid is the viral nucleic acid (DNA or RNA) enclosed within its protective protein coat, known as the capsid.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is a defining characteristic of a prokaryotic organism? (2018 Sessional)",
+    "options": [
+      "Presence of a cell wall",
+      "Absence of a membrane-bound nucleus",
+      "Presence of a single chromosome",
+      "Ability to live in extreme environments"
+    ],
+    "correct": 1,
+    "explanation": "The most fundamental difference between prokaryotes and eukaryotes is the absence of a membrane-bound nucleus and other membrane-bound organelles in prokaryotes.",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is a type of bacteria that is comma-shaped, curved, and has a flagellum? (2018 Sessional)",
+    "options": [
+      "Coccus",
+      "Bacillus",
+      "Spirillum",
+      "Vibrio"
+    ],
+    "correct": 3,
+    "explanation": "Bacteria are classified by shape, and a vibrio is a genus of bacteria that has a characteristic comma-like shape and is motile due to a single flagellum.",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Syphilis is a sexually transmitted disease caused by which specific bacterium? (2018 Sessional)",
+    "options": [
+      "Treponema pallidum",
+      "Escherichia coli",
+      "Staphylococcus aureus",
+      "Mycobacterium tuberculosis"
+    ],
+    "correct": 0,
+    "explanation": "The bacterium responsible for causing syphilis is a spiral-shaped bacterium called Treponema pallidum.",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The Phycobilins found in Cyanobacteria that assist in photosynthesis are: (2018 Sessional)",
+    "options": [
+      "Chlorophyll a and b",
+      "Carotenoids and xanthophylls",
+      "Phycoerythrin and phycocyanin",
+      "Fucoxanthin and peridinin"
+    ],
+    "correct": 2,
+    "explanation": "Phycobilins are a group of light-harvesting pigments found in cyanobacteria. The two major types are the red pigment phycoerythrin and the blue pigment phycocyanin.",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which biological tool is used to identify an organism by presenting a series of choices between two alternative observable characteristics? (2018 Sessional)",
+    "options": [
+      "Taxonomic hierarchy",
+      "Dichotomous key",
+      "Phylogenetic tree",
+      "Cladogram"
+    ],
+    "correct": 1,
+    "explanation": "A dichotomous key is a systematic tool used for identification, where a user makes a choice between two characteristics at each step until the organism is identified.",
+    "topic": "TAXONOMY",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Among the three groups of archaea, which one is considered the largest and most diverse? (2018 Sessional)",
+    "options": [
+      "Halophiles",
+      "Methanogens",
+      "Thermophiles",
+      "Acidophiles"
+    ],
+    "correct": 1,
+    "explanation": "Methanogens, which produce methane as a byproduct of metabolism, are the largest and most widely distributed group of Archaea.",
+    "topic": "PROKARYOTES & CYANOBACTERIA",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In yeast, what is the reproductive structure that contains a specific number of spores, typically eight? (2018 Sessional)",
+    "options": [
+      "Basidium",
+      "Ascus",
+      "Zygospore",
+      "Sporangium"
+    ],
+    "correct": 1,
+    "explanation": "Yeast are a type of ascomycete fungus, and their reproductive structure is an ascus, a sac-like structure containing sexual spores (ascospores).",
+    "topic": "FUNGI",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Fungi that develop a sexual spore called a zygospore are classified under which class? (2018 Sessional)",
+    "options": [
+      "Ascomycetes",
+      "Basidiomycetes",
+      "Zygomycetes",
+      "Deuteromycetes"
+    ],
+    "correct": 2,
+    "explanation": "The class Zygomycetes gets its name from the production of a zygospore, a thick-walled sexual spore formed by the fusion of two gametangia.",
+    "topic": "FUNGI",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A cephalothorax is a fused body region found in which two arthropod classes? (2018 Sessional)",
+    "options": [
+      "Insecta and Diplopoda",
+      "Crustacea and Arachnida",
+      "Arachnida and Chilopoda",
+      "Crustacea and Insecta"
+    ],
+    "correct": 1,
+    "explanation": "A cephalothorax is a body part where the head and thorax have fused together. It is a key feature of many arthropods, including crustaceans (like crabs) and arachnids (like spiders).",
+    "topic": "INVERTEBRATES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The life cycle of the blood fluke Schistosoma involves which two hosts? (2018 Sessional)",
+    "options": [
+      "Human and fish",
+      "Snail and fish",
+      "Human and snail",
+      "Snail and bird"
+    ],
+    "correct": 2,
+    "explanation": "Schistosoma requires a human host for its sexual reproduction stage and a snail host for its asexual multiplication stage.",
+    "topic": "INVERTEBRATES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the key importance of mycorrhizae for a plant? (2018 Sessional)",
+    "options": [
+      "It provides structural support.",
+      "It protects against herbivores.",
+      "It increases water and nutrient absorption from the soil.",
+      "It performs photosynthesis for the plant."
+    ],
+    "correct": 2,
+    "explanation": "Mycorrhizae is a symbiotic relationship where the fungus's hyphae vastly increase the surface area of the roots, enhancing the plant's ability to absorb water and essential nutrients, particularly phosphorus.",
+    "topic": "FUNGI",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "During the synthesis stage of an HIV infection, which viral enzyme is used to create a double-stranded DNA copy from its RNA template? (2018 Sessional)",
+    "options": [
+      "Integrase",
+      "Protease",
+      "Reverse transcriptase",
+      "DNA polymerase"
+    ],
+    "correct": 2,
+    "explanation": "The enzyme reverse transcriptase is carried by the HIV virus and is essential for converting its single-stranded RNA genome into double-stranded DNA, a process known as reverse transcription.",
+    "topic": "VIRUSES",
+    "term": "T2",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  //[
+  {
+    "q": "The class Chondrichthyes, which includes sharks and rays, is characterized by a skeleton made of: (2018 Sessional)",
+    "options": [
+      "Bone",
+      "Cartilage",
+      "Both bone and cartilage",
+      "A mixture of bone and exoskeleton"
+    ],
+    "correct": 1,
+    "explanation": "Chondrichthyes are cartilaginous fish, possessing a skeleton made of cartilage rather than bone.",
+    "topic": "VERTEBRATES",
+    "term": "T3",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which group of mammals is known for laying eggs? (2018 Sessional)",
+    "options": [
+      "Marsupials",
+      "Placentals",
+      "Monotremes",
+      "Primates"
+    ],
+    "correct": 2,
+    "explanation": "Monotremes, such as the platypus and echidna, are a unique order of mammals that reproduce by laying eggs.",
+    "topic": "VERTEBRATES",
+    "term": "T3",
+    "course": "BI110",
+    "year": "2018 Sessional",
+    "tag": "MCQ"
+  },
 ];

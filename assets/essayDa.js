@@ -4761,8 +4761,244 @@
       }
     ]
   },
-
-
+{
+  "course": "BI110",
+  "term": "T1",
+  "title": "Cell Division",
+  "topic": "Mitosis",
+  "year": "Notes",
+  "steps": [
+    {
+      "q": "What is the first major checkpoint in the cell cycle before mitosis begins, and what does it ensure?",
+      "options": [
+        "The G1/S checkpoint ensures DNA replication is complete.",
+        "The G1/S checkpoint ensures the cell has adequate size, nutrients, and undamaged DNA before entering S phase.",
+        "The Spindle Assembly Checkpoint ensures chromosomes are attached to spindle fibers.",
+        "The G2/M checkpoint ensures sister chromatids are separated."
+      ],
+      "correct": 1,
+      "explanation": "The G1/S checkpoint, also called the restriction point, verifies that the cell is large enough, has enough nutrients, and that the DNA is undamaged before allowing the cell to proceed into DNA synthesis (S phase)."
+    },
+    {
+      "q": "Which checkpoint occurs before the cell enters mitosis from G2, and what does it check for?",
+      "options": [
+        "G2/M checkpoint ensures that all DNA is replicated correctly and undamaged before entering mitosis.",
+        "Spindle Assembly Checkpoint ensures that sister chromatids are properly aligned.",
+        "G1/S checkpoint ensures cell size and nutrients are adequate.",
+        "No checkpoint exists in G2."
+      ],
+      "correct": 0,
+      "explanation": "The G2/M checkpoint ensures that DNA replication is complete and without errors before the cell initiates mitosis."
+    },
+    {
+      "q": "During which phase of mitosis do chromosomes condense, spindle fibers form, and the nuclear envelope begins breaking down?",
+      "options": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "correct": 0,
+      "explanation": "In prophase, chromatin condenses into visible chromosomes, spindle fibers begin forming, centrosomes move to opposite poles, and the nuclear envelope starts breaking down."
+    },
+    {
+      "q": "What specific event occurs in prometaphase that allows spindle fibers to interact with chromosomes?",
+      "options": [
+        "Centromeres split.",
+        "Nuclear envelope completely disintegrates and spindle fibers attach to kinetochores.",
+        "Chromosomes align at the metaphase plate.",
+        "Chromosomes decondense."
+      ],
+      "correct": 1,
+      "explanation": "In prometaphase, the nuclear envelope breaks down completely, and spindle fibers attach to kinetochores on each chromosome's centromere."
+    },
+    {
+      "q": "Which checkpoint occurs during metaphase, and what is its role?",
+      "options": [
+        "G2/M checkpoint ensures all DNA is replicated.",
+        "G1/S checkpoint ensures cell size and nutrients are adequate.",
+        "Spindle Assembly Checkpoint ensures all chromosomes are properly attached to spindle fibers before separation.",
+        "Apoptosis checkpoint checks for cell death signals."
+      ],
+      "correct": 2,
+      "explanation": "The spindle assembly checkpoint ensures that all chromosomes are properly attached to spindle fibers at the kinetochores before the cell proceeds to anaphase, preventing chromosome mis-segregation."
+    },
+    {
+      "q": "Which phase of mitosis is characterized by the separation of sister chromatids to opposite poles?",
+      "options": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "correct": 2,
+      "explanation": "In anaphase, centromeres split, and spindle fibers pull sister chromatids to opposite poles of the cell."
+    },
+    {
+      "q": "During which phase do chromosomes reach opposite poles, decondense, and nuclear envelopes reform?",
+      "options": [
+        "Prophase",
+        "Anaphase",
+        "Telophase",
+        "Cytokinesis"
+      ],
+      "correct": 2,
+      "explanation": "In telophase, chromosomes arrive at opposite poles, begin uncoiling into chromatin, nuclear envelopes reform, and nucleoli reappear."
+    },
+    {
+      "q": "What is the final process after telophase that physically separates the two daughter cells?",
+      "options": [
+        "Mitosis",
+        "Cytokinesis",
+        "DNA replication",
+        "Chromatin condensation"
+      ],
+      "correct": 1,
+      "explanation": "Cytokinesis is the division of the cytoplasm into two genetically identical daughter cells, occurring after mitosis."
+    }
+  ]
+},
+{
+  "course": "BI110",
+  "term": "T1",
+  "title": "Cell Division",
+  "topic": "Meiosis I and II",
+  "year": "Notes",
+  "steps": [
+    {
+      "q": "What is the main purpose of meiosis?",
+      "options": [
+        "To produce identical diploid cells for growth and repair.",
+        "To produce four genetically identical haploid cells.",
+        "To produce four genetically distinct haploid gametes for sexual reproduction.",
+        "To produce two identical daughter cells."
+      ],
+      "correct": 2,
+      "explanation": "Meiosis reduces the chromosome number by half, producing four genetically distinct haploid gametes, which increases genetic variation in sexual reproduction."
+    },
+    {
+      "q": "Which checkpoint occurs before meiosis begins and ensures DNA is undamaged and fully replicated?",
+      "options": [
+        "G1/S checkpoint",
+        "G2/M checkpoint",
+        "Spindle Assembly Checkpoint",
+        "Metaphase I Checkpoint"
+      ],
+      "correct": 1,
+      "explanation": "The G2/M checkpoint ensures that DNA replication is complete and undamaged before the cell enters meiosis I."
+    },
+    {
+      "q": "During which stage of meiosis I do homologous chromosomes pair and exchange genetic material?",
+      "options": [
+        "Prophase I",
+        "Metaphase I",
+        "Anaphase I",
+        "Telophase I"
+      ],
+      "correct": 0,
+      "explanation": "In prophase I, homologous chromosomes undergo synapsis, forming tetrads, and exchange genetic material via crossing over, increasing genetic variation."
+    },
+    {
+      "q": "What is the significance of crossing over in prophase I?",
+      "options": [
+        "It produces identical chromatids.",
+        "It creates new combinations of alleles, increasing genetic diversity.",
+        "It duplicates the DNA.",
+        "It separates sister chromatids."
+      ],
+      "correct": 1,
+      "explanation": "Crossing over between non-sister chromatids creates new allele combinations, a key source of genetic variation in sexually reproducing organisms."
+    },
+    {
+      "q": "During metaphase I, what is unique about chromosome alignment compared to mitosis?",
+      "options": [
+        "Individual chromosomes line up at the equator.",
+        "Homologous chromosome pairs (tetrads) align at the metaphase plate.",
+        "Sister chromatids separate.",
+        "Chromosomes form a cleavage furrow."
+      ],
+      "correct": 1,
+      "explanation": "In metaphase I, homologous pairs (tetrads) align side-by-side at the equator, with random orientation leading to independent assortment."
+    },
+    {
+      "q": "Which checkpoint occurs in metaphase I to ensure proper chromosome segregation?",
+      "options": [
+        "G2/M checkpoint",
+        "Spindle Assembly Checkpoint",
+        "Crossing Over Checkpoint",
+        "Cytokinesis Checkpoint"
+      ],
+      "correct": 1,
+      "explanation": "The spindle assembly checkpoint ensures each homologous chromosome pair is attached to spindle fibers from opposite poles before segregation."
+    },
+    {
+      "q": "What happens in anaphase I that is different from anaphase in mitosis?",
+      "options": [
+        "Sister chromatids are separated.",
+        "Homologous chromosomes are separated, but sister chromatids remain attached at the centromere.",
+        "Chromosomes decondense.",
+        "The nuclear membrane reforms."
+      ],
+      "correct": 1,
+      "explanation": "In anaphase I, homologous chromosomes are separated to opposite poles, while sister chromatids remain joined."
+    },
+    {
+      "q": "At the end of meiosis I, what is the chromosome number in each daughter cell?",
+      "options": [
+        "Diploid (2n)",
+        "Haploid (n)",
+        "Triploid (3n)",
+        "Tetraploid (4n)"
+      ],
+      "correct": 1,
+      "explanation": "Each daughter cell at the end of meiosis I has half the original chromosome number (haploid), though each chromosome still consists of two chromatids."
+    },
+    {
+      "q": "What is the main event in prophase II?",
+      "options": [
+        "Crossing over occurs again.",
+        "Homologous chromosomes pair up.",
+        "Chromosomes condense and spindle fibers form in haploid cells.",
+        "DNA replication occurs again."
+      ],
+      "correct": 2,
+      "explanation": "In prophase II, chromosomes condense and spindle fibers form in haploid cells without prior DNA replication."
+    },
+    {
+      "q": "During metaphase II, how do chromosomes align compared to metaphase I?",
+      "options": [
+        "They align as tetrads.",
+        "Individual chromosomes align at the metaphase plate.",
+        "They form homologous pairs.",
+        "They remain at the poles."
+      ],
+      "correct": 1,
+      "explanation": "In metaphase II, individual chromosomes (not homologous pairs) align at the equator of each haploid cell."
+    },
+    {
+      "q": "What event occurs during anaphase II?",
+      "options": [
+        "Homologous chromosomes separate.",
+        "Sister chromatids separate and move to opposite poles.",
+        "DNA is replicated.",
+        "Crossing over occurs."
+      ],
+      "correct": 1,
+      "explanation": "In anaphase II, centromeres split and sister chromatids are pulled apart to opposite poles."
+    },
+    {
+      "q": "What is the final result of meiosis after telophase II and cytokinesis?",
+      "options": [
+        "Two diploid identical cells.",
+        "Two haploid identical cells.",
+        "Four genetically distinct haploid cells.",
+        "Four identical haploid cells."
+      ],
+      "correct": 2,
+      "explanation": "Meiosis results in four genetically distinct haploid cells due to crossing over and independent assortment."
+    }
+  ]
+}
 
 
 ];
