@@ -6005,324 +6005,7 @@ const flashcards = {
   ],
 
 
-//const flashcards = {
-  // Page 1: Taxonomy - Definition, Linnaeus, Binomial Nomenclature, Domains
-  "Taxonomy Basics": [
-    {
-      front: "What is Taxonomy?",
-      back: "The branch of science dealing with the description, identification, nomenclature, and classification of organisms.",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    },
-    {
-      front: "Who is considered the 'father of taxonomy'?",
-      back: "Carl Linnaeus.",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    },
-    {
-      front: "What system of naming species did Carl Linnaeus propose?",
-      back: "Binomial nomenclature (two-part naming system).",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    },
-    {
-      front: "How are scientific names formatted (e.g., italics, capitalization)?",
-      back: "The genus name is capitalized, the species epithet is lowercase. Both are italicized when typed, or underlined when handwritten.",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    },
-    {
-      front: "What is the highest (most general) rank of organisms?",
-      back: "Domain.",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    },
-    {
-      front: "Name the three domains of life.",
-      back: "Bacteria, Archaea, and Eukaryota.",
-      course: "BI110",
-      term: "T2",
-      topic: "Taxonomy"
-    }
-  ],
-  // Page 2-3: Prokaryotes (Archaea & Bacteria)
-  "Prokaryotes (Bacteria & Archaea)": [
-    {
-      front: "What defines a prokaryotic cell structurally?",
-      back: "Lack a membrane-bound nucleus and other membrane-bound organelles.",
-      course: "BI110",
-      term: "T2",
-      topic: "Prokaryotes"
-    },
-    {
-      front: "What are the common shapes of Bacteria?",
-      back: "Spherical (cocci), Rod-shaped (bacilli), and Spiral-shaped (spirilla).",
-      course: "BI110",
-      term: "T2",
-      topic: "Prokaryotes"
-    },
-    {
-      front: "How do prokaryotes primarily reproduce?",
-      back: "Binary fission.",
-      course: "BI110",
-      term: "T2",
-      topic: "Prokaryotes"
-    },
-    {
-      front: "Name one economic importance of Bacteria.",
-      back: "Decomposition, nitrogen fixation, food production (e.g., yogurt), antibiotic production.", // Any one
-      course: "BI110",
-      term: "T2",
-      topic: "Prokaryotes"
-    }
-  ],
-  // Page 4: Cyanobacteria
-  "Cyanobacteria": [
-    {
-      front: "Why are Cyanobacteria often called 'blue-green algae'?",
-      back: "Because they perform photosynthesis, similar to plants.",
-      course: "BI110",
-      term: "T2",
-      topic: "Cyanobacteria"
-    },
-    {
-      front: "What crucial ecological process do many Cyanobacteria perform related to nutrients?",
-      back: "Nitrogen fixation.",
-      course: "BI110",
-      term: "T2",
-      topic: "Cyanobacteria"
-    }
-  ],
-  // Page 5-6: Protists - General Characteristics & Classification
-  "Protists General": [
-    {
-      front: "Are protists prokaryotic or eukaryotic?",
-      back: "Eukaryotic.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Name the three main groups of protists based on their characteristics.",
-      back: "Animal-like protists (Protozoa), Plant-like protists (Algae), and Fungus-like protists (Slime molds and Water molds).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "What are the three main modes of nutrition found among protists?",
-      back: "Photosynthetic, Heterotrophic, and Mixotrophic.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    }
-  ],
-  // Page 7-8: Animal-like Protists (Protozoa) - Amoeba, Plasmodium
-  "Protists - Animal-like (Protozoa)": [
-    {
-      front: "How does an Amoeba move and engulf food?",
-      back: "Using pseudopodia ('false feet').",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "What is the vector that transmits Plasmodium to humans?",
-      back: "Female Anopheles mosquito.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Which Plasmodium stage is injected into humans by the mosquito?",
-      back: "Sporozoites.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Where do sporozoites first multiply in the human body?",
-      back: "Liver cells.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "What Plasmodium stage infects red blood cells and causes malaria symptoms?",
-      back: "Merozoites.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Which Plasmodium stage is taken up by the mosquito from an infected human?",
-      back: "Gametocytes.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    }
-  ],
-  // Page 9-11: Plant-like Protists (Algae) - Euglena, Green Algae
-  "Protists - Plant-like (Algae)": [
-    {
-      front: "What makes Euglena unique in its nutritional strategy?",
-      back: "It is mixotrophic, capable of both photosynthesis and heterotrophic feeding.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Name two examples of Green Algae.",
-      back: "Chlamydomonas, Volvox, Ulva (any two).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Are Green Algae always unicellular?",
-      back: "No, they can be unicellular, colonial (like Volvox), or multicellular (like Ulva).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    }
-  ],
-  // Page 12-13: Fungus-like Protists (Slime Molds)
-  "Protists - Fungus-like (Slime Molds)": [
-    {
-      front: "What is a 'plasmodium' in the context of slime molds?",
-      back: "A multicellular aggregation formed by single-celled slime molds during favorable conditions.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "What structures do slime molds form during unfavorable conditions for survival?",
-      back: "Fruiting bodies bearing resistant spores.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    }
-  ],
-  // Page 14-16: Economic Importance of Protists
-  "Protists Economic Importance": [
-    {
-      front: "Name one way protists are a source of food.",
-      back: "Some protists like kelps are edible.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Give an example of a commercial product from marine protists.",
-      back: "Algin, agar, carrageenan, antiseptics (any one).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "How do protists contribute as primary producers in aquatic ecosystems?",
-      back: "They perform photosynthesis, forming the base of food chains and producing oxygen.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Name a type of medicine derived from algal products.",
-      back: "Sodium laminaria sulphate, Fucoidin, Heparin (used as blood coagulants); anti-cancer compounds from Lyngbya (any one).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "How are protists used in biological research?",
-      back: "They are used as model organisms, e.g., Chlorella is a unicellular alga used for research.",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    },
-    {
-      front: "Can protists be pathogenic? Give an example mentioned.",
-      back: "Yes, they can cause diseases in humans (e.g., Plasmodium causing malaria) and in plants (e.g., causing late blight in potatoes).",
-      course: "BI110",
-      term: "T2",
-      topic: "Protists"
-    }
-  ],
-  //const flashcards_genetics = {
-  "Mendelian Genetics": [
-    {
-      front: "Who is known as the 'father of genetics'?",
-      back: "Gregor Mendel.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "What is Mendel's Law of Segregation?",
-      back: "Alleles for each gene separate during gamete formation, so each gamete carries only one allele.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "What is Mendel's Law of Independent Assortment?",
-      back: "Genes for different traits assort independently of one another during gamete formation (if they are on different chromosomes or far apart on the same chromosome).",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    }
-  ],
-  "Genetic Terminology": [
-    {
-      front: "Define 'allele'.",
-      back: "An alternative form of a gene.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "Define 'genotype'.",
-      back: "The genetic makeup of an organism (e.g., TT, Tt, tt).",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "Define 'phenotype'.",
-      back: "The observable physical or biochemical characteristics of an organism (e.g., Tall, Dwarf).",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "What is a 'test cross'?",
-      back: "A cross between an individual with an unknown dominant phenotype and a homozygous recessive individual to determine the unknown genotype.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "What is 'linkage'?",
-      back: "Genes located on the same chromosome that tend to be inherited together.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    },
-    {
-      front: "What is 'co-dominance'?",
-      back: "A genetic situation where both alleles in a heterozygote are fully and distinctly expressed in the phenotype.",
-      course: "BI110",
-      term: "T1",
-      topic: "Genetics"
-    }
-  ],
-  
+
   //term 2 work 
   
 "MODULE 6:TAXONOMY":[
@@ -8150,416 +7833,468 @@ const flashcards = {
   
   //module 16
   //{
-"MODULE 16: THE VERTEBRATES": [
-
-   //const flashcards = [
+"MODULE 16: THE VERTEBRATES":[
     {
-        "front": "How are vertebrates and invertebrates classified within the Kingdom Animalia?",
-        "back": "The Kingdom Animalia is comprised of invertebrates (lower animals) and vertebrates (higher animals).",
+        "front": "How is Kingdom Animalia classified?",
+        "back": "Divided into invertebrates (lower animals) and vertebrates (higher animals).",
         "course": "BI110",
         "term": "T3",
         "topic": "Introduction to Vertebrates"
     },
     {
-        "front": "What phylum do all vertebrates belong to, and what is its defining characteristic?",
-        "back": "All vertebrates belong to the phylum Chordata, which is defined by the possession of a nerve chord at some stage in their development.",
+        "front": "What are the four key characteristics of chordates?",
+        "back": "Hollow dorsal nerve cord, notochord, pharyngeal gill slits, and post-anal tail (at least during embryonic development).",
         "course": "BI110",
         "term": "T3",
         "topic": "Phylum Chordata"
     },
     {
-        "front": "Name the key anatomical features that characterize a chordate at some stage of its development.",
-        "back": "Key features include a dorsal hollow nerve cord, a notochord, and pharyngeal gill slits.",
+        "front": "What happens to the notochord in vertebrate development?",
+        "back": "In most vertebrates, it is replaced by a vertebral column (backbone).",
         "course": "BI110",
         "term": "T3",
         "topic": "Phylum Chordata"
     },
     {
-        "front": "What is a notochord, and what happens to it in most vertebrates?",
-        "back": "A notochord is a flexible rod of large cells surrounded by a stiff sheath. In most vertebrates, it is replaced by a vertebral column or backbone.",
+        "front": "What protects the brain and nerve cord in vertebrates?",
+        "back": "The brain is protected by the cranium, and the nerve cord is encased in the vertebral column.",
         "course": "BI110",
         "term": "T3",
         "topic": "Phylum Chordata"
     },
     {
-        "front": "What is the name of the brain case that protects the brain in vertebrates?",
-        "back": "The brain is protected by a brain case called the cranium, which is formed by the fusion of several immovable bones.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Phylum Chordata"
-    },
-    {
-        "front": "Name the five major groups of vertebrates.",
-        "back": "The five major groups are fishes, amphibians, reptiles, birds, and mammals.",
+        "front": "What are the five major groups of vertebrates?",
+        "back": "Fishes, amphibians, reptiles, birds, and mammals.",
         "course": "BI110",
         "term": "T3",
         "topic": "Major Groups of Vertebrates"
     },
     {
         "front": "What are the three classes of fishes?",
-        "back": "The three classes of fishes are Agnatha (jawless fishes), Chondrichthyes (cartilaginous fishes), and Osteichthyes (bony fishes).",
+        "back": "Agnatha (jawless), Chondrichthyes (cartilaginous), and Osteichthyes (bony).",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Fishes"
+        "topic": "Fishes"
     },
     {
-        "front": "What is the key difference in the skeleton of fishes in the class Chondrichthyes compared to Osteichthyes?",
-        "back": "Chondrichthyes have a cartilaginous skeleton, while Osteichthyes have a bony endoskeleton.",
+        "front": "How do hagfish and lampreys differ in feeding habits?",
+        "back": "Hagfish scavenge dead animals; lampreys are parasitic blood-suckers.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Fishes"
+        "topic": "Fishes"
     },
     {
-        "front": "What is a defining characteristic of amphibians regarding their reproduction and development?",
-        "back": "Amphibians lay eggs in water with external fertilization. Their larvae are aquatic with gills, while the adults have lungs.",
+        "front": "How do sharks maintain buoyancy without a swim bladder?",
+        "back": "By constant swimming with an asymmetrical tail.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Amphibians"
+        "topic": "Fishes"
     },
     {
-        "front": "What adaptation allows reptiles to be fully terrestrial?",
-        "back": "Reptiles have dry, water-tight skin covered by horny scales made of keratin, which prevents desiccation.",
+        "front": "What are three key adaptations of bony fishes?",
+        "back": "Swim bladder for buoyancy, gills for oxygen uptake, and some have lung-like swim bladders.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Reptiles"
+        "topic": "Fishes"
     },
     {
-        "front": "What is the difference between an ectothermic and an endothermic animal?",
-        "back": "Ectothermic animals (like reptiles) are cold-blooded and depend on the external environment for heat. Endothermic animals (like birds and mammals) are warm-blooded and can maintain a constant body temperature.",
+        "front": "Name three bony fish species found in Zambia.",
+        "back": "Tiger fish, Nile perch, and breams (Oreochromis spp.).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Reptiles, Birds, and Mammals"
+        "topic": "Fishes"
     },
     {
-        "front": "What is the primary characteristic of birds that distinguishes them from other vertebrates?",
-        "back": "Birds are characterized by feathers, which are modified scales used for flight and heat conservation.",
+        "front": "What are the key adaptations of amphibians for terrestrial life?",
+        "back": "Four legs, lungs (in adults), and moist skin for gas exchange.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Class Aves: The Birds"
+        "topic": "Amphibians"
     },
     {
-        "front": "What is the study of birds called?",
-        "back": "The study of birds is called ornithology.",
+        "front": "How do amphibians reproduce?",
+        "back": "Lay eggs in water with external fertilization; have aquatic larval stage with gills.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Class Aves: The Birds"
+        "topic": "Amphibians"
     },
     {
-        "front": "What are the two key characteristics of all mammals?",
-        "back": "All mammals have hair on their skin for insulation and mammary glands to produce milk for their young.",
+        "front": "How many amphibian species are recorded in Zambia?",
+        "back": "78 species (6% of Zambian vertebrates).",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Mammals"
+        "topic": "Amphibians"
     },
     {
-        "front": "What are the three categories of mammals based on their reproductive strategies?",
-        "back": "The three categories are Monotremes (egg-laying), Marsupials (pouched mammals), and Placental Mammals (with a placenta).",
+        "front": "What makes reptiles better adapted to land than amphibians?",
+        "back": "Dry scaly skin (keratin), watertight eggs, and no aquatic larval stage.",
         "course": "BI110",
         "term": "T3",
-        "topic": "The Mammals"
+        "topic": "Reptiles"
     },
     {
-        "front": "What is the Kingdom Animalia composed of?",
-        "back": "Invertebrates and vertebrates.",
+        "front": "Why are reptiles considered ectothermic?",
+        "back": "They rely on external heat sources (e.g., sunlight) to regulate body temperature.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Reptiles"
     },
     {
-        "front": "What is an invertebrate?",
-        "back": "An animal without a backbone or vertebral column.",
+        "front": "What is the economic importance of Nile crocodiles in Zambia?",
+        "back": "Crocodile farming produces skins for leather and edible tails.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Reptiles"
     },
     {
-        "front": "What is a vertebral column?",
-        "back": "A flexible bony column that extends down the long axis of an animal and serves as the main skeletal support.",
+        "front": "What are the defining features of birds?",
+        "back": "Feathers, lightweight hollow bones, toothless beaks, and endothermy.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Birds"
     },
     {
-        "front": "What is the function of the vertebral column?",
-        "back": "The main skeletal support.",
+        "front": "What is ornithology?",
+        "back": "The scientific study of birds.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Birds"
     },
     {
-        "front": "What are vertebrates?",
-        "back": "Animals with a backbone.",
+        "front": "How do birds conserve water through excretion?",
+        "back": "They excrete uric acid as nitrogenous waste.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Birds"
     },
     {
-        "front": "What are some examples of invertebrate phyla found in Zambia?",
-        "back": "Annelida, Nematoda, Platyhelminthes, Cnidaria, Mollusks or Molluscs, Arthropoda, Loricifera, Cycliophora, and Micrognathozoa.",
+        "front": "Describe the African fish eagle's ecological role.",
+        "back": "Hunts fish; Zambia's national emblem.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Birds"
     },
     {
-        "front": "What are the characteristics of Phylum Annelida?",
-        "back": "Annelids are segmented worms with cylindrical, soft bodies. They have rings that separate the segments, possess setae, and move using circular and longitudinal muscles.",
+        "front": "What are the two key mammalian characteristics?",
+        "back": "Hair/fur and mammary glands that produce milk.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What is the phylum of the segmented worms shown in the diagram, such as earthworms?",
-        "back": "Phylum Annelida.",
+        "front": "What are the three mammalian reproductive groups?",
+        "back": "Monotremes (egg-laying), marsupials (pouched), and placental mammals.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What are some examples of annelids?",
-        "back": "Earthworms and leeches.",
+        "front": "What is unique about monotreme reproduction?",
+        "back": "Lay leathery eggs; young lick milk from mother's skin (no nipples). Example: Platypus.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "Describe the characteristics of Phylum Nematoda.",
-        "back": "Nematodes are un-segmented, tubular worms that are cylindrical and taper at both ends. They are found in soils and aquatic sediments.",
+        "front": "How do marsupials differ from other mammals?",
+        "back": "Short gestation; tiny young complete development in a pouch (e.g., kangaroos).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "Based on the diagrams showing male and female *Ascaris lumbricoides* and a microscopic view of *Helicotylenchus digonicus*, which phylum do these organisms belong to?",
-        "back": "Phylum Nematoda.",
+        "front": "Compare herbivorous and carnivorous placental mammals in Zambia.",
+        "back": "Herbivores: Antelopes (graze), elephants (browse). Carnivores: Lions (hunt), hyenas (scavenge/hunt).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What are some parasitic forms of nematodes?",
-        "back": "*Ascaris lumbricoides* (intestinal worms) and filarid forms that cause elephantiasis.",
+        "front": "What are three key adaptations of elephants?",
+        "back": "Trunk for feeding, tusks for digging/defense, and thick leathery skin.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What family of plants do nematodes mostly affect?",
-        "back": "Solanaceae.",
+        "front": "How do hyena behaviors differ between Zambia and Tanzania?",
+        "back": "In Zambia: mostly scavengers. In Tanzania: active hunters.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "Based on the diagram of a Planarian, which phylum do these flatworms belong to?",
-        "back": "Phylum Platyhelminthes.",
+        "front": "What makes primates like baboons unique?",
+        "back": "Grasping hands, high intelligence, omnivorous diets (fruits/insects/crops).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What are the characteristics of Phylum Cnidaria?",
-        "back": "Cnidarians are a group of about 10,000 species of aquatic animals with soft, gelatinous bodies. They include jellyfish, hydra, and corals.",
+        "front": "What is unique about bat wings?",
+        "back": "Made of stretched skin (modified forelimbs).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What is the phylum of the two jellyfish shown swimming in the diagram?",
-        "back": "Phylum Cnidaria.",
+        "front": "How fast can a cheetah run?",
+        "back": "112-120 km/h in short bursts (0-100 km/h in 3 seconds).",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     },
     {
-        "front": "What is the difference between jellyfish and hydra/corals?",
-        "back": "Jellyfish are free-swimming, while hydra and corals are sedimentary (sessile).",
+        "front": "What special ability do leopards have regarding prey?",
+        "back": "Can climb trees while carrying heavy prey.",
         "course": "BI110",
         "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the ecological role of coral reefs?",
-        "back": "Coral reefs protect shore buildings against ocean currents and tides.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Describe the features of Phylum Mollusca.",
-        "back": "Mollusks have soft bodies, often with a rasping tongue-like file, and many species possess a hard shell made of calcium. The significant features of a snail's body include the foot, mantle, alimentary canal, and shell.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the phylum of the organism shown in the labeled diagram with a foot, mantle, shell, and gills?",
-        "back": "Phylum Mollusca.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the number of extant species in the Phylum Mollusca?",
-        "back": "About 85,000.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the characteristic diet of most mollusks?",
-        "back": "Most are herbivorous.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Which parasite can be a vector for aquatic mollusks?",
-        "back": "*Schistosoma*, which causes bilharziasis.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What are the key characteristics of Phylum Arthropoda?",
-        "back": "Arthropods are invertebrates with an exoskeleton made of chitin (the cuticle), and a paired, jointed appendage. Their body plan consists of segments, each with a pair of appendages.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the function of the exoskeleton in arthropods?",
-        "back": "It is a protective outer covering.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What are the three main groups within Phylum Arthropoda mentioned?",
-        "back": "Insects, arachnids, and crustaceans.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is a cephalothorax?",
-        "back": "A fused body segment formed by the combination of the head and thorax, found in some arthropods like arachnids and crustaceans.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Based on the diagram showing an arthropod with a cephalothorax and abdomen, which phylum does this organism belong to?",
-        "back": "Phylum Arthropoda.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Class Arachnida?",
-        "back": "Arachnids are a class of terrestrial arthropods with about 57,000 species. They include spiders, scorpions, and ticks.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the diet of most arachnids?",
-        "back": "Most are carnivorous, with the exception of mites, which are largely herbivorous.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is the role of ticks in the ecosystem?",
-        "back": "Ticks are ectoparasites of vertebrates that feed on blood and are vectors for many pathogens that affect domesticated animals.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "How do spiders catch their prey?",
-        "back": "Spiders catch their prey in silk webs. The silk is formed from a fluid protein in the posterior portion of the spider's abdomen.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "How do spiders paralyze their prey?",
-        "back": "They have poison glands.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What are scorpions known for?",
-        "back": "Scorpions are predatory animals with four pairs of legs. Their venom, a mixture of neurotoxins and enzyme inhibitors, can be lethal to small lizards and mice, and in about 25 species, it can be deadly to humans.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Class Chilopoda?",
-        "back": "This class consists of worm-like arthropods that bear legs. It includes centipedes and millipedes (chongololo).",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "How do centipedes and millipedes differ in terms of appendages?",
-        "back": "Centipedes typically have one pair of legs on each body segment, while millipedes have two pairs on each segment.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Class Crustacea?",
-        "back": "Crustaceans are aquatic arthropods that include crabs, crayfish, lobsters, and shrimp.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Phylum Loricifera?",
-        "back": "A phylum of tiny marine animals known as Loriferans, discovered in 1983. They are found in the spaces between sand grains.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Phylum Cycliophora?",
-        "back": "A relatively new phylum of microscopic metazoans discovered by a Danish biologist in 1995. Only three species have been documented to date.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Based on the microscopic image of a cycliophoran, what is the phylum of this microscopic organism?",
-        "back": "Phylum Cycliophora.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Where are Cycliophorans found?",
-        "back": "They inhabit the mouthparts of clawed lobsters and are found on both sides of the North Atlantic Ocean.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "What is Phylum Micrognathozoa?",
-        "back": "A group of microscopic animals with complicated jaws, discovered in Greenland in the year 2000. Only one species has been documented.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
-    },
-    {
-        "front": "Based on the illustration of *Limnognathia maerski* with its complex jaw, which phylum does this microscopic animal belong to?",
-        "back": "Phylum Micrognathozoa.",
-        "course": "BI110",
-        "term": "T3",
-        "topic": "Diversity of Animals : Invertebrates"
+        "topic": "Mammals"
     }
- ], 
+] , 
+
+
+//protists 
+ 
+ 
+ 
+ 
+ //fungi
+ 
+ "MODULE 8: FUNGI":[
+    {
+        "front": "What are the three defining characteristics of all fungi?",
+        "back": "1) Eukaryotic 2) Cell walls contain chitin 3) Heterotrophic (absorb nutrients)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungal Basics"
+    },
+    {
+        "front": "What are the structural components of a mushroom?",
+        "back": "Cap, gills (spore-producing), stalk (stipe), hyphae (underground filaments), mycelium (mass of hyphae)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungal Anatomy"
+    },
+    {
+        "front": "How does chitin differ from cellulose?",
+        "back": "Chitin contains nitrogen (glucosamine + acetic acid) while cellulose is purely glucose polymers",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Cell Wall Composition"
+    },
+    {
+        "front": "What is the function of septa in fungal hyphae?",
+        "back": "Perforated walls that divide hyphae into cells, allowing protoplasm flow for nutrient distribution",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Hyphal Structure"
+    },
+    {
+        "front": "What are the two types of fungal growth forms?",
+        "back": "1) Unicellular (e.g., yeast) 2) Multicellular hyphae forming mycelium",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Growth Forms"
+    },
+    {
+        "front": "Why can't fungi perform photosynthesis?",
+        "back": "They lack chlorophyll and chloroplasts",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Nutrition"
+    },
+    {
+        "front": "What are the three nutritional modes of fungi?",
+        "back": "1) Saprophytic (dead matter) 2) Parasitic (living hosts) 3) Symbiotic (mutualism)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Nutrition"
+    },
+    {
+        "front": "Give two examples of symbiotic fungi relationships",
+        "back": "1) Mycorrhizae (fungi + plant roots) 2) Lichens (fungi + algae/cyanobacteria)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Symbiosis"
+    },
+    {
+        "front": "How do ectomycorrhizae differ from endomycorrhizae?",
+        "back": "Ectomycorrhizae form a sheath around roots; endomycorrhizae penetrate root cells (more common)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Mycorrhizae"
+    },
+    {
+        "front": "What is unique about truffle fungi?",
+        "back": "Hypogeous (underground) fruiting bodies that form symbiotic relationships with tree roots",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Symbiosis"
+    },
+    {
+        "front": "What are the five major fungal phyla and their key features?",
+        "back": "1) Zygomycetes (zygospores; no septa) 2) Ascomycetes (ascospores in sacs) 3) Basidiomycetes (basidiospores on clubs) 4) Deuteromycetes (no sexual stage) 5) Oomycetes (water molds; zoospores)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Classification"
+    },
+    {
+        "front": "Why are Deuteromycetes called 'imperfect fungi'?",
+        "back": "Their sexual reproduction stage has never been observed (only reproduce asexually)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Classification"
+    },
+    {
+        "front": "What disease is caused by Oomycetes?",
+        "back": "Late blight of potato (Phytophthora infestans)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Oomycetes"
+    },
+    {
+        "front": "What are zoospores and which fungi produce them?",
+        "back": "Flagellated spores produced by oomycetes (water molds)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Oomycetes"
+    },
+    {
+        "front": "What are the flagella types in oomycete zoospores?",
+        "back": "Anterior tinsel-type and posterior whiplash-type",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Oomycetes"
+    },
+    {
+        "front": "Why were oomycetes historically confused with fungi?",
+        "back": "Filamentous growth + absorptive nutrition, but genetically closer to algae",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Oomycetes"
+    },
+    {
+        "front": "How do fungal nuclei differ from animal nuclei?",
+        "back": "They are small with repetitive DNA and undergo mitosis without nuclear envelope dissolution",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Cell Biology"
+    },
+    {
+        "front": "What sterol is unique to fungal cell membranes?",
+        "back": "Ergosterol (analogous to cholesterol in animals)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Cell Membrane"
+    },
+    {
+        "front": "How do fungi store energy?",
+        "back": "As glycogen (like animals)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Metabolism"
+    },
+    {
+        "front": "What are the three types of asexual reproduction in fungi?",
+        "back": "1) Fragmentation 2) Budding (yeast) 3) Spore production (conidia, sporangiospores)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "What are conidiospores?",
+        "back": "Asexual spores produced at hyphal tips or sides (common in Ascomycetes and Deuteromycetes)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "What is the difference between teleomorph and anamorph?",
+        "back": "Teleomorph = sexual stage; anamorph = asexual stage",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "Describe the fungal sexual reproduction cycle",
+        "back": "1) Plasmogamy (cytoplasm fusion → dikaryotic) 2) Karyogamy (nuclear fusion → diploid) 3) Meiosis (haploid spores)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Life Cycle"
+    },
+    {
+        "front": "What triggers sexual reproduction in fungi?",
+        "back": "Adverse environmental conditions",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "How do homothallic and heterothallic fungi differ?",
+        "back": "Homothallic can self-mate; heterothallic requires compatible partners",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "What is the function of fungal pheromones?",
+        "back": "Chemical signals for mating between compatible fungi",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Reproduction"
+    },
+    {
+        "front": "What are five economic benefits of fungi?",
+        "back": "1) Decomposition 2) Food (mushrooms, yeast) 3) Medicine (antibiotics) 4) Biocontrol 5) Fermentation (bread/beer)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Applications"
+    },
+    {
+        "front": "Name two fungi used in biocontrol of pests",
+        "back": "1) Beauveria bassiana (insects) 2) Trichoderma spp. (plant pathogens)",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance"
+    },
+    {
+        "front": "What fungal product was the first antibiotic?",
+        "back": "Penicillin from Penicillium",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Medicine"
+    },
+    {
+        "front": "How do fungi contribute to food spoilage?",
+        "back": "By secreting enzymes that break down organic matter",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economics"
+    },
+    {
+        "front": "How do fungi contribute to the carbon cycle?",
+        "back": "By decomposing dead organic matter and releasing carbon dioxide",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Ecology"
+    },
+    {
+        "front": "What is the ecological role of lichens?",
+        "back": "Pioneer species in barren environments; bioindicators of air quality",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Symbiosis"
+    }
+],
+
+
+
+
+
+
+
+
  
   "BI110 2020 SESSIONAL": [
    {

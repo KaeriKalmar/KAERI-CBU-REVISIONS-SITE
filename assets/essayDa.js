@@ -4998,7 +4998,260 @@
       "explanation": "Meiosis results in four genetically distinct haploid cells due to crossing over and independent assortment."
     }
   ]
-}
+},
+//[
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Fungal Reproduction",
+    "topic": "Sexual Life Cycle",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "What is the first stage of fungal sexual reproduction where cytoplasm fuses but nuclei remain separate?",
+        "options": [
+          "Karyogamy",
+          "Plasmogamy",
+          "Meiosis",
+          "Spore formation"
+        ],
+        "correct": 1,
+        "explanation": "Plasmogamy is the fusion of cytoplasm from two mating types, creating a dikaryotic cell (n+n)."
+      },
+      {
+        "q": "What unique cellular state exists between plasmogamy and karyogamy?",
+        "options": [
+          "Haploid (n)",
+          "Diploid (2n)",
+          "Dikaryotic (n+n)",
+          "Triploid (3n)"
+        ],
+        "correct": 2,
+        "explanation": "The dikaryotic stage contains two genetically distinct nuclei per cell."
+      },
+      {
+        "q": "Which event directly follows plasmogamy in the fungal life cycle?",
+        "options": [
+          "Immediate meiosis",
+          "Nuclear fusion (karyogamy)",
+          "Spore dispersal",
+          "Hyphal fragmentation"
+        ],
+        "correct": 1,
+        "explanation": "Karyogamy merges the nuclei to form a diploid zygote, which then undergoes meiosis."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Fungal Nutrition",
+    "topic": "Decomposition Process",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "What do fungi secrete first to break down organic matter?",
+        "options": [
+          "Toxins",
+          "Photosynthetic pigments",
+          "Digestive enzymes",
+          "Antibiotics"
+        ],
+        "correct": 2,
+        "explanation": "Fungi secrete enzymes like cellulase and ligninase to externally digest substrates."
+      },
+      {
+        "q": "How do fungi absorb nutrients after decomposition?",
+        "options": [
+          "Through stomata",
+          "Via root hairs",
+          "Across hyphal walls",
+          "By phagocytosis"
+        ],
+        "correct": 2,
+        "explanation": "Hyphae absorb soluble nutrients through their cell walls via osmosis/active transport."
+      },
+      {
+        "q": "What gas is released as a byproduct of fungal decomposition?",
+        "options": [
+          "Oxygen (O₂)",
+          "Methane (CH₄)",
+          "Carbon dioxide (CO₂)",
+          "Nitrogen (N₂)"
+        ],
+        "correct": 2,
+        "explanation": "CO₂ is released during respiration, contributing to the carbon cycle."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Fungal Symbiosis",
+    "topic": "Mycorrhizae Formation",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "What do plants provide to mycorrhizal fungi?",
+        "options": [
+          "Water",
+          "Minerals",
+          "Sugars",
+          "Nitrogen gas"
+        ],
+        "correct": 2,
+        "explanation": "Plants supply carbohydrates from photosynthesis to the fungus."
+      },
+      {
+        "q": "Which structure penetrates root cells in endomycorrhizae?",
+        "options": [
+          "Arbuscules",
+          "Sheath",
+          "Rhizoids",
+          "Sporangia"
+        ],
+        "correct": 0,
+        "explanation": "Arbuscules are tree-like structures that facilitate nutrient exchange within root cells."
+      },
+      {
+        "q": "What critical mineral do fungi help plants acquire?",
+        "options": [
+          "Calcium",
+          "Phosphorus",
+          "Sodium",
+          "Chlorine"
+        ],
+        "correct": 1,
+        "explanation": "Fungal hyphae efficiently absorb phosphorus from soil, which plants struggle to access."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Pathogenic Fungi",
+    "topic": "Oomycete Infection",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "What unique spore type do oomycetes use for waterborne dispersal?",
+        "options": [
+          "Conidia",
+          "Zoospores",
+          "Ascospores",
+          "Basidiospores"
+        ],
+        "correct": 1,
+        "explanation": "Zoospores have flagella for swimming through water films."
+      },
+      {
+        "q": "Which structure produces zoospores in oomycetes?",
+        "options": [
+          "Mycelium",
+          "Sporangium",
+          "Arbuscule",
+          "Conidiophore"
+        ],
+        "correct": 1,
+        "explanation": "Sporangia are sac-like structures that release zoospores."
+      },
+      {
+        "q": "What happens after zoospores reach a host plant?",
+        "options": [
+          "They photosynthesize",
+          "They encyst and form infection hyphae",
+          "They produce flowers",
+          "They fix nitrogen"
+        ],
+        "correct": 1,
+        "explanation": "Zoospores lose flagella, form cysts, and penetrate host tissue."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Fungal Biotechnology",
+    "topic": "Penicillin Production",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "Which fungal genus naturally produces penicillin?",
+        "options": [
+          "Aspergillus",
+          "Penicillium",
+          "Saccharomyces",
+          "Rhizopus"
+        ],
+        "correct": 1,
+        "explanation": "Penicillium chrysogenum is the industrial source of penicillin."
+      },
+      {
+        "q": "What triggers penicillin production in fungi?",
+        "options": [
+          "High oxygen levels",
+          "Nutrient scarcity",
+          "Exposure to light",
+          "Low pH conditions"
+        ],
+        "correct": 1,
+        "explanation": "Secondary metabolites like antibiotics are often produced during nutrient stress."
+      },
+      {
+        "q": "How is penicillin extracted for medical use?",
+        "options": [
+          "From fungal fruiting bodies",
+          "Through liquid culture filtration",
+          "By crushing fungal spores",
+          "Harvesting hyphal mats"
+        ],
+        "correct": 1,
+        "explanation": "The antibiotic is secreted into liquid growth medium and purified through filtration and chemical processes."
+      }
+    ]
+  },
+  {
+    "course": "BI110",
+    "term": "T2",
+    "title": "Fungal Structure",
+    "topic": "Hyphal Growth",
+    "year": "2023",
+    "steps": [
+      {
+        "q": "What is the direction of fungal hyphal growth?",
+        "options": [
+          "From the base upwards",
+          "Only at branch points",
+          "At the tip (apical growth)",
+          "Laterally along the length"
+        ],
+        "correct": 2,
+        "explanation": "Vesicles deliver cell wall materials to the hyphal tip for extension."
+      },
+      {
+        "q": "What cellular structure allows cytoplasm to flow between hyphal compartments?",
+        "options": [
+          "Septal pores",
+          "Chloroplasts",
+          "Mitochondria",
+          "Ribosomes"
+        ],
+        "correct": 0,
+        "explanation": "Perforated septa enable nutrient and organelle movement."
+      },
+      {
+        "q": "What compound gives rigidity to fungal cell walls?",
+        "options": [
+          "Cellulose",
+          "Chitin",
+          "Collagen",
+          "Starch"
+        ],
+        "correct": 1,
+        "explanation": "Chitin microfibrils provide structural support."
+      }
+    ]
+  },
 
 
 ];
