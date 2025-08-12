@@ -5252,6 +5252,549 @@
       }
     ]
   },
+  
+  {
+        "course": "BI110",
+        "term": "T2",
+        "title": "General Characteristics and Classification",
+        "topic": "General Characteristics",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "What is a primary characteristic that distinguishes protists from other eukaryotes?",
+                "options": [
+                    "They are all multicellular",
+                    "Their simple cellular organization",
+                    "They only reproduce asexually",
+                    "They are all autotrophic"
+                ],
+                "correct": 1,
+                "explanation": "Protists are defined as simple eukaryotic organisms, often unicellular, lacking specialized tissue organization."
+            },
+            {
+                "q": "How would you describe the cellular structure of protists?",
+                "options": [
+                    "They are all unicellular with complex tissue organization.",
+                    "They are all colonial with specialized tissues.",
+                    "They are unicellular, but some can be colonial or multicellular; they lack specialized tissue organization.",
+                    "They are always multicellular and have complex tissues."
+                ],
+                "correct": 2,
+                "explanation": "Protists are predominantly unicellular but can also exist as colonial or simple multicellular forms without specialized tissues."
+            },
+            {
+                "q": "What do protist cells contain?",
+                "options": [
+                    "A nucleoid region and ribosomes",
+                    "A well-defined nucleus and membrane-bound organelles",
+                    "A cell wall made of chitin and no nucleus",
+                    "Only a cell membrane and cytoplasm"
+                ],
+                "correct": 1,
+                "explanation": "As eukaryotes, protist cells have a well-defined nucleus and various membrane-bound organelles."
+            },
+            {
+                "q": "What are the three primary methods of locomotion for protists?",
+                "options": [
+                    "Flagella, gills, and fins",
+                    "Cilia, pseudopodia, and legs",
+                    "A flagellum, cilia, or pseudopodia (false feet)",
+                    "Wings, fins, and flagella"
+                ],
+                "correct": 2,
+                "explanation": "Protists move using whip-like flagella, hair-like cilia, or temporary cytoplasmic extensions called pseudopodia."
+            },
+            {
+                "q": "What are the modes of nutrition for protists?",
+                "options": [
+                    "Only autotrophic",
+                    "Only heterotrophic",
+                    "Both heterotrophic or autotrophic",
+                    "Only saprobic"
+                ],
+                "correct": 2,
+                "explanation": "Protists can be photosynthetic (autotrophic) or consume other organisms (heterotrophic)."
+            },
+            {
+                "q": "How do some protists, known as phagotrophs, feed?",
+                "options": [
+                    "They ingest food in soluble forms from their surroundings.",
+                    "They pull solid food particles into intracellular food vacuoles.",
+                    "They produce their own food through photosynthesis.",
+                    "They absorb nutrients from dead organic matter."
+                ],
+                "correct": 1,
+                "explanation": "Phagotrophs are a type of heterotrophic protist that engulf solid food particles into food vacuoles for digestion."
+            },
+            {
+                "q": "How do protists reproduce?",
+                "options": [
+                    "Only asexually by budding",
+                    "Only sexually by forming gametes",
+                    "Both asexually and sexually",
+                    "Through spore formation only"
+                ],
+                "correct": 2,
+                "explanation": "Protists have diverse reproductive strategies, including asexual reproduction (e.g., mitosis) and sexual reproduction (e.g., meiosis)."
+            },
+            {
+                "q": "What do protists form in adverse conditions?",
+                "options": [
+                    "Spores",
+                    "Seeds",
+                    "Cysts",
+                    "Fruiting bodies"
+                ],
+                "correct": 2,
+                "explanation": "To survive unfavorable conditions, protists can form cysts, which are dormant, protective structures."
+            },
+            {
+                "q": "How are protists primarily categorized?",
+                "options": [
+                    "By their habitat (aquatic or terrestrial)",
+                    "By their size (microscopic or macroscopic)",
+                    "By their color (green, brown, or red)",
+                    "Into two taxons: Protozoans (animal-like) and Algae (plant-like)"
+                ],
+                "correct": 3,
+                "explanation": "Protists are often broadly classified into animal-like protozoans and plant-like algae."
+            }
+        ]
+    },
+    {
+        "course": "BI110",
+        "term": "T2",
+        "title": "Economic Importance of Protists",
+        "topic": "Economic Importance",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "What are some economic benefits of protists?",
+                "options": [
+                    "They are primarily harmful pathogens.",
+                    "They are a source of food, commercial products, and medicines.",
+                    "They are only important for aquatic ecosystems.",
+                    "They are used for land reclamation."
+                ],
+                "correct": 1,
+                "explanation": "Protists are beneficial as food sources, in the production of commercial goods, and for medicines."
+            },
+            {
+                "q": "How are protists important in aquatic ecosystems?",
+                "options": [
+                    "They are primary consumers.",
+                    "They are primary producers, playing a basic role in food chains.",
+                    "They are decomposers that break down organic matter.",
+                    "They are secondary consumers."
+                ],
+                "correct": 1,
+                "explanation": "Many protists, particularly algae, are primary producers, forming the base of the food chain by providing food and oxygen."
+            },
+            {
+                "q": "What are some examples of commercial products derived from marine protists?",
+                "options": [
+                    "Cellulose and lignin",
+                    "Algin, agar, carrageenan, and antiseptics",
+                    "Petroleum and natural gas",
+                    "Silk and wool"
+                ],
+                "correct": 1,
+                "explanation": "Algin, agar, and carrageenan are common commercial products extracted from various marine algae."
+            },
+            {
+                "q": "What are some examples of medicinal products from algae?",
+                "options": [
+                    "Aspirin and ibuprofen",
+                    "Sodium laminaria sulphate, Fucoidin, and Heparin",
+                    "Penicillin and amoxicillin",
+                    "Insulin and adrenaline"
+                ],
+                "correct": 1,
+                "explanation": "Algae are a source of compounds like Sodium laminaria sulphate, Fucoidin, and Heparin, which are used as blood coagulants."
+            },
+            {
+                "q": "What anti-cancer compound does the protist Lyngbya produce?",
+                "options": [
+                    "Taxol",
+                    "Paclitaxel",
+                    "An anti-cancer compound",
+                    "Doxorubicin"
+                ],
+                "correct": 2,
+                "explanation": "The protist Lyngbya is known to produce a compound with anti-cancer properties."
+            },
+            {
+                "q": "What is an example of a protist used in biological research?",
+                "options": [
+                    "Amoeba",
+                    "Chlorella",
+                    "Plasmodium",
+                    "Paramecium"
+                ],
+                "correct": 1,
+                "explanation": "Chlorella, a unicellular, non-motile alga, is a common organism used in biological research."
+            },
+            {
+                "q": "What is diatomaceous earth, and what is it used for?",
+                "options": [
+                    "A porous and chemically inert material used for filtration.",
+                    "A material used in construction.",
+                    "A soil additive for farming.",
+                    "A food supplement for animals."
+                ],
+                "correct": 0,
+                "explanation": "Diatomaceous earth is the fossilized remains of diatoms, used for its porous and inert properties in filtration."
+            },
+            {
+                "q": "Can protists be harmful?",
+                "options": [
+                    "No, they are always beneficial to humans.",
+                    "Yes, some are pathogenic and can cause many diseases.",
+                    "Only when they are in freshwater.",
+                    "Only when they are in marine environments."
+                ],
+                "correct": 1,
+                "explanation": "Some protists are pathogenic and can cause diseases such as malaria and sleeping sickness."
+            }
+        ]
+    },
+    {
+        "course": "BI110",
+        "term": "T2",
+        "title": "Amoeba Characteristics",
+        "topic": "Animal-like Protists",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "What is the origin of the name 'Amoeba'?",
+                "options": [
+                    "It's a Latin word for 'water'.",
+                    "It's derived from the Greek word amoibe, which means 'change'.",
+                    "It's an English term for 'small creature'.",
+                    "It's a Spanish word for 'tiny foot'."
+                ],
+                "correct": 1,
+                "explanation": "The name Amoeba is derived from the Greek word 'amoibe', which refers to its constantly changing shape."
+            },
+            {
+                "q": "How does an Amoeba move?",
+                "options": [
+                    "It moves using a tail-like flagellum.",
+                    "It moves by creeping and stretching its cytoplasm into finger-like extensions called pseudopodia.",
+                    "It moves using hair-like cilia.",
+                    "It moves by contracting its cell body."
+                ],
+                "correct": 1,
+                "explanation": "Amoeba moves using 'false feet' or pseudopodia, which are extensions of its cytoplasm."
+            },
+            {
+                "q": "What are the two regions of an Amoeba's cytoplasm?",
+                "options": [
+                    "The nucleus and the vacuole.",
+                    "Ectoplasm (lighter, near the membrane) and endoplasm (towards the interior).",
+                    "The cell wall and the cell membrane.",
+                    "The outer layer and the inner layer."
+                ],
+                "correct": 1,
+                "explanation": "Amoeba cytoplasm is divided into a clear, outer ectoplasm and a granular, inner endoplasm."
+            },
+            {
+                "q": "What are the functions of the contractile and food vacuoles in an Amoeba?",
+                "options": [
+                    "Both are for digestion.",
+                    "Both are for movement.",
+                    "Contractile vacuoles pump out excess water for water balance, while food vacuoles are for digestion.",
+                    "Contractile vacuoles are for reproduction, while food vacuoles are for waste removal."
+                ],
+                "correct": 2,
+                "explanation": "The contractile vacuole regulates water balance, and the food vacuole is where digestion occurs."
+            },
+            {
+                "q": "What disease can some Amoeba forms cause?",
+                "options": [
+                    "Malaria",
+                    "Amoebic dysentery",
+                    "Sleeping sickness",
+                    "Typhoid fever"
+                ],
+                "correct": 1,
+                "explanation": "Some species of Amoeba are pathogenic and can cause amoebic dysentery, often transmitted through contaminated water."
+            }
+        ]
+    },
+    {
+        "course": "BI110",
+        "term": "T2",
+        "title": "Euglena Characteristics",
+        "topic": "Plant-like Protists",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "Where are species of Euglena found?",
+                "options": [
+                    "In dry soil only.",
+                    "In any environment that contains water.",
+                    "In fresh and salty water bodies, and they are abundant in stagnant inland water bodies.",
+                    "In the bodies of plants and animals only."
+                ],
+                "correct": 2,
+                "explanation": "Euglena species are commonly found in both fresh and saltwater, especially in stagnant water sources."
+            },
+            {
+                "q": "What kind of protist is Euglena?",
+                "options": [
+                    "A genus of multicellular, non-motile protists.",
+                    "A genus of unicellular flagellate protists.",
+                    "A colonial protist that lacks a nucleus.",
+                    "A parasitic protist that lives in blood."
+                ],
+                "correct": 1,
+                "explanation": "Euglena is a unicellular protist that possesses one or two flagella for movement."
+            },
+            {
+                "q": "How do some species of Euglena get nutrition?",
+                "options": [
+                    "They are strictly autotrophic (photosynthetic).",
+                    "They are strictly heterotrophic (consuming other organisms).",
+                    "Some are autotrophic because they contain chloroplasts, while others are heterotrophic when they lack chloroplasts.",
+                    "They are all parasitic."
+                ],
+                "correct": 2,
+                "explanation": "Euglena can switch between being autotrophic and heterotrophic depending on light availability, a characteristic known as mixotrophy."
+            },
+            {
+                "q": "How many membranes surround the chloroplasts in Euglena?",
+                "options": [
+                    "Two membranes",
+                    "One membrane",
+                    "Four membranes",
+                    "Three membranes"
+                ],
+                "correct": 3,
+                "explanation": "Unlike the two membranes in plant chloroplasts, Euglena chloroplasts are surrounded by three membranes."
+            },
+            
+            {
+                "q": "What do the chloroplasts in Euglena contain?",
+                "options": [
+                    "Chlorophyll a and b, and pyrenoids.",
+                    "Chlorophyll a only.",
+                    "Chlorophyll c only.",
+                    "Phycobilins and no pyrenoids."
+                ],
+                "correct": 0,
+                "explanation": "The chloroplasts in Euglena contain chlorophylls a and b, and also house pyrenoids, which are involved in starch formation."
+            },
+            {
+                "q": "What form of starch do pyrenoids in Euglena synthesize?",
+                "options": [
+                    "Amylose",
+                    "Glycogen",
+                    "A starch-like polysaccharide called paramylon starch",
+                    "Cellulose"
+                ],
+                "correct": 2,
+                "explanation": "Pyrenoids synthesize paramylon starch, a unique starch-like polysaccharide for energy storage."
+            }
+        ]
+    },
+    {
+        "course": "BI110",
+        "term": "T2",
+        "title": "The Life Cycle of Plasmodium",
+        "topic": "The Parasitic Protist Plasmodium",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "What is the form of the Plasmodium parasite that is injected into a human by a mosquito?",
+                "options": [
+                    "Merozoite",
+                    "Gametocyte",
+                    "Sporozoite",
+                    "Zygote"
+                ],
+                "correct": 2,
+                "explanation": "The sporozoites are the infectious stage transmitted from the mosquito to the human bloodstream."
+            },
+            {
+                "q": "Where do the sporozoites first travel and replicate in the human body?",
+                "options": [
+                    "The heart",
+                    "Red blood cells",
+                    "The liver",
+                    "The stomach"
+                ],
+                "correct": 2,
+                "explanation": "After being injected, sporozoites move to the liver and infect liver cells to begin their replication cycle."
+            },
+            {
+                "q": "During the incubation period in the liver, sporozoites replicate into thousands of parasites called what?",
+                "options": [
+                    "Gametocytes",
+                    "Oocysts",
+                    "Merozoites",
+                    "Zygotes"
+                ],
+                "correct": 2,
+                "explanation": "In the liver, sporozoites multiply and develop into merozoites."
+            },
+            {
+                "q": "Where do the merozoites go after leaving the liver?",
+                "options": [
+                    "They are excreted from the body.",
+                    "They move into the bloodstream to infect red blood cells.",
+                    "They travel to the mosquito's salivary glands.",
+                    "They are destroyed by the immune system."
+                ],
+                "correct": 1,
+                "explanation": "Merozoites are released from the liver and invade red blood cells, beginning the erythrocytic stage of the life cycle."
+            },
+            {
+                "q": "How do merozoites reproduce in the red blood cells, and what is the result?",
+                "options": [
+                    "They divide sexually, which causes illness.",
+                    "They divide asexually, and their repeated release causes illness.",
+                    "They form oocysts, which causes illness.",
+                    "They form gametocytes, which causes illness."
+                ],
+                "correct": 1,
+                "explanation": "Asexual reproduction of merozoites within red blood cells leads to their bursting and the release of new merozoites, causing the fever and chills characteristic of malaria."
+            },
+            {
+                "q": "What sexual forms develop in the infected blood cells that can be ingested by a mosquito?",
+                "options": [
+                    "Sporozoites",
+                    "Merozoites",
+                    "Gametocytes",
+                    "Zygotes"
+                ],
+                "correct": 2,
+                "explanation": "Some merozoites differentiate into male and female gametocytes, which are the sexual forms of the parasite that can be transmitted back to a mosquito."
+            },
+            {
+                "q": "When a mosquito bites an infected human, what does it ingest?",
+                "options": [
+                    "Sporozoites",
+                    "Merozoites",
+                    "Red blood cells with gametocytes",
+                    "Oocysts"
+                ],
+                "correct": 2,
+                "explanation": "The mosquito takes a blood meal and ingests the gametocytes circulating in the human's blood."
+            },
+            {
+                "q": "What happens to the gametocytes in the mosquito's gut?",
+                "options": [
+                    "They are digested.",
+                    "They develop into gametes, which fuse to form zygotes.",
+                    "They immediately develop into sporozoites.",
+                    "They travel directly to the salivary glands."
+                ],
+                "correct": 1,
+                "explanation": "In the mosquito's gut, the gametocytes mature into gametes that fuse to form a zygote, initiating the sexual cycle."
+            },
+            {
+                "q": "What do the zygotes develop into within the mid-gut wall of the mosquito?",
+                "options": [
+                    "Sporozoites",
+                    "Merozoites",
+                    "Gametocytes",
+                    "Oocysts"
+                ],
+                "correct": 3,
+                "explanation": "The zygotes develop into oocysts, which embed themselves in the mosquito's mid-gut wall."
+            },
+            {
+                "q": "What do the oocysts produce?",
+                "options": [
+                    "More zygotes",
+                    "Thousands of active sporozoites",
+                    "Gametocytes",
+                    "Merozoites"
+                ],
+                "correct": 1,
+                "explanation": "The oocysts undergo asexual reproduction to produce thousands of active sporozoites."
+            },
+            {
+                "q": "What happens after the oocysts burst?",
+                "options": [
+                    "The mosquito dies.",
+                    "Sporozoites are released and move to the mosquito's salivary glands.",
+                    "The cycle starts over in the mosquito's gut.",
+                    "The sporozoites are excreted."
+                ],
+                "correct": 1,
+                "explanation": "When the oocysts burst, the released sporozoites migrate to the mosquito's salivary glands, making the mosquito infectious."
+            },
+            {
+                "q": "What is the final step that completes the Plasmodium life cycle?",
+                "options": [
+                    "The mosquito lays eggs.",
+                    "The mosquito bites another person, injecting the new sporozoites.",
+                    "The parasite dies in the mosquito.",
+                    "The oocysts are digested."
+                ],
+                "correct": 1,
+                "explanation": "The life cycle is complete when the newly infectious mosquito transmits the sporozoites to another human host during a new blood meal."
+            }
+        ]
+    },
+    {
+        "course": "BI110",
+        "term": "T2",
+        "title": "The Life Cycle of Saprolegnia",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "steps": [
+            {
+                "q": "What are some characteristics of water moulds like Saprolegnia?",
+                "options": [
+                    "They are land-based fungi.",
+                    "They are aquatic organisms, with some being saprobic and others parasitic.",
+                    "They are single-celled animals.",
+                    "They are photosynthetic organisms."
+                ],
+                "correct": 1,
+                "explanation": "Saprolegnia and other water moulds are aquatic protists, living either as decomposers (saprobic) or as parasites on other organisms."
+            },
+            {
+                "q": "How does Saprolegnia, a water mould, primarily reproduce asexually?",
+                "options": [
+                    "By budding",
+                    "By producing sporangia with flagellated zoospores",
+                    "By fragmentation of its hyphae",
+                    "By forming a zygote"
+                ],
+                "correct": 1,
+                "explanation": "Asexual reproduction in water moulds occurs through the production and release of zoospores from sporangia."
+            },
+            {
+                "q": "What are septa in a water mould?",
+                "options": [
+                    "They are the structures that release spores.",
+                    "Septa are structures that separate the somatic cells from the reproductive structures that form in the hyphae below the sporangium.",
+                    "They are the cell walls.",
+                    "They are the structures that contain chloroplasts."
+                ],
+                "correct": 1,
+                "explanation": "Septa are dividers that form in the hyphae of water moulds, delineating the non-reproductive body from the reproductive parts."
+            },
+            {
+                "q": "How does sexual reproduction occur in water moulds like Saprolegnia?",
+                "options": [
+                    "By releasing zoospores that fuse together.",
+                    "By the fusion of flagellated spores.",
+                    "The organism produces male and female gametangia, which fuse to form a zygote that develops into a new organism.",
+                    "Through mitosis of the somatic cells."
+                ],
+                "correct": 2,
+                "explanation": "Sexual reproduction involves the fusion of male and female gametangia to produce a zygote that grows into a new organism."
+            }
+        ]
+    },
+
+
+
 
 
 ];

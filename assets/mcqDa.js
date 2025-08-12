@@ -16112,4 +16112,953 @@ const mcqData = [
     "year": "2018 Sessional",
     "tag": "MCQ"
   },
+  {
+        "q": "Who first used the term 'Protista'?",
+        "options": [
+            "Carolus Linnaeus",
+            "Robert Whittaker",
+            "Ernst Haeckel",
+            "Anton van Leeuwenhoek"
+        ],
+        "correct": 2,
+        "explanation": "Ernst Haeckel",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "When was the term 'Protista' first used?",
+        "options": [
+            "1735",
+            "1674",
+            "1969",
+            "1886"
+        ],
+        "correct": 3,
+        "explanation": "1886",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "How does the Kingdom Protista relate to other kingdoms?",
+        "options": [
+            "It is the ancestor of all other kingdoms.",
+            "It forms a link between the kingdoms of plants, animals, and fungi.",
+            "It is the most advanced of all kingdoms.",
+            "It is unrelated to the other kingdoms."
+        ],
+        "correct": 1,
+        "explanation": "It forms a link between the kingdoms of plants, animals, and fungi.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "What is the primary environment for members of Protista?",
+        "options": [
+            "Terrestrial environments",
+            "Primarily aquatic",
+            "Only in moist soil",
+            "Inside other organisms"
+        ],
+        "correct": 1,
+        "explanation": "They are primarily aquatic.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "How many phyla are in the Kingdom Protista?",
+        "options": [
+            "2",
+            "5",
+            "At least 16 phyla.",
+            "10"
+        ],
+        "correct": 2,
+        "explanation": "At least 16 phyla.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "What are some ecological and medical roles of protists?",
+        "options": [
+            "They are only harmful, causing diseases.",
+            "They are only beneficial, serving as primary producers.",
+            "They are only useful as sources of commercial products.",
+            "Some protists, like algae, are primary producers in aquatic ecosystems, while others are responsible for serious human diseases like malaria and sleeping sickness."
+        ],
+        "correct": 3,
+        "explanation": "Some protists, like algae, are primary producers in aquatic ecosystems, while others are responsible for serious human diseases like malaria and sleeping sickness.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Introduction to Kingdom Protista",
+        "year": "notes",
+        "tag": "Introduction"
+    },
+    {
+        "q": "What type of organisms are protists?",
+        "options": [
+            "Simple prokaryotic organisms",
+            "Complex eukaryotic organisms",
+            "Simple eukaryotic organisms",
+            "Multicellular organisms with specialized tissues"
+        ],
+        "correct": 2,
+        "explanation": "They are simple eukaryotic organisms.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What distinguishes protists from other eukaryotes?",
+        "options": [
+            "They have a cell wall.",
+            "Their complex tissue organization.",
+            "Their simple cellular organization.",
+            "Their ability to reproduce only asexually."
+        ],
+        "correct": 2,
+        "explanation": "Their simple cellular organization.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "How would you describe the cellular structure of protists?",
+        "options": [
+            "They are always unicellular.",
+            "They are unicellular, but some can be colonial or multicellular. They lack specialized tissue organization.",
+            "They are always multicellular with specialized tissues.",
+            "They are colonial but never multicellular."
+        ],
+        "correct": 1,
+        "explanation": "They are unicellular, but some can be colonial or multicellular. They lack specialized tissue organization.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What do protist cells contain?",
+        "options": [
+            "Only a cell membrane.",
+            "A nucleoid region.",
+            "A cell wall made of chitin.",
+            "A well-defined nucleus and membrane-bound organelles."
+        ],
+        "correct": 3,
+        "explanation": "They have a well-defined nucleus and membrane-bound organelles.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What are the three primary methods of locomotion for protists?",
+        "options": [
+            "Flying, swimming, and gliding.",
+            "A flagellum, cilia, or pseudopodia (false feet).",
+            "Walking, hopping, and crawling.",
+            "Rolling, bouncing, and flying."
+        ],
+        "correct": 1,
+        "explanation": "Protists can move using a flagellum, cilia, or pseudopodia (false feet).",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "Where can protists live?",
+        "options": [
+            "Only in freshwater.",
+            "In any environment that contains water, including water bodies and moist soil. Some can also live in the bodies of humans and plants.",
+            "Only in the ocean.",
+            "Only in dry environments."
+        ],
+        "correct": 1,
+        "explanation": "In any environment that contains water, including water bodies and moist soil. Some can also live in the bodies of humans and plants.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What is the primary process for cellular respiration in protists?",
+        "options": [
+            "It is primarily an anaerobic process.",
+            "It is a fermentative process.",
+            "It is primarily an aerobic process, but some living in anaerobic conditions are strict or facultative anaerobes.",
+            "They do not perform cellular respiration."
+        ],
+        "correct": 2,
+        "explanation": "Cellular respiration is primarily an aerobic process, but some living in anaerobic conditions are strict or facultative anaerobes.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What are the modes of nutrition for protists?",
+        "options": [
+            "They can only be autotrophic.",
+            "They can be both heterotrophic or autotrophic.",
+            "They can only be parasitic.",
+            "They can only be saprobic."
+        ],
+        "correct": 1,
+        "explanation": "They can be both heterotrophic or autotrophic.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "How do some protists feed?",
+        "options": [
+            "All protists are photosynthetic.",
+            "All protists are parasitic.",
+            "They only absorb nutrients from dead organisms.",
+            "Some, known as phagotrophs, pull solid food particles into intracellular food vacuoles, while others, known as osmotrophs, ingest food in soluble forms from their surroundings."
+        ],
+        "correct": 3,
+        "explanation": "Some protists, known as phagotrophs, pull solid food particles into intracellular food vacuoles, while others, known as osmotrophs, ingest food in soluble forms from their surroundings.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "How do protists reproduce?",
+        "options": [
+            "Only asexually by budding.",
+            "Only sexually by meiosis.",
+            "They reproduce both asexually and sexually.",
+            "Through spore formation only."
+        ],
+        "correct": 2,
+        "explanation": "They reproduce both asexually and sexually. Some reproduce by mitosis, and some can undergo meiosis for sexual reproduction. Some species have complex life cycles involving multiple organisms, such as Plasmodium.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "What do protists form in adverse conditions?",
+        "options": [
+            "Spores",
+            "Seeds",
+            "Cysts",
+            "Fruiting bodies"
+        ],
+        "correct": 2,
+        "explanation": "They form cysts.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "General Characteristics of Protista",
+        "year": "notes",
+        "tag": "General Characteristics"
+    },
+    {
+        "q": "How are protists primarily categorized?",
+        "options": [
+            "By their size.",
+            "By their color.",
+            "Based on their habitat.",
+            "They are categorized into two taxons: Protozoans (animal-like) and Algae (plant-like)."
+        ],
+        "correct": 3,
+        "explanation": "They are categorized into two taxons:\nProtozoans: animal-like single-celled organisms.\nAlgae: plant-like single or multi-celled organisms.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Classification of Kingdom Protista",
+        "year": "notes",
+        "tag": "Classification"
+    },
+    {
+        "q": "What are some economic benefits of protists?",
+        "options": [
+            "They are only useful as pathogens.",
+            "They are a source of food, commercial products, and medicines.",
+            "They are only important for aquatic ecosystems.",
+            "They are used for land reclamation."
+        ],
+        
+        "correct": 1,
+        "explanation": "They are a source of food, commercial products, and medicines.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What are some examples of commercial products derived from marine protists?",
+        "options": [
+            "Cellulose and lignin",
+            "Petroleum and natural gas",
+            "Algin, agar, carrageenan, and antiseptics.",
+            "Silk and wool"
+        ],
+        "correct": 2,
+        "explanation": "Algin, agar, carrageenan, and antiseptics.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "How are protists important in aquatic ecosystems?",
+        "options": [
+            "They are decomposers.",
+            "They are primary producers, playing a basic role in food chains by providing food and oxygen.",
+            "They are secondary consumers.",
+            "They have no role."
+        ],
+        "correct": 1,
+        "explanation": "Many are primary producers, playing a basic role in food chains by providing food and oxygen.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What are some examples of medicinal products from algae?",
+        "options": [
+            "Aspirin and ibuprofen",
+            "Penicillin and amoxicillin",
+            "Insulin and adrenaline",
+            "Sodium laminaria sulphate, Fucoidin, and Heparin, which are used as blood coagulants."
+        ],
+        "correct": 3,
+        "explanation": "Sodium laminaria sulphate, Fucoidin, and Heparin, which are used as blood coagulants.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What anti-cancer compound does the protist Lyngbya produce?",
+        "options": [
+            "Taxol",
+            "Paclitaxel",
+            "Doxorubicin",
+            "Lyngbya produces an anti-cancer compound."
+        ],
+        "correct": 3,
+        "explanation": "Lyngbya produces an anti-cancer compound.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "How are kelps economically important?",
+        "options": [
+            "They are a good source of oil.",
+            "They are a good source of minerals like sodium, potassium, and iodine.",
+            "They are a source of wood.",
+            "They are used to make paper."
+        ],
+        "correct": 1,
+        "explanation": "They are a good source of minerals like sodium, potassium, and iodine.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What is an example of a protist used in biological research?",
+        "options": [
+            "Amoeba",
+            "Plasmodium",
+            "Chlorella, a unicellular, non-motile alga.",
+            "Paramecium"
+        ],
+        "correct": 2,
+        "explanation": "Chlorella, a unicellular, non-motile alga.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What is diatomaceous earth, and what is it used for?",
+        "options": [
+            "A material used in construction.",
+            "A soil additive for farming.",
+            "A porous and chemically inert material that can be used for the filtration of oil, syrup, alcohols, and antibiotics.",
+            "A food supplement for animals."
+        ],
+        "correct": 2,
+        "explanation": "Diatomaceous earth is a porous and chemically inert material that can be used for the filtration of oil, syrup, alcohols, and antibiotics.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "Can protists be harmful?",
+        "options": [
+            "No, they are always beneficial to humans.",
+            "Only when they are in freshwater.",
+            "Only when they are in marine environments.",
+            "Yes, some are pathogenic and can cause many diseases in humans and plants."
+        ],
+        "correct": 3,
+        "explanation": "Yes, some are pathogenic and can cause many diseases in humans and plants.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Economic Importance of Protists",
+        "year": "notes",
+        "tag": "Economic Importance"
+    },
+    {
+        "q": "What are some examples of animal-like protists?",
+        "options": [
+            "Euglena and algae.",
+            "Diatoms and kelps.",
+            "Amoeba and Paramecium are heterotrophs and predators.",
+            "Fungi and plants."
+        ],
+        "correct": 2,
+        "explanation": "Amoeba and Paramecium are heterotrophs and predators.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What is the largest size an Amoeba can reach?",
+        "options": [
+            "1 cm",
+            "1 mm across.",
+            "10 cm",
+            "10 mm"
+        ],
+        "correct": 1,
+        "explanation": "Up to 1 mm across.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What is the origin of the name 'Amoeba'?",
+        "options": [
+            "It's from a Latin word for 'water'.",
+            "It's an English term for 'small creature'.",
+            "It's derived from the Greek word amoibe, which means 'change'.",
+            "It's from a Spanish word for 'tiny foot'."
+        ],
+        "correct": 2,
+        "explanation": "It's derived from the Greek word amoibe, which means 'change'.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "How does an Amoeba move?",
+        "options": [
+            "It moves using a tail-like flagellum.",
+            "It moves using hair-like cilia.",
+            "It moves by contracting its cell body.",
+            "It moves by creeping and stretching its cytoplasm into finger-like extensions called pseudopodia (meaning 'false foot')."
+        ],
+        "correct": 3,
+        "explanation": "It moves by creeping and stretching its cytoplasm into finger-like extensions called pseudopodia (meaning 'false foot').",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What are the two regions of an Amoeba's cytoplasm?",
+        "options": [
+            "The nucleus and the vacuole.",
+            "The cell wall and the cell membrane.",
+            "Ectoplasm, which is lighter and near the plasma membrane, and endoplasm, which is located towards the interior.",
+            "The inner and outer filaments."
+        ],
+        "correct": 2,
+        "explanation": "Ectoplasm, which is lighter and near the plasma membrane, and endoplasm, which is located towards the interior.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What are the functions of the contractile and food vacuoles in an Amoeba?",
+        "options": [
+            "Both are for digestion.",
+            "Both are for movement.",
+            "Contractile vacuoles pump out excess water for water balance, while food vacuoles are for digestion.",
+            "Contractile vacuoles are for reproduction, while food vacuoles are for waste removal."
+        ],
+        "correct": 2,
+        "explanation": "Contractile vacuoles pump out excess water for water balance, while food vacuoles are for digestion.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What disease can some Amoeba forms cause?",
+        "options": [
+            "Malaria",
+            "Sleeping sickness",
+            "Amoebic dysentery.",
+            "Typhoid fever"
+        ],
+        "correct": 2,
+        "explanation": "Amoebic dysentery.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "How do people get infected with amoebic dysentery?",
+        "options": [
+            "By breathing in spores.",
+            "By being bitten by a mosquito.",
+            "By eating uncooked meat.",
+            "By drinking contaminated water."
+        ],
+        "correct": 3,
+        "explanation": "By drinking contaminated water.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Animal-like Protists (Protozoans)",
+        "year": "notes",
+        "tag": "Animal-like Protists"
+    },
+    {
+        "q": "What is Plasmodium?",
+        "options": [
+            "A type of virus.",
+            "A type of bacterium.",
+            "A genus of parasitic species that causes the disease malaria.",
+            "A non-pathogenic protist."
+        ],
+        "correct": 2,
+        "explanation": "A genus of parasitic species that causes the disease malaria.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Parasitic Protist Plasmodium",
+        "year": "notes",
+        "tag": "Parasitic Protists"
+    },
+    {
+        "q": "How is malaria transmitted to humans?",
+        "options": [
+            "Through contaminated water.",
+            "Through the air.",
+            "By eating infected food.",
+            "All species of Plasmodium that cause malaria in humans are transmitted by a species of mosquito called Anopheles."
+        ],
+        "correct": 3,
+        "explanation": "All species of Plasmodium that cause malaria in humans are transmitted by a species of mosquito called Anopheles.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Parasitic Protist Plasmodium",
+        "year": "notes",
+        "tag": "Parasitic Protists"
+    },
+    {
+        "q": "Why do female mosquitoes bite?",
+        "options": [
+            "To get a source of sugar for energy.",
+            "To transmit diseases to humans.",
+            "For hydration.",
+            "The protein content in nectar is insufficient for egg development, so a blood meal is needed."
+        ],
+        "correct": 3,
+        "explanation": "The protein content in nectar is insufficient for egg development, so a blood meal is needed.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Parasitic Protist Plasmodium",
+        "year": "notes",
+        "tag": "Parasitic Protists"
+    },
+    {
+        "q": "How does the Plasmodium life cycle begin in a human?",
+        "options": [
+            "A female Anopheles mosquito carrying the parasite injects sporozoites into the human bloodstream when it feeds.",
+            "The human ingests infected blood.",
+            "The parasite is passed from a human to a mosquito.",
+            "A female Anopheles mosquito injects gametocytes into the bloodstream."
+        ],
+        "correct": 0,
+        "explanation": "A female Anopheles mosquito carrying the parasite injects sporozoites into the human bloodstream when it feeds.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "What happens after the sporozoites enter the human body?",
+        "options": [
+            "The sporozoites are immediately destroyed by the immune system.",
+            "The sporozoites immediately infect red blood cells.",
+            "The sporozoites develop into gametocytes.",
+            "The sporozoites travel to the liver and infect liver cells."
+        ],
+        "correct": 3,
+        "explanation": "The sporozoites travel to the liver and infect liver cells.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "What happens in the liver?",
+        "options": [
+            "The sporozoites grow, divide, and replicate into thousands of parasites called merozoites.",
+            "They die.",
+            "They reproduce sexually.",
+            "They form oocysts."
+        ],
+        "correct": 0,
+        "explanation": "During a 5-16 day incubation period, the sporozoites grow, divide, and replicate into thousands of parasites called merozoites.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "Where do the merozoites go after leaving the liver?",
+        "options": [
+            "To the mosquito's salivary glands.",
+            "To the bloodstream to infect red blood cells.",
+            "To the spleen.",
+            "They are excreted from the body."
+        ],
+        "correct": 1,
+        "explanation": "They move into the bloodstream to infect red blood cells.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    
+    {
+        "q": "How do the merozoites reproduce in the red blood cells?",
+        "options": [
+            "They divide sexually, and their repeated release causes illness.",
+            "They divide asexually, and their repeated release from red blood cells over 1-3 days leads to thousands of parasites and causes illness.",
+            "They fuse with other merozoites.",
+            "They form cysts."
+        ],
+        "correct": 1,
+        "explanation": "They divide asexually, and their repeated release from red blood cells over 1-3 days leads to thousands of parasites and causes illness.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "What sexual forms develop in the infected blood cells?",
+        "options": [
+            "Sporozoites",
+            "Merozoites",
+            "Gametocytes",
+            "Zygotes"
+        ],
+        "correct": 2,
+        "explanation": "Merozoites develop into sexual forms of parasites called gametocytes.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "How is the life cycle completed?",
+        "options": [
+            "The organism produces male and female gametangia, which fuse to form a zygote.",
+            "When a mosquito bites an infected human, it ingests the gametocytes. The gametocytes develop into gametes, which fuse to form zygotes that develop into oocysts. The oocysts burst after 8-15 days, releasing new sporozoites that travel to the mosquito's salivary glands, ready to infect another person.",
+            "When the human's immune system destroys the parasite.",
+            "When the parasite is excreted from the human body."
+        ],
+        "correct": 1,
+        "explanation": "When a mosquito bites an infected human, it ingests the gametocytes. The gametocytes develop into gametes, which fuse to form zygotes that develop into oocysts. The oocysts burst after 8-15 days, releasing new sporozoites that travel to the mosquito's salivary glands, ready to infect another person.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "The Life Cycle of Plasmodium",
+        "year": "notes",
+        "tag": "Life Cycle"
+    },
+    {
+        "q": "What are some examples of plant-like protists?",
+        "options": [
+            "Amoeba and Paramecium.",
+            "Fungi and bacteria.",
+            "Euglena, algae, and diatoms.",
+            "Viruses and prions."
+        ],
+        "correct": 2,
+        "explanation": "Euglena, algae, and diatoms.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Plant-like Protists",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "What domain and kingdom is Euglena classified under?",
+        "options": [
+            "Domain Eukarya, Kingdom Plantae.",
+            "Domain Eukarya, Kingdom Protista.",
+            "Domain Archaea, Kingdom Protista.",
+            "Domain Bacteria, Kingdom Bacteria."
+        ],
+        "correct": 1,
+        "explanation": "Domain Eukarya, Kingdom Protista.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "Where are species of Euglena found?",
+        "options": [
+            "Only in dry soil.",
+            "Only in saltwater.",
+            "In fresh and salty water bodies, and they are abundant in stagnant inland water bodies.",
+            "Only inside other animals."
+        ],
+        "correct": 2,
+        "explanation": "In fresh and salty water bodies, and they are abundant in stagnant inland water bodies.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "What kind of protist is Euglena?",
+        "options": [
+            "A genus of multicellular, non-motile protists.",
+            "A colonial protist that lacks a nucleus.",
+            "A genus of unicellular flagellate protists.",
+            "A parasitic protist that lives in blood."
+        ],
+        "correct": 2,
+        "explanation": "A genus of unicellular flagellate protists.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "How do some species of Euglena get nutrition?",
+        "options": [
+            "Only autotrophic (photosynthetic).",
+            "Only heterotrophic (consuming other organisms).",
+            "Some are autotrophic (photosynthetic) because they contain chloroplasts, while others are heterotrophic when they lack chloroplasts.",
+            "They are always parasitic."
+        ],
+        "correct": 2,
+        "explanation": "Some are autotrophic (photosynthetic) because they contain chloroplasts, while others are heterotrophic when they lack chloroplasts.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "How many membranes surround the chloroplasts in Euglena?",
+        "options": [
+            "Two membranes.",
+            "One membrane.",
+            "Four membranes.",
+            "Three membranes."
+        ],
+        "correct": 3,
+        "explanation": "They are typically surrounded by three membranes.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "What do the chloroplasts in Euglena contain?",
+        "options": [
+            "They contain mitochondria.",
+            "They contain pyrenoids, which are spherical proteinaceous bodies involved in the formation of starch.",
+            "They contain ribosomes.",
+            "They contain a nucleoid region."
+        ],
+        "correct": 1,
+        "explanation": "They contain pyrenoids, which are spherical proteinaceous bodies involved in the formation of starch.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "What form of starch do pyrenoids in Euglena synthesize?",
+        "options": [
+            "Amylose.",
+            "Glycogen.",
+            "Cellulose.",
+            "A starch-like polysaccharide called paramylon starch."
+        ],
+        "correct": 3,
+        "explanation": "They synthesize a starch-like polysaccharide called paramylon starch.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Euglena",
+        "year": "notes",
+        "tag": "Plant-like Protists"
+    },
+    {
+        "q": "What are some examples of fungi-like protists?",
+        "options": [
+            "Amoeba.",
+            "Euglena.",
+            "Diatoms.",
+            "Water moulds, such as the species Saprolegnia."
+        ],
+        "correct": 3,
+        "explanation": "Water moulds, such as the species Saprolegnia.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    },
+    {
+        "q": "What are some characteristics of water moulds?",
+        "options": [
+            "They are strictly terrestrial.",
+            "They are photosynthetic.",
+            "They are all non-motile.",
+            "They are aquatic organisms, with some living in freshwater and a few in saline water. Some are saprobic, while others are parasitic."
+        ],
+        "correct": 3,
+        "explanation": "They are aquatic organisms, with some living in freshwater and a few in saline water. Some are saprobic, while others are parasitic.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    },
+    {
+        "q": "What diseases can parasitic water moulds cause?",
+        "options": [
+            "They only cause diseases in plants.",
+            "They can infect the gills of fish and some other aquatic animals, causing diseases.",
+            "They only cause diseases in humans.",
+            "They are not pathogenic."
+        ],
+        "correct": 1,
+        "explanation": "They can infect the gills of fish and some other aquatic animals, causing diseases.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    },
+    {
+        "q": "How do water moulds reproduce asexually?",
+        "options": [
+            "By budding.",
+            "By forming a zygote.",
+            "By binary fission.",
+            "They reproduce asexually by producing sporangia which contain flagellated motile spores known as zoospores."
+        ],
+        "correct": 3,
+        "explanation": "They reproduce asexually by producing sporangia which contain flagellated motile spores known as zoospores.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    },
+    {
+        "q": "What are septa in a water mould?",
+        "options": [
+            "They are the structures that release spores.",
+            "They are the cell walls.",
+            "They are the structures that contain chloroplasts.",
+            "Septa are structures that separate the somatic cells from the reproductive structures that form in the hyphae below the sporangium."
+        ],
+        "correct": 3,
+        "explanation": "Septa are structures that separate the somatic cells from the reproductive structures that form in the hyphae below the sporangium.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    },
+    {
+        "q": "Based on the life cycle image, what is the sequence of sexual reproduction in a water mould?",
+        "options": [
+            "Sexual reproduction involves the formation of spores.",
+            "The sexual life cycle involves budding.",
+            "Sexual reproduction is not a feature of water moulds.",
+            "The sexual life cycle involves the production of male and female gametangia, which fuse to form a zygote that develops into a new organism."
+        ],
+        "correct": 3,
+        "explanation": "The sexual life cycle involves the production of male and female gametangia, which fuse to form a zygote that develops into a new organism.",
+        "course": "BI110",
+        "term": "T2",
+        "topic": "Fungi-like Protists",
+        "year": "notes",
+        "tag": "Fungi-like Protists"
+    }
+
+
+
 ];
