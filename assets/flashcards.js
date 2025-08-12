@@ -8915,5 +8915,675 @@ const flashcards = {
       "topic": "Cell Structure"
     }
   ],
+  
+  
+  
+  
+  
+  
+  //LA110
+  "COMMUNICATION SKILLS (LA111):QUICK RECAP":[
+    {
+        "front": "What is communication?",
+        "back": "A systemic process where people interact with symbols to create and interpret meaning.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Definition of Communication"
+    },
+    {
+        "front": "What are the four major functions of communication?",
+        "back": "Control, motivation, emotional expression, and information sharing.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Functions of Communication"
+    },
+    {
+        "front": "How does communication differ from communication skills?",
+        "back": "Communication is the process of sharing meaning; communication skills are the abilities (e.g., listening, speaking) that enable effective communication.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication vs. Skills"
+    },
+    {
+        "front": "Why are communication skills important for engineers and scientists?",
+        "back": "They are essential for sharing new findings, technologies, and products effectively.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Purpose of Communication"
+    },
+    {
+        "front": "What are the legal considerations in technical communication?",
+        "back": "Poor communication can lead to serious legal consequences, as technical documents can be used to mitigate or cause disputes.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Communication"
+    },
+    {
+        "front": "How has computerization impacted technical communication?",
+        "back": "It has made it easier but more complex, allowing for sophisticated documents with embedded visuals.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Communication"
+    },
+    {
+        "front": "What are the key elements of Aristotle's model?",
+        "back": "Speaker, Speech, Audience, and Effect.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "How does the Shannon and Weaver model explain communication?",
+        "back": "It's a linear transmission model that describes communication as a signal from a sender to a receiver, introducing the concept of noise.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "What is the difference between linear and transactional communication models?",
+        "back": "A linear model is one-way (sender to receiver); a transactional model is a dynamic, two-way process where participants send and receive messages simultaneously.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "What are the key elements of communication?",
+        "back": "Sender, message, channel, receiver, noise, and feedback.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "How does encoding differ from decoding?",
+        "back": "Encoding is converting an idea into a message; decoding is interpreting the message to find meaning.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "Why is feedback important?",
+        "back": "It's the receiver's response that lets the sender know if the message was understood correctly.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What are the main types of communication barriers?",
+        "back": "Physical, psychological, socio-cultural, linguistic/language, and technical.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "How can psychological barriers affect communication?",
+        "back": "They are caused by individual differences, attitudes, and prejudices, leading to misunderstandings.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What is information overload, and how does it act as a barrier?",
+        "back": "It's having more information than one can process, causing people to ignore or forget information.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What is nonverbal communication?",
+        "back": "Communication without words or language.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Nonverbal Communication"
+    },
+    {
+        "front": "What are some common forms of nonverbal communication?",
+        "back": "Kinesics (body language), facial expressions, paralanguage (tone), proxemics (space), and haptics (touch).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Nonverbal Communication"
+    },
+    {
+        "front": "What are the five basic levels of communication?",
+        "back": "Intrapersonal, interpersonal, group, public, and mass communication.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Types of Communication"
+    },
+    {
+        "front": "How do verbal and nonverbal communication differ?",
+        "back": "Verbal uses words; nonverbal uses gestures, tone, and other non-linguistic cues.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Types of Communication"
+    },
+    {
+        "front": "What is the difference between listening and hearing?",
+        "back": "Listening is an intentional process of interpreting sounds; hearing is the involuntary perception of sound.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Listening"
+    },
+    {
+        "front": "How can the Cornell Method improve note-taking?",
+        "back": "It uses a structured page layout with sections for notes, keywords, and a summary to organize and review information.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Note-Taking"
+    },
+    {
+        "front": "Why is audience analysis important?",
+        "back": "Understanding your audience and purpose is critical to ensure your message is effective and well-received.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Audience and Purpose"
+    },
+    {
+        "front": "How does the audience affect writing?",
+        "back": "It dictates the tone, style, and level of detail.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Audience and Purpose"
+    },
+    {
+        "front": "What are the stages of the writing process?",
+        "back": "Pre-writing, drafting, revising, and proofreading.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Writing Process"
+    },
+    {
+        "front": "Why is revising an important stage?",
+        "back": "It's where you review and improve the content, structure, and clarity of the document.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Writing Process"
+    },
+    {
+        "front": "What are the common organizational patterns in writing?",
+        "back": "Chronological, spatial, compare/contrast, cause/effect, and problem/solution.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Organizational Patterns"
+    },
+    {
+        "front": "What is the purpose of a transitional paragraph?",
+        "back": "To smoothly connect major sections of a document and guide the reader.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Paragraphs"
+    },
+    {
+        "front": "What is the basic structure of a five-paragraph essay?",
+        "back": "An introduction with a thesis, three body paragraphs supporting the thesis, and a conclusion that restates the thesis.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Essay Structure"
+    },
+    {
+        "front": "How do you format in-text citations in APA style?",
+        "back": "Include the author's last name and the date of publication.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "How do you cite sources with multiple authors?",
+        "back": "For three or more authors, use the first author's name followed by et al. after the initial citation.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "What is a technical definition?",
+        "back": "A detailed, precise explanation of a term in a specific field to eliminate ambiguity.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Definitions"
+    },
+    {
+        "front": "What is a description?",
+        "back": "A type of technical writing that provides details about an object, mechanism, or process.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Descriptions"
+    },
+    {
+        "front": "What is the difference between object and mechanism descriptions?",
+        "back": "An object description is for a static item; a mechanism description is for an item with moving parts.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Descriptions"
+    },
+    {
+        "front": "What details should be included when describing an object?",
+        "back": "Its definition, purpose, overview/appearance, and components.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Descriptions"
+    },
+    {
+        "front": "What are the parts of a mechanism description?",
+        "back": "An introduction (defining the mechanism), a detailed description of each part, and a conclusion.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Descriptions"
+    },
+    {
+        "front": "How do you structure a process description?",
+        "back": "With an overview, a sequential description of the steps, and a conclusion.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Descriptions"
+    },
+    {
+        "front": "What are the key components of a set of instructions?",
+        "back": "A title, introduction, list of materials/tools, sequential steps, and warnings.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Instructions"
+    },
+    {
+        "front": "What are the three common formats for business letters?",
+        "back": "Block, Modified Block, and Semi-Blocked (Indented).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Letters"
+    },
+    {
+        "front": "What are the essential parts of a memo?",
+        "back": "A heading (TO, FROM, DATE, SUBJECT), an introduction, a body, and a conclusion.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Memos"
+    },
+    {
+        "front": "What are the key differences between an agenda and meeting minutes?",
+        "back": "An agenda is a list of items to discuss before a meeting; minutes are a record of what was discussed during the meeting.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Meetings"
+    },
+    {
+        "front": "What is a report?",
+        "back": "A formal document that presents information in a structured format for a specific audience and purpose.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What are the three key factors that determine the scope and style of a report?",
+        "back": "The audience, the purpose, and the subject matter.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What are the common sections of a generic report?",
+        "back": "Title Page, Contents, List of Illustrations, Executive Summary, and Introduction.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What are the different chapters of a research report?",
+        "back": "Introduction, Review of Related Literature, Research Methodology, Data Analysis and Presentation, and Conclusions and Recommendations.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What is a meeting?",
+        "back": "A gathering of two or more people to discuss, share information, or make decisions.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Meetings"
+    },
+    {
+        "front": "What is an interview?",
+        "back": "A structured conversation where one person asks questions to gather information from another(s).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Interviews"
+    },
+    {
+        "front": "What are the three stages of an interview's structure?",
+        "back": "The opening, the body, and the closing.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Interviews"
+    },
+    {
+        "front": "What is a reprimand interview?",
+        "back": "A meeting conducted by a supervisor when an employee's work or conduct is unsatisfactory.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Interviews"
+    },
+    
+    
+    {
+        "front": "What is a debate?",
+        "back": "A formal discussion where opposing arguments on a topic are presented.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Debate"
+    },
+    {
+        "front": "What is rebuttal in a debate?",
+        "back": "The part of a debate where a speaker presents arguments to disprove the opponent's claims.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Debate"
+    },
+    {
+        "front": "In the cross-examination style of debate, what happens after each constructive speech?",
+        "back": "An opponent asks questions after each constructive speech.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Debate"
+    },
+    {
+        "front": "What are the social and ethical reasons for communication?",
+        "back": "Knowing social expectations for communication is necessary for harmonious living; ethical technical communication helps to mediate conflicts.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Purpose of Communication"
+    },
+    {
+        "front": "Why is the frequency of technical communication important?",
+        "back": "Communication is unavoidable in the workplace, and its value lies in its ability to get things done despite its high frequency.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Communication"
+    },
+    {
+        "front": "What is the collaborative nature of technical communication?",
+        "back": "It takes place across geographical areas and involves a lot of interaction among people with diverse backgrounds.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Communication"
+    },
+    {
+        "front": "Why is the international nature of technical communication important?",
+        "back": "Good writing skills are necessary for an internationalized world, and communication facilitates this process.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Technical Communication"
+    },
+    {
+        "front": "What critical skills rank above any other type of skill?",
+        "back": "Technical writing, public speaking, working with individuals, working with groups, and talking with people.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Purpose of Communication"
+    },
+    {
+        "front": "What is a model?",
+        "back": "A graphic representation designed to explain how a variable works, showing the structure or workings of an object or system.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "What question did Harold D. Lasswell's model of communication ask?",
+        "back": "Who, Says What, In Which Channel, To Whom, With What Effect.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "How did Charles Osgood's model describe communication?",
+        "back": "As a dynamic process with an interactive relationship between the source and the receiver.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "What concept did the second Schramm model introduce?",
+        "back": "The concept of shared orientation or 'field of common experience' between the sender and receiver.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "How are models of communication classified in summary?",
+        "back": "Linear or transmission, Interactional, and Transactional.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Communication Models"
+    },
+    {
+        "front": "What is the role of the Source/Sender/Encoder?",
+        "back": "To impart a message by deciding how to communicate it and what strategies to use to achieve the desired response.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What is a message?",
+        "back": "A set of signs and symbols from the source to create meaning for the receiver, or simply, the content shared between participants.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What is a channel and what are some examples?",
+        "back": "The medium used to communicate a message. Examples include spoken words, electronic media, or non-verbal cues.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What is the role of the Receiver/Decoder?",
+        "back": "To interpret the message and derive meaning from it.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What is noise and what does it create?",
+        "back": "A distortion in a message that affects the flow of communication. It creates barriers.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Elements of Communication"
+    },
+    {
+        "front": "What are socio-cultural barriers to communication?",
+        "back": "Barriers caused by social expectations and cultural norms.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What are linguistic/language barriers to communication?",
+        "back": "Barriers arising from faulty expressions, poor translation, or inappropriate vocabulary.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What are technical barriers to communication?",
+        "back": "Barriers that occur when technology is used, such as poor audio quality or weak signals.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What is filtering and what is its major determinant?",
+        "back": "Filtering is a sender's purposeful manipulation of information. The major determinant is the number of levels in an organization's structure.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "What is selective perception?",
+        "back": "When a receiver selectively sees and hears things based on their personal characteristics.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "How do men and women use talk differently according to Robin Lakoff?",
+        "back": "Men use talk to emphasize status, while women use it to create connection.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "How do emotions act as a barrier to communication?",
+        "back": "A receiver's emotions at the time of receiving a message will influence how they interpret it.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Barriers in Communication"
+    },
+    {
+        "front": "Why is understanding nonverbal communication important?",
+        "back": "It can either reinforce or contradict the verbal message, and is crucial for effective communication.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Nonverbal Communication"
+    },
+    {
+        "front": "What is active listening?",
+        "back": "Listening to understand or comprehend by engaging your mind to find meaning.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Listening"
+    },
+    {
+        "front": "What are the two ways of taking notes when listening?",
+        "back": "The Cornell Method and mind mapping.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Note-Taking"
+    },
+    {
+        "front": "What happens during the pre-writing or planning stage?",
+        "back": "You gather information, brainstorm ideas, and organize your thoughts, including outlining your document.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Writing Process"
+    },
+    {
+        "front": "What is the drafting stage?",
+        "back": "The process of putting your ideas into a rough, uncensored first version of your document without worrying about perfect grammar or spelling.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Writing Process"
+    },
+    {
+        "front": "What should you keep in mind when writing your draft?",
+        "back": "Focus on developing your ideas and getting the content down; don't worry about grammar, spelling, or punctuation.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "The Writing Process"
+    },
+    {
+        "front": "What is a topical paragraph and what does it consist of?",
+        "back": "A standard paragraph that focuses on a single topic. It consists of a topic sentence, supporting sentences, and a concluding sentence.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Paragraphs"
+    },
+    {
+        "front": "What three kinds of information does the APA style include in in-text citations?",
+        "back": "The author's last name, the work's date of publication, and the page number (only for direct quotations).",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "How do you cite a source with one or two authors?",
+        "back": "You cite the name(s) in the first and all subsequent citations.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "How should long quotations (40 or more words) be formatted?",
+        "back": "Placed in a block form, indented five to seven spaces, and without quotation marks.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "How should quotations of less than 40 words be formatted?",
+        "back": "Incorporated into the text with double quotation marks.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Citations and Referencing"
+    },
+    {
+        "front": "What is the definition of instructions?",
+        "back": "A type of technical writing that tells a reader how to do something.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Instructions"
+    },
+    {
+        "front": "What is a schematic report?",
+        "back": "A concise report that uses an outline format, headings, and bullet points to present information in a clear and organized way.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What is a research report?",
+        "back": "A formal document that describes the process and findings of a research study, following a structured format.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What is included in a report's title page?",
+        "back": "The running head, full report title, who the report was prepared for, the author's name, and the date.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What are the functions of a report?",
+        "back": "Providing information, analyzing data, making recommendations, and documenting events or research findings.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Writing Reports"
+    },
+    {
+        "front": "What are the standard sections of meeting minutes?",
+        "back": "Title, date, time, location, list of attendees, main points of discussion, decisions made, action items, and a closing statement.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Meetings"
+    },
+    {
+        "front": "What should happen to the minutes after a meeting?",
+        "back": "They should be prepared, reviewed, circulated to attendees, and approved at the next meeting.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Meetings"
+    },
+    {
+        "front": "What are stress interviews designed to do?",
+        "back": "Create anxiety in the interviewee to see how they handle pressure.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Interviews"
+    },
+    {
+        "front": "What are some typical communication techniques for inducing stress?",
+        "back": "Rapid-fire questions, intentional misinterpretations, and hostile or skeptical nonverbal expressions.",
+        "course": "BI110",
+        "term": "T3",
+        "topic": "Interviews"
+    }
+],
+
+
+
+  
+  
+  
+  
+  
  
   };
