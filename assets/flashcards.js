@@ -1,412 +1,216 @@
 const flashcards = {
   "MODULE 1: INTRODUCTION (BEING A DIGITAL CITIZEN: AT HOME, SCHOOL, AND WORK)": [
-    {
-      "front": "What is digital literacy?",
-      "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "How does society rely on technology?",
-      "back": "Society relies on technology in various aspects, including daily tasks, professional work, education, and healthcare.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What are ways to protect your personal information?",
-      "back": "Ways to protect personal information include not carrying passwords, being cautious about sharing personal information online, and regularly reviewing financial statements.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What is the role of technology in the professional world?",
-      "back": "In the professional world, technology is used to connect employees, communicate, enhance productivity with software, manage supply chains, and for computer-aided manufacturing.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "How can technology be used to find a career?",
-      "back": "Technology can be used to find a career by creating online profiles on professional networking sites, using job search websites, and preparing digital résumés and cover letters.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What is convergence?",
-      "back": "(Information not explicitly detailed in the provided content for Unit 1, but generally refers to the merging of distinct technologies, industries, or devices into a unified whole).",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What are the legal and ethical responsibilities of a digital citizen?",
-      "back": "Legal and ethical responsibilities include adhering to laws like the Americans with Disabilities Act (ADA) and the Individuals with Disabilities Education Act (IDEA) regarding accessibility, being aware of digital security risks, and acting ethically regarding information accuracy and intellectual property.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What are some uses of assistive technologies?",
-      "back": "Assistive technologies help users with disabilities; for example, speech recognition programs allow verbal input, graphic organizers help structure information, and audio books read information aloud.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "introduction (being a digital citizen: at home, school, and work)"
-    },
-    {
-      "front": "What does digital literacy mean?",
-      "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "Who is a digital citizen?",
-      "back": "A digital citizen is a person familiar with how to use technology to become an effective and responsible participant in society.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is a computer?",
-      "back": "A computer is an electronic device operating under the control of instructions stored in its own memory, which can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What does memory consist of in a computer?",
-      "back": "Memory consists of electronic components that store instructions, data, and the results of processing.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is the Internet?",
-      "back": "The Internet is a global collection of millions of connected computers and devices that exchange information. It is the largest Wide Area Network (WAN).",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is a network?",
-      "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system, allowing them to share resources.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is Wi-Fi?",
-      "back": "Wi-Fi is a wireless technology that uses radio waves to provide high-speed Internet and network connections.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is a server in a network context?",
-      "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What is an online social network?",
-      "back": "An online social network is a website or mobile app that encourages members to share their interests, ideas, stories, photos, music, and videos with other registered users.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What does \"big data\" refer to?",
-      "back": "\"Big data\" refers to large, complex data sources that can be analyzed to reveal patterns, trends, and associations, especially relating to human behavior and interactions.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "How is technology used in daily tasks like public transportation?",
-      "back": "Technology is used in public transportation for tasks like scanning tickets, optimizing routes for efficiency, and GPS navigation.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts you"
-    },
-    {
-      "front": "What technology did the first generation of computers use, and what were its limitations?",
-      "back": "The first generation of computers used vacuum tubes, which made them very large, consumed significant power, and generated a lot of heat, leading to frequent breakdowns.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What significant computer was introduced by Apple Computer Corporation in 1978?",
-      "back": "(Specific computer introduced by Apple in 1978 not detailed in provided content).",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What is the Internet of Things (IoT)?",
-      "back": "The Internet of Things (IoT) is a trend where common devices and appliances are connected to the Internet, enabling them to send and receive data.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What are IoT-enabled devices often called and why?",
-      "back": "IoT-enabled devices are often called smart devices because they can communicate with other devices and make decisions.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What are embedded computers, and what is their function?",
-      "back": "Embedded computers are special-purpose computers that function as a component in a larger product. They are designed for specific tasks.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What are Automated Teller Machines (ATMs) an example of in the context of IoT?",
-      "back": "ATMs are an example of an IoT-enabled device, allowing users to perform financial transactions.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "How does IoT allow remote management of home devices?",
-      "back": "IoT allows remote management of home devices through smart devices connected to the Internet, enabling control from a smartphone or other device from anywhere.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "How is IoT used in manufacturing?",
-      "back": "In manufacturing, IoT is used for monitoring assembly lines, managing inventory, optimizing production processes, and using robotics.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "How is IoT used in retail?",
-      "back": "In retail, IoT is used for inventory management, personalized marketing, smart shelves, and enhanced customer experiences.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "how technology impacts society"
-    },
-    {
-      "front": "What is ergonomics, and why is it important for technology users?",
-      "back": "Ergonomics is the study of how people interact with their work environment. It's important for technology users to prevent repetitive strain injuries (RSI) and other health issues by designing workspaces and devices that promote comfort and efficiency.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "digital health"
-    },
-    {
-      "front": "What are some guidelines for practicing healthy computing?",
-      "back": "Guidelines include taking breaks (e.g., the 20-20-20 rule), using proper lighting, adjusting screen settings (brightness, contrast), and ensuring good air circulation for devices.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "digital health"
-    },
-    {
-      "front": "What is technology addiction and its symptoms?",
-      "back": "Technology addiction is a compulsive need to use technology to the point where it interferes with daily life. Symptoms include anxiety or irritability when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "digital health"
-    },
-    {
-      "front": "What are the legal requirements for providing assistive technologies according to US laws?",
-      "back": "According to US laws, the Americans with Disabilities Act (ADA) requires companies with 15+ employees to reasonably accommodate physically challenged workers. The Individuals with Disabilities Education Act (IDEA) requires public schools to purchase or fund adaptive technologies to ensure access for people with disabilities.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "digital health"
-    },
-    {
-      "front": "What is a 'mobile device'?",
-      "back": "A mobile device is a computing device small enough to hold in your hand.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "Differentiate between 'data' and 'information'.",
-      "back": "Data is a collection of unprocessed items, which can include text, numbers, images, audio, and video. Information is processed data that is organized, meaningful, and useful.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is the 'information processing cycle'?",
-      "back": "The information processing cycle consists of four basic operations: input, process, output, and storage.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'storage' in computing?",
-      "back": "Storage holds data, instructions, and information for future use.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'network'?",
-      "back": "A network is a collection of computers and devices connected together, often wirelessly, via communications devices and transmission media, allowing users to share resources.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is the 'Internet'?",
-      "back": "The Internet is a global collection of millions of computers and other electronic devices, linked together in a communications network.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What are 'web servers'?",
-      "back": "Web servers are computers that deliver requested webpages to your computer or mobile device.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'webpage'?",
-      "back": "A webpage is an electronic document on the web that can contain text, graphics, audio, and video.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'website'?",
-      "back": "A website is a collection of related webpages stored on a web server.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'web browser'?",
-      "back": "A web browser is software that enables users to access and view webpages.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'search engine'?",
-      "back": "A search engine is software that finds websites, webpages, images, videos, news, maps, and other information related to a specific topic.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is an 'online social network (social networking site)'?",
-      "back": "An online social network (social networking site) is a website or app that encourages members to share their interests, ideas, stories, photos, music, and videos with other registered users.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'malware'?",
-      "back": "Malware, short for malicious software, is software that acts without a user's knowledge and deliberately alters the computer's or mobile device's operations.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What are 'green computing' best practices?",
-      "back": "Green computing involves practices that minimize the environmental impact of technology, such as reducing electricity consumption, using energy-efficient hardware, and proper recycling of e-waste.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'e-waste'?",
-      "back": "E-waste (electronic waste) refers to discarded digital devices and their components.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'cyberwarfare'?",
-      "back": "Cyberwarfare is an attack whose purpose is to disrupt computer networks for military or political purposes.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'artificial intelligence (AI)'?",
-      "back": "Artificial intelligence (AI) is the technological replication of human behaviors, knowledge, and intelligence.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'virtual reality (VR)'?",
-      "back": "Virtual reality (VR) is the use of computers to simulate a real or imagined environment that appears as a three-dimensional (3-D) space.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'augmented reality (AR)'?",
-      "back": "Augmented reality (AR) is a type of virtual reality that uses an image of an actual place or thing and adds digital information to it.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is the 'Internet of Things (IoT)'?",
-      "back": "The Internet of Things (IoT) is a computing environment where everyday objects are connected to the Internet.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'digital data' vs. 'analog data'?",
-      "back": "Digital data is data that consists of individual discrete bits. Analog data is data that consists of continuous measurements or signals.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'the cloud' in computing?",
-      "back": "The cloud is a network of remote servers hosted on the Internet and used to store, manage, and process data, rather than a local server or personal computer.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'software' (or 'program' or 'app')?",
-      "back": "Software, also called a program or app, consists of a series of related instructions that tells the computer what tasks to perform and how to perform them.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is a 'software developer'?",
-      "back": "A software developer (or programmer) is someone who creates or develops apps or programs, which are detailed sets of instructions that tell the computer exactly what to do.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is 'communications device'?",
-      "back": "A communications device is hardware capable of transmitting data, instructions, and information between a sending device and a receiving device.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    },
-    {
-      "front": "What is the 'digital divide'?",
-      "back": "The digital divide is the gap between those who have access to technology and the Internet and those who do not.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Basics of Computer"
-    }
-  ],
+  {
+    "front": "What is digital literacy?",
+    "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How does society rely on technology?",
+    "back": "Society relies on technology in various aspects, including daily tasks, professional work, education, and healthcare.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What are ways to protect your personal information?",
+    "back": "Ways to protect personal information include not carrying passwords, being cautious about sharing personal information online, and regularly reviewing financial statements.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is the role of technology in the professional world?",
+    "back": "In the professional world, technology is used to connect employees, communicate, enhance productivity with software, manage supply chains, and for computer-aided manufacturing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How can technology be used to find a career?",
+    "back": "Technology can be used to find a career by creating online profiles on professional networking sites, using job search websites, and preparing digital résumés and cover letters.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is convergence?",
+    "back": "(Information not explicitly detailed in the provided content for Unit 1, but generally refers to the merging of distinct technologies, industries, or devices into a unified whole).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What are the legal and ethical responsibilities of a digital citizen?",
+    "back": "Legal and ethical responsibilities include adhering to laws like the Americans with Disabilities Act (ADA) and the Individuals with Disabilities Education Act (IDEA) regarding accessibility, being aware of digital security risks, and acting ethically regarding information accuracy and intellectual property.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What are some uses of assistive technologies?",
+    "back": "Assistive technologies help users with disabilities; for example, speech recognition programs allow verbal input, graphic organizers help structure information, and audio books read information aloud.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "Who is a digital citizen?",
+    "back": "A digital citizen is a person familiar with how to use technology to become an effective and responsible participant in society.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What is a computer?",
+    "back": "A computer is an electronic device operating under the control of instructions stored in its own memory, which can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What does memory consist of in a computer?",
+    "back": "Memory consists of electronic components that store instructions, data, and the results of processing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What is the Internet?",
+    "back": "The Internet is a global collection of millions of connected computers and devices that exchange information. It is the largest Wide Area Network (WAN).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What is a network?",
+    "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system, allowing them to share resources.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What is Wi-Fi?",
+    "back": "Wi-Fi is a wireless technology that uses radio waves to provide high-speed Internet and network connections.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What is a server in a network context?",
+    "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What does \"big data\" refer to?",
+    "back": "\"Big data\" refers to large, complex data sources that can be analyzed to reveal patterns, trends, and associations, especially relating to human behavior and interactions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "How is technology used in daily tasks like public transportation?",
+    "back": "Technology is used in public transportation for tasks like scanning tickets, optimizing routes for efficiency, and GPS navigation.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts you"
+  },
+  {
+    "front": "What technology did the first generation of computers use, and what were its limitations?",
+    "back": "The first generation of computers used vacuum tubes, which made them very large, consumed significant power, and generated a lot of heat, leading to frequent breakdowns.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What significant computer was introduced by Apple Computer Corporation in 1978?",
+    "back": "The Apple II, a groundbreaking microcomputer that popularized personal computing with color graphics and an open architecture.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What is the Internet of Things (IoT)?",
+    "back": "The Internet of Things (IoT) is a trend where common devices and appliances are connected to the Internet, enabling them to send and receive data.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What are IoT-enabled devices often called and why?",
+    "back": "IoT-enabled devices are often called smart devices because they can communicate with other devices and make decisions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What are embedded computers, and what is their function?",
+    "back": "Embedded computers are special-purpose computers that function as a component in a larger product. They are designed for specific tasks.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What are Automated Teller Machines (ATMs) an example of in the context of IoT?",
+    "back": "ATMs are an example of an IoT-enabled device, allowing users to perform financial transactions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "How does IoT allow remote management of home devices?",
+    "back": "IoT allows remote management of home devices through smart devices connected to the Internet, enabling control from a smartphone or other device from anywhere.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "How is IoT used in manufacturing?",
+    "back": "In manufacturing, IoT is used for monitoring assembly lines, managing inventory, optimizing production processes, and using robotics.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "How is IoT used in retail?",
+    "back": "In retail, IoT is used for inventory management, personalized marketing, smart shelves, and enhanced customer experiences.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "how technology impacts society"
+  },
+  {
+    "front": "What is ergonomics, and why is it important for technology users?",
+    "back": "Ergonomics is the study of how people interact with their work environment. It's important for technology users to prevent repetitive strain injuries (RSI) and other health issues by designing workspaces and devices that promote comfort and efficiency.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "digital health"
+  },
+  {
+    "front": "What are some guidelines for practicing healthy computing?",
+    "back": "Guidelines include taking breaks (e.g., the 20-20-20 rule), using proper lighting, adjusting screen settings (brightness, contrast), and ensuring good air circulation for devices.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "digital health"
+  },
+  {
+    "front": "What is technology addiction and its symptoms?",
+    "back": "Technology addiction is a compulsive need to use technology to the point where it interferes with daily life. Symptoms include anxiety or irritability when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "digital health"
+  },
+  {
+    "front": "What are the legal requirements for providing assistive technologies according to US laws?",
+    "back": "According to US laws, the Americans with Disabilities Act (ADA) requires companies with 15+ employees to reasonably accommodate physically challenged workers. The Individuals with Disabilities Education Act (IDEA) requires public schools to purchase or fund adaptive technologies to ensure access for people with disabilities.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "digital health"
+  }
+],
 
   "MODULE 2: THE COMPUTER SYSTEM HARDWARE": [
     {

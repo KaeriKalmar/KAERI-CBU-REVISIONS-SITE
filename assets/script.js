@@ -120,7 +120,7 @@ const fullAccessCodes = {
   ],
 
   // NEW GLOBAL AND COURSE-WIDE ACCESS CODES
-  "GLOBAL_ALL_TERMS": [
+  "GLOBAL_ALL_TERMS": ["kk22kk4",
     // A code that unlocks everything
 "SUPER_USER_XYZ_789",
 "All-terms@#<0",

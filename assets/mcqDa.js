@@ -17057,7 +17057,248 @@ const mcqData = [
         "topic": "Fungi-like Protists",
         "year": "notes",
         "tag": "Fungi-like Protists"
-    }
+    },
+    //[
+  {
+    q: "Which type of microscope provides the highest magnification and resolution for viewing cell organelles? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Compound light microscope",
+      "Transmission electron microscope (TEM)",
+      "Dissecting microscope",
+      "Phase-contrast microscope"
+    ],
+    correct: 1,
+    explanation: "TEM uses electron beams to achieve nanometer-scale resolution, essential for viewing ultrastructures.",
+    course: "BI110",
+    term: "T1",
+    topic: "Microscopy & Staining",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "During Gram staining, Gram-positive bacteria retain the purple crystal violet stain due to their: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Thin peptidoglycan layer",
+      "Outer lipid membrane",
+      "Thick peptidoglycan layer",
+      "Presence of endospores"
+    ],
+    correct: 2,
+    explanation: "Gram-positive bacteria have thick peptidoglycan that traps the dye, while Gram-negatives have thin layers + outer membranes that get decolorized.",
+    course: "BI110",
+    term: "T1",
+    topic: "Microscopy & Staining",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Which structure is present in prokaryotic cells but absent in eukaryotic cells? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Mitochondria",
+      "Peptidoglycan cell wall",
+      "Endoplasmic reticulum",
+      "Lysosomes"
+    ],
+    correct: 1,
+    explanation: "Prokaryotes have peptidoglycan in cell walls; eukaryotes have cellulose (plants) or chitin (fungi) if present.",
+    course: "BI110",
+    term: "T1",
+    topic: "Cell Structure & Functions",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "The phase of mitosis where sister chromatids separate is: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    correct: 2,
+    explanation: "Anaphase involves spindle fibers pulling chromatids to opposite poles.",
+    course: "BI110",
+    term: "T1",
+    topic: "Cell Division",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Amylose differs from amylopectin in that it: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Has α-1,6 glycosidic bonds",
+      "Is a branched polymer",
+      "Is a linear polymer with only α-1,4 bonds",
+      "Contains fructose monomers"
+    ],
+    correct: 2,
+    explanation: "Amylose is linear (α-1,4 only); amylopectin has branches (α-1,6 bonds).",
+    course: "BI110",
+    term: "T1",
+    topic: "Macromolecules (Carbohydrates)",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Which protein structure level involves hydrogen bonding between backbone atoms to form α-helices? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Primary",
+      "Secondary",
+      "Tertiary",
+      "Quaternary"
+    ],
+    correct: 1,
+    explanation: "Secondary structure includes α-helices/β-sheets from backbone H-bonds.",
+    course: "BI110",
+    term: "T1",
+    topic: "Macromolecules (Proteins)",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "In DNA, adenine pairs with thymine via: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "1 hydrogen bond",
+      "2 hydrogen bonds",
+      "3 hydrogen bonds",
+      "Phosphodiester bonds"
+    ],
+    correct: 1,
+    explanation: "A-T pairs have 2 H-bonds; C-G pairs have 3.",
+    course: "BI110",
+    term: "T1",
+    topic: "Macromolecules (Nucleic Acids)",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Mendel's 9:3:3:1 dihybrid ratio demonstrates: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Incomplete dominance",
+      "Independent assortment",
+      "Gene linkage",
+      "Polygenic inheritance"
+    ],
+    correct: 1,
+    explanation: "The ratio results from independent segregation of alleles during gamete formation.",
+    course: "BI110",
+    term: "T1",
+    topic: "Genetics",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "The biological species concept defines species based on: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Physical appearance",
+      "Ecological niche",
+      "Reproductive isolation",
+      "DNA sequence similarity"
+    ],
+    correct: 2,
+    explanation: "It emphasizes the ability to interbreed and produce fertile offspring.",
+    course: "BI110",
+    term: "T2",
+    topic: "Taxonomy",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Plasmodium falciparum, the malaria parasite, belongs to which group of protists? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Green algae",
+      "Diatoms",
+      "Apicomplexans",
+      "Amoebozoans"
+    ],
+    correct: 2,
+    explanation: "Plasmodium is an apicomplexan with complex life cycles involving mosquitoes.",
+    course: "BI110",
+    term: "T2",
+    topic: "Protists",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Fungal reproduction involving the fusion of hyphae from two different mating types is called: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Binary fission",
+      "Budding",
+      "Plasmogamy",
+      "Sporulation"
+    ],
+    correct: 2,
+    explanation: "Plasmogamy is the first step in fungal sexual reproduction (cytoplasmic fusion).",
+    course: "BI110",
+    term: "T2",
+    topic: "Fungi",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "The HIV virus primarily targets: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Red blood cells",
+      "CD4+ T-helper cells",
+      "Neurons",
+      "Hepatocytes"
+    ],
+    correct: 1,
+    explanation: "HIV binds to CD4 receptors on T-helper cells, crippling the immune system.",
+    course: "BI110",
+    term: "T2",
+    topic: "Viruses",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Which structure is characteristic of bryophytes? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Vascular tissue",
+      "Seeds",
+      "Rhizoids",
+      "Flowers"
+    ],
+    correct: 2,
+    explanation: "Bryophytes lack true roots/vessels; rhizoids anchor them.",
+    course: "BI110",
+    term: "T3",
+    topic: "Bryophytes",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "In pteridophytes, xylem transports: (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Sugars",
+      "Water and minerals",
+      "Hormones",
+      "Spores"
+    ],
+    correct: 1,
+    explanation: "Xylem moves water/minerals upward; phloem transports sugars.",
+    course: "BI110",
+    term: "T3",
+    topic: "Pteridophytes",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
+  {
+    q: "Pine trees (Pinus) belong to which gymnosperm group? (BI110 Sessional Exam 2019/2020)",
+    options: [
+      "Cycadophyta",
+      "Ginkgophyta",
+      "Coniferophyta",
+      "Gnetophyta"
+    ],
+    correct: 2,
+    explanation: "Pines are conifers (needle leaves, cones).",
+    course: "BI110",
+    term: "T3",
+    topic: "Gymnosperms",
+    year: "2019/2020",
+    tag: "MCQ"
+  },
 
 
 
