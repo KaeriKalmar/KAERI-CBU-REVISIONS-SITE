@@ -6710,5 +6710,2747 @@ const shortData = [
         "explanation": "The sexual life cycle involves the production of male and female gametangia, which fuse to form a zygote that develops into a new organism.",
         "course": "BI110",
         "term": "T2"
-    }
+    },
+    //[
+  {
+    "topic": "Introduction to Computing",
+    "year": "Notes",
+    "tag": "💻",
+    "q": "What is digital literacy?",
+    "keywords": ["digital literacy", "knowledge", "understanding", "computers", "mobile devices", "web", "technologies", "digital world", "street smart"],
+    "explanation": "Digital literacy is having a current knowledge and understanding of computers, mobile devices, the web, and related technologies. It's like being **'street smart'** in the digital world.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Introduction to Computing",
+    "year": "Notes",
+    "tag": "💻",
+    "q": "How can you explain society's reliance on technology?",
+    "keywords": ["society", "reliance", "technology", "work", "communication", "entertainment", "social interaction", "central component", "engine"],
+    "explanation": "Today's society relies on technology for work, communication, entertainment, and social interaction. It's the central component that makes everything else work, similar to a car's reliance on its engine.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT",
+    "year": "Notes",
+    "tag": "🔒",
+    "q": "How can you protect your personal information?",
+    "keywords": ["protect", "personal information", "privacy", "identity theft", "safeguards", "locking", "front door"],
+    "explanation": "You can protect your personal information by understanding privacy issues, such as identity theft, and using safeguards. Think of it as **locking your front door**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Technology in the Professional World",
+    "year": "Notes",
+    "tag": "💼",
+    "q": "What is the role of technology in the professional world?",
+    "keywords": ["role", "technology", "professional world", "intelligent workplaces", "mobile health", "mHealth", "super-assistant"],
+    "explanation": "Technology's role in the professional world includes intelligent workplaces and mobile health trends. It acts as a **super-assistant**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Job Search Technology",
+    "year": "Notes",
+    "tag": "🤝",
+    "q": "How can technology be used to find a career?",
+    "keywords": ["technology", "find", "career", "job search", "professional online presence", "digital resume"],
+    "explanation": "You can use technology to find a career by building a professional online presence, which is like a **digital resume**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Convergence",
+    "year": "Notes",
+    "tag": "🔄",
+    "q": "What is convergence?",
+    "keywords": ["convergence", "merging", "devices", "technologies", "single product", "Swiss Army knife"],
+    "explanation": "Convergence is the merging of devices and technologies into a single product, like a **Swiss Army knife** 🔪.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "🌐",
+    "q": "What are the legal and ethical responsibilities of a digital citizen?",
+    "keywords": ["legal", "ethical", "responsibilities", "digital citizen", "acceptable use policies", "cyberbullying", "plagiarism", "good citizen", "physical town"],
+    "explanation": "Legal and ethical responsibilities include understanding acceptable use policies and avoiding cyberbullying and plagiarism. A digital citizen is like a **good citizen in a physical town**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Assistive Technologies",
+    "year": "Notes",
+    "tag": "♿",
+    "q": "What are the uses of assistive technologies?",
+    "keywords": ["uses", "assistive technologies", "computing requirements", "people with limitations", "ramp", "wheelchair"],
+    "explanation": "Assistive technologies are used to address computing requirements for people with limitations. It's like a **ramp for a wheelchair**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🌐",
+    "q": "What is a digital citizen?",
+    "keywords": ["digital citizen", "person", "uses", "internet", "digital technologies", "responsibly", "effectively"],
+    "explanation": "A digital citizen is a person who uses the internet and other digital technologies responsibly and effectively.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "💻",
+    "q": "What is a computer?",
+    "keywords": ["computer", "electronic device", "manipulates", "information", "data", "CPU", "calculates", "processes", "understands"],
+    "explanation": "A computer is an electronic device that manipulates information or data. A **C-PU** that **C**alculates, **P**rocesses, and **U**nderstands data.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "💾",
+    "q": "What is memory?",
+    "keywords": ["memory", "temporary", "storage", "area", "data", "instructions", "desktop"],
+    "explanation": "Memory is a temporary storage area for data and instructions. It's like your **desktop**, holding what you're working on.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🕸️",
+    "q": "What is the Internet?",
+    "keywords": ["internet", "global network", "connecting", "computers", "millions", "giant spiderweb"],
+    "explanation": "The Internet is a global network connecting millions of computers. A **giant spiderweb**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🔗",
+    "q": "What is a network?",
+    "keywords": ["network", "group", "two or more", "computers", "connected", "share", "resources", "information", "conversation between friends"],
+    "explanation": "A network is a group of two or more computers connected to each other to share resources and information. A **conversation between friends**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📶",
+    "q": "What is Wi-Fi?",
+    "keywords": ["Wi-Fi", "wireless", "technology", "allows", "devices", "connect", "internet", "invisible cable"],
+    "explanation": "Wi-Fi is a wireless technology that allows devices to connect to the Internet or other devices. An **invisible cable**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🖥️",
+    "q": "What is a server?",
+    "keywords": ["server", "computer", "device", "network", "manages", "network resources", "waiter"],
+    "explanation": "A server is a computer or device on a network that manages network resources. A **waiter** serving information.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🤝",
+    "q": "What is an online social network?",
+    "keywords": ["online social network", "website", "users", "connect", "friends", "family", "colleagues", "digital town square"],
+    "explanation": "An online social network is a website that allows users to connect with friends, family, and colleagues. A **digital town square**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📊",
+    "q": "What is big data?",
+    "keywords": ["big data", "large", "complex", "datasets", "difficult to process", "ocean of information"],
+    "explanation": "Big data refers to large, complex datasets that are difficult to process using traditional database management tools. An **ocean of information**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📱",
+    "q": "What are some ways technology impacts daily life?",
+    "keywords": ["technology", "impacts", "daily life", "smart devices", "automated systems", "applications", "healthcare", "transportation"],
+    "explanation": "Technology impacts daily life through smart devices, automated systems, and various applications in areas like healthcare and transportation.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📜",
+    "q": "What were the first generation of computers like?",
+    "keywords": ["first generation", "computers", "large", "vacuum tubes", "military", "scientific purposes"],
+    "explanation": "The first generation of computers were large, used vacuum tubes, and were primarily used for military and scientific purposes.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📜",
+    "q": "What were the constraints of the first generation of computers?",
+    "keywords": ["constraints", "first generation", "computers", "size", "cost", "lack of portability"],
+    "explanation": "First-generation computers were limited by their size, cost, and a lack of portability.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🍎",
+    "q": "What was the Apple II, and who introduced it?",
+    "keywords": ["Apple II", "popular", "personal computer", "introduced", "Apple Inc.", "1977"],
+    "explanation": "The Apple II was a popular personal computer introduced by Apple Inc. in 1977.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🔌",
+    "q": "What is the Internet of Things (IoT)?",
+    "keywords": ["Internet of Things", "IoT", "network", "physical objects", "embedded", "sensors", "software", "exchange data", "smart home"],
+    "explanation": "The **Internet of Things (IoT)** is a network of physical objects embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet. A **smart home**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "💡",
+    "q": "Why are IoT-enabled devices often referred to as smart devices?",
+    "keywords": ["IoT-enabled devices", "smart devices", "collect", "process", "act on data", "surroundings"],
+    "explanation": "IoT-enabled devices are called 'smart devices' because they can collect, process, and act on data from their surroundings.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🧠",
+    "q": "What are embedded computers, and what do they do?",
+    "keywords": ["embedded computers", "special-purpose", "part of a larger device", "car", "home appliance", "medical instrument", "brain of a car"],
+    "explanation": "Embedded computers are special-purpose computers that are part of a larger device or system, such as a car, home appliance, or medical instrument. The **brain of a car**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "💳",
+    "q": "How are automated teller machines (ATMs) related to the IoT?",
+    "keywords": ["ATMs", "automated teller machines", "IoT", "networked devices", "collect data", "transmit data", "central server"],
+    "explanation": "ATMs can be considered part of the **IoT** because they are networked devices that collect and transmit data to a central server.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🏠",
+    "q": "What are some daily tasks that IoT can help with?",
+    "keywords": ["daily tasks", "IoT", "home security", "smart appliances", "fitness goals"],
+    "explanation": "IoT can help with daily tasks like monitoring home security, controlling smart appliances, and tracking fitness goals.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "🏭",
+    "q": "How can manufacturing, retail, and shipping companies use technology?",
+    "keywords": ["manufacturing", "retail", "shipping", "companies", "use", "technology", "automation", "supply chain management", "logistics optimization"],
+    "explanation": "Manufacturing, retail, and shipping companies use technology for automation, supply chain management, and logistics optimization.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "⚕️",
+    "q": "How can a healthcare provider use IoT?",
+    "keywords": ["healthcare provider", "use", "IoT", "monitor patients", "remotely", "track medical equipment", "manage hospital operations"],
+    "explanation": "A healthcare provider can use IoT to monitor patients remotely, track medical equipment, and manage hospital operations.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📉",
+    "q": "What is the digital divide?",
+    "keywords": ["digital divide", "gap", "individuals", "households", "regions", "access", "information", "communication technologies", "ICT", "paved and dirt driveways"],
+    "explanation": "The **digital divide** is the gap between individuals, households, and regions that have access to information and communication technologies (ICT) and those that do not. A road with both **paved and dirt driveways**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts You",
+    "year": "Notes",
+    "tag": "📉",
+    "q": "What factors contribute to the digital divide?",
+    "keywords": ["factors", "contribute", "digital divide", "income", "education level", "geographic location"],
+    "explanation": "Factors that contribute to the digital divide include income, education level, and geographic location.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Protect Your Privacy",
+    "year": "Notes",
+    "tag": "🔒",
+    "q": "What is privacy?",
+    "keywords": ["privacy", "right", "left alone", "control", "personal information", "personal bubble"],
+    "explanation": "Privacy is the right to be left alone and to control your personal information. Your **personal bubble**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Protect Your Privacy",
+    "year": "Notes",
+    "tag": "🦹",
+    "q": "What is identity theft?",
+    "keywords": ["identity theft", "stealing", "using", "another person's", "personal information", "without consent", "thief pretending to be you"],
+    "explanation": "Identity theft is the act of stealing and using another person's personal information without their consent. A **thief pretending to be you**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Protect Your Privacy",
+    "year": "Notes",
+    "tag": "🚨",
+    "q": "What can happen to a victim of identity theft?",
+    "keywords": ["victim", "identity theft", "suffer", "financial losses", "damaged credit", "negative consequences"],
+    "explanation": "A victim of identity theft can suffer financial losses, damaged credit, and other negative consequences.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Protect Your Privacy",
+    "year": "Notes",
+    "tag": "🕵️",
+    "q": "How is personal information stolen?",
+    "keywords": ["personal information", "stolen", "phishing", "data breaches", "social engineering"],
+    "explanation": "Personal information can be stolen through various methods, including phishing, data breaches, and social engineering.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Protect Your Privacy",
+    "year": "Notes",
+    "tag": "🛡️",
+    "q": "What safeguards can be used to protect your privacy?",
+    "keywords": ["safeguards", "protect", "privacy", "strong passwords", "cautious", "sharing information", "monitoring financial accounts"],
+    "explanation": "Safeguards to protect your privacy include using strong passwords, being cautious about sharing information online, and monitoring your financial accounts.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "💼",
+    "q": "What is an intelligent workplace?",
+    "keywords": ["intelligent workplace", "work environment", "technology", "automate tasks", "improve collaboration", "smart home", "business"],
+    "explanation": "An **intelligent workplace** is a work environment that uses technology to automate tasks and improve collaboration. A **smart home, but for a business**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "🏢",
+    "q": "How can companies, schools, and students use technology?",
+    "keywords": ["companies", "schools", "students", "use technology", "communication", "collaboration", "online learning", "research", "assignments"],
+    "explanation": "Companies can use technology for communication and collaboration, schools can use it for online learning, and students can use it for research and assignments.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "🏫",
+    "q": "How can a college or university use a learning management system?",
+    "keywords": ["college", "university", "learning management system", "LMS", "manage course materials", "track student progress", "facilitate communication", "Learning Master System"],
+    "explanation": "A college or university can use a **learning management system (LMS)** to manage course materials, track student progress, and facilitate communication between students and instructors. An **LMS** is a **L**earning **M**aster **S**ystem.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "🩺",
+    "q": "What is the mobile health (mHealth) trend?",
+    "keywords": ["mobile health", "mHealth", "trend", "use", "mobile devices", "applications", "healthcare services"],
+    "explanation": "The **mobile health (mHealth)** trend involves the use of mobile devices and applications to provide healthcare services.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "🖨️",
+    "q": "How does healthcare use 3-D printers?",
+    "keywords": ["healthcare", "use", "3-D printers", "create", "custom prosthetics", "surgical models", "medical devices", "baker's piping bag", "plastic"],
+    "explanation": "Healthcare uses **3-D printers** to create custom prosthetics, surgical models, and medical devices. A **baker's piping bag** for plastic.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "📞",
+    "q": "What is telemedicine?",
+    "keywords": ["telemedicine", "use", "technology", "remote", "healthcare services", "video consultations", "remote patient monitoring", "telephone", "television screen"],
+    "explanation": "Telemedicine is the use of technology to provide remote healthcare services, such as video consultations and remote patient monitoring. Medicine from a **tele**phone or a television screen.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "🚚",
+    "q": "How is technology used in the transportation industry?",
+    "keywords": ["technology", "used", "transportation industry", "navigation", "logistics", "fleet management"],
+    "explanation": "Technology is used in the transportation industry for navigation, logistics, and fleet management.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "⚙️",
+    "q": "How do manufacturers use computer-aided manufacturing (CAM)?",
+    "keywords": ["manufacturers", "use", "computer-aided manufacturing", "CAM", "automate", "manufacturing process", "improve efficiency", "Computers Automating Manufacturing"],
+    "explanation": "Manufacturers use **computer-aided manufacturing (CAM)** to automate the manufacturing process and improve efficiency. **C**omputers **A**utomating **M**anufacturing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Technology Impacts the Professional World",
+    "year": "Notes",
+    "tag": "💼",
+    "q": "How can you use technology to find a job?",
+    "keywords": ["use technology", "find a job", "online resume", "search", "job openings", "online", "networking", "professionals", "social media", "LinkedIn"],
+    "explanation": "You can use technology to find a job by building an online resume, searching for job openings online, and networking with professionals on social media platforms like LinkedIn.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to Use Technology in Your Job Search",
+    "year": "Notes",
+    "tag": "💼",
+    "q": "Why is a professional online presence important for a job search?",
+    "keywords": ["professional online presence", "important", "job search", "potential employers", "find", "evaluate", "candidate"],
+    "explanation": "A professional online presence is important for a job search because it allows potential employers to find and evaluate you as a candidate.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to Use Technology in Your Job Search",
+    "year": "Notes",
+    "tag": "🤝",
+    "q": "What is LinkedIn?",
+    "keywords": ["LinkedIn", "professional networking site", "create professional profile", "connect", "other professionals", "search for jobs", "Facebook for professionals"],
+    "explanation": "**LinkedIn** is a professional networking site that allows users to create a professional profile, connect with other professionals, and search for jobs. **Facebook for professionals**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to Use Technology in Your Job Search",
+    "year": "Notes",
+    "tag": "📸",
+    "q": "What tips should you consider when creating an online presence?",
+    "keywords": ["tips", "creating", "online presence", "professional profile picture", "highlighting skills", "experience", "engaging", "industry"],
+    "explanation": "When creating an online presence, you should consider using a professional profile picture, highlighting your skills and experience, and engaging with others in your industry.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "🖥️",
+    "q": "How does a computer work?",
+    "keywords": ["computer", "works", "input", "processing", "storing", "producing", "output", "IPSO"],
+    "explanation": "A computer works by taking input, processing it, storing it, and producing output. **IPSO**: **I**nput, **P**rocessing, **S**torage, **O**utput.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "📱",
+    "q": "What is software, a program, or an app?",
+    "keywords": ["software", "program", "app", "set of instructions", "tells the computer what to do", "recipe"],
+    "explanation": "**Software**, a program, or an app is a set of instructions that tells the computer what to do. A **recipe**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "🔄",
+    "q": "What is convergence?",
+    "keywords": ["convergence", "merging", "devices", "technologies", "single product"],
+    "explanation": "Convergence is the merging of devices and technologies into a single product.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "💻",
+    "q": "What is a laptop, a tablet, an eBook reader, a desktop, a mobile device, and a smartphone?",
+    "keywords": ["laptop", "tablet", "eBook reader", "desktop", "mobile device", "smartphone", "electronic devices", "portability", "functionality"],
+    "explanation": "These are all different types of electronic devices with varying levels of portability and functionality. A laptop is a portable computer, a tablet is a slate-like device, an eBook reader is for reading digital books, a desktop is a non-portable computer, a mobile device is a small portable computing device, and a smartphone is a mobile phone with advanced computing capabilities.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "🎧",
+    "q": "What are earbuds?",
+    "keywords": ["earbuds", "small audio devices", "fit directly into the ear"],
+    "explanation": "Earbuds are small audio devices that fit directly into the ear.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "📸",
+    "q": "What is a digital camera and a digital media player?",
+    "keywords": ["digital camera", "digital media player", "device", "capturing", "photos", "videos", "playing back", "audio", "video files"],
+    "explanation": "A digital camera is a device for capturing digital photos and videos, and a digital media player is a device for playing back audio and video files.",
+    "course": "CS110",
+    "term": "T1"
+  },
+   
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "🎬",
+    "q": "What is streaming?",
+    "keywords": ["streaming", "process", "transmitting", "receiving", "data", "continuously", "network", "internet", "faucet", "data"],
+    "explanation": "Streaming is the process of transmitting and receiving data continuously over a network, such as the internet. A **faucet** of data.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "⌚",
+    "q": "What is a wearable device?",
+    "keywords": ["wearable device", "electronic device", "worn on the body", "smartwatch", "fitness tracker"],
+    "explanation": "A **wearable device** is an electronic device that can be worn on the body, such as a smartwatch or fitness tracker.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How Convergence Impacts Technology",
+    "year": "Notes",
+    "tag": "⌚",
+    "q": "What is an activity tracker, a smartwatch, a game console, and a handheld game device?",
+    "keywords": ["activity tracker", "smartwatch", "game console", "handheld game device", "wearable", "gaming", "device", "tracks physical activity", "smart features", "home entertainment", "portable"],
+    "explanation": "An activity tracker is a wearable device that tracks your physical activity, a smartwatch is a wearable watch with smart features, a game console is a home entertainment device for playing video games, and a handheld game device is a portable device for playing video games.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "🌐",
+    "q": "What is the difference between a digitally literate person and a digital citizen?",
+    "keywords": ["difference", "digitally literate person", "digital citizen", "skills", "use technology", "responsibly", "ethically"],
+    "explanation": "A digitally literate person has the skills to use technology, while a digital citizen is a person who uses technology responsibly and ethically.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "💬",
+    "q": "What is netiquette?",
+    "keywords": ["netiquette", "rules", "polite behavior", "Internet", "network etiquette"],
+    "explanation": "**Netiquette** is the set of rules for polite behavior on the Internet. **Net**work **etiquette**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "⚖️",
+    "q": "What is digital ethics?",
+    "keywords": ["digital ethics", "principles", "guide", "responsible use", "digital technologies"],
+    "explanation": "Digital ethics is the set of principles that guide the responsible use of digital technologies.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "😠",
+    "q": "What is cyberbullying?",
+    "keywords": ["cyberbullying", "use", "electronic communication", "harass", "threaten", "another person", "bully", "megaphone"],
+    "explanation": "**Cyberbullying** is the use of electronic communication to harass or threaten another person. A bully with a **megaphone**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "🚗",
+    "q": "What is distracted driving?",
+    "keywords": ["distracted driving", "act", "driving", "engaging", "other activities", "texting", "talking on the phone"],
+    "explanation": "**Distracted driving** is the act of driving while engaging in other activities, such as texting or talking on the phone.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "📝",
+    "q": "What are Acceptable Use Policies (AUPs)?",
+    "keywords": ["Acceptable Use Policies", "AUPs", "rules", "govern", "use", "computer network", "system", "Agreement for Using Policy"],
+    "explanation": "**Acceptable Use Policies (AUPs)** are rules that govern the use of a computer network or system. **A**greement for **U**sing **P**olicy.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "🚫",
+    "q": "What is plagiarism?",
+    "keywords": ["plagiarism", "act", "using", "someone else's work", "ideas", "without proper attribution", "stealing words"],
+    "explanation": "**Plagiarism** is the act of using someone else's work or ideas without proper attribution. **Stealing** words and ideas.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "♻️",
+    "q": "What is green computing?",
+    "keywords": ["green computing", "practice", "using", "computing resources", "environmentally friendly", "environmentalist for technology"],
+    "explanation": "**Green computing** is the practice of using computing resources in an environmentally friendly way. Being an **environmentalist for technology**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "♻️",
+    "q": "How can you avoid electronic waste and practice green computing?",
+    "keywords": ["avoid", "electronic waste", "practice", "green computing", "recycling", "old devices", "extending life", "energy-efficient devices"],
+    "explanation": "You can avoid electronic waste and practice green computing by recycling old devices, extending the life of your devices, and using energy-efficient devices.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Digital Citizenship",
+    "year": "Notes",
+    "tag": "♻️",
+    "q": "What measures can organizations implement to reduce electrical waste?",
+    "keywords": ["measures", "organizations", "implement", "reduce", "electrical waste", "energy-efficient devices", "recycling electronics", "power down computers"],
+    "explanation": "Organizations can implement measures like using energy-efficient devices, recycling electronics, and encouraging employees to power down their computers when not in use.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "♿",
+    "q": "Why is there a need to address computing requirements for those with limitations?",
+    "keywords": ["need", "address", "computing requirements", "people with limitations", "ensure", "equal access", "technology", "information"],
+    "explanation": "There is a need to address computing requirements for those with limitations to ensure everyone has equal access to technology and information.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "♿",
+    "q": "What is accessibility?",
+    "keywords": ["accessibility", "practice", "making", "digital products", "services", "usable", "people with disabilities", "ramp", "staircase"],
+    "explanation": "**Accessibility** is the practice of making digital products and services usable by people with disabilities. A **ramp for a staircase**.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "♿",
+    "q": "What is assistive technology?",
+    "keywords": ["assistive technology", "type", "technology", "used", "people with disabilities", "perform tasks"],
+    "explanation": "**Assistive technology** is a type of technology used by people with disabilities to perform tasks that would otherwise be difficult or impossible.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "👀",
+    "q": "How can screen settings and screen readers help visually impaired people?",
+    "keywords": ["screen settings", "screen readers", "help", "visually impaired", "adjusting display", "reading aloud", "content"],
+    "explanation": "Screen settings and screen readers can help visually impaired people by adjusting the display and reading aloud the content on the screen.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "👂",
+    "q": "How can hearing-impaired people use technology?",
+    "keywords": ["hearing-impaired", "use", "technology", "captioned videos", "text-based communication services"],
+    "explanation": "Hearing-impaired people can use technology like captioned videos and text-based communication services.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "🖐️",
+    "q": "What technologies can help people with limited hand mobility?",
+    "keywords": ["technologies", "help", "limited hand mobility", "voice-activated software", "specialized keyboards"],
+    "explanation": "Technologies that can help people with limited hand mobility include voice-activated software and specialized keyboards.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "🧠",
+    "q": "What technologies can help users with intellectual disabilities?",
+    "keywords": ["technologies", "help", "users", "intellectual disabilities", "simplified interfaces", "visual aids"],
+    "explanation": "Technologies that can help users with intellectual disabilities include simplified interfaces and visual aids.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Assistive Technologies",
+    "year": "Notes",
+    "tag": "⚖️",
+    "q": "What are the legal requirements for providing assistive technologies?",
+    "keywords": ["legal requirements", "providing", "assistive technologies", "laws", "Americans with Disabilities Act", "ADA", "mandates", "accessible digital content"],
+    "explanation": "Legal requirements for providing assistive technologies may include laws like the Americans with Disabilities Act (ADA), which mandates that organizations provide accessible digital content.",
+    "course": "CS110",
+    "term": "T1"
+  },//[
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "🖥️",
+    "q": "What is hardware?",
+    "keywords": [
+      "hardware",
+      "device",
+      "components",
+      "wires",
+      "cases",
+      "switches",
+      "electronic circuits"
+    ],
+    "explanation": "Hardware refers to the device itself and its components, such as wires, cases, switches, and electronic circuits. Components of computer hardware include memory, storage devices, the CPU, input and output devices, and communication devices.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "🧠",
+    "q": "What is a processor core and a multi-core processor?",
+    "keywords": [
+      "processor core",
+      "multi-core processor",
+      "execute instructions",
+      "circuitry"
+    ],
+    "explanation": "A processor core is a unit on the processor with the circuitry necessary to execute instructions. A processor with multiple cores is a multi-core processor. Processors with more cores perform better.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "💾",
+    "q": "What is a swap file?",
+    "keywords": [
+      "swap file",
+      "paging file",
+      "virtual memory",
+      "hard drive",
+      "RAM",
+      "performance"
+    ],
+    "explanation": "A swap file, or paging file, is the area of the hard drive temporarily used to store data that cannot fit in RAM. Using virtual memory may decrease your computer's performance.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "💾",
+    "q": "What is the difference between RAM and ROM?",
+    "keywords": [
+      "RAM",
+      "ROM",
+      "temporary storage",
+      "permanent storage",
+      "volatile memory",
+      "non-volatile memory",
+      "firmware",
+      "motherboard",
+      "BIOS"
+    ],
+    "explanation": "RAM is a temporary, volatile memory used for temporary storage and is stored on chips connected to the motherboard. ROM is a permanent, non-volatile memory stored on a chip containing BIOS connected to the motherboard. The instructions on the ROM chip are referred to as firmware.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "💾",
+    "q": "What are the different types of RAM?",
+    "keywords": [
+      "types of RAM",
+      "DRAM",
+      "Static RAM",
+      "Magneto-resistive RAM",
+      "Flash memory",
+      "volatile",
+      "non-volatile"
+    ],
+    "explanation": "Types of RAM include Dynamic RAM (DRAM), Static RAM, Magneto-resistive RAM, and Flash memory. DRAM and Static RAM are volatile, while Magneto-resistive RAM and Flash memory are non-volatile.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "💻",
+    "q": "What is a form factor?",
+    "keywords": [
+      "form factor",
+      "shape",
+      "size",
+      "desktop",
+      "all-in-one",
+      "laptop",
+      "tablet"
+    ],
+    "explanation": "The form factor refers to the shape and size of the computer. Various types of computers exist, including desktop computers, all-in-one computers, laptops, and tablets.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "📱",
+    "q": "What are the different types of tablets?",
+    "keywords": [
+      "tablet",
+      "slate tablet",
+      "convertible tablet",
+      "form factor"
+    ],
+    "explanation": "Two popular form factors of tablets are slate and convertible. A slate tablet resembles a letter-sized pad and does not contain a physical keyboard, while a convertible tablet has a screen on its lid and a keyboard on its base.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "Notes",
+    "tag": "🖨️",
+    "q": "What are some examples of input and output devices?",
+    "keywords": [
+      "input devices",
+      "output devices",
+      "scanner",
+      "printer",
+      "voice synthesizer",
+      "projector"
+    ],
+    "explanation": "A scanner is an input device that converts an existing paper image into an electronic file. A printer creates hard copy output on paper, film, and other media. A voice synthesizer converts text to speech. A projector can display output from a computer on a large surface.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "Notes",
+    "tag": "🖨️",
+    "q": "What are the different types of printers?",
+    "keywords": [
+      "types of printers",
+      "inkjet printer",
+      "laser printer",
+      "multifunction device",
+      "mobile printer",
+      "plotter",
+      "3-D printer"
+    ],
+    "explanation": "There are different types of printers, including Inkjet (sprays ink), Laser (uses a laser beam and toner), Multifunction (also an all-in-one device for copying, scanning, faxing, and printing), Mobile (small and lightweight for mobile devices), Plotter (large-format for high-quality drawings), and 3-D (creates objects from computer models).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "🔌",
+    "q": "What is a Plug-and-Play device and a device driver?",
+    "keywords": [
+      "Plug-and-Play",
+      "device driver",
+      "program",
+      "connect",
+      "install"
+    ],
+    "explanation": "A Plug-and-Play device is a device that will begin functioning properly as soon as it is connected to your computer. A device driver is a program that allows your computer or device to issue controls to a separate device, such as a printer or monitor.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Hardware (Evaluating Hardware: For Home and Work)",
+    "year": "Notes",
+    "tag": "⏱️",
+    "q": "How is processor speed measured?",
+    "keywords": [
+      "processor speed",
+      "clock speed",
+      "cycle",
+      "instructions per cycle",
+      "benchmark",
+      "CPU"
+    ],
+    "explanation": "The processor's clock speed measures the speed at which it can execute instructions. A cycle is the smallest unit of time a process can measure, and the efficiency of a CPU is measured by instructions per cycle. A benchmark is a test to determine processor speed and other performance factors.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Reducing Hardware Risks",
+    "year": "Notes",
+    "tag": "🛡️",
+    "q": "How can you protect against hardware risks?",
+    "keywords": [
+      "hardware risks",
+      "hardware theft",
+      "cable lock",
+      "uninterruptible power supply",
+      "UPS",
+      "surge suppressor",
+      "power fluctuations"
+    ],
+    "explanation": "To prevent theft, use a cable lock on laptops and keep mobile devices out of sight in high-crime areas. You can also use a can of compressed air to clean your keyboard or a damp cloth to gently clean your screen. An uninterruptible power supply (UPS) maintains power to equipment during an interruption, while a surge suppressor prevents power fluctuations from damaging electronic components.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Reducing Hardware Risks",
+    "year": "Notes",
+    "tag": "⚡",
+    "q": "What are the different types of electrical changes?",
+    "keywords": [
+      "electrical changes",
+      "blackout",
+      "brownout",
+      "spike",
+      "surge",
+      "noise"
+    ],
+    "explanation": "The different types of electrical changes are: a Blackout (total loss of power), a Brownout (a drop in voltage), a Spike (a very short voltage increase), a Surge (a short voltage increase), and Noise (unwanted high-frequency energy).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Secure IT: Reducing Hardware Risks",
+    "year": "Notes",
+    "tag": "🗄️",
+    "q": "Why are data backups important?",
+    "keywords": [
+      "data backups",
+      "protect",
+      "hardware malfunctions",
+      "user errors",
+      "software corruption",
+      "natural disasters",
+      "cyber attacks"
+    ],
+    "explanation": "Data backups can protect against hardware malfunctions, user errors, software corruption, natural disasters, and cyber attacks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Storage Solutions",
+    "year": "Notes",
+    "tag": "☁️",
+    "q": "What is the difference between internal, external, and cloud storage?",
+    "keywords": [
+      "internal storage",
+      "external storage",
+      "cloud storage",
+      "hard drive",
+      "remote server"
+    ],
+    "explanation": "Internal hard drives are installed on the computer you are using. An external hard drive can be used to add storage capacity to your computer. Cloud storage involves storing electronic files on a remote server connected to the Internet.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Network Hardware",
+    "year": "Notes",
+    "tag": "📶",
+    "q": "What is a hub, a switch, and a router?",
+    "keywords": ["hub", "switch", "router", "network hardware", "networks"],
+    "explanation": "A hub is a device that provides a central point for cables in a network and transfers all data to all devices. A switch is similar to a hub but provides a central point for cables in a network. A router is a device that connects two or more networks and directs the flow of information along the networks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Network Hardware",
+    "year": "Notes",
+    "tag": "📞",
+    "q": "What is the difference between a cable modem and a DSL modem?",
+    "keywords": [
+      "modem",
+      "cable modem",
+      "DSL modem",
+      "digital data",
+      "cable TV connection",
+      "telephone wiring"
+    ],
+    "explanation": "A cable modem sends and receives digital data over a cable TV connection, while a DSL modem uses existing standard copper telephone wiring to send and receive digital data.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Inside the Case",
+    "year": "Notes",
+    "tag": "❄️",
+    "q": "What are some ways to cool a processor?",
+    "keywords": [
+      "processor cooling",
+      "heat sink",
+      "liquid cooling technology",
+      "cooling pad",
+      "dissipate heat"
+    ],
+    "explanation": "Heat sinks, liquid cooling technologies, and cooling pads are used to help dissipate processor heat. A heat sink is a small component with fins that absorbs and disperses heat. Liquid cooling technology uses a continuous flow of fluid to transfer heat away. A cooling pad rests below a laptop to prevent overheating.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Inside the Case",
+    "year": "Notes",
+    "tag": "⚡",
+    "q": "What is a computer chip?",
+    "keywords": [
+      "computer chip",
+      "semiconducting material",
+      "integrated circuits",
+      "silicon"
+    ],
+    "explanation": "A computer chip is a small piece of semiconducting material, usually silicon, on which integrated circuits are etched. An integrated circuit contains many microscopic pathways capable of carrying electrical current.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Inside the Case",
+    "year": "Notes",
+    "tag": "🔄",
+    "q": "What are the steps of a machine cycle?",
+    "keywords": [
+      "machine cycle",
+      "fetching",
+      "decoding",
+      "executing",
+      "storing",
+      "processor"
+    ],
+    "explanation": "A machine cycle is a set of four basic operations a processor repeats. The steps are: Fetching (obtaining a program or an application instruction from memory), Decoding (translating the instructions into signals the computer can execute), Executing (carrying out the commands), and Storing (writing the result to memory).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to: Protect Yourself When Using Devices",
+    "year": "Notes",
+    "tag": "🤕",
+    "q": "What is a Repetitive Strain Injury (RSI)?",
+    "keywords": [
+      "Repetitive Strain Injury",
+      "RSI",
+      "aches",
+      "pains",
+      "muscles",
+      "nerves",
+      "tendons",
+      "ligaments"
+    ],
+    "explanation": "A Repetitive Strain Injury (RSI) is a condition that causes aches and pains in muscles, nerves, tendons, and ligaments due to repeated and long-term usage of technology devices.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to: Protect Yourself When Using Devices",
+    "year": "Notes",
+    "tag": "🪑",
+    "q": "What is ergonomics?",
+    "keywords": [
+      "ergonomics",
+      "applied science",
+      "design",
+      "arrangement",
+      "efficiently",
+      "safely"
+    ],
+    "explanation": "Ergonomics is an applied science that specifies the design and arrangement of items that you use so that you and the items interact efficiently and safely.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to: Protect Yourself When Using Devices",
+    "year": "Notes",
+    "tag": "📱",
+    "q": "What is technology addiction and what are other behavioral risks?",
+    "keywords": [
+      "technology addiction",
+      "behavioral risks",
+      "obsessed",
+      "sedentary lifestyle",
+      "psychological development",
+      "social interaction"
+    ],
+    "explanation": "Technology addiction occurs when a user is obsessed with using a technology device. Other behavioral risks include a sedentary lifestyle, issues with psychological development, and social interaction problems.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "How to: Protect Yourself When Using Devices",
+    "year": "Notes",
+    "tag": "😠",
+    "q": "What is doxing, cyber-bullying, and cyber-stalking?",
+    "keywords": [
+      "doxing",
+      "cyber-bullying",
+      "cyber-stalking",
+      "harass",
+      "threaten",
+      "private information",
+      "stalk"
+    ],
+    "explanation": "Doxing is a form of cyber-bullying where documents with a person's private information are shared digitally. Cyber-bullying is when people use electronic communication to harass or threaten another person. Cyber-stalking is the use of technology to stalk someone through email, text messages, phone calls, and other communication methods.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Dispose of Hardware Responsibly",
+    "year": "Notes",
+    "tag": "♻️",
+    "q": "What is e-waste and how should it be handled?",
+    "keywords": [
+      "e-waste",
+      "electronic waste",
+      "toxic metals",
+      "recycling",
+      "donating",
+      "disposal"
+    ],
+    "explanation": "E-waste is electronic waste from discarded digital devices that often contains toxic metals, such as lead and mercury. Responsible methods for disposing of e-waste include sending it to a recycling facility, donating it to a charity, or bringing it to a technology store or firm.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Ethics and Issues: Dispose of Hardware Responsibly",
+    "year": "Notes",
+    "tag": "♻️",
+    "q": "What are the action steps for Sustainable Electronics Management (SEM)?",
+    "keywords": [
+      "Sustainable Electronics Management",
+      "SEM",
+      "e-waste",
+      "action steps",
+      "Buy Green",
+      "Donate",
+      "Recycle"
+    ],
+    "explanation": "Sustainable Electronics Management (SEM) is an initiative that promotes the reduction of e-waste. The action steps are: Buy Green (purchase sustainably designed products), Donate (give used but functional equipment to a school or charity), and Recycle (send equipment to a verified recycling center).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  //[
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "EBCDIC stands for? (2012 Test One (1))",
+    "keywords": [
+      "EBCDIC",
+      "Extended Binary Coded Decimal Interchange Code",
+      "character encoding",
+      "IBM mainframe"
+    ],
+    "explanation": "EBCDIC is an 8-bit character encoding used mainly on IBM mainframe operating systems.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "BCD is? (2012 Test One (1))",
+    "keywords": [
+      "BCD",
+      "Binary Coded Decimal",
+      "four-digit binary code",
+      "numerals"
+    ],
+    "explanation": "BCD is a system of writing numerals that assigns a four-digit binary code to each decimal digit.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "ASCII stands for? (2012 Test One (1))",
+    "keywords": [
+      "ASCII",
+      "American Standard Code for Information Interchange",
+      "character encoding standard",
+      "electronic communication"
+    ],
+    "explanation": "ASCII is a character encoding standard for electronic communication.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following is first generation of computer? (2012 Test One (1))",
+    "keywords": [
+      "first generation computer",
+      "EDSAC",
+      "vacuum tubes"
+    ],
+    "explanation": "EDSAC (Electronic Delay Storage Automatic Calculator) was an early British computer that used vacuum tubes, characteristic of the first generation.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Chief component of first generation computer was? (2012 Test One (1))",
+    "keywords": [
+      "first generation computer",
+      "chief component",
+      "Vacuum Tubes and Valves",
+      "magnetic drums"
+    ],
+    "explanation": "First-generation computers used vacuum tubes for circuitry and magnetic drums for memory.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "FORTRAN is? (2012 Test One (1))",
+    "keywords": [
+      "FORTRAN",
+      "Formula Translation",
+      "programming language",
+      "scientific computing"
+    ],
+    "explanation": "FORTRAN is a programming language especially suited to numeric computation and scientific computing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What was the name of the first commercially available microprocessor chip? (2012 Test One (1))",
+    "keywords": [
+      "first microprocessor",
+      "Intel 4004",
+      "microprocessor chip",
+      "1971"
+    ],
+    "explanation": "The Intel 4004 was a 4-bit microprocessor released by Intel in 1971. It was the first commercially available microprocessor.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Second Generation computers were developed during? (2012 Test One (1))",
+    "keywords": [
+      "Second Generation computers",
+      "1956 to 1965",
+      "transistors"
+    ],
+    "explanation": "Second-generation computers used transistors, developed during this period, in place of vacuum tubes.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The computer size was very large in? (2012 Test One (1))",
+    "keywords": [
+      "computer size",
+      "First Generation",
+      "vacuum tubes"
+    ],
+    "explanation": "First-generation computers, which used vacuum tubes, were very large and took up entire rooms.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Microprocessors as switching devices are for which generation computers? (2012 Test One (1))",
+    "keywords": [
+      "Microprocessors",
+      "switching devices",
+      "Fourth Generation",
+      "single chip"
+    ],
+    "explanation": "The fourth generation of computers saw the development of the microprocessor, which brought the CPU to a single chip.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Modern Computer are very reliable but they are not? (2012 Test One (1))",
+    "keywords": [
+      "Modern Computer",
+      "reliable",
+      "infallible",
+      "errors"
+    ],
+    "explanation": "While computers are reliable, they are not infallible and are still susceptible to errors and failures.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What is the name of the display feature that highlights are of the screen which requires operator attention? (2012 Test One (1))",
+    "keywords": [
+      "display feature",
+      "highlights",
+      "Reverse video",
+      "inverts colors"
+    ],
+    "explanation": "Reverse video is a screen feature that inverts the colors of a specified area to make it stand out.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Personal computers use a number of chips mounted on a main circuit board. What is the common name for such boards? (2012 Test One (1))",
+    "keywords": [
+      "Personal computers",
+      "chips",
+      "main circuit board",
+      "Motherboard",
+      "CPU",
+      "memory"
+    ],
+    "explanation": "The motherboard is the main circuit board of a personal computer, containing the CPU, memory, and connectors for other peripherals.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "In most IBM PCs, the CPU, the device drives, memory expansion slots and active components are mounted on a single board. What is the name of this board? (2012 Test One (1))",
+    "keywords": [
+      "IBM PCs",
+      "CPU",
+      "device drives",
+      "memory expansion slots",
+      "Motherboard"
+    ],
+    "explanation": "This is a direct definition of a motherboard, which houses the central components of a computer.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What is meant by a dedicated computer? (2012 Test One (1))",
+    "keywords": [
+      "dedicated computer",
+      "single function",
+      "server",
+      "firewall",
+      "router"
+    ],
+    "explanation": "A dedicated computer is a system that performs a single, specific function, such as a server, firewall, or router.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The system unit of a personal computer typically contains all of the following except:? (2012 Test One (1))",
+    "keywords": [
+      "system unit",
+      "personal computer",
+      "Microprocessor",
+      "Disk controller",
+      "Serial interface",
+      "Modem",
+      "external device"
+    ],
+    "explanation": "A modem is an external or internal device that allows a computer to communicate over a telephone line or other network connection, but it is not a core component of the system unit itself.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A computer program that converts an entire program into machine language is called a/an? (2012 Test One (1))",
+    "keywords": [
+      "computer program",
+      "converts",
+      "machine language",
+      "Compiler",
+      "high-level language"
+    ],
+    "explanation": "A compiler translates a high-level language program into machine language code all at once.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A computer program that translates one program instructions at a time into machine language is called a/an? (2012 Test One (1))",
+    "keywords": [
+      "computer program",
+      "translates",
+      "one program instruction",
+      "machine language",
+      "Interpreter"
+    ],
+    "explanation": "An interpreter translates and executes program instructions one line at a time.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A small or intelligent device is so called because it contains within it a? (2012 Test One (1))",
+    "keywords": [
+      "small device",
+      "intelligent device",
+      "Microcomputer",
+      "microprocessor",
+      "embedded"
+    ],
+    "explanation": "A smart or intelligent device typically contains an embedded microcomputer or microprocessor to control its functions.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Basics of Computer",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which computers are used in the weather forecasting industry? (2012 Test One (1))",
+    "keywords": [
+      "weather forecasting",
+      "Supercomputers",
+      "scientific calculations"
+    ],
+    "explanation": "Supercomputers are used for complex, large-scale scientific calculations, such as those required for weather modeling and forecasting.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Floppy disks which are made from flexible plastic material are also called? (2012 Test One (1))",
+    "keywords": [
+      "Floppy disks",
+      "flexible plastic",
+      "Diskettes"
+    ],
+    "explanation": "The term 'diskette' is another name for a floppy disk, emphasizing its small, flexible nature compared to hard disks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The secondary storage devices can only store data but they cannot perform? (2012 Test One (1))",
+    "keywords": [
+      "secondary storage devices",
+      "store data",
+      "Arithmetic Operation",
+      "Logic operation",
+      "processing"
+    ],
+    "explanation": "Secondary storage devices are for long-term data storage and do not have the processing capabilities of a CPU, so they cannot perform arithmetic or logic operations.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Hard disks can have a storage capacity in the region of...? (2012 Test One (1))",
+    "keywords": [
+      "Hard disks",
+      "storage capacity",
+      "Gigabytes",
+      "GB"
+    ],
+    "explanation": "At the time of this test, hard drive capacities were typically measured in gigabytes (GB), while the other options represent much smaller capacities associated with floppy disks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Formatting a disk results in all the data being...? (2012 Test One (1))",
+    "keywords": [
+      "Formatting a disk",
+      "data being deleted",
+      "file system"
+    ],
+    "explanation": "Formatting a disk erases all existing data by creating a new file system and making the previous data inaccessible.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which storage device has the largest capacity in Mb.s? (2012 Test One (1))",
+    "keywords": [
+      "storage device",
+      "largest capacity",
+      "DVD-ROM",
+      "GB"
+    ],
+    "explanation": "A DVD-ROM has a capacity of at least 4.7 GB, which is significantly larger than the capacities of floppy disks (1.44 MB) and CD-ROMs (700 MB).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Regarding a VDU, Which statement is more correct? (2012 Test One (1))",
+    "keywords": [
+      "VDU",
+      "Visual Display Unit",
+      "peripheral device",
+      "external component"
+    ],
+    "explanation": "A VDU (Visual Display Unit) is a peripheral device, as it is an external component connected to a computer system.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  
+
+//[
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following is not an input device? (2012 Test One (1))",
+    "keywords": [
+      "input device",
+      "OCR",
+      "Optical scanners",
+      "Voice recognition device",
+      "COM",
+      "Computer Output to Microfilm",
+      "output device"
+    ],
+    "explanation": "COM is an output device that converts computer-generated data to microfilm or microfiche.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which is considered a direct entry input device? (2012 Test One (1))",
+    "keywords": [
+      "direct entry",
+      "input device",
+      "Optical scanner",
+      "Mouse",
+      "digitizer",
+      "Light pen"
+    ],
+    "explanation": "All of these devices allow for direct entry of data or commands into a computer system without the need for manual typing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following is used only for data entry and storage, and never for processing? (2012 Test One (1))",
+    "keywords": [
+      "data entry",
+      "storage",
+      "processing",
+      "Dumb terminal"
+    ],
+    "explanation": "A dumb terminal is a device with a keyboard and screen that relies on a central computer to perform all processing tasks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What input device can be used for marking a multiple choice test? (2012 Test One (1))",
+    "keywords": [
+      "input device",
+      "multiple choice test",
+      "Optical mark reader",
+      "OMR"
+    ],
+    "explanation": "An Optical Mark Reader (OMR) is specifically designed to detect marks or shadows on paper, making it ideal for marking multiple-choice tests.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What is the name of the computer terminal which gives paper printout? (2012 Test One (1))",
+    "keywords": [
+      "computer terminal",
+      "paper printout",
+      "Hard copy terminal",
+      "printer",
+      "teletype"
+    ],
+    "explanation": "A hard copy terminal, such as a printer or teletype, produces a physical copy of output on paper.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Dot-matrix is a type of? (2012 Test One (1))",
+    "keywords": [
+      "Dot-matrix",
+      "Printer",
+      "ink-soaked ribbon",
+      "pins"
+    ],
+    "explanation": "A dot-matrix printer creates characters and graphics by striking an ink-soaked ribbon against the paper with a grid of pins.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A kind of serial dot-matrix printer that forms characters with magnetically-charged ink sprayed dots is called? (2012 Test One (1))",
+    "keywords": [
+      "serial dot-matrix printer",
+      "magnetically-charged ink",
+      "Ink-jet printer"
+    ],
+    "explanation": "An inkjet printer works by spraying tiny droplets of ink onto the paper to form images and text.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which printer is very commonly used for desktop publishing? (2012 Test One (1))",
+    "keywords": [
+      "printer",
+      "desktop publishing",
+      "Laser printer",
+      "high-quality",
+      "fast"
+    ],
+    "explanation": "Laser printers are known for their high-quality, fast, and quiet printing, which makes them ideal for desktop publishing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "An output device that uses words or messages recorded on a magnetic medium to produce audio response is? (2012 Test One (1))",
+    "keywords": [
+      "output device",
+      "audio response",
+      "Voice response unit",
+      "speech"
+    ],
+    "explanation": "A voice response unit is an output device that can generate speech from recorded words or phrases.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the printers used in conjunction with computers uses dry ink power? (2012 Test One (1))",
+    "keywords": [
+      "printers",
+      "dry ink power",
+      "Laser printer",
+      "toner cartridge"
+    ],
+    "explanation": "Laser printers use a toner cartridge that contains a fine powder of dry ink, which is fused onto the paper with heat.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following produces the best quality graphics reproduction? (2012 Test One (1))",
+    "keywords": [
+      "best quality",
+      "graphics reproduction",
+      "Plotter",
+      "vector graphics"
+    ],
+    "explanation": "A plotter is a specialized output device that draws continuous lines on paper, producing very high-quality vector graphics.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What do you need for an ink jet printer? (2012 Test One (1))",
+    "keywords": [
+      "ink jet printer",
+      "cartridge",
+      "ink"
+    ],
+    "explanation": "Inkjet printers use ink cartridges that contain the ink necessary for printing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A laser printer does NOT use? (2012 Test One (1))",
+    "keywords": [
+      "laser printer",
+      "print head",
+      "inkjet printer"
+    ],
+    "explanation": "A print head is a component of an inkjet printer, not a laser printer.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The two kinds of main memory are:? (2012 Test One (1))",
+    "keywords": [
+      "main memory",
+      "primary memory",
+      "ROM",
+      "RAM",
+      "Read-Only Memory",
+      "Random-Access Memory"
+    ],
+    "explanation": "Main memory is also known as primary memory, which includes both ROM (Read-Only Memory) and RAM (Random-Access Memory).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following will happen when data is entered into a memory location? (2012 Test One (1))",
+    "keywords": [
+      "data entered",
+      "memory location",
+      "erases previous content",
+      "overwrites"
+    ],
+    "explanation": "When new data is written to a memory location, it overwrites and erases the data that was previously there.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A storage area used to store data to compensate for the difference in speed at which the different units can handle data is.? (2012 Test One (1))",
+    "keywords": [
+      "storage area",
+      "compensate for speed",
+      "Buffer",
+      "temporary storage"
+    ],
+    "explanation": "A buffer is a temporary storage area that holds data while it is being transferred from one device to another.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Current SIMMs have either or ... connectors (pins)? (2012 Test One (1))",
+    "keywords": [
+      "SIMMs",
+      "Single In-line Memory Modules",
+      "connectors",
+      "pins",
+      "30",
+      "72"
+    ],
+    "explanation": "SIMMs (Single In-line Memory Modules) were a type of RAM module that came in 30-pin and 72-pin versions.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The storage subsystem in a microcomputer consists mainly of ... or ... media with varying capacities? (2012 Test One (1))",
+    "keywords": [
+      "storage subsystem",
+      "microcomputer",
+      "Magnetic",
+      "optical",
+      "hard drives",
+      "CDs",
+      "DVDs"
+    ],
+    "explanation": "Microcomputer storage subsystems use either magnetic media (like hard drives) or optical media (like CDs and DVDs).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The central processing unit (CPU) consists of? (2012 Test One (1))",
+    "keywords": [
+      "central processing unit",
+      "CPU",
+      "Control unit",
+      "arithmetic-logic unit",
+      "primary storage",
+      "CU",
+      "ALU"
+    ],
+    "explanation": "The CPU is composed of the Control Unit (CU), Arithmetic-Logic Unit (ALU), and internal memory (primary storage).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "EBCDIC can code up to how many different characters? (2012 Test One (1))",
+    "keywords": [
+      "EBCDIC",
+      "8-bit code",
+      "256 characters"
+    ],
+    "explanation": "EBCDIC is an 8-bit code, and an 8-bit system can represent 2^8, or 256, unique characters.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which is used for manufacturing chips? (2012 Test One (1))",
+    "keywords": [
+      "manufacturing chips",
+      "Semiconductors",
+      "integrated circuits",
+      "silicon"
+    ],
+    "explanation": "Semiconductors, such as silicon, are the fundamental materials used to create integrated circuits or computer chips.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A byte consists of? (2012 Test One (1))",
+    "keywords": [
+      "byte",
+      "eight bits",
+      "digital information"
+    ],
+    "explanation": "A byte is a standard unit of digital information, consisting of eight bits.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "EEPROM stand for? (2012 Test One (1))",
+    "keywords": [
+      "EEPROM",
+      "Electrically Erasable Programmable Read Only Memory",
+      "non-volatile memory"
+    ],
+    "explanation": "EEPROM is a type of non-volatile memory that can be erased and reprogrammed using electrical signals.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Ctrl, shift and alt are called keys.? (2012 Test One (1))",
+    "keywords": [
+      "Ctrl",
+      "shift",
+      "alt",
+      "Modifier keys",
+      "keyboard"
+    ],
+    "explanation": "Modifier keys are special keys on a keyboard that modify the normal action of another key when pressed together.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To make the number pad act as directional arrows, you press the ----key.? (2012 Test One (1))",
+    "keywords": [
+      "number pad",
+      "directional arrows",
+      "Num lock"
+    ],
+    "explanation": "The Num Lock key switches the function of the numeric keypad between number entry and directional arrows.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The modern keyboard typically has ----function keys.? (2012 Test One (1))",
+    "keywords": [
+      "modern keyboard",
+      "function keys",
+      "F1",
+      "F12"
+    ],
+    "explanation": "Standard keyboards today typically have 12 function keys, labeled F1 through F12.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To move to the beginning of a line of text, press the ----key.? (2012 Test One (1))",
+    "keywords": [
+      "beginning of line",
+      "Home key",
+      "cursor control"
+    ],
+    "explanation": "The 'Home' key is a cursor control key that moves the cursor to the beginning of the line.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----determines how long you must hold down an alphanumeric key before the keyboard will repeat the character.? (2012 Test One (1))",
+    "keywords": [
+      "alphanumeric key",
+      "repeat the character",
+      "Repeat rate",
+      "keyboard repeat rate"
+    ],
+    "explanation": "The repeat rate (or keyboard repeat rate) is a setting that determines how quickly a character repeats when a key is held down.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The traditional mechanical mouse uses a ----to track the pointer position on the screen.? (2012 Test One (1))",
+    "keywords": [
+      "mechanical mouse",
+      "track pointer",
+      "Ball",
+      "internal rollers"
+    ],
+    "explanation": "Traditional mechanical mice use a rubber ball that rolls as the mouse moves, and internal rollers track its movement.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To access properties of an object, the mouse technique to use is ----.? (2012 Test One (1))",
+    "keywords": [
+      "access properties",
+      "mouse technique",
+      "Right-click",
+      "context menu"
+    ],
+    "explanation": "A right-click on an object typically opens a context menu that provides a list of actions or properties associated with that object.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----can be defined as an upside down mouse.? (2012 Test One (1))",
+    "keywords": [
+      "upside down mouse",
+      "Trackball",
+      "input device",
+      "rolling the ball"
+    ],
+    "explanation": "A trackball is an input device that contains a ball held within a socket. Users move the cursor by rolling the ball with their thumb, fingers, or palm.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----key will launch the start button.? (2012 Test One (1))",
+    "keywords": [
+      "start button",
+      "Windows key",
+      "Start Menu",
+      "shortcut"
+    ],
+    "explanation": "The 'Windows' key on a keyboard is a shortcut that opens the Start Menu in the Microsoft Windows operating system.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The wheel on a mouse can make it easier to ----.? (2012 Test One (1))",
+    "keywords": [
+      "mouse wheel",
+      "Scroll through documents",
+      "scroll"
+    ],
+    "explanation": "The scroll wheel on a mouse allows a user to move up and down through a document or web page with ease.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "In MS-dos 6.22, which part identifies the product uniquely? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "product uniquely",
+      "version number",
+      "6.22"
+    ],
+    "explanation": "The version number '6.22' uniquely identifies this specific release of the MS-DOS product.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "In MS-DOS what command will you use to display system date? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "command",
+      "display system date",
+      "Date command"
+    ],
+    "explanation": "The 'DATE' command in MS-DOS is used to display or change the system date.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "While working with Ms-dos which command transfer a specific file from one disk to another? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "command",
+      "transfer a file",
+      "Copy"
+    ],
+    "explanation": "The 'COPY' command is used to copy one or more files from one location to another.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "If you don't know the current time, which command will you use to display? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "current time",
+      "Time command"
+    ],
+    "explanation": "The 'TIME' command in MS-DOS is used to display or change the current system time.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which command divides the surface of the blank disk into sectors and assign a unique address to each one? (2012 Test One (1))",
+    "keywords": [
+      "command",
+      "divides disk",
+      "sectors",
+      "unique address",
+      "Format",
+      "file system"
+    ],
+    "explanation": "The 'FORMAT' command prepares a storage device for initial use by creating a file system and partitioning the disk into sectors.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  //[
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following is not an input device? (2012 Test One (1))",
+    "keywords": [
+      "input device",
+      "OCR",
+      "Optical scanners",
+      "Voice recognition device",
+      "COM",
+      "Computer Output to Microfilm",
+      "output device"
+    ],
+    "explanation": "COM is an output device that converts computer-generated data to microfilm or microfiche.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which is considered a direct entry input device? (2012 Test One (1))",
+    "keywords": [
+      "direct entry",
+      "input device",
+      "Optical scanner",
+      "Mouse",
+      "digitizer",
+      "Light pen"
+    ],
+    "explanation": "All of these devices allow for direct entry of data or commands into a computer system without the need for manual typing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following is used only for data entry and storage, and never for processing? (2012 Test One (1))",
+    "keywords": [
+      "data entry",
+      "storage",
+      "processing",
+      "Dumb terminal"
+    ],
+    "explanation": "A dumb terminal is a device with a keyboard and screen that relies on a central computer to perform all processing tasks.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What input device can be used for marking a multiple choice test? (2012 Test One (1))",
+    "keywords": [
+      "input device",
+      "multiple choice test",
+      "Optical mark reader",
+      "OMR"
+    ],
+    "explanation": "An Optical Mark Reader (OMR) is specifically designed to detect marks or shadows on paper, making it ideal for marking multiple-choice tests.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What is the name of the computer terminal which gives paper printout? (2012 Test One (1))",
+    "keywords": [
+      "computer terminal",
+      "paper printout",
+      "Hard copy terminal",
+      "printer",
+      "teletype"
+    ],
+    "explanation": "A hard copy terminal, such as a printer or teletype, produces a physical copy of output on paper.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Dot-matrix is a type of? (2012 Test One (1))",
+    "keywords": [
+      "Dot-matrix",
+      "Printer",
+      "ink-soaked ribbon",
+      "pins"
+    ],
+    "explanation": "A dot-matrix printer creates characters and graphics by striking an ink-soaked ribbon against the paper with a grid of pins.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A kind of serial dot-matrix printer that forms characters with magnetically-charged ink sprayed dots is called? (2012 Test One (1))",
+    "keywords": [
+      "serial dot-matrix printer",
+      "magnetically-charged ink",
+      "Ink-jet printer"
+    ],
+    "explanation": "An inkjet printer works by spraying tiny droplets of ink onto the paper to form images and text.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which printer is very commonly used for desktop publishing? (2012 Test One (1))",
+    "keywords": [
+      "printer",
+      "desktop publishing",
+      "Laser printer",
+      "high-quality",
+      "fast"
+    ],
+    "explanation": "Laser printers are known for their high-quality, fast, and quiet printing, which makes them ideal for desktop publishing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "An output device that uses words or messages recorded on a magnetic medium to produce audio response is? (2012 Test One (1))",
+    "keywords": [
+      "output device",
+      "audio response",
+      "Voice response unit",
+      "speech"
+    ],
+    "explanation": "A voice response unit is an output device that can generate speech from recorded words or phrases.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the printers used in conjunction with computers uses dry ink power? (2012 Test One (1))",
+    "keywords": [
+      "printers",
+      "dry ink power",
+      "Laser printer",
+      "toner cartridge"
+    ],
+    "explanation": "Laser printers use a toner cartridge that contains a fine powder of dry ink, which is fused onto the paper with heat.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following produces the best quality graphics reproduction? (2012 Test One (1))",
+    "keywords": [
+      "best quality",
+      "graphics reproduction",
+      "Plotter",
+      "vector graphics"
+    ],
+    "explanation": "A plotter is a specialized output device that draws continuous lines on paper, producing very high-quality vector graphics.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "What do you need for an ink jet printer? (2012 Test One (1))",
+    "keywords": [
+      "ink jet printer",
+      "cartridge",
+      "ink"
+    ],
+    "explanation": "Inkjet printers use ink cartridges that contain the ink necessary for printing.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A laser printer does NOT use? (2012 Test One (1))",
+    "keywords": [
+      "laser printer",
+      "print head",
+      "inkjet printer"
+    ],
+    "explanation": "A print head is a component of an inkjet printer, not a laser printer.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The two kinds of main memory are:? (2012 Test One (1))",
+    "keywords": [
+      "main memory",
+      "primary memory",
+      "ROM",
+      "RAM",
+      "Read-Only Memory",
+      "Random-Access Memory"
+    ],
+    "explanation": "Main memory is also known as primary memory, which includes both ROM (Read-Only Memory) and RAM (Random-Access Memory).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which of the following will happen when data is entered into a memory location? (2012 Test One (1))",
+    "keywords": [
+      "data entered",
+      "memory location",
+      "erases previous content",
+      "overwrites"
+    ],
+    "explanation": "When new data is written to a memory location, it overwrites and erases the data that was previously there.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A storage area used to store data to compensate for the difference in speed at which the different units can handle data is.? (2012 Test One (1))",
+    "keywords": [
+      "storage area",
+      "compensate for speed",
+      "Buffer",
+      "temporary storage"
+    ],
+    "explanation": "A buffer is a temporary storage area that holds data while it is being transferred from one device to another.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Current SIMMs have either or ... connectors (pins)? (2012 Test One (1))",
+    "keywords": [
+      "SIMMs",
+      "Single In-line Memory Modules",
+      "connectors",
+      "pins",
+      "30",
+      "72"
+    ],
+    "explanation": "SIMMs (Single In-line Memory Modules) were a type of RAM module that came in 30-pin and 72-pin versions.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The storage subsystem in a microcomputer consists mainly of ... or ... media with varying capacities? (2012 Test One (1))",
+    "keywords": [
+      "storage subsystem",
+      "microcomputer",
+      "Magnetic",
+      "optical",
+      "hard drives",
+      "CDs",
+      "DVDs"
+    ],
+    "explanation": "Microcomputer storage subsystems use either magnetic media (like hard drives) or optical media (like CDs and DVDs).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The central processing unit (CPU) consists of? (2012 Test One (1))",
+    "keywords": [
+      "central processing unit",
+      "CPU",
+      "Control unit",
+      "arithmetic-logic unit",
+      "primary storage",
+      "CU",
+      "ALU"
+    ],
+    "explanation": "The CPU is composed of the Control Unit (CU), Arithmetic-Logic Unit (ALU), and internal memory (primary storage).",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "EBCDIC can code up to how many different characters? (2012 Test One (1))",
+    "keywords": [
+      "EBCDIC",
+      "8-bit code",
+      "256 characters"
+    ],
+    "explanation": "EBCDIC is an 8-bit code, and an 8-bit system can represent 2^8, or 256, unique characters.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "The Computer System Hardware",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which is used for manufacturing chips? (2012 Test One (1))",
+    "keywords": [
+      "manufacturing chips",
+      "Semiconductors",
+      "integrated circuits",
+      "silicon"
+    ],
+    "explanation": "Semiconductors, such as silicon, are the fundamental materials used to create integrated circuits or computer chips.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Data Representation",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "A byte consists of? (2012 Test One (1))",
+    "keywords": [
+      "byte",
+      "eight bits",
+      "digital information"
+    ],
+    "explanation": "A byte is a standard unit of digital information, consisting of eight bits.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Computer Storage",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "EEPROM stand for? (2012 Test One (1))",
+    "keywords": [
+      "EEPROM",
+      "Electrically Erasable Programmable Read Only Memory",
+      "non-volatile memory"
+    ],
+    "explanation": "EEPROM is a type of non-volatile memory that can be erased and reprogrammed using electrical signals.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Ctrl, shift and alt are called keys.? (2012 Test One (1))",
+    "keywords": [
+      "Ctrl",
+      "shift",
+      "alt",
+      "Modifier keys",
+      "keyboard"
+    ],
+    "explanation": "Modifier keys are special keys on a keyboard that modify the normal action of another key when pressed together.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To make the number pad act as directional arrows, you press the ----key.? (2012 Test One (1))",
+    "keywords": [
+      "number pad",
+      "directional arrows",
+      "Num lock"
+    ],
+    "explanation": "The Num Lock key switches the function of the numeric keypad between number entry and directional arrows.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The modern keyboard typically has ----function keys.? (2012 Test One (1))",
+    "keywords": [
+      "modern keyboard",
+      "function keys",
+      "F1",
+      "F12"
+    ],
+    "explanation": "Standard keyboards today typically have 12 function keys, labeled F1 through F12.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To move to the beginning of a line of text, press the ----key.? (2012 Test One (1))",
+    "keywords": [
+      "beginning of line",
+      "Home key",
+      "cursor control"
+    ],
+    "explanation": "The 'Home' key is a cursor control key that moves the cursor to the beginning of the line.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----determines how long you must hold down an alphanumeric key before the keyboard will repeat the character.? (2012 Test One (1))",
+    "keywords": [
+      "alphanumeric key",
+      "repeat the character",
+      "Repeat rate",
+      "keyboard repeat rate"
+    ],
+    "explanation": "The repeat rate (or keyboard repeat rate) is a setting that determines how quickly a character repeats when a key is held down.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The traditional mechanical mouse uses a ----to track the pointer position on the screen.? (2012 Test One (1))",
+    "keywords": [
+      "mechanical mouse",
+      "track pointer",
+      "Ball",
+      "internal rollers"
+    ],
+    "explanation": "Traditional mechanical mice use a rubber ball that rolls as the mouse moves, and internal rollers track its movement.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "To access properties of an object, the mouse technique to use is ----.? (2012 Test One (1))",
+    "keywords": [
+      "access properties",
+      "mouse technique",
+      "Right-click",
+      "context menu"
+    ],
+    "explanation": "A right-click on an object typically opens a context menu that provides a list of actions or properties associated with that object.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----can be defined as an upside down mouse.? (2012 Test One (1))",
+    "keywords": [
+      "upside down mouse",
+      "Trackball",
+      "input device",
+      "rolling the ball"
+    ],
+    "explanation": "A trackball is an input device that contains a ball held within a socket. Users move the cursor by rolling the ball with their thumb, fingers, or palm.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The ----key will launch the start button.? (2012 Test One (1))",
+    "keywords": [
+      "start button",
+      "Windows key",
+      "Start Menu",
+      "shortcut"
+    ],
+    "explanation": "The 'Windows' key on a keyboard is a shortcut that opens the Start Menu in the Microsoft Windows operating system.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Input and Output Devices",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "The wheel on a mouse can make it easier to ----.? (2012 Test One (1))",
+    "keywords": [
+      "mouse wheel",
+      "Scroll through documents",
+      "scroll"
+    ],
+    "explanation": "The scroll wheel on a mouse allows a user to move up and down through a document or web page with ease.",
+    "course": "CS110",
+    "term": "T1"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "In MS-dos 6.22, which part identifies the product uniquely? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "product uniquely",
+      "version number",
+      "6.22"
+    ],
+    "explanation": "The version number '6.22' uniquely identifies this specific release of the MS-DOS product.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "In MS-DOS what command will you use to display system date? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "command",
+      "display system date",
+      "Date command"
+    ],
+    "explanation": "The 'DATE' command in MS-DOS is used to display or change the system date.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "While working with Ms-dos which command transfer a specific file from one disk to another? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "command",
+      "transfer a file",
+      "Copy"
+    ],
+    "explanation": "The 'COPY' command is used to copy one or more files from one location to another.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "If you don't know the current time, which command will you use to display? (2012 Test One (1))",
+    "keywords": [
+      "MS-DOS",
+      "current time",
+      "Time command"
+    ],
+    "explanation": "The 'TIME' command in MS-DOS is used to display or change the current system time.",
+    "course": "CS110",
+    "term": "T2"
+  },
+  {
+    "topic": "Operating Systems",
+    "year": "2012 Test One (1)",
+    "tag": "MCQ",
+    "q": "Which command divides the surface of the blank disk into sectors and assign a unique address to each one? (2012 Test One (1))",
+    "keywords": [
+      "command",
+      "divides disk",
+      "sectors",
+      "unique address",
+      "Format",
+      "file system"
+    ],
+    "explanation": "The 'FORMAT' command prepares a storage device for initial use by creating a file system and partitioning the disk into sectors.",
+    "course": "CS110",
+    "term": "T2"
+  },
+
 ];

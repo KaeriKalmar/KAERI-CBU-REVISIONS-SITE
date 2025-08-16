@@ -17300,6 +17300,1033 @@ const mcqData = [
     tag: "MCQ"
   },
 
+//
+{
+    "q": "EBCDIC stands for? (2012 Test One (1))",
+    "options": [
+      "Extended Binary Coded Decimal Interchange Code",
+      "Extended Bit Code Decimal Interchange Code",
+      "Extended Bit Case Decimal Interchange Code",
+      "Extended Binary Case Decimal Interchange Code"
+    ],
+    "correct": 0,
+    "explanation": "EBCDIC is an 8-bit character encoding used mainly on IBM mainframe operating systems.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "BCD is? (2012 Test One (1))",
+    "options": [
+      "Binary Coded Decimal",
+      "Bit Coded Decimal",
+      "Binary Coded Digit",
+      "Bit Coded Digit"
+    ],
+    "correct": 0,
+    "explanation": "BCD is a system of writing numerals that assigns a four-digit binary code to each decimal digit.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "ASCII stands for? (2012 Test One (1))",
+    "options": [
+      "American Stable Code for International Interchange",
+      "American Standard Case for Institutional Interchange",
+      "American Standard Code for Information Interchange",
+      "American Standard Code for Interchange Information."
+    ],
+    "correct": 2,
+    "explanation": "ASCII is a character encoding standard for electronic communication.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is first generation of computer? (2012 Test One (1))",
+    "options": [
+      "EDSAC",
+      "IBM-1401",
+      "CDC-1604",
+      "ICL-2900"
+    ],
+    "correct": 0,
+    "explanation": "EDSAC (Electronic Delay Storage Automatic Calculator) was an early British computer that used vacuum tubes, characteristic of the first generation.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Chief component of first generation computer was? (2012 Test One (1))",
+    "options": [
+      "Transistors",
+      "Vacuum Tubes and Valves",
+      "Integrated Circuits",
+      "None of above"
+    ],
+    "correct": 1,
+    "explanation": "First-generation computers used vacuum tubes for circuitry and magnetic drums for memory.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "FORTRAN is? (2012 Test One (1))",
+    "options": [
+      "File Translation",
+      "Format Translation",
+      "Formula Translation",
+      "Floppy Translation"
+    ],
+    "correct": 2,
+    "explanation": "FORTRAN is a programming language especially suited to numeric computation and scientific computing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What was the name of the first commercially available microprocessor chip?? (2012 Test One (1))",
+    "options": [
+      "Intel 308",
+      "Intel 33",
+      "Intel 4004",
+      "Motorola 639"
+    ],
+    "correct": 2,
+    "explanation": "The Intel 4004 was a 4-bit microprocessor released by Intel in 1971. It was the first commercially available microprocessor.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Second Generation computers were developed during? (2012 Test One (1))",
+    "options": [
+      "1949 to 1955",
+      "1956 to 1965",
+      "1965 to 1970",
+      "1970 to 1990"
+    ],
+    "correct": 1,
+    "explanation": "Second-generation computers used transistors, developed during this period, in place of vacuum tubes.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The computer size was very large in? (2012 Test One (1))",
+    "options": [
+      "First Generation",
+      "Second Generation",
+      "Third Generation",
+      "Fourth Generation"
+    ],
+    "correct": 0,
+    "explanation": "First-generation computers, which used vacuum tubes, were very large and took up entire rooms.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Microprocessors as switching devices are for which generation computers? (2012 Test One (1))",
+    "options": [
+      "First Generation",
+      "Second Generation",
+      "Third Generation",
+      "Fourth Generation"
+    ],
+    "correct": 3,
+    "explanation": "The fourth generation of computers saw the development of the microprocessor, which brought the CPU to a single chip.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Generations",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Modern Computer are very reliable but they are not? (2012 Test One (1))",
+    "options": [
+      "Fast",
+      "Powerful",
+      "Infallible",
+      "Cheap"
+    ],
+    "correct": 2,
+    "explanation": "While computers are reliable, they are not infallible and are still susceptible to errors and failures.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is the name of the display feature that highlights are of the screen which requires operator attention?? (2012 Test One (1))",
+    "options": [
+      "Pixel",
+      "Reverse video",
+      "Touch screen",
+      "Cursor"
+    ],
+    "correct": 1,
+    "explanation": "Reverse video is a screen feature that inverts the colors of a specified area to make it stand out.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Personal computers use a number of chips mounted on a main circuit board. What is the common name for such boards?? (2012 Test One (1))",
+    "options": [
+      "Daughter board",
+      "Motherboard",
+      "Father board",
+      "Breadboard"
+    ],
+    "correct": 1,
+    "explanation": "The motherboard is the main circuit board of a personal computer, containing the CPU, memory, and connectors for other peripherals.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In most IBM PCs, the CPU, the device drives, memory expansion slots and active components are mounted on a single board. What is the name of this board?? (2012 Test One (1))",
+    "options": [
+      "Motherboard",
+      "Breadboard",
+      "Daughter board",
+      "Grandmother board"
+    ],
+    "correct": 0,
+    "explanation": "This is a direct definition of a motherboard, which houses the central components of a computer.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What is meant by a dedicated computer?? (2012 Test One (1))",
+    "options": [
+      "Which is used by one person only",
+      "Which is assigned one and only one task",
+      "Which uses one kind of software-",
+      "Which is meant for application software"
+    ],
+    "correct": 1,
+    "explanation": "A dedicated computer is a system that performs a single, specific function, such as a server, firewall, or router.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The system unit of a personal computer typically contains all of the following except:? (2012 Test One (1))",
+    "options": [
+      "Microprocessor",
+      "Disk controller",
+      "Serial interface",
+      "Modem"
+    ],
+    "correct": 3,
+    "explanation": "A modem is an external or internal device that allows a computer to communicate over a telephone line or other network connection, but it is not a core component of the system unit itself.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A computer program that converts an entire program into machine language is called a/an? (2012 Test One (1))",
+    "options": [
+      "Interpreter",
+      "Simulator",
+      "Compiler",
+      "Commander"
+    ],
+    "correct": 2,
+    "explanation": "A compiler translates a high-level language program into machine language code all at once.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A computer program that translates one program instructions at a time into machine language is called a/an? (2012 Test One (1))",
+    "options": [
+      "Interpreter",
+      "CPU",
+      "Compiler",
+      "Simulator"
+    ],
+    "correct": 0,
+    "explanation": "An interpreter translates and executes program instructions one line at a time.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A small or intelligent device is so called because it contains within it a? (2012 Test One (1))",
+    "options": [
+      "Computer",
+      "Microcomputer",
+      "Programmable.",
+      "Sensor"
+    ],
+    "correct": 1,
+    "explanation": "A smart or intelligent device typically contains an embedded microcomputer or microprocessor to control its functions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which computers are used in the weather forecasting industry?? (2012 Test One (1))",
+    "options": [
+      "Notebook computers",
+      "Supercomputers",
+      "Jon Von Neumann computers",
+      "mini Computers"
+    ],
+    "correct": 1,
+    "explanation": "Supercomputers are used for complex, large-scale scientific calculations, such as those required for weather modeling and forecasting.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Classification",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Floppy disks which are made from flexible plastic material are also called?? (2012 Test One (1))",
+    "options": [
+      "Hard disks",
+      "High-density disks",
+      "Diskettes",
+      "Templates"
+    ],
+    "correct": 2,
+    "explanation": "The term 'diskette' is another name for a floppy disk, emphasizing its small, flexible nature compared to hard disks.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Storage",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The secondary storage devices can only store data but they cannot perform? (2012 Test One (1))",
+    "options": [
+      "Arithmetic Operation",
+      "Logic operation",
+      "Fetch operations",
+      "Either of the above"
+    ],
+    "correct": 3,
+    "explanation": "Secondary storage devices are for long-term data storage and do not have the processing capabilities of a CPU, so they cannot perform arithmetic or logic operations.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Storage",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Hard disks can have a storage capacity in the region of...? (2012 Test One (1))",
+    "options": [
+      "1.44Mb",
+      "1Gb",
+      "720K",
+      "20Mb"
+    ],
+    "correct": 1,
+    "explanation": "At the time of this test, hard drive capacities were typically measured in gigabytes (GB), while the other options represent much smaller capacities associated with floppy disks.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Storage",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Formatting a disk results in all the data being...? (2012 Test One (1))",
+    "options": [
+      "Deleted from the disk",
+      "Copied from the disk",
+      "Saved to the disk",
+      "duplicated on the disk"
+    ],
+    "correct": 0,
+    "explanation": "Formatting a disk erases all existing data by creating a new file system and making the previous data inaccessible.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Storage",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which storage device has the largest capacity in Mb.s?? (2012 Test One (1))",
+    "options": [
+      "A CD-ROM",
+      "A floppy disk",
+      "Magnetic tape storage",
+      "DVD-ROM"
+    ],
+    "correct": 3,
+    "explanation": "A DVD-ROM has a capacity of at least 4.7 GB, which is significantly larger than the capacities of floppy disks (1.44 MB) and CD-ROMs (700 MB).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Storage",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Regarding a VDU, Which statement is more correct?? (2012 Test One (1))",
+    "options": [
+      "It is an output device",
+      "It is an input device",
+      "It is a peripheral device",
+      "It is hardware item"
+    ],
+    "correct": 2,
+    "explanation": "A VDU (Visual Display Unit) is a peripheral device, as it is an external component connected to a computer system.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is not an input device?? (2012 Test One (1))",
+    "options": [
+      "OCR",
+      "Optical scanners",
+      "Voice recognition device",
+      "COM (Computer Output to Microfilm)"
+    ],
+    "correct": 3,
+    "explanation": "COM is an output device that converts computer-generated data to microfilm or microfiche.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which is considered a direct entry input device?? (2012 Test One (1))",
+    "options": [
+      "Optical scanner",
+      "Mouse and digitizer",
+      "Light pen",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "All of these devices allow for direct entry of data or commands into a computer system without the need for manual typing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following is used only for data entry and storage, and never for processing?? (2012 Test One (1))",
+    "options": [
+      "Mouse",
+      "Dumb terminal",
+      "Micro computer",
+      "Dedicated data entry system"
+    ],
+    "correct": 1,
+    "explanation": "A dumb terminal is a device with a keyboard and screen that relies on a central computer to perform all processing tasks.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What input device can be used for marking a multiple choice test?? (2012 Test One (1))",
+    "options": [
+      "Mouse",
+      "Bar code reader",
+      "Optical mark reader",
+      "Space Mouse"
+    ],
+    "correct": 2,
+    "explanation": "An Optical Mark Reader (OMR) is specifically designed to detect marks or shadows on paper, making it ideal for marking multiple-choice tests.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  
+ 
+  {
+    "q": "What is the name of the computer terminal which gives paper printout?? (2012 Test One (1))",
+    "options": [
+      "Display screen",
+      "Soft copy terminal",
+      "Hard copy terminal",
+      "Plotter"
+    ],
+    "correct": 2,
+    "explanation": "A hard copy terminal, such as a printer or teletype, produces a physical copy of output on paper.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Dot-matrix is a type of? (2012 Test One (1))",
+    "options": [
+      "Tape",
+      "Printer",
+      "Disk",
+      "Bus"
+    ],
+    "correct": 1,
+    "explanation": "A dot-matrix printer creates characters and graphics by striking an ink-soaked ribbon against the paper with a grid of pins.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A kind of serial dot-matrix printer that forms characters with magnetically-charged ink sprayed dots is called? (2012 Test One (1))",
+    "options": [
+      "Laser printer",
+      "Ink-jet printer",
+      "Drum printer",
+      "Chan printer"
+    ],
+    "correct": 1,
+    "explanation": "An inkjet printer works by spraying tiny droplets of ink onto the paper to form images and text.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which printer is very commonly used for desktop publishing?? (2012 Test One (1))",
+    "options": [
+      "Laser printer",
+      "Inkjet printer",
+      "Daisywheel printer",
+      "Dot matrix printer"
+    ],
+    "correct": 0,
+    "explanation": "Laser printers are known for their high-quality, fast, and quiet printing, which makes them ideal for desktop publishing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "An output device that uses words or messages recorded on a magnetic medium to produce audio response is? (2012 Test One (1))",
+    "options": [
+      "Magnetic tape",
+      "Voice response unit",
+      "Voice recognition unit",
+      "Voice band"
+    ],
+    "correct": 1,
+    "explanation": "A voice response unit is an output device that can generate speech from recorded words or phrases.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the printers used in conjunction with computers uses dry ink power?? (2012 Test One (1))",
+    "options": [
+      "Daisy wheel printer",
+      "Line printer",
+      "Laser printer",
+      "Thermal printer"
+    ],
+    "correct": 2,
+    "explanation": "Laser printers use a toner cartridge that contains a fine powder of dry ink, which is fused onto the paper with heat.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following produces the best quality graphics reproduction?? (2012 Test One (1))",
+    "options": [
+      "Laser printer",
+      "Ink jet printer",
+      "Plotter",
+      "Dot matrix printer"
+    ],
+    "correct": 2,
+    "explanation": "A plotter is a specialized output device that draws continuous lines on paper, producing very high-quality vector graphics.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "What do you need for an ink jet printer?? (2012 Test One (1))",
+    "options": [
+      "A cartridge",
+      "A drum",
+      "A ribbon"
+    ],
+    "correct": 0,
+    "explanation": "Inkjet printers use ink cartridges that contain the ink necessary for printing.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A laser printer does NOT use?? (2012 Test One (1))",
+    "options": [
+      "A print head",
+      "A laser beam",
+      "A photoconductive drum"
+    ],
+    "correct": 0,
+    "explanation": "A print head is a component of an inkjet printer, not a laser printer.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Output",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The two kinds of main memory are:? (2012 Test One (1))",
+    "options": [
+      "Primary and secondary",
+      "Random and sequential",
+      "ROM and RAM",
+      "All of above"
+    ],
+    "correct": 2,
+    "explanation": "Main memory is also known as primary memory, which includes both ROM (Read-Only Memory) and RAM (Random-Access Memory).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which of the following will happen when data is entered into a memory location?? (2012 Test One (1))",
+    "options": [
+      "It will add to the content of the location",
+      "It will change the address of the memory location",
+      "It will erase the previous content",
+      "It will not be fruitful if there is already some data at the location"
+    ],
+    "correct": 2,
+    "explanation": "When new data is written to a memory location, it overwrites and erases the data that was previously there.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A storage area used to store data to compensate for the difference in speed at which the different units can handle data is.? (2012 Test One (1))",
+    "options": [
+      "Memory",
+      "Buffer",
+      "Accumulator",
+      "Address"
+    ],
+    "correct": 1,
+    "explanation": "A buffer is a temporary storage area that holds data while it is being transferred from one device to another.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Current SIMMs have either or ... connectors (pins)? (2012 Test One (1))",
+    "options": [
+      "9 or 32",
+      "30 or 70",
+      "28 or 72",
+      "30 or 72"
+    ],
+    "correct": 3,
+    "explanation": "SIMMs (Single In-line Memory Modules) were a type of RAM module that came in 30-pin and 72-pin versions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The storage subsystem in a microcomputer consists mainly of ... or ... media with varying capacities? (2012 Test One (1))",
+    "options": [
+      "Memory or video",
+      "Magnetic or optical",
+      "Optical or memory",
+      "Video or magnetic"
+    ],
+    "correct": 1,
+    "explanation": "Microcomputer storage subsystems use either magnetic media (like hard drives) or optical media (like CDs and DVDs).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The central processing unit (CPU) consists of? (2012 Test One (1))",
+    "options": [
+      "Input, output and processing",
+      "Control unit, primary storage, and secondary storage",
+      "Control unit, arithmetic-logic unit and primary storage",
+      "Control unit, processing, and primary storage"
+    ],
+    "correct": 2,
+    "explanation": "The CPU is composed of the Control Unit (CU), Arithmetic-Logic Unit (ALU), and internal memory (primary storage).",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "EBCDIC can code up to how many different characters?? (2012 Test One (1))",
+    "options": [
+      "256",
+      "16",
+      "32",
+      "64"
+    ],
+    "correct": 0,
+    "explanation": "EBCDIC is an 8-bit code, and an 8-bit system can represent 2^8, or 256, unique characters.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which is used for manufacturing chips?? (2012 Test One (1))",
+    "options": [
+      "Bus",
+      "Control unit",
+      "Semiconductors",
+      "A and b only"
+    ],
+    "correct": 2,
+    "explanation": "Semiconductors, such as silicon, are the fundamental materials used to create integrated circuits or computer chips.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "A byte consists of? (2012 Test One (1))",
+    "options": [
+      "One bit",
+      "Four bits",
+      "Eight bits",
+      "Sixteen bits"
+    ],
+    "correct": 2,
+    "explanation": "A byte is a standard unit of digital information, consisting of eight bits.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "EEPROM stand for? (2012 Test One (1))",
+    "options": [
+      "Electrically Erasable Programmable Read Only Memory",
+      "Easily Erasable Programmable Read Only Memory",
+      "Electronic Erasable Programmable Read Only Memory",
+      "None of the above"
+    ],
+    "correct": 0,
+    "explanation": "EEPROM is a type of non-volatile memory that can be erased and reprogrammed using electrical signals.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Processor and Memory",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Ctrl, shift and alt are called keys.? (2012 Test One (1))",
+    "options": [
+      "Adjustment",
+      "Function",
+      "Modifier",
+      "Alphanumeric"
+    ],
+    "correct": 2,
+    "explanation": "Modifier keys are special keys on a keyboard that modify the normal action of another key when pressed together.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "To make the number pad act as directional arrows, you press the ----key.? (2012 Test One (1))",
+    "options": [
+      "Num lock.",
+      "Caps lock",
+      "Arrow lock.",
+      "Shift."
+    ],
+    "correct": 0,
+    "explanation": "The Num Lock key switches the function of the numeric keypad between number entry and directional arrows.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The modern keyboard typically has ----function keys.? (2012 Test One (1))",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct": 1,
+    "explanation": "Standard keyboards today typically have 12 function keys, labeled F1 through F12.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "To move to the beginning of a line of text, press the ----key.? (2012 Test One (1))",
+    "options": [
+      "A",
+      "Pageup",
+      "Enter",
+      "Home"
+    ],
+    "correct": 3,
+    "explanation": "The 'Home' key is a cursor control key that moves the cursor to the beginning of the line.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The ----determines how long you must hold down an alphanumeric key before the keyboard will repeat the character.? (2012 Test One (1))",
+    "options": [
+      "Strike rate",
+      "Repeat rate",
+      "Default rate",
+      "Threshold rate"
+    ],
+    "correct": 1,
+    "explanation": "The repeat rate (or keyboard repeat rate) is a setting that determines how quickly a character repeats when a key is held down.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The traditional mechanical mouse uses a ----to track the pointer position on the screen.? (2012 Test One (1))",
+    "options": [
+      "Light sensor",
+      "Wheel",
+      "Ball",
+      "Ruler"
+    ],
+    "correct": 2,
+    "explanation": "Traditional mechanical mice use a rubber ball that rolls as the mouse moves, and internal rollers track its movement.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "To access properties of an object, the mouse technique to use is ----.? (2012 Test One (1))",
+    "options": [
+      "Dragging",
+      "Dropping",
+      "Right-click",
+      "Shift-clicking"
+    ],
+    "correct": 2,
+    "explanation": "A right-click on an object typically opens a context menu that provides a list of actions or properties associated with that object.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The ----can be defined as an upside down mouse.? (2012 Test One (1))",
+    "options": [
+      "Trackpad",
+      "Trackball",
+      "Trackpoint",
+      "Trackwell"
+    ],
+    "correct": 1,
+    "explanation": "A trackball is an input device that contains a ball held within a socket. Users move the cursor by rolling the ball with their thumb, fingers, or palm.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The ----key will launch the start button.? (2012 Test One (1))",
+    "options": [
+      "Esc",
+      "Shift",
+      "Windows",
+      "Shortcut"
+    ],
+    "correct": 2,
+    "explanation": "The 'Windows' key on a keyboard is a shortcut that opens the Start Menu in the Microsoft Windows operating system.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "The wheel on a mouse can make it easier to ----.? (2012 Test One (1))",
+    "options": [
+      "Scroll through documents",
+      "Select objects",
+      "Open documents",
+      "Change volume"
+    ],
+    "correct": 0,
+    "explanation": "The scroll wheel on a mouse allows a user to move up and down through a document or web page with ease.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "Input",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In MS-dos 6.22, which part identifies the product uniquely? (2012 Test One (1))",
+    "options": [
+      "MS",
+      "Dos",
+      "Ms-dos",
+      "6.22"
+    ],
+    "correct": 3,
+    "explanation": "The version number '6.22' uniquely identifies this specific release of the MS-DOS product.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "MS-DOS",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "In MS-DOS what command will you use to display system date?? (2012 Test One (1))",
+    "options": [
+      "Date command",
+      "Ver command",
+      "Disk command",
+      "Format Command"
+    ],
+    "correct": 0,
+    "explanation": "The 'DATE' command in MS-DOS is used to display or change the system date.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "MS-DOS",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "While working with Ms-dos which command transfer a specific file from one disk to another? (2012 Test One (1))",
+    "options": [
+      "Copy",
+      "Diskcopy",
+      "Time",
+      "Rename"
+    ],
+    "correct": 0,
+    "explanation": "The 'COPY' command is used to copy one or more files from one location to another.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "MS-DOS",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "If you don't know the current time, which command will you use to display? (2012 Test One (1))",
+    "options": [
+      "Copy",
+      "Ver",
+      "Time",
+      "Format"
+    ],
+    "correct": 2,
+    "explanation": "The 'TIME' command in MS-DOS is used to display or change the current system time.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "MS-DOS",
+    "year": "2012",
+    "tag": "MCQ"
+  },
+  {
+    "q": "Which command divides the surface of the blank disk into sectors and assign a unique address to each one? (2012 Test One (1))",
+    "options": [
+      "Ver",
+      "Format",
+      "Fat",
+      "Chkdsk"
+    ],
+    "correct": 1,
+    "explanation": "The 'FORMAT' command prepares a storage device for initial use by creating a file system and partitioning the disk into sectors.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "MS-DOS",
+    "year": "2012",
+    "tag": "MCQ"
+  },
 
 
+
+  
 ];
