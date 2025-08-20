@@ -652,6 +652,7 @@ function displayMcqQuestion() {
   container.innerHTML = html;
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
+  readCurrentQuestion();
 }
 
 function checkMcqAnswer() {
@@ -666,15 +667,20 @@ function checkMcqAnswer() {
 
   const q = currentQuizData[currentQuestionIndex];
   const userAnswer = parseInt(selected.value);
+  let feedbackText = "";
 
   if (userAnswer === q.correct) {
     currentScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
+    feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
   }
 
-  resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+  const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+  resultDiv.innerHTML += explanationBox;
+  feedbackText += ` Explanation: ${q.explanation || ''}`;
 
   currentQuestionIndex++;
   const nextBtn = document.createElement("button");
@@ -683,6 +689,7 @@ function checkMcqAnswer() {
   resultDiv.appendChild(nextBtn);
 
   document.querySelectorAll('input[name="mcq"]').forEach(input => input.disabled = true);
+  readAnswerFeedback(feedbackText);
 }
 
 function showFinalMcqScore() {
@@ -749,12 +756,14 @@ function displayShortAnswerQuestion() {
 
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
+  readCurrentQuestion();
 }
 
 function checkShortAnswer() {
   const ans = document.getElementById("short-answer-input").value.trim().toLowerCase();
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "";
+  let feedbackText = "";
 
   if (!ans) {
     showAppNotification("Please type your answer!", "warning");
@@ -767,11 +776,15 @@ function checkShortAnswer() {
   if (matched) {
     currentScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
+    feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
   }
-
-  resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+  
+  const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+  resultDiv.innerHTML += explanationBox;
+  feedbackText += ` Explanation: ${q.explanation || ''}`;
 
   currentQuestionIndex++;
   const nextBtn = document.createElement("button");
@@ -780,6 +793,7 @@ function checkShortAnswer() {
   resultDiv.appendChild(nextBtn);
 
   document.getElementById("short-answer-input").disabled = true;
+  readAnswerFeedback(feedbackText);
 }
 
 function showFinalShortAnswerScore() {
@@ -875,12 +889,14 @@ function showEssayStep(index) {
   container.innerHTML = html;
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
+  readCurrentQuestion();
 }
 
 function checkEssayStep() {
   const selectedOption = document.querySelector('input[name="step-option"]:checked');
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "";
+  let feedbackText = "";
 
   if (!selectedOption) {
     showAppNotification("Please select an option!", "warning");
@@ -895,11 +911,15 @@ function checkEssayStep() {
   if (correct) {
     essayScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
+    feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
   }
-
-  resultDiv.innerHTML += `<div class="explanation-box">${step.explanation || ''}</div>`;
+  
+  const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
+  resultDiv.innerHTML += explanationBox;
+  feedbackText += ` Explanation: ${step.explanation || ''}`;
 
   const nextBtn = document.createElement("button");
   nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
@@ -914,6 +934,7 @@ function checkEssayStep() {
   resultDiv.appendChild(nextBtn);
 
   document.querySelectorAll('input[name="step-option"]').forEach(input => input.disabled = true);
+  readAnswerFeedback(feedbackText);
 }
 
 function showFinalEssayScore() {
@@ -1000,6 +1021,7 @@ function displayFlashcard() {
   `;
 
   container.scrollIntoView({ behavior: "smooth" });
+  readFlashcard();
 }
 
 function flipCard() {
@@ -1121,3 +1143,62 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// === TEXT-TO-SPEECH READER ===
+let utterance = null;
+
+function stopReading() {
+    if (utterance) {
+        window.speechSynthesis.cancel();
+        utterance = null;
+    }
+}
+
+function readText(text) {
+    stopReading();
+    utterance = new SpeechSynthesisUtterance(text);
+    // You can customize voice, pitch, and rate here if needed
+    // utterance.voice = window.speechSynthesis.getVoices().find(v => v.name === 'Google UK English Male');
+    // utterance.pitch = 1.2;
+    // utterance.rate = 1.1;
+    window.speechSynthesis.speak(utterance);
+}
+
+function readCurrentQuestion() {
+    stopReading();
+    let textToRead = "";
+    if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
+        const questionElement = document.querySelector('.question-box p');
+        const optionsElements = document.querySelectorAll('.options label');
+        if (questionElement) {
+            textToRead += questionElement.textContent.trim();
+        }
+        if (optionsElements.length > 0) {
+            textToRead += ". Options are: ";
+            optionsElements.forEach((label, i) => {
+                const optionText = label.textContent.replace(String.fromCharCode(65 + i) + ".", "").trim();
+                textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
+            });
+        }
+    } else if (currentQuizType === 'shortAnswer') {
+        const questionElement = document.querySelector('.question-box p');
+        if (questionElement) {
+            textToRead = questionElement.textContent.trim();
+        }
+    }
+    readText(textToRead);
+}
+
+function readAnswerFeedback(feedbackText) {
+    readText(feedbackText);
+}
+
+function readFlashcard() {
+    stopReading();
+    const card = currentFlashcards[currentCardIndex];
+    if (isCardFront) {
+        readText(`Front of card. ${card.front}`);
+    } else {
+        readText(`Back of card. ${card.back}`);
+    }
+}
