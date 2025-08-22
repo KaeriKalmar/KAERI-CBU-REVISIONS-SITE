@@ -98,7 +98,7 @@ const fullAccessCodes = {
     "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
     "CS110T3_MAIN005*X%",   "CS110T3_MAIN006^R&",
-      "CS110T3_MAIN008?D#",
+    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -126,7 +126,7 @@ const fullAccessCodes = {
 "All-terms@#<0",
 "Lizzy@",
 "becky @&_",
-"KULIKA🌟","REAL🌟JED",
+"KULIKA🌟",
 "FULL_UNLOCK_2025++",
 "ACCESS_GRANTED_GLOBAL$",
 "CBU_UNLOCK_CODE🔥",
@@ -141,8 +141,7 @@ const fullAccessCodes = {
 "UNLOCK_THIS_WORLD",
 "OPEN_ALL_LEVELS_📘",
 "ROOT_ACCESS_GRANTED!",
-"KAERI_GLOBAL_TERMS🔓",
-"CS110T3_MAIN007~S+"
+"KAERI_GLOBAL_TERMS🔓","REAL🌟JED"
   ],
   
   //all cs110
@@ -195,14 +194,13 @@ const fullAccessCodes = {
   ]
 };
 
-
 //code killing section
 const revokedAccessCodes = ["test111"];
 
 // NEW: This array will store codes that have been "globally" activated/sold.
 // You will manually add codes to this array AFTER they have been initially activated by a user.
-const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@",   
-      "BI110T1_MAIN004&Y!",
+const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@",   "BI110T1_MAIN002!Z*",
+    "BI110T1_MAIN003$K#",   "BI110T1_MAIN004&Y!",
     "BI110T1_MAIN005*X%",   "BI110T1_MAIN006^R&",
     "BI110T1_MAIN007~S+",   "BI110T1_MAIN008?D#",
     "BI110T1_MAIN009|Q$",   "BI110T1_MAIN010<>P",
@@ -213,7 +211,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T1_TEST019 |9",   "BI110T1_TEST020 <0",
     
     "test111",
-    
+    "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
     "BI110T2_MAIN003$K#",   "BI110T2_MAIN004&Y!",
     "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
     "BI110T2_MAIN007~S+",   "BI110T2_MAIN008?D#",
@@ -224,8 +222,8 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
     "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
     
-   "BI110T3_MAIN002!Z*",
-    
+    "BI110T3_MAIN001#A@",   "BI110T3_MAIN002!Z*",
+    "BI110T3_MAIN003$K#",   "BI110T3_MAIN004&Y!",
     "BI110T3_MAIN005*X%",   "BI110T3_MAIN006^R&",
     "BI110T3_MAIN007~S+",   "BI110T3_MAIN008?D#",
     "BI110T3_MAIN009|Q$",   "BI110T3_MAIN010<>P",
@@ -260,10 +258,10 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
   "CS110T2_EXTRA057 [7", "CS110T2_EXTRA058 ]8",
   "CS110T2_TEST059 {9", "CS110T2_TEST060 }0",
   
-    "CS110T3_MAIN002!Z*",
+    "CS110T3_MAIN001#A@",   "CS110T3_MAIN002!Z*",
     "CS110T3_MAIN003$K#",   "CS110T3_MAIN004&Y!",
- 
-  "CS110T3_MAIN008?D#",
+    "CS110T3_MAIN006^R&",
+    "CS110T3_MAIN007~S+",   "CS110T3_MAIN008?D#",
     "CS110T3_MAIN009|Q$",   "CS110T3_MAIN010<>P",
     "CS110T3_BONUS011 %1",  "CS110T3_BONUS012 @2",
     "CS110T3_BONUS013 #3",  "CS110T3_BONUS014 &4",
@@ -280,7 +278,11 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "CS110T1_BONUS015 *5",  "CS110T1_BONUS016 ^6",
     "CS110T1_EXTRA017 ~7",  "CS110T1_EXTRA018 ?8",
     "CS110T1_TEST019 |9",   "CS110T1_TEST020 <0","Lizzy@",
-    "CS110T3_MAIN005*X%","BI110_PRO_MODE"
+    "CS110T3_MAIN005*X%","REAL🌟JED",
+    
+    //added individually 
+    "BI110_TOTAL_ACCESS",
+    "FULL_UNLOCK_2025++","ACCESS_GRANTED_GLOBAL$","BI110_BUNDLE_PACK_123","SUPER_USER_XYZ_789","CBU_UNLOCK_CODE🔥","MASTER_KEY_∞_ENTRY","kk22kk4","BI110_PRO_MODE","CS110_PRO_PASS_ABC"
     
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
@@ -291,7 +293,6 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     // "MASTER_ACCESS_2025!@#$",
     // "CS110_PRO_PASS_ABC"
 ];
-
 
 //global used codes management
 let usedAccessCodes = [];
@@ -652,7 +653,6 @@ function displayMcqQuestion() {
   container.innerHTML = html;
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
-  readCurrentQuestion();
 }
 
 function checkMcqAnswer() {
@@ -667,20 +667,15 @@ function checkMcqAnswer() {
 
   const q = currentQuizData[currentQuestionIndex];
   const userAnswer = parseInt(selected.value);
-  let feedbackText = "";
 
   if (userAnswer === q.correct) {
     currentScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
-    feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
   }
 
-  const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
-  resultDiv.innerHTML += explanationBox;
-  feedbackText += ` Explanation: ${q.explanation || ''}`;
+  resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
 
   currentQuestionIndex++;
   const nextBtn = document.createElement("button");
@@ -689,7 +684,6 @@ function checkMcqAnswer() {
   resultDiv.appendChild(nextBtn);
 
   document.querySelectorAll('input[name="mcq"]').forEach(input => input.disabled = true);
-  readAnswerFeedback(feedbackText);
 }
 
 function showFinalMcqScore() {
@@ -756,14 +750,12 @@ function displayShortAnswerQuestion() {
 
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
-  readCurrentQuestion();
 }
 
 function checkShortAnswer() {
   const ans = document.getElementById("short-answer-input").value.trim().toLowerCase();
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "";
-  let feedbackText = "";
 
   if (!ans) {
     showAppNotification("Please type your answer!", "warning");
@@ -776,15 +768,11 @@ function checkShortAnswer() {
   if (matched) {
     currentScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
-    feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
   }
-  
-  const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
-  resultDiv.innerHTML += explanationBox;
-  feedbackText += ` Explanation: ${q.explanation || ''}`;
+
+  resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
 
   currentQuestionIndex++;
   const nextBtn = document.createElement("button");
@@ -793,7 +781,6 @@ function checkShortAnswer() {
   resultDiv.appendChild(nextBtn);
 
   document.getElementById("short-answer-input").disabled = true;
-  readAnswerFeedback(feedbackText);
 }
 
 function showFinalShortAnswerScore() {
@@ -889,14 +876,12 @@ function showEssayStep(index) {
   container.innerHTML = html;
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
-  readCurrentQuestion();
 }
 
 function checkEssayStep() {
   const selectedOption = document.querySelector('input[name="step-option"]:checked');
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "";
-  let feedbackText = "";
 
   if (!selectedOption) {
     showAppNotification("Please select an option!", "warning");
@@ -911,15 +896,11 @@ function checkEssayStep() {
   if (correct) {
     essayScore++;
     resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-    feedbackText = "Correct!";
   } else {
     resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
-    feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
   }
-  
-  const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
-  resultDiv.innerHTML += explanationBox;
-  feedbackText += ` Explanation: ${step.explanation || ''}`;
+
+  resultDiv.innerHTML += `<div class="explanation-box">${step.explanation || ''}</div>`;
 
   const nextBtn = document.createElement("button");
   nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
@@ -934,7 +915,6 @@ function checkEssayStep() {
   resultDiv.appendChild(nextBtn);
 
   document.querySelectorAll('input[name="step-option"]').forEach(input => input.disabled = true);
-  readAnswerFeedback(feedbackText);
 }
 
 function showFinalEssayScore() {
@@ -1021,7 +1001,6 @@ function displayFlashcard() {
   `;
 
   container.scrollIntoView({ behavior: "smooth" });
-  readFlashcard();
 }
 
 function flipCard() {
@@ -1143,62 +1122,3 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
-
-// === TEXT-TO-SPEECH READER ===
-let utterance = null;
-
-function stopReading() {
-    if (utterance) {
-        window.speechSynthesis.cancel();
-        utterance = null;
-    }
-}
-
-function readText(text) {
-    stopReading();
-    utterance = new SpeechSynthesisUtterance(text);
-    // You can customize voice, pitch, and rate here if needed
-    // utterance.voice = window.speechSynthesis.getVoices().find(v => v.name === 'Google UK English Male');
-    // utterance.pitch = 1.2;
-    // utterance.rate = 1.1;
-    window.speechSynthesis.speak(utterance);
-}
-
-function readCurrentQuestion() {
-    stopReading();
-    let textToRead = "";
-    if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
-        const questionElement = document.querySelector('.question-box p');
-        const optionsElements = document.querySelectorAll('.options label');
-        if (questionElement) {
-            textToRead += questionElement.textContent.trim();
-        }
-        if (optionsElements.length > 0) {
-            textToRead += ". Options are: ";
-            optionsElements.forEach((label, i) => {
-                const optionText = label.textContent.replace(String.fromCharCode(65 + i) + ".", "").trim();
-                textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
-            });
-        }
-    } else if (currentQuizType === 'shortAnswer') {
-        const questionElement = document.querySelector('.question-box p');
-        if (questionElement) {
-            textToRead = questionElement.textContent.trim();
-        }
-    }
-    readText(textToRead);
-}
-
-function readAnswerFeedback(feedbackText) {
-    readText(feedbackText);
-}
-
-function readFlashcard() {
-    stopReading();
-    const card = currentFlashcards[currentCardIndex];
-    if (isCardFront) {
-        readText(`Front of card. ${card.front}`);
-    } else {
-        readText(`Back of card. ${card.back}`);
-    }
-}
