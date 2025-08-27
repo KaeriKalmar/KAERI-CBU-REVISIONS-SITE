@@ -105,7 +105,7 @@ const fullAccessCodes = {
     "CS110T3_BONUS015 *5",  "CS110T3_BONUS016 ^6",
     "CS110T3_EXTRA017 ~7",  "CS110T3_EXTRA018 ?8",
     "CS110T3_TEST019 |9",   "CS110T3_TEST020 <0",
-     "CS110T1_MAIN002!Z*",
+     "CS110T1_MAIN001#A@",   "CS110T1_MAIN002!Z*",
     "CS110T1_MAIN003$K#",   "CS110T1_MAIN004&Y!",
     "CS110T1_MAIN005*X%",   "CS110T1_MAIN006^R&",
     "CS110T1_MAIN007~S+",   "CS110T1_MAIN008?D#",
@@ -166,7 +166,7 @@ const fullAccessCodes = {
 "CS110_PASSCARD_24/7",
 "CS110_ELITE_ACADEMY",
 "CS110_MASTERCLASS_✓",
-"CS110_PRO_PLUS_TERMS"
+
     
   ],
   
@@ -196,7 +196,7 @@ const fullAccessCodes = {
 };
 
 //code killing section
-const revokedAccessCodes = ["test111"];
+const revokedAccessCodes = ["test111","CS110T1_MAIN001#A@","BI110T2_MAIN004&Y!","BI110T3_MAIN005*X%"];
 
 // NEW: This array will store codes that have been "globally" activated/sold.
 // You will manually add codes to this array AFTER they have been initially activated by a user.
@@ -213,7 +213,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     
     "test111",
     "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
-   
+     "BI110T2_MAIN004&Y!",
     "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
     "BI110T2_MAIN007~S+",   "BI110T2_MAIN008?D#",
     "BI110T2_MAIN009|Q$",   "BI110T2_MAIN010<>P",
@@ -225,7 +225,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     
     "BI110T3_MAIN001#A@",   "BI110T3_MAIN002!Z*",
     "BI110T3_MAIN003$K#",   "BI110T3_MAIN004&Y!",
-    "BI110T3_MAIN006^R&",
+    "BI110T3_MAIN005*X%",   "BI110T3_MAIN006^R&",
     "BI110T3_MAIN007~S+",   "BI110T3_MAIN008?D#",
     "BI110T3_MAIN009|Q$",   "BI110T3_MAIN010<>P",
     "BI110T3_BONUS011 %1",  "BI110T3_BONUS012 @2",
@@ -269,7 +269,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "CS110T3_BONUS015 *5",  "CS110T3_BONUS016 ^6",
     "CS110T3_EXTRA017 ~7",  "CS110T3_EXTRA018 ?8",
     "CS110T3_TEST019 |9",   "CS110T3_TEST020 <0",
-     "CS110T1_MAIN002!Z*",
+     "CS110T1_MAIN001#A@",   "CS110T1_MAIN002!Z*",
     "CS110T1_MAIN003$K#",   "CS110T1_MAIN004&Y!",
     "CS110T1_MAIN005*X%",   "CS110T1_MAIN006^R&",
     "CS110T1_MAIN007~S+",   "CS110T1_MAIN008?D#",
