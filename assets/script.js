@@ -166,7 +166,7 @@ const fullAccessCodes = {
 "CS110_PASSCARD_24/7",
 "CS110_ELITE_ACADEMY",
 "CS110_MASTERCLASS_✓",
-
+"CS110_PRO_PLUS_TERMS"
     
   ],
   
@@ -284,7 +284,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     //added individually 
     "BI110_TOTAL_ACCESS",
     "FULL_UNLOCK_2025++","ACCESS_GRANTED_GLOBAL$","BI110_BUNDLE_PACK_123","SUPER_USER_XYZ_789","CBU_UNLOCK_CODE🔥","MASTER_KEY_∞_ENTRY","kk22kk4","BI110_PRO_MODE","CS110_PRO_PASS_ABC",
-    "BI110T2_MAIN003$K#",  "CS110T2_MAIN002!Z*","ElijA⚓H","All-terms@#<00"
+    "BI110T2_MAIN003$K#",  "CS110T2_MAIN002!Z*","ElijA⚓H","All-terms@#<00","CS110_PRO_PLUS_TERMS"
     
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
