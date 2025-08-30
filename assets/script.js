@@ -201,7 +201,7 @@ const revokedAccessCodes = ["test111","CS110T1_MAIN001#A@","BI110T2_MAIN004&Y!",
 // NEW: This array will store codes that have been "globally" activated/sold.
 // You will manually add codes to this array AFTER they have been initially activated by a user.
 const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@",   "BI110T1_MAIN002!Z*",
-    "BI110T1_MAIN003$K#",   "BI110T1_MAIN004&Y!",
+    "BI110T1_MAIN003$K#",   
     "BI110T1_MAIN005*X%",   "BI110T1_MAIN006^R&",
     "BI110T1_MAIN007~S+",   "BI110T1_MAIN008?D#",
     "BI110T1_MAIN009|Q$",   "BI110T1_MAIN010<>P",
@@ -214,7 +214,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     "test111",
     "BI110T2_MAIN001#A@",   "BI110T2_MAIN002!Z*",
      "BI110T2_MAIN004&Y!",
-    "BI110T2_MAIN005*X%",   "BI110T2_MAIN006^R&",
+    "BI110T2_MAIN005*X%",   
     "BI110T2_MAIN007~S+",   "BI110T2_MAIN008?D#",
     "BI110T2_MAIN009|Q$",   "BI110T2_MAIN010<>P",
     "BI110T2_BONUS011 %1",  "BI110T2_BONUS012 @2",
