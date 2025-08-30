@@ -8527,7 +8527,442 @@ const flashcards = {
     }
 ],
 
-
+  "MODULE 10: THE VIRUSES": [
+    {
+      "front": "What are viruses, and why aren't they considered living organisms by biologists?",
+      "back": "Viruses are 'parasitic' chemicals, which are segments of DNA or RNA wrapped in a protein coat. They are not considered alive because they cannot reproduce on their own; they require a host cell to replicate.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the origin of the word 'virus,' and what does 'virulent' mean?",
+      "back": "The word 'virus' comes from the Latin word for 'poison.' 'Virulent' describes an agent that is extremely infectious or poisonous.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the term for a single, infective viral particle?",
+      "back": "A single, infective viral particle is called a virion.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Who discovered the true nature of viruses and in what year?",
+      "back": "The document mentions this discovery took place in 1935, but does not specify the name of the person.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "How do viruses differ from cells?",
+      "back": "Viruses lack cytoplasm (protoplasm) and are therefore not considered cells. They also cannot reproduce independently.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the components of a virion?",
+      "back": "A virion is composed of a nucleic acid core and a protein coat.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the range of sizes for viruses?",
+      "back": "The smallest viruses are only about 17 nanometers in diameter, and the largest are up to 1000 nanometers in their greatest dimension.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the function of the protein coat, also known as the capsid?",
+      "back": "The protein coat (capsid) protects the viral genome and helps the virus to attach to the host cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What types of nucleic acid can a virus contain, and in what shapes?",
+      "back": "A virus contains a single nucleic acid, which can be either DNA or RNA. The DNA or RNA can be linear or circular.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the three major classification groups of viruses based on their genomes?",
+      "back": "The three major groups are DNA viruses, RNA viruses, and Retroviruses.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the overall structures that most viruses possess?",
+      "back": "Most viruses consist of a nucleic acid core surrounded by a protein coat (capsid). Some may also have an outer envelope.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the basic design of the icosahedron, and why is it considered an efficient structural arrangement?",
+      "back": "An icosahedron is a geometric shape with 20 triangular faces. It's an efficient arrangement because it allows for a large inner volume for the genome with a relatively small number of protein subunits.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the five main steps in the mechanism of a viral infection?",
+      "back": "The five steps are: attachment, penetration, replication, assembly, and release.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are some common human diseases caused by viruses?",
+      "back": "Some common diseases include AIDS, chickenpox, smallpox, rabies, influenza, poliomyelitis, and the common cold.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are some important viral diseases that affect plants?",
+      "back": "Important plant diseases include Tobacco Mosaic Virus (TMV), Maize Streak Virus (MSV), and Cassava mosaic disease.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Which viral disease affects wild animals, domesticated animals, and humans?",
+      "back": "Rabies is a viral disease that affects wild animals, domesticated animals, and humans.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the pathogen for smallpox, and when was the last recorded case?",
+      "back": "The pathogen for smallpox is the Vaccinia Virus, and the last recorded case was in 1977.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the causative agent for Cassava mosaic disease, and what is its genome type?",
+      "back": "The causative agent is the African Cassava Mosaic Virus (ACMV), and it is a DNA virus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the primary difference between the lytic and lysogenic cycles of a bacteriophage?",
+      "back": "The lytic cycle involves the virus taking over a host cell to produce new viruses, which then burst out and kill the host cell. The lysogenic cycle involves the viral genome integrating into the host's DNA, where it remains dormant and replicates along with the host cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What does AIDS stand for?",
+      "back": "AIDS stands for Acquired Immunodeficiency Syndrome.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the viral pathogen for AIDS, and what family and genus does it belong to?",
+      "back": "The pathogen is the Human Immunodeficiency Virus (HIV), which belongs to the family Retroviridae and the genus Lentivirus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What type of genome does HIV have?",
+      "back": "HIV is a single-stranded RNA virus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the name of the enzyme that HIV uses to synthesize a double strand of DNA from its RNA?",
+      "back": "The enzyme is called reverse transcriptase.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "How does the newly synthesized viral DNA from HIV get integrated into the host cell's DNA?",
+      "back": "The viral DNA, along with a viral enzyme called integrase, is transported into the nucleus where the integrase facilitates the insertion of the viral DNA into the host cell's DNA.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the name given to the viral DNA after it has been integrated into the host cell's genome?",
+      "back": "The integrated viral DNA is called a provirus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Once integrated, how does the provirus replicate?",
+      "back": "Once integrated, the provirus is replicated along with the host cell's DNA during normal cell division.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What type of cells does HIV primarily target, and what is the function of these cells?",
+      "back": "HIV primarily targets T-helper cells (CD4 cells) and macrophages, which are crucial components of the immune system.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Why can a person be a carrier of HIV for a long time without showing clinical symptoms?",
+      "back": "This is due to the long latency period, during which the virus is in the lysogenic phase. The virus replicates but does not immediately kill the host cells, making the carrier asymptomatic.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the primary cause of death in AIDS patients?",
+      "back": "The primary cause of death in AIDS patients is the opportunistic infections that their compromised immune system cannot fight off.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the two main ways HIV is transmitted?",
+      "back": "The document did not explicitly state this, but common knowledge indicates HIV is transmitted primarily through sexual contact and blood-to-blood contact (e.g., shared needles).",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the role of the gp120 protein and the CCR5 and CXCR4 receptors in the entry of HIV into macrophages and T-cells?",
+      "back": "The viral gp120 protein binds to the CD4 receptor on the host cell membrane. This binding causes a conformational change that allows the gp120 to then bind to either the CCR5 or CXCR4 co-receptors, which leads to the fusion of the viral envelope with the cell membrane and allows the virus to enter the cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the replication mechanism of a retrovirus?",
+      "back": "A retrovirus uses its own reverse transcriptase enzyme to produce DNA from its RNA genome. The new DNA is then integrated into the host cell's genome by an integrase enzyme, becoming a provirus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the role of the viral protein integrase?",
+      "back": "Integrase is a viral protein that facilitates the insertion of the newly synthesized viral DNA into the host cell's chromosomal DNA.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the approximate diameter of an HIV virus?",
+      "back": "The document states that the HIV virus is approximately 100 nm in diameter.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "When and where was AIDS first identified?",
+      "back": "AIDS was first identified in the United States in 1981.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "How is rabies transmitted, and what part of the body does it attack?",
+      "back": "Rabies is transmitted through the bite of an infected animal and attacks the central nervous system.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the symptoms of Maize Streak Virus (MSV)?",
+      "back": "Symptoms of MSV include stunted growth and a streaky yellowing of the maize leaves.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What are the three main types of viral symmetry?",
+      "back": "The three main types are helical, icosahedral, and complex.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is a major difference between DNA and RNA viruses?",
+      "back": "DNA viruses use the host cell's machinery to replicate their DNA, while RNA viruses may need to carry their own enzymes, like reverse transcriptase, to convert their RNA into DNA or to replicate their RNA genome.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is an enveloped virus, and how does it obtain its envelope?",
+      "back": "An enveloped virus has an outer lipid bilayer membrane. It acquires this envelope by budding from the host cell's membrane.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the Baltimore classification system?",
+      "back": "The Baltimore classification system groups viruses into seven classes based on their nucleic acid type (DNA or RNA), strandedness (single or double-stranded), and method of replication.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the difference between direct and indirect transmission of a virus?",
+      "back": "Direct transmission is the direct transfer of a virus from person to person through contact or droplets. Indirect transmission involves an intermediate agent, such as a contaminated object (fomite), food, water, or a vector like a mosquito.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Give an example of a viral disease transmitted by a vector.",
+      "back": "Diseases like dengue fever and West Nile virus are transmitted by insect vectors such as mosquitoes.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What happens during the uncoating step of the viral replication cycle?",
+      "back": "During uncoating, the viral capsid is degraded, releasing the viral genome (DNA or RNA) into the host cell's cytoplasm.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the primary function of viral attachment proteins?",
+      "back": "Attachment proteins on the viral surface bind to specific receptors on the host cell, which determines the host range of the virus.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "How do some enveloped viruses exit a host cell without immediately killing it?",
+      "back": "They exit through a process called budding, where they push through the cell's membrane, taking a piece of it with them to form their envelope. This often does not kill the host cell immediately.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is a latent viral infection?",
+      "back": "A latent infection is one where the virus remains dormant within the host cell's genome, replicating along with the host cell's DNA but not actively producing new viruses or causing symptoms. This is similar to the lysogenic cycle in bacteriophages.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the first step of the lytic cycle?",
+      "back": "The first step is **attachment**, where the bacteriophage uses its tail fibers to bind to specific receptors on the surface of the host bacterial cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What happens during the penetration stage of the lytic cycle?",
+      "back": "During **penetration**, the phage injects its nucleic acid (DNA or RNA) into the cytoplasm of the host bacterium.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Describe the biosynthesis/replication step of the lytic cycle.",
+      "back": "In **biosynthesis** and **replication**, the viral genome hijacks the host cell's machinery to synthesize new viral DNA and proteins, often degrading the host cell's own DNA in the process.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the purpose of the assembly (maturation) step of the lytic cycle?",
+      "back": "During **assembly** (or **maturation**), the newly synthesized viral components—capsids, nucleic acids, and tails—come together to form complete, new viral particles (virions).",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the final stage of the lytic cycle?",
+      "back": "The final stage is **lysis** and **release**. The newly assembled virions produce an enzyme that causes the host cell to burst, releasing the new viruses to infect other cells.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What happens during the integration step of the lysogenic cycle?",
+      "back": "During **integration**, the viral DNA, now called a prophage, is inserted into the host bacterium's chromosome.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "How does the virus replicate during the lysogenic cycle?",
+      "back": "The virus replicates passively. When the host cell divides, it copies its own chromosome, and in doing so, it also copies the integrated prophage DNA, passing it on to all daughter cells.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is induction in the lysogenic cycle?",
+      "back": "**Induction** is the process where a prophage excises itself from the host cell's genome, often triggered by environmental stress (like UV radiation), and re-enters the lytic cycle.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the first step of HIV replication?",
+      "back": "The first step is **binding**, where the HIV virus attaches to specific CD4 and co-receptors (CCR5 or CXCR4) on the surface of the host cell, typically a T-helper cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Describe the fusion step in the HIV life cycle.",
+      "back": "During **fusion**, the HIV envelope fuses with the host cell membrane, allowing the viral contents (RNA and enzymes) to enter the cytoplasm of the host cell.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the purpose of the reverse transcription step in HIV replication?",
+      "back": "In **reverse transcription**, the HIV enzyme reverse transcriptase converts the single-stranded viral RNA into a double-stranded viral DNA, which is a format compatible with the host cell's genome.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the role of the integrase enzyme in HIV replication?",
+      "back": "**Integrase** is an HIV enzyme that takes the newly synthesized viral DNA and inserts, or integrates, it into the host cell's own DNA.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What happens during the transcription and replication of the HIV provirus?",
+      "back": "Once integrated, the HIV provirus uses the host cell's machinery to create new viral RNA (which will become the genome for new viruses) and long chains of viral proteins.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "Describe the assembly step of the HIV life cycle.",
+      "back": "In **assembly**, the new viral RNA and long protein chains gather together at the host cell's membrane to begin forming an immature, non-infectious virus particle.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    },
+    {
+      "front": "What is the final step of HIV replication?",
+      "back": "The final step is **budding** and **maturation**. The immature virus buds out of the host cell, taking a piece of the cell membrane with it to form its envelope. Once outside, the HIV protease enzyme cuts the protein chains, making the virus infectious.",
+      "course": "BI110",
+      "term": "T2",
+      "topic": "VIRUSES"
+    }
+  ],
 
 
 
