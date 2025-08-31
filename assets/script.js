@@ -28,7 +28,8 @@ const fullAccessCodes = {
     "BI110T2_BONUS013 #3",  "BI110T2_BONUS014 &4",
     "BI110T2_BONUS015 *5",  "BI110T2_BONUS016 ^6",
     "BI110T2_EXTRA017 ~7",  "BI110T2_EXTRA018 ?8",
-    "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0"
+    "BI110T2_TEST019 |9",   "BI110T2_TEST020 <0",
+    "BI&CS110T2@"
    
    
   ],
@@ -67,7 +68,7 @@ const fullAccessCodes = {
   "CS110_T2": [
   
   //all used CS110T2_MAIN0
-    "CS110T2_MAIN002!Z*",
+     "CS110T2_MAIN002!Z*",
     "CS110T2_MAIN003$K#",   "CS110T2_MAIN004&Y!",
     "CS110T2_MAIN005*X%",   "CS110T2_MAIN006^R&",
     "CS110T2_MAIN007~S+",   "CS110T2_MAIN008?D#",
@@ -78,7 +79,7 @@ const fullAccessCodes = {
     "CS110T2_EXTRA017 ~7",  "CS110T2_EXTRA018 ?8",
     "CS110T2_TEST019 |9",   "CS110T2_TEST020 <0",
     
-  
+   "BI&CS110T2@",
     
     //new ones 
   "CS110T2_CORE041!A#", "CS110T2_CORE042#B$",
@@ -284,8 +285,7 @@ const alreadyActivatedCodes = ["MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "
     //added individually 
     "BI110_TOTAL_ACCESS",
     "FULL_UNLOCK_2025","ACCESS_GRANTED_GLOBAL$","BI110_BUNDLE_PACK_123","SUPER_USER_XYZ_789","CBU_UNLOCK_CODE🔥","MASTER_KEY_∞_ENTRY","kk22kk4","BI110_PRO_MODE","CS110_PRO_PASS_ABC",
-     "ElijA⚓H","All-terms@#<00","CS110_PRO_PLUS_TERMS","BI110_TEST_PASS_XYZ","Lizzy","CS110_ALL_YEARS_PASS","ULTRA_PASS_9999","BI110T2_MAIN005*X%","GLOBAL_MASTER_777🔐"
-    
+    "BI110T2_MAIN003$K#",  "ElijA⚓H","All-terms@#<00","CS110_PRO_PLUS_TERMS","BI110_TEST_PASS_XYZ","Lizzy","CS110_ALL_YEARS_PASS","ULTRA_PASS_9999","BI110T2_MAIN005*X%","GLOBAL_MASTER_777🔐","CS110T2_MAIN002!Z*","BI110T2_MAIN003$K#"   
   
     // Example: If "CS110T2_MAIN001#A@" was sold and activated by someone,
     // and you now want to prevent new people from using it, you'd add it here.
