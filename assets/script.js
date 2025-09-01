@@ -344,7 +344,8 @@ let currentTerm = null;
 let currentTermKey = null;
 
 
-
+// NEW: TTS toggle variable
+let ttsEnabled = false;
 
 
 function denyAccess(message, codeToClear = null) {
@@ -411,6 +412,10 @@ window.onload = () => {
 
     }
 
+    
+    // NEW: Initialize TTS preference from localStorage
+    ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
+    updateTtsButtonText();
 
 
     try {
@@ -766,6 +771,20 @@ window.onload = () => {
         }
 
     }
+    
+    // Call the new streak tracker after access is determined
+    updateStreak();
+
+    // NEW: Add a TTS toggle button to the UI
+    const modeButtonsDiv = document.querySelector('.mode-buttons');
+    if (modeButtonsDiv) {
+        const ttsButton = document.createElement('button');
+        ttsButton.id = 'tts-toggle-button';
+        ttsButton.onclick = toggleTTS;
+        modeButtonsDiv.appendChild(ttsButton);
+        updateTtsButtonText();
+    }
+
 
 };
 
@@ -933,8 +952,8 @@ function renderQuiz() {
 
 
 
-  let q = hasFullAccess ? shuffle([...currentMcqData]).slice(0, 10) : shuffle([...currentMcqData]).slice(0, 10);
-
+  // OLD: let q = hasFullAccess ? shuffle([...currentMcqData]).slice(0, 10) : shuffle([...currentMcqData]).slice(0, 10);
+  let q = hasFullAccess ? getAdaptiveQuizData() : shuffle([...currentMcqData]).slice(0, 10);
   currentQuizData = q;
 
   currentQuizType = 'mcq';
@@ -974,7 +993,10 @@ function displayMcqQuestion() {
 
 
   if (!q) return showFinalMcqScore();
-
+    
+    // Check if the current question is bookmarked
+    const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    const isBookmarked = bookmarks.some(b => b.q === q.q);
 
 
   let html = `
@@ -998,18 +1020,15 @@ function displayMcqQuestion() {
     html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
 
   });
-
-  html += `
-
+    const bookmarkButtonText = isBookmarked ? "⭐ Bookmarked" : "⭐ Bookmark";
+    const bookmarkButton = `<button onclick="toggleBookmark(currentQuizData[currentQuestionIndex])" class="bookmark-btn">${bookmarkButtonText}</button>`;
+    
+    html += `
       </div>
-
       <button onclick="checkMcqAnswer()">✅ Submit</button>
-
+      ${bookmarkButton}
     </div>
-
   `;
-
-
 
   container.innerHTML = html;
 
@@ -1109,7 +1128,9 @@ function showFinalMcqScore() {
 
   const percent = Math.round((currentScore / currentQuizData.length) * 100);
 
-
+  // Store last quiz score for adaptive quiz feature
+  localStorage.setItem("lastQuizScore", percent);
+  checkAchievements(percent);
 
   let comment = "❌ Keep practicing!";
 
@@ -2005,6 +2026,21 @@ document.addEventListener("keydown", (e) => {
 
 let utterance = null;
 
+// NEW: Helper function to update the TTS button text
+function updateTtsButtonText() {
+    const ttsButton = document.getElementById('tts-toggle-button');
+    if (ttsButton) {
+        ttsButton.textContent = ttsEnabled ? '🔊 Turn Reader Off' : '🔇 Turn Reader On';
+    }
+}
+// NEW: TTS toggle function
+function toggleTTS() {
+    ttsEnabled = !ttsEnabled;
+    localStorage.setItem("ttsEnabled", ttsEnabled);
+    stopReading();
+    updateTtsButtonText();
+    showAppNotification(ttsEnabled ? "🔊 Reader is now ON." : "🔇 Reader is now OFF.");
+}
 
 
 function stopReading() {
@@ -2022,9 +2058,8 @@ function stopReading() {
 
 
 function readText(text) {
-
+    if (!ttsEnabled) return;
     stopReading();
-
     utterance = new SpeechSynthesisUtterance(text);
 
     // You can customize voice, pitch, and rate here if needed
@@ -2042,6 +2077,8 @@ function readText(text) {
 
 
 function readCurrentQuestion() {
+
+    if (!ttsEnabled) return;
 
     stopReading();
 
@@ -2093,6 +2130,8 @@ function readCurrentQuestion() {
 
 function readAnswerFeedback(feedbackText) {
 
+    if (!ttsEnabled) return;
+
     readText(feedbackText);
 
 }
@@ -2100,6 +2139,8 @@ function readAnswerFeedback(feedbackText) {
 
 
 function readFlashcard() {
+
+    if (!ttsEnabled) return;
 
     stopReading();
 
@@ -2116,3 +2157,147 @@ function readFlashcard() {
     }
 
 }
+
+
+// === NEW FEATURES ===
+
+// Daily Streak Tracker
+function updateStreak() {
+    const today = new Date().toDateString();
+    const lastStudyDay = localStorage.getItem('lastStudyDay');
+    let streak = parseInt(localStorage.getItem('streak') || '0', 10);
+
+    if (lastStudyDay === today) {
+        // Same day, do nothing.
+    } else {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        
+        if (lastStudyDay === yesterday.toDateString()) {
+            streak++;
+        } else {
+            streak = 1;
+        }
+        
+        localStorage.setItem('streak', streak);
+        localStorage.setItem('lastStudyDay', today);
+    }
+    
+    showAppNotification(`🔥 Current Streak: ${streak} day(s)`);
+}
+
+// Adaptive MCQ Quiz
+function getAdaptiveQuizData() {
+    const lastQuizScore = parseInt(localStorage.getItem("lastQuizScore") || "0");
+    let N = 10;
+    
+    if (lastQuizScore >= 80) {
+        N = 15;
+    } else if (lastQuizScore < 50) {
+        N = 7;
+    }
+    
+    return shuffle([...currentMcqData]).slice(0, N);
+}
+
+// Achievements + Confetti
+function checkAchievements(scorePercent) {
+    if (scorePercent >= 100) {
+        showAppNotification("🏅 Perfect Score Achievement Unlocked!", "success", 10000);
+        triggerConfetti();
+    } else if (scorePercent >= 90) {
+        showAppNotification("🥇 Gold Medal Achievement Unlocked!", "success");
+    } else if (scorePercent >= 70) {
+        showAppNotification("🥈 Silver Medal Achievement Unlocked!", "success");
+    } else if (scorePercent >= 50) {
+        showAppNotification("🥉 Bronze Medal Achievement Unlocked!", "success");
+    }
+}
+
+function triggerConfetti() {
+    const confettiContainer = document.createElement('div');
+    confettiContainer.className = 'confetti-container';
+    document.body.appendChild(confettiContainer);
+
+    const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722'];
+    const emojis = ['🎉', '🎊', '✨', '⚡️', '🌟', '💫', '💥'];
+
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        confettiContainer.appendChild(confetti);
+
+        const emoji = document.createElement('div');
+        emoji.className = 'confetti-emoji';
+        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emoji.style.left = Math.random() * 100 + 'vw';
+        emoji.style.animationDelay = Math.random() * 2 + 's';
+        confettiContainer.appendChild(emoji);
+    }
+    
+    setTimeout(() => {
+      confettiContainer.remove();
+    }, 5000); // Remove confetti after animation
+}
+
+// Bookmark Questions
+function toggleBookmark(q) {
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+    const existingIndex = bookmarks.findIndex(b => b.q === q.q);
+
+    if (existingIndex > -1) {
+        // Remove bookmark
+        bookmarks.splice(existingIndex, 1);
+        showAppNotification("Bookmark removed.", "info");
+    } else {
+        // Add bookmark
+        bookmarks.push(q);
+        showAppNotification("Question bookmarked!", "success");
+    }
+
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    displayMcqQuestion(); // Re-render to update button state
+}
+
+
+/* CONFETTI CSS - paste into your style.css 
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    animation: fall 3s ease-in-out infinite;
+}
+
+.confetti-emoji {
+    position: absolute;
+    font-size: 20px;
+    animation: fall 3s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+*/

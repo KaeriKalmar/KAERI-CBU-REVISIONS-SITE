@@ -8,6 +8,7 @@ body {
   padding-bottom: 30px; /* Keep existing bottom padding */
   color: #e0e6ed;
   line-height: 1.6;
+  overflow-y: auto;
 }
 
 /* New fixed header styles */
@@ -306,6 +307,7 @@ textarea:focus {
     max-width: 500px; /* Max width for flashcard */
     height: 300px; /* Fixed height for flashcard */
     margin: 30px auto;
+    overflow: hidden; /* ✅ add this! */
 }
 
 .flashcard {
@@ -336,6 +338,10 @@ textarea:focus {
     border-radius: 12px;
     font-size: 1.3em;
     text-align: center;
+    overflow: auto; /* ✅ if face content overflows, scroll inside it */
+    overflow-y: auto; /* ✅ allow vertical scroll */
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .card-front {
@@ -347,6 +353,7 @@ textarea:focus {
     background-color: #4a5460;
     color: #e0e6ed;
     transform: rotateY(180deg);
+    opacity: 0;
 }
 
 .flip-button {
@@ -582,6 +589,18 @@ textarea:focus {
   .flashcard {
     margin: 15px auto; /* Reduce margin */
   }
+
+  .mode-buttons button,
+  .flashcard-topic-buttons button,
+  .flashcard-nav-buttons button {
+    font-size: 1em;
+    padding: 14px 18px;
+  }
+
+  .card-face {
+    font-size: 1em;
+    line-height: 1.4;
+  }
 }
     
     /* Burner mode button styles */
@@ -684,34 +703,9 @@ textarea:focus {
   margin: 30px auto;
   overflow: hidden; /* ✅ add this! */
 }
-.card-face {
-  overflow: auto; /* ✅ if face content overflows, scroll inside it */
-}
 .flashcard-wrapper {
   /* your other styles... */
   overflow: hidden; /* ✅ Must-have! */
-}
-
-.card-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 12px;
-  font-size: 1.3em;
-  text-align: left;
-  overflow-y: auto; /* ✅ allow vertical scroll */
-  display: block; /* ✅ better for text flow */
-}
-
-.flashcard {
-  transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
-}
-
-.flashcard.back-active {
-  transform: rotateY(180deg);
 }
 
 .flashcard .card-face {
@@ -725,49 +719,78 @@ textarea:focus {
 .flashcard.back-active .card-back {
   opacity: 1;
 }
-.card-back {
-  opacity: 0;
-  transform: rotateY(180deg);
-}
-@media (max-width: 480px) {
-  .mode-buttons button,
-  .flashcard-topic-buttons button,
-  .flashcard-nav-buttons button {
-    font-size: 1em;
-    padding: 14px 18px;
-  }
 
-  .card-face {
-    font-size: 1em;
-    line-height: 1.4;
-  }
-}
+CONFETTI CSS - paste into your style.css 
 
-.card-face {
-  /* ...existing properties... */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.confetti-container {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1000;
+
 }
 
 
-body {
-  overflow-y: auto;
+
+.confetti {
+
+    position: absolute;
+
+    width: 10px;
+
+    height: 10px;
+
+    background-color: #f44336;
+
+    animation: fall 3s ease-in-out infinite;
+
 }
 
-.flashcard-wrapper {
-  width: 100%;
-  max-width: 500px;
-  margin: 30px auto;
+
+
+.confetti-emoji {
+
+    position: absolute;
+
+    font-size: 20px;
+
+    animation: fall 3s ease-in-out infinite;
+
+    opacity: 0;
+
 }
 
-.card-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  padding: 20px;
+
+
+@keyframes fall {
+
+    0% {
+
+        transform: translateY(-100vh) rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: translateY(100vh) rotate(720deg);
+
+        opacity: 0;
+
+    }
+
 }
+
