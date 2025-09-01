@@ -9817,12 +9817,570 @@ const flashcards = {
     }
 ],
 
+  "MODULE 12: UNDERSTANDING MICROSOFT EXCEL": [
+    {
+      "front": "What are the three main components of the Excel ribbon?",
+      "back": "The tabs (e.g., Home, Insert), the groups (e.g., Font, Alignment), and the commands (e.g., Bold, Italic).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "Explain the difference between a workbook and a worksheet.",
+      "back": "A workbook is the entire Excel file. A worksheet is a single page within the workbook.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "How do you navigate quickly between worksheets without using the mouse?",
+      "back": "You can use the keyboard shortcuts Ctrl + Page Down to go to the next sheet and Ctrl + Page Up to go to the previous sheet.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "What is the purpose of the Formula Bar?",
+      "back": "It displays and allows you to edit the data or formula of the active cell.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "How do you select a large range of cells efficiently?",
+      "back": "Click the first cell, hold down the Shift key, and then click the last cell to select all cells in a rectangular range.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "What is the function of the Name Box?",
+      "back": "It shows the address of the active cell or a named range. You can also use it to quickly jump to a specific cell.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "Explain what Freeze Panes does.",
+      "back": "It locks rows and/or columns in place so they remain visible while you scroll through the rest of the worksheet.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "How do you hide or unhide rows and columns?",
+      "back": "Select the row/column headers, right-click, and choose Hide. To unhide, select the rows/columns on either side of the hidden ones, right-click, and select Unhide.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "What is the Quick Access Toolbar used for?",
+      "back": "It's a customizable toolbar that provides one-click access to frequently used commands.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "Explain the difference between absolute, relative, and mixed references.",
+      "back": "Relative (A1) changes when a formula is copied. Absolute ($A$1) stays fixed. Mixed ($A1 or A$1) fixes either the column or the row.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Interface & Navigation"
+    },
+    {
+      "front": "What are the keyboard shortcuts for opening, saving, and \"save as\" a workbook?",
+      "back": "Open is Ctrl + O, Save is Ctrl + S, and Save As is F12.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "File Handling & Workbook Management"
+    },
+    {
+      "front": "What is the difference between an .xls and a .xlsx file?",
+      "back": ".xls is the older Excel format (pre-2007). .xlsx is the current, more stable, and more robust XML-based format.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "File Handling & Workbook Management"
+    },
+    {
+      "front": "How do you recover unsaved work?",
+      "back": "Go to File > Info > Manage Workbook > Recover Unsaved Workbooks.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "File Handling & Workbook Management"
+    },
+    {
+      "front": "How do you rename and move worksheets?",
+      "back": "You can rename a sheet by double-clicking its tab. You can move a sheet by clicking and dragging its tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "File Handling & Workbook Management"
+    },
+    {
+      "front": "What is the purpose of workbook protection?",
+      "back": "It prevents users from changing the structure of the workbook, such as adding, deleting, or renaming worksheets.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "File Handling & Workbook Management"
+    },
+    {
+      "front": "How do you format numbers as currency or percentages?",
+      "back": "Select the cells and use the number formatting options in the Number group on the Home tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "Explain the difference between Bold, Italic, and Underline.",
+      "back": "Bold makes text heavier, Italic makes text slanted, and Underline places a line beneath the text.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How do you apply conditional formatting?",
+      "back": "Go to the Home tab and click Conditional Formatting to apply rules that change a cell's format based on its value.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "What is Wrap Text and why is it useful?",
+      "back": "Wrap Text makes all content visible by wrapping it to fit within a cell's column width. It's useful for long text entries.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How do you merge and center cells?",
+      "back": "Select the cells you want to combine and click Merge & Center on the Home tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How do you adjust column width and row height?",
+      "back": "You can click and drag the line between the column or row headers, or double-click to auto-fit to the content.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How can you change font color, size, and style?",
+      "back": "Use the options in the Font group on the Home tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "What is the difference between cell borders and fill color?",
+      "back": "Cell borders are lines around a cell. Fill color is the background color of the cell.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How do you format the header row professionally?",
+      "back": "Make it visually distinct by using bold text, a unique fill color, and a bottom border.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "How do you apply number formatting to show exactly two decimal places?",
+      "back": "Use the Increase/Decrease Decimal buttons on the Home tab or set the format in the 'Format Cells' dialog box.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formatting Cells & Text"
+    },
+    {
+      "front": "What is the difference between a formula and a function?",
+      "back": "A formula is any calculation you create (e.g., =A1+A2). A function is a pre-defined formula (e.g., =SUM()).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How does SUM() work?",
+      "back": "The SUM() function adds up a range of numbers.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How does AVERAGE() differ from MEDIAN()?",
+      "back": "AVERAGE() calculates the mean and is affected by outliers. MEDIAN() finds the middle value and is not affected by outliers.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Explain how the IF() function works.",
+      "back": "It checks if a condition is true or false and returns one value if true and another if false.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you use nested IF statements?",
+      "back": "A nested IF is an IF function inside another IF function, allowing you to test for more than two outcomes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Explain VLOOKUP() and give a practical example.",
+      "back": "VLOOKUP() searches for a value in the first column of a vertical table and returns a corresponding value. Example: Looking up a product's price from its product ID.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "When would you use HLOOKUP() instead of VLOOKUP()?",
+      "back": "You would use HLOOKUP() when your data is arranged horizontally, with the lookup values in the top row.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do INDEX() and MATCH() work together?",
+      "back": "MATCH() finds the position of an item in a list, and INDEX() retrieves a value from a table at a given position.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do cell references affect formulas when you copy them?",
+      "back": "Relative references change, absolute ones don't, and mixed ones are a combination of both.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you calculate percentages in Excel?",
+      "back": "Divide the part by the whole (e.g., =B2/B10) and format the cell as a percentage.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How does ROUND() differ from ROUNDUP()?",
+      "back": "ROUND() rounds to the nearest number based on standard rules. ROUNDUP() always rounds a number up, away from zero.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "What is the purpose of IFERROR()?",
+      "back": "It prevents a formula from displaying an error message by showing a specified value instead.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Explain the difference between COUNTIF() and COUNTIFS().",
+      "back": "COUNTIF() counts cells that meet one criterion. COUNTIFS() counts cells that meet multiple criteria.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Explain the difference between SUMIFS() and AVERAGEIFS().",
+      "back": "SUMIFS() adds up numbers that meet multiple criteria. AVERAGEIFS() finds the average of numbers that meet multiple criteria.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you use LEFT(), RIGHT(), and MID()?",
+      "back": "These functions extract a specified number of characters from a text string from the left, right, or middle, respectively.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do UPPER(), LOWER(), and PROPER() work?",
+      "back": "These functions convert text to UPPERCASE, lowercase, or Proper Case (first letter of each word capitalized).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "What is TRIM() used for?",
+      "back": "TRIM() removes extra spaces from text, including leading, trailing, and duplicate spaces.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "What is the purpose of CONCATENATE() or TEXTJOIN()?",
+      "back": "They are used to join multiple text strings together. TEXTJOIN() is more efficient as it can use a delimiter.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you use formulas to calculate gross sales and profit?",
+      "back": "Gross Sales is Price * Quantity. Profit is Revenue - Costs.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Why is it important to understand how copying formulas across rows or columns works?",
+      "back": "Understanding this helps you ensure your formulas produce the correct results, especially with relative and absolute references.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you audit a formula to check for errors?",
+      "back": "You can use the Trace Precedents and Evaluate Formula tools on the Formulas tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How can blank cells affect calculations?",
+      "back": "Blank cells are treated as zero in most numerical calculations, which can lead to incorrect results if not intended.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How does SUBTOTAL() work for filtered data?",
+      "back": "SUBTOTAL() only calculates values for the visible cells in a filtered list. Standard functions like SUM() calculate all cells, including the hidden ones.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "What is the difference between manual and automatic calculation modes?",
+      "back": "Automatic recalculates formulas instantly after every change. Manual only recalculates when the user triggers it (e.g., by pressing F9).",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "Why must formulas always reference the correct cells?",
+      "back": "Referencing the correct cells is fundamental for a formula to produce an accurate and logical result.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Formulas & Functions"
+    },
+    {
+      "front": "How do you sort data in ascending or descending order?",
+      "back": "Select the data and use the A-Z or Z-A sort buttons on the Data tab.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do multi-level sorts work?",
+      "back": "A multi-level sort sorts data by a primary column and then by a secondary column to resolve ties.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do filters help analyze data quickly?",
+      "back": "Filters temporarily hide rows that don't meet specific criteria, allowing you to focus on a subset of data.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "What is the key difference between sorting and filtering?",
+      "back": "Sorting rearranges the order of all data. Filtering hides some data but keeps the remaining data in its original order.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do you clear a filter?",
+      "back": "Click the filter icon in the column header and select Clear Filter.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "What is an Excel Table and why is it useful?",
+      "back": "An Excel Table is a structured range of data that automatically handles tasks like applying formulas and adding new rows.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do you add a total row in a Table?",
+      "back": "Select any cell in the table, go to the Table Design tab, and check the Total Row box.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do calculated columns in a Table work?",
+      "back": "When you enter a formula in one cell of a new column, the formula is automatically populated for all other rows.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "Explain structured references in an Excel Table.",
+      "back": "Structured references use column names instead of cell addresses (e.g., [@Sales]), making formulas easier to read and automatically adaptable.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "How do slicers improve Table interactivity?",
+      "back": "Slicers provide visual buttons for filtering data in a Table, offering a more user-friendly experience than standard filter menus.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Sorting, Filtering & Tables"
+    },
+    {
+      "front": "What is the main purpose of a bar chart, a line chart, and a pie chart?",
+      "back": "A bar chart compares values. A line chart shows trends over time. A pie chart shows proportions of a whole.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "How do you add data labels to a chart?",
+      "back": "Select the chart, click the Chart Elements button (the green plus sign), and check the box for Data Labels.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "What is the purpose of a trendline?",
+      "back": "A trendline shows the general direction or trend of the data, which is useful for forecasting.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "How do you edit chart titles and axis labels?",
+      "back": "You can click directly on the chart title or axis label and type the new text.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "What is the difference between stacked and clustered charts?",
+      "back": "Clustered charts place bars side-by-side to compare values. Stacked charts place bars on top of each other to show how parts contribute to a total.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "How can charts help identify trends in data?",
+      "back": "By visually representing data, charts make it easy to see patterns, such as periods of growth or decline.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "How do charts update when data changes?",
+      "back": "Charts are linked to their source data and update automatically whenever the data changes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "What is a combination chart?",
+      "back": "A combination chart uses two or more chart types (e.g., a column chart with a line chart) to visualize different types of data on the same graph.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      
+      "front": "How do you format chart colors and styles?",
+      "back": "Select the chart and use the options on the Chart Design and Format tabs to change colors and styles.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "How do charts improve the presentation of financial data?",
+      "back": "They simplify complex financial data, making it more engaging and easier to understand than a large table of numbers.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Charts & Data Visualization"
+    },
+    {
+      "front": "What is data validation used for?",
+      "back": "Data validation restricts the type of data a user can enter into a cell, ensuring accuracy and consistency.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Data Validation & Protection"
+    },
+    {
+      "front": "How do you create a drop-down list using data validation?",
+      "back": "Go to the Data tab, click Data Validation, and in the 'Allow' dropdown, select 'List.'",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Data Validation & Protection"
+    },
+    {
+      "front": "What is the difference between an input message and an error alert in data validation?",
+      "back": "An input message is a message that appears when a cell is selected, giving instructions. An error alert is a message that appears when an invalid entry is made.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Data Validation & Protection"
+    },
+    {
+      "front": "How do you protect a worksheet?",
+      "back": "Go to the Review tab and click Protect Sheet. You can set a password to prevent changes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Data Validation & Protection"
+    },
+    {
+      "front": "How do you allow editing only in specific cells while the sheet is protected?",
+      "back": "First, unlock the specific cells (Format Cells > Protection), and then apply sheet protection.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Data Validation & Protection"
+    },
+    {
+      "front": "What is a practical use case for each type of cell reference (relative, absolute, mixed)?",
+      "back": "Relative for copying a formula down a column. Absolute for referencing a constant value. Mixed for creating a multiplication grid.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Advanced / Practical Concepts"
+    },
+    {
+      "front": "How can you handle blank or invalid data using formulas?",
+      "back": "Use functions like IFERROR() to handle errors or an IF() statement to check for blank cells before performing a calculation.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Advanced / Practical Concepts"
+    },
+    {
+      "front": "What is the benefit of using dynamic formulas?",
+      "back": "Dynamic formulas, often used in Excel Tables, automatically adjust to include new data, saving you from manually updating your calculations.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Advanced / Practical Concepts"
+    },
+    {
+      "front": "Why is consistent formatting (e.g., number vs. text) critical for calculations?",
+      "back": "Formulas treat different formats differently. If a number is formatted as text, a sum function will ignore it, leading to an incorrect result.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Advanced / Practical Concepts"
+    },
+    {
+      "front": "How does understanding Excel theory reduce mistakes in a practical exam?",
+      "back": "Understanding the theory helps you choose the correct tool for the job, troubleshoot errors, and avoid common mistakes.",
+      "course": "CS110",
+      "term": "T3",
+      "topic": "Advanced / Practical Concepts"
+    }
+  ]
 
 
-  
-  
-  
-  
-  
- 
-  };
+
+ };
