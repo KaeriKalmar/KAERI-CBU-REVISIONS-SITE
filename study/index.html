@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Universal Quiz App | Kaeri Kalmar</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .back-button {
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .back-button:hover {
+      background-color: #5a6268;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div id="app-notification">
+    <span class="notification-message"></span>
+    <button class="close-btn">&times;</button>
+  </div>
+
+  <div id="fixed-header">
+    <div id="mode-banner"></div>
+    <div id="progress-container">
+      <div id="progress-fill"></div>
+    </div>
+    <div id="progress-text">Progress: 0 of 0</div>
+  </div>
+
+  <div id="price-banner">Price: Kxx</div>
+
+  <div class="quiz-container">
+    <h1 id="header-title">[COURSE] [TERM] Study Materials</h1>
+    <p class="announcement" id="announcement"></p>
+    <p class="price-list" id="price-list"></p>
+
+    <div class="mode-buttons">
+      <button onclick="renderQuiz()">📋 Multiple Choice</button>
+      <button onclick="renderShortAnswers()">✍️ Short Answer</button>
+      <button onclick="renderEssaySimulation()">📝 Essay Simulation</button>
+      <button onclick="renderFlashcardTopics()">🃏 Flashcards</button>
+    </div>
+
+    <div id="quiz-form"></div>
+    <div id="result"></div>
+
+    <a href="../index.html" class="back-button">⬅️ Back to Course Selection</a>
+  </div>
+
+  <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">
+    💬
+  </a>
+
+  <div class="whatsapp-buttons">
+    <a href="https://chat.whatsapp.com/KO1LlKxxCrW20X98RB4xap" target="_blank">
+      <button>Join for the updates 📢</button>
+    </a>
+  </div>
+
+  <!-- Scripts: Update paths as needed -->
+  <script src="../assets/mcqDa.js"></script>
+  <script src="../assets/shortDa.js"></script>
+  <script src="../assets/essayDa.js"></script>
+  <script src="../assets/flashcards.js"></script>
+  <script src="../assets/script.js"></script>
+
+  <script>
+    // Utility to get query params
+    function getQueryParams() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return {
+        course: urlParams.get('course') || 'BI110',
+        term: urlParams.get('term') || 'T1'
+      };
+    }
+
+    // Dynamic content by course/term
+    const config = {
+      BI110: {
+        T1: {
+          price: 15,
+          title: 'BI110 Term 1 Study Materials',
+          announcement: `<strong>Important:</strong> Each full course (with all its terms) is now only K30 — this offer is to make it easier for everyone to access the site and prepare for BI110 and CS110.`,
+          priceList: `💰 BI110 Term 1: <strong>K15</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        },
+        T2: {
+          price: 15,
+          title: 'BI110 Term 2 Study Materials',
+          announcement: `<strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.`,
+          priceList: `💰 BI110 Term 2: <strong>K15</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        },
+        T3: {
+          price: 20,
+          title: 'BI110 Term 3 Study Materials',
+          announcement: `<strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.`,
+          priceList: `💰 BI110 Term 3: <strong>K20</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        }
+      },
+      CS110: {
+        T1: {
+          price: 15,
+          title: 'CS110 Term 1 Study Materials',
+          announcement: `<strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.`,
+          priceList: `💰 CS110 Term 1: <strong>K15</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        },
+        T2: {
+          price: 15,
+          title: 'CS110 Term 2 Study Materials',
+          announcement: `<strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.`,
+          priceList: `💰 CS110 Term 2: <strong>K15</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        },
+        T3: {
+          price: 20,
+          title: 'CS110 Term 3 Study Materials',
+          announcement: `<strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.`,
+          priceList: `💰 CS110 Term 3: <strong>K20</strong><br>
+            To MTN 0961005406 or Airtel 0974784161<br>
+            Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+            📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+            ✅ Your support keeps the app free & online.`
+        }
+      }
+    };
+
+    // Apply dynamic settings
+    window.addEventListener('DOMContentLoaded', () => {
+      const { course, term } = getQueryParams();
+      const courseConfig = config[course] && config[course][term] ? config[course][term] : config['BI110']['T1'];
+
+      document.title = courseConfig.title;
+      document.getElementById('page-title').textContent = courseConfig.title;
+      document.getElementById('header-title').textContent = courseConfig.title;
+      document.getElementById('price-banner').textContent = `Price: K${courseConfig.price}`;
+      document.getElementById('announcement').innerHTML = courseConfig.announcement;
+      document.getElementById('price-list').innerHTML = courseConfig.priceList;
+
+      // Optionally, pass course/term to JS global for data loading
+      window.selectedCourse = course;
+      window.selectedTerm = term;
+      // If your quiz data files differ per course/term, update your JS to use these globals!
+    });
+  </script>
+</body>
+</html>
