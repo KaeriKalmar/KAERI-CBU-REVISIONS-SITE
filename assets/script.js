@@ -1489,7 +1489,7 @@ function blockDemo(type) {
 
 
 
-  if (attempts >= 1) {
+  if (attempts >= 10) {
 
 
 
