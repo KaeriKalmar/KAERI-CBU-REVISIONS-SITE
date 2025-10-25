@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New MCQ | Admin Dashboard</title>
+    <style>
+        /* === Common Admin Form Styles === */
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #mcq-creation-form-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #mcq-creation-form-container h2 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group.required label::after {
+            content: " *";
+            color: red;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Fieldset for Options */
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            background-color: #fafafa;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #555;
+            padding: 0 10px;
+        }
+
+        .option-group label {
+            font-weight: normal;
+        }
+
+        /* Submission Button */
+        #mcq-submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        #mcq-submit-btn:hover {
+            background-color: #218838;
+        }
+
+        #mcq-submit-btn:disabled {
+            background-color: #a0dca0;
+            cursor: not-allowed;
+        }
+
+        /* Message Box Styling */
+        .submission-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .submission-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .submission-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        @media (max-width: 600px) {
+            #mcq-creation-form-container {
+                padding: 20px;
+            }
+            #mcq-submit-btn {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="mcq-creation-form-container">
+        <h2>➕ Add New Multiple Choice Question</h2>
+        <p>Use this form to securely add content directly to the 'MCQ_Questions' database sheet.</p>
+        
+        <form id="mcq-form">
+            <div class="form-group required">
+                <label for="mcq-course">Course:</label>
+                <select id="mcq-course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="BI110">BI110 - Biology</option>
+                    <option value="CS110">CS110 - Computer Science</option>
+                </select>
+            </div>
+
+            <div class="form-group required">
+                <label for="mcq-term">Term:</label>
+                <select id="mcq-term" required>
+                    <option value="">-- Select Term --</option>
+                    <option value="T1">T1</option>
+                    <option value="T2">T2</option>
+                    <option value="ALL">ALL (Full Course)</option>
+                </select>
+            </div>
+            
+            <div class="form-group required">
+                <label for="mcq-topic">Topic / Module:</label>
+                <input type="text" id="mcq-topic" placeholder="e.g., CELL BIOLOGY or ALGORITHMS" required>
+            </div>
+
+            <div class="form-group required">
+                <label for="mcq-question">Question:</label>
+                <textarea id="mcq-question" rows="3" placeholder="Enter the full text of the question here." required></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Options (A, B, C, D)</legend>
+                <div class="form-group required option-group">
+                    <label for="mcq-opt1">A. Option 1:</label>
+                    <input type="text" id="mcq-opt1" required>
+                </div>
+                <div class="form-group required option-group">
+                    <label for="mcq-opt2">B. Option 2:</label>
+                    <input type="text" id="mcq-opt2" required>
+                </div>
+                <div class="form-group required option-group">
+                    <label for="mcq-opt3">C. Option 3:</label>
+                    <input type="text" id="mcq-opt3" required>
+                </div>
+                <div class="form-group required option-group">
+                    <label for="mcq-opt4">D. Option 4:</label>
+                    <input type="text" id="mcq-opt4" required>
+                </div>
+            </fieldset>
+
+            <div class="form-group required">
+                <label for="mcq-correct">Correct Answer Index:</label>
+                <select id="mcq-correct" required>
+                    <option value="">-- Select Correct Option --</option>
+                    <option value="0">0 (A)</option>
+                    <option value="1">1 (B)</option>
+                    <option value="2">2 (C)</option>
+                    <option value="3">3 (D)</option>
+                </select>
+                <small>Note: Index 0 is Option A, 3 is Option D.</small>
+            </div>
+
+            <div class="form-group required">
+                <label for="mcq-explanation">Explanation:</label>
+                <textarea id="mcq-explanation" rows="2" placeholder="Provide a detailed explanation for the correct answer." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="mcq-difficulty">Difficulty Tag:</label>
+                <input type="text" id="mcq-difficulty" placeholder="e.g., Easy, Medium, Hard">
+            </div>
+
+            <button type="submit" id="mcq-submit-btn">
+                <span id="mcq-submit-text">Submit Question to Database</span>
+                <span id="mcq-loading-spinner" style="display:none;">⏳ Submitting...</span>
+            </button>
+        </form>
+
+        <p id="mcq-message" class="submission-message" style="display:none;"></p>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('mcq-form');
+        const submitBtn = document.getElementById('mcq-submit-btn');
+        const messageBox = document.getElementById('mcq-message');
+
+        const API_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyrVM9gw5PjdFTuMdbYeLydDDBtgsRCpItQ98qjDB5Rwmwf9hkXfIyLMrXfIGlp8UKwDQ/exec';
+        const TUTOR_ID = 'T001';
+
+        // Test API connection on load
+        testAPIConnection();
+
+        async function testAPIConnection() {
+            try {
+                const response = await fetch(API_ENDPOINT);
+                const text = await response.text();
+                console.log('✅ API Connection Test: SUCCESS');
+                console.log('Response:', text.substring(0, 100) + '...');
+            } catch (error) {
+                console.error('❌ API Connection Test: FAILED', error);
+                messageBox.className = 'submission-message error';
+                messageBox.innerHTML = '❌ Cannot connect to server. Please use a web server (not file://)';
+                messageBox.style.display = 'block';
+            }
+        }
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // UI State Management
+            submitBtn.disabled = true;
+            document.getElementById('mcq-submit-text').style.display = 'none';
+            document.getElementById('mcq-loading-spinner').style.display = 'inline';
+            messageBox.style.display = 'none';
+
+            // Collect Form Data
+            const questionData = {
+                Action: 'CREATE_MCQ',
+                TutorID: TUTOR_ID,
+                Course: document.getElementById('mcq-course').value,
+                Term: document.getElementById('mcq-term').value,
+                Topic: document.getElementById('mcq-topic').value.trim(),
+                Question: document.getElementById('mcq-question').value.trim(),
+                Option1: document.getElementById('mcq-opt1').value.trim(),
+                Option2: document.getElementById('mcq-opt2').value.trim(),
+                Option3: document.getElementById('mcq-opt3').value.trim(),
+                Option4: document.getElementById('mcq-opt4').value.trim(),
+                CorrectAnswerIndex: document.getElementById('mcq-correct').value,
+                Explanation: document.getElementById('mcq-explanation').value.trim(),
+                Difficulty: document.getElementById('mcq-difficulty').value.trim() || 'Medium',
+            };
+
+            try {
+                console.log('Sending data:', questionData);
+                
+                // Enhanced fetch with better error handling
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(questionData)
+                });
+
+                console.log('Response status:', response.status, response.statusText);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP Error: ${response.status} - ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('Response data:', data);
+
+                if (data.status === 'SUCCESS') {
+                    messageBox.className = 'submission-message success';
+                    messageBox.innerHTML = `✅ Question Added Successfully! <br>ID: <strong>${data.newID}</strong>`;
+                    form.reset();
+                    
+                    // Auto-clear success message after 5 seconds
+                    setTimeout(() => {
+                        messageBox.style.display = 'none';
+                    }, 5000);
+                } else {
+                    throw new Error(data.message || 'Unknown server error');
+                }
+
+            } catch (error) {
+                console.error('Full error details:', error);
+                
+                let errorMessage = `❌ Error: ${error.message}`;
+                
+                if (error.message.includes('Failed to fetch') || error.message.includes('CORS')) {
+                    errorMessage = `
+                        ❌ Network Blocked! <br>
+                        <strong>Solution:</strong> <br>
+                        1. Install "Live Server" extension in VS Code <br>
+                        2. Right-click file → "Open with Live Server" <br>
+                        3. Or use: python -m http.server 8000
+                    `;
+                }
+                
+                messageBox.className = 'submission-message error';
+                messageBox.innerHTML = errorMessage;
+            } finally {
+                submitBtn.disabled = false;
+                document.getElementById('mcq-submit-text').style.display = 'inline';
+                document.getElementById('mcq-loading-spinner').style.display = 'none';
+                messageBox.style.display = 'block';
+            }
+        });
+    });
+</script>
+</body>
+</html>
