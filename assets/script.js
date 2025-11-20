@@ -527,7 +527,16 @@ function displayShortAnswerQuestion() {
   updateProgress(currentQuestionIndex + 1, currentQuizData.length);
   if (!q) return showFinalShortAnswerScore();
   
-  container.innerHTML = `<h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3><p>${q.q}</p><textarea id="short-answer-input"></textarea><button onclick="checkShortAnswer()">✅ Submit</button>`;
+  // UPDATED: Added class="question-box" around the paragraph so TTS can find it
+  container.innerHTML = `
+    <h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3>
+    <div class="question-box">
+        <p>${q.q}</p>
+    </div>
+    <textarea id="short-answer-input"></textarea>
+    <button onclick="checkShortAnswer()">✅ Submit</button>
+  `;
+  
   document.getElementById("result").innerHTML = "";
   container.scrollIntoView({ behavior: "smooth" });
   readCurrentQuestion();
@@ -588,6 +597,10 @@ function renderEssaySimulation() {
   const container = document.getElementById("quiz-form");
   container.innerHTML = "";
   document.getElementById("result").innerHTML = "";
+  
+  // UPDATED: Explicitly set type to 'essay' for TTS logic
+  currentQuizType = 'essay';
+  
   currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
   if (currentQuizData.length === 0) {
     container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
@@ -764,25 +777,36 @@ function updateTtsButtonText() { const ttsButton = document.getElementById('tts-
 function toggleTTS() { ttsEnabled = !ttsEnabled; localStorage.setItem("ttsEnabled", ttsEnabled); stopReading(); updateTtsButtonText(); showAppNotification(ttsEnabled ? "🔊 Reader is now ON." : "🔇 Reader is now OFF."); }
 function stopReading() { if (utterance) { window.speechSynthesis.cancel(); utterance = null; } }
 function readText(text) { if (!ttsEnabled) return; stopReading(); utterance = new SpeechSynthesisUtterance(text); window.speechSynthesis.speak(utterance); }
+
+// UPDATED FUNCTION: Handles Short Answer, Essay "Q:" replacement, and MCQ
 function readCurrentQuestion() {
   if (!ttsEnabled) return;
   stopReading();
   let textToRead = "";
+
+  // 1. Get the text container (Handles .question-box or fallback)
+  const questionElement = document.querySelector('.question-box p') || document.querySelector('#quiz-form > p');
+  
+  if (questionElement) {
+    let rawText = questionElement.textContent.trim();
+    
+    // 2. "Q" to "Question" Logic for Essays and Short Answer
+    textToRead = rawText.replace(/^Q[:.]?\s*/i, "Question. ");
+  }
+
+  // 3. Read Options (Only for MCQ and Essay)
   if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
-    const questionElement = document.querySelector('.question-box p');
     const optionsElements = document.querySelectorAll('.options label');
-    if (questionElement) textToRead += questionElement.textContent.trim();
     if (optionsElements.length > 0) {
       textToRead += ". Options are: ";
       optionsElements.forEach((label, i) => {
-        const optionText = label.textContent.replace(String.fromCharCode(65 + i) + ".", "").trim();
+        // Clean up visual "A." markers for reading
+        const optionText = label.textContent.replace(/^[A-Z]\.\s*/, "").trim();
         textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
       });
     }
-  } else if (currentQuizType === 'shortAnswer') {
-    const questionElement = document.querySelector('.question-box p');
-    if (questionElement) textToRead = questionElement.textContent.trim();
   }
+
   readText(textToRead);
 }
 function readAnswerFeedback(feedbackText) { if (!ttsEnabled) return; readText(feedbackText); }
