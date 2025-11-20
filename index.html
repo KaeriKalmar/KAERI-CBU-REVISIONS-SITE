@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>KAERI CBU first-year Revision Resources 2025 - Exam Prep & Past Papers</title>
+    <title>KAERI CBU First-Year Revision Resources 2025</title>
     
     <meta name="description" content="KAERI CBU provides essential first-year revision resources and exam prep for CBU students. Access past papers and quizzes for BI110, CS110, MA110, PH110, and LA111 in 2025.">
-    
-    <meta name="keywords" content="CBU first-year revision, CBU first-year past papers, CBU exam prep, CBU study resources, BI110 past papers, BI110 revision notes, CS110 past papers, CS110 quizzes, MA110 past papers, MA110 revision notes, PH110 past papers, PH110 quizzes, LA111 past papers, LA111 academic writing, First-year exam questions, Flashcards CBU first-year, Past paper solutions CBU">
+    <meta name="keywords" content="CBU first-year revision, CBU first-year past papers, CBU exam prep, CBU study resources, BI110 past papers, CS110 quizzes, First-year exam questions">
     
     <meta property="og:title" content="KAERI CBU first-year Revision Resources 2025">
-    <meta property="og:description" content="Official KAERI CBU site for first-year students to find revision materials, past papers, and quizzes for BI110, CS110, MA110, PH110, and LA111.">
+    <meta property="og:description" content="Official KAERI CBU site for first-year students to find revision materials.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/">
-    <meta property="og:image" content="URL_TO_YOUR_CBU_REVISION_SITE_IMAGE.png">
     
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* Specific styles for the landing page - these are not in global CSS */
+        /* === LANDING PAGE STYLES === */
         body {
-            padding-top: 50px;
+            padding-top: 50px; /* Default for landing */
             text-align: center;
             background: #0d1b2a;
             color: #e0e6ed;
@@ -64,23 +62,16 @@
             box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
         }
         .course-button.active {
-            background-color: #28a745; /* Green when active/terms visible */
+            background-color: #28a745;
             box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
         }
-        /* Style for the inactive 'Coming Soon' buttons */
         .course-button.coming-soon {
-            background-color: #6c757d; /* Gray color for inactive status */
+            background-color: #6c757d;
             cursor: default;
-            box-shadow: none;
-            transition: none;
-        }
-        .course-button.coming-soon:hover {
-            background-color: #6c757d; /* Prevent color change on hover */
-            transform: none;
             box-shadow: none;
         }
         .term-buttons {
-            display: none; /* Hidden by default */
+            display: none;
             flex-direction: column;
             gap: 10px;
             margin-top: 15px;
@@ -94,35 +85,64 @@
             cursor: pointer;
             border-radius: 6px;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%; /* Ensure full width in SPA mode */
         }
         .term-buttons button:hover {
             background-color: #5a6268;
             transform: translateY(-2px);
         }
-        /* Floating WhatsApp button for landing page */
-        .landing-whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366; /* WhatsApp green */
+
+        /* === APP VIEW STYLES (Previously inline in Term pages) === */
+        .back-button {
+            background-color: #6c757d;
             color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.2em;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 20px;
             text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        /* Fix for fixed header in App Mode */
+        body.app-mode {
+            padding-top: 0; /* Reset */
+        }
+        #fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1b263b;
+            z-index: 1001;
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+        }
+        
+        /* Floating Price Banner */
+        #price-banner {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            padding: 10px 16px;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 8px;
             z-index: 1000;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
         }
-        .landing-whatsapp-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-        }
-        /* Notification Section Styles (for landing page only) */
+
+        /* Notification Styles */
         #app-notification {
             position: fixed;
             top: 10px;
@@ -144,157 +164,239 @@
             text-align: center;
             font-size: 0.95em;
         }
-
-        #app-notification.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        #app-notification .close-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.2em;
-            cursor: pointer;
-            margin-left: 10px;
-            padding: 0 5px;
-        }
-
-        /* Notification types */
+        #app-notification.show { opacity: 1; visibility: visible; }
         #app-notification.info { background-color: #17a2b8; }
         #app-notification.success { background-color: #28a745; }
         #app-notification.warning { background-color: #ffc107; color: #333; }
         #app-notification.error { background-color: #dc3545; }
+        #app-notification .close-btn { background: none; border: none; color: white; font-size: 1.2em; cursor: pointer; margin-left: 10px; }
 
-        /* SEO Hidden Class for H2 */
-        .seo-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
+        /* WhatsApp Button */
+        .landing-whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2em;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
         }
+        .landing-whatsapp-button:hover { transform: translateY(-5px) scale(1.05); }
+
+        .seo-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
     </style>
 </head>
 <body>
+
+    <!-- GLOBAL NOTIFICATION SYSTEM -->
     <div id="app-notification" role="alert">
         <span class="notification-message"></span>
         <button class="close-btn" aria-label="Close notification">×</button>
     </div>
 
-    <div class="quiz-container">
-        <h1>Select a Course & Term</h1>
-        
-        <h2 class="seo-hidden">CBU First-Year Course Revision Resources: BI110, CS110, MA110, PH110, LA111 Past Papers and Exam Prep</h2>
+    <!-- ================= VIEW 1: LANDING PAGE ================= -->
+    <div id="view-landing">
+        <div class="quiz-container">
+            <h1>Select a Course & Term</h1>
+            <h2 class="seo-hidden">CBU First-Year Course Revision Resources: BI110, CS110, MA110, PH110, LA111 Past Papers and Exam Prep</h2>
 
-        <div class="course-section">
-            <button class="course-button" onclick="toggleTerms('bi110')">BI110 - Biology</button>
-            <div id="bi110-terms" class="term-buttons">
-                <button onclick="location.href='bi110/t1/index.html'">Term 1</button>
-                <button onclick="location.href='bi110/t2/index.html'">Term 2</button>
-                <button onclick="location.href='bi110/t3/index.html'">Term 3</button>
+            <!-- BI110 Section -->
+            <div class="course-section">
+                <button class="course-button" onclick="toggleLandingTerms('bi110')">BI110 - Biology</button>
+                <div id="bi110-terms" class="term-buttons">
+                    <button onclick="loadApp('BI110', 'T1')">Term 1</button>
+                    <button onclick="loadApp('BI110', 'T2')">Term 2</button>
+                    <button onclick="loadApp('BI110', 'T3')">Term 3</button>
+                </div>
             </div>
-        </div>
 
-        <div class="course-section">
-            <button class="course-button" onclick="toggleTerms('cs110')">CS110 - Computer Science</button>
-            <div id="cs110-terms" class="term-buttons">
-                <button onclick="location.href='cs110/t1/index.html'">Term 1</button>
-                <button onclick="location.href='cs110/t2/index.html'">Term 2</button>
-                <button onclick="location.href='cs110/t3/index.html'">Term 3</button>
+            <!-- CS110 Section -->
+            <div class="course-section">
+                <button class="course-button" onclick="toggleLandingTerms('cs110')">CS110 - Computer Science</button>
+                <div id="cs110-terms" class="term-buttons">
+                    <button onclick="loadApp('CS110', 'T1')">Term 1</button>
+                    <button onclick="loadApp('CS110', 'T2')">Term 2</button>
+                    <button onclick="loadApp('CS110', 'T3')">Term 3</button>
+                </div>
             </div>
+            
+            <!-- Coming Soon Sections -->
+            <div class="course-section"><button class="course-button coming-soon" disabled>CH110 - Chemistry (Coming Soon)</button></div>
+            <div class="course-section"><button class="course-button coming-soon" disabled>MA110 - Mathematics (Coming Soon)</button></div>
+            <div class="course-section"><button class="course-button coming-soon" disabled>PH110 - Physics (Coming Soon)</button></div>
+            <div class="course-section"><button class="course-button coming-soon" disabled>LA111 - Communication skills (Coming Soon)</button></div>
         </div>
-        
-        <div class="course-section">
-            <button class="course-button coming-soon" disabled>CH110 - Chemistry (Coming Soon)</button>
-        </div>
-        
-        <div class="course-section">
-            <button class="course-button coming-soon" disabled>MA110 - Mathematics (Coming Soon)</button>
-        </div>
-        
-        <div class="course-section">
-            <button class="course-button coming-soon" disabled>PH110 - Physics (Coming Soon)</button>
-        </div>
-
-        <div class="course-section">
-            <button class="course-button coming-soon" disabled>LA111 - Communication skills (Coming Soon)</button>
-        </div>
-
     </div>
 
-    <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">
-        💬
-    </a>
+    <!-- ================= VIEW 2: THE QUIZ APP (Hidden Initially) ================= -->
+    <div id="view-app" style="display: none;">
+        
+        <!-- Fixed Header from Term Page -->
+        <div id="fixed-header">
+            <div id="mode-banner"></div>
+            <div id="progress-container">
+                <div id="progress-fill"></div>
+            </div>
+            <div id="progress-text">Progress: 0 of 0</div>
+        </div>
 
+        <div id="price-banner">Price: K15</div>
+
+        <div class="quiz-container" style="margin-top: 80px;"> <!-- Added margin for fixed header -->
+            <h1 id="app-title">Course Term Title</h1>
+            
+            <p class="announcement">
+                <strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.
+            </p>
+            
+            <p class="price-list" id="app-price-info">
+                <!-- Price Info Injected Here -->
+            </p>
+
+            <div class="mode-buttons">
+                <button onclick="renderQuiz()">📋 Multiple Choice</button>
+                <button onclick="renderShortAnswers()">✍️ Short Answer</button>
+                <button onclick="renderEssaySimulation()">📝 Essay Simulation</button>
+                <button onclick="renderFlashcardTopics()">🃏 Flashcards</button>
+            </div>
+
+            <div id="quiz-form"></div>
+            <div id="result"></div>
+
+            <button class="back-button" onclick="goHome()">⬅️ Back to Course Selection</button>
+        </div>
+
+        <div class="whatsapp-buttons" style="text-align: center; margin-top: 20px;">
+            <a href="https://chat.whatsapp.com/FnYwrwYzxP1DScBwqL6dBV" target="_blank">
+                <button style="background-color: #25D366; border:none; padding:10px 20px; color:white; border-radius:8px; cursor:pointer;">Join for the updates 📢</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Shared WhatsApp Floating Button -->
+    <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
+
+    <!-- === DATA LOADING === -->
+    <!-- Assumes these files exist in your assets folder -->
+    <script src="assets/mcqDa.js"></script>
+    <script src="assets/shortDa.js"></script>
+    <script src="assets/essayDa.js"></script>
+    <script src="assets/flashcards.js"></script>
+    
+    <!-- === LOGIC SCRIPT (Must be the Updated Version provided previously) === -->
+    <script src="assets/script.js"></script>
+
+    <!-- === SPA ROUTER LOGIC === -->
     <script>
-        function toggleTerms(courseId) {
+        // CONFIGURATION: Define Titles and Prices for each Term
+        const COURSE_CONFIG = {
+            "CS110_T1": { price: "K15", title: "CS110 Term 1 Study Materials" },
+            "CS110_T2": { price: "K15", title: "CS110 Term 2 Study Materials" },
+            "CS110_T3": { price: "K20", title: "CS110 Term 3 Study Materials" },
+            "BI110_T1": { price: "K15", title: "BI110 Term 1 Study Materials" },
+            "BI110_T2": { price: "K15", title: "BI110 Term 2 Study Materials" },
+            "BI110_T3": { price: "K20", title: "BI110 Term 3 Study Materials" }
+        };
+
+        // Toggle Landing Page Accordions
+        function toggleLandingTerms(courseId) {
             const termButtons = document.getElementById(courseId + '-terms');
             const courseButton = termButtons.previousElementSibling;
 
-            // Toggle display
             if (termButtons.style.display === 'flex') {
                 termButtons.style.display = 'none';
                 courseButton.classList.remove('active');
             } else {
-                // Hide all other term sections
                 document.querySelectorAll('.term-buttons').forEach(section => {
                     if (section.id !== courseId + '-terms') {
                         section.style.display = 'none';
                         section.previousElementSibling.classList.remove('active');
                     }
                 });
-                // Show the clicked section
                 termButtons.style.display = 'flex';
                 courseButton.classList.add('active');
             }
         }
 
-        // Function to show notifications on the landing page
-        function showLandingNotification(message, type = 'info', duration = 5000) {
-            const notificationDiv = document.getElementById('app-notification');
-            if (!notificationDiv) {
-                console.warn("Notification div not found on landing page.");
-                return;
+        // START THE APP (SPA TRANSITION)
+        function loadApp(course, term) {
+            const key = `${course}_${term}`;
+            const config = COURSE_CONFIG[key] || { price: "K15", title: `${course} ${term}` };
+
+            // 1. Switch CSS Mode
+            document.body.classList.add('app-mode');
+            document.body.style.paddingTop = "0px"; 
+
+            // 2. Switch Views
+            document.getElementById('view-landing').style.display = 'none';
+            document.getElementById('view-app').style.display = 'block';
+            window.scrollTo(0, 0);
+
+            // 3. Update DOM Content
+            document.getElementById('app-title').textContent = config.title;
+            document.getElementById('price-banner').textContent = `Price: ${config.price}`;
+            
+            document.getElementById('app-price-info').innerHTML = `
+                💰 ${course} ${term}: <strong>${config.price}</strong><br>
+                To MTN 0961005406 or Airtel 0974784161<br>
+                Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+                📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
+                ✅ Your support keeps the app free & online.
+            `;
+
+            // 4. Initialize Logic (Calls function in script.js)
+            if (typeof initializeQuizApp === 'function') {
+                initializeQuizApp(course, term);
+            } else {
+                console.error("initializeQuizApp missing. Did you update assets/script.js?");
             }
 
-            const messageSpan = notificationDiv.querySelector('.notification-message');
-            const closeBtn = notificationDiv.querySelector('.close-btn');
-
-            messageSpan.textContent = message;
-            notificationDiv.className = 'show'; // Reset classes, then add 'show'
-            notificationDiv.classList.add(type); // Add type class (info, success, warning, error)
-
-            // Clear any existing timeout
-            if (notificationDiv.timeoutId) {
-                clearTimeout(notificationDiv.timeoutId);
-            }
-
-            // Set a new timeout to hide the notification
-            notificationDiv.timeoutId = setTimeout(() => {
-                notificationDiv.classList.remove('show');
-            }, duration);
-
-            // Make close button dismiss the notification immediately
-            if (closeBtn) {
-                closeBtn.onclick = () => {
-                    notificationDiv.classList.remove('show');
-                    if (notificationDiv.timeoutId) {
-                        clearTimeout(notificationDiv.timeoutId);
-                    }
-                };
-            }
+            // 5. Update URL history
+            history.pushState({view: 'app', course, term}, "", `?c=${course}&t=${term}`);
         }
 
-        // Example of using the landing page notification (optional, for testing/initial messages)
-        // window.addEventListener('load', () => {
-        //      showLandingNotification("Welcome to the Quiz App! Select a course.", "info", 3000);
-        // });
+        // GO BACK HOME
+        function goHome() {
+            document.body.classList.remove('app-mode');
+            document.body.style.paddingTop = "50px";
+
+            document.getElementById('view-app').style.display = 'none';
+            document.getElementById('view-landing').style.display = 'block';
+            
+            // Clean up
+            document.getElementById("quiz-form").innerHTML = "";
+            document.getElementById("result").innerHTML = "";
+            
+            history.pushState({view: 'home'}, "", window.location.pathname);
+        }
+
+        // Handle Browser Back Button
+        window.onpopstate = function(event) {
+            if (event.state && event.state.view === 'app') {
+                loadApp(event.state.course, event.state.term);
+            } else {
+                goHome();
+            }
+        };
+
+        // Handle Direct URL Links (Bookmarks)
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const c = urlParams.get('c');
+            const t = urlParams.get('t');
+            if (c && t) {
+                loadApp(c, t);
+            }
+        });
     </script>
-    <script src="assets/script.js"></script>
 </body>
 </html>
