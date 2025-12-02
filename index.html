@@ -983,7 +983,7 @@
       if (hasFullAccess) return false;
       const key = `demo_${type}_used_${currentTermKey}`;
       let attempts = parseInt(localStorage.getItem(key) || "0");
-      if (attempts >= 1) {
+      if (attempts >= 10) {
         showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
         return true;
       }
