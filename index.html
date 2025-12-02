@@ -1,402 +1,1396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>KAERI CBU First-Year Revision Resources 2025</title>
-    
-    <meta name="description" content="KAERI CBU provides essential first-year revision resources and exam prep for CBU students. Access past papers and quizzes for BI110, CS110, MA110, PH110, and LA111 in 2025.">
-    <meta name="keywords" content="CBU first-year revision, CBU first-year past papers, CBU exam prep, CBU study resources, BI110 past papers, CS110 quizzes, First-year exam questions">
-    
-    <meta property="og:title" content="KAERI CBU first-year Revision Resources 2025">
-    <meta property="og:description" content="Official KAERI CBU site for first-year students to find revision materials.">
-    <meta property="og:type" content="website">
-    
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* === LANDING PAGE STYLES === */
-        body {
-            padding-top: 50px; /* Default for landing */
-            text-align: center;
-            background: #0d1b2a;
-            color: #e0e6ed;
-        }
-        .quiz-container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #1b263b;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #72efdd;
-            margin-bottom: 30px;
-            font-size: 2.5rem;
-        }
-        .course-section {
-            margin-bottom: 40px;
-            border: 1px solid #007bff;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .course-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            width: 100%;
-            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        }
-        .course-button:hover {
-            background-color: #0056b3;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
-        }
-        .course-button.active {
-            background-color: #28a745;
-            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
-        }
-        .course-button.coming-soon {
-            background-color: #6c757d;
-            cursor: default;
-            box-shadow: none;
-        }
-        .term-buttons {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .term-buttons button {
-            background-color: #6c757d;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 6px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            width: 100%; /* Ensure full width in SPA mode */
-        }
-        .term-buttons button:hover {
-            background-color: #5a6268;
-            transform: translateY(-2px);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App - Courses & Terms | Kaeri Kalmar</title>
+  
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS STYLES -->
+  <style>
+    /* --- GLOBAL SETTINGS --- */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0d1b2a;
+      margin: 0;
+      color: #e0e6ed;
+      line-height: 1.6;
+      overflow-y: auto;
+      /* Removed heavy top padding since header is no longer fixed */
+      padding: 20px; 
+    }
 
-        /* === APP VIEW STYLES (Previously inline in Term pages) === */
-        .back-button {
-            background-color: #6c757d;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-        .back-button:hover {
-            background-color: #5a6268;
-            transform: translateY(-2px);
-        }
-        
-        /* Fix for fixed header in App Mode */
-        body.app-mode {
-            padding-top: 0; /* Reset */
-        }
-        #fixed-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: #1b263b;
-            z-index: 1001;
-            padding: 10px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            box-sizing: border-box;
-        }
-        
-        /* Floating Price Banner */
-        #price-banner {
-            position: fixed;
-            top: 60px;
-            right: 20px;
-            background: #007bff;
-            color: white;
-            padding: 10px 16px;
-            font-weight: 700;
-            font-size: 1rem;
-            border-radius: 8px;
-            z-index: 1000;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-        }
+    h1, h2, h3 {
+      color: #72efdd;
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-        /* Notification Styles */
-        #app-notification {
-            position: fixed;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #333;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            z-index: 2000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            max-width: 90%;
-            text-align: center;
-            font-size: 0.95em;
-        }
-        #app-notification.show { opacity: 1; visibility: visible; }
-        #app-notification.info { background-color: #17a2b8; }
-        #app-notification.success { background-color: #28a745; }
-        #app-notification.warning { background-color: #ffc107; color: #333; }
-        #app-notification.error { background-color: #dc3545; }
-        #app-notification .close-btn { background: none; border: none; color: white; font-size: 1.2em; cursor: pointer; margin-left: 10px; }
+    p { margin-bottom: 15px; }
+    button { cursor: pointer; }
 
-        /* WhatsApp Button */
-        .landing-whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.2em;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
-        .landing-whatsapp-button:hover { transform: translateY(-5px) scale(1.05); }
+    /* --- CONTAINERS --- */
+    .quiz-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #1b263b;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
 
-        .seo-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
-    </style>
+    /* --- LANDING PAGE STYLES --- */
+    .course-section {
+      margin-bottom: 40px;
+      border: 1px solid #007bff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .course-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .course-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+    }
+
+    .course-button.active {
+      background-color: #28a745;
+      box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+    }
+
+    .term-buttons {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .term-buttons button {
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .term-buttons button:hover {
+      background-color: #5a6268;
+      transform: translateY(-2px);
+    }
+
+    /* --- COURSE HEADER (STATIC - NOT STUCK) --- */
+    /* This replaces the old fixed header. It sits normally in the page. */
+    #static-header-container {
+      display: none; /* Hidden on landing */
+      background: #162032;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #3e506e;
+    }
+
+    #price-badge {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 5px 12px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 15px;
+      float: right; /* Floats right within the static header */
+    }
+
+    /* --- QUIZ INTERFACE --- */
+    .mode-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .mode-buttons button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      font-size: 1em;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .mode-buttons button:hover { background-color: #0056b3; transform: translateY(-3px); }
+
+    /* TTS Button Style */
+    #tts-toggle-button {
+      background-color: #6f42c1; /* Purple */
+    }
+    #tts-toggle-button:hover { background-color: #59359a; }
+
+    #quiz-form {
+      background-color: #0d1b2a;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .question-header h3 { margin: 0; flex-basis: 100%; margin-bottom: 10px; }
+    
+    .question-text, .question-box p {
+      font-size: 1.15em;
+      margin-bottom: 20px;
+      color: #cdd6e0;
+    }
+
+    .options label {
+      display: block;
+      background-color: #2b3a55;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1em;
+    }
+    .options label:hover { background-color: #3e506e; transform: translateX(5px); }
+    .options input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+
+    /* --- INPUTS & BUTTONS --- */
+    textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #3e506e;
+      border-radius: 8px;
+      background-color: #0d1b2a;
+      color: #e0e6ed;
+      font-size: 1em;
+      resize: vertical;
+      min-height: 100px;
+    }
+    textarea:focus { outline: none; border-color: #007bff; box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); }
+
+    .submit-btn, .whatsapp-buttons button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover, .whatsapp-buttons button:hover { background-color: #218838; transform: translateY(-2px); }
+
+    button:disabled { background-color: #6c757d; cursor: not-allowed; transform: none; }
+
+    .back-button {
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover { background-color: #5a6268; transform: translateY(-2px); }
+
+    /* --- FEEDBACK & RESULTS --- */
+    .feedback, .explanation-box {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #0d1b2a;
+      border: 1px solid #3e506e;
+    }
+    .feedback p { margin: 0 0 10px 0; font-weight: bold; }
+    .explanation-box { color: #a0a8b4; font-style: italic; }
+
+    #result {
+      margin-top: 20px;
+      padding: 25px;
+      background-color: #0d1b2a;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .restart-button, .reset-button {
+      background-color: #ffc107;
+      color: #333;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+    }
+    .restart-button:hover, .reset-button:hover { background-color: #e0a800; }
+
+    /* --- PROGRESS & BANNERS --- */
+    #mode-banner {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 8px 12px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: inline-block; /* Inline with price badge */
+      width: calc(100% - 100px); /* Space for price badge */
+    }
+    .demo-mode-banner { border: 1px solid #ffc107; color: #ffc107 !important; }
+    .full-access-banner { border: 1px solid #28a745; color: #28a745 !important; }
+
+    #progress-container {
+      width: 100%;
+      background-color: #3e506e;
+      border-radius: 5px;
+      margin-top: 5px;
+      height: 15px;
+      overflow: hidden;
+      clear: both; /* Clear floats */
+    }
+    #progress-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #28a745;
+      border-radius: 5px;
+      transition: width 0.4s ease-in-out;
+    }
+    #progress-text { text-align: center; margin-top: 5px; font-size: 0.9em; color: #a0a8b4; }
+
+    /* --- FLASHCARDS (GREEN BRANDING) --- */
+    .flashcard-nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .flashcard-nav-buttons { display: flex; justify-content: space-between; width: 100%; gap: 15px; margin-top: 10px; }
+    .flashcard-nav-buttons button { flex-grow: 1; background-color: #28a745; color: white; border: none; padding: 10px; border-radius: 5px; }
+    .flashcard-nav-buttons button:disabled { background-color: #4a5460; cursor: not-allowed; }
+
+    .flashcard-wrapper {
+        perspective: 1000px;
+        width: 100%;
+        max-width: 500px;
+        height: 350px; /* Slightly taller to show everything */
+        margin: 20px auto;
+        overflow: visible; /* Changed to visible to avoid cutting off 3D effects */
+    }
+    
+    .flashcard {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease-in-out;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+    .flashcard.back-active { transform: rotateY(180deg); }
+
+    .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-size: 1.3em;
+        text-align: center;
+        overflow-y: auto; /* Scroll internally if text is huge */
+        word-break: break-word;
+        transition: opacity 0.4s ease-in-out;
+    }
+    
+    /* GREEN FLASHCARDS */
+    .card-front { 
+        background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%); /* Green Gradient */
+        color: white; 
+        border: 2px solid #155724;
+    }
+    .card-back { 
+        background-color: #2b3a55; 
+        color: #e0e6ed; 
+        transform: rotateY(180deg); 
+        border: 2px solid #3e506e;
+    }
+    
+    .flashcard.back-active .card-front { opacity: 0; }
+    .flashcard.back-active .card-back { opacity: 1; }
+
+    .back-to-topics-button {
+        background-color: #6c757d;
+        margin-top: 15px;
+        margin-left: 10px;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    .flashcard-topic-buttons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .flashcard-topic-buttons button {
+        background-color: #28a745; /* Green Topics */
+        color: white;
+        padding: 15px 20px;
+        font-size: 1.1em;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border: none;
+    }
+    .flashcard-topic-buttons button:hover { background-color: #218838; transform: translateY(-3px); }
+
+    /* --- NOTIFICATIONS & EXTRA UI --- */
+    .announcement, .price-list {
+        background-color: #0d1b2a;
+        border: 1px solid #007bff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-size: 0.95em;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .announcement strong, .price-list strong { color: #72efdd; }
+    .announcement a, .price-list a { color: #007bff; text-decoration: none; }
+    .announcement a:hover, .price-list a:hover { text-decoration: underline; }
+
+    .landing-whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 2000;
+    }
+    .landing-whatsapp-button:hover { background-color: #1DA851; transform: scale(1.05); }
+
+    .whatsapp-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* Notification */
+    #app-notification {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      z-index: 3000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 90%;
+      text-align: center;
+    }
+    #app-notification.show { opacity: 1; visibility: visible; }
+    #app-notification .close-btn { background: none; border: none; color: white; font-size: 1.2em; cursor: pointer; padding: 0 5px; }
+    #app-notification.info { background-color: #17a2b8; }
+    #app-notification.success { background-color: #28a745; }
+    #app-notification.warning { background-color: #ffc107; color: #333; }
+    #app-notification.error { background-color: #dc3545; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .quiz-container { padding: 20px 15px; }
+      h1 { font-size: 1.8rem; }
+      .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+      .whatsapp-buttons { flex-direction: column; align-items: center; }
+      #mode-banner { width: 100%; display: block; margin-bottom: 5px; }
+      #price-badge { float: none; display: inline-block; margin-top: 5px; }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- GLOBAL NOTIFICATION SYSTEM -->
-    <div id="app-notification" role="alert">
-        <span class="notification-message"></span>
-        <button class="close-btn" aria-label="Close notification">×</button>
-    </div>
+  <!-- ==================== NOTIFICATIONS ==================== -->
+  <div id="app-notification" role="alert">
+    <span class="notification-message"></span>
+    <button class="close-btn" aria-label="Close notification">×</button>
+  </div>
 
-    <!-- ================= VIEW 1: LANDING PAGE ================= -->
-    <div id="view-landing">
-        <div class="quiz-container">
-            <h1>Select a Course & Term</h1>
-            <h2 class="seo-hidden">CBU First-Year Course Revision Resources: BI110, CS110, MA110, PH110, LA111 Past Papers and Exam Prep</h2>
-
-            <!-- BI110 Section -->
-            <div class="course-section">
-                <button class="course-button" onclick="toggleLandingTerms('bi110')">BI110 - Biology</button>
-                <div id="bi110-terms" class="term-buttons">
-                    <button onclick="loadApp('BI110', 'T1')">Term 1</button>
-                    <button onclick="loadApp('BI110', 'T2')">Term 2</button>
-                    <button onclick="loadApp('BI110', 'T3')">Term 3</button>
-                </div>
-            </div>
-
-            <!-- CS110 Section -->
-            <div class="course-section">
-                <button class="course-button" onclick="toggleLandingTerms('cs110')">CS110 - Computer Science</button>
-                <div id="cs110-terms" class="term-buttons">
-                    <button onclick="loadApp('CS110', 'T1')">Term 1</button>
-                    <button onclick="loadApp('CS110', 'T2')">Term 2</button>
-                    <button onclick="loadApp('CS110', 'T3')">Term 3</button>
-                </div>
-            </div>
-            
-            <!-- Coming Soon Sections -->
-            <div class="course-section"><button class="course-button coming-soon" disabled>CH110 - Chemistry (Coming Soon)</button></div>
-            <div class="course-section"><button class="course-button coming-soon" disabled>MA110 - Mathematics (Coming Soon)</button></div>
-            <div class="course-section"><button class="course-button coming-soon" disabled>PH110 - Physics (Coming Soon)</button></div>
-            <div class="course-section"><button class="course-button coming-soon" disabled>LA111 - Communication skills (Coming Soon)</button></div>
-        </div>
-    </div>
-
-    <!-- ================= VIEW 2: THE QUIZ APP (Hidden Initially) ================= -->
-    <div id="view-app" style="display: none;">
-        
-        <!-- Fixed Header from Term Page -->
-        <div id="fixed-header">
-            <div id="mode-banner"></div>
-            <div id="progress-container">
-                <div id="progress-fill"></div>
-            </div>
-            <div id="progress-text">Progress: 0 of 0</div>
-        </div>
-
-        <div id="price-banner">Price: K15</div>
-
-        <div class="quiz-container" style="margin-top: 80px;"> <!-- Added margin for fixed header -->
-            <h1 id="app-title">Course Term Title</h1>
-            
-            <p class="announcement">
-                <strong>Important:</strong> This platform is powered by your support! If you find it useful, please consider purchasing an access code.
-            </p>
-            
-            <p class="price-list" id="app-price-info">
-                <!-- Price Info Injected Here -->
-            </p>
-
-            <div class="mode-buttons">
-                <button onclick="renderQuiz()">📋 Multiple Choice</button>
-                <button onclick="renderShortAnswers()">✍️ Short Answer</button>
-                <button onclick="renderEssaySimulation()">📝 Essay Simulation</button>
-                <button onclick="renderFlashcardTopics()">🃏 Flashcards</button>
-            </div>
-
-            <div id="quiz-form"></div>
-            <div id="result"></div>
-
-            <button class="back-button" onclick="goHome()">⬅️ Back to Course Selection</button>
-        </div>
-
-        <div class="whatsapp-buttons" style="text-align: center; margin-top: 20px;">
-            <a href="https://chat.whatsapp.com/FnYwrwYzxP1DScBwqL6dBV" target="_blank">
-                <button style="background-color: #25D366; border:none; padding:10px 20px; color:white; border-radius:8px; cursor:pointer;">Join for the updates 📢</button>
-            </a>
-        </div>
-    </div>
-
-    <!-- Shared WhatsApp Floating Button -->
-    <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
-
-    <!-- === DATA LOADING === -->
-    <!-- Assumes these files exist in your assets folder -->
-    <script src="assets/mcqDa.js"></script>
-    <script src="assets/shortDa.js"></script>
-    <script src="assets/essayDa.js"></script>
-    <script src="assets/flashcards.js"></script>
+  <!-- ==================== MAIN CONTAINER ==================== -->
+  <div class="quiz-container">
     
-    <!-- === LOGIC SCRIPT (Must be the Updated Version provided previously) === -->
-    <script src="assets/script.js"></script>
+    <!-- :::: VIEW 1: LANDING PAGE :::: -->
+    <div id="landing-view">
+      <h1>Select a Course & Term</h1>
 
-    <!-- === SPA ROUTER LOGIC === -->
-    <script>
-        // CONFIGURATION: Define Titles and Prices for each Term
-        const COURSE_CONFIG = {
-            "CS110_T1": { price: "K15", title: "CS110 Term 1 Study Materials" },
-            "CS110_T2": { price: "K15", title: "CS110 Term 2 Study Materials" },
-            "CS110_T3": { price: "K20", title: "CS110 Term 3 Study Materials" },
-            "BI110_T1": { price: "K15", title: "BI110 Term 1 Study Materials" },
-            "BI110_T2": { price: "K15", title: "BI110 Term 2 Study Materials" },
-            "BI110_T3": { price: "K20", title: "BI110 Term 3 Study Materials" }
-        };
+      <!-- Course: BI110 -->
+      <div class="course-section">
+        <button class="course-button" onclick="toggleTerms('bi110')">BI110 - Biology</button>
+        <div id="bi110-terms" class="term-buttons">
+          <button onclick="loadCourse('BI110', 'T1', 15)">Term 1 (K15)</button>
+          <button onclick="loadCourse('BI110', 'T2', 15)">Term 2 (K15)</button>
+          <button onclick="loadCourse('BI110', 'T3', 20)">Term 3 (K20)</button>
+        </div>
+      </div>
 
-        // Toggle Landing Page Accordions
-        function toggleLandingTerms(courseId) {
-            const termButtons = document.getElementById(courseId + '-terms');
-            const courseButton = termButtons.previousElementSibling;
+      <!-- Course: CS110 -->
+      <div class="course-section">
+        <button class="course-button" onclick="toggleTerms('cs110')">CS110 - Computer Science</button>
+        <div id="cs110-terms" class="term-buttons">
+          <button onclick="loadCourse('CS110', 'T1', 15)">Term 1 (K15)</button>
+          <button onclick="loadCourse('CS110', 'T2', 15)">Term 2 (K15)</button>
+          <button onclick="loadCourse('CS110', 'T3', 20)">Term 3 (K20)</button>
+        </div>
+      </div>
+    </div>
 
-            if (termButtons.style.display === 'flex') {
-                termButtons.style.display = 'none';
-                courseButton.classList.remove('active');
-            } else {
-                document.querySelectorAll('.term-buttons').forEach(section => {
-                    if (section.id !== courseId + '-terms') {
-                        section.style.display = 'none';
-                        section.previousElementSibling.classList.remove('active');
-                    }
-                });
-                termButtons.style.display = 'flex';
-                courseButton.classList.add('active');
-            }
+    <!-- :::: VIEW 2: COURSE PAGE (HIDDEN BY DEFAULT) :::: -->
+    <div id="course-view" style="display: none;">
+      
+      <!-- STATIC HEADER (Scrolls with page, not stuck) -->
+      <div id="static-header-container">
+        <div id="price-badge">Price: K15</div>
+        <div id="mode-banner"></div>
+        <div id="progress-container">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="progress-text">Progress: 0 of 0</div>
+      </div>
+
+      <h1 id="course-title">Study Materials</h1>
+      
+      <p class="announcement">
+        <strong>Important:</strong> The full course is available. Your support keeps the app free & online.
+      </p>
+      <p class="price-list">
+        💰 <span id="price-desc">Course</span>: <strong><span id="price-val">K15</span></strong><br>
+        To MTN 0961005406 or Airtel 0974784161<br>
+        Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
+        📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a>
+      </p>
+
+      <div class="mode-buttons">
+        <button onclick="renderQuiz()">📋 Multiple Choice</button>
+        <button onclick="renderShortAnswers()">✍️ Short Answer</button>
+        <button onclick="renderEssaySimulation()">📝 Essay Simulation</button>
+        <button onclick="renderFlashcardTopics()">🃏 Flashcards</button>
+        <!-- TTS Button appended here -->
+      </div>
+
+      <div id="quiz-form"></div>
+      <div id="result"></div>
+
+      <button onclick="backToMenu()" class="back-button">⬅️ Back to Course Selection</button>
+      
+      <div class="whatsapp-buttons">
+        <a href="https://chat.whatsapp.com/KO1LlKxxCrW20X98RB4xap" target="_blank">
+          <button>Join for the updates 📢</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FLOATING WHATSAPP (GLOBAL) -->
+  <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
+
+
+  <!-- ==================== EXTERNAL DATA SCRIPTS ==================== -->
+  <script src="assets/mcqDa.js"></script>
+  <script src="assets/shortDa.js"></script>
+  <script src="assets/essayDa.js"></script>
+  <script src="assets/flashcards.js"></script>
+
+  <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
+  <script>
+    // === CONFIGURATION ===
+    let ttsEnabled = false;
+
+    const fullAccessCodes = {
+      // === BI110 ===
+      "BI110_T1": [
+        "BI110T1_MAIN001#A@", "BI110T1_MAIN002!Z*", "BI110T1_MAIN003$K#", "BI110T1_MAIN004&Y!",
+        "BI110T1_MAIN005*X%", "BI110T1_MAIN006^R&", "BI110T1_MAIN007~S+", "BI110T1_MAIN008?D#",
+        "BI110T1_MAIN009|Q$", "BI110T1_MAIN010<>P", "BI110T1_BONUS011 %1", "BI110T1_BONUS012 @2",
+        "BI110T1_BONUS013 #3", "BI110T1_BONUS014 &4", "BI110T1_BONUS015 *5", "BI110T1_BONUS016 ^6",
+        "BI110T1_EXTRA017 ~7", "BI110T1_EXTRA018 ?8", "BI110T1_TEST019 |9", "BI110T1_TEST020 <0",
+      ],
+      "BI110_T2": [
+        "test111", "BI110T2_MAIN001#A@", "BI110T2_MAIN002!Z*", "BI110T2_MAIN003$K#", "BI110T2_MAIN004&Y!",
+        "BI110T2_MAIN005*X%", "BI110T2_MAIN006^R&", "BI110T2_MAIN007~S+", "BI110T2_MAIN008?D#",
+        "BI110T2_MAIN009|Q$", "BI110T2_MAIN010<>P", "BI110T2_BONUS011 %1", "BI110T2_BONUS012 @2",
+        "BI110T2_BONUS013 #3", "BI110T2_BONUS014 &4", "BI110T2_BONUS015 *5", "BI110T2_BONUS016 ^6",
+        "BI110T2_EXTRA017 ~7", "BI110T2_EXTRA018 ?8", "BI110T2_TEST019 |9", "BI110T2_TEST020 <0", "BI&CS110T2@"
+      ],
+      "BI110_T3": [
+        "BI110T3_MAIN001#A@", "BI110T3_MAIN002!Z*", "BI110T3_MAIN003$K#", "BI110T3_MAIN004&Y!",
+        "BI110T3_MAIN005*X%", "BI110T3_MAIN006^R&", "BI110T3_MAIN007~S+", "BI110T3_MAIN008?D#",
+        "BI110T3_MAIN009|Q$", "BI110T3_MAIN010<>P", "BI110T3_BONUS011 %1", "BI110T3_BONUS012 @2",
+        "BI110T3_BONUS013 #3", "BI110T3_BONUS014 &4", "BI110T3_BONUS015 *5", "BI110T3_BONUS016 ^6",
+        "BI110T3_EXTRA017 ~7", "BI110T3_EXTRA018 ?8", "BI110T3_TEST019 |9", "BI110T3_TEST020 <0","ElijA⚓H"
+      ],
+
+      // === CS110 ===
+      "CS110_T1": [
+        "CS110T1_MAIN001#A@", "CS110T1_MAIN002!Z*", "CS110T1_MAIN003$K#", "CS110T1_MAIN004&Y!",
+        "CS110T1_MAIN005*X%", "CS110T1_MAIN006^R&", "CS110T1_MAIN007~S+", "CS110T1_MAIN008?D#",
+        "CS110T1_MAIN009|Q$", "CS110T1_MAIN010<>P", "CS110T1_BONUS011 %1", "CS110T1_BONUS012 @2",
+        "CS110T1_BONUS013 #3", "CS110T1_BONUS014 &4", "CS110T1_BONUS015 *5", "CS110T1_BONUS016 ^6",
+        "CS110T1_EXTRA017 ~7", "CS110T1_EXTRA018 ?8", "CS110T1_TEST019 |9", "CS110T1_TEST020 <0"
+      ],
+      "CS110_T2": [
+        "CS110T2_MAIN002!Z*", "CS110T2_MAIN004&Y!", "CS110T2_MAIN005*X%", "CS110T2_MAIN006^R&",
+        "CS110T2_MAIN007~S+", "CS110T2_MAIN008?D#", "CS110T2_MAIN009|Q$", "CS110T2_MAIN010<>P",
+        "CS110T2_BONUS011 %1", "CS110T2_BONUS012 @2", "CS110T2_BONUS013 #3", "CS110T2_BONUS014 &4",
+        "CS110T2_BONUS015 *5", "CS110T2_BONUS016 ^6", "CS110T2_EXTRA017 ~7", "CS110T2_EXTRA018 ?8",
+        "CS110T2_TEST019 |9", "CS110T2_TEST020 <0", "BI&CS110T2@",
+        "CS110T2_CORE041!A#", "CS110T2_CORE042#B$", "CS110T2_CORE043%X", "CS110T2_CORE044^Y*",
+        "CS110T2_CORE045*Z@", "CS110T2_CORE046~M%", "CS110T2_CORE047?N^", "CS110T2_CORE048|P~",
+        "CS110T2_CORE049<QR", "CS110T2_CORE050>ST", "CS110T2_BONUS051 +1", "CS110T2_BONUS052 -2",
+        "CS110T2_BONUS053 =3", "CS110T2_BONUS054 _4", "CS110T2_BONUS055 :5", "CS110T2_BONUS056 ;6",
+        "CS110T2_EXTRA057 [7", "CS110T2_EXTRA058 ]8", "CS110T2_TEST059 {9", "CS110T2_TEST060 }0",
+        "CS110T2_MAIN003$K#"
+      ],
+      "CS110_T3": [
+        "CS110T3_MAIN001#A@", "CS110T3_MAIN002!Z*", "CS110T3_MAIN003$K#", "CS110T3_MAIN004&Y!",
+        "CS110T3_MAIN005*X%", "CS110T3_MAIN006^R&", "CS110T3_MAIN007~S+", "CS110T3_MAIN008?D#",
+        "CS110T3_MAIN009|Q$", "CS110T3_MAIN010<>P", "CS110T3_BONUS011 %1", "CS110T3_BONUS012 @2",
+        "CS110T3_BONUS013 #3", "CS110T3_BONUS014 &4", "CS110T3_BONUS015 *5", "CS110T3_BONUS016 ^6",
+        "CS110T3_EXTRA017 ~7", "CS110T3_EXTRA018 ?8", "CS110T3_TEST019 |9", "CS110T3_TEST020 <0",
+        "CS110T1_MAIN001#A@", "CS110T1_MAIN002!Z*", "CS110T1_MAIN003$K#", "CS110T1_MAIN004&Y!",
+        "CS110T1_MAIN005*X%", "CS110T1_MAIN006^R&", "CS110T1_MAIN007~S+", "CS110T1_MAIN008?D#",
+        "CS110T1_MAIN009|Q$", "CS110T1_MAIN010<>P", "CS110T1_BONUS011 %1", "CS110T1_BONUS012 @2",
+        "CS110T1_BONUS013 #3", "CS110T1_BONUS014 &4", "CS110T1_BONUS015 *5", "CS110T1_BONUS016 ^6",
+        "CS110T1_EXTRA017 ~7", "CS110T1_EXTRA018 ?8", "CS110T1_TEST019 |9", "CS110T1_TEST020 <0"
+      ],
+
+      // GLOBAL
+      "GLOBAL_ALL_TERMS": [
+        "kk22kk4","Lizzy","SUPER_USER_XYZ_789","All-terms@#<0","Lizzy@","becky @&_","KULIKA🌟",
+        "FULL_UNLOCK_2025","ACCESS_GRANTED_GLOBAL$","CBU_UNLOCK_CODE🔥","MASTER_KEY_∞_ENTRY",
+        "EVERYTHING_PASS_T1T2T3","ULTRA_PASS_9999","ONE_KEY_TO_RULE_THEM_ALL","GLOBAL_MASTER_777🔐",
+        "UNIVERSAL_ACCESS_VIP","CBU_ELITE_KEY2025","TOTAL_DOMINATOR_CODE","UNLOCK_THIS_WORLD",
+        "OPEN_ALL_LEVELS_📘","ROOT_ACCESS_GRANTED!","KAERI_GLOBAL_TERMS🔓","REAL🌟JED","All-terms@#<00"
+      ],
+      "CS110_ALL_TERMS": [
+        "CS110_PRO_PASS_ABC","CS110_GOLD_MEMBER","CS110_TERM_UNLOCKER_1","CS110_T1_T2_T3_UNLOCK",
+        "CS110_PREMIUM_2025!","CS110_TOTAL_ACCESS+","CS110_FULL_KIT_KEY","CS110_ALL_YEARS_PASS",
+        "CS110_GENIUS_MODE_🔓","CS110_MERIT_GRANT2025","CS110_TOP_SECRET_PASS","CS110_ULTIMATE_KEY#",
+        "CS110_QUANTUM_ENTRY","CS110_ALL_TERM_ENTRY","CS110_BRAINY_MODE_007","CS110_UNLOCKZILLA🔥",
+        "CS110_PASSCARD_24/7","CS110_ELITE_ACADEMY","CS110_MASTERCLASS_✓","CS110_PRO_PLUS_TERMS"
+      ],
+      "BI110_ALL_TERMS": [
+        "BI110_BUNDLE_PACK_123","BI110_TOTAL_ACCESS","BI110_PRO_MODE","BI110_FULL_SEMESTER_KEY",
+        "BI110_TEST_PASS_XYZ","BI110_T1_T2_T3_OKAY","BI110_GRADEBOOST_2025","BI110_FLASHCARDS_OPENALL",
+        "BI110_MASTER_UNLOCK","BI110_STAR_USER_KEY","BI110_REVISION_KING","BI110_TOP_MARKS_KEY",
+        "BI110_ACCESS_ALL🌱","BI110_FULL_POWER_CODE","BI110_PASS_ANYTIME","BI110_KNOWLEDGE_HUB🔓",
+        "BI110_ALL_TERM_ENTRY","BI110_SMART_PASS@2025","BI110_UNLOCK_MY_BRAIN","BI110_KAERI_SPECIAL_KEY"
+      ]
+    };
+
+    const revokedAccessCodes = ["test111","CS110T1_MAIN001#A@","BI110T2_MAIN004&Y!","BI110T3_MAIN005*X%"];
+
+    const alreadyActivatedCodes = [
+        "MASTER_ACCESS_2025!@#$","CS110T2_BONUS014 &4", "BI110T1_MAIN001#A@", "BI110T1_MAIN002!Z*",
+        "BI110T1_MAIN003$K#", "BI110T1_MAIN004&Y!", "BI110T1_MAIN005*X%", "BI110T1_MAIN006^R&",
+        "BI110T1_MAIN007~S+", "BI110T1_MAIN008?D#", "BI110T1_MAIN009|Q$", "BI110T1_MAIN010<>P",
+        "BI110T1_BONUS011 %1", "BI110T1_BONUS012 @2", "BI110T1_BONUS013 #3", "BI110T1_BONUS014 &4",
+        "BI110T1_BONUS015 *5", "BI110T1_BONUS016 ^6", "BI110T1_EXTRA017 ~7", "BI110T1_EXTRA018 ?8",
+        "BI110T1_TEST019 |9", "BI110T1_TEST020 <0", "test111", "BI110T2_MAIN001#A@",
+        "BI110T2_MAIN002!Z*", "BI110T2_MAIN004&Y!", "BI110T2_MAIN006^R&", "BI110T2_MAIN007~S+",
+        "BI110T2_MAIN008?D#", "BI110T2_MAIN009|Q$", "BI110T2_MAIN010<>P", "BI110T2_BONUS011 %1",
+        "BI110T2_BONUS012 @2", "BI110T2_BONUS013 #3", "BI110T2_BONUS014 &4", "BI110T2_BONUS015 *5",
+        "BI110T2_BONUS016 ^6", "BI110T2_EXTRA017 ~7", "BI110T2_EXTRA018 ?8", "BI110T2_TEST019 |9",
+        "BI110T2_TEST020 <0", "BI110T3_MAIN001#A@", "BI110T3_MAIN002!Z*", "BI110T3_MAIN003$K#",
+        "BI110T3_MAIN004&Y!", "BI110T3_MAIN005*X%", "BI110T3_MAIN006^R&", "BI110T3_MAIN007~S+",
+        "BI110T3_MAIN008?D#", "BI110T3_MAIN009|Q$", "BI110T3_MAIN010<>P", "BI110T3_BONUS011 %1",
+        "BI110T3_BONUS012 @2", "BI110T3_BONUS013 #3", "BI110T3_BONUS014 &4", "BI110T3_BONUS015 *5",
+        "BI110T3_BONUS016 ^6", "BI110T3_EXTRA017 ~7", "BI110T3_EXTRA018 ?8", "BI110T3_TEST019 |9",
+        "BI110T3_TEST020 <0", "CS110T2_MAIN003$K#", "CS110T2_MAIN004&Y!", "CS110T2_MAIN005*X%",
+        "CS110T2_MAIN006^R&", "CS110T2_MAIN007~S+", "CS110T2_MAIN008?D#", "CS110T2_MAIN009|Q$",
+        "CS110T2_MAIN010<>P", "CS110T2_BONUS011 %1", "CS110T2_BONUS012 @2", "CS110T2_BONUS013 #3",
+        "CS110T2_BONUS014 &4", "CS110T2_BONUS015 *5", "CS110T2_BONUS016 ^6", "CS110T2_EXTRA017 ~7",
+        "CS110T2_EXTRA018 ?8", "CS110T2_TEST019 |9", "CS110T2_TEST020 <0", "CS110T2_CORE041!A#",
+        "CS110T2_CORE042#B$", "CS110T2_CORE043%X", "CS110T2_CORE044^Y*", "CS110T2_CORE045*Z@",
+        "CS110T2_CORE046~M%", "CS110T2_CORE047?N^", "CS110T2_CORE048|P~", "CS110T2_CORE049<QR",
+        "CS110T2_CORE050>ST", "CS110T2_BONUS051 +1", "CS110T2_BONUS052 -2", "CS110T2_BONUS053 =3",
+        "CS110T2_BONUS054 _4", "CS110T2_BONUS055 :5", "CS110T2_BONUS056 ;6", "CS110T2_EXTRA057 [7",
+        "CS110T2_EXTRA058 ]8", "CS110T2_TEST059 {9", "CS110T2_TEST060 }0", "CS110T3_MAIN001#A@",
+        "CS110T3_MAIN002!Z*", "CS110T3_MAIN003$K#", "CS110T3_MAIN004&Y!", "CS110T3_MAIN006^R&",
+        "CS110T3_MAIN007~S+", "CS110T3_MAIN008?D#", "CS110T3_MAIN009|Q$", "CS110T3_MAIN010<>P",
+        "CS110T3_BONUS011 %1", "CS110T3_BONUS012 @2", "CS110T3_BONUS013 #3", "CS110T3_BONUS014 &4",
+        "CS110T3_BONUS015 *5", "CS110T3_BONUS016 ^6", "CS110T3_EXTRA017 ~7", "CS110T3_EXTRA018 ?8",
+        "CS110T3_TEST019 |9", "CS110T3_TEST020 <0", "CS110T1_MAIN001#A@", "CS110T1_MAIN002!Z*",
+        "CS110T1_MAIN003$K#", "CS110T1_MAIN004&Y!", "CS110T1_MAIN005*X%", "CS110T1_MAIN006^R&",
+        "CS110T1_MAIN007~S+", "CS110T1_MAIN008?D#", "CS110T1_MAIN009|Q$", "CS110T1_MAIN010<>P",
+        "CS110T1_BONUS011 %1", "CS110T1_BONUS012 @2", "CS110T1_BONUS013 #3", "CS110T1_BONUS014 &4",
+        "CS110T1_BONUS015 *5", "CS110T1_BONUS016 ^6", "CS110T1_EXTRA017 ~7", "CS110T1_EXTRA018 ?8",
+        "CS110T1_TEST019 |9", "CS110T1_TEST020 <0", "Lizzy@", "CS110T3_MAIN005*X%", "REAL🌟JED",
+        "BI110_TOTAL_ACCESS", "FULL_UNLOCK_2025", "ACCESS_GRANTED_GLOBAL$", "BI110_BUNDLE_PACK_123",
+        "SUPER_USER_XYZ_789", "CBU_UNLOCK_CODE🔥", "MASTER_KEY_∞_ENTRY", "kk22kk4", "BI110_PRO_MODE",
+        "CS110_PRO_PASS_ABC", "BI110T2_MAIN003$K#", "ElijA⚓H", "All-terms@#<00", "CS110_PRO_PLUS_TERMS",
+        "BI110_TEST_PASS_XYZ", "Lizzy", "CS110_ALL_YEARS_PASS", "ULTRA_PASS_9999", "BI110T2_MAIN005*X%",
+        "GLOBAL_MASTER_777🔐", "CS110T2_MAIN002!Z*", "BI110T2_MAIN003$K#", "BI&CS110T2@",
+        "BI110_T1_T2_T3_OKAY", "CS110_TERM_UNLOCKER_1", "BI110_GRADEBOOST_2025", "UNIVERSAL_ACCESS_VIP",
+        "CBU_ELITE_KEY2025", "EVERYTHING_PASS_T1T2T3", "BI110_FLASHCARDS_OPENALL",
+        "BI110_ALL_TERM_ENTRY", "CS110_T1_T2_T3_UNLOCK", "TOTAL_DOMINATOR_CODE", "CS110_TOP_SECRET_PASS"
+    ];
+
+    let usedAccessCodes = [];
+    let hasFullAccess = false;
+    const EXPIRES_IN_DAYS = 20;
+    const MILLISECONDS_IN_20_DAYS = EXPIRES_IN_DAYS * 24 * 60 * 60 * 1000;
+
+    let allMcqData = [];
+    let allShortData = [];
+    let allEssayData = [];
+    let allFlashcards = {};
+
+    let currentMcqData = [];
+    let currentShortData = [];
+    let currentEssayData = [];
+    let currentFlashcardTopics = {};
+
+    let currentQuizType = null;
+    let currentQuestionIndex = 0;
+    let currentScore = 0;
+    let currentQuizData = [];
+
+    let currentCourse = null;
+    let currentTerm = null;
+    let currentTermKey = null;
+
+    function denyAccess(message, codeToClear = null) {
+      hasFullAccess = false;
+      if (codeToClear) {
+        localStorage.removeItem("accessCode_GLOBAL_ALL_TERMS");
+        localStorage.removeItem("accessCodeExpires_GLOBAL_ALL_TERMS");
+        localStorage.removeItem("accessCode_" + currentCourse + "_ALL_TERMS");
+        localStorage.removeItem("accessCodeExpires_" + currentCourse + "_ALL_TERMS");
+      }
+      localStorage.removeItem("accessCode_" + currentTermKey);
+      localStorage.removeItem("accessCodeExpires_" + currentTermKey);
+
+      updateModeBanner("🔒 Demo Mode: Limited Access");
+      document.getElementById('mode-banner').classList.add('demo-mode-banner');
+      document.getElementById('mode-banner').classList.remove('full-access-banner');
+      showAppNotification(message, "error");
+    }
+
+    function initializeCourseLogic() {
+      // Initialize TTS
+      ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
+      const modeButtonsDiv = document.querySelector('.mode-buttons');
+      if (modeButtonsDiv && !document.getElementById('tts-toggle-button')) {
+        const ttsButton = document.createElement('button');
+        ttsButton.id = 'tts-toggle-button';
+        ttsButton.onclick = toggleTTS;
+        modeButtonsDiv.appendChild(ttsButton);
+        updateTtsButtonText();
+      }
+
+      const body = document.body;
+      currentCourse = body.getAttribute('data-course');
+      currentTerm = body.getAttribute('data-term');
+      currentTermKey = `${currentCourse}_${currentTerm}`;
+      const courseAllTermsKey = `${currentCourse}_ALL_TERMS`;
+
+      if (!currentCourse || !currentTerm) return;
+
+      try {
+        const storedUsed = localStorage.getItem("globalUsedAccessCodes");
+        usedAccessCodes = storedUsed ? JSON.parse(storedUsed) : [];
+      } catch (e) {
+        usedAccessCodes = [];
+      }
+
+      allMcqData = typeof mcqData !== 'undefined' ? mcqData : [];
+      allShortData = typeof shortData !== 'undefined' ? shortData : [];
+      allEssayData = typeof essayData !== 'undefined' ? essayData : [];
+      allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
+
+      currentMcqData = filterDataByCourseAndTerm(allMcqData, currentCourse, currentTerm);
+      currentShortData = filterDataByCourseAndTerm(allShortData, currentCourse, currentTerm);
+      currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
+      currentFlashcardTopics = filterFlashcardsByCourseAndTerm(allFlashcards, currentCourse, currentTerm);
+
+      let foundValidAccess = false;
+      let needsPrompt = true;
+
+      const checkAndApplyAccess = (code, expiry, type) => {
+        if (!code || !expiry) return false;
+        const storedExpiry = parseInt(expiry, 10);
+
+        if (revokedAccessCodes.includes(code)) {
+          denyAccess(`❌ Your stored ${type} code "${code}" was revoked.`, code);
+          return false;
         }
-
-        // START THE APP (SPA TRANSITION)
-        function loadApp(course, term) {
-            const key = `${course}_${term}`;
-            const config = COURSE_CONFIG[key] || { price: "K15", title: `${course} ${term}` };
-
-            // 1. Switch CSS Mode
-            document.body.classList.add('app-mode');
-            document.body.style.paddingTop = "0px"; 
-
-            // 2. Switch Views
-            document.getElementById('view-landing').style.display = 'none';
-            document.getElementById('view-app').style.display = 'block';
-            window.scrollTo(0, 0);
-
-            // 3. Update DOM Content
-            document.getElementById('app-title').textContent = config.title;
-            document.getElementById('price-banner').textContent = `Price: ${config.price}`;
-            
-            document.getElementById('app-price-info').innerHTML = `
-                💰 ${course} ${term}: <strong>${config.price}</strong><br>
-                To MTN 0961005406 or Airtel 0974784161<br>
-                Or to Zanaco Account: 4584568100159 (Kaluluma Kaumbu)<br>
-                📞 WhatsApp proof to <a href="https://wa.me/260964312504" target="_blank">0964312504</a><br>
-                ✅ Your support keeps the app free & online.
-            `;
-
-            // 4. Initialize Logic (Calls function in script.js)
-            if (typeof initializeQuizApp === 'function') {
-                initializeQuizApp(course, term);
-            } else {
-                console.error("initializeQuizApp missing. Did you update assets/script.js?");
-            }
-
-            // 5. Update URL history
-            history.pushState({view: 'app', course, term}, "", `?c=${course}&t=${term}`);
+        if (alreadyActivatedCodes.includes(code)) {
+          const global = usedAccessCodes.find(e => e.code === code);
+          if (global && Date.now() < global.globalExpiry && Date.now() < storedExpiry) {
+            hasFullAccess = true;
+            updateModeBanner("✅ FULL ACCESS");
+            document.getElementById('mode-banner').classList.add('full-access-banner');
+            document.getElementById('mode-banner').classList.remove('demo-mode-banner');
+            showAppNotification(`✅ Full Access Mode (Re-activated via ${type})`, "success");
+            clearDemoLocks();
+            return true;
+          } else {
+            denyAccess(`❌ ${type} code "${code}" has already been globally activated or expired.`, code);
+            return false;
+          }
         }
-
-        // GO BACK HOME
-        function goHome() {
-            document.body.classList.remove('app-mode');
-            document.body.style.paddingTop = "50px";
-
-            document.getElementById('view-app').style.display = 'none';
-            document.getElementById('view-landing').style.display = 'block';
-            
-            // Clean up
-            document.getElementById("quiz-form").innerHTML = "";
-            document.getElementById("result").innerHTML = "";
-            
-            history.pushState({view: 'home'}, "", window.location.pathname);
+        if (Date.now() < storedExpiry) {
+          hasFullAccess = true;
+          updateModeBanner("✅ FULL ACCESS");
+          document.getElementById('mode-banner').classList.add('full-access-banner');
+          document.getElementById('mode-banner').classList.remove('demo-mode-banner');
+          showAppNotification(`✅ Full Access Mode (${type})`, "success");
+          clearDemoLocks();
+          return true;
+        } else {
+          denyAccess(`⏳ Your stored ${type} code "${code}" expired.`, code);
+          return false;
         }
+      };
 
-        // Handle Browser Back Button
-        window.onpopstate = function(event) {
-            if (event.state && event.state.view === 'app') {
-                loadApp(event.state.course, event.state.term);
+      if (checkAndApplyAccess(localStorage.getItem("accessCode_" + currentTermKey), localStorage.getItem("accessCodeExpires_" + currentTermKey), "Term Access")) {
+        foundValidAccess = true; needsPrompt = false;
+      }
+      if (!foundValidAccess && currentCourse) {
+        if (checkAndApplyAccess(localStorage.getItem("accessCode_" + courseAllTermsKey), localStorage.getItem("accessCodeExpires_" + courseAllTermsKey), "Course-wide Access")) {
+          foundValidAccess = true; needsPrompt = false;
+        }
+      }
+      if (!foundValidAccess) {
+        if (checkAndApplyAccess(localStorage.getItem("accessCode_GLOBAL_ALL_TERMS"), localStorage.getItem("accessCodeExpires_GLOBAL_ALL_TERMS"), "Global Access")) {
+          foundValidAccess = true; needsPrompt = false;
+        }
+      }
+
+      if (needsPrompt) {
+        const userCode = prompt("Enter Access Code (or blank for Demo):");
+        if (!userCode) {
+          updateModeBanner("🔒 Demo Mode");
+          document.getElementById('mode-banner').classList.add('demo-mode-banner');
+          document.getElementById('mode-banner').classList.remove('full-access-banner');
+          showAppNotification("🔒 Demo Mode", "info");
+          hasFullAccess = false;
+        } else if (revokedAccessCodes.includes(userCode)) {
+          denyAccess(`❌ "${userCode}" is revoked.`, userCode);
+        } else if (alreadyActivatedCodes.includes(userCode)) {
+          denyAccess(`❌ "${userCode}" has already been activated and is no longer available.`, userCode);
+        } else {
+          let codeFoundInConfig = false;
+          let accessType = "";
+          let storageKeyPrefix = "";
+
+          if (fullAccessCodes.GLOBAL_ALL_TERMS && fullAccessCodes.GLOBAL_ALL_TERMS.includes(userCode)) {
+            codeFoundInConfig = true; accessType = "Global Access"; storageKeyPrefix = "GLOBAL_ALL_TERMS";
+          } else if (fullAccessCodes[courseAllTermsKey] && fullAccessCodes[courseAllTermsKey].includes(userCode)) {
+            codeFoundInConfig = true; accessType = "Course-wide Access"; storageKeyPrefix = courseAllTermsKey;
+          } else if (fullAccessCodes[currentTermKey] && fullAccessCodes[currentTermKey].includes(userCode)) {
+            codeFoundInConfig = true; accessType = "Term Access"; storageKeyPrefix = currentTermKey;
+          }
+
+          if (codeFoundInConfig) {
+            const global = usedAccessCodes.find(e => e.code === userCode);
+            if (global && Date.now() < global.globalExpiry) {
+              localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
+              localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, global.globalExpiry);
+              hasFullAccess = true;
+              updateModeBanner("✅ FULL ACCESS");
+              document.getElementById('mode-banner').classList.add('full-access-banner');
+              document.getElementById('mode-banner').classList.remove('demo-mode-banner');
+              showAppNotification(`✅ Full Access (Re-activated via ${accessType})`, "success");
+              clearDemoLocks();
+            } else if (global && Date.now() >= global.globalExpiry) {
+              denyAccess(`⏳ "${userCode}" expired.`, userCode);
             } else {
-                goHome();
+              const newExpiry = Date.now() + MILLISECONDS_IN_20_DAYS;
+              usedAccessCodes.push({ code: userCode, globalExpiry: newExpiry });
+              localStorage.setItem("globalUsedAccessCodes", JSON.stringify(usedAccessCodes));
+              localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
+              localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, newExpiry);
+              hasFullAccess = true;
+              updateModeBanner("✅ FULL ACCESS");
+              document.getElementById('mode-banner').classList.add('full-access-banner');
+              document.getElementById('mode-banner').classList.remove('demo-mode-banner');
+              showAppNotification(`✅ Full Access (${accessType})`, "success");
+              clearDemoLocks();
             }
-        };
+          } else {
+            denyAccess("❌ Invalid Code.");
+          }
+        }
+      }
+    }
 
-        // Handle Direct URL Links (Bookmarks)
-        window.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const c = urlParams.get('c');
-            const t = urlParams.get('t');
-            if (c && t) {
-                loadApp(c, t);
-            }
+    // === SPA NAVIGATION ENGINE ===
+    function loadCourse(course, term, price) {
+      document.body.setAttribute('data-course', course);
+      document.body.setAttribute('data-term', term);
+      document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
+      document.getElementById('price-badge').textContent = `Price: K${price}`;
+      document.getElementById('price-val').textContent = `K${price}`;
+      document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
+
+      document.getElementById('landing-view').style.display = 'none';
+      document.getElementById('course-view').style.display = 'block';
+      
+      // SHOW STATIC HEADER (SCROLLS WITH PAGE)
+      document.getElementById('static-header-container').style.display = 'block';
+
+      window.scrollTo(0,0);
+      
+      setTimeout(() => {
+        initializeCourseLogic();
+        renderQuiz(); 
+      }, 100);
+    }
+
+    function backToMenu() {
+      document.getElementById('landing-view').style.display = 'block';
+      document.getElementById('course-view').style.display = 'none';
+      document.getElementById('static-header-container').style.display = 'none';
+
+      document.getElementById('quiz-form').innerHTML = '';
+      document.getElementById('result').innerHTML = '';
+      document.body.removeAttribute('data-course');
+      document.body.removeAttribute('data-term');
+      stopReading();
+      window.scrollTo(0,0);
+    }
+
+    function toggleTerms(courseId) {
+      const termButtons = document.getElementById(courseId + '-terms');
+      const courseButton = termButtons.previousElementSibling;
+      if (termButtons.style.display === 'flex') {
+        termButtons.style.display = 'none';
+        courseButton.classList.remove('active');
+      } else {
+        document.querySelectorAll('.term-buttons').forEach(section => {
+          if (section.id !== courseId + '-terms') {
+            section.style.display = 'none';
+            section.previousElementSibling.classList.remove('active');
+          }
         });
-    </script>
+        termButtons.style.display = 'flex';
+        courseButton.classList.add('active');
+      }
+    }
+
+    // === HELPER FUNCTIONS ===
+    function showAppNotification(message, type = 'info', duration = 5000) {
+      const el = document.getElementById('app-notification');
+      if (!el) return alert(message);
+      el.querySelector('.notification-message').textContent = message;
+      el.className = 'show ' + type;
+      if (el.timeoutId) clearTimeout(el.timeoutId);
+      el.timeoutId = setTimeout(() => el.classList.remove('show'), duration);
+      el.querySelector('.close-btn').onclick = () => {
+        el.classList.remove('show');
+        clearTimeout(el.timeoutId);
+      };
+    }
+
+    function updateModeBanner(message) {
+      const banner = document.getElementById("mode-banner");
+      if (banner) banner.textContent = message;
+    }
+
+    function filterDataByCourseAndTerm(data, course, term) {
+      if (!Array.isArray(data)) return [];
+      return data.filter(item => item.course === course && item.term === term);
+    }
+
+    function filterFlashcardsByCourseAndTerm(all, course, term) {
+      const filtered = {};
+      for (const topic in all) {
+        if (all.hasOwnProperty(topic)) {
+          const cards = all[topic].filter(card => card.course === course && card.term === term);
+          if (cards.length > 0) filtered[topic] = cards;
+        }
+      }
+      return filtered;
+    }
+
+    function clearDemoLocks() {
+      ["mcq", "shortAnswer", "essay", "flashcard"].forEach(
+        m => localStorage.removeItem(`demo_${m}_used_${currentTermKey}`)
+      );
+    }
+
+    function shuffle(array) {
+      let currentIndex = array.length, randomIndex;
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      }
+      return array;
+    }
+
+    function blockDemo(type) {
+      if (hasFullAccess) return false;
+      const key = `demo_${type}_used_${currentTermKey}`;
+      let attempts = parseInt(localStorage.getItem(key) || "0");
+      if (attempts >= 1) {
+        showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
+        return true;
+      }
+      localStorage.setItem(key, attempts + 1);
+      return false;
+    }
+
+    function updateProgress(current, total) {
+      const fill = document.getElementById("progress-fill");
+      const text = document.getElementById("progress-text");
+      const percent = total === 0 ? 0 : (current / total) * 100;
+      if (fill) fill.style.width = `${percent}%`;
+      if (text) text.textContent = `Progress: ${current} of ${total}`;
+    }
+
+    // === MCQ LOGIC ===
+    function renderQuiz() {
+      if (blockDemo('mcq')) return;
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      document.getElementById("result").innerHTML = "";
+      let q = shuffle([...currentMcqData]).slice(0, 10);
+      currentQuizData = q;
+      currentQuizType = 'mcq';
+      currentQuestionIndex = 0;
+      currentScore = 0;
+      if (q.length === 0) {
+        container.innerHTML = "<p>No questions available.</p>";
+        updateProgress(0, 0);
+        return;
+      }
+      displayMcqQuestion();
+    }
+
+    function displayMcqQuestion() {
+      const container = document.getElementById("quiz-form");
+      const q = currentQuizData[currentQuestionIndex];
+      updateProgress(currentQuestionIndex + 1, currentQuizData.length);
+      if (!q) return showFinalMcqScore();
+      let html = `<div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div><div class="question-box"><p>${q.q}</p><div class="options">`;
+      q.options.forEach((opt, i) => {
+        html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
+      });
+      html += `</div><button onclick="checkMcqAnswer()">✅ Submit</button></div>`;
+      container.innerHTML = html;
+      document.getElementById("result").innerHTML = "";
+      container.scrollIntoView({ behavior: "smooth" });
+      readCurrentQuestion();
+    }
+
+    function checkMcqAnswer() {
+      const selected = document.querySelector('input[name="mcq"]:checked');
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      if (!selected) return showAppNotification("Select an option!", "warning");
+      const q = currentQuizData[currentQuestionIndex];
+      const userAnswer = parseInt(selected.value);
+      let feedbackText = "";
+      if (userAnswer === q.correct) {
+        currentScore++;
+        resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
+      } else {
+        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
+        feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
+      }
+      resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+      feedbackText += ` Explanation: ${q.explanation || ''}`;
+      currentQuestionIndex++;
+      const nextBtn = document.createElement("button");
+      nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
+      nextBtn.onclick = displayMcqQuestion;
+      resultDiv.appendChild(nextBtn);
+      document.querySelectorAll('input[name="mcq"]').forEach(input => input.disabled = true);
+      readAnswerFeedback(feedbackText);
+    }
+
+    function showFinalMcqScore() {
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      updateProgress(currentQuizData.length, currentQuizData.length);
+      const percent = Math.round((currentScore / currentQuizData.length) * 100);
+      let comment = percent >= 90 ? "🎉 Excellent work!" : percent >= 70 ? "✅ Good job!" : percent >= 50 ? "⚠️ Fair attempt." : "❌ Keep practicing!";
+      container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
+      const restartBtn = document.createElement("button");
+      restartBtn.innerText = "🔁 Try Again";
+      restartBtn.onclick = renderQuiz;
+      container.appendChild(restartBtn);
+    }
+
+    // === SHORT ANSWER LOGIC ===
+    function renderShortAnswers() {
+      if (blockDemo('shortAnswer')) return;
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      document.getElementById("result").innerHTML = "";
+      let q = shuffle([...currentShortData]).slice(0, 10);
+      currentQuizData = q;
+      currentQuizType = 'shortAnswer';
+      currentQuestionIndex = 0;
+      currentScore = 0;
+      if (q.length === 0) {
+        container.innerHTML = "<p>No short answer questions available.</p>";
+        updateProgress(0, 0);
+        return;
+      }
+      displayShortAnswerQuestion();
+    }
+
+    function displayShortAnswerQuestion() {
+      const container = document.getElementById("quiz-form");
+      const q = currentQuizData[currentQuestionIndex];
+      updateProgress(currentQuestionIndex + 1, currentQuizData.length);
+      if (!q) return showFinalShortAnswerScore();
+      container.innerHTML = `<h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3><div class="question-box"><p>${q.q}</p></div><textarea id="short-answer-input"></textarea><button onclick="checkShortAnswer()">✅ Submit</button>`;
+      document.getElementById("result").innerHTML = "";
+      container.scrollIntoView({ behavior: "smooth" });
+      readCurrentQuestion();
+    }
+
+    function checkShortAnswer() {
+      const ans = document.getElementById("short-answer-input").value.trim().toLowerCase();
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      if (!ans) return showAppNotification("Please type your answer!", "warning");
+      const q = currentQuizData[currentQuestionIndex];
+      const matched = q.keywords.some(k => ans.includes(k.toLowerCase()));
+      let feedbackText = "";
+      if (matched) {
+        currentScore++;
+        resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
+      } else {
+        resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
+        feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
+      }
+      resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+      feedbackText += ` Explanation: ${q.explanation || ''}`;
+      currentQuestionIndex++;
+      const nextBtn = document.createElement("button");
+      nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish";
+      nextBtn.onclick = displayShortAnswerQuestion;
+      resultDiv.appendChild(nextBtn);
+      document.getElementById("short-answer-input").disabled = true;
+      readAnswerFeedback(feedbackText);
+    }
+
+    function showFinalShortAnswerScore() {
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      updateProgress(currentQuizData.length, currentQuizData.length);
+      const percent = Math.round((currentScore / currentQuizData.length) * 100);
+      let comment = percent >= 90 ? "🎉 Excellent work!" : percent >= 70 ? "✅ Good job!" : percent >= 50 ? "⚠️ Fair attempt." : "❌ Keep practicing!";
+      container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
+      const restartBtn = document.createElement("button");
+      restartBtn.innerText = "🔁 Try Again";
+      restartBtn.onclick = renderShortAnswers;
+      container.appendChild(restartBtn);
+    }
+
+    // === ESSAY LOGIC ===
+    let currentEssay = null;
+    let currentStepIndex = 0;
+    let essayScore = 0;
+
+    function renderEssaySimulation() {
+      if (blockDemo('essay')) return;
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      document.getElementById("result").innerHTML = "";
+      currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
+      if (currentQuizData.length === 0) {
+        container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
+        updateProgress(0, 0);
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * currentQuizData.length);
+      currentEssay = currentQuizData[randomIndex];
+      currentStepIndex = 0;
+      essayScore = 0;
+      showEssayStep(currentStepIndex);
+    }
+
+    function showEssayStep(index) {
+      const container = document.getElementById("quiz-form");
+      const essay = currentEssay;
+      const step = essay.steps[index];
+      updateProgress(index + 1, essay.steps.length);
+      if (!step) return showFinalEssayScore();
+      let html = `<div class="question-header"><h3>📄 ${essay.title} — Step ${index + 1} of ${essay.steps.length}</h3><p>Topic: ${essay.topic} | ${essay.year}</p></div><div class="question-box"><p><strong>Q:</strong> ${step.q}</p><div class="options">`;
+      step.options.forEach((opt, i) => {
+        html += `<label class="option"><input type="radio" name="step-option" value="${i}" /> <span>${String.fromCharCode(65 + i)}. ${opt}</span></label>`;
+      });
+      html += `</div><button onclick="checkEssayStep()">✅ Submit Step</button></div>`;
+      container.innerHTML = html;
+      document.getElementById("result").innerHTML = "";
+      container.scrollIntoView({ behavior: "smooth" });
+      readCurrentQuestion();
+    }
+
+    function checkEssayStep() {
+      const selectedOption = document.querySelector('input[name="step-option"]:checked');
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      if (!selectedOption) return showAppNotification("Please select an option!", "warning");
+      const essay = currentEssay;
+      const step = essay.steps[currentStepIndex];
+      const userAnswer = parseInt(selectedOption.value);
+      const correct = userAnswer === step.correct;
+      let feedbackText = "";
+      if (correct) {
+        essayScore++;
+        resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
+      } else {
+        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
+        feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
+      }
+      resultDiv.innerHTML += `<div class="explanation-box">${step.explanation || ''}</div>`;
+      feedbackText += ` Explanation: ${step.explanation || ''}`;
+      const nextBtn = document.createElement("button");
+      nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
+      nextBtn.onclick = () => {
+        if (currentStepIndex < essay.steps.length - 1) {
+          currentStepIndex++;
+          showEssayStep(currentStepIndex);
+        } else {
+          showFinalEssayScore();
+        }
+      };
+      resultDiv.appendChild(nextBtn);
+      document.querySelectorAll('input[name="step-option"]').forEach(input => input.disabled = true);
+      readAnswerFeedback(feedbackText);
+    }
+
+    function showFinalEssayScore() {
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      updateProgress(currentEssay.steps.length, currentEssay.steps.length);
+      const percent = Math.round((essayScore / currentEssay.steps.length) * 100);
+      let comment = percent >= 90 ? "🎉 Excellent process understanding!" : percent >= 70 ? "✅ Good step-by-step grasp!" : percent >= 50 ? "⚠️ Some steps need revision." : "❌ Keep improving!";
+      container.innerHTML = `<h2>Simulation Complete!</h2><p>Your Score: ${essayScore} / ${currentEssay.steps.length} (${percent}%)</p><p><em>${comment}</em></p>`;
+      const restartBtn = document.createElement("button");
+      restartBtn.innerText = "🔁 Try Another Simulation";
+      restartBtn.onclick = renderEssaySimulation;
+      container.appendChild(restartBtn);
+    }
+
+    // === FLASHCARDS LOGIC ===
+    let currentFlashcardTopic = null;
+    let currentFlashcards = [];
+    let currentCardIndex = 0;
+    let isCardFront = true;
+
+    function renderFlashcardTopics() {
+      if (blockDemo('flashcard')) return;
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = "";
+      document.getElementById("result").innerHTML = "";
+      currentQuizType = 'flashcard';
+      updateProgress(0, 0);
+      if (Object.keys(currentFlashcardTopics).length === 0) {
+        container.innerHTML = "<p>No flashcards available for this term.</p>";
+        return;
+      }
+      const listDiv = document.createElement('div');
+      listDiv.className = 'flashcard-topic-buttons';
+      for (const topic in currentFlashcardTopics) {
+        const btn = document.createElement("button");
+        btn.textContent = topic;
+        btn.onclick = () => startFlashcards(topic);
+        listDiv.appendChild(btn);
+      }
+      container.appendChild(listDiv);
+    }
+
+    function startFlashcards(topic) {
+      currentFlashcardTopic = topic;
+      currentFlashcards = currentFlashcardTopics[topic];
+      currentCardIndex = 0;
+      isCardFront = true;
+      displayFlashcard();
+    }
+
+    function displayFlashcard() {
+      const container = document.getElementById("quiz-form");
+      const card = currentFlashcards[currentCardIndex];
+      updateProgress(currentCardIndex + 1, currentFlashcards.length);
+      if (!card) return showFlashcardCompletion();
+      container.innerHTML = `
+        <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
+        <div class="flashcard-wrapper">
+          <div class="flashcard ${isCardFront ? '' : 'back-active'}" onclick="flipCard()">
+            <div class="card-face card-front">${card.front}</div>
+            <div class="card-face card-back">${card.back}</div>
+          </div>
+        </div>
+        <div class="flashcard-nav-buttons">
+          <button onclick="prevFlashcard()" ${currentCardIndex === 0 ? 'disabled' : ''}>⬅️ Prev</button>
+          <button onclick="nextFlashcard()" ${currentCardIndex === currentFlashcards.length - 1 ? 'disabled' : ''}>Next ➡️</button>
+        </div>
+        <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
+      `;
+      container.scrollIntoView({ behavior: "smooth" });
+      readFlashcard();
+    }
+
+    function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
+    function prevFlashcard() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
+    function nextFlashcard() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
+    function showFlashcardCompletion() {
+      const container = document.getElementById("quiz-form");
+      container.innerHTML = `<p>✅ Done with flashcards for "${currentFlashcardTopic}".</p><button onclick="startFlashcards(currentFlashcardTopic)">🔁 Review Again</button><button onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
+      updateProgress(currentFlashcards.length, currentFlashcards.length);
+    }
+
+    // === KEYBOARD SUPPORT ===
+    document.addEventListener("keydown", (e) => {
+      if (!currentQuizType) return;
+      if (currentQuizType === "mcq" || currentQuizType === "essay") {
+        const options = document.querySelectorAll('input[type="radio"]');
+        const selected = document.querySelector('input[type="radio"]:checked');
+        let index = Array.from(options).indexOf(selected);
+        switch (e.key) {
+          case "ArrowDown": case "ArrowRight":
+            if (options.length) { index = (index + 1) % options.length; options[index].checked = true; } break;
+          case "ArrowUp": case "ArrowLeft":
+            if (options.length) { index = (index - 1 + options.length) % options.length; options[index].checked = true; } break;
+          case "1": case "a": case "A": if (options[0]) options[0].checked = true; break;
+          case "2": case "b": case "B": if (options[1]) options[1].checked = true; break;
+          case "3": case "c": case "C": if (options[2]) options[2].checked = true; break;
+          case "4": case "d": case "D": if (options[3]) options[3].checked = true; break;
+          case "Enter":
+            if (currentQuizType === "mcq") checkMcqAnswer();
+            if (currentQuizType === "essay") checkEssayStep();
+            break;
+          case " ": case "n": case "N":
+            const nextBtn = document.querySelector("#result button");
+            if (nextBtn) nextBtn.click();
+            break;
+        }
+      }
+      if (currentQuizType === "shortAnswer" && e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault(); checkShortAnswer();
+      }
+      if (currentQuizType === "flashcard") {
+        switch (e.key) {
+          case "ArrowLeft": prevFlashcard(); break;
+          case "ArrowRight": nextFlashcard(); break;
+          case " ": case "Enter": flipCard(); break;
+        }
+      }
+    });
+
+    // === TEXT-TO-SPEECH (TTS) ===
+    let utterance = null;
+    function updateTtsButtonText() {
+      const ttsButton = document.getElementById('tts-toggle-button');
+      if (ttsButton) ttsButton.textContent = ttsEnabled ? '🔊 Turn Reader Off' : '🔇 Turn Reader On';
+    }
+    function toggleTTS() {
+      ttsEnabled = !ttsEnabled;
+      localStorage.setItem("ttsEnabled", ttsEnabled);
+      stopReading();
+      updateTtsButtonText();
+      showAppNotification(ttsEnabled ? "🔊 Reader is now ON." : "🔇 Reader is now OFF.");
+    }
+    function stopReading() {
+      if (utterance) { window.speechSynthesis.cancel(); utterance = null; }
+    }
+    function readText(text) {
+      if (!ttsEnabled) return;
+      stopReading();
+      utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    }
+    function readCurrentQuestion() {
+      if (!ttsEnabled) return;
+      stopReading();
+      let textToRead = "";
+      if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
+        const questionElement = document.querySelector('.question-box p');
+        const optionsElements = document.querySelectorAll('.options label');
+        if (questionElement) textToRead += questionElement.textContent.trim();
+        if (optionsElements.length > 0) {
+          textToRead += ". Options are: ";
+          optionsElements.forEach((label, i) => {
+            const optionText = label.textContent.replace(String.fromCharCode(65 + i) + ".", "").trim();
+            textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
+          });
+        }
+      } else if (currentQuizType === 'shortAnswer') {
+        const questionElement = document.querySelector('.question-box p');
+        if (questionElement) textToRead = questionElement.textContent.trim();
+      }
+      readText(textToRead);
+    }
+    function readAnswerFeedback(feedbackText) {
+      if (!ttsEnabled) return;
+      readText(feedbackText);
+    }
+    function readFlashcard() {
+      if (!ttsEnabled) return;
+      stopReading();
+      const card = currentFlashcards[currentCardIndex];
+      readText(isCardFront ? `Front of card. ${card.front}` : `Back of card. ${card.back}`);
+    }
+  </script>
 </body>
 </html>
