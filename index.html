@@ -18,8 +18,16 @@
       color: #e0e6ed;
       line-height: 1.6;
       overflow-y: auto;
-      /* Removed heavy top padding since header is no longer fixed */
-      padding: 20px; 
+      transition: padding-top 0.3s ease, opacity 0.3s ease;
+      padding-top: 50px; 
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+    }
+
+    /* Class applied when viewing a course */
+    body.view-course {
+      padding-top: 130px;
     }
 
     h1, h2, h3 {
@@ -34,9 +42,9 @@
     /* --- CONTAINERS --- */
     .quiz-container {
       max-width: 960px;
-      margin: 0 auto;
+      margin: auto;
       background: #1b263b;
-      padding: 30px;
+      padding: 40px 30px;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
@@ -95,33 +103,40 @@
       transform: translateY(-2px);
     }
 
-    /* --- COURSE HEADER (STATIC - NOT STUCK) --- */
-    /* This replaces the old fixed header. It sits normally in the page. */
-    #static-header-container {
-      display: none; /* Hidden on landing */
-      background: #162032;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #3e506e;
+    /* --- COURSE PAGE FIXED ELEMENTS --- */
+    #fixed-header, #price-banner { display: none; }
+
+    #fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #1b263b;
+      z-index: 1001;
+      padding: 10px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      box-sizing: border-box;
     }
 
-    #price-badge {
-      display: inline-block;
+    #price-banner {
+      position: fixed;
+      top: 70px;
+      right: 20px;
       background: #007bff;
       color: white;
-      padding: 5px 12px;
+      padding: 10px 16px;
       font-weight: 700;
-      font-size: 0.9rem;
-      border-radius: 15px;
-      float: right; /* Floats right within the static header */
+      font-size: 1rem;
+      border-radius: 8px;
+      z-index: 1000;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     }
 
     /* --- QUIZ INTERFACE --- */
     .mode-buttons {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
       margin-bottom: 30px;
     }
 
@@ -129,19 +144,21 @@
       background-color: #007bff;
       color: white;
       border: none;
-      padding: 12px 15px;
-      font-size: 1em;
+      padding: 15px 20px;
+      font-size: 1.1em;
       border-radius: 8px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .mode-buttons button:hover { background-color: #0056b3; transform: translateY(-3px); }
 
-    /* TTS Button Style */
+    /* TTS Button Specific Style */
     #tts-toggle-button {
-      background-color: #6f42c1; /* Purple */
+      background-color: #6610f2; /* Purple */
     }
-    #tts-toggle-button:hover { background-color: #59359a; }
+    #tts-toggle-button:hover {
+      background-color: #520dc2;
+    }
 
     #quiz-form {
       background-color: #0d1b2a;
@@ -160,7 +177,16 @@
     }
 
     .question-header h3 { margin: 0; flex-basis: 100%; margin-bottom: 10px; }
-    
+    .question-header span {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.8em;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
     .question-text, .question-box p {
       font-size: 1.15em;
       margin-bottom: 20px;
@@ -257,26 +283,24 @@
     #mode-banner {
       background-color: #2c3e50;
       color: #fff;
-      padding: 8px 12px;
+      padding: 10px 15px;
       text-align: center;
       font-weight: bold;
-      font-size: 1em;
+      font-size: 1.1em;
       border-radius: 8px;
-      margin-bottom: 10px;
-      display: inline-block; /* Inline with price badge */
-      width: calc(100% - 100px); /* Space for price badge */
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-    .demo-mode-banner { border: 1px solid #ffc107; color: #ffc107 !important; }
-    .full-access-banner { border: 1px solid #28a745; color: #28a745 !important; }
+    .demo-mode-banner { border: 2px solid #ffc107; color: #ffc107 !important; }
+    .full-access-banner { border: 2px solid #28a745; color: #28a745 !important; }
 
     #progress-container {
       width: 100%;
       background-color: #3e506e;
       border-radius: 5px;
-      margin-top: 5px;
-      height: 15px;
+      margin-top: 10px;
+      height: 20px;
       overflow: hidden;
-      clear: both; /* Clear floats */
     }
     #progress-fill {
       height: 100%;
@@ -287,21 +311,20 @@
     }
     #progress-text { text-align: center; margin-top: 5px; font-size: 0.9em; color: #a0a8b4; }
 
-    /* --- FLASHCARDS (GREEN BRANDING) --- */
+    /* --- FLASHCARDS --- */
     .flashcard-nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
     .flashcard-nav-buttons { display: flex; justify-content: space-between; width: 100%; gap: 15px; margin-top: 10px; }
-    .flashcard-nav-buttons button { flex-grow: 1; background-color: #28a745; color: white; border: none; padding: 10px; border-radius: 5px; }
+    .flashcard-nav-buttons button { flex-grow: 1; background-color: #007bff; color: white; border: none; padding: 10px; border-radius: 5px; }
     .flashcard-nav-buttons button:disabled { background-color: #4a5460; cursor: not-allowed; }
 
     .flashcard-wrapper {
         perspective: 1000px;
         width: 100%;
         max-width: 500px;
-        height: 350px; /* Slightly taller to show everything */
-        margin: 20px auto;
-        overflow: visible; /* Changed to visible to avoid cutting off 3D effects */
+        height: 300px;
+        margin: 30px auto;
+        overflow: hidden;
     }
-    
     .flashcard {
         width: 100%;
         height: 100%;
@@ -322,29 +345,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 25px;
+        padding: 20px;
         box-sizing: border-box;
         border-radius: 12px;
         font-size: 1.3em;
         text-align: center;
-        overflow-y: auto; /* Scroll internally if text is huge */
+        overflow-y: auto;
         word-break: break-word;
         transition: opacity 0.4s ease-in-out;
     }
-    
-    /* GREEN FLASHCARDS */
-    .card-front { 
-        background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%); /* Green Gradient */
-        color: white; 
-        border: 2px solid #155724;
-    }
-    .card-back { 
-        background-color: #2b3a55; 
-        color: #e0e6ed; 
-        transform: rotateY(180deg); 
-        border: 2px solid #3e506e;
-    }
-    
+    .card-front { background-color: #2b3a55; color: #e0e6ed; }
+    .card-back { background-color: #4a5460; color: #e0e6ed; transform: rotateY(180deg); }
     .flashcard.back-active .card-front { opacity: 0; }
     .flashcard.back-active .card-back { opacity: 1; }
 
@@ -357,14 +368,13 @@
         padding: 10px 20px;
         border-radius: 5px;
     }
-    
     .flashcard-topic-buttons {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 15px;
     }
     .flashcard-topic-buttons button {
-        background-color: #28a745; /* Green Topics */
+        background-color: #007bff;
         color: white;
         padding: 15px 20px;
         font-size: 1.1em;
@@ -372,7 +382,7 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         border: none;
     }
-    .flashcard-topic-buttons button:hover { background-color: #218838; transform: translateY(-3px); }
+    .flashcard-topic-buttons button:hover { background-color: #0056b3; transform: translateY(-3px); }
 
     /* --- NOTIFICATIONS & EXTRA UI --- */
     .announcement, .price-list {
@@ -447,12 +457,11 @@
 
     /* Responsive */
     @media (max-width: 768px) {
-      .quiz-container { padding: 20px 15px; }
-      h1 { font-size: 1.8rem; }
-      .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+      body.view-course { padding-top: 110px; }
+      .quiz-container { margin: 30px 15px; padding: 25px 15px; }
+      h1 { font-size: 2rem; }
+      .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
       .whatsapp-buttons { flex-direction: column; align-items: center; }
-      #mode-banner { width: 100%; display: block; margin-bottom: 5px; }
-      #price-badge { float: none; display: inline-block; margin-top: 5px; }
     }
   </style>
 </head>
@@ -463,6 +472,17 @@
     <span class="notification-message"></span>
     <button class="close-btn" aria-label="Close notification">×</button>
   </div>
+
+  <!-- ==================== FIXED HEADER (COURSE VIEW ONLY) ==================== -->
+  <div id="fixed-header">
+    <div id="mode-banner"></div>
+    <div id="progress-container">
+      <div id="progress-fill"></div>
+    </div>
+    <div id="progress-text">Progress: 0 of 0</div>
+  </div>
+
+  <div id="price-banner">Price: K15</div>
 
   <!-- ==================== MAIN CONTAINER ==================== -->
   <div class="quiz-container">
@@ -494,17 +514,6 @@
 
     <!-- :::: VIEW 2: COURSE PAGE (HIDDEN BY DEFAULT) :::: -->
     <div id="course-view" style="display: none;">
-      
-      <!-- STATIC HEADER (Scrolls with page, not stuck) -->
-      <div id="static-header-container">
-        <div id="price-badge">Price: K15</div>
-        <div id="mode-banner"></div>
-        <div id="progress-container">
-          <div id="progress-fill"></div>
-        </div>
-        <div id="progress-text">Progress: 0 of 0</div>
-      </div>
-
       <h1 id="course-title">Study Materials</h1>
       
       <p class="announcement">
@@ -522,7 +531,7 @@
         <button onclick="renderShortAnswers()">✍️ Short Answer</button>
         <button onclick="renderEssaySimulation()">📝 Essay Simulation</button>
         <button onclick="renderFlashcardTopics()">🃏 Flashcards</button>
-        <!-- TTS Button appended here -->
+        <!-- TTS Button will be appended here by JS -->
       </div>
 
       <div id="quiz-form"></div>
@@ -552,6 +561,8 @@
   <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
   <script>
     // === CONFIGURATION ===
+
+    // NEW: TTS variable
     let ttsEnabled = false;
 
     const fullAccessCodes = {
@@ -612,7 +623,7 @@
         "CS110T1_EXTRA017 ~7", "CS110T1_EXTRA018 ?8", "CS110T1_TEST019 |9", "CS110T1_TEST020 <0"
       ],
 
-      // GLOBAL
+      // NEW GLOBAL AND COURSE-WIDE ACCESS CODES
       "GLOBAL_ALL_TERMS": [
         "kk22kk4","Lizzy","SUPER_USER_XYZ_789","All-terms@#<0","Lizzy@","becky @&_","KULIKA🌟",
         "FULL_UNLOCK_2025","ACCESS_GRANTED_GLOBAL$","CBU_UNLOCK_CODE🔥","MASTER_KEY_∞_ENTRY",
@@ -725,9 +736,12 @@
       showAppNotification(message, "error");
     }
 
+    // --- REPLACED window.onload with reusable init function for SPA ---
     function initializeCourseLogic() {
-      // Initialize TTS
+      // NEW: Initialize TTS preference from localStorage
       ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
+      
+      // NEW: Add a TTS toggle button to the UI if it doesn't exist
       const modeButtonsDiv = document.querySelector('.mode-buttons');
       if (modeButtonsDiv && !document.getElementById('tts-toggle-button')) {
         const ttsButton = document.createElement('button');
@@ -743,20 +757,26 @@
       currentTermKey = `${currentCourse}_${currentTerm}`;
       const courseAllTermsKey = `${currentCourse}_ALL_TERMS`;
 
-      if (!currentCourse || !currentTerm) return;
+      if (!currentCourse || !currentTerm) {
+        // We are likely on the landing page, so just return
+        return;
+      }
 
       try {
         const storedUsed = localStorage.getItem("globalUsedAccessCodes");
         usedAccessCodes = storedUsed ? JSON.parse(storedUsed) : [];
       } catch (e) {
+        console.error("Error parsing globalUsedAccessCodes:", e);
         usedAccessCodes = [];
       }
 
+      // Check external data variables
       allMcqData = typeof mcqData !== 'undefined' ? mcqData : [];
       allShortData = typeof shortData !== 'undefined' ? shortData : [];
       allEssayData = typeof essayData !== 'undefined' ? essayData : [];
       allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
 
+      // Filter data for current term
       currentMcqData = filterDataByCourseAndTerm(allMcqData, currentCourse, currentTerm);
       currentShortData = filterDataByCourseAndTerm(allShortData, currentCourse, currentTerm);
       currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
@@ -765,6 +785,7 @@
       let foundValidAccess = false;
       let needsPrompt = true;
 
+      // Access Code Check Priority: Term -> Course -> Global
       const checkAndApplyAccess = (code, expiry, type) => {
         if (!code || !expiry) return false;
         const storedExpiry = parseInt(expiry, 10);
@@ -802,17 +823,35 @@
         }
       };
 
-      if (checkAndApplyAccess(localStorage.getItem("accessCode_" + currentTermKey), localStorage.getItem("accessCodeExpires_" + currentTermKey), "Term Access")) {
-        foundValidAccess = true; needsPrompt = false;
+      // 1. Term Check
+      if (checkAndApplyAccess(
+          localStorage.getItem("accessCode_" + currentTermKey),
+          localStorage.getItem("accessCodeExpires_" + currentTermKey),
+          "Term Access"
+        )) {
+        foundValidAccess = true;
+        needsPrompt = false;
       }
+      // 2. Course Check
       if (!foundValidAccess && currentCourse) {
-        if (checkAndApplyAccess(localStorage.getItem("accessCode_" + courseAllTermsKey), localStorage.getItem("accessCodeExpires_" + courseAllTermsKey), "Course-wide Access")) {
-          foundValidAccess = true; needsPrompt = false;
+        if (checkAndApplyAccess(
+            localStorage.getItem("accessCode_" + courseAllTermsKey),
+            localStorage.getItem("accessCodeExpires_" + courseAllTermsKey),
+            "Course-wide Access"
+          )) {
+          foundValidAccess = true;
+          needsPrompt = false;
         }
       }
+      // 3. Global Check
       if (!foundValidAccess) {
-        if (checkAndApplyAccess(localStorage.getItem("accessCode_GLOBAL_ALL_TERMS"), localStorage.getItem("accessCodeExpires_GLOBAL_ALL_TERMS"), "Global Access")) {
-          foundValidAccess = true; needsPrompt = false;
+        if (checkAndApplyAccess(
+            localStorage.getItem("accessCode_GLOBAL_ALL_TERMS"),
+            localStorage.getItem("accessCodeExpires_GLOBAL_ALL_TERMS"),
+            "Global Access"
+          )) {
+          foundValidAccess = true;
+          needsPrompt = false;
         }
       }
 
@@ -833,12 +872,23 @@
           let accessType = "";
           let storageKeyPrefix = "";
 
+          // Check Global
           if (fullAccessCodes.GLOBAL_ALL_TERMS && fullAccessCodes.GLOBAL_ALL_TERMS.includes(userCode)) {
-            codeFoundInConfig = true; accessType = "Global Access"; storageKeyPrefix = "GLOBAL_ALL_TERMS";
-          } else if (fullAccessCodes[courseAllTermsKey] && fullAccessCodes[courseAllTermsKey].includes(userCode)) {
-            codeFoundInConfig = true; accessType = "Course-wide Access"; storageKeyPrefix = courseAllTermsKey;
-          } else if (fullAccessCodes[currentTermKey] && fullAccessCodes[currentTermKey].includes(userCode)) {
-            codeFoundInConfig = true; accessType = "Term Access"; storageKeyPrefix = currentTermKey;
+            codeFoundInConfig = true;
+            accessType = "Global Access";
+            storageKeyPrefix = "GLOBAL_ALL_TERMS";
+          }
+          // Check Course
+          else if (fullAccessCodes[courseAllTermsKey] && fullAccessCodes[courseAllTermsKey].includes(userCode)) {
+            codeFoundInConfig = true;
+            accessType = "Course-wide Access";
+            storageKeyPrefix = courseAllTermsKey;
+          }
+          // Check Term
+          else if (fullAccessCodes[currentTermKey] && fullAccessCodes[currentTermKey].includes(userCode)) {
+            codeFoundInConfig = true;
+            accessType = "Term Access";
+            storageKeyPrefix = currentTermKey;
           }
 
           if (codeFoundInConfig) {
@@ -876,37 +926,48 @@
 
     // === SPA NAVIGATION ENGINE ===
     function loadCourse(course, term, price) {
+      // 1. Update Global Data Attributes
       document.body.setAttribute('data-course', course);
       document.body.setAttribute('data-term', term);
+
+      // 2. Update UI Text
       document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
-      document.getElementById('price-badge').textContent = `Price: K${price}`;
+      document.getElementById('price-banner').textContent = `Price: K${price}`;
       document.getElementById('price-val').textContent = `K${price}`;
       document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
 
+      // 3. Switch Views
       document.getElementById('landing-view').style.display = 'none';
       document.getElementById('course-view').style.display = 'block';
       
-      // SHOW STATIC HEADER (SCROLLS WITH PAGE)
-      document.getElementById('static-header-container').style.display = 'block';
+      // 4. Show Fixed Header
+      document.getElementById('fixed-header').style.display = 'block';
+      document.getElementById('price-banner').style.display = 'block';
+      document.body.classList.add('view-course');
 
+      // 5. Scroll to top
       window.scrollTo(0,0);
       
+      // 6. INITIALIZE LOGIC FOR THIS TERM (Replaces window.onload)
       setTimeout(() => {
         initializeCourseLogic();
-        renderQuiz(); 
+        renderQuiz(); // Default to MCQ
       }, 100);
     }
 
     function backToMenu() {
       document.getElementById('landing-view').style.display = 'block';
       document.getElementById('course-view').style.display = 'none';
-      document.getElementById('static-header-container').style.display = 'none';
+      document.getElementById('fixed-header').style.display = 'none';
+      document.getElementById('price-banner').style.display = 'none';
+      document.body.classList.remove('view-course');
 
       document.getElementById('quiz-form').innerHTML = '';
       document.getElementById('result').innerHTML = '';
       document.body.removeAttribute('data-course');
       document.body.removeAttribute('data-term');
-      stopReading();
+      stopReading(); // Stop TTS if running
+      
       window.scrollTo(0,0);
     }
 
@@ -983,7 +1044,7 @@
       if (hasFullAccess) return false;
       const key = `demo_${type}_used_${currentTermKey}`;
       let attempts = parseInt(localStorage.getItem(key) || "0");
-      if (attempts >= 10) {
+      if (attempts >= 1) {
         showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
         return true;
       }
@@ -1023,7 +1084,10 @@
       const q = currentQuizData[currentQuestionIndex];
       updateProgress(currentQuestionIndex + 1, currentQuizData.length);
       if (!q) return showFinalMcqScore();
-      let html = `<div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div><div class="question-box"><p>${q.q}</p><div class="options">`;
+      let html = `
+        <div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div>
+        <div class="question-box"><p>${q.q}</p><div class="options">
+      `;
       q.options.forEach((opt, i) => {
         html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
       });
@@ -1050,7 +1114,8 @@
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
         feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
       }
-      resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+      const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+      resultDiv.innerHTML += explanationBox;
       feedbackText += ` Explanation: ${q.explanation || ''}`;
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
@@ -1120,7 +1185,8 @@
         resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
         feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
       }
-      resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
+      const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+      resultDiv.innerHTML += explanationBox;
       feedbackText += ` Explanation: ${q.explanation || ''}`;
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
@@ -1173,7 +1239,10 @@
       const step = essay.steps[index];
       updateProgress(index + 1, essay.steps.length);
       if (!step) return showFinalEssayScore();
-      let html = `<div class="question-header"><h3>📄 ${essay.title} — Step ${index + 1} of ${essay.steps.length}</h3><p>Topic: ${essay.topic} | ${essay.year}</p></div><div class="question-box"><p><strong>Q:</strong> ${step.q}</p><div class="options">`;
+      let html = `
+        <div class="question-header"><h3>📄 ${essay.title} — Step ${index + 1} of ${essay.steps.length}</h3><p>Topic: ${essay.topic} | ${essay.year}</p></div>
+        <div class="question-box"><p><strong>Q:</strong> ${step.q}</p><div class="options">
+      `;
       step.options.forEach((opt, i) => {
         html += `<label class="option"><input type="radio" name="step-option" value="${i}" /> <span>${String.fromCharCode(65 + i)}. ${opt}</span></label>`;
       });
@@ -1202,7 +1271,8 @@
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
         feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
       }
-      resultDiv.innerHTML += `<div class="explanation-box">${step.explanation || ''}</div>`;
+      const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
+      resultDiv.innerHTML += explanationBox;
       feedbackText += ` Explanation: ${step.explanation || ''}`;
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
