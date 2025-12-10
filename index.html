@@ -903,7 +903,7 @@ button:disabled {
   <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
   <script>
 // =========================================================================
-    // === 🎓 FINAL PRODUCTION CODE: SMART COACH & ACCESS SYSTEM ===
+    // === 🎓 FINAL CODE: BUG-FREE & CLEAN (FIXED NUMBERING) ===
     // =========================================================================
 
     // --- 1. CONFIGURATION & STATE ---
@@ -937,16 +937,14 @@ button:disabled {
     let currentCourse = null, currentTerm = null, currentTermKey = null;
 
     // =========================================================================
-    // === 🧠 THE AUDIO COACH ENGINE (PERSONALITY + ACCURATE MATH) ===
+    // === 🧠 THE AUDIO COACH ENGINE ===
     // =========================================================================
     
-    // Warm, varied praise to avoid robotic repetition
     const coachPraises = [
       "Spot on!", "Excellent work!", "Perfect!", "Boom! You got it!", 
       "That is correct.", "You are crushing this!", "Right on the money!", "Outstanding!"
     ];
     
-    // Gentle encouragement for mistakes
     const coachEncouragement = [
       "Not quite.", "Let's review this.", "Almost, but not quite.", 
       "That's a tough one.", "Don't worry, let's learn from this.", "Good try, but incorrect."
@@ -957,7 +955,7 @@ button:disabled {
       return list[Math.floor(Math.random() * list.length)];
     }
 
-    // ACCURATE MATH: Narrative generator requires explicit input to be accurate
+    // ACCURATE MATH: Narrative generator requires explicit inputs
     function getRunningScoreNarrative(scoreNow, indexNow) {
       const totalAttempted = indexNow + 1; 
       const percent = Math.round((scoreNow / totalAttempted) * 100);
@@ -973,7 +971,7 @@ button:disabled {
     }
 
     // =========================================================================
-    // === 🔐 ACCESS CONTROL & INITIALIZATION ===
+    // === 🔐 CORE LOGIC & FILTERING FIX ===
     // =========================================================================
 
     function denyAccess(message, codeToClear = null) {
@@ -1019,6 +1017,7 @@ button:disabled {
       allEssayData = typeof essayData !== 'undefined' ? essayData : [];
       allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
 
+      // APPLY FILTERING
       currentMcqData = filterDataByCourseAndTerm(allMcqData, currentCourse, currentTerm);
       currentShortData = filterDataByCourseAndTerm(allShortData, currentCourse, currentTerm);
       currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
@@ -1066,7 +1065,7 @@ button:disabled {
       }
     }
 
-    // --- NAVIGATION HELPERS ---
+    // --- NAVIGATION ---
     function loadCourse(course, term, price) {
       document.body.setAttribute('data-course', course);
       document.body.setAttribute('data-term', term);
@@ -1115,6 +1114,7 @@ button:disabled {
       }
     }
 
+    // --- HELPERS (NOW WITH DEDUPLICATION) ---
     function showAppNotification(message, type = 'info', duration = 5000) {
       const el = document.getElementById('app-notification');
       if (!el) return alert(message);
@@ -1126,7 +1126,27 @@ button:disabled {
     }
 
     function updateModeBanner(message) { const banner = document.getElementById("mode-banner"); if (banner) banner.textContent = message; }
-    function filterDataByCourseAndTerm(data, course, term) { if (!Array.isArray(data)) return []; return data.filter(item => item.course === course && item.term === term); }
+    
+    // 🔥 FIXED FILTER FUNCTION: REMOVES DUPLICATES 🔥
+    function filterDataByCourseAndTerm(data, course, term) {
+      if (!Array.isArray(data)) return [];
+      const normalizedCourse = course.trim().toUpperCase();
+      const normalizedTerm = term.trim().toUpperCase();
+      const seenQuestions = new Set();
+
+      return data.filter(item => {
+        if (!item.course || !item.term || !item.q) return false;
+        const match = (item.course.trim().toUpperCase() === normalizedCourse && item.term.trim().toUpperCase() === normalizedTerm);
+        if (match) {
+            const uniqueKey = item.q.trim();
+            if (seenQuestions.has(uniqueKey)) return false; 
+            seenQuestions.add(uniqueKey);
+            return true;
+        }
+        return false;
+      });
+    }
+
     function filterFlashcardsByCourseAndTerm(all, course, term) { const filtered = {}; for (const topic in all) { if (all.hasOwnProperty(topic)) { const cards = all[topic].filter(card => card.course === course && card.term === term); if (cards.length > 0) filtered[topic] = cards; } } return filtered; }
     function clearDemoLocks() { ["mcq", "shortAnswer", "essay", "flashcard"].forEach(m => localStorage.removeItem(`demo_${m}_used_${currentTermKey}`)); }
     function shuffle(array) { let currentIndex = array.length, randomIndex; while (currentIndex !== 0) { randomIndex = Math.floor(Math.random() * currentIndex); currentIndex--; [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]; } return array; }
@@ -1134,7 +1154,7 @@ button:disabled {
     function updateProgress(current, total) { const fill = document.getElementById("progress-fill"); const text = document.getElementById("progress-text"); const percent = total === 0 ? 0 : (current / total) * 100; if (fill) fill.style.width = `${percent}%`; if (text) text.textContent = `Progress: ${current} of ${total}`; }
 
     // =========================================================================
-    // === 🎙️ SMART READER: INTELLIGENT TEXT PARSING ===
+    // === 🎙️ INTELLIGENT READER (FIXES "Q", "A A", "RESULT") ===
     // =========================================================================
 
     function updateTtsButtonText() { const ttsButton = document.getElementById('tts-toggle-button'); if (ttsButton) ttsButton.textContent = ttsEnabled ? '🔊 Turn Reader Off' : '🔇 Turn Reader On'; }
@@ -1148,28 +1168,27 @@ button:disabled {
       window.speechSynthesis.speak(utterance);
     }
 
-    // --- CONTEXT-AWARE QUESTION READER ---
+    // --- CONTEXT-AWARE READER ---
     function readCurrentQuestion() {
       if (!ttsEnabled) return;
       stopReading();
       let textToRead = "";
 
-      // FIX: Clean "Question 1:", "Q.", "Q1." from start, then add clear "Question: " prefix.
+      // FIX: Aggressive cleaning of "11.", "Q1.", etc. then adds "Question: "
       const expandQ = (text) => {
-        let clean = text.replace(/^((Question|Q)\s*(\d+)?\s*[:.-]?\s*)/i, "");
+        // Regex strips: "Question 1:", "Q 1", "Step 1", "11.", "11)", "11 "
+        let clean = text.replace(/^((Question|Q|Step)\s*\d*[\.:\)\s-]*|\d+[\.:\)\s-]+\s*)/i, "");
         return "Question: " + clean;
       };
 
       // A. ESSAY MODE
       if (currentQuizType === 'essay' && currentEssay) {
-        // Step 1: Read full context
         if (currentStepIndex === 0) {
           textToRead += `New Simulation: ${currentEssay.title}. Topic: ${currentEssay.topic}. `;
         }
         
         const step = currentEssay.steps[currentStepIndex];
         if (step) {
-            // Treat steps like Options (No "Type Answer")
             textToRead += `Step ${currentStepIndex + 1}. ${expandQ(step.q)} `; 
             if (step.options && step.options.length > 0) {
                 textToRead += "The options are: ";
@@ -1193,7 +1212,7 @@ button:disabled {
           optionsElements.forEach((label, i) => {
             let optText = label.textContent.trim();
             const letter = String.fromCharCode(65 + i);
-            // FIX: Check if option already starts with "A." or "A)" to avoid "A. A."
+            // FIX: Check if option starts with "A." to prevent double letter reading
             if (/^[A-D][\.\)\s]/.test(optText)) {
                 textToRead += `${optText}. `; 
             } else {
@@ -1210,7 +1229,6 @@ button:disabled {
             textToRead += `Question ${currentQuestionIndex + 1}. `;
             textToRead += expandQ(questionElement.textContent.trim());
         }
-        // Specific instruction for typing
         textToRead += ". Type your answer in the box below.";
       }
       
@@ -1281,7 +1299,7 @@ button:disabled {
 
       if (isCorrect) {
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        audioFeedback = `${getCoachPhrase(true)} `; // No "Result:" prefix
+        audioFeedback = `${getCoachPhrase(true)} `; 
       } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
         audioFeedback = `${getCoachPhrase(false)} The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}. `;
@@ -1357,7 +1375,7 @@ button:disabled {
       let audioFeedback = "";
       audioFeedback += `Let me read back what you wrote: ${rawAnswer}. `;
 
-      if (matched) currentScore++; // Calculate score BEFORE narrative
+      if (matched) currentScore++; 
 
       if (matched) {
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
