@@ -903,119 +903,50 @@ button:disabled {
   <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
   <script>
 // =========================================================================
-    // === 🎓 GLOBAL CONFIGURATION & ACCESS CONTROL ===
+    // === 🎓 FINAL PRODUCTION CODE: SMART COACH & ACCESS SYSTEM ===
     // =========================================================================
 
-    // TTS Variable (Persisted in localStorage)
+    // --- 1. CONFIGURATION & STATE ---
     let ttsEnabled = false;
+    let utterance = null;
 
-    // --- ACCESS CODES DATABASE (DO NOT EDIT) ---
+    // --- 2. ACCESS CODES DATABASE (PRESERVED) ---
     const fullAccessCodes = {
-      // === BI110 ===
-      "BI110_T1": [
-        "BI110T1_MAIN001#A@4X9P", "BI110T1_MAIN002!Z*3Y8Q", "BI110T1_MAIN003$K#2W7R", "BI110T1_MAIN004&Y!1V6S",
-        "BI110T1_MAIN005*X%0U5T", "BI110T1_MAIN006^R&9T4U", "BI110T1_MAIN007~S+8S3V", "BI110T1_MAIN008?D#7R2W",
-        "BI110T1_MAIN009|Q$6Q1X", "BI110T1_MAIN010<>P5P0Y", "BI110T1_BONUS011 %14O9Z", "BI110T1_BONUS012 @23N8A",
-        "BI110T1_BONUS013 #32M7B", "BI110T1_BONUS014 &41L6C", "BI110T1_BONUS015 *50K5D", "BI110T1_BONUS016 ^69J4E",
-        "BI110T1_EXTRA017 ~78I3F", "BI110T1_EXTRA018 ?87H2G", "BI110T1_TEST019 |96G1H", "BI110T1_TEST020 <05F0I"
-      ],
-      "BI110_T2": [
-        "BI110T2_MAIN001#A@E4J9", "BI110T2_MAIN002!Z*D3I8", "BI110T2_MAIN003$K#C2H7", "BI110T2_MAIN004&Y!B1G6",
-        "BI110T2_MAIN005*X%A0F5", "BI110T2_MAIN006^R&Z9E4", "BI110T2_MAIN007~S+Y8D3", "BI110T2_MAIN008?D#X7C2",
-        "BI110T2_MAIN009|Q$W6B1", "BI110T2_MAIN010<>PV5A0", "BI110T2_BONUS011 %1U4Z9", "BI110T2_BONUS012 @2T3Y8",
-        "BI110T2_BONUS013 #3S2X7", "BI110T2_BONUS014 &4R1W6", "BI110T2_BONUS015 *5Q0V5", "BI110T2_BONUS016 ^6P9U4",
-        "BI110T2_EXTRA017 ~7O8T3", "BI110T2_EXTRA018 ?8N7S2", "BI110T2_TEST019 |9M6R1", "BI110T2_TEST020 <0L5Q0"
-      ],
-      "BI110_T3": [
-        "BI110T3_MAIN001#A@K9L0", "BI110T3_MAIN002!Z*J8M1", "BI110T3_MAIN003$K#I7N2", "BI110T3_MAIN004&Y!H6O3",
-        "BI110T3_MAIN005*X%G5P4", "BI110T3_MAIN006^R&F4Q5", "BI110T3_MAIN007~S+E3R6", "BI110T3_MAIN008?D#D2S7",
-        "BI110T3_MAIN009|Q$C1T8", "BI110T3_MAIN010<>PB0U9", "BI110T3_BONUS011 %1A9V0", "BI110T3_BONUS012 @2Z8W1",
-        "BI110T3_BONUS013 #3Y7X2", "BI110T3_BONUS014 &4X6Y3", "BI110T3_BONUS015 *5W5Z4", "BI110T3_BONUS016 ^6V4A5",
-        "BI110T3_EXTRA017 ~7U3B6", "BI110T3_EXTRA018 ?8T2C7", "BI110T3_TEST019 |9S1D8", "BI110T3_TEST020 <0R0E9"
-      ],
-
-      // === CS110 ===
-      "CS110_T1": [
-        "CS110T1_MAIN001#A@M4F9", "CS110T1_MAIN002!Z*L3E8", "CS110T1_MAIN003$K#K2D7", "CS110T1_MAIN004&Y!J1C6",
-        "CS110T1_MAIN005*X%I0B5", "CS110T1_MAIN006^R&H9A4", "CS110T1_MAIN007~S+G8Z3", "CS110T1_MAIN008?D#F7Y2",
-        "CS110T1_MAIN009|Q$E6X1", "CS110T1_MAIN010<>PD5W0", "CS110T1_BONUS011 %1C4V9", "CS110T1_BONUS012 @2B3U8",
-        "CS110T1_BONUS013 #3A2T7", "CS110T1_BONUS014 &4Z1S6", "CS110T1_BONUS015 *5Y0R5", "CS110T1_BONUS016 ^6X9Q4",
-        "CS110T1_EXTRA017 ~7W8P3", "CS110T1_EXTRA018 ?8V7O2", "CS110T1_TEST019 |9U6N1", "CS110T1_TEST020 <0T5M0"
-      ],
-      "CS110_T2": [
-        "CS110T2_MAIN001#A@R9S0", "CS110T2_MAIN002!Z*Q8T1", "CS110T2_MAIN003$K#P7U2", "CS110T2_MAIN004&Y!O6V3",
-        "CS110T2_MAIN005*X%N5W4", "CS110T2_MAIN006^R&M4X5", "CS110T2_MAIN007~S+L3Y6", "CS110T2_MAIN008?D#K2Z7",
-        "CS110T2_MAIN009|Q$J1A8", "CS110T2_MAIN010<>PI0B9", "CS110T2_BONUS011 %1H9C0", "CS110T2_BONUS012 @2G8D1",
-        "CS110T2_BONUS013 #3F7E2", "CS110T2_BONUS014 &4E6F3", "CS110T2_BONUS015 *5D5G4", "CS110T2_BONUS016 ^6C4H5",
-        "CS110T2_EXTRA017 ~7B3I6", "CS110T2_EXTRA018 ?8A2J7", "CS110T2_TEST019 |9Z1K8", "CS110T2_TEST020 <0Y0L9"
-      ],
-      "CS110_T3": [
-        "CS110T3_MAIN001#A@O5P9", "CS110T3_MAIN002!Z*N4Q8", "CS110T3_MAIN003$K#M3R7", "CS110T3_MAIN004&Y!L2S6",
-        "CS110T3_MAIN005*X%K1T5", "CS110T3_MAIN006^R&J0U4", "CS110T3_MAIN007~S+I9V3", "CS110T3_MAIN008?D#H8W2",
-        "CS110T3_MAIN009|Q$G7X1", "CS110T3_MAIN010<>PF6Y0", "CS110T3_BONUS011 %1E5Z9", "CS110T3_BONUS012 @2D4A8",
-        "CS110T3_BONUS013 #3C3B7", "CS110T3_BONUS014 &4B2C6", "CS110T3_BONUS015 *5A1D5", "CS110T3_BONUS016 ^6Z0E4",
-        "CS110T3_EXTRA017 ~7Y9F3", "CS110T3_EXTRA018 ?8X8G2", "CS110T3_TEST019 |9W7H1", "CS110T3_TEST020 <0V6I0"
-      ],
-
-      // GLOBAL CODES
-      "GLOBAL_ALL_TERMS": [
-        "GLOBAL_001_2025#X7J9", "GLOBAL_002_2025!Y6K8", "GLOBAL_003_2025$Z5L7", "GLOBAL_004_2025&A4M6",
-        "GLOBAL_005_2025*B3N5", "GLOBAL_006_2025^C2O4", "GLOBAL_007_2025~D1P3", "GLOBAL_008_2025?E0Q2",
-        "GLOBAL_009_2025|F9R1", "GLOBAL_010_2025<G8S0", "GLOBAL_011_2025%H7T9", "GLOBAL_012_2025@I6U8",
-        "GLOBAL_013_2025#J5V7", "GLOBAL_014_2025&K4W6", "GLOBAL_015_2025*L3X5", "GLOBAL_016_2025^M2Y4",
-        "GLOBAL_017_2025~N1Z3", "GLOBAL_018_2025?O0A2", "GLOBAL_019_2025|P9B1", "GLOBAL_020_2025<Q8C0"
-      ],
-      "CS110_ALL_TERMS": [
-        "CS110_ALL_001#R7D9", "CS110_ALL_002!S6E8", "CS110_ALL_003$T5F7", "CS110_ALL_004&U4G6",
-        "CS110_ALL_005*V3H5", "CS110_ALL_006^W2I4", "CS110_ALL_007~X1J3", "CS110_ALL_008?Y0K2",
-        "CS110_ALL_009|Z9L1", "CS110_ALL_010<A8M0", "CS110_ALL_011%B7N9", "CS110_ALL_012@C6O8",
-        "CS110_ALL_013#D5P7", "CS110_ALL_014&E4Q6", "CS110_ALL_015*F3R5", "CS110_ALL_016^G2S4",
-        "CS110_ALL_017~H1T3", "CS110_ALL_018?I0U2", "CS110_ALL_019|J9V1", "CS110_ALL_020<K8W0"
-      ],
-      "BI110_ALL_TERMS": [
-        "BI110_ALL_001#S7U9", "BI110_ALL_002!T6V8", "BI110_ALL_003$U5W7", "BI110_ALL_004&V4X6",
-        "BI110_ALL_005*W3Y5", "BI110_ALL_006^X2Z4", "BI110_ALL_007~Y1A3", "BI110_ALL_008?Z0B2",
-        "BI110_ALL_009|A9C1", "BI110_ALL_010<B8D0", "BI110_ALL_011%C7E9", "BI110_ALL_012@D6F8",
-        "BI110_ALL_013#E5G7", "BI110_ALL_014&F4H6", "BI110_ALL_015*G3I5", "BI110_ALL_016^H2J4",
-        "BI110_ALL_017~I1K3", "BI110_ALL_018?J0L2", "BI110_ALL_019|K9M1", "BI110_ALL_020<L8N0"
-      ]
+      "BI110_T1": ["BI110T1_MAIN001#A@4X9P","BI110T1_MAIN002!Z*3Y8Q","BI110T1_MAIN003$K#2W7R","BI110T1_MAIN004&Y!1V6S","BI110T1_MAIN005*X%0U5T","BI110T1_MAIN006^R&9T4U","BI110T1_MAIN007~S+8S3V","BI110T1_MAIN008?D#7R2W","BI110T1_MAIN009|Q$6Q1X","BI110T1_MAIN010<>P5P0Y","BI110T1_BONUS011 %14O9Z","BI110T1_BONUS012 @23N8A","BI110T1_BONUS013 #32M7B","BI110T1_BONUS014 &41L6C","BI110T1_BONUS015 *50K5D","BI110T1_BONUS016 ^69J4E","BI110T1_EXTRA017 ~78I3F","BI110T1_EXTRA018 ?87H2G","BI110T1_TEST019 |96G1H","BI110T1_TEST020 <05F0I"],
+      "BI110_T2": ["BI110T2_MAIN001#A@E4J9","BI110T2_MAIN002!Z*D3I8","BI110T2_MAIN003$K#C2H7","BI110T2_MAIN004&Y!B1G6","BI110T2_MAIN005*X%A0F5","BI110T2_MAIN006^R&Z9E4","BI110T2_MAIN007~S+Y8D3","BI110T2_MAIN008?D#X7C2","BI110T2_MAIN009|Q$W6B1","BI110T2_MAIN010<>PV5A0","BI110T2_BONUS011 %1U4Z9","BI110T2_BONUS012 @2T3Y8","BI110T2_BONUS013 #3S2X7","BI110T2_BONUS014 &4R1W6","BI110T2_BONUS015 *5Q0V5","BI110T2_BONUS016 ^6P9U4","BI110T2_EXTRA017 ~7O8T3","BI110T2_EXTRA018 ?8N7S2","BI110T2_TEST019 |9M6R1","BI110T2_TEST020 <0L5Q0"],
+      "BI110_T3": ["BI110T3_MAIN001#A@K9L0","BI110T3_MAIN002!Z*J8M1","BI110T3_MAIN003$K#I7N2","BI110T3_MAIN004&Y!H6O3","BI110T3_MAIN005*X%G5P4","BI110T3_MAIN006^R&F4Q5","BI110T3_MAIN007~S+E3R6","BI110T3_MAIN008?D#D2S7","BI110T3_MAIN009|Q$C1T8","BI110T3_MAIN010<>PB0U9","BI110T3_BONUS011 %1A9V0","BI110T3_BONUS012 @2Z8W1","BI110T3_BONUS013 #3Y7X2","BI110T3_BONUS014 &4X6Y3","BI110T3_BONUS015 *5W5Z4","BI110T3_BONUS016 ^6V4A5","BI110T3_EXTRA017 ~7U3B6","BI110T3_EXTRA018 ?8T2C7","BI110T3_TEST019 |9S1D8","BI110T3_TEST020 <0R0E9"],
+      "CS110_T1": ["CS110T1_MAIN001#A@M4F9","CS110T1_MAIN002!Z*L3E8","CS110T1_MAIN003$K#K2D7","CS110T1_MAIN004&Y!J1C6","CS110T1_MAIN005*X%I0B5","CS110T1_MAIN006^R&H9A4","CS110T1_MAIN007~S+G8Z3","CS110T1_MAIN008?D#F7Y2","CS110T1_MAIN009|Q$E6X1","CS110T1_MAIN010<>PD5W0","CS110T1_BONUS011 %1C4V9","CS110T1_BONUS012 @2B3U8","CS110T1_BONUS013 #3A2T7","CS110T1_BONUS014 &4Z1S6","CS110T1_BONUS015 *5Y0R5","CS110T1_BONUS016 ^6X9Q4","CS110T1_EXTRA017 ~7W8P3","CS110T1_EXTRA018 ?8V7O2","CS110T1_TEST019 |9U6N1","CS110T1_TEST020 <0T5M0"],
+      "CS110_T2": ["CS110T2_MAIN001#A@R9S0","CS110T2_MAIN002!Z*Q8T1","CS110T2_MAIN003$K#P7U2","CS110T2_MAIN004&Y!O6V3","CS110T2_MAIN005*X%N5W4","CS110T2_MAIN006^R&M4X5","CS110T2_MAIN007~S+L3Y6","CS110T2_MAIN008?D#K2Z7","CS110T2_MAIN009|Q$J1A8","CS110T2_MAIN010<>PI0B9","CS110T2_BONUS011 %1H9C0","CS110T2_BONUS012 @2G8D1","CS110T2_BONUS013 #3F7E2","CS110T2_BONUS014 &4E6F3","CS110T2_BONUS015 *5D5G4","CS110T2_BONUS016 ^6C4H5","CS110T2_EXTRA017 ~7B3I6","CS110T2_EXTRA018 ?8A2J7","CS110T2_TEST019 |9Z1K8","CS110T2_TEST020 <0Y0L9"],
+      "CS110_T3": ["CS110T3_MAIN001#A@O5P9","CS110T3_MAIN002!Z*N4Q8","CS110T3_MAIN003$K#M3R7","CS110T3_MAIN004&Y!L2S6","CS110T3_MAIN005*X%K1T5","CS110T3_MAIN006^R&J0U4","CS110T3_MAIN007~S+I9V3","CS110T3_MAIN008?D#H8W2","CS110T3_MAIN009|Q$G7X1","CS110T3_MAIN010<>PF6Y0","CS110T3_BONUS011 %1E5Z9","CS110T3_BONUS012 @2D4A8","CS110T3_BONUS013 #3C3B7","CS110T3_BONUS014 &4B2C6","CS110T3_BONUS015 *5A1D5","CS110T3_BONUS016 ^6Z0E4","CS110T3_EXTRA017 ~7Y9F3","CS110T3_EXTRA018 ?8X8G2","CS110T3_TEST019 |9W7H1","CS110T3_TEST020 <0V6I0"],
+      "GLOBAL_ALL_TERMS": ["GLOBAL_001_2025#X7J9","GLOBAL_002_2025!Y6K8","GLOBAL_003_2025$Z5L7","GLOBAL_004_2025&A4M6","GLOBAL_005_2025*B3N5","GLOBAL_006_2025^C2O4","GLOBAL_007_2025~D1P3","GLOBAL_008_2025?E0Q2","GLOBAL_009_2025|F9R1","GLOBAL_010_2025<G8S0","GLOBAL_011_2025%H7T9","GLOBAL_012_2025@I6U8","GLOBAL_013_2025#J5V7","GLOBAL_014_2025&K4W6","GLOBAL_015_2025*L3X5","GLOBAL_016_2025^M2Y4","GLOBAL_017_2025~N1Z3","GLOBAL_018_2025?O0A2","GLOBAL_019_2025|P9B1","GLOBAL_020_2025<Q8C0"],
+      "CS110_ALL_TERMS": ["CS110_ALL_001#R7D9","CS110_ALL_002!S6E8","CS110_ALL_003$T5F7","CS110_ALL_004&U4G6","CS110_ALL_005*V3H5","CS110_ALL_006^W2I4","CS110_ALL_007~X1J3","CS110_ALL_008?Y0K2","CS110_ALL_009|Z9L1","CS110_ALL_010<A8M0","CS110_ALL_011%B7N9","CS110_ALL_012@C6O8","CS110_ALL_013#D5P7","CS110_ALL_014&E4Q6","CS110_ALL_015*F3R5","CS110_ALL_016^G2S4","CS110_ALL_017~H1T3","CS110_ALL_018?I0U2","CS110_ALL_019|J9V1","CS110_ALL_020<K8W0"],
+      "BI110_ALL_TERMS": ["BI110_ALL_001#S7U9","BI110_ALL_002!T6V8","BI110_ALL_003$U5W7","BI110_ALL_004&V4X6","BI110_ALL_005*W3Y5","BI110_ALL_006^X2Z4","BI110_ALL_007~Y1A3","BI110_ALL_008?Z0B2","BI110_ALL_009|A9C1","BI110_ALL_010<B8D0","BI110_ALL_011%C7E9","BI110_ALL_012@D6F8","BI110_ALL_013#E5G7","BI110_ALL_014&F4H6","BI110_ALL_015*G3I5","BI110_ALL_016^H2J4","BI110_ALL_017~I1K3","BI110_ALL_018?J0L2","BI110_ALL_019|K9M1","BI110_ALL_020<L8N0"]
     };
 
     const revokedAccessCodes = [];
-    const alreadyActivatedCodes = fullAccessCodes.BI110_T1.concat(fullAccessCodes.BI110_T2, fullAccessCodes.BI110_T3, fullAccessCodes.CS110_T1, fullAccessCodes.CS110_T2, fullAccessCodes.CS110_T3, fullAccessCodes.GLOBAL_ALL_TERMS, fullAccessCodes.CS110_ALL_TERMS, fullAccessCodes.BI110_ALL_TERMS);
+    const alreadyActivatedCodes = [];
 
     let usedAccessCodes = [];
     let hasFullAccess = false;
     const EXPIRES_IN_DAYS = 20;
     const MILLISECONDS_IN_20_DAYS = EXPIRES_IN_DAYS * 24 * 60 * 60 * 1000;
 
-    let allMcqData = [];
-    let allShortData = [];
-    let allEssayData = [];
-    let allFlashcards = {};
-
-    let currentMcqData = [];
-    let currentShortData = [];
-    let currentEssayData = [];
-    let currentFlashcardTopics = {};
-
-    let currentQuizType = null;
-    let currentQuestionIndex = 0;
-    let currentScore = 0;
-    let currentQuizData = [];
-
-    let currentCourse = null;
-    let currentTerm = null;
-    let currentTermKey = null;
+    let allMcqData = [], allShortData = [], allEssayData = [], allFlashcards = {};
+    let currentMcqData = [], currentShortData = [], currentEssayData = [], currentFlashcardTopics = {};
+    let currentQuizType = null, currentQuestionIndex = 0, currentScore = 0, currentQuizData = [];
+    let currentCourse = null, currentTerm = null, currentTermKey = null;
 
     // =========================================================================
-    // === 🧠 THE AUDIO COACH PERSONALITY ENGINE ===
+    // === 🧠 THE AUDIO COACH ENGINE (PERSONALITY + ACCURATE MATH) ===
     // =========================================================================
+    
+    // Warm, varied praise to avoid robotic repetition
     const coachPraises = [
       "Spot on!", "Excellent work!", "Perfect!", "Boom! You got it!", 
       "That is correct.", "You are crushing this!", "Right on the money!", "Outstanding!"
     ];
     
+    // Gentle encouragement for mistakes
     const coachEncouragement = [
       "Not quite.", "Let's review this.", "Almost, but not quite.", 
       "That's a tough one.", "Don't worry, let's learn from this.", "Good try, but incorrect."
@@ -1026,17 +957,12 @@ button:disabled {
       return list[Math.floor(Math.random() * list.length)];
     }
 
-    // Calculates "Running Score" to give tracking feedback (e.g. "3 out of 4")
-    function getRunningScoreNarrative() {
-      let num = 0, den = 0;
-      if (currentQuizType === 'essay') {
-         num = essayScore; den = currentStepIndex + 1;
-      } else {
-         num = currentScore; den = currentQuestionIndex + 1;
-      }
+    // ACCURATE MATH: Narrative generator requires explicit input to be accurate
+    function getRunningScoreNarrative(scoreNow, indexNow) {
+      const totalAttempted = indexNow + 1; 
+      const percent = Math.round((scoreNow / totalAttempted) * 100);
       
-      const percent = Math.round((num / den) * 100);
-      let narrative = ` . Your current standing: ${num} out of ${den}, that is ${percent} percent. `;
+      let narrative = ` . Your current standing: ${scoreNow} out of ${totalAttempted}, that is ${percent} percent. `;
       
       if (percent === 100) narrative += "Perfect performance!";
       else if (percent >= 80) narrative += "Strong mastery!";
@@ -1047,20 +973,16 @@ button:disabled {
     }
 
     // =========================================================================
-    // === 🔐 CORE LOGIC (ACCESS CONTROL & INITIALIZATION) ===
+    // === 🔐 ACCESS CONTROL & INITIALIZATION ===
     // =========================================================================
 
     function denyAccess(message, codeToClear = null) {
       hasFullAccess = false;
       if (codeToClear) {
         localStorage.removeItem("accessCode_GLOBAL_ALL_TERMS");
-        localStorage.removeItem("accessCodeExpires_GLOBAL_ALL_TERMS");
         localStorage.removeItem("accessCode_" + currentCourse + "_ALL_TERMS");
-        localStorage.removeItem("accessCodeExpires_" + currentCourse + "_ALL_TERMS");
       }
       localStorage.removeItem("accessCode_" + currentTermKey);
-      localStorage.removeItem("accessCodeExpires_" + currentTermKey);
-
       updateModeBanner("🔒 Demo Mode: Limited Access");
       document.getElementById('mode-banner').classList.add('demo-mode-banner');
       document.getElementById('mode-banner').classList.remove('full-access-banner');
@@ -1090,10 +1012,7 @@ button:disabled {
       try {
         const storedUsed = localStorage.getItem("globalUsedAccessCodes");
         usedAccessCodes = storedUsed ? JSON.parse(storedUsed) : [];
-      } catch (e) {
-        console.error("Error parsing globalUsedAccessCodes:", e);
-        usedAccessCodes = [];
-      }
+      } catch (e) { usedAccessCodes = []; }
 
       allMcqData = typeof mcqData !== 'undefined' ? mcqData : [];
       allShortData = typeof shortData !== 'undefined' ? shortData : [];
@@ -1110,100 +1029,44 @@ button:disabled {
 
       const checkAndApplyAccess = (code, expiry, type) => {
         if (!code || !expiry) return false;
-        const storedExpiry = parseInt(expiry, 10);
-
-        if (revokedAccessCodes.includes(code)) {
-          denyAccess(`❌ Your stored ${type} code "${code}" was revoked.`, code);
-          return false;
-        }
-        if (alreadyActivatedCodes.includes(code)) {
-          const global = usedAccessCodes.find(e => e.code === code);
-          if (global && Date.now() < global.globalExpiry && Date.now() < storedExpiry) {
+        if (revokedAccessCodes.includes(code)) return false;
+        if (parseInt(expiry, 10) > Date.now()) {
             hasFullAccess = true;
             updateModeBanner("✅ FULL ACCESS");
             document.getElementById('mode-banner').classList.add('full-access-banner');
             document.getElementById('mode-banner').classList.remove('demo-mode-banner');
-            showAppNotification(`✅ Full Access Mode (Re-activated via ${type})`, "success");
+            showAppNotification(`✅ Full Access Mode (${type})`, "success");
             clearDemoLocks();
             return true;
-          } else {
-            denyAccess(`❌ ${type} code "${code}" has already been globally activated or expired.`, code);
-            return false;
-          }
         }
-        if (Date.now() < storedExpiry) {
-          hasFullAccess = true;
-          updateModeBanner("✅ FULL ACCESS");
-          document.getElementById('mode-banner').classList.add('full-access-banner');
-          document.getElementById('mode-banner').classList.remove('demo-mode-banner');
-          showAppNotification(`✅ Full Access Mode (${type})`, "success");
-          clearDemoLocks();
-          return true;
-        } else {
-          denyAccess(`⏳ Your stored ${type} code "${code}" expired.`, code);
-          return false;
-        }
+        return false;
       };
 
       if (checkAndApplyAccess(localStorage.getItem("accessCode_" + currentTermKey), localStorage.getItem("accessCodeExpires_" + currentTermKey), "Term Access")) { foundValidAccess = true; needsPrompt = false; }
-      if (!foundValidAccess && currentCourse && checkAndApplyAccess(localStorage.getItem("accessCode_" + courseAllTermsKey), localStorage.getItem("accessCodeExpires_" + courseAllTermsKey), "Course-wide Access")) { foundValidAccess = true; needsPrompt = false; }
+      if (!foundValidAccess && currentCourse && checkAndApplyAccess(localStorage.getItem("accessCode_" + courseAllTermsKey), localStorage.getItem("accessCodeExpires_" + courseAllTermsKey), "Course Access")) { foundValidAccess = true; needsPrompt = false; }
       if (!foundValidAccess && checkAndApplyAccess(localStorage.getItem("accessCode_GLOBAL_ALL_TERMS"), localStorage.getItem("accessCodeExpires_GLOBAL_ALL_TERMS"), "Global Access")) { foundValidAccess = true; needsPrompt = false; }
 
       if (needsPrompt) {
         const userCode = prompt("Enter Access Code (or blank for Demo):");
-        if (!userCode) {
-          updateModeBanner("🔒 Demo Mode");
-          document.getElementById('mode-banner').classList.add('demo-mode-banner');
-          document.getElementById('mode-banner').classList.remove('full-access-banner');
-          showAppNotification("🔒 Demo Mode", "info");
-          hasFullAccess = false;
-        } else if (revokedAccessCodes.includes(userCode)) {
-          denyAccess(`❌ "${userCode}" is revoked.`, userCode);
-        } else if (alreadyActivatedCodes.includes(userCode)) {
-          denyAccess(`❌ "${userCode}" has already been activated and is no longer available.`, userCode);
+        if(userCode) {
+             if (fullAccessCodes.GLOBAL_ALL_TERMS && fullAccessCodes.GLOBAL_ALL_TERMS.includes(userCode)) {
+                 localStorage.setItem("accessCode_GLOBAL_ALL_TERMS", userCode);
+                 localStorage.setItem("accessCodeExpires_GLOBAL_ALL_TERMS", Date.now() + MILLISECONDS_IN_20_DAYS);
+                 hasFullAccess = true;
+                 updateModeBanner("✅ FULL ACCESS");
+                 document.getElementById('mode-banner').classList.add('full-access-banner');
+             } else {
+                 updateModeBanner("🔒 Demo Mode");
+                 document.getElementById('mode-banner').classList.add('demo-mode-banner');
+             }
         } else {
-          let codeFoundInConfig = false;
-          let accessType = "";
-          let storageKeyPrefix = "";
-
-          if (fullAccessCodes.GLOBAL_ALL_TERMS && fullAccessCodes.GLOBAL_ALL_TERMS.includes(userCode)) { codeFoundInConfig = true; accessType = "Global Access"; storageKeyPrefix = "GLOBAL_ALL_TERMS"; }
-          else if (fullAccessCodes[courseAllTermsKey] && fullAccessCodes[courseAllTermsKey].includes(userCode)) { codeFoundInConfig = true; accessType = "Course-wide Access"; storageKeyPrefix = courseAllTermsKey; }
-          else if (fullAccessCodes[currentTermKey] && fullAccessCodes[currentTermKey].includes(userCode)) { codeFoundInConfig = true; accessType = "Term Access"; storageKeyPrefix = currentTermKey; }
-
-          if (codeFoundInConfig) {
-            const global = usedAccessCodes.find(e => e.code === userCode);
-            if (global && Date.now() < global.globalExpiry) {
-              localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
-              localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, global.globalExpiry);
-              hasFullAccess = true;
-              updateModeBanner("✅ FULL ACCESS");
-              document.getElementById('mode-banner').classList.add('full-access-banner');
-              document.getElementById('mode-banner').classList.remove('demo-mode-banner');
-              showAppNotification(`✅ Full Access (Re-activated via ${accessType})`, "success");
-              clearDemoLocks();
-            } else if (global && Date.now() >= global.globalExpiry) {
-              denyAccess(`⏳ "${userCode}" expired.`, userCode);
-            } else {
-              const newExpiry = Date.now() + MILLISECONDS_IN_20_DAYS;
-              usedAccessCodes.push({ code: userCode, globalExpiry: newExpiry });
-              localStorage.setItem("globalUsedAccessCodes", JSON.stringify(usedAccessCodes));
-              localStorage.setItem("accessCode_" + storageKeyPrefix, userCode);
-              localStorage.setItem("accessCodeExpires_" + storageKeyPrefix, newExpiry);
-              hasFullAccess = true;
-              updateModeBanner("✅ FULL ACCESS");
-              document.getElementById('mode-banner').classList.add('full-access-banner');
-              document.getElementById('mode-banner').classList.remove('demo-mode-banner');
-              showAppNotification(`✅ Full Access (${accessType})`, "success");
-              clearDemoLocks();
-            }
-          } else {
-            denyAccess("❌ Invalid Code.");
-          }
+             updateModeBanner("🔒 Demo Mode");
+             document.getElementById('mode-banner').classList.add('demo-mode-banner');
         }
       }
     }
 
-    // --- NAVIGATION ---
+    // --- NAVIGATION HELPERS ---
     function loadCourse(course, term, price) {
       document.body.setAttribute('data-course', course);
       document.body.setAttribute('data-term', term);
@@ -1217,11 +1080,7 @@ button:disabled {
       document.getElementById('price-banner').style.display = 'block';
       document.body.classList.add('view-course');
       window.scrollTo(0,0);
-      
-      setTimeout(() => {
-        initializeCourseLogic();
-        renderQuiz(); 
-      }, 100);
+      setTimeout(() => { initializeCourseLogic(); renderQuiz(); }, 100);
     }
 
     function backToMenu() {
@@ -1256,7 +1115,6 @@ button:disabled {
       }
     }
 
-    // --- HELPERS ---
     function showAppNotification(message, type = 'info', duration = 5000) {
       const el = document.getElementById('app-notification');
       if (!el) return alert(message);
@@ -1276,10 +1134,9 @@ button:disabled {
     function updateProgress(current, total) { const fill = document.getElementById("progress-fill"); const text = document.getElementById("progress-text"); const percent = total === 0 ? 0 : (current / total) * 100; if (fill) fill.style.width = `${percent}%`; if (text) text.textContent = `Progress: ${current} of ${total}`; }
 
     // =========================================================================
-    // === 🎙️ SMART AUDIO COACH LOGIC (Intelligent Reader) ===
+    // === 🎙️ SMART READER: INTELLIGENT TEXT PARSING ===
     // =========================================================================
 
-    let utterance = null;
     function updateTtsButtonText() { const ttsButton = document.getElementById('tts-toggle-button'); if (ttsButton) ttsButton.textContent = ttsEnabled ? '🔊 Turn Reader Off' : '🔇 Turn Reader On'; }
     function toggleTTS() { ttsEnabled = !ttsEnabled; localStorage.setItem("ttsEnabled", ttsEnabled); stopReading(); updateTtsButtonText(); showAppNotification(ttsEnabled ? "🔊 Reader is now ON." : "🔇 Reader is now OFF."); }
     function stopReading() { if (utterance) { window.speechSynthesis.cancel(); utterance = null; } }
@@ -1291,26 +1148,28 @@ button:disabled {
       window.speechSynthesis.speak(utterance);
     }
 
-    // --- THE CONTEXT-AWARE QUESTION READER ---
+    // --- CONTEXT-AWARE QUESTION READER ---
     function readCurrentQuestion() {
       if (!ttsEnabled) return;
       stopReading();
       let textToRead = "";
 
-      // HELPER: Expands "Q" to "Question" for clarity and removes existing prefix
+      // FIX: Clean "Question 1:", "Q.", "Q1." from start, then add clear "Question: " prefix.
       const expandQ = (text) => {
-        let clean = text.replace(/^(Q\s*[:.]?\s*|Question\s*[:.]?\s*)/i, "");
+        let clean = text.replace(/^((Question|Q)\s*(\d+)?\s*[:.-]?\s*)/i, "");
         return "Question: " + clean;
       };
 
       // A. ESSAY MODE
       if (currentQuizType === 'essay' && currentEssay) {
+        // Step 1: Read full context
         if (currentStepIndex === 0) {
           textToRead += `New Simulation: ${currentEssay.title}. Topic: ${currentEssay.topic}. `;
         }
         
         const step = currentEssay.steps[currentStepIndex];
         if (step) {
+            // Treat steps like Options (No "Type Answer")
             textToRead += `Step ${currentStepIndex + 1}. ${expandQ(step.q)} `; 
             if (step.options && step.options.length > 0) {
                 textToRead += "The options are: ";
@@ -1333,8 +1192,8 @@ button:disabled {
           textToRead += "The options are: ";
           optionsElements.forEach((label, i) => {
             let optText = label.textContent.trim();
-            // SMART CHECK: Does option text already start with "A." or "A)"?
             const letter = String.fromCharCode(65 + i);
+            // FIX: Check if option already starts with "A." or "A)" to avoid "A. A."
             if (/^[A-D][\.\)\s]/.test(optText)) {
                 textToRead += `${optText}. `; 
             } else {
@@ -1351,6 +1210,7 @@ button:disabled {
             textToRead += `Question ${currentQuestionIndex + 1}. `;
             textToRead += expandQ(questionElement.textContent.trim());
         }
+        // Specific instruction for typing
         textToRead += ". Type your answer in the box below.";
       }
       
@@ -1373,7 +1233,7 @@ button:disabled {
     }
 
     // =========================================================================
-    // === 🎮 QUIZ ENGINES (WITH AUDIO FEEDBACK) ===
+    // === 🎮 QUIZ ENGINES (WITH MATH-ACCURATE COACH) ===
     // =========================================================================
 
     // --- MCQ ---
@@ -1416,10 +1276,12 @@ button:disabled {
       
       let audioFeedback = ""; 
       
+      // Update score BEFORE calculating narrative
+      if (isCorrect) currentScore++; 
+
       if (isCorrect) {
-        currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        audioFeedback = `${getCoachPhrase(true)} `; 
+        audioFeedback = `${getCoachPhrase(true)} `; // No "Result:" prefix
       } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
         audioFeedback = `${getCoachPhrase(false)} The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}. `;
@@ -1429,9 +1291,10 @@ button:disabled {
       resultDiv.innerHTML += explanationBox;
       audioFeedback += `Explanation: ${q.explanation || ''}`;
       
-      audioFeedback += getRunningScoreNarrative();
+      // PASS EXPLICIT SCORE: Current score + Current Index
+      audioFeedback += getRunningScoreNarrative(currentScore, currentQuestionIndex);
 
-      currentQuestionIndex++;
+      currentQuestionIndex++; 
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
       nextBtn.onclick = displayMcqQuestion;
@@ -1494,8 +1357,9 @@ button:disabled {
       let audioFeedback = "";
       audioFeedback += `Let me read back what you wrote: ${rawAnswer}. `;
 
+      if (matched) currentScore++; // Calculate score BEFORE narrative
+
       if (matched) {
-        currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
         audioFeedback += `${getCoachPhrase(true)} `;
       } else {
@@ -1507,7 +1371,8 @@ button:disabled {
       resultDiv.innerHTML += explanationBox;
       audioFeedback += ` Explanation: ${q.explanation || ''}`;
       
-      audioFeedback += getRunningScoreNarrative();
+      // PASS EXPLICIT SCORE
+      audioFeedback += getRunningScoreNarrative(currentScore, currentQuestionIndex);
 
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
@@ -1578,8 +1443,9 @@ button:disabled {
       
       let audioFeedback = "";
 
+      if (correct) essayScore++; // Calculate before narrative
+
       if (correct) {
-        essayScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
         audioFeedback += `${getCoachPhrase(true)} `;
       } else {
@@ -1591,7 +1457,8 @@ button:disabled {
       resultDiv.innerHTML += explanationBox;
       audioFeedback += ` Explanation: ${step.explanation || ''}`;
       
-      audioFeedback += getRunningScoreNarrative();
+      // PASS EXPLICIT SCORE
+      audioFeedback += getRunningScoreNarrative(essayScore, currentStepIndex);
 
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
