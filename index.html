@@ -902,151 +902,196 @@ button:disabled {
 
   <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
   <script>
-// =======================================================
-    // === CONFIGURATION & ACCESS CONTROL (DO NOT MODIFY) ===
-    // =======================================================
+// ============================================================
+// === UPDATED WITH SMART AUDIO COACH - PRODUCTION READY ===
+// ============================================================
 
-    // TTS Preference
+    // === CONFIGURATION ===
+
+    // NEW: TTS variable
     let ttsEnabled = false;
 
-    // --- ACCESS CODES DATABASE ---
-    const fullAccessCodes = {
-      // === BI110 ===
-      "BI110_T1": [
-        "BI110T1_MAIN001#A@4X9P", "BI110T1_MAIN002!Z*3Y8Q", "BI110T1_MAIN003$K#2W7R", "BI110T1_MAIN004&Y!1V6S",
-        "BI110T1_MAIN005*X%0U5T", "BI110T1_MAIN006^R&9T4U", "BI110T1_MAIN007~S+8S3V", "BI110T1_MAIN008?D#7R2W",
-        "BI110T1_MAIN009|Q$6Q1X", "BI110T1_MAIN010<>P5P0Y", "BI110T1_BONUS011 %14O9Z", "BI110T1_BONUS012 @23N8A",
-        "BI110T1_BONUS013 #32M7B", "BI110T1_BONUS014 &41L6C", "BI110T1_BONUS015 *50K5D", "BI110T1_BONUS016 ^69J4E",
-        "BI110T1_EXTRA017 ~78I3F", "BI110T1_EXTRA018 ?87H2G", "BI110T1_TEST019 |96G1H", "BI110T1_TEST020 <05F0I"
-      ],
-      "BI110_T2": [
-        "BI110T2_MAIN001#A@E4J9", "BI110T2_MAIN002!Z*D3I8", "BI110T2_MAIN003$K#C2H7", "BI110T2_MAIN004&Y!B1G6",
-        "BI110T2_MAIN005*X%A0F5", "BI110T2_MAIN006^R&Z9E4", "BI110T2_MAIN007~S+Y8D3", "BI110T2_MAIN008?D#X7C2",
-        "BI110T2_MAIN009|Q$W6B1", "BI110T2_MAIN010<>PV5A0", "BI110T2_BONUS011 %1U4Z9", "BI110T2_BONUS012 @2T3Y8",
-        "BI110T2_BONUS013 #3S2X7", "BI110T2_BONUS014 &4R1W6", "BI110T2_BONUS015 *5Q0V5", "BI110T2_BONUS016 ^6P9U4",
-        "BI110T2_EXTRA017 ~7O8T3", "BI110T2_EXTRA018 ?8N7S2", "BI110T2_TEST019 |9M6R1", "BI110T2_TEST020 <0L5Q0"
-      ],
-      "BI110_T3": [
-        "BI110T3_MAIN001#A@K9L0", "BI110T3_MAIN002!Z*J8M1", "BI110T3_MAIN003$K#I7N2", "BI110T3_MAIN004&Y!H6O3",
-        "BI110T3_MAIN005*X%G5P4", "BI110T3_MAIN006^R&F4Q5", "BI110T3_MAIN007~S+E3R6", "BI110T3_MAIN008?D#D2S7",
-        "BI110T3_MAIN009|Q$C1T8", "BI110T3_MAIN010<>PB0U9", "BI110T3_BONUS011 %1A9V0", "BI110T3_BONUS012 @2Z8W1",
-        "BI110T3_BONUS013 #3Y7X2", "BI110T3_BONUS014 &4X6Y3", "BI110T3_BONUS015 *5W5Z4", "BI110T3_BONUS016 ^6V4A5",
-        "BI110T3_EXTRA017 ~7U3B6", "BI110T3_EXTRA018 ?8T2C7", "BI110T3_TEST019 |9S1D8", "BI110T3_TEST020 <0R0E9"
-      ],
-
-      // === CS110 ===
-      "CS110_T1": [
-        "CS110T1_MAIN001#A@M4F9", "CS110T1_MAIN002!Z*L3E8", "CS110T1_MAIN003$K#K2D7", "CS110T1_MAIN004&Y!J1C6",
-        "CS110T1_MAIN005*X%I0B5", "CS110T1_MAIN006^R&H9A4", "CS110T1_MAIN007~S+G8Z3", "CS110T1_MAIN008?D#F7Y2",
-        "CS110T1_MAIN009|Q$E6X1", "CS110T1_MAIN010<>PD5W0", "CS110T1_BONUS011 %1C4V9", "CS110T1_BONUS012 @2B3U8",
-        "CS110T1_BONUS013 #3A2T7", "CS110T1_BONUS014 &4Z1S6", "CS110T1_BONUS015 *5Y0R5", "CS110T1_BONUS016 ^6X9Q4",
-        "CS110T1_EXTRA017 ~7W8P3", "CS110T1_EXTRA018 ?8V7O2", "CS110T1_TEST019 |9U6N1", "CS110T1_TEST020 <0T5M0"
-      ],
-      "CS110_T2": [
-        "CS110T2_MAIN001#A@R9S0", "CS110T2_MAIN002!Z*Q8T1", "CS110T2_MAIN003$K#P7U2", "CS110T2_MAIN004&Y!O6V3",
-        "CS110T2_MAIN005*X%N5W4", "CS110T2_MAIN006^R&M4X5", "CS110T2_MAIN007~S+L3Y6", "CS110T2_MAIN008?D#K2Z7",
-        "CS110T2_MAIN009|Q$J1A8", "CS110T2_MAIN010<>PI0B9", "CS110T2_BONUS011 %1H9C0", "CS110T2_BONUS012 @2G8D1",
-        "CS110T2_BONUS013 #3F7E2", "CS110T2_BONUS014 &4E6F3", "CS110T2_BONUS015 *5D5G4", "CS110T2_BONUS016 ^6C4H5",
-        "CS110T2_EXTRA017 ~7B3I6", "CS110T2_EXTRA018 ?8A2J7", "CS110T2_TEST019 |9Z1K8", "CS110T2_TEST020 <0Y0L9"
-      ],
-      "CS110_T3": [
-        "CS110T3_MAIN001#A@O5P9", "CS110T3_MAIN002!Z*N4Q8", "CS110T3_MAIN003$K#M3R7", "CS110T3_MAIN004&Y!L2S6",
-        "CS110T3_MAIN005*X%K1T5", "CS110T3_MAIN006^R&J0U4", "CS110T3_MAIN007~S+I9V3", "CS110T3_MAIN008?D#H8W2",
-        "CS110T3_MAIN009|Q$G7X1", "CS110T3_MAIN010<>PF6Y0", "CS110T3_BONUS011 %1E5Z9", "CS110T3_BONUS012 @2D4A8",
-        "CS110T3_BONUS013 #3C3B7", "CS110T3_BONUS014 &4B2C6", "CS110T3_BONUS015 *5A1D5", "CS110T3_BONUS016 ^6Z0E4",
-        "CS110T3_EXTRA017 ~7Y9F3", "CS110T3_EXTRA018 ?8X8G2", "CS110T3_TEST019 |9W7H1", "CS110T3_TEST020 <0V6I0"
-      ],
-
-      // NEW GLOBAL AND COURSE-WIDE ACCESS CODES
-      "GLOBAL_ALL_TERMS": [
-        "GLOBAL_001_2025#X7J9", "GLOBAL_002_2025!Y6K8", "GLOBAL_003_2025$Z5L7", "GLOBAL_004_2025&A4M6",
-        "GLOBAL_005_2025*B3N5", "GLOBAL_006_2025^C2O4", "GLOBAL_007_2025~D1P3", "GLOBAL_008_2025?E0Q2",
-        "GLOBAL_009_2025|F9R1", "GLOBAL_010_2025<G8S0", "GLOBAL_011_2025%H7T9", "GLOBAL_012_2025@I6U8",
-        "GLOBAL_013_2025#J5V7", "GLOBAL_014_2025&K4W6", "GLOBAL_015_2025*L3X5", "GLOBAL_016_2025^M2Y4",
-        "GLOBAL_017_2025~N1Z3", "GLOBAL_018_2025?O0A2", "GLOBAL_019_2025|P9B1", "GLOBAL_020_2025<Q8C0"
-      ],
-      "CS110_ALL_TERMS": [
-        "CS110_ALL_001#R7D9", "CS110_ALL_002!S6E8", "CS110_ALL_003$T5F7", "CS110_ALL_004&U4G6",
-        "CS110_ALL_005*V3H5", "CS110_ALL_006^W2I4", "CS110_ALL_007~X1J3", "CS110_ALL_008?Y0K2",
-        "CS110_ALL_009|Z9L1", "CS110_ALL_010<A8M0", "CS110_ALL_011%B7N9", "CS110_ALL_012@C6O8",
-        "CS110_ALL_013#D5P7", "CS110_ALL_014&E4Q6", "CS110_ALL_015*F3R5", "CS110_ALL_016^G2S4",
-        "CS110_ALL_017~H1T3", "CS110_ALL_018?I0U2", "CS110_ALL_019|J9V1", "CS110_ALL_020<K8W0"
-      ],
-      "BI110_ALL_TERMS": [
-        "BI110_ALL_001#S7U9", "BI110_ALL_002!T6V8", "BI110_ALL_003$U5W7", "BI110_ALL_004&V4X6",
-        "BI110_ALL_005*W3Y5", "BI110_ALL_006^X2Z4", "BI110_ALL_007~Y1A3", "BI110_ALL_008?Z0B2",
-        "BI110_ALL_009|A9C1", "BI110_ALL_010<B8D0", "BI110_ALL_011%C7E9", "BI110_ALL_012@D6F8",
-        "BI110_ALL_013#E5G7", "BI110_ALL_014&F4H6", "BI110_ALL_015*G3I5", "BI110_ALL_016^H2J4",
-        "BI110_ALL_017~I1K3", "BI110_ALL_018?J0L2", "BI110_ALL_019|K9M1", "BI110_ALL_020<L8N0"
-      ]
-    };
-
-    const revokedAccessCodes = [];
-
-    const alreadyActivatedCodes = [
-      // BI110_T1 (20 codes)
-      "BI110T1_MAIN001#A@4X9P", "BI110T1_MAIN002!Z*3Y8Q", "BI110T1_MAIN003$K#2W7R", "BI110T1_MAIN004&Y!1V6S",
-      "BI110T1_MAIN005*X%0U5T", "BI110T1_MAIN006^R&9T4U", "BI110T1_MAIN007~S+8S3V", "BI110T1_MAIN008?D#7R2W",
-      "BI110T1_MAIN009|Q$6Q1X", "BI110T1_MAIN010<>P5P0Y", "BI110T1_BONUS011 %14O9Z", "BI110T1_BONUS012 @23N8A",
-      "BI110T1_BONUS013 #32M7B", "BI110T1_BONUS014 &41L6C", "BI110T1_BONUS015 *50K5D", "BI110T1_BONUS016 ^69J4E",
-      "BI110T1_EXTRA017 ~78I3F", "BI110T1_EXTRA018 ?87H2G", "BI110T1_TEST019 |96G1H", "BI110T1_TEST020 <05F0I",
-      
-      // BI110_T2 (20 codes)
-      "BI110T2_MAIN001#A@E4J9", "BI110T2_MAIN002!Z*D3I8", "BI110T2_MAIN003$K#C2H7", "BI110T2_MAIN004&Y!B1G6",
-      "BI110T2_MAIN005*X%A0F5", "BI110T2_MAIN006^R&Z9E4", "BI110T2_MAIN007~S+Y8D3", "BI110T2_MAIN008?D#X7C2",
-      "BI110T2_MAIN009|Q$W6B1", "BI110T2_MAIN010<>PV5A0", "BI110T2_BONUS011 %1U4Z9", "BI110T2_BONUS012 @2T3Y8",
-      "BI110T2_BONUS013 #3S2X7", "BI110T2_BONUS014 &4R1W6", "BI110T2_BONUS015 *5Q0V5", "BI110T2_BONUS016 ^6P9U4",
-      "BI110T2_EXTRA017 ~7O8T3", "BI110T2_EXTRA018 ?8N7S2", "BI110T2_TEST019 |9M6R1", "BI110T2_TEST020 <0L5Q0",
-      
-      // BI110_T3 (20 codes)
-      "BI110T3_MAIN001#A@K9L0", "BI110T3_MAIN002!Z*J8M1", "BI110T3_MAIN003$K#I7N2", "BI110T3_MAIN004&Y!H6O3",
-      "BI110T3_MAIN005*X%G5P4", "BI110T3_MAIN006^R&F4Q5", "BI110T3_MAIN007~S+E3R6", "BI110T3_MAIN008?D#D2S7",
-      "BI110T3_MAIN009|Q$C1T8", "BI110T3_MAIN010<>PB0U9", "BI110T3_BONUS011 %1A9V0", "BI110T3_BONUS012 @2Z8W1",
-      "BI110T3_BONUS013 #3Y7X2", "BI110T3_BONUS014 &4X6Y3", "BI110T3_BONUS015 *5W5Z4", "BI110T3_BONUS016 ^6V4A5",
-      "BI110T3_EXTRA017 ~7U3B6", "BI110T3_EXTRA018 ?8T2C7", "BI110T3_TEST019 |9S1D8", "BI110T3_TEST020 <0R0E9",
-      
-      // CS110_T1 (20 codes)
-      "CS110T1_MAIN001#A@M4F9", "CS110T1_MAIN002!Z*L3E8", "CS110T1_MAIN003$K#K2D7", "CS110T1_MAIN004&Y!J1C6",
-      "CS110T1_MAIN005*X%I0B5", "CS110T1_MAIN006^R&H9A4", "CS110T1_MAIN007~S+G8Z3", "CS110T1_MAIN008?D#F7Y2",
-      "CS110T1_MAIN009|Q$E6X1", "CS110T1_MAIN010<>PD5W0", "CS110T1_BONUS011 %1C4V9", "CS110T1_BONUS012 @2B3U8",
-      "CS110T1_BONUS013 #3A2T7", "CS110T1_BONUS014 &4Z1S6", "CS110T1_BONUS015 *5Y0R5", "CS110T1_BONUS016 ^6X9Q4",
-      "CS110T1_EXTRA017 ~7W8P3", "CS110T1_EXTRA018 ?8V7O2", "CS110T1_TEST019 |9U6N1", "CS110T1_TEST020 <0T5M0",
-      
-      // CS110_T2 (20 codes)
-      "CS110T2_MAIN001#A@R9S0", "CS110T2_MAIN002!Z*Q8T1", "CS110T2_MAIN003$K#P7U2", "CS110T2_MAIN004&Y!O6V3",
-      "CS110T2_MAIN005*X%N5W4", "CS110T2_MAIN006^R&M4X5", "CS110T2_MAIN007~S+L3Y6", "CS110T2_MAIN008?D#K2Z7",
-      "CS110T2_MAIN009|Q$J1A8", "CS110T2_MAIN010<>PI0B9", "CS110T2_BONUS011 %1H9C0", "CS110T2_BONUS012 @2G8D1",
-      "CS110T2_BONUS013 #3F7E2", "CS110T2_BONUS014 &4E6F3", "CS110T2_BONUS015 *5D5G4", "CS110T2_BONUS016 ^6C4H5",
-      "CS110T2_EXTRA017 ~7B3I6", "CS110T2_EXTRA018 ?8A2J7", "CS110T2_TEST019 |9Z1K8", "CS110T2_TEST020 <0Y0L9",
-      
-      // CS110_T3 (20 codes)
-      "CS110T3_MAIN001#A@O5P9", "CS110T3_MAIN002!Z*N4Q8", "CS110T3_MAIN003$K#M3R7", "CS110T3_MAIN004&Y!L2S6",
-      "CS110T3_MAIN005*X%K1T5", "CS110T3_MAIN006^R&J0U4", "CS110T3_MAIN007~S+I9V3", "CS110T3_MAIN008?D#H8W2",
-      "CS110T3_MAIN009|Q$G7X1", "CS110T3_MAIN010<>PF6Y0", "CS110T3_BONUS011 %1E5Z9", "CS110T3_BONUS012 @2D4A8",
-      "CS110T3_BONUS013 #3C3B7", "CS110T3_BONUS014 &4B2C6", "CS110T3_BONUS015 *5A1D5", "CS110T3_BONUS016 ^6Z0E4",
-      "CS110T3_EXTRA017 ~7Y9F3", "CS110T3_EXTRA018 ?8X8G2", "CS110T3_TEST019 |9W7H1", "CS110T3_TEST020 <0V6I0",
-      
-      // GLOBAL_ALL_TERMS (20 codes)
-      "GLOBAL_001_2025#X7J9", "GLOBAL_002_2025!Y6K8", "GLOBAL_003_2025$Z5L7", "GLOBAL_004_2025&A4M6",
-      "GLOBAL_005_2025*B3N5", "GLOBAL_006_2025^C2O4", "GLOBAL_007_2025~D1P3", "GLOBAL_008_2025?E0Q2",
-      "GLOBAL_009_2025|F9R1", "GLOBAL_010_2025<G8S0", "GLOBAL_011_2025%H7T9", "GLOBAL_012_2025@I6U8",
-      "GLOBAL_013_2025#J5V7", "GLOBAL_014_2025&K4W6", "GLOBAL_015_2025*L3X5", "GLOBAL_016_2025^M2Y4",
-      "GLOBAL_017_2025~N1Z3", "GLOBAL_018_2025?O0A2", "GLOBAL_019_2025|P9B1", "GLOBAL_020_2025<Q8C0",
-      
-      // CS110_ALL_TERMS (20 codes)
-      "CS110_ALL_001#R7D9", "CS110_ALL_002!S6E8", "CS110_ALL_003$T5F7", "CS110_ALL_004&U4G6",
-      "CS110_ALL_005*V3H5", "CS110_ALL_006^W2I4", "CS110_ALL_007~X1J3", "CS110_ALL_008?Y0K2",
-      "CS110_ALL_009|Z9L1", "CS110_ALL_010<A8M0", "CS110_ALL_011%B7N9", "CS110_ALL_012@C6O8",
-      "CS110_ALL_013#D5P7", "CS110_ALL_014&E4Q6", "CS110_ALL_015*F3R5", "CS110_ALL_016^G2S4",
-      "CS110_ALL_017~H1T3", "CS110_ALL_018?I0U2", "CS110_ALL_019|J9V1", "CS110_ALL_020<K8W0",
-      
-      // BI110_ALL_TERMS (20 codes)
-      "BI110_ALL_001#S7U9", "BI110_ALL_002!T6V8", "BI110_ALL_003$U5W7", "BI110_ALL_004&V4X6",
-      "BI110_ALL_005*W3Y5", "BI110_ALL_006^X2Z4", "BI110_ALL_007~Y1A3", "BI110_ALL_008?Z0B2",
-      "BI110_ALL_009|A9C1", "BI110_ALL_010<B8D0", "BI110_ALL_011%C7E9", "BI110_ALL_012@D6F8",
-      "BI110_ALL_013#E5G7", "BI110_ALL_014&F4H6", "BI110_ALL_015*G3I5", "BI110_ALL_016^H2J4",
-      "BI110_ALL_017~I1K3", "BI110_ALL_018?J0L2", "BI110_ALL_019|K9M1", "BI110_ALL_020<L8N0"
+    // ========== COACH PERSONALITY SYSTEM ==========
+    const coachPraises = [
+      "Spot on!", "Excellent work!", "Perfect!", "Boom! You got it!", 
+      "That is correct.", "You are crushing this!", "Right on the money!"
     ];
+    
+    const coachEncouragement = [
+      "Not quite.", "Let's review this.", "Almost, but not quite.", 
+      "That's a tough one.", "Don't worry, let's learn from this."
+    ];
+
+    // Helper: Get random coach phrase
+    function getCoachPhrase(isCorrect) {
+      const list = isCorrect ? coachPraises : coachEncouragement;
+      return list[Math.floor(Math.random() * list.length)];
+    }
+
+    // Helper: Generate running score narrative
+    function getRunningScoreNarrative() {
+      if (currentQuizType === 'essay') {
+        const totalSoFar = currentStepIndex + 1;
+        const percent = Math.round((essayScore / totalSoFar) * 100);
+        let narrative = `Step progress: ${essayScore} correct out of ${totalSoFar}, that is ${percent} percent. `;
+        
+        if (percent === 100) narrative += "Perfect analysis!";
+        else if (percent >= 80) narrative += "Strong logical reasoning!";
+        else if (percent >= 50) narrative += "You're building the argument.";
+        else narrative += "Let's refine your approach.";
+        
+        return narrative;
+      } else {
+        const totalSoFar = currentQuestionIndex + 1;
+        const percent = Math.round((currentScore / totalSoFar) * 100);
+        let narrative = `Your current standing: ${currentScore} out of ${totalSoFar}, that is ${percent} percent. `;
+        
+        if (percent === 100) narrative += "Perfect performance!";
+        else if (percent >= 80) narrative += "Strong mastery!";
+        else if (percent >= 50) narrative += "You are getting there.";
+        else narrative += "Let's keep practicing.";
+        
+        return narrative;
+      }
+    }
+
+    const fullAccessCodes = {
+  // === BI110 ===
+  "BI110_T1": [
+    "BI110T1_MAIN001#A@4X9P", "BI110T1_MAIN002!Z*3Y8Q", "BI110T1_MAIN003$K#2W7R", "BI110T1_MAIN004&Y!1V6S",
+    "BI110T1_MAIN005*X%0U5T", "BI110T1_MAIN006^R&9T4U", "BI110T1_MAIN007~S+8S3V", "BI110T1_MAIN008?D#7R2W",
+    "BI110T1_MAIN009|Q$6Q1X", "BI110T1_MAIN010<>P5P0Y", "BI110T1_BONUS011 %14O9Z", "BI110T1_BONUS012 @23N8A",
+    "BI110T1_BONUS013 #32M7B", "BI110T1_BONUS014 &41L6C", "BI110T1_BONUS015 *50K5D", "BI110T1_BONUS016 ^69J4E",
+    "BI110T1_EXTRA017 ~78I3F", "BI110T1_EXTRA018 ?87H2G", "BI110T1_TEST019 |96G1H", "BI110T1_TEST020 <05F0I"
+  ],
+  "BI110_T2": [
+    "BI110T2_MAIN001#A@E4J9", "BI110T2_MAIN002!Z*D3I8", "BI110T2_MAIN003$K#C2H7", "BI110T2_MAIN004&Y!B1G6",
+    "BI110T2_MAIN005*X%A0F5", "BI110T2_MAIN006^R&Z9E4", "BI110T2_MAIN007~S+Y8D3", "BI110T2_MAIN008?D#X7C2",
+    "BI110T2_MAIN009|Q$W6B1", "BI110T2_MAIN010<>PV5A0", "BI110T2_BONUS011 %1U4Z9", "BI110T2_BONUS012 @2T3Y8",
+    "BI110T2_BONUS013 #3S2X7", "BI110T2_BONUS014 &4R1W6", "BI110T2_BONUS015 *5Q0V5", "BI110T2_BONUS016 ^6P9U4",
+    "BI110T2_EXTRA017 ~7O8T3", "BI110T2_EXTRA018 ?8N7S2", "BI110T2_TEST019 |9M6R1", "BI110T2_TEST020 <0L5Q0"
+  ],
+  "BI110_T3": [
+    "BI110T3_MAIN001#A@K9L0", "BI110T3_MAIN002!Z*J8M1", "BI110T3_MAIN003$K#I7N2", "BI110T3_MAIN004&Y!H6O3",
+    "BI110T3_MAIN005*X%G5P4", "BI110T3_MAIN006^R&F4Q5", "BI110T3_MAIN007~S+E3R6", "BI110T3_MAIN008?D#D2S7",
+    "BI110T3_MAIN009|Q$C1T8", "BI110T3_MAIN010<>PB0U9", "BI110T3_BONUS011 %1A9V0", "BI110T3_BONUS012 @2Z8W1",
+    "BI110T3_BONUS013 #3Y7X2", "BI110T3_BONUS014 &4X6Y3", "BI110T3_BONUS015 *5W5Z4", "BI110T3_BONUS016 ^6V4A5",
+    "BI110T3_EXTRA017 ~7U3B6", "BI110T3_EXTRA018 ?8T2C7", "BI110T3_TEST019 |9S1D8", "BI110T3_TEST020 <0R0E9"
+  ],
+
+  // === CS110 ===
+  "CS110_T1": [
+    "CS110T1_MAIN001#A@M4F9", "CS110T1_MAIN002!Z*L3E8", "CS110T1_MAIN003$K#K2D7", "CS110T1_MAIN004&Y!J1C6",
+    "CS110T1_MAIN005*X%I0B5", "CS110T1_MAIN006^R&H9A4", "CS110T1_MAIN007~S+G8Z3", "CS110T1_MAIN008?D#F7Y2",
+    "CS110T1_MAIN009|Q$E6X1", "CS110T1_MAIN010<>PD5W0", "CS110T1_BONUS011 %1C4V9", "CS110T1_BONUS012 @2B3U8",
+    "CS110T1_BONUS013 #3A2T7", "CS110T1_BONUS014 &4Z1S6", "CS110T1_BONUS015 *5Y0R5", "CS110T1_BONUS016 ^6X9Q4",
+    "CS110T1_EXTRA017 ~7W8P3", "CS110T1_EXTRA018 ?8V7O2", "CS110T1_TEST019 |9U6N1", "CS110T1_TEST020 <0T5M0"
+  ],
+  "CS110_T2": [
+    "CS110T2_MAIN001#A@R9S0", "CS110T2_MAIN002!Z*Q8T1", "CS110T2_MAIN003$K#P7U2", "CS110T2_MAIN004&Y!O6V3",
+    "CS110T2_MAIN005*X%N5W4", "CS110T2_MAIN006^R&M4X5", "CS110T2_MAIN007~S+L3Y6", "CS110T2_MAIN008?D#K2Z7",
+    "CS110T2_MAIN009|Q$J1A8", "CS110T2_MAIN010<>PI0B9", "CS110T2_BONUS011 %1H9C0", "CS110T2_BONUS012 @2G8D1",
+    "CS110T2_BONUS013 #3F7E2", "CS110T2_BONUS014 &4E6F3", "CS110T2_BONUS015 *5D5G4", "CS110T2_BONUS016 ^6C4H5",
+    "CS110T2_EXTRA017 ~7B3I6", "CS110T2_EXTRA018 ?8A2J7", "CS110T2_TEST019 |9Z1K8", "CS110T2_TEST020 <0Y0L9"
+  ],
+  "CS110_T3": [
+    "CS110T3_MAIN001#A@O5P9", "CS110T3_MAIN002!Z*N4Q8", "CS110T3_MAIN003$K#M3R7", "CS110T3_MAIN004&Y!L2S6",
+    "CS110T3_MAIN005*X%K1T5", "CS110T3_MAIN006^R&J0U4", "CS110T3_MAIN007~S+I9V3", "CS110T3_MAIN008?D#H8W2",
+    "CS110T3_MAIN009|Q$G7X1", "CS110T3_MAIN010<>PF6Y0", "CS110T3_BONUS011 %1E5Z9", "CS110T3_BONUS012 @2D4A8",
+    "CS110T3_BONUS013 #3C3B7", "CS110T3_BONUS014 &4B2C6", "CS110T3_BONUS015 *5A1D5", "CS110T3_BONUS016 ^6Z0E4",
+    "CS110T3_EXTRA017 ~7Y9F3", "CS110T3_EXTRA018 ?8X8G2", "CS110T3_TEST019 |9W7H1", "CS110T3_TEST020 <0V6I0"
+  ],
+
+  // NEW GLOBAL AND COURSE-WIDE ACCESS CODES
+  "GLOBAL_ALL_TERMS": [
+    "GLOBAL_001_2025#X7J9", "GLOBAL_002_2025!Y6K8", "GLOBAL_003_2025$Z5L7", "GLOBAL_004_2025&A4M6",
+    "GLOBAL_005_2025*B3N5", "GLOBAL_006_2025^C2O4", "GLOBAL_007_2025~D1P3", "GLOBAL_008_2025?E0Q2",
+    "GLOBAL_009_2025|F9R1", "GLOBAL_010_2025<G8S0", "GLOBAL_011_2025%H7T9", "GLOBAL_012_2025@I6U8",
+    "GLOBAL_013_2025#J5V7", "GLOBAL_014_2025&K4W6", "GLOBAL_015_2025*L3X5", "GLOBAL_016_2025^M2Y4",
+    "GLOBAL_017_2025~N1Z3", "GLOBAL_018_2025?O0A2", "GLOBAL_019_2025|P9B1", "GLOBAL_020_2025<Q8C0"
+  ],
+  "CS110_ALL_TERMS": [
+    "CS110_ALL_001#R7D9", "CS110_ALL_002!S6E8", "CS110_ALL_003$T5F7", "CS110_ALL_004&U4G6",
+    "CS110_ALL_005*V3H5", "CS110_ALL_006^W2I4", "CS110_ALL_007~X1J3", "CS110_ALL_008?Y0K2",
+    "CS110_ALL_009|Z9L1", "CS110_ALL_010<A8M0", "CS110_ALL_011%B7N9", "CS110_ALL_012@C6O8",
+    "CS110_ALL_013#D5P7", "CS110_ALL_014&E4Q6", "CS110_ALL_015*F3R5", "CS110_ALL_016^G2S4",
+    "CS110_ALL_017~H1T3", "CS110_ALL_018?I0U2", "CS110_ALL_019|J9V1", "CS110_ALL_020<K8W0"
+  ],
+  "BI110_ALL_TERMS": [
+    "BI110_ALL_001#S7U9", "BI110_ALL_002!T6V8", "BI110_ALL_003$U5W7", "BI110_ALL_004&V4X6",
+    "BI110_ALL_005*W3Y5", "BI110_ALL_006^X2Z4", "BI110_ALL_007~Y1A3", "BI110_ALL_008?Z0B2",
+    "BI110_ALL_009|A9C1", "BI110_ALL_010<B8D0", "BI110_ALL_011%C7E9", "BI110_ALL_012@D6F8",
+    "BI110_ALL_013#E5G7", "BI110_ALL_014&F4H6", "BI110_ALL_015*G3I5", "BI110_ALL_016^H2J4",
+    "BI110_ALL_017~I1K3", "BI110_ALL_018?J0L2", "BI110_ALL_019|K9M1", "BI110_ALL_020<L8N0"
+  ]
+};
+
+const revokedAccessCodes = [];
+
+const alreadyActivatedCodes = [
+  // BI110_T1 (20 codes)
+  "BI110T1_MAIN001#A@4X9P", "BI110T1_MAIN002!Z*3Y8Q", "BI110T1_MAIN003$K#2W7R", "BI110T1_MAIN004&Y!1V6S",
+  "BI110T1_MAIN005*X%0U5T", "BI110T1_MAIN006^R&9T4U", "BI110T1_MAIN007~S+8S3V", "BI110T1_MAIN008?D#7R2W",
+  "BI110T1_MAIN009|Q$6Q1X", "BI110T1_MAIN010<>P5P0Y", "BI110T1_BONUS011 %14O9Z", "BI110T1_BONUS012 @23N8A",
+  "BI110T1_BONUS013 #32M7B", "BI110T1_BONUS014 &41L6C", "BI110T1_BONUS015 *50K5D", "BI110T1_BONUS016 ^69J4E",
+  "BI110T1_EXTRA017 ~78I3F", "BI110T1_EXTRA018 ?87H2G", "BI110T1_TEST019 |96G1H", "BI110T1_TEST020 <05F0I",
+  
+  // BI110_T2 (20 codes)
+  "BI110T2_MAIN001#A@E4J9", "BI110T2_MAIN002!Z*D3I8", "BI110T2_MAIN003$K#C2H7", "BI110T2_MAIN004&Y!B1G6",
+  "BI110T2_MAIN005*X%A0F5", "BI110T2_MAIN006^R&Z9E4", "BI110T2_MAIN007~S+Y8D3", "BI110T2_MAIN008?D#X7C2",
+  "BI110T2_MAIN009|Q$W6B1", "BI110T2_MAIN010<>PV5A0", "BI110T2_BONUS011 %1U4Z9", "BI110T2_BONUS012 @2T3Y8",
+  "BI110T2_BONUS013 #3S2X7", "BI110T2_BONUS014 &4R1W6", "BI110T2_BONUS015 *5Q0V5", "BI110T2_BONUS016 ^6P9U4",
+  "BI110T2_EXTRA017 ~7O8T3", "BI110T2_EXTRA018 ?8N7S2", "BI110T2_TEST019 |9M6R1", "BI110T2_TEST020 <0L5Q0",
+  
+  // BI110_T3 (20 codes)
+  "BI110T3_MAIN001#A@K9L0", "BI110T3_MAIN002!Z*J8M1", "BI110T3_MAIN003$K#I7N2", "BI110T3_MAIN004&Y!H6O3",
+  "BI110T3_MAIN005*X%G5P4", "BI110T3_MAIN006^R&F4Q5", "BI110T3_MAIN007~S+E3R6", "BI110T3_MAIN008?D#D2S7",
+  "BI110T3_MAIN009|Q$C1T8", "BI110T3_MAIN010<>PB0U9", "BI110T3_BONUS011 %1A9V0", "BI110T3_BONUS012 @2Z8W1",
+  "BI110T3_BONUS013 #3Y7X2", "BI110T3_BONUS014 &4X6Y3", "BI110T3_BONUS015 *5W5Z4", "BI110T3_BONUS016 ^6V4A5",
+  "BI110T3_EXTRA017 ~7U3B6", "BI110T3_EXTRA018 ?8T2C7", "BI110T3_TEST019 |9S1D8", "BI110T3_TEST020 <0R0E9",
+  
+  // CS110_T1 (20 codes)
+  "CS110T1_MAIN001#A@M4F9", "CS110T1_MAIN002!Z*L3E8", "CS110T1_MAIN003$K#K2D7", "CS110T1_MAIN004&Y!J1C6",
+  "CS110T1_MAIN005*X%I0B5", "CS110T1_MAIN006^R&H9A4", "CS110T1_MAIN007~S+G8Z3", "CS110T1_MAIN008?D#F7Y2",
+  "CS110T1_MAIN009|Q$E6X1", "CS110T1_MAIN010<>PD5W0", "CS110T1_BONUS011 %1C4V9", "CS110T1_BONUS012 @2B3U8",
+  "CS110T1_BONUS013 #3A2T7", "CS110T1_BONUS014 &4Z1S6", "CS110T1_BONUS015 *5Y0R5", "CS110T1_BONUS016 ^6X9Q4",
+  "CS110T1_EXTRA017 ~7W8P3", "CS110T1_EXTRA018 ?8V7O2", "CS110T1_TEST019 |9U6N1", "CS110T1_TEST020 <0T5M0",
+  
+  // CS110_T2 (20 codes)
+  "CS110T2_MAIN001#A@R9S0", "CS110T2_MAIN002!Z*Q8T1", "CS110T2_MAIN003$K#P7U2", "CS110T2_MAIN004&Y!O6V3",
+  "CS110T2_MAIN005*X%N5W4", "CS110T2_MAIN006^R&M4X5", "CS110T2_MAIN007~S+L3Y6", "CS110T2_MAIN008?D#K2Z7",
+  "CS110T2_MAIN009|Q$J1A8", "CS110T2_MAIN010<>PI0B9", "CS110T2_BONUS011 %1H9C0", "CS110T2_BONUS012 @2G8D1",
+  "CS110T2_BONUS013 #3F7E2", "CS110T2_BONUS014 &4E6F3", "CS110T2_BONUS015 *5D5G4", "CS110T2_BONUS016 ^6C4H5",
+  "CS110T2_EXTRA017 ~7B3I6", "CS110T2_EXTRA018 ?8A2J7", "CS110T2_TEST019 |9Z1K8", "CS110T2_TEST020 <0Y0L9",
+  
+  // CS110_T3 (20 codes)
+  "CS110T3_MAIN001#A@O5P9", "CS110T3_MAIN002!Z*N4Q8", "CS110T3_MAIN003$K#M3R7", "CS110T3_MAIN004&Y!L2S6",
+  "CS110T3_MAIN005*X%K1T5", "CS110T3_MAIN006^R&J0U4", "CS110T3_MAIN007~S+I9V3", "CS110T3_MAIN008?D#H8W2",
+  "CS110T3_MAIN009|Q$G7X1", "CS110T3_MAIN010<>PF6Y0", "CS110T3_BONUS011 %1E5Z9", "CS110T3_BONUS012 @2D4A8",
+  "CS110T3_BONUS013 #3C3B7", "CS110T3_BONUS014 &4B2C6", "CS110T3_BONUS015 *5A1D5", "CS110T3_BONUS016 ^6Z0E4",
+  "CS110T3_EXTRA017 ~7Y9F3", "CS110T3_EXTRA018 ?8X8G2", "CS110T3_TEST019 |9W7H1", "CS110T3_TEST020 <0V6I0",
+  
+  // GLOBAL_ALL_TERMS (20 codes)
+  "GLOBAL_001_2025#X7J9", "GLOBAL_002_2025!Y6K8", "GLOBAL_003_2025$Z5L7", "GLOBAL_004_2025&A4M6",
+  "GLOBAL_005_2025*B3N5", "GLOBAL_006_2025^C2O4", "GLOBAL_007_2025~D1P3", "GLOBAL_008_2025?E0Q2",
+  "GLOBAL_009_2025|F9R1", "GLOBAL_010_2025<G8S0", "GLOBAL_011_2025%H7T9", "GLOBAL_012_2025@I6U8",
+  "GLOBAL_013_2025#J5V7", "GLOBAL_014_2025&K4W6", "GLOBAL_015_2025*L3X5", "GLOBAL_016_2025^M2Y4",
+  "GLOBAL_017_2025~N1Z3", "GLOBAL_018_2025?O0A2", "GLOBAL_019_2025|P9B1", "GLOBAL_020_2025<Q8C0",
+  
+  // CS110_ALL_TERMS (20 codes)
+  "CS110_ALL_001#R7D9", "CS110_ALL_002!S6E8", "CS110_ALL_003$T5F7", "CS110_ALL_004&U4G6",
+  "CS110_ALL_005*V3H5", "CS110_ALL_006^W2I4", "CS110_ALL_007~X1J3", "CS110_ALL_008?Y0K2",
+  "CS110_ALL_009|Z9L1", "CS110_ALL_010<A8M0", "CS110_ALL_011%B7N9", "CS110_ALL_012@C6O8",
+  "CS110_ALL_013#D5P7", "CS110_ALL_014&E4Q6", "CS110_ALL_015*F3R5", "CS110_ALL_016^G2S4",
+  "CS110_ALL_017~H1T3", "CS110_ALL_018?I0U2", "CS110_ALL_019|J9V1", "CS110_ALL_020<K8W0",
+  
+  // BI110_ALL_TERMS (20 codes)
+  "BI110_ALL_001#S7U9", "BI110_ALL_002!T6V8", "BI110_ALL_003$U5W7", "BI110_ALL_004&V4X6",
+  "BI110_ALL_005*W3Y5", "BI110_ALL_006^X2Z4", "BI110_ALL_007~Y1A3", "BI110_ALL_008?Z0B2",
+  "BI110_ALL_009|A9C1", "BI110_ALL_010<B8D0", "BI110_ALL_011%C7E9", "BI110_ALL_012@D6F8",
+  "BI110_ALL_013#E5G7", "BI110_ALL_014&F4H6", "BI110_ALL_015*G3I5", "BI110_ALL_016^H2J4",
+  "BI110_ALL_017~I1K3", "BI110_ALL_018?J0L2", "BI110_ALL_019|K9M1", "BI110_ALL_020<L8N0"
+];
 
     let usedAccessCodes = [];
     let hasFullAccess = false;
@@ -1072,48 +1117,6 @@ button:disabled {
     let currentTerm = null;
     let currentTermKey = null;
 
-    // =======================================================
-    // === NEW: AUDIO COACH PERSONALITY SETTINGS ===
-    // =======================================================
-    const coachPraises = [
-      "Spot on!", "Excellent work!", "Perfect!", "Boom! You got it!", 
-      "That is correct.", "You are crushing this!", "Right on the money!", "Outstanding!"
-    ];
-    
-    const coachEncouragement = [
-      "Not quite.", "Let's review this.", "Almost, but not quite.", 
-      "That's a tough one.", "Don't worry, let's learn from this.", "Good try, but incorrect."
-    ];
-
-    function getCoachPhrase(isCorrect) {
-      const list = isCorrect ? coachPraises : coachEncouragement;
-      return list[Math.floor(Math.random() * list.length)];
-    }
-
-    function getRunningScoreNarrative() {
-      // Calculates score based on current mode
-      let num = 0, den = 0;
-      if (currentQuizType === 'essay') {
-         num = essayScore; den = currentStepIndex + 1;
-      } else {
-         num = currentScore; den = currentQuestionIndex + 1;
-      }
-      
-      const percent = Math.round((num / den) * 100);
-      let narrative = ` . Your current standing: ${num} out of ${den}, that is ${percent} percent. `;
-      
-      if (percent === 100) narrative += "Perfect performance!";
-      else if (percent >= 80) narrative += "Strong mastery!";
-      else if (percent >= 50) narrative += "You are getting there.";
-      else narrative += "Let's keep practicing.";
-      
-      return narrative;
-    }
-
-    // =======================================================
-    // === CORE LOGIC (ACCESS CONTROL & NAVIGATION) ===
-    // =======================================================
-
     function denyAccess(message, codeToClear = null) {
       hasFullAccess = false;
       if (codeToClear) {
@@ -1131,11 +1134,12 @@ button:disabled {
       showAppNotification(message, "error");
     }
 
+    // --- REPLACED window.onload with reusable init function for SPA ---
     function initializeCourseLogic() {
-      // Initialize TTS preference
+      // NEW: Initialize TTS preference from localStorage
       ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
       
-      // Add a TTS toggle button if missing
+      // NEW: Add a TTS toggle button to the UI if it doesn't exist
       const modeButtonsDiv = document.querySelector('.mode-buttons');
       if (modeButtonsDiv && !document.getElementById('tts-toggle-button')) {
         const ttsButton = document.createElement('button');
@@ -1152,6 +1156,7 @@ button:disabled {
       const courseAllTermsKey = `${currentCourse}_ALL_TERMS`;
 
       if (!currentCourse || !currentTerm) {
+        // We are likely on the landing page, so just return
         return;
       }
 
@@ -1317,23 +1322,34 @@ button:disabled {
       }
     }
 
+    // === SPA NAVIGATION ENGINE ===
     function loadCourse(course, term, price) {
+      // 1. Update Global Data Attributes
       document.body.setAttribute('data-course', course);
       document.body.setAttribute('data-term', term);
+
+      // 2. Update UI Text
       document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
       document.getElementById('price-banner').textContent = `Price: K${price}`;
       document.getElementById('price-val').textContent = `K${price}`;
       document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
+
+      // 3. Switch Views
       document.getElementById('landing-view').style.display = 'none';
       document.getElementById('course-view').style.display = 'block';
+      
+      // 4. Show Fixed Header
       document.getElementById('fixed-header').style.display = 'block';
       document.getElementById('price-banner').style.display = 'block';
       document.body.classList.add('view-course');
+
+      // 5. Scroll to top
       window.scrollTo(0,0);
       
+      // 6. INITIALIZE LOGIC FOR THIS TERM (Replaces window.onload)
       setTimeout(() => {
         initializeCourseLogic();
-        renderQuiz(); 
+        renderQuiz(); // Default to MCQ
       }, 100);
     }
 
@@ -1348,7 +1364,8 @@ button:disabled {
       document.getElementById('result').innerHTML = '';
       document.body.removeAttribute('data-course');
       document.body.removeAttribute('data-term');
-      stopReading(); 
+      stopReading(); // Stop TTS if running
+      
       window.scrollTo(0,0);
     }
 
@@ -1370,6 +1387,7 @@ button:disabled {
       }
     }
 
+    // === HELPER FUNCTIONS ===
     function showAppNotification(message, type = 'info', duration = 5000) {
       const el = document.getElementById('app-notification');
       if (!el) return alert(message);
@@ -1440,11 +1458,7 @@ button:disabled {
       if (text) text.textContent = `Progress: ${current} of ${total}`;
     }
 
-    // =======================================================
-    // === QUIZ LOGIC (UPGRADED WITH AUDIO COACH) ===
-    // =======================================================
-
-    // --- MCQ ---
+    // === ENHANCED MCQ LOGIC WITH COACH ===
     function renderQuiz() {
       if (blockDemo('mcq')) return;
       const container = document.getElementById("quiz-form");
@@ -1482,6 +1496,7 @@ button:disabled {
       readCurrentQuestion();
     }
 
+    // ========== UPDATED: checkMcqAnswer with COACH ==========
     function checkMcqAnswer() {
       const selected = document.querySelector('input[name="mcq"]:checked');
       const resultDiv = document.getElementById("result");
@@ -1493,23 +1508,23 @@ button:disabled {
       const userAnswer = parseInt(selected.value);
       const isCorrect = userAnswer === q.correct;
       
-      let audioFeedback = ""; // Only for ears
-      
+      let feedbackText = "";
+
       if (isCorrect) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        audioFeedback = `${getCoachPhrase(true)} `;
+        feedbackText = `${getCoachPhrase(true)} `;
       } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
-        audioFeedback = `${getCoachPhrase(false)} The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}. `;
+        feedbackText = `${getCoachPhrase(false)} The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}. `;
       }
 
       const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
       resultDiv.innerHTML += explanationBox;
-      audioFeedback += `Explanation: ${q.explanation || ''}`;
-      
-      // Add Running Score
-      audioFeedback += getRunningScoreNarrative();
+      feedbackText += `Explanation: ${q.explanation || ''}`;
+
+      // ADD RUNNING SCORE NARRATIVE
+      feedbackText += getRunningScoreNarrative();
 
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
@@ -1519,9 +1534,10 @@ button:disabled {
       
       document.querySelectorAll('input[name="mcq"]').forEach(input => input.disabled = true);
       
-      if(ttsEnabled) readText("Result: " + audioFeedback);
+      readAnswerFeedback(feedbackText);
     }
 
+    // ========== UPDATED: showFinalMcqScore with AUDIO ==========
     function showFinalMcqScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
@@ -1533,10 +1549,16 @@ button:disabled {
       restartBtn.innerText = "🔁 Try Again";
       restartBtn.onclick = renderQuiz;
       container.appendChild(restartBtn);
-      readResultScreen(currentScore, currentQuizData.length, comment);
+      
+      // NEW: Audio for final score
+      if (ttsEnabled) {
+        setTimeout(() => {
+          readText(`Quiz complete. Final score: ${currentScore} out of ${currentQuizData.length}. That's ${percent} percent. ${comment}`);
+        }, 1000);
+      }
     }
 
-    // --- SHORT ANSWER ---
+    // === ENHANCED SHORT ANSWER LOGIC WITH COACH ===
     function renderShortAnswers() {
       if (blockDemo('shortAnswer')) return;
       const container = document.getElementById("quiz-form");
@@ -1566,10 +1588,11 @@ button:disabled {
       readCurrentQuestion();
     }
 
+    // ========== UPDATED: checkShortAnswer with COACH ==========
     function checkShortAnswer() {
       const inputEl = document.getElementById("short-answer-input");
       const ans = inputEl.value.trim().toLowerCase();
-      const rawAnswer = inputEl.value.trim(); // Keep original for echoing
+      const rawAnswer = inputEl.value.trim(); // Keep original casing for reading back
       const resultDiv = document.getElementById("result");
       resultDiv.innerHTML = "";
       
@@ -1578,26 +1601,26 @@ button:disabled {
       const q = currentQuizData[currentQuestionIndex];
       const matched = q.keywords.some(k => ans.includes(k.toLowerCase()));
       
-      let audioFeedback = "";
+      let feedbackText = "";
 
-      // ECHO: Read back what they wrote
-      audioFeedback += `Let me read back what you wrote: ${rawAnswer}. `;
+      // COACH: Read back what the user wrote
+      feedbackText = `Your answer was: ${rawAnswer}. `;
 
       if (matched) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        audioFeedback += `${getCoachPhrase(true)} `;
+        feedbackText += `${getCoachPhrase(true)} `;
       } else {
         resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
-        audioFeedback += `${getCoachPhrase(false)} We were looking for keywords like: ${q.keywords.join(' or ')}. `;
+        feedbackText += `${getCoachPhrase(false)} Required keywords: ${q.keywords.join(' or ')}. `;
       }
 
       const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
       resultDiv.innerHTML += explanationBox;
-      audioFeedback += ` Explanation: ${q.explanation || ''}`;
-      
-      // Add Running Score
-      audioFeedback += getRunningScoreNarrative();
+      feedbackText += `Explanation: ${q.explanation || ''}`;
+
+      // ADD RUNNING SCORE NARRATIVE
+      feedbackText += getRunningScoreNarrative();
 
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
@@ -1607,9 +1630,10 @@ button:disabled {
       
       inputEl.disabled = true;
       
-      if(ttsEnabled) readText("Result: " + audioFeedback);
+      readAnswerFeedback(feedbackText);
     }
 
+    // ========== UPDATED: showFinalShortAnswerScore with AUDIO ==========
     function showFinalShortAnswerScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
@@ -1621,10 +1645,16 @@ button:disabled {
       restartBtn.innerText = "🔁 Try Again";
       restartBtn.onclick = renderShortAnswers;
       container.appendChild(restartBtn);
-      readResultScreen(currentScore, currentQuizData.length, comment);
+      
+      // NEW: Audio for final score
+      if (ttsEnabled) {
+        setTimeout(() => {
+          readText(`Quiz complete. Final score: ${currentScore} out of ${currentQuizData.length}. That's ${percent} percent. ${comment}`);
+        }, 1000);
+      }
     }
 
-    // --- ESSAY ---
+    // === ENHANCED ESSAY LOGIC WITH COACH ===
     let currentEssay = null;
     let currentStepIndex = 0;
     let essayScore = 0;
@@ -1667,6 +1697,7 @@ button:disabled {
       readCurrentQuestion();
     }
 
+    // ========== UPDATED: checkEssayStep with COACH ==========
     function checkEssayStep() {
       const selectedOption = document.querySelector('input[name="step-option"]:checked');
       const resultDiv = document.getElementById("result");
@@ -1679,23 +1710,25 @@ button:disabled {
       const userAnswer = parseInt(selectedOption.value);
       const correct = userAnswer === step.correct;
       
-      let audioFeedback = "";
+      let feedbackText = "";
 
       if (correct) {
         essayScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        audioFeedback += `${getCoachPhrase(true)} `;
+        feedbackText = `${getCoachPhrase(true)} `;
       } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
-        audioFeedback += `${getCoachPhrase(false)} The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}. `;
+        feedbackText = `${getCoachPhrase(false)} The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}. `;
       }
 
       const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
       resultDiv.innerHTML += explanationBox;
-      audioFeedback += ` Explanation: ${step.explanation || ''}`;
-      
-      // Add Running Score (Specific to Essay)
-      audioFeedback += getRunningScoreNarrative();
+      feedbackText += `Explanation: ${step.explanation || ''}`;
+
+      // COACH: Running Score (Specific to Essay)
+      const totalStepsSoFar = currentStepIndex + 1;
+      const percent = Math.round((essayScore / totalStepsSoFar) * 100);
+      feedbackText += ` Step progress: ${essayScore} correct out of ${totalStepsSoFar}. ${percent} percent accuracy.`;
 
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
@@ -1711,9 +1744,10 @@ button:disabled {
       
       document.querySelectorAll('input[name="step-option"]').forEach(input => input.disabled = true);
       
-      if(ttsEnabled) readText("Result: " + audioFeedback);
+      readAnswerFeedback(feedbackText);
     }
 
+    // ========== UPDATED: showFinalEssayScore with AUDIO ==========
     function showFinalEssayScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
@@ -1725,10 +1759,21 @@ button:disabled {
       restartBtn.innerText = "🔁 Try Another Simulation";
       restartBtn.onclick = renderEssaySimulation;
       container.appendChild(restartBtn);
-      readResultScreen(essayScore, currentEssay.steps.length, comment);
+      
+      // NEW: Audio for final score
+      if (ttsEnabled) {
+        setTimeout(() => {
+          readText(`Essay simulation complete. Final score: ${essayScore} out of ${currentEssay.steps.length}. That's ${percent} percent. ${comment}`);
+        }, 1000);
+      }
     }
 
-    // --- FLASHCARDS ---
+    // === FLASHCARDS LOGIC ===
+    let currentFlashcardTopic = null;
+    let currentFlashcards = [];
+    let currentCardIndex = 0;
+    let isCardFront = true;
+
     function renderFlashcardTopics() {
       if (blockDemo('flashcard')) return;
       const container = document.getElementById("quiz-form");
@@ -1785,19 +1830,13 @@ button:disabled {
     function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
     function prevFlashcard() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
     function nextFlashcard() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
-    
     function showFlashcardCompletion() {
       const container = document.getElementById("quiz-form");
-      const msg = `You have finished the flashcards for "${currentFlashcardTopic}".`;
-      container.innerHTML = `<p>✅ ${msg}</p><button onclick="startFlashcards(currentFlashcardTopic)">🔁 Review Again</button><button onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
+      container.innerHTML = `<p>✅ Done with flashcards for "${currentFlashcardTopic}".</p><button onclick="startFlashcards(currentFlashcardTopic)">🔁 Review Again</button><button onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
       updateProgress(currentFlashcards.length, currentFlashcards.length);
-      if(ttsEnabled) readText(msg);
     }
 
-    // =======================================================
-    // === KEYBOARD & TTS SUPPORT (UPGRADED) ===
-    // =======================================================
-
+    // === KEYBOARD SUPPORT ===
     document.addEventListener("keydown", (e) => {
       if (!currentQuizType) return;
       if (currentQuizType === "mcq" || currentQuizType === "essay") {
@@ -1835,6 +1874,7 @@ button:disabled {
       }
     });
 
+    // === ENHANCED TEXT-TO-SPEECH (TTS) WITH COACH ===
     let utterance = null;
     function updateTtsButtonText() {
       const ttsButton = document.getElementById('tts-toggle-button');
@@ -1856,90 +1896,77 @@ button:disabled {
       utterance = new SpeechSynthesisUtterance(text);
       window.speechSynthesis.speak(utterance);
     }
-    
-    // --- SMART READER (CONTEXT AWARE) ---
+
+    // ========== UPDATED: readCurrentQuestion with COACH INSTRUCTIONS ==========
     function readCurrentQuestion() {
       if (!ttsEnabled) return;
       stopReading();
       let textToRead = "";
 
-      // A. ESSAY MODE
+      // ESSAY MODE
       if (currentQuizType === 'essay' && currentEssay) {
-        // Step 1: Read full context
+        const step = currentEssay.steps[currentStepIndex];
+        if (!step) return;
+        
         if (currentStepIndex === 0) {
-          textToRead += `New Simulation: ${currentEssay.title}. `;
-          textToRead += `Topic: ${currentEssay.topic}, Year ${currentEssay.year}. `;
-          textToRead += `Step 1 of ${currentEssay.steps.length}. `;
-        } 
-        // Step 2+: Just read step count
-        else {
-          textToRead += `Step ${currentStepIndex + 1} of ${currentEssay.steps.length}. `;
+          textToRead += `Essay simulation: ${currentEssay.title}. `;
+          textToRead += `Topic: ${currentEssay.topic}. `;
         }
         
-        // Read Question & Options
-        const step = currentEssay.steps[currentStepIndex];
-        if (step) {
-            textToRead += `Question: ${step.q}. `;
-            if (step.options && step.options.length > 0) {
-                textToRead += "The options are: ";
-                step.options.forEach((opt, i) => {
-                   textToRead += `${String.fromCharCode(65 + i)}. ${opt}. `;
-                });
-            }
-        }
-      }
-
-      // B. MCQ MODE
-      else if (currentQuizType === 'mcq') {
-        const questionElement = document.querySelector('.question-box p');
-        if (questionElement) {
-           textToRead += `Question ${currentQuestionIndex + 1} of ${currentQuizData.length}. `;
-           textToRead += questionElement.textContent.trim().replace(/^Q:\s*/i, "") + ". ";
-        }
-        const optionsElements = document.querySelectorAll('.options label');
-        if (optionsElements.length > 0) {
-          textToRead += "The options are: ";
-          optionsElements.forEach((label, i) => {
-            textToRead += `${String.fromCharCode(65 + i)}. ${label.textContent.trim()}. `; 
+        textToRead += `Step ${currentStepIndex + 1} of ${currentEssay.steps.length}. `;
+        textToRead += `Question: ${step.q}. `;
+        
+        if (step.options && step.options.length > 0) {
+          textToRead += "Let's analyze these options: ";
+          step.options.forEach((opt, i) => {
+            textToRead += `${String.fromCharCode(65 + i)}. ${opt}. `;
           });
         }
       }
-
-      // C. SHORT ANSWER MODE
-      else if (currentQuizType === 'shortAnswer') {
-        const questionElement = document.querySelector('.question-box p');
-        if (questionElement) textToRead = questionElement.textContent.trim();
-        // INSTRUCTION ADDED:
-        textToRead += ". Type your answer in the box below.";
+      
+      // MCQ MODE
+      else if (currentQuizType === 'mcq' && currentQuizData[currentQuestionIndex]) {
+        textToRead += `Question ${currentQuestionIndex + 1} of ${currentQuizData.length}. `;
+        const q = currentQuizData[currentQuestionIndex];
+        textToRead += q.q + ". ";
+        
+        if (q.options && q.options.length > 0) {
+          textToRead += "Consider these possibilities: ";
+          q.options.forEach((opt, i) => {
+            textToRead += `${String.fromCharCode(65 + i)}. ${opt}. `;
+          });
+        }
       }
       
-      // D. FLASHCARDS
-      else if (currentQuizType === 'flashcard' && currentFlashcards.length > 0) {
-         const card = currentFlashcards[currentCardIndex];
-         if (card) {
-             textToRead += isCardFront ? `Front side: ${card.front}` : `Back side: ${card.back}`;
-         }
+      // SHORT ANSWER MODE
+      else if (currentQuizType === 'shortAnswer' && currentQuizData[currentQuestionIndex]) {
+        const q = currentQuizData[currentQuestionIndex];
+        textToRead += `Question ${currentQuestionIndex + 1} of ${currentQuizData.length}. `;
+        textToRead += q.q + ". ";
+        textToRead += "Please type your answer below.";
+      }
+      
+      // FLASHCARD MODE
+      else if (currentQuizType === 'flashcard' && currentFlashcards[currentCardIndex]) {
+        const card = currentFlashcards[currentCardIndex];
+        textToRead += `Flashcard ${currentCardIndex + 1} of ${currentFlashcards.length}. `;
+        textToRead += isCardFront ? `Front: ${card.front}` : `Back: ${card.back}`;
       }
 
       readText(textToRead);
     }
 
+    // ========== UPDATED: readAnswerFeedback with COACH PREFIX ==========
     function readAnswerFeedback(feedbackText) {
       if (!ttsEnabled) return;
-      readText(feedbackText);
-    }
-    
-    function readResultScreen(score, total, comment) {
-      if (!ttsEnabled) return;
-      const percentage = Math.round((score / total) * 100);
-      readText(`Quiz Complete. You scored ${score} out of ${total}, which is ${percentage} percent. ${comment}`);
+      readText("Result: " + feedbackText);
     }
 
     function readFlashcard() {
       if (!ttsEnabled) return;
       stopReading();
       const card = currentFlashcards[currentCardIndex];
-      readText(isCardFront ? `Front side: ${card.front}` : `Back side: ${card.back}`);
+      readText(isCardFront ? `Front: ${card.front}` : `Back: ${card.back}`);
     }
   </script>
 </body>
