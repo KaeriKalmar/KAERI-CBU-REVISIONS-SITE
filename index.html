@@ -805,6 +805,34 @@ button:disabled {
     line-height: 1.4;
   }
 }
+
+/* === NEW: PRINT & PDF GENERATION STYLES === */
+#printable-summary { display: none; }
+
+@media print {
+  body * { visibility: hidden; }
+  #printable-summary, #printable-summary * { visibility: visible; }
+  #printable-summary {
+    display: block; position: absolute; top: 0; left: 0; width: 100%;
+    background: white; color: black; padding: 20px;
+    font-family: 'Times New Roman', serif;
+  }
+  body { background: white; margin: 0; overflow: visible; }
+  
+  /* WATERMARK */
+  #printable-summary::after {
+    content: "Kaeri EdTech"; position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 8rem; color: rgba(0, 0, 0, 0.05); z-index: -1;
+    font-weight: bold; white-space: nowrap;
+  }
+
+  /* LAYOUT */
+  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px; }
+  .pdf-step { margin-bottom: 25px; border-left: 4px solid #007bff; padding-left: 15px; page-break-inside: avoid; }
+  .pdf-ans { color: #28a745; font-weight: bold; }
+  .pdf-exp { font-style: italic; color: #555; }
+}
   </style>
 </head>
 <body>
@@ -893,6 +921,8 @@ button:disabled {
   <!-- FLOATING WHATSAPP (GLOBAL) -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
 
+  <!-- Hidden container for generating PDFs -->
+  <div id="printable-summary"></div>
 
   <!-- ==================== EXTERNAL DATA SCRIPTS ==================== -->
   <script src="assets/mcqDa.js"></script>
@@ -1569,27 +1599,63 @@ const alreadyActivatedCodes = [
       container.appendChild(restartBtn);
     }
 
-    // === ESSAY LOGIC ===
+    // === ESSAY SIMULATION LOGIC (UPDATED WITH GREEN GRID & PDF) ===
+
     let currentEssay = null;
     let currentStepIndex = 0;
     let essayScore = 0;
 
+    // 1. Renders the Green Grid Menu for Essay Topics
     function renderEssaySimulation() {
       if (blockDemo('essay')) return;
+      
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       document.getElementById("result").innerHTML = "";
+      
+      // Filter Data: Show 1 topic if Demo, All if Full Access
       currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
+      
       if (currentQuizData.length === 0) {
         container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
         updateProgress(0, 0);
         return;
       }
-      const randomIndex = Math.floor(Math.random() * currentQuizData.length);
-      currentEssay = currentQuizData[randomIndex];
+
+      // Set context
+      currentQuizType = 'essay'; 
+      updateProgress(0, 0);
+
+      // Header
+      const header = document.createElement("h2");
+      header.innerText = "Select Essay Topic";
+      header.style.textAlign = "center"; 
+      header.style.marginBottom = "25px";
+      container.appendChild(header);
+
+      // Create Grid Container (Reusing Flashcard CSS)
+      const listDiv = document.createElement('div');
+      listDiv.className = 'flashcard-topic-buttons'; 
+
+      // Create Green Buttons for each Essay
+      currentQuizData.forEach((essay, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = essay.title; 
+        btn.onclick = () => startSpecificEssay(index); // Trigger specific essay
+        listDiv.appendChild(btn);
+      });
+
+      container.appendChild(listDiv);
+    }
+
+    // 2. Starts the specific essay selected by the user
+    function startSpecificEssay(index) {
+      currentEssay = currentQuizData[index];
       currentStepIndex = 0;
       essayScore = 0;
-      showEssayStep(currentStepIndex);
+      
+      document.getElementById("result").innerHTML = "";
+      showEssayStep(0);
     }
 
     function showEssayStep(index) {
@@ -1648,17 +1714,74 @@ const alreadyActivatedCodes = [
       readAnswerFeedback(feedbackText);
     }
 
+    // 3. Finish Screen with PDF Download Option
     function showFinalEssayScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       updateProgress(currentEssay.steps.length, currentEssay.steps.length);
+      
       const percent = Math.round((essayScore / currentEssay.steps.length) * 100);
       let comment = percent >= 90 ? "🎉 Excellent process understanding!" : percent >= 70 ? "✅ Good step-by-step grasp!" : percent >= 50 ? "⚠️ Some steps need revision." : "❌ Keep improving!";
+      
       container.innerHTML = `<h2>Simulation Complete!</h2><p>Your Score: ${essayScore} / ${currentEssay.steps.length} (${percent}%)</p><p><em>${comment}</em></p>`;
-      const restartBtn = document.createElement("button");
-      restartBtn.innerText = "🔁 Try Another Simulation";
-      restartBtn.onclick = renderEssaySimulation;
-      container.appendChild(restartBtn);
+      
+      // YELLOW: Retry
+      const retryBtn = document.createElement("button");
+      retryBtn.innerText = "🔁 Retry This Essay";
+      retryBtn.className = "restart-button"; 
+      retryBtn.style.marginRight = "10px";
+      retryBtn.onclick = () => startSpecificEssay(currentQuizData.indexOf(currentEssay));
+      container.appendChild(retryBtn);
+
+      // BLUE: Download PDF
+      const pdfBtn = document.createElement("button");
+      pdfBtn.innerText = "📄 Download Notes";
+      pdfBtn.style.backgroundColor = "#007bff"; 
+      pdfBtn.style.color = "white";
+      pdfBtn.style.marginRight = "10px";
+      pdfBtn.onclick = generateAndPrintPDF;
+      container.appendChild(pdfBtn);
+
+      // GREY: Back to Menu
+      const backBtn = document.createElement("button");
+      backBtn.innerText = "⬅️ Back to Topics";
+      backBtn.className = "back-button"; 
+      backBtn.onclick = renderEssaySimulation;
+      container.appendChild(backBtn);
+    }
+
+    // 4. Generates the Watermarked PDF
+    function generateAndPrintPDF() {
+      const printDiv = document.getElementById("printable-summary");
+      const date = new Date().toLocaleDateString();
+
+      // Header
+      let html = `
+        <div class="pdf-header">
+          <h1>${currentEssay.title} - Revision Notes</h1>
+          <p>Generated by Kaeri EdTech App on ${date}</p>
+          <p>Topic: ${currentEssay.topic || 'General'} | Course: ${currentCourse} ${currentTerm}</p>
+        </div>
+      `;
+
+      // Steps (Q & A)
+      currentEssay.steps.forEach((step, index) => {
+        const correctAnswerText = step.options[step.correct];
+        html += `
+          <div class="pdf-step">
+            <div class="pdf-q">Step ${index + 1}: ${step.q}</div>
+            <div class="pdf-ans">✅ Correct Action: ${correctAnswerText}</div>
+            <div class="pdf-exp">💡 Note: ${step.explanation || "No additional explanation."}</div>
+          </div>
+        `;
+      });
+
+      // Footer
+      html += `<div style="text-align: center; margin-top: 30px; font-size: 12px; color: #777;">Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</div>`;
+
+      // Print
+      printDiv.innerHTML = html;
+      window.print();
     }
 
     // === FLASHCARDS LOGIC ===
