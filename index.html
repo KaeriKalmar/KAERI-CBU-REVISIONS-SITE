@@ -956,6 +956,21 @@ button:disabled {
     border-left: 3px solid #ffc107;
   }
   
+  /* Flashcard specific print styling */
+  .pdf-flashcard-term {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .pdf-flashcard-def {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-left: 2px solid #6f42c1;
+    background: #f8f9fa;
+  }
+  
   /* Force page breaks for long content */
   .pdf-step:nth-child(15n) {
     page-break-before: always;
@@ -1706,7 +1721,7 @@ const alreadyActivatedCodes = [
       if (hasFullAccess) return false;
       const key = `demo_${type}_used_${currentTermKey}`;
       let attempts = parseInt(localStorage.getItem(key) || "0");
-      if (attempts >= 100) {
+      if (attempts >= 3) {
         showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
         return true;
       }
@@ -1791,7 +1806,7 @@ const alreadyActivatedCodes = [
         currentFlashcards.forEach((card, index) => {
           html += `
             <div class="preview-step" style="border-left-color: #6f42c1;">
-              <div class="preview-q" style="color: #333; font-size: 1.1em;">${index + 1}. ${card.front}</div>
+              <div class="preview-q" style="color: #333; font-size: 1.1em;"><strong>${index + 1}. ${card.front}</strong></div>
               <div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div>
               <div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${card.back}</div>
             </div>`;
@@ -2265,7 +2280,7 @@ const alreadyActivatedCodes = [
       restartBtn.onclick = () => startFlashcards(currentFlashcardTopic);
       container.appendChild(restartBtn);
 
-      // Print Preview Button
+      // Print Preview Button - FIXED: This is where it wasn't showing before
       const previewBtn = document.createElement("button");
       previewBtn.innerText = "👁️ Preview & Print";
       previewBtn.style.backgroundColor = "#007bff"; 
