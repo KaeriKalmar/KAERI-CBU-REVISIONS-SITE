@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App - Courses & Terms | Kaeri EdTech</title>
+  <title>Quiz App - Courses & Terms | Kaeri Kalmar</title>
   
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- CSS STYLES (Version B - Enhanced) -->
+  <!-- CSS STYLES -->
   <style>
  /* --- GLOBAL SETTINGS --- */
 body {
@@ -25,7 +25,10 @@ body {
   padding-bottom: 30px;
 }
 
-body.view-course { padding-top: 130px; }
+/* Class applied when viewing a course */
+body.view-course {
+  padding-top: 130px;
+}
 
 h1, h2, h3 {
   color: #72efdd;
@@ -153,8 +156,12 @@ button { cursor: pointer; }
 }
 
 /* TTS Button Specific Style */
-#tts-toggle-button { background-color: #6610f2; }
-#tts-toggle-button:hover { background-color: #520dc2; }
+#tts-toggle-button {
+  background-color: #6610f2; /* Purple */
+}
+#tts-toggle-button:hover {
+  background-color: #520dc2;
+}
 
 #quiz-form {
   background-color: #0d1b2a;
@@ -187,7 +194,9 @@ button { cursor: pointer; }
   margin-left: 10px;
   margin-bottom: 5px;
 }
-.question-header span:first-of-type { margin-left: 0; }
+.question-header span:first-of-type {
+  margin-left: 0;
+}
 
 .question-text, .question-box p {
   font-size: 1.15em;
@@ -256,7 +265,7 @@ button:disabled {
   box-shadow: none;
 }
 
-/* DYNAMICALLY CREATED BUTTONS */
+/* DYNAMICALLY CREATED BUTTONS (Submit, Next, Finish, Restart) */
 #result button, 
 .question-box button,
 .explanation-box + button,
@@ -330,8 +339,14 @@ button:disabled {
   background-color: #0d1b2a;
   border: 1px solid #3e506e;
 }
-.feedback p { margin: 0 0 10px 0; font-weight: bold; }
-.explanation-box { color: #a0a8b4; font-style: italic; }
+.feedback p { 
+  margin: 0 0 10px 0; 
+  font-weight: bold; 
+}
+.explanation-box { 
+  color: #a0a8b4; 
+  font-style: italic; 
+}
 
 #result {
   margin-top: 20px;
@@ -369,8 +384,14 @@ button:disabled {
   margin-bottom: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.demo-mode-banner { border: 2px solid #ffc107; color: #ffc107 !important; }
-.full-access-banner { border: 2px solid #28a745; color: #28a745 !important; }
+.demo-mode-banner { 
+  border: 2px solid #ffc107; 
+  color: #ffc107 !important; 
+}
+.full-access-banner { 
+  border: 2px solid #28a745; 
+  color: #28a745 !important; 
+}
 
 #progress-container {
   width: 100%;
@@ -394,7 +415,7 @@ button:disabled {
   color: #a0a8b4; 
 }
 
-/* --- FLASHCARDS & ESSAY GRID (Version B Feature) --- */
+/* --- FLASHCARDS --- */
 .flashcard-nav-header { 
   display: flex; 
   justify-content: space-between; 
@@ -500,7 +521,7 @@ button:disabled {
     transform: translateY(-2px);
 }
 
-/* GREEN TOPIC BUTTONS (Grid) */
+/* FIXED: GREEN FLASHCARD TOPIC BUTTONS */
 .flashcard-topic-list h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -520,10 +541,10 @@ button:disabled {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: none;
     transition: all 0.3s ease;
-    margin-top: 0; 
+    margin-top: 0; /* Override default button margin */
 }
 .flashcard-topic-buttons button:hover { 
-    background-color: #218838; 
+    background-color: #218838; /* Darker green */
     transform: translateY(-3px); 
 }
 
@@ -616,45 +637,42 @@ button:disabled {
 #app-notification.warning { background-color: #ffc107; color: #333; }
 #app-notification.error { background-color: #dc3545; }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 992px) {
-  .quiz-container { margin: 40px 20px; padding: 30px 20px; }
+/* === CONFETTI ANIMATION === */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    animation: fall 3s ease-in-out infinite;
+}
+.confetti-emoji {
+    position: absolute;
+    font-size: 20px;
+    animation: fall 3s ease-in-out infinite;
+    opacity: 0;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
 }
 
-@media (max-width: 768px) {
-  body { padding-top: 110px; }
-  body.view-course { padding-top: 110px; }
-  #fixed-header { padding: 10px 15px; }
-  .quiz-container { margin: 30px 15px; padding: 25px 15px; }
-  h1 { font-size: 2.2rem; }
-  .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
-  .mode-buttons button { padding: 12px 15px; font-size: 1em; }
-  .options label { padding: 10px; }
-  .question-header h3 { font-size: 1.2em; }
-  .question-header span { font-size: 0.75em; padding: 4px 8px; }
-  .whatsapp-buttons { flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; margin-bottom: 15px; }
-  .whatsapp-buttons button { width: auto; padding: 10px 18px; font-size: 0.9em; }
-  .flashcard-wrapper { height: 250px; }
-  .card-face { font-size: 1.1em; padding: 15px; }
-  /* Modal Mobile Fixes */
-  .print-modal-content { width: 95%; max-height: 95vh; }
-  .print-preview-body { padding: 15px; }
-  .print-preview-body::before { font-size: 3rem; }
-}
-
-@media (max-width: 480px) {
-  body { padding-top: 100px; }
-  body.view-course { padding-top: 100px; }
-  #fixed-header { padding: 8px 10px; }
-  .quiz-container { padding: 15px 10px; }
-  .mode-buttons { grid-template-columns: 1fr; }
-  .flashcard-topic-buttons, .flashcard-nav-buttons { grid-template-columns: 1fr; gap: 10px; }
-  .flashcard { margin: 15px auto; }
-  .mode-buttons button, .flashcard-topic-buttons button, .flashcard-nav-buttons button { font-size: 1em; padding: 14px 18px; }
-  .card-face { font-size: 1em; line-height: 1.4; }
-}
-
-/* === PRINT PREVIEW MODAL STYLES (Version B Feature) === */
+/* === PRINT PREVIEW MODAL === */
 .print-modal {
   display: none;
   position: fixed;
@@ -698,7 +716,10 @@ button:disabled {
   border-bottom: 1px solid #ddd;
 }
 
-.print-modal-header h2 { margin: 0; color: white; text-align: left; }
+.print-modal-header h2 {
+  margin: 0;
+  color: white;
+}
 
 .close-print-preview {
   background: none;
@@ -713,11 +734,11 @@ button:disabled {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: none;
-  margin-top: 0;
 }
 
-.close-print-preview:hover { background: rgba(255, 255, 255, 0.2); transform: none; }
+.close-print-preview:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 .print-preview-body {
   padding: 25px;
@@ -728,7 +749,7 @@ button:disabled {
   min-height: 400px;
 }
 
-/* Watermark for PREVIEW */
+/* Watermark for preview */
 .print-preview-body::before {
   content: "Kaeri EdTech\A 0964312504";
   white-space: pre;
@@ -746,7 +767,10 @@ button:disabled {
   opacity: 0.7;
 }
 
-.print-preview-body > * { position: relative; z-index: 1; }
+.print-preview-body > * {
+  position: relative;
+  z-index: 1;
+}
 
 .print-modal-footer {
   background: #f5f5f5;
@@ -765,7 +789,6 @@ button:disabled {
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;
-  margin-top: 0;
 }
 
 .print-btn {
@@ -779,14 +802,17 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 0;
 }
 
-.cancel-btn:hover { background: #5a6268; transform: translateY(0); }
-.print-btn:hover { background: #218838; transform: translateY(0); }
+.cancel-btn:hover {
+  background: #5a6268;
+}
 
+.print-btn:hover {
+  background: #218838;
+}
 
-/* === PREVIEW CONTENT STYLING === */
+/* Preview content styling */
 .preview-header {
   text-align: center;
   border-bottom: 2px solid #007bff;
@@ -794,7 +820,12 @@ button:disabled {
   padding-bottom: 15px;
 }
 
-.preview-header h1 { color: #333; margin-bottom: 10px; }
+.preview-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
 .preview-step {
   margin-bottom: 25px;
   border-left: 4px solid #007bff;
@@ -805,20 +836,42 @@ button:disabled {
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.preview-q { font-weight: bold; margin-bottom: 8px; color: #333; }
-.preview-ans { color: #28a745; font-weight: bold; margin: 8px 0; padding-left: 10px; border-left: 2px solid #28a745; }
-.preview-exp { font-style: italic; color: #555; margin-top: 8px; padding: 8px; background: #f5f5f5; border-radius: 4px; }
 
+.preview-q {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
 
-/* === FINAL PRINT OUTPUT STYLES (PAPER) === */
+.preview-ans {
+  color: #28a745;
+  font-weight: bold;
+  margin: 8px 0;
+  padding-left: 10px;
+}
+
+.preview-exp {
+  font-style: italic;
+  color: #555;
+  margin-top: 8px;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* === PRINT STYLES === */
 @media print {
-  /* Hide UI elements */
-  body * { visibility: hidden !important; }
-  .print-modal, .print-btn, .cancel-btn { display: none !important; }
+  /* Hide everything except printable summary */
+  body * {
+    visibility: hidden !important;
+  }
   
-  /* Show only the print container */
-  #printable-summary, #printable-summary * { visibility: visible !important; }
+  #printable-summary, 
+  #printable-summary * {
+    visibility: visible !important;
+  }
   
+  /* Position printable summary */
   #printable-summary {
     display: block !important;
     position: absolute !important;
@@ -833,9 +886,15 @@ button:disabled {
     font-size: 12pt !important;
   }
   
-  body { background: white !important; margin: 0 !important; padding: 0 !important; overflow: visible !important; }
+  /* Reset body for printing */
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
   
-  /* FIXED WATERMARK ON EVERY PAGE */
+  /* Watermark that appears on EVERY printed page */
   #printable-summary::before {
     content: "Kaeri EdTech\A 0964312504";
     white-space: pre;
@@ -854,16 +913,178 @@ button:disabled {
     width: 100vw !important;
     height: 100vh !important;
   }
-
-  /* Layout */
-  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 25px; padding-bottom: 15px; page-break-after: avoid; }
-  .pdf-step { margin-bottom: 30px; border-left: 4px solid #007bff; padding-left: 20px; page-break-inside: avoid; }
-  .pdf-q { font-weight: bold; margin-bottom: 8px; color: #333; }
-  .pdf-ans { color: #28a745; font-weight: bold; margin: 8px 0; }
-  .pdf-exp { font-style: italic; color: #555; margin-top: 8px; }
   
-  /* Force break for long content safety */
-  .pdf-step:nth-child(10n) { page-break-before: always; }
+  /* Print layout styling */
+  .pdf-header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    page-break-after: avoid;
+  }
+  
+  .pdf-step {
+    margin-bottom: 30px;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    page-break-inside: avoid;
+  }
+  
+  .pdf-q {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .pdf-ans {
+    color: #28a745;
+    font-weight: bold;
+    margin: 8px 0;
+    padding-left: 10px;
+    border-left: 2px solid #28a745;
+  }
+  
+  .pdf-exp {
+    font-style: italic;
+    color: #555;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border-left: 3px solid #ffc107;
+  }
+  
+  /* Force page breaks for long content */
+  .pdf-step:nth-child(15n) {
+    page-break-before: always;
+  }
+  
+  /* Hide print button in print */
+  .print-btn, .cancel-btn, .print-modal {
+    display: none !important;
+  }
+}
+
+/* Mobile responsive for preview */
+@media (max-width: 768px) {
+  .print-modal-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+  
+  .print-preview-body {
+    padding: 15px;
+  }
+  
+  .print-preview-body::before {
+    font-size: 3rem;
+  }
+  
+  .preview-header h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 992px) {
+  .quiz-container {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+  body.view-course {
+    padding-top: 110px;
+  }
+  #fixed-header {
+    padding: 10px 15px;
+  }
+  .quiz-container {
+    margin: 30px 15px;
+    padding: 25px 15px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .mode-buttons {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .mode-buttons button {
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+  .options label {
+    padding: 10px;
+  }
+  .question-header h3 {
+    font-size: 1.2em;
+  }
+  .question-header span {
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+  .whatsapp-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .whatsapp-buttons button {
+    width: auto;
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+  .flashcard-wrapper {
+    height: 250px;
+  }
+  .card-face {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 100px;
+  }
+  body.view-course {
+    padding-top: 100px;
+  }
+  #fixed-header {
+    padding: 8px 10px;
+  }
+  .quiz-container {
+    padding: 15px 10px;
+  }
+  .mode-buttons {
+    grid-template-columns: 1fr;
+  }
+  .flashcard-topic-buttons,
+  .flashcard-nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .flashcard {
+    margin: 15px auto;
+  }
+  .mode-buttons button,
+  .flashcard-topic-buttons button,
+  .flashcard-nav-buttons button {
+    font-size: 1em;
+    padding: 14px 18px;
+  }
+  .card-face {
+    font-size: 1em;
+    line-height: 1.4;
+  }
 }
   </style>
 </head>
@@ -953,7 +1174,7 @@ button:disabled {
   <!-- FLOATING WHATSAPP (GLOBAL) -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
   
-  <!-- PRINT PREVIEW MODAL -->
+  <!-- ==================== PRINT PREVIEW MODAL ==================== -->
   <div id="print-preview-modal" class="print-modal">
     <div class="print-modal-content">
       <div class="print-modal-header">
@@ -961,11 +1182,11 @@ button:disabled {
         <button class="close-print-preview">&times;</button>
       </div>
       <div class="print-preview-body" id="print-preview-content">
-        <!-- Preview content injected here -->
+        <!-- Preview content will be injected here -->
       </div>
       <div class="print-modal-footer">
-        <button onclick="closePrintPreview()" class="cancel-btn">Cancel</button>
-        <button onclick="proceedToPrint()" class="print-btn">🖨️ Print / Save PDF</button>
+        <button class="cancel-btn">Cancel</button>
+        <button class="print-btn">🖨️ Print / Save PDF</button>
       </div>
     </div>
   </div>
@@ -983,8 +1204,8 @@ button:disabled {
   <script>
     // === CONFIGURATION ===
 
+    // NEW: TTS variable
     let ttsEnabled = false;
-    let printContentData = null; // Store print data for transition
 
     const fullAccessCodes = {
   // === BI110 ===
@@ -1157,6 +1378,9 @@ const alreadyActivatedCodes = [
     let currentTerm = null;
     let currentTermKey = null;
 
+    // === PRINTING VARIABLES ===
+    let printContentData = null;
+
     function denyAccess(message, codeToClear = null) {
       hasFullAccess = false;
       if (codeToClear) {
@@ -1208,16 +1432,8 @@ const alreadyActivatedCodes = [
         usedAccessCodes = [];
       }
 
-      // --- CRITICAL FIX FOR VERSION B ---
-      // Check for 'mcqData' (standard) OR 'mcqDa' (legacy/source of truth)
-      if (typeof mcqData !== 'undefined') {
-        allMcqData = mcqData;
-      } else if (typeof mcqDa !== 'undefined') {
-        allMcqData = mcqDa;
-      } else {
-        allMcqData = [];
-      }
-
+      // Check external data variables
+      allMcqData = typeof mcqData !== 'undefined' ? mcqData : [];
       allShortData = typeof shortData !== 'undefined' ? shortData : [];
       allEssayData = typeof essayData !== 'undefined' ? essayData : [];
       allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
@@ -1506,20 +1722,29 @@ const alreadyActivatedCodes = [
       if (text) text.textContent = `Progress: ${current} of ${total}`;
     }
 
-    // ============================================================
-    // === ENHANCED PRINTING SYSTEM LOGIC (PREVIEW & PRINT) ===
-    // ============================================================
-    
+    // === PRINT PREVIEW SYSTEM ===
     function generatePrintPreview() {
       const printDiv = document.getElementById("print-preview-content");
-      const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      const date = new Date().toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      });
       
       let modeTitle = "";
-      if (currentQuizType === 'essay') modeTitle = currentEssay.title;
-      else if (currentQuizType === 'flashcard') modeTitle = currentFlashcardTopic + " - Glossary";
-      else modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
+      let html = "";
       
-      let html = `
+      // Determine title based on mode
+      if (currentQuizType === 'essay') {
+        modeTitle = currentEssay.title;
+      } else if (currentQuizType === 'flashcard') {
+        modeTitle = currentFlashcardTopic + " - Glossary";
+      } else {
+        modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
+      }
+      
+      // Build the header
+      html += `
         <div class="preview-header">
           <h1>${modeTitle}</h1>
           <p><strong>Kaeri EdTech Study Systems</strong></p>
@@ -1527,13 +1752,13 @@ const alreadyActivatedCodes = [
           <p style="font-size: 0.9em; border-top: 1px solid #ccc; padding-top: 5px; margin-top: 5px;">
              Generated on: ${date} | Preview - Click Print to save as PDF
           </p>
-          <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7; font-size: 0.9em;">
-            <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy. Watermark will appear on all pages.
+          <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7;">
+            <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy
           </div>
         </div>
       `;
       
-      // CONTENT GENERATION LOGIC
+      // Format content based on quiz type
       if (currentQuizType === 'essay') {
         currentEssay.steps.forEach((step, index) => {
           html += `
@@ -1548,7 +1773,7 @@ const alreadyActivatedCodes = [
           html += `
             <div class="preview-step">
               <div class="preview-q">Q${index + 1}: ${item.q}</div>
-              <div class="preview-ans">✅ Answer: ${item.options[item.correct]}</div>
+              <div class="preview-ans">✅ Answer: ${String.fromCharCode(65 + item.correct)}. ${item.options[item.correct]}</div>
               <div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
             </div>`;
         });
@@ -1573,61 +1798,68 @@ const alreadyActivatedCodes = [
         });
       }
       
+      // Footer
       html += `
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666;">
           <p>Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</p>
+          <p style="font-size: 0.8em; color: #888;">This document will include watermark on every page when printed.</p>
         </div>
       `;
       
-      // Prepare Final Print HTML (replace classes for print styling)
+      // Store for final print
       printContentData = {
-        html: html.replace(/preview-/g, 'pdf-')
+        html: html.replace(/preview/g, 'pdf').replace(/Preview/g, 'PDF'),
+        modeTitle: modeTitle,
+        date: date
       };
       
-      // Inject Preview
+      // Show preview
       printDiv.innerHTML = html;
       document.getElementById('print-preview-modal').classList.add('show');
       document.body.style.overflow = 'hidden';
     }
 
     function proceedToPrint() {
+      // Close preview
       closePrintPreview();
+      
+      // Wait for modal to close
       setTimeout(() => {
+        // Prepare final printable content
         const printDiv = document.getElementById("printable-summary");
         printDiv.innerHTML = printContentData.html;
         
-        // Add Page Break Logic via Style
+        // Add page-specific watermarks
         const style = document.createElement('style');
-        style.innerHTML = `@page { margin: 20mm; size: A4; }`;
+        style.innerHTML = `
+          @page {
+            margin: 20mm;
+            size: A4;
+          }
+          
+          @page :first {
+            margin-top: 25mm;
+          }
+        `;
         printDiv.appendChild(style);
         
+        // Trigger print
         window.print();
         
-        setTimeout(() => { printDiv.innerHTML = ''; }, 1000);
+        // Clean up
+        setTimeout(() => {
+          printDiv.innerHTML = '';
+        }, 1000);
       }, 300);
     }
 
     function closePrintPreview() {
       document.getElementById('print-preview-modal').classList.remove('show');
       document.body.style.overflow = 'auto';
+      printContentData = null;
     }
 
-    // Modal Events
-    document.addEventListener('DOMContentLoaded', function() {
-      const closeBtn = document.querySelector('.close-print-preview');
-      if(closeBtn) closeBtn.addEventListener('click', closePrintPreview);
-      
-      const modal = document.getElementById('print-preview-modal');
-      if(modal) modal.addEventListener('click', function(e) {
-        if (e.target === this) closePrintPreview();
-      });
-    });
-
-    // ============================================================
-    // UPDATED QUIZ FUNCTIONS
-    // ============================================================
-
-    // MCQ (FIXED FOR DATA COMPATIBILITY)
+    // === MCQ LOGIC ===
     function renderQuiz() {
       if (blockDemo('mcq')) return;
       const container = document.getElementById("quiz-form");
@@ -1651,20 +1883,13 @@ const alreadyActivatedCodes = [
       const q = currentQuizData[currentQuestionIndex];
       updateProgress(currentQuestionIndex + 1, currentQuizData.length);
       if (!q) return showFinalMcqScore();
-      
-      // Use Version A's data structure (.q and .options)
       let html = `
         <div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div>
         <div class="question-box"><p>${q.q}</p><div class="options">
       `;
-      
-      // Safety Check from Version B
-      if (q.options) {
-        q.options.forEach((opt, i) => {
-          html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
-        });
-      }
-      
+      q.options.forEach((opt, i) => {
+        html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
+      });
       html += `</div><button onclick="checkMcqAnswer()">✅ Submit</button></div>`;
       container.innerHTML = html;
       document.getElementById("result").innerHTML = "";
@@ -1716,7 +1941,7 @@ const alreadyActivatedCodes = [
       restartBtn.onclick = renderQuiz;
       container.appendChild(restartBtn);
 
-      // PREVIEW & PRINT BUTTON
+      // Print Preview Button
       const previewBtn = document.createElement("button");
       previewBtn.innerText = "👁️ Preview & Print";
       previewBtn.style.backgroundColor = "#007bff"; 
@@ -1799,7 +2024,7 @@ const alreadyActivatedCodes = [
       restartBtn.onclick = renderShortAnswers;
       container.appendChild(restartBtn);
 
-      // PREVIEW & PRINT BUTTON
+      // Print Preview Button
       const previewBtn = document.createElement("button");
       previewBtn.innerText = "👁️ Preview & Print";
       previewBtn.style.backgroundColor = "#007bff"; 
@@ -1808,21 +2033,21 @@ const alreadyActivatedCodes = [
       container.appendChild(previewBtn);
     }
 
-    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PREVIEW) ===
+    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PDF GENERATION) ===
     let currentEssay = null;
     let currentStepIndex = 0;
     let essayScore = 0;
 
-    // 1. Renders the Essay Menu (Green Grid Style - All Topics Visible)
+    // 1. Renders the Essay Menu (Green Grid Style)
     function renderEssaySimulation() {
-      // NOTE: Removed blockDemo() here so the menu always shows
+      if (blockDemo('essay')) return;
       
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       document.getElementById("result").innerHTML = "";
 
-      // Load ALL topics
-      currentQuizData = currentEssayData; 
+      // Logic: Show 1 topic for Demo, All for Full Access
+      currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
 
       if (currentQuizData.length === 0) {
         container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
@@ -1830,6 +2055,7 @@ const alreadyActivatedCodes = [
         return;
       }
 
+      // Set context to 'essay'
       currentQuizType = 'essay'; 
       updateProgress(0, 0);
 
@@ -1840,7 +2066,7 @@ const alreadyActivatedCodes = [
       header.style.marginBottom = "25px";
       container.appendChild(header);
 
-      // Create Grid Container
+      // Create Grid Container (Reusing Green Flashcard CSS)
       const listDiv = document.createElement('div');
       listDiv.className = 'flashcard-topic-buttons'; 
 
@@ -1848,27 +2074,19 @@ const alreadyActivatedCodes = [
       currentQuizData.forEach((essay, index) => {
         const btn = document.createElement("button");
         btn.textContent = essay.title; 
-        // Logic: Check access on click
-        btn.onclick = () => attemptStartEssay(index); 
+        btn.onclick = () => startSpecificEssay(index); // Trigger specific essay
         listDiv.appendChild(btn);
       });
 
       container.appendChild(listDiv);
     }
 
-    // 2. The Gatekeeper: Checks tries ONLY when clicking a button
-    function attemptStartEssay(index) {
-        // If blockDemo returns true, user is out of tries -> Stop
-        if (blockDemo('essay')) return; 
-        // If false, start
-        startSpecificEssay(index);
-    }
-
-    // 3. Starts the specific essay
+    // 2. Starts the specific essay selected by the user
     function startSpecificEssay(index) {
       currentEssay = currentQuizData[index];
       currentStepIndex = 0;
       essayScore = 0;
+      
       document.getElementById("result").innerHTML = "";
       showEssayStep(0);
     }
@@ -1929,7 +2147,7 @@ const alreadyActivatedCodes = [
       readAnswerFeedback(feedbackText);
     }
 
-    // 4. Finish Screen with Preview Button
+    // 3. Finish Screen with "Download PDF" Button
     function showFinalEssayScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
@@ -1940,16 +2158,16 @@ const alreadyActivatedCodes = [
       
       container.innerHTML = `<h2>Simulation Complete!</h2><p>Your Score: ${essayScore} / ${currentEssay.steps.length} (${percent}%)</p><p><em>${comment}</em></p>`;
       
-      // YELLOW BUTTON: Retry (Routes through attemptStartEssay for logic consistency)
+      // YELLOW BUTTON: Retry
       const retryBtn = document.createElement("button");
       retryBtn.innerText = "🔁 Retry This Essay";
       retryBtn.style.backgroundColor = "#ffc107";
       retryBtn.style.color = "#333";
       retryBtn.style.marginRight = "10px";
-      retryBtn.onclick = () => attemptStartEssay(currentQuizData.indexOf(currentEssay));
+      retryBtn.onclick = () => startSpecificEssay(currentQuizData.indexOf(currentEssay));
       container.appendChild(retryBtn);
 
-      // BLUE BUTTON: Preview & Print
+      // BLUE BUTTON: Print Preview
       const previewBtn = document.createElement("button");
       previewBtn.innerText = "👁️ Preview & Print";
       previewBtn.style.backgroundColor = "#007bff"; 
@@ -1972,55 +2190,28 @@ const alreadyActivatedCodes = [
     let currentCardIndex = 0;
     let isCardFront = true;
 
-    // 1. Render Menu (Always Visible)
     function renderFlashcardTopics() {
-      // NOTE: Removed 'blockDemo' from here. The menu always loads.
-      
+      if (blockDemo('flashcard')) return;
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       document.getElementById("result").innerHTML = "";
-      
-      // Set Context
       currentQuizType = 'flashcard';
       updateProgress(0, 0);
-      
       if (Object.keys(currentFlashcardTopics).length === 0) {
         container.innerHTML = "<p>No flashcards available for this term.</p>";
         return;
       }
-      
-      // Header
-      const header = document.createElement("h2");
-      header.innerText = "Select Flashcard Topic";
-      header.style.textAlign = "center";
-      header.style.marginBottom = "25px";
-      container.appendChild(header);
-
-      // Grid Container
       const listDiv = document.createElement('div');
       listDiv.className = 'flashcard-topic-buttons';
-      
-      // Generate Buttons
       for (const topic in currentFlashcardTopics) {
         const btn = document.createElement("button");
         btn.textContent = topic;
-        // Logic: Check access on click, not on load
-        btn.onclick = () => attemptStartFlashcard(topic);
+        btn.onclick = () => startFlashcards(topic);
         listDiv.appendChild(btn);
       }
       container.appendChild(listDiv);
     }
 
-    // 2. The Gatekeeper (Checks tries on click)
-    function attemptStartFlashcard(topic) {
-      // If blockDemo returns true, they are out of tries -> Stop.
-      if (blockDemo('flashcard')) return;
-      
-      // If safe, start.
-      startFlashcards(topic);
-    }
-
-    // 3. Start the Deck
     function startFlashcards(topic) {
       currentFlashcardTopic = topic;
       currentFlashcards = currentFlashcardTopics[topic];
@@ -2029,14 +2220,11 @@ const alreadyActivatedCodes = [
       displayFlashcard();
     }
 
-    // 4. Display Card
     function displayFlashcard() {
       const container = document.getElementById("quiz-form");
       const card = currentFlashcards[currentCardIndex];
       updateProgress(currentCardIndex + 1, currentFlashcards.length);
-      
       if (!card) return showFlashcardCompletion();
-      
       container.innerHTML = `
         <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
         <div class="flashcard-wrapper">
@@ -2051,24 +2239,14 @@ const alreadyActivatedCodes = [
         </div>
         <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
       `;
-      
       container.scrollIntoView({ behavior: "smooth" });
       readFlashcard();
     }
 
     function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
     function prevFlashcard() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
-    function nextFlashcard() { 
-        if (currentCardIndex < currentFlashcards.length - 1) { 
-            currentCardIndex++; 
-            isCardFront = true; 
-            displayFlashcard(); 
-        } else { 
-            showFlashcardCompletion(); 
-        } 
-    }
+    function nextFlashcard() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
     
-    // 5. Finish Screen (With Print & Retry via Gatekeeper)
     function showFlashcardCompletion() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = `
@@ -2079,24 +2257,24 @@ const alreadyActivatedCodes = [
       `;
       updateProgress(currentFlashcards.length, currentFlashcards.length);
 
-      // YELLOW: Retry (Routes through attemptStartFlashcard logic)
+      // Restart
       const restartBtn = document.createElement("button");
       restartBtn.innerText = "🔁 Review Again";
       restartBtn.className = "restart-button";
       restartBtn.style.marginRight = "10px";
-      restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic);
+      restartBtn.onclick = () => startFlashcards(currentFlashcardTopic);
       container.appendChild(restartBtn);
 
-      // BLUE: Preview & Print
+      // Print Preview Button
       const previewBtn = document.createElement("button");
-      previewBtn.innerText = "👁️ Preview Glossary"; 
+      previewBtn.innerText = "👁️ Preview & Print";
       previewBtn.style.backgroundColor = "#007bff"; 
       previewBtn.style.color = "white";
       previewBtn.style.marginRight = "10px";
       previewBtn.onclick = generatePrintPreview;
       container.appendChild(previewBtn);
 
-      // GREY: Back to Menu
+      // Back to Menu
       const backBtn = document.createElement("button");
       backBtn.innerText = "⬅️ Back to Topics";
       backBtn.className = "back-button";
@@ -2195,6 +2373,32 @@ const alreadyActivatedCodes = [
       const card = currentFlashcards[currentCardIndex];
       readText(isCardFront ? `Front of card. ${card.front}` : `Back of card. ${card.back}`);
     }
+
+    // === INITIALIZE EVENT LISTENERS ===
+    document.addEventListener('DOMContentLoaded', function() {
+      // Close print preview on X click
+      document.querySelector('.close-print-preview').addEventListener('click', closePrintPreview);
+      
+      // Print button in modal
+      document.querySelector('.print-btn').addEventListener('click', proceedToPrint);
+      
+      // Cancel button in modal
+      document.querySelector('.cancel-btn').addEventListener('click', closePrintPreview);
+      
+      // Close preview on ESC key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && document.getElementById('print-preview-modal').classList.contains('show')) {
+          closePrintPreview();
+        }
+      });
+      
+      // Close preview on outside click
+      document.getElementById('print-preview-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closePrintPreview();
+        }
+      });
+    });
   </script>
 </body>
 </html>
