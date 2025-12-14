@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App - Courses & Terms | Kaeri Kalmar</title>
+  <title>Quiz App - Courses & Terms | Kaeri EdTech</title>
   
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -265,7 +265,7 @@ button:disabled {
   box-shadow: none;
 }
 
-/* DYNAMICALLY CREATED BUTTONS (Submit, Next, Finish, Restart) */
+/* DYNAMICALLY CREATED BUTTONS */
 #result button, 
 .question-box button,
 .explanation-box + button,
@@ -415,7 +415,7 @@ button:disabled {
   color: #a0a8b4; 
 }
 
-/* --- FLASHCARDS --- */
+/* --- FLASHCARDS & ESSAY GRID --- */
 .flashcard-nav-header { 
   display: flex; 
   justify-content: space-between; 
@@ -521,7 +521,7 @@ button:disabled {
     transform: translateY(-2px);
 }
 
-/* FIXED: GREEN FLASHCARD TOPIC BUTTONS */
+/* GREEN FLASHCARD TOPIC BUTTONS (Grid System) */
 .flashcard-topic-list h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -533,7 +533,7 @@ button:disabled {
     margin-bottom: 30px;
 }
 .flashcard-topic-buttons button {
-    background-color: #28a745; /* GREEN */
+    background-color: #28a745; 
     color: white;
     padding: 15px 20px;
     font-size: 1.1em;
@@ -541,10 +541,10 @@ button:disabled {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: none;
     transition: all 0.3s ease;
-    margin-top: 0; /* Override default button margin */
+    margin-top: 0; 
 }
 .flashcard-topic-buttons button:hover { 
-    background-color: #218838; /* Darker green */
+    background-color: #218838; 
     transform: translateY(-3px); 
 }
 
@@ -672,336 +672,6 @@ button:disabled {
     }
 }
 
-/* === PRINT PREVIEW MODAL === */
-.print-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
-  overflow-y: auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.print-modal.show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.print-modal-content {
-  background: white;
-  color: #333;
-  width: 90%;
-  max-width: 800px;
-  max-height: 90vh;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.print-modal-header {
-  background: #007bff;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.print-modal-header h2 {
-  margin: 0;
-  color: white;
-}
-
-.close-print-preview {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.close-print-preview:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.print-preview-body {
-  padding: 25px;
-  overflow-y: auto;
-  flex-grow: 1;
-  background: #f9f9f9;
-  position: relative;
-  min-height: 400px;
-}
-
-/* Watermark for preview */
-.print-preview-body::before {
-  content: "Kaeri EdTech\A 0964312504";
-  white-space: pre;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 5rem;
-  text-align: center;
-  line-height: 1.2;
-  color: rgba(0, 0, 0, 0.05);
-  z-index: 0;
-  font-weight: bold;
-  pointer-events: none;
-  opacity: 0.7;
-}
-
-.print-preview-body > * {
-  position: relative;
-  z-index: 1;
-}
-
-.print-modal-footer {
-  background: #f5f5f5;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
-  border-top: 1px solid #ddd;
-}
-
-.cancel-btn {
-  background: #6c757d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-.print-btn {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.cancel-btn:hover {
-  background: #5a6268;
-}
-
-.print-btn:hover {
-  background: #218838;
-}
-
-/* Preview content styling */
-.preview-header {
-  text-align: center;
-  border-bottom: 2px solid #007bff;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-}
-
-.preview-header h1 {
-  color: #333;
-  margin-bottom: 10px;
-  font-size: 1.8em;
-}
-
-.preview-step {
-  margin-bottom: 25px;
-  border-left: 4px solid #007bff;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.preview-q {
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.preview-ans {
-  color: #28a745;
-  font-weight: bold;
-  margin: 8px 0;
-  padding-left: 10px;
-}
-
-.preview-exp {
-  font-style: italic;
-  color: #555;
-  margin-top: 8px;
-  padding: 8px;
-  background: #f5f5f5;
-  border-radius: 4px;
-}
-
-/* === PRINT STYLES === */
-@media print {
-  /* Hide everything except printable summary */
-  body * {
-    visibility: hidden !important;
-  }
-  
-  #printable-summary, 
-  #printable-summary * {
-    visibility: visible !important;
-  }
-  
-  /* Position printable summary */
-  #printable-summary {
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    background: white !important;
-    color: black !important;
-    padding: 20px !important;
-    font-family: 'Times New Roman', serif !important;
-    line-height: 1.6 !important;
-    font-size: 12pt !important;
-  }
-  
-  /* Reset body for printing */
-  body {
-    background: white !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: visible !important;
-  }
-  
-  /* Watermark that appears on EVERY printed page */
-  #printable-summary::before {
-    content: "Kaeri EdTech\A 0964312504";
-    white-space: pre;
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) rotate(-45deg) !important;
-    font-size: 6rem !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-    color: rgba(0, 0, 0, 0.05) !important;
-    z-index: -1 !important;
-    font-weight: bold !important;
-    pointer-events: none !important;
-    opacity: 1 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-  }
-  
-  /* Print layout styling */
-  .pdf-header {
-    text-align: center;
-    border-bottom: 2px solid #000;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    page-break-after: avoid;
-  }
-  
-  .pdf-step {
-    margin-bottom: 30px;
-    border-left: 4px solid #007bff;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    page-break-inside: avoid;
-  }
-  
-  .pdf-q {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .pdf-ans {
-    color: #28a745;
-    font-weight: bold;
-    margin: 8px 0;
-    padding-left: 10px;
-    border-left: 2px solid #28a745;
-  }
-  
-  .pdf-exp {
-    font-style: italic;
-    color: #555;
-    margin-top: 8px;
-    padding: 8px;
-    background: #f9f9f9;
-    border-radius: 4px;
-    border-left: 3px solid #ffc107;
-  }
-  
-  /* Flashcard specific print styling */
-  .pdf-flashcard-term {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .pdf-flashcard-def {
-    margin-left: 15px;
-    padding: 5px 10px;
-    border-left: 2px solid #6f42c1;
-    background: #f8f9fa;
-  }
-  
-  /* Force page breaks for long content */
-  .pdf-step:nth-child(15n) {
-    page-break-before: always;
-  }
-  
-  /* Hide print button in print */
-  .print-btn, .cancel-btn, .print-modal {
-    display: none !important;
-  }
-}
-
-/* Mobile responsive for preview */
-@media (max-width: 768px) {
-  .print-modal-content {
-    width: 95%;
-    max-height: 95vh;
-  }
-  
-  .print-preview-body {
-    padding: 15px;
-  }
-  
-  .print-preview-body::before {
-    font-size: 3rem;
-  }
-  
-  .preview-header h1 {
-    font-size: 1.5em;
-  }
-}
-
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 992px) {
   .quiz-container {
@@ -1064,6 +734,17 @@ button:disabled {
     font-size: 1.1em;
     padding: 15px;
   }
+  /* Modal Mobile Fixes */
+  .print-modal-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+  .print-preview-body {
+    padding: 15px;
+  }
+  .print-preview-body::before {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1100,6 +781,228 @@ button:disabled {
     font-size: 1em;
     line-height: 1.4;
   }
+}
+
+/* === PRINT PREVIEW MODAL STYLES === */
+.print-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.print-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.print-modal-content {
+  background: white;
+  color: #333;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.print-modal-header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.print-modal-header h2 {
+  margin: 0;
+  color: white;
+  text-align: left;
+}
+
+.close-print-preview {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: none;
+  margin-top: 0;
+}
+
+.close-print-preview:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: none;
+}
+
+.print-preview-body {
+  padding: 25px;
+  overflow-y: auto;
+  flex-grow: 1;
+  background: #f9f9f9;
+  position: relative;
+  min-height: 400px;
+}
+
+/* Watermark for PREVIEW */
+.print-preview-body::before {
+  content: "Kaeri EdTech\A 0964312504";
+  white-space: pre;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 0;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.print-preview-body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.print-modal-footer {
+  background: #f5f5f5;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.print-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.cancel-btn:hover { background: #5a6268; transform: translateY(0); }
+.print-btn:hover { background: #218838; transform: translateY(0); }
+
+
+/* === PREVIEW CONTENT STYLING === */
+.preview-header {
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.preview-header h1 { color: #333; margin-bottom: 10px; }
+.preview-step {
+  margin-bottom: 25px;
+  border-left: 4px solid #007bff;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.preview-q { font-weight: bold; margin-bottom: 8px; color: #333; }
+.preview-ans { color: #28a745; font-weight: bold; margin: 8px 0; padding-left: 10px; border-left: 2px solid #28a745; }
+.preview-exp { font-style: italic; color: #555; margin-top: 8px; padding: 8px; background: #f5f5f5; border-radius: 4px; }
+
+
+/* === FINAL PRINT OUTPUT STYLES (PAPER) === */
+@media print {
+  /* Hide UI elements */
+  body * { visibility: hidden !important; }
+  .print-modal, .print-btn, .cancel-btn { display: none !important; }
+  
+  /* Show only the print container */
+  #printable-summary, #printable-summary * { visibility: visible !important; }
+  
+  #printable-summary {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+    font-family: 'Times New Roman', serif !important;
+    line-height: 1.6 !important;
+    font-size: 12pt !important;
+  }
+  
+  body { background: white !important; margin: 0 !important; padding: 0 !important; overflow: visible !important; }
+  
+  /* FIXED WATERMARK ON EVERY PAGE */
+  #printable-summary::before {
+    content: "Kaeri EdTech\A 0964312504";
+    white-space: pre;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotate(-45deg) !important;
+    font-size: 6rem !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    color: rgba(0, 0, 0, 0.05) !important;
+    z-index: -1 !important;
+    font-weight: bold !important;
+    pointer-events: none !important;
+    opacity: 1 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+
+  /* Layout */
+  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 25px; padding-bottom: 15px; page-break-after: avoid; }
+  .pdf-step { margin-bottom: 30px; border-left: 4px solid #007bff; padding-left: 20px; page-break-inside: avoid; }
+  .pdf-q { font-weight: bold; margin-bottom: 8px; color: #333; }
+  .pdf-ans { color: #28a745; font-weight: bold; margin: 8px 0; }
+  .pdf-exp { font-style: italic; color: #555; margin-top: 8px; }
+  
+  /* Force break for long content safety */
+  .pdf-step:nth-child(10n) { page-break-before: always; }
 }
   </style>
 </head>
@@ -1189,7 +1092,7 @@ button:disabled {
   <!-- FLOATING WHATSAPP (GLOBAL) -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
   
-  <!-- ==================== PRINT PREVIEW MODAL ==================== -->
+  <!-- PRINT PREVIEW MODAL -->
   <div id="print-preview-modal" class="print-modal">
     <div class="print-modal-content">
       <div class="print-modal-header">
@@ -1197,11 +1100,11 @@ button:disabled {
         <button class="close-print-preview">&times;</button>
       </div>
       <div class="print-preview-body" id="print-preview-content">
-        <!-- Preview content will be injected here -->
+        <!-- Preview content injected here -->
       </div>
       <div class="print-modal-footer">
-        <button class="cancel-btn">Cancel</button>
-        <button class="print-btn">🖨️ Print / Save PDF</button>
+        <button onclick="closePrintPreview()" class="cancel-btn">Cancel</button>
+        <button onclick="proceedToPrint()" class="print-btn">🖨️ Print / Save PDF</button>
       </div>
     </div>
   </div>
@@ -1219,8 +1122,8 @@ button:disabled {
   <script>
     // === CONFIGURATION ===
 
-    // NEW: TTS variable
     let ttsEnabled = false;
+    let printContentData = null; // Store print data for transition
 
     const fullAccessCodes = {
   // === BI110 ===
@@ -1392,9 +1295,6 @@ const alreadyActivatedCodes = [
     let currentCourse = null;
     let currentTerm = null;
     let currentTermKey = null;
-
-    // === PRINTING VARIABLES ===
-    let printContentData = null;
 
     function denyAccess(message, codeToClear = null) {
       hasFullAccess = false;
@@ -1721,7 +1621,7 @@ const alreadyActivatedCodes = [
       if (hasFullAccess) return false;
       const key = `demo_${type}_used_${currentTermKey}`;
       let attempts = parseInt(localStorage.getItem(key) || "0");
-      if (attempts >= 3) {
+      if (attempts >= 100) {
         showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
         return true;
       }
@@ -1737,29 +1637,22 @@ const alreadyActivatedCodes = [
       if (text) text.textContent = `Progress: ${current} of ${total}`;
     }
 
-    // === PRINT PREVIEW SYSTEM ===
+    // ============================================================
+    // === ENHANCED PRINTING SYSTEM LOGIC (PREVIEW & PRINT) ===
+    // ============================================================
+    
     function generatePrintPreview() {
       const printDiv = document.getElementById("print-preview-content");
-      const date = new Date().toLocaleDateString('en-GB', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
-      });
+      const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
       
       let modeTitle = "";
-      let html = "";
+      let isFlashcardMode = (currentQuizType === 'flashcard'); 
+
+      if (currentQuizType === 'essay') modeTitle = currentEssay.title;
+      else if (isFlashcardMode) modeTitle = currentFlashcardTopic + " - Glossary";
+      else modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
       
-      // Determine title based on mode
-      if (currentQuizType === 'essay') {
-        modeTitle = currentEssay.title;
-      } else if (currentQuizType === 'flashcard') {
-        modeTitle = currentFlashcardTopic + " - Glossary";
-      } else {
-        modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
-      }
-      
-      // Build the header
-      html += `
+      let html = `
         <div class="preview-header">
           <h1>${modeTitle}</h1>
           <p><strong>Kaeri EdTech Study Systems</strong></p>
@@ -1767,14 +1660,23 @@ const alreadyActivatedCodes = [
           <p style="font-size: 0.9em; border-top: 1px solid #ccc; padding-top: 5px; margin-top: 5px;">
              Generated on: ${date} | Preview - Click Print to save as PDF
           </p>
-          <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7;">
-            <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy
+          <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7; font-size: 0.9em;">
+            <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy. Watermark will appear on all pages.
           </div>
         </div>
       `;
       
-      // Format content based on quiz type
-      if (currentQuizType === 'essay') {
+      // CONTENT GENERATION LOGIC
+      if (isFlashcardMode) {
+        currentFlashcards.forEach((card, index) => {
+          html += `
+            <div class="preview-step pdf-flashcard-container" style="border-left: 4px solid #6f42c1; background-color: #fff;">
+              <div class="preview-q" style="color: #333; font-size: 1.1em;"><strong>${index + 1}. ${card.front}</strong></div>
+              <div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div>
+              <div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${card.back}</div>
+            </div>`;
+        });
+      } else if (currentQuizType === 'essay') {
         currentEssay.steps.forEach((step, index) => {
           html += `
             <div class="preview-step">
@@ -1788,7 +1690,7 @@ const alreadyActivatedCodes = [
           html += `
             <div class="preview-step">
               <div class="preview-q">Q${index + 1}: ${item.q}</div>
-              <div class="preview-ans">✅ Answer: ${String.fromCharCode(65 + item.correct)}. ${item.options[item.correct]}</div>
+              <div class="preview-ans">✅ Answer: ${item.options[item.correct]}</div>
               <div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
             </div>`;
         });
@@ -1802,76 +1704,67 @@ const alreadyActivatedCodes = [
               <div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
             </div>`;
         });
-      } else if (currentQuizType === 'flashcard') {
-        currentFlashcards.forEach((card, index) => {
-          html += `
-            <div class="preview-step" style="border-left-color: #6f42c1;">
-              <div class="preview-q" style="color: #333; font-size: 1.1em;"><strong>${index + 1}. ${card.front}</strong></div>
-              <div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div>
-              <div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${card.back}</div>
-            </div>`;
-        });
       }
       
-      // Footer
       html += `
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666;">
           <p>Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</p>
-          <p style="font-size: 0.8em; color: #888;">This document will include watermark on every page when printed.</p>
         </div>
       `;
       
-      // Store for final print
+      // Prepare Final Print HTML (replace classes for print styling)
       printContentData = {
-        html: html.replace(/preview/g, 'pdf').replace(/Preview/g, 'PDF'),
-        modeTitle: modeTitle,
-        date: date
+        html: html.replace(/preview-/g, 'pdf-')
       };
       
-      // Show preview
+      // Inject Preview
       printDiv.innerHTML = html;
       document.getElementById('print-preview-modal').classList.add('show');
       document.body.style.overflow = 'hidden';
     }
 
     function proceedToPrint() {
-      // Close preview
       closePrintPreview();
-      
-      // Wait for modal to close
       setTimeout(() => {
-        // Prepare final printable content
         const printDiv = document.getElementById("printable-summary");
         printDiv.innerHTML = printContentData.html;
         
-        // Add page-specific watermarks
+        // Add Page Break Logic via Style
         const style = document.createElement('style');
-        style.innerHTML = `
-          @page {
-            margin: 20mm;
-            size: A4;
-          }
-          
-          @page :first {
-            margin-top: 25mm;
-          }
-        `;
+        style.innerHTML = `@page { margin: 20mm; size: A4; }`;
         printDiv.appendChild(style);
         
-        // Trigger print
         window.print();
         
-        // Clean up
-        setTimeout(() => {
-          printDiv.innerHTML = '';
-        }, 1000);
+        setTimeout(() => { printDiv.innerHTML = ''; }, 1000);
       }, 300);
     }
 
     function closePrintPreview() {
       document.getElementById('print-preview-modal').classList.remove('show');
       document.body.style.overflow = 'auto';
-      printContentData = null;
+    }
+
+    // Modal Events
+    document.addEventListener('DOMContentLoaded', function() {
+      const closeBtn = document.querySelector('.close-print-preview');
+      if(closeBtn) closeBtn.addEventListener('click', closePrintPreview);
+      
+      const modal = document.getElementById('print-preview-modal');
+      if(modal) modal.addEventListener('click', function(e) {
+        if (e.target === this) closePrintPreview();
+      });
+    });
+
+    // === ANIMATION HELPER ===
+    function animateResultView(htmlContent) {
+      const container = document.getElementById("quiz-form");
+      container.style.opacity = "0"; container.style.transform = "scale(0.95)";
+      setTimeout(() => {
+        container.innerHTML = htmlContent;
+        container.scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(() => { container.style.opacity = "1"; container.style.transform = "scale(1)"; }, 50);
+      }, 300);
     }
 
     // === MCQ LOGIC ===
@@ -1919,50 +1812,36 @@ const alreadyActivatedCodes = [
       if (!selected) return showAppNotification("Select an option!", "warning");
       const q = currentQuizData[currentQuestionIndex];
       const userAnswer = parseInt(selected.value);
-      let feedbackText = "";
       if (userAnswer === q.correct) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        feedbackText = "Correct!";
       } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
-        feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
       }
       const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
       resultDiv.innerHTML += explanationBox;
-      feedbackText += ` Explanation: ${q.explanation || ''}`;
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
       nextBtn.onclick = displayMcqQuestion;
       resultDiv.appendChild(nextBtn);
       document.querySelectorAll('input[name="mcq"]').forEach(input => input.disabled = true);
-      readAnswerFeedback(feedbackText);
+      readAnswerFeedback(resultDiv.innerText);
     }
 
     function showFinalMcqScore() {
-      const container = document.getElementById("quiz-form");
-      container.innerHTML = "";
-      updateProgress(currentQuizData.length, currentQuizData.length);
       const percent = Math.round((currentScore / currentQuizData.length) * 100);
-      let comment = percent >= 90 ? "🎉 Excellent work!" : percent >= 70 ? "✅ Good job!" : percent >= 50 ? "⚠️ Fair attempt." : "❌ Keep practicing!";
-      
-      container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
-      
-      // Restart
-      const restartBtn = document.createElement("button");
-      restartBtn.innerText = "🔁 Try Again";
-      restartBtn.style.marginRight = "10px";
-      restartBtn.onclick = renderQuiz;
-      container.appendChild(restartBtn);
-
-      // Print Preview Button
-      const previewBtn = document.createElement("button");
-      previewBtn.innerText = "👁️ Preview & Print";
-      previewBtn.style.backgroundColor = "#007bff"; 
-      previewBtn.style.color = "white";
-      previewBtn.onclick = generatePrintPreview;
-      container.appendChild(previewBtn);
+      const html = `
+        <div class="score-card">
+          <h2>Quiz Complete!</h2>
+          <span class="big-score">${currentScore} / ${currentQuizData.length}</span>
+          <p>(${percent}%)</p>
+          <div style="margin-top: 20px;">
+            <button onclick="renderQuiz()" style="margin-right: 10px;">🔁 Try Again</button>
+            <button onclick="generatePrintPreview()" style="background-color: #007bff; color: white;">👁️ Preview & Print</button>
+          </div>
+        </div>`;
+      animateResultView(html);
     }
 
     // === SHORT ANSWER LOGIC ===
@@ -1998,205 +1877,88 @@ const alreadyActivatedCodes = [
     function checkShortAnswer() {
       const ans = document.getElementById("short-answer-input").value.trim().toLowerCase();
       const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = "";
       if (!ans) return showAppNotification("Please type your answer!", "warning");
       const q = currentQuizData[currentQuestionIndex];
       const matched = q.keywords.some(k => ans.includes(k.toLowerCase()));
-      let feedbackText = "";
       if (matched) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        feedbackText = "Correct!";
       } else {
         resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
-        feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
       }
-      const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
-      resultDiv.innerHTML += explanationBox;
-      feedbackText += ` Explanation: ${q.explanation || ''}`;
+      resultDiv.innerHTML += `<div class="explanation-box">${q.explanation || ''}</div>`;
       currentQuestionIndex++;
       const nextBtn = document.createElement("button");
       nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish";
       nextBtn.onclick = displayShortAnswerQuestion;
       resultDiv.appendChild(nextBtn);
       document.getElementById("short-answer-input").disabled = true;
-      readAnswerFeedback(feedbackText);
+      readAnswerFeedback(resultDiv.innerText);
     }
 
     function showFinalShortAnswerScore() {
-      const container = document.getElementById("quiz-form");
-      container.innerHTML = "";
-      updateProgress(currentQuizData.length, currentQuizData.length);
       const percent = Math.round((currentScore / currentQuizData.length) * 100);
-      let comment = percent >= 90 ? "🎉 Excellent work!" : percent >= 70 ? "✅ Good job!" : percent >= 50 ? "⚠️ Fair attempt." : "❌ Keep practicing!";
-      
-      container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
-      
-      // Restart
-      const restartBtn = document.createElement("button");
-      restartBtn.innerText = "🔁 Try Again";
-      restartBtn.style.marginRight = "10px";
-      restartBtn.onclick = renderShortAnswers;
-      container.appendChild(restartBtn);
-
-      // Print Preview Button
-      const previewBtn = document.createElement("button");
-      previewBtn.innerText = "👁️ Preview & Print";
-      previewBtn.style.backgroundColor = "#007bff"; 
-      previewBtn.style.color = "white";
-      previewBtn.onclick = generatePrintPreview;
-      container.appendChild(previewBtn);
+      const html = `<div class="score-card"><h2>Quiz Complete!</h2><span class="big-score">${currentScore} / ${currentQuizData.length}</span><p>(${percent}%)</p><div style="margin-top: 20px;"><button onclick="renderShortAnswers()" style="margin-right: 10px;">🔁 Try Again</button><button onclick="generatePrintPreview()" style="background-color: #007bff; color: white;">👁️ Preview & Print</button></div></div>`;
+      animateResultView(html);
     }
 
-    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PDF GENERATION) ===
+    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PREVIEW) ===
     let currentEssay = null;
     let currentStepIndex = 0;
     let essayScore = 0;
 
-    // 1. Renders the Essay Menu (Green Grid Style)
     function renderEssaySimulation() {
-      if (blockDemo('essay')) return;
-      
       const container = document.getElementById("quiz-form");
-      container.innerHTML = "";
+      container.innerHTML = "<h2>Select Essay Topic</h2>";
       document.getElementById("result").innerHTML = "";
-
-      // Logic: Show 1 topic for Demo, All for Full Access
-      currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
-
-      if (currentQuizData.length === 0) {
-        container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
-        updateProgress(0, 0);
-        return;
-      }
-
-      // Set context to 'essay'
+      currentQuizData = currentEssayData; 
+      if (currentQuizData.length === 0) { container.innerHTML = "<p>No essays.</p>"; return; }
       currentQuizType = 'essay'; 
-      updateProgress(0, 0);
-
-      // Create Header
-      const header = document.createElement("h2");
-      header.innerText = "Select Essay Topic";
-      header.style.textAlign = "center"; 
-      header.style.marginBottom = "25px";
-      container.appendChild(header);
-
-      // Create Grid Container (Reusing Green Flashcard CSS)
-      const listDiv = document.createElement('div');
-      listDiv.className = 'flashcard-topic-buttons'; 
-
-      // Create Buttons
-      currentQuizData.forEach((essay, index) => {
-        const btn = document.createElement("button");
-        btn.textContent = essay.title; 
-        btn.onclick = () => startSpecificEssay(index); // Trigger specific essay
-        listDiv.appendChild(btn);
+      
+      const div = document.createElement("div"); div.className = "flashcard-topic-buttons";
+      currentQuizData.forEach((e, i) => {
+          const btn = document.createElement("button"); btn.textContent = e.title;
+          btn.onclick = () => attemptStartEssay(i);
+          div.appendChild(btn);
       });
-
-      container.appendChild(listDiv);
+      container.appendChild(div);
     }
 
-    // 2. Starts the specific essay selected by the user
+    function attemptStartEssay(index) {
+        if(blockDemo('essay')) return; 
+        startSpecificEssay(index);
+    }
     function startSpecificEssay(index) {
-      currentEssay = currentQuizData[index];
-      currentStepIndex = 0;
-      essayScore = 0;
-      
-      document.getElementById("result").innerHTML = "";
-      showEssayStep(0);
+        currentEssay = currentQuizData[index]; currentStepIndex = 0; essayScore = 0;
+        document.getElementById("result").innerHTML = ""; showEssayStep(0);
     }
-
     function showEssayStep(index) {
-      const container = document.getElementById("quiz-form");
-      const essay = currentEssay;
-      const step = essay.steps[index];
-      updateProgress(index + 1, essay.steps.length);
-      if (!step) return showFinalEssayScore();
-      let html = `
-        <div class="question-header"><h3>📄 ${essay.title} — Step ${index + 1} of ${essay.steps.length}</h3><p>Topic: ${essay.topic} | ${essay.year}</p></div>
-        <div class="question-box"><p><strong>Q:</strong> ${step.q}</p><div class="options">
-      `;
-      step.options.forEach((opt, i) => {
-        html += `<label class="option"><input type="radio" name="step-option" value="${i}" /> <span>${String.fromCharCode(65 + i)}. ${opt}</span></label>`;
-      });
-      html += `</div><button onclick="checkEssayStep()">✅ Submit Step</button></div>`;
-      container.innerHTML = html;
-      document.getElementById("result").innerHTML = "";
-      container.scrollIntoView({ behavior: "smooth" });
-      readCurrentQuestion();
+        const container = document.getElementById("quiz-form");
+        const step = currentEssay.steps[index];
+        if(!step) return showFinalEssayScore();
+        updateProgress(index + 1, currentEssay.steps.length);
+        let html = `<h3>${currentEssay.title} - Step ${index+1}</h3><p>${step.q}</p><div class="options">`;
+        step.options.forEach((o, i) => { html += `<label><input type="radio" name="essay" value="${i}"> ${o}</label>`; });
+        html += `</div><button onclick="checkEssayStep()">Submit</button>`;
+        container.innerHTML = html;
+        readCurrentQuestion();
     }
-
     function checkEssayStep() {
-      const selectedOption = document.querySelector('input[name="step-option"]:checked');
-      const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = "";
-      if (!selectedOption) return showAppNotification("Please select an option!", "warning");
-      const essay = currentEssay;
-      const step = essay.steps[currentStepIndex];
-      const userAnswer = parseInt(selectedOption.value);
-      const correct = userAnswer === step.correct;
-      let feedbackText = "";
-      if (correct) {
-        essayScore++;
-        resultDiv.innerHTML = "<p>✔️ Correct!</p>";
-        feedbackText = "Correct!";
-      } else {
-        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
-        feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
-      }
-      const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
-      resultDiv.innerHTML += explanationBox;
-      feedbackText += ` Explanation: ${step.explanation || ''}`;
-      const nextBtn = document.createElement("button");
-      nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
-      nextBtn.onclick = () => {
-        if (currentStepIndex < essay.steps.length - 1) {
-          currentStepIndex++;
-          showEssayStep(currentStepIndex);
-        } else {
-          showFinalEssayScore();
-        }
-      };
-      resultDiv.appendChild(nextBtn);
-      document.querySelectorAll('input[name="step-option"]').forEach(input => input.disabled = true);
-      readAnswerFeedback(feedbackText);
+        const sel = document.querySelector('input[name="essay"]:checked');
+        if(!sel) return alert("Select option");
+        const res = document.getElementById("result");
+        if(parseInt(sel.value) === currentEssay.steps[currentStepIndex].correct) { essayScore++; res.innerHTML="<p>✅ Correct</p>"; }
+        else { res.innerHTML=`<p>❌ Correct: ${currentEssay.steps[currentStepIndex].options[currentEssay.steps[currentStepIndex].correct]}</p>`; }
+        res.innerHTML += `<div class="explanation-box">${currentEssay.steps[currentStepIndex].explanation||''}</div>`;
+        const btn = document.createElement("button"); btn.innerText = "Next"; 
+        btn.onclick = () => { currentStepIndex++; showEssayStep(currentStepIndex); };
+        res.appendChild(btn);
+        readAnswerFeedback(res.innerText);
     }
-
-    // 3. Finish Screen with "Download PDF" Button
     function showFinalEssayScore() {
-      const container = document.getElementById("quiz-form");
-      container.innerHTML = "";
-      updateProgress(currentEssay.steps.length, currentEssay.steps.length);
-      
-      const percent = Math.round((essayScore / currentEssay.steps.length) * 100);
-      let comment = percent >= 90 ? "🎉 Excellent process understanding!" : percent >= 70 ? "✅ Good step-by-step grasp!" : percent >= 50 ? "⚠️ Some steps need revision." : "❌ Keep improving!";
-      
-      container.innerHTML = `<h2>Simulation Complete!</h2><p>Your Score: ${essayScore} / ${currentEssay.steps.length} (${percent}%)</p><p><em>${comment}</em></p>`;
-      
-      // YELLOW BUTTON: Retry
-      const retryBtn = document.createElement("button");
-      retryBtn.innerText = "🔁 Retry This Essay";
-      retryBtn.style.backgroundColor = "#ffc107";
-      retryBtn.style.color = "#333";
-      retryBtn.style.marginRight = "10px";
-      retryBtn.onclick = () => startSpecificEssay(currentQuizData.indexOf(currentEssay));
-      container.appendChild(retryBtn);
-
-      // BLUE BUTTON: Print Preview
-      const previewBtn = document.createElement("button");
-      previewBtn.innerText = "👁️ Preview & Print";
-      previewBtn.style.backgroundColor = "#007bff"; 
-      previewBtn.style.color = "white";
-      previewBtn.style.marginRight = "10px";
-      previewBtn.onclick = generatePrintPreview;
-      container.appendChild(previewBtn);
-
-      // GREY BUTTON: Back to Menu
-      const backBtn = document.createElement("button");
-      backBtn.innerText = "⬅️ Back to Topics";
-      backBtn.className = "back-button"; 
-      backBtn.onclick = renderEssaySimulation;
-      container.appendChild(backBtn);
+        const percent = Math.round((essayScore / currentEssay.steps.length) * 100);
+        const html = `<div class="score-card"><h2>Done!</h2><span class="big-score">${essayScore} / ${currentEssay.steps.length}</span><div style="margin-top:20px;"><button onclick="attemptStartEssay(currentQuizData.indexOf(currentEssay))" style="margin-right:10px;">Retry</button><button onclick="generatePrintPreview()" style="background-color:#007bff;color:white;margin-right:10px;">👁️ Print</button><button onclick="renderEssaySimulation()" class="back-button">Back</button></div></div>`;
+        animateResultView(html);
     }
 
     // === FLASHCARDS LOGIC ===
@@ -2206,95 +1968,52 @@ const alreadyActivatedCodes = [
     let isCardFront = true;
 
     function renderFlashcardTopics() {
-      if (blockDemo('flashcard')) return;
-      const container = document.getElementById("quiz-form");
-      container.innerHTML = "";
-      document.getElementById("result").innerHTML = "";
-      currentQuizType = 'flashcard';
-      updateProgress(0, 0);
-      if (Object.keys(currentFlashcardTopics).length === 0) {
-        container.innerHTML = "<p>No flashcards available for this term.</p>";
-        return;
-      }
-      const listDiv = document.createElement('div');
-      listDiv.className = 'flashcard-topic-buttons';
-      for (const topic in currentFlashcardTopics) {
-        const btn = document.createElement("button");
-        btn.textContent = topic;
-        btn.onclick = () => startFlashcards(topic);
-        listDiv.appendChild(btn);
-      }
-      container.appendChild(listDiv);
+        const container = document.getElementById("quiz-form");
+        container.innerHTML = "<h2>Select Flashcard Topic</h2>";
+        document.getElementById("result").innerHTML = "";
+        currentQuizType = 'flashcard';
+        if (Object.keys(currentFlashcardTopics).length === 0) {
+            container.innerHTML = "<p>No flashcards available for this term.</p>";
+            return;
+        }
+        const listDiv = document.createElement('div');
+        listDiv.className = 'flashcard-topic-buttons';
+        for (const topic in currentFlashcardTopics) {
+            const btn = document.createElement("button");
+            btn.textContent = topic;
+            btn.onclick = () => attemptStartFlashcard(topic);
+            listDiv.appendChild(btn);
+        }
+        container.appendChild(listDiv);
     }
 
+    function attemptStartFlashcard(topic) {
+        if(blockDemo('flashcard')) return;
+        startFlashcards(topic);
+    }
     function startFlashcards(topic) {
-      currentFlashcardTopic = topic;
-      currentFlashcards = currentFlashcardTopics[topic];
-      currentCardIndex = 0;
-      isCardFront = true;
-      displayFlashcard();
+        currentFlashcardTopic = topic;
+        currentFlashcards = currentFlashcardTopics[topic];
+        currentCardIndex = 0;
+        isCardFront = true;
+        displayFlashcard();
     }
-
     function displayFlashcard() {
-      const container = document.getElementById("quiz-form");
-      const card = currentFlashcards[currentCardIndex];
-      updateProgress(currentCardIndex + 1, currentFlashcards.length);
-      if (!card) return showFlashcardCompletion();
-      container.innerHTML = `
-        <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
-        <div class="flashcard-wrapper">
-          <div class="flashcard ${isCardFront ? '' : 'back-active'}" onclick="flipCard()">
-            <div class="card-face card-front">${card.front}</div>
-            <div class="card-face card-back">${card.back}</div>
-          </div>
-        </div>
-        <div class="flashcard-nav-buttons">
-          <button onclick="prevFlashcard()" ${currentCardIndex === 0 ? 'disabled' : ''}>⬅️ Prev</button>
-          <button onclick="nextFlashcard()" ${currentCardIndex === currentFlashcards.length - 1 ? 'disabled' : ''}>Next ➡️</button>
-        </div>
-        <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
-      `;
-      container.scrollIntoView({ behavior: "smooth" });
-      readFlashcard();
+        const container = document.getElementById("quiz-form");
+        const card = currentFlashcards[currentCardIndex];
+        if(!card) return showFlashcardCompletion();
+        updateProgress(currentCardIndex+1, currentFlashcards.length);
+        container.innerHTML = `<h3>${currentFlashcardTopic} (${currentCardIndex+1}/${currentFlashcards.length})</h3><div class="flashcard-wrapper"><div class="flashcard ${isCardFront?'':'back-active'}" onclick="flipCard()"><div class="card-face card-front">${card.front}</div><div class="card-face card-back">${card.back}</div></div></div><div class="flashcard-nav-buttons"><button onclick="prevFlash()">Prev</button><button onclick="nextFlash()">Next</button></div><button class="back-to-topics-button" onclick="renderFlashcardTopics()">Back</button>`;
+        readFlashcard();
     }
-
     function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
-    function prevFlashcard() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
-    function nextFlashcard() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
+    function prevFlash() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
+    function nextFlash() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
     
+    // UPDATED: Finish Screen with Print Button
     function showFlashcardCompletion() {
-      const container = document.getElementById("quiz-form");
-      container.innerHTML = `
-        <div style="text-align: center;">
-          <h2>Topic Complete!</h2>
-          <p>You have reviewed all flashcards for "<strong>${currentFlashcardTopic}</strong>".</p>
-        </div>
-      `;
-      updateProgress(currentFlashcards.length, currentFlashcards.length);
-
-      // Restart
-      const restartBtn = document.createElement("button");
-      restartBtn.innerText = "🔁 Review Again";
-      restartBtn.className = "restart-button";
-      restartBtn.style.marginRight = "10px";
-      restartBtn.onclick = () => startFlashcards(currentFlashcardTopic);
-      container.appendChild(restartBtn);
-
-      // Print Preview Button - FIXED: This is where it wasn't showing before
-      const previewBtn = document.createElement("button");
-      previewBtn.innerText = "👁️ Preview & Print";
-      previewBtn.style.backgroundColor = "#007bff"; 
-      previewBtn.style.color = "white";
-      previewBtn.style.marginRight = "10px";
-      previewBtn.onclick = generatePrintPreview;
-      container.appendChild(previewBtn);
-
-      // Back to Menu
-      const backBtn = document.createElement("button");
-      backBtn.innerText = "⬅️ Back to Topics";
-      backBtn.className = "back-button";
-      backBtn.onclick = renderFlashcardTopics;
-      container.appendChild(backBtn);
+        const html = `<div class="score-card"><h2>Topic Complete!</h2><div style="margin-top:20px;"><button onclick="attemptStartFlashcard(currentFlashcardTopic)" style="margin-right:10px;">Retry</button><button onclick="generatePrintPreview()" style="background-color:#007bff;color:white;margin-right:10px;">👁️ Preview Glossary</button><button onclick="renderFlashcardTopics()" class="back-button">Back</button></div></div>`;
+        animateResultView(html);
     }
 
     // === KEYBOARD SUPPORT ===
@@ -2388,32 +2107,6 @@ const alreadyActivatedCodes = [
       const card = currentFlashcards[currentCardIndex];
       readText(isCardFront ? `Front of card. ${card.front}` : `Back of card. ${card.back}`);
     }
-
-    // === INITIALIZE EVENT LISTENERS ===
-    document.addEventListener('DOMContentLoaded', function() {
-      // Close print preview on X click
-      document.querySelector('.close-print-preview').addEventListener('click', closePrintPreview);
-      
-      // Print button in modal
-      document.querySelector('.print-btn').addEventListener('click', proceedToPrint);
-      
-      // Cancel button in modal
-      document.querySelector('.cancel-btn').addEventListener('click', closePrintPreview);
-      
-      // Close preview on ESC key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.getElementById('print-preview-modal').classList.contains('show')) {
-          closePrintPreview();
-        }
-      });
-      
-      // Close preview on outside click
-      document.getElementById('print-preview-modal').addEventListener('click', function(e) {
-        if (e.target === this) {
-          closePrintPreview();
-        }
-      });
-    });
   </script>
 </body>
 </html>
