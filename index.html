@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App - Courses & Terms | Kaeri Kalmar</title>
+  <title>Quiz App - Courses & Terms | Kaeri EdTech</title>
   
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- CSS STYLES -->
+  <!-- CSS STYLES (Version B - Enhanced) -->
   <style>
  /* --- GLOBAL SETTINGS --- */
 body {
@@ -25,10 +25,7 @@ body {
   padding-bottom: 30px;
 }
 
-/* Class applied when viewing a course */
-body.view-course {
-  padding-top: 130px;
-}
+body.view-course { padding-top: 130px; }
 
 h1, h2, h3 {
   color: #72efdd;
@@ -156,12 +153,8 @@ button { cursor: pointer; }
 }
 
 /* TTS Button Specific Style */
-#tts-toggle-button {
-  background-color: #6610f2; /* Purple */
-}
-#tts-toggle-button:hover {
-  background-color: #520dc2;
-}
+#tts-toggle-button { background-color: #6610f2; }
+#tts-toggle-button:hover { background-color: #520dc2; }
 
 #quiz-form {
   background-color: #0d1b2a;
@@ -194,9 +187,7 @@ button { cursor: pointer; }
   margin-left: 10px;
   margin-bottom: 5px;
 }
-.question-header span:first-of-type {
-  margin-left: 0;
-}
+.question-header span:first-of-type { margin-left: 0; }
 
 .question-text, .question-box p {
   font-size: 1.15em;
@@ -265,7 +256,7 @@ button:disabled {
   box-shadow: none;
 }
 
-/* DYNAMICALLY CREATED BUTTONS (Submit, Next, Finish, Restart) */
+/* DYNAMICALLY CREATED BUTTONS */
 #result button, 
 .question-box button,
 .explanation-box + button,
@@ -339,14 +330,8 @@ button:disabled {
   background-color: #0d1b2a;
   border: 1px solid #3e506e;
 }
-.feedback p { 
-  margin: 0 0 10px 0; 
-  font-weight: bold; 
-}
-.explanation-box { 
-  color: #a0a8b4; 
-  font-style: italic; 
-}
+.feedback p { margin: 0 0 10px 0; font-weight: bold; }
+.explanation-box { color: #a0a8b4; font-style: italic; }
 
 #result {
   margin-top: 20px;
@@ -384,14 +369,8 @@ button:disabled {
   margin-bottom: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.demo-mode-banner { 
-  border: 2px solid #ffc107; 
-  color: #ffc107 !important; 
-}
-.full-access-banner { 
-  border: 2px solid #28a745; 
-  color: #28a745 !important; 
-}
+.demo-mode-banner { border: 2px solid #ffc107; color: #ffc107 !important; }
+.full-access-banner { border: 2px solid #28a745; color: #28a745 !important; }
 
 #progress-container {
   width: 100%;
@@ -415,7 +394,7 @@ button:disabled {
   color: #a0a8b4; 
 }
 
-/* --- FLASHCARDS --- */
+/* --- FLASHCARDS & ESSAY GRID (Version B Feature) --- */
 .flashcard-nav-header { 
   display: flex; 
   justify-content: space-between; 
@@ -521,7 +500,7 @@ button:disabled {
     transform: translateY(-2px);
 }
 
-/* FIXED: GREEN FLASHCARD TOPIC BUTTONS */
+/* GREEN TOPIC BUTTONS (Grid) */
 .flashcard-topic-list h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -541,10 +520,10 @@ button:disabled {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: none;
     transition: all 0.3s ease;
-    margin-top: 0; /* Override default button margin */
+    margin-top: 0; 
 }
 .flashcard-topic-buttons button:hover { 
-    background-color: #218838; /* Darker green */
+    background-color: #218838; 
     transform: translateY(-3px); 
 }
 
@@ -637,181 +616,254 @@ button:disabled {
 #app-notification.warning { background-color: #ffc107; color: #333; }
 #app-notification.error { background-color: #dc3545; }
 
-/* === CONFETTI ANIMATION === */
-.confetti-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 1000;
-}
-.confetti {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #f44336;
-    animation: fall 3s ease-in-out infinite;
-}
-.confetti-emoji {
-    position: absolute;
-    font-size: 20px;
-    animation: fall 3s ease-in-out infinite;
-    opacity: 0;
-}
-@keyframes fall {
-    0% {
-        transform: translateY(-100vh) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) rotate(720deg);
-        opacity: 0;
-    }
-}
-
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 992px) {
-  .quiz-container {
-    margin: 40px 20px;
-    padding: 30px 20px;
-  }
+  .quiz-container { margin: 40px 20px; padding: 30px 20px; }
 }
 
 @media (max-width: 768px) {
-  body {
-    padding-top: 110px;
-  }
-  body.view-course {
-    padding-top: 110px;
-  }
-  #fixed-header {
-    padding: 10px 15px;
-  }
-  .quiz-container {
-    margin: 30px 15px;
-    padding: 25px 15px;
-  }
-  h1 {
-    font-size: 2.2rem;
-  }
-  .mode-buttons {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
-  }
-  .mode-buttons button {
-    padding: 12px 15px;
-    font-size: 1em;
-  }
-  .options label {
-    padding: 10px;
-  }
-  .question-header h3 {
-    font-size: 1.2em;
-  }
-  .question-header span {
-    font-size: 0.75em;
-    padding: 4px 8px;
-  }
-  .whatsapp-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .whatsapp-buttons button {
-    width: auto;
-    padding: 10px 18px;
-    font-size: 0.9em;
-  }
-  .flashcard-wrapper {
-    height: 250px;
-  }
-  .card-face {
-    font-size: 1.1em;
-    padding: 15px;
-  }
+  body { padding-top: 110px; }
+  body.view-course { padding-top: 110px; }
+  #fixed-header { padding: 10px 15px; }
+  .quiz-container { margin: 30px 15px; padding: 25px 15px; }
+  h1 { font-size: 2.2rem; }
+  .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .mode-buttons button { padding: 12px 15px; font-size: 1em; }
+  .options label { padding: 10px; }
+  .question-header h3 { font-size: 1.2em; }
+  .question-header span { font-size: 0.75em; padding: 4px 8px; }
+  .whatsapp-buttons { flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; margin-bottom: 15px; }
+  .whatsapp-buttons button { width: auto; padding: 10px 18px; font-size: 0.9em; }
+  .flashcard-wrapper { height: 250px; }
+  .card-face { font-size: 1.1em; padding: 15px; }
+  /* Modal Mobile Fixes */
+  .print-modal-content { width: 95%; max-height: 95vh; }
+  .print-preview-body { padding: 15px; }
+  .print-preview-body::before { font-size: 3rem; }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding-top: 100px;
-  }
-  body.view-course {
-    padding-top: 100px;
-  }
-  #fixed-header {
-    padding: 8px 10px;
-  }
-  .quiz-container {
-    padding: 15px 10px;
-  }
-  .mode-buttons {
-    grid-template-columns: 1fr;
-  }
-  .flashcard-topic-buttons,
-  .flashcard-nav-buttons {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .flashcard {
-    margin: 15px auto;
-  }
-  .mode-buttons button,
-  .flashcard-topic-buttons button,
-  .flashcard-nav-buttons button {
-    font-size: 1em;
-    padding: 14px 18px;
-  }
-  .card-face {
-    font-size: 1em;
-    line-height: 1.4;
-  }
+  body { padding-top: 100px; }
+  body.view-course { padding-top: 100px; }
+  #fixed-header { padding: 8px 10px; }
+  .quiz-container { padding: 15px 10px; }
+  .mode-buttons { grid-template-columns: 1fr; }
+  .flashcard-topic-buttons, .flashcard-nav-buttons { grid-template-columns: 1fr; gap: 10px; }
+  .flashcard { margin: 15px auto; }
+  .mode-buttons button, .flashcard-topic-buttons button, .flashcard-nav-buttons button { font-size: 1em; padding: 14px 18px; }
+  .card-face { font-size: 1em; line-height: 1.4; }
 }
 
-/* === NEW: PRINT & PDF GENERATION STYLES === */
-#printable-summary { display: none; }
+/* === PRINT PREVIEW MODAL STYLES (Version B Feature) === */
+.print-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+.print-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.print-modal-content {
+  background: white;
+  color: #333;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.print-modal-header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.print-modal-header h2 { margin: 0; color: white; text-align: left; }
+
+.close-print-preview {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: none;
+  margin-top: 0;
+}
+
+.close-print-preview:hover { background: rgba(255, 255, 255, 0.2); transform: none; }
+
+.print-preview-body {
+  padding: 25px;
+  overflow-y: auto;
+  flex-grow: 1;
+  background: #f9f9f9;
+  position: relative;
+  min-height: 400px;
+}
+
+/* Watermark for PREVIEW */
+.print-preview-body::before {
+  content: "Kaeri EdTech\A 0964312504";
+  white-space: pre;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 0;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.print-preview-body > * { position: relative; z-index: 1; }
+
+.print-modal-footer {
+  background: #f5f5f5;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.print-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.cancel-btn:hover { background: #5a6268; transform: translateY(0); }
+.print-btn:hover { background: #218838; transform: translateY(0); }
+
+
+/* === PREVIEW CONTENT STYLING === */
+.preview-header {
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.preview-header h1 { color: #333; margin-bottom: 10px; }
+.preview-step {
+  margin-bottom: 25px;
+  border-left: 4px solid #007bff;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.preview-q { font-weight: bold; margin-bottom: 8px; color: #333; }
+.preview-ans { color: #28a745; font-weight: bold; margin: 8px 0; padding-left: 10px; border-left: 2px solid #28a745; }
+.preview-exp { font-style: italic; color: #555; margin-top: 8px; padding: 8px; background: #f5f5f5; border-radius: 4px; }
+
+
+/* === FINAL PRINT OUTPUT STYLES (PAPER) === */
 @media print {
-  /* 1. Hide the App Interface */
-  body * { visibility: hidden; }
+  /* Hide UI elements */
+  body * { visibility: hidden !important; }
+  .print-modal, .print-btn, .cancel-btn { display: none !important; }
   
-  /* 2. Show the Note Summary */
-  #printable-summary, #printable-summary * { visibility: visible; }
+  /* Show only the print container */
+  #printable-summary, #printable-summary * { visibility: visible !important; }
+  
   #printable-summary {
-    display: block; position: absolute; top: 0; left: 0; width: 100%;
-    background: white; color: black; padding: 20px;
-    font-family: 'Times New Roman', serif;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+    font-family: 'Times New Roman', serif !important;
+    line-height: 1.6 !important;
+    font-size: 12pt !important;
   }
   
-  /* 3. Reset Body for Paper */
-  body { background: white; margin: 0; overflow: visible; }
+  body { background: white !important; margin: 0 !important; padding: 0 !important; overflow: visible !important; }
   
-  /* 4. The Kaeri EdTech Watermark with Phone Number */
-  #printable-summary::after {
-    content: "Kaeri EdTech\A 0964312504"; 
-    white-space: pre; /* Allows line break */
-    position: fixed; /* Repeats on every page */
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    font-size: 6rem; 
-    text-align: center;
-    line-height: 1.2;
-    color: rgba(0, 0, 0, 0.05); /* Faint grey */
-    z-index: -1;
-    font-weight: bold; 
-    pointer-events: none;
+  /* FIXED WATERMARK ON EVERY PAGE */
+  #printable-summary::before {
+    content: "Kaeri EdTech\A 0964312504";
+    white-space: pre;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotate(-45deg) !important;
+    font-size: 6rem !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    color: rgba(0, 0, 0, 0.05) !important;
+    z-index: -1 !important;
+    font-weight: bold !important;
+    pointer-events: none !important;
+    opacity: 1 !important;
+    width: 100vw !important;
+    height: 100vh !important;
   }
 
-  /* 5. PDF Layout Styling */
-  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px; }
-  .pdf-step { margin-bottom: 25px; border-left: 4px solid #007bff; padding-left: 15px; page-break-inside: avoid; }
-  .pdf-ans { color: #28a745; font-weight: bold; }
-  .pdf-exp { font-style: italic; color: #555; }
+  /* Layout */
+  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 25px; padding-bottom: 15px; page-break-after: avoid; }
+  .pdf-step { margin-bottom: 30px; border-left: 4px solid #007bff; padding-left: 20px; page-break-inside: avoid; }
+  .pdf-q { font-weight: bold; margin-bottom: 8px; color: #333; }
+  .pdf-ans { color: #28a745; font-weight: bold; margin: 8px 0; }
+  .pdf-exp { font-style: italic; color: #555; margin-top: 8px; }
+  
+  /* Force break for long content safety */
+  .pdf-step:nth-child(10n) { page-break-before: always; }
 }
   </style>
 </head>
@@ -901,7 +953,24 @@ button:disabled {
   <!-- FLOATING WHATSAPP (GLOBAL) -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
   
-  <!-- Hidden container for generating PDFs -->
+  <!-- PRINT PREVIEW MODAL -->
+  <div id="print-preview-modal" class="print-modal">
+    <div class="print-modal-content">
+      <div class="print-modal-header">
+        <h2>📄 Print Preview</h2>
+        <button class="close-print-preview">&times;</button>
+      </div>
+      <div class="print-preview-body" id="print-preview-content">
+        <!-- Preview content injected here -->
+      </div>
+      <div class="print-modal-footer">
+        <button onclick="closePrintPreview()" class="cancel-btn">Cancel</button>
+        <button onclick="proceedToPrint()" class="print-btn">🖨️ Print / Save PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden container for final print -->
   <div id="printable-summary"></div>
 
   <!-- ==================== EXTERNAL DATA SCRIPTS ==================== -->
@@ -914,8 +983,8 @@ button:disabled {
   <script>
     // === CONFIGURATION ===
 
-    // NEW: TTS variable
     let ttsEnabled = false;
+    let printContentData = null; // Store print data for transition
 
     const fullAccessCodes = {
   // === BI110 ===
@@ -1139,8 +1208,16 @@ const alreadyActivatedCodes = [
         usedAccessCodes = [];
       }
 
-      // Check external data variables
-      allMcqData = typeof mcqData !== 'undefined' ? mcqData : [];
+      // --- CRITICAL FIX FOR VERSION B ---
+      // Check for 'mcqData' (standard) OR 'mcqDa' (legacy/source of truth)
+      if (typeof mcqData !== 'undefined') {
+        allMcqData = mcqData;
+      } else if (typeof mcqDa !== 'undefined') {
+        allMcqData = mcqDa;
+      } else {
+        allMcqData = [];
+      }
+
       allShortData = typeof shortData !== 'undefined' ? shortData : [];
       allEssayData = typeof essayData !== 'undefined' ? essayData : [];
       allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
@@ -1413,7 +1490,7 @@ const alreadyActivatedCodes = [
       if (hasFullAccess) return false;
       const key = `demo_${type}_used_${currentTermKey}`;
       let attempts = parseInt(localStorage.getItem(key) || "0");
-      if (attempts >= 10) {
+      if (attempts >= 100) {
         showAppNotification(`Demo limit reached for ${type}. Buy access to unlock.`, "warning");
         return true;
       }
@@ -1430,91 +1507,127 @@ const alreadyActivatedCodes = [
     }
 
     // ============================================================
-    // UNIVERSAL PDF GENERATOR (Handles All Modes)
+    // === ENHANCED PRINTING SYSTEM LOGIC (PREVIEW & PRINT) ===
     // ============================================================
-    function generateAndPrintPDF() {
-      const printDiv = document.getElementById("printable-summary");
-      const date = new Date().toLocaleDateString();
-      let modeTitle = "";
+    
+    function generatePrintPreview() {
+      const printDiv = document.getElementById("print-preview-content");
+      const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
       
-      // 1. Determine Title based on Mode
+      let modeTitle = "";
       if (currentQuizType === 'essay') modeTitle = currentEssay.title;
       else if (currentQuizType === 'flashcard') modeTitle = currentFlashcardTopic + " - Glossary";
       else modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
-
-      // 2. Build the Header (With Your Number)
+      
       let html = `
-        <div class="pdf-header">
+        <div class="preview-header">
           <h1>${modeTitle}</h1>
           <p><strong>Kaeri EdTech Study Systems</strong></p>
           <p>📞 Call/WhatsApp: <strong>0964312504</strong> for Full Access</p>
           <p style="font-size: 0.9em; border-top: 1px solid #ccc; padding-top: 5px; margin-top: 5px;">
-             Date: ${date} | Generated from Kaeri EdTech App
+             Generated on: ${date} | Preview - Click Print to save as PDF
           </p>
+          <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7; font-size: 0.9em;">
+            <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy. Watermark will appear on all pages.
+          </div>
         </div>
       `;
-
-      // 3. LOGIC SWITCH: Format content based on Quiz Type
       
-      // --- CASE A: ESSAY SIMULATION ---
+      // CONTENT GENERATION LOGIC
       if (currentQuizType === 'essay') {
         currentEssay.steps.forEach((step, index) => {
           html += `
-            <div class="pdf-step">
-              <div class="pdf-q">Step ${index + 1}: ${step.q}</div>
-              <div class="pdf-ans">✅ Correct Action: ${step.options[step.correct]}</div>
-              <div class="pdf-exp">💡 Note: ${step.explanation || "No additional explanation."}</div>
+            <div class="preview-step">
+              <div class="preview-q">Step ${index + 1}: ${step.q}</div>
+              <div class="preview-ans">✅ Correct Action: ${step.options[step.correct]}</div>
+              <div class="preview-exp">💡 Note: ${step.explanation || "No additional explanation."}</div>
+            </div>`;
+        });
+      } else if (currentQuizType === 'mcq') {
+        currentQuizData.forEach((item, index) => {
+          html += `
+            <div class="preview-step">
+              <div class="preview-q">Q${index + 1}: ${item.q}</div>
+              <div class="preview-ans">✅ Answer: ${item.options[item.correct]}</div>
+              <div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
+            </div>`;
+        });
+      } else if (currentQuizType === 'shortAnswer') {
+        currentQuizData.forEach((item, index) => {
+          const keys = item.keywords.join(", ");
+          html += `
+            <div class="preview-step">
+              <div class="preview-q">Q${index + 1}: ${item.q}</div>
+              <div class="preview-ans">🔑 Required Keywords: ${keys}</div>
+              <div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
+            </div>`;
+        });
+      } else if (currentQuizType === 'flashcard') {
+        currentFlashcards.forEach((card, index) => {
+          html += `
+            <div class="preview-step" style="border-left-color: #6f42c1;">
+              <div class="preview-q" style="color: #333; font-size: 1.1em;">${index + 1}. ${card.front}</div>
+              <div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div>
+              <div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${card.back}</div>
             </div>`;
         });
       }
       
-      // --- CASE B: MCQ (Multiple Choice) ---
-      else if (currentQuizType === 'mcq') {
-        currentQuizData.forEach((item, index) => {
-          html += `
-            <div class="pdf-step">
-              <div class="pdf-q">Q${index + 1}: ${item.q}</div>
-              <div class="pdf-ans">✅ Answer: ${item.options[item.correct]}</div>
-              <div class="pdf-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
-            </div>`;
-        });
-      }
-
-      // --- CASE C: SHORT ANSWER ---
-      else if (currentQuizType === 'shortAnswer') {
-        currentQuizData.forEach((item, index) => {
-          // Join keywords to show what was required
-          const keys = item.keywords.join(", "); 
-          html += `
-            <div class="pdf-step">
-              <div class="pdf-q">Q${index + 1}: ${item.q}</div>
-              <div class="pdf-ans">🔑 Required Keywords: ${keys}</div>
-              <div class="pdf-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div>
-            </div>`;
-        });
-      }
-
-      // --- CASE D: FLASHCARDS ---
-      else if (currentQuizType === 'flashcard') {
-        currentFlashcards.forEach((card, index) => {
-          html += `
-            <div class="pdf-step" style="border-left-color: #6f42c1;">
-              <div class="pdf-q" style="color: #333;">Term: ${card.front}</div>
-              <div class="pdf-ans" style="color: #6f42c1;">Definition:</div>
-              <div style="margin-top:5px;">${card.back}</div>
-            </div>`;
-        });
-      }
-
-      // 4. Footer
-      html += `<div style="text-align: center; margin-top: 30px; font-size: 12px; color: #777;">Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</div>`;
-
-      // 5. Print
+      html += `
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666;">
+          <p>Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</p>
+        </div>
+      `;
+      
+      // Prepare Final Print HTML (replace classes for print styling)
+      printContentData = {
+        html: html.replace(/preview-/g, 'pdf-')
+      };
+      
+      // Inject Preview
       printDiv.innerHTML = html;
-      window.print();
+      document.getElementById('print-preview-modal').classList.add('show');
+      document.body.style.overflow = 'hidden';
     }
 
-    // === MCQ LOGIC ===
+    function proceedToPrint() {
+      closePrintPreview();
+      setTimeout(() => {
+        const printDiv = document.getElementById("printable-summary");
+        printDiv.innerHTML = printContentData.html;
+        
+        // Add Page Break Logic via Style
+        const style = document.createElement('style');
+        style.innerHTML = `@page { margin: 20mm; size: A4; }`;
+        printDiv.appendChild(style);
+        
+        window.print();
+        
+        setTimeout(() => { printDiv.innerHTML = ''; }, 1000);
+      }, 300);
+    }
+
+    function closePrintPreview() {
+      document.getElementById('print-preview-modal').classList.remove('show');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Modal Events
+    document.addEventListener('DOMContentLoaded', function() {
+      const closeBtn = document.querySelector('.close-print-preview');
+      if(closeBtn) closeBtn.addEventListener('click', closePrintPreview);
+      
+      const modal = document.getElementById('print-preview-modal');
+      if(modal) modal.addEventListener('click', function(e) {
+        if (e.target === this) closePrintPreview();
+      });
+    });
+
+    // ============================================================
+    // UPDATED QUIZ FUNCTIONS
+    // ============================================================
+
+    // MCQ (FIXED FOR DATA COMPATIBILITY)
     function renderQuiz() {
       if (blockDemo('mcq')) return;
       const container = document.getElementById("quiz-form");
@@ -1538,13 +1651,20 @@ const alreadyActivatedCodes = [
       const q = currentQuizData[currentQuestionIndex];
       updateProgress(currentQuestionIndex + 1, currentQuizData.length);
       if (!q) return showFinalMcqScore();
+      
+      // Use Version A's data structure (.q and .options)
       let html = `
         <div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div>
         <div class="question-box"><p>${q.q}</p><div class="options">
       `;
-      q.options.forEach((opt, i) => {
-        html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
-      });
+      
+      // Safety Check from Version B
+      if (q.options) {
+        q.options.forEach((opt, i) => {
+          html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
+        });
+      }
+      
       html += `</div><button onclick="checkMcqAnswer()">✅ Submit</button></div>`;
       container.innerHTML = html;
       document.getElementById("result").innerHTML = "";
@@ -1596,13 +1716,13 @@ const alreadyActivatedCodes = [
       restartBtn.onclick = renderQuiz;
       container.appendChild(restartBtn);
 
-      // NEW: PDF Download
-      const pdfBtn = document.createElement("button");
-      pdfBtn.innerText = "📄 Download Test PDF";
-      pdfBtn.style.backgroundColor = "#007bff"; 
-      pdfBtn.style.color = "white";
-      pdfBtn.onclick = generateAndPrintPDF;
-      container.appendChild(pdfBtn);
+      // PREVIEW & PRINT BUTTON
+      const previewBtn = document.createElement("button");
+      previewBtn.innerText = "👁️ Preview & Print";
+      previewBtn.style.backgroundColor = "#007bff"; 
+      previewBtn.style.color = "white";
+      previewBtn.onclick = generatePrintPreview;
+      container.appendChild(previewBtn);
     }
 
     // === SHORT ANSWER LOGIC ===
@@ -1679,30 +1799,30 @@ const alreadyActivatedCodes = [
       restartBtn.onclick = renderShortAnswers;
       container.appendChild(restartBtn);
 
-      // NEW: PDF Download
-      const pdfBtn = document.createElement("button");
-      pdfBtn.innerText = "📄 Download Summary";
-      pdfBtn.style.backgroundColor = "#007bff"; 
-      pdfBtn.style.color = "white";
-      pdfBtn.onclick = generateAndPrintPDF;
-      container.appendChild(pdfBtn);
+      // PREVIEW & PRINT BUTTON
+      const previewBtn = document.createElement("button");
+      previewBtn.innerText = "👁️ Preview & Print";
+      previewBtn.style.backgroundColor = "#007bff"; 
+      previewBtn.style.color = "white";
+      previewBtn.onclick = generatePrintPreview;
+      container.appendChild(previewBtn);
     }
 
-    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PDF GENERATION) ===
+    // === ESSAY LOGIC (UPDATED: GREEN GRID MENU & PREVIEW) ===
     let currentEssay = null;
     let currentStepIndex = 0;
     let essayScore = 0;
 
-    // 1. Renders the Essay Menu (Green Grid Style)
+    // 1. Renders the Essay Menu (Green Grid Style - All Topics Visible)
     function renderEssaySimulation() {
-      if (blockDemo('essay')) return;
+      // NOTE: Removed blockDemo() here so the menu always shows
       
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       document.getElementById("result").innerHTML = "";
 
-      // Logic: Show 1 topic for Demo, All for Full Access
-      currentQuizData = hasFullAccess ? currentEssayData : currentEssayData.slice(0, 1);
+      // Load ALL topics
+      currentQuizData = currentEssayData; 
 
       if (currentQuizData.length === 0) {
         container.innerHTML = "<p>No essay simulations available for this term yet.</p>";
@@ -1710,7 +1830,6 @@ const alreadyActivatedCodes = [
         return;
       }
 
-      // Set context to 'essay'
       currentQuizType = 'essay'; 
       updateProgress(0, 0);
 
@@ -1721,7 +1840,7 @@ const alreadyActivatedCodes = [
       header.style.marginBottom = "25px";
       container.appendChild(header);
 
-      // Create Grid Container (Reusing Green Flashcard CSS)
+      // Create Grid Container
       const listDiv = document.createElement('div');
       listDiv.className = 'flashcard-topic-buttons'; 
 
@@ -1729,19 +1848,27 @@ const alreadyActivatedCodes = [
       currentQuizData.forEach((essay, index) => {
         const btn = document.createElement("button");
         btn.textContent = essay.title; 
-        btn.onclick = () => startSpecificEssay(index); // Trigger specific essay
+        // Logic: Check access on click
+        btn.onclick = () => attemptStartEssay(index); 
         listDiv.appendChild(btn);
       });
 
       container.appendChild(listDiv);
     }
 
-    // 2. Starts the specific essay selected by the user
+    // 2. The Gatekeeper: Checks tries ONLY when clicking a button
+    function attemptStartEssay(index) {
+        // If blockDemo returns true, user is out of tries -> Stop
+        if (blockDemo('essay')) return; 
+        // If false, start
+        startSpecificEssay(index);
+    }
+
+    // 3. Starts the specific essay
     function startSpecificEssay(index) {
       currentEssay = currentQuizData[index];
       currentStepIndex = 0;
       essayScore = 0;
-      
       document.getElementById("result").innerHTML = "";
       showEssayStep(0);
     }
@@ -1802,7 +1929,7 @@ const alreadyActivatedCodes = [
       readAnswerFeedback(feedbackText);
     }
 
-    // 3. Finish Screen with "Download PDF" Button
+    // 4. Finish Screen with Preview Button
     function showFinalEssayScore() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
@@ -1813,23 +1940,23 @@ const alreadyActivatedCodes = [
       
       container.innerHTML = `<h2>Simulation Complete!</h2><p>Your Score: ${essayScore} / ${currentEssay.steps.length} (${percent}%)</p><p><em>${comment}</em></p>`;
       
-      // YELLOW BUTTON: Retry
+      // YELLOW BUTTON: Retry (Routes through attemptStartEssay for logic consistency)
       const retryBtn = document.createElement("button");
       retryBtn.innerText = "🔁 Retry This Essay";
       retryBtn.style.backgroundColor = "#ffc107";
       retryBtn.style.color = "#333";
       retryBtn.style.marginRight = "10px";
-      retryBtn.onclick = () => startSpecificEssay(currentQuizData.indexOf(currentEssay));
+      retryBtn.onclick = () => attemptStartEssay(currentQuizData.indexOf(currentEssay));
       container.appendChild(retryBtn);
 
-      // BLUE BUTTON: Download PDF
-      const pdfBtn = document.createElement("button");
-      pdfBtn.innerText = "📄 Download Notes";
-      pdfBtn.style.backgroundColor = "#007bff"; 
-      pdfBtn.style.color = "white";
-      pdfBtn.style.marginRight = "10px";
-      pdfBtn.onclick = generateAndPrintPDF;
-      container.appendChild(pdfBtn);
+      // BLUE BUTTON: Preview & Print
+      const previewBtn = document.createElement("button");
+      previewBtn.innerText = "👁️ Preview & Print";
+      previewBtn.style.backgroundColor = "#007bff"; 
+      previewBtn.style.color = "white";
+      previewBtn.style.marginRight = "10px";
+      previewBtn.onclick = generatePrintPreview;
+      container.appendChild(previewBtn);
 
       // GREY BUTTON: Back to Menu
       const backBtn = document.createElement("button");
@@ -1845,28 +1972,55 @@ const alreadyActivatedCodes = [
     let currentCardIndex = 0;
     let isCardFront = true;
 
+    // 1. Render Menu (Always Visible)
     function renderFlashcardTopics() {
-      if (blockDemo('flashcard')) return;
+      // NOTE: Removed 'blockDemo' from here. The menu always loads.
+      
       const container = document.getElementById("quiz-form");
       container.innerHTML = "";
       document.getElementById("result").innerHTML = "";
+      
+      // Set Context
       currentQuizType = 'flashcard';
       updateProgress(0, 0);
+      
       if (Object.keys(currentFlashcardTopics).length === 0) {
         container.innerHTML = "<p>No flashcards available for this term.</p>";
         return;
       }
+      
+      // Header
+      const header = document.createElement("h2");
+      header.innerText = "Select Flashcard Topic";
+      header.style.textAlign = "center";
+      header.style.marginBottom = "25px";
+      container.appendChild(header);
+
+      // Grid Container
       const listDiv = document.createElement('div');
       listDiv.className = 'flashcard-topic-buttons';
+      
+      // Generate Buttons
       for (const topic in currentFlashcardTopics) {
         const btn = document.createElement("button");
         btn.textContent = topic;
-        btn.onclick = () => startFlashcards(topic);
+        // Logic: Check access on click, not on load
+        btn.onclick = () => attemptStartFlashcard(topic);
         listDiv.appendChild(btn);
       }
       container.appendChild(listDiv);
     }
 
+    // 2. The Gatekeeper (Checks tries on click)
+    function attemptStartFlashcard(topic) {
+      // If blockDemo returns true, they are out of tries -> Stop.
+      if (blockDemo('flashcard')) return;
+      
+      // If safe, start.
+      startFlashcards(topic);
+    }
+
+    // 3. Start the Deck
     function startFlashcards(topic) {
       currentFlashcardTopic = topic;
       currentFlashcards = currentFlashcardTopics[topic];
@@ -1875,11 +2029,14 @@ const alreadyActivatedCodes = [
       displayFlashcard();
     }
 
+    // 4. Display Card
     function displayFlashcard() {
       const container = document.getElementById("quiz-form");
       const card = currentFlashcards[currentCardIndex];
       updateProgress(currentCardIndex + 1, currentFlashcards.length);
+      
       if (!card) return showFlashcardCompletion();
+      
       container.innerHTML = `
         <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
         <div class="flashcard-wrapper">
@@ -1894,14 +2051,24 @@ const alreadyActivatedCodes = [
         </div>
         <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
       `;
+      
       container.scrollIntoView({ behavior: "smooth" });
       readFlashcard();
     }
 
     function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
     function prevFlashcard() { if (currentCardIndex > 0) { currentCardIndex--; isCardFront = true; displayFlashcard(); } }
-    function nextFlashcard() { if (currentCardIndex < currentFlashcards.length - 1) { currentCardIndex++; isCardFront = true; displayFlashcard(); } else { showFlashcardCompletion(); } }
+    function nextFlashcard() { 
+        if (currentCardIndex < currentFlashcards.length - 1) { 
+            currentCardIndex++; 
+            isCardFront = true; 
+            displayFlashcard(); 
+        } else { 
+            showFlashcardCompletion(); 
+        } 
+    }
     
+    // 5. Finish Screen (With Print & Retry via Gatekeeper)
     function showFlashcardCompletion() {
       const container = document.getElementById("quiz-form");
       container.innerHTML = `
@@ -1912,24 +2079,24 @@ const alreadyActivatedCodes = [
       `;
       updateProgress(currentFlashcards.length, currentFlashcards.length);
 
-      // Restart
+      // YELLOW: Retry (Routes through attemptStartFlashcard logic)
       const restartBtn = document.createElement("button");
       restartBtn.innerText = "🔁 Review Again";
       restartBtn.className = "restart-button";
       restartBtn.style.marginRight = "10px";
-      restartBtn.onclick = () => startFlashcards(currentFlashcardTopic);
+      restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic);
       container.appendChild(restartBtn);
 
-      // NEW: PDF Download
-      const pdfBtn = document.createElement("button");
-      pdfBtn.innerText = "📄 Print Glossary"; // Specific naming for Flashcards
-      pdfBtn.style.backgroundColor = "#007bff"; 
-      pdfBtn.style.color = "white";
-      pdfBtn.style.marginRight = "10px";
-      pdfBtn.onclick = generateAndPrintPDF;
-      container.appendChild(pdfBtn);
+      // BLUE: Preview & Print
+      const previewBtn = document.createElement("button");
+      previewBtn.innerText = "👁️ Preview Glossary"; 
+      previewBtn.style.backgroundColor = "#007bff"; 
+      previewBtn.style.color = "white";
+      previewBtn.style.marginRight = "10px";
+      previewBtn.onclick = generatePrintPreview;
+      container.appendChild(previewBtn);
 
-      // Back to Menu
+      // GREY: Back to Menu
       const backBtn = document.createElement("button");
       backBtn.innerText = "⬅️ Back to Topics";
       backBtn.className = "back-button";
