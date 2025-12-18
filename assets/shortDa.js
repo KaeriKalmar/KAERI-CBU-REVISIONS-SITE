@@ -9453,4 +9453,1704 @@ const shortData = [
     "term": "T2"
   },
 
+
+
+  //LA111 data 
+  [
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does communication facilitate according to the introduction?",
+    "keywords": ["sharing", "common", "experiences"],
+    "explanation": "Communication facilitates the sharing of common experiences with others, which forms the foundation of human interaction and understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What activities are included in the wide scope of communication?",
+    "keywords": ["thinking", "dreaming", "speaking", "arguing"],
+    "explanation": "Communication's wide scope includes thinking, dreaming, speaking, and arguing, showing it encompasses both internal and external processes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do some scholars describe communication?",
+    "keywords": ["transfer", "meaning", "transmission", "stimuli", "mind", "affecting", "sharing", "experiences", "commonness"],
+    "explanation": "Scholars describe communication as 'the transfer of meaning', 'transmission of stimuli', 'one mind affecting another', or 'sharing of experiences on the basis of commonness'."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is Wood's (2004) working definition of communication?",
+    "keywords": ["systemic", "process", "interact", "symbols", "create", "interpret", "meaning"],
+    "explanation": "Wood defines communication as a systemic process where people interact with and through symbols to create and interpret meaning, highlighting its structured and symbolic nature."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is communication a static act or dynamic process?",
+    "keywords": ["dynamic", "process", "continuous"],
+    "explanation": "Communication is a dynamic process that is continuous in nature, not a static act, which makes it vital for teaching and learning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is required for communication to be complete and effective?",
+    "keywords": ["achieve", "desired", "objectives", "intended", "communicator"],
+    "explanation": "For communication to be complete and effective, it must achieve the desired objectives as intended by the communicator."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In a classroom, what must the teacher do to convey messages effectively?",
+    "keywords": ["clearly", "define", "objectives", "appropriate", "oral", "written", "signs", "symbols", "body", "language"],
+    "explanation": "The teacher must clearly define lesson objectives and convey messages using appropriate oral/written signs, symbols, and body language for effective classroom communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When is communication considered successful in teaching?",
+    "keywords": ["meaning", "understood", "learners", "same", "way", "intended", "teacher"],
+    "explanation": "Communication is successful when learners understand the meaning in the same way as intended by the teacher, ensuring accurate message reception."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can behavior communicate messages without speech?",
+    "keywords": ["gestures", "facial", "expressions", "body", "language", "warmth", "indifference"],
+    "explanation": "Behavior can communicate messages through gestures, facial expressions, and body language that convey warmth or indifference without verbal communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are communication skills according to the definition?",
+    "keywords": ["skills", "abilities", "tools", "enable", "individuals", "send", "receive", "messages", "effectively"],
+    "explanation": "Communication skills are abilities and tools that enable individuals to send and receive messages effectively, including listening, reading, speaking, and writing."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'effectively' mean in the context of communication skills?",
+    "keywords": ["interpret", "desired", "feedback", "intended", "sender"],
+    "explanation": "In communication skills, 'effectively' means to interpret and get the desired feedback as intended by the sender, ensuring accurate message transmission."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the four major functions of communication?",
+    "keywords": ["control", "motivation", "emotional", "expression", "information", "sharing", "education"],
+    "explanation": "The four major functions are control, motivation, emotional expression, and information sharing/education, which form the foundation of communication purposes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are some subtypes of communication functions?",
+    "keywords": ["socialisation", "entertainment", "persuasion", "preservation", "culture"],
+    "explanation": "Subtypes include socialisation, entertainment, persuasion, and preservation of culture, which are derived from the four major functions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why are communication skills particularly important to engineers and scientists?",
+    "keywords": ["share", "new", "findings", "technologies", "products", "collaboration", "common", "understanding"],
+    "explanation": "They're important because engineers and scientists need to share new findings, technologies, and products, requiring common understanding for collaboration."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What social reason makes communication skills valuable?",
+    "keywords": ["harmonious", "living", "social", "expectations", "miscommunication", "prevent", "careless", "disregard", "rules"],
+    "explanation": "Communication skills enable harmonious living by meeting social expectations and preventing miscommunication and careless disregard for social rules."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does our interactive world affect communication diversity?",
+    "keywords": ["commerce", "geographical", "occupational", "cultural", "linguistic", "boundaries"],
+    "explanation": "Our interactive world has made communication diverse due to commerce that cuts across geographical, occupational, cultural, and linguistic boundaries."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is one purpose of ethical technical communication?",
+    "keywords": ["mediate", "conflicts", "arise"],
+    "explanation": "Ethical technical communication helps to mediate conflicts that may arise in professional and technical contexts."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What legal considerations exist in technical communication?",
+    "keywords": ["serious", "human", "legal", "consequences", "failure", "appreciate", "ethical", "dimensions"],
+    "explanation": "Failure to appreciate ethical dimensions can have serious human and legal consequences, particularly with product documentation and instructions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What do product manuals typically provide?",
+    "keywords": ["instructions", "use", "assemble", "disassemble", "troubleshoot"],
+    "explanation": "Product manuals provide instructions on how to use, assemble, disassemble, and troubleshoot products, serving as essential technical documentation."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do technical documents help prevent conflicts between consumers and producers?",
+    "keywords": ["alleviate", "possible", "flare", "ups", "clear", "interpretation", "messages"],
+    "explanation": "Technical documents alleviate possible flare-ups by providing clear interpretation of messages contained in documentation, preventing misunderstandings."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does communication frequency affect its value in the workplace?",
+    "keywords": ["unavoidable", "getting", "things", "done", "frequency", "meetings", "conversing", "writing"],
+    "explanation": "Communication's value lies in its ability to get things done, especially since it's unavoidable and frequent in workplace meetings and interactions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What characterizes the collaborative nature of technical communication?",
+    "keywords": ["planning", "writing", "meeting", "negotiating", "designing", "decision-making", "proposals", "diverse", "backgrounds"],
+    "explanation": "It involves planning, writing, meeting, negotiating, designing, decision-making, and proposals among people of diverse backgrounds across geographical areas."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How has computerisation affected technical communication?",
+    "keywords": ["easier", "complex", "production", "complex", "documents", "embedded", "editable", "pictures", "graphs", "spreadsheets"],
+    "explanation": "Computerisation has made technical communication both easier and more complex, enabling production of documents with embedded pictures, graphs, and spreadsheets."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why are good writing skills necessary in the internationalized world?",
+    "keywords": ["single", "global", "economy", "information", "age", "facilitate", "process"],
+    "explanation": "Good writing skills are necessary for the internationalized world moving toward a single global economy called 'the information age' to facilitate global processes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to Huckin & Olsen (1991), what critical communication skills rank above others?",
+    "keywords": ["technical", "writing", "public", "speaking", "working", "individuals", "working", "groups", "talking", "people"],
+    "explanation": "Critical skills include technical writing, public speaking, working with individuals, working with groups, and talking with people, which rank above other skills."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a model in the context of communication?",
+    "keywords": ["graphic", "representation", "explain", "way", "variable", "works", "pattern", "plan", "description"],
+    "explanation": "A model is a graphic representation designed to explain how a variable works, serving as a pattern, plan, or description of a system's structure or workings."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "From what perspective did Aristotle look at communication?",
+    "keywords": ["rhetorical", "perspective", "speaking", "masses", "influence", "persuade"],
+    "explanation": "Aristotle looked at communication from the rhetorical perspective of speaking to the masses to influence and persuade them."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What elements were in Aristotle's communication model?",
+    "keywords": ["speaker", "speech", "audience", "effect"],
+    "explanation": "Aristotle's model included Speaker-Speech-Audience-Effect elements, with persuasion as the basic function of communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What changed the concept of communication in the 20th century?",
+    "keywords": ["advent", "mass", "communication", "media", "newspapers", "radio", "television"],
+    "explanation": "The concept changed due to the advent of mass communication media like newspapers, radio, and television, which expanded communication's scope."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How was communication perceived during the World Wars?",
+    "keywords": ["propaganda", "magic", "bullet", "transferred", "ideas", "knowledge", "automatically", "mind"],
+    "explanation": "During the World Wars, communication was used for propaganda and perceived as a 'magic bullet' that automatically transferred ideas from one mind to another."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What did sociologists and psychologists argue about communication?",
+    "keywords": ["complex", "process", "dynamic", "two-way"],
+    "explanation": "They argued that communication is a complex, dynamic process that is two-way in nature, not the simplistic linear model previously assumed."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What question form did Lasswell use for his 1948 communication model?",
+    "keywords": ["who", "says", "what", "which", "channel", "whom", "what", "effect"],
+    "explanation": "Lasswell looked at communication as 'Who, Says What, in Which Channel, To Whom, With What Effect', creating a comprehensive analytical framework."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does each component in Lasswell's model represent?",
+    "keywords": ["communicator", "message", "medium", "receiver", "effect"],
+    "explanation": "The components represent Communicator (Who), Message (Says What), Medium (Channel), Receiver (To Whom), and Effect (With What Effect)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Who developed the transmission model of communication in 1949?",
+    "keywords": ["claude", "shannon", "warren", "weaver"],
+    "explanation": "Claude Shannon and Warren Weaver developed the transmission model in 1949, which became one of the most important communication models."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the components of the Shannon and Weaver model?",
+    "keywords": ["information", "source", "transmitter", "channel", "receiver", "destination", "noise", "interference"],
+    "explanation": "Components include Information Source → Transmitter → Channel → Receiver → Destination, with Noise as interference in the channel."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What did Charles Osgood show in his 1954 communication model?",
+    "keywords": ["dynamic", "process", "interactive", "relationship", "source", "receiver"],
+    "explanation": "Osgood showed communication as a dynamic process with interactive relationships between source and receiver, emphasizing social nature and interpretation."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What roles do individuals play in Osgood's model?",
+    "keywords": ["encodes", "decodes", "interprets", "sends", "receives", "feedback"],
+    "explanation": "Individuals both send and receive messages, encoding, decoding, and interpreting through feedback mechanisms in an interactive process."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where is Osgood's model particularly applicable?",
+    "keywords": ["interpersonal", "communication", "source", "receiver", "physically", "present"],
+    "explanation": "Osgood's model applies particularly to interpersonal communication where source and receiver are physically present, like teacher-student interactions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What distinction did Wilbur Schramm make about communication types?",
+    "keywords": ["sharp", "distinction", "technical", "non-technical", "communication"],
+    "explanation": "Schramm did not make a sharp distinction between technical and non-technical communication, viewing communication as a unified field."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What concept did Schramm introduce in his second model?",
+    "keywords": ["sharing", "experience", "commonality", "shared", "orientation"],
+    "explanation": "Schramm introduced the concept of shared experience and commonality between communicators, visualized as overlapping circles of accumulated experience."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What do the circles in Schramm's model represent?",
+    "keywords": ["accumulated", "experience", "individuals", "engaged", "communication"],
+    "explanation": "The circles indicate the accumulated experience of two individuals engaged in communication, showing how shared understanding develops."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the three classifications of communication models according to West and Turner (2007)?",
+    "keywords": ["linear", "transmission", "interactional", "transactional"],
+    "explanation": "Models are classified as Linear/transmission, Interactional, and Transactional, each highlighting different aspects of the communication process."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the nine elements of communication identified in Unit 1.4?",
+    "keywords": ["context", "sender", "encoding", "message", "channel", "decoding", "receiver", "feedback", "noise"],
+    "explanation": "The nine elements are Context, Sender, Encoding, Message, Channel, Decoding, Receiver, Feedback, and Noise, which make communication continuous."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the role of the source/sender/encoder in communication?",
+    "keywords": ["has", "message", "impart", "decide", "how", "communicate", "select", "channel", "plan", "strategies"],
+    "explanation": "The sender has a message to impart, decides how to communicate it, selects the channel, and plans strategies for desired response."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What cues does the sender provide in communication?",
+    "keywords": ["verbal", "non-verbal", "cues", "received", "interpreted", "responded"],
+    "explanation": "The sender provides verbal or non-verbal cues that can be received, interpreted, and responded to by the receiver in the communication process."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a message in communication terms?",
+    "keywords": ["set", "signs", "symbols", "create", "meanings", "receiver", "content", "shared"],
+    "explanation": "A message is a set of signs and symbols given by the source to create meanings for the receiver - essentially the content shared between participants."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What must the sender understand to make the message effective?",
+    "keywords": ["nature", "profile", "receiver", "needs", "expectations", "possible", "response"],
+    "explanation": "The sender must understand the receiver's nature, profile, needs, expectations, and possible response to make the message effective in any situation."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a channel or medium in communication?",
+    "keywords": ["medium", "used", "communicate", "message", "sender", "receiver"],
+    "explanation": "Channel is the medium used to communicate a message from sender to receiver, which can be spoken word, printed word, electronic media, or non-verbal cues."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'channel' mostly refer to in modern communication?",
+    "keywords": ["mass", "communication", "media", "newspapers", "radio", "television", "telephone", "computers", "internet"],
+    "explanation": "In modern communication, 'channel' mostly refers to mass communication media like newspapers, radio, television, telephone, computers, and internet."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why is channel selection crucial for communication success?",
+    "keywords": ["appropriate", "channel", "crucial", "success", "communication"],
+    "explanation": "Selecting an appropriate channel is crucial because the wrong medium can distort or prevent effective message transmission and reception."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the role of the receiver/decoder in communication?",
+    "keywords": ["receive", "message", "interpret", "derive", "meaning", "necessary", "communication"],
+    "explanation": "The receiver receives the message, interprets it, and derives meaning from it - without a receiver, communication cannot take place."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How should the receiver ideally receive the message?",
+    "keywords": ["same", "way", "meant", "sender", "successful", "communication"],
+    "explanation": "For successful communication, the receiver should receive the message in the same way it was meant by the sender, ensuring accurate understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What relationship do sender and receiver share in interpersonal communication?",
+    "keywords": ["close", "relationship", "gradually", "diluted", "group", "mass", "communication"],
+    "explanation": "In interpersonal communication, they share a close relationship that gets gradually diluted in group and mass communication as distance increases."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is noise in communication?",
+    "keywords": ["distortion", "message", "affects", "flow", "communication", "internal", "external", "sources"],
+    "explanation": "Noise is distortion in a message that affects communication flow, caused by internal or external sources that create barriers to understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is feedback in the communication process?",
+    "keywords": ["response", "given", "receiver", "message", "sender", "two-way", "process"],
+    "explanation": "Feedback is the response given by the receiver to the sender's message, essential because communication is a two-way process requiring response."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why is feedback important in communication?",
+    "keywords": ["without", "feedback", "discussion", "incomplete", "two-way", "process"],
+    "explanation": "Without feedback, any discussion on communication is incomplete because communication is inherently a two-way process requiring interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When does feedback scope increase in communication?",
+    "keywords": ["interpersonal", "communication", "greater", "scope", "feedback", "facial", "expressions", "body", "movements", "cross", "question"],
+    "explanation": "Interpersonal communication allows greater feedback scope as participants can decipher facial expressions, body movements, and cross-question each other."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What happens to feedback as communication participants increase?",
+    "keywords": ["gradually", "diluted", "number", "participants", "increases"],
+    "explanation": "Feedback gets gradually diluted when the number of participants increases, making it harder to maintain interactive communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the term 'noise' express in communication barriers?",
+    "keywords": ["interference", "communication", "source", "sender", "receiver", "distortion", "miscommunication"],
+    "explanation": "Noise expresses any interference in communication between source/sender and receiver that leads to distortion or miscommunication of messages."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is successful communication in terms of message distortion?",
+    "keywords": ["message", "conveyed", "least", "distortion"],
+    "explanation": "Successful communication is one where the message is conveyed with the least distortion, though barriers often make this challenging."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the main types of communication barriers identified?",
+    "keywords": ["physical", "psychological", "cultural", "linguistic", "semantic", "technical", "information", "overload"],
+    "explanation": "Main barriers include physical, psychological, cultural, linguistic/semantic, technical, and information overload barriers that complicate communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do physical barriers affect communication?",
+    "keywords": ["source", "visible", "receiver", "comfortable", "environment", "geographical", "distance"],
+    "explanation": "Physical barriers occur when the source isn't visible, the environment is uncomfortable, or geographical distance prevents direct interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What creates psychological barriers in communication?",
+    "keywords": ["individual", "differences", "attitudes", "interest", "motivation", "levels", "perceive", "differently"],
+    "explanation": "Psychological barriers arise from individual differences in attitudes, interests, motivation, perceptions, anxiety, prejudices, and past experiences."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What psychological processes create selective barriers?",
+    "keywords": ["selective", "perception", "selective", "recall", "selective", "retention"],
+    "explanation": "Selective perception, recall, and retention cause us to perceive, retain, and recall messages selectively, creating psychological barriers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are socio-cultural barriers in communication?",
+    "keywords": ["women", "discuss", "health", "problems", "male", "health", "worker", "personal", "issues", "family"],
+    "explanation": "Socio-cultural barriers include women not discussing health problems with male workers, or viewing some issues as personal/family matters only."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do less vocal societies create communication barriers?",
+    "keywords": ["less", "vocal", "affect", "level", "communication", "cultures", "vocal", "aggressive"],
+    "explanation": "Less vocal societies may struggle to communicate effectively with more vocal or aggressive cultures, creating cross-cultural communication barriers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What causes linguistic/language barriers?",
+    "keywords": ["faulty", "expressions", "poor", "translation", "verbosity", "ambiguous", "words", "inappropriate", "vocabulary"],
+    "explanation": "Linguistic barriers come from faulty expressions, poor translation, verbosity, ambiguous words, and inappropriate vocabulary use in communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why do words mean different things to different people?",
+    "keywords": ["meanings", "minds", "perceive", "interpret", "different", "ways", "individual", "frame", "mind"],
+    "explanation": "Words mean different things because meanings are in people's minds, and individuals perceive/interpret based on their unique frames of mind."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What three variables influence language use and word definitions?",
+    "keywords": ["age", "education", "cultural", "background"],
+    "explanation": "Age, education, and cultural background are three obvious variables that influence both language use and how individuals define words."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do departmental specializations create language barriers in organizations?",
+    "keywords": ["specialists", "develop", "jargon", "technical", "language", "grouping", "employees", "departments"],
+    "explanation": "Grouping employees into departments creates specialists who develop their own jargon or technical language, creating intra-organizational barriers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What organizational factors can cause language problems?",
+    "keywords": ["large", "organizations", "widely", "dispersed", "geographically", "vertical", "levels"],
+    "explanation": "In large organizations, geographical dispersion of members and existence of vertical levels can both cause significant language problems."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What creates technical barriers in communication?",
+    "keywords": ["poor", "audio", "quality", "weak", "video", "signals", "erratic", "power", "supply"],
+    "explanation": "Technical barriers arise from poor audio quality, weak video signals, and erratic power supply when using technology for communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is information overload as a communication barrier?",
+    "keywords": ["finite", "capacity", "processing", "data", "more", "information", "sort", "use", "weed", "ignore", "forget"],
+    "explanation": "Information overload occurs when individuals have more information than they can process, leading them to weed out, ignore, or forget information."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can fast-paced speaking create communication barriers?",
+    "keywords": ["speaker", "provides", "information", "fast", "pace", "considerable", "period", "issues", "concepts", "lost"],
+    "explanation": "When a speaker provides information too quickly for too long, listeners may lose track of issues and concepts, creating comprehension barriers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is filtering as a communication barrier?",
+    "keywords": ["sender", "purposely", "manipulating", "information", "receiver", "see", "favourably"],
+    "explanation": "Filtering occurs when a sender purposely manipulates information so the receiver will see it more favourably, distorting message content."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What determines the amount of filtering in organizations?",
+    "keywords": ["number", "levels", "organization", "structure", "vertical", "levels"],
+    "explanation": "The major determinant of filtering is the number of vertical levels in an organization's structure - more levels mean more filtering."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When does filtering typically occur?",
+    "keywords": ["status", "differences", "communicators"],
+    "explanation": "Filtering occurs wherever there are status differences between communicators, as individuals adjust messages based on hierarchical relationships."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is selective perception in communication?",
+    "keywords": ["receiver", "sees", "hears", "selective", "way", "needs", "motivations", "experience", "background", "personal", "characteristics"],
+    "explanation": "Selective perception occurs when receivers see/hear selectively based on their needs, motivations, experience, background, and personal characteristics."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the receiver project during selective perception?",
+    "keywords": ["projects", "interests", "expectations", "communications", "decodes"],
+    "explanation": "During selective perception, the receiver projects his/her interests and expectations into communications while decoding them, filtering reality."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to Robin Lakoff, how are girls taught to communicate?",
+    "keywords": ["passive", "empathetic", "voices", "encouraged", "active", "listening"],
+    "explanation": "Girls are taught to use passive, empathetic voices and are encouraged toward active listening, shaping their communication styles from childhood."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How are boys taught to communicate according to Lakoff's research?",
+    "keywords": ["encouraged", "competition", "forceful", "active", "tones"],
+    "explanation": "Boys are encouraged toward competition using forceful, active tones, developing communication styles focused on status and assertion."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do men typically use talk according to gender communication differences?",
+    "keywords": ["emphasize", "status", "preserve", "independence", "maintain", "status", "hierarchical", "social", "order"],
+    "explanation": "Men use talk to emphasize status and preserve independence, maintaining their position in hierarchical social orders through communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do women typically use talk according to gender communication differences?",
+    "keywords": ["create", "connection", "negotiations", "closeness", "seek", "give", "confirmation", "support"],
+    "explanation": "Women use talk to create connection through negotiations for closeness, seeking and giving confirmation and support in relationships."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do men typically respond when hearing a problem?",
+    "keywords": ["assert", "desire", "independence", "control", "providing", "solutions"],
+    "explanation": "When men hear a problem, they typically assert independence and control by immediately providing solutions rather than emotional support."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why do women typically present problems in communication?",
+    "keywords": ["gain", "support", "connection"],
+    "explanation": "Women typically present problems to gain support and connection rather than to receive immediate solutions to the issues raised."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do emotions affect communication interpretation?",
+    "keywords": ["receiver", "feels", "time", "receipt", "influence", "interprets"],
+    "explanation": "How the receiver feels at the time of message receipt influences interpretation, as emotions color understanding and response to communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which emotions most hinder effective communication?",
+    "keywords": ["extreme", "emotions", "hinder", "effective", "communication"],
+    "explanation": "Extreme emotions are most likely to hinder effective communication by distorting interpretation and response to messages received."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the ethological paradigm say about nonverbal behavior?",
+    "keywords": ["innate", "genetically", "determined", "general", "patterns", "inflexible", "species"],
+    "explanation": "The ethological paradigm asserts nonverbal behavior is partly innate or genetically determined, with certain general patterns inflexible within species."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the enculturation paradigm claim about nonverbal behavior?",
+    "keywords": ["reflects", "contingent", "arbitrary", "individually", "stable", "norms", "inculcated", "members", "society", "socialization"],
+    "explanation": "It claims nonverbal behavior reflects contingent, arbitrary but stable norms inculcated in all society members through socialization processes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the internal states paradigm contend about nonverbal behavior?",
+    "keywords": ["fluctuates", "function", "ego", "individual", "attributes", "internal", "psychological", "states"],
+    "explanation": "This paradigm contends that nonverbal behavior fluctuates based on individual attributes or internal psychological states, regardless of origin."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the situational resource paradigm assert about nonverbal behavior?",
+    "keywords": ["learned", "varies", "cultures", "across", "internal", "states", "depending", "statuses", "constraints", "situation"],
+    "explanation": "It asserts nonverbal behavior is learned but varies within cultures and across internal states depending on participant statuses and situational constraints."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are some theories of nonverbal behavior mentioned?",
+    "keywords": ["burgeon", "expectancy", "violations", "andersen", "cognitive", "valence", "capella", "greene", "discrepancy-arousal"],
+    "explanation": "Theories include Burgeon's Expectancy Violations Theory, Andersen's Cognitive Valence Theory, and Capella and Greene's Discrepancy-Arousal Theory."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What six nonverbal behaviors are considered universal?",
+    "keywords": ["sadness", "anger", "disgust", "fear", "interest", "surprise", "happiness", "love"],
+    "explanation": "Universal nonverbal behaviors include Sadness, Anger, Disgust, Fear, Interest, Surprise, Happiness, and Love (SADFISH + L)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the seven categories of nonverbal messages?",
+    "keywords": ["physical", "appearance", "dress", "artefacts", "gestures", "movements", "face", "eye", "behaviour", "vocal", "behaviour", "space", "distance", "touch", "time"],
+    "explanation": "Categories are: Physical appearance/dress/artefacts, Gestures/movements, Face/eye behavior, Vocal behavior, Space/distance, Touch, and Time."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is kinesics in nonverbal communication?",
+    "keywords": ["gestures", "movements"],
+    "explanation": "Kinesics refers to gestures and movements as a category of nonverbal communication that conveys meaning through bodily motion."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is oculesics in nonverbal communication?",
+    "keywords": ["face", "eye", "behaviour"],
+    "explanation": "Oculesics refers to face and eye behavior as a category of nonverbal communication, including facial expressions and eye contact."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are vocalics and paralanguage in nonverbal communication?",
+    "keywords": ["vocal", "behaviour"],
+    "explanation": "Vocalics and paralanguage refer to vocal behavior including tone, pitch, volume, and rate of speech as nonverbal elements."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is proxemics in nonverbal communication?",
+    "keywords": ["space", "distance"],
+    "explanation": "Proxemics refers to the study of space and distance in nonverbal communication, examining how physical space affects interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is haptics/tactile communication?",
+    "keywords": ["touch"],
+    "explanation": "Haptics or tactile communication refers to touch as a nonverbal category, including handshakes, hugs, and other physical contact."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is chronemics in nonverbal communication?",
+    "keywords": ["time"],
+    "explanation": "Chronemics refers to the study of time in nonverbal communication, including punctuality, waiting, and time allocation in interactions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the six functions of nonverbal messages?",
+    "keywords": ["complementing", "contradicting", "repeating", "regulating", "substituting", "accenting"],
+    "explanation": "The six functions are Complementing, Contradicting, Repeating, Regulating, Substituting, and Accenting verbal messages."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can eye contact be used in public speaking?",
+    "keywords": ["engage", "audience"],
+    "explanation": "Eye contact can be used to engage the audience, creating connection and maintaining attention during public speaking."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What nonverbal aspects should be emphasized in public speaking gestures?",
+    "keywords": ["emphasizing", "gestures", "posture", "movements"],
+    "explanation": "Public speakers should emphasize gestures, posture, and movements to reinforce verbal messages and maintain audience engagement."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How should voice be used in public speaking?",
+    "keywords": ["vary", "rhythm", "emphasize", "mark", "transition"],
+    "explanation": "The voice should be used to vary rhythm, emphasize points, and mark transitions between different sections of a speech."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can appearance serve as a communicative point in public speaking?",
+    "keywords": ["appearance", "communicative", "point"],
+    "explanation": "Appearance serves as a communicative point by conveying professionalism, credibility, and appropriateness for the speaking context."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the five basic forms/levels of communication?",
+    "keywords": ["intrapersonal", "interpersonal", "group", "public", "mass", "communication"],
+    "explanation": "The five basic forms are Intrapersonal, Interpersonal, Group, Public, and Mass communication, representing different scales of interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What elements are involved in effective communication?",
+    "keywords": ["sender", "receiver", "desired", "result"],
+    "explanation": "Effective communication involves a sender, receiver, and desired result, which can occur at individual or group levels."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the four broad types of communication?",
+    "keywords": ["verbal", "nonverbal", "written", "visualization"],
+    "explanation": "The four broad types are Verbal, Nonverbal, Written, and Visualization, each using different channels and formats."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are examples of verbal communication?",
+    "keywords": ["face", "face", "telephone"],
+    "explanation": "Verbal communication examples include face-to-face conversations and telephone calls where spoken language is the primary channel."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are examples of nonverbal communication?",
+    "keywords": ["body", "language", "gestures"],
+    "explanation": "Nonverbal communication includes body language and gestures that convey meaning without spoken words."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are examples of written communication?",
+    "keywords": ["books", "magazines", "email"],
+    "explanation": "Written communication examples include books, magazines, and email where text is the primary medium of message transmission."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are examples of visualization in communication?",
+    "keywords": ["graphs", "charts", "maps"],
+    "explanation": "Visualization includes graphs, charts, and maps that communicate information through visual representation rather than text alone."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What factors can affect the formality level of communication?",
+    "keywords": ["context", "environment"],
+    "explanation": "Context and environment are factors that can affect the level of formality in any form of communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why do people listen according to different reasons?",
+    "keywords": ["learn", "show", "empathy", "entertained", "build", "relationships", "persuade"],
+    "explanation": "People listen to learn, show empathy, be entertained, build relationships, and persuade others, with different purposes requiring different listening approaches."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What demands does listening place on the listener?",
+    "keywords": ["demands", "listener", "requires", "particular", "skills"],
+    "explanation": "Listening places certain demands on listeners and requires particular skills for effective information reception and processing."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When does listening occur in communication?",
+    "keywords": ["back", "forth", "feedback", "sender", "receiver"],
+    "explanation": "Listening occurs as long as there is back-and-forth feedback between sender and receiver, creating an interactive communication process."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is listening?",
+    "keywords": ["paying", "attention", "said", "interpreting", "sound", "deliberate", "intentional"],
+    "explanation": "Listening is paying attention to what is being said or interpreting a sound, which is a deliberate, intentional process requiring focus."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is hearing?",
+    "keywords": ["perception", "physical", "sounds", "involuntary", "ongoing"],
+    "explanation": "Hearing is the perception of physical sounds, which is involuntary and ongoing, not requiring interpretation or intentional focus."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is active listening?",
+    "keywords": ["understand", "comprehend", "deliberate", "intentional", "engaging", "applying", "mind"],
+    "explanation": "Active listening is listening to understand or comprehend, requiring deliberate engagement and application of the mind to find meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What factors may affect listening duration?",
+    "keywords": ["purpose", "occasion", "subject", "matter", "environment"],
+    "explanation": "Listening duration may differ depending on purpose, occasion, subject matter, environment, and other contextual factors."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should listeners activate to understand verbal messages?",
+    "keywords": ["activate", "comprehension", "skills"],
+    "explanation": "To understand verbal messages, listeners should activate comprehension skills to process and interpret the spoken information."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How is comprehension measured in listening?",
+    "keywords": ["quality", "feedback", "received"],
+    "explanation": "Comprehension is measured by the quality of feedback received, showing how well the listener understood and processed the message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where is the meaning of a verbal message found?",
+    "keywords": ["words", "interlocutors", "choose"],
+    "explanation": "The meaning of a verbal message is found in the words that interlocutors choose to express their thoughts and ideas."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What carries a verbal message?",
+    "keywords": ["carried", "words", "form", "content", "exchange"],
+    "explanation": "A verbal message is carried through words, and these words form the content of the communication exchange between participants."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should interlocutors know to understand verbal message content?",
+    "keywords": ["parts", "speech", "word", "classes"],
+    "explanation": "To understand verbal message content, interlocutors should know the parts of speech or word classes to which the words belong."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are open word classes in English?",
+    "keywords": ["nouns", "verbs", "adjectives", "adverbs", "content", "words"],
+    "explanation": "Open word classes include nouns, verbs, adjectives, and adverbs - also called content words that carry core meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are closed word classes in English?",
+    "keywords": ["pronouns", "determiners", "conjunctions", "prepositions", "interjections", "grammatical", "words"],
+    "explanation": "Closed word classes include pronouns, determiners, conjunctions, prepositions, and interjections - also called grammatical words."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where is the meaning of a verbal message contained?",
+    "keywords": ["contained", "content", "words", "open", "word", "classes"],
+    "explanation": "The meaning of a verbal message is contained in the content words, which are the open word classes like nouns, verbs, adjectives, and adverbs."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What do grammatical words facilitate in sentences?",
+    "keywords": ["connections", "open", "word", "classes", "determine", "structure", "sentence"],
+    "explanation": "Grammatical words facilitate connections between content words and determine the structure of sentences, organizing meaning relationships."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should listeners pay particular attention to for understanding?",
+    "keywords": ["pay", "particular", "attention", "content", "open", "word", "classes"],
+    "explanation": "Listeners should pay particular attention to content or open word classes, as these determine understanding of the message's core meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can understanding be measured in listening?",
+    "keywords": ["listener", "ability", "paraphrase", "saying", "own", "words"],
+    "explanation": "Understanding can be measured by the listener's ability to paraphrase - saying something in their own words without repeating verbatim."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How can a listener paraphrase 'I am sorry'?",
+    "keywords": ["please", "forgive", "me"],
+    "explanation": "'I am sorry' can be paraphrased as 'please forgive me,' demonstrating understanding through different word choice with same meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does active listening require regarding nonverbal messages?",
+    "keywords": ["interpreting", "nonverbal", "messages", "aware", "own", "behaviours"],
+    "explanation": "Active listening requires interpreting others' nonverbal messages and being aware of your own nonverbal behaviors during listening."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is self-awareness in listening?",
+    "keywords": ["knowledge", "own", "nonverbal", "behaviour", "listening", "key", "factor", "negotiate", "meaning"],
+    "explanation": "Self-awareness is knowledge of your own nonverbal behavior when listening, a key factor in negotiating meaning with others effectively."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What nonverbal behaviors should listeners be aware of?",
+    "keywords": ["facial", "expressions", "sitting", "posture", "position", "placement", "hands"],
+    "explanation": "Listeners should be aware of facial expressions, sitting posture, and hand placement/position, as these affect communication dynamics."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is note taking as a form of active listening?",
+    "keywords": ["writing", "down", "key", "ideas", "concepts", "issues", "listening", "activity"],
+    "explanation": "Note taking is writing down key ideas, concepts, and issues during a listening activity to capture and retain important information."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are possible contexts for listening activities requiring note taking?",
+    "keywords": ["classroom", "church", "meeting", "business", "meeting", "seminar", "presentation"],
+    "explanation": "Contexts include classrooms, church meetings, business meetings, and seminar presentations where information retention is important."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are Cornell Notes?",
+    "keywords": ["method", "taking", "notes", "listening", "main", "idea", "key", "question", "keywords", "summary"],
+    "explanation": "Cornell Notes are a structured note-taking method with sections for main ideas/key questions, keywords/details, and a summary in own words."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should be included in the main section of Cornell Notes?",
+    "keywords": ["key", "words", "ideas", "important", "dates", "people", "reported", "stressed", "info", "diagrams", "pictures", "formulas"],
+    "explanation": "Include keywords, important dates/people, emphasized information, ideas, textbook info, diagrams, pictures, and formulas in the main section."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is mind mapping in note taking?",
+    "keywords": ["central", "idea", "topic", "centre", "branches", "sub", "concepts", "explanations", "tree", "interrelations"],
+    "explanation": "Mind mapping places the central topic in the center with branches for sub-concepts, creating a 'tree' showing interrelations of ideas."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When do Cornell notes and mind maps work well?",
+    "keywords": ["listening", "presentation", "lecture"],
+    "explanation": "Both methods work well when listening to presentations like lectures, where information is structured and hierarchical."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is transcription in relation to note taking?",
+    "keywords": ["writing", "everything", "speaker", "says"],
+    "explanation": "Transcription is writing everything a speaker says, which is different from selective note taking that captures only key information."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What characterizes active note taking?",
+    "keywords": ["selective", "brief"],
+    "explanation": "Active note taking is selective and brief, focusing on capturing essential information rather than transcribing everything verbatim."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is reading according to the cognitive process definition?",
+    "keywords": ["cognitive", "process", "receiving", "information", "decoding", "written", "symbols", "provide", "meaning"],
+    "explanation": "Reading is a cognitive process of receiving information that involves decoding written symbols to provide meaning to the reader."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does Smith (1995) define reading?",
+    "keywords": ["interactive", "process", "reader", "prior", "knowledge", "world", "interacts", "message", "conveyed", "text"],
+    "explanation": "Smith defines reading as an interactive process where the reader's prior knowledge interacts with the text's message to create meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is activated when a reader approaches a text?",
+    "keywords": ["world", "knowledge", "activated", "interact", "text", "create", "meaning"],
+    "explanation": "When approaching a text, the reader's world knowledge is activated and interacts with the text to create personalized meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are the three stages of the reading process?",
+    "keywords": ["before", "reading", "during", "reading", "after", "reading"],
+    "explanation": "The reading process has three stages: before reading (pre-reading), during reading, and after reading (post-reading) activities."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What skills are used in the pre-reading stage?",
+    "keywords": ["skimming", "survey", "scanning", "rough", "idea", "text"],
+    "explanation": "In pre-reading, skimming (survey) and scanning are used to get a rough idea of the text's content before detailed reading."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does the pre-reading stage help achieve?",
+    "keywords": ["connect", "reader", "prior", "knowledge", "new", "information", "make", "deductions", "general", "content"],
+    "explanation": "Pre-reading helps connect prior knowledge to new information and make deductions about the text's general content before reading."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What strategies are engaged during reading?",
+    "keywords": ["questioning", "underlining", "key", "unfamiliar", "words", "making", "comments"],
+    "explanation": "During reading, strategies include questioning, underlining key/unfamiliar words, and making comments to actively engage with the text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What happens in the post-reading stage?",
+    "keywords": ["go", "over", "work", "survey", "reciting", "reviewing", "text"],
+    "explanation": "Post-reading involves going over the work (another survey) by reciting and reviewing the text to reinforce understanding and retention."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is skimming as a reading skill?",
+    "keywords": ["quick", "reading", "selective", "goal", "find", "main", "idea", "whole", "text"],
+    "explanation": "Skimming is quick, selective reading with the goal of finding the main idea of the whole text without reading every word."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How is skimming done?",
+    "keywords": ["reading", "title", "headings", "subheadings", "italicised", "bold", "letters", "images"],
+    "explanation": "Skimming is done by reading the title, headings, subheadings, italicised/bold text, and examining images for overall content understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does skimming involve regarding text organization?",
+    "keywords": ["recognition", "organisational", "pattern", "rhetorical", "mode", "cause", "effect", "problem-solution", "descriptive"],
+    "explanation": "Skimming involves recognizing the text's organizational pattern or rhetorical mode, such as cause-effect, problem-solution, or descriptive structure."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is scanning as a reading skill?",
+    "keywords": ["process", "searching", "specific", "information", "text"],
+    "explanation": "Scanning is the process of searching for specific information in a text without reading the entire document comprehensively."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where is scanning particularly useful?",
+    "keywords": ["scientific", "texts", "technical", "documents", "manuals", "directories"],
+    "explanation": "Scanning is particularly useful for scientific texts, technical documents like manuals, and directories where specific information is needed."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What must readers identify to scan effectively?",
+    "keywords": ["order", "material", "text", "organised"],
+    "explanation": "To scan effectively, readers must identify the order in which material is organized in the text to locate information efficiently."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is light reading?",
+    "keywords": ["reading", "leisure", "novels", "creative", "non-creative", "works", "slow", "paced"],
+    "explanation": "Light reading is reading for leisure, mainly applying to novels and creative works, characterized by a slow-paced, enjoyable approach."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does Burke define close reading?",
+    "keywords": ["thoughtful", "critical", "analysis", "text", "focuses", "significant", "details", "patterns", "develop", "deep", "precise", "understanding"],
+    "explanation": "Burke defines close reading as thoughtful, critical analysis focusing on significant details/patterns to develop deep, precise text understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What types of materials are suitable for close reading?",
+    "keywords": ["short", "texts", "excerpts"],
+    "explanation": "Close reading is suitable for short texts and excerpts where detailed analysis of language and structure is feasible and valuable."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does close reading compare to word-by-word reading?",
+    "keywords": ["similar", "word", "word", "reading", "better", "method", "learning", "new", "material"],
+    "explanation": "While similar to word-by-word reading, close reading is a better method for learning new material through deep analytical engagement."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does SQ3R stand for?",
+    "keywords": ["survey", "question", "read", "recite", "review"],
+    "explanation": "SQ3R stands for Survey, Question, Read, Recite, and Review - a systematic reading method for comprehensive understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What was added to create SQ4R from SQ3R?",
+    "keywords": ["fourth", "r", "reflect", "record"],
+    "explanation": "SQ4R added a fourth R (Reflect or Record) between Read and Recite to enhance the reading process with note-making."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does surveying involve in SQ3R/SQ4R?",
+    "keywords": ["skimming"],
+    "explanation": "Surveying involves skimming the text to get an overview before detailed reading in the SQ3R/SQ4R method."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'question' mean in SQ3R/SQ4R?",
+    "keywords": ["ask", "questions", "predict", "need", "answering", "text"],
+    "explanation": "Question means asking questions that you predict need answering by the text, creating purpose for your reading."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'read' involve in SQ3R/SQ4R?",
+    "keywords": ["engage", "material", "reading"],
+    "explanation": "Read involves actively engaging with the material by reading it thoroughly with the prepared questions in mind."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'reflect/record' involve in SQ4R?",
+    "keywords": ["make", "notes", "main", "ideas", "issues"],
+    "explanation": "Reflect/Record involves making notes of main ideas and issues encountered during reading to aid retention and understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'recite' involve in SQ3R/SQ4R?",
+    "keywords": ["committing", "memory", "repeating", "information", "read"],
+    "explanation": "Recite involves committing information to memory and repeating it, reinforcing learning through active recall."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'review' involve in SQ3R/SQ4R?",
+    "keywords": ["rereading", "important", "sections", "points", "answering", "questions", "strengthen", "understanding"],
+    "explanation": "Review involves rereading important sections, answering your questions, and strengthening overall understanding of the material."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is note-making?",
+    "keywords": ["process", "writing", "down", "main", "points", "arguments", "ideas", "written", "materials"],
+    "explanation": "Note-making is the process of writing down main points, arguments, and ideas from written materials for study and reference."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should readers identify to make effective notes?",
+    "keywords": ["thesis", "statement", "topic", "sentences"],
+    "explanation": "Readers should identify the thesis statement (main idea of text) and topic sentences (main ideas of paragraphs) for effective note-making."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a thesis statement?",
+    "keywords": ["main", "idea", "text", "essay"],
+    "explanation": "A thesis statement is the main idea of the entire text or essay, presenting the central argument or focus of the writing."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a topic sentence?",
+    "keywords": ["main", "idea", "paragraph", "text", "essay"],
+    "explanation": "A topic sentence is the main idea of a paragraph within a text or essay, supporting and developing the thesis statement."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Give an example of a thesis statement about communication.",
+    "keywords": ["communication", "important", "life"],
+    "explanation": "'Communication is important in life' is an example thesis statement presenting the main idea about communication's significance."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Give an example of a topic sentence supporting the communication thesis.",
+    "keywords": ["facilitates", "exchange", "ideas"],
+    "explanation": "'It facilitates the exchange of ideas' is a topic sentence supporting the thesis that communication is important in life."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How are notes from written text typically written?",
+    "keywords": ["form", "outline", "title", "headings", "subheadings", "numbered", "indented"],
+    "explanation": "Notes are written in outline form with a title, headings/subheadings, numbered points, and indentation to show hierarchical relationships."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is required for consistency in note-making numbering systems?",
+    "keywords": ["consistency", "set", "notes", "required"],
+    "explanation": "Different numbering systems can be used, but consistency within each set of notes is required for clarity and organization."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should readers identify to write effective notes?",
+    "keywords": ["transitional", "markers", "sentences", "paragraphs"],
+    "explanation": "Readers should identify transitional markers between sentences and paragraphs to understand connections and main points for note-making."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are transitional markers also called?",
+    "keywords": ["linking", "words"],
+    "explanation": "Transitional markers are also called linking words, as they connect ideas, sentences, and paragraphs in written text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where are transitional markers typically found?",
+    "keywords": ["beginning", "sentence", "paragraph"],
+    "explanation": "Transitional markers are typically found at the beginning of a sentence or paragraph, signaling connections to previous content."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What type of relation do transitional markers show in 'Mupeta is the best student in Physics. However, her Biology grades are terrible.'?",
+    "keywords": ["comparison", "contrast"],
+    "explanation": "'However' shows comparison and contrast, indicating a difference between Physics performance and Biology performance."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What type of relation do transitional markers show in chronological sequences?",
+    "keywords": ["chronology"],
+    "explanation": "Transitional markers like 'firstly,' 'secondly,' 'thirdly' show chronological relations, indicating sequence and order in processes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What type of relation do transitional markers show in 'Consequently, the Ministry of Education is revising the pass point.'?",
+    "keywords": ["cause", "effect"],
+    "explanation": "'Consequently' shows cause and effect, indicating that failing mathematics has caused the Ministry's revision action."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What type of relation does 'In conclusion' indicate?",
+    "keywords": ["conclusion"],
+    "explanation": "'In conclusion' indicates a concluding statement or summary, signaling the end of an argument or presentation."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What do transitional markers show regarding idea relationships?",
+    "keywords": ["coordination", "subordination"],
+    "explanation": "Transitional markers show coordination (equal importance) and subordination (main vs. dependent ideas) relationships between ideas."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are coordinating conjunctions?",
+    "keywords": ["and", "but", "or", "yet", "for"],
+    "explanation": "Coordinating conjunctions include and, but, or, yet, for - they connect equal ideas and show relationships like addition, contrast, or choice."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What do coordinating conjunctions show in 'I study every night at 8pm, so I don't really care what time I sleep.'?",
+    "keywords": ["result", "effect"],
+    "explanation": "'So' shows result or effect, indicating that studying at 8pm leads to not caring about sleep time as a consequence."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'and' show in 'The university should enrol male and female students every academic year.'?",
+    "keywords": ["addition"],
+    "explanation": "'And' shows addition, indicating both male and female students should be enrolled together each year."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'but' show in 'I wanted to study medicine but I failed Biology.'?",
+    "keywords": ["contrast"],
+    "explanation": "'But' shows contrast, indicating a difference between the desire to study medicine and the reality of failing Biology."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'nor' show in 'Mwape does not come to class, nor does he write tests.'?",
+    "keywords": ["showing", "negation"],
+    "explanation": "'Nor' shows negation, indicating that both not coming to class and not writing tests are negative behaviors occurring together."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What are subordinating conjunctions?",
+    "keywords": ["because", "since", "while", "unless", "whereas", "spite"],
+    "explanation": "Subordinating conjunctions include because, since, while, unless, whereas, in spite of - they show dependent relationships between ideas."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'Although' show in 'Although there are many first year students, I will be top of the class.'?",
+    "keywords": ["contrast", "concession"],
+    "explanation": "'Although' shows contrast or concession, indicating that despite many students, the speaker will still achieve top position."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What does 'because' show in 'The students came late to class because it was raining.'?",
+    "keywords": ["cause", "reason"],
+    "explanation": "'Because' shows cause or reason, indicating that rain was the reason for students arriving late to class."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the function of transitional markers in academic writing?",
+    "keywords": ["effective", "movement", "thought", "another"],
+    "explanation": "Transitional markers provide effective movement from one thought to another, creating coherence and logical flow in writing."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do transitional markers appear in different forms of writing?",
+    "keywords": ["simple", "complex", "forms", "depending", "nature", "text"],
+    "explanation": "They appear in simple and complex forms depending on the text's nature, with academic writing using more sophisticated markers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does knowledge of transitional markers help readers?",
+    "keywords": ["identify", "main", "points", "argument", "written", "text"],
+    "explanation": "Knowing transitional markers helps readers identify main argument points by showing how ideas are connected and emphasized in text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What should notes contain according to the example structure?",
+    "keywords": ["points", "meat", "summary"],
+    "explanation": "Notes should contain the main points that form the 'meat' of a summary, capturing essential information from the text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When is it possible to write a summary according to the note-making process?",
+    "keywords": ["after", "notes", "outline", "written"],
+    "explanation": "A summary can only be written after notes/outline have been created, as notes provide the essential content for summarization."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What abbreviation is used for 'and' in note-making?",
+    "keywords": ["&"],
+    "explanation": "The ampersand (&) is used as an abbreviation for 'and' in note-making to save space and write more efficiently."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What abbreviation is used for 'importance' in note-making?",
+    "keywords": ["imp"],
+    "explanation": "'Imp.' is used as an abbreviation for 'importance' in note-making, following common shorthand conventions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What abbreviation is used for 'undergoing' in note-making?",
+    "keywords": ["undg"],
+    "explanation": "'Undg.' is used as an abbreviation for 'undergoing' in note-making examples provided in the text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What abbreviation is used for 'understanding' in note-making?",
+    "keywords": ["unds"],
+    "explanation": "'Unds.' is used as an abbreviation for 'understanding' in note-making to condense frequently used terms."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What childhood fear did the author have regarding the school bus?",
+    "keywords": ["getting", "wrong", "one", "taken", "unfamiliar", "neighbourhood"],
+    "explanation": "The author feared getting on the wrong school bus and being taken to an unfamiliar neighborhood on the way home from school."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How did the author cope with the fear of the dark according to the passage?",
+    "keywords": ["lying", "still", "enemy", "discover"],
+    "explanation": "The author would lie very still so 'the enemy' wouldn't discover them, imagining burglars and monsters in the dark."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What social fear did the author have as a child?",
+    "keywords": ["not", "liked", "accepted", "popularity", "worried", "looks", "right", "clothes"],
+    "explanation": "The author feared not being liked or accepted by others, worrying about looks, wearing the right clothes, and being popular."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What lesson did the author learn about darkness as an adult from the passage?",
+    "keywords": ["does", "take", "life", "own"],
+    "explanation": "As an adult, the author learned that darkness does not have to take on a life of its own, overcoming the childhood fear."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the relationship between childhood fears and adult life according to the passage?",
+    "keywords": ["understanding", "helps", "cope", "adult", "life"],
+    "explanation": "Understanding the things that scared us as children helps us to cope with our lives as adults, according to the passage's conclusion."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is communication considered a simple or complex process according to the text?",
+    "keywords": ["complex", "process"],
+    "explanation": "Communication is considered a complex process because it involves multiple activities and requires careful planning for effectiveness."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is dreaming considered a form of communication?",
+    "keywords": ["yes", "included", "scope", "communication"],
+    "explanation": "Yes, dreaming is included in the wide scope of communication activities mentioned in the introduction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Does speaking a common language like English eliminate all language barriers?",
+    "keywords": ["no", "differences", "usage", "definitions", "still", "cause", "problems"],
+    "explanation": "No, speaking a common language does not prevent differences in usage and definitions that can still cause language problems."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Can warmth toward someone be conveyed without speech?",
+    "keywords": ["yes", "gestures", "facial", "expressions", "body", "language"],
+    "explanation": "Yes, warmth or indifference can be conveyed through gestures, facial expressions, and body language without verbal communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is 'persuasion' a major function of communication?",
+    "keywords": ["no", "subtype", "major", "functions"],
+    "explanation": "No, persuasion is a subtype derived from the major functions, not one of the four major functions itself."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Would collaboration be possible without common understanding of skills?",
+    "keywords": ["no", "impossible", "chaos"],
+    "explanation": "No, without common understanding of specific skills and standards, collaboration would be impossible and lead to chaos."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Does the Shannon and Weaver model include feedback as a component?",
+    "keywords": ["no", "linear", "model", "does", "include", "feedback"],
+    "explanation": "No, the Shannon and Weaver model is a linear transmission model that does not include feedback as a formal component."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is Osgood's model more applicable to mass communication or interpersonal communication?",
+    "keywords": ["interpersonal", "communication"],
+    "explanation": "Osgood's model is more applicable to interpersonal communication where source and receiver are physically present and can exchange roles."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Do the circles in Schramm's model need to overlap for communication to occur?",
+    "keywords": ["yes", "overlap", "necessary", "shared", "understanding"],
+    "explanation": "Yes, the circles representing accumulated experience must overlap for communication to occur, showing shared orientation is necessary."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is noise always external in communication?",
+    "keywords": ["no", "internal", "external", "sources"],
+    "explanation": "No, noise can come from both internal (psychological) and external (environmental) sources that distort the message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Does feedback get stronger as the number of communication participants increases?",
+    "keywords": ["no", "gradually", "diluted", "increases"],
+    "explanation": "No, feedback gets gradually diluted when the number of participants increases, making it less immediate and direct."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Are geographical distances considered physical barriers?",
+    "keywords": ["yes", "physical", "barriers"],
+    "explanation": "Yes, geographical distances that prevent direct interaction are considered physical barriers in communication."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is selective perception something the sender or receiver does?",
+    "keywords": ["receiver", "selects", "perceives", "based", "needs"],
+    "explanation": "Selective perception is something the receiver does, seeing and hearing selectively based on personal needs and characteristics."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to Lakoff, are girls encouraged toward competition in communication?",
+    "keywords": ["no", "passive", "empathetic", "active", "listening"],
+    "explanation": "No, according to Lakoff, girls are taught to use passive, empathetic voices and encouraged toward active listening, not competition."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Do men typically present problems to gain support according to gender differences?",
+    "keywords": ["no", "provide", "solutions", "assert", "control"],
+    "explanation": "No, men typically want to provide solutions and assert control when hearing problems, while women present problems to gain support."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Are nonverbal behaviors like happiness and anger considered universal?",
+    "keywords": ["yes", "universal", "across", "cultures"],
+    "explanation": "Yes, nonverbal behaviors like happiness, anger, sadness, fear, disgust, interest, surprise, and love are considered universal across cultures."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is intrapersonal communication between two people?",
+    "keywords": ["no", "within", "individual"],
+    "explanation": "No, intrapersonal communication is communication within oneself, not between people."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Does hearing require interpretation of sounds?",
+    "keywords": ["no", "involuntary", "perception", "interpretation", "required"],
+    "explanation": "No, hearing is the involuntary perception of physical sounds and does not require interpretation or finding meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Are nouns and verbs considered content words?",
+    "keywords": ["yes", "open", "word", "classes", "content", "words"],
+    "explanation": "Yes, nouns and verbs are open word classes, also called content words, which carry the core meaning of messages."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is transcription the same as active note taking?",
+    "keywords": ["no", "transcription", "writing", "everything", "note", "taking", "selective"],
+    "explanation": "No, transcription is writing everything said, while active note taking is selective and brief, capturing only key information."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Is scanning used for reading novels for pleasure?",
+    "keywords": ["no", "light", "reading", "leisure"],
+    "explanation": "No, scanning is for searching specific information, while light reading is for novels and leisure reading."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Can a summary be written before making notes from a text?",
+    "keywords": ["no", "notes", "required", "first"],
+    "explanation": "No, notes must be made first as they provide the essential points needed to write an effective summary."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If a student is searching for a specific date in a history textbook, what reading skill are they using?",
+    "keywords": ["scanning"],
+    "explanation": "They are using scanning, which involves searching for specific information without reading the entire text."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When a teacher asks students to look at chapter headings before reading, what reading stage is this?",
+    "keywords": ["pre-reading", "skimming", "survey"],
+    "explanation": "This is the pre-reading stage where students use skimming/survey to get an overview before detailed reading."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If someone nods while saying 'yes', what function of nonverbal communication is this?",
+    "keywords": ["complementing", "repeating"],
+    "explanation": "This is complementing or repeating, where the nonverbal behavior reinforces the verbal message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When a manager filters bad news before telling the CEO, what type of barrier is this?",
+    "keywords": ["filtering", "status", "differences"],
+    "explanation": "This is filtering, which often occurs due to status differences between communicators in organizational hierarchies."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If a listener only hears what confirms their existing beliefs, what psychological barrier is active?",
+    "keywords": ["selective", "perception"],
+    "explanation": "This is selective perception, where the receiver perceives information selectively based on personal biases and needs."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When technical terms from engineering confuse marketing staff, what type of barrier is this?",
+    "keywords": ["linguistic", "jargon", "departmental", "specialization"],
+    "explanation": "This is a linguistic barrier caused by departmental specialization and jargon that creates misunderstandings between different groups."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If poor internet connection disrupts a video conference, what type of barrier is this?",
+    "keywords": ["technical", "barrier"],
+    "explanation": "This is a technical barrier caused by technology issues like poor connectivity or audio/video quality problems."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When a speaker talks too fast with too much information, what barrier affects the audience?",
+    "keywords": ["information", "overload"],
+    "explanation": "This causes information overload, where listeners receive more information than they can process effectively."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If a woman presents a problem and a man immediately offers solutions, what gender communication difference is shown?",
+    "keywords": ["men", "solutions", "women", "support"],
+    "explanation": "This shows the gender difference where men typically offer solutions to assert control, while women often seek support and connection."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When a student uses the Cornell method during a lecture, what are they doing?",
+    "keywords": ["note", "taking", "structured", "method"],
+    "explanation": "They are using structured note taking with the Cornell method to organize information during a listening activity."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If a reader uses SQ3R for textbook study, what does the first 'R' (Review) involve?",
+    "keywords": ["rereading", "answering", "questions", "strengthening", "understanding"],
+    "explanation": "Review involves rereading important sections, answering prepared questions, and strengthening overall understanding of the material."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When making notes from an essay, what should be identified first?",
+    "keywords": ["thesis", "statement", "main", "idea"],
+    "explanation": "The thesis statement (main idea of the entire essay) should be identified first to understand the central argument."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "If a sentence begins with 'However', what relationship does it show between ideas?",
+    "keywords": ["contrast", "comparison"],
+    "explanation": "'However' shows contrast or comparison between ideas, indicating a difference or opposition to what was previously stated."
+  },
+]
+
 ];
