@@ -18327,6 +18327,1468 @@ const mcqData = [
   },
 
 
-
+//LA111
   
+  // ================= UNIT 1.1: DEFINITION & FUNCTIONS OF COMMUNICATION =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which statement best captures the fundamental nature of communication as defined by Wood (2004)?",
+    "options": [
+      "It is a static act of transferring vocabulary",
+      "It is a linear transmission of sound waves",
+      "It is a systemic process where people interact with symbols to create meaning",
+      "It is the biological exchange of sensory stimuli"
+    ],
+    "correct": 2,
+    "explanation": "Wood defines communication as a systemic, symbolic, and meaning-creating process, distinguishing it from simple transmission."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scholars assert that the scope of communication is broad. Which of the following activities falls under the 'intrapersonal' dimension of this scope?",
+    "options": [
+      "Delivering a lecture",
+      "Argueing with a peer",
+      "Dreaming and internal thought processing",
+      "Writing a technical report"
+    ],
+    "correct": 2,
+    "explanation": "Communication includes internal processes such as thinking, dreaming, and planning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Communication is often described as 'dynamic' rather than 'static'. What does this distinction imply?",
+    "options": [
+      "It occurs only when people are moving",
+      "It is a fixed event that happens once and concludes",
+      "It is a continuous, ongoing, and ever-changing process",
+      "It requires electricity to function"
+    ],
+    "correct": 2,
+    "explanation": "Dynamic means it is continuous and constantly evolving, not a one-time fixed act."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "For a communication act to be considered 'complete' and 'effective', which condition must be met?",
+    "options": [
+      "The message must be spoken loudly",
+      "The receiver must reply immediately",
+      "The desired objectives intended by the communicator must be achieved",
+      "The message must be transmitted via an electronic channel"
+    ],
+    "correct": 2,
+    "explanation": "Effectiveness is measured by whether the result matches the sender's intent."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In a pedagogical setting, what constitutes 'successful' communication between teacher and learner?",
+    "options": [
+      "The teacher completes the syllabus",
+      "The learners remain silent and attentive",
+      "The learners understand the meaning exactly as intended by the teacher",
+      "The teacher uses visual aids"
+    ],
+    "correct": 2,
+    "explanation": "Success is defined by the accuracy of the shared meaning between sender and receiver."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Can the attribute of 'indifference' be communicated without the use of verbal language?",
+    "options": [
+      "No, abstract concepts require words",
+      "Yes, predominantly through body language and facial expressions",
+      "Only if the receiver knows sign language",
+      "No, silence communicates nothing"
+    ],
+    "correct": 1,
+    "explanation": "Behavior, gestures, and silence are potent channels for communicating attitudes like indifference."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How are 'Communication Skills' technically defined?",
+    "options": [
+      "Innate talents for public speaking",
+      "Tools and abilities (listening, reading, speaking, writing) enabling effective message exchange",
+      "The ability to use telecommunication devices",
+      "Knowledge of multiple languages"
+    ],
+    "correct": 1,
+    "explanation": "They are the specific functional skills used to send and receive messages effectively."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which of the following represents one of the four MAJOR functions of communication?",
+    "options": [
+      "Preservation of Culture",
+      "Control",
+      "Entertainment",
+      "Persuasion"
+    ],
+    "correct": 1,
+    "explanation": "The four major functions are Control, Motivation, Emotional Expression, and Information Sharing. Others are sub-types."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A manager speaks to an employee to clarify a task and provide data. Which major function is being utilized?",
+    "options": [
+      "Emotional Expression",
+      "Information Sharing / Education",
+      "Socialization",
+      "Entertainment"
+    ],
+    "correct": 1,
+    "explanation": "This function involves the transfer of data, facts, or instructions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "An individual expresses frustration through facial expressions and tone. Which major function does this serve?",
+    "options": [
+      "Control",
+      "Information Sharing",
+      "Emotional Expression",
+      "Motivation"
+    ],
+    "correct": 2,
+    "explanation": "Communication provides a release for the emotional expression of feelings."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Functions such as 'Socialisation' and 'Entertainment' are classified as:",
+    "options": [
+      "Major functions",
+      "Barriers to communication",
+      "Sub-types of the major functions",
+      "Channels of communication"
+    ],
+    "correct": 2,
+    "explanation": "They are derivative or specific applications of the four core functions."
+  },
+
+  // ================= UNIT 1.2: PURPOSE & VALUE =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why is the standardization of communication skills particularly critical for scientists and engineers?",
+    "options": [
+      "To restrict access to the profession",
+      "To facilitate collaboration and prevent chaos regarding standards and findings",
+      "To ensure all reports are written in English",
+      "To reduce the cost of research"
+    ],
+    "correct": 1,
+    "explanation": "Without a common understanding of skills and standards, collaboration on new findings would be impossible."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "From a 'Social and Ethical' perspective, why is communication competence necessary?",
+    "options": [
+      "To manipulate social hierarchies",
+      "To ensure harmonious living and prevent careless disregard for social rules",
+      "To eliminate cultural diversity",
+      "To enforce strict laws"
+    ],
+    "correct": 1,
+    "explanation": "Societies are bound by rules; communication skills help navigate these expectations to avoid conflict."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In a globalized interactive world, what role does ethical technical communication play?",
+    "options": [
+      "It increases trade tariffs",
+      "It mediates conflicts arising from cultural and occupational diversity",
+      "It replaces local languages with code",
+      "It creates legal loopholes"
+    ],
+    "correct": 1,
+    "explanation": "Ethical communication bridges gaps between diverse geographical and cultural groups in commerce."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which scenario best illustrates the 'Legal Considerations' of technical communication?",
+    "options": [
+      "A writer plagiarizing a novel",
+      "A manufacturer facing liability due to an unclear safety manual causing an accident",
+      "A student failing an exam due to poor grammar",
+      "A typo in an email"
+    ],
+    "correct": 1,
+    "explanation": "Failure to communicate safety instructions clearly has serious legal consequences for producers."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do technical documents primarily assist the consumer-producer relationship?",
+    "options": [
+      "By increasing the product price",
+      "By alleviating potential flare-ups through clear interpretation of use/assembly",
+      "By hiding defects in the product",
+      "By replacing customer service agents"
+    ],
+    "correct": 1,
+    "explanation": "Manuals help users troubleshoot and assemble, reducing frustration and conflict."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why does the sheer 'frequency' of communication in the workplace render it a critical skill?",
+    "options": [
+      "Because it is expensive",
+      "Because it is unavoidable, and professionals cannot maintain productivity without it",
+      "Because meetings are required by law",
+      "Because computers handle the rest"
+    ],
+    "correct": 1,
+    "explanation": "You cannot 'keep up' with the job if you lack the skills to handle the constant flow of interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The 'Collaborative nature' of technical communication implies that:",
+    "options": [
+      "Writing is a solitary activity",
+      "Work involves interaction among diverse backgrounds across geographical areas",
+      "One person makes all the decisions",
+      "Communication is limited to email"
+    ],
+    "correct": 1,
+    "explanation": "Modern work is team-based, often requiring negotiation and planning across locations."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What dual effect has 'Computerisation' had on technical communication?",
+    "options": [
+      "It has made it slower and more expensive",
+      "It has made production easier but the required skills more complex",
+      "It has eliminated the need for human input",
+      "It has standardized all document formats"
+    ],
+    "correct": 1,
+    "explanation": "Creating documents is easier, but managing complex tools (embedded graphs, spreadsheets) requires higher skills."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to research by Huckin & Olsen (1991), how do communication skills rank in the professional sphere?",
+    "options": [
+      "They are secondary to technical skills",
+      "They rank above any other type of skill",
+      "They are considered optional",
+      "They are only relevant for managers"
+    ],
+    "correct": 1,
+    "explanation": "Soft skills like writing, speaking, and group work are often ranked highest by employers."
+  },
+
+  // ================= UNIT 1.3: THE COMMUNICATION PROCESS & MODELS =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In communication theory, what is the definition of a 'Model'?",
+    "options": [
+      "A person who exhibits ideal behavior",
+      "A graphic representation designed to explain the workings of a variable or system",
+      "A mathematical formula for language",
+      "A transcript of a conversation"
+    ],
+    "correct": 1,
+    "explanation": "A model is a simplified visual representation of a complex process."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Aristotle's model of communication was primarily constructed from which perspective?",
+    "options": [
+      "Technological transmission",
+      "Rhetorical persuasion of the masses",
+      "Interpersonal dialogue",
+      "Psychological analysis"
+    ],
+    "correct": 1,
+    "explanation": "Aristotle focused on the speaker influencing an audience (Rhetoric)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which critical element is absent from the Aristotle Model?",
+    "options": [
+      "Speaker",
+      "Speech",
+      "Feedback",
+      "Audience"
+    ],
+    "correct": 2,
+    "explanation": "It is a linear, one-way model (Speaker -> Speech -> Audience -> Effect) with no feedback loop."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The 'Magic Bullet' theory, popular during the World Wars, posited that:",
+    "options": [
+      "Communication is a complex negotiation",
+      "Ideas are transferred automatically and directly to a passive mind",
+      "Noise makes communication impossible",
+      "Feedback is essential for understanding"
+    ],
+    "correct": 1,
+    "explanation": "It viewed communication as a hypodermic needle injecting ideas (propaganda) directly into the brain."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Harold Lasswell's (1948) model analyzes communication through a series of:",
+    "options": [
+      "Concentric circles",
+      "Questions (Who? Says What? etc.)",
+      "Mathematical equations",
+      "Binary codes"
+    ],
+    "correct": 1,
+    "explanation": "Who? Says What? In Which Channel? To Whom? With What Effect?"
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In the Lasswell Model, the question 'In Which Channel?' corresponds to which element?",
+    "options": [
+      "The Receiver",
+      "The Effect",
+      "The Medium",
+      "The Communicator"
+    ],
+    "correct": 2,
+    "explanation": "The channel is the medium of transmission."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The Shannon and Weaver Model (1949) is frequently referred to as the:",
+    "options": [
+      "Interactional Model",
+      "Transmission Model",
+      "Transactional Model",
+      "Rhetorical Model"
+    ],
+    "correct": 1,
+    "explanation": "It was developed for signal transmission in telecommunications."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What major concept did Shannon and Weaver introduce to account for signal distortion?",
+    "options": [
+      "Feedback",
+      "Context",
+      "Noise (Interference)",
+      "Redundancy"
+    ],
+    "correct": 2,
+    "explanation": "They identified 'Noise' as any interference that degrades the signal."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does the Charles Osgood Model (1954) fundamentally differ from linear models?",
+    "options": [
+      "It removes the receiver",
+      "It represents communication as a circular, dynamic, and interactive process",
+      "It focuses only on mass media",
+      "It assumes no noise exists"
+    ],
+    "correct": 1,
+    "explanation": "Osgood viewed communication as an infinite loop where participants swap roles."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In the Osgood Model, an individual performs which three functions?",
+    "options": [
+      "Speak, Listen, Write",
+      "Encode, Decode, Interpret",
+      "Send, Receive, Block",
+      "Ignore, Respond, Delay"
+    ],
+    "correct": 1,
+    "explanation": "Participants act as encoder, decoder, and interpreter simultaneously."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Wilbur Schramm modified the communication model by introducing the concept of:",
+    "options": [
+      "Signal Strength",
+      "Shared Orientation (Field of Experience)",
+      "Technical Jargon",
+      "Linearity"
+    ],
+    "correct": 1,
+    "explanation": "Communication requires overlapping 'Fields of Experience' (commonality) to be successful."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In Schramm's model, if the circles representing 'accumulated experience' do not overlap, what is the result?",
+    "options": [
+      "Communication is perfect",
+      "Communication cannot take place",
+      "Communication is delayed",
+      "Noise is eliminated"
+    ],
+    "correct": 1,
+    "explanation": "Without a common ground or shared code, the message cannot be decoded."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "West and Turner (2007) classify communication models into which three categories?",
+    "options": [
+      "Simple, Complex, Compound",
+      "Linear, Interactional, Transactional",
+      "Verbal, Nonverbal, Written",
+      "Ancient, Modern, Post-modern"
+    ],
+    "correct": 1,
+    "explanation": "These categories describe the evolution from one-way to simultaneous interaction."
+  },
+
+  // ================= UNIT 1.4: ELEMENTS OF COMMUNICATION =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which element represents the initiator who decides how to communicate a message?",
+    "options": [
+      "The Receiver",
+      "The Channel",
+      "The Source/Sender",
+      "The Context"
+    ],
+    "correct": 2,
+    "explanation": "The source/sender plans the strategy and encodes the message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The process of converting thoughts into symbols or cues is known as:",
+    "options": [
+      "Decoding",
+      "Encoding",
+      "Filtering",
+      "Feedback"
+    ],
+    "correct": 1,
+    "explanation": "Encoding is the packaging of the message by the sender."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How is 'Message' defined in the communication process?",
+    "options": [
+      "The medium used",
+      "The set of signs and symbols (content) shared between participants",
+      "The response from the receiver",
+      "The physical environment"
+    ],
+    "correct": 1,
+    "explanation": "The message is the actual content/information being transferred."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "To ensure a message is effective, what must the sender analyze about the receiver?",
+    "options": [
+      "Their physical height",
+      "Their profile, needs, expectations, and possible response",
+      "Their financial status",
+      "Their commute time"
+    ],
+    "correct": 1,
+    "explanation": "Tailoring the message to the audience is key to effectiveness."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In modern parlance, the term 'Channel' most frequently refers to:",
+    "options": [
+      "Face-to-face speech",
+      "Mass communication media (TV, Radio, Internet)",
+      "Nonverbal gestures",
+      "Written letters"
+    ],
+    "correct": 1,
+    "explanation": "While it means any medium, modern usage often implies technology/mass media."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the primary function of the Receiver/Decoder?",
+    "options": [
+      "To select the channel",
+      "To receive, interpret, and derive meaning from the message",
+      "To ignore the message",
+      "To eliminate noise"
+    ],
+    "correct": 1,
+    "explanation": "Decoding involves turning the symbols back into thought/meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In which form of communication is the relationship between sender and receiver typically 'diluted'?",
+    "options": [
+      "Interpersonal communication",
+      "Mass/Group communication",
+      "Intrapersonal communication",
+      "Dyadic communication"
+    ],
+    "correct": 1,
+    "explanation": "As the audience grows (mass), the personal connection diminishes."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which term describes 'distortion in a message' that affects the flow of communication?",
+    "options": [
+      "Feedback",
+      "Context",
+      "Noise",
+      "Encoding"
+    ],
+    "correct": 2,
+    "explanation": "Noise is any internal or external interference."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why is 'Feedback' considered an essential element?",
+    "options": [
+      "It allows the sender to speak longer",
+      "It transforms the process from linear to two-way/interactive",
+      "It eliminates the need for a channel",
+      "It is required by law"
+    ],
+    "correct": 1,
+    "explanation": "Feedback closes the loop, confirming reception and understanding."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In which context is feedback most immediate and comprehensive?",
+    "options": [
+      "Mass communication (TV)",
+      "Written communication (Books)",
+      "Interpersonal communication (Face-to-face)",
+      "Public speaking"
+    ],
+    "correct": 2,
+    "explanation": "Face-to-face allows for verbal, visual, and immediate feedback."
+  },
+
+  // ================= UNIT 1.5: BARRIERS TO COMMUNICATION =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In communication theory, 'Barriers' are synonymous with which element?",
+    "options": [
+      "Channel",
+      "Noise",
+      "Feedback",
+      "Context"
+    ],
+    "correct": 1,
+    "explanation": "Barriers act as noise, causing distortion or blockage."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A student cannot hear the lecture because the room is too hot and the seats are uncomfortable. This is an example of:",
+    "options": [
+      "Psychological Barrier",
+      "Physical/Environmental Barrier",
+      "Semantic Barrier",
+      "Cultural Barrier"
+    ],
+    "correct": 1,
+    "explanation": "Physical barriers relate to the environment (temperature, comfort, distance)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which of the following constitutes a 'Psychological Barrier'?",
+    "options": [
+      "A broken telephone line",
+      "Prejudice, anxiety, and lack of motivation",
+      "Using technical jargon",
+      "Geographical distance"
+    ],
+    "correct": 1,
+    "explanation": "Psychological barriers stem from the mind and emotional state."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The process by which we see or hear only what fits our needs and background is called:",
+    "options": [
+      "Selective Perception",
+      "Information Overload",
+      "Filtering",
+      "Encoding"
+    ],
+    "correct": 0,
+    "explanation": "We perceive selectively based on our frame of reference."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A female patient refuses to discuss health issues with a male nurse due to cultural norms. This is a:",
+    "options": [
+      "Physical Barrier",
+      "Socio-cultural Barrier",
+      "Technical Barrier",
+      "Linguistic Barrier"
+    ],
+    "correct": 1,
+    "explanation": "Social and cultural values dictate appropriate communication behavior."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Barriers caused by 'Jargon', 'Verbosity', or 'Ambiguous words' are classified as:",
+    "options": [
+      "Physical",
+      "Linguistic (Semantic)",
+      "Psychological",
+      "Organizational"
+    ],
+    "correct": 1,
+    "explanation": "These are issues with the language code itself (Semantics)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why does speaking a common language (like English) not guarantee effective communication?",
+    "options": [
+      "Because noise is always present",
+      "Because meanings are in people, not words, and usage varies",
+      "Because grammar is irrelevant",
+      "Because accents do not matter"
+    ],
+    "correct": 1,
+    "explanation": "Individual backgrounds (age, education) influence how words are interpreted."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Hierarchical structures and departmentalization in a company often lead to which type of barrier?",
+    "options": [
+      "Organizational Barrier",
+      "Physical Barrier",
+      "Technical Barrier",
+      "Semantic Barrier"
+    ],
+    "correct": 0,
+    "explanation": "Vertical levels and specialized departments create distance and jargon."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Poor audio quality, weak video signals, or power cuts are examples of:",
+    "options": [
+      "Psychological Barriers",
+      "Technical Barriers",
+      "Cultural Barriers",
+      "Semantic Barriers"
+    ],
+    "correct": 1,
+    "explanation": "These are mechanical/technological failures of the channel."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When an individual receives more data than they can process, leading to ignoring information, it is called:",
+    "options": [
+      "Selective Retention",
+      "Information Overload",
+      "Filtering",
+      "Decoding Failure"
+    ],
+    "correct": 1,
+    "explanation": "Humans have a finite capacity; exceeding it causes a shutdown."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "An employee modifies a report to hide bad news from their boss. This manipulation is known as:",
+    "options": [
+      "Encoding",
+      "Filtering",
+      "Deciphering",
+      "Scanning"
+    ],
+    "correct": 1,
+    "explanation": "Filtering is the deliberate manipulation of info to appear favorable."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Filtering is most likely to occur in organizations with:",
+    "options": [
+      "Flat structures",
+      "Many vertical levels (Hierarchy)",
+      "Few employees",
+      "Open communication policies"
+    ],
+    "correct": 1,
+    "explanation": "More levels = more hands the message passes through = more distortion."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to Robin Lakoff, female communication styles are often characterized by:",
+    "options": [
+      "Forceful, competitive tones",
+      "Passive, empathetic voices and active listening",
+      "Strict silence",
+      "Status-seeking behavior"
+    ],
+    "correct": 1,
+    "explanation": "Socialization encourages women toward connection and empathy."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "According to research, men typically use communication to:",
+    "options": [
+      "Seek support and confirmation",
+      "Preserve independence and maintain status",
+      "Avoid solving problems",
+      "Express vulnerability"
+    ],
+    "correct": 1,
+    "explanation": "Men often view conversation as a hierarchy to negotiate status."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "When a woman presents a problem, she is typically seeking:",
+    "options": [
+      "An immediate solution",
+      "Support and connection",
+      "Financial aid",
+      "Silence"
+    ],
+    "correct": 1,
+    "explanation": "Women often share problems to build closeness, whereas men rush to fix them."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How do extreme emotions (anger, depression) function as a barrier?",
+    "options": [
+      "They clarify the message",
+      "They hinder rational interpretation of the message",
+      "They speed up decoding",
+      "They have no effect"
+    ],
+    "correct": 1,
+    "explanation": "Strong emotions distort how we interpret meaning."
+  },
+
+  // ================= UNIT 1.6: NONVERBAL COMMUNICATION =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which paradigm asserts that nonverbal behavior is innate and genetically determined?",
+    "options": [
+      "The Enculturation Paradigm",
+      "The Ethological Paradigm",
+      "The Internal States Paradigm",
+      "The Situational Paradigm"
+    ],
+    "correct": 1,
+    "explanation": "Ethology links behavior to biology and evolution (e.g., universal emotions)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The 'Enculturation Paradigm' suggests that nonverbal behavior is:",
+    "options": [
+      "Innate",
+      "Learned through socialization within a specific culture",
+      "Random",
+      "Dependent only on mood"
+    ],
+    "correct": 1,
+    "explanation": "It emphasizes that we learn gestures/norms from our society."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which set of emotions is considered universal across cultures (SADFISH)?",
+    "options": [
+      "Sadness, Anger, Disgust, Fear, Interest, Surprise, Happiness",
+      "Boredom, Hunger, Tiredness, Excitement",
+      "Love, Hate, Envy, Pride",
+      "Shame, Guilt, Hope, Peace"
+    ],
+    "correct": 0,
+    "explanation": "These are the 6+ universal expressions recognized globally."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The study of gestures and body movements is known as:",
+    "options": [
+      "Proxemics",
+      "Kinesics",
+      "Haptics",
+      "Chronemics"
+    ],
+    "correct": 1,
+    "explanation": "Kinesics comes from 'kinesis' (movement)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Oculesics is the study of:",
+    "options": [
+      "Voice",
+      "Face and eye behavior",
+      "Touch",
+      "Time"
+    ],
+    "correct": 1,
+    "explanation": "It focuses on eye contact, gaze, and facial expressions."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Vocalics (or Paralanguage) refers to:",
+    "options": [
+      "The words spoken",
+      "How words are spoken (tone, pitch, volume)",
+      "Body posture",
+      "Clothing choices"
+    ],
+    "correct": 1,
+    "explanation": "It is the vocal component surrounding the words."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Proxemics is the study of:",
+    "options": [
+      "Time usage",
+      "Space and distance in communication",
+      "Touch",
+      "Eye contact"
+    ],
+    "correct": 1,
+    "explanation": "It governs how close we stand to others (personal space)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Haptics refers to communication through:",
+    "options": [
+      "Smell",
+      "Touch",
+      "Sight",
+      "Sound"
+    ],
+    "correct": 1,
+    "explanation": "Tactile communication (handshakes, hugs)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Chronemics is the study of:",
+    "options": [
+      "Color",
+      "Time usage in communication",
+      "Space",
+      "Movement"
+    ],
+    "correct": 1,
+    "explanation": "How time (punctuality, waiting) communicates meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A speaker nods their head while saying 'Yes'. Which function is the nonverbal cue serving?",
+    "options": [
+      "Contradicting",
+      "Complementing / Repeating",
+      "Substituting",
+      "Regulating"
+    ],
+    "correct": 1,
+    "explanation": "The gesture reinforces (matches) the verbal message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A person says 'I am fine' while weeping. This is an example of:",
+    "options": [
+      "Complementing",
+      "Contradicting",
+      "Repeating",
+      "Accenting"
+    ],
+    "correct": 1,
+    "explanation": "The nonverbal cue (tears) conflicts with the verbal message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Waving goodbye instead of saying the words represents which function?",
+    "options": [
+      "Accenting",
+      "Substituting",
+      "Complementing",
+      "Regulating"
+    ],
+    "correct": 1,
+    "explanation": "The gesture replaces the word entirely."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Looking at your watch to signal the end of a conversation is an example of:",
+    "options": [
+      "Accenting",
+      "Regulating",
+      "Substituting",
+      "Repeating"
+    ],
+    "correct": 1,
+    "explanation": "It manages or controls the flow of interaction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In public speaking, eye contact is primarily used to:",
+    "options": [
+      "Intimidate the audience",
+      "Engage the audience and build connection",
+      "Read notes",
+      "Avoid nervousness"
+    ],
+    "correct": 1,
+    "explanation": "It signals engagement and confidence."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A speaker lowers their voice to emphasize a secret. This use of voice is called:",
+    "options": [
+      "Kinesics",
+      "Vocalics (Paralanguage)",
+      "Proxemics",
+      "Chronemics"
+    ],
+    "correct": 1,
+    "explanation": "Using volume/tone to add meaning is paralanguage."
+  },
+
+  // ================= UNIT 1.7: TYPES & FORMS =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Communication that takes place within a single individual (thinking/dreaming) is called:",
+    "options": [
+      "Interpersonal",
+      "Intrapersonal",
+      "Group",
+      "Mass"
+    ],
+    "correct": 1,
+    "explanation": "Intra = Within."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Face-to-face communication between two people is known as:",
+    "options": [
+      "Intrapersonal",
+      "Interpersonal",
+      "Mass",
+      "Public"
+    ],
+    "correct": 1,
+    "explanation": "Inter = Between."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which form of communication uses media to reach a large, dispersed audience?",
+    "options": [
+      "Group Communication",
+      "Mass Communication",
+      "Public Communication",
+      "Interpersonal Communication"
+    ],
+    "correct": 1,
+    "explanation": "Mass comm uses technology (TV, Print) to broadcast."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Which type of communication typically allows for the fastest feedback?",
+    "options": [
+      "Written",
+      "Mass Communication",
+      "Interpersonal (Face-to-Face)",
+      "Public Speaking"
+    ],
+    "correct": 2,
+    "explanation": "The loop is instantaneous in face-to-face settings."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Graphs, charts, and maps fall under which type of communication?",
+    "options": [
+      "Verbal",
+      "Visualization",
+      "Nonverbal",
+      "Auditory"
+    ],
+    "correct": 1,
+    "explanation": "They communicate data visually."
+  },
+
+  // ================= UNIT 1.8: LISTENING & NOTE-TAKING =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "How does 'Hearing' differ from 'Listening'?",
+    "options": [
+      "Hearing is voluntary; Listening is involuntary",
+      "Hearing is the physical perception of sound; Listening is the intentional interpretation",
+      "Hearing is mental; Listening is physical",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "explanation": "Hearing is physiological (ears); Listening is psychological (brain)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is 'Active Listening'?",
+    "options": [
+      "Hearing background noise",
+      "Engaging the mind to comprehend and find meaning",
+      "Talking while someone else speaks",
+      "Sleeping with the radio on"
+    ],
+    "correct": 1,
+    "explanation": "It requires deliberate effort to understand content and intent."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "To understand a verbal message, a listener must focus on 'Content Words'. These belong to which class?",
+    "options": [
+      "Closed word classes (Prepositions, Pronouns)",
+      "Open word classes (Nouns, Verbs, Adjectives)",
+      "Grammatical words",
+      "Conjunctions"
+    ],
+    "correct": 1,
+    "explanation": "Open class words carry the semantic meaning of the sentence."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The ability to 'Paraphrase' demonstrates:",
+    "options": [
+      "The ability to memorize exact words",
+      "Understanding, by restating the meaning in one's own words",
+      "The ability to ignore the speaker",
+      "Poor listening skills"
+    ],
+    "correct": 1,
+    "explanation": "Paraphrasing proves comprehension by changing the form but keeping the meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Why is 'Transcription' (writing every word) considered poor note-taking?",
+    "options": [
+      "It is too accurate",
+      "It prevents active processing and selection of key ideas",
+      "It is too fast",
+      "It uses too much paper"
+    ],
+    "correct": 1,
+    "explanation": "Active note-taking must be selective and brief, not a dictation."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In the Cornell Note-taking method, what is placed in the left-hand column?",
+    "options": [
+      "The summary",
+      "Key words and questions",
+      "Detailed notes",
+      "Diagrams"
+    ],
+    "correct": 1,
+    "explanation": "The left column is for cues/recall; the right is for details."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Where is the 'Summary' located in the Cornell layout?",
+    "options": [
+      "Top",
+      "Left",
+      "Right",
+      "Bottom"
+    ],
+    "correct": 3,
+    "explanation": "The summary goes at the bottom to consolidate learning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "A 'Mind Map' is best described as:",
+    "options": [
+      "A linear list",
+      "A visual tree structure with a central idea and radiating branches",
+      "A transcript",
+      "A bar chart"
+    ],
+    "correct": 1,
+    "explanation": "It visualizes the interrelationships of ideas from a central core."
+  },
+
+  // ================= UNIT 1.9: READING & NOTE-MAKING =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Smith (1995) defines reading as an 'interactive process'. What interacts?",
+    "options": [
+      "The eyes and the light",
+      "The reader's prior knowledge and the text",
+      "The pen and the paper",
+      "The teacher and the student"
+    ],
+    "correct": 1,
+    "explanation": "Reading builds meaning by connecting what you know with what is written."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The reading process consists of three stages. What are they?",
+    "options": [
+      "Look, See, Say",
+      "Pre-reading, During-reading, Post-reading",
+      "Scan, Skim, Skip",
+      "Start, Middle, End"
+    ],
+    "correct": 1,
+    "explanation": "It is a process involving preparation, engagement, and review."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the primary goal of 'Skimming'?",
+    "options": [
+      "To read every word",
+      "To quickly find the main idea or gist",
+      "To search for a specific date",
+      "To memorize the text"
+    ],
+    "correct": 1,
+    "explanation": "Skimming gives an overview by looking at headings and structure."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is 'Scanning' used for?",
+    "options": [
+      "Reading for pleasure",
+      "Searching for specific information (like a name or number)",
+      "Getting the general idea",
+      "Writing a summary"
+    ],
+    "correct": 1,
+    "explanation": "Scanning is like looking for a needle in a haystack (specific data)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is 'Close Reading'?",
+    "options": [
+      "Fast reading",
+      "Thoughtful, critical analysis of details and patterns",
+      "Reading near the book",
+      "Reading easy texts"
+    ],
+    "correct": 1,
+    "explanation": "It involves deep engagement with short texts to understand craft/meaning."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The SQ3R study method stands for:",
+    "options": [
+      "Scan, Question, Read, Remember, Rest",
+      "Survey, Question, Read, Recite, Review",
+      "Study, Quiet, Read, Run, Rest",
+      "Survey, Quote, Read, Rate, Review"
+    ],
+    "correct": 1,
+    "explanation": "A systematic method for reading textbooks."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In the SQ4R method, what is the fourth 'R' added?",
+    "options": [
+      "Run",
+      "Reflect (or Record)",
+      "Rest",
+      "Rate"
+    ],
+    "correct": 1,
+    "explanation": "Reflect/Record emphasizes thinking about or writing down the info."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the difference between Note-taking and Note-making?",
+    "options": [
+      "They are the same",
+      "Note-taking is from listening; Note-making is from reading/written text",
+      "Note-taking is harder",
+      "Note-making is visual"
+    ],
+    "correct": 1,
+    "explanation": "Note-making involves organizing notes from a static source (books)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In an essay or text, what is the 'Thesis Statement'?",
+    "options": [
+      "The first sentence",
+      "The main idea of the entire text",
+      "A detail in the conclusion",
+      "The title"
+    ],
+    "correct": 1,
+    "explanation": "The thesis governs the entire document's argument."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is a 'Topic Sentence'?",
+    "options": [
+      "The main idea of the whole text",
+      "The main idea of a specific paragraph",
+      "The conclusion",
+      "The citation"
+    ],
+    "correct": 1,
+    "explanation": "It controls the content of a single paragraph."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "What is the function of 'Transitional Markers' (Linking words)?",
+    "options": [
+      "To end sentences",
+      "To show relationships between ideas (Contrast, Cause, Sequence)",
+      "To confuse the reader",
+      "To capitalize words"
+    ],
+    "correct": 1,
+    "explanation": "They act as bridges/signposts for logic."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The word 'However' signals which type of relationship?",
+    "options": [
+      "Addition",
+      "Contrast",
+      "Cause",
+      "Time"
+    ],
+    "correct": 1,
+    "explanation": "It introduces an opposing or contrasting idea."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "The word 'Consequently' signals which type of relationship?",
+    "options": [
+      "Contrast",
+      "Cause and Effect",
+      "Time",
+      "Addition"
+    ],
+    "correct": 1,
+    "explanation": "It shows a result or outcome."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "In outlining, what does 'Indentation' signify?",
+    "options": [
+      "A new main topic",
+      "Subordination (supporting details/sub-points)",
+      "The end of the text",
+      "A spelling error"
+    ],
+    "correct": 1,
+    "explanation": "Moving text to the right indicates it belongs to the level above."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Can you effectively write a summary BEFORE making notes?",
+    "options": [
+      "Yes, easily",
+      "No, notes provide the essential outline/points required",
+      "Sometimes",
+      "Only for fiction"
+    ],
+    "correct": 1,
+    "explanation": "Notes capture the 'meat' needed to build the summary."
+  },
+
+  // ================= SCENARIO & APPLICATION QUESTIONS (PROFESSIONAL) =================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scenario: A student ignores the teacher's lecture because they are worrying about a personal problem. What type of noise is this?",
+    "options": [
+      "Physical (External)",
+      "Psychological (Internal)",
+      "Semantic",
+      "Technical"
+    ],
+    "correct": 1,
+    "explanation": "Internal distractions like worry or hunger are Psychological Noise."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scenario: An engineer uses the term 'torque' when speaking to a non-technical client, causing confusion. This is an example of:",
+    "options": [
+      "Physical Barrier",
+      "Jargon (Linguistic/Semantic Barrier)",
+      "Psychological Barrier",
+      "Mechanical Barrier"
+    ],
+    "correct": 1,
+    "explanation": "Specialized language (Jargon) acts as a semantic barrier to outsiders."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scenario: A speaker says 'I am confident' but their hands are shaking and they avoid eye contact. Which nonverbal function is active?",
+    "options": [
+      "Complementing",
+      "Contradicting",
+      "Repeating",
+      "Accenting"
+    ],
+    "correct": 1,
+    "explanation": "The body language contradicts the verbal message."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scenario: A student points to the door while saying 'The exit is there'. Which nonverbal function is this?",
+    "options": [
+      "Contradicting",
+      "Repeating / Complementing",
+      "Substituting",
+      "Regulating"
+    ],
+    "correct": 1,
+    "explanation": "The gesture matches and reinforces the verbal instruction."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Scenario: You put your finger to your lips to 'shhh' someone without speaking. Which function is this?",
+    "options": [
+      "Substituting",
+      "Accenting",
+      "Complementing",
+      "Contradicting"
+    ],
+    "correct": 0,
+    "explanation": "The gesture substitutes for the verbal command 'be quiet'."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Grammar: In the sentence 'She failed because she didn't study', the word 'because' functions as a:",
+    "options": [
+      "Coordinator (linking equal ideas)",
+      "Subordinator (linking dependent ideas)",
+      "Noun",
+      "Adjective"
+    ],
+    "correct": 1,
+    "explanation": "It creates a dependency (Cause/Effect hierarchy)."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Grammar: In the sentence 'I wanted to go, but it rained', the word 'but' functions as a:",
+    "options": [
+      "Coordinator (Contrast)",
+      "Subordinator (Cause)",
+      "Noun",
+      "Verb"
+    ],
+    "correct": 0,
+    "explanation": "Coordinators (FANBOYS) link independent clauses."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Application: If you are looking for a specific phone number in a directory, which reading skill should you use?",
+    "options": [
+      "Skimming",
+      "Scanning",
+      "Close Reading",
+      "Critical Reading"
+    ],
+    "correct": 1,
+    "explanation": "Scanning is for locating specific data points."
+  },
+  {
+    "course": "LA111",
+    "term": "T1",
+    "q": "Application: If you read the headings and introduction of a chapter to prepare for a lecture, you are:",
+    "options": [
+      "Scanning",
+      "Skimming / Surveying",
+      "Proofreading",
+      "Editing"
+    ],
+    "correct": 1,
+    "explanation": "Skimming gets the main idea/structure."
+  }
 ];
