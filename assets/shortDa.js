@@ -9456,7 +9456,6 @@ const shortData = [
 
 
   //LA111 data 
-  [
   {
     "course": "LA111",
     "term": "T1",
@@ -11151,6 +11150,5 @@ const shortData = [
     "keywords": ["contrast", "comparison"],
     "explanation": "'However' shows contrast or comparison between ideas, indicating a difference or opposition to what was previously stated."
   },
-]
 
 ];
