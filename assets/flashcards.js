@@ -10379,7 +10379,847 @@ const flashcards = {
       "term": "T3",
       "topic": "Advanced / Practical Concepts"
     }
-  ]
+  ],
+
+  //LA111 data
+  "UNIT_1.1: DEFINITION & FUNCTIONS OF COMMUNICATION": [
+    {
+      "front": "In communication studies, what is the fundamental human process being examined?",
+      "back": "The process of communication, which involves the sharing of ideas, thoughts, feelings, or information with others through various means like speaking, writing, and body language.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "How do various scholars broadly define the act of communication?",
+      "back": "Scholars define it in related ways, such as 'the transfer of meaning,' 'the transmission of stimuli,' 'one mind affecting another,' or 'the sharing of experiences based on commonness.'",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "What is a specific academic definition stating that communication is a 'systemic process in which people interact with and through symbols to create and interpret meaning'?",
+      "back": "This is the working definition of communication provided by scholar Julia T. Wood in 2004.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "Is communication considered a one-time event or an ongoing activity? What term describes its nature?",
+      "back": "Communication is not a one-time event; it is described as a dynamic and continuous process.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "In a practical example, what must happen for a teacher's classroom communication to be considered successful?",
+      "back": "The learners must understand the meaning of the lesson in exactly the same way the teacher intended when planning it.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "What is the comprehensive definition that summarizes communication as a process leading to a specific outcome?",
+      "back": "Communication is a process of sharing or exchanging ideas, information, knowledge, attitudes, or feelings among two or more persons through signs and symbols, leading to the desired response intended by the communicator.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "Can messages be sent without using words? Provide an example of how this can happen.",
+      "back": "Yes. For example, feelings like warmth or indifference can be communicated through gestures, facial expressions, and body language without any spoken or written words.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "What are 'communication skills' defined as?",
+      "back": "Communication skills are the skills, abilities, and tools that enable individuals to send and receive messages effectively.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "What four specific tools are included in the set of communication skills?",
+      "back": "The four foundational tools are: listening, reading, speaking, and writing.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "In the definition of communication skills, what does communicating 'effectively' specifically require?",
+      "back": "Communicating effectively requires that the message is interpreted correctly and that the sender gets the specific feedback they intended.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "What are the four primary or major functions that communication serves in human interaction?",
+      "back": "The four major functions are: 1) Control, 2) Motivation, 3) Emotional Expression, and 4) Information Sharing or Education.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "Besides the four major functions, what are some other specific functions that communication can serve?",
+      "back": "Other functions include socialization (integrating into society), entertainment, persuasion, and the preservation of culture.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "True or False: 'Motivation' is considered a secondary or minor function of communication.",
+      "back": "False. 'Motivation' is explicitly listed as one of the four major functions of communication.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    },
+    {
+      "front": "True or False: The 'scope of communication' is narrow because it only involves formal speaking and writing.",
+      "back": "False. The scope of communication is described as very wide because it includes thinking, dreaming, speaking, arguing, and sharing all forms of ideas and feelings.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Definition & Functions of Communication"
+    }
+  ],
+
+  "UNIT_1.2: PURPOSE OF COMMUNICATION SKILLS": [
+    {
+      "front": "This unit focuses on the importance of communication for a specific group of professionals. Who are they?",
+      "back": "This unit focuses on the purpose and value of communication skills for scientists and engineers.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "Why is a 'common understanding' of communication skills crucial for scientists and engineers working together?",
+      "back": "Without a common understanding of the necessary skills and standards, collaboration would be impossible and result in chaos when trying to share findings, technologies, and products.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "What is the first major reason (Social and Ethical) for studying communication skills?",
+      "back": "Human beings live in societies with social rules. Knowing these expectations is necessary for harmonious living and prevents miscommunication. Ethical communication also helps mediate conflicts in a diverse, globalized world.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "How can poor technical communication, such as a badly written product manual, lead to 'Legal Considerations'?",
+      "back": "Unclear instructions can cause accidents. Good documentation can prevent disputes between consumers and producers. If it fails, there can be serious legal consequences for both parties.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "The notes state that communication in the workplace is 'unavoidable.' What aspect of this makes communication skills valuable?",
+      "back": "The frequency of communication (constant meetings, writing, conversing) is high. The value lies in using these skills to get things done efficiently amidst this constant activity.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "What does the 'collaborative nature of technical communication' involve?",
+      "back": "It involves people from diverse backgrounds working together across distances on tasks like planning, writing, designing, negotiating, and decision-making.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "How has computerization affected technical communication?",
+      "back": "It has made it easier to produce complex, visually rich documents, but has also made the process more complex due to the tools and formats involved.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "In today's 'information age' with a global economy, why are good writing skills essential?",
+      "back": "Good writing skills are necessary to operate effectively and facilitate interaction in an internationalized world.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "According to research by Huckin and Olsen (1991), how do communication skills rank in importance compared to other professional skills?",
+      "back": "Their research indicates that communication skills rank above any other type of skill.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "What five specific skills did Huckin and Olsen list as the most critical communication skills?",
+      "back": "1) Technical writing, 2) Public speaking, 3) Working with individuals, 4) Working with groups, and 5) Talking with people.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "True or False: The primary purpose of communication skills for engineers is to make them better public speakers for conferences.",
+      "back": "False. While public speaking is one skill, the purposes are broader: enabling collaboration, ensuring safety/legal clarity, facilitating international work, and managing frequent workplace interaction.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    },
+    {
+      "front": "True or False: Ethical communication is only about telling the truth and has nothing to do with understanding social rules.",
+      "back": "False. Ethical communication includes understanding the social expectations and rules of any communication act to prevent harm and miscommunication.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Purpose of Communication Skills"
+    }
+  ],
+
+  "UNIT_1.3: THE COMMUNICATION PROCESS & MODELS": [
+    {
+      "front": "In communication theory, what is a 'model' used for?",
+      "back": "A model is a graphic representation or description designed to explain how communication works, showing the structure and relationship of its parts.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Who is credited with one of the earliest models of communication, which focused on public speaking and persuasion?",
+      "back": "The ancient Greek philosopher Aristotle.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "What were the four components of Aristotle's model of communication?",
+      "back": "The model consisted of: The Speaker, the Speech, the Audience, and the Effect on the audience.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "In the mid-20th century, communication was sometimes seen as a 'magic bullet.' What did this simplistic view suggest?",
+      "back": "It suggested that a message could be automatically transferred from one mind to another with a direct and powerful effect, like a bullet.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Who created the model that asks: 'Who, Says What, In Which Channel, To Whom, With What Effect'?",
+      "back": "Political scientist Harold D. Lasswell in 1948.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "The Lasswell Model breaks down communication into five analysis points. What is the fifth point, 'With What Effect,' concerned with?",
+      "back": "It is concerned with the impact or outcome the message has on the receiver.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Which famous 1949 model is often called the 'transmission model' and introduced the technical concept of 'noise'?",
+      "back": "The Shannon and Weaver Model.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Describe the linear path of a message in the Shannon and Weaver Model, starting with the 'Information Source.'",
+      "back": "Information Source → Transmitter → Channel → Receiver → Destination. Noise may interfere in the Channel.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "In the Shannon and Weaver Model, what is 'Noise'?",
+      "back": "Noise is any form of interference or distortion that disrupts the message as it travels through the channel.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Charles Osgood's 1954 model emphasized that communication is not one-way. What key roles do individuals play in his model?",
+      "back": "Individuals act as both encoders (creating messages) and decoders (interpreting messages), with a strong emphasis on the interpretation of meaning.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Wilbur Schramm's model introduced a visual concept of two circles. What did these circles represent, and why is their overlap important?",
+      "back": "The circles represent the accumulated life experiences of the sender and receiver. Communication is most effective when these 'fields of experience' overlap, creating shared understanding.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "What is the main idea behind Schramm's concept of 'shared orientation'?",
+      "back": "For a message to be understood, the sender and receiver must have some common background, knowledge, or cultural experience.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "Scholars classify communication models into three main types. What are they?",
+      "back": "1) Linear or Transmission (one-way), 2) Interactional (two-way with feedback), and 3) Transactional (simultaneous, cooperative creation of meaning).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "True or False: Aristotle's model is considered a modern, transactional model of communication.",
+      "back": "False. Aristotle's model is ancient and is a simple, linear model focused on a speaker persuading an audience.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    },
+    {
+      "front": "True or False: The Osgood and Schramm models are more applicable to a two-person conversation than to a radio broadcast.",
+      "back": "True. Their models highlight feedback, interpretation, and shared experience, which are more relevant to interpersonal, interactive contexts than to one-way mass communication.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "The Communication Process & Models"
+    }
+  ],
+
+  "UNIT_1.4: ELEMENTS OF COMMUNICATION": [
+    {
+      "front": "What are the core building blocks that make up any communication process, whether simple or complex?",
+      "back": "These are called the Elements of Communication. There are nine key elements.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "List the nine fundamental elements of the communication process.",
+      "back": "1. Context, 2. Sender/Encoder, 3. Encoding, 4. Message, 5. Channel, 6. Decoding, 7. Receiver/Decoder, 8. Feedback, 9. Noise.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is the role of the Sender (also called Source or Encoder)?",
+      "back": "The sender is the person who initiates communication by having an idea, deciding how to express it, and choosing a channel to send it.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is the process called where the sender converts their idea into a message using words, symbols, or gestures?",
+      "back": "This process is called Encoding.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is the term for the actual content that is transmitted from sender to receiver?",
+      "back": "This is the Message. It is the encoded idea consisting of signs and symbols.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is the Channel in communication?",
+      "back": "The channel is the medium or pathway used to transmit the message (e.g., air for speech, paper for a letter, internet for email, light waves for facial expressions).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is the process called where the receiver translates the sender's message back into an idea they can understand?",
+      "back": "This process is called Decoding.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "In communication theory, what is Feedback?",
+      "back": "Feedback is any response from the receiver that informs the sender about how the message was received and understood. It makes communication a two-way process.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "What is Noise in the communication process?",
+      "back": "Noise is any kind of disruption or distortion that interferes with the clear transmission or reception of a message. It can be physical (loud sound), psychological (prejudice), or semantic (confusing language).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "Which element sets the scene or situation in which communication occurs (e.g., a formal meeting vs. a casual chat)?",
+      "back": "This is the Context. It influences how a message is created, sent, and interpreted.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    },
+    {
+      "front": "True or False: In a large public speech, the element of feedback is typically stronger and more immediate than in a face-to-face conversation between two friends.",
+      "back": "False. Feedback is strongest and most immediate in interpersonal settings (like a conversation). It is diluted and delayed in settings like a public speech.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Elements of Communication"
+    }
+  ],
+
+  "UNIT_1.5: BARRIERS IN COMMUNICATION": [
+    {
+      "front": "In communication, what general term refers to any obstacle that distorts a message or prevents it from being understood as intended?",
+      "back": "These obstacles are called Barriers to Communication (also referred to as 'Noise').",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What are the six main categories of communication barriers?",
+      "back": "1. Physical, 2. Psychological, 3. Socio-cultural, 4. Linguistic/Semantic, 5. Technical, 6. Information Overload.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is a Physical Barrier? Give an example.",
+      "back": "A physical barrier is an environmental obstacle. Example: Trying to talk to someone in a different country without technology, or a loud construction noise drowning out a conversation.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What are Psychological Barriers, and what internal processes can cause them?",
+      "back": "These are barriers within an individual's mind, such as personal attitudes, prejudices, anxiety, or the tendencies for selective perception, selective recall, and selective retention.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is a Socio-cultural Barrier? Give the example from the notes.",
+      "back": "A barrier arising from social or cultural differences. Example: A patient from a conservative culture feeling unable to discuss a health problem with a doctor of the opposite gender.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What causes Linguistic or Semantic Barriers?",
+      "back": "These are caused by problems with language itself, such as using ambiguous words, poor translation, complex jargon, or vocabulary the receiver doesn't understand. Meanings can differ based on a person's age, education, or culture.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is a Technical Barrier in modern communication?",
+      "back": "A barrier caused by problems with the technology being used, such as poor audio/video quality, weak internet signals, or power failure during an online meeting.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is Information Overload as a barrier?",
+      "back": "It occurs when a person receives more information than they can mentally process at one time, causing them to become overwhelmed, ignore details, or forget important points.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is the barrier called when a sender intentionally changes a message to make it seem more favorable to the receiver?",
+      "back": "This is called Filtering. It often happens in organizations when bad news is 'softened' as it moves up the hierarchy.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "What is Selective Perception?",
+      "back": "This is when a receiver in the communication process pays attention only to parts of a message that align with their own needs, beliefs, or expectations, ignoring the rest.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "According to researcher Robin Lakoff, what is a key difference in how boys and girls in the U.S. are often taught to communicate?",
+      "back": "Girls are often taught to use empathetic, connection-building communication, while boys are often encouraged toward competitive, status-oriented communication.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "How can Gender-Related Differences in communication style become a barrier?",
+      "back": "If a man offers a solution to a problem (emphasizing status/control) while a woman discusses it to seek connection/support, both may feel their needs are not met, leading to misunderstanding.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "How do Emotions act as a barrier?",
+      "back": "A receiver's emotional state (e.g., anger, extreme happiness) at the time they get a message can drastically change how they interpret it, often hindering objective understanding.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "True or False: 'Information Overload' means the receiver is not intelligent enough to understand the message.",
+      "back": "False. It is not about intelligence. It is a cognitive limitation where the human brain has a finite capacity to process data at any given moment.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    },
+    {
+      "front": "True or False: A technical term like 'API' used among software engineers is an example of a helpful linguistic tool, not a potential semantic barrier.",
+      "back": "False. While 'API' is helpful within that group, it becomes a semantic barrier if used with someone outside the field who doesn't know its meaning.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Barriers in Communication"
+    }
+  ],
+
+  "UNIT_1.6: NONVERBAL COMMUNICATION": [
+    {
+      "front": "What is the branch of communication study that focuses on messages sent without words?",
+      "back": "This is the study of Nonverbal Communication. It includes body language, gestures, facial expressions, tone of voice, appearance, and use of space and time.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "According to theorists Gillespie and Leffler (1983), what are the four main theoretical perspectives (paradigms) on nonverbal behavior?",
+      "back": "1. Ethological: Nonverbal behavior is partly innate/genetic. 2. Enculturation: It is learned through social norms. 3. Internal States: It fluctuates with a person's psychology. 4. Situational Resource: It varies depending on the social status of people and the constraints of the situation.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "The acronym 'SADFISH + L' represents a set of emotions with universal nonverbal expressions. What does 'SADFISH' stand for?",
+      "back": "Sadness, Anger, Disgust, Fear, Interest, Surprise, Happiness. The '+ L' adds Love.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What are the seven major categories or codes of nonverbal messages?",
+      "back": "1. Physical appearance, dress, and artefacts. 2. Gestures and movements (Kinesics). 3. Face and eye behavior (Oculesics). 4. Vocal behavior (Vocalics/Paralanguage). 5. Space and distance (Proxemics). 6. Touch (Haptics). 7. Time (Chronemics).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What is the study of body movements, gestures, and posture called?",
+      "back": "Kinesics.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What is the study of how people use and perceive physical space and distance called?",
+      "back": "Proxemics.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What is the term for the study of how people use their voices (e.g., pitch, tone, speed) to communicate, separate from the actual words spoken?",
+      "back": "Vocalics or Paralanguage.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What are the six primary functions that nonverbal communication serves in relation to verbal messages?",
+      "back": "1. Complementing (adding to), 2. Contradicting (opposing), 3. Repeating (restating), 4. Regulating (controlling flow), 5. Substituting (replacing), 6. Accenting (emphasizing).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "If someone says 'I'm so excited!' while jumping up and down, which function of nonverbal communication is the jumping performing?",
+      "back": "Complementing (the behavior adds to and reinforces the verbal message).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "If a teacher holds up a hand to quiet a noisy class without speaking, which function of nonverbal communication is this?",
+      "back": "Substituting (the gesture replaces a verbal command like 'Quiet, please').",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "What are four key areas of nonverbal delivery that are important for effective public speaking?",
+      "back": "1. Using eye contact to engage the audience. 2. Using emphasizing gestures, posture, and movements. 3. Using the voice effectively (varying rhythm, emphasizing points). 4. Using one's appearance as a communicative point.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    },
+    {
+      "front": "True or False: All nonverbal communication, like the meaning of a thumbs-up gesture, is innate and the same across every culture in the world.",
+      "back": "False. While some expressions (like SADFISH+L) are considered universal, much nonverbal communication is learned and varies by culture. For example, a thumbs-up can have different meanings in different places.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Nonverbal Communication"
+    }
+  ],
+
+  "UNIT_1.7: TYPES & FORMS OF COMMUNICATION": [
+    {
+      "front": "What are the five basic forms or levels of communication, defined by the number of participants and the setting?",
+      "back": "1. Intrapersonal (within oneself), 2. Interpersonal (between two or a few people), 3. Group (among a small collection of people), 4. Public (one speaker to an audience), 5. Mass (mediated message to a large, scattered audience).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "What is Intrapersonal Communication?",
+      "back": "Communication that occurs within an individual. This includes thinking, dreaming, self-talk, and internal reflection.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "What is the key difference between Public Communication and Mass Communication?",
+      "back": "Public Communication involves a live speaker addressing a present audience (e.g., a lecture, political speech). Mass Communication uses a technological medium (TV, radio, internet) to deliver a message to a large, geographically dispersed audience.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "Besides forms/levels, communication is also categorized by the mode or channel used. What are these four general types?",
+      "back": "1. Verbal (spoken or signed language), 2. Nonverbal (body language, etc.), 3. Written (text), 4. Visualization (graphs, charts, maps).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "What type of communication uses tools like graphs, charts, and maps to convey information?",
+      "back": "Visualization.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "Which form of communication is characterized by immediate feedback and is typically used for relationship building and problem-solving between individuals?",
+      "back": "Interpersonal Communication.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "True or False: 'Group Communication' and 'Mass Communication' refer to the same thing because both involve more than two people.",
+      "back": "False. Group communication involves a small, interactive collection of people (like a team meeting). Mass communication involves a single source sending a message to a vast, anonymous audience via media, with very limited direct feedback.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    },
+    {
+      "front": "What two factors are noted as influencing the level of formality in any communication act?",
+      "back": "The context (purpose, situation) and the environment (physical and social setting).",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Types & Forms of Communication"
+    }
+  ],
+
+  "UNIT_1.8: LISTENING AND NOTE-TAKING": [
+    {
+      "front": "What are the three main learning goals for the unit on Listening and Note-taking?",
+      "back": "1. Distinguish between listening and hearing. 2. Explain how to be an active, effective listener. 3. Learn to take notes using different methods.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What is the fundamental difference between hearing and listening?",
+      "back": "Hearing is the involuntary, physiological process of perceiving sound waves. Listening is the active, intentional, mental process of paying attention to sounds to interpret and understand their meaning.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What is Active Listening?",
+      "back": "Active listening is listening with the goal of comprehension. It requires deliberate focus, engagement of the mind, and often providing feedback to the speaker.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What are the two main categories of words in a language that are crucial for understanding a spoken message?",
+      "back": "1. Content Words (Open Word Classes): Nouns, verbs, adjectives, adverbs. They carry the core meaning. 2. Grammatical Words (Closed Word Classes): Pronouns, prepositions, conjunctions, etc. They provide sentence structure.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "When listening, which category of words (content or grammatical) should a listener pay particular attention to in order to grasp the main ideas?",
+      "back": "The Content Words (nouns, verbs, adjectives, adverbs), as they contain the key information.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What is the listening skill called where you restate the speaker's message in your own words to confirm understanding?",
+      "back": "This skill is called Paraphrasing.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "Why is self-awareness of your own nonverbal behavior (like facial expressions) important when you are the listener?",
+      "back": "Your nonverbal behavior (e.g., nodding, eye contact, posture) sends feedback to the speaker and can either encourage them to continue or shut them down. Being aware helps you manage this feedback effectively.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What is the primary purpose of note-taking during a listening activity like a lecture?",
+      "back": "To selectively and briefly write down the key ideas, concepts, and issues, which aids in comprehension and creates a record for later review.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "Describe the Cornell Method of note-taking. What are its three main sections?",
+      "back": "1. A narrow left-hand column for cues, keywords, and questions. 2. A wide right-hand column for the main notes. 3. A summary section at the bottom of the page for synthesizing the key points.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "Describe the Mind Mapping method of note-taking.",
+      "back": "The central topic is written in the middle of the page. Major related ideas are drawn as branches from the center. Further details branch out from these ideas, creating a visual 'map' of the information.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "True or False: The best way to take notes is to try to write down every single word the speaker says.",
+      "back": "False. This is called transcription and is inefficient. Effective note-taking is selective, focusing on capturing main ideas and supporting details in a condensed form.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    },
+    {
+      "front": "What are five common reasons why people listen, according to the unit's introduction?",
+      "back": "People listen to: 1. Learn, 2. Show empathy, 3. Be entertained, 4. Build relationships, and 5. Persuade others.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Listening and Note-taking"
+    }
+  ],
+
+  "UNIT_1.9: READING AND NOTE-MAKING": [
+    {
+      "front": "According to scholar Smith (1995), what is the definition of reading?",
+      "back": "Reading is 'an interactive process in which the reader's prior knowledge of the world interacts with the message conveyed directly or indirectly by the text.'",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What are the three main stages of an effective reading process, and what is a key activity in each?",
+      "back": "1. Pre-reading: Skimming and scanning to preview. 2. During Reading: Questioning and annotating the text. 3. Post-reading: Reciting and reviewing the material.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is the reading skill called that involves quickly looking over a text to get the general main idea?",
+      "back": "Skimming. You look at titles, headings, bold text, and images.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is the reading skill called that involves searching a text for a specific piece of information, like a date or name?",
+      "back": "Scanning.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What type of reading is done for pleasure, such as reading a novel, and is typically slow-paced?",
+      "back": "Light Reading or reading for leisure.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is Close Reading?",
+      "back": "A careful, in-depth analysis of a short text or excerpt, focusing on details, patterns, and deep meaning.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What does the acronym SQ3R stand for in the context of a systematic reading method?",
+      "back": "Survey, Question, Read, Recite, Review.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What additional step creates the SQ4R method, and what is its purpose?",
+      "back": "The added step is Reflect (or Record). It comes after Read and involves pausing to think about and write down the main ideas in your own words.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is the difference between note-taking (from Unit 1.8) and note-making (in Unit 1.9)?",
+      "back": "Note-taking is done while listening to a spoken presentation. Note-making is done after or while reading a written text to distill and organize its content.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "In note-making from a text, what is the Thesis Statement?",
+      "back": "The sentence that expresses the main idea or central argument of the entire text or essay.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "In note-making, what is a Topic Sentence?",
+      "back": "The sentence (usually the first) in a paragraph that states the main idea of that specific paragraph.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is the standard format for organizing written notes from a text?",
+      "back": "A structured Outline, using a consistent system of numbers/letters, indentation, headings, and subheadings.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What are Transitional Markers or Linking Words in a text? What is their purpose?",
+      "back": "Words or phrases (e.g., however, therefore, first, consequently) that connect ideas, sentences, and paragraphs. They show relationships like contrast, cause and effect, or sequence.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What type of relationship do the transitional markers 'because,' 'since,' and 'as a result' typically indicate?",
+      "back": "A Cause and Effect relationship.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "What is the purpose of using abbreviations (like '&' for 'and' or 'Imp.' for 'importance') in note-making?",
+      "back": "To write more quickly and concisely while still capturing the essential information.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "True or False: The SQ3R method recommends that you start reading a textbook chapter in detail before looking at the headings or summary.",
+      "back": "False. The first step is Survey (or Skim), which means you should look over the chapter's structure, headings, and summaries before you begin detailed reading.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    },
+    {
+      "front": "True or False: A good summary of a text can be written directly from the notes (outline) you made, because the notes contain the 'meat' or key points of the original.",
+      "back": "True. The notes act as a condensed version of the text's main ideas and supporting details, from which a summary can be drafted.",
+      "course": "LA111",
+      "term": "T1",
+      "topic": "Reading and Note-making"
+    }
+  ],
 
 
 
