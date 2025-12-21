@@ -5793,8 +5793,699 @@
         ]
     },
 
+//LA111
+    
 
+  // =================================================================
+  // ESSAY 1: THE COMPLETE COMMUNICATION PROCESS (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "The Complete Communication Process",
+    "topic": "Unit 1.1-1.4: From Sender to Feedback",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: CONTEST & SENDER - A manager needs to announce a new policy. What must they consider FIRST before communicating?",
+        "options": [
+          "Just write the announcement and send it.",
+          "CONTEXT: Company culture, timing (end of month stress?), and their position as sender (authority vs. peer tone).",
+          "Only the policy details.",
+          "What channel is easiest for them."
+        ],
+        "correct": 1,
+        "explanation": "Context determines everything. A policy announcement during stressful periods (month-end) vs. calm periods, or from a new manager vs. established leader, requires different approaches. Context shapes encoding strategy."
+      },
+      {
+        "q": "STEP 2: ENCODING & MESSAGE - How should the manager ENCODE the policy message?",
+        "options": [
+          "Use formal legal language to show authority.",
+          "Tailor language: Clear, jargon-free, emphasizing BENEFITS to employees (not just rules).",
+          "Keep it vague to allow flexibility.",
+          "Use abbreviations to save time."
+        ],
+        "correct": 1,
+        "explanation": "Encoding = choosing symbols the receiver understands. Employee-focused language (benefits, clarity) over authority-focused language increases acceptance. Match the code to receiver capability."
+      },
+      {
+        "q": "STEP 3: CHANNEL SELECTION - Which channel is MOST appropriate and why?",
+        "options": [
+          "Email blast to all (one-way, fast).",
+          "Team meeting + written summary (multi-channel: verbal for Q&A + written for reference).",
+          "Memo on bulletin board (passive).",
+          "Individual chats (time-consuming)."
+        ],
+        "correct": 1,
+        "explanation": "Important policy changes need FEEDBACK opportunity. Meeting allows immediate Q&A (decoding check), written summary provides reference. Multi-channel reinforces message and accommodates different receivers."
+      },
+      {
+        "q": "STEP 4: RECEIVER & DECODING - An employee seems confused. What likely happened?",
+        "options": [
+          "The employee wasn't listening.",
+          "DECODING FAILURE: Employee's prior experiences with policy changes (negative) colored interpretation, or technical terms were unfamiliar.",
+          "The manager spoke too quietly.",
+          "The room was too bright."
+        ],
+        "correct": 1,
+        "explanation": "Decoding = receiver interprets through their filter. Past experiences (negative policy changes), knowledge gaps (unfamiliar terms), or attitudes ('management always makes things worse') distort interpretation regardless of clear encoding."
+      },
+      {
+        "q": "STEP 5: FEEDBACK LOOP - How does the manager complete the cycle?",
+        "options": [
+          "Assume message was received as sent.",
+          "Actively seek FEEDBACK: 'What questions do you have?' and watch for nonverbal confusion, then CLARIFY based on responses.",
+          "Send a follow-up email repeating the same message.",
+          "Move on to next agenda item."
+        ],
+        "correct": 1,
+        "explanation": "Communication isn't complete without feedback. Asking questions elicits verbal feedback; observing nonverbal provides continuous feedback. Based on feedback, the manager can re-explain, becoming a RECEIVER in the next cycle."
+      }
+    ]
+  },
 
+  // =================================================================
+  // ESSAY 2: ACTIVE LISTENING CYCLE (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "The Active Listening Cycle",
+    "topic": "Unit 1.8: From Hearing to Responding",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: RECEIVING - Your teammate explains a technical problem. What does effective RECEIVING require?",
+        "options": [
+          "Just letting sound enter your ears.",
+          "PHYSICAL: Minimize noise. PSYCHOLOGICAL: Focus attention, filter out distractions.",
+          "Thinking about your solution.",
+          "Checking your watch frequently."
+        ],
+        "correct": 1,
+        "explanation": "Receiving is active, not passive. Physically: reduce external noise. Psychologically: consciously direct attention, suppressing competing thoughts about your reply or other tasks."
+      },
+      {
+        "q": "STEP 2: ATTENDING - How do you show you're ATTENDING, not just present?",
+        "options": [
+          "Nodding, eye contact, leaning slightly forward (nonverbal feedback).",
+          "Interrupting to show you understand.",
+          "Taking detailed notes without looking up.",
+          "Saying 'uh-huh' every few seconds."
+        ],
+        "correct": 0,
+        "explanation": "Attending is demonstrated through NONVERBAL FEEDBACK that encourages the speaker. Nods, eye contact, and posture signal 'I'm with you.' Interrupting or excessive verbal fillers can disrupt flow."
+      },
+      {
+        "q": "STEP 3: INTERPRETING/UNDERSTANDING - They say 'The system keeps crashing under load.' How do you INTERPRET?",
+        "options": [
+          "Take words literally only.",
+          "Decode CONTENT WORDS ('system,' 'crashing,' 'load') + CONTEXT (which system? what load?) + ask: 'What do you mean by load?'",
+          "Assume you know exactly what they mean.",
+          "Immediately suggest a fix."
+        ],
+        "correct": 1,
+        "explanation": "Interpretation requires clarifying meaning. 'Load' could mean user traffic, data volume, or processing demand. Asking clarifying questions ensures your mental model matches theirs before responding."
+      },
+      {
+        "q": "STEP 4: EVALUATING - Before responding, what should you EVALUATE?",
+        "options": [
+          "Whether they're smart enough to solve this.",
+          "The MESSAGE'S validity: Is this a pattern or one-time? What's missing? Your own biases about the system.",
+          "How long this will take to fix.",
+          "Who to blame."
+        ],
+        "correct": 1,
+        "explanation": "Evaluation = critical assessment. Analyze: Is information complete? Consistent with past issues? Separating facts from speaker's frustration. Also evaluate your own biases (e.g., 'This always happens with that team')."
+      },
+      {
+        "q": "STEP 5: RESPONDING - What makes an effective RESPONSE that continues the cycle?",
+        "options": [
+          "'You should restart it.' (solution)",
+          "'So the database server fails when over 100 users connect? [Paraphrase] What error messages appear? [Clarifying question]'",
+          "'That's annoying.' (agreement)",
+          "Silence and a nod."
+        ],
+        "correct": 1,
+        "explanation": "Effective response: 1) PARAPHRASE to confirm understanding, 2) CLARIFYING QUESTION to fill gaps. This response becomes a NEW MESSAGE they receive, keeping the cycle going toward mutual understanding. Solutions come later."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 3: SQ4R READING & NOTE-MAKING PROCESS (6 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "SQ4R Reading Method",
+    "topic": "Unit 1.9: From Skimming to Retention",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: SURVEY - Before reading a chapter on Communication Models, what do you survey?",
+        "options": [
+          "Read every word slowly.",
+          "Scan TITLES, HEADINGS, BOLD TERMS, FIGURES, SUMMARY for 5 minutes to get the 'map.'",
+          "Start at the first paragraph.",
+          "Look only at pictures."
+        ],
+        "correct": 1,
+        "explanation": "Survey = mental framework creation. 5-minute preview reveals structure: main topics (models), sequence (linear → interactive → transactional), key terms (sender, noise, feedback). This activates prior knowledge."
+      },
+      {
+        "q": "STEP 2: QUESTION - Based on headings, what questions should you formulate?",
+        "options": [
+          "No questions, just read.",
+          "Turn headings into QUESTIONS: 'What is Shannon-Weaver's model?' 'How does it differ from Osgood's?'",
+          "Write down random questions.",
+          "Question why you have to read this."
+        ],
+        "correct": 1,
+        "explanation": "Questions create PURPOSE for reading. They transform passive reception into active information hunting. 'How do models differ?' guides you to look for comparison points while reading."
+      },
+      {
+        "q": "STEP 3: READ - How should you READ the first section?",
+        "options": [
+          "Word-by-word, memorizing each sentence.",
+          "Actively, looking for ANSWERS to your questions, highlighting key phrases, noting confusing parts.",
+          "Quickly to finish faster.",
+          "While watching TV."
+        ],
+        "correct": 1,
+        "explanation": "Active reading = hunting for answers. You're not absorbing everything equally, but selectively focusing on information that answers your questions and builds understanding of main concepts."
+      },
+      {
+        "q": "STEP 4: REFLECT/RECORD - After reading about Shannon-Weaver model, what should you do?",
+        "options": [
+          "Close the book and move on.",
+          "PAUSE. Make NOTES in your own words: 'Linear model: Source→Encoder→Channel→Decoder→Destination with Noise interference.'",
+          "Copy the textbook paragraph exactly.",
+          "Think about something else."
+        ],
+        "correct": 1,
+        "explanation": "Reflect/Record is where learning transfers to memory. Paraphrasing forces comprehension check. Notes should be CONCEPTUAL, not verbatim. This is the most critical step for retention."
+      },
+      {
+        "q": "STEP 5: RECITE - How do you RECITE effectively?",
+        "options": [
+          "Reread your notes.",
+          "COVER the text/notes and verbally explain the model to yourself or say answers to your questions aloud.",
+          "Whisper the text to yourself.",
+          "Tell someone else about your day."
+        ],
+        "correct": 1,
+        "explanation": "Reciting = ACTIVE RECALL. Covering notes and explaining aloud tests whether you can retrieve information without cues. This strengthens memory pathways far more than passive rereading."
+      },
+      {
+        "q": "STEP 6: REVIEW - When and how should you REVIEW?",
+        "options": [
+          "Never after finishing.",
+          "Within 24 hours (next day), then weekly: Skim notes, re-answer questions, connect to previous knowledge.",
+          "Only before exams.",
+          "Reread the entire chapter."
+        ],
+        "correct": 1,
+        "explanation": "Review combats forgetting curve. Next-day review solidifies memory; weekly review builds long-term retention. Each review should be quicker as familiarity increases. Connect new models to previous concepts (e.g., 'Noise relates to barriers')."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 4: CORNELL NOTE-TAKING PROCESS (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Cornell Note-Taking System",
+    "topic": "Unit 1.8-1.9: Structured Note-Making",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: SETUP - How do you prepare a Cornell Notes page?",
+        "options": [
+          "Draw a vertical line 2.5 inches from left edge, horizontal line 2 inches from bottom.",
+          "Just use a blank page.",
+          "Divide into four equal boxes.",
+          "Use only the top half."
+        ],
+        "correct": 0,
+        "explanation": "Proper setup: Left column (2.5\") = Cue Column. Right column (6\") = Note-Taking Column. Bottom area (2\") = Summary. This physical structure dictates the cognitive process that follows."
+      },
+      {
+        "q": "STEP 2: NOTE-TAKING (During Lecture) - What goes in the RIGHT column during class?",
+        "options": [
+          "Everything lecturer says verbatim.",
+          "MAIN IDEAS in concise phrases, KEY TERMS, EXAMPLES, DIAGRAMS (paraphrased).",
+          "Your opinions about the lecture.",
+          "Questions for later."
+        ],
+        "correct": 1,
+        "explanation": "Right column = selective capture. Use abbreviations, symbols, short phrases. Focus on concepts, not full sentences. Leave spaces for additions. This requires active listening and real-time processing."
+      },
+      {
+        "q": "STEP 3: CUE CREATION (After Lecture) - Within 24 hours, what goes in LEFT column?",
+        "options": [
+          "Nothing.",
+          "KEY QUESTIONS derived from notes: 'What are the 4 functions?' 'Example of semantic barrier?'",
+          "More detailed notes.",
+          "Page decorations."
+        ],
+        "correct": 1,
+        "explanation": "Cue column = retrieval prompts. Turning notes into questions transforms them into a self-testing tool. When you cover the right column later, the questions prompt active recall, not passive rereading."
+      },
+      {
+        "q": "STEP 4: SUMMARIZING - What belongs in the BOTTOM section?",
+        "options": [
+          "Copy the first sentence from notes.",
+          "2-3 sentence synthesis IN YOUR OWN WORDS of the page's core message.",
+          "More questions.",
+          "Date and title only."
+        ],
+        "correct": 1,
+        "explanation": "Summary = forced synthesis. Distilling a full page into 2-3 original sentences requires identifying the ESSENCE. This is where you articulate the 'big picture' in your own mental framework."
+      },
+      {
+        "q": "STEP 5: ACTIVE REVIEW - How do you use completed notes for studying?",
+        "options": [
+          "Read them over and over.",
+          "COVER right column, use left column questions to RECITE answers aloud, check accuracy, repeat.",
+          "Memorize verbatim.",
+          "Rewrite them completely."
+        ],
+        "correct": 1,
+        "explanation": "Cornell Notes are a SELF-TESTING SYSTEM. Covering notes and reciting from memory (active recall) is scientifically proven for retention. The cue questions provide the retrieval practice structure."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 5: COMMUNICATION MODEL APPLICATION (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Applying Communication Models",
+    "topic": "Unit 1.3: Model Selection & Analysis",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: SITUATION ANALYSIS - You're analyzing a radio public health announcement. Which model fits BEST initially?",
+        "options": [
+          "Aristotle's Model (persuasion focus).",
+          "Lasswell's Model (Who→What→Channel→Whom→Effect) for initial deconstruction.",
+          "Osgood's Model (interactive).",
+          "Transactional Model (simultaneous)."
+        ],
+        "correct": 1,
+        "explanation": "Lasswell provides the simplest analytical framework for one-way mass communication. It breaks down: Sender (Ministry of Health), Message (health info), Channel (radio), Receiver (public), Effect (behavior change). Good starting point."
+      },
+      {
+        "q": "STEP 2: ADDING COMPLEXITY - The announcement includes a phone-in Q&A segment. Which model now becomes relevant?",
+        "options": [
+          "Stick with Lasswell.",
+          "Switch to Osgood's Model showing ENCODER→DECODER→INTERPRETER loops with feedback.",
+          "Use only Shannon-Weaver.",
+          "Ignore the Q&A segment."
+        ],
+        "correct": 1,
+        "explanation": "Q&A introduces INTERACTIVITY and FEEDBACK. Osgood's model shows the dynamic: Listener calls (encodes question) → Host receives (decodes) → Responds (encodes answer). This captures the two-way nature."
+      },
+      {
+        "q": "STEP 3: NOISE IDENTIFICATION - Using Shannon-Weaver, what could be NOISE in this scenario?",
+        "options": [
+          "Only static on radio.",
+          "Multiple types: PHYSICAL (poor signal), SEMANTIC (medical jargon), PSYCHOLOGICAL (listener's distrust of government).",
+          "The announcer's voice.",
+          "The time of day."
+        ],
+        "correct": 1,
+        "explanation": "Noise = ANY distortion. Physical (technical), Semantic (language), Psychological (attitudes), Physiological (hearing impairment). Shannon-Weaver's strength is highlighting noise at ANY point in transmission."
+      },
+      {
+        "q": "STEP 4: FIELD OF EXPERIENCE - How does Schramm's model explain why some listeners misunderstand?",
+        "options": [
+          "They weren't paying attention.",
+          "Their FIELD OF EXPERIENCE (education, health literacy, culture) doesn't overlap enough with the encoder's field, causing decoding failure.",
+          "The message was too short.",
+          "They don't own a radio."
+        ],
+        "correct": 1,
+        "explanation": "Schramm's overlapping circles: If sender's experience (medical background, formal language) and receiver's experience (limited education, cultural health beliefs) don't overlap sufficiently, the encoded message won't decode correctly."
+      },
+      {
+        "q": "STEP 5: MODEL SYNTHESIS - What's the key insight from comparing models?",
+        "options": [
+          "One model is best.",
+          "Models are TOOLS: Use simple linear models for one-way analysis, interactive for feedback situations, transactional for relationship-focused communication.",
+          "Models are outdated.",
+          "Ignore models in real analysis."
+        ],
+        "correct": 1,
+        "explanation": "Models are analytical lenses, not absolute truths. Choose based on situation: Lasswell/Shannon-Weaver for mass media, Osgood for conversations, Transactional for ongoing relationships. Each highlights different aspects."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 6: BARRIER DIAGNOSIS & SOLUTION (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Diagnosing Communication Barriers",
+    "topic": "Unit 1.5: Identification & Intervention",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: SYMPTOM RECOGNITION - Team meetings end with confusion about tasks. What's the pattern?",
+        "options": [
+          "People are lazy.",
+          "RECURRING OUTCOME: Discussion seems clear in meeting, but later interpretations diverge.",
+          "Too many meetings.",
+          "Poor time management."
+        ],
+        "correct": 1,
+        "explanation": "Identify PATTERNS, not single instances. Recurring divergence between intended and understood messages suggests a SYSTEMATIC barrier, not random misunderstanding. This guides investigation."
+      },
+      {
+        "q": "STEP 2: BARRIER CATEGORIZATION - You notice engineers use acronyms marketers don't know. This is primarily...",
+        "options": [
+          "Physical barrier.",
+          "SEMANTIC/LINGUISTIC barrier (different professional codes).",
+          "Psychological barrier (attitudes).",
+          "Organizational barrier (structure)."
+        ],
+        "correct": 1,
+        "explanation": "Semantic barrier = words/symbols have different meanings. Jargon creates in-group/out-group division. Marketers decode 'KPI' as sales metric, engineers as system performance indicator. Same acronym, different meanings."
+      },
+      {
+        "q": "STEP 3: ROOT CAUSE ANALYSIS - Why does this barrier persist?",
+        "options": [
+          "Engineers are arrogant.",
+          "Lack of SHARED CONTEXT/EXPERIENCE (Schramm) + no mechanism for code translation.",
+          "Poor meeting rooms.",
+          "Inadequate technology."
+        ],
+        "correct": 1,
+        "explanation": "Root cause = insufficient overlap in professional 'fields of experience' plus no systematic process for bridging the gap. Each group operates in separate linguistic ecosystems without a translator."
+      },
+      {
+        "q": "STEP 4: TARGETED INTERVENTION - What SPECIFIC solution addresses this?",
+        "options": [
+          "'Communicate better' training.",
+          "Create a SHARED GLOSSARY: Technical terms with plain-language definitions for cross-team use.",
+          "More meetings.",
+          "Use only visual communication."
+        ],
+        "correct": 1,
+        "explanation": "Targeted intervention: A collaboratively created glossary expands the OVERLAPPING AREA in Schramm's model. It provides a shared codebook, reducing semantic noise. Must be created WITH both groups, not FOR them."
+      },
+      {
+        "q": "STEP 5: EVALUATION & ADJUSTMENT - How do you know it worked?",
+        "options": [
+          "Assume after implementation.",
+          "Measure: Reduction in clarification emails + test comprehension with sample scenarios + survey perceived clarity.",
+          "Ask the team leader.",
+          "Check if meetings are shorter."
+        ],
+        "correct": 1,
+        "explanation": "Evaluation needs MULTIPLE MEASURES: Objective (fewer clarification requests), Testing (comprehension checks), Subjective (team surveys). If barriers persist, return to Step 3—maybe psychological barriers (attitudes) also exist."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 7: NONVERBAL COMMUNICATION ANALYSIS (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Analyzing Nonverbal Communication",
+    "topic": "Unit 1.6: Categories & Functions",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: OBSERVE CLUSTERS - A presenter says 'I'm open to questions' while crossing arms, avoiding eye contact. What should you note?",
+        "options": [
+          "Just the words.",
+          "The CLUSTER: Crossed arms (kinesics) + no eye contact (oculesics) + verbal message.",
+          "Only their clothing.",
+          "The room temperature."
+        ],
+        "correct": 1,
+        "explanation": "Never interpret single cues. CLUSTERS reveal true meaning. Crossed arms + no eye contact = defensive/closed cluster, contradicting verbal openness. Clusters are more reliable than individual gestures."
+      },
+      {
+        "q": "STEP 2: IDENTIFY FUNCTIONS - What function does this cluster serve?",
+        "options": [
+          "Complementing (reinforcing).",
+          "CONTRADICTING: Nonverbal contradicts verbal, suggesting discomfort or insincerity.",
+          "Substituting (replacing words).",
+          "Regulating (controlling flow)."
+        ],
+        "correct": 1,
+        "explanation": "Contradiction function = nonverbal leaks true feelings. The body says 'closed/protective' while words say 'open.' Listeners typically trust nonverbal over verbal when they contradict (nonverbal is harder to fake)."
+      },
+      {
+        "q": "STEP 3: CONSERVE CONTEXT - The presenter is in a cold room. How does this change interpretation?",
+        "options": [
+          "Doesn't change—crossed arms always mean defensive.",
+          "CONTEXT MATTERS: Could be warmth-seeking, not defensiveness. Check baseline (do they uncross when discussing comfortable topics?).",
+          "They're always defensive.",
+          "Ignore context."
+        ],
+        "correct": 1,
+        "explanation": "Context is CRITICAL. Crossed arms in cold room may be physiological. Establish BASELINE: How do they normally stand? Do gestures change with topic? Context separates cultural/physiological from psychological meanings."
+      },
+      {
+        "q": "STEP 4: CULTURAL FILTER - The presenter is from a culture with different eye contact norms. How to adjust analysis?",
+        "options": [
+          "Eye contact means the same everywhere.",
+          "Apply CULTURAL RELATIVITY: In some cultures, direct eye contact with authority is disrespectful. Avoid ethnocentric interpretation.",
+          "They're being deceptive.",
+          "Ignore cultural differences."
+        ],
+        "correct": 1,
+        "explanation": "Nonverbal norms vary culturally. In Zambia, eye contact patterns may differ by region, age, status. What seems 'avoidant' in one culture may be 'respectful' in another. Always consider cultural frame."
+      },
+      {
+        "q": "STEP 5: INTEGRATED READING - What's the accurate overall interpretation?",
+        "options": [
+          "Definitely insincere.",
+          "LIKELY discomfort (cold or anxiety) rather than insincerity, given context. Need more data (vocalics, topic changes).",
+          "Completely open and honest.",
+          "Impossible to tell."
+        ],
+        "correct": 1,
+        "explanation": "Nonverbal analysis is PROBABILISTIC, not certain. Given cold room, crossed arms may be warmth. Combined with no eye contact (could be cultural or nervousness), most likely interpretation is DISCOMFORT/ANXIETY, not necessarily deception."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 8: COMMUNICATION FUNCTIONS IN PRACTICE (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Communication Functions at Work",
+    "topic": "Unit 1.1: Control, Motivation, Expression, Information",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: FUNCTION IDENTIFICATION - A supervisor says 'Reports due Friday 5 PM.' What's the PRIMARY function?",
+        "options": [
+          "Motivation (inspiring).",
+          "CONTROL: Directing behavior, setting deadlines.",
+          "Emotional Expression.",
+          "Information only."
+        ],
+        "correct": 1,
+        "explanation": "Control function = regulating behavior. Deadlines, rules, procedures are control communications. They structure action and maintain order. Even politely stated, the underlying function is behavioral regulation."
+      },
+      {
+        "q": "STEP 2: LAYERED FUNCTIONS - The supervisor adds 'Your thorough reports really helped the client last quarter.' Now what's added?",
+        "options": [
+          "Only control.",
+          "MOTIVATION function layered on: Recognition reinforces desired behavior.",
+          "Just small talk.",
+          "Emotional expression of happiness."
+        ],
+        "correct": 1,
+        "explanation": "Multiple functions often operate simultaneously. The recognition statement serves MOTIVATION (encouraging continued quality) while still within a control context (deadline reminder). Effective managers layer functions."
+      },
+      {
+        "q": "STEP 3: EMOTIONAL EXPRESSION - A team member says frustratedly 'I'm stuck on this data.' What function?",
+        "options": [
+          "Information only.",
+          "EMOTIONAL EXPRESSION: Venting frustration, seeking support.",
+          "Control (complaining).",
+          "Motivation (self-motivation)."
+        ],
+        "correct": 1,
+        "explanation": "Emotional Expression = conveying feelings. This isn't just factual ('I'm stuck'); the frustration tone signals emotional state. It may also be a bid for empathy or help, serving relational purposes."
+      },
+      {
+        "q": "STEP 4: INFORMATION FUNCTION - You explain a new software feature step-by-step. What makes this effective INFORMATION sharing?",
+        "options": [
+          "Using technical specs only.",
+          "Structured sequence, clear steps, relevant to user tasks (not just features).",
+          "Reading from manual.",
+          "Assuming they know basics."
+        ],
+        "correct": 1,
+        "explanation": "Effective information transmission requires: 1) Logical structure, 2) Appropriate detail level, 3) Relevance to receiver's needs, 4) Check for understanding. Information is not just data dump but shaped for use."
+      },
+      {
+        "q": "STEP 5: STRATEGIC MIX - In a performance review, how should functions be balanced?",
+        "options": [
+          "Only control (correct faults).",
+          "BALANCE: Information (factual feedback) + Motivation (strengths) + Emotional Expression (empathy) + Control (goals).",
+          "Only motivation (praise).",
+          "Avoid emotional expression."
+        ],
+        "correct": 1,
+        "explanation": "Strategic communication balances functions. Reviews need: Facts (information), Encouragement (motivation), Empathy for challenges (emotional expression), and Clear expectations (control). Skewing too much toward control creates defensiveness."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 9: FROM INTRAPERSONAL TO MASS COMMUNICATION (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "Communication Levels & Channels",
+    "topic": "Unit 1.7: Forms, Types, and Media",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: INTRAPERSONAL - You're debating whether to speak up in a meeting. What's happening?",
+        "options": [
+          "No communication.",
+          "INTRAPERSONAL COMMUNICATION: Self-dialogue, weighing pros/cons internally.",
+          "Interpersonal communication.",
+          "Group communication."
+        ],
+        "correct": 1,
+        "explanation": "Intrapersonal = communication with self. This includes thinking, planning, self-talk, decision-making. It's the foundation—all external communication begins as internal processing."
+      },
+      {
+        "q": "STEP 2: INTERPERSONAL - You whisper to a colleague 'Should I say something?' What changes?",
+        "options": [
+          "Still intrapersonal.",
+          "INTERPERSONAL: Two people, direct feedback, relationship dynamics, richer cues.",
+          "Public communication.",
+          "Mass communication."
+        ],
+        "correct": 1,
+        "explanation": "Interpersonal = between 2-3 people. Characteristics: Immediate feedback, multiple channels (verbal + nonverbal), relationship history matters. More personal, less formal than group/public."
+      },
+      {
+        "q": "STEP 3: GROUP - You address the whole meeting table. What's different now?",
+        "options": [
+          "Same as interpersonal.",
+          "GROUP COMMUNICATION: Multiple senders/receivers, roles emerge, more formal, feedback delayed/distributed.",
+          "Mass communication.",
+          "No feedback possible."
+        ],
+        "correct": 1,
+        "explanation": "Group (3+ people) introduces: Role differentiation (leader, participants), more structured turn-taking, potential for subgroups, reduced nonverbal cues from some members, distributed attention."
+      },
+      {
+        "q": "STEP 4: PUBLIC - You present to the entire department (50 people). Key shift?",
+        "options": [
+          "Same as group.",
+          "PUBLIC: Clear sender-receiver distinction, formal structure, limited feedback (Q&A at end), preparation needed.",
+          "Mass communication.",
+          "No difference."
+        ],
+        "correct": 1,
+        "explanation": "Public = one-to-many with clear role separation. Highly structured, planned messages, formal language, limited/channeled feedback (designated Q&A). Nonverbal cues from audience are limited to general responses."
+      },
+      {
+        "q": "STEP 5: MASS - Your company newsletter reaches 1000 employees. Final shift?",
+        "options": [
+          "Same as public speaking.",
+          "MASS: Mediated channel, impersonal, delayed/no feedback, standardized message, professional production.",
+          "Interpersonal on large scale.",
+          "Just bigger group."
+        ],
+        "correct": 1,
+        "explanation": "Mass = mediated, one-to-millions. Characteristics: Professional production, standardized message, heterogeneous audience, delayed/indirect feedback (ratings, comments), gatekeepers (editors), agenda-setting power."
+      }
+    ]
+  },
+
+  // =================================================================
+  // ESSAY 10: THE COMPLETE LEARNING CYCLE (5 Steps)
+  // =================================================================
+  {
+    "course": "LA111",
+    "term": "T1",
+    "title": "The Complete Learning Cycle",
+    "topic": "Integrating Listening, Reading, Note-Taking",
+    "year": "2025",
+    "steps": [
+      {
+        "q": "STEP 1: PREPARATORY LISTENING - Before class, you quickly read the headings. This improves listening by...",
+        "options": [
+          "Wasting time.",
+          "Activating PRIOR KNOWLEDGE and creating MENTAL SCHEMA to attach new information to.",
+          "Memorizing content.",
+          "Avoiding surprise."
+        ],
+        "correct": 1,
+        "explanation": "Previewing creates cognitive 'hooks' or schema. When lecturer mentions 'Shannon-Weaver model,' your brain has a placeholder ready, improving encoding during listening. This is PRE-listening preparation."
+      },
+      {
+        "q": "STEP 2: ACTIVE LISTENING PROCESS - During lecture, you're using the listening cycle. What's happening at each moment?",
+        "options": [
+          "Just hearing.",
+          "Continuous loop: RECEIVE sound → ATTEND to key points → INTERPRET through your schema → EVALUATE importance → Decide what to NOTE.",
+          "Writing everything down.",
+          "Daydreaming sometimes."
+        ],
+        "correct": 1,
+        "explanation": "Listening is real-time processing. Your brain continuously: filters sound, matches to schema, evaluates relevance, decides to record. Effective notes capture the evaluated important points, not all sounds."
+      },
+      {
+        "q": "STEP 3: NOTE-MAKING DECISIONS - How do you decide WHAT to write in Cornell Notes?",
+        "options": [
+          "Everything lecturer says.",
+          "FILTER: Main ideas new to you, explanations of difficult concepts, examples that clarify, connections to other topics.",
+          "Only definitions.",
+          "Whatever is on the slide."
+        ],
+        "correct": 1,
+        "explanation": "Strategic filtering: New information > repetition; explanations > facts; examples > abstract concepts; connections > isolated points. Your notes should represent your learning gaps and understanding, not a transcript."
+      },
+      {
+        "q": "STEP 4: POST-CLASS PROCESSING - Within 24 hours, you review notes and create questions. Why this timing?",
+        "options": [
+          "Whenever you have time.",
+          "Within FORGETTING CURVE window (24 hours) to reinforce memory before decay, and while mental context is still fresh.",
+          "Only before exams.",
+          "Never review."
+        ],
+        "correct": 1,
+        "explanation": "Memory decays fastest immediately after learning. Review within 24 hours dramatically slows forgetting. Also, the lecture context (examples, tone) is still mentally accessible, aiding question creation."
+      },
+      {
+        "q": "STEP 5: INTEGRATED REVIEW CYCLE - How should weekly review connect listening, reading, and notes?",
+        "options": [
+          "Separate activities.",
+          "INTEGRATE: Use notes questions for recall, compare with textbook readings, identify gaps, update notes with new connections.",
+          "Just reread notes.",
+          "Listen to recordings again."
+        ],
+        "correct": 1,
+        "explanation": "Integrated review creates DEEP LEARNING. Use note questions to test recall, then compare with textbook for different perspectives, identify contradictions or gaps, annotate notes with new insights. This builds interconnected knowledge."
+      }
+    ]
+  },
 
 
 ];
