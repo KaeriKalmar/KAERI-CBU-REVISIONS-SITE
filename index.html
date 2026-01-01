@@ -8,203 +8,212 @@
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- CSS STYLES (Version B - Enhanced) -->
+  <!-- CSS STYLES (Base B + Version A Hybrid) -->
   <style>
-/* --- GLOBAL SETTINGS --- */
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #0d1b2a;
-  margin: 0;
-  color: #e0e6ed;
-  line-height: 1.6;
-  overflow-y: auto;
-  transition: padding-top 0.3s ease, opacity 0.3s ease;
+/* --- GLOBAL SETTINGS (Base B) --- */
+body { 
+  font-family: 'Roboto', sans-serif; 
+  background: #0d1b2a; 
+  margin: 0; 
+  color: #e0e6ed; 
+  line-height: 1.6; 
+  overflow-y: auto; 
+  transition: padding-top 0.3s ease, opacity 0.3s ease; 
   padding-top: 50px; 
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 30px; 
 }
-
 body.view-course { padding-top: 130px; }
-
-h1, h2, h3 {
-  color: #72efdd;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
+h1, h2, h3 { color: #72efdd; text-align: center; margin-bottom: 25px; }
 p { margin-bottom: 15px; }
 button { cursor: pointer; }
 
-/* --- CONTAINERS --- */
-.quiz-container {
-  max-width: 960px;
-  margin: auto;
-  background: #1b263b;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+/* --- CONTAINERS (Base B) --- */
+.quiz-container { 
+  max-width: 960px; 
+  margin: auto; 
+  background: #1b263b; 
+  padding: 40px 30px; 
+  border-radius: 16px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
-/* --- LANDING PAGE STYLES --- */
-.course-section {
-  margin-bottom: 40px;
-  border: 1px solid #007bff;
-  border-radius: 10px;
-  padding: 20px;
+/* --- LANDING PAGE (Base B) --- */
+.course-section { 
+  margin-bottom: 40px; 
+  border: 1px solid #007bff; 
+  border-radius: 10px; 
+  padding: 20px; 
+}
+.course-button { 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 15px 25px; 
+  font-size: 1.2em; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  width: 100%; 
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); 
+  transition: all 0.3s ease; 
+}
+.course-button:hover { 
+  background-color: #0056b3; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); 
+}
+.course-button.active { 
+  background-color: #28a745; 
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3); 
+}
+.term-buttons { 
+  display: none; 
+  flex-direction: column; 
+  gap: 10px; 
+  margin-top: 15px; 
+}
+.term-buttons button { 
+  background-color: #6c757d; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  font-size: 1em; 
+  border-radius: 6px; 
+  transition: all 0.3s ease; 
+}
+.term-buttons button:hover { 
+  background-color: #5a6268; 
+  transform: translateY(-2px); 
 }
 
-/* ALL COURSE BUTTONS ARE BLUE - BRAND CONSISTENCY */
-.course-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  font-size: 1.2em;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
-  transition: all 0.3s ease;
-}
-
-.course-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
-}
-
-.course-button.active {
-  background-color: #28a745;
-  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
-}
-
-.term-buttons {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.term-buttons button {
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.term-buttons button:hover {
-  background-color: #5a6268;
-  transform: translateY(-2px);
-}
-
-/* --- COURSE PAGE FIXED ELEMENTS --- */
+/* --- HEADER (Version A Grid + Base B Banner) --- */
 #fixed-header, #price-banner { display: none; }
-
-#fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #1b263b;
-  z-index: 1001;
-  padding: 10px 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  box-sizing: border-box;
+#fixed-header { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background: #1b263b; 
+  z-index: 1001; 
+  padding: 10px 20px; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
+  box-sizing: border-box; 
 }
 
-#price-banner {
-  position: fixed;
-  top: 70px;
-  right: 20px;
-  background: #007bff;
-  color: white;
-  padding: 10px 16px;
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 8px;
-  z-index: 1000;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+/* Header Grid (Version A) */
+.header-grid { 
+  display: grid; 
+  grid-template-columns: 1fr auto; 
+  gap: 15px; 
+  align-items: center; 
 }
 
-/* --- QUIZ INTERFACE --- */
-.mode-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  margin-bottom: 30px;
+/* GOLD UNLOCK BUTTON (Version A) */
+#unlock-btn { 
+  background: linear-gradient(45deg, #ffc107, #ff9800); 
+  color: #333; 
+  border: none; 
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  font-weight: bold; 
+  font-size: 0.9em; 
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3); 
+  animation: pulse 2s infinite; 
+  text-transform: uppercase; 
+  margin-top: 0; 
+  display: none; 
+}
+#unlock-btn:hover { transform: scale(1.05); }
+@keyframes pulse { 
+  0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); } 
+  70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); } 
+  100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); } 
 }
 
-.mode-buttons button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 15px 20px;
-  font-size: 1.1em;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+#price-banner { 
+  position: fixed; 
+  top: 70px; 
+  right: 20px; 
+  background: #007bff; 
+  color: white; 
+  padding: 10px 16px; 
+  font-weight: 700; 
+  font-size: 1rem; 
+  border-radius: 8px; 
+  z-index: 1000; 
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3); 
+}
+
+/* --- QUIZ INTERFACE (Base B) --- */
+.mode-buttons { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 15px; 
+  margin-bottom: 30px; 
+}
+.mode-buttons button { 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 15px 20px; 
+  font-size: 1.1em; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 .mode-buttons button:hover { 
   background-color: #0056b3; 
   transform: translateY(-3px); 
 }
-
-/* TTS Button Specific Style */
 #tts-toggle-button { background-color: #6610f2; }
 #tts-toggle-button:hover { background-color: #520dc2; }
 
-#quiz-form {
-  background-color: #0d1b2a;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+#quiz-form { 
+  background-color: #0d1b2a; 
+  padding: 25px; 
+  border-radius: 12px; 
+  margin-bottom: 25px; 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
 }
-
-.question-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
+.question-header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 15px; 
+  flex-wrap: wrap; 
 }
-
 .question-header h3 { 
   margin: 0; 
   flex-basis: 100%; 
   margin-bottom: 10px; 
-  text-align: left;
+  text-align: left; 
 }
-.question-header span {
-  background-color: #007bff;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.8em;
-  margin-left: 10px;
-  margin-bottom: 5px;
+.question-header span { 
+  background-color: #007bff; 
+  color: white; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  font-size: 0.8em; 
+  margin-left: 10px; 
+  margin-bottom: 5px; 
 }
 .question-header span:first-of-type { margin-left: 0; }
-
-.question-text, .question-box p {
-  font-size: 1.15em;
-  margin-bottom: 20px;
-  color: #cdd6e0;
+.question-text, .question-box p { 
+  font-size: 1.15em; 
+  margin-bottom: 20px; 
+  color: #cdd6e0; 
 }
 
-.options label {
-  display: block;
-  background-color: #2b3a55;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1em;
+.options label { 
+  display: block; 
+  background-color: #2b3a55; 
+  padding: 12px; 
+  margin-bottom: 10px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  font-size: 1em; 
 }
 .options label:hover { 
   background-color: #3e506e; 
@@ -215,18 +224,17 @@ button { cursor: pointer; }
   transform: scale(1.2); 
 }
 
-/* --- INPUTS & BUTTONS --- */
-textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #3e506e;
-  border-radius: 8px;
-  background-color: #0d1b2a;
-  color: #e0e6ed;
-  font-size: 1em;
-  resize: vertical;
-  min-height: 100px;
+textarea { 
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  margin-top: 10px; 
+  border: 1px solid #3e506e; 
+  border-radius: 8px; 
+  background-color: #0d1b2a; 
+  color: #e0e6ed; 
+  font-size: 1em; 
+  resize: vertical; 
+  min-height: 100px; 
 }
 textarea:focus { 
   outline: none; 
@@ -234,17 +242,16 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-/* GENERAL BUTTON STYLES */
-button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1em;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+button { 
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  padding: 12px 25px; 
+  font-size: 1em; 
+  border-radius: 8px; 
+  margin-top: 20px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 button:hover { 
   background-color: #218838; 
@@ -253,140 +260,137 @@ button:hover {
 button:disabled { 
   background-color: #6c757d; 
   cursor: not-allowed; 
-  transform: none;
-  box-shadow: none;
+  transform: none; 
+  box-shadow: none; 
 }
 
-/* DYNAMICALLY CREATED BUTTONS */
-#result button, 
-.question-box button,
-.explanation-box + button,
-#quiz-form button:last-child {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1em;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  display: inline-block;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+#result button, .question-box button, .explanation-box + button, #quiz-form button:last-child { 
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  padding: 12px 25px; 
+  font-size: 1em; 
+  border-radius: 8px; 
+  margin-top: 20px; 
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+  display: inline-block; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
-#result button:hover, 
-.question-box button:hover,
-.explanation-box + button:hover {
-  background-color: #218838;
-  transform: translateY(-2px);
+#result button:hover, .question-box button:hover, .explanation-box + button:hover { 
+  background-color: #218838; 
+  transform: translateY(-2px); 
 }
-/* Finish Quiz button specific */
-#quiz-form button:last-child {
-  background-color: #ffc107;
-  color: #333;
-}
-#quiz-form button:last-child:hover {
-  background-color: #e0a800;
-}
+#quiz-form button:last-child { background-color: #ffc107; color: #333; }
+#quiz-form button:last-child:hover { background-color: #e0a800; }
 
-.submit-btn, .whatsapp-buttons button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1em;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: all 0.3s ease;
+.submit-btn, .whatsapp-buttons button { 
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  padding: 12px 25px; 
+  font-size: 1em; 
+  border-radius: 8px; 
+  margin-top: 20px; 
+  transition: all 0.3s ease; 
 }
 .submit-btn:hover, .whatsapp-buttons button:hover { 
   background-color: #218838; 
   transform: translateY(-2px); 
 }
 
-.back-button {
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 8px;
-  margin-top: 20px;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.back-button { 
+  background-color: #6c757d; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  display: inline-block; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 .back-button:hover { 
   background-color: #5a6268; 
   transform: translateY(-2px); 
 }
 
-/* --- FEEDBACK & RESULTS --- */
-.feedback, .explanation-box {
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #0d1b2a;
-  border: 1px solid #3e506e;
+/* Challenge Button (Version A) */
+.challenge-button { 
+  background-color: #6610f2 !important; 
+  color: white !important; 
+  margin-left: 10px; 
+}
+.challenge-button:hover { 
+  background-color: #520dc2 !important; 
+  transform: translateY(-2px); 
+}
+
+/* --- FEEDBACK (Base B) --- */
+.feedback, .explanation-box { 
+  margin-top: 20px; 
+  padding: 15px; 
+  border-radius: 8px; 
+  background-color: #0d1b2a; 
+  border: 1px solid #3e506e; 
 }
 .feedback p { margin: 0 0 10px 0; font-weight: bold; }
 .explanation-box { color: #a0a8b4; font-style: italic; }
-
-#result {
-  margin-top: 20px;
-  padding: 25px;
-  background-color: #0d1b2a;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+#result { 
+  margin-top: 20px; 
+  padding: 25px; 
+  background-color: #0d1b2a; 
+  border-radius: 12px; 
+  text-align: center; 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 #result h2 { margin-bottom: 15px; }
 #result p { font-size: 1.2em; margin-bottom: 20px; }
 
-.restart-button, .reset-button {
-  background-color: #ffc107;
-  color: #333;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.restart-button, .reset-button { 
+  background-color: #ffc107 !important; 
+  color: #333 !important; 
+  border: none; 
+  padding: 12px 25px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 .restart-button:hover, .reset-button:hover { 
-  background-color: #e0a800; 
-  transform: translateY(-2px);
+  background-color: #e0a800 !important; 
+  transform: translateY(-2px); 
 }
 
-/* --- PROGRESS & BANNERS --- */
-#mode-banner {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 10px 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1em;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+/* --- PROGRESS (Base B) --- */
+#mode-banner { 
+  background-color: #2c3e50; 
+  color: #fff; 
+  padding: 10px 15px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 1.1em; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 .demo-mode-banner { border: 2px solid #ffc107; color: #ffc107 !important; }
 .full-access-banner { border: 2px solid #28a745; color: #28a745 !important; }
-
-#progress-container {
-  width: 100%;
-  background-color: #3e506e;
-  border-radius: 5px;
-  margin-top: 10px;
-  height: 20px;
-  overflow: hidden;
+#progress-container { 
+  width: 100%; 
+  background-color: #3e506e; 
+  border-radius: 5px; 
+  margin-top: 10px; 
+  height: 20px; 
+  overflow: hidden; 
 }
-#progress-fill {
-  height: 100%;
-  width: 0%;
-  background-color: #28a745;
-  border-radius: 5px;
-  transition: width 0.4s ease-in-out;
+#progress-fill { 
+  height: 100%; 
+  width: 0%; 
+  background-color: #28a745; 
+  border-radius: 5px; 
+  transition: width 0.4s ease-in-out; 
 }
 #progress-text { 
   text-align: center; 
@@ -395,7 +399,7 @@ button:disabled {
   color: #a0a8b4; 
 }
 
-/* --- FLASHCARDS & ESSAY GRID (Version B Feature) --- */
+/* --- FLASHCARDS (Base B) --- */
 .flashcard-nav-header { 
   display: flex; 
   justify-content: space-between; 
@@ -415,11 +419,11 @@ button:disabled {
   background-color: #007bff; 
   color: white; 
   border: none; 
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 12px 20px; 
+  font-size: 1em; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 .flashcard-nav-buttons button:hover { 
   background-color: #0056b3; 
@@ -427,183 +431,161 @@ button:disabled {
 }
 .flashcard-nav-buttons button:disabled { 
   background-color: #4a5460; 
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
+  cursor: not-allowed; 
+  transform: none; 
+  box-shadow: none; 
 }
-
-.flashcard-wrapper {
-    perspective: 1000px;
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    margin: 30px auto;
-    overflow: hidden;
+.flashcard-wrapper { 
+  perspective: 1000px; 
+  width: 100%; 
+  max-width: 500px; 
+  height: 300px; 
+  margin: 30px auto; 
+  overflow: hidden; 
 }
-.flashcard {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease-in-out;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+.flashcard { 
+  width: 100%; 
+  height: 100%; 
+  position: relative; 
+  transform-style: preserve-3d; 
+  transition: transform 0.6s ease-in-out; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  cursor: pointer; 
 }
 .flashcard.back-active { transform: rotateY(180deg); }
-
-.card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    font-size: 1.3em;
-    text-align: center;
-    overflow-y: auto;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    transition: opacity 0.4s ease-in-out;
+.card-face { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  backface-visibility: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  border-radius: 12px; 
+  font-size: 1.3em; 
+  text-align: center; 
+  overflow-y: auto; 
+  word-break: break-word; 
+  overflow-wrap: break-word; 
+  transition: opacity 0.4s ease-in-out; 
 }
 .card-front { background-color: #2b3a55; color: #e0e6ed; }
-.card-back { background-color: #4a5460; color: #e0e6ed; transform: rotateY(180deg); opacity: 0; }
+.card-back { 
+  background-color: #4a5460; 
+  color: #e0e6ed; 
+  transform: rotateY(180deg); 
+  opacity: 0; 
+}
 .flashcard.back-active .card-front { opacity: 0; }
 .flashcard.back-active .card-back { opacity: 1; }
-
-.flip-button {
-    background-color: #ffc107;
-    color: #333;
-    margin-top: 15px;
+.flip-button { background-color: #ffc107; color: #333; margin-top: 15px; }
+.flip-button:hover { background-color: #e0a800; }
+.back-to-topics-button { 
+  background-color: #6c757d; 
+  margin-top: 15px; 
+  margin-left: 10px; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  font-size: 1em; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
-.flip-button:hover {
-    background-color: #e0a800;
+.back-to-topics-button:hover { 
+  background-color: #5a6268; 
+  transform: translateY(-2px); 
 }
-
-.back-to-topics-button {
-    background-color: #6c757d;
-    margin-top: 15px;
-    margin-left: 10px;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1em;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.flashcard-topic-list h2 { text-align: center; margin-bottom: 25px; }
+.flashcard-topic-buttons { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 15px; 
+  margin-bottom: 30px; 
 }
-.back-to-topics-button:hover {
-    background-color: #5a6268;
-    transform: translateY(-2px);
-}
-
-/* GREEN TOPIC BUTTONS (Grid) */
-.flashcard-topic-list h2 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-.flashcard-topic-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 30px;
-}
-.flashcard-topic-buttons button {
-    background-color: #28a745; /* GREEN */
-    color: white;
-    padding: 15px 20px;
-    font-size: 1.1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border: none;
-    transition: all 0.3s ease;
-    margin-top: 0; 
+.flashcard-topic-buttons button { 
+  background-color: #28a745; 
+  color: white; 
+  padding: 15px 20px; 
+  font-size: 1.1em; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  border: none; 
+  transition: all 0.3s ease; 
+  margin-top: 0; 
 }
 .flashcard-topic-buttons button:hover { 
-    background-color: #218838; 
-    transform: translateY(-3px); 
+  background-color: #218838; 
+  transform: translateY(-3px); 
 }
 
-/* --- NOTIFICATIONS & EXTRA UI --- */
-.announcement, .price-list {
-    background-color: #0d1b2a;
-    border: 1px solid #007bff;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 25px;
-    font-size: 0.95em;
-    line-height: 1.5;
-    text-align: left;
+/* --- NOTIFICATIONS (Base B) --- */
+.announcement, .price-list { 
+  background-color: #0d1b2a; 
+  border: 1px solid #007bff; 
+  border-radius: 10px; 
+  padding: 15px; 
+  margin-bottom: 25px; 
+  font-size: 0.95em; 
+  line-height: 1.5; 
+  text-align: left; 
 }
 .announcement strong, .price-list strong { color: #72efdd; }
-.announcement a, .price-list a { 
-  color: #007bff; 
+.announcement a, .price-list a { color: #007bff; text-decoration: none; }
+.announcement a:hover, .price-list a:hover { text-decoration: underline; }
+.landing-whatsapp-button { 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #25D366; 
+  color: white; 
+  border-radius: 50%; 
+  width: 60px; 
+  height: 60px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 2em; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   text-decoration: none; 
-}
-.announcement a:hover, .price-list a:hover { 
-  text-decoration: underline; 
-}
-
-.landing-whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 2000;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  z-index: 2000; 
 }
 .landing-whatsapp-button:hover { 
   background-color: #1DA851; 
   transform: scale(1.05); 
 }
-
-.whatsapp-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.whatsapp-buttons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
 }
-
-/* Notification */
-#app-notification {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  z-index: 3000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 90%;
-  text-align: center;
+#app-notification { 
+  position: fixed; 
+  top: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #333; 
+  color: white; 
+  padding: 12px 25px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+  z-index: 3000; 
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.5s ease, visibility 0.5s ease; 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  max-width: 90%; 
+  text-align: center; 
 }
-#app-notification.show { 
-  opacity: 1; 
-  visibility: visible; 
-}
+#app-notification.show { opacity: 1; visibility: visible; }
 #app-notification .close-btn { 
   background: none; 
   border: none; 
@@ -617,253 +599,364 @@ button:disabled {
 #app-notification.warning { background-color: #ffc107; color: #333; }
 #app-notification.error { background-color: #dc3545; }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 992px) {
-  .quiz-container { margin: 40px 20px; padding: 30px 20px; }
+/* === COMPACT PAYMENT MODAL (UPDATED) === */
+.modal { 
+  display: none; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.85); 
+  z-index: 9999; 
+  overflow-y: auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  align-items: center; 
+  justify-content: center; 
+}
+.modal.show { display: flex; }
+.modal-content { 
+  background: white; 
+  color: #333; 
+  width: 95%; 
+  max-width: 400px; /* Reduced width for compact look */
+  border-radius: 12px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  padding: 0; 
+  overflow: hidden; 
+  position: relative; 
+}
+.pay-header { 
+  background: linear-gradient(135deg, #007bff, #6610f2); 
+  color: white; 
+  padding: 15px; /* Compact padding */
+  text-align: center; 
+}
+.pay-header h2 { color: white; margin: 0; font-size: 1.4rem; }
+.pay-header p { margin: 5px 0 0; font-size: 0.9em; opacity: 0.9; }
+.pay-body { padding: 20px; } /* Compact padding */
+.pay-price { 
+  font-size: 1.8rem; 
+  color: #28a745; 
+  font-weight: bold; 
+  text-align: center; 
+  display: block; 
+  margin: 10px 0; 
+}
+.payment-info-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.85em;
+  color: #495057;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.pay-input { 
+  width: 100%; 
+  padding: 12px; 
+  font-size: 1em; 
+  border: 2px solid #ddd; 
+  border-radius: 8px; 
+  margin-top: 5px; 
+  margin-bottom: 10px;
+  box-sizing: border-box; 
+}
+.pay-input:focus { border-color: #28a745; outline: none; }
+.pay-btn { 
+  width: 100%; 
+  background-color: #28a745; 
+  color: white; 
+  font-size: 1.1em; 
+  padding: 12px; 
+  margin-top: 5px; 
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+}
+.pay-btn:hover { background-color: #218838; transform: none; }
+.cancel-pay-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #6c757d;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9em;
+  box-shadow: none;
+}
+.cancel-pay-btn:hover { color: #343a40; background: none; transform: none; box-shadow: none; }
+.close-modal { 
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  background: transparent; 
+  border: none; 
+  color: white; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  box-shadow: none; 
+  margin: 0; 
+  padding: 0; 
 }
 
+/* === RESPONSIVE DESIGN (Combined) === */
+@media (max-width: 992px) { 
+  .quiz-container { margin: 40px 20px; padding: 30px 20px; } 
+}
 @media (max-width: 768px) {
-  body { padding-top: 110px; }
-  body.view-course { padding-top: 110px; }
+  body { padding-top: 110px; } 
+  body.view-course { padding-top: 110px; } 
   #fixed-header { padding: 10px 15px; }
-  .quiz-container { margin: 30px 15px; padding: 25px 15px; }
+  .quiz-container { margin: 30px 15px; padding: 25px 15px; } 
   h1 { font-size: 2.2rem; }
   .mode-buttons { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
   .mode-buttons button { padding: 12px 15px; font-size: 1em; }
   .options label { padding: 10px; }
-  .question-header h3 { font-size: 1.2em; }
+  .question-header h3 { font-size: 1.2em; } 
   .question-header span { font-size: 0.75em; padding: 4px 8px; }
   .whatsapp-buttons { flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; margin-bottom: 15px; }
   .whatsapp-buttons button { width: auto; padding: 10px 18px; font-size: 0.9em; }
-  .flashcard-wrapper { height: 250px; }
+  .flashcard-wrapper { height: 250px; } 
   .card-face { font-size: 1.1em; padding: 15px; }
-  /* Modal Mobile Fixes */
-  .print-modal-content { width: 95%; max-height: 95vh; }
-  .print-preview-body { padding: 15px; }
+  .header-grid { grid-template-columns: 1fr; gap: 5px; text-align: center; } 
+  #unlock-btn { width: 100%; margin-top: 5px; }
+  .modal-content, .print-modal-content { width: 95%; max-height: 95vh; }
+  .print-preview-body { padding: 15px; } 
   .print-preview-body::before { font-size: 3rem; }
 }
-
 @media (max-width: 480px) {
-  body { padding-top: 100px; }
-  body.view-course { padding-top: 100px; }
+  body { padding-top: 100px; } 
+  body.view-course { padding-top: 100px; } 
   #fixed-header { padding: 8px 10px; }
   .quiz-container { padding: 15px 10px; }
   .mode-buttons { grid-template-columns: 1fr; }
   .flashcard-topic-buttons, .flashcard-nav-buttons { grid-template-columns: 1fr; gap: 10px; }
   .flashcard { margin: 15px auto; }
-  .mode-buttons button, .flashcard-topic-buttons button, .flashcard-nav-buttons button { font-size: 1em; padding: 14px 18px; }
+  .mode-buttons button, .flashcard-topic-buttons button, .flashcard-nav-buttons button { 
+    font-size: 1em; 
+    padding: 14px 18px; 
+  }
   .card-face { font-size: 1em; line-height: 1.4; }
 }
 
-/* === PRINT PREVIEW MODAL STYLES (Version B Feature) === */
-.print-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
-  overflow-y: auto;
-  padding: 20px;
-  box-sizing: border-box;
+/* === PRINT MODAL (Base B) === */
+.print-modal { 
+  display: none; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.85); 
+  z-index: 9999; 
+  overflow-y: auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
-
-.print-modal.show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.print-modal.show { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
-
-.print-modal-content {
-  background: white;
-  color: #333;
-  width: 90%;
-  max-width: 800px;
-  max-height: 90vh;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+.print-modal-content { 
+  background: white; 
+  color: #333; 
+  width: 90%; 
+  max-width: 800px; 
+  max-height: 90vh; 
+  border-radius: 12px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  flex-direction: column; 
+  overflow: hidden; 
 }
-
-.print-modal-header {
-  background: #007bff;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
+.print-modal-header { 
+  background: #007bff; 
+  color: white; 
+  padding: 15px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border-bottom: 1px solid #ddd; 
 }
-
 .print-modal-header h2 { margin: 0; color: white; text-align: left; }
-
-.close-print-preview {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: none;
-  margin-top: 0;
+.close-print-preview { 
+  background: none; 
+  border: none; 
+  color: white; 
+  font-size: 28px; 
+  cursor: pointer; 
+  padding: 0; 
+  width: 30px; 
+  height: 30px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 50%; 
+  box-shadow: none; 
+  margin-top: 0; 
 }
-
-.close-print-preview:hover { background: rgba(255, 255, 255, 0.2); transform: none; }
-
-.print-preview-body {
-  padding: 25px;
-  overflow-y: auto;
-  flex-grow: 1;
-  background: #f9f9f9;
-  position: relative;
-  min-height: 400px;
+.close-print-preview:hover { 
+  background: rgba(255, 255, 255, 0.2); 
+  transform: none; 
 }
-
-/* Watermark for PREVIEW */
-.print-preview-body::before {
-  content: "Kaeri EdTech\A 0964312504";
-  white-space: pre;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 5rem;
-  text-align: center;
-  line-height: 1.2;
-  color: rgba(0, 0, 0, 0.05);
-  z-index: 0;
-  font-weight: bold;
-  pointer-events: none;
-  opacity: 0.7;
+.print-preview-body { 
+  padding: 25px; 
+  overflow-y: auto; 
+  flex-grow: 1; 
+  background: #f9f9f9; 
+  position: relative; 
+  min-height: 400px; 
 }
-
+.print-preview-body::before { 
+  content: "Kaeri EdTech\A 0964312504"; 
+  white-space: pre; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) rotate(-45deg); 
+  font-size: 5rem; 
+  text-align: center; 
+  line-height: 1.2; 
+  color: rgba(0, 0, 0, 0.05); 
+  z-index: 0; 
+  font-weight: bold; 
+  pointer-events: none; 
+  opacity: 0.7; 
+}
 .print-preview-body > * { position: relative; z-index: 1; }
-
-.print-modal-footer {
-  background: #f5f5f5;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
-  border-top: 1px solid #ddd;
+.print-modal-footer { 
+  background: #f5f5f5; 
+  padding: 15px 20px; 
+  display: flex; 
+  justify-content: flex-end; 
+  gap: 15px; 
+  border-top: 1px solid #ddd; 
 }
-
-.cancel-btn {
-  background: #6c757d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  margin-top: 0;
+.cancel-btn { 
+  background: #6c757d; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  margin-top: 0; 
 }
-
-.print-btn {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 0;
+.print-btn { 
+  background: #28a745; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-top: 0; 
 }
-
 .cancel-btn:hover { background: #5a6268; transform: translateY(0); }
 .print-btn:hover { background: #218838; transform: translateY(0); }
 
-
-/* === PREVIEW CONTENT STYLING === */
-.preview-header {
-  text-align: center;
-  border-bottom: 2px solid #007bff;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
+/* === PREVIEW CONTENT (Base B) === */
+.preview-header { 
+  text-align: center; 
+  border-bottom: 2px solid #007bff; 
+  margin-bottom: 25px; 
+  padding-bottom: 15px; 
 }
-
 .preview-header h1 { color: #333; margin-bottom: 10px; }
-.preview-step {
-  margin-bottom: 25px;
-  border-left: 4px solid #007bff;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.preview-step { 
+  margin-bottom: 25px; 
+  border-left: 4px solid #007bff; 
+  padding-left: 20px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  background: white; 
+  border-radius: 6px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .preview-q { font-weight: bold; margin-bottom: 8px; color: #333; }
-.preview-ans { color: #28a745; font-weight: bold; margin: 8px 0; padding-left: 10px; border-left: 2px solid #28a745; }
-.preview-exp { font-style: italic; color: #555; margin-top: 8px; padding: 8px; background: #f5f5f5; border-radius: 4px; }
+.preview-ans { 
+  color: #28a745; 
+  font-weight: bold; 
+  margin: 8px 0; 
+  padding-left: 10px; 
+  border-left: 2px solid #28a745; 
+}
+.preview-exp { 
+  font-style: italic; 
+  color: #555; 
+  margin-top: 8px; 
+  padding: 8px; 
+  background: #f5f5f5; 
+  border-radius: 4px; 
+}
 
-
-/* === FINAL PRINT OUTPUT STYLES (PAPER) === */
+/* === PRINT OUTPUT (Base B) === */
 @media print {
-  /* Hide UI elements */
   body * { visibility: hidden !important; }
-  .print-modal, .print-btn, .cancel-btn { display: none !important; }
-  
-  /* Show only the print container */
+  .print-modal, .print-btn, .cancel-btn, .modal { display: none !important; }
   #printable-summary, #printable-summary * { visibility: visible !important; }
-  
-  #printable-summary {
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    background: white !important;
-    color: black !important;
-    padding: 20px !important;
-    font-family: 'Times New Roman', serif !important;
-    line-height: 1.6 !important;
-    font-size: 12pt !important;
+  #printable-summary { 
+    display: block !important; 
+    position: absolute !important; 
+    top: 0 !important; 
+    left: 0 !important; 
+    width: 100% !important; 
+    background: white !important; 
+    color: black !important; 
+    padding: 20px !important; 
+    font-family: 'Times New Roman', serif !important; 
+    line-height: 1.6 !important; 
+    font-size: 12pt !important; 
   }
-  
-  body { background: white !important; margin: 0 !important; padding: 0 !important; overflow: visible !important; }
-  
-  /* FIXED WATERMARK ON EVERY PAGE */
-  #printable-summary::before {
-    content: "Kaeri EdTech\A 0964312504";
-    white-space: pre;
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) rotate(-45deg) !important;
-    font-size: 6rem !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-    color: rgba(0, 0, 0, 0.05) !important;
-    z-index: -1 !important;
-    font-weight: bold !important;
-    pointer-events: none !important;
-    opacity: 1 !important;
-    width: 100vw !important;
-    height: 100vh !important;
+  body { 
+    background: white !important; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    overflow: visible !important; 
   }
-
-  /* Layout */
-  .pdf-header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 25px; padding-bottom: 15px; page-break-after: avoid; }
-  .pdf-step { margin-bottom: 30px; border-left: 4px solid #007bff; padding-left: 20px; page-break-inside: avoid; }
+  #printable-summary::before { 
+    content: "Kaeri EdTech\A 0964312504"; 
+    white-space: pre; 
+    position: fixed !important; 
+    top: 50% !important; 
+    left: 50% !important; 
+    transform: translate(-50%, -50%) rotate(-45deg) !important; 
+    font-size: 6rem !important; 
+    text-align: center !important; 
+    line-height: 1.2 !important; 
+    color: rgba(0, 0, 0, 0.05) !important; 
+    z-index: -1 !important; 
+    font-weight: bold !important; 
+    pointer-events: none !important; 
+    opacity: 1 !important; 
+    width: 100vw !important; 
+    height: 100vh !important; 
+  }
+  .pdf-header { 
+    text-align: center; 
+    border-bottom: 2px solid #000; 
+    margin-bottom: 25px; 
+    padding-bottom: 15px; 
+    page-break-after: avoid; 
+  }
+  .pdf-step { 
+    margin-bottom: 30px; 
+    border-left: 4px solid #007bff; 
+    padding-left: 20px; 
+    page-break-inside: avoid; 
+  }
   .pdf-q { font-weight: bold; margin-bottom: 8px; color: #333; }
   .pdf-ans { color: #28a745; font-weight: bold; margin: 8px 0; }
   .pdf-exp { font-style: italic; color: #555; margin-top: 8px; }
-  
-  /* Force break for long content safety */
   .pdf-step:nth-child(10n) { page-break-before: always; }
 }
   </style>
@@ -876,13 +969,19 @@ button:disabled {
     <button class="close-btn" aria-label="Close notification">×</button>
   </div>
 
-  <!-- ==================== FIXED HEADER (COURSE VIEW ONLY) ==================== -->
+  <!-- ==================== FIXED HEADER (Hybrid: Base B + Version A) ==================== -->
   <div id="fixed-header">
-    <div id="mode-banner"></div>
-    <div id="progress-container">
-      <div id="progress-fill"></div>
+    <div class="header-grid"> <!-- Version A Grid -->
+      <div>
+        <div id="mode-banner"></div>
+        <div id="progress-container">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="progress-text">Progress: 0 of 0</div>
+      </div>
+      <!-- GOLD UNLOCK BUTTON (Version A) -->
+      <button id="unlock-btn" onclick="openPaymentModal()">🔓 Unlock Full Access</button>
     </div>
-    <div id="progress-text">Progress: 0 of 0</div>
   </div>
 
   <div id="price-banner">Price: K15</div>
@@ -898,9 +997,9 @@ button:disabled {
       <div class="course-section">
         <button class="course-button" onclick="toggleTerms('bi110')">BI110 - Biology</button>
         <div id="bi110-terms" class="term-buttons">
-          <button onclick="loadCourse('BI110', 'T1', 15)">Term 1 </button>
-          <button onclick="loadCourse('BI110', 'T2', 15)">Term 2 </button>
-          <button onclick="loadCourse('BI110', 'T3', 20)">Term 3 </button>
+          <button onclick="loadCourse('BI110', 'T1', 15)">Term 1</button>
+          <button onclick="loadCourse('BI110', 'T2', 15)">Term 2</button>
+          <button onclick="loadCourse('BI110', 'T3', 20)">Term 3</button>
         </div>
       </div>
 
@@ -908,30 +1007,34 @@ button:disabled {
       <div class="course-section">
         <button class="course-button" onclick="toggleTerms('cs110')">CS110 - Computer Science</button>
         <div id="cs110-terms" class="term-buttons">
-          <button onclick="loadCourse('CS110', 'T1', 15)">Term 1 </button>
-          <button onclick="loadCourse('CS110', 'T2', 15)">Term 2 </button>
-          <button onclick="loadCourse('CS110', 'T3', 20)">Term 3 </button>
+          <button onclick="loadCourse('CS110', 'T1', 15)">Term 1</button>
+          <button onclick="loadCourse('CS110', 'T2', 15)">Term 2</button>
+          <button onclick="loadCourse('CS110', 'T3', 20)">Term 3</button>
         </div>
       </div>
 
-      <!-- Course: LA111 (NEW) -->
+      <!-- Course: LA111 -->
       <div class="course-section">
         <button class="course-button" onclick="toggleTerms('la111')">LA111 - Communication Skills</button>
         <div id="la111-terms" class="term-buttons">
-          <button onclick="loadCourse('LA111', 'T1', 15)">Term 1 </button>
-          <button onclick="loadCourse('LA111', 'T2', 15)">Term 2 </button>
-          <button onclick="loadCourse('LA111', 'T3', 20)">Term 3 </button>
+          <button onclick="loadCourse('LA111', 'T1', 15)">Term 1</button>
+          <button onclick="loadCourse('LA111', 'T2', 15)">Term 2</button>
+          <button onclick="loadCourse('LA111', 'T3', 20)">Term 3</button>
         </div>
       </div>
     </div>
 
-    <!-- :::: VIEW 2: COURSE PAGE (HIDDEN BY DEFAULT) :::: -->
+    <!-- :::: VIEW 2: COURSE PAGE :::: -->
     <div id="course-view" style="display: none;">
       <h1 id="course-title">Study Materials</h1>
       
       <p class="announcement">
         <strong>Important:</strong> The full course is available. Your support keeps the app free & online.
+        <small style="opacity:0.7; font-size:0.8em; display:block; margin-top:5px;">
+          💡 Tip: Press 'U' to unlock full access
+        </small>
       </p>
+      
       <p class="price-list">
         💰 <span id="price-desc">Course</span>: <strong><span id="price-val">K15</span></strong><br>
         To MTN 0961005406 or Airtel 0974784161<br>
@@ -958,29 +1061,50 @@ button:disabled {
         </a>
       </div>
     </div>
-
   </div>
 
-  <!-- FLOATING WHATSAPP (GLOBAL) -->
+  <!-- FLOATING WHATSAPP -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
   
-  <!-- PRINT PREVIEW MODAL -->
+  <!-- COMPACT PAYMENT MODAL (UPDATED) -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closePaymentModal()">&times;</button>
+      <div class="pay-header">
+        <h2>🔓 Unlock Access</h2>
+        <p id="pay-term-name">Course</p>
+      </div>
+      <div class="pay-body">
+        <span class="pay-price" id="pay-amount">K15</span>
+        <div class="payment-info-box">
+          <strong>Send to:</strong><br>
+          • MTN: 0961005406<br>
+          • Airtel: 0974784161<br>
+          • Zanaco: 4584568100159 (Kaluluma Kaumbu)<br>
+          <em style="display:block; margin-top:5px; color:#007bff;">WhatsApp proof to: 0964312504</em>
+        </div>
+        <input type="text" id="access-code-input" class="pay-input" placeholder="Enter Access Code">
+        <button class="pay-btn" onclick="verifyCodeFromModal()">Activate 🚀</button>
+        <button class="cancel-pay-btn" onclick="closePaymentModal()">Maybe Later (Use Demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINT PREVIEW MODAL (Base B) -->
   <div id="print-preview-modal" class="print-modal">
     <div class="print-modal-content">
       <div class="print-modal-header">
         <h2>📄 Print Preview</h2>
         <button class="close-print-preview">&times;</button>
       </div>
-      <div class="print-preview-body" id="print-preview-content">
-        <!-- Preview content injected here -->
-      </div>
+      <div class="print-preview-body" id="print-preview-content"></div>
       <div class="print-modal-footer">
         <button onclick="closePrintPreview()" class="cancel-btn">Cancel</button>
         <button onclick="proceedToPrint()" class="print-btn">🖨️ Print / Save PDF</button>
       </div>
     </div>
   </div>
-
+  
   <!-- Hidden container for final print -->
   <div id="printable-summary"></div>
 
@@ -990,7 +1114,8 @@ button:disabled {
   <script src="assets/essayDa.js"></script>
   <script src="assets/flashcards.js"></script>
 
-  <!-- ==================== MAIN LOGIC SCRIPT ==================== -->
+  <!-- ==================== MAIN LOGIC SCRIPTS ==================== -->
+  <script src="acc.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
