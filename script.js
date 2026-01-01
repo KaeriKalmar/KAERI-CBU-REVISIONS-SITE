@@ -256,6 +256,7 @@ function loadCourse(course, term, price) {
     document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
     
     document.getElementById('landing-view').style.display = 'none';
+    document.getElementById('landing-header').style.display = 'none'; // UX Fix
     document.getElementById('course-view').style.display = 'block';
     document.getElementById('fixed-header').style.display = 'block';
     document.getElementById('price-banner').style.display = 'block';
@@ -270,6 +271,7 @@ function loadCourse(course, term, price) {
 
 function backToMenu() {
     document.getElementById('landing-view').style.display = 'block';
+    document.getElementById('landing-header').style.display = 'block'; // UX Fix
     document.getElementById('course-view').style.display = 'none';
     document.getElementById('fixed-header').style.display = 'none';
     document.getElementById('price-banner').style.display = 'none';
@@ -316,7 +318,7 @@ function closePaymentModal() {
 }
 
 // ============================================================
-// === QUIZ ENGINE (Base B Stability + Version A Features) ===
+// === QUIZ ENGINE (FIXED TTS & STABILITY) ===
 // ============================================================
 
 // --- MCQ ---
@@ -384,16 +386,20 @@ function checkMcqAnswer() {
     
     const q = currentQuizData[currentQuestionIndex];
     const userAnswer = parseInt(selected.value);
+    let feedbackText = "";
     
     if (userAnswer === q.correct) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
     } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
+        feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
     }
     
     const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
+    feedbackText += ` Explanation: ${q.explanation || ''}`;
     
     currentQuestionIndex++;
     
@@ -401,6 +407,8 @@ function checkMcqAnswer() {
     nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
     nextBtn.onclick = displayMcqQuestion;
     resultDiv.appendChild(nextBtn);
+
+    readText(feedbackText); // TTS RESTORED
 }
 
 function showFinalMcqScore() {
@@ -419,14 +427,12 @@ function showFinalMcqScore() {
     restartBtn.onclick = renderQuiz;
     container.appendChild(restartBtn);
 
-    // Smart Feature: Viral Loop
     const challengeBtn = document.createElement("button");
     challengeBtn.innerHTML = "⚔️ Challenge a Friend";
     challengeBtn.className = "challenge-button";
     challengeBtn.onclick = () => challengeFriend(currentScore, currentQuizData.length, "MCQ");
     container.appendChild(challengeBtn);
 
-    // Smart Feature: Preview/Print
     const previewBtn = document.createElement("button");
     previewBtn.innerText = "👁️ Preview & Print";
     previewBtn.style.backgroundColor = "#007bff"; 
@@ -489,16 +495,20 @@ function checkShortAnswer() {
     
     const q = currentQuizData[currentQuestionIndex];
     const matched = q.keywords.some(k => ans.includes(k.toLowerCase()));
+    let feedbackText = "";
     
     if (matched) {
         currentScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
     } else {
         resultDiv.innerHTML = `<p>❌ Keywords: ${q.keywords.join(', ')}</p>`;
+        feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
     }
     
     const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
+    feedbackText += ` Explanation: ${q.explanation || ''}`;
     
     currentQuestionIndex++;
     
@@ -506,6 +516,8 @@ function checkShortAnswer() {
     nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish";
     nextBtn.onclick = displayShortAnswerQuestion;
     resultDiv.appendChild(nextBtn);
+
+    readText(feedbackText); // TTS RESTORED
 }
 
 function showFinalShortAnswerScore() {
@@ -524,14 +536,12 @@ function showFinalShortAnswerScore() {
     restartBtn.onclick = renderShortAnswers;
     container.appendChild(restartBtn);
 
-    // Smart Feature: Viral Loop
     const challengeBtn = document.createElement("button");
     challengeBtn.innerHTML = "⚔️ Challenge a Friend";
     challengeBtn.className = "challenge-button";
     challengeBtn.onclick = () => challengeFriend(currentScore, currentQuizData.length, "Short Answer");
     container.appendChild(challengeBtn);
 
-    // Smart Feature: Preview/Print
     const previewBtn = document.createElement("button");
     previewBtn.innerText = "👁️ Preview & Print";
     previewBtn.style.backgroundColor = "#007bff"; 
@@ -633,16 +643,20 @@ function checkEssayStep() {
     const step = essay.steps[currentStepIndex];
     const userAnswer = parseInt(selectedOption.value);
     const correct = userAnswer === step.correct;
+    let feedbackText = "";
     
     if (correct) {
         essayScore++;
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
+        feedbackText = "Correct!";
     } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
+        feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
     }
     
     const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
+    feedbackText += ` Explanation: ${step.explanation || ''}`;
     
     const nextBtn = document.createElement("button");
     nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
@@ -655,6 +669,8 @@ function checkEssayStep() {
         }
     };
     resultDiv.appendChild(nextBtn);
+
+    readText(feedbackText); // TTS RESTORED
 }
 
 function showFinalEssayScore() {
@@ -674,14 +690,12 @@ function showFinalEssayScore() {
     retryBtn.onclick = () => attemptStartEssay(currentQuizData.indexOf(currentEssay));
     container.appendChild(retryBtn);
 
-    // Smart Feature: Viral Loop
     const challengeBtn = document.createElement("button");
     challengeBtn.innerHTML = "⚔️ Challenge a Friend";
     challengeBtn.className = "challenge-button";
     challengeBtn.onclick = () => challengeFriend(essayScore, currentEssay.steps.length, "Essay Simulation");
     container.appendChild(challengeBtn);
 
-    // Smart Feature: Preview/Print
     const previewBtn = document.createElement("button");
     previewBtn.innerText = "👁️ Preview & Print";
     previewBtn.style.backgroundColor = "#007bff"; 
@@ -744,7 +758,6 @@ function displayFlashcard() {
     
     if (!card) return showFlashcardCompletion();
     
-    // FIX: Check if this is the last card to change button text
     const isLastCard = currentCardIndex === currentFlashcards.length - 1;
 
     container.innerHTML = `
@@ -757,8 +770,6 @@ function displayFlashcard() {
         </div>
         <div class="flashcard-nav-buttons">
             <button onclick="prevFlashcard()" ${currentCardIndex === 0 ? 'disabled' : ''}>⬅️ Prev</button>
-            
-            <!-- FIX: Button is NOT disabled on last card. It triggers Finish. -->
             <button onclick="nextFlashcard()">${isLastCard ? 'Finish 🏁' : 'Next ➡️'}</button>
         </div>
         <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
@@ -779,7 +790,6 @@ function prevFlashcard() {
 }
 
 function nextFlashcard() { 
-    // FIX: If at end, show completion. Otherwise, go next.
     if (currentCardIndex < currentFlashcards.length - 1) { 
         currentCardIndex++; 
         isCardFront = true; 
@@ -799,7 +809,6 @@ function showFlashcardCompletion() {
     `;
     updateProgress(currentFlashcards.length, currentFlashcards.length);
 
-    // 1. Restart Button
     const restartBtn = document.createElement("button");
     restartBtn.innerText = "🔁 Review Again";
     restartBtn.className = "restart-button";
@@ -807,14 +816,12 @@ function showFlashcardCompletion() {
     restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic);
     container.appendChild(restartBtn);
 
-    // 2. Viral Challenge Button
     const challengeBtn = document.createElement("button");
     challengeBtn.innerHTML = "⚔️ Challenge a Friend";
     challengeBtn.className = "challenge-button";
     challengeBtn.onclick = () => challengeFriend(currentFlashcards.length, 0, "Flashcards");
     container.appendChild(challengeBtn);
 
-    // 3. Preview & Print Button
     const previewBtn = document.createElement("button");
     previewBtn.innerText = "👁️ Preview & Print";
     previewBtn.style.backgroundColor = "#007bff"; 
@@ -823,7 +830,6 @@ function showFlashcardCompletion() {
     previewBtn.onclick = generatePrintPreview;
     container.appendChild(previewBtn);
 
-    // 4. Back Button
     const backBtn = document.createElement("button");
     backBtn.innerText = "⬅️ Back to Topics";
     backBtn.className = "back-button";
@@ -832,7 +838,7 @@ function showFlashcardCompletion() {
 }
 
 // ============================================================
-// === SMART FEATURES (Viral Loop & Printing) ===
+// === SMART FEATURES ===
 // ============================================================
 
 function challengeFriend(score, total, modeName) {
@@ -941,17 +947,30 @@ function updateModeBanner(message) {
     if (banner) banner.textContent = message;
 }
 
-function showAppNotification(message, type = 'info', duration = 4000) {
+function showAppNotification(message, type = 'info', duration = 5000) {
     const el = document.getElementById('app-notification');
     if (!el) return alert(message);
-    el.querySelector('.notification-message').textContent = message;
+    
+    const msgSpan = el.querySelector('.notification-message');
+    if (msgSpan) msgSpan.textContent = message;
+    else el.innerText = message;
+
+    el.className = ''; 
+    void el.offsetWidth; 
     el.className = 'show ' + type;
+
     if (el.timeoutId) clearTimeout(el.timeoutId);
-    el.timeoutId = setTimeout(() => el.classList.remove('show'), duration);
-    el.querySelector('.close-btn').onclick = () => {
+    el.timeoutId = setTimeout(() => {
         el.classList.remove('show');
-        clearTimeout(el.timeoutId);
-    };
+    }, duration);
+
+    const closeBtn = el.querySelector('.close-btn');
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            el.classList.remove('show');
+            clearTimeout(el.timeoutId);
+        };
+    }
 }
 
 function updateProgress(current, total) {
@@ -1041,7 +1060,6 @@ function readFlashcard() {
 // ============================================================
 
 document.addEventListener("keydown", (e) => {
-    // Smart Shortcut: Unlock
     if ((e.key === 'u' || e.key === 'U') && currentCourse && !hasFullAccess) {
         e.preventDefault();
         openPaymentModal();
@@ -1050,7 +1068,6 @@ document.addEventListener("keydown", (e) => {
     
     if (!currentQuizType) return;
     
-    // Quiz Navigation
     if (currentQuizType === "mcq" || currentQuizType === "essay") {
         const options = document.querySelectorAll('input[type="radio"]');
         const selected = document.querySelector('input[type="radio"]:checked');
@@ -1088,16 +1105,11 @@ document.addEventListener("keydown", (e) => {
         }
     }
     
-    // Modal Shortcuts
     if (e.key === "Escape") {
         closePaymentModal();
         closePrintPreview();
     }
 });
-
-// ============================================================
-// === EVENT LISTENERS & SETUP ===
-// ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-print-preview');
@@ -1113,4 +1125,3 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === this) closePaymentModal();
     });
 });
-
