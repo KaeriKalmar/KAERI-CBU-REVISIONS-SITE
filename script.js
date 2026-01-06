@@ -1125,3 +1125,77 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === this) closePaymentModal();
     });
 });
+function renderStudentBoard() {
+    const board = document.getElementById('student-board');
+    const annContainer = document.getElementById('board-announcements');
+    const motContainer = document.getElementById('board-motivation');
+    
+    if (!board || !annContainer || !motContainer) return;
+
+    // 1. Data Validation & Filtering
+    const today = new Date();
+    let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
+        return item.active && (!item.expiry || new Date(item.expiry) >= today);
+    });
+    let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
+
+    // 2. State Determination
+    const hasNews = validAnnouncements.length > 0;
+    const hasQuote = validMotivation.length > 0;
+
+    // 3. Render: Empty State
+    if (!hasNews && !hasQuote) {
+        board.style.display = 'none';
+        return;
+    }
+
+    // 4. Reset & Prepare Layout
+    board.style.display = 'grid';
+    board.classList.remove('layout-full-width');
+
+    // 5. Render Announcement (Priority Item)
+    if (hasNews) {
+        const item = validAnnouncements[0];
+        annContainer.style.display = 'flex';
+        // Apply Flashcard Style Class + Semantic Type
+        annContainer.className = `board-section type-${item.type || 'info'}`;
+        
+        // Icon Helper
+        let icon = '📢';
+        if (item.type === 'warning') icon = '⚠️';
+        if (item.type === 'critical') icon = '🔴';
+        if (item.type === 'success') icon = '🎉';
+
+        annContainer.innerHTML = `
+            <div class="board-announcement-title">
+                <span>${icon}</span> ${item.title}
+            </div>
+            <div class="board-announcement-body">${item.body}</div>
+        `;
+    } else {
+        annContainer.style.display = 'none';
+    }
+
+    // 6. Render Motivation
+    if (hasQuote) {
+        const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
+        motContainer.style.display = 'flex';
+        motContainer.className = 'board-section board-motivation-box';
+        motContainer.innerHTML = `
+            <div class="quote-wrapper">
+                <span class="quote-icon">💡</span>
+                <span class="quote-content">"${randomQuote}"</span>
+            </div>
+        `;
+    } else {
+        motContainer.style.display = 'none';
+    }
+
+    // 7. Full Width Override
+    if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
+        board.classList.add('layout-full-width');
+    }
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => { setTimeout(renderStudentBoard, 100); });
