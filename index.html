@@ -6,7 +6,7 @@
   <title>Quiz App - Courses & Terms | Kaeri EdTech</title>
   
   <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   
   <!-- CSS STYLES (Base B + Version A Hybrid + Fixes) -->
   <style>
@@ -18,15 +18,12 @@ body {
   color: #e0e6ed; 
   line-height: 1.6; 
   overflow-y: auto; 
-  /* Padding top handles the fixed header space on landing */
   padding-top: 160px; 
   padding-left: 20px; 
   padding-right: 20px; 
   padding-bottom: 30px; 
-  /* STABILITY FIX: Smooth transition to prevent visual jumping */
   transition: padding-top 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-/* Adjust padding when viewing a course (header changes) */
 body.view-course { padding-top: 130px; }
 
 h1, h2, h3 { color: #72efdd; text-align: center; margin-bottom: 25px; }
@@ -39,7 +36,7 @@ button { cursor: pointer; }
   top: 0;
   left: 0;
   width: 100%;
-  background: #0d1b2a; /* Match body bg to cover content scrolling under */
+  background: #0d1b2a; 
   z-index: 1002;
   text-align: center;
   padding: 20px 0;
@@ -71,13 +68,95 @@ button { cursor: pointer; }
 
 /* --- CONTAINERS (Base B) --- */
 .quiz-container { 
-  max-width: 960px; 
+  max-width: 1200px; 
   margin: auto; 
   background: #1b263b; 
   padding: 40px 30px; 
   border-radius: 16px; 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
+
+/* --- STUDENT BOARD (FLASHCARD STYLE) --- */
+.student-board-wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr; /* Desktop Ratio */
+  gap: 20px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.board-section {
+  /* BRAND: Flashcard Front Color */
+  background-color: #2b3a55; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #3e506e;
+  transition: transform 0.3s ease;
+  min-height: 140px;
+}
+
+.board-section:hover {
+  transform: translateY(-2px); 
+}
+
+/* Announcement Text */
+.board-announcement-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.15em;
+  color: #72efdd; /* Teal Accent */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #3e506e;
+  padding-bottom: 10px;
+}
+
+.board-announcement-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #e0e6ed;
+  font-size: 0.95em;
+}
+
+/* Semantic Status Borders */
+.board-section.type-info { border-left: 6px solid #007bff; }
+.board-section.type-success { border-left: 6px solid #28a745; }
+.board-section.type-warning { border-left: 6px solid #ffc107; }
+.board-section.type-critical { border-left: 6px solid #dc3545; }
+
+/* Motivation Box */
+.board-motivation-box {
+  background-color: #2b3a55; 
+  border: 1px solid #72efdd; /* Teal Border */
+  text-align: center;
+  font-style: italic;
+  position: relative;
+}
+
+.quote-content {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #e0e6ed;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.quote-icon { 
+  display: block; 
+  font-size: 1.8rem; 
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(114, 239, 221, 0.3);
+}
+
+/* Dynamic Layouts */
+.layout-full-width { grid-template-columns: 1fr !important; }
 
 /* --- LANDING PAGE (Base B) --- */
 .course-section { 
@@ -127,7 +206,7 @@ button { cursor: pointer; }
   transform: translateY(-2px); 
 }
 
-/* --- COURSE PAGE FIXED HEADER (Hidden on Landing) --- */
+/* --- COURSE PAGE FIXED HEADER --- */
 #fixed-header { 
   display: none; 
   position: fixed; 
@@ -148,7 +227,6 @@ button { cursor: pointer; }
   align-items: center; 
 }
 
-/* GOLD UNLOCK BUTTON (Version A) */
 #unlock-btn { 
   background: linear-gradient(45deg, #ffc107, #ff9800); 
   color: #333; 
@@ -237,7 +315,6 @@ button { cursor: pointer; }
   margin-left: 10px; 
   margin-bottom: 5px; 
 }
-.question-header span:first-of-type { margin-left: 0; }
 .question-text, .question-box p { 
   font-size: 1.15em; 
   margin-bottom: 20px; 
@@ -357,7 +434,7 @@ button:disabled {
   transform: translateY(-2px); 
 }
 
-/* Challenge Button (Version A) */
+/* Challenge Button */
 .challenge-button { 
   background-color: #6610f2 !important; 
   color: white !important; 
@@ -368,7 +445,7 @@ button:disabled {
   transform: translateY(-2px); 
 }
 
-/* --- FEEDBACK (Base B) --- */
+/* --- FEEDBACK --- */
 .feedback, .explanation-box { 
   margin-top: 20px; 
   padding: 15px; 
@@ -402,7 +479,7 @@ button:disabled {
   transform: translateY(-2px); 
 }
 
-/* --- PROGRESS (Base B) --- */
+/* --- PROGRESS --- */
 #mode-banner { 
   background-color: #2c3e50; 
   color: #fff; 
@@ -438,7 +515,7 @@ button:disabled {
   color: #a0a8b4; 
 }
 
-/* --- FLASHCARDS (Base B) --- */
+/* --- FLASHCARDS --- */
 .flashcard-nav-header { 
   display: flex; 
   justify-content: space-between; 
@@ -561,7 +638,7 @@ button:disabled {
   transform: translateY(-3px); 
 }
 
-/* --- NOTIFICATIONS (Updated Z-Index) --- */
+/* --- NOTIFICATIONS --- */
 .announcement, .price-list { 
   background-color: #0d1b2a; 
   border: 1px solid #007bff; 
@@ -606,7 +683,6 @@ button:disabled {
   margin-bottom: 20px; 
 }
 
-/* RESTORED BRAND NOTIFICATION CSS */
 #app-notification { 
   position: fixed; 
   top: 10px; 
@@ -617,7 +693,6 @@ button:disabled {
   padding: 12px 25px; 
   border-radius: 8px; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
-  /* CRITICAL: Z-INDEX FIXED to be above modal (9999) */
   z-index: 99999; 
   opacity: 0; 
   visibility: hidden; 
@@ -642,7 +717,7 @@ button:disabled {
 #app-notification.warning { background-color: #ffc107; color: #333; }
 #app-notification.error { background-color: #dc3545; }
 
-/* === COMPACT PAYMENT MODAL (UPDATED) === */
+/* === COMPACT PAYMENT MODAL === */
 .modal { 
   display: none; 
   position: fixed; 
@@ -663,7 +738,7 @@ button:disabled {
   background: white; 
   color: #333; 
   width: 95%; 
-  max-width: 400px; /* Reduced width for compact look */
+  max-width: 400px; 
   border-radius: 12px; 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   padding: 0; 
@@ -673,12 +748,12 @@ button:disabled {
 .pay-header { 
   background: linear-gradient(135deg, #007bff, #6610f2); 
   color: white; 
-  padding: 15px; /* Compact padding */
+  padding: 15px; 
   text-align: center; 
 }
 .pay-header h2 { color: white; margin: 0; font-size: 1.4rem; }
 .pay-header p { margin: 5px 0 0; font-size: 0.9em; opacity: 0.9; }
-.pay-body { padding: 20px; } /* Compact padding */
+.pay-body { padding: 20px; } 
 .pay-price { 
   font-size: 1.8rem; 
   color: #28a745; 
@@ -747,7 +822,7 @@ button:disabled {
   padding: 0; 
 }
 
-/* === RESPONSIVE DESIGN (Combined) === */
+/* === RESPONSIVE DESIGN === */
 @media (max-width: 992px) { 
   .quiz-container { margin: 40px 20px; padding: 30px 20px; } 
 }
@@ -771,6 +846,8 @@ button:disabled {
   .modal-content, .print-modal-content { width: 95%; max-height: 95vh; }
   .print-preview-body { padding: 15px; } 
   .print-preview-body::before { font-size: 3rem; }
+  /* Student Board Responsive */
+  .student-board-wrapper { grid-template-columns: 1fr; gap: 15px; }
 }
 @media (max-width: 480px) {
   body { padding-top: 100px; } 
@@ -787,7 +864,7 @@ button:disabled {
   .card-face { font-size: 1em; line-height: 1.4; }
 }
 
-/* === PRINT MODAL (Base B) === */
+/* === PRINT MODAL === */
 .print-modal { 
   display: none; 
   position: fixed; 
@@ -907,7 +984,7 @@ button:disabled {
 .cancel-btn:hover { background: #5a6268; transform: translateY(0); }
 .print-btn:hover { background: #218838; transform: translateY(0); }
 
-/* === PREVIEW CONTENT (Base B) === */
+/* === PREVIEW CONTENT === */
 .preview-header { 
   text-align: center; 
   border-bottom: 2px solid #007bff; 
@@ -942,7 +1019,7 @@ button:disabled {
   border-radius: 4px; 
 }
 
-/* === PRINT OUTPUT (Base B) === */
+/* === PRINT OUTPUT === */
 @media print {
   body * { visibility: hidden !important; }
   .print-modal, .print-btn, .cancel-btn, .modal { display: none !important; }
@@ -1051,6 +1128,15 @@ button:disabled {
       
       <!-- Spacing for Fixed Header handled by body padding -->
       <h1 style="margin-top: 20px;">Select a Course & Term</h1>
+
+      <!-- === START STUDENT BOARD === -->
+      <div id="student-board" class="student-board-wrapper" style="display: none;">
+        <!-- Announcements Section -->
+        <div id="board-announcements" class="board-section"></div>
+        <!-- Motivation Section -->
+        <div id="board-motivation" class="board-section"></div>
+      </div>
+      <!-- === END STUDENT BOARD === -->
 
       <!-- COMMUNITY HUB (Channel + Group) -->
       <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 35px; flex-wrap: wrap;">
@@ -1199,6 +1285,10 @@ button:disabled {
   <script src="assets/shortDa.js"></script>
   <script src="assets/essayDa.js"></script>
   <script src="assets/flashcards.js"></script>
+  
+  <!-- NEW SCRIPTS -->
+  <script src="assets/announcements.js"></script>
+  <script src="assets/motivation.js"></script>
 
   <!-- ==================== MAIN LOGIC SCRIPTS ==================== -->
   <script src="acc.js"></script>
@@ -1217,6 +1307,82 @@ button:disabled {
         document.getElementById('landing-header').style.display = 'block';
         if (originalBackToMenu) originalBackToMenu();
     }
+
+    // STUDENT BOARD RENDER LOGIC (Inline Injection)
+    function renderStudentBoard() {
+        const board = document.getElementById('student-board');
+        const annContainer = document.getElementById('board-announcements');
+        const motContainer = document.getElementById('board-motivation');
+        
+        if (!board || !annContainer || !motContainer) return;
+
+        // 1. Data Validation & Filtering
+        const today = new Date();
+        let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
+            return item.active && (!item.expiry || new Date(item.expiry) >= today);
+        });
+        let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
+
+        // 2. State Determination
+        const hasNews = validAnnouncements.length > 0;
+        const hasQuote = validMotivation.length > 0;
+
+        // 3. Render: Empty State
+        if (!hasNews && !hasQuote) {
+            board.style.display = 'none';
+            return;
+        }
+
+        // 4. Reset & Prepare Layout
+        board.style.display = 'grid';
+        board.classList.remove('layout-full-width');
+
+        // 5. Render Announcement (Priority Item)
+        if (hasNews) {
+            const item = validAnnouncements[0];
+            annContainer.style.display = 'flex';
+            // Apply Flashcard Style Class + Semantic Type
+            annContainer.className = `board-section type-${item.type || 'info'}`;
+            
+            // Icon Helper
+            let icon = '📢';
+            if (item.type === 'warning') icon = '⚠️';
+            if (item.type === 'critical') icon = '🔴';
+            if (item.type === 'success') icon = '🎉';
+
+            annContainer.innerHTML = `
+                <div class="board-announcement-title">
+                    <span>${icon}</span> ${item.title}
+                </div>
+                <div class="board-announcement-body">${item.body}</div>
+            `;
+        } else {
+            annContainer.style.display = 'none';
+        }
+
+        // 6. Render Motivation (Randomized)
+        if (hasQuote) {
+            const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
+            motContainer.style.display = 'flex';
+            motContainer.className = 'board-section board-motivation-box';
+            motContainer.innerHTML = `
+                <div class="quote-wrapper">
+                    <span class="quote-icon">💡</span>
+                    <span class="quote-content">"${randomQuote}"</span>
+                </div>
+            `;
+        } else {
+            motContainer.style.display = 'none';
+        }
+
+        // 7. Full Width Override
+        if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
+            board.classList.add('layout-full-width');
+        }
+    }
+
+    // Initialize Board
+    document.addEventListener('DOMContentLoaded', () => { setTimeout(renderStudentBoard, 100); });
   </script>
 </body>
 </html>
