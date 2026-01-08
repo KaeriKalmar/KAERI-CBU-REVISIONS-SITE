@@ -1,14 +1,15 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER ===
-// === Base B Stability + Version A Growth Features ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (PHASE 1) ===
+// === Server-Side Access Control + Local Content ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxogIMCtFpKpxKopADDhRtMwWxDaMixrLECcDN7BxRr8fEcsUZ60PE_wY_Z1X5c6hYghw/exec";
 let ttsEnabled = false;
 let printContentData = null;
 let hasFullAccess = false;
 let currentPrice = 15;
-let isSubmissionLocked = false; // Critical Base B Stability Feature
+let isSubmissionLocked = false; 
 
 // --- DATA CONTAINERS ---
 let allMcqData = [], allShortData = [], allEssayData = [], allFlashcards = {};
@@ -25,7 +26,6 @@ let currentFlashcardTopic = null, currentFlashcards = [], currentCardIndex = 0, 
 // ============================================================
 
 function loadGlobalData() {
-    // Safely load data from external files (mcqDa.js, etc.)
     if (typeof mcqData !== 'undefined') allMcqData = mcqData; 
     else if (typeof mcqDa !== 'undefined') allMcqData = mcqDa; 
     else allMcqData = [];
@@ -35,7 +35,7 @@ function loadGlobalData() {
     allFlashcards = typeof flashcards !== 'undefined' ? flashcards : {};
 }
 
-function initializeCourseLogic() {
+async function initializeCourseLogic() {
     loadGlobalData();
     
     // Initialize TTS
@@ -54,19 +54,6 @@ function initializeCourseLogic() {
     currentCourse = body.getAttribute('data-course');
     currentTerm = body.getAttribute('data-term');
     currentTermKey = `${currentCourse}_${currentTerm}`;
-    
-    // Ensure usedAccessCodes is synced from storage (Data from acc.js + LocalStorage)
-    try { 
-        const stored = JSON.parse(localStorage.getItem("globalUsedAccessCodes"));
-        if (stored && Array.isArray(stored)) {
-            // Merge unique entries if acc.js has some default ones
-            if (typeof usedAccessCodes !== 'undefined') {
-                 usedAccessCodes = stored;
-            }
-        }
-    } catch(e) { 
-        console.error("Storage Error:", e);
-    }
 
     // Filter Data
     currentMcqData = filterDataByCourseAndTerm(allMcqData, currentCourse, currentTerm);
@@ -74,122 +61,77 @@ function initializeCourseLogic() {
     currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
     currentFlashcardTopics = filterFlashcardsByCourseAndTerm(allFlashcards, currentCourse, currentTerm);
 
-    // Security Check
-    authenticateUser();
-    checkExpiryWarning();
+    // Security Check (New Phase 1 Logic)
+    await checkAccessStatus();
 }
 
 // ============================================================
-// === SECURITY & AUTHENTICATION (Smart Features) ===
+// === SECURITY & AUTHENTICATION (PHASE 1 SERVER-SIDE) ===
 // ============================================================
 
-function authenticateUser() {
-    let valid = false;
+async function checkAccessStatus() {
+    // 1. Check Local Storage (Fast Path)
+    const storedToken = localStorage.getItem(`token_${currentTermKey}`);
+    const storedExpiry = localStorage.getItem(`expiry_${currentTermKey}`);
     
-    const check = (key) => {
-        const code = localStorage.getItem("accessCode_" + key);
-        const expiry = localStorage.getItem("accessCodeExpires_" + key);
-        
-        if (!code || !expiry) return false;
-        
-        // 1. Revocation Check
-        if (typeof revokedAccessCodes !== 'undefined' && revokedAccessCodes.includes(code)) {
-            localStorage.removeItem("accessCode_" + key);
-            localStorage.removeItem("accessCodeExpires_" + key);
-            return false;
-        }
-        
-        // 2. Device Binding Check (Smart Security)
-        if (typeof usedAccessCodes !== 'undefined') {
-            const used = usedAccessCodes.find(e => e.code === code);
-            if (used && used.user !== "self" && used.user !== undefined) {
-                return false; 
-            }
-        }
-        
-        // 3. Expiry Check
-        if (Date.now() < parseInt(expiry)) return true;
-        else {
-            localStorage.removeItem("accessCode_" + key);
-            localStorage.removeItem("accessCodeExpires_" + key);
-            return false;
-        }
-    };
+    if (storedToken && storedExpiry && Date.now() < parseInt(storedExpiry)) {
+        enableFullAccessUI();
+        return;
+    }
 
-    // Hierarchy Check
-    if (check(currentTermKey)) valid = true;
-    else if (check(currentCourse + "_ALL_TERMS")) valid = true;
-    else if (check("GLOBAL_ALL_TERMS")) valid = true;
-
-    if (valid) enableFullAccessUI();
-    else enableDemoUI();
+    // 2. If no valid session, show Demo Mode
+    enableDemoUI();
 }
 
-function verifyCodeFromModal() {
+async function verifyCodeFromModal() {
     const userCode = document.getElementById('access-code-input').value.trim();
-    const courseAllTermsKey = `${currentCourse}_ALL_TERMS`;
     
     if (!userCode) return alert("Please enter a code.");
     
-    // Revocation Check
-    if (typeof revokedAccessCodes !== 'undefined' && revokedAccessCodes.includes(userCode)) {
-        return alert("❌ This code has been revoked.");
-    }
-    
-    // Device Binding Check
-    if (typeof usedAccessCodes !== 'undefined') {
-        const globalUsed = usedAccessCodes.find(e => e.code === userCode);
-        if (globalUsed && globalUsed.user !== "self") {
-            return alert("❌ This code has already been activated on another device.");
-        }
-    }
-    
-    // Determine Access Type
-    let type = "", prefix = "";
-    if (typeof fullAccessCodes !== 'undefined') {
-        if (fullAccessCodes.GLOBAL_ALL_TERMS?.includes(userCode)) {
-            type = "Global"; prefix = "GLOBAL_ALL_TERMS";
-        } else if (fullAccessCodes[courseAllTermsKey]?.includes(userCode)) {
-            type = "Course"; prefix = courseAllTermsKey;
-        } else if (fullAccessCodes[currentTermKey]?.includes(userCode)) {
-            type = "Term"; prefix = currentTermKey;
-        }
-    }
-    
-    if (!type) return alert("❌ Invalid code. Please check and try again.");
-    
-    // Activate
-    const expiry = Date.now() + (typeof MILLISECONDS_IN_20_DAYS !== 'undefined' ? MILLISECONDS_IN_20_DAYS : 1728000000);
-    localStorage.setItem("accessCode_" + prefix, userCode);
-    localStorage.setItem("accessCodeExpires_" + prefix, expiry);
-    
-    // Bind to Device
-    if (typeof usedAccessCodes !== 'undefined') {
-        usedAccessCodes.push({
-            code: userCode,
-            globalExpiry: expiry,
-            user: "self",
-            activated: Date.now()
-        });
-        localStorage.setItem("globalUsedAccessCodes", JSON.stringify(usedAccessCodes));
-    }
-    
-    closePaymentModal();
-    enableFullAccessUI();
-    showAppNotification(`🎉 ${type} Access Activated!`, "success");
-}
+    // *** CRITICAL: Ask for Email to verify identity ***
+    const userEmail = prompt("Enter the Email you used to pay:"); 
+    if (!userEmail) return alert("Email required for verification.");
 
-function checkExpiryWarning() {
-    const keys = [`accessCode_${currentTermKey}`, `accessCode_${currentCourse}_ALL_TERMS`, `accessCode_GLOBAL_ALL_TERMS`];
-    keys.forEach(key => {
-        const expiry = localStorage.getItem(key.replace("accessCode_", "accessCodeExpires_"));
-        if (expiry) {
-            const daysLeft = Math.ceil((parseInt(expiry) - Date.now()) / (1000 * 60 * 60 * 24));
-            if (daysLeft <= 3 && daysLeft > 0) {
-                showAppNotification(`⚠️ Access expires in ${daysLeft} day${daysLeft > 1 ? 's' : ''}!`, "warning", 8000);
-            }
+    // Generate Device Fingerprint
+    let deviceFP = localStorage.getItem('device_fp');
+    if (!deviceFP) {
+        deviceFP = navigator.userAgent + "_" + Math.random().toString(36).substring(7);
+        localStorage.setItem('device_fp', deviceFP);
+    }
+
+    showAppNotification("🔐 Verifying with Server...", "info");
+
+    try {
+        // CALL THE BACKEND
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            body: JSON.stringify({
+                action: 'validateAccess',
+                code: userCode,
+                email: userEmail,
+                deviceFP: deviceFP,
+                course: currentCourse,
+                term: currentTerm
+            })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // SUCCESS: Save Session & Unlock
+            localStorage.setItem(`token_${currentTermKey}`, result.data.token);
+            localStorage.setItem(`expiry_${currentTermKey}`, result.data.expiry);
+            
+            closePaymentModal();
+            enableFullAccessUI();
+            showAppNotification("✅ " + result.message, "success");
+        } else {
+            // FAIL: Show Error
+            showAppNotification("❌ " + result.message, "error");
         }
-    });
+    } catch (e) {
+        showAppNotification("⚠️ Connection Error. Check internet.", "error");
+    }
 }
 
 function blockDemo(type) {
@@ -197,15 +139,13 @@ function blockDemo(type) {
     
     const key = `demo_${type}_used_${currentTermKey}`;
     let attempts = parseInt(localStorage.getItem(key) || "0");
-    const maxAttempts = 50;
+    const maxAttempts = 10; // Reduced for Phase 1
     const attemptsLeft = maxAttempts - attempts;
     
-    // Smart Notification: Urgency
     if (attempts < maxAttempts) {
         showAppNotification(`Demo Mode: ${attemptsLeft} attempts remaining.`, "info", 2000);
     }
     
-    // Hard Block + Sales Trigger
     if (attempts >= maxAttempts) {
         showAppNotification(`Demo limit reached. Unlock Full Access!`, "warning");
         openPaymentModal(); 
@@ -256,7 +196,7 @@ function loadCourse(course, term, price) {
     document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
     
     document.getElementById('landing-view').style.display = 'none';
-    document.getElementById('landing-header').style.display = 'none'; // UX Fix
+    document.getElementById('landing-header').style.display = 'none'; 
     document.getElementById('course-view').style.display = 'block';
     document.getElementById('fixed-header').style.display = 'block';
     document.getElementById('price-banner').style.display = 'block';
@@ -271,7 +211,7 @@ function loadCourse(course, term, price) {
 
 function backToMenu() {
     document.getElementById('landing-view').style.display = 'block';
-    document.getElementById('landing-header').style.display = 'block'; // UX Fix
+    document.getElementById('landing-header').style.display = 'block'; 
     document.getElementById('course-view').style.display = 'none';
     document.getElementById('fixed-header').style.display = 'none';
     document.getElementById('price-banner').style.display = 'none';
@@ -318,7 +258,7 @@ function closePaymentModal() {
 }
 
 // ============================================================
-// === QUIZ ENGINE (FIXED TTS & STABILITY) ===
+// === QUIZ ENGINE (UNCHANGED) ===
 // ============================================================
 
 // --- MCQ ---
@@ -408,7 +348,7 @@ function checkMcqAnswer() {
     nextBtn.onclick = displayMcqQuestion;
     resultDiv.appendChild(nextBtn);
 
-    readText(feedbackText); // TTS RESTORED
+    readText(feedbackText); 
 }
 
 function showFinalMcqScore() {
@@ -517,7 +457,7 @@ function checkShortAnswer() {
     nextBtn.onclick = displayShortAnswerQuestion;
     resultDiv.appendChild(nextBtn);
 
-    readText(feedbackText); // TTS RESTORED
+    readText(feedbackText); 
 }
 
 function showFinalShortAnswerScore() {
@@ -670,7 +610,7 @@ function checkEssayStep() {
     };
     resultDiv.appendChild(nextBtn);
 
-    readText(feedbackText); // TTS RESTORED
+    readText(feedbackText); 
 }
 
 function showFinalEssayScore() {
@@ -1125,6 +1065,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === this) closePaymentModal();
     });
 });
+
 function renderStudentBoard() {
     const board = document.getElementById('student-board');
     const annContainer = document.getElementById('board-announcements');
@@ -1157,10 +1098,8 @@ function renderStudentBoard() {
     if (hasNews) {
         const item = validAnnouncements[0];
         annContainer.style.display = 'flex';
-        // Apply Flashcard Style Class + Semantic Type
         annContainer.className = `board-section type-${item.type || 'info'}`;
         
-        // Icon Helper
         let icon = '📢';
         if (item.type === 'warning') icon = '⚠️';
         if (item.type === 'critical') icon = '🔴';
@@ -1197,5 +1136,65 @@ function renderStudentBoard() {
     }
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => { setTimeout(renderStudentBoard, 100); });
+
+// Add this function to update the buy link dynamically
+function updateBuyNowLink(course, term, price) {
+  const buyNowLink = document.getElementById('buy-now-link');
+  const buyPriceElement = document.getElementById('buy-price');
+  
+  if (buyNowLink && buyPriceElement) {
+    // Update the displayed price
+    buyPriceElement.textContent = `K${price}`;
+    
+    // Create a dynamic URL with course and term parameters
+    const paymentUrl = `https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec?course=${course}&term=${term}`;
+    buyNowLink.href = paymentUrl;
+    
+    // Update button text
+    const buyButton = buyNowLink.querySelector('button');
+    if (buyButton) {
+      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
+    }
+  }
+}
+
+// Modify the openPaymentModal function to include buy link update
+function openPaymentModal() {
+  document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
+  document.getElementById('pay-amount').textContent = `K${currentPrice}`;
+  document.getElementById('payment-modal').classList.add('show');
+  
+  // Update the buy now link with current course info
+  updateBuyNowLink(currentCourse, currentTerm, currentPrice);
+  
+  setTimeout(() => {
+    const input = document.getElementById('access-code-input');
+    if(input) input.focus();
+  }, 300);
+}
+
+// Update the loadCourse function to set currentPrice globally
+function loadCourse(course, term, price) {
+  document.body.setAttribute('data-course', course);
+  document.body.setAttribute('data-term', term);
+  currentPrice = price; // Make sure this is set
+  
+  document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
+  document.getElementById('price-banner').textContent = `Price: K${price}`;
+  document.getElementById('price-val').textContent = `K${price}`;
+  document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
+  
+  document.getElementById('landing-view').style.display = 'none';
+  document.getElementById('landing-header').style.display = 'none';
+  document.getElementById('course-view').style.display = 'block';
+  document.getElementById('fixed-header').style.display = 'block';
+  document.getElementById('price-banner').style.display = 'block';
+  document.body.classList.add('view-course');
+  window.scrollTo(0,0);
+  
+  setTimeout(() => {
+    initializeCourseLogic();
+    renderQuiz();
+  }, 100);
+}
