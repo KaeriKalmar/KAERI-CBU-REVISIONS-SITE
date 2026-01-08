@@ -822,6 +822,19 @@ button:disabled {
   padding: 0; 
 }
 
+/* Additional styles for Buy Now button */
+#buy-now-link button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+}
+
+@media (max-width: 768px) {
+  #buy-now-link button {
+    padding: 10px !important;
+    font-size: 0.95em !important;
+  }
+}
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 992px) { 
   .quiz-container { margin: 40px 20px; padding: 30px 20px; } 
@@ -1238,29 +1251,58 @@ button:disabled {
   <!-- FLOATING WHATSAPP -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
   
-  <!-- COMPACT PAYMENT MODAL -->
-  <div id="payment-modal" class="modal">
-    <div class="modal-content">
-      <button class="close-modal" onclick="closePaymentModal()">&times;</button>
-      <div class="pay-header">
-        <h2>🔓 Unlock Access</h2>
-        <p id="pay-term-name">Course</p>
-      </div>
-      <div class="pay-body">
-        <span class="pay-price" id="pay-amount">K15</span>
-        <div class="payment-info-box">
-          <strong>Send to:</strong><br>
-          • MTN: 0961005406<br>
-          • Airtel: 0974784161<br>
-          • Zanaco: 4584568100159 (Kaluluma Kaumbu)<br>
-          <em style="display:block; margin-top:5px; color:#007bff;">WhatsApp proof to: 0964312504</em>
+<!-- COMPACT PAYMENT MODAL -->
+<div id="payment-modal" class="modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closePaymentModal()">&times;</button>
+    <div class="pay-header">
+      <h2>🔓 Unlock Access</h2>
+      <p id="pay-term-name">Course</p>
+    </div>
+    <div class="pay-body">
+      <span class="pay-price" id="pay-amount">K15</span>
+      
+      <!-- PAYMENT OPTIONS SECTION -->
+      <div style="margin-bottom: 20px; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden;">
+        <!-- OPTION 1: BUY NOW -->
+        <div style="background: #f8f9fa; padding: 15px; border-bottom: 1px solid #dee2e6;">
+          <h4 style="margin: 0 0 10px 0; color: #007bff;">Option 1: Buy New Access</h4>
+          <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #495057;">
+            Purchase fresh access for <strong id="buy-price">K15</strong>
+          </p>
+          <a id="buy-now-link" href="https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec" 
+             target="_blank" 
+             style="text-decoration: none;">
+            <button style="width: 100%; background: linear-gradient(135deg, #007bff, #0056b3); color: white; border: none; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
+              🛒 Buy Now (K15)
+            </button>
+          </a>
         </div>
-        <input type="text" id="access-code-input" class="pay-input" placeholder="Enter Access Code">
-        <button class="pay-btn" onclick="verifyCodeFromModal()">Activate 🚀</button>
-        <button class="cancel-pay-btn" onclick="closePaymentModal()">Maybe Later (Use Demo)</button>
+        
+        <!-- OPTION 2: ACTIVATE EXISTING -->
+        <div style="padding: 15px;">
+          <h4 style="margin: 0 0 10px 0; color: #28a745;">Option 2: Activate Code</h4>
+          <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #495057;">
+            Already paid? Enter your access code below
+          </p>
+          <input type="text" id="access-code-input" class="pay-input" placeholder="Enter Access Code">
+          <button class="pay-btn" onclick="verifyCodeFromModal()">✅ Activate Code</button>
+        </div>
       </div>
+      
+      <!-- PAYMENT INFO BOX -->
+      <div class="payment-info-box">
+        <strong>Send Payment to:</strong><br>
+        • MTN: 0961005406<br>
+        • Airtel: 0974784161<br>
+        • Zanaco: 4584568100159 (Kaluluma Kaumbu)<br>
+        <em style="display:block; margin-top:5px; color:#007bff;">WhatsApp proof to: 0964312504</em>
+      </div>
+      
+      <button class="cancel-pay-btn" onclick="closePaymentModal()">Maybe Later (Use Demo)</button>
     </div>
   </div>
+</div>
 
   <!-- PRINT PREVIEW MODAL -->
   <div id="print-preview-modal" class="print-modal">
