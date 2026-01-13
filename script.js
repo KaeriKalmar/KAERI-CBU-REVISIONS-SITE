@@ -970,10 +970,23 @@ function readCurrentQuestion() {
     if (!ttsEnabled) return;
     stopReading();
     let textToRead = "";
+
     if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
         const questionElement = document.querySelector('.question-box p');
         const optionsElements = document.querySelectorAll('.options label');
-        if (questionElement) textToRead += questionElement.textContent.trim();
+        
+        if (questionElement) {
+            let content = questionElement.textContent.trim();
+            
+            // === NEW: Fix "Q:" to sound like "Question:" ===
+            if (currentQuizType === 'essay') {
+                content = content.replace(/^Q:/, "Question: "); 
+            }
+            // ===============================================
+
+            textToRead += content;
+        }
+
         if (optionsElements.length > 0) {
             textToRead += ". Options are: ";
             optionsElements.forEach((label, i) => {
@@ -981,6 +994,13 @@ function readCurrentQuestion() {
                 textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
             });
         }
+    } else if (currentQuizType === 'shortAnswer') {
+        const questionElement = document.querySelector('.question-box p');
+        if (questionElement) textToRead = questionElement.textContent.trim();
+    }
+    
+    readText(textToRead);
+}
     } else if (currentQuizType === 'shortAnswer') {
         const questionElement = document.querySelector('.question-box p');
         if (questionElement) textToRead = questionElement.textContent.trim();
