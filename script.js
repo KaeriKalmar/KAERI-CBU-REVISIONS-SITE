@@ -1,6 +1,6 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (PHASE 1) ===
-// === Server-Side Access Control + Local Content ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (PHASE 2) ===
+// === Server-Side Access + Local Content + Doc Delivery ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
@@ -41,12 +41,26 @@ async function initializeCourseLogic() {
     // Initialize TTS
     ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
     const modeButtonsDiv = document.querySelector('.mode-buttons');
-    if (modeButtonsDiv && !document.getElementById('tts-toggle-button')) {
-        const ttsButton = document.createElement('button');
-        ttsButton.id = 'tts-toggle-button';
-        ttsButton.onclick = toggleTTS;
-        modeButtonsDiv.appendChild(ttsButton);
-        updateTtsButtonText();
+    if (modeButtonsDiv) {
+        // Add TTS Button if missing
+        if (!document.getElementById('tts-toggle-button')) {
+            const ttsButton = document.createElement('button');
+            ttsButton.id = 'tts-toggle-button';
+            ttsButton.onclick = toggleTTS;
+            modeButtonsDiv.appendChild(ttsButton);
+            updateTtsButtonText();
+        }
+        
+        // --- NEW: Add Document Button if missing ---
+        if (!document.getElementById('docs-btn')) {
+            const docBtn = document.createElement('button');
+            docBtn.id = 'docs-btn';
+            docBtn.innerHTML = "📂 Course Documents";
+            docBtn.style.backgroundColor = "#17a2b8"; // Teal/Blue distinction
+            docBtn.onclick = renderDocuments;
+            // Insert as the first button or append
+            modeButtonsDiv.insertBefore(docBtn, modeButtonsDiv.firstChild);
+        }
     }
 
     // Context Setup
@@ -61,16 +75,20 @@ async function initializeCourseLogic() {
     currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
     currentFlashcardTopics = filterFlashcardsByCourseAndTerm(allFlashcards, currentCourse, currentTerm);
 
-    // Security Check (New Phase 1 Logic)
+    // Inject Viewer HTML if missing (Self-Healing UI)
+    if (!document.getElementById('smart-doc-viewer')) {
+        injectDocViewerHTML();
+    }
+
+    // Security Check (Phase 1 Logic)
     await checkAccessStatus();
 }
 
 // ============================================================
-// === SECURITY & AUTHENTICATION (PHASE 1 SERVER-SIDE) ===
+// === SECURITY & AUTHENTICATION ===
 // ============================================================
 
 async function checkAccessStatus() {
-    // 1. Check Local Storage (Fast Path)
     const storedToken = localStorage.getItem(`token_${currentTermKey}`);
     const storedExpiry = localStorage.getItem(`expiry_${currentTermKey}`);
     
@@ -78,8 +96,6 @@ async function checkAccessStatus() {
         enableFullAccessUI();
         return;
     }
-
-    // 2. If no valid session, show Demo Mode
     enableDemoUI();
 }
 
@@ -88,21 +104,18 @@ async function verifyCodeFromModal() {
     
     if (!userCode) return alert("Please enter a code.");
     
-    // *** CRITICAL: Ask for Email to verify identity ***
     const userEmail = prompt("Enter the Email you used to pay:"); 
     if (!userEmail) return alert("Email required for verification.");
 
-    // Generate Device Fingerprint
     let deviceFP = localStorage.getItem('device_fp');
     if (!deviceFP) {
         deviceFP = navigator.userAgent + "_" + Math.random().toString(36).substring(7);
         localStorage.setItem('device_fp', deviceFP);
     }
 
-    showAppNotification("🔐 Verifying with Server...", "info");
+    showAppNotification("🔍 Verifying with Server...", "info");
 
     try {
-        // CALL THE BACKEND
         const response = await fetch(APPS_SCRIPT_URL, {
             method: 'POST',
             body: JSON.stringify({
@@ -118,7 +131,6 @@ async function verifyCodeFromModal() {
         const result = await response.json();
 
         if (result.success) {
-            // SUCCESS: Save Session & Unlock
             localStorage.setItem(`token_${currentTermKey}`, result.data.token);
             localStorage.setItem(`expiry_${currentTermKey}`, result.data.expiry);
             
@@ -126,7 +138,6 @@ async function verifyCodeFromModal() {
             enableFullAccessUI();
             showAppNotification("✅ " + result.message, "success");
         } else {
-            // FAIL: Show Error
             showAppNotification("❌ " + result.message, "error");
         }
     } catch (e) {
@@ -139,7 +150,7 @@ function blockDemo(type) {
     
     const key = `demo_${type}_used_${currentTermKey}`;
     let attempts = parseInt(localStorage.getItem(key) || "0");
-    const maxAttempts = 10; // Reduced for Phase 1
+    const maxAttempts = 10;
     const attemptsLeft = maxAttempts - attempts;
     
     if (attempts < maxAttempts) {
@@ -222,6 +233,7 @@ function backToMenu() {
     document.body.removeAttribute('data-course');
     document.body.removeAttribute('data-term');
     stopReading(); 
+    closeDocViewer();
     window.scrollTo(0,0);
 }
 
@@ -247,6 +259,10 @@ function openPaymentModal() {
     document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
     document.getElementById('pay-amount').textContent = `K${currentPrice}`;
     document.getElementById('payment-modal').classList.add('show');
+    
+    // Update Buy Link Dynamically
+    updateBuyNowLink(currentCourse, currentTerm, currentPrice);
+
     setTimeout(() => {
         const input = document.getElementById('access-code-input');
         if(input) input.focus();
@@ -257,8 +273,107 @@ function closePaymentModal() {
     document.getElementById('payment-modal').classList.remove('show');
 }
 
+function updateBuyNowLink(course, term, price) {
+  const buyNowLink = document.getElementById('buy-now-link');
+  const buyPriceElement = document.getElementById('buy-price');
+  
+  if (buyNowLink && buyPriceElement) {
+    buyPriceElement.textContent = `K${price}`;
+    // Link to payment processing or whatsapp
+    const paymentUrl = `https://wa.me/260964312504?text=I%20want%20to%20buy%20${course}%20${term}%20code`;
+    buyNowLink.href = paymentUrl;
+    
+    const buyButton = buyNowLink.querySelector('button');
+    if (buyButton) {
+      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
+    }
+  }
+}
+
 // ============================================================
-// === QUIZ ENGINE (UNCHANGED) ===
+// === NEW: DOCUMENT LIBRARY ENGINE ===
+// ============================================================
+
+async function renderDocuments() {
+    if (blockDemo('documents')) return; 
+
+    const container = document.getElementById("quiz-form");
+    container.innerHTML = `
+        <div style="text-align:center; padding:40px;">
+            <div style="border: 4px solid #f3f3f3; border-top: 4px solid #72efdd; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+            <p style="color:#a0a8b4; margin-top:10px;">Connecting to Library...</p>
+        </div>`;
+    document.getElementById("result").innerHTML = "";
+    
+    currentQuizType = 'documents'; 
+    updateProgress(0, 0);
+
+    try {
+        // --- THE FIX: SEND AS TEXT/PLAIN TO BYPASS CORS ---
+        const payload = JSON.stringify({
+            action: 'GET_STUDENT_DOCS',
+            payload: { 
+                course: currentCourse, 
+                term: currentTerm 
+            }
+        });
+
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            redirect: "follow", // Handle Google's 302 Redirects
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8" // <--- CRITICAL FIX
+            },
+            body: payload
+        });
+        
+        const data = await response.json();
+
+        // --- DEBUGGING (Check your Console if it still fails) ---
+        console.log("Server Response:", data);
+
+        if (!data.success || !data.documents || data.documents.length === 0) {
+            container.innerHTML = `
+                <div style="text-align:center; padding:20px;">
+                    <h3>📂 Library Empty</h3>
+                    <p>No active documents found for ${currentCourse} ${currentTerm}.</p>
+                    <p style="font-size:0.8em; color:#666;">Debug: ${data.message || "No data"}</p>
+                </div>`;
+            return;
+        }
+
+        // Render the Grid
+        let html = `<h2 style="text-align:center; margin-bottom:20px;">📚 ${currentCourse} Library</h2>`;
+        html += `<div class="doc-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:15px;">`;
+
+        data.documents.forEach(doc => {
+            html += `
+            <div class="doc-card" onclick="openDocumentViewer('${doc.fileId}', '${doc.title}')" style="background:#2b3a55; padding:15px; border-radius:10px; border-left:5px solid #72efdd; cursor:pointer; transition:0.3s;">
+                <div style="font-size:0.7em; text-transform:uppercase; color:#72efdd; font-weight:bold; letter-spacing:1px; margin-bottom:5px;">${doc.topic}</div>
+                <div style="font-size:1.1em; font-weight:bold; color:white; margin-bottom:8px; line-height:1.3;">${doc.title}</div>
+                <div style="font-size:0.85em; color:#a0a8b4; margin-bottom:10px;">${doc.description || ''}</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; border-top:1px solid #3e506e; padding-top:10px;">
+                    <span style="background:#0d1b2a; padding:2px 8px; border-radius:4px; font-size:0.7em; color:#fff;">${doc.type} • ${doc.size}</span>
+                    <span style="color:#72efdd; font-size:0.9em;">👁️ Open</span>
+                </div>
+            </div>`;
+        });
+
+        html += `</div>`;
+        container.innerHTML = html;
+
+    } catch (e) {
+        console.error("Fetch Error:", e);
+        container.innerHTML = `
+            <div style="color:#dc3545; text-align:center; padding:20px;">
+                <h3>⚠️ Connection Failed</h3>
+                <p>Could not fetch documents.</p>
+                <small>Technical Detail: ${e.message}</small>
+            </div>`;
+    }
+}
+// ============================================================
+// === QUIZ ENGINE (STANDARD) ===
 // ============================================================
 
 // --- MCQ ---
@@ -361,7 +476,7 @@ function showFinalMcqScore() {
     container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
     
     const restartBtn = document.createElement("button");
-    restartBtn.innerText = "🔁 Try Again";
+    restartBtn.innerText = "🔍 Try Again";
     restartBtn.className = "restart-button";
     restartBtn.style.marginRight = "10px";
     restartBtn.onclick = renderQuiz;
@@ -973,7 +1088,11 @@ function readCurrentQuestion() {
     if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
         const questionElement = document.querySelector('.question-box p');
         const optionsElements = document.querySelectorAll('.options label');
-        if (questionElement) textToRead += questionElement.textContent.trim();
+        if (questionElement) {
+            let content = questionElement.textContent.trim();
+            if (currentQuizType === 'essay') content = content.replace(/^Q:/, "Question: "); 
+            textToRead += content;
+        }
         if (optionsElements.length > 0) {
             textToRead += ". Options are: ";
             optionsElements.forEach((label, i) => {
@@ -1048,6 +1167,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         closePaymentModal();
         closePrintPreview();
+        closeDocViewer();
     }
 });
 
@@ -1073,28 +1193,23 @@ function renderStudentBoard() {
     
     if (!board || !annContainer || !motContainer) return;
 
-    // 1. Data Validation & Filtering
     const today = new Date();
     let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
         return item.active && (!item.expiry || new Date(item.expiry) >= today);
     });
     let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
 
-    // 2. State Determination
     const hasNews = validAnnouncements.length > 0;
     const hasQuote = validMotivation.length > 0;
 
-    // 3. Render: Empty State
     if (!hasNews && !hasQuote) {
         board.style.display = 'none';
         return;
     }
 
-    // 4. Reset & Prepare Layout
     board.style.display = 'grid';
     board.classList.remove('layout-full-width');
 
-    // 5. Render Announcement (Priority Item)
     if (hasNews) {
         const item = validAnnouncements[0];
         annContainer.style.display = 'flex';
@@ -1115,7 +1230,6 @@ function renderStudentBoard() {
         annContainer.style.display = 'none';
     }
 
-    // 6. Render Motivation
     if (hasQuote) {
         const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
         motContainer.style.display = 'flex';
@@ -1130,72 +1244,8 @@ function renderStudentBoard() {
         motContainer.style.display = 'none';
     }
 
-    // 7. Full Width Override
     if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
         board.classList.add('layout-full-width');
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => { setTimeout(renderStudentBoard, 100); });
-
-// Add this function to update the buy link dynamically
-function updateBuyNowLink(course, term, price) {
-  const buyNowLink = document.getElementById('buy-now-link');
-  const buyPriceElement = document.getElementById('buy-price');
-  
-  if (buyNowLink && buyPriceElement) {
-    // Update the displayed price
-    buyPriceElement.textContent = `K${price}`;
-    
-    // Create a dynamic URL with course and term parameters
-    const paymentUrl = `https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec?course=${course}&term=${term}`;
-    buyNowLink.href = paymentUrl;
-    
-    // Update button text
-    const buyButton = buyNowLink.querySelector('button');
-    if (buyButton) {
-      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
-    }
-  }
-}
-
-// Modify the openPaymentModal function to include buy link update
-function openPaymentModal() {
-  document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
-  document.getElementById('pay-amount').textContent = `K${currentPrice}`;
-  document.getElementById('payment-modal').classList.add('show');
-  
-  // Update the buy now link with current course info
-  updateBuyNowLink(currentCourse, currentTerm, currentPrice);
-  
-  setTimeout(() => {
-    const input = document.getElementById('access-code-input');
-    if(input) input.focus();
-  }, 300);
-}
-
-// Update the loadCourse function to set currentPrice globally
-function loadCourse(course, term, price) {
-  document.body.setAttribute('data-course', course);
-  document.body.setAttribute('data-term', term);
-  currentPrice = price; // Make sure this is set
-  
-  document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
-  document.getElementById('price-banner').textContent = `Price: K${price}`;
-  document.getElementById('price-val').textContent = `K${price}`;
-  document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
-  
-  document.getElementById('landing-view').style.display = 'none';
-  document.getElementById('landing-header').style.display = 'none';
-  document.getElementById('course-view').style.display = 'block';
-  document.getElementById('fixed-header').style.display = 'block';
-  document.getElementById('price-banner').style.display = 'block';
-  document.body.classList.add('view-course');
-  window.scrollTo(0,0);
-  
-  setTimeout(() => {
-    initializeCourseLogic();
-    renderQuiz();
-  }, 100);
 }
 
