@@ -1,10 +1,15 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (PHASE 1) ===
-// === Server-Side Access Control + Local Content ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v10.1 FINAL) ===
+// === Server-Side Access + Local Content + Doc Delivery ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxogIMCtFpKpxKopADDhRtMwWxDaMixrLECcDN7BxRr8fEcsUZ60PE_wY_Z1X5c6hYghw/exec";
+// ✅ UPDATED: Your specific Backend URL
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6ZmnY0xmGjwxIq8YoP3mHEghVbEb4ZnVn_sKoCL_VI3CdsjEjibnGIFbQ/exec";
+
+// ✅ UPDATED: The Payment Script URL (for dynamic buy links)
+const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
+
 let ttsEnabled = false;
 let printContentData = null;
 let hasFullAccess = false;
@@ -22,7 +27,7 @@ let currentEssay = null, currentStepIndex = 0, essayScore = 0;
 let currentFlashcardTopic = null, currentFlashcards = [], currentCardIndex = 0, isCardFront = true;
 
 // ============================================================
-// === INITIALIZATION & DATA LOADING ===
+// === 1. INITIALIZATION & DATA LOADING ===
 // ============================================================
 
 function loadGlobalData() {
@@ -41,12 +46,40 @@ async function initializeCourseLogic() {
     // Initialize TTS
     ttsEnabled = localStorage.getItem("ttsEnabled") === "true";
     const modeButtonsDiv = document.querySelector('.mode-buttons');
-    if (modeButtonsDiv && !document.getElementById('tts-toggle-button')) {
-        const ttsButton = document.createElement('button');
-        ttsButton.id = 'tts-toggle-button';
-        ttsButton.onclick = toggleTTS;
-        modeButtonsDiv.appendChild(ttsButton);
-        updateTtsButtonText();
+    
+    if (modeButtonsDiv) {
+        // Add TTS Button if missing
+        if (!document.getElementById('tts-toggle-button')) {
+            const ttsButton = document.createElement('button');
+            ttsButton.id = 'tts-toggle-button';
+            ttsButton.onclick = toggleTTS;
+            modeButtonsDiv.appendChild(ttsButton);
+            updateTtsButtonText();
+        }
+        
+        // --- NEW: Add Document Button if missing ---
+        if (!document.getElementById('docs-btn')) {
+            const docBtn = document.createElement('button');
+            docBtn.id = 'docs-btn';
+            docBtn.innerHTML = "📂 Course Documents";
+            // ✅ STYLING: Green to match Flashcards/Essays as requested
+            docBtn.style.backgroundColor = "#28a745"; 
+            docBtn.style.color = "white";
+            docBtn.style.border = "none";
+            docBtn.style.padding = "15px 20px";
+            docBtn.style.fontSize = "1.1em";
+            docBtn.style.borderRadius = "8px";
+            docBtn.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+            docBtn.style.cursor = "pointer";
+            docBtn.onclick = renderDocuments;
+
+            // Insert as second button (after MCQ)
+            if (modeButtonsDiv.children.length > 1) {
+                modeButtonsDiv.insertBefore(docBtn, modeButtonsDiv.children[1]);
+            } else {
+                modeButtonsDiv.appendChild(docBtn);
+            }
+        }
     }
 
     // Context Setup
@@ -61,16 +94,184 @@ async function initializeCourseLogic() {
     currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
     currentFlashcardTopics = filterFlashcardsByCourseAndTerm(allFlashcards, currentCourse, currentTerm);
 
-    // Security Check (New Phase 1 Logic)
+    // Inject Viewer HTML if missing (Self-Healing UI)
+    if (!document.getElementById('smart-doc-viewer')) {
+        injectDocViewerHTML();
+    }
+
+    // Security Check
     await checkAccessStatus();
 }
 
 // ============================================================
-// === SECURITY & AUTHENTICATION (PHASE 1 SERVER-SIDE) ===
+// === 2. DOCUMENT DELIVERY ENGINE (COMPLETE) ===
+// ============================================================
+
+function injectDocViewerHTML() {
+    if (document.getElementById('smart-doc-viewer')) return;
+    
+    const viewerHTML = `
+    <div id="smart-doc-viewer" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; align-items:center; justify-content:center;">
+        <div style="background:#1a1a2e; width:95%; height:95%; border-radius:15px; padding:20px; display:flex; flex-direction:column; box-shadow:0 10px 40px rgba(0,0,0,0.5); border:2px solid #72efdd;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; padding-bottom:10px; border-bottom:1px solid #3e506e;">
+                <h3 id="viewer-title" style="color:white; margin:0; font-size:1.3em;">Document Viewer</h3>
+                <button onclick="closeDocViewer()" style="background:#dc3545; color:white; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight:bold;">✕ Close</button>
+            </div>
+            <iframe id="doc-frame" style="flex:1; width:100%; border:none; border-radius:8px; background:white;" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div style="margin-top:10px; text-align:center; color:#888; font-size:0.8em; padding-top:10px; border-top:1px solid #3e506e;">
+                <small>Protected Content - Do not share links outside Kaeri EdTech</small>
+            </div>
+        </div>
+    </div>`;
+    
+    document.body.insertAdjacentHTML('beforeend', viewerHTML);
+}
+
+function openDocumentViewer(fileId, title) {
+    if (!fileId || fileId === 'undefined') {
+        showAppNotification("⚠️ Document link unavailable", "error");
+        return;
+    }
+    
+    const viewer = document.getElementById('smart-doc-viewer');
+    const iframe = document.getElementById('doc-frame');
+    const titleEl = document.getElementById('viewer-title');
+    
+    if (!viewer || !iframe) {
+        injectDocViewerHTML();
+        setTimeout(() => openDocumentViewer(fileId, title), 100);
+        return;
+    }
+    
+    titleEl.textContent = title || "Document";
+    iframe.src = `https://drive.google.com/file/d/${fileId}/preview?usp=drivesdk`;
+    
+    viewer.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Optional analytics
+    logDocumentView(title, fileId);
+}
+
+function closeDocViewer() {
+    const viewer = document.getElementById('smart-doc-viewer');
+    if (viewer) {
+        viewer.style.display = 'none';
+        const iframe = document.getElementById('doc-frame');
+        if (iframe) iframe.src = "";
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function logDocumentView(title, fileId) {
+    try {
+        fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: 'logEvent',
+                data: {
+                    email: hasFullAccess ? 'full_access' : 'demo',
+                    action: 'view_document',
+                    course: currentCourse,
+                    term: currentTerm,
+                    details: `Viewed: ${title}`,
+                    userAgent: navigator.userAgent
+                }
+            })
+        }).catch(() => {});
+    } catch (e) {}
+}
+
+async function renderDocuments() {
+    if (blockDemo('documents')) return; 
+
+    const container = document.getElementById("quiz-form");
+    container.innerHTML = `
+        <div style="text-align:center; padding:40px;">
+            <div style="border:4px solid #f3f3f3; border-top:4px solid #72efdd; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:0 auto;"></div>
+            <h3 style="color:#a0a8b4; margin-top:20px;">Connecting to Library...</h3>
+        </div>`;
+    document.getElementById("result").innerHTML = "";
+    
+    currentQuizType = 'documents'; 
+    updateProgress(0, 0);
+
+    try {
+        const payload = JSON.stringify({
+            action: 'GET_STUDENT_DOCS',
+            payload: { 
+                course: currentCourse, 
+                term: currentTerm 
+            }
+        });
+
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            redirect: "follow",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8"
+            },
+            body: payload
+        });
+        
+        const data = await response.json();
+        
+        // Handle BOTH response formats
+        const documents = data.documents || (data.data && data.data.documents) || [];
+        const success = data.success || false;
+        
+        if (!success || documents.length === 0) {
+            container.innerHTML = `
+                <div style="text-align:center; padding:30px;">
+                    <h3>📂 Library Empty</h3>
+                    <p>No active documents found for ${currentCourse} ${currentTerm}.</p>
+                    <button class="restart-button" onclick="backToMenu()">Back to Menu</button>
+                </div>`;
+            return;
+        }
+
+        // Render the Grid
+        let html = `<h2 style="text-align:center; margin-bottom:20px;">📚 ${currentCourse} Library</h2>`;
+        html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:15px; padding:20px 0;">`;
+
+        documents.forEach(doc => {
+            const shortDesc = doc.description ? 
+                (doc.description.length > 80 ? doc.description.substring(0, 80) + '...' : doc.description) : '';
+            
+            html += `
+            <div class="doc-card" onclick="openDocumentViewer('${doc.fileId}', '${doc.title.replace(/'/g, "\\'")}')" style="background:#2b3a55; padding:15px; border-radius:10px; border-left:5px solid #28a745; cursor:pointer; transition:0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <div style="font-size:0.7em; text-transform:uppercase; color:#28a745; font-weight:bold; letter-spacing:1px; margin-bottom:5px;">${doc.topic || 'General'}</div>
+                <div style="font-size:1.1em; font-weight:bold; color:white; margin-bottom:8px; line-height:1.3;">${doc.title}</div>
+                <div style="font-size:0.85em; color:#a0a8b4; margin-bottom:10px;">${shortDesc}</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; border-top:1px solid #3e506e; padding-top:10px;">
+                    <span style="background:#0d1b2a; padding:2px 8px; border-radius:4px; font-size:0.7em; color:#fff;">${doc.type || 'FILE'} • ${doc.size || 'Unknown'}</span>
+                    <span style="color:#28a745; font-size:0.9em; font-weight:bold;">👁️ Open</span>
+                </div>
+            </div>`;
+        });
+
+        html += `</div>`;
+        html += `<div style="text-align:center; margin-top:20px;"><button class="restart-button" onclick="backToMenu()">⬅ Back to Menu</button></div>`;
+        
+        container.innerHTML = html;
+
+    } catch (e) {
+        console.error("Fetch Error:", e);
+        container.innerHTML = `
+            <div style="text-align:center; padding:20px; color:#dc3545;">
+                <h3>⚠️ Connection Error</h3>
+                <p>Could not load library.</p>
+                <button class="restart-button" onclick="renderDocuments()">Try Again</button>
+            </div>`;
+    }
+}
+
+// ============================================================
+// === 3. SECURITY & AUTHENTICATION ===
 // ============================================================
 
 async function checkAccessStatus() {
-    // 1. Check Local Storage (Fast Path)
     const storedToken = localStorage.getItem(`token_${currentTermKey}`);
     const storedExpiry = localStorage.getItem(`expiry_${currentTermKey}`);
     
@@ -78,8 +279,6 @@ async function checkAccessStatus() {
         enableFullAccessUI();
         return;
     }
-
-    // 2. If no valid session, show Demo Mode
     enableDemoUI();
 }
 
@@ -88,23 +287,22 @@ async function verifyCodeFromModal() {
     
     if (!userCode) return alert("Please enter a code.");
     
-    // *** CRITICAL: Ask for Email to verify identity ***
     const userEmail = prompt("Enter the Email you used to pay:"); 
     if (!userEmail) return alert("Email required for verification.");
 
-    // Generate Device Fingerprint
     let deviceFP = localStorage.getItem('device_fp');
     if (!deviceFP) {
         deviceFP = navigator.userAgent + "_" + Math.random().toString(36).substring(7);
         localStorage.setItem('device_fp', deviceFP);
     }
 
-    showAppNotification("🔐 Verifying with Server...", "info");
+    showAppNotification("🔍 Verifying with Server...", "info");
 
     try {
-        // CALL THE BACKEND
         const response = await fetch(APPS_SCRIPT_URL, {
             method: 'POST',
+            redirect: "follow",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: 'validateAccess',
                 code: userCode,
@@ -118,15 +316,13 @@ async function verifyCodeFromModal() {
         const result = await response.json();
 
         if (result.success) {
-            // SUCCESS: Save Session & Unlock
-            localStorage.setItem(`token_${currentTermKey}`, result.data.token);
+            localStorage.setItem(`token_${currentTermKey}`, result.data.token || "VALID");
             localStorage.setItem(`expiry_${currentTermKey}`, result.data.expiry);
             
             closePaymentModal();
             enableFullAccessUI();
             showAppNotification("✅ " + result.message, "success");
         } else {
-            // FAIL: Show Error
             showAppNotification("❌ " + result.message, "error");
         }
     } catch (e) {
@@ -139,7 +335,7 @@ function blockDemo(type) {
     
     const key = `demo_${type}_used_${currentTermKey}`;
     let attempts = parseInt(localStorage.getItem(key) || "0");
-    const maxAttempts = 10; // Reduced for Phase 1
+    const maxAttempts = 10;
     const attemptsLeft = maxAttempts - attempts;
     
     if (attempts < maxAttempts) {
@@ -157,7 +353,7 @@ function blockDemo(type) {
 }
 
 // ============================================================
-// === UI & NAVIGATION ===
+// === 4. UI & NAVIGATION (UNCHANGED) ===
 // ============================================================
 
 function enableFullAccessUI() {
@@ -222,6 +418,7 @@ function backToMenu() {
     document.body.removeAttribute('data-course');
     document.body.removeAttribute('data-term');
     stopReading(); 
+    closeDocViewer();
     window.scrollTo(0,0);
 }
 
@@ -247,6 +444,10 @@ function openPaymentModal() {
     document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
     document.getElementById('pay-amount').textContent = `K${currentPrice}`;
     document.getElementById('payment-modal').classList.add('show');
+    
+    // Update Buy Link Dynamically
+    updateBuyNowLink(currentCourse, currentTerm, currentPrice);
+
     setTimeout(() => {
         const input = document.getElementById('access-code-input');
         if(input) input.focus();
@@ -257,11 +458,74 @@ function closePaymentModal() {
     document.getElementById('payment-modal').classList.remove('show');
 }
 
+// ✅ FIXED: Now points to the Google Script Payment URL instead of WhatsApp
+function updateBuyNowLink(course, term, price) {
+  const buyNowLink = document.getElementById('buy-now-link');
+  const buyPriceElement = document.getElementById('buy-price');
+  
+  if (buyNowLink && buyPriceElement) {
+    buyPriceElement.textContent = `K${price}`;
+    
+    // Dynamic URL for Payment Script
+    const paymentUrl = `${PAYMENT_SCRIPT_URL}?course=${course}&term=${term}`;
+    buyNowLink.href = paymentUrl;
+    
+    const buyButton = buyNowLink.querySelector('button');
+    if (buyButton) {
+      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
+    }
+  }
+}
+
+function updateModeBanner(message) {
+    const banner = document.getElementById("mode-banner");
+    if (banner) banner.textContent = message;
+}
+
+function showAppNotification(message, type = 'info', duration = 5000) {
+    const el = document.getElementById('app-notification');
+    if (!el) return alert(message);
+    
+    const msgSpan = el.querySelector('.notification-message');
+    if (msgSpan) msgSpan.textContent = message;
+    else el.innerText = message;
+
+    el.className = ''; 
+    void el.offsetWidth; 
+    el.className = 'show ' + type;
+
+    if (el.timeoutId) clearTimeout(el.timeoutId);
+    el.timeoutId = setTimeout(() => {
+        el.classList.remove('show');
+    }, duration);
+
+    const closeBtn = el.querySelector('.close-btn');
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            el.classList.remove('show');
+            clearTimeout(el.timeoutId);
+        };
+    }
+}
+
+function updateProgress(current, total) {
+    const fill = document.getElementById("progress-fill");
+    const text = document.getElementById("progress-text");
+    const percent = total === 0 ? 0 : (current / total) * 100;
+    if (fill) fill.style.width = `${percent}%`;
+    if (text) text.textContent = `Progress: ${current} of ${total}`;
+}
+
+function clearDemoLocks() {
+    ["mcq", "shortAnswer", "essay", "flashcard", "documents"].forEach(
+        m => localStorage.removeItem(`demo_${m}_used_${currentTermKey}`)
+    );
+}
+
 // ============================================================
-// === QUIZ ENGINE (UNCHANGED) ===
+// === 5. QUIZ ENGINE (UNCHANGED) ===
 // ============================================================
 
-// --- MCQ ---
 function renderQuiz() {
     if (blockDemo('mcq')) return;
     const container = document.getElementById("quiz-form");
@@ -361,7 +625,7 @@ function showFinalMcqScore() {
     container.innerHTML = `<h2>Quiz Complete!</h2><p>Your Score: ${currentScore} / ${currentQuizData.length} (${percent}%)</p><p><em>${comment}</em></p>`;
     
     const restartBtn = document.createElement("button");
-    restartBtn.innerText = "🔁 Try Again";
+    restartBtn.innerText = "🔍 Try Again";
     restartBtn.className = "restart-button";
     restartBtn.style.marginRight = "10px";
     restartBtn.onclick = renderQuiz;
@@ -382,7 +646,6 @@ function showFinalMcqScore() {
     container.appendChild(previewBtn);
 }
 
-// --- SHORT ANSWER ---
 function renderShortAnswers() {
     if (blockDemo('shortAnswer')) return;
     const container = document.getElementById("quiz-form");
@@ -491,7 +754,6 @@ function showFinalShortAnswerScore() {
     container.appendChild(previewBtn);
 }
 
-// --- ESSAY ---
 function renderEssaySimulation() {
     const container = document.getElementById("quiz-form");
     container.innerHTML = "";
@@ -651,7 +913,6 @@ function showFinalEssayScore() {
     container.appendChild(backBtn);
 }
 
-// --- FLASHCARDS ---
 function renderFlashcardTopics() {
     const container = document.getElementById("quiz-form");
     container.innerHTML = "";
@@ -778,7 +1039,7 @@ function showFlashcardCompletion() {
 }
 
 // ============================================================
-// === SMART FEATURES ===
+// === 6. SMART FEATURES ===
 // ============================================================
 
 function challengeFriend(score, total, modeName) {
@@ -863,7 +1124,7 @@ function closePrintPreview() {
 }
 
 // ============================================================
-// === UTILITIES ===
+// === 7. UTILITIES ===
 // ============================================================
 
 function filterDataByCourseAndTerm(data, course, term) {
@@ -882,51 +1143,6 @@ function filterFlashcardsByCourseAndTerm(all, course, term) {
     return filtered;
 }
 
-function updateModeBanner(message) {
-    const banner = document.getElementById("mode-banner");
-    if (banner) banner.textContent = message;
-}
-
-function showAppNotification(message, type = 'info', duration = 5000) {
-    const el = document.getElementById('app-notification');
-    if (!el) return alert(message);
-    
-    const msgSpan = el.querySelector('.notification-message');
-    if (msgSpan) msgSpan.textContent = message;
-    else el.innerText = message;
-
-    el.className = ''; 
-    void el.offsetWidth; 
-    el.className = 'show ' + type;
-
-    if (el.timeoutId) clearTimeout(el.timeoutId);
-    el.timeoutId = setTimeout(() => {
-        el.classList.remove('show');
-    }, duration);
-
-    const closeBtn = el.querySelector('.close-btn');
-    if (closeBtn) {
-        closeBtn.onclick = () => {
-            el.classList.remove('show');
-            clearTimeout(el.timeoutId);
-        };
-    }
-}
-
-function updateProgress(current, total) {
-    const fill = document.getElementById("progress-fill");
-    const text = document.getElementById("progress-text");
-    const percent = total === 0 ? 0 : (current / total) * 100;
-    if (fill) fill.style.width = `${percent}%`;
-    if (text) text.textContent = `Progress: ${current} of ${total}`;
-}
-
-function clearDemoLocks() {
-    ["mcq", "shortAnswer", "essay", "flashcard"].forEach(
-        m => localStorage.removeItem(`demo_${m}_used_${currentTermKey}`)
-    );
-}
-
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
     while (currentIndex !== 0) {
@@ -938,7 +1154,7 @@ function shuffle(array) {
 }
 
 // ============================================================
-// === TEXT-TO-SPEECH ===
+// === 8. TEXT-TO-SPEECH ===
 // ============================================================
 
 let utterance = null;
@@ -973,7 +1189,11 @@ function readCurrentQuestion() {
     if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
         const questionElement = document.querySelector('.question-box p');
         const optionsElements = document.querySelectorAll('.options label');
-        if (questionElement) textToRead += questionElement.textContent.trim();
+        if (questionElement) {
+            let content = questionElement.textContent.trim();
+            if (currentQuizType === 'essay') content = content.replace(/^Q:/, "Question: "); 
+            textToRead += content;
+        }
         if (optionsElements.length > 0) {
             textToRead += ". Options are: ";
             optionsElements.forEach((label, i) => {
@@ -996,7 +1216,7 @@ function readFlashcard() {
 }
 
 // ============================================================
-// === GLOBAL INPUT HANDLING ===
+// === 9. GLOBAL EVENT HANDLERS ===
 // ============================================================
 
 document.addEventListener("keydown", (e) => {
@@ -1048,6 +1268,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         closePaymentModal();
         closePrintPreview();
+        closeDocViewer();
     }
 });
 
@@ -1064,7 +1285,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if(paymentModal) paymentModal.addEventListener('click', function(e) {
         if (e.target === this) closePaymentModal();
     });
+    
+    // Initialize student board
+    setTimeout(renderStudentBoard, 100);
 });
+
+// ============================================================
+// === 10. STUDENT BOARD (UNCHANGED) ===
+// ============================================================
 
 function renderStudentBoard() {
     const board = document.getElementById('student-board');
@@ -1073,28 +1301,23 @@ function renderStudentBoard() {
     
     if (!board || !annContainer || !motContainer) return;
 
-    // 1. Data Validation & Filtering
     const today = new Date();
     let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
         return item.active && (!item.expiry || new Date(item.expiry) >= today);
     });
     let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
 
-    // 2. State Determination
     const hasNews = validAnnouncements.length > 0;
     const hasQuote = validMotivation.length > 0;
 
-    // 3. Render: Empty State
     if (!hasNews && !hasQuote) {
         board.style.display = 'none';
         return;
     }
 
-    // 4. Reset & Prepare Layout
     board.style.display = 'grid';
     board.classList.remove('layout-full-width');
 
-    // 5. Render Announcement (Priority Item)
     if (hasNews) {
         const item = validAnnouncements[0];
         annContainer.style.display = 'flex';
@@ -1115,7 +1338,6 @@ function renderStudentBoard() {
         annContainer.style.display = 'none';
     }
 
-    // 6. Render Motivation
     if (hasQuote) {
         const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
         motContainer.style.display = 'flex';
@@ -1130,72 +1352,8 @@ function renderStudentBoard() {
         motContainer.style.display = 'none';
     }
 
-    // 7. Full Width Override
     if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
         board.classList.add('layout-full-width');
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => { setTimeout(renderStudentBoard, 100); });
-
-// Add this function to update the buy link dynamically
-function updateBuyNowLink(course, term, price) {
-  const buyNowLink = document.getElementById('buy-now-link');
-  const buyPriceElement = document.getElementById('buy-price');
-  
-  if (buyNowLink && buyPriceElement) {
-    // Update the displayed price
-    buyPriceElement.textContent = `K${price}`;
-    
-    // Create a dynamic URL with course and term parameters
-    const paymentUrl = `https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec?course=${course}&term=${term}`;
-    buyNowLink.href = paymentUrl;
-    
-    // Update button text
-    const buyButton = buyNowLink.querySelector('button');
-    if (buyButton) {
-      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
-    }
-  }
-}
-
-// Modify the openPaymentModal function to include buy link update
-function openPaymentModal() {
-  document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
-  document.getElementById('pay-amount').textContent = `K${currentPrice}`;
-  document.getElementById('payment-modal').classList.add('show');
-  
-  // Update the buy now link with current course info
-  updateBuyNowLink(currentCourse, currentTerm, currentPrice);
-  
-  setTimeout(() => {
-    const input = document.getElementById('access-code-input');
-    if(input) input.focus();
-  }, 300);
-}
-
-// Update the loadCourse function to set currentPrice globally
-function loadCourse(course, term, price) {
-  document.body.setAttribute('data-course', course);
-  document.body.setAttribute('data-term', term);
-  currentPrice = price; // Make sure this is set
-  
-  document.getElementById('course-title').textContent = `${course} Term ${term.replace('T','')} Study Materials`;
-  document.getElementById('price-banner').textContent = `Price: K${price}`;
-  document.getElementById('price-val').textContent = `K${price}`;
-  document.getElementById('price-desc').textContent = `${course} Term ${term.replace('T','')}`;
-  
-  document.getElementById('landing-view').style.display = 'none';
-  document.getElementById('landing-header').style.display = 'none';
-  document.getElementById('course-view').style.display = 'block';
-  document.getElementById('fixed-header').style.display = 'block';
-  document.getElementById('price-banner').style.display = 'block';
-  document.body.classList.add('view-course');
-  window.scrollTo(0,0);
-  
-  setTimeout(() => {
-    initializeCourseLogic();
-    renderQuiz();
-  }, 100);
 }
 
