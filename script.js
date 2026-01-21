@@ -1,13 +1,10 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v10.1 FINAL) ===
-// === Server-Side Access + Local Content + Doc Delivery ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v10.3 UNIVERSAL) ===
+// === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
-// ✅ UPDATED: Your specific Backend URL
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6ZmnY0xmGjwxIq8YoP3mHEghVbEb4ZnVn_sKoCL_VI3CdsjEjibnGIFbQ/exec";
-
-// ✅ UPDATED: The Payment Script URL (for dynamic buy links)
 const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
 
 let ttsEnabled = false;
@@ -57,12 +54,11 @@ async function initializeCourseLogic() {
             updateTtsButtonText();
         }
         
-        // --- NEW: Add Document Button if missing ---
+        // Add Document Button if missing
         if (!document.getElementById('docs-btn')) {
             const docBtn = document.createElement('button');
             docBtn.id = 'docs-btn';
             docBtn.innerHTML = "📂 Course Documents";
-            // ✅ STYLING: Green to match Flashcards/Essays as requested
             docBtn.style.backgroundColor = "#28a745"; 
             docBtn.style.color = "white";
             docBtn.style.border = "none";
@@ -73,7 +69,7 @@ async function initializeCourseLogic() {
             docBtn.style.cursor = "pointer";
             docBtn.onclick = renderDocuments;
 
-            // Insert as second button (after MCQ)
+            // Insert as second button
             if (modeButtonsDiv.children.length > 1) {
                 modeButtonsDiv.insertBefore(docBtn, modeButtonsDiv.children[1]);
             } else {
@@ -94,7 +90,7 @@ async function initializeCourseLogic() {
     currentEssayData = filterDataByCourseAndTerm(allEssayData, currentCourse, currentTerm);
     currentFlashcardTopics = filterFlashcardsByCourseAndTerm(allFlashcards, currentCourse, currentTerm);
 
-    // Inject Viewer HTML if missing (Self-Healing UI)
+    // Inject Viewer HTML if missing
     if (!document.getElementById('smart-doc-viewer')) {
         injectDocViewerHTML();
     }
@@ -104,7 +100,41 @@ async function initializeCourseLogic() {
 }
 
 // ============================================================
-// === 2. DOCUMENT DELIVERY ENGINE (COMPLETE) ===
+// === 2. UNIVERSAL RENDERING ENGINE (KaTeX) ===
+// ============================================================
+
+/**
+ * Triggers the KaTeX auto-renderer. 
+ * This transforms raw text strings ($$ x^2 $$) into visual math/science.
+ */
+function renderMath(targetId = null) {
+    // Safety check: Ensure library is loaded
+    if (typeof renderMathInElement !== 'function') return;
+
+    const renderOptions = {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},  // Block Math
+            {left: "$", right: "$", display: false},   // Inline Math
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+        ],
+        throwOnError: false // Graceful degradation on typo
+    };
+
+    if (targetId) {
+        const el = document.getElementById(targetId);
+        if (el) renderMathInElement(el, renderOptions);
+    } else {
+        // Default Targets: Quiz Form and Result Area
+        const form = document.getElementById("quiz-form");
+        const result = document.getElementById("result");
+        if (form) renderMathInElement(form, renderOptions);
+        if (result) renderMathInElement(result, renderOptions);
+    }
+}
+
+// ============================================================
+// === 3. DOCUMENT DELIVERY ENGINE ===
 // ============================================================
 
 function injectDocViewerHTML() {
@@ -148,8 +178,6 @@ function openDocumentViewer(fileId, title) {
     
     viewer.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-    
-    // Optional analytics
     logDocumentView(title, fileId);
 }
 
@@ -209,15 +237,11 @@ async function renderDocuments() {
         const response = await fetch(APPS_SCRIPT_URL, {
             method: 'POST',
             redirect: "follow",
-            headers: {
-                "Content-Type": "text/plain;charset=utf-8"
-            },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: payload
         });
         
         const data = await response.json();
-        
-        // Handle BOTH response formats
         const documents = data.documents || (data.data && data.data.documents) || [];
         const success = data.success || false;
         
@@ -231,7 +255,6 @@ async function renderDocuments() {
             return;
         }
 
-        // Render the Grid
         let html = `<h2 style="text-align:center; margin-bottom:20px;">📚 ${currentCourse} Library</h2>`;
         html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:15px; padding:20px 0;">`;
 
@@ -268,7 +291,7 @@ async function renderDocuments() {
 }
 
 // ============================================================
-// === 3. SECURITY & AUTHENTICATION ===
+// === 4. SECURITY & AUTHENTICATION ===
 // ============================================================
 
 async function checkAccessStatus() {
@@ -284,7 +307,6 @@ async function checkAccessStatus() {
 
 async function verifyCodeFromModal() {
     const userCode = document.getElementById('access-code-input').value.trim();
-    
     if (!userCode) return alert("Please enter a code.");
     
     const userEmail = prompt("Enter the Email you used to pay:"); 
@@ -318,7 +340,6 @@ async function verifyCodeFromModal() {
         if (result.success) {
             localStorage.setItem(`token_${currentTermKey}`, result.data.token || "VALID");
             localStorage.setItem(`expiry_${currentTermKey}`, result.data.expiry);
-            
             closePaymentModal();
             enableFullAccessUI();
             showAppNotification("✅ " + result.message, "success");
@@ -353,7 +374,7 @@ function blockDemo(type) {
 }
 
 // ============================================================
-// === 4. UI & NAVIGATION (UNCHANGED) ===
+// === 5. UI & NAVIGATION ===
 // ============================================================
 
 function enableFullAccessUI() {
@@ -444,8 +465,6 @@ function openPaymentModal() {
     document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
     document.getElementById('pay-amount').textContent = `K${currentPrice}`;
     document.getElementById('payment-modal').classList.add('show');
-    
-    // Update Buy Link Dynamically
     updateBuyNowLink(currentCourse, currentTerm, currentPrice);
 
     setTimeout(() => {
@@ -458,18 +477,14 @@ function closePaymentModal() {
     document.getElementById('payment-modal').classList.remove('show');
 }
 
-// ✅ FIXED: Now points to the Google Script Payment URL instead of WhatsApp
 function updateBuyNowLink(course, term, price) {
   const buyNowLink = document.getElementById('buy-now-link');
   const buyPriceElement = document.getElementById('buy-price');
   
   if (buyNowLink && buyPriceElement) {
     buyPriceElement.textContent = `K${price}`;
-    
-    // Dynamic URL for Payment Script
     const paymentUrl = `${PAYMENT_SCRIPT_URL}?course=${course}&term=${term}`;
     buyNowLink.href = paymentUrl;
-    
     const buyButton = buyNowLink.querySelector('button');
     if (buyButton) {
       buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
@@ -523,7 +538,7 @@ function clearDemoLocks() {
 }
 
 // ============================================================
-// === 5. QUIZ ENGINE (UNCHANGED) ===
+// === 6. QUIZ ENGINE (UPDATED FOR KaTeX & SMART TTS) ===
 // ============================================================
 
 function renderQuiz() {
@@ -565,8 +580,14 @@ function displayMcqQuestion() {
     
     html += `</div><button id="mcq-submit-btn" onclick="checkMcqAnswer()">✅ Submit</button></div>`;
     container.innerHTML = html;
+    
+    // --> TRIGGER RENDER ENGINE <--
+    renderMath();
+    
     document.getElementById("result").innerHTML = "";
     container.scrollIntoView({ behavior: "smooth" });
+    
+    // --> TRIGGER SMART READER <--
     readCurrentQuestion();
 }
 
@@ -598,12 +619,12 @@ function checkMcqAnswer() {
         feedbackText = "Correct!";
     } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
-        feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}, ${q.options[q.correct]}.`;
+        feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}.`;
     }
     
     const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
-    feedbackText += ` Explanation: ${q.explanation || ''}`;
+    feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
     currentQuestionIndex++;
     
@@ -611,6 +632,9 @@ function checkMcqAnswer() {
     nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
     nextBtn.onclick = displayMcqQuestion;
     resultDiv.appendChild(nextBtn);
+
+    // --> TRIGGER RENDER ENGINE FOR EXPLANATION <--
+    renderMath();
 
     readText(feedbackText); 
 }
@@ -672,6 +696,9 @@ function displayShortAnswerQuestion() {
     if (!q) return showFinalShortAnswerScore();
     
     container.innerHTML = `<h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3><div class="question-box"><p>${q.q}</p></div><textarea id="short-answer-input"></textarea><button id="sa-submit-btn" onclick="checkShortAnswer()">✅ Submit</button>`;
+    
+    renderMath();
+    
     document.getElementById("result").innerHTML = "";
     container.scrollIntoView({ behavior: "smooth" });
     readCurrentQuestion();
@@ -711,7 +738,7 @@ function checkShortAnswer() {
     
     const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
-    feedbackText += ` Explanation: ${q.explanation || ''}`;
+    feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
     currentQuestionIndex++;
     
@@ -719,6 +746,8 @@ function checkShortAnswer() {
     nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish";
     nextBtn.onclick = displayShortAnswerQuestion;
     resultDiv.appendChild(nextBtn);
+
+    renderMath();
 
     readText(feedbackText); 
 }
@@ -819,6 +848,9 @@ function showEssayStep(index) {
     
     html += `</div><button id="essay-submit-btn" onclick="checkEssayStep()">✅ Submit Step</button></div>`;
     container.innerHTML = html;
+    
+    renderMath();
+    
     document.getElementById("result").innerHTML = "";
     container.scrollIntoView({ behavior: "smooth" });
     readCurrentQuestion();
@@ -853,12 +885,12 @@ function checkEssayStep() {
         feedbackText = "Correct!";
     } else {
         resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
-        feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}, ${step.options[step.correct]}.`;
+        feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}.`;
     }
     
     const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
     resultDiv.innerHTML += explanationBox;
-    feedbackText += ` Explanation: ${step.explanation || ''}`;
+    feedbackText += ` Explanation: ${humanizeLaTeX(step.explanation || '')}`;
     
     const nextBtn = document.createElement("button");
     nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
@@ -871,6 +903,8 @@ function checkEssayStep() {
         }
     };
     resultDiv.appendChild(nextBtn);
+
+    renderMath();
 
     readText(feedbackText); 
 }
@@ -976,6 +1010,8 @@ function displayFlashcard() {
         <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
     `;
     
+    renderMath();
+    
     container.scrollIntoView({ behavior: "smooth" });
     readFlashcard();
 }
@@ -1039,7 +1075,7 @@ function showFlashcardCompletion() {
 }
 
 // ============================================================
-// === 6. SMART FEATURES ===
+// === 7. SMART FEATURES & PRINT ===
 // ============================================================
 
 function challengeFriend(score, total, modeName) {
@@ -1101,6 +1137,10 @@ function generatePrintPreview() {
     
     printContentData = { html: html.replace(/preview-/g, 'pdf-') };
     printDiv.innerHTML = html;
+
+    // --> TRIGGER RENDER ENGINE ON MODAL CONTENT <--
+    renderMath('print-preview-content');
+
     document.getElementById('print-preview-modal').classList.add('show');
     document.body.style.overflow = 'hidden';
 }
@@ -1110,6 +1150,10 @@ function proceedToPrint() {
     setTimeout(() => {
         const printDiv = document.getElementById("printable-summary");
         printDiv.innerHTML = printContentData.html;
+        
+        // RENDER MATH FOR PRINT VERSION
+        renderMath('printable-summary');
+
         const style = document.createElement('style');
         style.innerHTML = `@page { margin: 20mm; size: A4; }`;
         printDiv.appendChild(style);
@@ -1124,7 +1168,7 @@ function closePrintPreview() {
 }
 
 // ============================================================
-// === 7. UTILITIES ===
+// === 8. UTILITIES ===
 // ============================================================
 
 function filterDataByCourseAndTerm(data, course, term) {
@@ -1154,8 +1198,50 @@ function shuffle(array) {
 }
 
 // ============================================================
-// === 8. TEXT-TO-SPEECH ===
+// === 9. TEXT-TO-SPEECH (SMART HUMAN ENGINE) ===
 // ============================================================
+
+// 1. The Translator Dictionary (Maps Code -> Human Speech)
+const ttsMap = [
+    // GREEK & SYMBOLS
+    { r: /\\alpha/g, s: "alpha" }, { r: /\\beta/g, s: "beta" }, { r: /\\gamma/g, s: "gamma" },
+    { r: /\\theta/g, s: "theta" }, { r: /\\lambda/g, s: "lambda" }, { r: /\\pi/g, s: "pi" },
+    { r: /\\Delta/g, s: "Delta" }, { r: /\\mu/g, s: "mew" }, { r: /\\sigma/g, s: "sigma" },
+    
+    // LOGIC & SETS
+    { r: /\\therefore/g, s: "therefore" }, { r: /\\exists/g, s: "there exists" },
+    { r: /\\forall/g, s: "for all" }, { r: /\\in/g, s: "is an element of" },
+    { r: /\\cup/g, s: "union" }, { r: /\\cap/g, s: "intersection" },
+    
+    // TRIG & CALCULUS
+    { r: /\\sin/g, s: "sine" }, { r: /\\cos/g, s: "cosine" }, { r: /\\tan/g, s: "tangent" },
+    { r: /\\int/g, s: "the integral of" }, { r: /\\sum/g, s: "the sum of" },
+    { r: /dy\/dx/g, s: "d y d x" }, { r: /\\lim/g, s: "the limit" }, { r: /\\to/g, s: "approaches" },
+
+    // ALGEBRA & STRUCTURES
+    { r: /\\frac\{1\}\{2\}/g, s: "one half" },
+    { r: /\\frac\{(.+?)\}\{(.+?)\}/g, s: "$1 over $2" },
+    { r: /\^2/g, s: " squared" }, { r: /\^3/g, s: " cubed" },
+    { r: /\^\{(.+?)\}/g, s: " to the power of $1" },
+    { r: /\\sqrt\{(.+?)\}/g, s: "the square root of $1" },
+    { r: /\\vec\{(.+?)\}/g, s: "vector $1" },
+    
+    // OPERATIONS & CHEM
+    { r: /\\approx/g, s: "is approximately" }, { r: /\\neq/g, s: "is not equal to" },
+    { r: /\\leq/g, s: "less or equal" }, { r: /\\geq/g, s: "greater or equal" },
+    { r: /\\times/g, s: "times" }, { r: /\\div/g, s: "divided by" }, { r: /\\cdot/g, s: "dot" },
+    { r: /\\ce\{(.+?)\}/g, s: "$1" }, { r: /->/g, s: "yields" },
+
+    // CLEANUP
+    { r: /\\text\{(.+?)\}/g, s: "$1" }, { r: /\$\$/g, s: "" }, { r: /\$/g, s: "" }, { r: /\\/g, s: "" }
+];
+
+// 2. The Processor
+function humanizeLaTeX(text) {
+    let cleanText = text;
+    ttsMap.forEach(map => { cleanText = cleanText.replace(map.r, map.s); });
+    return cleanText.replace(/\s+/g, ' ').trim();
+}
 
 let utterance = null;
 function updateTtsButtonText() {
@@ -1182,28 +1268,26 @@ function readText(text) {
     window.speechSynthesis.speak(utterance);
 }
 
+// 3. The Reader (Reads HUMANIZED Data)
 function readCurrentQuestion() {
     if (!ttsEnabled) return;
     stopReading();
     let textToRead = "";
-    if (currentQuizType === 'mcq' || currentQuizType === 'essay') {
-        const questionElement = document.querySelector('.question-box p');
-        const optionsElements = document.querySelectorAll('.options label');
-        if (questionElement) {
-            let content = questionElement.textContent.trim();
-            if (currentQuizType === 'essay') content = content.replace(/^Q:/, "Question: "); 
-            textToRead += content;
-        }
-        if (optionsElements.length > 0) {
-            textToRead += ". Options are: ";
-            optionsElements.forEach((label, i) => {
-                const optionText = label.textContent.replace(String.fromCharCode(65 + i) + ".", "").trim();
-                textToRead += `${String.fromCharCode(65 + i)}. ${optionText}. `;
+    if (currentQuizType === 'mcq' || currentQuizType === 'shortAnswer') {
+        const qData = currentQuizData[currentQuestionIndex];
+        textToRead += "Question " + (currentQuestionIndex + 1) + ". " + humanizeLaTeX(qData.q) + ". ";
+        if (qData.options) {
+            textToRead += "Options are: ";
+            qData.options.forEach((opt, i) => {
+                textToRead += String.fromCharCode(65 + i) + ". " + humanizeLaTeX(opt) + ". ... ";
             });
         }
-    } else if (currentQuizType === 'shortAnswer') {
-        const questionElement = document.querySelector('.question-box p');
-        if (questionElement) textToRead = questionElement.textContent.trim();
+    } else if (currentQuizType === 'essay') {
+        const step = currentEssay.steps[currentStepIndex];
+        textToRead += "Step " + (currentStepIndex + 1) + ". " + humanizeLaTeX(step.q) + ". ";
+        step.options.forEach((opt, i) => {
+            textToRead += String.fromCharCode(65 + i) + ". " + humanizeLaTeX(opt) + ". ... ";
+        });
     }
     readText(textToRead);
 }
@@ -1212,12 +1296,75 @@ function readFlashcard() {
     if (!ttsEnabled) return;
     stopReading();
     const card = currentFlashcards[currentCardIndex];
-    readText(isCardFront ? `Front of card. ${card.front}` : `Back of card. ${card.back}`);
+    readText(isCardFront ? "Front: " + humanizeLaTeX(card.front) : "Back: " + humanizeLaTeX(card.back));
 }
 
 // ============================================================
-// === 9. GLOBAL EVENT HANDLERS ===
+// === 10. GLOBAL EVENT HANDLERS & STUDENT BOARD ===
 // ============================================================
+
+function renderStudentBoard() {
+    const board = document.getElementById('student-board');
+    const annContainer = document.getElementById('board-announcements');
+    const motContainer = document.getElementById('board-motivation');
+    
+    if (!board || !annContainer || !motContainer) return;
+
+    const today = new Date();
+    let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
+        return item.active && (!item.expiry || new Date(item.expiry) >= today);
+    });
+    let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
+
+    const hasNews = validAnnouncements.length > 0;
+    const hasQuote = validMotivation.length > 0;
+
+    if (!hasNews && !hasQuote) {
+        board.style.display = 'none';
+        return;
+    }
+
+    board.style.display = 'grid';
+    board.classList.remove('layout-full-width');
+
+    if (hasNews) {
+        const item = validAnnouncements[0];
+        annContainer.style.display = 'flex';
+        annContainer.className = `board-section type-${item.type || 'info'}`;
+        
+        let icon = '📢';
+        if (item.type === 'warning') icon = '⚠️';
+        if (item.type === 'critical') icon = '🔴';
+        if (item.type === 'success') icon = '🎉';
+
+        annContainer.innerHTML = `
+            <div class="board-announcement-title">
+                <span>${icon}</span> ${item.title}
+            </div>
+            <div class="board-announcement-body">${item.body}</div>
+        `;
+    } else {
+        annContainer.style.display = 'none';
+    }
+
+    if (hasQuote) {
+        const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
+        motContainer.style.display = 'flex';
+        motContainer.className = 'board-section board-motivation-box';
+        motContainer.innerHTML = `
+            <div class="quote-wrapper">
+                <span class="quote-icon">💡</span>
+                <span class="quote-content">"${randomQuote}"</span>
+            </div>
+        `;
+    } else {
+        motContainer.style.display = 'none';
+    }
+
+    if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
+        board.classList.add('layout-full-width');
+    }
+}
 
 document.addEventListener("keydown", (e) => {
     if ((e.key === 'u' || e.key === 'U') && currentCourse && !hasFullAccess) {
@@ -1286,74 +1433,5 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === this) closePaymentModal();
     });
     
-    // Initialize student board
     setTimeout(renderStudentBoard, 100);
 });
-
-// ============================================================
-// === 10. STUDENT BOARD (UNCHANGED) ===
-// ============================================================
-
-function renderStudentBoard() {
-    const board = document.getElementById('student-board');
-    const annContainer = document.getElementById('board-announcements');
-    const motContainer = document.getElementById('board-motivation');
-    
-    if (!board || !annContainer || !motContainer) return;
-
-    const today = new Date();
-    let validAnnouncements = (typeof announcements !== 'undefined' ? announcements : []).filter(item => {
-        return item.active && (!item.expiry || new Date(item.expiry) >= today);
-    });
-    let validMotivation = typeof motivation !== 'undefined' ? motivation : [];
-
-    const hasNews = validAnnouncements.length > 0;
-    const hasQuote = validMotivation.length > 0;
-
-    if (!hasNews && !hasQuote) {
-        board.style.display = 'none';
-        return;
-    }
-
-    board.style.display = 'grid';
-    board.classList.remove('layout-full-width');
-
-    if (hasNews) {
-        const item = validAnnouncements[0];
-        annContainer.style.display = 'flex';
-        annContainer.className = `board-section type-${item.type || 'info'}`;
-        
-        let icon = '📢';
-        if (item.type === 'warning') icon = '⚠️';
-        if (item.type === 'critical') icon = '🔴';
-        if (item.type === 'success') icon = '🎉';
-
-        annContainer.innerHTML = `
-            <div class="board-announcement-title">
-                <span>${icon}</span> ${item.title}
-            </div>
-            <div class="board-announcement-body">${item.body}</div>
-        `;
-    } else {
-        annContainer.style.display = 'none';
-    }
-
-    if (hasQuote) {
-        const randomQuote = validMotivation[Math.floor(Math.random() * validMotivation.length)];
-        motContainer.style.display = 'flex';
-        motContainer.className = 'board-section board-motivation-box';
-        motContainer.innerHTML = `
-            <div class="quote-wrapper">
-                <span class="quote-icon">💡</span>
-                <span class="quote-content">"${randomQuote}"</span>
-            </div>
-        `;
-    } else {
-        motContainer.style.display = 'none';
-    }
-
-    if ((hasNews && !hasQuote) || (!hasNews && hasQuote)) {
-        board.classList.add('layout-full-width');
-    }
-}
-
