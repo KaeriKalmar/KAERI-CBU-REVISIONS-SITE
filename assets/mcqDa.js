@@ -19790,5 +19790,1230 @@ const mcqData = [
     ],
     "correct": 1,
     "explanation": "Skimming gets the main idea/structure."
+  },
+
+    //MA110
+  // =======================================================
+  // MODULE: SET THEORY (MA110 - T1) - DERIVED FROM LECTURE NOTES
+  // =======================================================
+  {
+    id: "MA110_T1_001",
+    course: "MA110",
+    term: "T1",
+    topic: "Fundamental Concepts",
+    difficulty: "Easy",
+    q: "According to Definition 1.1.0, a set is defined as:",
+    options: [
+      "An ordered sequence of numbers",
+      "A collection of distinct elements or objects",
+      "A mathematical function with inputs and outputs", 
+      "A list of variables in alphabetical order"
+    ],
+    correct: 1,
+    explanation: "Definition 1.1.0 states: A set is a collection of distinct elements or objects. We write $x \\in B$ if $x$ is an element of $B$.",
+    tags: ["definition", "fundamentals"]
+  },
+  {
+    id: "MA110_T1_002",
+    course: "MA110",
+    term: "T1",
+    topic: "Subset Definition",
+    difficulty: "Easy",
+    q: "If every element of set $A$ is an element of set $B$, then:",
+    options: [
+      "$A = B$",
+      "$B \\subset A$", 
+      "$A \\subset B$ (A is a subset of B)",
+      "$A \\cap B = \\emptyset$"
+    ],
+    correct: 2,
+    explanation: "Definition 1.1.1: If every element of $A$ is an element of $B$, then $A$ is a subset of $B$, denoted $A \\subset B$. This does not rule out $A=B$.",
+    tags: ["subset", "definition"]
+  },
+  {
+    id: "MA110_T1_003",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Equality",
+    difficulty: "Medium",
+    q: "Two sets $A$ and $B$ are said to be equal ($A=B$) if:",
+    options: [
+      "They have the same number of elements",
+      "$A \\subset B$ only",
+      "$B \\subset A$ only",
+      "$A \\subset B$ and $B \\subset A$"
+    ],
+    correct: 3,
+    explanation: "Definition 1.1.2: Two sets $A$ and $B$ are equal if they contain the same elements. That is, $A=B$ if both $A \\subset B$ and $B \\subset A$.",
+    tags: ["equality", "definition"]
+  },
+  {
+    id: "MA110_T1_004",
+    course: "MA110",
+    term: "T1",
+    topic: "Empty Set", 
+    difficulty: "Easy",
+    q: "Which property is true regarding the empty set $\\emptyset$?",
+    options: [
+      "It contains one element: 0",
+      "It is a subset of every other set",
+      "It is equal to the Universal set",
+      "It is denoted by $\\{0\\}$"
+    ],
+    correct: 1,
+    explanation: "Definition 1.1.3 Note: The empty set (or null set) has the property that it is a subset of every other set.",
+    tags: ["empty_set", "properties"]
+  },
+  {
+    id: "MA110_T1_005",
+    course: "MA110",
+    term: "T1",
+    topic: "Relative Complement",
+    difficulty: "Medium",
+    q: "Given $A = \\{2,3,4,5\\}$ and $B = \\{3,4,5\\}$, what is the relative complement $A \\setminus B$?",
+    options: [
+      "$\\{2\\}$",
+      "$\\{3,4,5\\}$",
+      "$\\{2,3,4,5\\}$",
+      "$\\emptyset$"
+    ],
+    correct: 0,
+    explanation: "Example 1.1.1 (a): $A \\setminus B$ (or $A-B$) is the set of elements in $A$ but NOT in $B$. Removing $\{3,4,5\}$ from $A$ leaves $\{2\}$.",
+    tags: ["relative_complement", "example"]
+  },
+  {
+    id: "MA110_T1_006",
+    course: "MA110",
+    term: "T1",
+    topic: "Absolute Complement",
+    difficulty: "Medium",
+    q: "If $U = \\{1,2,3,4,5,6\\}$ and $A = \\{1,2,3\\}$, find $A'$.",
+    options: [
+      "$\\{1,2,3\\}$",
+      "$\\{4,5,6\\}$",
+      "$\\{1,2,3,4,5,6\\}$",
+      "$\\emptyset$"
+    ],
+    correct: 1,
+    explanation: "Example 1.1.2: The complement $A'$ contains all elements in $U$ that are not in $A$. $U \\setminus \\{1,2,3\\} = \\{4,5,6\\}$.",
+    tags: ["complement", "example"]
+  },
+  {
+    id: "MA110_T1_007",
+    course: "MA110",
+    term: "T1",
+    topic: "Power Set",
+    difficulty: "Medium",
+    q: "If set $A$ has 3 elements ($n(A)=3$), how many elements are in its power set $P(A)$?",
+    options: [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    correct: 2,
+    explanation: "Definition 1.1.10: The number of elements in the power set is given by $n(P(A)) = 2^{n(A)}$. For $n(A)=3$, $2^3 = 8$.",
+    tags: ["power_set", "cardinality"]
+  },
+  {
+    id: "MA110_T1_008",
+    course: "MA110",
+    term: "T1",
+    topic: "Difference Properties",
+    difficulty: "Hard",
+    q: "According to Proposition 1.1.0, which identity is correct for $C \\setminus (A \\cap B)$?",
+    options: [
+      "$(C \\setminus A) \\cap (C \\setminus B)$",
+      "$(C \\setminus A) \\cup (C \\setminus B)$",
+      "$(C \\cup A) \\setminus B$",
+      "$C \\cap (A \\cup B)$"
+    ],
+    correct: 1,
+    explanation: "Proposition 1.1.0 (i): $C \\setminus (A \\cap B) = (C \\setminus A) \\cup (C \\setminus B)$. Note that difference distributes over intersection by changing it to union.",
+    tags: ["properties", "difference_laws"]
+  },
+  {
+    id: "MA110_T1_009",
+    course: "MA110",
+    term: "T1",
+    topic: "Identity Laws",
+    difficulty: "Medium",
+    q: "From Theorem 1.1.1, what is the value of $A \\setminus A$?",
+    options: [
+      "$A$",
+      "$U$",
+      "$\\emptyset$",
+      "$A'$"
+    ],
+    correct: 2,
+    explanation: "Theorem 1.1.1 (2) & Prop 1.1.0 (vi): The difference of a set with itself is the empty set ($A \\setminus A = \\emptyset$).",
+    tags: ["identity_laws", "theorems"]
+  },
+  {
+    id: "MA110_T1_010",
+    course: "MA110",
+    term: "T1",
+    topic: "De Morgan's Laws",
+    difficulty: "Hard",
+    q: "Which of the following is one of De Morgan's Laws as stated in Theorem 1.1.1 (8)?",
+    options: [
+      "$(B \\cap C)' = B' \\cap C'$",
+      "$(B \\cup C)' = B' \\cup C'$",
+      "$(B \\cap C)' = B' \\cup C'$",
+      "$(B \\cup C) = B \\cap C$"
+    ],
+    correct: 2,
+    explanation: "Theorem 1.1.1 (8a): The complement of an intersection is the union of the complements: $(B \\cap C)' = B' \\cup C'$.",
+    tags: ["de_morgan", "theorems"]
+  },
+  {
+    id: "MA110_T1_011",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Simplification",
+    difficulty: "Hard",
+    q: "Simplify the expression: $(A \\cap B) \\cup (A \\cap B')$",
+    options: [
+      "$B$",
+      "$A$",
+      "$U$",
+      "$\\emptyset$"
+    ],
+    correct: 1,
+    explanation: "From Example 1.1.5 (b): Use the distributive property: $(A \\cap B) \\cup (A \\cap B') = A \\cap (B \\cup B')$. Since $B \\cup B' = U$, we get $A \\cap U = A$.",
+    tags: ["simplification", "example", "algebra_laws"]
+  },
+  {
+    id: "MA110_T1_012",
+    course: "MA110",
+    term: "T1",
+    topic: "Subset Simplification",
+    difficulty: "Hard",
+    q: "If $C \\subset D$, what does $C' \\cup D'$ simplify to?",
+    options: [
+      "$C'$",
+      "$D'$",
+      "$C \\cap D$",
+      "$U$"
+    ],
+    correct: 0,
+    explanation: "Example 1.1.5 (d): $C' \\cup D' = (C \\cap D)'$. Since $C \\subset D$, the intersection $C \\cap D$ is just $C$. Thus, $(C)' = C'$.",
+    tags: ["subset", "simplification", "example"]
+  },
+  {
+    id: "MA110_T1_013",
+    course: "MA110",
+    term: "T1",
+    topic: "Associative Law Proof",
+    difficulty: "Hard",
+    q: "To prove $A \\cup (B \\cup C) = (A \\cup B) \\cup C$, one must show:",
+    options: [
+      "$x \\in A \\cup (B \\cup C) \\iff x \\in A \\cap B \\cap C$",
+      "$x \\in A \\cup (B \\cup C) \\implies x \\in (A \\cup B) \\cup C$ and conversely",
+      "$A \\cup B = B \\cup C$",
+      "$n(A \\cup B) = n(B \\cup C)$"
+    ],
+    correct: 1,
+    explanation: "Proof 1 (Associative laws): The proof involves showing mutual subset inclusion. Let $x \\in A \\cup (B \\cup C) \\implies \\dots \\implies x \\in (A \\cup B) \\cup C$. Then show the converse.",
+    tags: ["proofs", "associative_law"]
+  },
+  {
+    id: "MA110_T1_014",
+    course: "MA110",
+    term: "T1",
+    topic: "Double Complement",
+    difficulty: "Easy",
+    q: "According to Theorem 1.1.1 (1), what is $(A')'$?",
+    options: [
+      "$A'$",
+      "$U$",
+      "$\\emptyset$",
+      "$A$"
+    ],
+    correct: 3,
+    explanation: "Theorem 1.1.1 (1): The complement of a complement returns to the original set. $(A')' = A$. Proof involves showing $x \\in (A')' \\implies x \\notin A' \\implies x \\in A$.",
+    tags: ["complement", "theorems"]
+  },
+  {
+    id: "MA110_T1_015",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Difference Identity",
+    difficulty: "Medium",
+    q: "Proposition 1.1.0 (viii) states that $B \\setminus A$ is equivalent to:",
+    options: [
+      "$A \\cup B$",
+      "$A' \\cap B$",
+      "$A \\cap B'$",
+      "$A' \\cup B$"
+    ],
+    correct: 1,
+    explanation: "Proposition 1.1.0 (viii): The difference $B \\setminus A$ (elements in B but not A) is equivalent to the intersection of B and the complement of A: $A' \\cap B$.",
+    tags: ["identities", "difference"]
+  },
+
+  // =======================================================
+  // MODULE: PHYSICS (PH110) - TERM 1 (20 QUESTIONS)
+  // =======================================================
+  {
+    id: "ph110-t1-001",
+    course: "PH110",
+    term: "T1",
+    q: "Which of the following represents the correct **Dimensional Analysis** for Force ($$ F $$)?",
+    options: [
+      "$$ [MLT^{-1}] $$",
+      "$$ [MLT^{-2}] $$",
+      "$$ [ML^2T^{-2}] $$",
+      "$$ [M^0L^1T^{-1}] $$"
+    ],
+    correct: 1,
+    explanation: "From Newton's Second Law, $$ F = ma $$. <br> Mass $$ m $$ has dimension $$ [M] $$. <br> Acceleration $$ a $$ is velocity over time: $$ [LT^{-2}] $$. <br> Therefore, $$ F = [M][LT^{-2}] = [MLT^{-2}] $$."
+  },
+  {
+    id: "ph110-t1-002",
+    course: "PH110",
+    term: "T1",
+    q: "Given two vectors $$ \\vec{A} = 3\\hat{i} + 4\\hat{j} $$ and $$ \\vec{B} = -2\\hat{i} + \\hat{j} $$, calculate the **Dot Product** $$ \\vec{A} \\cdot \\vec{B} $$.",
+    options: [
+      "-2",
+      "2",
+      "10",
+      "-6"
+    ],
+    correct: 0,
+    explanation: "Use the component formula: $$ \\vec{A} \\cdot \\vec{B} = A_x B_x + A_y B_y $$. <br> $$ (3)(-2) + (4)(1) = -6 + 4 = -2 $$."
+  },
+  {
+    id: "ph110-t1-003",
+    course: "PH110",
+    term: "T1",
+    q: "A projectile is fired with velocity $$ v_0 $$ at angle $$ \\theta $$. Deriving from kinematics, what is the formula for **Horizontal Range** ($$ R $$)?",
+    options: [
+      "$$ R = \\frac{v_0^2 \\sin 2\\theta}{g} $$",
+      "$$ R = \\frac{v_0 \\sin^2 \\theta}{2g} $$",
+      "$$ R = \\frac{v_0^2 \\cos \\theta}{g} $$",
+      "$$ R = v_0 t + \\frac{1}{2}at^2 $$"
+    ],
+    correct: 0,
+    explanation: "Range is horizontal velocity $$ \\times $$ total flight time. <br> $$ v_x = v_0 \\cos \\theta $$ and $$ T_{flight} = \\frac{2v_0 \\sin \\theta}{g} $$. <br> $$ R = (v_0 \\cos \\theta)(\\frac{2v_0 \\sin \\theta}{g}) = \\frac{v_0^2 (2 \\sin \\theta \\cos \\theta)}{g} = \\frac{v_0^2 \\sin 2\\theta}{g} $$."
+  },
+  {
+    id: "ph110-t1-004",
+    course: "PH110",
+    term: "T1",
+    q: "If the position of a particle is defined by $$ x(t) = 2t^3 - 4t $$, find the **Instantaneous Acceleration** at $$ t=2 $$ seconds.",
+    options: [
+      "$$ 12 \\text{ m/s}^2 $$",
+      "$$ 20 \\text{ m/s}^2 $$",
+      "$$ 24 \\text{ m/s}^2 $$",
+      "$$ 4 \\text{ m/s}^2 $$"
+    ],
+    correct: 2,
+    explanation: "Acceleration is the second derivative of position. <br> $$ v(t) = \\frac{dx}{dt} = 6t^2 - 4 $$ <br> $$ a(t) = \\frac{dv}{dt} = 12t $$ <br> At $$ t=2 $$, $$ a(2) = 12(2) = 24 \\text{ m/s}^2 $$."
+  },
+  {
+    id: "ph110-t1-005",
+    course: "PH110",
+    term: "T1",
+    q: "Consider a block on a rough incline. Which expression represents the maximum **Static Friction** force $$ f_s $$?",
+    options: [
+      "$$ f_s = \\mu_k N $$",
+      "$$ f_s \\leq \\mu_s N $$",
+      "$$ f_s = mg \\sin \\theta $$",
+      "$$ f_s = \\mu_s mg $$"
+    ],
+    correct: 1,
+    explanation: "Static friction is a variable force that matches the applied load up to a limit. The maximum value is defined as: $$ f_{s,max} = \\mu_s N $$ where $$ N $$ is the Normal force."
+  },
+  {
+    id: "ph110-t1-006",
+    course: "PH110",
+    term: "T1",
+    q: "Calculate the **Work Done** ($$ W $$) by a variable force $$ F(x) = 2x $$ moving an object from $$ x=0 $$ to $$ x=4 $$ meters.",
+    options: [
+      "8 J",
+      "16 J",
+      "4 J",
+      "32 J"
+    ],
+    correct: 1,
+    explanation: "Work is the integral of Force over distance: <br> $$ W = \\int_{0}^{4} 2x \\, dx = \\left[ x^2 \\right]_0^4 $$ <br> $$ W = 4^2 - 0^2 = 16 \\text{ Joules} $$."
+  },
+  {
+    id: "ph110-t1-007",
+    course: "PH110",
+    term: "T1",
+    q: "In a perfectly **Elastic Collision**, which quantities are conserved?",
+    options: [
+      "Momentum only",
+      "Kinetic Energy only",
+      "Both Momentum and Kinetic Energy",
+      "Neither Momentum nor Kinetic Energy"
+    ],
+    correct: 2,
+    explanation: "By definition, an elastic collision conserves both linear momentum ($$ \\vec{p} $$) and total kinetic energy ($$ K $$). <br> $$ \\sum \\vec{p}_i = \\sum \\vec{p}_f $$ and $$ \\sum K_i = \\sum K_f $$."
+  },
+  {
+    id: "ph110-t1-008",
+    course: "PH110",
+    term: "T1",
+    q: "The **Center of Mass** ($$ X_{cm} $$) for a continuous rod of length $$ L $$ with linear density $$ \\lambda(x) $$ is given by:",
+    options: [
+      "$$ \\frac{1}{M} \\int x \\lambda(x) dx $$",
+      "$$ \\int \\lambda(x) dx $$",
+      "$$ \\frac{1}{L} \\int x dx $$",
+      "$$ M \\int x \\lambda(x) dx $$"
+    ],
+    correct: 0,
+    explanation: "The definition of center of mass for a continuous distribution is $$ X_{cm} = \\frac{1}{M} \\int x \\, dm $$. <br> Since $$ dm = \\lambda(x) dx $$, the formula is $$ \\frac{1}{M} \\int_0^L x \\lambda(x) dx $$."
+  },
+  {
+    id: "ph110-t1-009",
+    course: "PH110",
+    term: "T1",
+    q: "What is the **Cross Product** $$ \\hat{i} \\times \\hat{j} $$?",
+    options: [
+      "$$ \\hat{j} $$",
+      "$$ -\\hat{k} $$",
+      "$$ \\hat{k} $$",
+      "0"
+    ],
+    correct: 2,
+    explanation: "Following the right-hand rule for unit vectors: <br> $$ \\hat{i} \\times \\hat{j} = \\hat{k} $$ <br> $$ \\hat{j} \\times \\hat{k} = \\hat{i} $$ <br> $$ \\hat{k} \\times \\hat{i} = \\hat{j} $$"
+  },
+  {
+    id: "ph110-t1-010",
+    course: "PH110",
+    term: "T1",
+    q: "Which formula relates Linear Velocity ($$ v $$) and Angular Velocity ($$ \\omega $$) for an object moving in a circle of radius $$ r $$?",
+    options: [
+      "$$ v = \\frac{\\omega}{r} $$",
+      "$$ v = r \\omega $$",
+      "$$ v = r^2 \\omega $$",
+      "$$ \\omega = vr $$"
+    ],
+    correct: 1,
+    explanation: "The relationship is linear: $$ v = r \\omega $$. <br> Note: $$ \\omega $$ must be in radians per second for this to hold true."
+  },
+  {
+    id: "ph110-t1-011",
+    course: "PH110",
+    term: "T1",
+    q: "A uniform solid sphere rolls without slipping. What fraction of its total kinetic energy is **Rotational**?",
+    options: [
+      "$$ \\frac{1}{2} $$",
+      "$$ \\frac{2}{5} $$",
+      "$$ \\frac{2}{7} $$",
+      "$$ \\frac{5}{7} $$"
+    ],
+    correct: 2,
+    explanation: "Total KE = $$ K_{trans} + K_{rot} = \\frac{1}{2}mv^2 + \\frac{1}{2}I\\omega^2 $$. <br> For sphere, $$ I = \\frac{2}{5}mr^2 $$ and $$ v=r\\omega $$. <br> $$ K_{rot} = \\frac{1}{2}(\\frac{2}{5}mr^2)(\\frac{v}{r})^2 = \\frac{1}{5}mv^2 $$. <br> Ratio $$ \\frac{K_{rot}}{K_{total}} = \\frac{1/5}{1/2 + 1/5} = \\frac{2}{7} $$."
+  },
+  {
+    id: "ph110-t1-012",
+    course: "PH110",
+    term: "T1",
+    q: "Calculate the **Gravitational Force** between two masses $$ m_1, m_2 $$ separated by distance $$ r $$.",
+    options: [
+      "$$ F = G \\frac{m_1 m_2}{r} $$",
+      "$$ F = G \\frac{m_1 m_2}{r^2} $$",
+      "$$ F = mg $$",
+      "$$ F = k \\frac{q_1 q_2}{r^2} $$"
+    ],
+    correct: 1,
+    explanation: "Newton's Law of Universal Gravitation: $$ F_g = G \\frac{m_1 m_2}{r^2} $$. <br> Note: It follows an inverse-square law relationship."
+  },
+  {
+    id: "ph110-t1-013",
+    course: "PH110",
+    term: "T1",
+    q: "Bernoulli's Equation for fluid dynamics is an expression of the conservation of:",
+    options: [
+      "Mass",
+      "Momentum",
+      "Energy",
+      "Angular Momentum"
+    ],
+    correct: 2,
+    explanation: "Bernoulli's equation $$ P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{constant} $$ is derived from the **Work-Energy Theorem** applied to fluids."
+  },
+  {
+    id: "ph110-t1-014",
+    course: "PH110",
+    term: "T1",
+    q: "In Simple Harmonic Motion (SHM), the acceleration $$ a(t) $$ is proportional to:",
+    options: [
+      "Velocity ($$ v $$)",
+      "Displacement ($$ -x $$)",
+      "Time ($$ t $$)",
+      "Mass ($$ m $$)"
+    ],
+    correct: 1,
+    explanation: "The defining condition for SHM is restoring force $$ F = -kx $$. <br> Since $$ F=ma $$, then $$ a = -\\frac{k}{m} x $$. Acceleration is proportional to negative displacement."
+  },
+  {
+    id: "ph110-t1-015",
+    course: "PH110",
+    term: "T1",
+    q: "Identify the formula for **Escape Velocity** ($$ v_e $$) from a planet of mass $$ M $$ and radius $$ R $$.",
+    options: [
+      "$$ v_e = \\sqrt{gR} $$",
+      "$$ v_e = \\sqrt{\\frac{2GM}{R}} $$",
+      "$$ v_e = \\sqrt{\\frac{GM}{R}} $$",
+      "$$ v_e = 2GM R $$"
+    ],
+    correct: 1,
+    explanation: "Derive by setting Total Energy to zero: $$ \\frac{1}{2}mv^2 - \\frac{GmM}{R} = 0 $$. <br> Solving for $$ v $$ gives $$ v_e = \\sqrt{\\frac{2GM}{R}} $$."
+  },
+  {
+    id: "ph110-t1-016",
+    course: "PH110",
+    term: "T1",
+    q: "A spring is stretched by $$ x $$. Potential Energy ($$ U $$) stored is:",
+    options: [
+      "$$ U = kx $$",
+      "$$ U = \\frac{1}{2}kx^2 $$",
+      "$$ U = \\frac{1}{2}mv^2 $$",
+      "$$ U = mgh $$"
+    ],
+    correct: 1,
+    explanation: "Elastic Potential Energy is the integral of Hooke's Law force $$ F=kx $$: <br> $$ U = \\int_0^x kx' dx' = \\frac{1}{2}kx^2 $$."
+  },
+  {
+    id: "ph110-t1-017",
+    course: "PH110",
+    term: "T1",
+    q: "Which quantity is defined as the **Rate of Change of Momentum**?",
+    options: [
+      "Impulse ($$ J $$)",
+      "Force ($$ F $$)",
+      "Work ($$ W $$)",
+      "Power ($$ P $$)"
+    ],
+    correct: 1,
+    explanation: "From Newton's Second Law in momentum form: <br> $$ \\vec{F}_{net} = \\frac{d\\vec{p}}{dt} $$."
+  },
+  {
+    id: "ph110-t1-018",
+    course: "PH110",
+    term: "T1",
+    q: "What is **Young's Modulus** ($$ Y $$) a measure of?",
+    options: [
+      "Shear Strength",
+      "Bulk Compressibility",
+      "Tensile Stiffness / Elasticity",
+      "Fluid Viscosity"
+    ],
+    correct: 2,
+    explanation: "Young's Modulus is the ratio of Tensile Stress to Tensile Strain: <br> $$ Y = \\frac{\\sigma}{\\epsilon} = \\frac{F/A}{\\Delta L/L} $$."
+  },
+  {
+    id: "ph110-t1-019",
+    course: "PH110",
+    term: "T1",
+    q: "Calculate the **Power** required to lift a mass $$ m $$ at constant velocity $$ \\vec{v} $$ against gravity.",
+    options: [
+      "$$ P = \\vec{F} \\times \\vec{v} $$",
+      "$$ P = \\vec{F} \\cdot \\vec{v} $$",
+      "$$ P = \\frac{1}{2}mv^2 $$",
+      "$$ P = mgh $$"
+    ],
+    correct: 1,
+    explanation: "Power is the dot product of Force and Velocity: <br> $$ P = \\vec{F} \\cdot \\vec{v} = mg v $$ (since force and velocity are parallel)."
+  },
+  {
+    id: "ph110-t1-020",
+    course: "PH110",
+    term: "T1",
+    q: "If an object has Moment of Inertia $$ I $$ and angular velocity $$ \\omega $$, its **Rotational Kinetic Energy** is:",
+    options: [
+      "$$ K = I \\omega $$",
+      "$$ K = \\frac{1}{2}I \\omega^2 $$",
+      "$$ K = I \\omega^2 $$",
+      "$$ K = \\frac{1}{2} m v^2 $$"
+    ],
+    correct: 1,
+    explanation: "Analogous to linear KE ($$ \\frac{1}{2}mv^2 $$), rotational KE uses Moment of Inertia ($$ I $$) and angular velocity ($$ \\omega $$): <br> $$ K_{rot} = \\frac{1}{2}I \\omega^2 $$."
+  },
+
+  // =======================================================
+  // MODULE: CHEMISTRY (CH110) - TERM 1 (20 QUESTIONS)
+  // =======================================================
+  {
+    id: "ch110-t1-001",
+    course: "CH110",
+    term: "T1",
+    q: "Calculate the number of moles in $$ 180 \\text{ g} $$ of Water ($$ \\ce{H2O} $$). (H=1, O=16)",
+    options: [
+      "5 mol",
+      "10 mol",
+      "18 mol",
+      "1 mol"
+    ],
+    correct: 1,
+    explanation: "Molar mass of $$ \\ce{H2O} = 2(1) + 16 = 18 \\text{ g/mol} $$. <br> Moles $$ n = \\frac{\\text{mass}}{\\text{Molar Mass}} = \\frac{180}{18} = 10 \\text{ mol} $$."
+  },
+  {
+    id: "ch110-t1-002",
+    course: "CH110",
+    term: "T1",
+    q: "Identify the **Limiting Reagent** if $$ 2 \\text{ mol} $$ of $$ \\ce{H2} $$ reacts with $$ 2 \\text{ mol} $$ of $$ \\ce{O2} $$ to form water. $$ \\ce{2H2 + O2 -> 2H2O} $$",
+    options: [
+      "$$ \\ce{O2} $$",
+      "$$ \\ce{H2} $$",
+      "$$ \\ce{H2O} $$",
+      "None"
+    ],
+    correct: 1,
+    explanation: "The ratio required is 2:1 ($$ \\ce{H2:O2} $$). <br> We have 2 mol $$ \\ce{H2} $$, which requires 1 mol $$ \\ce{O2} $$. <br> We have 2 mol $$ \\ce{O2} $$ (excess). <br> Therefore, $$ \\ce{H2} $$ is limiting."
+  },
+  {
+    id: "ch110-t1-003",
+    course: "CH110",
+    term: "T1",
+    q: "Which set of **Quantum Numbers** ($$ n, l, m_l, m_s $$) describes an electron in a **3p** orbital?",
+    options: [
+      "$$ 3, 0, 0, +1/2 $$",
+      "$$ 3, 2, -1, -1/2 $$",
+      "$$ 3, 1, -1, +1/2 $$",
+      "$$ 2, 1, 0, +1/2 $$"
+    ],
+    correct: 2,
+    explanation: "For 3p: <br> Principal $$ n=3 $$. <br> Azimuthal $$ l=1 $$ (p-orbital). <br> Magnetic $$ m_l $$ can be -1, 0, or 1. <br> Only option 3 fits ($$ n=3, l=1 $$)."
+  },
+  {
+    id: "ch110-t1-004",
+    course: "CH110",
+    term: "T1",
+    q: "Balance the combustion reaction of propane: $$ \\ce{C3H8 + xO2 -> yCO2 + zH2O} $$",
+    options: [
+      "$$ x=3, y=3, z=4 $$",
+      "$$ x=5, y=3, z=4 $$",
+      "$$ x=5, y=4, z=3 $$",
+      "$$ x=4, y=3, z=5 $$"
+    ],
+    correct: 1,
+    explanation: "Carbons: 3 on left $$ \\to $$ $$ 3\\ce{CO2} $$ (y=3). <br> Hydrogens: 8 on left $$ \\to $$ $$ 4\\ce{H2O} $$ (z=4). <br> Oxygens: $$ 3(2) + 4(1) = 10 $$ on right. <br> Need $$ 5\\ce{O2} $$ on left (x=5)."
+  },
+  {
+    id: "ch110-t1-005",
+    course: "CH110",
+    term: "T1",
+    q: "What is the **Oxidation State** of Sulfur in Sulfuric Acid ($$ \\ce{H2SO4} $$)?",
+    options: [
+      "+4",
+      "+6",
+      "-2",
+      "0"
+    ],
+    correct: 1,
+    explanation: "Hydrogen is +1, Oxygen is -2. <br> $$ 2(+1) + S + 4(-2) = 0 $$ <br> $$ 2 + S - 8 = 0 $$ <br> $$ S - 6 = 0 \\implies S = +6 $$."
+  },
+  {
+    id: "ch110-t1-006",
+    course: "CH110",
+    term: "T1",
+    q: "According to the **Ideal Gas Law**, what is the volume of 1 mole of gas at STP ($$ 0^\\circ\\text{C}, 1 \\text{ atm} $$)?",
+    options: [
+      "10.5 L",
+      "22.4 L",
+      "24.0 L",
+      "1.0 L"
+    ],
+    correct: 1,
+    explanation: "Using $$ PV = nRT $$: <br> $$ V = \\frac{(1)(0.0821)(273)}{1} \\approx 22.4 \\text{ L} $$."
+  },
+  {
+    id: "ch110-t1-007",
+    course: "CH110",
+    term: "T1",
+    q: "Identify the shape of the $$ \\ce{CH4} $$ molecule according to **VSEPR Theory**.",
+    options: [
+      "Trigonal Planar",
+      "Tetrahedral",
+      "Linear",
+      "Bent"
+    ],
+    correct: 1,
+    explanation: "Methane ($$ \\ce{CH4} $$) has 4 bonding pairs and 0 lone pairs around Carbon. This geometry is **Tetrahedral** with bond angles of $$ 109.5^\\circ $$."
+  },
+  {
+    id: "ch110-t1-008",
+    course: "CH110",
+    term: "T1",
+    q: "Given the reaction enthalpy $$ \\Delta H = -92 \\text{ kJ} $$, is the reaction **Exothermic** or **Endothermic**?",
+    options: [
+      "Exothermic (Heat released)",
+      "Endothermic (Heat absorbed)",
+      "Adiabatic",
+      "Isothermal"
+    ],
+    correct: 0,
+    explanation: "A negative $$ \\Delta H $$ value indicates that the system releases energy to the surroundings, which is defined as **Exothermic**."
+  },
+  {
+    id: "ch110-t1-009",
+    course: "CH110",
+    term: "T1",
+    q: "Write the equilibrium constant expression ($$ K_c $$) for: $$ \\ce{N2(g) + 3H2(g) <=> 2NH3(g)} $$",
+    options: [
+      "$$ K_c = \\frac{[\\ce{NH3}]}{[\\ce{N2}][\\ce{H2}]} $$",
+      "$$ K_c = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3} $$",
+      "$$ K_c = \\frac{[\\ce{N2}][\\ce{H2}]^3}{[\\ce{NH3}]^2} $$",
+      "$$ K_c = [\\ce{NH3}]^2 $$"
+    ],
+    correct: 1,
+    explanation: "Law of Mass Action: Products over Reactants, raised to stoichiometric coefficients. <br> $$ K_c = \\frac{[\\text{Products}]}{[\\text{Reactants}]} = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3} $$."
+  },
+  {
+    id: "ch110-t1-010",
+    course: "CH110",
+    term: "T1",
+    q: "Which element has the largest **Atomic Radius**?",
+    options: [
+      "F (Fluorine)",
+      "Li (Lithium)",
+      "K (Potassium)",
+      "Cs (Cesium)"
+    ],
+    correct: 3,
+    explanation: "Atomic radius increases down a group and decreases across a period. <br> Cesium (Cs) is at the bottom-left of this set, giving it the most electron shells and largest radius."
+  },
+  {
+    id: "ch110-t1-011",
+    course: "CH110",
+    term: "T1",
+    q: "What defines an **Ionic Bond**?",
+    options: [
+      "Sharing of electron pairs",
+      "Electrostatic attraction between oppositely charged ions",
+      "Delocalized 'sea' of electrons",
+      "Weak van der Waals forces"
+    ],
+    correct: 1,
+    explanation: "Ionic bonds form when electrons are transferred, creating Cations ($$ + $$) and Anions ($$ - $$). They are held together by electrostatic attraction (e.g., $$ \\ce{Na+ Cl-} $$)."
+  },
+  {
+    id: "ch110-t1-012",
+    course: "CH110",
+    term: "T1",
+    q: "Calculate the **pH** of a solution with $$ [H^+] = 1 \\times 10^{-3} \\text{ M} $$.",
+    options: [
+      "3",
+      "10",
+      "-3",
+      "1"
+    ],
+    correct: 0,
+    explanation: "The formula is $$ \\text{pH} = -\\log[H^+] $$. <br> $$ \\text{pH} = -\\log(10^{-3}) = -(-3) = 3 $$."
+  },
+  {
+    id: "ch110-t1-013",
+    course: "CH110",
+    term: "T1",
+    q: "Which intermolecular force is responsible for the high boiling point of Water ($$ \\ce{H2O} $$)?",
+    options: [
+      "London Dispersion Forces",
+      "Dipole-Dipole interactions",
+      "Hydrogen Bonding",
+      "Covalent Bonding"
+    ],
+    correct: 2,
+    explanation: "Water exhibits strong **Hydrogen Bonding** due to the attraction between the H atom of one molecule and the electronegative O atom of another."
+  },
+  {
+    id: "ch110-t1-014",
+    course: "CH110",
+    term: "T1",
+    q: "According to **Hess's Law**, if Reaction 1 + Reaction 2 = Reaction 3, then:",
+    options: [
+      "$$ \\Delta H_3 = \\Delta H_1 \\times \\Delta H_2 $$",
+      "$$ \\Delta H_3 = \\Delta H_1 + \\Delta H_2 $$",
+      "$$ \\Delta H_3 = \\Delta H_1 - \\Delta H_2 $$",
+      "$$ \\Delta H_3 = 0 $$"
+    ],
+    correct: 1,
+    explanation: "Hess's Law states that enthalpy is a state function. The total enthalpy change is the sum of the enthalpy changes of the intermediate steps."
+  },
+  {
+    id: "ch110-t1-015",
+    course: "CH110",
+    term: "T1",
+    q: "What is the correct electron configuration for Carbon (Atomic Number 6)?",
+    options: [
+      "$$ 1s^2 2s^2 2p^6 $$",
+      "$$ 1s^2 2s^2 2p^2 $$",
+      "$$ 1s^2 2s^2 3s^2 $$",
+      "$$ 1s^2 2s^1 2p^3 $$"
+    ],
+    correct: 1,
+    explanation: "Carbon has 6 electrons. Fill order: 1s, 2s, 2p. <br> $$ 1s^2 $$ (2), $$ 2s^2 $$ (2), $$ 2p^2 $$ (2). Total = 6."
+  },
+  {
+    id: "ch110-t1-016",
+    course: "CH110",
+    term: "T1",
+    q: "What is the **Hybridization** of the Carbon atom in Ethene ($$ \\ce{C2H4} $$)?",
+    options: [
+      "$$ sp^3 $$",
+      "$$ sp^2 $$",
+      "$$ sp $$",
+      "$$ dsp^2 $$"
+    ],
+    correct: 1,
+    explanation: "In Ethene ($$ \\ce{H2C=CH2} $$), each Carbon forms a double bond and two single bonds (3 sigma, 1 pi). This requires **$$ sp^2 $$** hybridization (Trigonal Planar)."
+  },
+  {
+    id: "ch110-t1-017",
+    course: "CH110",
+    term: "T1",
+    q: "Which gas law states that total pressure is the sum of partial pressures?",
+    options: [
+      "Boyle's Law",
+      "Charles's Law",
+      "Dalton's Law",
+      "Avogadro's Law"
+    ],
+    correct: 2,
+    explanation: "Dalton's Law of Partial Pressures: $$ P_{total} = P_1 + P_2 + P_3 + \\dots $$."
+  },
+  {
+    id: "ch110-t1-018",
+    course: "CH110",
+    term: "T1",
+    q: "If a system at equilibrium is disturbed, the system shifts to counteract the disturbance. This is:",
+    options: [
+      "Hund's Rule",
+      "Pauli Exclusion Principle",
+      "Le Chatelier's Principle",
+      "Heisenberg Uncertainty Principle"
+    ],
+    correct: 2,
+    explanation: "Le Chatelier's Principle predicts how equilibrium shifts (Left or Right) when concentration, pressure, or temperature changes."
+  },
+  {
+    id: "ch110-t1-019",
+    course: "CH110",
+    term: "T1",
+    q: "What is the **Lattice Energy** of an ionic compound?",
+    options: [
+      "Energy required to break a covalent bond",
+      "Energy released when gaseous ions form a solid crystal lattice",
+      "Energy to remove an electron",
+      "Kinetic energy of the ions"
+    ],
+    correct: 1,
+    explanation: "Lattice Energy defines the stability of an ionic solid. It is the energy released when gaseous cations and anions combine to form 1 mole of solid compound."
+  },
+  {
+    id: "ch110-t1-020",
+    course: "CH110",
+    term: "T1",
+    q: "Which orbital has a **Dumbbell** shape?",
+    options: [
+      "s-orbital",
+      "p-orbital",
+      "d-orbital",
+      "f-orbital"
+    ],
+    correct: 1,
+    explanation: "s-orbitals are spherical. **p-orbitals** are dumbbell-shaped (two lobes). d-orbitals are clover-shaped."
+  },
+{
+    id: "MA110_T1_001",
+    course: "MA110",
+    term: "T1",
+    topic: "Fundamental Concepts",
+    difficulty: "Easy",
+    
+    q: "A set is defined as:",
+    
+    options: [
+      "An ordered sequence of numbers",
+      "A collection of distinct objects without regard to order",
+      "A mathematical function with inputs and outputs", 
+      "A list of variables in alphabetical order"
+    ],
+    
+    correct: 1,
+    
+    explanation: "In mathematics, a set is defined as a well-defined collection of distinct objects, where 'distinct' means no element is repeated, and the order of elements doesn't matter. For example, {1, 2, 3} and {3, 2, 1} represent the same set.",
+    
+    tags: ["definition", "fundamentals", "basics"]
+  },
+  
+  {
+    id: "MA110_T1_002",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Notation",
+    difficulty: "Easy",
+    
+    q: "If $A = \\{2, 4, 6, 8\\}$ and $B = \\{4, 6, 8\\}$, which statement is correct?",
+    
+    options: [
+      "$B \\subset A$ and $A \\subseteq B$",
+      "$B \\subset A$ but $A \\nsubseteq B$", 
+      "$A \\subset B$ and $B \\subseteq A$",
+      "$A \\subset B$ but $B \\nsubseteq A$"
+    ],
+    
+    correct: 1,
+    
+    explanation: "$B \\subset A$ is true because every element of B (4, 6, 8) is in A. However, $A \\nsubseteq B$ because A has element 2 which is not in B. The notation $\\subset$ means 'is a subset of' and doesn't require sets to be equal.",
+    
+    tags: ["subset", "notation", "basic_operations"]
+  },
+  
+  {
+    id: "MA110_T1_003",
+    course: "MA110",
+    term: "T1", 
+    topic: "Set Operations",
+    difficulty: "Medium",
+    
+    q: "For sets $A = \\{a, b, c, d\\}$ and $B = \\{c, d, e, f\\}$, what is $A \\cup B$?",
+    
+    options: [
+      "$\\{a, b\\}$",
+      "$\\{c, d\\}$",
+      "$\\{a, b, c, d, e, f\\}$",
+      "$\\{e, f\\}$"
+    ],
+    
+    correct: 2,
+    
+    explanation: "The union $A \\cup B$ contains all elements that are in A OR in B (or both). Combining all distinct elements: $\\{a, b\\}$ from A only, $\\{c, d\\}$ from both, and $\\{e, f\\}$ from B only gives $\\{a, b, c, d, e, f\\}$.",
+    
+    tags: ["union", "set_operations", "medium_difficulty"]
+  },
+  
+  {
+    id: "MA110_T1_004",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Operations", 
+    difficulty: "Medium",
+    
+    q: "For sets $A = \\{1, 3, 5, 7\\}$ and $B = \\{3, 5, 9, 11\\}$, what is $A \\cap B$?",
+    
+    options: [
+      "$\\{1, 3, 5, 7, 9, 11\\}$",
+      "$\\{3, 5\\}$", 
+      "$\\{1, 7\\}$",
+      "$\\{9, 11\\}$"
+    ],
+    
+    correct: 1,
+    
+    explanation: "The intersection $A \\cap B$ contains only the elements that are in BOTH A and B. Looking at both sets, only 3 and 5 appear in both, so $A \\cap B = \\{3, 5\\}$.",
+    
+    tags: ["intersection", "set_operations", "common_elements"]
+  },
+  
+  {
+    id: "MA110_T1_005",
+    course: "MA110", 
+    term: "T1",
+    topic: "Set Difference",
+    difficulty: "Medium",
+    
+    q: "Given $A = \\{x, y, z, w\\}$ and $B = \\{y, w, p, q\\}$, what is $A \\setminus B$?",
+    
+    options: [
+      "$\\{x, z\\}$",
+      "$\\{y, w\\}$",
+      "$\\{p, q\\}$", 
+      "$\\{x, y, z, w, p, q\\}$"
+    ],
+    
+    correct: 0,
+    
+    explanation: "The set difference $A \\setminus B$ contains elements that are in A but NOT in B. From A = {x, y, z, w}, remove elements that appear in B = {y, w, p, q}. This removes y and w, leaving {x, z}.",
+    
+    tags: ["set_difference", "relative_complement", "operations"]
+  },
+  
+  {
+    id: "MA110_T1_006",
+    course: "MA110",
+    term: "T1",
+    topic: "Complement",
+    difficulty: "Medium",
+    
+    q: "If the universal set is $U = \\{1, 2, 3, 4, 5, 6, 7\\}$ and $A = \\{2, 4, 6\\}$, what is $A'$?",
+    
+    options: [
+      "$\\{1, 3, 5, 7\\}$",
+      "$\\{2, 4, 6\\}$",
+      "$\\{1, 2, 3, 4, 5, 6, 7\\}$",
+      "$\\emptyset$"
+    ],
+    
+    correct: 0,
+    
+    explanation: "The complement $A'$ (or $A^c$) contains all elements in the universal set U that are NOT in A. U = {1,2,3,4,5,6,7}, A = {2,4,6}. Removing A's elements leaves {1,3,5,7}.",
+    
+    tags: ["complement", "universal_set", "absolute_complement"]
+  },
+  
+  {
+    id: "MA110_T1_007",
+    course: "MA110",
+    term: "T1",
+    topic: "Empty Set Properties",
+    difficulty: "Easy",
+    
+    q: "Which statement about the empty set $\\emptyset$ is FALSE?",
+    
+    options: [
+      "$\\emptyset \\subset A$ for any set A",
+      "$\\emptyset \\cup A = A$ for any set A",
+      "$\\emptyset \\cap A = \\emptyset$ for any set A",
+      "$\\emptyset = \\{0\\}$"
+    ],
+    
+    correct: 3,
+    
+    explanation: "The empty set $\\emptyset = \\{\\}$ has no elements, while $\\{0\\}$ is a set containing one element (the number 0). They are not equal. All other statements are true properties of the empty set.",
+    
+    tags: ["empty_set", "properties", "common_misconceptions"]
+  },
+  
+  {
+    id: "MA110_T1_008",
+    course: "MA110",
+    term: "T1",
+    topic: "De Morgan's Laws",
+    difficulty: "Hard",
+    
+    q: "According to De Morgan's Laws, which is equivalent to $(A \\cup B)'$?",
+    
+    options: [
+      "$A' \\cup B'$",
+      "$A' \\cap B'$",
+      "$A \\cap B$",
+      "$A \\cup B$"
+    ],
+    
+    correct: 1,
+    
+    explanation: "De Morgan's Law states: The complement of a union equals the intersection of complements: $(A \\cup B)' = A' \\cap B'$. Similarly, $(A \\cap B)' = A' \\cup B'$.",
+    
+    tags: ["de_morgan", "complement_laws", "advanced_concepts"]
+  },
+  
+  {
+    id: "MA110_T1_009",
+    course: "MA110",
+    term: "T1",
+    topic: "Distributive Properties",
+    difficulty: "Hard",
+    
+    q: "Which expression correctly demonstrates the distributive property of intersection over union?",
+    
+    options: [
+      "$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$",
+      "$A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$",
+      "$A \\cup (B \\cup C) = (A \\cup B) \\cup C$",
+      "$A \\cap (B \\cap C) = (A \\cap B) \\cap C$"
+    ],
+    
+    correct: 1,
+    
+    explanation: "The distributive property states: $A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$. This is analogous to multiplication distributing over addition in algebra: $a \\times (b + c) = (a \\times b) + (a \\times c)$.",
+    
+    tags: ["distributive", "algebraic_properties", "laws"]
+  },
+  
+  {
+    id: "MA110_T1_010",
+    course: "MA110",
+    term: "T1",
+    topic: "Power Set",
+    difficulty: "Medium",
+    
+    q: "If $S = \\{a, b, c\\}$, how many elements does the power set $P(S)$ have?",
+    
+    options: [
+      "3",
+      "6", 
+      "8",
+      "9"
+    ],
+    
+    correct: 2,
+    
+    explanation: "The power set $P(S)$ is the set of all subsets of S. For a set with n elements, the power set has $2^n$ elements. Here n = 3, so $2^3 = 8$ subsets: $\\emptyset$, $\\{a\\}$, $\\{b\\}$, $\\{c\\}$, $\\{a,b\\}$, $\\{a,c\\}$, $\\{b,c\\}$, $\\{a,b,c\\}$.",
+    
+    tags: ["power_set", "cardinality", "subsets"]
+  },
+  
+  {
+    id: "MA110_T1_011",
+    course: "MA110",
+    term: "T1",
+    topic: "Venn Diagrams",
+    difficulty: "Medium",
+    
+    q: "In a Venn diagram showing sets A and B, which region represents $A \\setminus B$?",
+    
+    options: [
+      "The region where circles A and B overlap",
+      "The region in circle A that doesn't overlap with B",
+      "The region in circle B that doesn't overlap with A",
+      "The region outside both circles"
+    ],
+    
+    correct: 1,
+    
+    explanation: "$A \\setminus B$ means elements in A but not in B. In a Venn diagram with two overlapping circles, this corresponds to the crescent-shaped region of circle A that doesn't intersect with circle B.",
+    
+    tags: ["venn_diagrams", "visualization", "set_difference"]
+  },
+  
+  {
+    id: "MA110_T1_012",
+    course: "MA110",
+    term: "T1",
+    topic: "Set Equality",
+    difficulty: "Medium",
+    
+    q: "To prove two sets A and B are equal ($A = B$), what must be shown?",
+    
+    options: [
+      "$A \\subset B$ only",
+      "$B \\subset A$ only", 
+      "Both $A \\subset B$ and $B \\subset A$",
+      "That A and B have the same number of elements"
+    ],
+    
+    correct: 2,
+    
+    explanation: "Set equality requires showing mutual subset inclusion: $A \\subset B$ (every element of A is in B) AND $B \\subset A$ (every element of B is in A). Having the same number of elements isn't sufficient - they must contain exactly the same elements.",
+    
+    tags: ["set_equality", "proof_technique", "subset"]
+  },
+  
+  {
+    id: "MA110_T1_013",
+    course: "MA110",
+    term: "T1",
+    topic: "Disjoint Sets",
+    difficulty: "Easy",
+    
+    q: "Two sets A and B are disjoint if:",
+    
+    options: [
+      "$A \\subset B$",
+      "$A \\cup B = \\emptyset$",
+      "$A \\cap B = \\emptyset$",
+      "$A \\setminus B = B \\setminus A$"
+    ],
+    
+    correct: 2,
+    
+    explanation: "Disjoint sets have no elements in common. This means their intersection is empty: $A \\cap B = \\emptyset$. They don't share any elements, like two circles in a Venn diagram that don't overlap.",
+    
+    tags: ["disjoint", "intersection", "empty_set"]
+  },
+  
+  {
+    id: "MA110_T1_014",
+    course: "MA110",
+    term: "T1",
+    topic: "Associative Property",
+    difficulty: "Medium",
+    
+    q: "Which expression demonstrates the associative property of union?",
+    
+    options: [
+      "$A \\cup B = B \\cup A$",
+      "$A \\cup (B \\cup C) = (A \\cup B) \\cup C$", 
+      "$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$",
+      "$A \\cup \\emptyset = A$"
+    ],
+    
+    correct: 1,
+    
+    explanation: "The associative property states that grouping doesn't matter: $A \\cup (B \\cup C) = (A \\cup B) \\cup C$. This means we can remove parentheses when taking unions of multiple sets. Option A shows commutative property, C shows distributive property, D shows identity property.",
+    
+    tags: ["associative", "properties", "grouping"]
+  },
+  
+  {
+    id: "MA110_T1_015",
+    course: "MA110",
+    term: "T1",
+    topic: "Real-World Application",
+    difficulty: "Hard",
+    
+    q: "In a class of 40 students: 25 like Mathematics, 20 like Physics, and 15 like both. How many like Mathematics but NOT Physics?",
+    
+    options: [
+      "5",
+      "10",
+      "15", 
+      "20"
+    ],
+    
+    correct: 1,
+    
+    explanation: "Let M = Math students (25), P = Physics students (20), M∩P = both (15). Students who like Math but NOT Physics = M \\ P = |M| - |M∩P| = 25 - 15 = 10.",
+    
+    tags: ["application", "word_problem", "real_world"]
+  },
+
+//var mcqDa = [
+  // ================= PHYSICS (PH110) =================
+  {
+    id: "ph110-q001",
+    course: "PH110",
+    term: "T1",
+    // Block Math ($$) for the formula, Inline Math ($) for variables
+    q: "A projectile is launched with an initial velocity $v_0$ at an angle $\\theta$ above the horizontal. Which expression represents the **Maximum Height** ($H$) reached?",
+    options: [
+      "$$ H = \\frac{v_0 \\sin \\theta}{g} $$",
+      "$$ H = \\frac{v_0^2 \\sin 2\\theta}{g} $$",
+      "$$ H = \\frac{v_0^2 \\sin^2 \\theta}{2g} $$", 
+      "$$ H = \\frac{1}{2}v_0^2 $$"
+    ],
+    correct: 2,
+    // Explanation uses aligned equations for a step-by-step proof
+    explanation: "At maximum height, the vertical velocity $v_y = 0$. Using the kinematic equation: $$ v_y^2 = v_{0y}^2 - 2g\\Delta y $$ Substitute $v_{0y} = v_0 \\sin \\theta$: $$ 0 = (v_0 \\sin \\theta)^2 - 2gH $$ $$ 2gH = v_0^2 \\sin^2 \\theta \\implies H = \\frac{v_0^2 \\sin^2 \\theta}{2g} $$"
+  },
+  
+  // ================= MATH (MA110) =================
+  {
+    id: "ma110-q001",
+    course: "MA110",
+    term: "T1",
+    q: "Evaluate the following limit: $$ \\lim_{x \\to 0} \\frac{\\sqrt{1+x} - 1}{x} $$",
+    options: [
+      "0",
+      "$$ \\frac{1}{2} $$",
+      "1",
+      "Undefined"
+    ],
+    correct: 1,
+    explanation: "Multiply by the conjugate: $$ \\lim_{x \\to 0} \\frac{(\\sqrt{1+x} - 1)(\\sqrt{1+x} + 1)}{x(\\sqrt{1+x} + 1)} $$ $$ = \\lim_{x \\to 0} \\frac{1+x-1}{x(\\sqrt{1+x}+1)} = \\lim_{x \\to 0} \\frac{1}{\\sqrt{1+x}+1} = \\frac{1}{\\sqrt{1}+1} = \\frac{1}{2} $$"
+  },
+
+  // ================= CHEMISTRY (CH110) =================
+  {
+    id: "ch110-q001",
+    course: "CH110",
+    term: "T1",
+    // Note the use of \\ce{} for Chemistry syntax
+    q: "Consider the combustion of Propane. What is the coefficient of Oxygen ($\\ce{O2}$) when the equation is balanced? $$ \\ce{C3H8 + xO2 -> 3CO2 + 4H2O} $$",
+    options: [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    correct: 2,
+    explanation: "Count the Oxygen atoms on the right side: <br> • In $\\ce{3CO2}$: $3 \\times 2 = 6$ oxygen atoms. <br> • In $\\ce{4H2O}$: $4 \\times 1 = 4$ oxygen atoms. <br> Total = 10. <br> Therefore, we need 10 atoms on the left: $$ 5 \\times \\ce{O2} = 10 \\text{ atoms} $$ So, $x = 5$."
   }
+  
 ];
