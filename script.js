@@ -1,6 +1,6 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v10.3 UNIVERSAL) ===
-// === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v10.4 UNIVERSAL PRO) ===
+// === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
@@ -22,6 +22,39 @@ let currentCourse = null, currentTerm = null, currentTermKey = null;
 let currentQuizType = null, currentQuestionIndex = 0, currentScore = 0, currentQuizData = [];
 let currentEssay = null, currentStepIndex = 0, essayScore = 0;
 let currentFlashcardTopic = null, currentFlashcards = [], currentCardIndex = 0, isCardFront = true;
+
+// ============================================================
+// === 0. UNIVERSAL PARSER (Markdown -> HTML) ===
+// ============================================================
+
+function parseKaeriMarkdown(text) {
+    if (!text) return "";
+    let t = text;
+
+    // 1. Headers (# H1, ## H2)
+    t = t.replace(/^## (.*$)/gim, "<h3 style='margin:10px 0; color:#72efdd;'>$1</h3>");
+    t = t.replace(/^# (.*$)/gim, "<h2 style='margin:15px 0; color:#fff;'>$1</h2>");
+
+    // 2. Blockquotes (> text)
+    t = t.replace(/^> (.*$)/gim, "<blockquote style='border-left:4px solid #72efdd; margin:10px 0; padding-left:15px; color:#a0a8b4; font-style:italic;'>$1</blockquote>");
+
+    // 3. Bullet Lists (- item)
+    t = t.replace(/^- (.*$)/gim, "<li style='margin-left:20px;'>$1</li>");
+
+    // 4. Bold (**text**)
+    t = t.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+    // 5. Underline (__text__)
+    t = t.replace(/__(.*?)__/g, "<u>$1</u>");
+
+    // 6. Italic (*text*) - careful regex to avoid breaking Math symbols
+    t = t.replace(/(?<!\\)\*([^\s].*?)(?<!\\)\*/g, "<em>$1</em>");
+
+    // 7. Line Breaks (Convert newlines to HTML breaks)
+    t = t.replace(/\n/g, "<br>");
+
+    return t;
+}
 
 // ============================================================
 // === 1. INITIALIZATION & DATA LOADING ===
@@ -538,7 +571,7 @@ function clearDemoLocks() {
 }
 
 // ============================================================
-// === 6. QUIZ ENGINE (UPDATED FOR KaTeX & SMART TTS) ===
+// === 6. QUIZ ENGINE (UPDATED FOR KaTeX & SMART TTS & MARKDOWN) ===
 // ============================================================
 
 function renderQuiz() {
@@ -569,12 +602,12 @@ function displayMcqQuestion() {
     
     let html = `
         <div class="question-header"><h3>MCQ ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3></div>
-        <div class="question-box"><p>${q.q}</p><div class="options">
+        <div class="question-box">${parseKaeriMarkdown(q.q)}<div class="options">
     `;
     
     if (q.options) {
         q.options.forEach((opt, i) => {
-            html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${opt}</label>`;
+            html += `<label><input type="radio" name="mcq" value="${i}"/> ${String.fromCharCode(65 + i)}. ${parseKaeriMarkdown(opt)}</label>`;
         });
     }
     
@@ -618,11 +651,11 @@ function checkMcqAnswer() {
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
         feedbackText = "Correct!";
     } else {
-        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}</p>`;
+        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + q.correct)}. ${parseKaeriMarkdown(q.options[q.correct])}</p>`;
         feedbackText = `Wrong. The correct answer is option ${String.fromCharCode(65 + q.correct)}.`;
     }
     
-    const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+    const explanationBox = `<div class="explanation-box">${parseKaeriMarkdown(q.explanation || '')}</div>`;
     resultDiv.innerHTML += explanationBox;
     feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
@@ -695,7 +728,7 @@ function displayShortAnswerQuestion() {
     updateProgress(currentQuestionIndex + 1, currentQuizData.length);
     if (!q) return showFinalShortAnswerScore();
     
-    container.innerHTML = `<h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3><div class="question-box"><p>${q.q}</p></div><textarea id="short-answer-input"></textarea><button id="sa-submit-btn" onclick="checkShortAnswer()">✅ Submit</button>`;
+    container.innerHTML = `<h3>Short Answer ${currentQuestionIndex + 1} / ${currentQuizData.length}</h3><div class="question-box">${parseKaeriMarkdown(q.q)}</div><textarea id="short-answer-input"></textarea><button id="sa-submit-btn" onclick="checkShortAnswer()">✅ Submit</button>`;
     
     renderMath();
     
@@ -736,7 +769,7 @@ function checkShortAnswer() {
         feedbackText = `Wrong. The required keywords are: ${q.keywords.join(', ')}.`;
     }
     
-    const explanationBox = `<div class="explanation-box">${q.explanation || ''}</div>`;
+    const explanationBox = `<div class="explanation-box">${parseKaeriMarkdown(q.explanation || '')}</div>`;
     resultDiv.innerHTML += explanationBox;
     feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
@@ -840,10 +873,10 @@ function showEssayStep(index) {
     
     let html = `
         <div class="question-header"><h3>📄 ${essay.title} — Step ${index + 1} of ${essay.steps.length}</h3><p>Topic: ${essay.topic} | ${essay.year}</p></div>
-        <div class="question-box"><p><strong>Q:</strong> ${step.q}</p><div class="options">
+        <div class="question-box"><p><strong>Q:</strong> ${parseKaeriMarkdown(step.q)}</p><div class="options">
     `;
     step.options.forEach((opt, i) => {
-        html += `<label class="option"><input type="radio" name="step-option" value="${i}" /> <span>${String.fromCharCode(65 + i)}. ${opt}</span></label>`;
+        html += `<label class="option"><input type="radio" name="step-option" value="${i}" /> <span>${String.fromCharCode(65 + i)}. ${parseKaeriMarkdown(opt)}</span></label>`;
     });
     
     html += `</div><button id="essay-submit-btn" onclick="checkEssayStep()">✅ Submit Step</button></div>`;
@@ -884,11 +917,11 @@ function checkEssayStep() {
         resultDiv.innerHTML = "<p>✔️ Correct!</p>";
         feedbackText = "Correct!";
     } else {
-        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${step.options[step.correct]}</p>`;
+        resultDiv.innerHTML = `<p>❌ Correct: ${String.fromCharCode(65 + step.correct)}. ${parseKaeriMarkdown(step.options[step.correct])}</p>`;
         feedbackText = `Wrong. The correct option is ${String.fromCharCode(65 + step.correct)}.`;
     }
     
-    const explanationBox = `<div class="explanation-box">${step.explanation || ''}</div>`;
+    const explanationBox = `<div class="explanation-box">${parseKaeriMarkdown(step.explanation || '')}</div>`;
     resultDiv.innerHTML += explanationBox;
     feedbackText += ` Explanation: ${humanizeLaTeX(step.explanation || '')}`;
     
@@ -999,8 +1032,8 @@ function displayFlashcard() {
         <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
         <div class="flashcard-wrapper">
             <div class="flashcard ${isCardFront ? '' : 'back-active'}" onclick="flipCard()">
-                <div class="card-face card-front">${card.front}</div>
-                <div class="card-face card-back">${card.back}</div>
+                <div class="card-face card-front">${parseKaeriMarkdown(card.front)}</div>
+                <div class="card-face card-back">${parseKaeriMarkdown(card.back)}</div>
             </div>
         </div>
         <div class="flashcard-nav-buttons">
@@ -1117,19 +1150,19 @@ function generatePrintPreview() {
     
     if (currentQuizType === 'essay') {
         currentEssay.steps.forEach((step, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Step ${index + 1}: ${step.q}</div><div class="preview-ans">✅ Correct Action: ${step.options[step.correct]}</div><div class="preview-exp">💡 Note: ${step.explanation || "No additional explanation."}</div></div>`;
+            html += `<div class="preview-step"><div class="preview-q">Step ${index + 1}: ${parseKaeriMarkdown(step.q)}</div><div class="preview-ans">✅ Correct Action: ${parseKaeriMarkdown(step.options[step.correct])}</div><div class="preview-exp">💡 Note: ${parseKaeriMarkdown(step.explanation || "No additional explanation.")}</div></div>`;
         });
     } else if (currentQuizType === 'mcq') {
         currentQuizData.forEach((item, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${item.q}</div><div class="preview-ans">✅ Answer: ${item.options[item.correct]}</div><div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div></div>`;
+            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${parseKaeriMarkdown(item.q)}</div><div class="preview-ans">✅ Answer: ${parseKaeriMarkdown(item.options[item.correct])}</div><div class="preview-exp">💡 Explanation: ${parseKaeriMarkdown(item.explanation || "No additional explanation.")}</div></div>`;
         });
     } else if (currentQuizType === 'shortAnswer') {
         currentQuizData.forEach((item, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${item.q}</div><div class="preview-ans">🔑 Required Keywords: ${item.keywords.join(", ")}</div><div class="preview-exp">💡 Explanation: ${item.explanation || "No additional explanation."}</div></div>`;
+            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${parseKaeriMarkdown(item.q)}</div><div class="preview-ans">🔑 Required Keywords: ${item.keywords.join(", ")}</div><div class="preview-exp">💡 Explanation: ${parseKaeriMarkdown(item.explanation || "No additional explanation.")}</div></div>`;
         });
     } else if (currentQuizType === 'flashcard') {
         currentFlashcards.forEach((card, index) => {
-            html += `<div class="preview-step" style="border-left-color: #6f42c1;"><div class="preview-q" style="color: #333; font-size: 1.1em;">${index + 1}. ${card.front}</div><div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div><div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${card.back}</div></div>`;
+            html += `<div class="preview-step" style="border-left-color: #6f42c1;"><div class="preview-q" style="color: #333; font-size: 1.1em;">${index + 1}. ${parseKaeriMarkdown(card.front)}</div><div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div><div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${parseKaeriMarkdown(card.back)}</div></div>`;
         });
     }
     
@@ -1232,7 +1265,13 @@ const ttsMap = [
     { r: /\\times/g, s: "times" }, { r: /\\div/g, s: "divided by" }, { r: /\\cdot/g, s: "dot" },
     { r: /\\ce\{(.+?)\}/g, s: "$1" }, { r: /->/g, s: "yields" },
 
-    // CLEANUP
+    // CLEANUP MARKDOWN (FOR TTS)
+    { r: /\*\*/g, s: "" },   // Remove double stars
+    { r: /__/g, s: "" },     // Remove double underscores
+    { r: /#/g, s: "" },      // Remove headings
+    { r: />/g, s: "" },      // Remove quote markers
+
+    // CLEANUP LATEX
     { r: /\\text\{(.+?)\}/g, s: "$1" }, { r: /\$\$/g, s: "" }, { r: /\$/g, s: "" }, { r: /\\/g, s: "" }
 ];
 
@@ -1341,7 +1380,7 @@ function renderStudentBoard() {
             <div class="board-announcement-title">
                 <span>${icon}</span> ${item.title}
             </div>
-            <div class="board-announcement-body">${item.body}</div>
+            <div class="board-announcement-body">${parseKaeriMarkdown(item.body)}</div>
         `;
     } else {
         annContainer.style.display = 'none';
