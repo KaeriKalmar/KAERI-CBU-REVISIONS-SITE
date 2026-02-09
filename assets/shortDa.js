@@ -11153,7 +11153,7 @@ const shortData = [
 
     // --- QUESTION ONE ---
     {
-        course: "MA110", term:, "T1",
+        course: "MA110", term: "T1",
         q: "Express $2.0\\bar{72}$ as a fraction in its simplest form. (MA110 Test 1 2021)",
         a: "114/55",
         explanation: "To convert a repeating decimal, we use algebra to 'cancel out' the infinite tail. Let $x = 2.07272...$. Multiplying by 10 gives $10x = 20.7272...$ and multiplying by 1000 gives $1000x = 2072.7272...$. Subtracting these equations ($1000x - 10x$) eliminates the repeating part, leaving $990x = 2052$. Simplifying $\\frac{2052}{990}$ by dividing both by 18 gives us $\\frac{114}{55}$."
