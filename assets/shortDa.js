@@ -11151,7 +11151,6 @@ const shortData = [
     "explanation": "'However' shows contrast or comparison between ideas, indicating a difference or opposition to what was previously stated."
   },
 
-//MA110
     // --- QUESTION ONE ---
     {
         course: "MA110", term:, "T1",
