@@ -19793,264 +19793,134 @@ const mcqData = [
   },
 
     //MA110
-  // =======================================================
-  // MODULE: SET THEORY (MA110 - T1) - DERIVED FROM LECTURE NOTES
-  // =======================================================
-  {
-    id: "MA110_T1_001",
-    course: "MA110",
-    term: "T1",
-    topic: "Fundamental Concepts",
-    difficulty: "Easy",
-    q: "According to Definition 1.1.0, a set is defined as:",
-    options: [
-      "An ordered sequence of numbers",
-      "A collection of distinct elements or objects",
-      "A mathematical function with inputs and outputs", 
-      "A list of variables in alphabetical order"
-    ],
-    correct: 1,
-    explanation: "Definition 1.1.0 states: A set is a collection of distinct elements or objects. We write $x \\in B$ if $x$ is an element of $B$.",
-    tags: ["definition", "fundamentals"]
-  },
-  {
-    id: "MA110_T1_002",
-    course: "MA110",
-    term: "T1",
-    topic: "Subset Definition",
-    difficulty: "Easy",
-    q: "If every element of set $A$ is an element of set $B$, then:",
-    options: [
-      "$A = B$",
-      "$B \\subset A$", 
-      "$A \\subset B$ (A is a subset of B)",
-      "$A \\cap B = \\emptyset$"
-    ],
-    correct: 2,
-    explanation: "Definition 1.1.1: If every element of $A$ is an element of $B$, then $A$ is a subset of $B$, denoted $A \\subset B$. This does not rule out $A=B$.",
-    tags: ["subset", "definition"]
-  },
-  {
-    id: "MA110_T1_003",
-    course: "MA110",
-    term: "T1",
-    topic: "Set Equality",
-    difficulty: "Medium",
-    q: "Two sets $A$ and $B$ are said to be equal ($A=B$) if:",
-    options: [
-      "They have the same number of elements",
-      "$A \\subset B$ only",
-      "$B \\subset A$ only",
-      "$A \\subset B$ and $B \\subset A$"
-    ],
-    correct: 3,
-    explanation: "Definition 1.1.2: Two sets $A$ and $B$ are equal if they contain the same elements. That is, $A=B$ if both $A \\subset B$ and $B \\subset A$.",
-    tags: ["equality", "definition"]
-  },
-  {
-    id: "MA110_T1_004",
-    course: "MA110",
-    term: "T1",
-    topic: "Empty Set", 
-    difficulty: "Easy",
-    q: "Which property is true regarding the empty set $\\emptyset$?",
-    options: [
-      "It contains one element: 0",
-      "It is a subset of every other set",
-      "It is equal to the Universal set",
-      "It is denoted by $\\{0\\}$"
-    ],
-    correct: 1,
-    explanation: "Definition 1.1.3 Note: The empty set (or null set) has the property that it is a subset of every other set.",
-    tags: ["empty_set", "properties"]
-  },
-  {
-    id: "MA110_T1_005",
-    course: "MA110",
-    term: "T1",
-    topic: "Relative Complement",
-    difficulty: "Medium",
-    q: "Given $A = \\{2,3,4,5\\}$ and $B = \\{3,4,5\\}$, what is the relative complement $A \\setminus B$?",
-    options: [
-      "$\\{2\\}$",
-      "$\\{3,4,5\\}$",
-      "$\\{2,3,4,5\\}$",
-      "$\\emptyset$"
-    ],
-    correct: 0,
-    explanation: "Example 1.1.1 (a): $A \\setminus B$ (or $A-B$) is the set of elements in $A$ but NOT in $B$. Removing $\{3,4,5\}$ from $A$ leaves $\{2\}$.",
-    tags: ["relative_complement", "example"]
-  },
-  {
-    id: "MA110_T1_006",
-    course: "MA110",
-    term: "T1",
-    topic: "Absolute Complement",
-    difficulty: "Medium",
-    q: "If $U = \\{1,2,3,4,5,6\\}$ and $A = \\{1,2,3\\}$, find $A'$.",
-    options: [
-      "$\\{1,2,3\\}$",
-      "$\\{4,5,6\\}$",
-      "$\\{1,2,3,4,5,6\\}$",
-      "$\\emptyset$"
-    ],
-    correct: 1,
-    explanation: "Example 1.1.2: The complement $A'$ contains all elements in $U$ that are not in $A$. $U \\setminus \\{1,2,3\\} = \\{4,5,6\\}$.",
-    tags: ["complement", "example"]
-  },
-  {
-    id: "MA110_T1_007",
-    course: "MA110",
-    term: "T1",
-    topic: "Power Set",
-    difficulty: "Medium",
-    q: "If set $A$ has 3 elements ($n(A)=3$), how many elements are in its power set $P(A)$?",
-    options: [
-      "3",
-      "6",
-      "8",
-      "9"
-    ],
-    correct: 2,
-    explanation: "Definition 1.1.10: The number of elements in the power set is given by $n(P(A)) = 2^{n(A)}$. For $n(A)=3$, $2^3 = 8$.",
-    tags: ["power_set", "cardinality"]
-  },
-  {
-    id: "MA110_T1_008",
-    course: "MA110",
-    term: "T1",
-    topic: "Difference Properties",
-    difficulty: "Hard",
-    q: "According to Proposition 1.1.0, which identity is correct for $C \\setminus (A \\cap B)$?",
-    options: [
-      "$(C \\setminus A) \\cap (C \\setminus B)$",
-      "$(C \\setminus A) \\cup (C \\setminus B)$",
-      "$(C \\cup A) \\setminus B$",
-      "$C \\cap (A \\cup B)$"
-    ],
-    correct: 1,
-    explanation: "Proposition 1.1.0 (i): $C \\setminus (A \\cap B) = (C \\setminus A) \\cup (C \\setminus B)$. Note that difference distributes over intersection by changing it to union.",
-    tags: ["properties", "difference_laws"]
-  },
-  {
-    id: "MA110_T1_009",
-    course: "MA110",
-    term: "T1",
-    topic: "Identity Laws",
-    difficulty: "Medium",
-    q: "From Theorem 1.1.1, what is the value of $A \\setminus A$?",
-    options: [
-      "$A$",
-      "$U$",
-      "$\\emptyset$",
-      "$A'$"
-    ],
-    correct: 2,
-    explanation: "Theorem 1.1.1 (2) & Prop 1.1.0 (vi): The difference of a set with itself is the empty set ($A \\setminus A = \\emptyset$).",
-    tags: ["identity_laws", "theorems"]
-  },
-  {
-    id: "MA110_T1_010",
-    course: "MA110",
-    term: "T1",
-    topic: "De Morgan's Laws",
-    difficulty: "Hard",
-    q: "Which of the following is one of De Morgan's Laws as stated in Theorem 1.1.1 (8)?",
-    options: [
-      "$(B \\cap C)' = B' \\cap C'$",
-      "$(B \\cup C)' = B' \\cup C'$",
-      "$(B \\cap C)' = B' \\cup C'$",
-      "$(B \\cup C) = B \\cap C$"
-    ],
-    correct: 2,
-    explanation: "Theorem 1.1.1 (8a): The complement of an intersection is the union of the complements: $(B \\cap C)' = B' \\cup C'$.",
-    tags: ["de_morgan", "theorems"]
-  },
-  {
-    id: "MA110_T1_011",
-    course: "MA110",
-    term: "T1",
-    topic: "Set Simplification",
-    difficulty: "Hard",
-    q: "Simplify the expression: $(A \\cap B) \\cup (A \\cap B')$",
-    options: [
-      "$B$",
-      "$A$",
-      "$U$",
-      "$\\emptyset$"
-    ],
-    correct: 1,
-    explanation: "From Example 1.1.5 (b): Use the distributive property: $(A \\cap B) \\cup (A \\cap B') = A \\cap (B \\cup B')$. Since $B \\cup B' = U$, we get $A \\cap U = A$.",
-    tags: ["simplification", "example", "algebra_laws"]
-  },
-  {
-    id: "MA110_T1_012",
-    course: "MA110",
-    term: "T1",
-    topic: "Subset Simplification",
-    difficulty: "Hard",
-    q: "If $C \\subset D$, what does $C' \\cup D'$ simplify to?",
-    options: [
-      "$C'$",
-      "$D'$",
-      "$C \\cap D$",
-      "$U$"
-    ],
-    correct: 0,
-    explanation: "Example 1.1.5 (d): $C' \\cup D' = (C \\cap D)'$. Since $C \\subset D$, the intersection $C \\cap D$ is just $C$. Thus, $(C)' = C'$.",
-    tags: ["subset", "simplification", "example"]
-  },
-  {
-    id: "MA110_T1_013",
-    course: "MA110",
-    term: "T1",
-    topic: "Associative Law Proof",
-    difficulty: "Hard",
-    q: "To prove $A \\cup (B \\cup C) = (A \\cup B) \\cup C$, one must show:",
-    options: [
-      "$x \\in A \\cup (B \\cup C) \\iff x \\in A \\cap B \\cap C$",
-      "$x \\in A \\cup (B \\cup C) \\implies x \\in (A \\cup B) \\cup C$ and conversely",
-      "$A \\cup B = B \\cup C$",
-      "$n(A \\cup B) = n(B \\cup C)$"
-    ],
-    correct: 1,
-    explanation: "Proof 1 (Associative laws): The proof involves showing mutual subset inclusion. Let $x \\in A \\cup (B \\cup C) \\implies \\dots \\implies x \\in (A \\cup B) \\cup C$. Then show the converse.",
-    tags: ["proofs", "associative_law"]
-  },
-  {
-    id: "MA110_T1_014",
-    course: "MA110",
-    term: "T1",
-    topic: "Double Complement",
-    difficulty: "Easy",
-    q: "According to Theorem 1.1.1 (1), what is $(A')'$?",
-    options: [
-      "$A'$",
-      "$U$",
-      "$\\emptyset$",
-      "$A$"
-    ],
-    correct: 3,
-    explanation: "Theorem 1.1.1 (1): The complement of a complement returns to the original set. $(A')' = A$. Proof involves showing $x \\in (A')' \\implies x \\notin A' \\implies x \\in A$.",
-    tags: ["complement", "theorems"]
-  },
-  {
-    id: "MA110_T1_015",
-    course: "MA110",
-    term: "T1",
-    topic: "Set Difference Identity",
-    difficulty: "Medium",
-    q: "Proposition 1.1.0 (viii) states that $B \\setminus A$ is equivalent to:",
-    options: [
-      "$A \\cup B$",
-      "$A' \\cap B$",
-      "$A \\cap B'$",
-      "$A' \\cup B$"
-    ],
-    correct: 1,
-    explanation: "Proposition 1.1.0 (viii): The difference $B \\setminus A$ (elements in B but not A) is equivalent to the intersection of B and the complement of A: $A' \\cap B$.",
-    tags: ["identities", "difference"]
-  },
+
+   
+   
+    // MA210 QUESTION ONE
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Express $2.0\\bar{72}$ as a fraction in its simplest form. (MA110 Test 1 2021)",
+        options: ["$\\frac{114}{50}$", "$\\frac{114}{55}$", "$\\frac{2052}{990}$", "$\\frac{1026}{495}$"],
+        correct: 1,
+        explanation: "Let $x = 2.07272...$. Then $10x = 20.7272...$ and $1000x = 2072.7272...$. Subtracting gives $990x = 2052$. Simplifying $\\frac{2052}{990}$ by dividing by 18 gives $\\frac{114}{55}$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Given $f(x)=\\frac{x^{2}+2}{x-1}$, identify the vertical and oblique asymptotes. (MA110 Test 1 2021)",
+        options: ["VA: $x=1$, OA: $y=x+1$", "VA: $x=-1$, OA: $y=x$", "VA: $x=1$, OA: $y=x-1$", "VA: $x=0$, OA: $y=x+2$"],
+        correct: 0,
+        explanation: "VA occurs where denominator is zero ($x=1$). OA is found by long division: $(x^2+2)/(x-1) = x+1 + 3/(x-1)$, so OA is $y=x+1$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Show that $2+\\sqrt{7}$ is irrational, given $\\sqrt{7}$ is irrational. (MA110 Test 1 2021)",
+        options: ["Direct proof", "Proof by induction", "Proof by contradiction", "Proof by exhaustion"],
+        correct: 2,
+        explanation: "Assume $2+\\sqrt{7} = p/q$ (rational). Then $\\sqrt{7} = p/q - 2$, which means $\\sqrt{7}$ is rational. This contradicts the given fact, proving $2+\\sqrt{7}$ is irrational."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Verify the inverse of $f(x)=x^3+1$. (MA110 Test 1 2021)",
+        options: ["$g(x)=\\sqrt[3]{x}+1$", "$g(x)=\\sqrt[3]{x-1}$", "$g(x)=x^3-1$", "$g(x)=\\sqrt[3]{x+1}$"],
+        correct: 1,
+        explanation: "Swap $x$ and $y$: $x = y^3+1 \\Rightarrow x-1 = y^3 \\Rightarrow y = \\sqrt[3]{x-1}$. Composition $f(g(x)) = (\\sqrt[3]{x-1})^3+1 = x$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Define $a*b=a^b$. Evaluate $(3*2)*-2$. (MA110 Test 1 2021)",
+        options: ["$1/18$", "$81$", "$-18$", "$1/81$"],
+        correct: 3,
+        explanation: "First, $3*2 = 3^2 = 9$. Then $9*-2 = 9^{-2} = 1/9^2 = 1/81$."
+    },
+
+    // QUESTION TWO
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Simplify $[(A\\cap B)'\\cap(A'\\cup B)]'$. (MA110 Test 1 2021)",
+        options: ["$B$", "$A$", "$A \\cap B$", "$A \\cup B$"],
+        correct: 1,
+        explanation: "Outer complement gives $(A\\cap B) \\cup (A'\\cup B)' = (A\\cap B) \\cup (A\\cap B')$. Distributive law: $A \\cap (B \\cup B') = A \\cap U = A$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Determine the domain of $f(x)=\\sqrt{\\frac{x+1}{x-1}}$. (MA110 Test 1 2021)",
+        options: ["$(-\\infty, -1] \\cup (1, \\infty)$", "$[-1, 1)$", "$(1, \\infty)$", "$(-\\infty, -1) \\cup (1, \\infty)$"],
+        correct: 0,
+        explanation: "Radicand $\\ge 0$ and denominator $\\neq 0$. Testing intervals $(-\\infty, -1], [-1, 1), (1, \\infty)$ shows the expression is positive on $(-\\infty, -1] \\cup (1, \\infty)$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Let $\\alpha, \\beta$ be roots of $4x^2+3x-2=0$. Find the equation with roots $\\alpha^2, \\beta^2$. (MA110 Test 1 2021)",
+        options: ["$16x^2+25x+4=0$", "$16x^2-25x-4=0$", "$16x^2-25x+4=0$", "$4x^2-25x+16=0$"],
+        correct: 2,
+        explanation: "New sum $S = (\\alpha+\\beta)^2 - 2\\alpha\\beta = (-3/4)^2 - 2(-1/2) = 25/16$. New product $P = (\\alpha\\beta)^2 = 1/4$. Equation: $x^2 - (25/16)x + 1/4 = 0$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Solve $10-\\sqrt{2x+7}\\le3$. (MA110 Test 1 2021)",
+        options: ["$x \\le 21$", "$x \\ge 21$", "$x \\ge -3.5$", "$21 \\le x \\le 49$"],
+        correct: 1,
+        explanation: "$\\sqrt{2x+7} \\ge 7 \\Rightarrow 2x+7 \\ge 49 \\Rightarrow 2x \\ge 42 \\Rightarrow x \\ge 21$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Solve for $y$ in $\\frac{1}{x+iy}+\\frac{1}{1+3i}=1$. (MA110 Test 1 2021)",
+        options: ["$1/3$", "$-1/3$", "$3/10$", "$-3/10$"],
+        correct: 1,
+        explanation: "$1/(x+iy) = 1 - (1-3i)/10 = (9+3i)/10$. $x+iy = 10/(9+3i) = (90-30i)/90 = 1 - (1/3)i$. Thus $y = -1/3$."
+    },
+
+    // QUESTION THREE
+    {
+        course: "MA110",
+        term: "T1",
+        q: "What is the result of $k(x)=|2x-1|-|x+2|$ for the interval $-2 \\le x < 1/2$? (MA110 Test 1 2021)",
+        options: ["$-x+3$", "$x-3$", "$-3x-1$", "$3x+1$"],
+        correct: 2,
+        explanation: "In this interval, $2x-1$ is negative and $x+2$ is positive. $k(x) = -(2x-1) - (x+2) = -2x+1-x-2 = -3x-1$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Find the remainder when $x^3+2x^2+x-2$ is divided by $x-(1+i)$. (MA110 Test 1 2021)",
+        options: ["$3+7i$", "$2+4i$", "$-1+7i$", "$-3+7i$"],
+        correct: 3,
+        explanation: "Synthetic division with root $1+i$ yields coefficients $1, (3+i), (3+4i)$ and a final remainder of $-3+7i$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "If $A=[-7,8) \\cup [11,\\infty)$ and $B=[0,20]$, find $A'$. (MA110 Test 1 2021)",
+        options: ["$(-\\infty, -7) \\cup [8, 11)$", "$(-7, 8) \\cup [11, 20]$", "$(-\\infty, -7] \\cup [8, 11]$", "$(8, 11)$"],
+        correct: 0,
+        explanation: "The complement $A'$ contains all real numbers not in $A$. Since $A$ starts at $-7$ (inclusive), $A'$ goes up to $-7$ (exclusive). Between the two $A$ intervals, $A'$ covers $[8, 11)$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Simplify $\\frac{\\sqrt{3}+1}{\\sqrt{3}-1}+\\sqrt{3}-1$ to the form $a+b\\sqrt{3}$. (MA110 Test 1 2021)",
+        options: ["$1+\\sqrt{3}$", "$2+2\\sqrt{3}$", "$1+2\\sqrt{3}$", "$2+\\sqrt{3}$"],
+        correct: 2,
+        explanation: "Rationalizing the fraction gives $2+\\sqrt{3}$. Adding the rest: $(2+\\sqrt{3}) + \\sqrt{3}-1 = 1+2\\sqrt{3}$."
+    },
+    {
+        course: "MA110",
+        term: "T1",
+        q: "Is the function $f(x)=x^5+x^3+x$ even, odd, or neither? (MA110 Test 1 2021)",
+        options: ["Even", "Neither", "Odd", "Both"],
+        correct: 2,
+        explanation: "$f(-x) = (-x)^5 + (-x)^3 + (-x) = -x^5-x^3-x = -f(x)$. Since $f(-x)=-f(x)$, it is odd."
+    },
 
   // =======================================================
   // MODULE: PHYSICS (PH110) - TERM 1 (20 QUESTIONS)
