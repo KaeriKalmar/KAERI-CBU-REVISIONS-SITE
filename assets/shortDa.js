@@ -11151,4 +11151,103 @@ const shortData = [
     "explanation": "'However' shows contrast or comparison between ideas, indicating a difference or opposition to what was previously stated."
   },
 
+//MA110
+    // --- QUESTION ONE ---
+    {
+        course: "MA110", term:, "T1",
+        q: "Express $2.0\\bar{72}$ as a fraction in its simplest form. (MA110 Test 1 2021)",
+        a: "114/55",
+        explanation: "To convert a repeating decimal, we use algebra to 'cancel out' the infinite tail. Let $x = 2.07272...$. Multiplying by 10 gives $10x = 20.7272...$ and multiplying by 1000 gives $1000x = 2072.7272...$. Subtracting these equations ($1000x - 10x$) eliminates the repeating part, leaving $990x = 2052$. Simplifying $\\frac{2052}{990}$ by dividing both by 18 gives us $\\frac{114}{55}$."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Identify the Oblique Asymptote of $f(x)=\\frac{x^{2}+2}{x-1}$. (MA110 Test 1 2021)",
+        a: "y=x+1",
+        explanation: "Since the numerator's degree is higher than the denominator's, the graph follows a slanted line at infinity. We find this by long division: $x^2+2$ divided by $x-1$ equals $x+1$ with a remainder of 3. As $x$ becomes very large, the remainder fraction $3/(x-1)$ vanishes, leaving the line $y=x+1$. \n\n"
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Identify the Vertical Asymptote of $f(x)=\\frac{x^{2}+2}{x-1}$. (MA110 Test 1 2021)",
+        a: "x=1",
+        explanation: "Vertical asymptotes occur where the function is undefined. In a fraction, this is where the denominator is zero. Setting $x-1=0$ gives us $x=1$. On a graph, you will see the curve approach this vertical line but never touch it."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Show that $2+\\sqrt{7}$ is irrational, given $\\sqrt{7}$ is irrational. What method is used? (MA110 Test 1 2021)",
+        a: "contradiction",
+        explanation: "We use 'Proof by Contradiction.' We start by assuming $2+\\sqrt{7}$ IS rational (can be written as $p/q$). If we subtract 2 from both sides, we get $\\sqrt{7} = p/q - 2$. This would mean $\\sqrt{7}$ is rational, which contradicts the fact that it is irrational. Therefore, our original assumption was wrong, and the number must be irrational."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Evaluate the operation $(3*2)*-2$ where $a*b=a^b$. (MA110 Test 1 2021)",
+        a: "1/81",
+        explanation: "In math, we always handle the inner parentheses first. $3*2$ means $3^2$, which is $9$. Now we solve $9*-2$, which is $9^{-2}$. A negative exponent tells us to take the reciprocal: $1/9^2$, resulting in $1/81$."
+    },
+
+    // --- QUESTION TWO ---
+    {
+        course: "MA110", term: "T1",
+        q: "Simplify the set expression $[(A \\cap B)' \\cap (A' \\cup B)]'$. (MA110 Test 1 2021)",
+        a: "A",
+        explanation: "Applying De Morgan’s Law to the outer complement changes the intersection to a union and flips the inner signs: $(A \\cap B) \\cup (A' \\cup B)'$. This becomes $(A \\cap B) \\cup (A \\cap B')$. Using the distributive law, we factor out $A \\cap$, leaving $A \\cap (B \\cup B')$. Since $B$ union its complement is the Universal set ($U$), $A \\cap U = A$."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "What is the domain of $f(x)=\\sqrt{\\frac{x+1}{x-1}}$? (MA110 Test 1 2021)",
+        a: "(-inf, -1] U (1, inf)",
+        explanation: "Two things to watch for: the value under the root must be $\\ge 0$, and the denominator cannot be $0$. We test intervals: below $-1$, between $-1$ and $1$, and above $1$. The ratio is only positive in $(-\\infty, -1]$ and $(1, \\infty)$. We use a parenthesis for $1$ because $x$ cannot equal $1$. \n\n"
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "For $4x^2+3x-2=0$, find the sum of the squared roots $\\alpha^2 + \\beta^2$. (MA110 Test 1 2021)",
+        a: "25/16",
+        explanation: "From Vieta's formulas, sum $\\alpha+\\beta = -3/4$ and product $\\alpha\\beta = -1/2$. To find $\\alpha^2+\\beta^2$, use the identity $(\\alpha+\\beta)^2 - 2\\alpha\\beta$. Plugging in: $(-3/4)^2 - 2(-1/2) = 9/16 + 1 = 25/16$."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Solve $10-\\sqrt{2x+7}\\le3$. (MA110 Test 1 2021)",
+        a: "x >= 21",
+        explanation: "Isolate the root: $10-3 \\le \\sqrt{2x+7}$, so $7 \\le \\sqrt{2x+7}$. Squaring both sides gives $49 \\le 2x+7$. Subtracting 7 gives $42 \\le 2x$, and dividing by 2 gives $x \\ge 21$. \n\n"
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Solve for $y$ in $\\frac{1}{x+iy}+\\frac{1}{1+3i}=1$. (MA110 Test 1 2021)",
+        a: "-1/3",
+        explanation: "Isolate $\\frac{1}{x+iy}$ and rationalize the complex number $\\frac{1}{1+3i}$. This yields $\\frac{1}{x+iy} = \\frac{9+3i}{10}$. Inverting both sides gives $x+iy = \\frac{10}{9+3i}$, which rationalizes to $1 - \\frac{1}{3}i$. Therefore, the imaginary part $y$ is $-1/3$."
+    },
+
+    // --- QUESTION THREE ---
+    {
+        course: "MA110", term: "T1",
+        q: "Find the expression for $k(x)=|2x-1|-|x+2|$ when $x < -2$. (MA110 Test 1 2021)",
+        a: "-x+3",
+        explanation: "When $x < -2$, the expressions inside both absolute value bars are negative. To remove the bars, we must multiply the contents by $-1$: $k(x) = -(2x-1) - (-(x+2))$. Simplifying this gives $-2x+1+x+2$, which is $-x+3$. \n\n"
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Find the remainder of $(x^3+2x^2+x-2) \\div (x-(1+i))$. (MA110 Test 1 2021)",
+        a: "-3+7i",
+        explanation: "We use synthetic division with the root $1+i$. The process involves complex multiplication at each step. The final multiplication $(3+4i) \\times (1+i)$ results in $-1+7i$. Adding this to the constant term $-2$ gives the final remainder of $-3+7i$."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Given $A=[-7,8) \\cup [11,\\infty)$, find the intersection $A \\cap B$ where $B=[0,20]$. (MA110 Test 1 2021)",
+        a: "[0, 8) U [11, 20]",
+        explanation: "The intersection is where the two sets overlap. Set $B$ starts at 0 and ends at 20. Overlapping this with $A$, we get the numbers from 0 up to (but not including) 8, and the numbers from 11 up to 20. \n\n"
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Simplify $\\frac{\\sqrt{3}+1}{\\sqrt{3}-1}+\\sqrt{3}-1$ to $a+b\\sqrt{3}$. (MA110 Test 1 2021)",
+        a: "1+2sqrt(3)",
+        explanation: "First, rationalize the fraction: multiply top and bottom by $\\sqrt{3}+1$ to get $2+\\sqrt{3}$. Then, simply add the remaining terms: $(2+\\sqrt{3}) + \\sqrt{3}-1$. This simplifies to $1+2\\sqrt{3}$."
+    },
+    {
+        course: "MA110", term: "T1",
+        q: "Is $f(x)=x^5+x^3+x$ even, odd, or neither? (MA110 Test 1 2021)",
+        a: "odd",
+        explanation: "A function is odd if $f(-x) = -f(x)$. Plugging in $-x$: $(-x)^5 + (-x)^3 + (-x) = -x^5 - x^3 - x$. If we factor out the negative, we get $-(x^5+x^3+x)$, which is exactly $-f(x)$."
+    },
+
+  
+
 ];
