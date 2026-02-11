@@ -20884,6 +20884,874 @@ const mcqData = [
     ],
     correct: 2,
     explanation: "Count the Oxygen atoms on the right side: <br> • In $\\ce{3CO2}$: $3 \\times 2 = 6$ oxygen atoms. <br> • In $\\ce{4H2O}$: $4 \\times 1 = 4$ oxygen atoms. <br> Total = 10. <br> Therefore, we need 10 atoms on the left: $$ 5 \\times \\ce{O2} = 10 \\text{ atoms} $$ So, $x = 5$."
-  }
+  },
+
+
+  //CH110
+  
+ {
+    "q": "What is chemistry?",
+    "options": [
+      "The study of biological processes",
+      "The study of matter and the changes it undergoes",
+      "The study of physical forces",
+      "The study of the earth's structure"
+    ],
+    "correct": 1,
+    "explanation": "Chemistry is defined as the study of matter and the changes it undergoes.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "Which of the following is NOT one of the 5 steps of the Scientific Method?",
+    "options": [
+      "Careful definition of the problem",
+      "Performing experiments",
+      "Interpretation of results",
+      "Proving a theory as absolute truth"
+    ],
+    "correct": 3,
+    "explanation": "The scientific method involves defining problems, performing experiments, interpreting results, formulating laws, and developing theories. Theories are never proven absolutely; they are tested and modified.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Process"
+  },
+  {
+    "q": "What is the difference between qualitative and quantitative data?",
+    "options": [
+      "Qualitative uses numbers; Quantitative uses descriptions",
+      "Qualitative uses descriptions; Quantitative uses numbers obtained by measurements",
+      "There is no difference",
+      "Both use numbers exclusively"
+    ],
+    "correct": 1,
+    "explanation": "Qualitative data consists of general observations (e.g., color), while quantitative data comprises numbers obtained by measurements.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Comparison"
+  },
+  {
+    "q": "What is a hypothesis?",
+    "options": [
+      "A proven fact",
+      "A tentative explanation for a set of observations",
+      "A mathematical formula",
+      "A summary of experimental data"
+    ],
+    "correct": 1,
+    "explanation": "A hypothesis is a tentative explanation for a set of observations that can be tested through further experimentation.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a scientific law?",
+    "options": [
+      "A government regulation on science",
+      "A concise verbal or mathematical statement of a relationship that is always the same under the same conditions",
+      "A complex explanation of why things happen",
+      "An untested guess"
+    ],
+    "correct": 1,
+    "explanation": "A law summarizes information in a concise way (e.g., F=ma) describing a relationship that holds true under specific conditions.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a scientific theory?",
+    "options": [
+      "A unifying principle that explains a body of facts and/or laws based on them",
+      "A simple guess",
+      "The same as a hypothesis",
+      "An absolute truth that never changes"
+    ],
+    "correct": 0,
+    "explanation": "A theory is a unifying principle that explains a body of facts and laws. It evolves from hypotheses that have survived experimental validation.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a 'system' in scientific terminology?",
+    "options": [
+      "A computer program",
+      "The part of the universe that is under investigation",
+      "The entire universe",
+      "A specific laboratory equipment"
+    ],
+    "correct": 1,
+    "explanation": "A system is defined as the specific part of the universe that is under investigation in an experiment.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Method & Chemistry Basics",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is matter?",
+    "options": [
+      "Anything that has energy",
+      "Anything that occupies space and has mass",
+      "Only solid objects",
+      "Visible light"
+    ],
+    "correct": 1,
+    "explanation": "Matter is defined as anything that occupies space and has mass.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a substance?",
+    "options": [
+      "Any mixture of materials",
+      "A form of matter that has a definite (constant) composition and distinct properties",
+      "Only elements",
+      "Matter that can be separated by physical means"
+    ],
+    "correct": 1,
+    "explanation": "A substance has a definite composition and distinct properties and cannot be separated by physical processes.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a mixture?",
+    "options": [
+      "A combination of two or more substances retaining distinct identities",
+      "A chemical compound",
+      "A pure element",
+      "Matter with constant composition"
+    ],
+    "correct": 0,
+    "explanation": "A mixture combines two or more substances where each retains its distinct identity, and it can be separated physically.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a homogeneous mixture?",
+    "options": [
+      "A mixture with uniform composition throughout (solution)",
+      "A mixture with varying composition",
+      "A pure substance",
+      "A compound"
+    ],
+    "correct": 0,
+    "explanation": "A homogeneous mixture (solution) has the same composition throughout, like sugar dissolved in water.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a heterogeneous mixture?",
+    "options": [
+      "A mixture where composition is uniform",
+      "A mixture where composition is not uniform",
+      "A chemical compound",
+      "An element"
+    ],
+    "correct": 1,
+    "explanation": "A heterogeneous mixture has a non-uniform composition, such as sand mixed with iron filings.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is an element?",
+    "options": [
+      "A substance that can be separated into simpler substances",
+      "A substance that cannot be separated into simpler substances by chemical means",
+      "A mixture of atoms",
+      "A compound of molecules"
+    ],
+    "correct": 1,
+    "explanation": "An element is a substance composed of only one kind of atom and cannot be chemically separated into simpler substances.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "How many elements exist currently?",
+    "options": [
+      "94",
+      "100",
+      "118",
+      "150"
+    ],
+    "correct": 2,
+    "explanation": "There are 118 elements in total (94 natural, 24 synthetic).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Fact"
+  },
+  {
+    "q": "What is a compound?",
+    "options": [
+      "A mixture of elements",
+      "A substance composed of two or more elements chemically united in fixed proportions",
+      "An element with different properties",
+      "A solution"
+    ],
+    "correct": 1,
+    "explanation": "A compound is composed of two or more elements chemically bonded in fixed ratios and can only be separated chemically.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a physical property?",
+    "options": [
+      "A property observed only during a chemical reaction",
+      "A property measured without changing the composition of the substance",
+      "A property related to mass only",
+      "A property related to volume only"
+    ],
+    "correct": 1,
+    "explanation": "Physical properties (e.g., melting point, color) can be observed without changing the substance's identity.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a chemical property?",
+    "options": [
+      "A property observed without changing composition",
+      "A property observed only if there is a chemical change",
+      "The mass of the substance",
+      "The volume of the substance"
+    ],
+    "correct": 1,
+    "explanation": "Chemical properties (e.g., flammability) are observed only when a substance undergoes a chemical change.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "Which of the following is an extensive property?",
+    "options": [
+      "Density",
+      "Temperature",
+      "Mass",
+      "Color"
+    ],
+    "correct": 2,
+    "explanation": "Extensive properties depend on the amount of matter (e.g., mass, volume). Intensive properties do not.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Concept"
+  },
+  {
+    "q": "Which of the following is an intensive property?",
+    "options": [
+      "Mass",
+      "Volume",
+      "Length",
+      "Density"
+    ],
+    "correct": 3,
+    "explanation": "Intensive properties do not depend on the amount of matter. Density is intensive; mass and volume are extensive.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Classification of Matter",
+    "year": "2024",
+    "tag": "Concept"
+  },
+  {
+    "q": "What are the 7 SI base units?",
+    "options": [
+      "m, kg, s, A, K, mol, cd",
+      "cm, g, s, A, C, mol, cd",
+      "m, lb, hr, V, K, mol, cd",
+      "ft, kg, s, A, F, mol, cd"
+    ],
+    "correct": 0,
+    "explanation": "The 7 SI base units are metre (m), kilogram (kg), second (s), ampere (A), Kelvin (K), mole (mol), and candela (cd).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Fact"
+  },
+  {
+    "q": "What is the difference between mass and weight?",
+    "options": [
+      "Mass depends on gravity; weight is constant",
+      "Mass is constant; weight depends on gravity",
+      "They are the same",
+      "Mass is measured in Newtons; weight in kg"
+    ],
+    "correct": 1,
+    "explanation": "Mass is a measure of the amount of matter (constant). Weight is the force of gravity on an object (variable).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Concept"
+  },
+  {
+    "q": "What is the SI derived unit for volume?",
+    "options": [
+      "Litre (L)",
+      "Cubic centimetre (cm³)",
+      "Cubic metre (m³)",
+      "Millilitre (mL)"
+    ],
+    "correct": 2,
+    "explanation": "The SI derived unit for volume is the cubic metre (m³), although chemists often use cm³ and dm³ (L).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Fact"
+  },
+  {
+    "q": "What is the relationship between 1 cm³ and 1 mL?",
+    "options": [
+      "1 cm³ = 10 mL",
+      "1 cm³ = 1 mL",
+      "1 cm³ = 0.1 mL",
+      "1 cm³ = 100 mL"
+    ],
+    "correct": 1,
+    "explanation": "1 mL is equivalent to 1 cm³.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Conversion"
+  },
+  {
+    "q": "What is the equation for density?",
+    "options": [
+      "Density = Volume / Mass",
+      "Density = Mass × Volume",
+      "Density = Mass / Volume",
+      "Density = Weight / Volume"
+    ],
+    "correct": 2,
+    "explanation": "Density is defined as mass divided by volume (ρ = m/V).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Formula"
+  },
+  {
+    "q": "Which temperature scale is the absolute scale?",
+    "options": [
+      "Celsius",
+      "Fahrenheit",
+      "Kelvin",
+      "Rankine"
+    ],
+    "correct": 2,
+    "explanation": "The Kelvin scale is the absolute scale, where 0 K is absolute zero.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Fact"
+  },
+  {
+    "q": "How do you convert Celsius to Kelvin?",
+    "options": [
+      "K = °C + 273.15",
+      "K = °C - 273.15",
+      "K = (°C × 9/5) + 32",
+      "K = °C × 273.15"
+    ],
+    "correct": 0,
+    "explanation": "K = °C + 273.15.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Measurement & SI Units",
+    "year": "2024",
+    "tag": "Formula"
+  },
+  {
+    "q": "What is scientific notation used for?",
+    "options": [
+      "To write fractions",
+      "To express extremely large or small numbers concisely",
+      "To write chemical formulas",
+      "To measure density"
+    ],
+    "correct": 1,
+    "explanation": "Scientific notation expresses numbers as N × 10ⁿ to handle very large or small values easily.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Notation",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "Convert 0.00000772 to scientific notation.",
+    "options": [
+      "7.72 × 10⁵",
+      "7.72 × 10⁻⁵",
+      "7.72 × 10⁻⁶",
+      "77.2 × 10⁻⁷"
+    ],
+    "correct": 2,
+    "explanation": "Move the decimal 6 places to the right: 7.72 × 10⁻⁶.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Scientific Notation",
+    "year": "2024",
+    "tag": "Calculation"
+  },
+  {
+    "q": "What are significant figures?",
+    "options": [
+      "All the numbers in a calculation",
+      "The meaningful digits in a measured or calculated quantity",
+      "Only the non-zero digits",
+      "The digits after the decimal point"
+    ],
+    "correct": 1,
+    "explanation": "Significant figures are the meaningful digits that indicate the precision of a measurement.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Significant Figures",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "How many significant figures are in 0.00420?",
+    "options": [
+      "Six",
+      "Five",
+      "Three",
+      "Two"
+    ],
+    "correct": 2,
+    "explanation": "Leading zeros are not significant. The digits '4', '2', and the trailing '0' are significant. Total: 3.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Significant Figures",
+    "year": "2024",
+    "tag": "Calculation"
+  },
+  {
+    "q": "What is the rule for significant figures in multiplication?",
+    "options": [
+      "The answer has the same number of decimal places as the least precise number",
+      "The answer has the same number of sig figs as the number with the fewest sig figs",
+      "The answer has infinite sig figs",
+      "The answer keeps all digits"
+    ],
+    "correct": 1,
+    "explanation": "In multiplication/division, the result is limited by the original number with the fewest significant figures.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Significant Figures",
+    "year": "2024",
+    "tag": "Rule"
+  },
+  {
+    "q": "What is the difference between accuracy and precision?",
+    "options": [
+      "Accuracy is reproducibility; Precision is correctness",
+      "Accuracy is correctness (closeness to true value); Precision is reproducibility (closeness of measurements)",
+      "They are the same",
+      "Accuracy applies to instruments; Precision applies to humans"
+    ],
+    "correct": 1,
+    "explanation": "Accuracy refers to how close a measurement is to the true value. Precision refers to how close repeated measurements are to each other.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Precision, Accuracy & Errors",
+    "year": "2024",
+    "tag": "Comparison"
+  },
+  {
+    "q": "What are systematic (determinate) errors?",
+    "options": [
+      "Errors that occur randomly",
+      "Errors that occur consistently in the same direction",
+      "Errors due to noise",
+      "Errors that cannot be corrected"
+    ],
+    "correct": 1,
+    "explanation": "Systematic errors are consistent and occur in the same direction (bias), often due to equipment calibration or procedural flaws.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Precision, Accuracy & Errors",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is dimensional analysis?",
+    "options": [
+      "Measuring dimensions of a box",
+      "A problem-solving method using units/conversion factors",
+      "Analyzing data dimensions",
+      "A type of graph"
+    ],
+    "correct": 1,
+    "explanation": "Dimensional analysis uses unit conversion factors to solve problems by canceling units.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Dimensional Analysis",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "Who proposed the Atomic Theory?",
+    "options": [
+      "Isaac Newton",
+      "John Dalton",
+      "Albert Einstein",
+      "Dmitri Mendeleev"
+    ],
+    "correct": 1,
+    "explanation": "John Dalton formulated the modern Atomic Theory in the early 19th century.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Dalton's Atomic Theory",
+    "year": "2024",
+    "tag": "History"
+  },
+  {
+    "q": "What does the Law of Conservation of Mass state?",
+    "options": [
+      "Mass can be created but not destroyed",
+      "Mass changes during chemical reactions",
+      "Total mass remains constant during a chemical reaction",
+      "Mass is converted to energy"
+    ],
+    "correct": 2,
+    "explanation": "The Law of Conservation of Mass states that matter (atoms) is neither created nor destroyed in a chemical reaction.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Dalton's Atomic Theory",
+    "year": "2024",
+    "tag": "Law"
+  },
+  {
+    "q": "Who discovered the electron?",
+    "options": [
+      "Rutherford",
+      "Dalton",
+      "J.J. Thomson",
+      "Chadwick"
+    ],
+    "correct": 2,
+    "explanation": "J.J. Thomson discovered the electron in 1897 using cathode ray tubes.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Early Atomic Experiments",
+    "year": "2024",
+    "tag": "History"
+  },
+  {
+    "q": "What did Rutherford's gold foil experiment discover?",
+    "options": [
+      "The electron",
+      "The neutron",
+      "The atomic nucleus",
+      "Radioactivity"
+    ],
+    "correct": 2,
+    "explanation": "Rutherford discovered the dense, positively charged nucleus of the atom.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Early Atomic Experiments",
+    "year": "2024",
+    "tag": "History"
+  },
+  {
+    "q": "What is the atomic number (Z)?",
+    "options": [
+      "Number of neutrons",
+      "Number of protons + neutrons",
+      "Number of protons in the nucleus",
+      "Number of electrons only"
+    ],
+    "correct": 2,
+    "explanation": "The atomic number (Z) represents the number of protons in the nucleus.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Modern Atomic Structure",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is the mass number (A)?",
+    "options": [
+      "Number of protons",
+      "Total number of protons and neutrons",
+      "Weight of the atom",
+      "Number of electrons"
+    ],
+    "correct": 1,
+    "explanation": "The mass number (A) is the sum of protons and neutrons in the nucleus.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Modern Atomic Structure",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What are isotopes?",
+    "options": [
+      "Atoms with different protons",
+      "Atoms of the same element with different numbers of neutrons",
+      "Atoms with different electrons",
+      "Ions"
+    ],
+    "correct": 1,
+    "explanation": "Isotopes are atoms of the same element (same Z) but with different numbers of neutrons (different A).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Modern Atomic Structure",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What are the vertical columns in the periodic table called?",
+    "options": [
+      "Periods",
+      "Groups",
+      "Rows",
+      "Sections"
+    ],
+    "correct": 1,
+    "explanation": "Vertical columns are called Groups.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Periodic Table",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "Which group contains the Alkali Metals?",
+    "options": [
+      "Group IA (1)",
+      "Group IIA (2)",
+      "Group VIIA (17)",
+      "Group VIIIA (18)"
+    ],
+    "correct": 0,
+    "explanation": "Group IA (1) contains the Alkali Metals.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Periodic Table",
+    "year": "2024",
+    "tag": "Classification"
+  },
+  {
+    "q": "What is a characteristic of metals?",
+    "options": [
+      "Poor conductors",
+      "Brittle",
+      "Good conductors of heat and electricity, malleable, ductile",
+      "Gases at room temperature"
+    ],
+    "correct": 2,
+    "explanation": "Metals are shiny, conductive, malleable, and ductile.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Periodic Table",
+    "year": "2024",
+    "tag": "Properties"
+  },
+  {
+    "q": "What is a molecular formula?",
+    "options": [
+      "A formula showing bonding structure",
+      "A formula giving the exact number of different atoms in a molecule",
+      "A formula for ions",
+      "The simplest ratio of atoms"
+    ],
+    "correct": 1,
+    "explanation": "A molecular formula shows the exact number of atoms of each element in a molecule (e.g., H₂O).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Molecules & Molecular Compounds",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is an ion?",
+    "options": [
+      "A neutral atom",
+      "An electrically charged particle obtained by adding or removing electrons",
+      "A molecule",
+      "A proton"
+    ],
+    "correct": 1,
+    "explanation": "An ion is a charged particle formed when an atom gains or loses electrons.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Ionic Compounds",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "What is a cation?",
+    "options": [
+      "A negative ion",
+      "A neutral ion",
+      "A positive ion",
+      "A polyatomic ion"
+    ],
+    "correct": 2,
+    "explanation": "A cation is a positively charged ion (formed by losing electrons).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Ionic Compounds",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "How are Type I binary ionic compounds named?",
+    "options": [
+      "Cation name + Anion name",
+      "Cation name + Anion root + -ide",
+      "Use prefixes like di-, tri-",
+      "Anion name first"
+    ],
+    "correct": 1,
+    "explanation": "Name the cation (element name) first, then the anion using the root + '-ide'. E.g., Sodium Chloride.",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Type I Binary Ionic Compounds",
+    "year": "2024",
+    "tag": "Naming"
+  },
+  {
+    "q": "What distinguishes naming Type II binary ionic compounds?",
+    "options": [
+      "They use prefixes",
+      "They use Roman numerals to indicate the cation charge",
+      "They end in -ate",
+      "They have no special rule"
+    ],
+    "correct": 1,
+    "explanation": "Type II compounds contain metals with variable charges, so Roman numerals are required (e.g., Iron(III) chloride).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Type II Binary Ionic Compounds",
+    "year": "2024",
+    "tag": "Naming"
+  },
+  {
+    "q": "What is a polyatomic ion?",
+    "options": [
+      "A single charged atom",
+      "Two or more atoms chemically bonded with a net charge",
+      "A metal",
+      "A noble gas"
+    ],
+    "correct": 1,
+    "explanation": "A polyatomic ion consists of multiple atoms bonded together acting as a single charged unit (e.g., SO₄²⁻).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Ionic Compounds with Polyatomic Ions",
+    "year": "2024",
+    "tag": "Definition"
+  },
+  {
+    "q": "How are binary covalent compounds (Type III) named?",
+    "options": [
+      "Using Roman numerals",
+      "Using prefixes (mono-, di-, tri-) to denote number of atoms",
+      "Just element names",
+      "Ending in -ate"
+    ],
+    "correct": 1,
+    "explanation": "Type III compounds (non-metals) use prefixes to indicate the number of atoms (e.g., Carbon dioxide).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Binary Covalent Compounds (Type III)",
+    "year": "2024",
+    "tag": "Naming"
+  },
+  {
+    "q": "What is the rule for naming binary acids (no oxygen)?",
+    "options": [
+      "Start with hydro-, end with -ic acid",
+      "End with -ous acid",
+      "End with -ic acid",
+      "Use prefixes"
+    ],
+    "correct": 0,
+    "explanation": "Binary acids (anion ends in -ide) use the prefix 'hydro-' and suffix '-ic acid' (e.g., Hydrochloric acid).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Naming Acids",
+    "year": "2024",
+    "tag": "Naming"
+  },
+  {
+    "q": "How do you name an oxyacid where the anion ends in -ate?",
+    "options": [
+      "Change -ate to -ous acid",
+      "Change -ate to -ic acid",
+      "Add hydro- prefix",
+      "Keep -ate"
+    ],
+    "correct": 1,
+    "explanation": "For oxyacids, if the anion ends in -ate, the acid name ends in -ic acid (e.g., Sulfate -> Sulfuric acid).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Naming Acids",
+    "year": "2024",
+    "tag": "Naming"
+  },
+  {
+    "q": "How do you name an oxyacid where the anion ends in -ite?",
+    "options": [
+      "Change -ite to -ic acid",
+      "Change -ite to -ous acid",
+      "Add hydro- prefix",
+      "Keep -ite"
+    ],
+    "correct": 1,
+    "explanation": "For oxyacids, if the anion ends in -ite, the acid name ends in -ous acid (e.g., Sulfite -> Sulfurous acid).",
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Naming Acids",
+    "year": "2024",
+    "tag": "Naming"
+  },
   
 ];
