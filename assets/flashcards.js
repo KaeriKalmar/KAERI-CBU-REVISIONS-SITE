@@ -11223,928 +11223,546 @@ const flashcards = {
 
 
 
-  
-  // =================================================================
+// =================================================================
   // CH110 - MODULE 1: INTRODUCTION TO CHEMISTRY
   // =================================================================
-  "MODULE 1: INTRODUCTION TO CHEMISTRY": [
-    // --- SECTION 1: SCIENTIFIC METHOD & CHEMISTRY BASICS ---
+
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 1 - Scientific Method & Matter": [
     {
       "front": "What is chemistry?",
       "back": "Chemistry is the study of matter and the changes it undergoes.",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
     {
       "front": "What are the 5 steps of the Scientific Method?",
-      "back": "1. Careful definition of the problem\n2. Performing experiments (doing experiments, making observations, recording data)\n3. Interpretation of results (formulating a hypothesis)\n4. Summarizing information as a law\n5. Developing theories (hypotheses that survive validation evolve into theories)",
+      "back": "1. Careful definition of the problem\n2. Performing experiments (observation/data)\n3. Interpretation of results (hypothesis)\n4. Summarizing information as a law\n5. Developing theories",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
     {
       "front": "What is the difference between qualitative and quantitative data?",
-      "back": "Qualitative data: General observations about the system (e.g., 'the solution turned blue')\nQuantitative data: Numbers obtained by measurements (e.g., '25.3 mL', '80.5°C')",
+      "back": "Qualitative data: General observations (e.g., 'solution turned blue').\nQuantitative data: Numbers obtained by measurements (e.g., '25.3 mL').",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
     {
       "front": "Define hypothesis.",
-      "back": "A hypothesis is a tentative explanation for a set of observations.",
+      "back": "A tentative explanation for a set of observations.",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
     {
-      "front": "Define law (scientific law).",
-      "back": "A law is a concise verbal or mathematical statement of a relationship between phenomena that is always the same under the same conditions. Example: F = ma (Newton's Second Law).",
+      "front": "Define scientific law.",
+      "back": "A concise verbal or mathematical statement of a relationship between phenomena that is always the same under the same conditions (e.g., F = ma).",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
     {
-      "front": "Define theory (scientific theory).",
-      "back": "A theory is a unifying principle that explains a body of facts and/or laws based on them. Theories are constantly tested and modified if disproven by experimental observations.",
+      "front": "Define scientific theory.",
+      "back": "A unifying principle that explains a body of facts and/or laws. Theories are tested and modified if disproven.",
       "course": "CH110",
       "term": "T1",
-      "topic": "scientific method & chemistry basics"
+      "topic": "scientific method"
     },
-    {
-      "front": "What is a system in scientific terminology?",
-      "back": "A system is the part of the universe that is under investigation.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method & chemistry basics"
-    },
-
-    // --- SECTION 2: CLASSIFICATION OF MATTER ---
     {
       "front": "What is matter?",
-      "back": "Matter is anything that occupies space and has mass. It includes visible things (water, earth, trees) and invisible things (air).",
+      "back": "Anything that occupies space and has mass.",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
       "front": "What is a substance?",
-      "back": "A substance is a form of matter that has a definite (constant) composition and distinct properties. A substance cannot be separated into other kinds of matter by physical processes. Examples: water, ammonia, gold, oxygen.",
+      "back": "A form of matter that has a definite (constant) composition and distinct properties. It cannot be separated by physical processes (e.g., water, gold).",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
       "front": "What is a mixture?",
-      "back": "A mixture is a combination of two or more substances in which the substances retain their distinct identities. Mixtures do not have constant composition and can be separated by physical methods. Examples: air, soft drinks, milk, cement.",
+      "back": "A combination of two or more substances in which the substances retain their distinct identities. They can be separated by physical methods.",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
-      "front": "What is a homogeneous mixture?",
-      "back": "A homogeneous mixture (also called a solution) is a mixture in which the composition is uniform throughout. Example: sugar dissolved in water, air.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
-    },
-    {
-      "front": "What is a heterogeneous mixture?",
-      "back": "A heterogeneous mixture is a mixture in which the composition is not uniform. Example: sand mixed with iron filings.",
+      "front": "Difference between homogeneous and heterogeneous mixtures?",
+      "back": "Homogeneous: Composition is uniform throughout (e.g., sugar water).\nHeterogeneous: Composition is not uniform (e.g., sand and iron filings).",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
       "front": "What is an element?",
-      "back": "An element is a substance that cannot be separated into simpler substances by chemical means. Each element is composed of only one kind of atom. Examples: gold (Au), oxygen (O₂), carbon (C).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
-    },
-    {
-      "front": "How many elements exist?",
-      "back": "There are 118 elements total:\n- 94 occur naturally on Earth\n- 24 are synthetic (created by scientists via nuclear processes)",
+      "back": "A substance that cannot be separated into simpler substances by chemical means. Composed of only one kind of atom.",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
       "front": "What is a compound?",
-      "back": "A compound is a substance composed of two or more elements chemically united in fixed proportions. Compounds can only be separated by chemical means into their pure components. Examples: water (H₂O), carbon dioxide (CO₂).",
+      "back": "A substance composed of two or more elements chemically united in fixed proportions. Examples: H₂O, CO₂.",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
-      "front": "What are the three states of matter?",
-      "back": "Solid, liquid, and gas.",
+      "front": "Define physical vs. chemical properties.",
+      "back": "Physical: Can be measured/observed without changing composition (e.g., melting point).\nChemical: Observed only during a chemical change (e.g., flammability).",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
     },
     {
-      "front": "What is a physical property?",
-      "back": "A physical property can be measured and observed without changing the composition of a substance. Examples: boiling point, melting point, color, density, mass.",
+      "front": "Define extensive vs. intensive properties.",
+      "back": "Extensive: Depends on amount of matter (e.g., mass, volume).\nIntensive: Does not depend on amount (e.g., density, temperature).",
       "course": "CH110",
       "term": "T1",
       "topic": "classification of matter"
-    },
-    {
-      "front": "What is a chemical property?",
-      "back": "A chemical property is observed only if there is a chemical change. Example: flammability, reactivity with acid.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
-    },
-    {
-      "front": "What is an extensive property?",
-      "back": "An extensive property depends on the amount of matter being considered. Values of extensive properties can be added together. Examples: mass, volume.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
-    },
-    {
-      "front": "What is an intensive property?",
-      "back": "An intensive property does not depend on the amount of matter being considered. Intensive properties are not additive. Examples: density, temperature.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
-    },
+    }
+  ],
 
-    // --- SECTION 3: MEASUREMENT & SI UNITS ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 2 - Measurement & Units": [
     {
       "front": "What are the 7 SI base units?",
-      "back": "1. Length - metre (m)\n2. Mass - kilogram (kg)\n3. Time - second (s)\n4. Electrical current - ampere (A)\n5. Temperature - kelvin (K)\n6. Amount of substance - mole (mol)\n7. Luminous intensity - candela (cd)",
+      "back": "Length (m), Mass (kg), Time (s), Current (A), Temperature (K), Amount (mol), Luminous intensity (cd).",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What is the difference between mass and weight?",
-      "back": "Mass: Measure of the amount of matter in an object; constant and does not depend on location.\nWeight: Force that gravity exerts on an object; depends on location (e.g., objects on the moon weigh 1/6 of their Earth weight).",
+      "front": "Difference between mass and weight?",
+      "back": "Mass: Measure of amount of matter (constant).\nWeight: Force of gravity on an object (variable by location).",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
       "front": "What is the SI derived unit for volume?",
-      "back": "The SI derived unit for volume is cubic metre (m³). Chemists commonly use cubic centimetre (cm³) and cubic decimetre (dm³).",
+      "back": "Cubic metre (m³). Chemists also use cm³ and dm³ (Liter).",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What are the relationships between volume units?",
-      "back": "1 L = 1 dm³ = 1000 mL = 1000 cm³\n1 mL = 1 cm³\n1 cm³ = (1×10⁻² m)³ = 1×10⁻⁶ m³\n1 dm³ = (1×10⁻¹ m)³ = 1×10⁻³ m³",
+      "front": "Volume relationships (L, mL, cm³).",
+      "back": "1 L = 1 dm³ = 1000 mL\n1 mL = 1 cm³",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What is density and what is its equation?",
-      "back": "Equation: Density = mass/volume (ρ = m/V)\nCommon units:\n- Solids: g/cm³\n- Liquids: g/mL (equivalent to g/cm³)\n- Gases: g/L\n- SI unit: kg/m³",
+      "front": "Density equation and common units.",
+      "back": "Density = mass/volume (ρ = m/V).\nUnits: g/cm³ (solids), g/mL (liquids), g/L (gases).",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What is the conversion factor between g/cm³ and kg/m³?",
-      "back": "1 g/cm³ = 1 g/mL = 1000 kg/m³",
+      "front": "Temperature conversion: °F to °C",
+      "back": "°C = (°F − 32) × 5/9",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What are the three common temperature scales?",
-      "back": "Fahrenheit (°F), Celsius (°C), and kelvin (K).",
+      "front": "Temperature conversion: °C to °F",
+      "back": "°F = (9/5 × °C) + 32",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What are the temperature conversion equations?",
-      "back": "°C = (°F - 32) × 5/9\n°F = (9/5 × °C) + 32\nK = °C + 273.15",
+      "front": "Temperature conversion: °C to K",
+      "back": "K = °C + 273.15",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
+      "topic": "measurement"
     },
     {
-      "front": "What are key temperature reference points on all three scales?",
-      "back": "Water freezing: 32°F = 0°C = 273 K\nRoom temperature: 77°F = 25°C = 298 K\nBody temperature: 98.6°F = 37°C = 310 K\nWater boiling: 212°F = 100°C = 373 K",
+      "front": "What is absolute zero?",
+      "back": "0 K (-273.15°C). The lowest theoretically attainable temperature.",
       "course": "CH110",
       "term": "T1",
-      "topic": "measurement & si units"
-    },
-    {
-      "front": "What is the Kelvin scale?",
-      "back": "The kelvin is the SI base unit of temperature and the absolute scale. Zero kelvin (0 K) is the lowest temperature that can theoretically be attained. The kelvin scale has the same unit magnitude as Celsius (1°C = 1 K), but 0 K = -273.15°C.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement & si units"
-    },
+      "topic": "measurement"
+    }
+  ],
 
-    // --- SECTION 4: SCIENTIFIC NOTATION ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 3 - Mathematical Concepts": [
     {
       "front": "What is scientific notation?",
-      "back": "Scientific notation expresses numbers in the form: N × 10ⁿ where N is a number between 1 and 10, and n is a positive or negative integer.",
+      "back": "Expressing numbers as N × 10ⁿ, where N is between 1 and 10.",
       "course": "CH110",
       "term": "T1",
       "topic": "scientific notation"
     },
     {
-      "front": "How do you convert a number to scientific notation?",
-      "back": "Count how many places the decimal point must be moved to give a number between 1 and 10:\n- If the decimal moves left, n is positive\n- If the decimal moves right, n is negative\n\nExamples:\n568.762 = 5.68762 × 10² (moved 2 places left, n = +2)\n0.00000772 = 7.72 × 10⁻⁶ (moved 6 places right, n = -6)",
+      "front": "Scientific Notation: Multiplication rule.",
+      "back": "Multiply the coefficients and ADD the exponents.",
       "course": "CH110",
       "term": "T1",
       "topic": "scientific notation"
     },
     {
-      "front": "How do you add or subtract numbers in scientific notation?",
-      "back": "Write each number with the same exponent, then add or subtract the coefficients while keeping the exponent the same.\n\nExample:\n7.4×10³ + 2.1×10³ = (7.4 + 2.1)×10³ = 9.5×10³",
+      "front": "Scientific Notation: Division rule.",
+      "back": "Divide the coefficients and SUBTRACT the exponents.",
       "course": "CH110",
       "term": "T1",
       "topic": "scientific notation"
     },
     {
-      "front": "How do you multiply numbers in scientific notation?",
-      "back": "Multiply the coefficients and add the exponents.\n\nExample:\n(8.0×10⁴) × (5.0×10²) = (8.0 × 5.0) × 10⁴⁺² = 40×10⁶ = 4.0×10⁷",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific notation"
-    },
-    {
-      "front": "How do you divide numbers in scientific notation?",
-      "back": "Divide the coefficients and subtract the exponents.\n\nExample:\n(6.9×10⁷) ÷ (3.0×10⁻⁵) = (6.9/3.0) × 10⁷⁻⁽⁻⁵⁾ = 2.3×10¹²",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific notation"
-    },
-
-    // --- SECTION 5: SIGNIFICANT FIGURES ---
-    {
-      "front": "What are significant figures?",
-      "back": "Significant figures are the meaningful digits in a measured or calculated quantity. The last digit is understood to be uncertain. Only integers are exact; all measurements have some margin of error indicated by significant figures.",
+      "front": "Significant Figures: Non-zero digits.",
+      "back": "All non-zero digits are significant (e.g., 845 has 3 sig figs).",
       "course": "CH110",
       "term": "T1",
       "topic": "significant figures"
     },
     {
-      "front": "What are the 5 guidelines for determining significant figures?",
-      "back": "1. Any non-zero digit is significant (845 has 3 sig figs)\n2. Zeros between non-zero digits are significant (606 has 3 sig figs; 40501 has 5 sig figs)\n3. Zeros to the left of the first non-zero digit are NOT significant (0.08 has 1 sig fig; 0.000034 has 2 sig figs)\n4. If a number is >1, all zeros to the right of the decimal are significant (2.0 has 2 sig figs; 40.062 has 5 sig figs). If a number is <1, only zeros at the end and zeros between non-zero digits are significant (0.090 has 2 sig figs; 0.3005 has 4 sig figs)\n5. Trailing zeros without a decimal point may or may not be significant (400 could be 1, 2, or 3 sig figs - use scientific notation to clarify: 4×10², 4.0×10², or 4.00×10²)",
+      "front": "Significant Figures: Zeros.",
+      "back": "Between non-zeros: Significant.\nLeft of first non-zero: NOT significant.\nRight of decimal (>1): Significant.",
       "course": "CH110",
       "term": "T1",
       "topic": "significant figures"
     },
     {
-      "front": "What is the rule for significant figures in addition and subtraction?",
-      "back": "The answer cannot have more digits to the right of the decimal point than the original number with the fewest decimal places.\n\nExample:\n  89.332\n+  1.1    (only 1 decimal place)\n--------\n  90.432 -> rounds to 90.4",
+      "front": "Sig Fig Rule: Addition/Subtraction",
+      "back": "The answer cannot have more digits to the right of the decimal point than the original number with the fewest decimal places.",
       "course": "CH110",
       "term": "T1",
       "topic": "significant figures"
     },
     {
-      "front": "What is the rule for significant figures in multiplication and division?",
-      "back": "The number of significant figures in the final product or quotient is determined by the original number that has the smallest number of significant figures.\n\nExample:\n  4.5039\n×   2.8    (2 sig figs - limiting)\n--------\n 12.60192 -> rounds to 13 (2 sig figs)",
+      "front": "Sig Fig Rule: Multiplication/Division",
+      "back": "The result is limited by the original number with the smallest number of significant figures.",
       "course": "CH110",
       "term": "T1",
       "topic": "significant figures"
     },
     {
-      "front": "What is the rounding procedure for significant figures?",
-      "back": "- If the first digit following the point of rounding is <5: drop all following digits (8.724 -> 8.72)\n- If the first digit following the point of rounding is ≥5: add 1 to the preceding digit (8.727 -> 8.73; 0.425 -> 0.43)",
+      "front": "Define Accuracy vs. Precision.",
+      "back": "Accuracy: How close a measurement is to the true value.\nPrecision: How close measurements are to each other.",
       "course": "CH110",
       "term": "T1",
-      "topic": "significant figures"
+      "topic": "precision and accuracy"
     },
     {
-      "front": "How are exact numbers treated in significant figure calculations?",
-      "back": "Exact numbers obtained from definitions or by counting can be considered to have an infinite number of significant figures. They do not limit the number of significant figures in the answer.\n\nExample: mass of 8 objects each 0.2786 g = 0.2786 g × 8 = 2.229 g (not rounded to 1 sig fig because 8 is exact).",
+      "front": "Random vs. Systematic Error.",
+      "back": "Random: Equal chance of being high or low (reduces precision).\nSystematic: Consistently in the same direction (reduces accuracy).",
       "course": "CH110",
       "term": "T1",
-      "topic": "significant figures"
-    },
-
-    // --- SECTION 6: PRECISION, ACCURACY & ERRORS ---
-    {
-      "front": "What is accuracy?",
-      "back": "Accuracy tells how close a measurement is to the true value of the quantity that was measured.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
+      "topic": "precision and accuracy"
     },
     {
-      "front": "What is precision?",
-      "back": "Precision refers to how closely two or more measurements of the same quantity agree with one another.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
-    },
-    {
-      "front": "Can measurements be precise but not accurate?",
-      "back": "Yes. Highly precise measurements (close to each other) do not necessarily guarantee accurate results if systematic errors are present. The measurements could all be consistently wrong (far from the true value) but still very close to each other.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
-    },
-    {
-      "front": "What is measurement error?",
-      "back": "Measurement error is the difference between the true value and the measured value.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
-    },
-    {
-      "front": "What are random (indeterminate) errors?",
-      "back": "Random errors mean that a measurement has an equal chance of being high or low. They result from natural variations, poor technique, or lack of measurement skill. Random errors reduce precision and cause scatter in data.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
-    },
-    {
-      "front": "What are systematic (determinate) errors?",
-      "back": "Systematic errors occur consistently in the same direction (either always high or always low). They result from faulty experimental procedures, poorly calibrated equipment, uncertified analysts, or non-accredited laboratories. Systematic errors reduce accuracy and cause bias in data.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision, accuracy & errors"
-    },
-
-    // --- SECTION 7: DIMENSIONAL ANALYSIS ---
-    {
-      "front": "What is dimensional analysis (factor-label method)?",
-      "back": "Dimensional analysis is a problem-solving method that uses the units of parameters to solve problems through conversion factors. Units must cancel properly to give the desired final unit.",
+      "front": "What is Dimensional Analysis?",
+      "back": "A problem-solving method using unit conversion factors to cancel unwanted units and obtain desired units.",
       "course": "CH110",
       "term": "T1",
       "topic": "dimensional analysis"
-    },
-    {
-      "front": "What is an equivalence statement?",
-      "back": "An equivalence statement is a mathematical expression of two values linked by an equals sign. Examples: 1 foot = 12 inches, 1 kg = 1000 g.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dimensional analysis"
-    },
-    {
-      "front": "How do you create conversion factors from an equivalence statement?",
-      "back": "From an equivalence statement (LHS = RHS), you get two conversion factors:\n- LHS/RHS = 1\n- RHS/LHS = 1\n\nExample from '1 foot = 12 inches':\n- 1 ft/12 in = 1\n- 12 in/1 ft = 1",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dimensional analysis"
-    },
-    {
-      "front": "How do you choose which conversion factor to use?",
-      "back": "Multiply by the conversion factor that will cancel the unwanted units and give the correct desired units in the answer.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dimensional analysis"
-    },
+    }
+  ],
 
-    // --- SECTION 8: DALTON'S ATOMIC THEORY ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 4 - Atomic Theory & Structure": [
     {
-      "front": "Who was Democritus and what did he propose?",
-      "back": "Democritus (ca 460 - ca 370 BC) was an ancient Greek philosopher who first proposed that matter is composed of discrete units called atoms. This was a philosophical concept that took over 2000 years to become scientifically validated.",
+      "front": "Who proposed the modern Atomic Theory?",
+      "back": "John Dalton.",
       "course": "CH110",
       "term": "T1",
-      "topic": "dalton's atomic theory"
+      "topic": "atomic theory"
     },
     {
-      "front": "Who is considered the 'father of modern chemistry' and why?",
-      "back": "Antoine Lavoisier (1743-1794) is considered the 'father of modern chemistry' because he laid the experimental foundation of modern chemistry and put together the first extensive list of elements including oxygen, hydrogen, silicon, and sulfur.",
+      "front": "Dalton's Atomic Theory postulates (summary).",
+      "back": "1. Matter is made of indivisible atoms.\n2. Atoms of an element are identical.\n3. Compounds are atoms chemically combined in fixed ratios.\n4. Chemical reactions rearrange atoms (neither created nor destroyed).",
       "course": "CH110",
       "term": "T1",
-      "topic": "dalton's atomic theory"
+      "topic": "atomic theory"
     },
     {
-      "front": "What are the 4 postulates of Dalton's Atomic Theory?",
-      "back": "1. All matter is composed of indivisible atoms. An atom is an extremely small particle of matter that retains its identity during chemical reactions.\n2. An element is composed of only one kind of atom. Each atom of a given kind has the same properties, including a characteristic mass.\n3. A compound is composed of atoms of two or more elements chemically combined in fixed proportions. The relative numbers of atoms occur in simple ratios (e.g., water has H:O ratio of 2:1).\n4. A chemical reaction rearranges atoms. Atoms are not created, destroyed, or broken into smaller particles by chemical reactions.",
+      "front": "Law of Conservation of Mass.",
+      "back": "Total mass remains constant during a chemical reaction (atoms are neither created nor destroyed).",
       "course": "CH110",
       "term": "T1",
-      "topic": "dalton's atomic theory"
+      "topic": "atomic theory"
     },
     {
-      "front": "What is an atomic symbol?",
-      "back": "An atomic symbol is a one- or two-letter notation used to represent an atom corresponding to a particular element. The first letter is always capitalized; any additional letter is lowercase. Examples: Cl (chlorine), Na (sodium from Latin 'natrium').",
+      "front": "Law of Definite Proportions.",
+      "back": "A pure compound always contains constant proportions of elements by mass.",
       "course": "CH110",
       "term": "T1",
-      "topic": "dalton's atomic theory"
+      "topic": "atomic theory"
     },
     {
-      "front": "What is the Law of Conservation of Mass?",
-      "back": "The Law of Conservation of Mass states that the total mass remains constant during a chemical reaction. This is explained by Dalton's theory: atoms are neither created nor destroyed in chemical reactions.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dalton's atomic theory"
-    },
-    {
-      "front": "What is the Law of Definite Proportions (Law of Constant Composition)?",
-      "back": "A pure compound, whatever its source, always contains definite or constant proportions of the elements by mass.\n\nExample: Water is always 11.1% hydrogen and 88.9% oxygen by mass, regardless of its source.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dalton's atomic theory"
-    },
-    {
-      "front": "What is the Law of Multiple Proportions?",
-      "back": "For two or more compounds composed of the same elements, for a given mass of one element, the ratio of masses of the other element in the compounds is a small whole-number ratio.\n\nExample:\n- Hydrogen peroxide: 0.0630 g H per 1 g O\n- Water: 0.126 g H per 1 g O\n- Ratio: 0.126/0.0630 = 2/1 (small whole number)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dalton's atomic theory"
-    },
-
-    // --- SECTION 9: EARLY ATOMIC EXPERIMENTS ---
-    {
-      "front": "Who discovered the electron, when, and how?",
-      "back": "Discoverer: J.J. Thomson\nYear: 1897\nMethod: Cathode ray tube experiments studying electrical conduction through gases\nKey finding: Determined the charge-to-mass ratio: e/mₑ = -1.76×10⁸ coulombs/gram",
+      "front": "Discovery of the Electron.",
+      "back": "Discovered by J.J. Thomson (1897) using cathode ray tubes. Determined charge-to-mass ratio.",
       "course": "CH110",
       "term": "T1",
       "topic": "early atomic experiments"
     },
     {
-      "front": "How were the charge and mass of the electron determined?",
-      "back": "- Robert Millikan's oil drop experiment (1909) determined the electron charge: e = 1.602×10⁻¹⁹ coulombs\n- Using Thomson's e/mₑ ratio, the electron mass was calculated: mₑ = 9.109×10⁻²⁸ g = 9.109×10⁻³¹ kg\n- The electron is 1840 times lighter than a hydrogen atom",
+      "front": "Millikan's Oil Drop Experiment.",
+      "back": "Determined the charge of an electron (1.602×10⁻¹⁹ C), allowing calculation of its mass.",
       "course": "CH110",
       "term": "T1",
       "topic": "early atomic experiments"
     },
     {
-      "front": "What was Thomson's Plum Pudding Model of the atom?",
-      "back": "Thomson's model proposed that:\n- The atom consisted of a sphere of positive charge\n- Negative electrons were embedded throughout this positive 'pudding'\n- This model was later disproved by Rutherford's experiments",
+      "front": "Rutherford's Gold Foil Experiment Findings.",
+      "back": "Most alpha particles passed through (atom is empty space), but some deflected (dense, positive nucleus). Disproved Plum Pudding model.",
       "course": "CH110",
       "term": "T1",
       "topic": "early atomic experiments"
     },
     {
-      "front": "What is radioactivity?",
-      "back": "Radioactivity is the spontaneous emission of radiation by an atom. It was first observed by Henri Becquerel in 1895 and studied by Marie and Pierre Curie.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-    {
-      "front": "What are the three types of radioactive radiation?",
-      "back": "1. Alpha (α) rays: Positively charged particles (helium nuclei, ⁴₂He or He²⁺)\n2. Beta (β) rays: Negatively charged particles (electrons, ⁰₋₁e)\n3. Gamma (γ) rays: No charge; electromagnetic radiation",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-    {
-      "front": "Describe Rutherford's gold foil experiment.",
-      "back": "Experiment (1911): Ernest Rutherford bombarded thin gold foil with alpha particles.\n\nObservations:\n- Most α particles passed straight through the foil\n- A few (~1 in 8000) were deflected at large angles or bounced back\n\nConclusions:\n- Most of the atom is empty space (explains why most particles pass through)\n- The atom has a tiny, dense, positively charged nucleus (explains large-angle deflections)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-    {
-      "front": "What are the key dimensions in Rutherford's nuclear model?",
-      "back": "- Nuclear diameter ≈ 10⁻¹⁵ m (1 femtometre or 10⁻³ pm)\n- Atomic diameter ≈ 10⁻¹⁰ m (1 Ångström or 100 pm)\n\nThe nucleus is about 100,000 times smaller than the atom.\n\nAnalogy: If a golf ball represented the nucleus, the atom would be about 3 miles (5 km) in diameter.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-    {
-      "front": "Who discovered the proton and when?",
-      "back": "The proton was discovered by Ernest Rutherford in 1919 during experiments in which alpha particles struck nitrogen atoms, producing the nuclear reaction:\n\n¹⁴₇N + ⁴₂α -> ¹⁷₈O + ¹₁p",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-    {
-      "front": "Who discovered the neutron and when?",
-      "back": "The neutron was discovered by James Chadwick in 1932 during experiments in which beryllium nuclei were struck by alpha particles, knocking out neutrons:\n\n⁹₄Be + ⁴₂α -> ¹²₆C + ¹₀n",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
-    },
-
-    // --- SECTION 10: MODERN ATOMIC STRUCTURE ---
-    {
-      "front": "What is a proton?",
-      "back": "A proton is a nuclear particle having:\n- Charge: Positive (+1), equal in magnitude to that of the electron\n- Mass: 1840 times that of an electron (1.673×10⁻²⁴ g)\n- Location: Nucleus",
+      "front": "Proton, Neutron, Electron charges.",
+      "back": "Proton: +1 (Nucleus)\nNeutron: 0 (Nucleus)\nElectron: -1 (Outside nucleus)",
       "course": "CH110",
       "term": "T1",
       "topic": "modern atomic structure"
     },
     {
-      "front": "What is a neutron?",
-      "back": "A neutron is a nuclear particle having:\n- Charge: Neutral (no electric charge)\n- Mass: Almost identical to proton (1.675×10⁻²⁴ g)\n- Location: Nucleus",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
-    {
-      "front": "What is an electron?",
-      "back": "An electron is a very light, negatively charged particle:\n- Charge: -1\n- Mass: 9.109×10⁻²⁸ g\n- Location: Exists in the region around the atom's positively charged nucleus",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
-    {
-      "front": "What is the atomic number (Z)?",
-      "back": "The atomic number is the number of protons in the nucleus of an atom. It uniquely identifies an element.\n- For neutral atoms: Z = number of protons = number of electrons",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
-    {
-      "front": "What is the mass number (A)?",
-      "back": "The mass number is the total number of protons and neutrons in the nucleus.\nA = Z + N\nwhere N = number of neutrons",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
-    {
-      "front": "What is a nuclide?",
-      "back": "A nuclide is an atom characterized by a definite atomic number and mass number.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
-    {
-      "front": "How is a nuclide written?",
-      "back": "A nuclide is written as: ᴬ𝗭X\nwhere:\n- X = element symbol\n- A = mass number (superscript, left)\n- Z = atomic number (subscript, left)\n\nExample: ²³₁₁Na (sodium with 11 protons and 12 neutrons)",
+      "front": "Atomic Number (Z) vs. Mass Number (A).",
+      "back": "Z = Number of protons (identifies element).\nA = Protons + Neutrons.",
       "course": "CH110",
       "term": "T1",
       "topic": "modern atomic structure"
     },
     {
       "front": "What are isotopes?",
-      "back": "Isotopes are atoms whose nuclei have the same atomic number (Z) but different mass numbers (A).\n\nThis means they have:\n- Same number of protons\n- Same number of electrons (if neutral)\n- Same chemical properties\n- Different numbers of neutrons\n- Different masses\n\nExample: Carbon isotopes ¹²₆C, ¹³₆C, ¹⁴₆C all have 6 protons but have 6, 7, and 8 neutrons respectively.",
+      "back": "Atoms with the same Atomic Number (Z) but different Mass Numbers (A) (different number of neutrons).",
       "course": "CH110",
       "term": "T1",
       "topic": "modern atomic structure"
-    },
-    {
-      "front": "What is the nucleus of an atom?",
-      "back": "The nucleus is the atom's central core that is:\n- Positively charged\n- Contains most of the atom's mass (≥99.95%)\n- Composed of protons and neutrons (collectively called nucleons)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
-    },
+    }
+  ],
 
-    // --- SECTION 11: PERIODIC TABLE ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 5 - The Periodic Table": [
     {
-      "front": "Who developed the periodic table?",
-      "back": "Dmitri Mendeleev (1834-1907) and J. Lothar Meyer (1830-1895) working independently in 1869. They arranged elements by atomic mass and noticed periodic patterns in properties.",
+      "front": "Who developed the Periodic Table?",
+      "back": "Dmitri Mendeleev and Lothar Meyer (1869).",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "How is the modern periodic table arranged?",
-      "back": "The modern periodic table arranges elements by atomic number (not atomic mass) in rows and columns that highlight regular repetition of properties.",
+      "front": "Periods vs. Groups.",
+      "back": "Periods: Horizontal rows (7 total).\nGroups: Vertical columns (elements have similar properties).",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What is a period in the periodic table?",
-      "back": "A period consists of the elements in any one horizontal row of the periodic table. There are 7 periods.",
+      "front": "Main-group vs. Transition elements.",
+      "back": "Main-group: A groups (1, 2, 13-18).\nTransition: B groups (3-12).",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What is a group in the periodic table?",
-      "back": "A group consists of the elements in any one vertical column of the periodic table. Elements in the same group have similar chemical properties.",
+      "front": "Group IA (1) Name.",
+      "back": "Alkali Metals (Li, Na, K...)",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What are the three group numbering systems?",
-      "back": "1. North American: Roman numerals with letters A and B (IA, IIA...VIIIA, IB...VIIIB)\n2. European: Similar to North American but some A and B are interchanged\n3. IUPAC (recommended): Numbers 1 to 18",
+      "front": "Group IIA (2) Name.",
+      "back": "Alkaline Earth Metals (Be, Mg, Ca...)",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What are main-group elements?",
-      "back": "Main-group elements (also called representative elements) are:\n- The A groups in the North American system\n- Groups 1, 2, and 13-18 in the IUPAC system",
+      "front": "Group VIIA (17) Name.",
+      "back": "Halogens (F, Cl, Br...)",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What are transition elements?",
-      "back": "Transition elements are:\n- The B groups in the North American system\n- Groups 3-12 in the IUPAC system",
+      "front": "Group VIIIA (18) Name.",
+      "back": "Noble Gases (He, Ne, Ar...)",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "What are inner transition elements?",
-      "back": "Inner transition elements are the two rows of elements at the bottom of the periodic table:\n- Lanthanides: First row starting with lanthanum (La)\n- Actinides: Second row starting with actinium (Ac)",
+      "front": "Properties of Metals.",
+      "back": "Shiny (lustre), good conductors, malleable, ductile, mostly solids.",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "Name the special groups in the periodic table.",
-      "back": "Group IA (1): Alkali metals (Li, Na, K, Rb, Cs, Fr)\nGroup IIA (2): Alkaline earth metals (Be, Mg, Ca, Sr, Ba, Ra)\nGroup VIA (16): Chalcogens (O, S, Se, Te, Po)\nGroup VIIA (17): Halogens (F, Cl, Br, I, At)\nGroup VIIIA (18): Noble gases (He, Ne, Ar, Kr, Xe, Rn)",
+      "front": "Properties of Non-metals.",
+      "back": "Poor conductors, often gases or brittle solids.",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
     },
     {
-      "front": "How many elements are in each period?",
-      "back": "Period 1: 2 elements (H to He)\nPeriod 2: 8 elements (Li to Ne)\nPeriod 3: 8 elements (Na to Ar)\nPeriod 4: 18 elements (K to Kr)\nPeriod 5: 18 elements (Rb to Xe)\nPeriod 6: 32 elements (includes lanthanides)\nPeriod 7: Incomplete (includes actinides)",
+      "front": "What is a Metalloid?",
+      "back": "Element with properties of both metals and non-metals (semiconductors). Ex: Si, Ge.",
       "course": "CH110",
       "term": "T1",
       "topic": "periodic table"
-    },
-    {
-      "front": "What is a metal?",
-      "back": "A metal is a substance or mixture that has:\n- Characteristic lustre (shine)\n- Good conductor of heat and electricity\n- Malleable (can be hammered into sheets)\n- Ductile (can be drawn into wire)\n- Mostly solids at room temperature (except mercury, Hg)\n- Located on the left side of the periodic table",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "What is a non-metal?",
-      "back": "A non-metal is an element that does not exhibit the characteristics of a metal:\n- Poor conductors of heat and electricity\n- Mostly gases (Cl₂, O₂, N₂) or brittle solids (P, S, I₂)\n- Located on the right side of the periodic table",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "What is a metalloid (semimetal)?",
-      "back": "A metalloid is an element having both metallic and non-metallic properties:\n- Border the staircase line separating metals from non-metals\n- Usually good semiconductors (poor conductors at room temperature but moderate conductors at high temperature)\n- Examples: B, Si, Ge, As, Sb, Te",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
+    }
+  ],
 
-    // --- SECTION 12: MOLECULES & MOLECULAR COMPOUNDS ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 6 - Molecules & Ions": [
     {
       "front": "What is a molecule?",
-      "back": "A molecule is a definite group of atoms that are chemically bonded together. Examples: H₂O, NH₃, CO₂, O₂, Cl₂.",
+      "back": "A definite group of atoms chemically bonded together (e.g., H₂O).",
       "course": "CH110",
       "term": "T1",
-      "topic": "molecules & molecular compounds"
+      "topic": "molecules"
     },
     {
-      "front": "What is a molecular formula?",
-      "back": "A molecular formula gives the exact number of different atoms of each element in a molecule.\n\nExamples:\n- H₂O: 2 hydrogen atoms, 1 oxygen atom\n- H₂O₂: 2 hydrogen atoms, 2 oxygen atoms\n- C₂H₆O: 2 carbon atoms, 6 hydrogen atoms, 1 oxygen atom",
+      "front": "Molecular vs. Structural Formula.",
+      "back": "Molecular: Gives exact number of atoms (H₂O).\nStructural: Shows how atoms are bonded (H-O-H).",
       "course": "CH110",
       "term": "T1",
-      "topic": "molecules & molecular compounds"
+      "topic": "molecules"
     },
-    {
-      "front": "What is a structural formula?",
-      "back": "A structural formula is a chemical formula that shows how the atoms are bonded in a molecule.\n\nExamples:\n- H-O-H (shows two H atoms bonded to O in water)\n- CH₃CH₂OH (condensed structural formula showing bonding in ethanol)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "molecules & molecular compounds"
-    },
-    {
-      "front": "What are polymers?",
-      "back": "Polymers are very large molecules made up of many smaller molecules (monomers) repeatedly linked together.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "molecules & molecular compounds"
-    },
-    {
-      "front": "What are monomers?",
-      "back": "Monomers are the small molecules that are linked together to form a polymer.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "molecules & molecular compounds"
-    },
-
-    // --- SECTION 13: IONIC COMPOUNDS ---
     {
       "front": "What is an ion?",
-      "back": "An ion is an electrically charged particle obtained from an atom or chemically bonded group of atoms by adding or removing electrons.",
+      "back": "An electrically charged particle obtained by adding or removing electrons.",
       "course": "CH110",
       "term": "T1",
       "topic": "ionic compounds"
     },
     {
-      "front": "What is a cation?",
-      "back": "A cation is a positively charged ion formed when an atom loses one or more electrons. Metal atoms tend to form cations.\n\nExamples: Na⁺, Ca²⁺, Al³⁺, Fe²⁺, Fe³⁺",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    },
-    {
-      "front": "What is an anion?",
-      "back": "An anion is a negatively charged ion formed when an atom gains one or more electrons. Non-metal atoms tend to form anions.\n\nExamples: Cl⁻, O²⁻, S²⁻, N³⁻, SO₄²⁻",
+      "front": "Cation vs. Anion.",
+      "back": "Cation: Positive ion (loss of electrons, usually metals).\nAnion: Negative ion (gain of electrons, usually non-metals).",
       "course": "CH110",
       "term": "T1",
       "topic": "ionic compounds"
     },
     {
       "front": "What is a polyatomic ion?",
-      "back": "A polyatomic ion consists of two or more atoms chemically bonded together but having an excess or deficiency of electrons so the unit has an electric charge.\n\nExamples: SO₄²⁻ (sulfate), NO₃⁻ (nitrate), NH₄⁺ (ammonium)",
+      "back": "A charged group of two or more atoms chemically bonded (e.g., SO₄²⁻).",
       "course": "CH110",
       "term": "T1",
       "topic": "ionic compounds"
     },
     {
-      "front": "What is an ionic compound?",
-      "back": "An ionic compound is a compound composed of cations and anions held together by electrostatic attraction.\n\nProperties:\n- Do NOT contain molecules\n- Are electrically neutral overall\n- Have formulas representing the smallest ratio of ions (formula unit)\n\nExamples: NaCl, CaO, Fe₂(SO₄)₃",
+      "front": "Properties of Ionic Compounds.",
+      "back": "Composed of cations and anions, held by electrostatic attraction, electrically neutral, no distinct molecules (formula units).",
       "course": "CH110",
       "term": "T1",
       "topic": "ionic compounds"
-    },
-    {
-      "front": "What is a formula unit?",
-      "back": "A formula unit is the group of atoms or ions explicitly symbolized in the formula. It represents the smallest unit of the substance.\n\nExamples:\n- H₂O: formula unit is the molecule\n- NaCl: formula unit consists of 1 Na⁺ and 1 Cl⁻\n- Fe₂(SO₄)₃: formula unit consists of 2 Fe³⁺ and 3 SO₄²⁻ ions",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    },
+    }
+  ],
 
-    // --- SECTION 14: TYPE I BINARY IONIC COMPOUNDS ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 7 - Naming Ionic Compounds": [
     {
-      "front": "What is a binary compound?",
-      "back": "A binary compound is a compound composed of exactly two elements.",
+      "front": "General rule for naming ionic compounds.",
+      "back": "Cation named first, Anion named second.",
       "course": "CH110",
       "term": "T1",
-      "topic": "type I binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What is the general rule for naming ionic compounds?",
-      "back": "The cation is always named first and the anion is named second.",
+      "front": "Naming Type I Binary Compounds (Metal + Non-metal).",
+      "back": "1. Metal name.\n2. Non-metal root + '-ide'.\nExample: NaCl = Sodium Chloride.",
       "course": "CH110",
       "term": "T1",
-      "topic": "type I binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What are Type I binary ionic compounds?",
-      "back": "Type I binary ionic compounds contain:\n- A metal that forms only one type of cation\n- A non-metal anion",
+      "front": "What are Type II Binary Ionic Compounds?",
+      "back": "Compounds containing metals that can form multiple cations (Transition metals like Fe, Cu).",
       "course": "CH110",
       "term": "T1",
-      "topic": "type I binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What are the naming rules for Type I binary ionic compounds?",
-      "back": "1. The cation is named first using the element name\n2. The anion is named second using the element root + '-ide' suffix\n\nExamples:\n- NaCl: sodium chloride\n- CaS: calcium sulfide\n- MgO: magnesium oxide\n- Li₃N: lithium nitride",
+      "front": "Naming rule for Type II compounds.",
+      "back": "Use Roman numerals to indicate charge.\nExample: FeCl₂ = Iron(II) chloride.",
       "course": "CH110",
       "term": "T1",
-      "topic": "type I binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What are common monatomic anion names?",
-      "back": "H⁻ = hydride\nF⁻ = fluoride\nCl⁻ = chloride\nBr⁻ = bromide\nI⁻ = iodide\nO²⁻ = oxide\nS²⁻ = sulfide\nN³⁻ = nitride\nP³⁻ = phosphide",
+      "front": "Transition metals that do NOT need Roman numerals.",
+      "back": "Silver (Ag⁺), Zinc (Zn²⁺), Cadmium (Cd²⁺).",
       "course": "CH110",
       "term": "T1",
-      "topic": "type I binary ionic compounds"
+      "topic": "naming compounds"
     },
+    {
+      "front": "Common Polyatomic Ions: Nitrate and Sulfate.",
+      "back": "Nitrate: NO₃⁻\nSulfate: SO₄²⁻",
+      "course": "CH110",
+      "term": "T1",
+      "topic": "naming compounds"
+    },
+    {
+      "front": "Common Polyatomic Ions: Carbonate and Phosphate.",
+      "back": "Carbonate: CO₃²⁻\nPhosphate: PO₄³⁻",
+      "course": "CH110",
+      "term": "T1",
+      "topic": "naming compounds"
+    },
+    {
+      "front": "Common Polyatomic Ions: Hydroxide and Ammonium.",
+      "back": "Hydroxide: OH⁻\nAmmonium: NH₄⁺",
+      "course": "CH110",
+      "term": "T1",
+      "topic": "naming compounds"
+    }
+  ],
 
-    // --- SECTION 15: TYPE II BINARY IONIC COMPOUNDS ---
+  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 8 - Naming Covalent Compounds & Acids": [
     {
-      "front": "What are Type II binary ionic compounds?",
-      "back": "Type II binary ionic compounds contain metals that can form more than one type of positive ion (multiple oxidation states).",
+      "front": "Naming Type III Binary Covalent Compounds (Non-metal + Non-metal).",
+      "back": "Use prefixes (mono, di, tri...) to denote number of atoms. Second element ends in -ide.\nExample: CO₂ = Carbon dioxide.",
       "course": "CH110",
       "term": "T1",
-      "topic": "type II binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What is the naming rule for Type II binary ionic compounds?",
-      "back": "The cation name must include a Roman numeral in parentheses indicating the charge of the cation.\n\nExamples:\n- FeCl₂: iron(II) chloride [Fe²⁺]\n- FeCl₃: iron(III) chloride [Fe³⁺]\n- CuO: copper(II) oxide [Cu²⁺]\n- Cu₂O: copper(I) oxide [Cu⁺]",
+      "front": "Rules for 'mono-' prefix.",
+      "back": "Never use 'mono-' for the first element. Used for the second element if single.",
       "course": "CH110",
       "term": "T1",
-      "topic": "type II binary ionic compounds"
+      "topic": "naming compounds"
     },
     {
-      "front": "What is the older naming system for Type II compounds?",
-      "back": "The older system uses:\n- -ous suffix for the ion with lower charge\n- -ic suffix for the ion with higher charge\n\nExamples:\nFe²⁺: ferrous (older) vs iron(II) (systematic)\nFe³⁺: ferric (older) vs iron(III) (systematic)\nCu⁺: cuprous (older) vs copper(I) (systematic)\nCu²⁺: cupric (older) vs copper(II) (systematic)\n\nNote: Use systematic names with Roman numerals in this course.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "type II binary ionic compounds"
-    },
-    {
-      "front": "Which transition metals do NOT require Roman numerals?",
-      "back": "These transition metals form only one type of ion and do NOT require Roman numerals:\n- Silver: Ag⁺ only\n- Zinc: Zn²⁺ only\n- Cadmium: Cd²⁺ only",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "type II binary ionic compounds"
-    },
-    {
-      "front": "Name common Type II cations with both systematic and older names.",
-      "back": "Fe³⁺: Iron(III) - Ferric\nFe²⁺: Iron(II) - Ferrous\nCu²⁺: Copper(II) - Cupric\nCu⁺: Copper(I) - Cuprous\nCo³⁺: Cobalt(III) - Cobaltic\nCo²⁺: Cobalt(II) - Cobaltous\nSn⁴⁺: Tin(IV) - Stannic\nSn²⁺: Tin(II) - Stannous\nPb⁴⁺: Lead(IV) - Plumbic\nPb²⁺: Lead(II) - Plumbous\nHg₂²⁺: Mercury(I) - Mercurous\nHg²⁺: Mercury(II) - Mercuric",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "type II binary ionic compounds"
-    },
-
-    // --- SECTION 16: IONIC COMPOUNDS WITH POLYATOMIC IONS ---
-    {
-      "front": "Name common polyatomic cations.",
-      "back": "NH₄⁺ = ammonium\nHg₂²⁺ = mercury(I)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds with polyatomic ions"
-    },
-    {
-      "front": "Name common polyatomic anions ending in -ate.",
-      "back": "NO₃⁻ = nitrate\nSO₄²⁻ = sulfate\nCO₃²⁻ = carbonate\nPO₄³⁻ = phosphate\nClO₃⁻ = chlorate\nClO₄⁻ = perchlorate\nC₂H₃O₂⁻ = acetate\nMnO₄⁻ = permanganate\nCrO₄²⁻ = chromate\nCr₂O₇²⁻ = dichromate",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds with polyatomic ions"
-    },
-    {
-      "front": "Name common polyatomic anions ending in -ite.",
-      "back": "NO₂⁻ = nitrite\nSO₃²⁻ = sulfite\nClO₂⁻ = chlorite\nClO⁻ = hypochlorite",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds with polyatomic ions"
-    },
-    {
-      "front": "Name other important polyatomic anions.",
-      "back": "OH⁻ = hydroxide\nCN⁻ = cyanide\nO₂²⁻ = peroxide\nHCO₃⁻ = hydrogen carbonate (bicarbonate)\nHSO₄⁻ = hydrogen sulfate (bisulfate)\nHPO₄²⁻ = hydrogen phosphate\nH₂PO₄⁻ = dihydrogen phosphate\nC₂O₄²⁻ = oxalate\nS₂O₃²⁻ = thiosulfate\nNCS⁻ or SCN⁻ = thiocyanate",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds with polyatomic ions"
-    },
-    {
-      "front": "How do you name ionic compounds containing polyatomic ions?",
-      "back": "Use the same rules as binary ionic compounds:\n1. Name the cation first (include Roman numeral if Type II metal)\n2. Name the polyatomic anion second (using its memorized name)\n\nExamples:\n- Na₂SO₄: sodium sulfate\n- KH₂PO₄: potassium dihydrogen phosphate\n- Fe(NO₃)₃: iron(III) nitrate\n- (NH₄)₂CO₃: ammonium carbonate",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds with polyatomic ions"
-    },
-
-    // --- SECTION 17: BINARY COVALENT COMPOUNDS (TYPE III) ---
-    {
-      "front": "What are binary covalent compounds?",
-      "back": "Binary covalent compounds (Type III) are formed between two non-metals.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "binary covalent compounds"
-    },
-    {
-      "front": "What are the naming rules for Type III binary covalent compounds?",
-      "back": "1. The first element is named using the full element name\n2. The second element is named as if it were an anion (-ide ending)\n3. Use prefixes to denote the number of atoms\n4. NEVER use 'mono-' prefix for the first element\n5. Drop the final vowel of the prefix if the element begins with a vowel (tetroxide not tetraoxide)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "binary covalent compounds"
-    },
-    {
-      "front": "What are the prefixes for Type III compound naming?",
-      "back": "mono- = 1\ndi- = 2\ntri- = 3\ntetra- = 4\npenta- = 5\nhexa- = 6\nhepta- = 7\nocta- = 8\nnona- = 9\ndeca- = 10",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "binary covalent compounds"
-    },
-    {
-      "front": "Give examples of Type III compound names.",
-      "back": "CO: carbon monoxide (NOT monocarbon monoxide)\nCO₂: carbon dioxide\nN₂O: dinitrogen monoxide\nNO: nitrogen monoxide\nNO₂: nitrogen dioxide\nN₂O₃: dinitrogen trioxide\nN₂O₄: dinitrogen tetroxide\nN₂O₅: dinitrogen pentoxide\nPCl₅: phosphorus pentachloride\nSF₆: sulfur hexafluoride",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "binary covalent compounds"
-    },
-    {
-      "front": "Which compounds always use common names instead of systematic names?",
-      "back": "H₂O = water (NOT dihydrogen oxide)\nNH₃ = ammonia (NOT nitrogen trihydride)\nH₂O₂ = hydrogen peroxide (NOT dihydrogen dioxide)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "binary covalent compounds"
-    },
-
-    // --- SECTION 18: NAMING ACIDS ---
-    {
-      "front": "What is an acid?",
-      "back": "An acid is a molecule in which one or more H⁺ ions are attached to an anion. When dissolved in water, acids produce a solution containing free H⁺ ions (protons) and the anions.",
+      "front": "Naming Binary Acids (no oxygen).",
+      "back": "Prefix 'hydro-', root of anion, suffix '-ic', add 'acid'.\nExample: HCl = Hydrochloric acid.",
       "course": "CH110",
       "term": "T1",
       "topic": "naming acids"
     },
     {
-      "front": "What are the naming rules for acids without oxygen (binary acids)?",
-      "back": "When the anion name ends in -ide, the acid is named:\nPrefix: 'hydro-'\nAnion root\nSuffix: '-ic'\nAdd: 'acid'\n\nFormula pattern: H + element",
+      "front": "Naming Oxyacids (with oxygen) ending in -ate.",
+      "back": "Change '-ate' to '-ic' acid.\nExample: H₂SO₄ (Sulfate) = Sulfuric acid.",
       "course": "CH110",
       "term": "T1",
       "topic": "naming acids"
     },
     {
-      "front": "Give examples of binary acid names.",
-      "back": "HF: Hydrofluoric acid (fluoride)\nHCl: Hydrochloric acid (chloride)\nHBr: Hydrobromic acid (bromide)\nHI: Hydroiodic acid (iodide)\nH₂S: Hydrosulfuric acid (sulfide)\nHCN: Hydrocyanic acid (cyanide)",
+      "front": "Naming Oxyacids (with oxygen) ending in -ite.",
+      "back": "Change '-ite' to '-ous' acid.\nExample: H₂SO₃ (Sulfite) = Sulfurous acid.",
       "course": "CH110",
       "term": "T1",
       "topic": "naming acids"
     },
     {
-      "front": "What are the naming rules for oxyacids (acids containing oxygen)?",
-      "back": "When the anion ends in -ate:\n- Change -ate to -ic\n- Add 'acid'\n\nWhen the anion ends in -ite:\n- Change -ite to -ous\n- Add 'acid'",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    },
-    {
-      "front": "Give examples of oxyacid names.",
-      "back": "H₂SO₄: Sulfuric acid (sulfate)\nH₂SO₃: Sulfurous acid (sulfite)\nHNO₃: Nitric acid (nitrate)\nHNO₂: Nitrous acid (nitrite)\nH₃PO₄: Phosphoric acid (phosphate)\nHC₂H₃O₂: Acetic acid (acetate)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    },
-    {
-      "front": "Name the oxyacids of chlorine.",
-      "back": "HClO₄: Perchloric acid (perchlorate)\nHClO₃: Chloric acid (chlorate)\nHClO₂: Chlorous acid (chlorite)\nHClO: Hypochlorous acid (hypochlorite)",
+      "front": "Oxyacids of Chlorine.",
+      "back": "HClO₄: Perchloric acid\nHClO₃: Chloric acid\nHClO₂: Chlorous acid\nHClO: Hypochlorous acid",
       "course": "CH110",
       "term": "T1",
       "topic": "naming acids"
     }
   ],
+
+  
+
 
  };
