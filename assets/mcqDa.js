@@ -21471,5 +21471,441 @@ const mcqData = [
     "year": "2024",
     "tag": "Naming"
   },
+
+//2023 CH110 test1
+    
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which of the following BEST defines a hypothesis in the scientific method?",
+    "options": [
+      "A proven fact that has been tested many times",
+      "A tentative explanation for a set of observations that can be tested",
+      "A mathematical relationship that is always true under the same conditions",
+      "A unifying principle that explains a body of facts and laws"
+    ],
+    "correct": 1,
+    "explanation": "A hypothesis is a tentative explanation for a set of observations that can be tested through experiments. A proven fact is a law, and a unifying principle is a theory."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What distinguishes a scientific theory from a scientific law?",
+    "options": [
+      "A theory is a concise mathematical statement while a law explains why phenomena occur",
+      "A law is a concise statement of a relationship while a theory explains facts and laws",
+      "Theories are absolute and never change while laws are constantly modified",
+      "Laws are always mathematical while theories are always verbal"
+    ],
+    "correct": 1,
+    "explanation": "A law is a concise verbal or mathematical statement of a relationship between phenomena that is always the same under the same conditions. A theory is a unifying principle that explains a body of facts and/or laws based on them."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Express 101,325 to ONE significant figure in scientific notation.",
+    "options": [
+      "$1.0 \\times 10^5$",
+      "$1.01 \\times 10^5$",
+      "$1.013 \\times 10^5$",
+      "$1.0133 \\times 10^5$"
+    ],
+    "correct": 0,
+    "explanation": "101,325 rounded to one significant figure is 100,000 = $1.0 \\times 10^5$. The zero after the decimal indicates we have one significant figure."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Express 101,325 to FIVE significant figures in scientific notation.",
+    "options": [
+      "$1.0 \\times 10^5$",
+      "$1.013 \\times 10^5$",
+      "$1.0133 \\times 10^5$",
+      "$1.01325 \\times 10^5$"
+    ],
+    "correct": 2,
+    "explanation": "101,325 rounded to five significant figures is 101,330 = $1.0133 \\times 10^5$. The original number has six digits; rounding to five gives 101,330."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which statement correctly describes the difference between precision and accuracy?",
+    "options": [
+      "Precision is how close a measurement is to the true value; accuracy is how close measurements agree with each other",
+      "Precision is how close measurements agree with each other; accuracy is how close a measurement is to the true value",
+      "Precision and accuracy are the same thing expressed in different units",
+      "Precision refers to systematic errors while accuracy refers to random errors"
+    ],
+    "correct": 1,
+    "explanation": "Precision refers to how closely two or more measurements of the same quantity agree with one another (reproducibility). Accuracy tells how close a measurement is to the true value. Measurements can be precise but not accurate if systematic errors are present."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Calculate $(9.04 - 8.23 + 21.954 + 81.0) \\div 3.1416$ and report to the correct number of significant figures.",
+    "options": [
+      "33.0",
+      "33.04",
+      "33.041",
+      "33.1"
+    ],
+    "correct": 1,
+    "explanation": "First: $9.04 - 8.23 = 0.81$, $0.81 + 21.954 = 22.764$, $22.764 + 81.0 = 103.8$ (one decimal place). Then $103.8 \\div 3.1416 = 33.04$ (4 sig figs)."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Calculate $0.470 + \\frac{80.705}{0.623} - 2.526$ and report to the correct number of significant figures.",
+    "options": [
+      "127.9",
+      "128",
+      "127.94",
+      "127.944"
+    ],
+    "correct": 1,
+    "explanation": "First: $80.705 \\div 0.623 = 130.$ (3 sig figs). Then $0.470 + 130. - 2.526 = 127.944$ rounded to 0 decimal places = 128."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the correct name for the unit $10^{-9}$ gram?",
+    "options": [
+      "microgram",
+      "nanogram",
+      "picogram",
+      "femtogram"
+    ],
+    "correct": 1,
+    "explanation": "$10^{-9}$ g = nanogram (ng). $10^{-6}$ g = microgram, $10^{-12}$ g = picogram, $10^{-15}$ g = femtogram."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the correct name for the unit $10^{+9}$ gram?",
+    "options": [
+      "megagram",
+      "gigagram",
+      "teragram",
+      "kilogram"
+    ],
+    "correct": 1,
+    "explanation": "$10^{+9}$ g = gigagram (Gg). $10^6$ g = megagram, $10^{12}$ g = teragram, $10^3$ g = kilogram."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the correct name for the unit $10^{-15}$ metre?",
+    "options": [
+      "picometre",
+      "nanometre",
+      "femtometre",
+      "attometre"
+    ],
+    "correct": 2,
+    "explanation": "$10^{-15}$ m = femtometre (fm). $10^{-12}$ m = picometre, $10^{-9}$ m = nanometre, $10^{-18}$ m = attometre."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Convert $-38.9^\\circ\\text{C}$ to Kelvin.",
+    "options": [
+      "234.3 K",
+      "234.25 K",
+      "234.0 K",
+      "310.1 K"
+    ],
+    "correct": 0,
+    "explanation": "$\\text{K} = ^\\circ\\text{C} + 273.15 = -38.9 + 273.15 = 234.25$ K, rounded to one decimal place = 234.3 K."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Convert $119.3^\\circ\\text{C}$ to Kelvin.",
+    "options": [
+      "392.5 K",
+      "392.45 K",
+      "392.4 K",
+      "393.0 K"
+    ],
+    "correct": 0,
+    "explanation": "$\\text{K} = ^\\circ\\text{C} + 273.15 = 119.3 + 273.15 = 392.45$ K, rounded to one decimal place = 392.5 K."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the correct chemical formula for perchloric acid?",
+    "options": [
+      "$\\ce{HClO3}$",
+      "$\\ce{HClO4}$",
+      "$\\ce{HClO2}$",
+      "$\\ce{HClO}$"
+    ],
+    "correct": 1,
+    "explanation": "Perchloric acid is $\\ce{HClO4}$ (chlorine in +7 oxidation state). $\\ce{HClO3}$ = chloric acid, $\\ce{HClO2}$ = chlorous acid, $\\ce{HClO}$ = hypochlorous acid."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the correct chemical formula for phosphorus pentachloride?",
+    "options": [
+      "$\\ce{PCl3}$",
+      "$\\ce{PCl5}$",
+      "$\\ce{PCl}$",
+      "$\\ce{P2Cl5}$"
+    ],
+    "correct": 1,
+    "explanation": "Phosphorus pentachloride is $\\ce{PCl5}$. The prefix 'penta-' indicates 5 chlorine atoms. $\\ce{PCl3}$ is phosphorus trichloride."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Europium has two isotopes with abundances 48% and 52%. The average atomic mass is 151.96 amu and the isotope with 52% abundance has mass 152.92 amu. What is the mass of the isotope with 48% abundance?",
+    "options": [
+      "150.92 amu",
+      "151.92 amu",
+      "149.92 amu",
+      "152.92 amu"
+    ],
+    "correct": 0,
+    "explanation": "$151.96 = \\frac{48x + 52(152.92)}{100}$. $15196 = 48x + 7951.84$, $48x = 7244.16$, $x = 150.92$ amu."
+  },
+
+  // ============================================================
+  // SECTION B: STOICHIOMETRY & MOLE CONCEPT
+  // ============================================================
+  
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "A compound $\\ce{Fe_xO_y}$ contains 30.02% oxygen by mass. What is the empirical formula?",
+    "options": [
+      "$\\ce{FeO}$",
+      "$\\ce{Fe2O3}$",
+      "$\\ce{Fe3O4}$",
+      "$\\ce{FeO2}$"
+    ],
+    "correct": 1,
+    "explanation": "%Fe = 69.98%. Moles Fe = $69.98/55.85 = 1.253$, moles O = $30.02/16.00 = 1.876$. Ratio Fe:O = $1.253:1.876 = 1:1.5 = 2:3$, thus $\\ce{Fe2O3}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the systematic name for $\\ce{Fe2O3}$?",
+    "options": [
+      "Iron(II) oxide",
+      "Iron(III) oxide",
+      "Iron oxide",
+      "Ferrous oxide"
+    ],
+    "correct": 1,
+    "explanation": "$\\ce{Fe2O3}$ contains Fe³⁺ ions, so the systematic name is iron(III) oxide. The older name 'ferric oxide' is also acceptable but systematic IUPAC name uses Roman numerals."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "If 50.0 g of $\\ce{Fe2O3}$ reacts with 40.0 g of CO according to $\\ce{Fe2O3 + 3CO -> 2Fe + 3CO2}$, which is the limiting reagent?",
+    "options": [
+      "$\\ce{Fe2O3}$",
+      "$\\ce{CO}$",
+      "$\\ce{Fe}$",
+      "$\\ce{CO2}$"
+    ],
+    "correct": 0,
+    "explanation": "Moles $\\ce{Fe2O3} = 50.0/159.70 = 0.3131$ mol, moles CO = $40.0/28.01 = 1.428$ mol. Stoichiometric ratio CO:Fe2O3 = 3:1. Actual ratio = $1.428/0.3131 = 4.56 > 3$, so CO is in excess and $\\ce{Fe2O3}$ is limiting."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "0.658 g of a compound containing C, H, and O produces 1.285 g CO₂ and 0.658 g H₂O upon combustion. The molar mass is 90 g/mol. What is the molecular formula?",
+    "options": [
+      "$\\ce{C2H5O}$",
+      "$\\ce{C4H10O2}$",
+      "$\\ce{C3H6O3}$",
+      "$\\ce{C2H4O2}$"
+    ],
+    "correct": 1,
+    "explanation": "Mass C = $1.285 \\times 12.01/44.01 = 0.3507$ g, mass H = $0.658 \\times 2.016/18.02 = 0.07363$ g, mass O = $0.658 - 0.3507 - 0.07363 = 0.2337$ g. Moles C = $0.3507/12.01 = 0.02920$, H = $0.07363/1.008 = 0.07305$, O = $0.2337/16.00 = 0.01461$. Ratio C:H:O = $2:5:1$, empirical = $\\ce{C2H5O}$ (45.06 g/mol). $n = 90/45.06 = 2$, molecular = $\\ce{C4H10O2}$."
+  },
+
+  // ============================================================
+  // SECTION C: REDOX REACTIONS & PRECIPITATION
+  // ============================================================
+  
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which mixture will form a precipitate?",
+    "options": [
+      "$\\ce{KOH(aq)}$ and $\\ce{H3PO4(aq)}$",
+      "$\\ce{K2CO3(aq)}$ and $\\ce{BCl2(aq)}$",
+      "$\\ce{Ba(NO3)2(aq)}$ and $\\ce{Na2SO4(aq)}$",
+      "Both B and C"
+    ],
+    "correct": 3,
+    "explanation": "A: No precipitate (all potassium salts soluble). B: $\\ce{K2CO3 + BCl2 -> BCO3\\downarrow}$ (boron carbonate precipitates). C: $\\ce{Ba(NO3)2 + Na2SO4 -> BaSO4\\downarrow}$ (barium sulfate is insoluble)."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the oxidation state of Cr in $\\ce{Cr2O7^{2-}}$?",
+    "options": [
+      "+3",
+      "+4",
+      "+5",
+      "+6"
+    ],
+    "correct": 3,
+    "explanation": "$2x + 7(-2) = -2$, $2x - 14 = -2$, $2x = 12$, $x = +6$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the oxidation state of S in $\\ce{H2SO4}$?",
+    "options": [
+      "+4",
+      "+5",
+      "+6",
+      "+7"
+    ],
+    "correct": 2,
+    "explanation": "$2(+1) + x + 4(-2) = 0$, $2 + x - 8 = 0$, $x - 6 = 0$, $x = +6$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "In the reaction $\\ce{CuS(s) + NO3^-(aq) -> Cu^{2+}(aq) + SO4^{2-}(aq) + NO(g)}$, what is the oxidizing agent?",
+    "options": [
+      "$\\ce{CuS}$",
+      "$\\ce{Cu^{2+}}$",
+      "$\\ce{NO3^-}$",
+      "$\\ce{SO4^{2-}}$"
+    ],
+    "correct": 2,
+    "explanation": "The oxidizing agent is the species that gets reduced. $\\ce{NO3^-}$ is reduced to $\\ce{NO}$ (N from +5 to +2), so it is the oxidizing agent. $\\ce{CuS}$ is oxidized and is the reducing agent."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which is the correct balanced half-reaction for the oxidation of $\\ce{CuS}$ to $\\ce{Cu^{2+}}$ and $\\ce{SO4^{2-}}$ in acidic medium?",
+    "options": [
+      "$\\ce{CuS -> Cu^{2+} + SO4^{2-} + 8e-}$",
+      "$\\ce{CuS + 4H2O -> Cu^{2+} + SO4^{2-} + 8H+ + 8e-}$",
+      "$\\ce{CuS + 4H2O + 8e- -> Cu^{2+} + SO4^{2-} + 8H+}$",
+      "$\\ce{CuS + 8H+ -> Cu^{2+} + SO4^{2-} + 4H2O + 8e-}$"
+    ],
+    "correct": 1,
+    "explanation": "Correct oxidation half-reaction: $\\ce{CuS + 4H2O -> Cu^{2+} + SO4^{2-} + 8H+ + 8e-}$. Electrons appear on the right (oxidation involves loss of electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What is the overall balanced equation for $\\ce{CuS + NO3^- -> Cu^{2+} + SO4^{2-} + NO}$ in acidic medium?",
+    "options": [
+      "$\\ce{CuS + 2NO3^- + 4H+ -> Cu^{2+} + SO4^{2-} + 2NO + 2H2O}$",
+      "$\\ce{3CuS + 8NO3^- + 8H+ -> 3Cu^{2+} + 3SO4^{2-} + 8NO + 4H2O}$",
+      "$\\ce{CuS + 2NO3^- + 8H+ -> Cu^{2+} + SO4^{2-} + 2NO + 4H2O}$",
+      "$\\ce{2CuS + 6NO3^- + 8H+ -> 2Cu^{2+} + 2SO4^{2-} + 6NO + 4H2O}$"
+    ],
+    "correct": 1,
+    "explanation": "Oxidation: $\\ce{CuS + 4H2O -> Cu^{2+} + SO4^{2-} + 8H+ + 8e-}$ ×3. Reduction: $\\ce{NO3^- + 4H+ + 3e- -> NO + 2H2O}$ ×8. Adding and cancelling gives $\\ce{3CuS + 8NO3^- + 8H+ -> 3Cu^{2+} + 3SO4^{2-} + 8NO + 4H2O}$."
+  },
+
+  // ============================================================
+  // SECTION D: GASES
+  // ============================================================
+  
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which statement correctly expresses Boyle's Law?",
+    "options": [
+      "At constant pressure, volume is directly proportional to temperature",
+      "At constant temperature, volume is inversely proportional to pressure",
+      "At constant volume, pressure is directly proportional to temperature",
+      "Equal volumes of gases contain equal numbers of molecules at the same T and P"
+    ],
+    "correct": 1,
+    "explanation": "Boyle's Law: At constant temperature, the volume of a fixed mass of gas is inversely proportional to its pressure: $P \\propto 1/V$ or $P_1V_1 = P_2V_2$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "If 22.5 L of nitrogen at 748 mmHg is compressed to 725 mmHg at constant temperature, what is the new volume?",
+    "options": [
+      "21.8 L",
+      "22.5 L",
+      "23.2 L",
+      "24.1 L"
+    ],
+    "correct": 2,
+    "explanation": "Using Boyle's Law: $P_1V_1 = P_2V_2$, $V_2 = P_1V_1/P_2 = (748 \\times 22.5)/725 = 16830/725 = 23.21$ L ≈ 23.2 L."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "What volume does 50.0 g of nitrogen gas ($\\ce{N2}$) occupy at STP?",
+    "options": [
+      "22.4 L",
+      "40.0 L",
+      "44.8 L",
+      "50.0 L"
+    ],
+    "correct": 1,
+    "explanation": "Molar mass $\\ce{N2} = 28.02$ g/mol. Moles = $50.0/28.02 = 1.785$ mol. At STP, 1 mol gas = 22.4 L, so $V = 1.785 \\times 22.4 = 40.0$ L."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "A gas has density 1.41 g/dm³ at 450 K and 2.0 atm. What is its density at STP?",
+    "options": [
+      "0.82 g/dm³",
+      "1.16 g/dm³",
+      "1.41 g/dm³",
+      "2.82 g/dm³"
+    ],
+    "correct": 1,
+    "explanation": "$\\rho \\propto P/T$ for a fixed gas. $\\rho_2 = \\rho_1 \\times (P_2/P_1) \\times (T_1/T_2) = 1.41 \\times (1.0/2.0) \\times (450/273) = 1.41 \\times 0.5 \\times 1.648 = 1.16$ g/dm³."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "A 2.0 L mixture of He, N₂, and Ne at -18°C has total pressure 815 mmHg. P_He = 201 mmHg, P_N₂ = 351 mmHg. What mass of Ne is present?",
+    "options": [
+      "0.333 g",
+      "0.667 g",
+      "0.825 g",
+      "1.334 g"
+    ],
+    "correct": 1,
+    "explanation": "$P_\\text{Ne} = 815 - 201 - 351 = 263$ mmHg = $263/760 = 0.3461$ atm. $T = -18 + 273.15 = 255.15$ K. $n = PV/RT = (0.3461 \\times 2.0)/(0.08206 \\times 255.15) = 0.6922/20.94 = 0.03306$ mol. Mass = $0.03306 \\times 20.18 = 0.667$ g."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Which gas law is applied when calculating volume at STP from given mass?",
+    "options": [
+      "Boyle's Law",
+      "Charles's Law",
+      "Avogadro's Law",
+      "Graham's Law"
+    ],
+    "correct": 2,
+    "explanation": "Avogadro's Law states that equal volumes of gases at the same temperature and pressure contain equal numbers of molecules. At STP, 1 mole of any gas occupies 22.4 L, which is a direct application of Avogadro's Law."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "q": "Dalton's Law of Partial Pressures states that:",
+    "options": [
+      "The pressure of a gas is inversely proportional to its volume at constant temperature",
+      "The volume of a gas is directly proportional to its absolute temperature at constant pressure",
+      "The total pressure of a gas mixture is the sum of the partial pressures of individual gases",
+      "Equal volumes of gases contain equal numbers of molecules at the same T and P"
+    ],
+    "correct": 2,
+    "explanation": "Dalton's Law: The total pressure exerted by a mixture of non-reacting gases is equal to the sum of the partial pressures of the individual gases: $P_\\text{total} = P_1 + P_2 + P_3 + ...$"
+  },
+
+  
   
 ];
