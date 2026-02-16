@@ -980,6 +980,78 @@ function showFinalEssayScore() {
     container.appendChild(backBtn);
 }
 
+// ============================================================
+// === SRS ENGINE (SPACED REPETITION - SM-2 ALGORITHM) ===
+// ============================================================
+
+const SRS_KEY_PREFIX = "kaeri_srs_v1_";
+
+// 1. Get SRS Data for a specific card
+function getCardSRS(topic, cardIndex) {
+    const key = `${SRS_KEY_PREFIX}${currentTermKey}`;
+    const allData = JSON.parse(localStorage.getItem(key) || "{}");
+    
+    // Structure: { "TopicName": { "0": { interval: 1, reps: 0, ef: 2.5, dueDate: 1715000... } } }
+    if (!allData[topic]) allData[topic] = {};
+    
+    // Default 'New Card' state
+    return allData[topic][cardIndex] || { 
+        interval: 0, 
+        repetition: 0, 
+        efactor: 2.5, 
+        dueDate: 0, // 0 means "New/Unseen"
+        isNew: true
+    };
+}
+
+// 2. Save SRS Data
+function saveCardSRS(topic, cardIndex, srsData) {
+    const key = `${SRS_KEY_PREFIX}${currentTermKey}`;
+    const allData = JSON.parse(localStorage.getItem(key) || "{}");
+    if (!allData[topic]) allData[topic] = {};
+    allData[topic][cardIndex] = srsData;
+    localStorage.setItem(key, JSON.stringify(allData));
+}
+
+// 3. The Algorithm (Calculate next review date)
+// Quality: 0 (Again), 3 (Hard), 4 (Good), 5 (Easy)
+function calculateNextReview(topic, cardIndex, quality) {
+    let card = getCardSRS(topic, cardIndex);
+    
+    // Reset if "Again" (Forgot)
+    if (quality < 3) {
+        card.repetition = 0;
+        card.interval = 1; // Review tomorrow
+    } else {
+        // Successful recall
+        if (card.repetition === 0) {
+            card.interval = 1;
+        } else if (card.repetition === 1) {
+            card.interval = 6;
+        } else {
+            card.interval = Math.round(card.interval * card.efactor);
+        }
+        card.repetition += 1;
+    }
+
+    // Update E-Factor (Easiness Factor) - The Math Magic
+    // Don't let EF drop below 1.3
+    card.efactor = card.efactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
+    if (card.efactor < 1.3) card.efactor = 1.3;
+
+    // Calculate Due Date (Now + Interval in Days)
+    const now = new Date();
+    card.dueDate = now.setDate(now.getDate() + card.interval);
+    card.isNew = false;
+
+    saveCardSRS(topic, cardIndex, card);
+    return card;
+}
+
+// ============================================================
+// === FLASHCARD ENGINE (UPDATED WITH SRS) ===
+// ============================================================
+
 function renderFlashcardTopics() {
     const container = document.getElementById("quiz-form");
     container.innerHTML = "";
@@ -1011,94 +1083,146 @@ function attemptStartFlashcard(topic) {
     startFlashcards(topic);
 }
 
+// Global SRS Queue
+let srsQueue = [];
+
 function startFlashcards(topic) {
     currentFlashcardTopic = topic;
-    currentFlashcards = currentFlashcardTopics[topic];
+    const allCards = currentFlashcardTopics[topic]; // Raw data
+    srsQueue = [];
+
+    // Filter: Find cards that are New OR Due
+    const now = Date.now();
+    
+    allCards.forEach((card, originalIndex) => {
+        const srs = getCardSRS(topic, originalIndex);
+        
+        // Include if it's New OR Due Date is in the past
+        if (srs.isNew || srs.dueDate <= now) {
+            srsQueue.push({
+                ...card,
+                originalIndex: originalIndex, // Keep track of ID
+                srsData: srs
+            });
+        }
+    });
+
+    // Sort: Reviews first, then New cards
+    srsQueue.sort((a, b) => a.srsData.dueDate - b.srsData.dueDate);
+
+    // Limit session to prevent overwhelm (optional, currently unlimited)
+    
+    currentFlashcards = srsQueue; // We now play the Queue, not the full deck
     currentCardIndex = 0;
     isCardFront = true;
+
+    if (currentFlashcards.length === 0) {
+        showAppNotification("🎉 You are all caught up on this topic!", "success");
+        // Offer to review ahead or go back
+        const container = document.getElementById("quiz-form");
+        container.innerHTML = `
+        <div style="text-align: center;">
+            <h2>🎉 Caught Up!</h2>
+            <p>You have no cards due for review right now.</p>
+            <p>Check back tomorrow or start another topic.</p>
+            <button class="restart-button" onclick="renderFlashcardTopics()">Back to Topics</button>
+        </div>`;
+        return;
+    }
+
     displayFlashcard();
 }
 
 function displayFlashcard() {
     const container = document.getElementById("quiz-form");
-    const card = currentFlashcards[currentCardIndex];
+    
+    if (currentCardIndex >= currentFlashcards.length) {
+        return showFlashcardCompletion();
+    }
+
+    const cardObj = currentFlashcards[currentCardIndex]; // This is the queued object
     updateProgress(currentCardIndex + 1, currentFlashcards.length);
     
-    if (!card) return showFlashcardCompletion();
-    
-    const isLastCard = currentCardIndex === currentFlashcards.length - 1;
-
-    container.innerHTML = `
-        <h3>Flashcard: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
+    let html = `
+        <h3>🧠 SRS Study: ${currentFlashcardTopic} (${currentCardIndex + 1} / ${currentFlashcards.length})</h3>
         <div class="flashcard-wrapper">
             <div class="flashcard ${isCardFront ? '' : 'back-active'}" onclick="flipCard()">
-                <div class="card-face card-front">${parseKaeriMarkdown(card.front)}</div>
-                <div class="card-face card-back">${parseKaeriMarkdown(card.back)}</div>
+                <div class="card-face card-front">
+                    ${parseKaeriMarkdown(cardObj.front)}
+                    <div style="margin-top:15px; font-size:0.8em; color:#888;">Tap to flip</div>
+                </div>
+                <div class="card-face card-back">
+                    ${parseKaeriMarkdown(cardObj.back)}
+                </div>
             </div>
         </div>
-        <div class="flashcard-nav-buttons">
-            <button onclick="prevFlashcard()" ${currentCardIndex === 0 ? 'disabled' : ''}>⬅️ Prev</button>
-            <button onclick="nextFlashcard()">${isLastCard ? 'Finish 🏁' : 'Next ➡️'}</button>
-        </div>
-        <button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>
     `;
+
+    // CONTROLS - REPLACED WITH SRS RATINGS
+    html += `<div class="flashcard-nav-buttons" style="margin-top: 20px;">`;
+
+    if (isCardFront) {
+        // Front View: Only "Show Answer"
+        html += `<button onclick="flipCard()" style="width:100%; background:#007bff; color:white;">🔄 Show Answer</button>`;
+    } else {
+        // Back View: SRS Ratings
+        html += `
+            <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:5px; width:100%;">
+                <button onclick="rateCard(0)" style="background:#dc3545; font-size:0.8em; padding:10px 2px;">
+                    ❌ Again<br><small>1 day</small>
+                </button>
+                <button onclick="rateCard(3)" style="background:#ffc107; color:black; font-size:0.8em; padding:10px 2px;">
+                    😬 Hard<br><small>2 days</small>
+                </button>
+                <button onclick="rateCard(4)" style="background:#28a745; font-size:0.8em; padding:10px 2px;">
+                    ✅ Good<br><small>4 days</small>
+                </button>
+                <button onclick="rateCard(5)" style="background:#17a2b8; font-size:0.8em; padding:10px 2px;">
+                    🚀 Easy<br><small>7 days</small>
+                </button>
+            </div>
+        `;
+    }
+    
+    html += `</div>`;
+    html += `<button class="back-to-topics-button" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
+
+    container.innerHTML = html;
     
     renderMath();
-    
     container.scrollIntoView({ behavior: "smooth" });
     readFlashcard();
 }
 
-function flipCard() { isCardFront = !isCardFront; displayFlashcard(); }
-
-function prevFlashcard() { 
-    if (currentCardIndex > 0) { 
-        currentCardIndex--; 
-        isCardFront = true; 
-        displayFlashcard(); 
-    } 
+function flipCard() { 
+    isCardFront = !isCardFront; 
+    displayFlashcard(); 
 }
 
-function nextFlashcard() { 
-    if (currentCardIndex < currentFlashcards.length - 1) { 
-        currentCardIndex++; 
-        isCardFront = true; 
-        displayFlashcard(); 
-    } else { 
-        showFlashcardCompletion(); 
-    } 
+function rateCard(quality) {
+    const cardObj = currentFlashcards[currentCardIndex];
+    
+    // Run Algorithm
+    const result = calculateNextReview(currentFlashcardTopic, cardObj.originalIndex, quality);
+    
+    // Visual Feedback
+    showAppNotification(`Scheduled for: ${Math.round(result.interval)} days`, "info", 1000);
+
+    // Move to next
+    currentCardIndex++;
+    isCardFront = true;
+    displayFlashcard();
 }
 
 function showFlashcardCompletion() {
     const container = document.getElementById("quiz-form");
     container.innerHTML = `
         <div style="text-align: center;">
-            <h2>Topic Complete!</h2>
-            <p>You have reviewed all flashcards for "<strong>${currentFlashcardTopic}</strong>".</p>
+            <h2>Session Complete!</h2>
+            <p>You have reviewed all due cards for "<strong>${currentFlashcardTopic}</strong>".</p>
         </div>
     `;
     updateProgress(currentFlashcards.length, currentFlashcards.length);
-
-    const restartBtn = document.createElement("button");
-    restartBtn.innerText = "🔁 Review Again";
-    restartBtn.className = "restart-button";
-    restartBtn.style.marginRight = "10px";
-    restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic);
-    container.appendChild(restartBtn);
-
-    const challengeBtn = document.createElement("button");
-    challengeBtn.innerHTML = "⚔️ Challenge a Friend";
-    challengeBtn.className = "challenge-button";
-    challengeBtn.onclick = () => challengeFriend(currentFlashcards.length, 0, "Flashcards");
-    container.appendChild(challengeBtn);
-
-    const previewBtn = document.createElement("button");
-    previewBtn.innerText = "👁️ Preview & Print";
-    previewBtn.style.backgroundColor = "#007bff"; 
-    previewBtn.style.color = "white";
-    previewBtn.style.marginLeft = "10px";
-    previewBtn.onclick = generatePrintPreview;
-    container.appendChild(previewBtn);
 
     const backBtn = document.createElement("button");
     backBtn.innerText = "⬅️ Back to Topics";
@@ -1444,10 +1568,15 @@ document.addEventListener("keydown", (e) => {
     }
     
     if (currentQuizType === "flashcard") {
-        switch (e.key) {
-            case "ArrowLeft": prevFlashcard(); break;
-            case "ArrowRight": nextFlashcard(); break;
-            case " ": case "Enter": flipCard(); break;
+        if (e.key === " " || e.key === "Enter") {
+             if(isCardFront) flipCard();
+        }
+        // Keyboard Shortcuts for Ratings (1=Again, 2=Hard, 3=Good, 4=Easy)
+        if (!isCardFront) {
+            if (e.key === "1") rateCard(0);
+            if (e.key === "2") rateCard(3);
+            if (e.key === "3") rateCard(4);
+            if (e.key === "4") rateCard(5);
         }
     }
     
