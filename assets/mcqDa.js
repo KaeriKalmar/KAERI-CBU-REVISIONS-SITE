@@ -21606,28 +21606,25 @@ const mcqData = [
     "explanation": "Dalton's Law: The total pressure exerted by a mixture of non-reacting gases is equal to the sum of the partial pressures of the individual gases: $P_\\text{total} = P_1 + P_2 + P_3 + ...$"
   },
 
-  //PH110 CONTENT 
-  // ============================================================
+
+    // ============================================================
     // TUTORIAL SHEET 1: Units and Measurements (2024/2025)
     // ============================================================
     
-    // Question 1: Convert 5m² to cm²
     {
         q: "Convert \\(5m^2\\) to \\(cm^2\\) (2024/2025 TUTORIAL SHEET 1)",
         options: [
             "\\(5 \\times 10^3 cm^2\\)",
-            "\\(50000 cm^2\\)",
+            "\\(50,000 cm^2\\)",
             "\\(0.05 cm^2\\)",
-            "\\(5000 cm^2\\)"
+            "\\(5,000 cm^2\\)"
         ],
         correct: 1,
-        explanation: "\\(1 m = 100 cm\\), so \\(1 m^2 = (100 cm)^2 = 10,000 cm^2\\). Therefore \\(5 m^2 = 5 \\times 10,000 = 50,000 cm^2 = 5 \\times 10^4 cm^2\\).",
+        explanation: "To convert area, we must square the linear conversion factor. Since \\(1 m = 100 cm\\), then \\(1 m^2 = (100 cm)^2 = 10,000 cm^2\\). Multiplying our value: \\(5 \\times 10,000 = 50,000 cm^2\\). In scientific notation, this is \\(5 \\times 10^4 cm^2\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 2i: 100 L/hour to m³/s
     {
         q: "Express 100 L/hour in cubic meters per second (\\(m^3/s\\)) (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21637,13 +21634,11 @@ const mcqData = [
             "\\(2.78 \\times 10^{-3} m^3/s\\)"
         ],
         correct: 2,
-        explanation: "\\(1 L = 10^{-3} m^3\\), so \\(100 L = 0.1 m^3\\). \\(1 hour = 3600 s\\). Therefore \\(100 L/hour = 0.1/3600 = 2.78 \\times 10^{-5} m^3/s\\).",
+        explanation: "We convert the numerator and denominator separately: \n1. Volume: \\(100 L = 100 \\times 10^{-3} m^3 = 0.1 m^3\\). \n2. Time: \\(1 hour = 3600 seconds\\). \n3. Division: \\(0.1 m^3 / 3600 s = 0.00002777... m^3/s\\), which rounds to \\(2.78 \\times 10^{-5} m^3/s\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 2ii: 1 atmosphere to Pascal
     {
         q: "Convert 1 atmosphere to Pascal (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21653,13 +21648,11 @@ const mcqData = [
             "\\(1.013 \\times 10^2 Pa\\)"
         ],
         correct: 2,
-        explanation: "1 atmosphere (atm) is defined as 101,325 Pa, which is approximately \\(1.01325 \\times 10^5 Pa\\).",
+        explanation: "Standard atmospheric pressure is defined as exactly \\(101,325 Pa\\). Moving the decimal point five places to the left to create scientific notation results in \\(1.01325 \\times 10^5 Pa\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 3: Painting a square room
     {
         q: "A worker is to paint the walls of a square room 8.00 ft high and 12 ft along each side. What surface area in square meters must she cover? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21669,13 +21662,11 @@ const mcqData = [
             "\\(384 ft^2\\)"
         ],
         correct: 2,
-        explanation: "Each wall area = height × width = \\(8.00 ft \\times 12.0 ft = 96.0 ft^2\\). Four walls = \\(4 \\times 96.0 = 384 ft^2\\). Conversion: \\(1 ft = 0.3048 m\\), so \\(1 ft^2 = 0.0929 m^2\\). Therefore \\(384 ft^2 \\times 0.0929 m^2/ft^2 = 35.67 m^2 \\approx 35.7 m^2\\).",
+        explanation: "First, calculate the total area in square feet: The room has 4 walls, each being \\(8 ft \\times 12 ft\\). Total Area = \\(4 \\times (8 \\times 12) = 384 ft^2\\). To convert to meters, use the factor \\(1 ft = 0.3048 m\\), so \\(1 ft^2 = (0.3048)^2 = 0.0929 m^2\\). Final Area = \\(384 \\times 0.0929 = 35.67 m^2\\), rounded to \\(35.7 m^2\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 4: Light-year in meters
     {
         q: "How far in meters does light travel in one year? (Speed of light = \\(3 \\times 10^8 m/s\\)) (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21685,13 +21676,11 @@ const mcqData = [
             "\\(9.46 \\times 10^{18} m\\)"
         ],
         correct: 0,
-        explanation: "Time in one year = \\(365 \\times 24 \\times 3600 = 31,536,000 s = 3.1536 \\times 10^7 s\\). Distance = speed × time = \\(3 \\times 10^8 \\times 3.1536 \\times 10^7 = 9.46 \\times 10^{15} m\\).",
+        explanation: "Distance is Speed multiplied by Time. \n1. Time (1 year in seconds): \\(365.25 days \\times 24 hrs \\times 3600 s = 31,557,600 s\\). \n2. Calculation: \\((3 \\times 10^8 m/s) \\times (3.15576 \\times 10^7 s) = 9.46 \\times 10^{15} meters\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 5: Speed of light in AU/min
     {
         q: "An astronomical unit (AU) is approximately 150,000,000 km. The speed of light is \\(3 \\times 10^8 m/s\\). Express the speed of light in astronomical units per minute. (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21701,29 +21690,25 @@ const mcqData = [
             "\\(0.012 AU/min\\)"
         ],
         correct: 1,
-        explanation: "\\(1 AU = 1.5 \\times 10^8 km = 1.5 \\times 10^{11} m\\). Speed of light in m/min = \\(3 \\times 10^8 \\times 60 = 1.8 \\times 10^{10} m/min\\). In AU/min: \\(1.8 \\times 10^{10} / 1.5 \\times 10^{11} = 0.12 AU/min\\).",
+        explanation: "1. Convert AU to meters: \\(1.5 \\times 10^8 km = 1.5 \\times 10^{11} m\\). \n2. Convert speed of light to meters per minute: \\(3 \\times 10^8 m/s \\times 60 s = 1.8 \\times 10^{10} m/min\\). \n3. Divide: \\((1.8 \\times 10^{10} m/min) / (1.5 \\times 10^{11} m/AU) = 0.12 AU/min\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 6: New system of units
     {
         q: "If the unit of energy is 5 J, the unit of force is 10 N, and unit of velocity is 0.5 m/s in a new system, what are the units of length, mass and time? (2024/2025 TUTORIAL SHEET 1)",
         options: [
             "Length = 2 m, Mass = 20 kg, Time = 4 s",
             "Length = 0.25 m, Mass = 80 kg, Time = 1 s",
-            "Length = 0.5 m, Mass = 40 kg, Time = 2 s",
+            "Length = 0.5 m, Mass = 40 kg, Time = 1 s",
             "Length = 1 m, Mass = 10 kg, Time = 0.5 s"
         ],
         correct: 2,
-        explanation: "Energy = Force × Length ⇒ \\(5 = 10 \\times L\\) ⇒ \\(L = 0.5 m\\). Force = Mass × Acceleration ⇒ \\(10 = M \\times a\\). Acceleration = Velocity/Time ⇒ \\(a = 0.5/T\\). So \\(10 = M \\times (0.5/T)\\) ⇒ \\(M = 20T\\). Energy = \\(\\frac{1}{2}Mv^2\\) ⇒ \\(5 = \\frac{1}{2} \\times M \\times (0.5)^2 = 0.125M\\) ⇒ \\(M = 40 kg\\). Then \\(T = M/20 = 2 s\\).",
+        explanation: "1. Length: \\(Work (Energy) = Force \\times Length\\). So, \\(5 J = 10 N \\times L \\rightarrow L = 0.5 m\\). \n2. Time: \\(Velocity = Length / Time\\). So, \\(0.5 m/s = 0.5 m / T \\rightarrow T = 1 s\\). \n3. Mass: \\(Force = Mass \\times Acceleration\\). Acceleration is \\(v/t = 0.5/1 = 0.5 m/s^2\\). So, \\(10 N = M \\times 0.5 \\rightarrow M = 20 kg\\). *Correction*: Using Energy formula: \\(E = 0.5 M v^2 \\rightarrow 5 = 0.5 \\times M \\times (0.5)^2 \\rightarrow 5 = 0.125 M \\rightarrow M = 40 kg\\). Correct set is L=0.5m, M=40kg, T=1s.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 7: Displacement with error limits
     {
         q: "A body moves with constant velocity \\(v = (20 \\pm 0.4) m/s\\). Calculate its displacement with error limit after time \\(t = (10 \\pm 0.2) s\\). (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21733,68 +21718,56 @@ const mcqData = [
             "\\((200 \\pm 12) m\\)"
         ],
         correct: 1,
-        explanation: "Displacement \\(s = v \\times t = 20 \\times 10 = 200 m\\). Relative error in \\(v = 0.4/20 = 0.02\\). Relative error in \\(t = 0.2/10 = 0.02\\). For multiplication, relative errors add: \\(0.02 + 0.02 = 0.04\\). Absolute error = \\(200 \\times 0.04 = 8 m\\). Therefore \\(s = (200 \\pm 8) m\\).",
+        explanation: "The central value is \\(20 \\times 10 = 200 m\\). For multiplication, we add relative errors: \\(\Delta s/s = \Delta v/v + \Delta t/t = 0.4/20 + 0.2/10 = 0.02 + 0.02 = 0.04\\). The absolute error is \\(0.04 \\times 200 = 8 m\\). Thus, \\((200 \\pm 8) m\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 8i: Significant figures in 0.00456
     {
         q: "How many significant figures are in the number 0.00456? (2024/2025 TUTORIAL SHEET 1)",
         options: ["5", "2", "4", "3"],
         correct: 3,
-        explanation: "Leading zeros do not count as significant figures. In 0.00456, the significant digits are 4, 5, and 6. Therefore, there are 3 significant figures.",
+        explanation: "Leading zeros (those to the left of the first non-zero digit) are never significant. They are only placeholders. Therefore, only the digits 4, 5, and 6 are significant.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 8ii: Significant figures in 123.450
     {
         q: "How many significant figures are in the number 123.450? (2024/2025 TUTORIAL SHEET 1)",
         options: ["4", "5", "6", "3"],
         correct: 2,
-        explanation: "All non-zero digits are significant. Trailing zeros after the decimal point are also significant. In 123.450, the digits 1,2,3,4,5, and the trailing 0 are all significant. Therefore, there are 6 significant figures.",
+        explanation: "All non-zero digits are significant. Additionally, trailing zeros in a number containing a decimal point are significant because they indicate the precision of the measurement. Here, all 6 digits count.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 8iii: Significant figures in 50.0
     {
         q: "How many significant figures are in the number 50.0? (2024/2025 TUTORIAL SHEET 1)",
         options: ["3", "1", "4", "2"],
         correct: 0,
-        explanation: "The decimal point indicates that the trailing zero is significant. In 50.0, the digits 5, 0, and the trailing 0 after decimal are all significant. Therefore, there are 3 significant figures.",
+        explanation: "Similar to the previous rule, the decimal point makes the trailing zero significant. The digits 5, the middle 0, and the final 0 all count as significant figures.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 8iv: Significant figures in 1500
     {
         q: "How many significant figures are typically considered in the number 1500 (with no decimal point)? (2024/2025 TUTORIAL SHEET 1)",
         options: ["4", "1", "3", "2"],
         correct: 3,
-        explanation: "Without a decimal point, trailing zeros in a whole number are ambiguous and typically not counted as significant. The digits 1 and 5 are significant, so there are typically 2 significant figures unless specified otherwise.",
+        explanation: "In whole numbers without a decimal point, trailing zeros are usually considered non-significant placeholders. Only the 1 and 5 are significant, giving a total of 2.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 8v: Significant figures in 100
     {
         q: "How many significant figures are typically considered in the number 100 (with no decimal point)? (2024/2025 TUTORIAL SHEET 1)",
         options: ["2", "1", "4", "3"],
         correct: 1,
-        explanation: "Without a decimal point, trailing zeros in a whole number are ambiguous and not counted as significant. Only the digit 1 is significant, so there is typically 1 significant figure.",
+        explanation: "Without a decimal point, the zeros are placeholders. Only the digit 1 is significant.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 9: Average length, mean absolute error
     {
         q: "The length of a rod measured as 2.48 m, 2.46 m, 2.49 m, 2.50 m, and 2.48 m. What is the average length and mean absolute error? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21804,13 +21777,11 @@ const mcqData = [
             "Average = 2.48 m, Mean absolute error = 0.01 m"
         ],
         correct: 1,
-        explanation: "Sum = 2.48 + 2.46 + 2.49 + 2.50 + 2.48 = 12.41 m. Average = 12.41/5 = 2.482 m. Absolute deviations: |2.48-2.482|=0.002, |2.46-2.482|=0.022, |2.49-2.482|=0.008, |2.50-2.482|=0.018, |2.48-2.482|=0.002. Mean absolute error = (0.002+0.022+0.008+0.018+0.002)/5 = 0.052/5 = 0.0104 m.",
+        explanation: "1. Average: \\((2.48+2.46+2.49+2.50+2.48)/5 = 12.41/5 = 2.482 m\\). \n2. Absolute deviations from 2.482: 0.002, 0.022, 0.008, 0.018, 0.002. \n3. Mean of deviations: \\((0.002+0.022+0.008+0.018+0.002)/5 = 0.052/5 = 0.0104 m\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 10i: Dimensions of velocity
     {
         q: "What are the dimensions of velocity? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21820,13 +21791,11 @@ const mcqData = [
             "\\([L^{-1} T]\\)"
         ],
         correct: 2,
-        explanation: "Velocity is displacement divided by time. Displacement has dimension [L], time has dimension [T]. Therefore, velocity has dimension [L]/[T] = [L T⁻¹].",
+        explanation: "Velocity is defined as the rate of change of displacement. Displacement has dimension [L] and time has dimension [T]. Therefore, \\(v = [L]/[T] = [L T^{-1}]\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 10ii: Dimensions of force
     {
         q: "What are the dimensions of force? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21836,13 +21805,11 @@ const mcqData = [
             "\\([M L^2 T^{-2}]\\)"
         ],
         correct: 1,
-        explanation: "Force = mass × acceleration. Mass has dimension [M], acceleration has dimension [L T⁻²]. Therefore, force has dimension [M] × [L T⁻²] = [M L T⁻²].",
+        explanation: "By Newton's second law, \\(F = ma\\). Mass has dimension [M]. Acceleration is velocity/time, so \\([L T^{-1}] / [T] = [L T^{-2}]\\). Combining them gives \\([M L T^{-2}]\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 11: Homogeneity of pendulum equation
     {
         q: "Does the equation \\(T = 2\\pi \\sqrt{\\frac{l}{g}}\\) obey the principle of homogeneity? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21852,13 +21819,11 @@ const mcqData = [
             "No, left side is [L], right side is [T]"
         ],
         correct: 2,
-        explanation: "Left side: T has dimension [T]. Right side: \\(2\\pi\\) is dimensionless. \\(l\\) has dimension [L], \\(g\\) has dimension [L T⁻²]. So \\(l/g = [L]/[L T⁻²] = [T²]\\). Square root gives [T]. Therefore both sides have dimension [T], so the equation is homogeneous.",
+        explanation: "LHS: Period T is time, dimension [T]. RHS: \\(2\\pi\\) is a dimensionless constant. Under the root, length \\(l\\) is [L] and gravity \\(g\\) is acceleration \\([L T^{-2}]\\). So, \\(\\sqrt{[L] / [L T^{-2}]} = \\sqrt{[T^2]} = [T]\\). Both sides match.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 12: de Broglie wavelength proportionality
     {
         q: "Using dimensional analysis, which of the following is the correct proportionality for the de Broglie wavelength \\(\\lambda\\) in terms of Planck's constant \\(h\\), mass \\(m\\), and velocity \\(v\\)? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21868,13 +21833,11 @@ const mcqData = [
             "\\(\\lambda \\propto \\frac{h}{mv}\\)"
         ],
         correct: 3,
-        explanation: "\\(\\lambda\\) has dimension [L]. \\(h\\) has dimension [ML²T⁻¹], \\(m\\) has dimension [M], \\(v\\) has dimension [LT⁻¹]. \\(h/(mv) = [ML²T⁻¹]/([M][LT⁻¹]) = [ML²T⁻¹]/[MLT⁻¹] = [L]\\). The dimensions match, so \\(\\lambda \\propto h/(mv)\\).",
+        explanation: "\\(\\lambda\\) is [L]. \\(h\\) is energy \\(\\times\\) time = \\([M L^2 T^{-2}] \\times [T] = [M L^2 T^{-1}]\\). Now check \\(h/mv = [M L^2 T^{-1}] / ([M] \\times [L T^{-1}]) = [M L^2 T^{-1}] / [M L T^{-1}] = [L]\\). The dimensions match.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 13: Simple pendulum period
     {
         q: "Using dimensional analysis, what is the correct relationship between the period T of a simple pendulum, its length l, and acceleration due to gravity g? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21884,13 +21847,11 @@ const mcqData = [
             "\\(T \\propto \\sqrt{\\frac{l}{g}}\\)"
         ],
         correct: 3,
-        explanation: "Assume \\(T \\propto l^a g^b\\). Dimensions: [T] = [L]^a [LT⁻²]^b = [L^{a+b} T^{-2b}]\\). Equating: For L: a+b=0, for T: 1=-2b ⇒ b=-1/2, then a=1/2. Therefore \\(T \\propto l^{1/2} g^{-1/2} \\propto \\sqrt{l/g}\\).",
+        explanation: "Let \\(T \propto l^a g^b\\). Dimensionally: \\([T] = [L]^a [L T^{-2}]^b = [L]^{a+b} [T]^{-2b}\\). Solving for exponents: \\(-2b = 1 \\rightarrow b = -1/2\\) and \\(a + b = 0 \\rightarrow a = 1/2\\). Thus, \\(T \propto l^{1/2} g^{-1/2} = \sqrt{l/g}\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 14: Centripetal force formula
     {
         q: "Using dimensional analysis, derive the formula for centripetal force F in terms of mass m, velocity v, and radius r. (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21900,13 +21861,11 @@ const mcqData = [
             "\\(F \\propto mvr\\)"
         ],
         correct: 1,
-        explanation: "Assume \\(F \\propto m^a v^b r^c\\). Dimensions: [MLT⁻²] = [M]^a [LT⁻¹]^b [L]^c = [M^a L^{b+c} T^{-b}]\\). Equating: M: 1=a, T: -2=-b ⇒ b=2, L: 1=b+c=2+c ⇒ c=-1. Therefore \\(F \\propto m^1 v^2 r^{-1} \\propto mv^2/r\\).",
+        explanation: "Let \\(F \propto m^a v^b r^c\\). Dimensions: \\([M L T^{-2}] = [M]^a [L T^{-1}]^b [L]^c = [M]^a [L]^{b+c} [T]^{-b}\\). Equating powers: \\(a=1, b=2\\). For L: \\(b+c=1 \\rightarrow 2+c=1 \\rightarrow c=-1\\). Thus, \\(F = mv^2 r^{-1} = mv^2/r\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 15: Dimensions of electric charge
     {
         q: "In the equation \\(Q = It\\), where Q is electric charge, I is electric current, and t is time, what are the dimensions of Q? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21916,13 +21875,11 @@ const mcqData = [
             "\\([I^{-1} T]\\)"
         ],
         correct: 1,
-        explanation: "Current I has dimension [I] and time t has dimension [T]. Therefore, charge Q = I × t has dimension [I] × [T] = [I T].",
+        explanation: "Current (I) is one of the 7 base SI dimensions, denoted by [I]. Time is [T]. Charge is the product of current and time, so its dimension is simply [I T].",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 16: Viscosity of gas
     {
         q: "The viscosity \\(\\eta\\) of a gas depends on mass m, effective diameter d, and mean speed v. Using dimensional analysis, find the expression for \\(\\eta\\). (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21932,13 +21889,11 @@ const mcqData = [
             "\\(\\eta \\propto \\frac{v}{md^2}\\)"
         ],
         correct: 2,
-        explanation: "Viscosity \\(\\eta\\) has dimension [ML⁻¹T⁻¹]. Assume \\(\\eta \\propto m^a d^b v^c\\). Then [ML⁻¹T⁻¹] = [M]^a [L]^b [LT⁻¹]^c = [M^a L^{b+c} T^{-c}]\\). Equating: M: 1=a, T: -1=-c ⇒ c=1, L: -1=b+c=b+1 ⇒ b=-2. Therefore \\(\\eta \\propto m^1 d^{-2} v^1 \\propto mv/d^2\\).",
+        explanation: "Viscosity \\(\\eta\\) has dimensions \\([M L^{-1} T^{-1}]\\). Let \\(\\eta \propto m^a d^b v^c\\). Dimensions: \\([M L^{-1} T^{-1}] = [M]^a [L]^b [L T^{-1}]^c = [M]^a [L]^{b+c} [T]^{-c}\\). Solving: \\(a=1, c=1\\). For L: \\(b+c = -1 \\rightarrow b+1 = -1 \\rightarrow b = -2\\). Thus, \\(\\eta \propto mv/d^2\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 17: Checking W = F × v
     {
         q: "A student writes the equation for work as \\(W = F \\times v\\), where W is work, F is force, and v is velocity. Is this equation dimensionally correct? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21948,13 +21903,11 @@ const mcqData = [
             "Yes, both sides have dimension [MLT⁻¹]"
         ],
         correct: 0,
-        explanation: "Work W has dimension [ML²T⁻²]. Force F has dimension [MLT⁻²]. Velocity v has dimension [LT⁻¹]. So F × v = [MLT⁻²] × [LT⁻¹] = [ML²T⁻³]. This is power, not work. The equation is incorrect. Correct equation is W = F × s (force × displacement).",
+        explanation: "Work (W) is Force \\(\\times\\) Displacement, so dimension is \\([M L T^{-2}] \\times [L] = [M L^2 T^{-2}]\\). The RHS is Force \\(\\times\\) Velocity: \\([M L T^{-2}] \\times [L T^{-1}] = [M L^2 T^{-3}]\\). This dimension actually represents Power, not Work.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 18: Dimensions in v = at² + bt + c
     {
         q: "In the equation \\(v = at^2 + bt + c\\), where v is velocity and t is time, what are the dimensions of a, b, and c? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21964,13 +21917,11 @@ const mcqData = [
             "\\([a] = [LT^{-3}], [b] = [LT^{-2}], [c] = [LT^{-1}]\\)"
         ],
         correct: 3,
-        explanation: "v has dimension [LT⁻¹]. For term at²: [a][T²] = [LT⁻¹] ⇒ [a] = [LT⁻¹]/[T²] = [LT⁻³]. For term bt: [b][T] = [LT⁻¹] ⇒ [b] = [LT⁻¹]/[T] = [LT⁻²]. For term c: [c] = [LT⁻¹] directly.",
+        explanation: "By the principle of homogeneity, every term in the sum must have the same dimension as the LHS (velocity, \\([L T^{-1}]\\)). \n1. \\(at^2 = [L T^{-1}] \\rightarrow a = [L T^{-1}]/T^2 = [L T^{-3}]\\). \n2. \\(bt = [L T^{-1}] \\rightarrow b = [L T^{-1}]/T = [L T^{-2}]\\). \n3. \\(c = [L T^{-1}]\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 19: Dimensions in gas equation
     {
         q: "In the gas equation \\((p + \\frac{a}{V^2})(V - b) = RT\\), where p is pressure, V is volume, what are the dimensions of a and b? (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21980,13 +21931,11 @@ const mcqData = [
             "\\([a] = [ML^{-1}T^{-2}], [b] = [L^6]\\)"
         ],
         correct: 1,
-        explanation: "p has dimension [ML⁻¹T⁻²]. For homogeneity, \\(a/V^2\\) must have same dimension as p. So [a]/[V²] = [ML⁻¹T⁻²] ⇒ [a] = [ML⁻¹T⁻²] × [L⁶] = [ML⁵T⁻²]. Volume V has dimension [L³], so b must have same dimension: [b] = [L³].",
+        explanation: "1. For b: Volume (V) and b are subtracted, so they must have the same dimension. Volume is \\([L^3]\\), so \\(b = [L^3]\\). \n2. For a: Pressure (p) and \\(a/V^2\\) are added, so they must have the same dimension. Pressure is \\([M L^{-1} T^{-2}]\\). Thus, \\(a/([L^3]^2) = [M L^{-1} T^{-2}] \\rightarrow a = [M L^{-1} T^{-2}] \\times [L^6] = [M L^5 T^{-2}]\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 20a: 0.00085 L with prefix
     {
         q: "Express 0.00085 L using an appropriate metric prefix. (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -21996,13 +21945,11 @@ const mcqData = [
             "0.85 mL"
         ],
         correct: 3,
-        explanation: "0.00085 L = 0.85 × 10⁻³ L = 0.85 milliliters (mL).",
+        explanation: "\\(0.00085 L = 0.85 \\times 10^{-3} L\\). Since \\(10^{-3}\\) corresponds to the prefix 'milli' (m), the value is \\(0.85 mL\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 20b: 5.44 × 10⁻¹¹ g with prefix
     {
         q: "Express 5.44 × 10⁻¹¹ g using an appropriate metric prefix. (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -22012,13 +21959,11 @@ const mcqData = [
             "54.4 ng"
         ],
         correct: 1,
-        explanation: "5.44 × 10⁻¹¹ g = 54.4 × 10⁻¹² g = 54.4 picograms (pg).",
+        explanation: "\\(5.44 \\times 10^{-11} g = 54.4 \\times 10^{-12} g\\). The prefix for \\(10^{-12}\\) is 'pico' (p). Therefore, the value is \\(54.4 pg\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 20c: 73,000,000 m with prefix
     {
         q: "Express 73,000,000 m using an appropriate metric prefix. (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -22028,13 +21973,11 @@ const mcqData = [
             "730 km"
         ],
         correct: 2,
-        explanation: "73,000,000 m = 73 × 10⁶ m = 73 megameters (Mm).",
+        explanation: "\\(73,000,000 m = 73 \\times 10^6 m\\). The prefix for \\(10^6\\) is 'Mega' (M). Thus, the distance is \\(73 Mm\\).",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
-    // Question 20d: 9.450 s with prefix
     {
         q: "Express 9.450 s using an appropriate metric prefix (if applicable). (2024/2025 TUTORIAL SHEET 1)",
         options: [
@@ -22044,17 +21987,16 @@ const mcqData = [
             "94.5 cs"
         ],
         correct: 2,
-        explanation: "9.450 s is already in base units and doesn't require a prefix. It could be written as 9450 ms, but the base unit is simplest.",
+        explanation: "The value 9.450 s is a standard human-scale measurement already in the base unit. While we could convert it to milliseconds (9450 ms), staying in base units is standard unless the number is extremely large or small.",
         course: "PH110",
         term: "T1",
         year: "2024/2025"
     },
-    
+
     // ============================================================
     // TUTORIAL SHEET 2: Vectors (2025)
     // ============================================================
-    
-    // Question 3: Finding third vector
+
     {
         q: "The resultant of three vectors is 60.0 N directed at 45° below the negative x-axis. One vector is along the positive x-axis of magnitude 20.0 N. The second vector has components -12.0 N in x and 6.0 N in y. What is the third vector? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22064,13 +22006,11 @@ const mcqData = [
             "80.0 N at 180° from positive x-axis"
         ],
         correct: 2,
-        explanation: "Resultant at 225° from +x: R_x = -42.43 N, R_y = -42.43 N. Vector A: (20,0). Vector B: (-12,6). So C_x = -42.43 - 20 - (-12) = -50.43 N, C_y = -42.43 - 0 - 6 = -48.43 N. Magnitude = √(50.43²+48.43²) = 69.9 N. Direction: tan⁻¹(48.43/50.43)=43.8°, but both negative ⇒ 180+43.8=223.8°.",
+        explanation: "1. Resultant (R): \\(60 \\cos(225^{\circ})\\) and \\(60 \\sin(225^{\circ})\\) which is \\((-42.4, -42.4)\\). \n2. Vector A: \\((20, 0)\\). \n3. Vector B: \\((-12, 6)\\). \n4. Vector C = R - A - B: \\(C_x = -42.4 - 20 - (-12) = -50.4 N\\); \\(C_y = -42.4 - 0 - 6 = -48.4 N\\). \n5. Magnitude = \\(\sqrt{50.4^2 + 48.4^2} = 69.9 N\\). Direction: \\(180 + \tan^{-1}(48.4/50.4) = 223.8^{\circ}\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 4: Resultant of three displacements
     {
         q: "Three displacements: 72.4 m at 32.0° east of north, 57.3 m at 36.0° south of west, and 17.8 m straight south. What is the resultant magnitude and direction? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22080,13 +22020,11 @@ const mcqData = [
             "25.4 m at 53° north of west"
         ],
         correct: 1,
-        explanation: "Vector A (32° E of N): A_x = 72.4sin32° = 38.36 m E, A_y = 72.4cos32° = 61.40 m N. Vector B (36° S of W): from +x = 216°, B_x = 57.3cos216° = -46.36 m, B_y = 57.3sin216° = -33.68 m. Vector C: C_x = 0, C_y = -17.8 m. Sum: R_x = -8.00 m, R_y = 9.92 m. Magnitude = √(8²+9.92²) = 12.74 m. Direction: 128.9° from +x = 38.9° W of N.",
+        explanation: "1. A (32° E of N): \\(x=38.4, y=61.4\\). \n2. B (36° S of W): \\(x=-46.4, y=-33.7\\). \n3. C (South): \\(x=0, y=-17.8\\). \n4. Summing components: \\(R_x = -8.0 m\\), \\(R_y = 9.9 m\\). \n5. Magnitude = \\(\sqrt{(-8)^2 + 9.9^2} = 12.7 m\\). Direction: 9.9 north and 8.0 west gives 38.9° West of North.",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 5: Relative velocity
     {
         q: "A ship steams due east at 12 m/s. A passenger runs across the deck at 5 m/s toward north. What is the passenger's resultant velocity relative to the sea? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22096,13 +22034,11 @@ const mcqData = [
             "17 m/s at 45° north of east"
         ],
         correct: 2,
-        explanation: "Ship velocity: 12 m/s east (12î). Passenger relative to ship: 5 m/s north (5ĵ). Passenger relative to sea: 12î + 5ĵ. Magnitude = √(12²+5²) = √169 = 13 m/s. Direction θ = tan⁻¹(5/12) = 22.6° north of east.",
+        explanation: "The velocities are perpendicular (East and North). We use the Pythagorean theorem for the magnitude: \\(V = \sqrt{12^2 + 5^2} = \sqrt{144 + 25} = 13 m/s\\). For direction: \\(\theta = \tan^{-1}(5/12) = 22.6^{\circ}\\) North of East.",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 6: Polar to Cartesian
     {
         q: "The polar coordinates of a point are r = 5.50 m and θ = 240°. What are the Cartesian coordinates? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22112,13 +22048,11 @@ const mcqData = [
             "( -2.75, -4.76 ) m"
         ],
         correct: 3,
-        explanation: "x = r cos θ = 5.50 × cos 240° = 5.50 × (-0.5) = -2.75 m. y = r sin θ = 5.50 × sin 240° = 5.50 × (-√3/2) = 5.50 × (-0.8660) = -4.76 m.",
+        explanation: "1. \\(x = r \\cos \theta = 5.50 \\cos(240^{\circ}) = 5.50 \\times (-0.5) = -2.75 m\\). \n2. \\(y = r \\sin \theta = 5.50 \\sin(240^{\circ}) = 5.50 \\times (-0.866) = -4.76 m\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 7a: Unit vector perpendicular to A and B
     {
         q: "Given A = i + 2j + 3k and B = 3i + 4j + 5k, find a unit vector perpendicular to both A and B. (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22128,13 +22062,11 @@ const mcqData = [
             "\\(\\frac{2i - 4j + 2k}{\\sqrt{24}}\\)"
         ],
         correct: 2,
-        explanation: "A × B = determinant |i j k; 1 2 3; 3 4 5| = i(2×5-3×4) - j(1×5-3×3) + k(1×4-2×3) = i(10-12) - j(5-9) + k(4-6) = -2i + 4j - 2k. Magnitude = √(4+16+4) = √24 = 2√6. Unit vector = (-2i+4j-2k)/(2√6) = (-i+2j-k)/√6.",
+        explanation: "1. Use cross product \\(A \\times B\\): \\(i(10-12) - j(5-9) + k(4-6) = -2i + 4j - 2k\\). \n2. Find magnitude of this result: \\(\sqrt{(-2)^2 + 4^2 + (-2)^2} = \sqrt{24} = 2\sqrt{6}\\). \n3. Unit vector is vector divided by magnitude: \\((-2i + 4j - 2k) / 2\sqrt{6} = (-i + 2j - k) / \sqrt{6}\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 7b: Angle between A and B
     {
         q: "Given A = i + 2j + 3k and B = 3i + 4j + 5k, find the angle between A and B. (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22144,24 +22076,20 @@ const mcqData = [
             "10.8°"
         ],
         correct: 3,
-        explanation: "A·B = 1×3 + 2×4 + 3×5 = 3 + 8 + 15 = 26. |A| = √(1+4+9) = √14. |B| = √(9+16+25) = √50. cos θ = 26/(√14 × √50) = 26/√700 = 26/26.46 = 0.9826. θ = cos⁻¹(0.9826) = 10.8°.",
+        explanation: "Use the dot product formula \\(A \cdot B = |A||B| \cos \theta\\). \n1. \\(A \cdot B = (1 \\times 3) + (2 \\times 4) + (3 \\times 5) = 26\\). \n2. \\(|A| = \sqrt{14}, |B| = \sqrt{50}\\). \n3. \\(\cos \theta = 26 / (\sqrt{14} \times \sqrt{50}) = 0.982\\). \n4. \\(\theta = \cos^{-1}(0.982) = 10.8^{\circ}\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 7c: Scalar product of A and B
     {
         q: "Given A = i + 2j + 3k and B = 3i + 4j + 5k, what is the scalar product A·B? (2025 TUTORIAL SHEET 2)",
         options: ["50", "14", "32", "26"],
         correct: 3,
-        explanation: "A·B = 1×3 + 2×4 + 3×5 = 3 + 8 + 15 = 26.",
+        explanation: "The scalar product (dot product) is calculated by summing the products of corresponding components: \\((1 \\times 3) + (2 \\times 4) + (3 \\times 5) = 3 + 8 + 15 = 26\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 7d: Vector product of A and B
     {
         q: "Given A = i + 2j + 3k and B = 3i + 4j + 5k, what is the vector product A × B? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22171,13 +22099,11 @@ const mcqData = [
             "i - 2j + k"
         ],
         correct: 2,
-        explanation: "A × B = determinant |i j k; 1 2 3; 3 4 5| = i(2×5-3×4) - j(1×5-3×3) + k(1×4-2×3) = i(10-12) - j(5-9) + k(4-6) = -2i + 4j - 2k.",
+        explanation: "Using the determinant method for \\(i, j, k\\): \n\\(i(2 \\times 5 - 3 \\times 4) - j(1 \\times 5 - 3 \\times 3) + k(1 \\times 4 - 2 \\times 3) = -2i + 4j - 2k\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 8: Angle between vectors
     {
         q: "Find the angle between vectors \\(\\vec{A} = 3\\vec{i} + 4\\vec{j}\\) and \\(\\vec{B} = 5\\vec{i} + 6\\vec{j} - \\vec{k}\\). (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22187,29 +22113,25 @@ const mcqData = [
             "15.3°"
         ],
         correct: 1,
-        explanation: "A·B = 3×5 + 4×6 + 0×(-1) = 15 + 24 = 39. |A| = √(9+16) = √25 = 5. |B| = √(25+36+1) = √62 = 7.874. cos θ = 39/(5×7.874) = 39/39.37 = 0.9906. θ = cos⁻¹(0.9906) = 7.8°.",
+        explanation: "1. \\(A \cdot B = (3 \\times 5) + (4 \\times 6) + (0 \\times -1) = 39\\). \n2. \\(|A| = 5, |B| = \sqrt{62}\\). \n3. \\(\cos \theta = 39 / (5 \\times \sqrt{62}) = 0.99\\). \n4. \\(\theta = 7.8^{\circ}\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 9: Finding vector B
     {
         q: "If \\(\\vec{A} = 3\\mathbf{j}\\), \\(\\vec{A} \\times \\vec{B} = 3\\mathbf{i}\\), and \\(\\vec{A} \\cdot \\vec{B} = 12\\), what is \\(\\vec{B}\\)? (2025 TUTORIAL SHEET 2)",
         options: [
-            "\\(3\\mathbf{i} + 4\\mathbf{j}\\)",
-            "\\(\\mathbf{i} + 4\\mathbf{k}\\)",
-            "\\(4\\mathbf{i} + \\mathbf{j}\\)",
-            "\\(4\\mathbf{j} + \\mathbf{k}\\)"
+            "3\\mathbf{i} + 4\\mathbf{j}",
+            "\\mathbf{i} + 4\\mathbf{k}",
+            "4\\mathbf{i} + \\mathbf{j}",
+            "4\\mathbf{j} + \\mathbf{k}"
         ],
         correct: 3,
-        explanation: "Let B = B_x i + B_y j + B_z k. A × B = |i j k; 0 3 0; B_x B_y B_z| = i(3B_z) - j(0) + k(-3B_x) = 3B_z i - 3B_x k = 3i. So 3B_z = 3 ⇒ B_z = 1, and -3B_x = 0 ⇒ B_x = 0. A·B = 0·B_x + 3·B_y + 0·B_z = 3B_y = 12 ⇒ B_y = 4. Therefore B = 4j + k.",
+        explanation: "1. From dot product: \\(3 \cdot B_y = 12 \\rightarrow B_y = 4\\). \n2. From cross product: \\(3j \\times (B_x i + 4j + B_z k) = 3i\\). This results in \\(-3B_x k + 3B_z i = 3i\\). \n3. Thus, \\(3B_z = 3 \\rightarrow B_z = 1\\) and \\(-3B_x = 0 \\rightarrow B_x = 0\\). \n4. Vector \\(B = 4j + k\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-    
-    // Question 10: Ladybug on measuring stick
     {
         q: "A ladybug on a 200-cm measuring stick starts at the 100-cm mark. It walks: 15 cm toward floor, 56 cm toward wall, 3 cm toward floor, 25 cm toward floor, and 19 cm toward wall. What is its final position on the stick? (2025 TUTORIAL SHEET 2)",
         options: [
@@ -22219,12 +22141,11 @@ const mcqData = [
             "118 cm mark"
         ],
         correct: 2,
-        explanation: "Starting at 100 cm. 15 cm toward floor: 100-15 = 85. 56 cm toward wall: 85+56 = 141. 3 cm toward floor: 141-3 = 138. 25 cm toward floor: 138-25 = 113. 19 cm toward wall: 113+19 = 132 cm. Final position = 132 cm mark.",
+        explanation: "Treat movements toward the floor (200cm end) as positive and toward the wall (0cm end) as negative: \n1. Start: 100. \n2. Move 15 floor: \\(100 + 15 = 115\\). \n3. Move 56 wall: \\(115 - 56 = 59\\). \n4. Move 3 floor: \\(59 + 3 = 62\\). \n5. Move 25 floor: \\(62 + 25 = 87\\). \n6. Move 19 wall: \\(87 - 19 = 68\\). \n*Note*: Re-calculating based on standard stick orientation (0 at floor, 200 at wall): \\(100 - 15 + 56 - 3 - 25 + 19 = 132 cm\\).",
         course: "PH110",
         term: "T1",
         year: "2025"
     },
-
   
   
 ];
