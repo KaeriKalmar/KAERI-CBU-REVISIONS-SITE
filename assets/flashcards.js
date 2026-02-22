@@ -1,5 +1,8 @@
 const flashcards = {
-  "MODULE 1: INTRODUCTION (BEING A DIGITAL CITIZEN: AT HOME, SCHOOL, AND WORK)": [
+"MODULE 1: INTRODUCTION (BEING A DIGITAL CITIZEN: AT HOME, SCHOOL, AND WORK)": [
+  // ============================================================
+  // DIGITAL LITERACY & CORE CONCEPTS (Pages 3-4)
+  // ============================================================
   {
     "front": "What is digital literacy?",
     "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
@@ -8,207 +11,597 @@ const flashcards = {
     "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "How does society rely on technology?",
-    "back": "Society relies on technology in various aspects, including daily tasks, professional work, education, and healthcare.",
+    "front": "What is a digital citizen?",
+    "back": "A digital citizen is a person familiar with how to use technology to become an educated and productive member of the digital world.",
     "course": "CS110",
     "term": "T1",
     "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are ways to protect your personal information?",
-    "back": "Ways to protect personal information include not carrying passwords, being cautious about sharing personal information online, and regularly reviewing financial statements.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What is the role of technology in the professional world?",
-    "back": "In the professional world, technology is used to connect employees, communicate, enhance productivity with software, manage supply chains, and for computer-aided manufacturing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "How can technology be used to find a career?",
-    "back": "Technology can be used to find a career by creating online profiles on professional networking sites, using job search websites, and preparing digital résumés and cover letters.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What is convergence?",
-    "back": "(Information not explicitly detailed in the provided content for Unit 1, but generally refers to the merging of distinct technologies, industries, or devices into a unified whole).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are the legal and ethical responsibilities of a digital citizen?",
-    "back": "Legal and ethical responsibilities include adhering to laws like the Americans with Disabilities Act (ADA) and the Individuals with Disabilities Education Act (IDEA) regarding accessibility, being aware of digital security risks, and acting ethically regarding information accuracy and intellectual property.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are some uses of assistive technologies?",
-    "back": "Assistive technologies help users with disabilities; for example, speech recognition programs allow verbal input, graphic organizers help structure information, and audio books read information aloud.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "Who is a digital citizen?",
-    "back": "A digital citizen is a person familiar with how to use technology to become an effective and responsible participant in society.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
   },
   {
     "front": "What is a computer?",
-    "back": "A computer is an electronic device operating under the control of instructions stored in its own memory, which can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.",
+    "back": "A computer is an electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information for future use.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What does memory consist of in a computer?",
-    "back": "Memory consists of electronic components that store instructions, data, and the results of processing.",
+    "front": "What is memory in the context of a computer?",
+    "back": "Memory consists of electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
+  
+  // ============================================================
+  // NETWORKS & INTERNET (Page 4)
+  // ============================================================
   {
     "front": "What is the Internet?",
-    "back": "The Internet is a global collection of millions of connected computers and devices that exchange information. It is the largest Wide Area Network (WAN).",
+    "back": "The Internet is a global collection of millions of computers linked together to share information.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
     "front": "What is a network?",
-    "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system, allowing them to share resources.",
+    "back": "A network is a collection of two or more computers connected to share resources.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
     "front": "What is Wi-Fi?",
-    "back": "Wi-Fi is a wireless technology that uses radio waves to provide high-speed Internet and network connections.",
+    "back": "Wi-Fi (short for wireless fidelity) is a wireless data network technology that provides high-speed data connections and is not attached to any device. It is used for mobile devices.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What is a server in a network context?",
-    "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
+    "front": "What is a server?",
+    "back": "A server is a powerful, high-capacity computer you access using the Internet or other networks; it stores files and 'serves' them, that is, makes the files available to users; usually grouped at a location called a data center.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // ONLINE SOCIAL NETWORKS & BIG DATA (Page 5)
+  // ============================================================
+  {
+    "front": "What is an online social network?",
+    "back": "An online social network is an online community where users can share their interests, ideas, stories, photos, music, and videos with other registered users via a social networking website, such as Facebook, Google Plus, Twitter, Instagram, or Snapchat.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What does \"big data\" refer to?",
-    "back": "\"Big data\" refers to large, complex data sources that can be analyzed to reveal patterns, trends, and associations, especially relating to human behavior and interactions.",
+    "front": "What is big data?",
+    "back": "Big data is a term that refers to the large and complex data sources that defy easy management with traditional data processing methods.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // TECHNOLOGY IMPACTS SOCIETY - HISTORY (Page 7)
+  // ============================================================
+  {
+    "front": "What technology did first-generation computers use?",
+    "back": "The first generation of computers used vacuum tubes, which are cylindrical glass tubes that control the flow of electrons.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "How is technology used in daily tasks like public transportation?",
-    "back": "Technology is used in public transportation for tasks like scanning tickets, optimizing routes for efficiency, and GPS navigation.",
+    "front": "What were the two key examples of first-generation computers?",
+    "back": "ENIAC (Electronic Numerical Integrator and Computer) and UNIVAC (Universal Automatic Computer).",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts you"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What technology did the first generation of computers use, and what were its limitations?",
-    "back": "The first generation of computers used vacuum tubes, which made them very large, consumed significant power, and generated a lot of heat, leading to frequent breakdowns.",
+    "front": "What were the four constraints of first-generation computers?",
+    "back": "Their use and availability were constrained by: their large size, the amount of power they consumed, the heat they generated, and how quickly they wore out.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What significant computer was introduced by Apple Computer Corporation in 1978?",
-    "back": "The Apple II, a groundbreaking microcomputer that popularized personal computing with color graphics and an open architecture.",
+    "front": "What was the Apple II and when was it introduced?",
+    "back": "In 1978, Steve Jobs and Steve Wozniak of Apple Computer Corporation introduced the Apple II, a preassembled computer with color graphics and popular spreadsheet software called VisiCalc.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
+  
+  // ============================================================
+  // INTERNET OF THINGS (IoT) (Pages 9-14)
+  // ============================================================
   {
     "front": "What is the Internet of Things (IoT)?",
-    "back": "The Internet of Things (IoT) is a trend where common devices and appliances are connected to the Internet, enabling them to send and receive data.",
+    "back": "The Internet of Things (IoT) is an environment in which processors are embedded in every product imaginable (things), and these things, in turn, communicate with one another via the Internet or wireless networks.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
     "front": "What are IoT-enabled devices often called and why?",
-    "back": "IoT-enabled devices are often called smart devices because they can communicate with other devices and make decisions.",
+    "back": "IoT-enabled devices are often referred to as smart devices because of their capability to communicate, locate, and predict. Smart devices often have associated apps that control and interact with them.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What are embedded computers, and what is their function?",
-    "back": "Embedded computers are special-purpose computers that function as a component in a larger product. They are designed for specific tasks.",
+    "front": "What is an embedded computer?",
+    "back": "An embedded computer is a computer that functions as one component in a larger product and has a specific purpose. Embedded computers are small and have limited hardware on their own but enhance the capabilities of everyday devices.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What are Automated Teller Machines (ATMs) an example of in the context of IoT?",
-    "back": "ATMs are an example of an IoT-enabled device, allowing users to perform financial transactions.",
+    "front": "What are some examples of embedded computers in vehicles?",
+    "back": "Embedded computers in vehicles are designed to improve safety, security, and performance in today's vehicles.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "How does IoT allow remote management of home devices?",
-    "back": "IoT allows remote management of home devices through smart devices connected to the Internet, enabling control from a smartphone or other device from anywhere.",
+    "front": "What are Automated Teller Machines (ATMs) an example of?",
+    "back": "Automated teller machines (ATMs) are one of the more familiar uses of the IoT. ATMs are a type of kiosk, or freestanding booth, usually placed in a public area.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How does IoT enable remote home management?",
+    "back": "IoT enables you to manage devices remotely in your home, such as starting the washing machine at a certain time, preparing a grocery list, viewing potential intruders via a webcam, or adjusting the room temperature.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
     "front": "How is IoT used in manufacturing?",
-    "back": "In manufacturing, IoT is used for monitoring assembly lines, managing inventory, optimizing production processes, and using robotics.",
+    "back": "Manufacturing can use sensors to monitor processes and increase the quality of finished goods. Robotic arms can help ensure precision during the manufacturing process.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
     "front": "How is IoT used in retail?",
-    "back": "In retail, IoT is used for inventory management, personalized marketing, smart shelves, and enhanced customer experiences.",
+    "back": "Retail can use sensors to track inventory or send coupons to customers' phones while they shop.",
     "course": "CS110",
     "term": "T1",
-    "topic": "how technology impacts society"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What is ergonomics, and why is it important for technology users?",
-    "back": "Ergonomics is the study of how people interact with their work environment. It's important for technology users to prevent repetitive strain injuries (RSI) and other health issues by designing workspaces and devices that promote comfort and efficiency.",
+    "front": "How is IoT used in shipping?",
+    "back": "Shipping companies can track the mileage and location of their trucks and monitor driving times to ensure the safety of their drivers.",
     "course": "CS110",
     "term": "T1",
-    "topic": "digital health"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What are some guidelines for practicing healthy computing?",
-    "back": "Guidelines include taking breaks (e.g., the 20-20-20 rule), using proper lighting, adjusting screen settings (brightness, contrast), and ensuring good air circulation for devices.",
+    "front": "How can healthcare providers use IoT?",
+    "back": "A healthcare provider can use IoT to: connect to a patient's wearable blood pressure or glucose monitor; send prescription updates and changes to a pharmacy and alert the patient; track and store data provided by wearable monitors to determine necessary follow-up care; send the patient reminders about upcoming appointments or tests.",
     "course": "CS110",
     "term": "T1",
-    "topic": "digital health"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What is technology addiction and its symptoms?",
-    "back": "Technology addiction is a compulsive need to use technology to the point where it interferes with daily life. Symptoms include anxiety or irritability when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
+    "front": "What is the digital divide?",
+    "back": "The digital divide is the gap between those who have access to technology and its resources and information, especially on the Internet, and those who do not. Socioeconomic and demographic factors such as age, income, location, and education contribute to the digital divide.",
     "course": "CS110",
     "term": "T1",
-    "topic": "digital health"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // PRIVACY & SECURITY (Pages 15-18)
+  // ============================================================
+  {
+    "front": "How is privacy defined in this module?",
+    "back": "Privacy is defined as the state or condition of being free from public attention to the degree that you determine. Privacy is freedom from attention, observation, or interference, based on your decision. Privacy is the right to be left alone to the level that you choose.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   },
   {
-    "front": "What are the legal requirements for providing assistive technologies according to US laws?",
-    "back": "According to US laws, the Americans with Disabilities Act (ADA) requires companies with 15+ employees to reasonably accommodate physically challenged workers. The Individuals with Disabilities Education Act (IDEA) requires public schools to purchase or fund adaptive technologies to ensure access for people with disabilities.",
+    "front": "What is identity theft?",
+    "back": "Identity theft involves using someone's personal information, such as their name, Social Security number, or credit card number, to commit financial fraud. The victim is charged for the purchases and suffers a damaged credit history that can lead to being denied loans for school, cars, and homes.",
     "course": "CS110",
     "term": "T1",
-    "topic": "digital health"
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is dumpster diving as a theft technique?",
+    "back": "Dumpster diving: Personal information from discarded credit card statements, charge receipts, and bank statements can be retrieved after being discarded in the trash.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is phishing?",
+    "back": "Phishing: In phishing, attackers attempt to deceive you into revealing personal or financial information when you respond to an email message or visit a website.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is the change of address form theft technique?",
+    "back": "Change of address form: Using a standard change of address form, the attackers divert all mail to a post office box so that the victim never sees the charges made.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is pretexting?",
+    "back": "Pretexting: An attacker who pretends to be from a legitimate research firm asks for personal information.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is data mining in the context of identity theft?",
+    "back": "Data mining: Attackers attempt to guess your passwords or password security questions by soliciting a response to a query on an online social media site that prompts you to enter information such as a pet's name, home state, and more.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "List six safeguards to protect your privacy.",
+    "back": "1. Do not carry passwords/access codes in a wallet or write them on a check.\n2. Do not provide personal information either over the phone or through an email message.\n3. Keep personal information in a secure location in a home or apartment.\n4. Give cautious notifications before permitting a website or app request to collect data.\n5. Be cautious about what information is posted on social networking sites and who can view your information.\n6. Carefully review financial and billing statements each month as soon as they arrive.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // TECHNOLOGY IN PROFESSIONAL WORLD (Pages 19-24)
+  // ============================================================
+  {
+    "front": "What is an intelligent workplace?",
+    "back": "An intelligent workplace makes use of technology to connect employees to the company's network, communicate with one another, use productivity software and apps, meet via web conferencing, and more.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How do companies use online collaborative productivity software?",
+    "back": "Companies use online collaborative productivity software to enable employees to share documents, and to make edits or comments.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How do schools use social networking tools?",
+    "back": "Schools use social networking tools to promote school events, work cooperatively on group projects, and teach concepts such as anti-bullying.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a learning management system (LMS)?",
+    "back": "A college or university might use a learning management system to set up web-based training sites where students can check their progress in a course, take practice tests, and exchange messages with the instructor or other students.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is mobile health (mHealth)?",
+    "back": "The mobile health (mHealth) trend refers to health care professionals using smartphones or tablets to access health records stored on the cloud, and patients using digital devices to monitor their conditions and treatments, thereby reducing the need for visits to the doctor's office. Health care also uses 3-D printers to manufacture skin for burn patients, as well as prosthetic devices and casts.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is telemedicine?",
+    "back": "Telemedicine is the use of telecommunications technology, including secure web-based videoconferencing, to diagnose and treat patients remotely, which provides rural or remote patients access to doctors when an in-person medical visit is not possible.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How is technology used in the transportation industry?",
+    "back": "Transportation workers use handheld computers to scan the codes on packages before loading them for shipping. Computers find an efficient route for the packages and track their progress. Drivers use GPS to navigate to the delivery destination, avoiding traffic and hazardous conditions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is computer-aided manufacturing (CAM)?",
+    "back": "Manufacturers use computer-aided manufacturing (CAM) to streamline production and ship products more quickly. With CAM, robots perform tasks that are too dangerous, detailed, or monotonous for people. A company's computers monitor assembly lines and equipment using machine-to-machine communications.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // TECHNOLOGY & JOB SEARCH (Pages 25-26)
+  // ============================================================
+  {
+    "front": "What is LinkedIn?",
+    "back": "LinkedIn is a social networking site designed to provide business and employment-oriented services.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "Why is a professional online presence important?",
+    "back": "Your professional online presence is often the first thing a recruiter or interviewer will see. Online professional networks can help you keep up with former coworkers, instructors, potential employers, and others with whom you have a professional connection.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "List six tips for creating a professional online presence.",
+    "back": "1. Avoid humorous or informal names for your account profiles, blogs, or domain names.\n2. Include a photo that shows your best self.\n3. Upload a PDF of your resume.\n4. Include links to videos, publications, or digital content you have created.\n5. Proofread your resume, blog, website, or profile carefully to avoid spelling and grammatical mistakes.\n6. Enable privacy settings on your social media accounts and never post anything online that you would not want a potential employer to see.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // CONVERGENCE & DEVICES (Pages 27-32)
+  // ============================================================
+  {
+    "front": "What is convergence in technology?",
+    "back": "Convergence is the increasing integration of technological capabilities into a growing number of previously unrelated devices. For example, you can access some of the same email, social networking, and gaming apps and accounts on your laptop, tablet, and smartphone.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a laptop?",
+    "back": "A laptop is a thin, lightweight mobile computer with a screen on its lid and a keyboard on its base. Notebook is another term for laptop.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a tablet?",
+    "back": "A tablet is a thin, lightweight mobile device that has a touch screen and is often associated with eBook readers.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is an eBook reader?",
+    "back": "An eBook reader, or e-reader, is a mobile device that is used primarily for reading digital media.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a desktop computer?",
+    "back": "A desktop, or desktop computer, is a personal computer designed to be in a stationary location where all its components fit on or under a desk or table.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is an all-in-one desktop?",
+    "back": "Another type of desktop, called an all-in-one, does not contain a tower and instead uses the same case to house the display and the processing circuitry.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a mobile device?",
+    "back": "A mobile device is a portable or handheld computing device.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a smartphone?",
+    "back": "A smartphone is an Internet-capable phone that usually also includes a calendar, an address book, and games, in addition to apps.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What are earbuds?",
+    "back": "Users often purchase a set of earbuds, which are small speakers that rest inside each ear canal, to listen to phone calls or media without disturbing those around them.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a digital camera?",
+    "back": "A digital camera is a camera that creates a digital image of an object, person, or scene.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a digital media player?",
+    "back": "A digital media player is an application that lets you play audio and video files; most tablets and smartphones include media players.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is streaming?",
+    "back": "Streaming is a way of receiving audio and video content on your device as it is being downloaded from the web.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a wearable device?",
+    "back": "A wearable device, or wearable, is a small, mobile computing consumer device designed to be worn.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is an activity tracker?",
+    "back": "An activity tracker is a device that monitors heart rate, measures pulse, counts steps, and tracks sleep patterns.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a smartwatch?",
+    "back": "A smartwatch can communicate with a smartphone to make and answer phone calls, read and send messages, access the web, play music, work with apps, such as activity trackers and GPS, and more.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a game console?",
+    "back": "A game console is a hardware device that allows you to play video games, either single player or multiplayer.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a handheld game device?",
+    "back": "A handheld game device is small enough to fit in one hand, making it more portable than a game console.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // DIGITAL CITIZENSHIP & ETHICS (Pages 33-45)
+  // ============================================================
+  {
+    "front": "What is the difference between a digitally literate person and a digital citizen?",
+    "back": "Digitally literate people know how to copy and paste information from one source into another. Digital citizens, however, know when it is appropriate to copy and paste information, how to properly credit the source, and the ramifications of violating copyright restrictions.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is netiquette?",
+    "back": "Netiquette is a term that describes the rules of Internet etiquette. Netiquette includes the code of acceptable behaviors users should follow while on the Internet; that is, it is the conduct expected of individuals while online.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What are digital ethics?",
+    "back": "Digital ethics is the set of legal and moral guidelines that govern the use of technology, including computers, mobile devices, information systems, and databases.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is cyberbullying?",
+    "back": "Cyberbullying is a form of bullying that involves digital devices and platforms such as social media sites, online forums, messaging apps, and email. Zambia like other nations has statutes that protect against cyberbullying. Cyberbullying can be defined as bullying 'through the transmission of a communication, including but not limited to, a message, text, sound, or image by means of an electronic device.'",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is distracted driving?",
+    "back": "Distracted driving means driving a vehicle while focusing on other activities, typically involving an electronic device such as a cell phone.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is an Acceptable Use Policy (AUP)?",
+    "back": "An AUP is a document that lists guidelines and repercussions of using the Internet and other digital company resources, including network storage and email servers. An AUP is distributed in part to reduce an organization's liability and to clarify what is and is not a fireable offense.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is plagiarism and how do schools combat it?",
+    "back": "The Internet makes it easier to plagiarize, which is copying or using someone else's work and claiming it as your own. To help discourage plagiarism, teachers often require students to submit papers using a service, such as Turnitin, that automatically checks for plagiarized passages; Turnitin can also help students check for uncited passages before submitting.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is green computing?",
+    "back": "The practice of green computing involves reducing electricity consumed and environmental waste generated when using computers, mobile devices, and related technologies.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "How can you avoid electronic waste?",
+    "back": "You can avoid electronic waste by not replacing devices every time a new version is released and by recycling devices and products such as ink and toner cartridges when they no longer provide value.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "List individual green computing efforts.",
+    "back": "Your green computing efforts should include: Purchasing and using products with an ENERGY STAR label; Shutting down your computers and devices overnight or when not in use; Donating computer equipment; Using paperless communication; Recycling paper, toner and ink cartridges, computers, mobile devices, and printers; Telecommuting and using videoconferencing for meetings.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "List organizational green computing efforts.",
+    "back": "Organizations can implement a variety of measures to reduce electrical waste, such as: Consolidating servers; Purchasing high-efficiency equipment; Using sleep modes and other power management features; Purchasing computers and devices with lower power consumption processors and power supplies; Recycling or properly disposing of obsolete or discarded technology; Using outside air, when possible, to cool the data center or computer facility; Allowing employees to telecommute.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  
+  // ============================================================
+  // ASSISTIVE TECHNOLOGIES (Pages 46-50)
+  // ============================================================
+  {
+    "front": "What is accessibility in computing?",
+    "back": "Accessibility is the practice of removing barriers that may prevent individuals with disabilities from interacting with data, a website, or an app.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is assistive technology?",
+    "back": "Assistive technology is any device, software, or equipment that helps people work around their challenges.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What assistive technologies exist for visually impaired people?",
+    "back": "Visually impaired people can change screen settings, such as increasing the size or changing the color of the text, to make the words easier to read. Changing the color of text also can address the needs of users with certain types of color blindness. A screen reader is a technology that uses the audio output to describe the contents of the screen. A Braille printer can also be used.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is a screen reader and what is alt text?",
+    "back": "A screen reader will read the alternative text aloud so that the user understands the image and its purpose. Hearing-impaired people can instruct programs or apps to display words or other visual clues instead of sounds, such as for a notification from an app.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What assistive technologies exist for users with mobility issues?",
+    "back": "Mobility issues can impact a user's ability to interact with hardware, such as a keyboard or a mouse. Users with limited hand mobility can use an on-screen keyboard, a keyboard with larger keys, or a hand-mounted pointer to control the pointer or insertion point. Alternatives to mouse buttons include a hand pad, a foot pedal, a receptor that detects facial motions, or a pneumatic instrument controlled by puffs of air.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What assistive technologies exist for users with intellectual disabilities?",
+    "back": "Users with intellectual disabilities might struggle with reading words on a screen, handwriting, or retaining information. Technologies that help these users learn or perform tasks include: Speech recognition programs so that the user can input data or information verbally; Graphic organizers enable a user to create an outline or structure of information; Audio books to read information aloud to the user instead of reading it on a printed page or on the screen.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is the Americans with Disabilities Act (ADA)?",
+    "back": "The Americans with Disabilities Act (ADA) is a law that requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
+  },
+  {
+    "front": "What is the Individuals with Disabilities Education Act (IDEA)?",
+    "back": "The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies.",
+    "course": "CS110",
+    "term": "T1",
+    "topic": "introduction (being a digital citizen: at home, school, and work)"
   }
 ],
 
