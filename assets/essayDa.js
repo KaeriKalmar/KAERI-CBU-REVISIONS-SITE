@@ -18634,16 +18634,8 @@ const essayData = [
         explanation: "Ethics cover honesty, privacy, and responsibility to the community."
       }
     ]
-  }
-];
+  },
 
-// ============================================================
-// END OF COMPLETE ESSAY SIMULATION DATASET
-// Total Essays: 55 sections
-// Total Steps (Questions): 463
-// ============================================================
-];
-  
 
 ];
   
