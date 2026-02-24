@@ -1,12 +1,11 @@
 const announcements = [
 
-  {
-    id: "AN_002",
-    title: "🎉 Term 2 Unlocked",
-    body: "Biology (BI110) and CS110 Term 2 materials are now available. Select your course below.",
-    type: "success",
-    active: false,
-    expiry: "2030-02-01" 
+    {
+    active: true,
+    expiry: "2025-12-31",
+    type: "warning",
+    title: "🔧 Essay Simulations Under Maintenance",
+    body: "The Essay Simulation mode for all the courses ,CS110 is currently being upgraded with new content. Please use Multiple Choice, Short Answer, or Flashcards in the meantime. We apologize for any inconvenience."
   }
 ];
 
