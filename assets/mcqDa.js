@@ -1,1299 +1,7766 @@
 const mcqData = [
 
-  // --- CS110 Term 1 Data (Existing Questions) ---
-
+//CS110 T1 MODULE 1
   {
-
-    "q": "Which of the following is considered a component of a 'computer system'?",
-
-    "options": ["Hardware", "Software", "People", "All of the above"],
-
-    "correct": 3,
-
-    "explanation": "A computer system is a combination of hardware, software, and people working together to achieve a specific task. This includes physical components, programs, and users.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Basic"
-
+    "q": "What is a digital citizen?",
+    "options": [
+      "A government official who regulates internet access",
+      "A person familiar with how to use technology to become an educated and productive member of the digital world",
+      "A person who owns multiple digital devices",
+      "Someone who has never used technology"
+    ],
+    "correct": 1,
+    "explanation": "A digital citizen is a person familiar with how to use technology to become an educated and productive member of the digital world. This goes beyond simply using technology to understanding how to use it responsibly and effectively."
   },
-
   {
-
-    "q": "What is the primary function of a computer?",
-
-    "options": ["To process data into information", "To store data permanently", "To display visual output", "To connect to the internet"],
-
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a computer?",
+    "options": [
+      "Any device with a screen and buttons",
+      "A machine that only plays video games",
+      "An electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information",
+      "A typewriter with electronic components"
+    ],
+    "correct": 2,
+    "explanation": "A computer is an electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information for future use. This definition emphasizes the stored program concept and the input-process-output cycle."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does memory in a computer system consist of?",
+    "options": [
+      "External hard drives used for backup",
+      "Cloud storage servers accessed via internet",
+      "USB flash drives used for portable storage",
+      "Electronic components that store instructions waiting to be executed, data needed by those instructions, and the results of processing"
+    ],
+    "correct": 3,
+    "explanation": "Memory consists of electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information. This refers to primary memory (RAM), not secondary storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the Internet?",
+    "options": [
+      "A global collection of millions of computers linked together to share information",
+      "A single supercomputer that controls all network traffic",
+      "A software application installed on every computer",
+      "A network limited to a single organization"
+    ],
     "correct": 0,
-
-    "explanation": "The fundamental role of a computer is to take raw data, process it, and transform it into meaningful information.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
+    "explanation": "The Internet is a global collection of millions of computers linked together to share information. It is a network of networks that spans the entire world."
   },
-
   {
-
-    "q": "In the context of computer operations, what is 'data'?",
-
-    "options": ["Processed information", "Meaningful output", "Raw facts and figures", "Visual displays"],
-
-    "correct": 2,
-
-    "explanation": "Data refers to raw facts and figures that are input into a computer system for processing.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "What is 'information' in the context of computing?",
-
-    "options": ["Unprocessed data", "Raw facts and figures", "Organized and processed data that is meaningful", "Input received from devices"],
-
-    "correct": 2,
-
-    "explanation": "Information is data that has been processed, organized, and structured in a way that makes it meaningful and useful.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "Which of the following describes the 'storage' operation of a computer?",
-
-    "options": ["Accepting data and instructions", "Processing data to create information", "Saving data and information for future use", "Presenting results to the user"],
-
-    "correct": 2,
-
-    "explanation": "Storage involves saving data and information so that it can be retrieved and used at a later time.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "What is the 'output' operation of a computer?",
-
-    "options": ["Entering data into the system", "Performing calculations on data", "Presenting processed results to the user", "Storing data in memory"],
-
-    "correct": 2,
-
-    "explanation": "Output is the process of presenting the results of data processing to the user, typically through a monitor, printer, or speakers.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "Which characteristic of a computer refers to its ability to perform repetitive tasks consistently without getting tired?",
-
-    "options": ["Speed", "Accuracy", "Diligence", "Versatility"],
-
-    "correct": 2,
-
-    "explanation": "Diligence means that a computer can perform the same task repeatedly without loss of accuracy or speed, unlike humans who might experience fatigue.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "The ability of a computer to perform tasks precisely and without errors, provided the input is correct, is known as:",
-
-    "options": ["Speed", "Accuracy", "Versatility", "Reliability"],
-
+    "q": "What is a network?",
+    "options": [
+      "A single computer with multiple users",
+      "A collection of two or more computers connected to share resources",
+      "The physical cables that connect computers in a building",
+      "A website that provides social networking services"
+    ],
     "correct": 1,
-
-    "explanation": "Accuracy in computing refers to the high degree of correctness in calculations and operations, assuming valid input and correct programming.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
+    "explanation": "A network is a collection of two or more computers connected to share resources. This is the fundamental definition, whether the network is small (home) or large (the Internet)."
   },
-
   {
-
-    "q": "What characteristic highlights a computer's capacity to perform various tasks with equal ease?",
-
-    "options": ["Speed", "Diligence", "Versatility", "Accuracy"],
-
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does Wi-Fi stand for and what is it?",
+    "options": [
+      "Wide Frequency; a radio broadcast technology",
+      "Wireless Finder; an app to locate wireless signals",
+      "Wireless Fidelity; a wireless data network technology that provides high-speed data connections",
+      "Wired Fidelity; a type of cable connection"
+    ],
     "correct": 2,
-
-    "explanation": "Versatility indicates that a computer can be used for a wide range of different tasks, from calculations to graphic design, with similar efficiency.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Core"
-
+    "explanation": "Wi-Fi stands for \"wireless fidelity.\" It is a wireless data network technology that provides high-speed data connections and is not attached to any device. It is commonly used for mobile devices to connect to the internet without cables."
   },
-
   {
-
-    "q": "The limitation of a computer that means it cannot make decisions or think on its own is referred to as lack of:",
-
-    "options": ["Speed", "Intelligence (IQ)", "Storage", "Accuracy"],
-
-    "correct": 1,
-
-    "explanation": "Computers lack an 'IQ' or the ability to think, reason, and make decisions independently like humans. They follow programmed instructions.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "What is the meaning of 'digital literacy'?",
-
-    "options": ["The ability to program computers", "Acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies", "The skill of using social media effectively", "Understanding only how to operate a smartphone"],
-
-    "correct": 1,
-
-    "explanation": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "A 'digital citizen' is best described as a person familiar with using technology to become an educated and productive member of which of the following?",
-
-    "options": ["A local community", "The digital world", "A specific online forum", "A programming language"],
-
-    "correct": 1,
-
-    "explanation": "A digital citizen is a person familiar with how to use technology to become an educated and productive member of the digital world.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "Which of the following best defines a 'computer' according to the notes?",
-
-    "options": ["A mechanical device for calculations", "An electronic device that only stores data", "An electronic device that operates under the control of instructions, accepts and processes data to produce information", "A tool used exclusively for internet Browse"],
-
-    "correct": 2,
-
-    "explanation": "A computer is an electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information for future use.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "What is the primary role of 'memory' in a computer, as described in the notes?",
-
-    "options": ["To permanently store files for long-term use", "To connect computers in a network", "To store instructions, data, and processing results temporarily for the processor", "To display visual output to the user"],
-
-    "correct": 2,
-
-    "explanation": "Memory consists of electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Memory",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "What is a 'network' in the context of computers?",
-
-    "options": ["A single computer with multiple users", "A collection of two or more computers connected to share resources", "A type of software for data processing", "A device that provides internet access"],
-
-    "correct": 1,
-
-    "explanation": "A network is a collection of two or more computers connected to share resources.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Network and Internet Basics",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "Which wireless data network technology provides high-speed data connections and is primarily used for mobile devices?",
-
-    "options": ["Ethernet", "Bluetooth", "Wi-Fi", "USB"],
-
-    "correct": 2,
-
-    "explanation": "Wi-Fi (short for wireless fidelity) is a wireless data network technology that provides high-speed data connections and is not attached to any device. It is used for mobile devices.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Network and Internet Basics",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "What is the primary function of a 'server'?",
-
-    "options": ["To display information to the user", "To process data locally on a single computer", "To store files and make them available to users over a network", "To create new software applications"],
-
-    "correct": 2,
-
-    "explanation": "A server is a powerful, high-capacity computer you access using the Internet or other networks; it stores files and 'serves' them, that is, makes the files available to users.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Network and Internet Basics",
-
-    "year": "2023",
-
-    "tag": "Core"
-
-  },
-
-  {
-
-    "q": "Where are servers usually grouped together?",
-
-    "options": ["Individual homes", "Public libraries", "Data centers", "Small offices"],
-
-    "correct": 2,
-
-    "explanation": "Servers are usually grouped at a location called a data center.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Network and Internet Basics",
-
-    "year": "2023",
-
-    "tag": "Basic"
-
-  },
-
-  {
-
-    "q": "The term 'Big Data' refers to:",
-
-    "options": ["Small, easily manageable data sets", "Data stored on personal computers", "Large and complex data sources that defy easy management with traditional data processing methods", "Only data related to financial transactions"],
-
-    "correct": 2,
-
-    "explanation": "Big data is a term that refers to the large and complex data sources that defy easy management with traditional data processing methods.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Basics of Computer",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "What type of tubes did the first generation of computers use?",
-
-    "options": ["Cathode ray tubes", "Transistors", "Vacuum tubes", "Microprocessors"],
-
-    "correct": 2,
-
-    "explanation": "The first generation of computers used vacuum tubes, which are cylindrical glass tubes that control the flow of electrons.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "The Computer System Hardware",
-
-    "year": "2023",
-
-    "tag": "Basic"
-
-  },
-
-  {
-
-    "q": "Which of the following was a limitation of first-generation computers that used vacuum tubes?",
-
-    "options": ["Their small size", "Low power consumption", "The small amount of heat they generated", "Their large size and high power consumption"],
-
+    "q": "What is a server and what is a data center?",
+    "options": [
+      "A server is a person who manages network resources; a data center is their office",
+      "A server is a software program; a data center is a website",
+      "A server is a type of smartphone; a data center is a cell tower",
+      "A server is a powerful, high-capacity computer that stores and serves files; servers are grouped at a location called a data center"
+    ],
     "correct": 3,
-
-    "explanation": "The use and availability of first-generation computers were constrained by their large size, the amount of power they consumed, and the heat they generated.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "The Computer System Hardware",
-
-    "year": "2023",
-
-    "tag": "Core"
-
+    "explanation": "A server is a powerful, high-capacity computer you access using the Internet or other networks. It stores files and \"serves\" them---making the files available to users. Servers are usually grouped at a location called a data center for efficient management, cooling, and security."
   },
-
   {
-
-    "q": "Which of the following were examples of early first-generation computers mentioned in the notes?",
-
-    "options": ["Apple II and Macintosh", "IBM PC and Commodore 64", "ENIAC and UNIVAC", "Altair 8800 and Apple I"],
-
-    "correct": 2,
-
-    "explanation": "ENIAC (Electronic Numerical Integrator and Computer) and UNIVAC (Universal Automatic Computer) are mentioned as first-generation computers.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "The Computer System Hardware",
-
-    "year": "2023",
-
-    "tag": "Basic"
-
-  },
-
-  {
-
-    "q": "Which of the following describes a 'personal computer'?",
-
+    "q": "What is an online social network?",
     "options": [
-
-      "A large, expensive, powerful computer that can handle hundreds or thousands of connected users simultaneously.",
-
-      "A mobile computing device that has a screen size smaller than 7 inches and is designed to fit in a user's pocket.",
-
-      "A computer that can perform all of its input, processing, output, and storage activities by itself and is intended to be used by one person at a time.",
-
-      "A computer that manages access and provides centralized storage for programs and data in a network.",
-
+      "An online community where users share interests, ideas, stories, photos, music, and videos with other registered users",
+      "A network of physical cables connecting homes",
+      "A government database of citizen information",
+      "A professional organization for social workers"
     ],
-
-    "correct": 2,
-
-    "explanation": "A personal computer is a computer that can perform all of its input, processing, output, and storage activities by itself and is intended to be used by one person at a time.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Computer Types",
-
-  },
-
-  {
-
-    "q": "What is the primary characteristic of a 'mobile device'?",
-
-    "options": [
-
-      "It is a desktop computer that requires a constant power source.",
-
-      "It is a computing device small enough to hold in your hand.",
-
-      "It is a server that provides services to other computers.",
-
-      "It is a supercomputer used for complex calculations.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "A mobile device is a computing device small enough to hold in your hand.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Computer Types",
-
-  },
-
-  {
-
-    "q": "Which of the following is an example of an 'input device'?",
-
-    "options": ["Printer", "Monitor", "Keyboard", "Speaker"],
-
-    "correct": 2,
-
-    "explanation": "A keyboard is an input device.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Hardware Components",
-
-  },
-
-  {
-
-    "q": "What is the function of an 'output device'?",
-
-    "options": [
-
-      "To enter data and instructions into a computer.",
-
-      "To convey information from a computer or mobile device to one or more people.",
-
-      "To perform arithmetic, comparison, and other operations.",
-
-      "To store data, instructions, and information for future use.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "An output device is any hardware component that conveys information from a computer or mobile device to one or more people.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Hardware Components",
-
-  },
-
-  {
-
-    "q": "Which component of a computer stores data, instructions, and information for future use?",
-
-    "options": ["Processor", "Memory", "Storage device", "Motherboard"],
-
-    "correct": 2,
-
-    "explanation": "A storage device records (writes) and/or retrieves (reads) items to and from storage media.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Hardware Components",
-
-  },
-
-  {
-
-    "q": "What is the purpose of a 'communications device'?",
-
-    "options": [
-
-      "To display information on a screen.",
-
-      "To allow two or more computers or devices to exchange data.",
-
-      "To process data and execute instructions.",
-
-      "To store long-term data.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "A communications device is a hardware component that enables a computer or mobile device to send and receive data, instructions, and information to and from one or more computers or mobile devices.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Hardware Components",
-
-  },
-
-  {
-
-    "q": "What is a 'network' in the context of computers?",
-
-    "options": [
-
-      "A single computer connected to the internet.",
-
-      "A collection of computers and devices connected together, often wirelessly, via communications devices and transmission media.",
-
-      "A software program that manages files.",
-
-      "A set of instructions that tells the computer what to do.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "A network is a collection of computers and devices connected together, often wirelessly, via communications devices and transmission media.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Network Basics",
-
-  },
-
-  {
-
-    "q": "What is 'artificial intelligence (AI)'?",
-
-    "options": [
-
-      "The study of physical movements and habits of computer users.",
-
-      "The technological use of genetic engineering to create new types of organisms.",
-
-      "The technological use of logic and common sense to simulate human intelligence.",
-
-      "A method for managing computer memory.",
-
-    ],
-
-    "correct": 2,
-
-    "explanation": "Artificial intelligence (AI) is the technological use of logic and common sense to simulate human intelligence.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Emerging Technologies",
-
-  },
-
-  {
-
-    "q": "Which term describes the trend of computers, mobile devices, and home electronics converging into a single product?",
-
-    "options": [
-
-      "Digital divide",
-
-      "Technological singularity",
-
-      "Digital convergence",
-
-      "Cybernetics",
-
-    ],
-
-    "correct": 2,
-
-    "explanation": "Digital convergence is a trend that includes computers, mobile devices, and home electronics and how they converge into a single product.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Introduction to Computer",
-
-    "year": "2023",
-
-    "tag": "Emerging Technologies",
-
-  },
-
-  {
-
-    "q": "What is the main function of the 'CPU (Central Processing Unit)'?",
-
-    "options": [
-
-      "To store data long-term.",
-
-      "To execute instructions, perform calculations, and manage the flow of information.",
-
-      "To display images on the screen.",
-
-      "To connect to the internet.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "The CPU (Central Processing Unit) executes instructions, performs calculations, and manages the flow of information.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Processor",
-
-  },
-
-  {
-
-    "q": "What is 'RAM (Random Access Memory)'?",
-
-    "options": [
-
-      "Permanent storage for files.",
-
-      "Temporary memory used for active programs and data.",
-
-      "A part of the hard drive.",
-
-      "Memory that cannot be written to.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "RAM (Random Access Memory) is a type of memory used for temporary storage of data and program instructions while the computer is in use.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Memory",
-
-  },
-
-  {
-
-    "q": "Which type of memory is nonvolatile and holds data and instructions permanently?",
-
-    "options": ["RAM", "Cache memory", "Virtual memory", "ROM"],
-
-    "correct": 3,
-
-    "explanation": "ROM (Read-Only Memory) is nonvolatile memory that holds data and instructions permanently.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Memory",
-
-  },
-
-  {
-
-    "q": "What is the function of the 'motherboard'?",
-
-    "options": [
-
-      "To display graphics on the screen.",
-
-      "To provide wireless internet access.",
-
-      "To act as the main circuit board connecting all components of a computer.",
-
-      "To store large amounts of data.",
-
-    ],
-
-    "correct": 2,
-
-    "explanation": "The motherboard is the main circuit board of the computer, connecting all components such as the CPU, RAM, and other peripherals.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Motherboard",
-
-  },
-
-  {
-
-    "q": "What are 'expansion slots' on a motherboard used for?",
-
-    "options": [
-
-      "To connect the power supply.",
-
-      "To install expansion cards to add new capabilities to the computer.",
-
-      "To house the CPU.",
-
-      "To connect external USB devices.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "Expansion slots are openings on the motherboard where expansion cards can be inserted to add new capabilities, such as graphics or network connectivity.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Motherboard",
-
-  },
-
-  {
-
-    "q": "What is the primary function of a 'heat sink' in a computer?",
-
-    "options": [
-
-      "To generate heat for internal components.",
-
-      "To store electrical energy.",
-
-      "To absorb and dissipate heat generated by internal components like the CPU.",
-
-      "To convert AC power to DC power.",
-
-    ],
-
-    "correct": 2,
-
-    "explanation": "A heat sink is a component that absorbs heat from an object and dissipates it into the surrounding air. They are commonly used with CPUs and GPUs to prevent overheating.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Cooling System",
-
-  },
-
-  {
-
-    "q": "What is the purpose of a 'UPS (Uninterruptible Power Supply)'?",
-
-    "options": [
-
-      "To provide surge protection for electrical devices.",
-
-      "To connect multiple computers in a network.",
-
-      "To provide continuous power to a computer system in case of power failure.",
-
-      "To convert digital signals to analog signals.",
-
-    ],
-
-    "correct": 2,
-
-    "explanation": "A UPS (Uninterruptible Power Supply) is a device that provides continuous power to a computer system, protecting it from power outages, surges, and fluctuations.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Hardware",
-
-    "year": "2023",
-
-    "tag": "Power Management",
-
-  },
-
-  {
-
-    "q": "What is 'throughput' in data communication?",
-
-    "options": ["The total amount of data that can be transferred in a given time.", "The speed at which data travels through a single cable.", "The time it takes for data to reach its destination.", "The number of devices connected to a network."],
-
     "correct": 0,
-
-    "explanation": "Throughput refers to the amount of data transferred successfully from one place to another in a given time period, often measured in bits per second.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Network Performance",
-
+    "explanation": "An online social network is an online community where users can share their interests, ideas, stories, photos, music, and videos with other registered users via a social networking website, such as Facebook, Twitter, Instagram, or Snapchat."
   },
-
   {
-
-    "q": "What is the 'Internet of Things (IoT)'?",
-
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is big data?",
     "options": [
-
-      "A network of interconnected servers.",
-
-      "A concept where everyday physical objects are embedded with sensors and software to connect and exchange data over the internet.",
-
-      "A new protocol for secure web Browse.",
-
-      "A specialized network for industrial control systems.",
-
+      "Data that is too large to fit on a single computer",
+      "Large and complex data sources that defy easy management with traditional data processing methods",
+      "Data that contains both text and images",
+      "Data that is stored in multiple countries"
     ],
-
     "correct": 1,
-
-    "explanation": "The Internet of Things (IoT) is a concept where everyday physical objects are embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Emerging Technologies",
-
+    "explanation": "Big data refers to large and complex data sources that defy easy management with traditional data processing methods. The term encompasses not just the volume of data but also its velocity, variety, and the complexity of analyzing it."
   },
-
   {
-
-    "q": "What is the primary function of a 'network card' (NIC)?",
-
-    "options": [
-
-      "To display video output on a monitor.",
-
-      "To enable a computer to connect to a network.",
-
-      "To store data for long-term use.",
-
-      "To process instructions from the CPU.",
-
-    ],
-
-    "correct": 1,
-
-    "explanation": "A network card (NIC - Network Interface Card) is a hardware component that allows a computer to connect to a network.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Network Hardware",
-
-  },
-
-  {
-
-    "q": "Which type of network spans a large geographical area, such as a state, country, or even the world?",
-
+    "q": "What technology did the first generation of computers use?",
     "options": [
-
-      "Local Area Network (LAN)",
-
-      "Metropolitan Area Network (MAN)",
-
-      "Wide Area Network (WAN)",
-
-      "Personal Area Network (PAN)",
-
+      "Transistors",
+      "Integrated circuits",
+      "Vacuum tubes",
+      "Microprocessors"
     ],
-
     "correct": 2,
-
-    "explanation": "A Wide Area Network (WAN) is a network that covers a broad area, spanning across states, countries, or even the entire world.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Network Types",
-
+    "explanation": "The first generation of computers used vacuum tubes, which are cylindrical glass tubes that control the flow of electrons. Examples include ENIAC (Electronic Numerical Integrator and Computer) and UNIVAC (Universal Automatic Computer)."
   },
-
   {
-
-    "q": "What is the role of a 'router' in a network?",
-
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following was NOT a limitation of first-generation computers?",
     "options": [
-
-      "To translate domain names into IP addresses.",
-
-      "To broadcast data to all devices on a network.",
-
-      "To direct data packets between different computer networks.",
-
-      "To provide internet access to a single device.",
-
+      "The amount of power they consumed",
+      "Their inability to process data",
+      "How quickly they wore out",
+      "Their large size"
     ],
-
-    "correct": 2,
-
-    "explanation": "A router is a networking device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Network Hardware",
-
+    "correct": 3,
+    "explanation": "First-generation computers could process data, but their use was constrained by their large size, high power consumption, heat generation, and short lifespan due to vacuum tubes burning out. They were functional but extremely limited by modern standards."
   },
-
   {
-
-    "q": "What does 'Bluetooth' technology enable?",
-
+    "course": "CS110",
+    "term": "T1",
+    "q": "What significant computer did Apple introduce in 1978, and what were its key features?",
     "options": [
-
-      "Long-range wireless internet access.",
-
-      "Short-range wireless communication between devices.",
-
-      "High-speed wired network connections.",
-
-      "Secure encrypted communication over the internet.",
-
+      "Apple II; preassembled with color graphics and VisiCalc spreadsheet software",
+      "Macintosh; first with a graphical user interface",
+      "Apple I; first kit computer for hobbyists",
+      "Lisa; first with a mouse"
     ],
-
-    "correct": 1,
-
-    "explanation": "Bluetooth is a wireless technology standard for exchanging data over short distances (using short-wavelength UHF radio waves in the ISM band from 2.402 GHz to 2.480 GHz) from fixed and mobile devices, and building personal area networks (PANs).",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Data Communication and Computer Network",
-
-    "year": "2023",
-
-    "tag": "Wireless Technologies",
-
+    "correct": 0,
+    "explanation": "In 1978, Steve Jobs and Steve Wozniak of Apple Computer Corporation introduced the Apple II, a preassembled computer with color graphics and popular spreadsheet software called VisiCalc. This made it accessible to non-hobbyists and businesses."
   },
-
   {
-
-    "q": "Which input device allows users to enter data and instructions by pressing keys on a board?",
-
-    "options": ["Mouse", "Microphone", "Keyboard", "Scanner"],
-
-    "correct": 2,
-
-    "explanation": "A keyboard is an input device that contains keys users press to enter data and instructions into a computer or mobile device.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Input and Output Devices",
-
-    "year": "2023",
-
-    "tag": "Input Devices",
-
-  },
-
-  {
-
-    "q": "What is the function of a 'mouse'?",
-
+    "q": "What is the Internet of Things (IoT)?",
     "options": [
-
-      "To print documents.",
-
-      "To move a pointer on the screen, select objects, and issue commands.",
-
-      "To capture images from physical documents.",
-
-      "To display visual output.",
-
+      "A network that only connects computers in a single building",
+      "An environment where processors are embedded in products, and these things communicate via the Internet or wireless networks",
+      "A type of search engine for finding internet-connected devices",
+      "A government program to monitor online activity"
     ],
-
     "correct": 1,
-
-    "explanation": "A mouse is a pointing device that fits comfortably under the palm of your hand. With the mouse, you control the pointer, which is a small symbol on the screen whose location and shape change as you move the pointing device.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Input and Output Devices",
-
-    "year": "2023",
-
-    "tag": "Input Devices",
-
+    "explanation": "The Internet of Things (IoT) is an environment in which processors are embedded in every product imaginable (things), and these things communicate with one another via the Internet or wireless networks. This creates an ecosystem of interconnected smart devices."
   },
-
   {
-
-    "q": "What is 'access time' in the context of computer storage?",
-
-    "options": ["The time it takes to power on a device.", "The amount of time it takes for a storage device to locate an item and for memory to deliver an item to the processor.", "The time it takes to write data to a storage medium.", "The duration of data transfer between two devices."],
-
-    "correct": 1,
-
-    "explanation": "Access time measures the amount of time it takes for a storage device to locate an item on a storage medium and the time required to deliver an item from memory to the processor.",
-
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Computer Storage",
-
-    "year": "2023",
-
-    "tag": "Storage Performance"
-
-  },
-
-  {
-
-    "q": "Which type of hard drive uses magnetic particles to store data on inflexible, circular platters?",
-
-    "options": ["Solid-state drive (SSD)", "Magnetic hard disk drive (HDD)", "USB flash drive", "Memory card"],
-
-    "correct": 1,
-
-    "explanation": "A hard disk, or hard disk drive (HDD), is a storage device that contains one or more inflexible, circular platters that use magnetic particles to store data, instructions, and information.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Storage",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "What are 'sectors'?",
-
-    "options": ["Full circles on the surface of the disk", "Individual blocks of data or segments of a track", "Components that read and write data", "Physical divisions of the hard drive casing"],
-
-    "correct": 1,
-
-    "explanation": "The disk’s storage locations consist of wedge-shaped sections, which break the tracks into small arcs called sectors. A sector is an individual block of data or a segment of a track.",
-
-    "course": "CS110",
-
-    "term": "T1",
-
-    "topic": "Computer Storage",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
-  },
-
-  {
-
-    "q": "What is the function of a 'read/write head' on a hard disk?",
-
-    "options": ["To spin the platters", "To cool the drive components", "To record and/or retrieve items to and from the drive", "To connect the hard drive to the motherboard"],
-
+    "q": "Why are IoT-enabled devices often called \"smart devices\"?",
+    "options": [
+      "They can think and feel like humans",
+      "They have artificial intelligence superior to humans",
+      "Because of their capability to communicate, locate, and predict",
+      "They can pass the Turing test consistently"
+    ],
     "correct": 2,
-
-    "explanation": "A read/write head is the mechanism that reads items and writes items to the drive.",
-
+    "explanation": "IoT-enabled devices are often referred to as smart devices because of their capability to communicate, locate, and predict. Smart devices often have associated apps that control and interact with them, but they are not truly intelligent in the human sense."
+  },
+  {
     "course": "CS110",
-
     "term": "T1",
-
-    "topic": "Computer Storage",
-
-    "year": "2023",
-
-    "tag": "Definition"
-
+    "q": "What is an embedded computer?",
+    "options": [
+      "A computer hidden inside furniture",
+      "A computer that is buried underground for security",
+      "A computer that cannot be moved once installed",
+      "A computer that functions as one component in a larger product and has a specific purpose"
+    ],
+    "correct": 3,
+    "explanation": "An embedded computer is a computer that functions as one component in a larger product and has a specific purpose. Embedded computers are small and have limited hardware on their own but enhance the capabilities of everyday devices. They perform a specific function based on the requirements of the product in which they reside."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How are embedded computers related to the Internet of Things?",
+    "options": [
+      "Embedded computers are a part of the IoT",
+      "They are completely unrelated technologies",
+      "IoT is a type of embedded computer",
+      "Embedded computers replace IoT devices in modern applications"
+    ],
+    "correct": 0,
+    "explanation": "Embedded computers are a part of the IoT. They are the components that enable everyday devices to become \"smart\" and connected. Without embedded computers, devices could not process data or communicate as part of the IoT ecosystem."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are ATMs in the context of IoT?",
+    "options": [
+      "They are not related to IoT at all",
+      "They are one of the more familiar uses of the IoT",
+      "They predate IoT technology by decades",
+      "They are the only example of IoT in banking"
+    ],
+    "correct": 1,
+    "explanation": "Automated teller machines (ATMs) are one of the more familiar uses of the IoT. ATMs are a type of kiosk, or freestanding booth, usually placed in a public area. They connect to banking networks to provide financial services."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT something IoT enables you to do remotely in your home?",
+    "options": [
+      "Preparing an automated grocery list",
+      "Physically repairing a broken appliance",
+      "Starting the washing machine at a specific time",
+      "Adjusting the room temperature"
+    ],
+    "correct": 2,
+    "explanation": "IoT enables you to manage devices remotely in your home, such as starting the washing machine, preparing a grocery list, viewing potential intruders via a webcam, or adjusting the room temperature. However, IoT cannot physically repair a broken appliance; that requires hands-on intervention."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is IoT used in manufacturing?",
+    "options": [
+      "To completely replace all human workers",
+      "Only for tracking inventory levels",
+      "IoT is not used in manufacturing environments",
+      "Sensors monitor processes and increase quality; robotic arms ensure precision"
+    ],
+    "correct": 3,
+    "explanation": "Manufacturing can use sensors to monitor processes and increase the quality of finished goods. Robotic arms can help ensure precision during the manufacturing process. This improves efficiency, quality control, and safety."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is IoT used in retail?",
+    "options": [
+      "Sensors track inventory or send coupons to customers' phones while they shop",
+      "To eliminate the need for physical stores",
+      "Only for online shopping websites",
+      "IoT is not used in retail environments"
+    ],
+    "correct": 0,
+    "explanation": "Retail can use sensors to track inventory in real-time or send location-based coupons to customers' phones while they shop. This enhances the shopping experience and improves inventory management."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is IoT used in shipping?",
+    "options": [
+      "To replace all truck drivers with automated vehicles",
+      "Companies track mileage, location of trucks, and monitor driving times for safety",
+      "Only for package tracking after delivery",
+      "IoT is not used in the shipping industry"
+    ],
+    "correct": 1,
+    "explanation": "Shipping companies can track the mileage and location of their trucks and monitor driving times to ensure the safety of their drivers. This improves logistics, efficiency, and compliance with safety regulations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT a way healthcare providers use IoT?",
+    "options": [
+      "Connect to a patient's wearable blood pressure monitor",
+      "Send prescription updates to a pharmacy and alert the patient",
+      "Perform surgery remotely without any human doctor present",
+      "Track data from wearable monitors to determine follow-up care"
+    ],
+    "correct": 2,
+    "explanation": "Healthcare providers can use IoT to connect to wearable monitors, send prescription updates, track patient data, and send appointment reminders. However, IoT cannot perform surgery remotely without a human doctor; telemedicine still requires medical professionals."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the digital divide?",
+    "options": [
+      "The difference between old and new computer models",
+      "A type of computer virus that divides hard drives",
+      "The separation of digital and analog signals in communications",
+      "The gap between those who have access to technology and its resources and those who do not"
+    ],
+    "correct": 3,
+    "explanation": "The digital divide is the gap between those who have access to technology and its resources and information (especially on the Internet) and those who do not. This divide has significant social and economic implications."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which factors contribute to the digital divide?",
+    "options": [
+      "Socioeconomic and demographic factors such as age, income, location, and education",
+      "Only age and gender differences",
+      "Only income and education levels",
+      "Only geographic location and climate"
+    ],
+    "correct": 0,
+    "explanation": "Socioeconomic and demographic factors such as age, income, location, and education contribute to the digital divide. These factors can impact individuals, households, businesses, or geographic areas, creating disparities in technology access and digital literacy."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT part of the definition of privacy?",
+    "options": [
+      "Freedom from observation or interference based on your decision",
+      "The state of being free from public attention to the degree you determine",
+      "The right to be left alone to the level you choose",
+      "The right to access anyone's personal information without consent"
+    ],
+    "correct": 1,
+    "explanation": "Privacy is defined as the state of being free from public attention to the degree you determine, freedom from observation or interference based on your decision, and the right to be left alone to the level you choose. It does NOT include the right to access others' personal information."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is identity theft?",
+    "options": [
+      "Stealing someone's physical identification card",
+      "Creating a fake identity for online gaming",
+      "Using someone's personal information to commit financial fraud",
+      "Forgetting your own login credentials"
+    ],
+    "correct": 2,
+    "explanation": "Identity theft involves using someone's personal information, such as their name, Social Security number, or credit card number, to commit financial fraud. The victim is charged for purchases and suffers a damaged credit history that can lead to being denied loans for school, cars, and homes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is dumpster diving as a method of stealing personal information?",
+    "options": [
+      "Swimming in dumpsters for recreational purposes",
+      "A competitive sport involving trash containers",
+      "A method of recycling electronic waste",
+      "Retrieving personal information from discarded credit card statements, charge receipts, and bank statements"
+    ],
+    "correct": 3,
+    "explanation": "Dumpster diving involves retrieving personal information from discarded credit card statements, charge receipts, and bank statements after they have been thrown in the trash. This is why shredding sensitive documents is important."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is phishing?",
+    "options": [
+      "Attackers deceiving you into revealing personal or financial information when you respond to an email or visit a website",
+      "A recreational fishing activity using digital equipment",
+      "A type of computer virus that destroys files",
+      "A method of encrypting emails for security"
+    ],
+    "correct": 0,
+    "explanation": "In phishing, attackers attempt to deceive you into revealing personal or financial information when you respond to an email message or visit a website. These messages often appear to come from legitimate companies to trick victims."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do attackers use change of address forms to steal identity?",
+    "options": [
+      "They change their own address to avoid being caught",
+      "They divert the victim's mail to a post office box so the victim never sees the charges made",
+      "They send change of address forms to random people as a prank",
+      "They use forms to apply for jobs using stolen identities"
+    ],
+    "correct": 1,
+    "explanation": "Using a standard change of address form, attackers divert all mail to a post office box so that the victim never sees the charges made on their accounts. This allows fraud to continue undetected for longer periods."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is pretexting?",
+    "options": [
+      "Sending text messages before a scheduled meeting",
+      "Creating a fake website that looks like a legitimate one",
+      "An attacker pretending to be from a legitimate research firm asking for personal information",
+      "Writing a false story to deceive readers"
+    ],
+    "correct": 2,
+    "explanation": "Pretexting occurs when an attacker who pretends to be from a legitimate research firm asks for personal information. The attacker creates a false \"pretext\" to gain the victim's trust and extract sensitive data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is data mining in the context of identity theft?",
+    "options": [
+      "Extracting minerals from data center facilities",
+      "A legitimate business practice for market research",
+      "Deleting unused data from databases",
+      "Attackers guessing passwords by soliciting responses to social media queries about pet names, home state, etc."
+    ],
+    "correct": 3,
+    "explanation": "In the context of identity theft, data mining refers to attackers attempting to guess your passwords or password security questions by soliciting responses to queries on social media that prompt you to enter information such as a pet's name, home state, and more. This is why you should be cautious about sharing personal information online."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT a recommended safeguard to protect your privacy?",
+    "options": [
+      "Do not provide personal information over the phone or through email",
+      "Carry passwords in your wallet for easy reference",
+      "Keep personal information in a secure location at home",
+      "Carefully review financial statements each month"
+    ],
+    "correct": 0,
+    "explanation": "Recommended safeguards include: NOT carrying passwords in your wallet or writing them on checks; not providing personal information over phone or email; keeping personal information secure; being cautious before permitting data collection; being careful what you post on social media; and reviewing financial statements monthly. Carrying passwords in your wallet increases risk if the wallet is lost or stolen."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an intelligent workplace?",
+    "options": [
+      "A workplace with highly educated employees holding advanced degrees",
+      "A workplace that uses technology to connect employees to the network, communicate, use productivity software, and meet via web conferencing",
+      "A workplace with artificial intelligence robots performing all tasks",
+      "A workplace that has eliminated all human employees"
+    ],
+    "correct": 1,
+    "explanation": "An intelligent workplace makes use of technology to connect employees to the company's network, communicate with one another, use productivity software and apps, meet via web conferencing, and more. It leverages technology to enhance productivity and collaboration."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do companies use online collaborative productivity software?",
+    "options": [
+      "To replace all face-to-face meetings permanently",
+      "Only for accounting and financial purposes",
+      "To enable employees to share documents and make edits or comments",
+      "To monitor employee internet usage and productivity"
+    ],
+    "correct": 2,
+    "explanation": "Companies use online collaborative productivity software to enable employees to share documents and to make edits or comments. This facilitates teamwork even when employees are in different locations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do schools use social networking tools?",
+    "options": [
+      "Only for entertainment during breaks",
+      "To replace traditional classroom teaching entirely",
+      "Only for communication with parents",
+      "To promote school events, work cooperatively on group projects, and teach concepts such as anti-bullying"
+    ],
+    "correct": 3,
+    "explanation": "Schools use social networking tools to promote school events, work cooperatively on group projects, and teach concepts such as anti-bullying. These tools can enhance education when used appropriately."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does online productivity software benefit students?",
+    "options": [
+      "It enables collaborative work on projects and reduces the need for paper printouts",
+      "It makes them less productive due to distractions",
+      "It replaces the need for teachers entirely",
+      "It only works for individual assignments"
+    ],
+    "correct": 0,
+    "explanation": "Online productivity software enables students to work collaboratively on projects and send the finished assignment to the teacher using email, reducing the need for paper printouts. This promotes teamwork and environmental sustainability."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a learning management system (LMS) used for in education?",
+    "options": [
+      "To manage school finances and budgets",
+      "To set up web-based training sites where students check progress, take practice tests, and exchange messages with instructors",
+      "To replace all physical textbooks with digital copies",
+      "To track student attendance only"
+    ],
+    "correct": 1,
+    "explanation": "A college or university might use a learning management system to set up web-based training sites where students can check their progress in a course, take practice tests, and exchange messages with the instructor or other students. Examples include Blackboard, Canvas, and Moodle."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the mobile health (mHealth) trend?",
+    "options": [
+      "Using mobile phones only for emergency medical calls",
+      "Mobile apps for fitness tracking only",
+      "Healthcare professionals using smartphones/tablets to access cloud health records, and patients using digital devices to monitor conditions",
+      "Replacing doctors entirely with mobile devices"
+    ],
+    "correct": 2,
+    "explanation": "The mobile health (mHealth) trend refers to healthcare professionals using smartphones or tablets to access health records stored on the cloud, and patients using digital devices to monitor their conditions and treatments, thereby reducing the need for visits to the doctor's office."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How are 3-D printers used in healthcare?",
+    "options": [
+      "To print paper documents and medical records",
+      "Only for printing medical illustrations for education",
+      "To create pills and medications",
+      "To manufacture skin for burn patients, prosthetic devices, and casts"
+    ],
+    "correct": 3,
+    "explanation": "Healthcare uses 3-D printers to manufacture skin for burn patients, as well as prosthetic devices and casts. This technology enables customized medical solutions that can improve patient outcomes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is telemedicine?",
+    "options": [
+      "Using telecommunications technology, including secure videoconferencing, to diagnose and treat patients remotely",
+      "Medical treatment delivered through television programs",
+      "Medicine that works effectively at a distance",
+      "A type of online pharmacy for medication delivery"
+    ],
+    "correct": 0,
+    "explanation": "Telemedicine is the use of telecommunications technology, including secure web-based videoconferencing, to diagnose and treat patients remotely. This provides rural or remote patients access to doctors when an in-person medical visit is not possible."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do transportation workers use technology in their jobs?",
+    "options": [
+      "Only for entertainment during work breaks",
+      "Handheld computers scan package codes, computers find efficient routes and track progress, drivers use GPS to navigate",
+      "They do not use technology in their daily work",
+      "Only for communication with dispatch centers"
+    ],
+    "correct": 1,
+    "explanation": "Transportation workers use handheld computers to scan codes on packages before loading them for shipping. Computers find an efficient route for the packages and track their progress. Drivers use GPS to navigate to delivery destinations, avoiding traffic and hazardous conditions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is computer-aided manufacturing (CAM)?",
+    "options": [
+      "Manufacturing computers and related components",
+      "Computer-assisted marketing for manufactured products",
+      "Using computers to streamline production, with robots performing dangerous, detailed, or monotonous tasks",
+      "Manufacturing computer components only"
+    ],
+    "correct": 2,
+    "explanation": "Computer-aided manufacturing (CAM) is used by manufacturers to streamline production and ship products more quickly. With CAM, robots perform tasks that are too dangerous, detailed, or monotonous for people. This improves efficiency, quality, and safety."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is machine-to-machine communication in manufacturing?",
+    "options": [
+      "Computers talking to each other about non-work-related topics",
+      "Machines sending email messages to each other",
+      "A type of social network for industrial machines",
+      "Computers monitoring assembly lines and equipment using communications between machines to perform tasks"
+    ],
+    "correct": 3,
+    "explanation": "A company's computers monitor assembly lines and equipment using machine-to-machine communications between machines, equipment, and devices to perform tasks. This enables automated coordination and real-time adjustments in manufacturing processes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can technology help in your job search?",
+    "options": [
+      "By creating profiles on career networking sites, personal websites showcasing talents, and using social media to learn about careers and promote yourself",
+      "By completely replacing the need for job interviews",
+      "By automatically applying to jobs without your input",
+      "Technology cannot help with job searches effectively"
+    ],
+    "correct": 0,
+    "explanation": "By creating a profile on a career networking site or creating a personal website that showcases your talents, hiring managers can learn more about you beyond what you can convey in a traditional, one-page resume. You can use social media and job search websites to learn about technology careers and to promote yourself to potential employers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is a professional online presence important?",
+    "options": [
+      "It is not important; only paper resumes matter",
+      "It is often the first thing a recruiter or interviewer will see",
+      "It replaces the need for job applications entirely",
+      "Only for creative professionals like artists and designers"
+    ],
+    "correct": 1,
+    "explanation": "Your professional online presence is often the first thing a recruiter or interviewer will see. Online professional networks can help you keep up with former coworkers, instructors, potential employers, and others with whom you have a professional connection."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is LinkedIn?",
+    "options": [
+      "A dating website for professionals",
+      "A gaming platform for business simulations",
+      "A social networking site designed to provide business and employment-oriented services",
+      "A video sharing website for corporate content"
+    ],
+    "correct": 2,
+    "explanation": "LinkedIn is a social networking site designed to provide business and employment-oriented services. It allows professionals to connect, share experience, and discover job opportunities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT a recommended tip for creating an online presence?",
+    "options": [
+      "Include a photo that shows your best self",
+      "Upload a PDF of your resume",
+      "Proofread carefully to avoid spelling mistakes",
+      "Use humorous or informal names for your account profiles"
+    ],
+    "correct": 3,
+    "explanation": "Recommended tips include: avoid humorous or informal names; include a professional photo; upload a PDF resume; include links to your work; proofread carefully; and enable privacy settings. Humorous or informal names can appear unprofessional to potential employers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is convergence in technology?",
+    "options": [
+      "The increasing integration of technological capabilities into previously unrelated devices",
+      "When two computers physically merge into one device",
+      "When all devices use the same operating system",
+      "The point where all technology becomes identical"
+    ],
+    "correct": 0,
+    "explanation": "Convergence is the increasing integration of technological capabilities into a growing number of previously unrelated devices. For example, you can access some of the same email, social networking, and gaming apps and accounts on your laptop, tablet, and smartphone."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a laptop (or notebook)?",
+    "options": [
+      "A paper notebook for taking handwritten notes",
+      "A thin, lightweight mobile computer with a screen on its lid and a keyboard on its base",
+      "A type of tablet with a detachable keyboard",
+      "A desktop computer with a portable carrying case"
+    ],
+    "correct": 1,
+    "explanation": "A laptop is a thin, lightweight mobile computer with a screen on its lid and a keyboard on its base. Notebook is another term for laptop. These devices are designed for portability while maintaining full computer functionality."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a tablet?",
+    "options": [
+      "A small paper notebook",
+      "A type of medication taken for headaches",
+      "A thin, lightweight mobile device with a touch screen, often associated with eBook readers",
+      "A desktop computer without a keyboard"
+    ],
+    "correct": 2,
+    "explanation": "A tablet is a thin, lightweight mobile device that has a touch screen and is often associated with eBook readers. Tablets are designed primarily for content consumption and touch-based interaction."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an eBook reader (e-reader)?",
+    "options": [
+      "A person who reads many books electronically",
+      "A software application for editing and publishing books",
+      "A library website for borrowing digital books",
+      "A mobile device used primarily for reading digital media"
+    ],
+    "correct": 3,
+    "explanation": "An eBook reader, or e-reader, is a mobile device that is used primarily for reading digital media. Examples include Amazon Kindle and Kobo devices, which use E-ink technology for a paper-like reading experience."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a desktop computer?",
+    "options": [
+      "A personal computer designed to be in a stationary location where all components fit on or under a desk or table",
+      "A computer that must sit on top of a desk to function",
+      "Any computer with a screen larger than 20 inches",
+      "A computer that cannot be moved once assembled"
+    ],
+    "correct": 0,
+    "explanation": "A desktop, or desktop computer, is a personal computer designed to be in a stationary location where all its components fit on or under a desk or table. Unlike laptops, desktops are not designed for portability."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an all-in-one desktop?",
+    "options": [
+      "A desktop that includes all possible software applications",
+      "A desktop that does not contain a separate tower and uses the same case to house the display and processing circuitry",
+      "A computer that combines desktop and laptop features into one device",
+      "A computer that works with all operating systems simultaneously"
+    ],
+    "correct": 1,
+    "explanation": "An all-in-one desktop does not contain a tower and instead uses the same case to house the display and the processing circuitry. This saves space and reduces cable clutter compared to traditional desktops."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a mobile device?",
+    "options": [
+      "Any device that can be moved from one location to another",
+      "A device that requires a constant internet connection to function",
+      "A portable or handheld computing device",
+      "A device that cannot make phone calls"
+    ],
+    "correct": 2,
+    "explanation": "A mobile device is a portable or handheld computing device. This category includes smartphones, tablets, e-readers, and wearable devices that can be easily carried and used in various locations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a smartphone?",
+    "options": [
+      "A phone that is very intelligent and can think",
+      "A phone with a screen larger than 6 inches",
+      "A device that can only make calls and send texts",
+      "An Internet-capable phone that usually includes a calendar, address book, games, and apps"
+    ],
+    "correct": 3,
+    "explanation": "A smartphone is an Internet-capable phone that usually also includes a calendar, an address book, and games, in addition to apps. Smartphones combine the functionality of a phone with that of a handheld computer."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are earbuds?",
+    "options": [
+      "Small speakers that rest inside each ear canal to listen without disturbing others",
+      "A type of headphone that covers the entire ear",
+      "Wireless speakers for home entertainment systems",
+      "A device for cleaning ears"
+    ],
+    "correct": 0,
+    "explanation": "Earbuds are small speakers that rest inside each ear canal, used to listen to phone calls or media without disturbing those around them. They are commonly used with mobile devices for private listening."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a digital camera?",
+    "options": [
+      "A camera that uses film to capture images",
+      "A camera that creates a digital image of an object, person, or scene",
+      "A camera that only records video footage",
+      "A camera built into phones only"
+    ],
+    "correct": 1,
+    "explanation": "A digital camera is a camera that creates a digital image of an object, person, or scene. Unlike film cameras, digital cameras store images electronically on memory cards or internal storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a digital media player?",
+    "options": [
+      "A person who plays digital media professionally",
+      "A device that only plays physical CDs and DVDs",
+      "An application that lets you play audio and video files",
+      "A gaming console for playing video games"
+    ],
+    "correct": 2,
+    "explanation": "A digital media player is an application that lets you play audio and video files. Most tablets and smartphones include media players, and standalone devices like iPods are dedicated media players."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is streaming?",
+    "options": [
+      "Watching content while floating on a river",
+      "Saving files to your computer permanently for offline access",
+      "A type of internet connection that is very fast",
+      "Receiving audio and video content on your device as it is being downloaded from the web"
+    ],
+    "correct": 3,
+    "explanation": "Streaming is a way of receiving audio and video content on your device as it is being downloaded from the web. Unlike downloading, streaming allows you to begin playing content before the entire file is transferred."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a wearable device (wearable)?",
+    "options": [
+      "A small, mobile computing consumer device designed to be worn",
+      "A device that is worn as clothing",
+      "Any device that can be carried in a pocket",
+      "A device that is attached to furniture"
+    ],
+    "correct": 0,
+    "explanation": "A wearable device, or wearable, is a small, mobile computing consumer device designed to be worn. Examples include smartwatches, fitness trackers, and smart glasses."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an activity tracker?",
+    "options": [
+      "A device that tracks your location using GPS only",
+      "A device that monitors heart rate, measures pulse, counts steps, and tracks sleep patterns",
+      "An app for tracking daily tasks and to-do lists",
+      "A calendar application for scheduling activities"
+    ],
+    "correct": 1,
+    "explanation": "An activity tracker is a device that monitors heart rate, measures pulse, counts steps, and tracks sleep patterns. These devices help users monitor their physical activity and health metrics."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What can a smartwatch do?",
+    "options": [
+      "Only tell time and date",
+      "Replace a laptop computer completely",
+      "Communicate with a smartphone to make calls, read/send messages, access the web, play music, and work with apps",
+      "Only track fitness activities"
+    ],
+    "correct": 2,
+    "explanation": "A smartwatch can communicate with a smartphone to make and answer phone calls, read and send messages, access the web, play music, and work with apps such as activity trackers and GPS. Smartwatches extend smartphone functionality to the wrist."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a game console?",
+    "options": [
+      "A piece of furniture for storing video games",
+      "A software application for playing games on a computer",
+      "A website for downloading video games",
+      "A hardware device that allows you to play video games, either single player or multiplayer"
+    ],
+    "correct": 3,
+    "explanation": "A game console is a hardware device that allows you to play video games, either single player or multiplayer. Examples include PlayStation, Xbox, and Nintendo Switch."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a handheld game device?",
+    "options": [
+      "A game device small enough to fit in one hand, making it more portable than a game console",
+      "A game that you physically hold in your hand",
+      "A controller for a home gaming console",
+      "A mobile phone with games installed"
+    ],
+    "correct": 0,
+    "explanation": "A handheld game device is small enough to fit in one hand, making it more portable than a game console. Examples include Nintendo Game Boy, Nintendo DS, and PlayStation Portable."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a digitally literate person and a digital citizen regarding copying information?",
+    "options": [
+      "There is no difference between the two concepts",
+      "Digitally literate people know how to copy and paste; digital citizens know when it's appropriate, how to credit sources, and the ramifications of violating copyright",
+      "Digital citizens cannot copy information at all",
+      "Digitally literate people cannot use copy and paste functions"
+    ],
+    "correct": 1,
+    "explanation": "Digitally literate people know how to copy and paste information from one source into another. Digital citizens, however, know when it is appropriate to copy and paste information, how to properly credit the source, and the ramifications of violating copyright restrictions. This represents the difference between technical skill and ethical understanding."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is netiquette?",
+    "options": [
+      "A type of internet cable for high-speed connections",
+      "A networking protocol for data transmission",
+      "The rules of Internet etiquette and acceptable behaviors while online",
+      "A type of website for learning etiquette"
+    ],
+    "correct": 2,
+    "explanation": "Netiquette is a term that describes the rules of Internet etiquette. It includes the code of acceptable behaviors users should follow while on the Internet---the conduct expected of individuals while online. Netiquette includes rules for all aspects of the Internet, including the web, social media, Internet messaging, chat rooms, online discussions, and methods to transfer or store files."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are digital ethics?",
+    "options": [
+      "Ethics about digital watches and timepieces",
+      "A type of computer code that enforces ethical behavior",
+      "Digital versions of printed ethics documents",
+      "The set of legal and moral guidelines that govern the use of technology"
+    ],
+    "correct": 3,
+    "explanation": "Digital ethics is the set of legal and moral guidelines that govern the use of technology, including computers, mobile devices, information systems, and databases. This includes issues like privacy, intellectual property, and responsible use."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is cyberbullying?",
+    "options": [
+      "A form of bullying that involves digital devices and platforms such as social media, online forums, messaging apps, and email",
+      "Bullying that happens in a cyber cafe",
+      "Bullying through physical means",
+      "A type of computer virus"
+    ],
+    "correct": 0,
+    "explanation": "Cyberbullying is a form of bullying that involves digital devices and platforms such as social media sites, online forums, messaging apps, and email. It can be extremely harmful to victims and is a growing concern for schools and communities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does Zambian law define cyberbullying?",
+    "options": [
+      "It does not address cyberbullying in any statutes",
+      "Bullying through the transmission of a communication, including a message, text, sound, or image by means of an electronic device",
+      "Bullying only on social media platforms",
+      "Any online argument between two people"
+    ],
+    "correct": 1,
+    "explanation": "Zambia, like other nations, has statutes that protect against cyberbullying. Cyberbullying can be defined as bullying \"through the transmission of a communication, including but not limited to, a message, text, sound, or image by means of an electronic device.\""
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is distracted driving?",
+    "options": [
+      "Driving while listening to music",
+      "Driving without a specific destination",
+      "Driving a vehicle while focusing on other activities, typically involving an electronic device such as a cell phone",
+      "Driving in heavy traffic conditions"
+    ],
+    "correct": 2,
+    "explanation": "Distracted driving means driving a vehicle while focusing on other activities, typically involving an electronic device such as a cell phone. This is dangerous and illegal in many jurisdictions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an Acceptable Use Policy (AUP)?",
+    "options": [
+      "A policy that allows unlimited internet use",
+      "A policy that only applies to students in schools",
+      "A document about acceptable computer brands",
+      "A document that lists guidelines and repercussions of using the Internet and other digital company resources"
+    ],
+    "correct": 3,
+    "explanation": "An AUP is a document that lists guidelines and repercussions of using the Internet and other digital company resources, including network storage and email servers. Schools, businesses, and organizations use AUPs to lay out their expectations and rules for digital citizenship. An AUP is distributed in part to reduce an organization's liability and to clarify what is and is not a fireable offense."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is plagiarism and how do schools combat it?",
+    "options": [
+      "Plagiarism is copying or using someone else's work and claiming it as your own; schools use services like Turnitin to check for plagiarized passages",
+      "Plagiarism is citing sources properly; schools encourage it",
+      "Plagiarism is a type of creative writing style",
+      "Plagiarism is only a problem in elementary school"
+    ],
+    "correct": 0,
+    "explanation": "Plagiarism is copying or using someone else's work and claiming it as your own. The Internet makes it easier to plagiarize. To help discourage plagiarism, teachers often require students to submit papers using a service, such as Turnitin, that automatically checks for plagiarized passages. Turnitin can also help students check for uncited passages before submitting."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is green computing?",
+    "options": [
+      "Computing using green-colored devices and monitors",
+      "Reducing electricity consumed and environmental waste generated when using computers, mobile devices, and related technologies",
+      "Computing that is environmentally friendly only in terms of color schemes",
+      "A type of sustainable energy for powering computers"
+    ],
+    "correct": 1,
+    "explanation": "Green computing involves reducing electricity consumed and environmental waste generated when using computers, mobile devices, and related technologies. This includes energy efficiency, recycling, and sustainable practices."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can you avoid electronic waste?",
+    "options": [
+      "Throw away old devices in the regular trash immediately",
+      "Buy the newest devices every year to stay current",
+      "Not replacing devices every time a new version is released, and recycling devices and products when they no longer provide value",
+      "Store all old devices in your home forever"
+    ],
+    "correct": 2,
+    "explanation": "You can avoid electronic waste by not replacing devices every time a new version is released and by recycling devices and products such as ink and toner cartridges when they no longer provide value. This reduces environmental impact and conserves resources."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT a recommended green computing effort for individuals?",
+    "options": [
+      "Shutting down computers overnight or when not in use",
+      "Printing all documents on paper for physical records",
+      "Recycling paper, toner, and cartridges",
+      "Purchasing products with an ENERGY STAR label"
+    ],
+    "correct": 3,
+    "explanation": "Recommended green computing efforts include: purchasing ENERGY STAR products, shutting down computers when not in use, donating equipment, using paperless communication, recycling, and telecommuting. Printing all documents on paper increases waste and is contrary to green computing principles."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is a green computing measure organizations can implement?",
+    "options": [
+      "Consolidating servers and purchasing high-efficiency equipment",
+      "Keeping all servers running at maximum power at all times",
+      "Discarding old technology in regular trash bins",
+      "Avoiding telecommuting to save on home office costs"
+    ],
+    "correct": 0,
+    "explanation": "Organizations can implement green computing measures such as: consolidating servers, purchasing high-efficiency equipment, using sleep modes, purchasing lower-power processors, recycling obsolete technology, using outside air for cooling when possible, and allowing employees to telecommute to save gas and reduce emissions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What has generated awareness of the need for assistive technologies?",
+    "options": [
+      "Government regulations and laws only",
+      "The ever-increasing presence of computers in everyone's lives",
+      "Complaints from technology companies about market saturation",
+      "Decreasing computer prices making them more accessible"
+    ],
+    "correct": 1,
+    "explanation": "The ever-increasing presence of computers in everyone's lives has generated an awareness of the need to address computing requirements for those with limitations, such as intellectual disabilities, mobility issues, and hearing and visual disabilities. As technology becomes more ubiquitous, accessibility becomes more critical."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is accessibility?",
+    "options": [
+      "The ability to access any website regardless of location",
+      "Having a fast internet connection for quick access",
+      "The practice of removing barriers that may prevent individuals with disabilities from interacting with data, a website, or an app",
+      "The cost of technology making it affordable"
+    ],
+    "correct": 2,
+    "explanation": "Accessibility is the practice of removing barriers that may prevent individuals with disabilities from interacting with data, a website, or an app. This ensures that technology is usable by everyone, regardless of physical or cognitive limitations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is assistive technology?",
+    "options": [
+      "Technology that assists with daily household chores",
+      "Technology that assists in criminal activities",
+      "A type of robot helper for elderly people",
+      "Any device, software, or equipment that helps people work around their challenges"
+    ],
+    "correct": 3,
+    "explanation": "Assistive technology is any device, software, or equipment that helps people work around their challenges. This includes technologies for visual, hearing, mobility, and intellectual disabilities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT an assistive technology for visually impaired people?",
+    "options": [
+      "Alternative text (alt text) read aloud by screen readers",
+      "Increasing text size or changing text color",
+      "Screen readers that use audio output to describe screen contents",
+      "Smaller, harder-to-read text to challenge the user"
+    ],
+    "correct": 0,
+    "explanation": "Assistive technologies for visually impaired people include: changing screen settings (increasing size, changing color), screen readers that describe screen contents, and alternative text that screen readers can read aloud. Smaller, harder-to-read text would make access more difficult, not easier."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What assistive technology exists for hearing-impaired people?",
+    "options": [
+      "Louder speakers and amplifiers",
+      "Instructing programs to display words or visual clues instead of sounds for notifications",
+      "Headphones with noise cancellation",
+      "Amplified ringtones and alerts"
+    ],
+    "correct": 1,
+    "explanation": "Hearing-impaired people can instruct programs or apps to display words or other visual clues instead of sounds, such as for notifications from an app. This converts audio alerts into visual information."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is an assistive technology for people with mobility issues?",
+    "options": [
+      "Screen readers that describe screen contents",
+      "Audio books for listening instead of reading",
+      "On-screen keyboards, larger keys, hand-mounted pointers, foot pedals, or puff-controlled instruments",
+      "Larger text displays for easier reading"
+    ],
+    "correct": 2,
+    "explanation": "Users with limited hand mobility can use an on-screen keyboard, a keyboard with larger keys, or a hand-mounted pointer. Alternatives to mouse buttons include a hand pad, a foot pedal, a receptor that detects facial motions, or a pneumatic instrument controlled by puffs of air."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is an assistive technology for people with intellectual disabilities?",
+    "options": [
+      "Smaller screens to reduce visual input",
+      "Faster processors for quicker computing",
+      "More RAM for better performance",
+      "Speech recognition programs, graphic organizers, and audio books"
+    ],
+    "correct": 3,
+    "explanation": "Technologies that help users with intellectual disabilities learn or perform tasks include: speech recognition programs for verbal input, graphic organizers for creating outlines or structures of information, and audio books for listening instead of reading."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the Americans with Disabilities Act (ADA)?",
+    "options": [
+      "A law requiring any company with 15 or more employees to make reasonable attempts to accommodate physically challenged workers",
+      "A law requiring all Americans to have disabilities",
+      "An act about American dating and relationships",
+      "A law about advertising standards"
+    ],
+    "correct": 0,
+    "explanation": "The Americans with Disabilities Act (ADA) is a law that requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers. This ensures workplace accessibility."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the Individuals with Disabilities Education Act (IDEA)?",
+    "options": [
+      "A law about individual creative ideas",
+      "A law that requires public schools to purchase or acquire funding for adaptive technologies",
+      "An act about critical thinking in education",
+      "A law that only applies to college students"
+    ],
+    "correct": 1,
+    "explanation": "The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies. This ensures that students with disabilities have access to appropriate educational tools."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of laws like ADA and IDEA?",
+    "options": [
+      "To make technology more expensive for companies",
+      "To limit technology use in public spaces",
+      "To ensure that people with disabilities can access resources, information, and services using appropriate technology",
+      "To benefit only large corporations"
+    ],
+    "correct": 2,
+    "explanation": "These laws were put in place to ensure that people with disabilities can access resources, information, and services using the appropriate technology. They establish legal requirements for accessibility in employment and education."
+  },
+  
+  //CS110 T1 MODULE 2
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following best defines hardware in computing?",
+    "options": [
+      "The physical components of a computer system including wires, cases, switches, and electronic circuits",
+      "The operating system and software applications installed on a computer",
+      "Data stored on remote servers accessed via the internet",
+      "The instructions that tell a computer what tasks to perform"
+    ],
+    "correct": 0,
+    "explanation": "Hardware refers to the tangible, physical parts of a computer that you can touch, including components like the case, wires, circuits, memory chips, and the CPU. Software (A and D) is intangible, and cloud data (C) is stored remotely. Hardware is distinct from software, which provides instructions to the hardware."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which component types are classified as computer hardware?",
+    "options": [
+      "Only the monitor and keyboard",
+      "Memory, storage devices, CPU, input/output devices, and communication devices",
+      "Operating systems and applications",
+      "Cloud services and online platforms"
+    ],
+    "correct": 1,
+    "explanation": "Computer hardware encompasses multiple component categories: memory (RAM/ROM), storage devices (hard drives, SSDs), the CPU (central processing unit), input/output devices (keyboard, monitor, printer), and communication devices (network cards, modems). Hardware is not limited to just monitor/keyboard (A) and specifically excludes software like operating systems (B) and cloud services (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a processor core?",
+    "options": [
+      "The outer protective casing surrounding the processor",
+      "The cooling mechanism attached to the processor",
+      "A unit on the processor containing circuitry necessary to execute instructions",
+      "The memory chips located next to the processor"
+    ],
+    "correct": 2,
+    "explanation": "A processor core is an individual processing unit within the CPU that contains the circuitry needed to fetch, decode, and execute instructions. Multiple cores allow simultaneous processing. It is not the casing (A), cooling (C), or memory (D), which are separate components."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do processors with multiple cores generally outperform single-core processors?",
+    "options": [
+      "They have larger physical dimensions",
+      "They consume less electrical power",
+      "They generate less heat during operation",
+      "They can execute multiple instructions simultaneously through parallel processing"
+    ],
+    "correct": 3,
+    "explanation": "Multi-core processors can execute multiple instructions at the same time by dividing work among cores, similar to having multiple workers instead of one. This parallel processing improves performance, especially for multitasking and demanding applications. Physical size (A), power consumption (C), and heat generation (D) are not inherent performance advantages of more cores."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the primary function of computer memory (RAM) in a computing system?",
+    "options": [
+      "To connect the computer to the internet",
+      "To permanently store files and documents even when power is off",
+      "To temporarily hold data and programs while they are being actively processed by the CPU",
+      "To display images on the monitor"
+    ],
+    "correct": 0,
+    "explanation": "Computer memory (RAM) serves as a high-speed temporary workspace, holding data and instructions that the CPU needs immediately. Permanent storage (A) is the role of hard drives or SSDs. Internet connection (C) is networking, and display (D) is the monitor's function."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens to RAM requirements when you run more applications simultaneously?",
+    "options": [
+      "Less RAM is needed because applications share memory",
+      "More RAM is required because each application needs its own workspace",
+      "RAM requirements remain unchanged regardless of application count",
+      "The computer uses virtual memory instead, eliminating RAM needs"
+    ],
+    "correct": 1,
+    "explanation": "Each running application occupies space in RAM. Running more applications simultaneously increases the total data that must be held in memory, raising RAM requirements. When RAM is insufficient, the system uses slower virtual memory (hard drive space), which degrades performance."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a swap file (or paging file) and what is its purpose?",
+    "options": [
+      "A file that exchanges data between two different hard drives for load balancing",
+      "A file that automatically backs up documents to the cloud",
+      "An area of the hard drive temporarily used to store data that cannot fit in RAM",
+      "A temporary internet file that speeds up web browsing"
+    ],
+    "correct": 2,
+    "explanation": "When RAM becomes full, the operating system uses a portion of the hard drive as virtual memory, called a swap file or paging file, to temporarily store excess data. This prevents system crashes but slows performance because hard drives are much slower than RAM."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does using virtual memory affect computer performance?",
+    "options": [
+      "It significantly improves performance by adding more memory",
+      "It has no noticeable effect on performance",
+      "It doubles the effective processing speed of the CPU",
+      "It may decrease computer performance because hard drives are slower than RAM"
+    ],
+    "correct": 3,
+    "explanation": "Virtual memory uses the hard drive as overflow space when RAM is full. Hard drives (even SSDs) are substantially slower than RAM, so when the system must constantly swap data between RAM and the swap file, performance degrades noticeably due to the speed mismatch."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Where is RAM physically located in a computer and what are its characteristics?",
+    "options": [
+      "On memory chips connected to the motherboard; temporary and volatile",
+      "On the hard drive; permanent storage that retains data without power",
+      "In the cloud; accessible from anywhere via internet",
+      "On USB flash drives; portable and removable"
+    ],
+    "correct": 0,
+    "explanation": "RAM (Random Access Memory) consists of memory chips plugged into slots on the motherboard. It is temporary (holds data only while power is on) and volatile (loses contents when power is off). It is not permanent storage (A), cloud-based (C), or external USB storage (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does it mean that RAM is volatile?",
+    "options": [
+      "It can explode if exposed to high temperatures",
+      "It loses all stored contents when electrical power is turned off",
+      "It changes color based on the data stored",
+      "It requires constant voltage fluctuation to function"
+    ],
+    "correct": 1,
+    "explanation": "Volatile memory requires continuous power to maintain stored data. When you shut down or lose power, everything in RAM is immediately erased. This is why unsaved work is lost during a power outage. Non-volatile memory (like ROM or hard drives) retains data without power."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the motherboard and what is its role in a computer?",
+    "options": [
+      "A circuit board containing the microprocessor, memory, and connections for other internal devices",
+      "The outer plastic case that protects internal components",
+      "The main software that controls all computer operations",
+      "A storage device used for backing up important files"
+    ],
+    "correct": 2,
+    "explanation": "The motherboard is the main circuit board that physically and electrically connects all components: CPU, memory, storage, expansion cards, and ports. It provides the communication pathways for data to travel between components. It is hardware, not software (A), not the case (C), and not storage (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is ROM and how does it differ from RAM?",
+    "options": [
+      "ROM is temporary storage; RAM is permanent storage",
+      "ROM is faster than RAM but holds less data",
+      "ROM is external storage; RAM is internal storage",
+      "ROM is non-volatile memory containing startup instructions; RAM is volatile memory for active data"
+    ],
+    "correct": 3,
+    "explanation": "ROM (Read-Only Memory) is non-volatile, retaining data without power. It contains essential startup instructions like BIOS. RAM is volatile and temporarily holds active data. ROM is not temporary (A), not necessarily faster (C), and not external (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is firmware in the context of computer hardware?",
+    "options": [
+      "Software that is physically damaged and cannot be updated",
+      "Instructions stored on ROM chips that can be updated by manufacturers",
+      "A type of computer virus that attacks hardware",
+      "The physical wiring connecting components on the motherboard"
+    ],
+    "correct": 0,
+    "explanation": "Firmware is software stored in non-volatile memory (like ROM) that provides low-level control for hardware. It is \"firm\" because it resides in hardware but can still be updated through special procedures (firmware updates). It is not damaged software (A), a virus (C), or physical wiring (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Dynamic RAM (DRAM) and what is its defining characteristic?",
+    "options": [
+      "Memory that needs constant recharging or its contents will be erased",
+      "Memory that never needs refreshing and retains data permanently",
+      "Memory that uses magnetic charges for storage",
+      "Memory that is permanently installed in the CPU"
+    ],
+    "correct": 1,
+    "explanation": "DRAM must be refreshed thousands of times per second to retain data because its storage cells leak charge. This constant refreshing requirement is why it's called \"dynamic.\" It is volatile, so data is lost without power. It is not non-volatile (A), magnetic (C), or CPU-resident (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Is DRAM classified as volatile or non-volatile memory?",
+    "options": [
+      "Non-volatile",
+      "Both volatile and non-volatile",
+      "Volatile",
+      "Neither classification applies"
+    ],
+    "correct": 2,
+    "explanation": "DRAM is volatile memory. It requires continuous power and periodic refreshing to maintain its contents. When power is removed, all data in DRAM is immediately and permanently lost."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Static RAM (SRAM) and how does it compare to DRAM?",
+    "options": [
+      "Faster, can be recharged less frequently, but is more expensive to manufacture",
+      "Uses magnetic storage similar to hard drives",
+      "Cannot retain data even with power applied",
+      "Slower and requires more frequent refreshing than DRAM"
+    ],
+    "correct": 3,
+    "explanation": "SRAM is faster and more reliable than DRAM because it doesn't need constant refreshing. However, it's more complex and expensive to manufacture, so it's used in smaller quantities like CPU cache rather than main system memory. It does not use magnetic storage (C) and does retain data with power (D is false)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Is SRAM classified as volatile or non-volatile memory?",
+    "options": [
+      "Volatile",
+      "Non-volatile",
+      "Both volatile and non-volatile",
+      "Neither classification applies"
+    ],
+    "correct": 0,
+    "explanation": "SRAM is volatile memory. Although it doesn't need constant refreshing like DRAM, it still loses all stored data immediately when power is removed. It retains data only as long as electrical power is continuously supplied."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Magneto-resistive RAM (MRAM) and how does it store data?",
+    "options": [
+      "By using magnetic charges to represent and retain data",
+      "By constantly refreshing electrical charges in capacitors",
+      "By physically burning pits into the storage medium",
+      "By using light patterns read by lasers"
+    ],
+    "correct": 1,
+    "explanation": "MRAM uses magnetic states (rather than electrical charges) to store data. This magnetic storage method gives it the speed of RAM while being non-volatile---it retains data even without power. It does not require refreshing (A), burning (C), or lasers (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Is MRAM classified as volatile or non-volatile memory?",
+    "options": [
+      "Non-volatile",
+      "Both volatile and non-volatile",
+      "Volatile",
+      "Neither classification applies"
+    ],
+    "correct": 2,
+    "explanation": "MRAM is non-volatile memory. Because it uses magnetic charges rather than electrical charges to represent data, it retains its contents even when power is completely removed, similar to how hard drives retain data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is flash memory and what are its common applications?",
+    "options": [
+      "Slow, expensive, volatile memory used only in ancient computers",
+      "Memory that requires constant cooling to function",
+      "Memory that can only be read, never written to",
+      "Fast, relatively inexpensive, non-volatile memory used in USB drives and SSDs"
+    ],
+    "correct": 3,
+    "explanation": "Flash memory is fast, relatively inexpensive, and non-volatile, making it ideal for USB flash drives, solid-state drives (SSDs), memory cards, and smartphone storage. It retains data without power and can be written to multiple times. It is not slow (A), does not require special cooling (C), and can be written (D is false)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Is flash memory classified as volatile or non-volatile?",
+    "options": [
+      "Volatile",
+      "Non-volatile",
+      "Both volatile and non-volatile",
+      "Neither classification applies"
+    ],
+    "correct": 0,
+    "explanation": "Flash memory is non-volatile. It retains all stored data even when power is completely removed, which is why USB drives and SSDs do not lose your files when unplugged from a computer."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When purchasing a new computer, which factor involves whether you need mobility or a stationary device?",
+    "options": [
+      "Platform",
+      "Form factor",
+      "Hardware specifications",
+      "Add-on devices"
+    ],
+    "correct": 1,
+    "explanation": "Form factor refers to the physical shape, size, and design of a computer. The key question is whether you need mobility (laptop/tablet) or a stationary device (desktop). Platform (A) is operating system choice, specifications (B) are performance capabilities, and add-on devices (D) are peripherals."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How should you determine the processor requirements when different programs have varying needs?",
+    "options": [
+      "Average all the processor requirements together",
+      "Identify the program with the highest requirement and select a processor meeting or exceeding it",
+      "Choose the cheapest processor available regardless of requirements",
+      "Ignore processor requirements and focus only on RAM and storage"
+    ],
+    "correct": 2,
+    "explanation": "The correct approach is to identify the most demanding application and ensure your processor meets or exceeds its requirements. This ensures all programs will run adequately. Choosing the cheapest (A) may underperform, averaging (B) could leave demanding apps underpowered, and ignoring processor (D) is poor planning."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How much RAM is typically sufficient for basic web browsing and simple productivity tasks?",
+    "options": [
+      "4 GB",
+      "16 GB",
+      "32 GB",
+      "2 GB"
+    ],
+    "correct": 3,
+    "explanation": "Computers with 4 GB of memory are suitable for basic web browsing, email, word processing, and similar light productivity tasks. Higher amounts like 16 GB or 32 GB are needed for virtual reality, high-end gaming, video editing, and other memory-intensive applications."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How much RAM is typically recommended for virtual reality applications and high-end gaming?",
+    "options": [
+      "4 GB",
+      "8 GB",
+      "16 GB to 32 GB",
+      "64 GB or more"
+    ],
+    "correct": 0,
+    "explanation": "Virtual reality applications, high-end gaming, professional video editing, and other memory-intensive tasks typically require 16 GB to 32 GB of RAM to perform smoothly. Basic tasks (4 GB) would be completely inadequate for these demanding applications."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How should you determine storage requirements when selecting a computer?",
+    "options": [
+      "Pick the smallest storage option to save money",
+      "Add the storage requirements for each program plus operating system and personal files, then exceed that total",
+      "Choose storage based solely on the computer's price",
+      "Only consider the operating system's storage needs"
+    ],
+    "correct": 1,
+    "explanation": "Storage requirements are cumulative. You must add up the space needed for the operating system, all applications, and your personal files, then select a drive with capacity exceeding that total to allow for future growth. Ignoring cumulative needs risks running out of space."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a desktop computer and what are its typical components?",
+    "options": [
+      "A portable computer with built-in battery and keyboard",
+      "A computer with monitor and system unit housed together in one case",
+      "A stationary computer with separate system unit, monitor, keyboard, and mouse",
+      "A handheld mobile device with touchscreen"
+    ],
+    "correct": 2,
+    "explanation": "A traditional desktop has separate components: a system unit (tower) containing the processing components, a monitor for display, a keyboard for input, and a mouse for navigation. These remain in one place on or under a desk. It is not portable (A), not all-in-one (C), and not handheld (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an all-in-one computer?",
+    "options": [
+      "A computer that runs all major operating systems simultaneously",
+      "A computer that includes every possible peripheral device",
+      "A laptop with a detachable keyboard",
+      "A computer with monitor and system unit housed together in a single case"
+    ],
+    "correct": 3,
+    "explanation": "An all-in-one computer integrates the system components into the same case as the monitor, eliminating the separate tower. It is still a desktop (not portable) but with a cleaner, space-saving design. It does not run all OSes (A), include all peripherals (C), or have a detachable keyboard like a convertible (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What components are integrated into a typical laptop design?",
+    "options": [
+      "Input devices (keyboard, touchpad, webcam), output devices (screen, speakers), and storage devices",
+      "Only a screen and processor",
+      "Only external peripherals connected via cables",
+      "Only the CPU and memory"
+    ],
+    "correct": 0,
+    "explanation": "Laptops integrate all necessary components into one portable unit: input (keyboard, touchpad, webcam), output (screen, speakers), storage (hard drive/SSD), processing, and memory. They are self-contained and do not require external peripherals for basic operation."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which characteristics describe ultrathin laptops?",
+    "options": [
+      "Heavy weight, low cost, powerful performance, short battery life",
+      "Light weight, higher cost, less powerful, longer battery life",
+      "Bulky design, many ports, desktop-level performance",
+      "Heavy weight, expensive, powerful, short battery life"
+    ],
+    "correct": 1,
+    "explanation": "Ultrathin laptops prioritize portability: they are lightweight and thin, offer longer battery life, but are typically less powerful than bulkier laptops and cost more due to their compact engineering. They sacrifice some performance and expandability for mobility."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a slate tablet and how is it typically used?",
+    "options": [
+      "A tablet with a physical keyboard attached for laptop-like use",
+      "A tablet that runs only desktop software",
+      "A tablet resembling a letter-sized pad with no physical keyboard, using touch input",
+      "A tablet that cannot connect to the internet"
+    ],
+    "correct": 2,
+    "explanation": "A slate tablet is a simple, slab-like device with a touchscreen and no built-in physical keyboard. It relies on virtual keyboards and touch input for all interaction. It is designed primarily for content consumption and touch-based applications. It is the opposite of a convertible (A)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a convertible tablet and what advantage does it offer?",
+    "options": [
+      "A tablet that converts into a smartphone for calling",
+      "A tablet that only works with a stylus",
+      "A tablet that cannot be used for productivity",
+      "A tablet with a screen on its lid and keyboard on its base, functioning as both laptop and tablet"
+    ],
+    "correct": 3,
+    "explanation": "A convertible tablet (2-in-1) has both a screen (lid) and a physical keyboard (base), allowing it to function as either a laptop (for productivity) or a tablet (for casual use). This versatility is its main advantage over slate tablets."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a scanner and what function does it perform?",
+    "options": [
+      "An input device that converts paper images into electronic files",
+      "An output device that prints documents on paper",
+      "A storage device for backing up files",
+      "A communication device for networking"
+    ],
+    "correct": 0,
+    "explanation": "A scanner is an input device that digitizes physical documents or images, creating electronic files that can be edited, stored, or shared. It is not an output device (A) like a printer, not storage (C), and not networking (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What special capability do 3-D scanners have that standard scanners lack?",
+    "options": [
+      "They can print three-dimensional objects",
+      "They can scan three-dimensional objects to create digital 3D models",
+      "They scan only text documents",
+      "They connect to 3-D televisions"
+    ],
+    "correct": 1,
+    "explanation": "3-D scanners capture the shape and appearance of physical three-dimensional objects, creating digital 3D models. This is different from 2D document scanning, which captures flat images. Printing 3D objects (A) is done by 3D printers, not scanners."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a printer and what does it produce?",
+    "options": [
+      "An input device that scans documents into digital format",
+      "A storage device for digital files",
+      "An output device that creates physical hard copies on paper, film, or other media",
+      "A device that only prints photographs"
+    ],
+    "correct": 2,
+    "explanation": "A printer is an output device that produces physical copies (hard copies) of digital documents or images on various media. It is not input (A), not storage (C), and can print more than just photos (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can a printer be connected to a computer?",
+    "options": [
+      "Only through a USB cable",
+      "Only through a parallel port",
+      "Only through Bluetooth",
+      "Wirelessly (Wi-Fi/Bluetooth), over a network (Ethernet), or directly with a cable (USB)"
+    ],
+    "correct": 3,
+    "explanation": "Modern printers offer multiple connection options: wireless (Wi-Fi, Bluetooth), network (Ethernet), or direct cable (USB). This flexibility allows printing from various devices in different setups and locations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does an inkjet printer produce images on paper?",
+    "options": [
+      "By burning images onto special heat-sensitive paper",
+      "By using a laser beam to attract toner powder",
+      "By spraying thousands of tiny dots of liquid ink onto paper through microscopic nozzles",
+      "By pressing inked characters against the paper"
+    ],
+    "correct": 0,
+    "explanation": "Inkjet printers work by propelling tiny droplets of liquid ink onto paper to form text and images. They are common for home use. Laser printers (A) use toner and heat, impact printers (C) use ribbons, and thermal printers (D) use heat-sensitive paper."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a laser printer produce images on paper?",
+    "options": [
+      "By spraying ink through nozzles onto paper",
+      "By using a laser beam to create an electrostatic image that attracts toner, then fusing it with heat",
+      "By pressing type against an ink ribbon",
+      "By melting wax onto paper"
+    ],
+    "correct": 1,
+    "explanation": "Laser printers use a laser beam to create an electrostatic image on a drum, which attracts toner (powdered ink). The toner is transferred to paper and fused permanently with heat and pressure. They are faster and produce sharper text than inkjets."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a multifunction device (all-in-one printer)?",
+    "options": [
+      "A printer that prints in multiple colors",
+      "A single device that can copy, scan, fax, and print",
+      "A printer with multiple paper trays for different paper sizes",
+      "A printer that connects to multiple computers simultaneously"
+    ],
+    "correct": 2,
+    "explanation": "A multifunction device combines several functions: it serves as an input device (copying, scanning) and an output device (faxing, printing) in one unit. This saves space and cost compared to separate machines. Multiple colors (A), connections (C), or paper trays (D) do not define \"multifunction.\""
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a mobile printer and when would someone use it?",
+    "options": [
+      "A printer that prints images from mobile phones only",
+      "A small, lightweight printer for use while traveling or in the field",
+      "A printer that moves while printing",
+      "A printer that prints mobile phone cases"
+    ],
+    "correct": 3,
+    "explanation": "Mobile printers are compact, lightweight printers designed for portability. They are useful for travelers, field workers, delivery drivers, and anyone who needs to produce hard copies away from a traditional office. They are not limited to phone printing (A), don't move during printing (C), and don't print phone cases (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a plotter and what professional applications use it?",
+    "options": [
+      "A large-format printer producing high-quality drawings for architectural blueprints and engineering schematics",
+      "A small printer for home office use",
+      "A device that plots graphs on standard paper",
+      "A type of scanner for large documents"
+    ],
+    "correct": 0,
+    "explanation": "Plotters are specialized large-format printers used for professional applications requiring precise, continuous lines, such as architectural blueprints, engineering drawings, and CAD designs. They draw using pens or charged wires on large rolls of paper. They are not for home use (A), not just graphs (C), and not scanners (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does a 3-D printer create and what process does it use?",
+    "options": [
+      "Three-dimensional digital images displayed on screen",
+      "Physical objects built layer by layer from digital models using plastics, resins, or metals",
+      "Three-dimensional photographs",
+      "Holographic projections"
+    ],
+    "correct": 1,
+    "explanation": "3-D printers are additive manufacturing devices that build physical objects layer by layer from digital 3D models using materials like plastics, resins, and metals. They do not create digital images (A), photos (C), or holograms (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a voice synthesizer and who benefits most from it?",
+    "options": [
+      "A device that records voice for dictation",
+      "A microphone amplifier for presentations",
+      "Technology that converts text to spoken words, especially valuable for visually impaired users",
+      "Software that recognizes and transcribes speech"
+    ],
+    "correct": 2,
+    "explanation": "A voice synthesizer generates spoken words from text input. It is especially valuable for visually impaired individuals who cannot read screen content, as it reads aloud emails, documents, and web pages. It does not record (A), amplify (C), or recognize speech (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a projector and what does it display?",
+    "options": [
+      "A device that projects keyboard images for typing",
+      "A device that projects light for photography",
+      "A device that prints large images",
+      "A device that displays computer output enlarged on a large surface like a wall or screen"
+    ],
+    "correct": 3,
+    "explanation": "A projector takes the video output from a computer and displays it enlarged on an external surface (wall, screen). It shows an exact replica of the computer monitor, useful for presentations and group viewing. It does not project keyboards (A), just light (C), or print (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What steps should be taken before turning on a new computer for the first time?",
+    "options": [
+      "Verify components, read manual, charge laptop battery, connect accessories, then power on",
+      "Immediately press the power button to start setup",
+      "Install all software before powering on",
+      "Connect to the internet before doing anything else"
+    ],
+    "correct": 0,
+    "explanation": "Proper first-time setup includes: checking that all components are present and undamaged, reading the manual for specific instructions, charging the laptop battery completely (for portables), connecting all peripherals, and then powering on to follow on-screen setup. Skipping steps can cause problems or damage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are Plug-and-Play devices and how do they function?",
+    "options": [
+      "Devices that begin functioning properly as soon as they are connected to a computer",
+      "Devices that require complex manual driver installation before use",
+      "Devices that only work with specific operating systems",
+      "Devices that must be installed by a professional technician"
+    ],
+    "correct": 1,
+    "explanation": "Plug-and-Play devices are designed to work immediately upon connection without manual driver installation. The operating system automatically recognizes the device and loads appropriate drivers. They do not require complex setup (A), are not necessarily OS-specific (C), and don't need professional installation (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a device driver and why is it necessary?",
+    "options": [
+      "A person who delivers and installs computer devices",
+      "A physical cable connecting devices to the computer",
+      "A program that allows the operating system to communicate with and control hardware devices",
+      "A type of external hardware device"
+    ],
+    "correct": 2,
+    "explanation": "A device driver is software that acts as a translator between the operating system and a hardware device. It tells the OS how to communicate with the device and sends commands in a format the device understands. Without the correct driver, hardware either won't work at all or will function improperly."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does a processor's clock speed measure and in what unit?",
+    "options": [
+      "The temperature of the processor in degrees Celsius",
+      "The voltage supplied to the processor in volts",
+      "The amount of cache memory in megabytes",
+      "The speed of instruction execution in gigahertz (GHz)"
+    ],
+    "correct": 3,
+    "explanation": "Clock speed, measured in gigahertz (GHz), indicates how many instruction cycles a processor can execute per second. Higher clock speed generally means faster processing, though architecture and cores also matter. It does not measure temperature (A), voltage (C), or cache size (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a cycle in processor operations?",
+    "options": [
+      "The complete lifespan of the processor from installation to failure",
+      "The smallest measurable unit of time for processor operations",
+      "A complete shutdown and restart of the computer",
+      "The time required to install new software"
+    ],
+    "correct": 2,
+    "explanation": "In computing, a cycle is the fundamental unit of time for processor operations---the time between two pulses of the system clock. Instructions take a certain number of cycles to complete. It is not lifespan (A), restart (C), or installation time (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is CPU efficiency measured beyond clock speed?",
+    "options": [
+      "By instructions per cycle (IPC)",
+      "By physical size of the processor",
+      "By weight of the processor",
+      "By color of the processor packaging"
+    ],
+    "correct": 0,
+    "explanation": "Instructions per cycle (IPC) measures how much work a processor can accomplish in each clock cycle. Combined with clock speed, IPC determines overall performance. Higher IPC means more efficient design. Physical characteristics (A, C, D) are irrelevant to efficiency."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is bus width (also called word size)?",
+    "options": [
+      "The physical width of the computer case in inches",
+      "The length of the data cable inside the computer",
+      "The number of bits the processor can transmit simultaneously",
+      "The number of devices that can connect to the bus"
+    ],
+    "correct": 2,
+    "explanation": "Bus width (word size) refers to the number of bits the processor can transmit simultaneously between components. A wider bus (e.g., 64-bit vs 32-bit) can move more data per transfer, improving performance. It is not physical case size (A), cable length (C), or device count (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a benchmark and how is it used?",
+    "options": [
+      "A mark on a desk indicating where to place the computer",
+      "A standard for computer case sizes",
+      "A type of computer desk with built-in measurements",
+      "A standardized test measuring processor speed and other performance factors"
+    ],
+    "correct": 3,
+    "explanation": "A benchmark is a standardized test that measures computer performance, allowing objective comparison between different systems. Benchmarks evaluate processor speed, graphics performance, storage speed, and other factors. They are not physical marks (A), size standards (C), or furniture (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What physical security measure can prevent laptop theft?",
+    "options": [
+      "Using a cable lock to secure the laptop to an immovable object",
+      "Installing antivirus software",
+      "Creating strong passwords",
+      "Encrypting all files on the hard drive"
+    ],
+    "correct": 0,
+    "explanation": "A cable lock physically secures a laptop to an immovable object, preventing theft. Antivirus (A), passwords (C), and encryption (D) protect data but do nothing to prevent physical theft of the device itself."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How should you properly clean a computer screen?",
+    "options": [
+      "With a wet paper towel soaked in water",
+      "Gently with a soft, slightly damp cloth",
+      "With glass cleaner containing ammonia",
+      "With a metal scraper for stubborn spots"
+    ],
+    "correct": 1,
+    "explanation": "Screens should be cleaned gently with a soft, slightly damp (not wet) cloth. Harsh chemicals (C), excessive water (A), or abrasive materials (D) can damage the screen's anti-glare coating or underlying components."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How should you properly clean a computer keyboard?",
+    "options": [
+      "Under running water to remove all debris",
+      "In a dishwasher on gentle cycle",
+      "With a can of compressed air to blow out dust and debris",
+      "With a vacuum cleaner on high power"
+    ],
+    "correct": 2,
+    "explanation": "Compressed air safely removes dust and debris from keyboards without damaging components. Liquids (A, C) can cause short circuits and permanent damage. Vacuum cleaners can generate static electricity that damages sensitive electronics."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What environmental conditions can damage electronic devices?",
+    "options": [
+      "Normal room temperature and average humidity",
+      "Dim lighting conditions",
+      "Quiet environments with no vibration",
+      "Extreme temperatures (hot or cold) and high humidity"
+    ],
+    "correct": 3,
+    "explanation": "Extreme heat can cause components to overheat and fail. Extreme cold can cause brittleness and condensation. High humidity can cause corrosion and short circuits. Normal room conditions (A, C, D) are safe for electronics."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an uninterruptible power supply (UPS) and what does it do?",
+    "options": [
+      "A device with a battery that maintains power during electrical interruptions for safe shutdown",
+      "A device that provides internet backup during outages",
+      "A backup internet connection for when primary fails",
+      "A device that increases power voltage for better performance"
+    ],
+    "correct": 0,
+    "explanation": "A UPS contains a battery that provides temporary power during outages, allowing safe shutdown and preventing data loss or hardware damage. It does not provide internet (A, C) and does not increase voltage (D); it actually regulates and conditions power."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a surge suppressor designed to protect against?",
+    "options": [
+      "Internet hacking attempts",
+      "Power fluctuations like voltage spikes and surges",
+      "Physical theft of equipment",
+      "Software viruses and malware"
+    ],
+    "correct": 1,
+    "explanation": "A surge suppressor (or surge protector) blocks or diverts excess voltage spikes and surges, protecting connected equipment from electrical damage. It does not protect against internet threats (A, D) or physical theft (C)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a blackout in electrical terms?",
+    "options": [
+      "A brief increase in voltage",
+      "A drop in voltage lasting minutes or hours",
+      "A complete and total loss of electrical power",
+      "Unwanted high-frequency interference on power lines"
+    ],
+    "correct": 2,
+    "explanation": "A blackout is a complete interruption of electrical power where no electricity is delivered. Everything shuts down. This differs from brownouts (voltage drop), spikes/surges (voltage increase), and noise (interference)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a brownout and how does it affect electronics?",
+    "options": [
+      "Total power loss causing immediate shutdown",
+      "A very brief voltage increase",
+      "High-frequency electrical noise",
+      "A drop in voltage lasting minutes or hours that can cause equipment malfunction"
+    ],
+    "correct": 3,
+    "explanation": "A brownout is a reduction in voltage, often during periods of high demand. It can cause equipment to malfunction, reset unexpectedly, or shut down because components don't receive sufficient power to operate correctly."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an electrical spike?",
+    "options": [
+      "A very short duration increase in voltage, typically nanoseconds to microseconds",
+      "Total power loss for an extended period",
+      "A drop in voltage below normal levels",
+      "Continuous high-frequency noise on power lines"
+    ],
+    "correct": 0,
+    "explanation": "A spike is an extremely brief but intense increase in voltage, often measured in nanoseconds. Despite its short duration, it can carry enough energy to damage sensitive electronic components."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an electrical surge and how does it differ from a spike?",
+    "options": [
+      "A surge is a voltage drop; a spike is a voltage increase",
+      "A surge is a short duration voltage increase lasting longer than a spike",
+      "A surge is total power loss; a spike is a voltage drop",
+      "A surge is noise; a spike is a power outage"
+    ],
+    "correct": 1,
+    "explanation": "A surge is a voltage increase lasting longer than a spike (microseconds to milliseconds). Both are voltage increases, but surges last longer. Surges are commonly caused by large appliances turning off or lightning strikes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is electrical noise in power quality terms?",
+    "options": [
+      "Audible sound coming from electronic devices",
+      "Complete absence of electrical power",
+      "Unwanted high-frequency energy or interference on electrical lines",
+      "A gradual decrease in voltage"
+    ],
+    "correct": 2,
+    "explanation": "Electrical noise refers to interference or distortion on power lines---unwanted high-frequency signals that can disrupt sensitive equipment operation. It is not audible sound (A), outage (C), or drop (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does it mean to restore an operating system?",
+    "options": [
+      "Deleting all user files to free up space",
+      "Installing new software applications",
+      "Connecting to the internet for the first time",
+      "Reverting all settings to default or returning to a previous version"
+    ],
+    "correct": 3,
+    "explanation": "Restoring an operating system returns it to a previous state---either factory default settings or a specific restore point. This can fix software problems caused by updates, configuration changes, or corruption without completely reinstalling."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What threats can regular data backups protect against?",
+    "options": [
+      "Hardware malfunctions, user errors, software corruption, natural disasters, and cyber attacks",
+      "Only hardware malfunctions like hard drive failure",
+      "Only cyber attacks like ransomware",
+      "Only user errors like accidental deletion"
+    ],
+    "correct": 0,
+    "explanation": "Backups protect against multiple threats: hardware failure (drive crashes), user mistakes (accidental deletion), software corruption (bugs, malware), natural disasters (fire, flood), and cyber attacks (ransomware). They provide comprehensive protection, not limited to single threats."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are wireless routers and what is their function in a home network?",
+    "options": [
+      "Devices that only provide wired internet connections",
+      "Central devices that connect to the internet and broadcast Wi-Fi signals to multiple devices",
+      "Devices that store files for network access",
+      "Devices that print documents from network computers"
+    ],
+    "correct": 1,
+    "explanation": "Wireless routers are the central hubs of home Wi-Fi networks. They connect to the internet modem and broadcast wireless signals, allowing multiple devices to connect and communicate. They are not for wired-only (A), storage (C), or printing (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is a security risk for Wi-Fi networks?",
+    "options": [
+      "Unauthorized reading of wireless transmissions",
+      "Physical cable damage",
+      "Strong encryption protocols",
+      "Paper jams in printers"
+    ],
+    "correct": 2,
+    "explanation": "Wi-Fi networks broadcast data through the air, which can be intercepted (read) by attackers within range. Strong encryption (A) prevents this, cable damage (C) affects wired networks, and paper jams (D) are printer issues unrelated to network security."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the most common primary storage medium in a typical computer?",
+    "options": [
+      "Cloud storage",
+      "USB flash drive",
+      "Optical disc (CD/DVD)",
+      "The internal hard drive (HDD or SSD)"
+    ],
+    "correct": 3,
+    "explanation": "The internal hard drive (HDD or SSD) is the primary storage in most computers, holding the operating system, applications, and user files. Cloud storage (A) is supplementary, USB drives (C) are portable external storage, and optical discs (D) are obsolete for primary storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an internal hard drive and where is it located?",
+    "options": [
+      "A drive installed inside the computer case connected directly to the motherboard",
+      "A drive connected via USB that sits outside the computer",
+      "A drive accessed over the network from a central server",
+      "A drive located in the cloud and accessed via internet"
+    ],
+    "correct": 0,
+    "explanation": "Internal hard drives are mounted inside the computer case and connected directly to the motherboard via SATA or other interfaces. They are the primary storage. External drives (A) are outside, network drives (C) are remote, and cloud (D) is internet-based."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an external hard drive primarily used for?",
+    "options": [
+      "Replacing the internal drive as the main operating system drive",
+      "Adding extra storage capacity or creating backups",
+      "Running the operating system faster than internal drives",
+      "Connecting to the internet wirelessly"
+    ],
+    "correct": 1,
+    "explanation": "External hard drives connect via USB or other ports to add extra storage space or create backups. They are portable and can be disconnected when not needed. They typically don't run the OS (C) and don't provide internet (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the main advantage of magnetic hard disk drives (HDDs) over solid-state drives (SSDs)?",
+    "options": [
+      "Faster data access speeds",
+      "Greater storage capacity for the same price",
+      "Consume less electrical power",
+      "More durable with no moving parts"
+    ],
+    "correct": 2,
+    "explanation": "HDDs typically offer more storage capacity per dollar than SSDs, making them economical for bulk storage. However, SSDs are faster (A), more durable (C), and consume less power (D)---those are HDD disadvantages."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the main advantage of solid-state drives (SSDs) over magnetic hard disk drives (HDDs)?",
+    "options": [
+      "Lower cost per gigabyte",
+      "Higher maximum storage capacity",
+      "Easier data recovery after failure",
+      "Faster speed and better durability due to no moving parts"
+    ],
+    "correct": 3,
+    "explanation": "SSDs have no moving parts, making them faster (no seek time), more durable (less susceptible to shock), quieter, and more power-efficient than HDDs. They are more expensive per gigabyte (A) and typically have lower maximum capacities (C). Data recovery (D) is often harder from SSDs."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is optical media and which formats are included?",
+    "options": [
+      "Laser-based storage including CDs, DVDs, and Blu-ray discs",
+      "Magnetic storage including hard drives and tapes",
+      "Flash storage including USB drives and memory cards",
+      "Cloud-based storage on remote servers"
+    ],
+    "correct": 0,
+    "explanation": "Optical media use lasers to read and write data on reflective discs. CDs, DVDs, and Blu-ray are optical formats. They differ from magnetic (A), flash (C), and cloud (D) storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why have optical discs been largely replaced for transporting files?",
+    "options": [
+      "They are newer technology than USB drives",
+      "USB drives, external hard drives, and cloud storage are more convenient with higher capacity",
+      "They hold more data than any alternative",
+      "They are faster than any alternative"
+    ],
+    "correct": 1,
+    "explanation": "USB drives are rewritable, reusable, and don't require special software. Cloud storage offers access anywhere. External drives offer massive capacity. Optical discs are slower, have lower capacity, require specific drives, and are more fragile, making them less convenient."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is cloud storage and how does it work?",
+    "options": [
+      "Storage on a local external drive connected via USB",
+      "Storage in a data center within your own building",
+      "Storing files on remote servers accessed via the internet",
+      "Storage on optical discs kept in a safe"
+    ],
+    "correct": 2,
+    "explanation": "Cloud storage means files are kept on remote servers (anywhere in the world) and accessed via the internet. Companies host and maintain the servers, handling security, backups, and availability. It is not local (A, C) or optical (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is required to access files stored in the cloud?",
+    "options": [
+      "A specific brand of computer",
+      "A physical storage device containing the files",
+      "A wired Ethernet connection",
+      "Any device with an internet connection and proper credentials"
+    ],
+    "correct": 3,
+    "explanation": "Cloud storage requires only an internet-connected device (computer, phone, tablet) and an account with credentials. Files can be accessed from anywhere, on any device. No specific brand (A), physical device (C), or wired connection (D) is necessary."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are nodes on a network?",
+    "options": [
+      "Any devices connected to a network that can send or receive data",
+      "Only desktop computers",
+      "Only servers that store data",
+      "Only the cables that connect devices"
+    ],
+    "correct": 0,
+    "explanation": "Nodes are any addressable devices on a network---anything that can send or receive data. This includes computers, mobile devices, printers, game consoles, smart TVs, and IoT devices. The term is not limited to computers (A), servers (C), or cables (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a hub in networking and how does it handle data?",
+    "options": [
+      "A device that intelligently routes data to specific destinations",
+      "A central connection point that broadcasts all incoming data to every connected device",
+      "A device that connects a network to the internet",
+      "A wireless access point for Wi-Fi connections"
+    ],
+    "correct": 1,
+    "explanation": "A hub is a basic central connection point that broadcasts all incoming data to every connected port. It lacks intelligence, causing unnecessary traffic. Switches (A) are smarter, modems (C) connect to internet, and wireless APs (D) provide Wi-Fi."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a switch differ from a hub in network operation?",
+    "options": [
+      "A switch is slower than a hub",
+      "A switch has fewer ports than a hub",
+      "A switch intelligently directs data only to the intended recipient device",
+      "A switch cannot connect multiple devices simultaneously"
+    ],
+    "correct": 2,
+    "explanation": "Unlike a hub that broadcasts to all ports, a switch learns which devices are on which ports and sends data only to the intended recipient. This improves network efficiency, reduces unnecessary traffic, and enhances security."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a router and what is its primary function?",
+    "options": [
+      "A device that only provides Wi-Fi signals",
+      "A device that stores network data",
+      "A device that connects computers with cables",
+      "A device that connects two or more networks and directs data between them"
+    ],
+    "correct": 3,
+    "explanation": "A router connects different networks (like your home network to the internet) and determines the best path for data to travel. It routes traffic between networks. It does more than just provide Wi-Fi (A), store data (C), or connect cables (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a modem and what does it do?",
+    "options": [
+      "A device that modulates and demodulates signals to connect to an internet service",
+      "A wireless router for home networks",
+      "A network switch for connecting multiple devices",
+      "A storage device for network files"
+    ],
+    "correct": 0,
+    "explanation": "A modem (modulator-demodulator) converts digital computer signals to analog for transmission over phone/cable lines and vice versa. It connects your network to your Internet Service Provider. It is not a router (B), switch (C), or storage (D), though often combined with a router."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a cable modem and what connection type does it use?",
+    "options": [
+      "A modem using standard telephone lines",
+      "A modem using cable TV coaxial cables",
+      "A modem using satellite signals",
+      "A modem using fiber optic cables"
+    ],
+    "correct": 1,
+    "explanation": "A cable modem connects to the internet over the same coaxial cables that deliver cable television. It's distinct from DSL (phone lines), satellite, or fiber modems."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a DSL modem and what connection type does it use?",
+    "options": [
+      "A modem using existing copper telephone wiring",
+      "A modem using cellular networks",
+      "A modem using cable TV lines",
+      "A modem using fiber optics"
+    ],
+    "correct": 2,
+    "explanation": "A DSL (Digital Subscriber Line) modem uses standard telephone lines to provide internet service while allowing simultaneous voice calls. It's different from cable (A), cellular (C), or fiber (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do processor chips require cooling systems?",
+    "options": [
+      "To make them look more appealing",
+      "To slow them down for power saving",
+      "To increase their clock speed automatically",
+      "They generate significant heat that can cause malfunction or permanent failure"
+    ],
+    "correct": 3,
+    "explanation": "Processors generate substantial heat during operation due to electrical resistance and switching of billions of transistors. Without adequate cooling, this heat can cause the chip to malfunction, throttle performance, or fail permanently. Cooling is essential for reliable operation."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a heat sink and how does it work?",
+    "options": [
+      "A metal/ceramic component with fins that absorbs and disperses processor heat",
+      "A device that generates heat to warm the computer",
+      "A cooling fan that blows air directly on the processor",
+      "A liquid cooling system using fluid circulation"
+    ],
+    "correct": 0,
+    "explanation": "A heat sink is a passive cooling device---usually metal with fins to increase surface area---that draws heat away from the processor and dissipates it into the air. Fans often blow across heat sinks for improved cooling. It does not generate heat (A), is not just a fan (C), and is not liquid-based (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is liquid cooling technology and when is it used?",
+    "options": [
+      "Submerging the entire computer in non-conductive liquid",
+      "Using continuous fluid flow to transfer heat away from processors to a radiator",
+      "Drinking liquids while using the computer",
+      "Using ice packs placed on the computer case"
+    ],
+    "correct": 1,
+    "explanation": "Liquid cooling circulates fluid (water/glycol mixture) through a block attached to the processor, carrying heat to a radiator where it's dissipated by fans. It's more efficient than air cooling and used in high-performance systems where processors generate extreme heat."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a cooling pad and what is its purpose?",
+    "options": [
+      "A pad that cools the room temperature",
+      "A pad for cooling drinks while computing",
+      "A device placed under a laptop providing additional airflow to prevent overheating",
+      "A pad that generates cool air for the room"
+    ],
+    "correct": 2,
+    "explanation": "A cooling pad is an accessory placed under a laptop that provides additional airflow (often with built-in fans) to help dissipate heat, preventing overheating during intensive use. It's specifically for laptops, not room cooling (A), drinks (C), or air generation (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a computer chip made of and what does it contain?",
+    "options": [
+      "Plastic with printed circuits on the surface",
+      "Metal with wires soldered onto it",
+      "Glass with laser-etched data",
+      "Small piece of silicon with etched integrated circuits containing microscopic pathways"
+    ],
+    "correct": 3,
+    "explanation": "A computer chip (microchip) is a small piece of semiconductor material, typically silicon, on which integrated circuits are etched through a photolithography process. These circuits contain millions or billions of microscopic transistors and pathways. It is not plastic (A), metal (C), or glass (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an integrated circuit?",
+    "options": [
+      "Microscopic electronic circuits and pathways etched onto a semiconductor material",
+      "A circuit that is integrated into the power supply unit",
+      "A circuit that combines multiple separate circuit boards",
+      "A separate circuit board connected to the motherboard"
+    ],
+    "correct": 0,
+    "explanation": "An integrated circuit (IC) is a set of electronic circuits on a small semiconductor chip. It contains millions of microscopic components (transistors, resistors) and pathways, all etched onto the silicon. It is the fundamental building block of modern electronics."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the four steps of the machine cycle in correct order?",
+    "options": [
+      "Fetch, Decode, Execute, Store",
+      "Execute, Fetch, Decode, Store",
+      "Store, Fetch, Decode, Execute",
+      "Decode, Fetch, Execute, Store"
+    ],
+    "correct": 1,
+    "explanation": "The correct machine cycle order is: 1) Fetch - obtain instruction from memory, 2) Decode - translate instruction into signals, 3) Execute - carry out the command, 4) Store - write result to memory. This sequence repeats continuously while the computer runs."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens during the fetch step of the machine cycle?",
+    "options": [
+      "Carrying out the commanded operation",
+      "Translating instructions into control signals",
+      "Obtaining a program instruction or data item from memory",
+      "Writing results back to memory"
+    ],
+    "correct": 2,
+    "explanation": "Fetching is the first step where the processor retrieves an instruction or data from memory (RAM). Without fetching, there's nothing to process. Carrying out (A) is execute, translating (C) is decode, and writing (D) is store."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens during the decode step of the machine cycle?",
+    "options": [
+      "Obtaining instructions from memory",
+      "Carrying out the commanded operations",
+      "Writing results to memory",
+      "Translating fetched instructions into signals the computer can execute"
+    ],
+    "correct": 3,
+    "explanation": "Decoding is the second step where the control unit interprets the fetched instruction and determines what operations are needed, translating it into control signals. Fetch (A) is first, execute (C) is third, store (D) is fourth."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens during the execute step of the machine cycle?",
+    "options": [
+      "Fetching instructions from memory",
+      "Decoding instructions for interpretation",
+      "Carrying out the commanded operations",
+      "Storing results in memory"
+    ],
+    "correct": 0,
+    "explanation": "Executing is the third step where the Arithmetic Logic Unit (ALU) performs the actual operation (addition, comparison, logical operation, etc.). The command is carried out here. Fetch (A), decode (B), and store (D) are the other steps."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are registers in a processor and what is their function?",
+    "options": [
+      "External storage devices connected via USB",
+      "Small, high-speed storage locations within the processor that temporarily hold data and instructions",
+      "Parts of the hard drive used for virtual memory",
+      "Cloud storage accounts for backup"
+    ],
+    "correct": 1,
+    "explanation": "Registers are the fastest memory locations, located inside the processor itself. They temporarily hold data being actively worked on, instruction addresses, and calculation results. They are not external (A), hard drive (C), or cloud-based (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is repetitive strain injury (RSI) and what causes it?",
+    "options": [
+      "A computer virus that causes repetitive errors",
+      "A software bug that repeats the same error",
+      "Physical aches and pain from repeated long-term device usage, affecting muscles, nerves, and tendons",
+      "A network issue causing repeated connection drops"
+    ],
+    "correct": 2,
+    "explanation": "RSI is a physical condition caused by repetitive movements and prolonged technology use (typing, mouse use). It affects muscles, nerves, tendons, and ligaments, causing symptoms like pain, numbness, and weakness. It is not a virus (A), software error (C), or network issue (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What three factors most commonly cause repetitive strain injury?",
+    "options": [
+      "Poor diet, lack of exercise, and dehydration",
+      "Old age, genetics, and gender",
+      "Virus infection, malware, and spyware",
+      "Repetitive activity, improper technique, and uninterrupted intensity"
+    ],
+    "correct": 3,
+    "explanation": "The three primary causes of RSI are: repetitive activity (same movements over long periods), improper technique (poor posture, wrong procedures), and uninterrupted intensity (no breaks during high-level activity). Diet/exercise (A), age/genetics (C), and malware (D) are not direct causes of RSI."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is ergonomics and why is it important for computer users?",
+    "options": [
+      "The study of computer errors and bugs",
+      "The study of economic systems and markets",
+      "An applied science designing workspaces for efficient and safe human interaction",
+      "A type of exercise program for computer users"
+    ],
+    "correct": 0,
+    "explanation": "Ergonomics designs workspaces, tools, and tasks to fit the user, reducing strain and injury risk. It considers posture, equipment placement, and work habits. Good ergonomics prevents RSI and increases comfort. It is not economics (A), computer errors (C), or just exercise (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is technology addiction and how does it manifest?",
+    "options": [
+      "Occasional enjoyment of video games",
+      "Obsessive technology use that interferes with daily life, relationships, and responsibilities",
+      "Using a computer at work as required",
+      "Preferring digital books over paper books"
+    ],
+    "correct": 1,
+    "explanation": "Technology addiction is a behavioral disorder where a person is compulsively obsessed with device use, neglecting relationships, responsibilities, and health. It's more than normal use (A), work requirements (C), or preferences (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What behavioral risks are associated with excessive technology use?",
+    "options": [
+      "Improved posture and better social skills",
+      "Increased physical activity",
+      "Sedentary lifestyle, psychological development impacts, and reduced social interaction",
+      "Enhanced face-to-face communication"
+    ],
+    "correct": 2,
+    "explanation": "Excessive technology use carries risks including sedentary lifestyle (prolonged sitting), potential impacts on psychological development (attention, critical thinking), and reduced face-to-face social interaction. The other options (A, C, D) are potential benefits of balanced, responsible use."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is doxing and how is it used to harm victims?",
+    "options": [
+      "A type of computer virus that deletes documents",
+      "A security software that protects documents",
+      "A hacking technique to steal passwords",
+      "Sharing private or personal documents digitally without consent to harass or harm"
+    ],
+    "correct": 3,
+    "explanation": "Doxing (from \"docs\" or documents) is publishing private information about someone online without consent to harass, intimidate, or harm them. It's a form of cyberbullying. It is not a virus (A), security software (C), or just password theft (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is cyber-stalking and how does it differ from traditional stalking?",
+    "options": [
+      "Using technology to repeatedly harass someone through digital communication",
+      "Following someone in person through public places",
+      "A type of online game",
+      "A security measure to block stalkers"
+    ],
+    "correct": 0,
+    "explanation": "Cyber-stalking uses electronic communication to repeatedly harass or threaten someone, causing fear. Unlike traditional stalking, perpetrators can remain anonymous, and victims can be reached anywhere, anytime through their devices. It is not in-person (A), a game (C), or security (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does cyberbullying differ from traditional bullying in terms of duration?",
+    "options": [
+      "Cyberbullying never ends because online comments remain visible 24/7",
+      "Cyberbullying ends when school ends",
+      "Traditional bullying lasts longer",
+      "There is no difference in duration"
+    ],
+    "correct": 1,
+    "explanation": "Traditional bullying may stop when the victim leaves the location (school, work). Cyberbullying follows the victim everywhere because online content is accessible at all times, creating constant exposure and no relief for the victim."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does cyberbullying differ from traditional bullying in terms of audience?",
+    "options": [
+      "Only the victim sees cyberbullying content",
+      "Cyberbullying has a smaller audience",
+      "Online comments can be read by a vast audience, unlike spoken words limited to those nearby",
+      "Both have the same audience size"
+    ],
+    "correct": 2,
+    "explanation": "Spoken bullying is heard only by those physically present. Cyberbullying posts can be seen by a potentially unlimited online audience, amplifying humiliation and impact. The audience is larger, not smaller (C)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does cyberbullying differ from traditional bullying in terms of permanence?",
+    "options": [
+      "Online comments disappear after being read",
+      "Both are equally permanent",
+      "Traditional bullying leaves more permanent records",
+      "Posted comments may remain visible online for years, creating a permanent digital record"
+    ],
+    "correct": 3,
+    "explanation": "Cyberbullying creates a permanent digital record. Posts can resurface years later, affecting college admissions, employment, and relationships. Traditional bullying usually ends when the situation ends and leaves no permanent public record."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is e-waste and why is it environmentally harmful?",
+    "options": [
+      "Discarded electronic devices containing toxic metals that contaminate soil and water",
+      "Email spam that wastes digital storage space",
+      "Energy wasted by computers left running",
+      "Internet bandwidth wasted on streaming"
+    ],
+    "correct": 0,
+    "explanation": "E-waste is discarded electronic devices (computers, phones, TVs) containing toxic materials like lead, mercury, and cadmium. When improperly disposed, these toxins leach into soil and groundwater, causing environmental contamination and health risks. It is not email (A), energy (C), or bandwidth (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What three methods are considered responsible for disposing of e-waste?",
+    "options": [
+      "Throw in trash, bury in backyard, burn in incinerator",
+      "Recycle at facility, donate to charity, return to technology store",
+      "Store in basement, give to friends, sell online",
+      "Dump in ocean, export overseas, landfill"
+    ],
+    "correct": 1,
+    "explanation": "Responsible e-waste disposal includes: sending to certified recycling facilities, donating working equipment to charities/nonprofits, and returning to technology stores that accept e-waste. The other options (A, C, D) are irresponsible and environmentally harmful."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the first step in Sustainable Electronics Management (SEM)?",
+    "options": [
+      "Recycle all old electronics immediately",
+      "Donate used equipment to charity",
+      "Buy Green - purchase sustainably designed electronics",
+      "Throw away broken equipment"
+    ],
+    "correct": 2,
+    "explanation": "SEM's first step is \"Buy Green\"---purchasing electronics designed sustainably (energy-efficient, fewer toxic materials, recyclable). This prevents waste at the source. Donate (C) and recycle (A) come later for existing equipment. Throw away (D) is never recommended."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the second step in Sustainable Electronics Management (SEM)?",
+    "options": [
+      "Buy Green products",
+      "Recycle at verified centers",
+      "Landfill disposal",
+      "Donate used but functional equipment to schools or charities"
+    ],
+    "correct": 3,
+    "explanation": "The second SEM step is donating still-working equipment to schools, charities, or nonprofits. This extends useful life and benefits others while keeping electronics out of waste streams. Buy Green (A) is first, recycle (C) is third."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the third step in Sustainable Electronics Management (SEM)?",
+    "options": [
+      "Recycle at a verified electronics recycling center",
+      "Buy Green products",
+      "Donate to charity",
+      "Store indefinitely in a warehouse"
+    ],
+    "correct": 0,
+    "explanation": "The final SEM step is recycling equipment at a verified electronics recycling center when it's no longer functional. This ensures proper handling of toxic materials and recovery of valuable resources. Buy Green (A) is first, donate (B) is second, storage (D) is not a solution."
+  },
+  //CS110 T1 MODULE 3
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between data and input in computing?",
+    "options": [
+      "Data is unprocessed items; input is the process of entering data into a computer",
+      "Data is processed information; input is raw data",
+      "Data is always text; input is always numbers",
+      "There is no difference"
+    ],
+    "correct": 0,
+    "explanation": "Data refers to unprocessed items like text, numbers, images, audio, and video. Input is the process of entering that data and instructions into a computer. A is reversed (data is unprocessed, not processed), C is false (data includes many types), D is false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a command in computing?",
+    "options": [
+      "A physical button on the computer",
+      "An instruction that causes a program to perform a specific action",
+      "A type of data",
+      "A hardware component"
+    ],
+    "correct": 1,
+    "explanation": "A command is an instruction that causes a program or app to perform a specific action, such as saving a file or printing a document. It is not a physical button (A) (though buttons issue commands), not data (C), and not hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the four basic types of output?",
+    "options": [
+      "Text, numbers, images, sound",
+      "Text, graphics, audio, video",
+      "Hard copy, soft copy, audio, video",
+      "Print, display, sound, motion"
+    ],
+    "correct": 2,
+    "explanation": "The four basic types of output are text (messages, books), graphics (photos, charts), audio (music, speech), and video (movies, animations). Numbers are included in text/data, not a separate category. Hard/soft copy are formats, not content types."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a manual input device?",
+    "options": [
+      "Any device that automatically reads data",
+      "A device that only outputs information",
+      "A wireless device",
+      "A device requiring direct human manipulation to enter data"
+    ],
+    "correct": 3,
+    "explanation": "A manual input device requires direct human manipulation to input data, such as keyboards, mice, and touch screens. Automatic input devices (A) read data without human action (like barcode scanners). Output devices (C) produce output, not input. Wireless (D) describes connection type, not input method."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are function keys on a keyboard?",
+    "options": [
+      "Keys labeled F1-F12 programmed to issue commands",
+      "Keys that perform math calculations",
+      "Keys that type letters",
+      "Keys that control volume"
+    ],
+    "correct": 0,
+    "explanation": "Function keys are labeled F1 through F12 and are programmed to issue specific commands depending on the operating system and application. They do not perform math (A), type letters (C) (that's alphanumeric keys), or solely control volume (D) (though some may have secondary functions)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a toggle key?",
+    "options": [
+      "A key that permanently changes keyboard layout",
+      "A key that alternates views or turns features on/off each time pressed",
+      "A key that toggles between applications",
+      "A key that only works in games"
+    ],
+    "correct": 1,
+    "explanation": "A toggle key alternates between two states each time pressed. Caps Lock (toggles uppercase/lowercase) and Num Lock are examples. It does not permanently change layout (A), toggle apps (C) (that's Alt+Tab), or work only in games (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of navigation keys?",
+    "options": [
+      "To type numbers",
+      "To adjust volume",
+      "To move the insertion point or cursor",
+      "To open applications"
+    ],
+    "correct": 2,
+    "explanation": "Navigation keys (arrow keys, Page Up, Page Down, Home, End) move the insertion point or cursor through documents, web pages, and other content. They do not type numbers (A) (that's number keys), adjust volume (C) (though some have secondary functions), or open apps (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a keyboard shortcut?",
+    "options": [
+      "A shorter keyboard",
+      "A key that types faster",
+      "A special key that only experts use",
+      "A key combination to access features or perform commands quickly"
+    ],
+    "correct": 3,
+    "explanation": "A keyboard shortcut is a key or combination of keys (like Ctrl+C for copy) used to quickly access features or perform commands. It is not a shorter keyboard (A), doesn't make typing faster (C) (though it saves time), and is not just for experts (D)---anyone can use them."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a pointer in a graphical user interface?",
+    "options": [
+      "A small symbol on the screen controlled by a pointing device",
+      "A device used to point at the screen",
+      "A type of mouse",
+      "A cursor for typing"
+    ],
+    "correct": 0,
+    "explanation": "A pointer is a small on-screen symbol (like an arrow) controlled by a pointing device that changes shape depending on context. It is not a physical device (A), not a type of mouse (C), and distinct from a text cursor (D) (which is usually an I-beam)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a touchpad and where is it commonly found?",
+    "options": [
+      "A external device for desktop computers",
+      "A flat, rectangular pointing device found on laptops",
+      "A type of touch screen",
+      "A pen for drawing"
+    ],
+    "correct": 1,
+    "explanation": "A touchpad is a small, flat, rectangular pointing device sensitive to pressure and motion, found most often on laptops and convertible tablets. It is not typically external (A) (though external ones exist), not a touch screen (C), and not a pen (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a gesture on a touch screen?",
+    "options": [
+      "A hand signal to another person",
+      "A type of keyboard",
+      "A motion made with fingers or hand to interact with the device",
+      "A voice command"
+    ],
+    "correct": 2,
+    "explanation": "A gesture is a motion made on a touch screen with fingers or hand to interact, such as tapping, swiping, or pinching. It is not a hand signal to people (A), not a keyboard (C), and not voice (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a tap gesture?",
+    "options": [
+      "To zoom in",
+      "To scroll",
+      "To move an item",
+      "To select or activate an item"
+    ],
+    "correct": 3,
+    "explanation": "A tap (quick touch and release) is used to select or activate items like buttons, links, or icons. Zoom in (A) uses stretch, scroll (C) uses swipe, move items (D) uses drag."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a double tap gesture?",
+    "options": [
+      "To run a program or zoom in at the tapped location",
+      "To delete an item",
+      "To close an app",
+      "To adjust volume"
+    ],
+    "correct": 0,
+    "explanation": "Double tap (two quick taps) often runs a program or app, or zooms in at the tapped location. It does not delete (A), close apps (C) (though might in some contexts), or adjust volume (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a press and hold gesture?",
+    "options": [
+      "To turn off the device",
+      "To display a shortcut menu or activate move mode",
+      "To take a screenshot",
+      "To increase brightness"
+    ],
+    "correct": 1,
+    "explanation": "Press and hold displays a shortcut menu (context menu) or activates move mode for dragging items. It does not turn off devices (A) (though power buttons do), take screenshots (C) (usually button combinations), or adjust brightness (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a drag or slide gesture?",
+    "options": [
+      "To zoom out",
+      "To move an item to a new location",
+      "To open a new window",
+      "To delete content"
+    ],
+    "correct": 2,
+    "explanation": "Drag or slide moves an item across the screen by holding and moving it. Zoom out (A) uses pinch, open window (C) uses tap, delete (D) usually uses other methods."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a swipe gesture?",
+    "options": [
+      "To zoom in",
+      "To select text",
+      "To type",
+      "To scroll or display command bars"
+    ],
+    "correct": 3,
+    "explanation": "Swipe (moving finger horizontally or vertically) scrolls through content or displays command bars from screen edges. Zoom in (A) uses stretch, select text (C) often uses tap and drag, type (D) uses keyboard."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a stretch gesture?",
+    "options": [
+      "To zoom in",
+      "To zoom out",
+      "To close an app",
+      "To scroll"
+    ],
+    "correct": 0,
+    "explanation": "Stretch (moving two fingers apart) zooms in, making content appear larger. Zoom out (B) uses pinch, close app (C) uses other gestures, scroll (D) uses swipe."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a pinch gesture?",
+    "options": [
+      "To zoom in",
+      "To open a link",
+      "To zoom out",
+      "To select text"
+    ],
+    "correct": 2,
+    "explanation": "Pinch (moving two fingers together) zooms out, showing more of the content. Zoom in (A) uses stretch, open link (C) uses tap, select text (D) uses tap and drag."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do wearable devices primarily use touch input?",
+    "options": [
+      "Touch input is more accurate",
+      "Touch screens are cheaper",
+      "They lack space for physical keyboards",
+      "Users demand touch screens"
+    ],
+    "correct": 2,
+    "explanation": "Wearable devices like smartwatches primarily use touch input because their small size leaves no room for physical keyboards. Touch maximizes functionality in limited space. Accuracy (A) varies, cost (C) is not the primary reason, and demand (D) follows from practicality."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do portable media players favor touch input?",
+    "options": [
+      "To make devices heavier",
+      "To reduce functionality",
+      "To increase cost",
+      "To maximize screen size by eliminating physical buttons"
+    ],
+    "correct": 3,
+    "explanation": "Portable media players use touch input to maximize screen size---without physical buttons, the entire front can be a display. They don't aim to be heavier (A), reduce function (C) (touch can add function), or increase cost (D) (though it may, that's not the goal)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is touch input used in digital cameras?",
+    "options": [
+      "To browse photos, remove red-eye, add filters, and crop",
+      "Only to take pictures",
+      "To replace the lens",
+      "To charge the battery"
+    ],
+    "correct": 0,
+    "explanation": "Touch input in cameras allows browsing photos (swiping), removing red-eye (tapping), adding filters, and cropping (dragging borders). It does not replace the lens (C) or charge batteries (D). Taking pictures (A) is one use, but B is more comprehensive."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why might in-car navigation systems reduce functionality while driving?",
+    "options": [
+      "To save battery",
+      "To reduce driver distraction",
+      "To make the system last longer",
+      "To comply with internet restrictions"
+    ],
+    "correct": 1,
+    "explanation": "Navigation systems reduce functionality while driving to minimize driver distraction and improve safety. Battery saving (A), longevity (C), and internet restrictions (D) are not the primary safety reasons."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a stylus?",
+    "options": [
+      "A type of keyboard",
+      "A voice recorder",
+      "A small metal or plastic device using pressure for input",
+      "A camera lens"
+    ],
+    "correct": 2,
+    "explanation": "A stylus is a pen-like device that uses pressure (not ink) to input on touch screens or graphics tablets. It is not a keyboard (A), voice recorder (C), or camera lens (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a digital pen used for?",
+    "options": [
+      "Only for signing documents",
+      "As a replacement for all keyboard input",
+      "Only for drawing",
+      "Capturing and converting handwriting/drawings into digital format"
+    ],
+    "correct": 3,
+    "explanation": "A digital pen captures handwriting or drawings and converts them to digital format, which can be recognized by handwriting software. While used for signatures (A) and drawing (D), its function is broader---converting handwritten input to digital data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a signature capture pad used for?",
+    "options": [
+      "Capturing handwritten signatures digitally",
+      "Scanning barcodes",
+      "Printing receipts",
+      "Reading credit cards"
+    ],
+    "correct": 0,
+    "explanation": "A signature capture pad captures handwritten signatures digitally, often at point-of-sale terminals. It does not scan barcodes (A) (that's a barcode scanner), print (C) (though part of POS systems), or read cards (D) (that's a card reader)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a graphics tablet (digitizer) used for?",
+    "options": [
+      "Displaying images",
+      "Creating drawings with a pressure-sensitive pen",
+      "Typing documents",
+      "Playing games"
+    ],
+    "correct": 1,
+    "explanation": "A graphics tablet is used for creating drawings with a pressure-sensitive pen, converting movements to digital signals. It is an input device, not a display (A) (though some have screens), not for typing (C), and not primarily for gaming (D) (though can be used)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is voice input?",
+    "options": [
+      "Typing with voice commands",
+      "Listening to audio",
+      "Entering input by speaking into a microphone",
+      "Recording music"
+    ],
+    "correct": 2,
+    "explanation": "Voice input is entering input by speaking into a microphone, which speech recognition converts to text or commands. It is not just typing (A) (it's speaking), not listening (C) (that's output), and not just recording (D) (though related)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is audio input?",
+    "options": [
+      "Only speech recognition",
+      "Playing music",
+      "Recording video",
+      "Entering any sound (speech, music, effects) into a computer"
+    ],
+    "correct": 3,
+    "explanation": "Audio input encompasses entering any sound---speech, music, sound effects---into a computer. It is broader than speech recognition (A), not playing (C) (that's output), and not video (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is video input?",
+    "options": [
+      "Capturing full-motion images and storing them",
+      "Watching movies",
+      "Displaying graphics",
+      "Recording audio"
+    ],
+    "correct": 0,
+    "explanation": "Video input captures full-motion images and stores them digitally. Watching (A) is output, displaying graphics (C) is output, audio (D) is different."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a webcam?",
+    "options": [
+      "A camera for taking photos only",
+      "A digital video camera capturing video and often audio for computer use",
+      "A device for scanning documents",
+      "A type of microphone"
+    ],
+    "correct": 1,
+    "explanation": "A webcam is a digital video camera that captures video and still images, often with audio, for computer use. It is not just for photos (A) (does video), not a scanner (C), and not just a microphone (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is motion input or gesture recognition?",
+    "options": [
+      "Moving the mouse",
+      "Typing on a keyboard",
+      "Guiding on-screen elements using air gestures detected by cameras",
+      "Touching a screen"
+    ],
+    "correct": 2,
+    "explanation": "Motion input uses cameras to detect air gestures (body movements) and convert them to input. It is not mouse movement (A), typing (C), or touch screen (D) (though related to gestures)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is morphing in video editing?",
+    "options": [
+      "Changing colors",
+      "Adding music",
+      "Cutting scenes",
+      "Transforming one image into another across frames"
+    ],
+    "correct": 3,
+    "explanation": "Morphing transforms one image into another gradually across frames. It is not just color change (A), music addition (C), or scene cuts (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is motion input used in entertainment?",
+    "options": [
+      "To guide on-screen elements with sweeping arm movements in games",
+      "To watch movies",
+      "To listen to music",
+      "To browse the internet"
+    ],
+    "correct": 0,
+    "explanation": "In entertainment, motion input lets players control games with body movements (like swinging a virtual golf club). It is not passive activities like watching (A), listening (C), or browsing (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is motion input used in the medical field?",
+    "options": [
+      "For entertainment of patients",
+      "For surgical training and less invasive surgery",
+      "For billing purposes",
+      "For scheduling appointments"
+    ],
+    "correct": 1,
+    "explanation": "Motion input in medicine is used for surgical training and enabling less invasive procedures. It is not primarily for entertainment (A), billing (C), or scheduling (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is motion input used in the military?",
+    "options": [
+      "For entertainment of soldiers",
+      "For cooking",
+      "For flight simulation, weapon training, and PTSD recovery",
+      "For communication"
+    ],
+    "correct": 2,
+    "explanation": "The military uses motion input for training simulations, weapon practice, and physical/PTSD rehabilitation. Not entertainment (A), cooking (C), or general communication (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is motion input used in sports?",
+    "options": [
+      "To replace coaches",
+      "To sell tickets",
+      "To broadcast games",
+      "To analyze and improve athlete performance and correct motions"
+    ],
+    "correct": 3,
+    "explanation": "Sports use motion input to analyze athletes' movements, improve performance, and prevent injuries. It does not replace coaches (A), sell tickets (C), or broadcast (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an optical scanner used for?",
+    "options": [
+      "Reading printed text and graphics and converting to digital form",
+      "Printing documents",
+      "Displaying images",
+      "Recording audio"
+    ],
+    "correct": 0,
+    "explanation": "An optical scanner reads printed text and graphics and converts them to digital data. It is not a printer (A), display (C), or audio recorder (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is OCR used for?",
+    "options": [
+      "Reading hand-drawn marks",
+      "Reading printed characters and converting to editable text",
+      "Reading magnetic ink",
+      "Scanning barcodes"
+    ],
+    "correct": 1,
+    "explanation": "OCR (Optical Character Recognition) reads printed characters and converts them to editable digital text. OMR (A) reads marks, MICR (C) reads magnetic ink, barcode scanners (D) read barcodes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is OMR used for?",
+    "options": [
+      "Reading printed text",
+      "Reading magnetic stripes",
+      "Reading hand-drawn marks like circles on tests",
+      "Scanning photos"
+    ],
+    "correct": 2,
+    "explanation": "OMR (Optical Mark Recognition) reads hand-drawn marks like filled bubbles on multiple-choice tests. OCR (A) reads text, magstripe readers (C) read stripes, photo scanners (D) scan images."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is RFID used for?",
+    "options": [
+      "Reading magnetic stripes",
+      "Scanning printed text",
+      "Capturing signatures",
+      "Communicating with tags via radio waves for tracking"
+    ],
+    "correct": 3,
+    "explanation": "RFID uses radio waves to communicate with tags on objects, animals, or people for tracking and identification. It does not read magnetic stripes (A) (magstripe reader), scan text (C) (OCR), or capture signatures (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does a magstripe reader read?",
+    "options": [
+      "The magnetic stripe on credit cards and ID cards",
+      "RFID tags",
+      "Barcodes",
+      "Printed text"
+    ],
+    "correct": 0,
+    "explanation": "A magstripe reader reads the magnetic stripe on cards containing owner and issuer information. It does not read RFID (A), barcodes (C), or printed text (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is MICR used for?",
+    "options": [
+      "Reading credit card stripes",
+      "Reading magnetized ink on checks for banking",
+      "Scanning photos",
+      "Reading RFID tags"
+    ],
+    "correct": 1,
+    "explanation": "MICR (Magnetic-Ink Character Recognition) reads magnetized ink on checks, used almost exclusively in banking. It does not read credit cards (A) (magstripe), photos (C), or RFID (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Where are data collection devices commonly used?",
+    "options": [
+      "Only in offices",
+      "Only in homes",
+      "In warehouses, factories, restaurants, and outdoor locations",
+      "Only in schools"
+    ],
+    "correct": 2,
+    "explanation": "Data collection devices are used in locations where transactions occur---warehouses, factories, restaurants, outdoors---often where conditions are harsh. They are not limited to offices (A), homes (C), or schools (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a hard copy?",
+    "options": [
+      "Electronic information on a display",
+      "Printed physical output",
+      "A difficult document",
+      "A copy saved to hard drive"
+    ],
+    "correct": 3,
+    "explanation": "A hard copy is printed physical output (paper). Soft copy (A) is electronic. Hard drive copy (C) is saved file. D is a pun, not definition."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a soft copy?",
+    "options": [
+      "Electronic information on a display",
+      "Printed paper output",
+      "A copy on floppy disk",
+      "A gentle document"
+    ],
+    "correct": 0,
+    "explanation": "Soft copy is electronic information displayed temporarily on a screen. Hard copy (A) is printed. C is outdated, D is not a term."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When is portrait orientation typically used?",
+    "options": [
+      "For spreadsheets and slide shows",
+      "For letters, reports, and books",
+      "For wide graphics",
+      "For landscape photos"
+    ],
+    "correct": 1,
+    "explanation": "Portrait (taller than wide) is used for letters, reports, and books. Landscape (A, C, D) is wider than tall, used for spreadsheets, slides, and wide images."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When is landscape orientation typically used?",
+    "options": [
+      "For letters",
+      "For books",
+      "For spreadsheets, slide shows, and graphics",
+      "For legal documents"
+    ],
+    "correct": 2,
+    "explanation": "Landscape (wider than tall) is used for spreadsheets, slide shows, and graphics where width is beneficial. Portrait (A, C, D) is for text documents."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a non-impact printer?",
+    "options": [
+      "A printer that strikes the paper",
+      "A printer that only prints photos",
+      "A very fast printer",
+      "A printer that forms images without contacting paper"
+    ],
+    "correct": 3,
+    "explanation": "Non-impact printers form images without contacting paper (inkjet, laser). Impact printers (A) strike paper. C and D are not definitions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does an inkjet printer work?",
+    "options": [
+      "By spraying tiny drops of ink onto paper",
+      "By using a laser beam and toner",
+      "By striking an inked ribbon",
+      "By heating special paper"
+    ],
+    "correct": 0,
+    "explanation": "Inkjet printers spray tiny ink drops. Laser (A) uses toner and laser, impact (C) strikes ribbon, thermal (D) heats paper."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a photo printer?",
+    "options": [
+      "Any printer that prints in color",
+      "A color printer producing lab-quality photos",
+      "A printer that only prints photos",
+      "A printer for text documents"
+    ],
+    "correct": 1,
+    "explanation": "A photo printer produces lab-quality photos, often using inkjet technology optimized for photo printing. Not all color printers (A) are photo printers. C is too narrow (many also print documents). D is opposite."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a laser printer work?",
+    "options": [
+      "Spraying ink",
+      "Striking an inked ribbon",
+      "Using a laser beam and toner to create images",
+      "Heating paper"
+    ],
+    "correct": 2,
+    "explanation": "Laser printers use a laser beam to create an image on a drum, attracting toner which is fused to paper. Inkjet (A) sprays ink, impact (C) strikes, thermal (D) heats."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an all-in-one printer?",
+    "options": [
+      "A device combining printer, scanner, and copier functions",
+      "A printer that prints all colors",
+      "A very fast printer",
+      "A printer that prints on all paper sizes"
+    ],
+    "correct": 3,
+    "explanation": "An all-in-one printer (multifunction) combines printer, scanner, and copier, often with fax. It is not about paper sizes (A), colors (C), or speed (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What process does a 3-D printer use?",
+    "options": [
+      "Additive manufacturing (adding material layer by layer)",
+      "Subtractive manufacturing",
+      "Injection molding",
+      "Laser cutting"
+    ],
+    "correct": 0,
+    "explanation": "3-D printers use additive manufacturing, building objects layer by layer. Subtractive (A) removes material, injection molding (C) uses molds, laser cutting (D) cuts."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What can 3-D printers create?",
+    "options": [
+      "Only plastic toys",
+      "Clothing, prosthetics, implants, parts, and prototypes",
+      "Only paper documents",
+      "Only metal objects"
+    ],
+    "correct": 1,
+    "explanation": "3-D printers create diverse objects including clothing, prosthetics, implants, toys, parts, and prototypes from various materials. They are not limited to toys (A), paper (C), or metal (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a thermal printer work?",
+    "options": [
+      "Spraying ink",
+      "Using laser and toner",
+      "Using heated pins on heat-sensitive paper",
+      "Striking an inked ribbon"
+    ],
+    "correct": 2,
+    "explanation": "Thermal printers use heated pins on heat-sensitive paper that darkens where heated. Inkjet (A) sprays, laser (C) uses toner, impact (D) strikes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a mobile printer?",
+    "options": [
+      "A printer that moves while printing",
+      "A printer for mobile phones",
+      "A wireless printer",
+      "A small, battery-powered printer for use while traveling"
+    ],
+    "correct": 3,
+    "explanation": "A mobile printer is small, lightweight, battery-powered for travel use. It does not move during printing (A), is not just for phones (C), and wireless (D) describes connection, not mobility."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a plotter used for?",
+    "options": [
+      "Producing high-quality drawings like blueprints and maps",
+      "Printing text documents",
+      "Printing photos",
+      "Scanning documents"
+    ],
+    "correct": 0,
+    "explanation": "Plotters produce high-quality technical drawings (blueprints, maps, circuit diagrams). They are not for text (A), photos (C), or scanning (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a large format printer used for?",
+    "options": [
+      "Printing standard letters",
+      "Creating signs, posters, and professional displays",
+      "Printing books",
+      "Scanning large documents"
+    ],
+    "correct": 1,
+    "explanation": "Large format printers create signs, posters, and professional displays. They are not for standard letters (A), books (C), or scanning (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a label printer used for?",
+    "options": [
+      "Printing books",
+      "Printing photos",
+      "Printing on adhesive material for envelopes, discs, and folders",
+      "Scanning labels"
+    ],
+    "correct": 2,
+    "explanation": "Label printers print on adhesive material for envelopes, discs, file folders, and often include bar codes. They do not print books (A), photos (C) (though may), or scan (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an impact printer?",
+    "options": [
+      "A quiet printer",
+      "A printer using laser technology",
+      "A printer that sprays ink",
+      "A printer that strikes an inked ribbon against paper"
+    ],
+    "correct": 3,
+    "explanation": "Impact printers strike an inked ribbon against paper (like dot-matrix). They are noisy (not A), not laser (C), not inkjet (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why are impact printers ideal for multipart forms?",
+    "options": [
+      "They can strike through multiple layers to create copies",
+      "They are quiet",
+      "They are fast",
+      "They use less ink"
+    ],
+    "correct": 0,
+    "explanation": "Impact printers strike through multiple layers of carbon-copy forms, creating simultaneous copies. They are not quiet (A), not necessarily fast (C), and use ribbons, not ink (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a display device?",
+    "options": [
+      "A printer",
+      "An output device that visually conveys text, graphics, and video",
+      "A scanner",
+      "A storage device"
+    ],
+    "correct": 1,
+    "explanation": "A display device (monitor, screen) visually outputs text, graphics, and video. It is not a printer (A), scanner (C), or storage (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does LCD stand for?",
+    "options": [
+      "Large Color Display",
+      "Light Crystal Diode",
+      "Liquid Crystal Display",
+      "Long Cable Display"
+    ],
+    "correct": 2,
+    "explanation": "LCD stands for Liquid Crystal Display, which sandwiches liquid crystal between sheets and uses a backlight. A, C, D are incorrect expansions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the light source in an LCD called?",
+    "options": [
+      "The backlight",
+      "The reflector",
+      "The emitter",
+      "The pixel"
+    ],
+    "correct": 3,
+    "explanation": "The light source in an LCD is called the backlight, often using CCFL or LED technology. Pixel (A) is the picture element, not light source."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is OLED technology?",
+    "options": [
+      "A display using organic molecules that are self-illuminating",
+      "A type of LCD",
+      "A printer technology",
+      "A network protocol"
+    ],
+    "correct": 0,
+    "explanation": "OLED (Organic Light-Emitting Diode) uses organic molecules that emit light themselves, requiring no backlight. It is not a type of LCD (B) (different), not printer (C), not network (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is display resolution?",
+    "options": [
+      "The physical size of the screen",
+      "The number of pixels on a display",
+      "The brightness level",
+      "The response time"
+    ],
+    "correct": 1,
+    "explanation": "Resolution is the number of pixels (e.g., 1920×1080). Size (A) is diagonal measurement, brightness (C) is nits, response time (D) is milliseconds."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is response time in a display?",
+    "options": [
+      "The time to turn a pixel on or off",
+      "The time to download an image",
+      "The time to turn on the monitor",
+      "The time to change brightness"
+    ],
+    "correct": 2,
+    "explanation": "Response time is the milliseconds to turn a pixel on or off, affecting motion clarity. It is not monitor power-on (A), download (C), or brightness change (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What unit measures display brightness?",
+    "options": [
+      "Nits",
+      "Hertz",
+      "Lumens",
+      "Pixels"
+    ],
+    "correct": 3,
+    "explanation": "Brightness is measured in nits (candelas per square meter). Pixels (A) measure resolution, Hertz (C) measures refresh rate, lumens (D) measure projector brightness."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is dot pitch (pixel pitch)?",
+    "options": [
+      "The distance in millimeters between pixels",
+      "The number of pixels",
+      "The brightness of dots",
+      "The color of pixels"
+    ],
+    "correct": 0,
+    "explanation": "Dot pitch is the distance between pixels---smaller numbers mean sharper images. It is not pixel count (A), brightness (C), or color (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does a lower dot pitch indicate?",
+    "options": [
+      "Lower image quality",
+      "Sharper images",
+      "Larger pixels",
+      "Slower response time"
+    ],
+    "correct": 1,
+    "explanation": "Lower dot pitch (pixels closer together) means sharper images. A is opposite, C is false (pixels are smaller/closer), D is unrelated."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is contrast ratio?",
+    "options": [
+      "The number of colors",
+      "The brightness level",
+      "Difference between brightest white and darkest black",
+      "The screen size ratio"
+    ],
+    "correct": 2,
+    "explanation": "Contrast ratio compares brightest white to darkest black. Higher ratios mean more depth. Not colors (A), brightness (C), or aspect ratio (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does GPU stand for?",
+    "options": [
+      "General Power Unit",
+      "Graphical Performance Utility",
+      "Graphics Printing Unit",
+      "Graphics Processing Unit"
+    ],
+    "correct": 3,
+    "explanation": "GPU stands for Graphics Processing Unit, which controls graphics manipulation and display. B, C, D are incorrect."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is aspect ratio?",
+    "options": [
+      "The display's width relative to its height",
+      "The screen's diagonal measurement",
+      "The number of pixels",
+      "The brightness ratio"
+    ],
+    "correct": 0,
+    "explanation": "Aspect ratio is width:height (e.g., 16:9). Diagonal (A) is size, pixels (C) is resolution, brightness ratio (D) is contrast."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Smart TV?",
+    "options": [
+      "A TV with artificial intelligence",
+      "An Internet-enabled HDTV for streaming, browsing, and apps",
+      "A TV that learns your preferences",
+      "A TV with better sound"
+    ],
+    "correct": 1,
+    "explanation": "A Smart TV is an Internet-enabled HDTV allowing web browsing, streaming, and apps. It's not just AI (A), learning (C) (though some do), or better sound (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is UHD television?",
+    "options": [
+      "Standard definition TV",
+      "A type of smart TV",
+      "Ultra-High-Definition with better resolution than HDTV",
+      "A TV with ultra sound"
+    ],
+    "correct": 2,
+    "explanation": "UHD (Ultra-High-Definition) provides higher resolution (4K, 8K) than HDTV. It is not standard (A), not just smart (C), not about sound (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a data projector used for?",
+    "options": [
+      "Printing documents",
+      "Scanning images",
+      "Recording video",
+      "Projecting computer screen onto larger surface for audience viewing"
+    ],
+    "correct": 3,
+    "explanation": "A data projector projects computer output onto a large screen for audiences. It does not print (A), scan (C), or record (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an interactive whiteboard?",
+    "options": [
+      "A touch-sensitive device displaying computer screen for interactive use",
+      "A regular whiteboard",
+      "A projector screen",
+      "A type of monitor"
+    ],
+    "correct": 0,
+    "explanation": "An interactive whiteboard is touch-sensitive, displays computer output (via projector), and allows interaction. It is not a regular whiteboard (A), just a screen (C), or just a monitor (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is force feedback in gaming controllers?",
+    "options": [
+      "Audio feedback",
+      "Physical resistance or vibrations simulating real forces",
+      "Visual effects",
+      "Controller weight"
+    ],
+    "correct": 1,
+    "explanation": "Force feedback provides tactile sensations (vibrations, resistance) to simulate real-world forces. Not audio (A), visual (C), or weight (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the goal of accessible input and output technology?",
+    "options": [
+      "To make technology more expensive",
+      "To replace all manual input",
+      "To enable all users to be independent when using technology",
+      "To make devices smaller"
+    ],
+    "correct": 2,
+    "explanation": "Accessible technology aims to enable all users, including those with disabilities, to use technology independently. It is not about cost (A), replacement (C), or size (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an eye gaze pointing device?",
+    "options": [
+      "Glasses that help you see",
+      "A camera that follows eye movement",
+      "A screen for eye exams",
+      "A device analyzing where the user is looking to control the computer"
+    ],
+    "correct": 3,
+    "explanation": "Eye gaze devices track where the user looks to control the computer, helping those with severe physical disabilities. It is not glasses (A), just a camera (C), or eye exam equipment (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a foot mouse?",
+    "options": [
+      "A mouse controlled by feet for users with limited hand mobility",
+      "A mouse shaped like a foot",
+      "A mouse on the floor",
+      "A mouse that measures foot size"
+    ],
+    "correct": 0,
+    "explanation": "A foot mouse enables users with limited hand/arm mobility to control input using their feet. It is not shaped like a foot (A), just on floor (C), or measuring foot (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is sip-and-puff technology?",
+    "options": [
+      "A cleaning device",
+      "Technology controlling devices by sipping or puffing into a tube",
+      "A breathing exercise tool",
+      "A voice input system"
+    ],
+    "correct": 1,
+    "explanation": "Sip-and-puff lets users control devices by sipping (inhaling) or puffing (exhaling) into a tube, aiding those with severe physical disabilities. Not cleaning (A), exercise (C), or voice (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a refreshable Braille display?",
+    "options": [
+      "A Braille printer",
+      "A Braille book",
+      "A device using pins to display Braille that changes with content",
+      "A screen for blind users"
+    ],
+    "correct": 2,
+    "explanation": "A refreshable Braille display raises/lowers pins to form Braille characters that change as user navigates content. It is not a printer (A) (though related), not a static book (C), and more specific than just screen (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Braille printer?",
+    "options": [
+      "A printer that uses Braille font",
+      "A printer for blind users",
+      "A scanner for Braille",
+      "A printer that embosses raised dots for tactile reading"
+    ],
+    "correct": 3,
+    "explanation": "A Braille printer embosses raised dots on paper to create tactile Braille output. It does not print ink Braille font (A), is not just \"for blind users\" (C) (definition too vague), and does not scan (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do OCR readers assist visually impaired users?",
+    "options": [
+      "By reading text aloud through screen readers",
+      "By scanning and digitizing print for conversion to accessible formats",
+      "By enlarging text",
+      "By printing Braille"
+    ],
+    "correct": 1,
+    "explanation": "OCR readers scan printed material and digitize it so screen readers can read aloud or Braille printers can output. A is the result after OCR, C is magnification, D is Braille printing."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are default settings?",
+    "options": [
+      "Standard preconfigured settings for software and hardware",
+      "Settings that cannot be changed",
+      "User-customized settings",
+      "Hidden settings"
+    ],
+    "correct": 1,
+    "explanation": "Default settings are standard preconfigured settings that control initial behavior. They can be changed (A is false), are not user-customized (C) (that's custom settings), and are not hidden (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why should you replace older CRT monitors?",
+    "options": [
+      "They are too heavy",
+      "They are outdated style",
+      "They emit higher radiation and consume more power than modern displays",
+      "They cannot display color"
+    ],
+    "correct": 2,
+    "explanation": "CRT monitors should be replaced because they emit higher radiation, consume more power, and are less efficient. Weight (A) and style (C) are concerns but not primary health reasons. CRTs can display color (D) (many did)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why should you minimize wireless connections?",
+    "options": [
+      "To save battery",
+      "To improve speed",
+      "To reduce cost",
+      "To reduce radiation exposure from RF energy"
+    ],
+    "correct": 3,
+    "explanation": "Minimizing wireless connections reduces exposure to radio frequency radiation. While battery (A) and cost (D) may be benefits, the health context is radiation. Speed (C) is not improved by minimizing."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why should you turn off devices when not in use?",
+    "options": [
+      "To increase performance",
+      "To save electricity and reduce radiation exposure",
+      "To make them last shorter",
+      "To update software"
+    ],
+    "correct": 1,
+    "explanation": "Turning off devices saves energy and eliminates radiation emission when not in use. It extends life (not shortens B), does not increase performance (C) (though may help with updates), updates (D) don't require device off."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the primary reason wearable devices use touch input?",
+    "options": [
+      "Touch is more accurate",
+      "Lack of space for physical keyboards",
+      "Touch screens are cheaper",
+      "Users prefer touch"
+    ],
+    "correct": 1,
+    "explanation": "Wearables primarily use touch because they lack space for physical keyboards. Accuracy (A) varies, cost (C) is not primary, and preference (D) follows practicality."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a stylus?",
+    "options": [
+      "To type faster",
+      "To store ink",
+      "To provide pressure-based input on touch screens",
+      "To point at the screen from a distance"
+    ],
+    "correct": 2,
+    "explanation": "A stylus provides pressure-based input on touch screens or tablets, allowing precise control. It does not type faster (A) (though can help), store ink (C) (it's not a pen), or work from distance (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of a digital pen?",
+    "options": [
+      "Only for drawing",
+      "To replace all keyboard input",
+      "Only for signatures",
+      "To capture handwriting/drawings and convert to digital format"
+    ],
+    "correct": 3,
+    "explanation": "A digital pen captures handwriting or drawings and converts them to digital format for recognition. It is not just for drawing (A) or signatures (D), and does not replace all keyboard input (C)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a graphics tablet?",
+    "options": [
+      "To create drawings with pressure-sensitive pen for digital input",
+      "To display graphics",
+      "To store images",
+      "To print graphics"
+    ],
+    "correct": 0,
+    "explanation": "A graphics tablet is an input device for creating drawings with a pressure-sensitive pen. It does not display (A) (though some have screens), store (C), or print (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between OCR and OMR?",
+    "options": [
+      "OCR reads marks; OMR reads text",
+      "OCR reads printed text; OMR reads hand-drawn marks",
+      "They are the same",
+      "OCR is for photos; OMR is for text"
+    ],
+    "correct": 1,
+    "explanation": "OCR reads printed characters and converts to editable text. OMR reads hand-drawn marks (like test bubbles). A is reversed, C false, D false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between hard copy and soft copy?",
+    "options": [
+      "Hard copy is printed; soft copy is electronic",
+      "Hard copy is temporary; soft copy is permanent",
+      "Hard copy is electronic; soft copy is printed",
+      "They are the same"
+    ],
+    "correct": 2,
+    "explanation": "Hard copy is printed physical output. Soft copy is electronic temporary display. A is reversed, C is opposite (hard copy is more permanent), D false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between portrait and landscape orientation?",
+    "options": [
+      "Portrait is taller than wide; landscape wider than tall",
+      "They are the same",
+      "Portrait is for graphics; landscape for text",
+      "Portrait is wider than tall; landscape taller than wide"
+    ],
+    "correct": 3,
+    "explanation": "Portrait is taller than wide (like a letter). Landscape is wider than tall (like a spreadsheet). A is reversed, C false, D not strictly true."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between an inkjet and a laser printer?",
+    "options": [
+      "Inkjet sprays ink; laser uses toner and a laser beam",
+      "Inkjet uses toner; laser uses ink",
+      "They are the same",
+      "Inkjet is faster"
+    ],
+    "correct": 0,
+    "explanation": "Inkjet sprays liquid ink. Laser uses powdered toner fused by heat, with a laser creating the image. A is reversed, C false, D is generally false (lasers are often faster)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a plotter and a regular printer?",
+    "options": [
+      "Plotter is smaller",
+      "Plotter produces high-quality technical drawings with continuous lines",
+      "Plotter is faster",
+      "They are the same"
+    ],
+    "correct": 1,
+    "explanation": "Plotters produce technical drawings (blueprints, maps) with continuous lines, unlike printers that use dots. They are not smaller (A) (often larger), not necessarily faster (C), and not the same (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between LCD and OLED displays?",
+    "options": [
+      "OLED needs backlight; LCD is self-illuminating",
+      "They are the same",
+      "LCD needs backlight; OLED is self-illuminating",
+      "LCD is newer"
+    ],
+    "correct": 2,
+    "explanation": "LCD requires a backlight; OLED pixels are self-illuminating. B is reversed, C false, D false (OLED is newer)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between response time and refresh rate?",
+    "options": [
+      "They are the same",
+      "Response time is in Hz; refresh rate in ms",
+      "Response time measures brightness",
+      "Response time is pixel change speed (ms); refresh rate is screen updates per second (Hz)"
+    ],
+    "correct": 3,
+    "explanation": "Response time (ms) measures pixel change speed. Refresh rate (Hz) measures how often screen updates per second. A false, C units reversed, D false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of force feedback in controllers?",
+    "options": [
+      "To provide tactile sensations simulating real-world forces",
+      "To make controllers heavier",
+      "To improve battery life",
+      "To connect wirelessly"
+    ],
+    "correct": 0,
+    "explanation": "Force feedback provides vibrations or resistance to simulate real forces (impact, terrain). Not weight (A), battery (C), or connection (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is recycling or donating old devices recommended?",
+    "options": [
+      "To make money",
+      "To eliminate radiation exposure from older devices and reduce e-waste",
+      "To get new devices",
+      "To support manufacturers"
+    ],
+    "correct": 1,
+    "explanation": "Recycling/donating eliminates potential radiation from aging devices and reduces environmental e-waste. While other benefits exist, health and environment are key. Making money (A) is not donation, getting new devices (C) is not the reason, supporting manufacturers (D) is not primary."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of an RFID reader?",
+    "options": [
+      "To read magnetic stripes",
+      "To scan barcodes",
+      "To read information from RFID tags via radio waves",
+      "To read printed text"
+    ],
+    "correct": 2,
+    "explanation": "An RFID reader reads RFID tags via radio waves. Magnetic stripes (A) are magstripe readers, barcodes (C) are barcode scanners, printed text (D) is OCR."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of a magstripe reader?",
+    "options": [
+      "To read RFID tags",
+      "To scan photos",
+      "To read printed text",
+      "To read magnetic stripes on cards"
+    ],
+    "correct": 3,
+    "explanation": "A magstripe reader reads magnetic stripes on credit cards, ID cards, etc. RFID (A) is different, photos (C) are scanners, printed text (D) is OCR."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of MICR?",
+    "options": [
+      "To read magnetic ink on checks",
+      "To read credit card stripes",
+      "To read barcodes",
+      "To read RFID tags"
+    ],
+    "correct": 0,
+    "explanation": "MICR reads magnetized ink on checks, used in banking. Credit cards (B) use magstripe, barcodes (C) use scanners, RFID (D) uses readers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of a data collection device?",
+    "options": [
+      "To display information",
+      "To obtain data directly at transaction locations",
+      "To print receipts",
+      "To store data permanently"
+    ],
+    "correct": 1,
+    "explanation": "Data collection devices obtain data where transactions occur (warehouses, restaurants). They may transmit data, but obtaining at location is key. Display (A) is output, print (C) is output, storage (D) is not primary function."
   },
 
-
-
+  //CS110 T1 MODULE 4
+  
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why must data be represented in a specific way for computers to process it?",
+    "options": [
+      "Because digital computers can only understand 0s and 1s due to their electronic circuit design",
+      "Because computers can only store data in audio format",
+      "Because all data must be converted to decimal numbers first",
+      "Because computer screens can only display letters and numbers"
+    ],
+    "correct": 0,
+    "explanation": "Digital computers are built from electronic circuits that operate using two distinct states (on/off, high/low voltage). This hardware limitation means computers can only directly understand and process binary data---combinations of 0s and 1s. All forms of data (text, images, audio, video) must be converted to binary representation before a computer can process them. Computers do not natively understand decimal (C) or require audio conversion (A)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which four number systems are commonly used in computing?",
+    "options": [
+      "Decimal, Binary, Ternary, and Quaternary",
+      "Decimal, Binary, Octal, and Hexadecimal",
+      "Decimal, Fractional, Scientific, and Exponential",
+      "Binary, ASCII, Unicode, and EBCDIC"
+    ],
+    "correct": 1,
+    "explanation": "The four number systems commonly used in computing are: Decimal (base 10) for human interface, Binary (base 2) for machine-level representation, Octal (base 8) for historical and permission representations, and Hexadecimal (base 16) for compact binary representation in programming and memory addressing. Ternary (A) is not commonly used. ASCII/Unicode (D) are character encoding systems, not number systems."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a number system in mathematical terms?",
+    "options": [
+      "A system for categorizing different types of numbers",
+      "A calculator program in a computer",
+      "A writing system for expressing numbers using digits and positional values",
+      "A method for solving mathematical equations"
+    ],
+    "correct": 2,
+    "explanation": "A number system is a writing system for expressing numbers---a mathematical notation for representing numbers of a given set. It uses a base (radix) that determines the number of unique digits and how positional values are calculated. It is not a categorization system (A), a program (C), or an equation-solving method (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What determines which digits are valid in a particular number system?",
+    "options": [
+      "The country where the number system is used",
+      "The age of the number system",
+      "The number of digits in the number",
+      "The base (radix) of the number system"
+    ],
+    "correct": 3,
+    "explanation": "The base (radix) of a number system determines which digits are valid. For example, base 10 (decimal) allows digits 0-9, base 2 (binary) allows only 0 and 1, base 8 (octal) allows 0-7, and base 16 (hexadecimal) allows 0-9 and A-F. Geographic location (A), age (B), and number length (D) do not determine valid digits."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How are digit positions numbered within a number?",
+    "options": [
+      "Starting from the rightmost digit as position 0, increasing to the left",
+      "Starting from the leftmost digit as position 1",
+      "Positions are random and have no standard numbering",
+      "Starting from the decimal point outward in both directions as position 0"
+    ],
+    "correct": 0,
+    "explanation": "In any number, digit positions are numbered starting from the rightmost digit as position 0. Moving left, the next digit has position 1, then position 2, and so on. For fractional numbers, the first digit right of the decimal point has position -1, then -2, etc. This standardized positioning is essential for calculating the value of a number in any base."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the two kinds of values that every digit in a number has?",
+    "options": [
+      "True value and false value",
+      "Face value and position value",
+      "Decimal value and binary value",
+      "Left value and right value"
+    ],
+    "correct": 1,
+    "explanation": "Every digit in a number has two kinds of values: face value (the actual digit itself, like 5 in the number 52) and position value (the value contributed by the digit's position, calculated as base^position). The total value of a number is the sum of (face value × position value) for all digits. The other options (A, C, D) are not standard terminology in number systems."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is the total value of a number calculated using face value and position value?",
+    "options": [
+      "By multiplying all face values together",
+      "By adding all face values and multiplying by the base",
+      "By summing (face value × base^position) for each digit",
+      "By averaging the face values"
+    ],
+    "correct": 2,
+    "explanation": "The total value of a number is calculated by summing the product of each digit's face value and its position value (base raised to the power of its position) for all digits. For example, in decimal 52: (5 × 10¹) + (2 × 10⁰) = 50 + 2 = 52. This formula works for any number system using the appropriate base."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How is a number written to clearly indicate its base?",
+    "options": [
+      "By writing the base in front of the number",
+      "By using different colored digits for different bases",
+      "Base is never indicated; it must be guessed from context",
+      "By writing the base in parentheses as a subscript after the number"
+    ],
+    "correct": 3,
+    "explanation": "A number in a particular base is written with the base as a subscript in parentheses. For example, (23)₁₀ means decimal 23, (345)₈ means octal 345, and (3FA)₁₆ means hexadecimal 3FA. This notation prevents confusion when numbers could be interpreted in different bases. Colors (C) are not used, and guessing (D) leads to errors."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What digits does the decimal number system use?",
+    "options": [
+      "0 and 1 only",
+      "0 through 7",
+      "0 through 9",
+      "0 through 9 and A through F"
+    ],
+    "correct": 0,
+    "explanation": "The decimal number system (base 10) consists of ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. This is the standard system for everyday human use. Binary (A) uses only 0 and 1, octal (B) uses 0-7, and hexadecimal (D) uses 0-9 and A-F."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What digits does the octal number system use?",
+    "options": [
+      "0 through 7",
+      "0 and 1 only",
+      "0 through 9",
+      "0 through 9 and A through F"
+    ],
+    "correct": 1,
+    "explanation": "The octal number system (base 8) consists of eight digits: 0, 1, 2, 3, 4, 5, 6, and 7. All octal numbers are represented using only these digits. Digits 8 and 9 are invalid in octal. Binary (A) uses 0-1, decimal (C) uses 0-9, and hexadecimal (D) uses 0-9 and A-F."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What digits does the hexadecimal number system use?",
+    "options": [
+      "0 and 1 only",
+      "0 through 9",
+      "0 through 7",
+      "0 through 9 and A through F"
+    ],
+    "correct": 2,
+    "explanation": "The hexadecimal number system (base 16) consists of sixteen digits: 0 through 9 and the letters A through F, where A=10, B=11, C=12, D=13, E=14, and F=15. This allows each hex digit to represent exactly four binary bits, making it ideal for compact representation of binary data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does the letter A represent in the hexadecimal system?",
+    "options": [
+      "5",
+      "10",
+      "16",
+      "1"
+    ],
+    "correct": 3,
+    "explanation": "In the hexadecimal system, the letter A represents the decimal value 10. This is necessary because we need sixteen unique symbols, and our standard digits only provide ten (0-9). The full mapping is: A=10, B=11, C=12, D=13, E=14, F=15."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does the letter F represent in the hexadecimal system?",
+    "options": [
+      "6",
+      "15",
+      "16",
+      "255"
+    ],
+    "correct": 0,
+    "explanation": "In the hexadecimal system, the letter F represents the decimal value 15. This is the largest single digit in hexadecimal. When combined with another F at the next position (FF), it represents 255 decimal, which is the maximum value of one byte (11111111 in binary)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the two parts of a decimal number that require different conversion methods?",
+    "options": [
+      "Positive part and negative part",
+      "Integer part and fraction part",
+      "Left part and right part",
+      "Even part and odd part"
+    ],
+    "correct": 1,
+    "explanation": "A decimal number has two distinct parts: the integer part (whole number portion left of the decimal point) and the fraction part (portion right of the decimal point). These parts require different conversion methods---integer conversion uses successive division by the target base, while fraction conversion uses successive multiplication by the target base."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What method is used to convert the integer part of a decimal number to another base?",
+    "options": [
+      "Successive division, collecting remainders",
+      "Direct substitution using a conversion table",
+      "Successive multiplication, collecting whole number parts",
+      "Averaging the digits"
+    ],
+    "correct": 2,
+    "explanation": "To convert the integer part of a decimal number to another base, successive division is used: divide the integer repeatedly by the target base, collect the remainders, and read them from the last to the first (bottom to top). This works because integer values represent whole units. Multiplication (A) is used for fractions, tables (C) are impractical for large numbers, and averaging (D) is meaningless."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What method is used to convert the fractional part of a decimal number to another base?",
+    "options": [
+      "Successive division, collecting remainders",
+      "Subtracting powers of the target base",
+      "Rounding to the nearest integer",
+      "Successive multiplication, collecting whole number parts"
+    ],
+    "correct": 3,
+    "explanation": "To convert the fractional part of a decimal number to another base, successive multiplication is used: multiply the fraction repeatedly by the target base, collect the whole number parts that result, and read them from first to last (top to bottom). This works because fractions represent parts of a whole, and multiplication by the base shifts digits to the left."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When converting 25 decimal to binary, what is the correct result?",
+    "options": [
+      "10001",
+      "11001",
+      "10101",
+      "11101"
+    ],
+    "correct": 0,
+    "explanation": "Converting (25)₁₀ to binary using successive division by 2: · 25 ÷ 2 = 12 remainder 1 · 12 ÷ 2 = 6 remainder 0 · 6 ÷ 2 = 3 remainder 0 · 3 ÷ 2 = 1 remainder 1 · 1 ÷ 2 = 0 remainder 1 Reading remainders bottom to top: 11001. Therefore, (25)₁₀ = (11001)₂. 10001 (A) would be 17 decimal, 10101 (C) would be 21 decimal, 11101 (D) would be 29 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When converting 0.2345 decimal to binary, what is the first digit after the binary point?",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "Cannot be determined"
+    ],
+    "correct": 1,
+    "explanation": "Converting (0.2345)₁₀ to binary using successive multiplication by 2: 0.2345 × 2 = 0.4690 → the whole number part is 0. Therefore, the first binary digit after the point is 0. This process continues with the remaining fractional part 0.4690."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do you convert a decimal number that has both integer and fractional parts to another base?",
+    "options": [
+      "Convert only the integer part and ignore the fraction",
+      "Convert the number as if it were a whole number, then add the fraction later",
+      "Convert the integer and fraction parts separately, then combine them with a decimal point",
+      "Round the number to the nearest integer first"
+    ],
+    "correct": 2,
+    "explanation": "To convert a decimal number with both integer and fractional parts to another base, you must: 1) Separate the number into integer and fractional parts, 2) Convert the integer part using successive division, 3) Convert the fractional part using successive multiplication, and 4) Combine the results with a decimal point. The two parts require different methods and cannot be combined during conversion."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the general method for converting numbers from binary, octal, or hexadecimal to decimal?",
+    "options": [
+      "Divide the number by 10 repeatedly",
+      "Convert to binary first, then to decimal",
+      "Look up the value in a conversion table",
+      "Sum of (digit × base^position) for each digit"
+    ],
+    "correct": 3,
+    "explanation": "The general method for converting from any base to decimal is to calculate the sum of (digit × base^position) for each digit in the number. For digits left of the point, positions are positive (0,1,2... from right). For digits right of the point, positions are negative (-1,-2,-3...). This works for binary, octal, hexadecimal, and any other base."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How are digit positions numbered for digits to the right of the decimal point?",
+    "options": [
+      "Starting at -1 and decreasing (more negative) to the right",
+      "Starting at 0 and increasing to the right",
+      "They are not numbered; fractions are handled differently",
+      "Starting at 1 and increasing to the right"
+    ],
+    "correct": 0,
+    "explanation": "For digits to the right of the decimal point, the first digit immediately right of the point has position -1. Positions decrease by 1 as you move right (-2, -3, -4, ...). This allows the formula (digit × base^position) to correctly account for fractional values, since base raised to a negative power gives a fraction."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1011 to decimal.",
+    "options": [
+      "10",
+      "8",
+      "11",
+      "13"
+    ],
+    "correct": 1,
+    "explanation": "(1011)₂ to decimal: · 1 at position 3: 1 × 2³ = 8 · 0 at position 2: 0 × 2² = 0 · 1 at position 1: 1 × 2¹ = 2 · 1 at position 0: 1 × 2⁰ = 1 Sum = 8 + 0 + 2 + 1 = 11. Therefore, (1011)₂ = (11)₁₀. 8 (A) would be 1000₂, 10 (B) would be 1010₂, 13 (D) would be 1101₂."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the hexadecimal number C15 to decimal.",
+    "options": [
+      "2987",
+      "3125",
+      "3093",
+      "2896"
+    ],
+    "correct": 2,
+    "explanation": "(C15)₁₆ to decimal (C=12): · C (12) at position 2: 12 × 16² = 12 × 256 = 3072 · 1 at position 1: 1 × 16¹ = 16 · 5 at position 0: 5 × 16⁰ = 5 Sum = 3072 + 16 + 5 = 3093. Therefore, (C15)₁₆ = (3093)₁₀."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary fraction .1101 to decimal.",
+    "options": [
+      "0.8125",
+      "0.7500",
+      "0.9375",
+      "0.6875"
+    ],
+    "correct": 3,
+    "explanation": "(.1101)₂ to decimal: · 1 at position -1: 1 × 2⁻¹ = 0.5 · 1 at position -2: 1 × 2⁻² = 0.25 · 0 at position -3: 0 × 2⁻³ = 0 · 1 at position -4: 1 × 2⁻⁴ = 0.0625 Sum = 0.5 + 0.25 + 0 + 0.0625 = 0.8125. 0.6875 (A) would be .1011₂, 0.75 (C) would be .11₂, 0.9375 (D) would be .1111₂."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1011.1001 to decimal.",
+    "options": [
+      "11.5625",
+      "11.2500",
+      "11.5000",
+      "11.6250"
+    ],
+    "correct": 0,
+    "explanation": "(1011.1001)₂ to decimal: Integer part (1011) = 11 (as calculated in Q22) Fraction part (.1001): · 1 at -1: 0.5 · 0 at -2: 0 · 0 at -3: 0 · 1 at -4: 0.0625 Fraction sum = 0.5625 Total = 11 + 0.5625 = 11.5625. 11.25 (A) would be .01₂, 11.5 (B) would be .1₂, 11.625 (D) would be .101₂."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why does the shortcut method for converting binary to octal work?",
+    "options": [
+      "Because computers are designed to work in octal",
+      "Because 2³ = 8, so one octal digit represents exactly three binary bits",
+      "Because octal numbers are easier to calculate",
+      "Because binary and octal both use the same digits"
+    ],
+    "correct": 1,
+    "explanation": "The shortcut method for converting binary to octal works because 2³ = 8, meaning one octal digit can represent exactly three binary bits (since 3 bits can represent 2³ = 8 unique values, matching the octal digit range 0-7). This exact relationship allows direct grouping of binary bits into threes and converting each group independently."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1110101100110 to octal.",
+    "options": [
+      "16546",
+      "15346",
+      "72646",
+      "17266"
+    ],
+    "correct": 2,
+    "explanation": "(1110101100110)₂ to octal: Group into threes from right: 1 110 101 100 110 Leftmost group becomes 001 Groups: 001, 110, 101, 100, 110 Convert each: 001=1, 110=6, 101=5, 100=4, 110=6 Result: 16546₈. 72646 (A) would come from incorrect grouping, 15346 (C) and 17266 (D) are not correct for this binary number."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why does the shortcut method for converting binary to hexadecimal work?",
+    "options": [
+      "Because hexadecimal is easier for humans to read",
+      "Because computers display memory addresses in hex",
+      "Because hex and binary both use the digits 0 and 1",
+      "Because 2⁴ = 16, so one hex digit represents exactly four binary bits"
+    ],
+    "correct": 3,
+    "explanation": "The shortcut method for converting binary to hexadecimal works because 2⁴ = 16, meaning one hexadecimal digit can represent exactly four binary bits (since 4 bits can represent 2⁴ = 16 unique values, matching the hex digit range 0-15). This exact relationship allows direct grouping of binary bits into fours and converting each group independently."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1110101100110 to hexadecimal.",
+    "options": [
+      "1E55",
+      "1D66",
+      "1C77",
+      "1F44"
+    ],
+    "correct": 0,
+    "explanation": "(1110101100110)₂ to hex: Group into fours from right: 1 1101 0110 0110 Leftmost group becomes 0001 Groups: 0001, 1101, 0110, 0110 Convert each: 0001=1, 1101=D, 0110=6, 0110=6 Result: 1D66₁₆. 1E55 (B) would be 1 1110 0101 0101, 1C77 (C) would be 1 1100 0111 0111, 1F44 (D) would be 1 1111 0100 0100."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do you convert hexadecimal numbers to binary using the shortcut method?",
+    "options": [
+      "Convert each hex digit to its four-bit binary equivalent",
+      "Convert each hex digit to its three-bit binary equivalent",
+      "Convert the entire hex number to decimal first",
+      "Divide the hex number by 2 repeatedly"
+    ],
+    "correct": 1,
+    "explanation": "To convert hexadecimal to binary, convert each hexadecimal digit individually to its four-bit binary equivalent (since each hex digit represents exactly four bits). For example, 2→0010, B→1011, A→1010, 3→0011. Then combine all bits. Three-bit conversion (A) would be for octal, decimal conversion (C) is unnecessary, and division (D) is for decimal integer conversion."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the hexadecimal number 2BA3 to binary.",
+    "options": [
+      "10101110110011",
+      "1010101110100011",
+      "10101110100011",
+      "10101101110011"
+    ],
+    "correct": 2,
+    "explanation": "(2BA3)₁₆ to binary: 2 → 0010 B → 1011 A → 1010 3 → 0011 Combine: 0010 1011 1010 0011 = 0010101110100011 Remove leading zeros: 10101110100011 10101110110011 (B) would be 2BB3, 1010101110100011 (C) has incorrect grouping, 10101101110011 (D) would be 2B73."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do you convert octal numbers to binary using the shortcut method?",
+    "options": [
+      "Convert each octal digit to its four-bit binary equivalent",
+      "Convert the entire octal number to decimal first",
+      "Multiply the octal number by 2",
+      "Convert each octal digit to its three-bit binary equivalent"
+    ],
+    "correct": 3,
+    "explanation": "To convert octal to binary, convert each octal digit individually to its three-bit binary equivalent (since each octal digit represents exactly three bits). For example, 4→100, 7→111, 3→011. Then combine all bits. Four-bit conversion (B) would be for hex, decimal conversion (C) is unnecessary, and multiplication (D) is incorrect."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the octal number 473 to binary.",
+    "options": [
+      "100111011",
+      "100111101",
+      "110011011",
+      "100111111"
+    ],
+    "correct": 0,
+    "explanation": "(473)₈ to binary: 4 → 100 7 → 111 3 → 011 Combine: 100 111 011 = 100111011 100111101 (B) would be 475₈, 110011011 (C) would be 633₈, 100111111 (D) would be 477₈."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is hexadecimal notation preferred over binary for human readability in computing?",
+    "options": [
+      "It is the native language of computers",
+      "It uses fewer digits and is easier to read and transcribe accurately",
+      "It can represent negative numbers",
+      "It is required by all programming languages"
+    ],
+    "correct": 1,
+    "explanation": "Hexadecimal is preferred over binary for human readability because it is much more concise (one hex digit represents four binary bits), reducing a 16-bit binary number like 1111111111111111 to just FFFF. This conciseness makes hex numbers easier to read, remember, and transcribe accurately. Binary (B) is the native language, not hex. Negative numbers (C) can be represented in any system, and hex is not required by all languages (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the relationship between the number of bits and the number of unique values they can represent?",
+    "options": [
+      "n bits represent 2ⁿ unique values",
+      "n bits represent n² unique values",
+      "n bits represent n unique values",
+      "n bits represent 10ⁿ unique values"
+    ],
+    "correct": 2,
+    "explanation": "The number of unique values that can be represented by n bits is 2ⁿ. This is because each bit has two possible states (0 or 1), and with n bits, the total number of combinations is 2 multiplied by itself n times. For example, 3 bits represent 2³ = 8 values (000 to 111), and 4 bits represent 2⁴ = 16 values (0000 to 1111)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens if you try to use the digit 8 in an octal number?",
+    "options": [
+      "It is valid because 8 is between 0 and 7",
+      "It is automatically converted to binary",
+      "It represents the number 10 in decimal",
+      "It is invalid because octal only allows digits 0-7"
+    ],
+    "correct": 3,
+    "explanation": "The digit 8 is invalid in octal because the octal number system only allows digits 0 through 7. A number containing the digit 8 cannot be a valid octal number and would either be interpreted as being in a different base or cause an error. This applies to any digit outside the valid range for a given base."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is understanding multiple number systems essential in computing?",
+    "options": [
+      "Because binary is the computer's native language, and octal/hex provide human-friendly shortcuts",
+      "Because computers use different number systems on different days",
+      "Because decimal is too difficult for computers to process",
+      "Because all programming languages require octal input"
+    ],
+    "correct": 0,
+    "explanation": "Understanding multiple number systems is essential because binary is the fundamental language of computers (all data is ultimately binary), while octal and hexadecimal provide human-friendly shortcuts for working with binary data. Memory addresses, machine code, color values, and network addresses are commonly displayed in hex. Computers process decimal fine (C), and programming languages don't require octal (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 53 to binary.",
+    "options": [
+      "110101",
+      "101011",
+      "111001",
+      "101101"
+    ],
+    "correct": 1,
+    "explanation": "(53)₁₀ to binary: 53 ÷ 2 = 26 R1 26 ÷ 2 = 13 R0 13 ÷ 2 = 6 R1 6 ÷ 2 = 3 R0 3 ÷ 2 = 1 R1 1 ÷ 2 = 0 R1 Read bottom to top: 110101 101011 (A) is 43 decimal, 111001 (C) is 57 decimal, 101101 (D) is 45 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 53 to octal.",
+    "options": [
+      "56",
+      "75",
+      "65",
+      "63"
+    ],
+    "correct": 2,
+    "explanation": "(53)₁₀ to octal: 53 ÷ 8 = 6 R5 6 ÷ 8 = 0 R6 Read bottom to top: 65₈ 56 (B) is 46 decimal, 75 (C) is 61 decimal, 63 (D) is 51 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 53 to hexadecimal.",
+    "options": [
+      "53",
+      "2A",
+      "3F",
+      "35"
+    ],
+    "correct": 3,
+    "explanation": "(53)₁₀ to hexadecimal: 53 ÷ 16 = 3 R5 (3×16=48, remainder 5) 3 ÷ 16 = 0 R3 Read bottom to top: 35₁₆ 53 (B) is decimal, 2A (C) is 42 decimal, 3F (D) is 63 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 68 to binary.",
+    "options": [
+      "1000100",
+      "1001000",
+      "1010100",
+      "1100100"
+    ],
+    "correct": 0,
+    "explanation": "(68)₁₀ to binary: 68 ÷ 2 = 34 R0 34 ÷ 2 = 17 R0 17 ÷ 2 = 8 R1 8 ÷ 2 = 4 R0 4 ÷ 2 = 2 R0 2 ÷ 2 = 1 R0 1 ÷ 2 = 0 R1 Read bottom to top: 1000100 1001000 (B) is 72 decimal, 1010100 (C) is 84 decimal, 1100100 (D) is 100 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 68 to octal.",
+    "options": [
+      "84",
+      "104",
+      "106",
+      "102"
+    ],
+    "correct": 1,
+    "explanation": "(68)₁₀ to octal: 68 ÷ 8 = 8 R4 8 ÷ 8 = 1 R0 1 ÷ 8 = 0 R1 Read bottom to top: 104₈ 84 (B) is decimal, 106 (C) is 70 decimal, 102 (D) is 66 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 68 to hexadecimal.",
+    "options": [
+      "34",
+      "48",
+      "44",
+      "42"
+    ],
+    "correct": 2,
+    "explanation": "(68)₁₀ to hexadecimal: 68 ÷ 16 = 4 R4 (4×16=64, remainder 4) 4 ÷ 16 = 0 R4 Read bottom to top: 44₁₆ 34 (B) is 52 decimal, 48 (C) is 72 decimal, 42 (D) is 66 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 29 to binary.",
+    "options": [
+      "11011",
+      "10111",
+      "11100",
+      "11101"
+    ],
+    "correct": 3,
+    "explanation": "(29)₁₀ to binary: 29 ÷ 2 = 14 R1 14 ÷ 2 = 7 R0 7 ÷ 2 = 3 R1 3 ÷ 2 = 1 R1 1 ÷ 2 = 0 R1 Read bottom to top: 11101 11011 (B) is 27 decimal, 10111 (C) is 23 decimal, 11100 (D) is 28 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 29 to octal.",
+    "options": [
+      "35",
+      "33",
+      "37",
+      "31"
+    ],
+    "correct": 0,
+    "explanation": "(29)₁₀ to octal: 29 ÷ 8 = 3 R5 3 ÷ 8 = 0 R3 Read bottom to top: 35₈ 33 (B) is 27 decimal, 37 (C) is 31 decimal, 31 (D) is 25 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal number 29 to hexadecimal.",
+    "options": [
+      "1C",
+      "1D",
+      "1E",
+      "1F"
+    ],
+    "correct": 1,
+    "explanation": "(29)₁₀ to hexadecimal: 29 ÷ 16 = 1 R13 (13 decimal = D in hex) 1 ÷ 16 = 0 R1 Read bottom to top: 1D₁₆ 1C (B) is 28 decimal, 1E (C) is 30 decimal, 1F (D) is 31 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1100111100111 to octal.",
+    "options": [
+      "14747",
+      "14646",
+      "15757",
+      "13737"
+    ],
+    "correct": 2,
+    "explanation": "(1100111100111)₂ to octal: Group into threes from right: 1 100 111 100 111 Leftmost group becomes 001 Groups: 001, 100, 111, 100, 111 Convert: 001=1, 100=4, 111=7, 100=4, 111=7 Result: 14747₈ 15757 (B) would be 1 101 111 101 111, 14646 (C) would be 1 100 110 100 110, 13737 (D) would be 1 011 111 011 111."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is binary considered the fundamental language of computers?",
+    "options": [
+      "Because it was invented by the first computer programmers",
+      "Because it is the easiest number system for humans to learn",
+      "Because all programming languages are written in binary",
+      "Because computer hardware uses electronic circuits with two states (on/off)"
+    ],
+    "correct": 3,
+    "explanation": "Binary is fundamental because computer hardware is built from electronic components that operate using two distinct states: on/off, high voltage/low voltage, or current flowing/not flowing. These two states map perfectly to binary digits 0 and 1. This makes circuit design simple, reliable, and inexpensive. Binary is not the easiest for humans (C)---decimal is. Programming languages are not written directly in binary (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How many unique values can be represented with 8 bits (one byte)?",
+    "options": [
+      "8",
+      "16",
+      "128",
+      "256"
+    ],
+    "correct": 0,
+    "explanation": "With 8 bits, 2⁸ = 256 unique values can be represented, ranging from 00000000 to 11111111 in binary (0 to 255 in decimal). This is significant because 256 values are enough for standard ASCII character sets, 256 shades per color channel, and one byte is the fundamental addressable unit of memory. 8 (A) is the number of bits, 16 (B) is 2⁴, 128 (C) is 2⁷."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the decimal equivalent of the hexadecimal number FF?",
+    "options": [
+      "240",
+      "15",
+      "255",
+      "256"
+    ],
+    "correct": 1,
+    "explanation": "(FF)₁₆ to decimal: F at position 1: 15 × 16¹ = 15 × 16 = 240 F at position 0: 15 × 16⁰ = 15 × 1 = 15 Sum = 240 + 15 = 255 This is the maximum value of one byte (11111111 in binary). 15 (A) is a single F, 240 (B) is only the first digit's contribution, 256 (D) is 2⁸ but not represented by FF."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the octal equivalent of the binary number 1011011?",
+    "options": [
+      "126",
+      "153",
+      "133",
+      "115"
+    ],
+    "correct": 2,
+    "explanation": "(1011011)₂ to octal: Group into threes from right: 1 011 011 Leftmost group becomes 001 Groups: 001, 011, 011 Convert: 001=1, 011=3, 011=3 Result: 133₈ 126 (B) would be 001 010 110, 153 (C) would be 001 101 011, 115 (D) would be 001 001 101."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the hexadecimal equivalent of the binary number 110110101?",
+    "options": [
+      "1A5",
+      "1C5",
+      "1D5",
+      "1B5"
+    ],
+    "correct": 3,
+    "explanation": "(110110101)₂ to hex: Group into fours from right: 1 1011 0101 Leftmost group becomes 0001 Groups: 0001, 1011, 0101 Convert: 0001=1, 1011=B, 0101=5 Result: 1B5₁₆ 1A5 (B) would be 1 1010 0101, 1C5 (C) would be 1 1100 0101, 1D5 (D) would be 1 1101 0101."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1111 to decimal.",
+    "options": [
+      "8",
+      "12",
+      "15",
+      "16"
+    ],
+    "correct": 2,
+    "explanation": "(1111)₂ to decimal: · 1 at position 3: 1 × 2³ = 8 · 1 at position 2: 1 × 2² = 4 · 1 at position 1: 1 × 2¹ = 2 · 1 at position 0: 1 × 2⁰ = 1 Sum = 8 + 4 + 2 + 1 = 15 8 (A) is 1000₂, 12 (B) is 1100₂, 16 (D) is 10000₂."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1111 to octal.",
+    "options": [
+      "15",
+      "17",
+      "16",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "(1111)₂ to octal: Group into threes from right: 1 111 Leftmost group becomes 001 Groups: 001, 111 Convert: 001=1, 111=7 Result: 17₈ 15 (B) is decimal, 16 (C) would be binary 1110, 20 (D) would be binary 10000."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1111 to hexadecimal.",
+    "options": [
+      "E",
+      "15",
+      "F",
+      "10"
+    ],
+    "correct": 2,
+    "explanation": "(1111)₂ is exactly one group of four bits: 1111 1111 binary = 15 decimal = F hexadecimal Therefore, (1111)₂ = (F)₁₆ E (B) is 14 decimal (1110₂), 15 (C) is decimal, not hex, 10 (D) is decimal 16 (10000₂)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the hexadecimal number ABC to binary.",
+    "options": [
+      "101010111101",
+      "101110111100",
+      "101010101100",
+      "101010111100"
+    ],
+    "correct": 3,
+    "explanation": "(ABC)₁₆ to binary: A → 1010 B → 1011 C → 1100 Combine: 1010 1011 1100 = 101010111100 101010111101 (B) would be ABD, 101110111100 (C) would be BBC, 101010101100 (D) would be AAC."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the octal number 777 to binary.",
+    "options": [
+      "111111111",
+      "111111110",
+      "111101111",
+      "111111011"
+    ],
+    "correct": 0,
+    "explanation": "(777)₈ to binary: 7 → 111 7 → 111 7 → 111 Combine: 111 111 111 = 111111111 111111110 (B) would be 776₈, 111101111 (C) would be 757₈, 111111011 (D) would be 773₈."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the octal number 777 to hexadecimal.",
+    "options": [
+      "1FE",
+      "1FF",
+      "1FD",
+      "1FB"
+    ],
+    "correct": 1,
+    "explanation": "First convert 777₈ to binary: 111111111₂ Then convert binary to hex: Group into fours from right: 1 1111 1111 Leftmost group becomes 0001 Groups: 0001, 1111, 1111 Convert: 0001=1, 1111=F, 1111=F Result: 1FF₁₆ 1FE (B) would be 111111110₂ = 776₈, 1FD (C) would be 111111101₂ = 775₈, 1FB (D) would be 111111011₂ = 773₈."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the significance of hexadecimal digits A through F?",
+    "options": [
+      "They represent the numbers 1 through 6 in a different order",
+      "They are used only in color codes, not in mathematics",
+      "They represent the decimal values 10 through 15",
+      "They are placeholders for missing digits"
+    ],
+    "correct": 2,
+    "explanation": "In the hexadecimal system, the letters A through F represent the decimal values 10 through 15 (A=10, B=11, C=12, D=13, E=14, F=15). This is necessary because base 16 requires sixteen unique symbols, and our standard decimal digits only provide ten (0-9). They are used throughout computing, not just in colors (B)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why might a decimal fraction like 0.1 require an infinite number of digits in binary?",
+    "options": [
+      "Because binary cannot represent fractions at all",
+      "Because computers round all fractions to integers",
+      "Because binary only works with whole numbers",
+      "Because 0.1 in decimal is a repeating fraction in binary due to different prime factors"
+    ],
+    "correct": 3,
+    "explanation": "A decimal fraction may require infinite digits in binary because of the different prime factors of the bases. Binary is base 2 (prime factor 2), while decimal is base 10 (prime factors 2 and 5). Fractions terminate only if the denominator contains only prime factors of the base. Since 0.1 = 1/10 contains the factor 5, it becomes a repeating fraction in binary (0.0001100110011...). Binary can represent fractions (A and D are false), and computers don't round all fractions (C)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do computers typically handle fractions that cannot be represented exactly in binary?",
+    "options": [
+      "They use approximation through floating-point representation with rounding",
+      "They refuse to process such numbers",
+      "They convert them to decimal first",
+      "They store them as exact fractions"
+    ],
+    "correct": 0,
+    "explanation": "Computers handle fractions that cannot be represented exactly using floating-point representation (scientific notation in binary) with a fixed number of bits. The infinitely repeating binary fraction is truncated or rounded to fit the available bits, introducing small rounding errors. This is why floating-point arithmetic can have precision issues. Computers don't refuse such numbers (A), don't convert to decimal (B), and typically don't store as exact fractions (D) for performance reasons."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the hexadecimal number 4D.21 to decimal.",
+    "options": [
+      "77.1328125",
+      "77.12890625",
+      "76.12890625",
+      "78.12890625"
+    ],
+    "correct": 1,
+    "explanation": "(4D.21)₁₆ to decimal: Integer part (4D): 4 at position 1: 4 × 16¹ = 64 D (13) at position 0: 13 × 16⁰ = 13 Integer sum = 77 Fractional part (.21): 2 at position -1: 2 × 16⁻¹ = 2/16 = 0.125 1 at position -2: 1 × 16⁻² = 1/256 = 0.00390625 Fraction sum = 0.12890625 Total = 77 + 0.12890625 = 77.12890625 77.1328125 (B) would come from 2×16⁻¹ + 1×16⁻² miscalculated, 76.12890625 (C) would be 4C.21, 78.12890625 (D) would be 4E.21."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the binary equivalent of the hexadecimal fraction .15?",
+    "options": [
+      ".00010010",
+      ".00010111",
+      ".00010101",
+      ".00010001"
+    ],
+    "correct": 2,
+    "explanation": "(.15)₁₆ to binary: Convert each hex digit to four-bit binary: 1 → 0001 5 → 0101 Combine: .00010101 .00010010 (B) would be .12₁₆, .00010111 (C) would be .17₁₆, .00010001 (D) would be .11₁₆."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the decimal fraction 0.865 to binary (first four digits).",
+    "options": [
+      ".1011",
+      ".1110",
+      ".1100",
+      ".1101"
+    ],
+    "correct": 3,
+    "explanation": "(0.865)₁₀ to binary (first four digits): 0.865 × 2 = 1.73 → record 1 (use 0.73) 0.73 × 2 = 1.46 → record 1 (use 0.46) 0.46 × 2 = 0.92 → record 0 (use 0.92) 0.92 × 2 = 1.84 → record 1 First four digits: 1101, so .1101... .1011 (B) would come from a different sequence, .1110 (C) and .1100 (D) are not correct for 0.865."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the primary reason for learning multiple number systems in computing?",
+    "options": [
+      "To understand how computers represent and process data at the fundamental level",
+      "To make mathematics more difficult for students",
+      "To replace decimal numbers in everyday life",
+      "To pass programming exams only"
+    ],
+    "correct": 0,
+    "explanation": "The primary reason for learning multiple number systems is to understand how computers represent and process data at the fundamental level. Binary is the computer's native language, while octal and hexadecimal provide human-friendly ways to work with binary data. This knowledge is essential for low-level programming, debugging, understanding memory, and computer architecture. It's not to make math harder (A), replace decimal (C), or just for exams (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which number system is most compact for representing large binary numbers?",
+    "options": [
+      "Octal",
+      "Binary",
+      "Decimal",
+      "Hexadecimal"
+    ],
+    "correct": 1,
+    "explanation": "Hexadecimal is the most compact of the common number systems for representing binary data because each hex digit represents exactly four binary bits. A 32-bit binary number (32 digits) becomes 8 hex digits. Octal is less compact (3 bits per digit), and decimal is not directly related to binary powers, making conversion more complex. Binary (A) is the least compact."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the binary equivalent of the decimal number 0?",
+    "options": [
+      "1",
+      "00",
+      "0",
+      "10"
+    ],
+    "correct": 2,
+    "explanation": "The decimal number 0 is represented as 0 in binary, as in all number systems. While leading zeros can be added (00 is still zero), the simplest and standard representation is a single 0. 1 (B) represents decimal 1, and 10 (D) represents decimal 2 in binary."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the binary number 1001 to decimal.",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "5"
+    ],
+    "correct": 3,
+    "explanation": "(1001)₂ to decimal: · 1 at position 3: 1 × 2³ = 8 · 0 at position 2: 0 × 2² = 0 · 0 at position 1: 0 × 2¹ = 0 · 1 at position 0: 1 × 2⁰ = 1 Sum = 8 + 0 + 0 + 1 = 9 5 (A) is 0101₂, 8 (B) is 1000₂, 10 (D) is 1010₂."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the octal number 12 to decimal.",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct": 1,
+    "explanation": "(12)₈ to decimal: · 1 at position 1: 1 × 8¹ = 8 · 2 at position 0: 2 × 8⁰ = 2 Sum = 8 + 2 = 10 8 (A) is 10₈, 12 (C) is octal itself, 14 (D) is 16₈."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Convert the hexadecimal number 1A to decimal.",
+    "options": [
+      "26",
+      "16",
+      "11",
+      "21"
+    ],
+    "correct": 2,
+    "explanation": "(1A)₁₆ to decimal (A=10): · 1 at position 1: 1 × 16¹ = 16 · A (10) at position 0: 10 × 16⁰ = 10 Sum = 16 + 10 = 26 16 (A) would be 10₁₆, 11 (C) would be B₁₆, 21 (D) would be 15₁₆."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the binary equivalent of the hexadecimal digit C?",
+    "options": [
+      "1011",
+      "1100",
+      "1010",
+      "1101"
+    ],
+    "correct": 2,
+    "explanation": "C in hexadecimal represents the decimal value 12. In four-bit binary, 12 is represented as 1100 (8+4+0+0). 1010 (A) is A (10), 1011 (B) is B (11), 1101 (D) is D (13)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the binary equivalent of the octal digit 5?",
+    "options": [
+      "101",
+      "110",
+      "111",
+      "100"
+    ],
+    "correct": 3,
+    "explanation": "5 in octal represents the decimal value 5. In three-bit binary, 5 is represented as 101 (4+0+1). 100 (A) is 4, 110 (C) is 6, 111 (D) is 7."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How many bits are needed to represent one hexadecimal digit?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "correct": 0,
+    "explanation": "One hexadecimal digit represents exactly four bits because 2⁴ = 16, matching the range of hexadecimal digits (0-15). This is why hex is so useful in computing---it provides a compact representation of binary data. 3 bits (B) would be for octal, 8 bits (D) would be for two hex digits."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How many bits are needed to represent one octal digit?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "One octal digit represents exactly three bits because 2³ = 8, matching the range of octal digits (0-7). This relationship allows direct conversion between binary and octal by grouping bits in threes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which number system uses the digits 0-7 only?",
+    "options": [
+      "Octal",
+      "Decimal",
+      "Binary",
+      "Hexadecimal"
+    ],
+    "correct": 2,
+    "explanation": "The octal number system uses only the digits 0 through 7. Any appearance of digits 8 or 9 indicates that a number is not valid octal. Binary (A) uses 0-1, decimal (C) uses 0-9, and hexadecimal (D) uses 0-9 and A-F."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which number system uses the digits 0-9 and letters A-F?",
+    "options": [
+      "Octal",
+      "Decimal",
+      "Hexadecimal",
+      "Binary"
+    ],
+    "correct": 3,
+    "explanation": "The hexadecimal number system uses sixteen digits: 0 through 9 for values 0-9, and A through F for values 10-15. This provides a complete set of symbols for base 16 representation. Binary (A) uses only 0-1, octal (B) uses 0-7, decimal (C) uses 0-9 only."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the decimal equivalent of the binary number 101010?",
+    "options": [
+      "42",
+      "40",
+      "21",
+      "84"
+    ],
+    "correct": 0,
+    "explanation": "(101010)₂ to decimal: · 1 at position 5: 1 × 2⁵ = 32 · 0 at position 4: 0 × 2⁴ = 0 · 1 at position 3: 1 × 2³ = 8 · 0 at position 2: 0 × 2² = 0 · 1 at position 1: 1 × 2¹ = 2 · 0 at position 0: 0 × 2⁰ = 0 Sum = 32 + 0 + 8 + 0 + 2 + 0 = 42 This is famously the \"Answer to the Ultimate Question of Life, the Universe, and Everything\" in Douglas Adams' \"The Hitchhiker's Guide to the Galaxy.\""
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the hexadecimal equivalent of the decimal number 42?",
+    "options": [
+      "2B",
+      "2A",
+      "3A",
+      "4A"
+    ],
+    "correct": 1,
+    "explanation": "(42)₁₀ to hexadecimal: 42 ÷ 16 = 2 R10 (10 decimal = A in hex) 2 ÷ 16 = 0 R2 Read bottom to top: 2A₁₆ 2B (B) is 43 decimal, 3A (C) is 58 decimal, 4A (D) is 74 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When converting a decimal fraction to binary, when should you stop the multiplication process?",
+    "options": [
+      "After exactly four steps regardless of result",
+      "When the result starts repeating",
+      "When the fractional part becomes zero or you have enough precision for your needs",
+      "After converting the integer part only"
+    ],
+    "correct": 2,
+    "explanation": "When converting decimal fractions to binary, you should continue the multiplication process until either: 1) the fractional part becomes exactly zero (terminating fraction), or 2) you have obtained enough digits for the precision required by your application. Many fractions never reach zero and require stopping at an acceptable level of precision. Stopping arbitrarily after four steps (A) may not provide enough accuracy."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens to the remainder in each step of decimal integer conversion to another base?",
+    "options": [
+      "It is discarded",
+      "It is used as the divisor for the next step",
+      "It is added to the next quotient",
+      "It becomes a digit in the converted number"
+    ],
+    "correct": 3,
+    "explanation": "In each step of converting a decimal integer to another base using successive division, the remainder becomes a digit in the converted number. Remainders are collected in reverse order (last remainder becomes the most significant digit). The quotient becomes the new number to divide. Remainders are never discarded (A)---they are the actual result."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the binary equivalent of the decimal fraction 0.5?",
+    "options": [
+      "0.5 cannot be represented in binary",
+      "0.1",
+      "0.01",
+      "0.11"
+    ],
+    "correct": 0,
+    "explanation": "0.5 in decimal is exactly 1/2. In binary, this is represented as 0.1 (since 2⁻¹ = 1/2 = 0.5). Unlike many decimal fractions, 0.5 converts cleanly to a terminating binary fraction because its denominator (2) is a factor of the binary base. 0.01 (B) would be 1/4 = 0.25 decimal."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is a valid octal number?",
+    "options": [
+      "189",
+      "123",
+      "12A",
+      "108"
+    ],
+    "correct": 3,
+    "explanation": "123 is a valid octal number because it uses only digits 0-7. 189 (B) contains the digit 9, which is invalid in octal. 12A (C) contains the letter A, which is invalid in octal (A is valid only in hexadecimal). 108 (D) contains the digit 8, which is invalid in octal."
+  },
+  
+    //CS110 T1 MODULE 5
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the fundamental difference between storage and memory in a computer system?",
+    "options": [
+      "Storage is long-term and nonvolatile; memory is temporary and volatile",
+      "Storage is volatile; memory is nonvolatile",
+      "Storage is temporary; memory is permanent",
+      "There is no difference; they are the same thing"
+    ],
+    "correct": 0,
+    "explanation": "Storage (like hard drives) is long-term and nonvolatile---it retains data even when power is off. Memory (RAM) is temporary and volatile---it holds data only while the computer is running and loses everything when power is turned off. Storage is like a file cabinet for permanent keeping, while memory is like a desk workspace for active tasks."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is an example of a storage medium?",
+    "options": [
+      "RAM",
+      "Processor cache",
+      "USB flash drive",
+      "CPU register"
+    ],
+    "correct": 1,
+    "explanation": "A USB flash drive is a storage medium---a physical location where data is kept permanently. RAM (A), processor cache (B), and CPU registers (D) are all types of memory, not storage. Storage media are nonvolatile and retain data when power is off, while memory is typically volatile."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the process of transferring data from memory to a storage medium called?",
+    "options": [
+      "Writing",
+      "Fetching",
+      "Reading",
+      "Executing"
+    ],
+    "correct": 2,
+    "explanation": "Writing is the process of transferring data, instructions, and information from memory to a storage medium. When you save a file, you are writing it to storage. Reading (A) is the opposite---transferring from storage to memory. Fetching (C) and executing (D) are CPU operations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Approximately how many bytes are in a gigabyte (GB)?",
+    "options": [
+      "1 million",
+      "1 billion",
+      "1 trillion",
+      "1 thousand"
+    ],
+    "correct": 3,
+    "explanation": "A gigabyte (GB) is approximately 1 billion bytes (exactly 1,073,741,824 bytes). A kilobyte (KB) is about 1 thousand, a megabyte (MB) is about 1 million, and a terabyte (TB) is about 1 trillion bytes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does access time measure in a storage device?",
+    "options": [
+      "The time to locate an item and deliver it to the processor",
+      "The total storage capacity",
+      "The speed of data transfer once it begins",
+      "The number of bytes that can be stored"
+    ],
+    "correct": 0,
+    "explanation": "Access time measures the amount of time it takes for a storage device to locate an item on a storage medium and the time required to deliver that item from memory to the processor. Transfer rate (C) measures the speed of data movement once access has occurred."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the most common storage medium in computers?",
+    "options": [
+      "USB flash drive",
+      "Internal hard drive",
+      "Optical disc",
+      "Cloud storage"
+    ],
+    "correct": 1,
+    "explanation": "The internal hard drive (HDD or SSD) is the most common storage medium in computers. Almost all desktop and laptop computers contain at least one internal hard drive that stores the operating system, applications, and user files. The other options are additional or alternative storage methods."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which statement accurately compares HDDs and SSDs?",
+    "options": [
+      "HDDs are faster but more expensive than SSDs",
+      "SSDs have greater storage capacity and are less expensive than HDDs",
+      "HDDs typically have greater storage capacity and are less expensive; SSDs are faster and more durable",
+      "There is no significant difference between them"
+    ],
+    "correct": 2,
+    "explanation": "Magnetic hard disk drives (HDDs) typically offer greater storage capacity for the price and are less expensive per gigabyte. Solid-state drives (SSDs) are faster, more durable (no moving parts), quieter, and consume less power, but cost more per gigabyte."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the circular disks inside a hard disk drive called?",
+    "options": [
+      "Tracks",
+      "Platters",
+      "Actuators",
+      "Sectors"
+    ],
+    "correct": 3,
+    "explanation": "Platters are the circular disks made of aluminum, glass, or ceramic with a magnetic coating where data is stored. Tracks (B) are concentric circles on the platters, and sectors (A) are segments of tracks. An actuator (D) moves the read/write heads."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which recording method aligns magnetic particles vertically to increase storage density?",
+    "options": [
+      "Longitudinal recording",
+      "Horizontal recording",
+      "Parallel recording",
+      "Perpendicular recording"
+    ],
+    "correct": 0,
+    "explanation": "Perpendicular recording aligns magnetic particles vertically (perpendicular to the disk's surface), allowing bits to stand upright and take up less space. This increases storage density compared to longitudinal recording (A), which aligns particles horizontally."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is formatting a hard disk?",
+    "options": [
+      "Erasing all data permanently",
+      "Dividing the disk into tracks and sectors",
+      "Installing an operating system",
+      "Encrypting the data for security"
+    ],
+    "correct": 1,
+    "explanation": "Formatting is the process of dividing a disk into tracks and sectors to prepare it for storing data. This organization allows the disk drive to precisely locate where data is stored. While formatting often erases data, that's a side effect, not the definition."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are tracks and sectors on a hard disk?",
+    "options": [
+      "Brands of hard drives",
+      "Organizational structures for data storage",
+      "Types of hard disk connectors",
+      "Components of the read/write head"
+    ],
+    "correct": 2,
+    "explanation": "Tracks are concentric circles on the platter surface, and sectors are wedge-shaped segments of those tracks. Together, they form the organizational structure that allows the hard disk to locate and store data in specific positions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do read/write heads float above the platters instead of touching them?",
+    "options": [
+      "To reduce noise",
+      "To save power",
+      "To increase storage capacity",
+      "To prevent wear and damage from friction"
+    ],
+    "correct": 3,
+    "explanation": "The spinning platters create a cushion of air that floats the read/write heads just above the surface. This prevents physical contact, which would cause friction, wear, and potentially a destructive head crash. The heads never touch the platters during normal operation."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an external hard drive?",
+    "options": [
+      "A hard drive that connects via USB port outside the computer case",
+      "A hard drive that is not compatible with computers",
+      "A drive that only works with external power",
+      "A drive that cannot store data permanently"
+    ],
+    "correct": 0,
+    "explanation": "An external hard drive is a separate, free-standing storage device that connects with a cable to a USB port or other port on a computer. It is enclosed in its own case and used for backups, additional storage, or transferring files between computers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What technology do SSDs use for storage?",
+    "options": [
+      "Magnetic platters",
+      "Flash memory",
+      "Optical lasers",
+      "Magnetic tape"
+    ],
+    "correct": 1,
+    "explanation": "SSDs (solid-state drives) use flash memory, a type of nonvolatile memory that can be erased electronically and rewritten. Flash memory has no moving parts, making SSDs faster and more durable than magnetic hard drives."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is flash memory?",
+    "options": [
+      "A type of volatile memory like RAM",
+      "A magnetic storage medium",
+      "A nonvolatile memory that can be erased and rewritten electronically",
+      "An optical storage medium"
+    ],
+    "correct": 2,
+    "explanation": "Flash memory is a type of nonvolatile memory that can be erased electronically and rewritten. It retains data without power and has no moving parts, making it ideal for SSDs, USB drives, and memory cards. It is not volatile like RAM (A)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a memory card primarily used for?",
+    "options": [
+      "Expanding computer RAM",
+      "Storing the operating system permanently",
+      "Cooling the processor",
+      "Transporting photos, music, and videos between devices"
+    ],
+    "correct": 3,
+    "explanation": "Memory cards are removable flash memory storage devices that enable mobile users to easily transport digital photos, music, videos, or other files to and from mobile devices and computers. They are commonly used with cameras, phones, and tablets."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a USB flash drive?",
+    "options": [
+      "A removable storage device that plugs into a USB port",
+      "A type of internal hard drive",
+      "A device for cooling computers",
+      "A type of memory card"
+    ],
+    "correct": 0,
+    "explanation": "A USB flash drive is a removable storage device that plugs into a USB port on a computer. It uses flash memory and is used for transporting files between computers. Unlike internal drives (A), it is portable and external."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which optical disc format has the highest storage capacity?",
+    "options": [
+      "CD",
+      "All have the same capacity",
+      "DVD",
+      "Blu-ray"
+    ],
+    "correct": 1,
+    "explanation": "Blu-ray discs have the highest capacity among common optical formats. A single-layer Blu-ray holds about 25 GB, compared to DVD's 4.7 GB and CD's 700 MB. Blu-ray's higher capacity comes from using a blue-violet laser with shorter wavelength, allowing denser data storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do home and business users choose cloud computing?",
+    "options": [
+      "It requires purchasing expensive servers",
+      "It is slower than local storage",
+      "It offers accessibility, cost saving, space saving, and scalability",
+      "It cannot be accessed remotely"
+    ],
+    "correct": 2,
+    "explanation": "Users choose cloud computing for accessibility (access from anywhere), cost saving (no hardware purchases), space saving (no physical devices), and scalability (easily increase/decrease storage). The other options are disadvantages, not benefits."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "In cloud computing, what is the front end?",
+    "options": [
+      "The servers that store data",
+      "The network connecting users to servers",
+      "The backup generators in data centers",
+      "The hardware and software users interact with to access the cloud"
+    ],
+    "correct": 3,
+    "explanation": "The front end of cloud computing is the hardware and software with which a user interacts to access the cloud---their computer, mobile device, and the software interface. The back end (A) consists of the servers and storage devices that manage resources."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which cloud service provides virtualized computing resources over the internet?",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "STaaS"
+    ],
+    "correct": 0,
+    "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources like virtual machines, storage, and networks over the internet. SaaS (A) provides software applications, PaaS (B) provides a development platform, and STaaS (D) specifically provides storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the main difference between Google Drive and Box as cloud storage options?",
+    "options": [
+      "Google Drive is only for photos; Box is for documents",
+      "Google Drive provides integrated apps for creating/editing files; Box primarily provides storage",
+      "Box is free; Google Drive costs money",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "explanation": "Google Drive and OneDrive provide integrated cloud-based apps that let you create, edit, and share documents within the service. Box primarily serves as a storage location and does not provide corresponding apps for creating or editing documents. Both have security features and backup."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is bandwidth important when choosing a cloud storage provider for media files?",
+    "options": [
+      "Bandwidth determines how many files you can store",
+      "Bandwidth is not important for cloud storage",
+      "Large files like photos and videos take longer to upload and require sufficient bandwidth",
+      "Bandwidth only affects downloading, not uploading"
+    ],
+    "correct": 2,
+    "explanation": "Photos, songs, and videos are large files that take longer to upload than smaller text files. A provider with sufficient bandwidth can handle these large file transfers efficiently. Without adequate bandwidth, uploading media can be frustratingly slow."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is NOT a recommended guideline for selecting a cloud storage provider?",
+    "options": [
+      "Verify the company is reputable",
+      "Choose a provider that encrypts your files",
+      "Verify compatibility with your devices",
+      "Select the cheapest provider regardless of features"
+    ],
+    "correct": 3,
+    "explanation": "Selecting the cheapest provider regardless of features is not recommended. Important factors include reputation, encryption, compatibility, pricing (competitive, not just cheapest), file type support, sharing capabilities, and mobile app availability. Price should be considered along with other factors, not alone."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is two-factor authentication?",
+    "options": [
+      "A security method requiring two different forms of verification",
+      "Using two different passwords",
+      "Having two separate cloud accounts",
+      "Encrypting files twice"
+    ],
+    "correct": 0,
+    "explanation": "Two-factor authentication is a security method that requires two different forms of verification---typically something you know (password) and something you have (phone, security key). This provides extra protection beyond passwords alone, as both factors would need to be compromised for unauthorized access."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is enterprise hardware designed for?",
+    "options": [
+      "Home users with basic needs",
+      "Large organizations requiring heavy use, maximum efficiency, and availability",
+      "Gaming enthusiasts",
+      "Temporary storage only"
+    ],
+    "correct": 1,
+    "explanation": "Enterprise hardware is designed for large organizations to manage and store data using devices intended for heavy use, maximum efficiency, and maximum availability. It includes redundancy so that if one component fails, another can assume its tasks, ensuring 24/7 availability."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a data center?",
+    "options": [
+      "A single computer with large storage",
+      "A software program for data management",
+      "A secure location with many servers making files available to users",
+      "A type of external hard drive"
+    ],
+    "correct": 2,
+    "explanation": "A data center (or enterprise storage center) is a secure location with many large computers that act as servers, making files available to users. Data centers house the physical infrastructure for cloud computing and enterprise storage with security, redundancy, and environmental controls."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does RAID stand for and what is its purpose?",
+    "options": [
+      "Random Access Integrated Drive; for faster processing",
+      "Rapid Access Information Database; for data organization",
+      "Readily Available Internet Drive; for cloud storage",
+      "Redundant Array of Independent Disks; to improve performance and/or data reliability"
+    ],
+    "correct": 3,
+    "explanation": "RAID stands for Redundant Array of Independent Disks. It uses two or more integrated hard drives to improve performance, provide data protection through redundancy, or both. Different RAID levels offer different combinations of performance and reliability."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is RAID Level 1 (mirroring)?",
+    "options": [
+      "Writing the same data on two drives simultaneously for redundancy",
+      "Splitting data across multiple drives for speed",
+      "Using one drive for storage and one for backup",
+      "Combining multiple drives into one large volume"
+    ],
+    "correct": 0,
+    "explanation": "RAID Level 1, called mirroring, writes identical data to two drives at the same time. This duplicates the data so that if one drive fails, the other contains an exact copy. Mirroring enhances storage reliability but uses twice the storage capacity since data is written twice."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is striping in RAID?",
+    "options": [
+      "Writing data to one drive at a time",
+      "Splitting data across multiple drives to improve access times",
+      "Creating backup copies of data",
+      "Encrypting data for security"
+    ],
+    "correct": 1,
+    "explanation": "Striping splits data, instructions, and information across multiple drives in the array. This allows multiple drives to work simultaneously on reading or writing data, which improves access times and overall performance. Unlike mirroring, striping alone does not provide redundancy."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Network Attached Storage (NAS)?",
+    "options": [
+      "A drive connected directly to a computer via USB",
+      "A type of cloud storage",
+      "A server on a network with the sole purpose of providing storage",
+      "A backup tape system"
+    ],
+    "correct": 2,
+    "explanation": "Network Attached Storage (NAS) is a server placed on a network with the sole purpose of providing storage to users, computers, and devices on that network. It has its own IP address, typically no keyboard or display, and contains hard drives often configured in RAID."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Storage Area Network (SAN)?",
+    "options": [
+      "A single external hard drive",
+      "A type of cloud service",
+      "A backup software program",
+      "A high-speed network dedicated to providing storage to servers"
+    ],
+    "correct": 3,
+    "explanation": "A Storage Area Network (SAN) is a high-speed network with the sole purpose of providing storage to other attached servers. It includes only storage devices and uses fast connections (often fiber-optic) to give servers rapid access to large storage capacities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is tape storage primarily used for today?",
+    "options": [
+      "Active everyday file access",
+      "Backups and archiving",
+      "Running operating systems",
+      "Gaming"
+    ],
+    "correct": 0,
+    "explanation": "Tape storage is primarily used for backups and archiving because it offers low cost per gigabyte and high capacity. However, it has slow sequential access (not random access), making it unsuitable for active everyday file access where quick retrieval is needed."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does a magnetic stripe on a card contain?",
+    "options": [
+      "An integrated circuit chip",
+      "Information identifying the card and cardholder",
+      "A battery for power",
+      "An antenna for wireless communication"
+    ],
+    "correct": 1,
+    "explanation": "A magnetic stripe on a card contains information identifying the card and cardholder, encoded by magnetizing small particles on the stripe. It differs from smart cards (A) which have an integrated circuit chip, and contactless cards which have antennas (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a smart card differ from a magnetic stripe card?",
+    "options": [
+      "Smart cards cannot store data",
+      "Magnetic stripe cards are newer technology",
+      "Smart cards store data on an integrated circuit and are more secure",
+      "Smart cards are larger in size"
+    ],
+    "correct": 2,
+    "explanation": "Smart cards (chip cards) store data on an embedded integrated circuit, which provides better security than magnetic stripes. The chip can encrypt data and perform cryptographic operations, making cards harder to clone. Magnetic stripes store static data that can be easily copied."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does an RFID tag consist of?",
+    "options": [
+      "Only a battery",
+      "A magnetic stripe",
+      "An optical lens",
+      "An antenna and a memory chip"
+    ],
+    "correct": 3,
+    "explanation": "An RFID tag consists of an antenna and a memory chip that contains information to be transmitted via radio waves. The antenna receives signals from an RFID reader and transmits the stored information back. Tags may be active (with battery) or passive (powered by reader)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is NFC (Near Field Communication)?",
+    "options": [
+      "A technology using close-range radio signals to transmit data",
+      "A type of hard drive connection",
+      "A cloud storage protocol",
+      "A memory card format"
+    ],
+    "correct": 0,
+    "explanation": "NFC (Near Field Communication) is a technology based on RFID that uses close-range radio signals to transmit data between two NFC-enabled devices or between an NFC-enabled device and an NFC tag. It operates at very short distances (centimeters) and is used for mobile payments and data exchange."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is a common use of NFC?",
+    "options": [
+      "Long-range inventory tracking",
+      "Mobile payments like Apple Pay and Google Pay",
+      "Connecting external hard drives",
+      "Formatting memory cards"
+    ],
+    "correct": 1,
+    "explanation": "NFC is commonly used for mobile payments (Apple Pay, Google Pay) by tapping a phone at a payment terminal. Other uses include displaying web pages from tags, making phone calls, sending texts, and exchanging contact information---all requiring very close proximity."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What three categories of items does memory store?",
+    "options": [
+      "Text, images, and video",
+      "Input, output, and processing",
+      "Operating system, applications, and data",
+      "Hardware, software, and firmware"
+    ],
+    "correct": 2,
+    "explanation": "Memory stores three basic categories: 1) the operating system and other programs that control the computer, 2) applications that carry out specific tasks, and 3) the data being processed by applications and the resulting information. These are the active items the computer needs to run."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an address in computer memory?",
+    "options": [
+      "The physical location of the computer",
+      "The email address of the user",
+      "The IP address of the network",
+      "A unique number identifying the location of a byte in memory"
+    ],
+    "correct": 3,
+    "explanation": "An address is a unique number that identifies the location of a byte in memory. To access data or instructions, the computer references these addresses---similar to how seats in a stadium have unique numbers. Each byte resides temporarily at a specific address."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is RAM and what are its characteristics?",
+    "options": [
+      "Volatile memory that can be read from and written to",
+      "Permanent, nonvolatile storage",
+      "Read-only memory for startup instructions",
+      "A type of external storage"
+    ],
+    "correct": 0,
+    "explanation": "RAM (Random Access Memory) is volatile memory that can be read from and written to by the processor. It is temporary---losing data when power is off---and holds the operating system, applications, and data being actively used. ROM (C) is read-only and nonvolatile."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between volatile and nonvolatile memory?",
+    "options": [
+      "Volatile is faster; nonvolatile is slower",
+      "Volatile loses data without power; nonvolatile retains data",
+      "Volatile is permanent; nonvolatile is temporary",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "explanation": "Volatile memory (like RAM) loses all stored data when power is turned off. Nonvolatile memory (like ROM, flash memory, and hard drives) retains data even without power. This is why you must save files (to nonvolatile storage) before shutting down."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the process of saving?",
+    "options": [
+      "Transferring data from memory to storage",
+      "Deleting unnecessary files",
+      "Transferring data from storage to memory",
+      "Encrypting data for security"
+    ],
+    "correct": 2,
+    "explanation": "Saving is the process of copying data, instructions, and information from RAM (volatile memory) to a storage device or the cloud (nonvolatile storage). This ensures the data persists after the computer is turned off. The opposite process (A) is opening or loading."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is cache memory and why is it important?",
+    "options": [
+      "A permanent storage area for backups",
+      "A type of external hard drive",
+      "A cloud storage service",
+      "A temporary, high-speed storage area for frequently used instructions and data"
+    ],
+    "correct": 3,
+    "explanation": "Cache memory is a small, high-speed temporary storage area that stores frequently used instructions and data. It speeds up processing by providing faster access than main memory (RAM), reducing the time the processor spends waiting for data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is ROM and what does it store?",
+    "options": [
+      "Read-Only Memory; stores permanent startup instructions and firmware",
+      "Random Operating Memory; stores temporary data",
+      "Rapid Output Memory; stores display data",
+      "Rewritable Optical Media; stores videos"
+    ],
+    "correct": 0,
+    "explanation": "ROM (Read-Only Memory) is nonvolatile memory that stores permanent data and instructions that cannot be modified under normal operation. It contains critical system information like a computer's startup instructions (firmware) that the computer needs when first powered on."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is firmware?",
+    "options": [
+      "Hardware components of a computer",
+      "Software that is permanently stored in ROM",
+      "A type of external storage device",
+      "Temporary memory that loses data when power is off"
+    ],
+    "correct": 1,
+    "explanation": "Firmware is software (instructions and data) that is permanently recorded on ROM chips when manufactured. It is \"firm\" because it's between hardware and software---it's software but stored in hardware and difficult to change. Examples include BIOS/UEFI startup instructions."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Where is flash memory commonly used?",
+    "options": [
+      "Only in desktop computers",
+      "Only in servers",
+      "In SSDs, USB drives, memory cards, and mobile devices",
+      "As a replacement for ROM only"
+    ],
+    "correct": 2,
+    "explanation": "Flash memory is widely used in SSDs, USB flash drives, memory cards, smartphones, tablets, digital cameras, printers, and many other devices. It combines nonvolatility (retains data without power) with rewritability, making it versatile for many applications."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is CMOS memory and what powers it?",
+    "options": [
+      "Volatile memory powered by the main power supply",
+      "A type of hard drive",
+      "Cloud-based memory storage",
+      "Low-power memory that uses a battery to retain information when computer is off"
+    ],
+    "correct": 3,
+    "explanation": "CMOS (complementary metal-oxide semiconductor) memory uses very little power and is backed by a small battery (often a coin cell) to retain system information like date, time, and hardware settings even when the computer is turned off. It provides high speeds with low power consumption."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What privacy concerns are associated with IoT devices?",
+    "options": [
+      "They collect data that could be shared without consent and may have security vulnerabilities",
+      "They are completely secure by default",
+      "They cannot collect personal data",
+      "They are not connected to the internet"
+    ],
+    "correct": 0,
+    "explanation": "IoT devices raise privacy concerns because they constantly collect data about activities, locations, and behaviors. Many have default settings that may share data without explicit consent, and security vulnerabilities could expose sensitive information. Companies must ensure data is kept secure and confidential."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which of the following is an example of an IoT device mentioned in the module?",
+    "options": [
+      "Desktop computer",
+      "Smart thermostat that can be controlled remotely",
+      "External hard drive",
+      "Printer cable"
+    ],
+    "correct": 1,
+    "explanation": "A smart thermostat that can be controlled remotely via a smartphone app is an example of an IoT device. Other examples include smart meters, wearables, vehicle black boxes, smart medicine bottles, and beacons. These devices connect to the internet and communicate data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do retail beacons work?",
+    "options": [
+      "They scan credit cards for payment",
+      "They display advertisements on store screens",
+      "They send low-energy Bluetooth signals to nearby smartphones with personalized offers",
+      "They track inventory with RFID"
+    ],
+    "correct": 2,
+    "explanation": "Retail beacons are devices that send low-energy Bluetooth signals to nearby smartphones. When customers with compatible apps enter the area, they can receive personalized offers and notifications based on their location in the store. This requires Bluetooth to be enabled and user consent."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What responsibility do companies have regarding IoT data?",
+    "options": [
+      "No responsibility; data is unregulated",
+      "They can share data without consent",
+      "They only need to collect data, not protect it",
+      "They must keep collected sensitive data secure and confidential"
+    ],
+    "correct": 3,
+    "explanation": "Companies that collect data through IoT devices bear the responsibility of ensuring sensitive data is kept secure and confidential. They should obtain consumer consent, implement security measures, be transparent about data usage, and comply with privacy regulations."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What do technology experts believe about IoT risks and benefits?",
+    "options": [
+      "The security, health, and productivity benefits outweigh the potential risks",
+      "The risks completely outweigh the benefits",
+      "IoT has no benefits",
+      "IoT should be abandoned entirely"
+    ],
+    "correct": 0,
+    "explanation": "Technology experts believe that the security, health, and productivity benefits of IoT technology outweigh the potential privacy risks. Benefits include improved home security, health monitoring, energy efficiency, convenience, and productivity gains, despite valid privacy concerns."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Approximately how many bytes are in a terabyte (TB)?",
+    "options": [
+      "1 billion",
+      "1 million",
+      "1 trillion",
+      "1 quadrillion"
+    ],
+    "correct": 1,
+    "explanation": "A terabyte (TB) is approximately 1 trillion bytes (exactly 1,099,511,627,776 bytes or 2^40). A megabyte (MB) is about 1 million, a gigabyte (GB) is about 1 billion, and a petabyte (PB) is about 1 quadrillion bytes."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between CD-R and CD-RW?",
+    "options": [
+      "CD-R holds more data than CD-RW",
+      "CD-R is faster than CD-RW",
+      "CD-R can be written to once; CD-RW can be rewritten multiple times",
+      "There is no difference"
+    ],
+    "correct": 2,
+    "explanation": "CD-R (CD-Recordable) can be written to once---after data is written, it cannot be erased or overwritten. CD-RW (CD-Rewritable) can be written to, erased, and rewritten multiple times, functioning like a reusable storage medium."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between DVD-R and DVD-RW?",
+    "options": [
+      "DVD-R holds more data than DVD-RW",
+      "DVD-R is faster than DVD-RW",
+      "They are the same format with different names",
+      "DVD-R is recordable once; DVD-RW is rewritable multiple times"
+    ],
+    "correct": 3,
+    "explanation": "DVD-R (DVD-Recordable) can be written to once and becomes permanent. DVD-RW (DVD-Rewritable) can be written, erased, and rewritten multiple times, similar to CD-RW but with DVD capacity. Both follow the same pattern as CD-R vs. CD-RW."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Blu-ray's primary advantage over DVD?",
+    "options": [
+      "Higher storage capacity for high-definition video",
+      "Lower cost",
+      "Faster spinning speed",
+      "Compatibility with all players"
+    ],
+    "correct": 0,
+    "explanation": "Blu-ray's primary advantage is higher storage capacity (25 GB single-layer, 50 GB dual-layer) compared to DVD (4.7 GB). This extra capacity is necessary for high-definition video, which requires much more data than standard-definition DVD video."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is the use of optical media declining?",
+    "options": [
+      "They are too expensive",
+      "USB drives, external hard drives, and cloud storage offer more convenience and capacity",
+      "They are difficult to manufacture",
+      "They hold too much data"
+    ],
+    "correct": 1,
+    "explanation": "Optical media use is declining because alternatives like USB flash drives, external hard drives, and cloud storage offer greater convenience, higher capacity, rewritability, and accessibility from anywhere. Many modern computers no longer include optical drives."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do hard disks have multiple platters?",
+    "options": [
+      "To make the drive heavier",
+      "To reduce power consumption",
+      "To increase storage capacity by providing more surface area",
+      "To make the drive quieter"
+    ],
+    "correct": 2,
+    "explanation": "Multiple platters increase storage capacity by providing more surface area for data storage. Each platter has two sides that can store data, and more platters mean more data can be stored in the same physical space. All platters rotate together on a single spindle."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why don't read/write heads touch the platters?",
+    "options": [
+      "They are designed to be far away",
+      "They touch during normal operation",
+      "Magnetic repulsion keeps them apart",
+      "An air cushion from spinning platters floats the heads above the surface"
+    ],
+    "correct": 3,
+    "explanation": "The platters spin at high speed, creating a cushion of air that floats the read/write heads just nanometers above the surface. This air bearing prevents physical contact, which would cause friction, wear, and potentially a destructive head crash."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a head crash?",
+    "options": [
+      "When the read/write head touches the spinning platter, causing damage",
+      "When the head actuator breaks",
+      "When the motor stops spinning",
+      "When data is written incorrectly"
+    ],
+    "correct": 0,
+    "explanation": "A head crash occurs when the read/write head makes physical contact with the spinning platter surface. This can happen due to shock, contamination, or mechanical failure, and typically damages both the head and the platter, destroying data and making the drive unusable."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is density in storage media?",
+    "options": [
+      "The weight of the storage device",
+      "The number of bits that can be stored in an area",
+      "The speed of data transfer",
+      "The age of the technology"
+    ],
+    "correct": 1,
+    "explanation": "Density is the number of bits that can be stored in a given area on a storage medium. Higher density means more storage capacity in the same physical space. Advances in density allow smaller devices to hold more data."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the main difference between internal and external hard drives?",
+    "options": [
+      "Internal drives are slower than external",
+      "External drives cannot store as much data",
+      "Internal drives are installed inside the computer; external connect via ports and are portable",
+      "There is no difference"
+    ],
+    "correct": 2,
+    "explanation": "Internal hard drives are installed inside the computer case and are the primary storage. External hard drives are separate, free-standing devices that connect via USB or other ports and are portable for backups, additional storage, or transferring files between computers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does \"solid-state\" mean in solid-state drives?",
+    "options": [
+      "The drive is very heavy",
+      "The drive is made of solid metal",
+      "The drive cannot be moved",
+      "The drive uses electronic components with no moving parts"
+    ],
+    "correct": 3,
+    "explanation": "\"Solid-state\" means the device uses electronic components with no moving parts, unlike electromechanical devices like HDDs. SSDs store data in flash memory chips and have no motors, spindles, or actuator arms, making them faster, more durable, and silent."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does cloud storage provide reliability against outages?",
+    "options": [
+      "By backing up files to multiple servers and geographic locations",
+      "By storing files on a single server",
+      "By not using any redundancy",
+      "By requiring users to keep local copies"
+    ],
+    "correct": 0,
+    "explanation": "Cloud storage provides reliability through redundancy---files are backed up to multiple servers, often in different geographic locations. If one server fails, others have copies. Data centers also have backup power, cooling, and professional management, making outages rare."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is two-factor authentication?",
+    "options": [
+      "Using two different passwords",
+      "Requiring two forms of verification (password plus something you have)",
+      "Having two separate accounts",
+      "Encrypting data twice"
+    ],
+    "correct": 1,
+    "explanation": "Two-factor authentication requires two different forms of verification, typically something you know (password) and something you have (phone, security key). This adds an extra layer of security because even if a password is stolen, the attacker cannot access the account without the second factor."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does it mean when a cloud provider encrypts your files?",
+    "options": [
+      "Files are deleted after a certain time",
+      "Files are compressed to save space",
+      "Files are converted to unreadable code without the decryption key",
+      "Files are backed up to another server"
+    ],
+    "correct": 2,
+    "explanation": "Encryption converts files into coded form that is unreadable without the decryption key. When a cloud provider encrypts files, it protects them from unauthorized access---even if servers are breached, the data cannot be read without the key."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is bandwidth important for cloud storage of media files?",
+    "options": [
+      "Bandwidth determines how many files you can store",
+      "Bandwidth only affects downloading",
+      "Bandwidth is not important for cloud storage",
+      "Large files like photos and videos require sufficient bandwidth for efficient uploading"
+    ],
+    "correct": 3,
+    "explanation": "Photos, songs, and videos are large files that require significant bandwidth to upload efficiently. A provider with sufficient bandwidth can handle these large transfers without excessive wait times, which is important when backing up media collections."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between RAID mirroring and striping?",
+    "options": [
+      "Mirroring duplicates data for redundancy; striping splits data across drives for speed",
+      "Mirroring improves speed; striping provides redundancy",
+      "Mirroring uses one drive; striping uses multiple",
+      "There is no difference"
+    ],
+    "correct": 0,
+    "explanation": "RAID mirroring (Level 1) writes identical data to two drives for redundancy---if one fails, data is safe on the other. Striping splits data across multiple drives so they can work simultaneously, improving access speed but providing no redundancy alone."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a NAS device differ from a regular file server?",
+    "options": [
+      "NAS is slower",
+      "NAS is purpose-built for storage, has its own IP address, and typically no keyboard/display",
+      "NAS cannot be networked",
+      "NAS uses different cables"
+    ],
+    "correct": 1,
+    "explanation": "NAS (Network Attached Storage) is a purpose-built server designed specifically for storage. It has its own IP address, typically lacks a keyboard and display, runs a simplified storage-focused OS, and can be quickly added to a network. It's simpler and often less expensive than a full file server."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a Storage Area Network (SAN)?",
+    "options": [
+      "To connect personal computers directly",
+      "To replace all local storage",
+      "To provide high-speed dedicated storage to servers",
+      "To connect printers to the network"
+    ],
+    "correct": 2,
+    "explanation": "A SAN (Storage Area Network) is a high-speed network dedicated to providing storage to other attached servers. It includes only storage devices and uses fast connections (often fiber-optic) to give servers rapid access to large storage capacities, often located miles away."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between active and passive RFID tags?",
+    "options": [
+      "Active tags are larger; passive are smaller",
+      "Active tags are newer technology",
+      "There is no difference",
+      "Active tags have their own power source; passive tags are powered by the reader"
+    ],
+    "correct": 3,
+    "explanation": "Active RFID tags have their own power source (battery) and can transmit signals over longer distances. Passive RFID tags have no internal power---they are powered by the electromagnetic energy from the reader's signal and have shorter range but are cheaper and last indefinitely."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is NFC considered more secure than some other wireless technologies?",
+    "options": [
+      "It requires very close proximity (centimeters), making remote interception difficult",
+      "It uses stronger encryption",
+      "It cannot transmit data",
+      "It only works with passwords"
+    ],
+    "correct": 0,
+    "explanation": "NFC's very short operating range (a few centimeters) is actually a security feature---an attacker would need to be physically very close to intercept the signal. This makes remote eavesdropping much harder than with longer-range wireless technologies."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does cache memory do?",
+    "options": [
+      "Permanently stores all data",
+      "Stores frequently used instructions and data for faster access",
+      "Replaces RAM completely",
+      "Connects to the internet"
+    ],
+    "correct": 1,
+    "explanation": "Cache memory is a small, high-speed temporary storage area that holds frequently used instructions and data. It allows the processor to access this information much faster than retrieving it from main memory (RAM), significantly improving overall system performance."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is RAM volatile while storage is nonvolatile?",
+    "options": [
+      "RAM is older technology",
+      "Storage is faster than RAM",
+      "RAM uses different technology that requires constant power; storage uses magnetic or flash technology that retains data without power",
+      "There is no technical reason"
+    ],
+    "correct": 2,
+    "explanation": "RAM uses electronic circuits (like capacitors in DRAM) that require constant power and refreshing to maintain data. Storage uses different technologies---magnetic orientation (HDDs) or trapped electrons in flash memory (SSDs)---that persist without power. The trade-off is that RAM is much faster."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What happens to unsaved work during a power outage?",
+    "options": [
+      "It is automatically saved",
+      "It remains in storage",
+      "It is backed up to the cloud",
+      "It is lost because it exists only in volatile RAM"
+    ],
+    "correct": 3,
+    "explanation": "Unsaved work exists only in volatile RAM, which loses all data when power is removed. This is why you must save frequently---saving transfers data from volatile RAM to nonvolatile storage where it persists. Auto-save features help, but they work by periodically saving to storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Where does a computer find its startup instructions when first turned on?",
+    "options": [
+      "In ROM (firmware)",
+      "In RAM",
+      "On the hard drive only",
+      "From the internet"
+    ],
+    "correct": 0,
+    "explanation": "When first turned on, the computer retrieves startup instructions from ROM (firmware like BIOS/UEFI). ROM is nonvolatile and always contains these essential instructions at a known address. After basic hardware checks, the computer loads the operating system from storage into RAM."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why do mobile devices use flash memory instead of hard drives?",
+    "options": [
+      "Flash memory is cheaper",
+      "Flash has no moving parts, is smaller, uses less power, and is more durable",
+      "Hard drives are not available in small sizes",
+      "Flash memory is required by law"
+    ],
+    "correct": 1,
+    "explanation": "Mobile devices use flash memory because it has no moving parts (more durable when dropped), is smaller (fits in thin devices), uses less power (longer battery life), provides instant access (no spin-up time), and operates silently. These advantages outweigh the higher cost per gigabyte."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the main difference between a memory card and a USB flash drive?",
+    "options": [
+      "Memory cards are faster",
+      "USB drives cannot store data",
+      "Memory cards are designed for internal device use and require a slot; USB drives have built-in connectors for direct port access",
+      "There is no difference"
+    ],
+    "correct": 2,
+    "explanation": "Memory cards are designed primarily for use inside devices like cameras and phones and require a compatible slot. USB flash drives have a built-in USB connector and plug directly into USB ports on computers, making them more universally compatible for file transfer between devices."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does \"scalable\" mean in cloud storage?",
+    "options": [
+      "Storage capacity cannot be changed",
+      "Storage is measured in scales",
+      "Only large companies can use it",
+      "You can easily increase or decrease storage as needed"
+    ],
+    "correct": 3,
+    "explanation": "Scalability in cloud storage means you can easily increase or decrease your storage capacity as your needs change---starting with free storage and upgrading when necessary, or scaling down if you need less. This flexibility avoids the need to predict future needs or invest in hardware you might not use."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why should you read a cloud provider's privacy policy?",
+    "options": [
+      "To understand how your data will be used, whether it's shared, and your rights",
+      "It's not important",
+      "To find the price",
+      "To learn how to upload files"
+    ],
+    "correct": 0,
+    "explanation": "Reading the privacy policy is essential to understand what data the provider collects, how it will be used, whether it's shared with third parties, who has access, and your legal rights. This helps you make an informed decision about trusting the provider with your files."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "When might you choose Box over Google Drive?",
+    "options": [
+      "When you need integrated editing apps",
+      "When you primarily need secure storage and file sharing without integrated apps",
+      "When you want free unlimited storage",
+      "When you need to edit documents collaboratively"
+    ],
+    "correct": 1,
+    "explanation": "Box is primarily a storage and sharing platform without the integrated productivity apps that Google Drive offers. You might choose Box if you need pure storage, specific security features, or enterprise sharing capabilities, and don't need the integrated document editing."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between SaaS, IaaS, and PaaS?",
+    "options": [
+      "They are different names for the same thing",
+      "They are all types of hardware",
+      "SaaS provides software, IaaS provides infrastructure, PaaS provides a development platform",
+      "SaaS is for storage only"
+    ],
+    "correct": 2,
+    "explanation": "SaaS (Software as a Service) provides ready-to-use software applications. IaaS (Infrastructure as a Service) provides virtualized computing resources like virtual machines. PaaS (Platform as a Service) provides a platform for developing and managing applications without managing underlying infrastructure."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why are smart cards more secure than magnetic stripe cards?",
+    "options": [
+      "They are larger",
+      "They use different colors",
+      "They expire faster",
+      "They have embedded chips that can encrypt data and are harder to clone"
+    ],
+    "correct": 3,
+    "explanation": "Smart cards have embedded integrated circuits that can perform cryptographic operations, generate unique transaction codes, and securely store data. Magnetic stripes contain static data that can be easily copied with a skimmer. The chip makes smart cards much harder to clone or counterfeit."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What information does a vehicle's black box record?",
+    "options": [
+      "Speed, brake application, airbag deployment, and other crash-related data",
+      "Only the radio station",
+      "The driver's conversations",
+      "Navigation history only"
+    ],
+    "correct": 0,
+    "explanation": "A vehicle's black box (event data recorder) records information like speed before impact, brake application, engine RPM, airbag deployment timing, seat belt status, and steering angle. This data helps analyze accidents and improve vehicle safety systems."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do smart medicine bottles help patients?",
+    "options": [
+      "They automatically dispense medication",
+      "They send reminders to take medication and track when the bottle is opened",
+      "They replace the need for doctors",
+      "They store medical records"
+    ],
+    "correct": 1,
+    "explanation": "Smart medicine bottles have wireless chips that send text reminders to take medication, track when the bottle was opened, and can alert caregivers if doses are missed. This helps patients, especially the elderly or those with chronic conditions, adhere to medication schedules."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of smart trash cans in public places?",
+    "options": [
+      "To sort recycling automatically",
+      "To charge for trash disposal",
+      "To monitor trash levels and notify when emptying is needed",
+      "To compact trash automatically"
+    ],
+    "correct": 2,
+    "explanation": "Smart trash cans have sensors that monitor the amount of trash and send notifications to collection services when they need emptying. This optimizes collection routes, reduces unnecessary trips, and prevents overflow, improving waste management efficiency."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a smart thermostat save energy?",
+    "options": [
+      "By using more electricity",
+      "By heating constantly",
+      "By disabling the HVAC system",
+      "By learning schedules, adjusting when away, and allowing remote control"
+    ],
+    "correct": 3,
+    "explanation": "Smart thermostats save energy by learning your schedule and preferences, automatically adjusting temperature when you're away, allowing remote control via smartphone, providing energy reports, and integrating with weather forecasts. This reduces waste while maintaining comfort."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between reading and writing in storage terms?",
+    "options": [
+      "Reading transfers from storage to memory; writing transfers from memory to storage",
+      "Reading saves data; writing opens data",
+      "Reading is faster than writing",
+      "There is no difference"
+    ],
+    "correct": 0,
+    "explanation": "Reading is the process of transferring data, instructions, and information from a storage medium into memory (like opening a file). Writing is the process of transferring from memory to a storage medium (like saving a file). Reading doesn't change storage; writing modifies it."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why must storage media be nonvolatile?",
+    "options": [
+      "To retain data permanently even without power",
+      "To lose data when power is off",
+      "To be faster than memory",
+      "To connect to the internet"
+    ],
+    "correct": 1,
+    "explanation": "Storage media must be nonvolatile to retain data and information when the computer is turned off. This ensures your files, programs, and operating system persist between sessions. If storage were volatile like RAM, everything would disappear every time you powered down."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do spinning hard disk platters create an air cushion?",
+    "options": [
+      "Fans blow air under the heads",
+      "Magnetic fields repel the heads",
+      "The high-speed rotation drags air, creating a thin layer that floats the heads",
+      "The heads are designed to never get close"
+    ],
+    "correct": 2,
+    "explanation": "As platters spin at high speed (thousands of RPM), they drag air along due to viscosity. This creates a thin, high-pressure air bearing between the platter surface and the read/write head, floating the head just nanometers above the surface. This prevents destructive physical contact."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the exact number of bytes in a terabyte using binary measurement?",
+    "options": [
+      "1,099,511,627,776",
+      "1,048,576",
+      "1,073,741,824",
+      "1,000,000,000,000"
+    ],
+    "correct": 3,
+    "explanation": "A terabyte (TB) in binary measurement is exactly 2^40 bytes = 1,099,511,627,776 bytes. Manufacturers often use decimal (1,000,000,000,000) for marketing, which is why drives show less capacity in the operating system (which uses binary). 1,073,741,824 (D) is a gigabyte."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why might a formatted hard drive show less capacity than advertised?",
+    "options": [
+      "Manufacturers use decimal measurements; operating systems use binary, plus formatting uses some space",
+      "The manufacturer lied",
+      "The drive is defective",
+      "The data is compressed"
+    ],
+    "correct": 0,
+    "explanation": "Hard drives show less capacity because manufacturers advertise using decimal (1 GB = 1,000,000,000 bytes) while operating systems use binary (1 GB = 1,073,741,824 bytes). Additionally, formatting and file system structures consume some space. This discrepancy is normal, not a defect."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of formatting a new hard drive?",
+    "options": [
+      "To erase all data",
+      "To create tracks and sectors and prepare the file system for data storage",
+      "To install an operating system",
+      "To encrypt the drive"
+    ],
+    "correct": 1,
+    "explanation": "Formatting prepares a new hard drive for use by dividing it into tracks and sectors, creating a file system, and setting up directory structures. This organization allows the operating system to locate and store files. Without formatting, the drive cannot be used."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a CD-RW differ from a CD-R in writing technology?",
+    "options": [
+      "CD-RW uses magnetic recording",
+      "CD-RW cannot be rewritten",
+      "CD-R uses a permanent dye change; CD-RW uses a reversible phase-change alloy",
+      "They use the same technology"
+    ],
+    "correct": 2,
+    "explanation": "CD-R uses an organic dye layer that is permanently changed by the laser---a one-time physical change. CD-RW uses a phase-change alloy that can be switched between crystalline and amorphous states by different laser powers, allowing data to be rewritten multiple times."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the capacity of a standard single-layer Blu-ray disc?",
+    "options": [
+      "4.7 GB",
+      "25 GB",
+      "50 GB",
+      "700 MB"
+    ],
+    "correct": 3,
+    "explanation": "A standard single-layer Blu-ray disc holds about 25 GB of data. Dual-layer Blu-ray holds about 50 GB. This compares to CD at 700 MB and DVD at 4.7 GB. The higher capacity comes from using a blue-violet laser with shorter wavelength for denser data storage."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why is enterprise hardware designed with redundancy?",
+    "options": [
+      "To ensure high availability and no single point of failure",
+      "To make it more expensive",
+      "To slow down performance",
+      "To use more power"
+    ],
+    "correct": 0,
+    "explanation": "Enterprise hardware includes redundancy so that if one component fails or malfunctions, another can assume its tasks. This ensures high availability (24/7 operation) and eliminates single points of failure, allowing maintenance and component failures without system downtime."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the advantage of a SAN over direct-attached storage?",
+    "options": [
+      "SAN is cheaper",
+      "SAN provides centralized, high-speed storage accessible to multiple servers with better scalability and availability",
+      "SAN is easier to set up",
+      "SAN uses standard USB connections"
+    ],
+    "correct": 1,
+    "explanation": "A SAN provides centralized, high-speed dedicated storage that multiple servers can share. Benefits include better scalability, performance (fiber-optic connections), availability (redundant paths), and centralized management compared to direct-attached storage (drives inside individual servers)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does a contactless smart card communicate with a reader?",
+    "options": [
+      "Through physical contact with metal contacts",
+      "Through a USB connection",
+      "Using radio frequency, powered by the reader's electromagnetic field",
+      "Via Bluetooth"
+    ],
+    "correct": 2,
+    "explanation": "A contactless smart card communicates using radio frequency. When held near a reader, the card's antenna picks up energy from the reader's electromagnetic field, powering the chip. The chip then modulates the field to transmit data back. No physical contact or battery is needed."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What information might a vehicle's black box record?",
+    "options": [
+      "Only the vehicle's location",
+      "The driver's music choices",
+      "Only engine temperature",
+      "Speed, brake application, airbag deployment, and pre-crash data"
+    ],
+    "correct": 3,
+    "explanation": "A vehicle's black box (event data recorder) records information relevant to accidents, including speed, brake application, engine RPM, airbag deployment timing, seat belt status, steering angle, and seconds of pre-crash data. This helps reconstruct accidents and improve safety."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do wearable devices track health metrics?",
+    "options": [
+      "Using sensors like optical heart rate monitors, accelerometers, and gyroscopes",
+      "By connecting to hospital computers",
+      "By drawing blood",
+      "They cannot track health metrics"
+    ],
+    "correct": 0,
+    "explanation": "Wearable devices use various sensors: optical sensors for heart rate, accelerometers for step counting and movement, gyroscopes for orientation, GPS for location, and sometimes temperature sensors. These sensors collect data that is processed to provide health and activity insights."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between contact and contactless smart cards?",
+    "options": [
+      "Contact cards have chips; contactless don't",
+      "Contact cards require physical insertion into a reader; contactless use radio frequency at close range",
+      "Contactless cards are less secure",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "explanation": "Contact smart cards must be inserted into a reader that makes physical electrical contact with the chip. Contactless smart cards use radio frequency (RFID/NFC) to communicate when held near a reader, requiring no physical contact. Both have embedded chips for security."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why might an organization outsource storage management to a cloud provider?",
+    "options": [
+      "To increase hardware costs",
+      "To lose control of data",
+      "For cost savings, expertise, scalability, and disaster recovery",
+      "To make storage slower"
+    ],
+    "correct": 2,
+    "explanation": "Organizations outsource storage for cost savings (no hardware investment), access to specialized expertise, scalability, reliability, off-site disaster recovery, and to let IT staff focus on core business instead of storage management. It's a strategic decision, not about losing control."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does cache memory improve computer performance?",
+    "options": [
+      "By storing more data than RAM",
+      "By replacing the processor",
+      "By connecting to the internet",
+      "By providing faster access to frequently used instructions and data than RAM"
+    ],
+    "correct": 3,
+    "explanation": "Cache memory is faster than RAM and stores frequently used instructions and data. When the processor needs data, it checks cache first. If the data is there (cache hit), it's accessed much faster than fetching from RAM, significantly improving overall system performance."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of CMOS memory in a computer?",
+    "options": [
+      "To store system settings like date, time, and hardware configuration using battery power",
+      "To store the operating system",
+      "To run applications",
+      "To store user files"
+    ],
+    "correct": 0,
+    "explanation": "CMOS memory stores system configuration information like date, time, boot order, and hardware settings. It uses very little power and is backed by a small battery, so this information is retained even when the computer is turned off. It doesn't store the OS (A) or user files (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why are flash memory chips considered \"solid-state\"?",
+    "options": [
+      "They are made of solid metal",
+      "They have no moving parts, using only electronic components",
+      "They are very heavy",
+      "They cannot be moved"
+    ],
+    "correct": 1,
+    "explanation": "Flash memory chips are called \"solid-state\" because they have no moving parts---they consist entirely of electronic components on a semiconductor. This contrasts with electromechanical storage like hard disk drives that have spinning platters and moving actuator arms."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How does two-factor authentication protect cloud accounts?",
+    "options": [
+      "By using two different passwords",
+      "By encrypting data twice",
+      "By requiring a second verification factor, so stolen passwords alone are insufficient",
+      "By backing up to two locations"
+    ],
+    "correct": 2,
+    "explanation": "Two-factor authentication requires a second verification factor (like a phone or security key) in addition to a password. Even if a hacker steals your password through phishing or data breaches, they cannot access your account without the second factor, providing an extra layer of security."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between data in transit and data at rest in cloud security?",
+    "options": [
+      "Data in transit is stored; data at rest is moving",
+      "There is no difference",
+      "Only data at rest needs security",
+      "Data in transit is being transmitted and should be encrypted; data at rest is stored and should be encrypted"
+    ],
+    "correct": 3,
+    "explanation": "Data in transit refers to data being transmitted over networks---it should be encrypted (e.g., with TLS) to prevent interception. Data at rest refers to data stored on servers---it should be encrypted to protect against breaches. Comprehensive security protects both states."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why might a company maintain an in-house data center instead of using cloud storage?",
+    "options": [
+      "For control, compliance, security, performance, or data sovereignty requirements",
+      "Cloud storage is always cheaper",
+      "In-house is always better",
+      "Cloud storage doesn't exist"
+    ],
+    "correct": 0,
+    "explanation": "Companies may keep in-house data centers for complete control over hardware and data, compliance with regulations requiring local storage, security concerns, ultra-low latency needs, customization, or data sovereignty laws. Many use hybrid approaches with both in-house and cloud."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How do smart meters contribute to energy efficiency?",
+    "options": [
+      "By using more electricity",
+      "By providing real-time usage data, enabling time-of-use pricing, and helping identify waste",
+      "By shutting off power randomly",
+      "They don't affect efficiency"
+    ],
+    "correct": 1,
+    "explanation": "Smart meters provide real-time energy usage data to consumers and utilities, enable time-of-use pricing to encourage off-peak usage, help detect outages immediately, eliminate estimated bills, and provide detailed usage patterns that help identify energy waste and conservation opportunities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What privacy concerns arise from wearable technology?",
+    "options": [
+      "No privacy concerns exist",
+      "Wearables cannot collect data",
+      "Health data exposure, location tracking, data sharing with third parties, and security vulnerabilities",
+      "Only battery life is a concern"
+    ],
+    "correct": 2,
+    "explanation": "Wearables raise privacy concerns including exposure of sensitive health data (heart rate, sleep patterns), constant location tracking, potential sale of data to third parties, security vulnerabilities that could expose personal information, and unknown data usage by manufacturers."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the role of the read/write head in a hard disk?",
+    "options": [
+      "To spin the platters",
+      "To cool the drive",
+      "To connect to the computer",
+      "To read data from and write data to the platters"
+    ],
+    "correct": 3,
+    "explanation": "The read/write head is the mechanism that reads data from and writes data to the platters. It floats on an air cushion just above the platter surface, detecting magnetic patterns (reading) and changing magnetic orientation (writing). Each platter surface has its own head."
+  },
+  
+      //CS110 T1 MODULE 6 
+      
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a network?",
+    "options": [
+      "A system of two or more devices linked by wires, cables, or a telecommunications system",
+      "A single computer with multiple users",
+      "A software program for communication",
+      "A type of computer virus"
+    ],
+    "correct": 0,
+    "explanation": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system. Networks allow computers to share resources like hardware, software, data, and information. A single computer (A) is not a network, and networks require physical connections or wireless links, not just software (C)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is digital communications?",
+    "options": [
+      "The process of converting analog signals to digital",
+      "The process in which two or more computers or devices transfer data, instructions, and information",
+      "The study of digital devices",
+      "A type of encryption"
+    ],
+    "correct": 1,
+    "explanation": "Digital communications is the process in which two or more computers or devices transfer data, instructions, and information. All types of computers and mobile devices can serve as sending and receiving devices. It is not specifically about conversion (A), study of devices (C), or encryption (D), though encryption may be used to secure communications."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the four basic components of a communication system?",
+    "options": [
+      "Sending device, receiving device, processor, and memory",
+      "Computer, monitor, keyboard, and mouse",
+      "Sending device, communications device, transmission media, and receiving device",
+      "Modem, router, switch, and hub"
+    ],
+    "correct": 2,
+    "explanation": "The four basic components are: sending device (initiates transmission), communications device (connects to media), transmission media (path for data), and receiving device (accepts transmission). Processor and memory (A) are internal computer components, not communication system components. The devices in (D) are types of communications hardware, not the basic components."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which capability does a home network provide to users?",
+    "options": [
+      "Individual Internet connections for each device",
+      "Eliminating the need for printers",
+      "Disabling online gaming",
+      "Multiple users sharing a single Internet connection"
+    ],
+    "correct": 3,
+    "explanation": "Home networks allow multiple users to share a single Internet connection, saving money and simplifying setup. They also enable file sharing, printer sharing, and online gaming. They do not require individual connections (A), eliminate printers (C), or disable gaming (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an intranet?",
+    "options": [
+      "An internal network that uses Internet technologies",
+      "A public website accessible to everyone",
+      "A network that connects different companies",
+      "A type of wireless network"
+    ],
+    "correct": 0,
+    "explanation": "An intranet (intra means within) is an internal network that uses Internet technologies but is restricted to authorized users within an organization. It is not public (A), does not connect different companies (C)---that would be an extranet---and can be wired or wireless (D) is not the defining characteristic."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an extranet?",
+    "options": [
+      "An internal company network",
+      "A network that allows customers or suppliers to access part of an organization's intranet",
+      "The public Internet",
+      "A wireless network for external use"
+    ],
+    "correct": 1,
+    "explanation": "An extranet (extra means outside or beyond) allows customers or suppliers to access part of an organization's intranet. It extends internal resources to authorized external users. It is not purely internal (A), not the public Internet (C), and not defined by wireless technology (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a VPN (Virtual Private Network)?",
+    "options": [
+      "A private network that uses dedicated physical lines",
+      "A type of malware",
+      "A network that allows individuals to access an organization's network securely using encryption",
+      "A wireless network protocol"
+    ],
+    "correct": 2,
+    "explanation": "A VPN allows an individual to access an organization's network by using encryption and other technologies to secure data transmitted over the public Internet. It creates a secure \"tunnel.\" It does not use dedicated physical lines (A) exclusively, is not malware (C), and is not a wireless protocol (D), though it can work over wireless connections."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which characteristic applies to wired networks?",
+    "options": [
+      "Less secure than wireless",
+      "Signals travel through airwaves",
+      "More difficult to set up than wireless",
+      "More secure and typically faster than wireless networks"
+    ],
+    "correct": 3,
+    "explanation": "Wired networks send signals through cables, making them more secure (physical access required to intercept) and typically faster than wireless networks. Wireless networks (B) use airwaves. Wireless networks are generally easier to set up (D), not wired."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Which characteristic applies to wireless networks?",
+    "options": [
+      "More convenient and easier to set up than wired networks",
+      "More secure than wired",
+      "Require cables through floors and walls",
+      "Always slower than wired"
+    ],
+    "correct": 0,
+    "explanation": "Wireless networks send signals through airwaves, making them more convenient and easier to set up since no cabling is needed. They are generally less secure than wired (A), do not require cables (B), and while often slower, \"always\" (D) is not accurate as technology improves."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a cellular network?",
+    "options": [
+      "A network using only cell phones",
+      "A communication network where the link to and from end nodes is wireless",
+      "A wired network in a city",
+      "A network of biological cells"
+    ],
+    "correct": 1,
+    "explanation": "A cellular network (or mobile network) is a communication network where the link to and from end nodes is wireless. It is divided into cells served by towers. Types include 3G, 4G, and 5G. It is not limited to phones (A) (includes tablets, hotspots), not wired (C), and not biological (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does communications software do?",
+    "options": [
+      "Physically connects devices with cables",
+      "Only encrypts data",
+      "Helps establish connections, manage transmissions, and provide communication interfaces",
+      "Replaces the need for hardware"
+    ],
+    "correct": 2,
+    "explanation": "Communications software helps users establish connections, manage data transmission, and provide interfaces for communication. It does not physically connect devices (A)---that's hardware. It does more than just encrypt (C) and cannot replace hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "In a bus network, what happens if the central cable (bus) fails?",
+    "options": [
+      "Only the failed device stops working",
+      "All devices on the network will no longer be able to communicate",
+      "The network switches to wireless mode",
+      "Devices continue communicating through alternate paths"
+    ],
+    "correct": 3,
+    "explanation": "In a bus network, all devices are attached to a single central cable (the bus). If the bus fails, the entire network becomes inoperable because all communication depends on that single cable. This is a single point of failure. Alternate paths (A) exist in mesh networks, not bus."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "In a mesh network, what happens if a single device fails?",
+    "options": [
+      "Only the failed device is affected; others continue via alternate routes",
+      "The entire network stops working",
+      "Data is lost permanently",
+      "The network must be rebuilt"
+    ],
+    "correct": 0,
+    "explanation": "In a mesh network, devices are interconnected with multiple paths. If one device fails, the rest of the network continues to function by communicating via alternate routes. This redundancy makes mesh networks highly reliable. The entire network does not stop (A)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a full mesh topology?",
+    "options": [
+      "Each device connects only to a central hub",
+      "Each device on the network is connected to every other device",
+      "Devices are connected in a circular chain",
+      "Devices connect only to their nearest neighbor"
+    ],
+    "correct": 1,
+    "explanation": "In a full mesh topology, each device is directly connected to every other device on the network. This provides maximum redundancy but is impractical for large networks due to the number of connections required. Central hub (A) describes star, circular chain (C) describes ring, nearest neighbor (D) is not full mesh."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "In a ring network, what happens if one device fails?",
+    "options": [
+      "The rest of the network continues normally",
+      "Data automatically reroutes",
+      "All communication on the network could cease to function",
+      "Only that device loses connection"
+    ],
+    "correct": 2,
+    "explanation": "In a ring network, data travels from one device to the next in sequence. If one device fails, the ring is broken, and all communication could cease. Ring networks are no longer common due to this vulnerability. Automatic rerouting (C) is a mesh feature."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "In a star network, what happens if the central device fails?",
+    "options": [
+      "The other devices continue communicating directly",
+      "The network switches to a ring topology",
+      "Only the central device is affected",
+      "The other devices will be unable to communicate"
+    ],
+    "correct": 3,
+    "explanation": "In a star network, all devices are attached to a central device (server or switch). If the central device fails, all other devices lose the ability to communicate because all traffic passes through the center. However, if a connected device fails, others still work."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a tree topology?",
+    "options": [
+      "Two or more star networks joined together using a bus",
+      "A network shaped like a tree",
+      "A single cable with devices attached",
+      "A circular network configuration"
+    ],
+    "correct": 0,
+    "explanation": "A tree topology is formed by joining two or more star networks together using a bus. It combines characteristics of both star and bus topologies and is often used in schools and businesses. Single cable (C) describes bus, circular (D) describes ring."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a client/server network?",
+    "options": [
+      "All computers are equal and share resources directly",
+      "One or more computers act as servers providing resources to client computers",
+      "A network with no dedicated servers",
+      "A network with fewer than 10 computers"
+    ],
+    "correct": 1,
+    "explanation": "In a client/server network, servers provide resources to client computers. This architecture provides centralized management and security. All computers equal (A) and no dedicated servers (C) describe peer-to-peer. Fewer than 10 computers (D) typically describes peer-to-peer networks."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a peer-to-peer (P2P) network?",
+    "options": [
+      "A network with dedicated servers",
+      "A network that requires a network administrator",
+      "A network where all computers are equal and communicate directly, typically with fewer than 10 computers",
+      "A network that only works over the Internet"
+    ],
+    "correct": 2,
+    "explanation": "In a peer-to-peer network, all computers are treated equally, communicate directly, and can share resources. No dedicated servers or network administrator is required, and it typically connects fewer than 10 computers. Dedicated servers (A) and administrator required (C) describe client/server networks."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Local Area Network (LAN)?",
+    "options": [
+      "A network connecting devices worldwide",
+      "A network operated by a city",
+      "A personal network of Bluetooth devices",
+      "A network that connects computers and devices in a limited geographic area"
+    ],
+    "correct": 3,
+    "explanation": "A LAN connects computers and devices in a limited area like a home, school, or office building. Worldwide (A) is WAN, city-operated (C) is MAN, Bluetooth devices (D) is PAN."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Wireless LAN (WLAN)?",
+    "options": [
+      "A LAN that uses wireless connections",
+      "A wide area network",
+      "A personal area network",
+      "A network that only works outdoors"
+    ],
+    "correct": 0,
+    "explanation": "A WLAN is a Local Area Network that uses wireless connections (Wi-Fi) instead of wired cables. It provides the same functionality as a wired LAN but with mobility. WAN (B) is wide area, PAN (C) is personal area, and it works indoors as well (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Wide Area Network (WAN)?",
+    "options": [
+      "A network in a single building",
+      "A network that connects devices in a large geographic region",
+      "A wireless network",
+      "A network of personal devices"
+    ],
+    "correct": 1,
+    "explanation": "A WAN connects devices in a large geographic region, such as a country, continent, or the entire world. The Internet is the largest WAN. Single building (A) is LAN, wireless (C) is not specific, personal devices (D) is PAN."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Metropolitan Area Network (MAN)?",
+    "options": [
+      "A network in a home",
+      "A global network",
+      "A network operated by a city or county covering a metropolitan region",
+      "A network of body sensors"
+    ],
+    "correct": 2,
+    "explanation": "A MAN is a type of wide-area network operated by a city or county covering a geographic area larger than a LAN but smaller than a WAN, typically a city or metropolitan region. Home (A) is LAN, global (C) is WAN, body sensors (D) is BAN."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Personal Area Network (PAN)?",
+    "options": [
+      "A network covering a city",
+      "A network of computers in an office",
+      "A global network of personal devices",
+      "Personal digital devices connected via Bluetooth like a smartwatch"
+    ],
+    "correct": 3,
+    "explanation": "A PAN connects personal digital devices connected via Bluetooth or other short-range wireless technologies, such as a smartwatch connected to a phone. City (A) is MAN, office (C) is LAN, global (D) is WAN."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Body Area Network (BAN)?",
+    "options": [
+      "A form of personal area network consisting of small, lightweight biosensors implanted in the body",
+      "A network of fitness equipment",
+      "A network covering the entire body surface",
+      "A wireless network for hospitals"
+    ],
+    "correct": 0,
+    "explanation": "A BAN is a form of personal area network that consists of small, lightweight biosensors implanted in the body or placed on the body surface to monitor health data. It is not just fitness equipment (A), not just surface (C) (can be implanted), and not just for hospitals (D), though used in healthcare."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are network standards?",
+    "options": [
+      "Rules for device communication like data format and error handling",
+      "Guidelines that specify how computers access a network, hardware types, and data transmission speeds",
+      "Physical cables connecting devices",
+      "Software programs for networking"
+    ],
+    "correct": 1,
+    "explanation": "Network standards define guidelines for network access, hardware, transmission speeds, and cable/wireless types. Protocols (A) define communication rules like data format and error handling. Standards and protocols work together but are distinct concepts."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are protocols in networking?",
+    "options": [
+      "Physical network components",
+      "Types of network cables",
+      "Standards outlining how devices communicate, including data format, coding schemes, and error handling",
+      "Network security software"
+    ],
+    "correct": 2,
+    "explanation": "Protocols are standards that outline the characteristics of how devices communicate, including data format, coding schemes, error handling, and transmission sequence. They are not physical components (A, C) or software (D), though software implements protocols."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Ethernet?",
+    "options": [
+      "A wireless networking standard",
+      "A type of network cable",
+      "A network protocol for the Internet",
+      "The most common standard for wired networks, controlling how devices share access to cables and transmit data"
+    ],
+    "correct": 3,
+    "explanation": "Ethernet is the most common standard for wired networks. It controls how NICs, routers, and modems share access to cables and transmit data. It is not wireless (A), not just a cable (C), and while used in Internet, it's a broader standard (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is EDI (Electronic Data Interchange)?",
+    "options": [
+      "A standard that defines how business documents travel across transmission media",
+      "A wireless protocol",
+      "A type of encryption",
+      "A network topology"
+    ],
+    "correct": 0,
+    "explanation": "EDI is a standard that defines how business documents (purchase orders, invoices) travel across transmission media, replacing paper-based communication. It is not wireless (A), encryption (C), or topology (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Wi-Fi based on?",
+    "options": [
+      "Ethernet standards",
+      "The 802.11 series of network standards developed by the IEEE",
+      "Bluetooth technology",
+      "Cellular networks"
+    ],
+    "correct": 1,
+    "explanation": "Wi-Fi is based on the 802.11 series of network standards developed by the IEEE (Institute of Electrical and Electronics Engineers). Standards include 802.11a, b, g, n, ac, and ax. It is not Ethernet (A), Bluetooth (C), or cellular (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Bluetooth?",
+    "options": [
+      "A wired connection standard",
+      "A type of Wi-Fi",
+      "A network protocol defining how two Bluetooth devices use short-range radio waves to transmit data",
+      "A cellular network standard"
+    ],
+    "correct": 2,
+    "explanation": "Bluetooth is a network protocol for short-range radio wave communication between devices. It is used for connecting peripherals like headphones, keyboards, and for data transfer between nearby devices. It is not wired (A), not Wi-Fi (C), and not cellular (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does it mean when Bluetooth devices are \"paired\"?",
+    "options": [
+      "They are physically connected with a cable",
+      "They are both turned off",
+      "They are broadcasting their location",
+      "They have established a trusted connection and will automatically recognize each other when in range"
+    ],
+    "correct": 3,
+    "explanation": "Pairing is the process where Bluetooth devices establish a trusted connection, typically using a code. Once paired, they automatically recognize each other and can connect without repeating setup when in range. They are not physically connected (A), not turned off (C), and not just broadcasting (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is UWB (Ultra-Wideband) best suited for?",
+    "options": [
+      "Transmitting large files like video, graphics, and audio",
+      "Text messaging",
+      "Voice calls",
+      "Web browsing"
+    ],
+    "correct": 0,
+    "explanation": "UWB is best suited for transmitting large files such as video, graphics, and audio because it offers high-speed short-range communication. It can transmit through doors and obstacles. Text (A), voice (C), and web browsing (D) use less bandwidth and don't require UWB's capabilities."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is IrDA and what is its limitation?",
+    "options": [
+      "A high-speed networking standard",
+      "A wireless protocol that requires line-of-sight transmission",
+      "A cellular technology",
+      "A type of VPN"
+    ],
+    "correct": 1,
+    "explanation": "IrDA (Infrared Data Association) uses infrared light waves for data transmission and requires line-of-sight---devices must be aimed directly at each other without obstacles. This is its main limitation compared to Bluetooth and UWB. It is not high-speed (B), cellular (C), or VPN (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is RFID?",
+    "options": [
+      "A type of wired connection",
+      "A Bluetooth variant",
+      "A protocol using radio signals to communicate with tags placed on objects, animals, or people",
+      "A network topology"
+    ],
+    "correct": 2,
+    "explanation": "RFID (Radio Frequency Identification) uses radio signals to communicate with tags (transponders) containing an antenna and memory chip. It's used for tracking inventory, toll collection, and identifying objects/animals/people. It is not wired (B), not Bluetooth (C), and not a topology (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are the components of an RFID tag (transponder)?",
+    "options": [
+      "A battery and a speaker",
+      "A camera and a screen",
+      "A processor and RAM",
+      "An antenna and a memory chip"
+    ],
+    "correct": 3,
+    "explanation": "An RFID tag consists of an antenna and a memory chip that contains information to be transmitted. The antenna receives signals from the reader and transmits the stored information. It may or may not have a battery (active vs passive), but the core components are antenna and chip."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is NFC (Near-Field Communication)?",
+    "options": [
+      "A protocol based on RFID for close-range communication used in mobile payments and ticketing",
+      "A long-range wireless technology",
+      "A wired networking standard",
+      "A type of Internet connection"
+    ],
+    "correct": 0,
+    "explanation": "NFC is a protocol based on RFID that enables close-range communication (centimeters) between devices. It is used in mobile payments (Apple Pay, Google Pay), contactless credit cards, tickets, and NFC tags. It is short-range (A is wrong), not wired (C), and not an Internet connection (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an NFC tag?",
+    "options": [
+      "A large storage device",
+      "A chip that can store small amounts of data and be attached to items like business cards, wristbands, or stickers",
+      "A type of smartphone",
+      "A wireless router"
+    ],
+    "correct": 1,
+    "explanation": "An NFC tag is a chip that stores small amounts of data and can be attached to various items---business cards, wristbands, stickers, ski lift tickets. When tapped by an NFC-enabled device, it transmits its stored information. It is not a large storage device (A), not a phone (C), and not a router (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are nodes on a network?",
+    "options": [
+      "Only servers",
+      "Only client computers",
+      "Any devices connected to a network, including computers, tablets, phones, printers, and smart home devices",
+      "Network cables"
+    ],
+    "correct": 2,
+    "explanation": "Nodes are any devices connected to a network that can send or receive data. This includes computers, tablets, phones, printers, game consoles, and smart home devices. It is not limited to servers (A), clients (C), or cables (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a hub in networking?",
+    "options": [
+      "A device that intelligently routes data to specific destinations",
+      "A device that connects different networks",
+      "A wireless access point",
+      "A device providing a central point for cables that transfers data to all connected devices"
+    ],
+    "correct": 3,
+    "explanation": "A hub provides a central connection point but broadcasts all incoming data to every connected port, regardless of destination. It is not intelligent like a switch (A), does not connect different networks (C)---that's a router, and is not specifically wireless (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a switch and how is it different from a hub?",
+    "options": [
+      "A switch transfers data only to the intended recipient, making it more efficient than a hub",
+      "A switch broadcasts data to all ports; a hub sends to specific ports",
+      "A switch is slower than a hub",
+      "A switch cannot connect multiple devices"
+    ],
+    "correct": 0,
+    "explanation": "A switch learns which devices are on which ports and sends data only to the intended recipient, unlike a hub that broadcasts to all. This makes switches more efficient and secure. A is reversed, C is false (switches are generally faster), D is false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a router?",
+    "options": [
+      "A device that only connects to the Internet",
+      "A device that connects two or more networks and directs the flow of information between them",
+      "A type of modem",
+      "A device that splits a single Internet connection"
+    ],
+    "correct": 1,
+    "explanation": "A router connects two or more networks and routes data between them. In homes, it connects the local network to the Internet. It does more than just connect to the Internet (B), is not a modem (C), and splitting connections (D) is a switch function."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a modem?",
+    "options": [
+      "A device that routes data between networks",
+      "A wireless access point",
+      "A communications device that connects a computer to a communications channel like the Internet",
+      "A network switch"
+    ],
+    "correct": 2,
+    "explanation": "A modem (modulator-demodulator) connects a computer to a communications channel like the Internet, converting digital to analog and vice versa. It is not a router (A), not just a wireless access point (C), and not a switch (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a cable modem?",
+    "options": [
+      "A modem using cable TV connections to send and receive digital data",
+      "A modem using fiber optics",
+      "A wireless modem",
+      "A modem using telephone lines"
+    ],
+    "correct": 3,
+    "explanation": "A cable modem uses cable TV (coaxial) connections to provide Internet access. It connects to the cable line via a splitter. Telephone lines (A) are DSL, fiber optics (C) are for FTTP, wireless (D) is different."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a DSL modem?",
+    "options": [
+      "A modem using existing copper telephone wiring",
+      "A modem using cellular networks",
+      "A modem using cable TV lines",
+      "A modem using fiber optics"
+    ],
+    "correct": 2,
+    "explanation": "A DSL (Digital Subscriber Line) modem uses existing standard copper telephone wiring to provide Internet access while allowing simultaneous voice calls. Cable (A) is different, cellular (C) and cellular (D) are other connection types."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an ISDN modem?",
+    "options": [
+      "A modem for cable TV connections",
+      "A broadband modem that sends digital data over ISDN lines",
+      "A wireless modem",
+      "A modem for dial-up connections"
+    ],
+    "correct": 1,
+    "explanation": "An ISDN (Integrated Services Digital Network) modem is a broadband modem that sends digital data over ISDN lines---a digital telephone network system. It is not for cable (A), not wireless (C), and not dial-up (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a dedicated line?",
+    "options": [
+      "A phone line used only for voice calls",
+      "A shared Internet connection",
+      "An always-on physical connection between two communications devices",
+      "A wireless connection"
+    ],
+    "correct": 2,
+    "explanation": "A dedicated line is an always-on physical connection established between two communications devices, often used by businesses to connect distant offices. It is not shared (C), not just for voice (A), and not wireless (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is multiplexing?",
+    "options": [
+      "Splitting a single signal into multiple signals",
+      "Encrypting data for security",
+      "Compressing data to save bandwidth",
+      "Combining multiple analog or digital signals into a single signal over a shared medium"
+    ],
+    "correct": 3,
+    "explanation": "Multiplexing combines multiple signals into a single signal over a shared medium, increasing efficiency. It is the opposite of splitting (A), not encryption (C), and not compression (D), though compression may be used alongside it."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is FTTP (Fiber to the Premises)?",
+    "options": [
+      "Fiber-optic cable providing extremely high-speed Internet access to a user's location",
+      "Internet access via cable TV lines",
+      "A type of DSL",
+      "Wireless Internet service"
+    ],
+    "correct": 0,
+    "explanation": "FTTP uses fiber-optic cable to provide extremely high-speed Internet access to a home or business. An optical terminal receives signals and connects to a router. Cable (A) is different, DSL (C) uses phone lines, wireless (D) is different."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is ATM (Asynchronous Transfer Mode)?",
+    "options": [
+      "A cash machine for banking",
+      "A service carrying voice, data, video, and media at very high speeds using fixed-size cells",
+      "A type of DSL",
+      "A wireless protocol"
+    ],
+    "correct": 1,
+    "explanation": "ATM (Asynchronous Transfer Mode) is a high-speed network service that carries voice, data, video, and media using fixed-size cells. It's used by phone networks and the Internet backbone. It is not a cash machine (A), not DSL (C), and not wireless (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are T-carrier lines?",
+    "options": [
+      "Low-speed residential Internet connections",
+      "Wireless connections",
+      "Long-distance digital phone lines carrying multiple signals over a single line using multiplexing",
+      "Cable TV lines"
+    ],
+    "correct": 2,
+    "explanation": "T-carrier lines are long-distance digital phone lines that use multiplexing to carry multiple signals over a single line. T1 and T3 lines are examples. They are high-speed (not A), not wireless (C), and not cable TV lines (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Who typically uses T1 lines?",
+    "options": [
+      "Home users",
+      "Mobile phone users",
+      "Individual consumers",
+      "Medium to large companies"
+    ],
+    "correct": 3,
+    "explanation": "T1 lines are expensive, so only medium to large companies usually can afford them. Home users (A) typically use cable or DSL, mobile users (C) use cellular, and individual consumers (D) don't typically need T1 lines."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Who typically uses T3 lines?",
+    "options": [
+      "Large corporations, phone companies, and ISPs connecting to the Internet backbone",
+      "Home users",
+      "Small businesses",
+      "Individual consumers"
+    ],
+    "correct": 0,
+    "explanation": "T3 lines are very high-speed and expensive, used by large corporations, phone companies, and ISPs connecting to the Internet backbone. The Internet backbone itself uses T3 lines. Home users (A), small businesses (B), and individual consumers (D) do not typically use T3 lines."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What hardware is needed for a wireless home network?",
+    "options": [
+      "Only a modem",
+      "A modem, router, wireless access point, and devices to connect",
+      "Only a router",
+      "Only a switch"
+    ],
+    "correct": 1,
+    "explanation": "A wireless home network requires a modem (to connect to ISP), a router (to direct traffic), a wireless access point (often built into router), and devices to connect. A modem alone (A) or router alone (C) is insufficient. A switch (D) alone doesn't provide Internet connectivity."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the first step in setting up a wireless network?",
+    "options": [
+      "Enable wireless on all devices",
+      "Configure a network key",
+      "Purchase a modem or router and connect it to your home's Internet service",
+      "Name the network"
+    ],
+    "correct": 2,
+    "explanation": "The first step is to purchase a modem or router and connect it to your Internet service. Only after establishing the connection can you enable wireless (A), configure the key (C), and name the network (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a wireless network key?",
+    "options": [
+      "A physical key to lock the router",
+      "A key to enable wireless features",
+      "A network name",
+      "A password used to secure a wireless network and prevent unauthorized access"
+    ],
+    "correct": 3,
+    "explanation": "A wireless network key (password) secures the network by requiring authentication before devices can connect. It prevents unauthorized access. It is not physical (A), not just an enable feature (C), and not the network name (D)---that's SSID."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an advantage of adding a wireless printer to a network?",
+    "options": [
+      "Multiple computers and mobile devices on the network can use the printer",
+      "It must be physically connected to each computer",
+      "It cannot be shared",
+      "It only works with one device"
+    ],
+    "correct": 0,
+    "explanation": "A wireless printer on a network can be used by multiple computers and mobile devices, eliminating the need for direct connections or cable sharing. It does not need physical connection to each computer (A), can be shared (C), and works with multiple devices (D is false)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can you improve a weak wireless signal?",
+    "options": [
+      "Move the router to a corner of the house",
+      "Place the router in a central location and use a signal booster",
+      "Turn off the router",
+      "Use longer cables"
+    ],
+    "correct": 1,
+    "explanation": "To improve signal, place the router in a central location, extend antennas, or use a signal booster (repeater). Corners (A) are poor locations, turning off (C) stops service, and cables (D) don't help wireless."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is adware?",
+    "options": [
+      "A type of antivirus",
+      "A network protocol",
+      "Software that displays unwanted advertisements on your computer",
+      "Hardware for advertising"
+    ],
+    "correct": 2,
+    "explanation": "Adware is malware that displays unwanted advertisements. It can generate pop-ups, insert ads into web pages, and may track browsing habits. It is not antivirus (B), not a protocol (C), and not hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is spyware?",
+    "options": [
+      "Software that protects your privacy",
+      "A network monitoring tool",
+      "A type of firewall",
+      "Software that tracks and transmits personal information without your knowledge"
+    ],
+    "correct": 3,
+    "explanation": "Spyware secretly tracks and transmits personal information without your knowledge. It can capture keystrokes, monitor browsing, and steal data. It is not protective (A), not a legitimate network tool (C) (though packet sniffers can be misused similarly), and not a firewall (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a virus?",
+    "options": [
+      "Malware that damages data or changes system settings",
+      "A biological organism",
+      "A network protocol",
+      "A type of hardware"
+    ],
+    "correct": 0,
+    "explanation": "A virus is malware that damages data or changes system settings. It typically spreads by attaching to legitimate files and requires user action to activate. It is not biological (A), not a protocol (C), and not hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a worm?",
+    "options": [
+      "A type of antivirus",
+      "Malware that spreads throughout a computer and/or network without requiring user interaction",
+      "A physical cable",
+      "A network device"
+    ],
+    "correct": 1,
+    "explanation": "A worm is self-replicating malware that spreads automatically without user interaction, exploiting vulnerabilities. It differs from viruses which typically require user action. It is not antivirus (A), not a cable (C), and not a device (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a Trojan?",
+    "options": [
+      "A type of network topology",
+      "A network protocol",
+      "Malware that disguises itself as a legitimate file and causes damage when opened",
+      "A hardware device"
+    ],
+    "correct": 2,
+    "explanation": "A Trojan (Trojan horse) disguises itself as legitimate software but contains malicious code. Unlike viruses and worms, Trojans do not replicate themselves; they rely on users being tricked into opening them. It is not a topology (A), protocol (C), or hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is ransomware?",
+    "options": [
+      "Software that speeds up your computer",
+      "A backup program",
+      "A type of encryption",
+      "Malware that locks you out of programs and data until you pay a ransom"
+    ],
+    "correct": 3,
+    "explanation": "Ransomware encrypts files or locks systems, demanding payment (ransom) for access. Paying does not guarantee recovery. It is not speed-enhancing (A), not a backup (C), and while it uses encryption, it is malware, not just encryption (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a rootkit?",
+    "options": [
+      "Malware that gains administrator-level access undetected",
+      "A toolkit for network administrators",
+      "A type of antivirus",
+      "A network protocol"
+    ],
+    "correct": 0,
+    "explanation": "A rootkit gains root-level (administrator) access to a computer or network without detection, hiding itself and other malware from security tools. It is not a legitimate toolkit (A), not antivirus (C), and not a protocol (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is Network Attached Storage (NAS)?",
+    "options": [
+      "A type of network cable",
+      "A centralized storage device on a network for programs and data",
+      "A network protocol",
+      "A backup software"
+    ],
+    "correct": 1,
+    "explanation": "NAS is a dedicated storage device connected to a network, providing centralized file storage accessible to multiple users and devices. It is not a cable (A), not a protocol (C), and not software (D), though it may include software."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What does network monitoring software do?",
+    "options": [
+      "It physically inspects cables",
+      "It only blocks hackers",
+      "It constantly assesses network status, measures traffic, and alerts when problems occur",
+      "It replaces the need for a router"
+    ],
+    "correct": 2,
+    "explanation": "Network monitoring software constantly assesses network status, measures traffic, graphs usage, and sends alerts when problems are detected. It does not physically inspect cables (A), is not just for blocking (C), and does not replace hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is packet sniffer software?",
+    "options": [
+      "Software that creates network packets",
+      "A type of antivirus",
+      "A network accelerator",
+      "Software that monitors and logs packet traffic for later analysis"
+    ],
+    "correct": 3,
+    "explanation": "Packet sniffer software monitors and logs packet traffic for analysis. Administrators use it legitimately for troubleshooting, but hackers can misuse it to intercept data. It does not create packets (A), is not antivirus (C), and does not accelerate (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can hackers misuse packet sniffer software?",
+    "options": [
+      "To hijack computers by intercepting unencrypted data and passwords",
+      "To improve network speed",
+      "To install updates",
+      "To back up data"
+    ],
+    "correct": 0,
+    "explanation": "Hackers use packet sniffers to intercept unencrypted data traveling over networks, capturing passwords, emails, and sensitive information. This can lead to computer hijacking. It does not improve speed (A), install updates (C), or back up data (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "How can you check if someone is accessing your wireless network without permission?",
+    "options": [
+      "Call your ISP",
+      "Sign in to the router's administrative interface and count connected devices",
+      "Turn off the router",
+      "Change your computer's name"
+    ],
+    "correct": 1,
+    "explanation": "To check for unauthorized access, sign in to your router's administrative interface and count the connected devices. Compare to your known devices. If you see unknown devices, secure the network. Calling ISP (A) won't help directly, turning off (C) stops all access, and changing computer name (D) does nothing."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the role of a network administrator?",
+    "options": [
+      "To only install software",
+      "To answer phone calls",
+      "To plan, design, purchase equipment for, set up, secure, and maintain a network",
+      "To replace hardware"
+    ],
+    "correct": 2,
+    "explanation": "A network administrator plans, designs, purchases equipment for, sets up, secures, and maintains networks. They are responsible for overall network health and security. It is much broader than just installing software (A), answering calls (C), or replacing hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is USENIX?",
+    "options": [
+      "A type of network cable",
+      "A network protocol",
+      "A software company",
+      "A nonprofit organization founded in 1975 to support network and system engineers and operators"
+    ],
+    "correct": 3,
+    "explanation": "USENIX is a nonprofit organization supporting network and system engineers and operators in innovation and research through conferences, publications, and community engagement. It is not a cable (A), protocol (C), or software company (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What ethical guidelines are included in the network professional's code of conduct?",
+    "options": [
+      "Professionalism, social responsibility, personal integrity, privacy, and ethical responsibility",
+      "Only technical skills",
+      "Only security measures",
+      "Only hardware knowledge"
+    ],
+    "correct": 0,
+    "explanation": "The code includes professionalism, social responsibility, personal integrity, privacy laws and policies, communication system integrity, education, responsibility to the computing community, and ethical responsibility. It is much broader than just technical skills (A), security (C), or hardware (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a hub and a switch?",
+    "options": [
+      "A hub is more efficient than a switch",
+      "A hub broadcasts to all ports; a switch sends data only to the intended recipient",
+      "A switch broadcasts to all ports; a hub sends to specific ports",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "explanation": "A hub broadcasts all incoming data to every connected port, creating unnecessary traffic. A switch learns which devices are on which ports and sends data only to the intended recipient, making it more efficient and secure. A is false (hub is less efficient), C is reversed, D is false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a router and a modem?",
+    "options": [
+      "They are the same device",
+      "A router connects to the ISP; a modem directs traffic",
+      "A modem connects to the ISP; a router directs traffic between devices and the modem",
+      "A modem is wireless; a router is wired"
+    ],
+    "correct": 2,
+    "explanation": "A modem connects your network to your ISP, converting signals. A router connects multiple devices within your network and directs traffic between them and the modem. They are different devices (A), roles are reversed in C, and both can be wired or wireless (D is false)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a LAN and a WAN?",
+    "options": [
+      "LAN covers large area; WAN covers small area",
+      "LAN is wireless; WAN is wired",
+      "There is no difference",
+      "LAN covers limited area (home, office); WAN covers large geographic region"
+    ],
+    "correct": 3,
+    "explanation": "LAN (Local Area Network) covers a limited geographic area like a home, school, or office. WAN (Wide Area Network) covers a large geographic region, such as a country or the entire world. A is reversed, C is false (both can be wired or wireless), D is false."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a client/server network and a peer-to-peer network?",
+    "options": [
+      "Client/server has dedicated servers; peer-to-peer has all computers equal",
+      "Client/server has no servers; peer-to-peer has dedicated servers",
+      "They are the same",
+      "Peer-to-peer requires a network administrator"
+    ],
+    "correct": 0,
+    "explanation": "In client/server networks, dedicated servers provide resources to clients. In peer-to-peer networks, all computers are equal and communicate directly. A is reversed, C is false, D is false (P2P does not require an administrator)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between an intranet and the Internet?",
+    "options": [
+      "Intranet is public; Internet is private",
+      "Intranet is private (internal); Internet is public (global)",
+      "They are the same",
+      "Intranet is wireless; Internet is wired"
+    ],
+    "correct": 1,
+    "explanation": "An intranet is a private internal network using Internet technologies. The Internet is the global public network accessible to anyone. A is reversed, C is false, D is false (both can use various media)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between Wi-Fi and Bluetooth?",
+    "options": [
+      "Wi-Fi is short-range; Bluetooth is long-range",
+      "They are the same technology",
+      "Wi-Fi is for networking and Internet access; Bluetooth is for short-range device-to-device connections",
+      "Bluetooth is faster than Wi-Fi"
+    ],
+    "correct": 2,
+    "explanation": "Wi-Fi is used for wireless local area networks (WLANs) providing Internet access and networking. Bluetooth is for short-range connections between devices (headsets, keyboards, speakers). A is reversed (Wi-Fi has longer range), C is false, D is false (Wi-Fi is generally faster)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between RFID and NFC?",
+    "options": [
+      "RFID is short-range; NFC is long-range",
+      "They are the same",
+      "RFID is for payments; NFC is for tracking",
+      "NFC is a subset of RFID for very close-range secure communication"
+    ],
+    "correct": 3,
+    "explanation": "NFC (Near-Field Communication) is a subset of RFID technology designed for very short-range (centimeters) communication, often used for secure applications like mobile payments. RFID can operate at various ranges. A is reversed, C is false, D reverses common uses (NFC is for payments, RFID for tracking)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between ADSL and SDSL?",
+    "options": [
+      "ADSL has faster download than upload; SDSL has equal speeds",
+      "ADSL has equal speeds; SDSL has faster download",
+      "They are the same",
+      "ADSL is wireless; SDSL is wired"
+    ],
+    "correct": 0,
+    "explanation": "ADSL (Asymmetric DSL) provides faster download speeds than upload, suitable for home users. SDSL (Symmetric DSL) provides equal speeds both directions, suitable for businesses. A is reversed, C is false, D is false (both are wired)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the difference between a T1 line and a T3 line?",
+    "options": [
+      "T1 is faster than T3",
+      "T3 is much faster than T1 (44.736 Mbps vs 1.544 Mbps)",
+      "They are the same speed",
+      "T1 is wireless; T3 is wired"
+    ],
+    "correct": 1,
+    "explanation": "A T3 line provides 44.736 Mbps (28 T1 lines), much faster than a T1 line at 1.544 Mbps. A is reversed, C is false, D is false (both are wired)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of encryption in a VPN?",
+    "options": [
+      "To slow down the connection",
+      "To compress data",
+      "To increase bandwidth",
+      "To secure data transmitted over public networks so it cannot be read if intercepted"
+    ],
+    "correct": 3,
+    "explanation": "Encryption in a VPN secures data by converting it into unreadable code that only authorized devices can decipher. This protects data from interception when traveling over public networks. It does not slow intentionally (A), not compression (C), and does not increase bandwidth (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is an SSID?",
+    "options": [
+      "The name of a wireless network",
+      "A security protocol",
+      "A type of encryption",
+      "A network device"
+    ],
+    "correct": 0,
+    "explanation": "SSID (Service Set Identifier) is the name of a wireless network that is broadcast to allow devices to identify and connect to it. It is not a security protocol (A), encryption type (C), or device (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "Why should you change the default SSID of your wireless router?",
+    "options": [
+      "It's not necessary",
+      "Default names often identify the manufacturer, making attacks easier; a unique name improves security",
+      "To make the network faster",
+      "To increase signal strength"
+    ],
+    "correct": 1,
+    "explanation": "Changing the default SSID improves security because default names often reveal the router manufacturer, making it easier for attackers to exploit known vulnerabilities. A unique name also makes your network easily identifiable to you. It does not affect speed (C) or signal strength (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a wireless access point?",
+    "options": [
+      "A device that connects to the Internet",
+      "A type of modem",
+      "A device that allows wireless devices to connect to a wired network",
+      "A network cable"
+    ],
+    "correct": 2,
+    "explanation": "A wireless access point allows wireless devices to connect to a wired network. It bridges wireless and wired networks. It is not just an Internet connection device (A), not a modem (C), and not a cable (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a wireless signal booster (repeater)?",
+    "options": [
+      "A device that creates a new network",
+      "A type of antenna",
+      "A network cable",
+      "An amplifier used to improve reception and extend the range of a wireless network"
+    ],
+    "correct": 3,
+    "explanation": "A wireless signal booster (repeater) amplifies the existing wireless signal and retransmits it to extend coverage to areas with weak signals. It does not create a new network (A), is more than just an antenna (C), and is not a cable (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the Internet backbone?",
+    "options": [
+      "The main trunk connections of the Internet, composed of high-speed, high-capacity data routes",
+      "A type of network cable",
+      "A network protocol",
+      "A backup system"
+    ],
+    "correct": 0,
+    "explanation": "The Internet backbone consists of the main high-speed, high-capacity data routes connecting major networks worldwide. It carries the bulk of Internet traffic. It is not a cable type (B), protocol (C), or backup system (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a splitter in cable modem installation?",
+    "options": [
+      "A device that combines two signals",
+      "A device that divides a single cable signal into two or more separate signals",
+      "A type of modem",
+      "A network switch"
+    ],
+    "correct": 1,
+    "explanation": "A splitter divides a single cable signal into multiple signals. In cable modem installation, it splits the incoming cable line to connect both the TV/cable box and the cable modem. It divides signals, not combines (A) (that's a combiner), is not a modem (C), and not a switch (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of a network interface card (NIC)?",
+    "options": [
+      "To connect to the Internet wirelessly",
+      "To route data between networks",
+      "Hardware that enables a computer to connect to a network",
+      "To secure the network"
+    ],
+    "correct": 2,
+    "explanation": "A NIC (Network Interface Card) enables a computer to connect to a network, providing the physical interface for wired or wireless connections. It may be built-in or added. Connecting wirelessly (A) is one function, but NICs can also be wired. Routing (C) is router function, security (D) is firewall/software."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the function of a firewall?",
+    "options": [
+      "To physically protect the computer from fire",
+      "To increase network speed",
+      "To connect to the Internet",
+      "To monitor and control incoming and outgoing network traffic based on security rules"
+    ],
+    "correct": 3,
+    "explanation": "A firewall monitors and controls network traffic based on security rules, blocking unauthorized access while allowing legitimate communications. It is not physical fire protection (A), does not increase speed (C), and is not just for connecting (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is \"stealth mode\" on a router?",
+    "options": [
+      "A feature that makes the network less visible to outsiders by not responding to unsolicited probes",
+      "A mode that makes the router invisible",
+      "A power-saving mode",
+      "A speed boost feature"
+    ],
+    "correct": 0,
+    "explanation": "Stealth mode prevents the router from responding to unsolicited requests or probes, making it less visible to potential attackers. It does not make it completely invisible (A) but reduces detectability. It is not power-saving (C) or speed-boosting (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is bandwidth in networking?",
+    "options": [
+      "The physical width of a cable",
+      "The maximum rate of data transfer across a network connection",
+      "The number of devices on a network",
+      "The age of the network"
+    ],
+    "correct": 1,
+    "explanation": "Bandwidth is the maximum data transfer rate of a network connection, measured in bps, Kbps, Mbps, or Gbps. It indicates capacity, not physical width (A), number of devices (C), or age (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a transponder in RFID systems?",
+    "options": [
+      "The reader device",
+      "The network switch",
+      "The RFID tag containing an antenna and memory chip",
+      "The power source"
+    ],
+    "correct": 2,
+    "explanation": "A transponder is the RFID tag attached to an object, containing an antenna and memory chip. It transmits stored information when activated by a reader. The reader is a transceiver (A), not a switch (C), and power source varies (active vs passive)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a transceiver in RFID systems?",
+    "options": [
+      "The RFID tag",
+      "The antenna",
+      "The memory chip",
+      "The RFID reader that both transmits and receives signals"
+    ],
+    "correct": 3,
+    "explanation": "A transceiver (transmitter + receiver) is the RFID reader that sends out signals to activate tags and receives data transmitted back. The tag is a transponder (A). Antenna (C) is part of both, memory chip (D) is part of tag."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is pairing in Bluetooth technology?",
+    "options": [
+      "Establishing a trusted connection between two Bluetooth devices, usually with a code",
+      "Physically connecting devices with a cable",
+      "Turning Bluetooth on",
+      "Charging Bluetooth devices"
+    ],
+    "correct": 0,
+    "explanation": "Pairing is the process where two Bluetooth devices establish a trusted connection, typically by entering or confirming a code. Once paired, they connect automatically when in range. It is not physical connection (A), just turning on (C), or charging (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What are 3G, 4G, and 5G?",
+    "options": [
+      "Wi-Fi standards",
+      "Generations of cellular network technology",
+      "Bluetooth versions",
+      "Network topologies"
+    ],
+    "correct": 1,
+    "explanation": "3G, 4G, and 5G are generations of cellular network technology, each offering faster speeds and improved capabilities. They are not Wi-Fi (A), Bluetooth (C), or topologies (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is line-of-sight transmission?",
+    "options": [
+      "Transmission through walls",
+      "Wireless transmission",
+      "Transmission where sending and receiving devices must be directly visible with no obstacles",
+      "Satellite transmission"
+    ],
+    "correct": 2,
+    "explanation": "Line-of-sight transmission requires devices to be directly visible with no obstacles blocking the path. IrDA (infrared) requires this. It does not work through walls (A), is a characteristic of some wireless types (C), and satellite may have limitations but not strictly line-of-sight in the same way (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the IEEE and its role in networking?",
+    "options": [
+      "A cable manufacturer",
+      "An Internet service provider",
+      "A software company",
+      "A professional organization that develops networking standards like 802.11 (Wi-Fi)"
+    ],
+    "correct": 3,
+    "explanation": "IEEE (Institute of Electrical and Electronics Engineers) is a professional organization that develops standards, including the 802.11 series for Wi-Fi. It is not a manufacturer (A), ISP (C), or software company (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is a tree topology commonly used in?",
+    "options": [
+      "Home networks only",
+      "Schools and businesses",
+      "Small peer-to-peer networks",
+      "Bluetooth connections"
+    ],
+    "correct": 0,
+    "explanation": "Tree topologies, formed by joining star networks with a bus, are often used in schools and businesses because they are scalable and manageable. They are not just for home (A), not just for small P2P (C), and not for Bluetooth (D)."
+  },
+  {
+    "course": "CS110",
+    "term": "T1",
+    "q": "What is the purpose of a VPN for remote employees?",
+    "options": [
+      "To slow down their connection",
+      "To securely access the organization's internal network over the Internet",
+      "To block all websites",
+      "To increase personal privacy only"
+    ],
+    "correct": 1,
+    "explanation": "A VPN allows remote employees to securely access their organization's internal network over the Internet, using encryption to protect data. It does not slow intentionally (A), does not block all sites (C), and while it provides privacy, its primary business purpose is secure network access (D is incomplete)."
+  },
+      
   // --- CS110 Term 2 Data (Existing Questions) ---
 
   {
