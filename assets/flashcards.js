@@ -1,1664 +1,4208 @@
+
 const flashcards = {
   "MODULE 1: INTRODUCTION (BEING A DIGITAL CITIZEN: AT HOME, SCHOOL, AND WORK)": [
-  {
-    "front": "What is digital literacy?",
-    "back": "Digital literacy means acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "How does society rely on technology?",
-    "back": "Society relies on technology in various aspects, including daily tasks, professional work, education, and healthcare.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are ways to protect your personal information?",
-    "back": "Ways to protect personal information include not carrying passwords, being cautious about sharing personal information online, and regularly reviewing financial statements.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What is the role of technology in the professional world?",
-    "back": "In the professional world, technology is used to connect employees, communicate, enhance productivity with software, manage supply chains, and for computer-aided manufacturing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "How can technology be used to find a career?",
-    "back": "Technology can be used to find a career by creating online profiles on professional networking sites, using job search websites, and preparing digital résumés and cover letters.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What is convergence?",
-    "back": "(Information not explicitly detailed in the provided content for Unit 1, but generally refers to the merging of distinct technologies, industries, or devices into a unified whole).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are the legal and ethical responsibilities of a digital citizen?",
-    "back": "Legal and ethical responsibilities include adhering to laws like the Americans with Disabilities Act (ADA) and the Individuals with Disabilities Education Act (IDEA) regarding accessibility, being aware of digital security risks, and acting ethically regarding information accuracy and intellectual property.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "What are some uses of assistive technologies?",
-    "back": "Assistive technologies help users with disabilities; for example, speech recognition programs allow verbal input, graphic organizers help structure information, and audio books read information aloud.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "introduction (being a digital citizen: at home, school, and work)"
-  },
-  {
-    "front": "Who is a digital citizen?",
-    "back": "A digital citizen is a person familiar with how to use technology to become an effective and responsible participant in society.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What is a computer?",
-    "back": "A computer is an electronic device operating under the control of instructions stored in its own memory, which can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What does memory consist of in a computer?",
-    "back": "Memory consists of electronic components that store instructions, data, and the results of processing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What is the Internet?",
-    "back": "The Internet is a global collection of millions of connected computers and devices that exchange information. It is the largest Wide Area Network (WAN).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What is a network?",
-    "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system, allowing them to share resources.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What is Wi-Fi?",
-    "back": "Wi-Fi is a wireless technology that uses radio waves to provide high-speed Internet and network connections.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What is a server in a network context?",
-    "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What does \"big data\" refer to?",
-    "back": "\"Big data\" refers to large, complex data sources that can be analyzed to reveal patterns, trends, and associations, especially relating to human behavior and interactions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "How is technology used in daily tasks like public transportation?",
-    "back": "Technology is used in public transportation for tasks like scanning tickets, optimizing routes for efficiency, and GPS navigation.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts you"
-  },
-  {
-    "front": "What technology did the first generation of computers use, and what were its limitations?",
-    "back": "The first generation of computers used vacuum tubes, which made them very large, consumed significant power, and generated a lot of heat, leading to frequent breakdowns.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What significant computer was introduced by Apple Computer Corporation in 1978?",
-    "back": "The Apple II, a groundbreaking microcomputer that popularized personal computing with color graphics and an open architecture.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What is the Internet of Things (IoT)?",
-    "back": "The Internet of Things (IoT) is a trend where common devices and appliances are connected to the Internet, enabling them to send and receive data.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What are IoT-enabled devices often called and why?",
-    "back": "IoT-enabled devices are often called smart devices because they can communicate with other devices and make decisions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What are embedded computers, and what is their function?",
-    "back": "Embedded computers are special-purpose computers that function as a component in a larger product. They are designed for specific tasks.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What are Automated Teller Machines (ATMs) an example of in the context of IoT?",
-    "back": "ATMs are an example of an IoT-enabled device, allowing users to perform financial transactions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "How does IoT allow remote management of home devices?",
-    "back": "IoT allows remote management of home devices through smart devices connected to the Internet, enabling control from a smartphone or other device from anywhere.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "How is IoT used in manufacturing?",
-    "back": "In manufacturing, IoT is used for monitoring assembly lines, managing inventory, optimizing production processes, and using robotics.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "How is IoT used in retail?",
-    "back": "In retail, IoT is used for inventory management, personalized marketing, smart shelves, and enhanced customer experiences.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "how technology impacts society"
-  },
-  {
-    "front": "What is ergonomics, and why is it important for technology users?",
-    "back": "Ergonomics is the study of how people interact with their work environment. It's important for technology users to prevent repetitive strain injuries (RSI) and other health issues by designing workspaces and devices that promote comfort and efficiency.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "digital health"
-  },
-  {
-    "front": "What are some guidelines for practicing healthy computing?",
-    "back": "Guidelines include taking breaks (e.g., the 20-20-20 rule), using proper lighting, adjusting screen settings (brightness, contrast), and ensuring good air circulation for devices.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "digital health"
-  },
-  {
-    "front": "What is technology addiction and its symptoms?",
-    "back": "Technology addiction is a compulsive need to use technology to the point where it interferes with daily life. Symptoms include anxiety or irritability when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "digital health"
-  },
-  {
-    "front": "What are the legal requirements for providing assistive technologies according to US laws?",
-    "back": "According to US laws, the Americans with Disabilities Act (ADA) requires companies with 15+ employees to reasonably accommodate physically challenged workers. The Individuals with Disabilities Education Act (IDEA) requires public schools to purchase or fund adaptive technologies to ensure access for people with disabilities.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "digital health"
-  }
-],
+    {
+      "front": "What is digital literacy?",
+      "back": "Acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a digital citizen?",
+      "back": "A person familiar with how to use technology to become an educated and productive member of the digital world.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a computer?",
+      "back": "An electronic device that operates under the control of instructions stored in its memory and can accept and process data to produce information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What does memory in a computer system consist of?",
+      "back": "Electronic components that store instructions waiting to be executed by the processor, data needed by those instructions, and the results of processing the data into information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the Internet?",
+      "back": "A global collection of millions of computers linked together to share information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a network?",
+      "back": "A collection of two or more computers connected to share resources.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What does Wi-Fi stand for and what is it?",
+      "back": "Wireless Fidelity; a wireless data network technology that provides high-speed data connections.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a server and what is a data center?",
+      "back": "A server is a powerful, high-capacity computer that stores and serves files; servers are grouped at a location called a data center.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an online social network?",
+      "back": "An online community where users share interests, ideas, stories, photos, music, and videos with other registered users.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is big data?",
+      "back": "Large and complex data sources that defy easy management with traditional data processing methods.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What technology did the first generation of computers use?",
+      "back": "Vacuum tubes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following was NOT a limitation of first-generation computers?",
+      "back": "Their inability to process data. (They could process data, but were limited by large size, high power consumption, heat generation, and short lifespan.)",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What significant computer did Apple introduce in 1978, and what were its key features?",
+      "back": "Apple II; preassembled with color graphics and VisiCalc spreadsheet software.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the Internet of Things (IoT)?",
+      "back": "An environment where processors are embedded in products, and these things communicate via the Internet or wireless networks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Why are IoT-enabled devices often called \"smart devices\"?",
+      "back": "Because of their capability to communicate, locate, and predict.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an embedded computer?",
+      "back": "A computer that functions as one component in a larger product and has a specific purpose.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How are embedded computers related to the Internet of Things?",
+      "back": "Embedded computers are a part of the IoT.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What are ATMs in the context of IoT?",
+      "back": "They are one of the more familiar uses of the IoT.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT something IoT enables you to do remotely in your home?",
+      "back": "Physically repairing a broken appliance.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How is IoT used in manufacturing?",
+      "back": "Sensors monitor processes and increase quality; robotic arms ensure precision.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How is IoT used in retail?",
+      "back": "Sensors track inventory or send coupons to customers' phones while they shop.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How is IoT used in shipping?",
+      "back": "Companies track mileage, location of trucks, and monitor driving times for safety.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT a way healthcare providers use IoT?",
+      "back": "Perform surgery remotely without any human doctor present.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the digital divide?",
+      "back": "The gap between those who have access to technology and its resources and those who do not.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which factors contribute to the digital divide?",
+      "back": "Socioeconomic and demographic factors such as age, income, location, and education.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT part of the definition of privacy?",
+      "back": "The right to access anyone's personal information without consent.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is identity theft?",
+      "back": "Using someone's personal information to commit financial fraud.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is dumpster diving as a method of stealing personal information?",
+      "back": "Retrieving personal information from discarded credit card statements, charge receipts, and bank statements.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is phishing?",
+      "back": "Attackers deceiving you into revealing personal or financial information when you respond to an email or visit a website.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How do attackers use change of address forms to steal identity?",
+      "back": "They divert the victim's mail to a post office box so the victim never sees the charges made.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is pretexting?",
+      "back": "An attacker pretending to be from a legitimate research firm asking for personal information.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is data mining in the context of identity theft?",
+      "back": "Attackers guessing passwords by soliciting responses to social media queries about pet names, home state, etc.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT a recommended safeguard to protect your privacy?",
+      "back": "Carry passwords in your wallet for easy reference.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an intelligent workplace?",
+      "back": "A workplace that uses technology to connect employees to the network, communicate, use productivity software, and meet via web conferencing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How do companies use online collaborative productivity software?",
+      "back": "To enable employees to share documents and make edits or comments.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How do schools use social networking tools?",
+      "back": "To promote school events, work cooperatively on group projects, and teach concepts such as anti-bullying.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How does online productivity software benefit students?",
+      "back": "It enables collaborative work on projects and reduces the need for paper printouts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a learning management system (LMS) used for in education?",
+      "back": "To set up web-based training sites where students check progress, take practice tests, and exchange messages with instructors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the mobile health (mHealth) trend?",
+      "back": "Healthcare professionals using smartphones/tablets to access cloud health records, and patients using digital devices to monitor conditions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How are 3-D printers used in healthcare?",
+      "back": "To manufacture skin for burn patients, prosthetic devices, and casts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is telemedicine?",
+      "back": "Using telecommunications technology, including secure videoconferencing, to diagnose and treat patients remotely.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How do transportation workers use technology in their jobs?",
+      "back": "Handheld computers scan package codes, computers find efficient routes and track progress, drivers use GPS to navigate.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is computer-aided manufacturing (CAM)?",
+      "back": "Using computers to streamline production, with robots performing dangerous, detailed, or monotonous tasks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is machine-to-machine communication in manufacturing?",
+      "back": "Computers monitoring assembly lines and equipment using communications between machines to perform tasks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How can technology help in your job search?",
+      "back": "By creating profiles on career networking sites, personal websites showcasing talents, and using social media to learn about careers and promote yourself.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Why is a professional online presence important?",
+      "back": "It is often the first thing a recruiter or interviewer will see.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is LinkedIn?",
+      "back": "A social networking site designed to provide business and employment-oriented services.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT a recommended tip for creating an online presence?",
+      "back": "Use humorous or informal names for your account profiles.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is convergence in technology?",
+      "back": "The increasing integration of technological capabilities into previously unrelated devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a laptop (or notebook)?",
+      "back": "A thin, lightweight mobile computer with a screen on its lid and a keyboard on its base.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a tablet?",
+      "back": "A thin, lightweight mobile device with a touch screen, often associated with eBook readers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an eBook reader (e-reader)?",
+      "back": "A mobile device used primarily for reading digital media.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a desktop computer?",
+      "back": "A personal computer designed to be in a stationary location where all components fit on or under a desk or table.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an all-in-one desktop?",
+      "back": "A desktop that does not contain a separate tower and uses the same case to house the display and processing circuitry.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a mobile device?",
+      "back": "A portable or handheld computing device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a smartphone?",
+      "back": "An Internet-capable phone that usually includes a calendar, address book, games, and apps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What are earbuds?",
+      "back": "Small speakers that rest inside each ear canal to listen without disturbing others.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a digital camera?",
+      "back": "A camera that creates a digital image of an object, person, or scene.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a digital media player?",
+      "back": "An application that lets you play audio and video files.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is streaming?",
+      "back": "Receiving audio and video content on your device as it is being downloaded from the web.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a wearable device (wearable)?",
+      "back": "A small, mobile computing consumer device designed to be worn.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an activity tracker?",
+      "back": "A device that monitors heart rate, measures pulse, counts steps, and tracks sleep patterns.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What can a smartwatch do?",
+      "back": "Communicate with a smartphone to make calls, read/send messages, access the web, play music, and work with apps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a game console?",
+      "back": "A hardware device that allows you to play video games, either single player or multiplayer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is a handheld game device?",
+      "back": "A game device small enough to fit in one hand, making it more portable than a game console.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the difference between a digitally literate person and a digital citizen regarding copying information?",
+      "back": "Digitally literate people know how to copy and paste; digital citizens know when it's appropriate, how to credit sources, and the ramifications of violating copyright.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is netiquette?",
+      "back": "The rules of Internet etiquette and acceptable behaviors while online.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What are digital ethics?",
+      "back": "The set of legal and moral guidelines that govern the use of technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is cyberbullying?",
+      "back": "A form of bullying that involves digital devices and platforms such as social media, online forums, messaging apps, and email.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How does Zambian law define cyberbullying?",
+      "back": "Bullying through the transmission of a communication, including a message, text, sound, or image by means of an electronic device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is distracted driving?",
+      "back": "Driving a vehicle while focusing on other activities, typically involving an electronic device such as a cell phone.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is an Acceptable Use Policy (AUP)?",
+      "back": "A document that lists guidelines and repercussions of using the Internet and other digital company resources.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is plagiarism and how do schools combat it?",
+      "back": "Plagiarism is copying or using someone else's work and claiming it as your own; schools use services like Turnitin to check for plagiarized passages.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is green computing?",
+      "back": "Reducing electricity consumed and environmental waste generated when using computers, mobile devices, and related technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "How can you avoid electronic waste?",
+      "back": "Not replacing devices every time a new version is released, and recycling devices and products when they no longer provide value.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT a recommended green computing effort for individuals?",
+      "back": "Printing all documents on paper for physical records.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is a green computing measure organizations can implement?",
+      "back": "Consolidating servers and purchasing high-efficiency equipment.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What has generated awareness of the need for assistive technologies?",
+      "back": "The ever-increasing presence of computers in everyone's lives.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is accessibility?",
+      "back": "The practice of removing barriers that may prevent individuals with disabilities from interacting with data, a website, or an app.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is assistive technology?",
+      "back": "Any device, software, or equipment that helps people work around their challenges.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is NOT an assistive technology for visually impaired people?",
+      "back": "Smaller, harder-to-read text to challenge the user.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What assistive technology exists for hearing-impaired people?",
+      "back": "Instructing programs to display words or visual clues instead of sounds for notifications.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is an assistive technology for people with mobility issues?",
+      "back": "On-screen keyboards, larger keys, hand-mounted pointers, foot pedals, or puff-controlled instruments.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "Which of the following is an assistive technology for people with intellectual disabilities?",
+      "back": "Speech recognition programs, graphic organizers, and audio books.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the Americans with Disabilities Act (ADA)?",
+      "back": "A law requiring any company with 15 or more employees to make reasonable attempts to accommodate physically challenged workers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the Individuals with Disabilities Education Act (IDEA)?",
+      "back": "A law that requires public schools to purchase or acquire funding for adaptive technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    },
+    {
+      "front": "What is the purpose of laws like ADA and IDEA?",
+      "back": "To ensure that people with disabilities can access resources, information, and services using appropriate technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "introduction (being a digital citizen: at home, school, and work)"
+    }
+  ],
 
-  "MODULE 2: THE COMPUTER SYSTEM HARDWARE": [
+//CSS110 MODULE 2
+  "MODULE 2: COMPUTER HARDWARE": [
     {
-      "front": "What is the central processing unit (CPU)?",
-      "back": "The CPU, or Central Processing Unit, is considered the brain of the computer, responsible for interpreting and executing most commands from hardware and software.",
+      "front": "Which of the following best defines hardware in computing?",
+      "back": "The physical components of a computer system including wires, cases, switches, and electronic circuits.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What are the four basic operations of the machine cycle?",
-      "back": "The four basic operations of the machine cycle are: fetching, decoding, executing, and storing.",
+      "front": "Which component types are classified as computer hardware?",
+      "back": "Memory, storage devices, CPU, input/output devices, and communication devices.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What two components does a processor contain?",
-      "back": "A processor contains a control unit and an arithmetic logic unit (ALU).",
+      "front": "What is a processor core?",
+      "back": "A unit on the processor containing circuitry necessary to execute instructions.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the function of the control unit in a processor?",
-      "back": "The control unit interprets instructions and directs the operations of the processor.",
+      "front": "Why do processors with multiple cores generally outperform single-core processors?",
+      "back": "They can execute multiple instructions simultaneously through parallel processing.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the function of the arithmetic logic unit (ALU)?",
-      "back": "The ALU performs arithmetic operations (addition, subtraction, multiplication, division) and logical operations (comparisons).",
+      "front": "What is the primary function of computer memory (RAM) in a computing system?",
+      "back": "To temporarily hold data and programs while they are being actively processed by the CPU.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What are registers, and what is their purpose?",
-      "back": "Registers are small, high-speed storage locations within the CPU that temporarily hold data and instructions during processing.",
+      "front": "What happens to RAM requirements when you run more applications simultaneously?",
+      "back": "More RAM is required because each application needs its own workspace.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "How is clock speed measured, and what does it indicate?",
-      "back": "Clock speed is measured in gigahertz (GHz) and indicates the number of ticks per second that the CPU performs. A higher clock speed generally means faster processing.",
+      "front": "What is a swap file (or paging file) and what is its purpose?",
+      "back": "An area of the hard drive temporarily used to store data that cannot fit in RAM.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a multi-core processor?",
-      "back": "A multi-core processor is a single chip with two or more separate processor cores, enabling it to execute more instructions simultaneously.",
+      "front": "How does using virtual memory affect computer performance?",
+      "back": "It may decrease computer performance because hard drives are slower than RAM.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "Why is cooling important for computer components?",
-      "back": "Cooling is important because digital components, especially processors, generate heat, which needs to be dissipated to prevent overheating and damage.",
+      "front": "Where is RAM physically located in a computer and what are its characteristics?",
+      "back": "On memory chips connected to the motherboard; temporary and volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "the processor"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a bus in a computer system?",
-      "back": "A bus is an electrical channel that allows devices to communicate with each other.",
+      "front": "What does it mean that RAM is volatile?",
+      "back": "It loses all stored contents when electrical power is turned off.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the motherboard?",
-      "back": "The motherboard is the main circuit board of a computer, connecting all components, including the CPU, memory, and expansion cards.",
+      "front": "What is the motherboard and what is its role in a computer?",
+      "back": "A circuit board containing the microprocessor, memory, and connections for other internal devices.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the purpose of connectors and ports on a computer?",
-      "back": "Connectors and ports enable external devices and peripherals to be attached to the computer.",
+      "front": "What is ROM and how does it differ from RAM?",
+      "back": "ROM is non-volatile memory containing startup instructions; RAM is volatile memory for active data.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the difference between input and output in a computer system?",
-      "back": "Input refers to any data or instructions entered into the computer (e.g., via keyboard or mouse), while output is the processed information displayed or presented by the computer (e.g., on a monitor or printer).",
+      "front": "What is firmware in the context of computer hardware?",
+      "back": "Instructions stored on ROM chips that can be updated by manufacturers.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "List three common output devices.",
-      "back": "Three common output devices are displays (monitors), printers, and speakers.",
+      "front": "What is Dynamic RAM (DRAM) and what is its defining characteristic?",
+      "back": "Memory that needs constant recharging or its contents will be erased.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What are some characteristics used to measure display devices?",
-      "back": "Characteristics include resolution (number of pixels), pixel density, response time, and brightness.",
+      "front": "Is DRAM classified as volatile or non-volatile memory?",
+      "back": "Volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "List three types of printers.",
-      "back": "Three types of printers are ink-jet printers, laser printers, and 3-D printers.",
+      "front": "What is Static RAM (SRAM) and how does it compare to DRAM?",
+      "back": "Faster, can be recharged less frequently, but is more expensive to manufacture.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What are some common electrical changes that can harm computer hardware?",
-      "back": "Common electrical changes that can harm computer hardware include blackouts (complete power loss), brownouts (reduced voltage), spikes (sudden increases in voltage), surges (prolonged increases in voltage), and noise (unwanted electrical signals).",
+      "front": "Is SRAM classified as volatile or non-volatile memory?",
+      "back": "Volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "ports and connectors"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'chip'?",
-      "back": "A chip is a small piece of semiconducting material, usually silicon, on which integrated circuits are etched.",
+      "front": "What is Magneto-resistive RAM (MRAM) and how does it store data?",
+      "back": "By using magnetic charges to represent and retain data.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the 'system clock' and 'clock speed'?",
-      "back": "The system clock controls the timing of all computer operations. Clock speed is the pace of the system clock, measured in gigahertz (GHz), indicating how many instruction cycles the CPU can handle per second.",
+      "front": "Is MRAM classified as volatile or non-volatile memory?",
+      "back": "Non-volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What are 'heat sinks' and 'liquid cooling technology'?",
-      "back": "Heat sinks are components that absorb and disperse heat from CPUs and other hot components. Liquid cooling technology uses a continuous flow of fluid through pipes or channels to cool the processor.",
+      "front": "What is flash memory and what are its common applications?",
+      "back": "Fast, relatively inexpensive, non-volatile memory used in USB drives and SSDs.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'cloud computing'?",
-      "back": "Cloud computing is an environment of servers that house and provide access to resources and services accessed via the Internet.",
+      "front": "Is flash memory classified as volatile or non-volatile?",
+      "back": "Non-volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'firmware'?",
-      "back": "Firmware is a specialized type of software that controls a device's specific hardware functions, often stored on ROM chips (e.g., BIOS).",
+      "front": "When purchasing a new computer, which factor involves whether you need mobility or a stationary device?",
+      "back": "Form factor.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the purpose of a 'port' on a computer?",
-      "back": "A port is an external connecting socket on a computer or mobile device where you plug in a peripheral device to connect it to the computer.",
+      "front": "How should you determine the processor requirements when different programs have varying needs?",
+      "back": "Identify the program with the highest requirement and select a processor meeting or exceeding it.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'USB port'?",
-      "back": "A USB (Universal Serial Bus) port is a versatile port that can connect up to 127 different peripheral devices together with a single connector.",
+      "front": "How much RAM is typically sufficient for basic web browsing and simple productivity tasks?",
+      "back": "4 GB.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is an 'HDMI port'?",
-      "back": "An HDMI (High-Definition Multimedia Interface) port is a type of port that combines audio and video into a single digital link.",
+      "front": "How much RAM is typically recommended for virtual reality applications and high-end gaming?",
+      "back": "16 GB to 32 GB.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'Bluetooth port'?",
-      "back": "A Bluetooth port is a wireless communication technology that uses short-range radio signals to transmit data between two Bluetooth-enabled devices.",
+      "front": "How should you determine storage requirements when selecting a computer?",
+      "back": "Add the storage requirements for each program plus operating system and personal files, then exceed that total.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is an 'expansion slot' and 'expansion card'?",
-      "back": "An expansion slot is a socket on the motherboard that can hold an adapter card. An expansion card (or adapter card) is a circuit board that enhances functions of a component of the system unit or provides connections to peripheral devices.",
+      "front": "What is a desktop computer and what are its typical components?",
+      "back": "A stationary computer with separate system unit, monitor, keyboard, and mouse.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'e-waste' and how should it be disposed of responsibly?",
-      "back": "E-waste is electronic waste from discarded digital devices. Responsible disposal methods include recycling facilities, donating to charity, or bringing it to technology stores for proper handling.",
+      "front": "What is an all-in-one computer?",
+      "back": "A computer with monitor and system unit housed together in a single case.",
       "course": "CS110",
       "term": "T1",
-      "topic": "The Computer System Hardware"
+      "topic": "computer hardware"
     },
     {
-      "front": "Differentiate between 'memory' and 'storage'.",
-      "back": "Memory consists of electronic components that temporarily store instructions, data, and results. Storage holds data, instructions, and information for future use, typically on a more permanent basis.",
+      "front": "What components are integrated into a typical laptop design?",
+      "back": "Input devices (keyboard, touchpad, webcam), output devices (screen, speakers), and storage devices.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'Random Access Memory (RAM)'?",
-      "back": "RAM (Random Access Memory) is volatile memory that temporarily stores instructions waiting to be executed and data needed by those instructions.",
+      "front": "Which characteristics describe ultrathin laptops?",
+      "back": "Light weight, higher cost, less powerful, longer battery life.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "Differentiate between 'volatile memory' and 'nonvolatile memory'.",
-      "back": "Volatile memory loses its contents when power is removed (e.g., RAM). Nonvolatile memory does not lose its contents when power is removed (e.g., ROM, hard disks, flash memory).",
+      "front": "What is a slate tablet and how is it typically used?",
+      "back": "A tablet resembling a letter-sized pad with no physical keyboard, using touch input.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'Read-Only Memory (ROM)'?",
-      "back": "ROM (Read-Only Memory) refers to memory chips storing permanent data and instructions. It is nonvolatile and cannot be modified by programs or users.",
+      "front": "What is a convertible tablet and what advantage does it offer?",
+      "back": "A tablet with a screen on its lid and keyboard on its base, functioning as both laptop and tablet.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'flash memory'?",
-      "back": "Flash memory is a type of nonvolatile memory that can be erased electronically and rewritten. It is often used in solid-state drives, USB flash drives, and memory cards.",
+      "front": "What is a scanner and what function does it perform?",
+      "back": "An input device that converts paper images into electronic files.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'cache'?",
-      "back": "Cache is a small, high-speed storage area that temporarily holds data and instructions that the processor is likely to reuse, speeding up processing.",
+      "front": "What special capability do 3-D scanners have that standard scanners lack?",
+      "back": "They can scan three-dimensional objects to create digital 3D models.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'hard disk' or 'hard disk drive (HDD)'?",
-      "back": "A hard disk (or hard disk drive - HDD) is a storage device that contains one or more inflexible, circular platters that use magnetic particles to store data, instructions, and information.",
+      "front": "What is a printer and what does it produce?",
+      "back": "An output device that creates physical hard copies on paper, film, or other media.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'platter' in a hard disk?",
-      "back": "A platter is a circular, rigid metallic or glass plate coated with magnetic material, found inside a hard disk drive, where data is stored.",
+      "front": "How can a printer be connected to a computer?",
+      "back": "Wirelessly (Wi-Fi/Bluetooth), over a network (Ethernet), or directly with a cable (USB).",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'solid-state drive (SSD)'?",
-      "back": "A solid-state drive (SSD) is a storage device that uses flash memory to store data, instructions, and information. It contains no moving parts.",
+      "front": "How does an inkjet printer produce images on paper?",
+      "back": "By spraying thousands of tiny dots of liquid ink onto paper through microscopic nozzles.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'solid-state media'?",
-      "back": "Solid-state media refers to nonvolatile storage media that use flash memory chips to store data, such as solid-state drives, memory cards, and USB flash drives.",
+      "front": "How does a laser printer produce images on paper?",
+      "back": "By using a laser beam to create an electrostatic image that attracts toner, then fusing it with heat.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "Differentiate between 'internal hard drive' and 'external hard drive'.",
-      "back": "An internal hard drive is a hard drive that resides inside the system unit. An external hard drive is a separate free-standing hard disk that connects to the computer with a cable and can be easily transported.",
+      "front": "What is a multifunction device (all-in-one printer)?",
+      "back": "A single device that can copy, scan, fax, and print.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is 'cloud storage'?",
-      "back": "Cloud storage is an Internet service that provides storage to computer users.",
+      "front": "What is a mobile printer and when would someone use it?",
+      "back": "A small, lightweight printer for use while traveling or in the field.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'compact disc (CD)'?",
-      "back": "A compact disc (CD) is a flat, round, portable metal disc with a plastic coating that is about 4.75 inches in diameter.",
+      "front": "What is a plotter and what professional applications use it?",
+      "back": "A large-format printer producing high-quality drawings for architectural blueprints and engineering schematics.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is a 'digital versatile disc (DVD)' or 'Blu-ray Disc (BD)'?",
-      "back": "A digital versatile disc (DVD) is a high-capacity optical disc that is commonly used to store high-quality video and audio. A Blu-ray Disc (BD) is a high-capacity optical disc format that can hold significantly more data than a DVD.",
+      "front": "What does a 3-D printer create and what process does it use?",
+      "back": "Physical objects built layer by layer from digital models using plastics, resins, or metals.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "Differentiate between 'CD-ROM', 'CD-R', and 'CD-RW'.",
-      "back": "CD-ROM (compact disc read-only memory) is an optical disc on which users can only read, but not write or erase. CD-R (compact disc-recordable) is an optical disc on which users can write once, but not erase. CD-RW (compact disc-rewritable) is an erasable optical disc on which users can write multiple times.",
+      "front": "What is a voice synthesizer and who benefits most from it?",
+      "back": "Technology that converts text to spoken words, especially valuable for visually impaired users.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "Differentiate between 'DVD-ROM', 'DVD-R', 'DVD+R', 'DVD-RW', and 'DVD+RW'.",
-      "back": "DVD-ROM is a read-only DVD. DVD-R and DVD+R are recordable once. DVD-RW and DVD+RW are rewritable discs.",
+      "front": "What is a projector and what does it display?",
+      "back": "A device that displays computer output enlarged on a large surface like a wall or screen.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "What is the 'Internet of Things (IoT)'?",
-      "back": "The Internet of Things (IoT) is a global network of devices, vehicles, home appliances, and other items that are equipped with sensors, software, and other technologies that allow them to connect and exchange data over the internet.",
+      "front": "What steps should be taken before turning on a new computer for the first time?",
+      "back": "Verify components, read manual, charge laptop battery, connect accessories, then power on.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
     },
     {
-      "front": "How does the 'Internet of Things (IoT)' relate to privacy?",
-      "back": "IoT devices often collect vast amounts of personal data, raising privacy concerns about how this data is stored, shared, and used by companies and other entities.",
+      "front": "What are Plug-and-Play devices and how do they function?",
+      "back": "Devices that begin functioning properly as soon as they are connected to a computer.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Computer Memory"
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a device driver and why is it necessary?",
+      "back": "A program that allows the operating system to communicate with and control hardware devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What does a processor's clock speed measure and in what unit?",
+      "back": "The speed of instruction execution in gigahertz (GHz).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a cycle in processor operations?",
+      "back": "The smallest measurable unit of time for processor operations.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How is CPU efficiency measured beyond clock speed?",
+      "back": "By instructions per cycle (IPC).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is bus width (also called word size)?",
+      "back": "The number of bits the processor can transmit simultaneously.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a benchmark and how is it used?",
+      "back": "A standardized test measuring processor speed and other performance factors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What physical security measure can prevent laptop theft?",
+      "back": "Using a cable lock to secure the laptop to an immovable object.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How should you properly clean a computer screen?",
+      "back": "Gently with a soft, slightly damp cloth.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How should you properly clean a computer keyboard?",
+      "back": "With a can of compressed air to blow out dust and debris.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What environmental conditions can damage electronic devices?",
+      "back": "Extreme temperatures (hot or cold) and high humidity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an uninterruptible power supply (UPS) and what does it do?",
+      "back": "A device with a battery that maintains power during electrical interruptions for safe shutdown.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a surge suppressor designed to protect against?",
+      "back": "Power fluctuations like voltage spikes and surges.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a blackout in electrical terms?",
+      "back": "A complete and total loss of electrical power.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a brownout and how does it affect electronics?",
+      "back": "A drop in voltage lasting minutes or hours that can cause equipment malfunction.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an electrical spike?",
+      "back": "A very short duration increase in voltage, typically nanoseconds to microseconds.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an electrical surge and how does it differ from a spike?",
+      "back": "A surge is a short duration voltage increase lasting longer than a spike.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is electrical noise in power quality terms?",
+      "back": "Unwanted high-frequency energy or interference on electrical lines.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What does it mean to restore an operating system?",
+      "back": "Reverting all settings to default or returning to a previous version.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What threats can regular data backups protect against?",
+      "back": "Hardware malfunctions, user errors, software corruption, natural disasters, and cyber attacks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What are wireless routers and what is their function in a home network?",
+      "back": "Central devices that connect to the internet and broadcast Wi-Fi signals to multiple devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "Which of the following is a security risk for Wi-Fi networks?",
+      "back": "Unauthorized reading of wireless transmissions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the most common primary storage medium in a typical computer?",
+      "back": "The internal hard drive (HDD or SSD).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an internal hard drive and where is it located?",
+      "back": "A drive installed inside the computer case connected directly to the motherboard.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an external hard drive primarily used for?",
+      "back": "Adding extra storage capacity or creating backups.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the main advantage of magnetic hard disk drives (HDDs) over solid-state drives (SSDs)?",
+      "back": "Greater storage capacity for the same price.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the main advantage of solid-state drives (SSDs) over magnetic hard disk drives (HDDs)?",
+      "back": "Faster speed and better durability due to no moving parts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is optical media and which formats are included?",
+      "back": "Laser-based storage including CDs, DVDs, and Blu-ray discs.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "Why have optical discs been largely replaced for transporting files?",
+      "back": "USB drives, external hard drives, and cloud storage are more convenient with higher capacity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is cloud storage and how does it work?",
+      "back": "Storing files on remote servers accessed via the internet.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is required to access files stored in the cloud?",
+      "back": "Any device with an internet connection and proper credentials.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What are nodes on a network?",
+      "back": "Any devices connected to a network that can send or receive data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a hub in networking and how does it handle data?",
+      "back": "A central connection point that broadcasts all incoming data to every connected device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How does a switch differ from a hub in network operation?",
+      "back": "A switch intelligently directs data only to the intended recipient device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a router and what is its primary function?",
+      "back": "A device that connects two or more networks and directs data between them.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a modem and what does it do?",
+      "back": "A device that modulates and demodulates signals to connect to an internet service.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a cable modem and what connection type does it use?",
+      "back": "A modem using cable TV coaxial cables.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a DSL modem and what connection type does it use?",
+      "back": "A modem using existing copper telephone wiring.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "Why do processor chips require cooling systems?",
+      "back": "They generate significant heat that can cause malfunction or permanent failure.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a heat sink and how does it work?",
+      "back": "A metal/ceramic component with fins that absorbs and disperses processor heat.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is liquid cooling technology and when is it used?",
+      "back": "Using continuous fluid flow to transfer heat away from processors to a radiator.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a cooling pad and what is its purpose?",
+      "back": "A device placed under a laptop providing additional airflow to prevent overheating.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is a computer chip made of and what does it contain?",
+      "back": "Small piece of silicon with etched integrated circuits containing microscopic pathways.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is an integrated circuit?",
+      "back": "Microscopic electronic circuits and pathways etched onto a semiconductor material.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What are the four steps of the machine cycle in correct order?",
+      "back": "Fetch, Decode, Execute, Store.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What happens during the fetch step of the machine cycle?",
+      "back": "Obtaining a program instruction or data item from memory.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What happens during the decode step of the machine cycle?",
+      "back": "Translating fetched instructions into signals the computer can execute.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What happens during the execute step of the machine cycle?",
+      "back": "Carrying out the commanded operations.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What are registers in a processor and what is their function?",
+      "back": "Small, high-speed storage locations within the processor that temporarily hold data and instructions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is repetitive strain injury (RSI) and what causes it?",
+      "back": "Physical aches and pain from repeated long-term device usage, affecting muscles, nerves, and tendons.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What three factors most commonly cause repetitive strain injury?",
+      "back": "Repetitive activity, improper technique, and uninterrupted intensity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is ergonomics and why is it important for computer users?",
+      "back": "An applied science designing workspaces for efficient and safe human interaction.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is technology addiction and how does it manifest?",
+      "back": "Obsessive technology use that interferes with daily life, relationships, and responsibilities.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What behavioral risks are associated with excessive technology use?",
+      "back": "Sedentary lifestyle, psychological development impacts, and reduced social interaction.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is doxing and how is it used to harm victims?",
+      "back": "Sharing private or personal documents digitally without consent to harass or harm.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is cyber-stalking and how does it differ from traditional stalking?",
+      "back": "Using technology to repeatedly harass someone through digital communication.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How does cyberbullying differ from traditional bullying in terms of duration?",
+      "back": "Cyberbullying never ends because online comments remain visible 24/7.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How does cyberbullying differ from traditional bullying in terms of audience?",
+      "back": "Online comments can be read by a vast audience, unlike spoken words limited to those nearby.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "How does cyberbullying differ from traditional bullying in terms of permanence?",
+      "back": "Posted comments may remain visible online for years, creating a permanent digital record.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is e-waste and why is it environmentally harmful?",
+      "back": "Discarded electronic devices containing toxic metals that contaminate soil and water.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What three methods are considered responsible for disposing of e-waste?",
+      "back": "Recycle at facility, donate to charity, return to technology store.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the first step in Sustainable Electronics Management (SEM)?",
+      "back": "Buy Green - purchase sustainably designed electronics.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the second step in Sustainable Electronics Management (SEM)?",
+      "back": "Donate used but functional equipment to schools or charities.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
+    },
+    {
+      "front": "What is the third step in Sustainable Electronics Management (SEM)?",
+      "back": "Recycle at a verified electronics recycling center.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer hardware"
     }
   ],
   
-  "MODULE 3: INPUT AND OUTPUT DEVICES": [
+  //CSS110 MODULE 3
+
+  "MODULE 3: INPUT AND OUTPUT": [
     {
-      "front": "What is an input device?",
-      "back": "An input device is any hardware component that allows users to enter data and instructions into a computer or mobile device.",
+      "front": "What is the difference between data and input in computing?",
+      "back": "Data is unprocessed items; input is the process of entering data into a computer.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a keyboard used for?",
-      "back": "A keyboard is used for entering text, numbers, and symbols into a computer.",
+      "front": "What is a command in computing?",
+      "back": "An instruction that causes a program to perform a specific action.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a mouse, and how is it used?",
-      "back": "A mouse is a pointing device used to move a pointer on the screen, select objects, and interact with graphical user interfaces.",
+      "front": "What are the four basic types of output?",
+      "back": "Text, graphics, audio, video.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a touchscreen?",
-      "back": "A touchscreen is a touch-sensitive display device that allows users to interact with a computer by touching areas of the screen.",
+      "front": "What is a manual input device?",
+      "back": "A device requiring direct human manipulation to enter data.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a scanner, and what is its function?",
-      "back": "A scanner is an input device that captures images from physical documents or objects and converts them into digital format.",
+      "front": "What are function keys on a keyboard?",
+      "back": "Keys labeled F1-F12 programmed to issue commands.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a microphone used for?",
-      "back": "A microphone is used for inputting audio, such as voice commands or recordings, into a computer.",
+      "front": "What is a toggle key?",
+      "back": "A key that alternates views or turns features on/off each time pressed.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 3-D scanner?",
-      "back": "A 3-D scanner is a device that can scan and capture the shape and sometimes the color of three-dimensional objects, creating a digital model.",
+      "front": "What is the function of navigation keys?",
+      "back": "To move the insertion point or cursor.",
       "course": "CS110",
       "term": "T1",
-      "topic": "input devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is an output device?",
-      "back": "An output device is any hardware component that conveys information from a computer or mobile device to one or more users.",
+      "front": "What is a keyboard shortcut?",
+      "back": "A key combination to access features or perform commands quickly.",
       "course": "CS110",
       "term": "T1",
-      "topic": "output devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a display device (monitor) used for?",
-      "back": "A display device, or monitor, is used for visually presenting output from a computer, such as text, graphics, and videos.",
+      "front": "What is a pointer in a graphical user interface?",
+      "back": "A small symbol on the screen controlled by a pointing device.",
       "course": "CS110",
       "term": "T1",
-      "topic": "output devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a printer used for?",
-      "back": "A printer is used for producing a hard copy (physical copy) of text and graphics generated by a computer.",
+      "front": "What is a touchpad and where is it commonly found?",
+      "back": "A flat, rectangular pointing device found on laptops.",
       "course": "CS110",
       "term": "T1",
-      "topic": "output devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a speaker used for?",
-      "back": "A speaker is an output device used for generating audio output from a computer, such as music, sounds, and speech.",
+      "front": "What is a gesture on a touch screen?",
+      "back": "A motion made with fingers or hand to interact with the device.",
       "course": "CS110",
       "term": "T1",
-      "topic": "output devices"
+      "topic": "input and output"
     },
     {
-      "front": "Differentiate between 'input' and 'output'.",
-      "back": "Input is any data and instructions entered into the memory of a computer or mobile device. Output is data that has been processed into a useful form, such as text, graphics, audio, or video.",
+      "front": "What is the purpose of a tap gesture?",
+      "back": "To select or activate an item.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'keyboard'?",
-      "back": "A keyboard is a peripheral input device that contains keys users press to enter data and instructions into a computer or mobile device.",
+      "front": "What is the purpose of a double tap gesture?",
+      "back": "To run a program or zoom in at the tapped location.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "Differentiate between a 'mouse' and a 'trackpad (touchpad)'.",
-      "back": "A mouse is a pointing device that fits under the palm of your hand. A trackpad (touchpad) is a flat, rectangular pointing device sensitive to pressure and motion, often found on laptops.",
+      "front": "What is the purpose of a press and hold gesture?",
+      "back": "To display a shortcut menu or activate move mode.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'pointing stick'?",
-      "back": "A pointing stick is a pressure-sensitive pointing device shaped like a pencil eraser that is positioned between keys on a keyboard.",
+      "front": "What is the purpose of a drag or slide gesture?",
+      "back": "To move an item to a new location.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'trackball'?",
-      "back": "A trackball is a stationary pointing device with a ball on its top or side.",
+      "front": "What is the purpose of a swipe gesture?",
+      "back": "To scroll or display command bars.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'touch screen'?",
-      "back": "A touch screen is a touch-sensitive display device.",
+      "front": "What is the purpose of a stretch gesture?",
+      "back": "To zoom in.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'digital pen' or 'stylus'?",
-      "back": "A digital pen (or stylus) is an input device that allows a user to write, draw, or make selections on a touch screen.",
+      "front": "What is the purpose of a pinch gesture?",
+      "back": "To zoom out.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'game controller'?",
-      "back": "A game controller is a device used to control characters or objects in a video game.",
+      "front": "Why do wearable devices primarily use touch input?",
+      "back": "They lack space for physical keyboards.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'motion-sensing game controller'?",
-      "back": "A motion-sensing game controller allows users to control games by moving the controller in physical space.",
+      "front": "Why do portable media players favor touch input?",
+      "back": "To maximize screen size by eliminating physical buttons.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'light sensor'?",
-      "back": "A light sensor is a device that detects the amount of light in the environment and can be used for automatic screen brightness adjustments or other functions.",
+      "front": "How is touch input used in digital cameras?",
+      "back": "To browse photos, remove red-eye, add filters, and crop.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'scanner'?",
-      "back": "A scanner is a light-sensing input device that reads printed text and graphics and translates the results into a form the computer can process.",
+      "front": "Why might in-car navigation systems reduce functionality while driving?",
+      "back": "To reduce driver distraction.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'bar code reader'?",
-      "back": "A bar code reader is an optical reader that uses laser beams to read bar codes.",
+      "front": "What is a stylus?",
+      "back": "A small metal or plastic device using pressure for input.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'QR code reader'?",
-      "back": "A QR code reader is an optical reader that decodes a Quick Response (QR) code, which stores information in a two-dimensional matrix.",
+      "front": "What is a digital pen used for?",
+      "back": "Capturing and converting handwriting/drawings into digital format.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'optical character recognition (OCR)'?",
-      "back": "OCR (optical character recognition) is technology that reads characters from ordinary documents and translates them into a form that the computer can process.",
+      "front": "What is a signature capture pad used for?",
+      "back": "Capturing handwritten signatures digitally.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'magnetic ink character recognition (MICR)'?",
-      "back": "MICR (magnetic ink character recognition) devices read text printed with magnetized ink, commonly used for processing checks.",
+      "front": "What is a graphics tablet (digitizer) used for?",
+      "back": "Creating drawings with a pressure-sensitive pen.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'data collection device'?",
-      "back": "A data collection device is a device that obtains data directly at the location where the transaction or event takes place.",
+      "front": "What is voice input?",
+      "back": "Entering input by speaking into a microphone.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is an 'output device'?",
-      "back": "An output device is any hardware component that conveys information from a computer or mobile device to one or more people.",
+      "front": "What is audio input?",
+      "back": "Entering any sound (speech, music, effects) into a computer.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'display device'?",
-      "back": "A display device is an output device that visually conveys text, graphics, and video information.",
+      "front": "What is video input?",
+      "back": "Capturing full-motion images and storing them.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "Differentiate between a 'monitor' and a 'television'.",
-      "back": "A monitor is a display device that is packaged as a separate peripheral. A television is a display device that receives broadcast signals and displays them on a screen.",
+      "front": "What is a webcam?",
+      "back": "A digital video camera capturing video and often audio for computer use.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'resolution' in a display device?",
-      "back": "Resolution is the number of horizontal and vertical pixels in a display device. Higher resolution means a sharper, clearer image.",
+      "front": "What is motion input or gesture recognition?",
+      "back": "Guiding on-screen elements using air gestures detected by cameras.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'printer'?",
-      "back": "A printer is an output device that produces text and graphics on a physical medium, such as paper.",
+      "front": "What is morphing in video editing?",
+      "back": "Transforming one image into another across frames.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "Differentiate between 'nonimpact printers' and 'impact printers'.",
-      "back": "Nonimpact printers form characters and graphics without striking a print medium (e.g., ink-jet, laser). Impact printers form characters and graphics by striking a mechanism against an inked ribbon, which contacts the paper (e.g., dot-matrix).",
+      "front": "How is motion input used in entertainment?",
+      "back": "To guide on-screen elements with sweeping arm movements in games.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is an 'ink-jet printer'?",
-      "back": "An ink-jet printer is a nonimpact printer that forms characters and graphics by spraying tiny drops of liquid ink onto a piece of paper.",
+      "front": "How is motion input used in the medical field?",
+      "back": "For surgical training and less invasive surgery.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'photo printer'?",
-      "back": "A photo printer is a color printer that produces photo-lab-quality pictures.",
+      "front": "How is motion input used in the military?",
+      "back": "For flight simulation, weapon training, and PTSD recovery.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'laser printer'?",
-      "back": "A laser printer is a high-speed, high-quality nonimpact printer that creates images using a laser beam and powdered ink, called toner.",
+      "front": "How is motion input used in sports?",
+      "back": "To analyze and improve athlete performance and correct motions.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'multifunction peripheral (MFP)'?",
-      "back": "A multifunction peripheral (MFP), or all-in-one printer, is a single device that performs two or more functions, such as printing, scanning, copying, and faxing.",
+      "front": "What is an optical scanner used for?",
+      "back": "Reading printed text and graphics and converting to digital form.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'plotter'?",
-      "back": "A plotter is a sophisticated printer used to produce high-quality drawings such as maps, architectural blueprints, and circuit diagrams.",
+      "front": "What is OCR used for?",
+      "back": "Reading printed characters and converting to editable text.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'three-dimensional (3-D) printing'?",
-      "back": "Three-dimensional (3-D) printing is an additive manufacturing process that creates three-dimensional objects from a digital file by adding material layer by layer.",
+      "front": "What is OMR used for?",
+      "back": "Reading hand-drawn marks like circles on tests.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What are 'speakers' and 'headphones/earbuds'?",
-      "back": "Speakers are output devices that allow you to hear audio. Headphones are audio output devices worn on or around the head, and earbuds are small speakers that fit into the ear canal.",
+      "front": "What is RFID used for?",
+      "back": "Communicating with tags via radio waves for tracking.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is a 'data projector'?",
-      "back": "A data projector is a device that takes the image from a computer screen and projects it onto a larger screen or surface.",
+      "front": "What does a magstripe reader read?",
+      "back": "The magnetic stripe on credit cards and ID cards.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is an 'interactive whiteboard'?",
-      "back": "An interactive whiteboard is a large display device that connects to a computer and allows users to control the computer and write on the screen using a pen, finger, or other device.",
+      "front": "What is MICR used for?",
+      "back": "Reading magnetized ink on checks for banking.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is an 'assistive technology'?",
-      "back": "Assistive technology is hardware and software designed for individuals with disabilities.",
+      "front": "Where are data collection devices commonly used?",
+      "back": "In warehouses, factories, restaurants, and outdoor locations.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "Give examples of 'assistive technologies' for users with motor disabilities.",
-      "back": "Examples include specialized keyboards (e.g., expanded, mini, on-screen), head-mounted pointing devices, foot pedals, and pneumatic instruments controlled by puffs of air.",
+      "front": "What is a hard copy?",
+      "back": "Printed physical output.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "Give examples of 'assistive technologies' for users with intellectual disabilities.",
-      "back": "Examples include speech recognition programs (for verbal input), graphic organizers (for structuring information), and audio books (to read information aloud).",
+      "front": "What is a soft copy?",
+      "back": "Electronic information on a display.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is the 'Americans with Disabilities Act (ADA)'?",
-      "back": "The Americans with Disabilities Act (ADA) is a law that requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers.",
+      "front": "When is portrait orientation typically used?",
+      "back": "For letters, reports, and books.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is the 'Individuals with Disabilities Education Act (IDEA)'?",
-      "back": "The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies.",
+      "front": "When is landscape orientation typically used?",
+      "back": "For spreadsheets, slide shows, and graphics.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
     },
     {
-      "front": "What is 'e-waste' and how to reduce its risks?",
-      "back": "E-waste is electronic waste that emits radiation. Risks can be reduced by replacing older equipment (like CRTs), sitting further from monitors, shielding from radiation, minimizing wireless connections, turning off devices when not in use, and recycling/donating old devices.",
+      "front": "What is a non-impact printer?",
+      "back": "A printer that forms images without contacting paper.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Input and Output Devices"
+      "topic": "input and output"
+    },
+    {
+      "front": "How does an inkjet printer work?",
+      "back": "By spraying tiny drops of ink onto paper.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a photo printer?",
+      "back": "A color printer producing lab-quality photos.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "How does a laser printer work?",
+      "back": "Using a laser beam and toner to create images.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is an all-in-one printer?",
+      "back": "A device combining printer, scanner, and copier functions.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What process does a 3-D printer use?",
+      "back": "Additive manufacturing (adding material layer by layer).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What can 3-D printers create?",
+      "back": "Clothing, prosthetics, implants, parts, and prototypes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "How does a thermal printer work?",
+      "back": "Using heated pins on heat-sensitive paper.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a mobile printer?",
+      "back": "A small, battery-powered printer for use while traveling.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a plotter used for?",
+      "back": "Producing high-quality drawings like blueprints and maps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a large format printer used for?",
+      "back": "Creating signs, posters, and professional displays.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a label printer used for?",
+      "back": "Printing on adhesive material for envelopes, discs, and folders.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is an impact printer?",
+      "back": "A printer that strikes an inked ribbon against paper.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "Why are impact printers ideal for multipart forms?",
+      "back": "They can strike through multiple layers to create copies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a display device?",
+      "back": "An output device that visually conveys text, graphics, and video.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What does LCD stand for?",
+      "back": "Liquid Crystal Display.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the light source in an LCD called?",
+      "back": "The backlight.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is OLED technology?",
+      "back": "A display using organic molecules that are self-illuminating.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is display resolution?",
+      "back": "The number of pixels on a display.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is response time in a display?",
+      "back": "The time to turn a pixel on or off.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What unit measures display brightness?",
+      "back": "Nits.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is dot pitch (pixel pitch)?",
+      "back": "The distance in millimeters between pixels.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What does a lower dot pitch indicate?",
+      "back": "Sharper images.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is contrast ratio?",
+      "back": "Difference between brightest white and darkest black.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What does GPU stand for?",
+      "back": "Graphics Processing Unit.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is aspect ratio?",
+      "back": "The display's width relative to its height.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a Smart TV?",
+      "back": "An Internet-enabled HDTV for streaming, browsing, and apps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is UHD television?",
+      "back": "Ultra-High-Definition with better resolution than HDTV.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a data projector used for?",
+      "back": "Projecting computer screen onto larger surface for audience viewing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is an interactive whiteboard?",
+      "back": "A touch-sensitive device displaying computer screen for interactive use.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is force feedback in gaming controllers?",
+      "back": "Physical resistance or vibrations simulating real forces.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the goal of accessible input and output technology?",
+      "back": "To enable all users to be independent when using technology.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is an eye gaze pointing device?",
+      "back": "A device analyzing where the user is looking to control the computer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a foot mouse?",
+      "back": "A mouse controlled by feet for users with limited hand mobility.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is sip-and-puff technology?",
+      "back": "Technology controlling devices by sipping or puffing into a tube.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a refreshable Braille display?",
+      "back": "A device using pins to display Braille that changes with content.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is a Braille printer?",
+      "back": "A printer that embosses raised dots for tactile reading.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "How do OCR readers assist visually impaired users?",
+      "back": "By scanning and digitizing print for conversion to accessible formats.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What are default settings?",
+      "back": "Standard preconfigured settings for software and hardware.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "Why should you replace older CRT monitors?",
+      "back": "They emit higher radiation and consume more power than modern displays.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "Why should you minimize wireless connections?",
+      "back": "To reduce radiation exposure from RF energy.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "Why should you turn off devices when not in use?",
+      "back": "To save electricity and reduce radiation exposure.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the primary reason wearable devices use touch input?",
+      "back": "Lack of space for physical keyboards.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the purpose of a stylus?",
+      "back": "To provide pressure-based input on touch screens.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the function of a digital pen?",
+      "back": "To capture handwriting/drawings and convert to digital format.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the purpose of a graphics tablet?",
+      "back": "To create drawings with pressure-sensitive pen for digital input.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between OCR and OMR?",
+      "back": "OCR reads printed text; OMR reads hand-drawn marks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between hard copy and soft copy?",
+      "back": "Hard copy is printed; soft copy is electronic.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between portrait and landscape orientation?",
+      "back": "Portrait is taller than wide; landscape wider than tall.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between an inkjet and a laser printer?",
+      "back": "Inkjet sprays ink; laser uses toner and a laser beam.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between a plotter and a regular printer?",
+      "back": "Plotter produces high-quality technical drawings with continuous lines.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between LCD and OLED displays?",
+      "back": "LCD needs backlight; OLED is self-illuminating.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the difference between response time and refresh rate?",
+      "back": "Response time is pixel change speed (ms); refresh rate is screen updates per second (Hz).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the purpose of force feedback in controllers?",
+      "back": "To provide tactile sensations simulating real-world forces.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "Why is recycling or donating old devices recommended?",
+      "back": "To eliminate radiation exposure from older devices and reduce e-waste.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the function of an RFID reader?",
+      "back": "To read information from RFID tags via radio waves.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the function of a magstripe reader?",
+      "back": "To read magnetic stripes on cards.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the function of MICR?",
+      "back": "To read magnetic ink on checks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
+    },
+    {
+      "front": "What is the function of a data collection device?",
+      "back": "To obtain data directly at transaction locations.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "input and output"
     }
   ],
   
-  "MODULE 4: DATA REPRESENTATION":[
-  {
-    "front": "Why is studying number systems important in computer science?",
-    "back": "Studying number systems is important in computer science because all data within a computer, regardless of its original form (text, images, audio), is ultimately stored and processed using binary (Os and 1s). Understanding different number systems helps to comprehend how computers represent and manipulate information.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "What are the four main number systems used in computer science?",
-    "back": "The four main number systems are Decimal (Base-10), Binary (Base-2), Octal (Base-8), and Hexadecimal (Base-16).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "In a number system with base 'r', how many unique symbols are used?",
-    "back": "In a number system with base 'r', 'r' unique symbols are used for digits.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "How are digit positions assigned in a number, and what is the position value?",
-    "back": "Digit positions are assigned starting from the rightmost side with position 0, and increasing by one for each subsequent position to the left. The position value is calculated as base^position.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "How is the value of a number in any base calculated?",
-    "back": "The value of a number in any base is calculated as the sum of (face value * base^position) for each digit in the number.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "What is the binary number system, and what digits does it use?",
-    "back": "The binary number system is a base-2 system that uses only two digits: 0 and 1.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "What is the octal number system, and what digits does it use?",
-    "back": "The octal number system is a base-8 system that uses eight digits: 0, 1, 2, 3, 4, 5, 6, 7.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "What is the hexadecimal number system, and what digits does it use?",
-    "back": "The hexadecimal number system is a base-16 system that uses sixteen symbols: 0-9 and A-F (where A represents 10, B represents 11, and so on, up to F representing 15).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "number systems"
-  },
-  {
-    "front": "Why is data represented in 0s and 1s in a digital computer?",
-    "back": "Digital computers can only understand two states, represented as 0 (off) and 1 (on), making binary the fundamental language for all data and instructions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "What are the four common 'number systems' used in computers?",
-    "back": "The four common number systems are Decimal (base 10), Binary (base 2), Octal (base 8), and Hexadecimal (base 16).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "Explain the 'Decimal number system'.",
-    "back": "The Decimal number system is a base-10 system that uses digits from 0 to 9. It is the number system most commonly used by humans.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "Explain the 'Binary number system'.",
-    "back": "The Binary number system is a base-2 system that uses only two digits, 0 and 1. It is the number system directly understood by digital computers.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "Explain the 'Octal number system'.",
-    "back": "The Octal number system is a base-8 system that uses digits from 0 to 7.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "Explain the 'Hexadecimal number system'.",
-    "back": "The Hexadecimal number system is a base-16 system that uses digits from 0 to 9 and letters A to F (representing values 10 to 15). It is often used as a shorthand for binary numbers.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "What is a 'bit'?",
-    "back": "A bit (binary digit) is the smallest unit of data in a computer, represented by either a 0 or a 1.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "What is a 'byte'?",
-    "back": "A byte is a group of 8 bits, which typically represents a single character (like a letter, number, or symbol).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "What is 'ASCII'?",
-    "back": "ASCII (American Standard Code for Information Interchange) is a character encoding standard that uses 7 bits to represent 128 characters, primarily for English alphabet, numbers, and symbols.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "What is 'Unicode'?",
-    "back": "Unicode is a universal character encoding standard that can represent characters from almost all of the world's writing systems. It uses more bits per character than ASCII, allowing for a much larger set of characters.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "How is an 'image' represented digitally?",
-    "back": "An image is represented digitally as a grid of individual picture elements called pixels. Each pixel is assigned a binary code for its color.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "How is 'audio' represented digitally?",
-    "back": "Audio is represented digitally by converting sound waves into a series of binary numbers through a process called sampling, where the sound wave's amplitude is measured at regular intervals.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "How is 'video' represented digitally?",
-    "back": "Video is represented digitally as a sequence of individual still images (frames), each composed of pixels, along with corresponding audio data. These are then compressed for storage and transmission.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  },
-  {
-    "front": "How are 'text' and 'numbers' represented digitally?",
-    "back": "Text and numbers are represented digitally by assigning a unique binary code (e.g., using ASCII or Unicode) to each character or digit.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Data Representation"
-  }
-],
+  //CS110 MODULE 4
+
+  "MODULE 4: DATA REPRESENTATION": [
+    {
+      "front": "Why must data be represented in a specific way for computers to process it?",
+      "back": "Because digital computers can only understand 0s and 1s due to their electronic circuit design.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Which four number systems are commonly used in computing?",
+      "back": "Decimal, Binary, Octal, and Hexadecimal.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is a number system in mathematical terms?",
+      "back": "A writing system for expressing numbers using digits and positional values.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What determines which digits are valid in a particular number system?",
+      "back": "The base (radix) of the number system.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How are digit positions numbered within a number?",
+      "back": "Starting from the rightmost digit as position 0, increasing to the left.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What are the two kinds of values that every digit in a number has?",
+      "back": "Face value and position value.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How is the total value of a number calculated using face value and position value?",
+      "back": "By summing (face value × base^position) for each digit.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How is a number written to clearly indicate its base?",
+      "back": "By writing the base in parentheses as a subscript after the number.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What digits does the decimal number system use?",
+      "back": "0 through 9.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What digits does the binary number system use?",
+      "back": "0 and 1 only.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What digits does the octal number system use?",
+      "back": "0 through 7.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What digits does the hexadecimal number system use?",
+      "back": "0 through 9 and A through F.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What does the letter A represent in the hexadecimal system?",
+      "back": "10.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What does the letter F represent in the hexadecimal system?",
+      "back": "15.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What are the two parts of a decimal number that require different conversion methods?",
+      "back": "Integer part and fraction part.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What method is used to convert the integer part of a decimal number to another base?",
+      "back": "Successive division, collecting remainders.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What method is used to convert the fractional part of a decimal number to another base?",
+      "back": "Successive multiplication, collecting whole number parts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "When converting 25 decimal to binary, what is the correct result?",
+      "back": "11001.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "When converting 0.2345 decimal to binary, what is the first digit after the binary point?",
+      "back": "0.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How do you convert a decimal number that has both integer and fractional parts to another base?",
+      "back": "Convert the integer and fraction parts separately, then combine them with a decimal point.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the general method for converting numbers from binary, octal, or hexadecimal to decimal?",
+      "back": "Sum of (digit × base^position) for each digit.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How are digit positions numbered for digits to the right of the decimal point?",
+      "back": "Starting at -1 and decreasing (more negative) to the right.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1011 to decimal.",
+      "back": "11.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the hexadecimal number C15 to decimal.",
+      "back": "3093.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary fraction .1101 to decimal.",
+      "back": "0.8125.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1011.1001 to decimal.",
+      "back": "11.5625.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why does the shortcut method for converting binary to octal work?",
+      "back": "Because 2³ = 8, so one octal digit represents exactly three binary bits.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1110101100110 to octal.",
+      "back": "16546.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why does the shortcut method for converting binary to hexadecimal work?",
+      "back": "Because 2⁴ = 16, so one hex digit represents exactly four binary bits.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1110101100110 to hexadecimal.",
+      "back": "1D66.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How do you convert hexadecimal numbers to binary using the shortcut method?",
+      "back": "Convert each hex digit to its four-bit binary equivalent.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the hexadecimal number 2BA3 to binary.",
+      "back": "10101110100011.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How do you convert octal numbers to binary using the shortcut method?",
+      "back": "Convert each octal digit to its three-bit binary equivalent.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the octal number 473 to binary.",
+      "back": "100111011.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why is hexadecimal notation preferred over binary for human readability in computing?",
+      "back": "It uses fewer digits and is easier to read and transcribe accurately.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the relationship between the number of bits and the number of unique values they can represent?",
+      "back": "n bits represent 2ⁿ unique values.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What happens if you try to use the digit 8 in an octal number?",
+      "back": "It is invalid because octal only allows digits 0-7.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why is understanding multiple number systems essential in computing?",
+      "back": "Because binary is the computer's native language, and octal/hex provide human-friendly shortcuts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 53 to binary.",
+      "back": "110101.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 53 to octal.",
+      "back": "65.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 53 to hexadecimal.",
+      "back": "35.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 68 to binary.",
+      "back": "1000100.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 68 to octal.",
+      "back": "104.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 68 to hexadecimal.",
+      "back": "44.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 29 to binary.",
+      "back": "11101.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 29 to octal.",
+      "back": "35.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal number 29 to hexadecimal.",
+      "back": "1D.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1100111100111 to octal.",
+      "back": "14747.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why is binary considered the fundamental language of computers?",
+      "back": "Because computer hardware uses electronic circuits with two states (on/off).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How many unique values can be represented with 8 bits (one byte)?",
+      "back": "256.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the decimal equivalent of the hexadecimal number FF?",
+      "back": "255.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the octal equivalent of the binary number 1011011?",
+      "back": "133.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the hexadecimal equivalent of the binary number 110110101?",
+      "back": "1B5.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1111 to decimal.",
+      "back": "15.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1111 to octal.",
+      "back": "17.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1111 to hexadecimal.",
+      "back": "F.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the hexadecimal number ABC to binary.",
+      "back": "101010111100.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the octal number 777 to binary.",
+      "back": "111111111.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the octal number 777 to hexadecimal.",
+      "back": "1FF.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the significance of hexadecimal digits A through F?",
+      "back": "They represent the decimal values 10 through 15.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Why might a decimal fraction like 0.1 require an infinite number of digits in binary?",
+      "back": "Because 0.1 in decimal is a repeating fraction in binary due to different prime factors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How do computers typically handle fractions that cannot be represented exactly in binary?",
+      "back": "They use approximation through floating-point representation with rounding.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the hexadecimal number 4D.21 to decimal.",
+      "back": "77.12890625.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the binary equivalent of the hexadecimal fraction .15?",
+      "back": ".00010101.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the decimal fraction 0.865 to binary (first four digits).",
+      "back": ".1101.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the primary reason for learning multiple number systems in computing?",
+      "back": "To understand how computers represent and process data at the fundamental level.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Which number system is most compact for representing large binary numbers?",
+      "back": "Hexadecimal.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the binary equivalent of the decimal number 0?",
+      "back": "0.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the binary number 1001 to decimal.",
+      "back": "9.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the octal number 12 to decimal.",
+      "back": "10.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Convert the hexadecimal number 1A to decimal.",
+      "back": "26.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the binary equivalent of the hexadecimal digit C?",
+      "back": "1100.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the binary equivalent of the octal digit 5?",
+      "back": "101.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How many bits are needed to represent one hexadecimal digit?",
+      "back": "4.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "How many bits are needed to represent one octal digit?",
+      "back": "3.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Which number system uses the digits 0-7 only?",
+      "back": "Octal.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Which number system uses the digits 0-9 and letters A-F?",
+      "back": "Hexadecimal.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the decimal equivalent of the binary number 101010?",
+      "back": "42.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the hexadecimal equivalent of the decimal number 42?",
+      "back": "2A.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "When converting a decimal fraction to binary, when should you stop the multiplication process?",
+      "back": "When the fractional part becomes zero or you have enough precision for your needs.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What happens to the remainder in each step of decimal integer conversion to another base?",
+      "back": "It becomes a digit in the converted number.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "What is the binary equivalent of the decimal fraction 0.5?",
+      "back": "0.1.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    },
+    {
+      "front": "Which of the following is a valid octal number?",
+      "back": "123.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "data representation"
+    }
+  ],
+  
+  //CS110 MODULE 5
   
   "MODULE 5: COMPUTER STORAGE": [
     {
-      "front": "What is the purpose of memory in a computer?",
-      "back": "Memory refers to the electronic components that store instructions, data, and the results of processing for temporary or permanent use.",
+      "front": "What is the fundamental difference between storage and memory in a computer system?",
+      "back": "Storage is long-term and nonvolatile; memory is temporary and volatile.",
       "course": "CS110",
       "term": "T1",
-      "topic": "memory"
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which of the following is an example of a storage medium?",
+      "back": "USB flash drive.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the process of transferring data from memory to a storage medium called?",
+      "back": "Writing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Approximately how many bytes are in a gigabyte (GB)?",
+      "back": "1 billion.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does access time measure in a storage device?",
+      "back": "The time to locate an item and deliver it to the processor.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the most common storage medium in computers?",
+      "back": "Internal hard drive.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which statement accurately compares HDDs and SSDs?",
+      "back": "HDDs typically have greater storage capacity and are less expensive; SSDs are faster and more durable.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What are the circular disks inside a hard disk drive called?",
+      "back": "Platters.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which recording method aligns magnetic particles vertically to increase storage density?",
+      "back": "Perpendicular recording.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is formatting a hard disk?",
+      "back": "Dividing the disk into tracks and sectors.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What are tracks and sectors on a hard disk?",
+      "back": "Organizational structures for data storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why do read/write heads float above the platters instead of touching them?",
+      "back": "To prevent wear and damage from friction.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is an external hard drive?",
+      "back": "A hard drive that connects via USB port outside the computer case.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What technology do SSDs use for storage?",
+      "back": "Flash memory.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is flash memory?",
+      "back": "A nonvolatile memory that can be erased and rewritten electronically.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is a memory card primarily used for?",
+      "back": "Transporting photos, music, and videos between devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is a USB flash drive?",
+      "back": "A removable storage device that plugs into a USB port.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which optical disc format has the highest storage capacity?",
+      "back": "Blu-ray.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why do home and business users choose cloud computing?",
+      "back": "It offers accessibility, cost saving, space saving, and scalability.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "In cloud computing, what is the front end?",
+      "back": "The hardware and software users interact with to access the cloud.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which cloud service provides virtualized computing resources over the internet?",
+      "back": "IaaS (Infrastructure as a Service).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the main difference between Google Drive and Box as cloud storage options?",
+      "back": "Google Drive provides integrated apps for creating/editing files; Box primarily provides storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is bandwidth important when choosing a cloud storage provider for media files?",
+      "back": "Large files like photos and videos take longer to upload and require sufficient bandwidth.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which of the following is NOT a recommended guideline for selecting a cloud storage provider?",
+      "back": "Select the cheapest provider regardless of features.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is two-factor authentication?",
+      "back": "A security method requiring two different forms of verification.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is enterprise hardware designed for?",
+      "back": "Large organizations requiring heavy use, maximum efficiency, and availability.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is a data center?",
+      "back": "A secure location with many servers making files available to users.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does RAID stand for and what is its purpose?",
+      "back": "Redundant Array of Independent Disks; to improve performance and/or data reliability.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is RAID Level 1 (mirroring)?",
+      "back": "Writing the same data on two drives simultaneously for redundancy.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is striping in RAID?",
+      "back": "Splitting data across multiple drives to improve access times.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is Network Attached Storage (NAS)?",
+      "back": "A server on a network with the sole purpose of providing storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is a Storage Area Network (SAN)?",
+      "back": "A high-speed network dedicated to providing storage to servers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is tape storage primarily used for today?",
+      "back": "Backups and archiving.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does a magnetic stripe on a card contain?",
+      "back": "Information identifying the card and cardholder.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does a smart card differ from a magnetic stripe card?",
+      "back": "Smart cards store data on an integrated circuit and are more secure.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does an RFID tag consist of?",
+      "back": "An antenna and a memory chip.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is NFC (Near Field Communication)?",
+      "back": "A technology using close-range radio signals to transmit data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Which of the following is a common use of NFC?",
+      "back": "Mobile payments like Apple Pay and Google Pay.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What three categories of items does memory store?",
+      "back": "Operating system, applications, and data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is an address in computer memory?",
+      "back": "A unique number identifying the location of a byte in memory.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is RAM and what are its characteristics?",
+      "back": "Volatile memory that can be read from and written to.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
     },
     {
       "front": "What is the difference between volatile and nonvolatile memory?",
-      "back": "Volatile memory loses its contents when the power is turned off (e.g., RAM), while nonvolatile memory retains its contents even without power (e.g., ROM, flash memory).",
+      "back": "Volatile loses data without power; nonvolatile retains data.",
       "course": "CS110",
       "term": "T1",
-      "topic": "memory"
+      "topic": "computer storage"
     },
     {
-      "front": "What is RAM, and how does it function?",
-      "back": "RAM (Random Access Memory) is a type of volatile memory that allows data to be accessed directly at any random location. It is used to temporarily store data and instructions that the CPU is actively using.",
+      "front": "What is the process of saving?",
+      "back": "Transferring data from memory to storage.",
       "course": "CS110",
       "term": "T1",
-      "topic": "memory"
+      "topic": "computer storage"
     },
     {
-      "front": "What is ROM, and what is its primary use?",
-      "back": "ROM (Read-Only Memory) is a nonvolatile memory that stores permanent data and instructions. It is primarily used for the bootstrap program and other firmware that enables the computer to start up.",
+      "front": "What is cache memory and why is it important?",
+      "back": "A temporary, high-speed storage area for frequently used instructions and data.",
       "course": "CS110",
       "term": "T1",
-      "topic": "memory"
+      "topic": "computer storage"
     },
     {
-      "front": "What is flash memory, and where is it commonly used?",
-      "back": "Flash memory is a nonvolatile memory that can be erased electronically and rewritten. It is commonly used in solid-state drives (SSDs), USB flash drives, memory cards, and embedded systems.",
+      "front": "What is ROM and what does it store?",
+      "back": "Read-Only Memory; stores permanent startup instructions and firmware.",
       "course": "CS110",
       "term": "T1",
-      "topic": "memory"
+      "topic": "computer storage"
     },
     {
-      "front": "What is the difference between memory and storage?",
-      "back": "Memory (RAM) holds data and instructions temporarily for immediate processing, while storage holds data, instructions, and information permanently for future use.",
+      "front": "What is firmware?",
+      "back": "Software that is permanently stored in ROM.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "What is a storage device?",
-      "back": "A storage device is the hardware that records and retrieves items to and from storage media.",
+      "front": "Where is flash memory commonly used?",
+      "back": "In SSDs, USB drives, memory cards, and mobile devices.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "How is storage speed typically measured?",
-      "back": "Storage speed is typically measured in kilobytes per second (KBps), megabytes per second (MBps), and gigabytes per second (GBps).",
+      "front": "What is CMOS memory and what powers it?",
+      "back": "Low-power memory that uses a battery to retain information when computer is off.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "What are the two main types of internal hard drives, and how do they differ?",
-      "back": "The two main types are Hard Disk Drives (HDDs) and Solid-State Drives (SSDs). HDDs store data magnetically on platters, typically offering larger capacities and lower cost. SSDs use flash memory, making them faster, more durable, and consuming less power, but generally more expensive per gigabyte.",
+      "front": "What privacy concerns are associated with IoT devices?",
+      "back": "They collect data that could be shared without consent and may have security vulnerabilities.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "What is optical media, and why is its use declining?",
-      "back": "Optical media includes CDs, DVDs, and Blu-ray discs, which use laser technology to store data. Their use is declining due to the increasing popularity and convenience of USB flash drives, external hard drives, and cloud storage.",
+      "front": "Which of the following is an example of an IoT device mentioned in the module?",
+      "back": "Smart thermostat that can be controlled remotely.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "What is cloud storage, and what are its advantages?",
-      "back": "Cloud storage involves storing files on remote servers that are accessed via the Internet. Advantages include accessibility from any device, cost savings (no need for physical hardware), space savings, and scalability.",
+      "front": "How do retail beacons work?",
+      "back": "They send low-energy Bluetooth signals to nearby smartphones with personalized offers.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
     },
     {
-      "front": "List some types of cloud computing services.",
-      "back": "Types of cloud computing services include Infrastructure as a Service (IaaS), Storage as a Service (STaaS), Desktop as a Service (DaaS), and Data as a Service (DaaS).",
+      "front": "What responsibility do companies have regarding IoT data?",
+      "back": "They must keep collected sensitive data secure and confidential.",
       "course": "CS110",
       "term": "T1",
-      "topic": "storage devices"
+      "topic": "computer storage"
+    },
+    {
+      "front": "What do technology experts believe about IoT risks and benefits?",
+      "back": "The security, health, and productivity benefits outweigh the potential risks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Approximately how many bytes are in a terabyte (TB)?",
+      "back": "1 trillion.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between CD-R and CD-RW?",
+      "back": "CD-R can be written to once; CD-RW can be rewritten multiple times.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between DVD-R and DVD-RW?",
+      "back": "DVD-R is recordable once; DVD-RW is rewritable multiple times.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is Blu-ray's primary advantage over DVD?",
+      "back": "Higher storage capacity for high-definition video.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is the use of optical media declining?",
+      "back": "USB drives, external hard drives, and cloud storage offer more convenience and capacity.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why do hard disks have multiple platters?",
+      "back": "To increase storage capacity by providing more surface area.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why don't read/write heads touch the platters?",
+      "back": "An air cushion from spinning platters floats the heads above the surface.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is a head crash?",
+      "back": "When the read/write head touches the spinning platter, causing damage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is density in storage media?",
+      "back": "The number of bits that can be stored in an area.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the main difference between internal and external hard drives?",
+      "back": "Internal drives are installed inside the computer; external connect via ports and are portable.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does \"solid-state\" mean in solid-state drives?",
+      "back": "The drive uses electronic components with no moving parts.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does cloud storage provide reliability against outages?",
+      "back": "By backing up files to multiple servers and geographic locations.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does it mean when a cloud provider encrypts your files?",
+      "back": "Files are converted to unreadable code without the decryption key.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is bandwidth important for cloud storage of media files?",
+      "back": "Large files like photos and videos require sufficient bandwidth for efficient uploading.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between RAID mirroring and striping?",
+      "back": "Mirroring duplicates data for redundancy; striping splits data across drives for speed.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does a NAS device differ from a regular file server?",
+      "back": "NAS is purpose-built for storage, has its own IP address, and typically no keyboard/display.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the purpose of a Storage Area Network (SAN)?",
+      "back": "To provide high-speed dedicated storage to servers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between active and passive RFID tags?",
+      "back": "Active tags have their own power source; passive tags are powered by the reader.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is NFC considered more secure than some other wireless technologies?",
+      "back": "It requires very close proximity (centimeters), making remote interception difficult.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does cache memory do?",
+      "back": "Stores frequently used instructions and data for faster access.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is RAM volatile while storage is nonvolatile?",
+      "back": "RAM uses different technology that requires constant power; storage uses magnetic or flash technology that retains data without power.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What happens to unsaved work during a power outage?",
+      "back": "It is lost because it exists only in volatile RAM.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Where does a computer find its startup instructions when first turned on?",
+      "back": "In ROM (firmware).",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why do mobile devices use flash memory instead of hard drives?",
+      "back": "Flash has no moving parts, is smaller, uses less power, and is more durable.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the main difference between a memory card and a USB flash drive?",
+      "back": "Memory cards are designed for internal device use and require a slot; USB drives have built-in connectors for direct port access.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What does \"scalable\" mean in cloud storage?",
+      "back": "You can easily increase or decrease storage as needed.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why should you read a cloud provider's privacy policy?",
+      "back": "To understand how your data will be used, whether it's shared, and your rights.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "When might you choose Box over Google Drive?",
+      "back": "When you primarily need secure storage and file sharing without integrated apps.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between SaaS, IaaS, and PaaS?",
+      "back": "SaaS provides software, IaaS provides infrastructure, PaaS provides a development platform.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why are smart cards more secure than magnetic stripe cards?",
+      "back": "They have embedded chips that can encrypt data and are harder to clone.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What information does a vehicle's black box record?",
+      "back": "Speed, brake application, airbag deployment, and other crash-related data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How do smart medicine bottles help patients?",
+      "back": "They send reminders to take medication and track when the bottle is opened.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the purpose of smart trash cans in public places?",
+      "back": "To monitor trash levels and notify when emptying is needed.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does a smart thermostat save energy?",
+      "back": "By learning schedules, adjusting when away, and allowing remote control.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between reading and writing in storage terms?",
+      "back": "Reading transfers from storage to memory; writing transfers from memory to storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why must storage media be nonvolatile?",
+      "back": "To retain data permanently even without power.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How do spinning hard disk platters create an air cushion?",
+      "back": "The high-speed rotation drags air, creating a thin layer that floats the heads.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the exact number of bytes in a terabyte using binary measurement?",
+      "back": "1,099,511,627,776.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why might a formatted hard drive show less capacity than advertised?",
+      "back": "Manufacturers use decimal measurements; operating systems use binary, plus formatting uses some space.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the purpose of formatting a new hard drive?",
+      "back": "To create tracks and sectors and prepare the file system for data storage.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does a CD-RW differ from a CD-R in writing technology?",
+      "back": "CD-R uses a permanent dye change; CD-RW uses a reversible phase-change alloy.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the capacity of a standard single-layer Blu-ray disc?",
+      "back": "25 GB.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why is enterprise hardware designed with redundancy?",
+      "back": "To ensure high availability and no single point of failure.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the advantage of a SAN over direct-attached storage?",
+      "back": "SAN provides centralized, high-speed storage accessible to multiple servers with better scalability and availability.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does a contactless smart card communicate with a reader?",
+      "back": "Using radio frequency, powered by the reader's electromagnetic field.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What information might a vehicle's black box record?",
+      "back": "Speed, brake application, airbag deployment, and pre-crash data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How do wearable devices track health metrics?",
+      "back": "Using sensors like optical heart rate monitors, accelerometers, and gyroscopes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between contact and contactless smart cards?",
+      "back": "Contact cards require physical insertion into a reader; contactless use radio frequency at close range.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why might an organization outsource storage management to a cloud provider?",
+      "back": "For cost savings, expertise, scalability, and disaster recovery.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does cache memory improve computer performance?",
+      "back": "By providing faster access to frequently used instructions and data than RAM.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the purpose of CMOS memory in a computer?",
+      "back": "To store system settings like date, time, and hardware configuration using battery power.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why are flash memory chips considered \"solid-state\"?",
+      "back": "They have no moving parts, using only electronic components.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How does two-factor authentication protect cloud accounts?",
+      "back": "By requiring a second verification factor, so stolen passwords alone are insufficient.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the difference between data in transit and data at rest in cloud security?",
+      "back": "Data in transit is being transmitted and should be encrypted; data at rest is stored and should be encrypted.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "Why might a company maintain an in-house data center instead of using cloud storage?",
+      "back": "For control, compliance, security, performance, or data sovereignty requirements.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "How do smart meters contribute to energy efficiency?",
+      "back": "By providing real-time usage data, enabling time-of-use pricing, and helping identify waste.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What privacy concerns arise from wearable technology?",
+      "back": "Health data exposure, location tracking, data sharing with third parties, and security vulnerabilities.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
+    },
+    {
+      "front": "What is the role of the read/write head in a hard disk?",
+      "back": "To read data from and write data to the platters.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "computer storage"
     }
   ],
   
-  "MODULE 6: COMPUTER NETWORKS": [
+  //MODULE 6 
+
+  "MODULE 6: NETWORKS": [
     {
       "front": "What is a network?",
-      "back": "A network is a system of two or more devices (computers, mobile devices, peripherals) linked by wires, cables, or a telecommunications system.",
+      "back": "A system of two or more devices linked by wires, cables, or a telecommunications system.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What do networks allow computers to share?",
-      "back": "Networks allow computers to share resources, such as hardware (printers, scanners), software, data, and information.",
+      "front": "What is digital communications?",
+      "back": "The process in which two or more computers or devices transfer data, instructions, and information.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is a client in a network?",
-      "back": "A client is a computer or device on the network that relies on the server for its resources.",
+      "front": "What are the four basic components of a communication system?",
+      "back": "Sending device, communications device, transmission media, and receiving device.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is a server in a network?",
-      "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
+      "front": "Which capability does a home network provide to users?",
+      "back": "Multiple users sharing a single Internet connection.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
+    },
+    {
+      "front": "What is an intranet?",
+      "back": "An internal network that uses Internet technologies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is an extranet?",
+      "back": "A network that allows customers or suppliers to access part of an organization's intranet.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a VPN (Virtual Private Network)?",
+      "back": "A network that allows individuals to access an organization's network securely using encryption.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "Which characteristic applies to wired networks?",
+      "back": "More secure and typically faster than wireless networks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "Which characteristic applies to wireless networks?",
+      "back": "More convenient and easier to set up than wired networks.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a cellular network?",
+      "back": "A communication network where the link to and from end nodes is wireless.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What does communications software do?",
+      "back": "Helps establish connections, manage transmissions, and provide communication interfaces.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "In a bus network, what happens if the central cable (bus) fails?",
+      "back": "All devices on the network will no longer be able to communicate.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "In a mesh network, what happens if a single device fails?",
+      "back": "Only the failed device is affected; others continue via alternate routes.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a full mesh topology?",
+      "back": "Each device on the network is connected to every other device.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "In a ring network, what happens if one device fails?",
+      "back": "All communication on the network could cease to function.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "In a star network, what happens if the central device fails?",
+      "back": "The other devices will be unable to communicate.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a tree topology?",
+      "back": "Two or more star networks joined together using a bus.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a client/server network?",
+      "back": "One or more computers act as servers providing resources to client computers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
     },
     {
       "front": "What is a peer-to-peer (P2P) network?",
-      "back": "A peer-to-peer (P2P) network is a simple, less secure network type where computers connect directly to each other without a centralized server, allowing shared access to files and peripherals.",
+      "back": "A network where all computers are equal and communicate directly, typically with fewer than 10 computers.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "Describe the different types of networks (PAN, LAN, WLAN, MAN, WAN).",
-      "back": "PAN (Personal Area Network): A network that connects devices within a short range, typically for a single user's workspace. LAN (Local Area Network): A network that connects computers and devices in a limited geographical area, such as a home, office building, or school. WLAN (Wireless Local Area Network): A LAN that uses wireless media, such as radio waves, to connect devices. MAN (Metropolitan Area Network): A high-speed network that connects LANs in a metropolitan area, such as a city or large campus. WAN (Wide Area Network): A network that covers a large geographical area, such as a country or the world. The Internet is the world's largest WAN.",
+      "front": "What is a Local Area Network (LAN)?",
+      "back": "A network that connects computers and devices in a limited geographic area.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is an intranet, and how does it differ from an extranet?",
-      "back": "An intranet is an internal network that uses Internet technologies (like web browsers) to facilitate communication and resource sharing within an organization. An extranet is a portion of an intranet that is extended to authorized outside users, such as customers or suppliers, to access specific information or services.",
+      "front": "What is a Wireless LAN (WLAN)?",
+      "back": "A LAN that uses wireless connections.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is network topology?",
-      "back": "Network topology refers to the physical or logical arrangement of connected devices on a network (e.g., bus, star, ring, mesh).",
+      "front": "What is a Wide Area Network (WAN)?",
+      "back": "A network that connects devices in a large geographic region.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "List some common network standards and protocols.",
-      "back": "Common network standards and protocols include Ethernet, Wi-Fi, Bluetooth, Zigbee, RFID (Radio Frequency Identification), and NFC (Near Field Communication). These specify how devices communicate and access the network.",
+      "front": "What is a Metropolitan Area Network (MAN)?",
+      "back": "A network operated by a city or county covering a metropolitan region.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
+    },
+    {
+      "front": "What is a Personal Area Network (PAN)?",
+      "back": "Personal digital devices connected via Bluetooth like a smartwatch.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a Body Area Network (BAN)?",
+      "back": "A form of personal area network consisting of small, lightweight biosensors implanted in the body.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What are network standards?",
+      "back": "Guidelines that specify how computers access a network, hardware types, and data transmission speeds.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What are protocols in networking?",
+      "back": "Standards outlining how devices communicate, including data format, coding schemes, and error handling.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is Ethernet?",
+      "back": "The most common standard for wired networks, controlling how devices share access to cables and transmit data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is EDI (Electronic Data Interchange)?",
+      "back": "A standard that defines how business documents travel across transmission media.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is Wi-Fi based on?",
+      "back": "The 802.11 series of network standards developed by the IEEE.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is Bluetooth?",
+      "back": "A network protocol defining how two Bluetooth devices use short-range radio waves to transmit data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What does it mean when Bluetooth devices are \"paired\"?",
+      "back": "They have established a trusted connection and will automatically recognize each other when in range.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is UWB (Ultra-Wideband) best suited for?",
+      "back": "Transmitting large files like video, graphics, and audio.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is IrDA and what is its limitation?",
+      "back": "A wireless protocol that requires line-of-sight transmission.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is RFID?",
+      "back": "A protocol using radio signals to communicate with tags placed on objects, animals, or people.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What are the components of an RFID tag (transponder)?",
+      "back": "An antenna and a memory chip.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is NFC (Near-Field Communication)?",
+      "back": "A protocol based on RFID for close-range communication used in mobile payments and ticketing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is an NFC tag?",
+      "back": "A chip that can store small amounts of data and be attached to items like business cards, wristbands, or stickers.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What are nodes on a network?",
+      "back": "Any devices connected to a network, including computers, tablets, phones, printers, and smart home devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a hub in networking?",
+      "back": "A device providing a central point for cables that transfers data to all connected devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a switch and how is it different from a hub?",
+      "back": "A switch transfers data only to the intended recipient, making it more efficient than a hub.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a router?",
+      "back": "A device that connects two or more networks and directs the flow of information between them.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a modem?",
+      "back": "A communications device that connects a computer to a communications channel like the Internet.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a cable modem?",
+      "back": "A modem using cable TV connections to send and receive digital data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a DSL modem?",
+      "back": "A modem using standard copper telephone wiring.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is an ISDN modem?",
+      "back": "A broadband modem that sends digital data over ISDN lines.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a dedicated line?",
+      "back": "An always-on physical connection between two communications devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is multiplexing?",
+      "back": "Combining multiple analog or digital signals into a single signal over a shared medium.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is FTTP (Fiber to the Premises)?",
+      "back": "Fiber-optic cable providing extremely high-speed Internet access to a user's location.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is ATM (Asynchronous Transfer Mode)?",
+      "back": "A service carrying voice, data, video, and media at very high speeds using fixed-size cells.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What are T-carrier lines?",
+      "back": "Long-distance digital phone lines carrying multiple signals over a single line using multiplexing.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "Who typically uses T1 lines?",
+      "back": "Medium to large companies.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "Who typically uses T3 lines?",
+      "back": "Large corporations, phone companies, and ISPs connecting to the Internet backbone.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What hardware is needed for a wireless home network?",
+      "back": "A modem, router, wireless access point, and devices to connect.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is the first step in setting up a wireless network?",
+      "back": "Purchase a modem or router and connect it to your home's Internet service.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a wireless network key?",
+      "back": "A password used to secure a wireless network and prevent unauthorized access.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is an advantage of adding a wireless printer to a network?",
+      "back": "Multiple computers and mobile devices on the network can use the printer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "How can you improve a weak wireless signal?",
+      "back": "Place the router in a central location and use a signal booster.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is adware?",
+      "back": "Software that displays unwanted advertisements on your computer.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is spyware?",
+      "back": "Software that tracks and transmits personal information without your knowledge.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a virus?",
+      "back": "Malware that damages data or changes system settings.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a worm?",
+      "back": "Malware that spreads throughout a computer and/or network without requiring user interaction.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a Trojan?",
+      "back": "Malware that disguises itself as a legitimate file and causes damage when opened.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is ransomware?",
+      "back": "Malware that locks you out of programs and data until you pay a ransom.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is a rootkit?",
+      "back": "Malware that gains administrator-level access undetected.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is Network Attached Storage (NAS)?",
+      "back": "A centralized storage device on a network for programs and data.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What does network monitoring software do?",
+      "back": "It constantly assesses network status, measures traffic, and alerts when problems occur.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "What is packet sniffer software?",
+      "back": "Software that monitors and logs packet traffic for later analysis.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "How can hackers misuse packet sniffer software?",
+      "back": "To hijack computers by intercepting unencrypted data and passwords.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
+    },
+    {
+      "front": "How can you check if someone is accessing your wireless network without permission?",
+      "back": "Sign in to the router's administrative interface and count connected devices.",
+      "course": "CS110",
+      "term": "T1",
+      "topic": "networks"
     },
     {
       "front": "What is the role of a network administrator?",
-      "back": "The role of a network administrator involves planning, designing, purchasing equipment, setting up, securing, and maintaining a network, ensuring its efficient and secure operation.",
+      "back": "To plan, design, purchase equipment for, set up, secure, and maintain a network.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is a wireless router?",
-      "back": "A wireless router is a central connection device for a wireless home network, allowing multiple devices to connect to the Internet and each other wirelessly.",
+      "front": "What is USENIX?",
+      "back": "A nonprofit organization founded in 1975 to support network and system engineers and operators.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "Why are wireless networks particularly vulnerable to risks?",
-      "back": "Wireless networks are vulnerable because their signals can extend beyond a home or office, making them susceptible to unauthorized access unless properly secured with encryption and strong passwords.",
+      "front": "What ethical guidelines are included in the network professional's code of conduct?",
+      "back": "Professionalism, social responsibility, personal integrity, privacy, and ethical responsibility.",
       "course": "CS110",
       "term": "T1",
-      "topic": "networks and network devices"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'network' and its purpose?",
-      "back": "A network is a collection of computers and devices connected together, often wirelessly, via communications devices and transmission media. Its purpose is to allow users to share resources, such as data, hardware, and software.",
+      "front": "What is the difference between a hub and a switch?",
+      "back": "A hub broadcasts to all ports; a switch sends data only to the intended recipient.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'communications software'?",
-      "back": "Communications software consists of programs and apps that help users establish a connection to another computer, mobile device, or network; manage the transmission of data, instructions, and information; and provide an interface for users to communicate with one another.",
+      "front": "What is the difference between a router and a modem?",
+      "back": "A modem connects to the ISP; a router directs traffic between devices and the modem.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "How are networks classified?",
-      "back": "Networks can be classified by their topology (physical arrangement), network architecture (logical design and roles of devices), and geographic reach.",
+      "front": "What is the difference between a LAN and a WAN?",
+      "back": "LAN covers limited area (home, office); WAN covers large geographic region.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Differentiate between 'client/server networks' and 'peer-to-peer networks'.",
-      "back": "In client/server networks, one or more computers act as a server to which other computers (clients) connect to access resources. In peer-to-peer networks, each computer can act as both a client and a server, sharing resources directly with other computers.",
+      "front": "What is the difference between a client/server network and a peer-to-peer network?",
+      "back": "Client/server has dedicated servers; peer-to-peer has all computers equal.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Differentiate between 'LAN (Local Area Network)', 'MAN (Metropolitan Area Network)', and 'WAN (Wide Area Network)'.",
-      "back": "A LAN (Local Area Network) connects computers and devices in a limited geographic area, such as a home or office. A MAN (Metropolitan Area Network) connects LANs in a metropolitan area, like a city or town. A WAN (Wide Area Network) covers a large geographic area, such as a country or the world, and often uses communication channels that combine many types of media.",
+      "front": "What is the difference between an intranet and the Internet?",
+      "back": "Intranet is private (internal); Internet is public (global).",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'Personal Area Network (PAN)'?",
-      "back": "A Personal Area Network (PAN) is a network that connects devices in an individual's workspace using Bluetooth, Wi-Fi, or other wireless technologies.",
+      "front": "What is the difference between Wi-Fi and Bluetooth?",
+      "back": "Wi-Fi is for networking and Internet access; Bluetooth is for short-range device-to-device connections.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'Body Area Network (BAN)'?",
-      "back": "A Body Area Network (BAN) is a network of devices worn by an individual, such as smartwatches, fitness trackers, and other sensors, that collect and transmit personal health data.",
+      "front": "What is the difference between RFID and NFC?",
+      "back": "NFC is a subset of RFID for very close-range secure communication.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is the difference between 'intranet' and 'extranet'?",
-      "back": "An intranet is an internal network that uses Internet technologies to provide an organization with access to its own resources and information. An extranet is a portion of a company's intranet that is extended to authorized users outside the company, such as suppliers or customers.",
+      "front": "What is the difference between ADSL and SDSL?",
+      "back": "ADSL has faster download than upload; SDSL has equal speeds.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'network architecture'?",
-      "back": "Network architecture refers to the logical design of all devices on a network, describing the roles of servers and users.",
+      "front": "What is the difference between a T1 line and a T3 line?",
+      "back": "T3 is much faster than T1 (44.736 Mbps vs 1.544 Mbps).",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'network topology'?",
-      "back": "Network topology refers to the physical arrangement of computers and devices on a network.",
+      "front": "What is the purpose of encryption in a VPN?",
+      "back": "To secure data transmitted over public networks so it cannot be read if intercepted.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Describe a 'bus network'.",
-      "back": "In a bus network, all devices attach to a single, central cable, and data is transmitted along this cable to all connected devices.",
+      "front": "What is an SSID?",
+      "back": "The name of a wireless network.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Describe a 'ring network'.",
-      "back": "In a ring network, devices are connected in a closed loop, and data flows in one direction around the ring.",
+      "front": "Why should you change the default SSID of your wireless router?",
+      "back": "Default names often identify the manufacturer, making attacks easier; a unique name improves security.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Describe a 'star network'.",
-      "back": "In a star network, all devices connect to a central hub or switch, and all data passes through this central point.",
+      "front": "What is a wireless access point?",
+      "back": "A device that allows wireless devices to connect to a wired network.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Describe a 'mesh network'.",
-      "back": "In a mesh network, every node (device) is connected directly to every other node, providing multiple paths for data and high redundancy.",
+      "front": "What is a wireless signal booster (repeater)?",
+      "back": "An amplifier used to improve reception and extend the range of a wireless network.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'wireless access point (WAP)'?",
-      "back": "A wireless access point (WAP) is a central communications device that allows computers and devices to transfer data wirelessly among themselves or to a wired network.",
+      "front": "What is the Internet backbone?",
+      "back": "The main trunk connections of the Internet, composed of high-speed, high-capacity data routes.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'Wi-Fi'?",
-      "back": "Wi-Fi (Wireless Fidelity) is a wireless networking technology that uses radio waves to provide high-speed Internet and network connections.",
+      "front": "What is a splitter in cable modem installation?",
+      "back": "A device that divides a single cable signal into two or more separate signals.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'Bluetooth'?",
-      "back": "Bluetooth is a wireless technology standard for exchanging data over short distances using short-wavelength UHF radio waves, often for personal area networks.",
+      "front": "What is the function of a network interface card (NIC)?",
+      "back": "Hardware that enables a computer to connect to a network.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'NFC (Near Field Communication)'?",
-      "back": "NFC (Near Field Communication) is a set of communication protocols for communication between two electronic devices typically within 4 cm (1.6 in) of each other.",
+      "front": "What is the function of a firewall?",
+      "back": "To monitor and control incoming and outgoing network traffic based on security rules.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'modem'?",
-      "back": "A modem is a communications device that converts analog signals to digital signals and vice versa, allowing computers to transmit data over telephone lines, cable lines, or other media.",
+      "front": "What is \"stealth mode\" on a router?",
+      "back": "A feature that makes the network less visible to outsiders by not responding to unsolicited probes.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'router'?",
-      "back": "A router is a communications device that connects multiple computers or other routers together and transmits data to its correct destination on a network.",
+      "front": "What is bandwidth in networking?",
+      "back": "The maximum rate of data transfer across a network connection.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'wireless router'?",
-      "back": "A wireless router is a device that performs the functions of a router and a wireless access point, allowing both wired and wireless devices to connect to a network.",
+      "front": "What is a transponder in RFID systems?",
+      "back": "The RFID tag containing an antenna and memory chip.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'broadband modem'?",
-      "back": "A broadband modem is a communications device that sends and receives data and information to and from a digital line, such as a cable line or DSL (Digital Subscriber Line).",
+      "front": "What is a transceiver in RFID systems?",
+      "back": "The RFID reader that both transmits and receives signals.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'network card'?",
-      "back": "A network card (or network interface card - NIC) is a circuit board or card that enables computers and devices to access a network.",
+      "front": "What is pairing in Bluetooth technology?",
+      "back": "Establishing a trusted connection between two Bluetooth devices, usually with a code.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'hub' or 'switch'?",
-      "back": "A hub is a device that provides a central point for cables in a network. A switch is a more intelligent device than a hub, directing data only to the intended recipient on a network.",
+      "front": "What are 3G, 4G, and 5G?",
+      "back": "Generations of cellular network technology.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'bandwidth' in data communication?",
-      "back": "Bandwidth is the amount of data, instructions, and information that can travel over a communications channel per unit of time.",
+      "front": "What is line-of-sight transmission?",
+      "back": "Transmission where sending and receiving devices must be directly visible with no obstacles.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "Differentiate between 'latency' and 'bandwidth'.",
-      "back": "Bandwidth measures the capacity of a connection (how much data can pass per second). Latency measures the time it takes for a signal to travel from one point to another (the delay).",
+      "front": "What is the IEEE and its role in networking?",
+      "back": "A professional organization that develops networking standards like 802.11 (Wi-Fi).",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is a 'protocol'?",
-      "back": "A protocol is a set of rules that defines how computers communicate on a network.",
+      "front": "What is a tree topology commonly used in?",
+      "back": "Schools and businesses.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
+      "topic": "networks"
     },
     {
-      "front": "What is 'TCP/IP (Transmission Control Protocol/Internet Protocol)'?",
-      "back": "TCP/IP is a network protocol that defines how messages are routed from one end of a network to the other, ensuring reliable transmission of data across the Internet.",
+      "front": "What is the purpose of a VPN for remote employees?",
+      "back": "To securely access the organization's internal network over the Internet.",
       "course": "CS110",
       "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'Ethernet'?",
-      "back": "Ethernet is a network standard that specifies no central server or device on the network should control when data can be transmitted, and it is the most popular standard for wired LANs.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'Wi-Fi 6 (802.11ax)'?",
-      "back": "Wi-Fi 6 (802.11ax) is the latest generation of Wi-Fi technology, designed to improve performance in congested environments and provide faster speeds.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'Li-Fi'?",
-      "back": "Li-Fi (Light Fidelity) is a wireless communication technology that uses visible light communication (VLC) to transmit data, offering potential for very high speeds and security.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is '5G'?",
-      "back": "5G is the fifth generation of cellular technology, designed to deliver higher multi-Gbps peak data speeds, ultra-low latency, more reliability, massive network capacity, increased availability, and a more uniform user experience to more users.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'fiber optic cable'?",
-      "back": "Fiber optic cable consists of dozens or hundreds of thin strands of glass or plastic that transmit data as pulses of light.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'cellular radio'?",
-      "back": "Cellular radio is a form of broadcast radio that is used widely for mobile communications, especially for cell phones.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'microwaves (radio waves)'?",
-      "back": "Microwaves are radio waves that provide a high-speed signal transmission. They are often used for wireless communication over long distances.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'satellite' communication?",
-      "back": "Satellite communication is a wireless transmission medium that receives signals from an earth-based station, amplifies the signals, and transmits them over a wide area to other earth-based stations.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'GPS (Global Positioning System)'?",
-      "back": "GPS (Global Positioning System) is a navigation system that uses satellites to provide precise location and time information anywhere on Earth.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is 'cybersecurity' for networks?",
-      "back": "Cybersecurity for networks involves measures to protect computer networks and data from unauthorized access, use, disclosure, disruption, modification, or destruction.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What is the role of a 'network administrator'?",
-      "back": "A network administrator plans, designs, purchases equipment for, sets up, secures, and maintains a network, ensuring its efficient and secure operation.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-      "front": "What guidelines are included in a 'code of conduct' for network professionals?",
-      "back": "A code of conduct includes guidelines for professionalism, social responsibility, personal integrity, privacy, adherence to laws and policies, effective communication, ensuring system integrity, continuous education, and ethical responsibility to the computing community.",
-      "course": "CS110",
-      "term": "T1",
-      "topic": "Data Communication and Computer Network"
-    },
-    {
-        "front": "What is a network?",
-        "back": "A network is a system of two or more devices linked by wires, cables, or a telecommunications system.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Interacting with a Network"
-    },
-    {
-        "front": "What do networks allow computers to share?",
-        "back": "Networks allow computers to share resources, such as hardware, software, data, and information.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Interacting with a Network"
-    },
-    {
-        "front": "What is a client in a network?",
-        "back": "A client is a computer or device on the network that relies on the server for its resources.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Client/Server Networks"
-    },
-    {
-        "front": "What is a server in a network?",
-        "back": "A server is the central computer in a network that provides services, resources, and data to other computers and devices on the network.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Client/Server Networks"
-    },
-    {
-        "front": "What is a peer-to-peer (P2P) network?",
-        "back": "A P2P network is a simple, inexpensive network that typically connects fewer than 10 computers, where each computer can act as both a client and a server.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Peer-to-Peer Networks"
-    },
-    {
-        "front": "What are common types of wired transmission media?",
-        "back": "Common types include twisted-pair cable, coaxial cable, and fiber-optic cable.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Transmission Media"
-    },
-    {
-        "front": "What is 'bandwidth' in network terms?",
-        "back": "Bandwidth is the maximum amount of data that can pass from one point to another in a unit of time.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Performance"
-    },
-    {
-        "front": "What is 'latency'?",
-        "back": "Latency is the time it takes for a signal to travel from one point to another.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Performance"
-    },
-    {
-        "front": "What is an 'Ethernet network'?",
-        "back": "An Ethernet network is a wired LAN technology that uses Ethernet cables to connect devices.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Standards"
-    },
-    {
-        "front": "What is 'Wi-Fi'?",
-        "back": "Wi-Fi is a wireless networking technology that uses radio waves to provide network and Internet connections.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Standards"
-    },
-    {
-        "front": "What is 'Bluetooth'?",
-        "back": "Bluetooth is a short-range wireless technology used for connecting devices like headsets, smartphones, and keyboards over short distances.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Standards"
-    },
-    {
-        "front": "What is an 'RFID (Radio Frequency Identification) system'?",
-        "back": "An RFID system uses radio waves to read information stored on RFID tags, often used for tracking inventory or access control.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Standards"
-    },
-    {
-        "front": "What is an 'NFC (Near Field Communication) system'?",
-        "back": "An NFC system enables two devices to communicate when they are touched together or brought within a few centimeters of each other, commonly used for mobile payments.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Standards"
-    },
-    {
-        "front": "What is a 'router'?",
-        "back": "A router is a network device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Devices"
-    },
-    {
-        "front": "What is a 'modem'?",
-        "back": "A modem (modulator-demodulator) is a device that converts digital signals into analog signals for transmission over communication lines, and vice versa.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Devices"
-    },
-    {
-        "front": "What is a 'wireless access point (WAP)'?",
-        "back": "A WAP is a networking hardware device that allows Wi-Fi devices to connect to a wired network.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Devices"
-    },
-    {
-        "front": "What is a 'network interface card (NIC)'?",
-        "back": "A NIC is a hardware component that connects a computer to a computer network.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Devices"
-    },
-    {
-        "front": "What is a 'firewall'?",
-        "back": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Security"
-    },
-    {
-        "front": "What is 'encryption'?",
-        "back": "Encryption is the process of converting information or data into a code, to prevent unauthorized access.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Security"
-    },
-    {
-        "front": "What are 'protocols' in networking?",
-        "back": "Protocols are sets of rules governing the exchange of information over a network.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Network Concepts"
-    },
-    {
-        "front": "What is the 'Internet of Things (IoT)'?",
-        "back": "The IoT is a network of physical objects embedded with sensors, software, and other technologies that allow them to connect and exchange data over the Internet.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "IoT"
-    },
-    {
-        "front": "How can ergonomics improve digital health?",
-        "back": "Ergonomics improves digital health by designing work environments and equipment to fit the user, reducing discomfort and preventing injuries like repetitive strain injuries (RSI).",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Digital Health / Ergonomics"
-    },
-    {
-        "front": "What are some healthy computing practices?",
-        "back": "Healthy computing practices include taking regular breaks (e.g., the 20-20-20 rule), using proper lighting, adjusting screen settings, and ensuring good air circulation.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Digital Health / Ergonomics"
-    },
-    {
-        "front": "What is technology addiction and its symptoms?",
-        "back": "Technology addiction is when a user experiences a compulsive need to use technology to the point where it interferes with daily life. Symptoms include feeling anxious or irritable when not using technology, excessive use leading to poor academic/work performance, relationship issues, social withdrawal, sleep disturbances, and preoccupation with technology.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Digital Health / Ethics and Issues"
-    },
-    {
-        "front": "What are the legal requirements for providing assistive technologies according to US laws?",
-        "back": "The Americans with Disabilities Act (ADA) requires any company with 15 or more employees to make reasonable attempts to accommodate the needs of physically challenged workers. The Individuals with Disabilities Education Act (IDEA) is a law that requires that public schools purchase or acquire funding for adaptive technologies. These laws were put in place to ensure that people with disabilities can access resources, information, and services using the appropriate technology.",
-        "course": "CS110",
-        "term": "T1",
-        "topic": "Assistive Technologies / Legal Requirements"
+      "topic": "networks"
     }
   ],
   
