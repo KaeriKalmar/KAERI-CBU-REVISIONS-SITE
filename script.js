@@ -1,5 +1,5 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.5 DUAL-MODE FINAL) ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.6 SMART-LAYOUT) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
 // ============================================================
 
@@ -1388,7 +1388,7 @@ function startFlashcards(topic, mode) {
     displayFlashcard();
 }
 
-// --- DISPLAY ENGINE (HYBRID UI) ---
+// --- DISPLAY ENGINE (HYBRID UI + SMART LAYOUT) ---
 function displayFlashcard() {
     const container = document.getElementById("quiz-form");
     
@@ -1400,12 +1400,30 @@ function displayFlashcard() {
     const cardObj = currentFlashcards[currentCardIndex]; 
     updateProgress(currentCardIndex + 1, currentFlashcards.length);
     
-    // Smart Layout Analyzer
+    // === SMART LAYOUT ANALYZER (STEM & SCROLL FIX) ===
     function getLayoutClass(text) {
+        // 1. Detect Block Math ($$ ... $$) - Needs space & horizontal scroll
         const hasBlockMath = /\$\$|\\\[/.test(text);
+        
+        // 2. Detect SPECIFIC Chemistry & Physics Signals
+        const hasScience = /(\\ce\{|\\pu\{|\\vec\{|\\int|\\sum|\\frac\{|\\sqrt\{)/.test(text);
+    
+        // 3. Detect Lists (Bullet points)
         const hasList = /^- /m.test(text) || /<ul>|<ol>|<li>/.test(parseKaeriMarkdown(text));
-        const isLong = text.length > 120;
-        return (hasBlockMath || hasList || isLong) ? "layout-detailed" : "layout-center";
+    
+        // 4. Detect Text Length (lowered to 60 for mobile safety)
+        const isLong = text.length > 60;
+    
+        // 5. Detect Newlines (3 or more lines)
+        const hasBreaks = (text.match(/\n/g) || []).length > 2;
+    
+        // IF ANY of these are true, force Top Alignment
+        if (hasBlockMath || hasScience || hasList || isLong || hasBreaks) {
+            return "layout-detailed";
+        }
+        
+        // Otherwise, center it nicely
+        return "layout-center";
     }
 
     const frontLayout = getLayoutClass(cardObj.front);
