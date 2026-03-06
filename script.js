@@ -1,10 +1,11 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.7 PROFESSIONAL VIEWER) ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.8) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
+// === Enhanced with Silent Revalidation, Expiry Display, and Analytics ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6ZmnY0xmGjwxIq8YoP3mHEghVbEb4ZnVn_sKoCL_VI3CdsjEjibnGIFbQ/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBKr4ZAc6m_rehmEywaJhbbiN7G9sWbmvtE544lNZOWgD7e906JxW7Bz4ZuA59sSPfvg/exec";
 const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
 
 let ttsEnabled = false;
@@ -12,6 +13,11 @@ let printContentData = null;
 let hasFullAccess = false;
 let currentPrice = 15;
 let isSubmissionLocked = false; 
+
+// --- User session data (for silent revalidation & analytics) ---
+let userEmail = '';
+let userCode = '';
+let deviceFP = '';
 
 // --- DATA CONTAINERS ---
 let allMcqData = [], allShortData = [], allEssayData = [], allFlashcards = {};
@@ -26,6 +32,9 @@ let currentEssay = null, currentStepIndex = 0, essayScore = 0;
 let currentFlashcardTopic = null, currentFlashcards = [], currentCardIndex = 0, isCardFront = true;
 let currentFlashcardMode = 'linear'; // 'linear' or 'srs'
 let srsQueue = []; 
+
+// Silent revalidation timer
+let revalidationInterval = null;
 
 // ============================================================
 // === 0. UNIVERSAL PARSER (Markdown -> HTML) ===
@@ -246,23 +255,7 @@ function closeDocViewer() {
 }
 
 function logDocumentView(title, fileId) {
-    try {
-        fetch(APPS_SCRIPT_URL, {
-            method: 'POST',
-            headers: { "Content-Type": "text/plain;charset=utf-8" },
-            body: JSON.stringify({
-                action: 'logEvent',
-                data: {
-                    email: hasFullAccess ? 'full_access' : 'demo',
-                    action: 'view_document',
-                    course: currentCourse,
-                    term: currentTerm,
-                    details: `Viewed: ${title}`,
-                    userAgent: navigator.userAgent
-                }
-            })
-        }).catch(() => {});
-    } catch (e) {}
+    logAnalyticsEvent('document_view', `Viewed: ${title}`);
 }
 
 // ============================================================
@@ -301,6 +294,7 @@ function startActualMcq(limit) {
         return;
     }
     displayMcqQuestion();
+    logAnalyticsEvent('quiz_start', `MCQ (${limit} questions)`);
 }
 
 // Short Answer starter - initializes with specified number of questions
@@ -321,6 +315,7 @@ function startActualShortAnswer(limit) {
         return;
     }
     displayShortAnswerQuestion();
+    logAnalyticsEvent('quiz_start', `Short Answer (${limit} questions)`);
 }
 
 // Step selector for MCQ preset buttons
@@ -479,21 +474,30 @@ async function renderDocuments() {
 async function checkAccessStatus() {
     const storedToken = localStorage.getItem(`token_${currentTermKey}`);
     const storedExpiry = localStorage.getItem(`expiry_${currentTermKey}`);
+    const storedEmail = localStorage.getItem(`email_${currentTermKey}`);
+    const storedCode = localStorage.getItem(`code_${currentTermKey}`);
     
-    if (storedToken && storedExpiry && Date.now() < parseInt(storedExpiry)) {
+    if (storedToken && storedExpiry && Date.now() < parseInt(storedExpiry) && storedEmail && storedCode) {
+        userEmail = storedEmail;
+        userCode = storedCode;
         enableFullAccessUI();
+        // After enabling UI, fetch session status to update banner
+        checkSessionStatus();
+        // Start silent revalidation
+        startSilentRevalidation();
         return;
     }
     enableDemoUI();
 }
 
 async function verifyCodeFromModal() {
-    const userCode = document.getElementById('access-code-input').value.trim();
-    if (!userCode) return alert("Please enter a code.");
-    const userEmail = prompt("Enter the Email you used to pay:"); 
-    if (!userEmail) return alert("Email required for verification.");
+    const userCodeInput = document.getElementById('access-code-input').value.trim();
+    if (!userCodeInput) return alert("Please enter a code.");
+    const userEmailInput = prompt("Enter the Email you used to pay:"); 
+    if (!userEmailInput) return alert("Email required for verification.");
 
-    let deviceFP = localStorage.getItem('device_fp');
+    // Generate or retrieve device fingerprint
+    deviceFP = localStorage.getItem('device_fp');
     if (!deviceFP) {
         deviceFP = navigator.userAgent + "_" + Math.random().toString(36).substring(7);
         localStorage.setItem('device_fp', deviceFP);
@@ -507,10 +511,10 @@ async function verifyCodeFromModal() {
             redirect: "follow",
             headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
-                action: 'validateAccess',
-                code: userCode,
-                email: userEmail,
-                deviceFP: deviceFP,
+                action: 'validate_access_code',   // Correct action for backend
+                code: userCodeInput,
+                email: userEmailInput,
+                device_fp: deviceFP,              // Backend expects device_fp
                 course: currentCourse,
                 term: currentTerm
             })
@@ -519,10 +523,24 @@ async function verifyCodeFromModal() {
         const result = await response.json();
 
         if (result.success) {
-            localStorage.setItem(`token_${currentTermKey}`, result.data.token || "VALID");
-            localStorage.setItem(`expiry_${currentTermKey}`, result.data.expiry);
+            // Store session data
+            const expiryTimestamp = result.data.expiry_timestamp;
+            const sessionToken = result.data.session_token;
+            localStorage.setItem(`token_${currentTermKey}`, sessionToken || "VALID");
+            localStorage.setItem(`expiry_${currentTermKey}`, expiryTimestamp);
+            localStorage.setItem(`email_${currentTermKey}`, userEmailInput);
+            localStorage.setItem(`code_${currentTermKey}`, userCodeInput);
+            
+            userEmail = userEmailInput;
+            userCode = userCodeInput;
+            
             closePaymentModal();
             enableFullAccessUI();
+            
+            // Fetch session status and start silent revalidation
+            checkSessionStatus();
+            startSilentRevalidation();
+            
             showAppNotification("✅ " + result.message, "success");
         } else {
             showAppNotification("❌ " + result.message, "error");
@@ -530,6 +548,122 @@ async function verifyCodeFromModal() {
     } catch (e) {
         showAppNotification("⚠️ Connection Error. Check internet.", "error");
     }
+}
+
+// ============================================================
+// === NEW: Silent Revalidation & Session Status ===
+// ============================================================
+
+async function silentRevalidation() {
+    if (!hasFullAccess || !userEmail || !userCode) return;
+    
+    try {
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: 'silent_revalidation',
+                email: userEmail,
+                code: userCode,
+                session_token: localStorage.getItem(`token_${currentTermKey}`) || ''
+            })
+        });
+        const result = await response.json();
+        if (!result.success) {
+            // Session invalid – log out
+            handleSessionExpired(result.message);
+        }
+    } catch (e) {
+        // Network error – ignore, but could optionally show a warning after several failures
+        console.warn('Silent revalidation failed', e);
+    }
+}
+
+async function checkSessionStatus() {
+    if (!hasFullAccess || !userEmail || !userCode) return;
+    
+    try {
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: 'check_session_status',
+                email: userEmail,
+                code: userCode
+            })
+        });
+        const result = await response.json();
+        if (result.success) {
+            const data = result.data;
+            // Update banner with expiry date
+            if (data.expiry_date) {
+                const expiryDate = new Date(data.expiry_date);
+                updateModeBanner(`✅ FULL ACCESS (expires ${expiryDate.toLocaleDateString()})`);
+                
+                // Show notification with days remaining
+                if (data.days_remaining !== null) {
+                    const days = data.days_remaining;
+                    if (days > 0) {
+                        showAppNotification(`ℹ️ Your license expires in ${days} day(s).`, 'info', 5000);
+                    } else if (days === 0) {
+                        showAppNotification(`⚠️ Your license expires today!`, 'warning', 7000);
+                    }
+                }
+            }
+        } else {
+            // Session invalid
+            handleSessionExpired(result.message);
+        }
+    } catch (e) {
+        console.warn('Session status check failed', e);
+    }
+}
+
+function handleSessionExpired(message) {
+    // Clear all stored session data
+    localStorage.removeItem(`token_${currentTermKey}`);
+    localStorage.removeItem(`expiry_${currentTermKey}`);
+    localStorage.removeItem(`email_${currentTermKey}`);
+    localStorage.removeItem(`code_${currentTermKey}`);
+    hasFullAccess = false;
+    userEmail = '';
+    userCode = '';
+    if (revalidationInterval) {
+        clearInterval(revalidationInterval);
+        revalidationInterval = null;
+    }
+    enableDemoUI();
+    showAppNotification(`⏳ ${message || 'Session expired. Please log in again.'}`, 'warning');
+}
+
+function startSilentRevalidation() {
+    if (revalidationInterval) clearInterval(revalidationInterval);
+    // Run every 5 minutes (300000 ms)
+    revalidationInterval = setInterval(silentRevalidation, 300000);
+    // Also run once immediately after a short delay
+    setTimeout(silentRevalidation, 5000);
+}
+
+// ============================================================
+// === NEW: Silent Analytics Logging ===
+// ============================================================
+
+function logAnalyticsEvent(actionType, details) {
+    // Fire and forget – user never sees this
+    fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        keepalive: true,
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+            action: 'log_system_event',
+            email: userEmail || (hasFullAccess ? 'full_access' : 'demo'),
+            actionType: actionType,
+            course: currentCourse,
+            term: currentTerm,
+            details: details,
+            device_fp: deviceFP || localStorage.getItem('device_fp') || 'unknown'
+        })
+    }).catch(() => {}); // Silent failure
 }
 
 // ============================================================
@@ -567,7 +701,7 @@ function blockDemo(type) {
 
 function enableFullAccessUI() {
     hasFullAccess = true;
-    updateModeBanner("✅ FULL ACCESS");
+    updateModeBanner("✅ FULL ACCESS"); // Will be updated with expiry by checkSessionStatus
     const banner = document.getElementById('mode-banner');
     if(banner) {
         banner.className = 'full-access-banner';
@@ -629,6 +763,12 @@ function backToMenu() {
     stopReading(); 
     closeDocViewer();
     window.scrollTo(0,0);
+    
+    // Stop revalidation when leaving course
+    if (revalidationInterval) {
+        clearInterval(revalidationInterval);
+        revalidationInterval = null;
+    }
 }
 
 function toggleTerms(courseId) {
@@ -956,6 +1096,9 @@ function showFinalMcqScore() {
     previewBtn.style.marginLeft = "10px";
     previewBtn.onclick = generatePrintPreview;
     container.appendChild(previewBtn);
+
+    // Log analytics
+    logAnalyticsEvent('quiz_complete', `MCQ score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
 }
 
 function displayShortAnswerQuestion() {
@@ -1049,6 +1192,8 @@ function showFinalShortAnswerScore() {
     previewBtn.style.marginLeft = "10px";
     previewBtn.onclick = generatePrintPreview;
     container.appendChild(previewBtn);
+
+    logAnalyticsEvent('quiz_complete', `Short Answer score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
 }
 
 function renderEssaySimulation() {
@@ -1096,6 +1241,7 @@ function startSpecificEssay(index) {
     essayScore = 0;
     document.getElementById("result").innerHTML = "";
     showEssayStep(0);
+    logAnalyticsEvent('essay_start', currentEssay.title);
 }
 
 function showEssayStep(index) {
@@ -1211,6 +1357,8 @@ function showFinalEssayScore() {
     backBtn.className = "back-button"; 
     backBtn.onclick = renderEssaySimulation;
     container.appendChild(backBtn);
+
+    logAnalyticsEvent('essay_complete', `${currentEssay.title} score: ${essayScore}/${currentEssay.steps.length} (${percent}%)`);
 }
 
 // ============================================================
@@ -1418,6 +1566,7 @@ function startFlashcards(topic, mode) {
     }
 
     displayFlashcard();
+    logAnalyticsEvent('flashcard_start', `${topic} (${mode} mode)`);
 }
 
 // --- DISPLAY ENGINE (HYBRID UI + SMART LAYOUT) ---
@@ -1605,6 +1754,8 @@ function showFlashcardCompletion() {
     backBtn.className = "back-button";
     backBtn.onclick = renderFlashcardTopics;
     container.appendChild(backBtn);
+
+    logAnalyticsEvent('flashcard_complete', `${currentFlashcardTopic} (${currentFlashcardMode} mode)`);
 }
 
 // ============================================================
@@ -1770,6 +1921,7 @@ function toggleTTS() {
     stopReading();
     updateTtsButtonText();
     showAppNotification(ttsEnabled ? "🔊 Reader is now ON." : "🔇 Reader is now OFF.");
+    logAnalyticsEvent('tts_toggle', ttsEnabled ? 'ON' : 'OFF');
 }
 
 function stopReading() {
