@@ -1,11 +1,17 @@
 // ============================================================
-// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.8) ===
+// === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.9 MERGED) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
 // === Enhanced with Silent Revalidation, Expiry Display, and Analytics ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
+
+// 1. BASE B URL (Handles Auth, Analytics, Payment, Session)
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBKr4ZAc6m_rehmEywaJhbbiN7G9sWbmvtE544lNZOWgD7e906JxW7Bz4ZuA59sSPfvg/exec";
+
+// 2. BASE A URL (Handles Document Library Fetching ONLY)
+const DOCS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6ZmnY0xmGjwxIq8YoP3mHEghVbEb4ZnVn_sKoCL_VI3CdsjEjibnGIFbQ/exec";
+
 const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
 
 let ttsEnabled = false;
@@ -174,7 +180,7 @@ function renderMath(targetId = null) {
 }
 
 // ============================================================
-// === 3. DOCUMENT DELIVERY ENGINE (PROFESSIONAL VIEWER) ===
+// === 3. DOCUMENT DELIVERY ENGINE (FROM BASE A - PRESERVED) ===
 // ============================================================
 
 function injectDocViewerHTML() {
@@ -241,7 +247,8 @@ function openDocumentViewer(fileId, title) {
         }, 500);
     };
 
-    logDocumentView(title, fileId);
+    // Use Base B's analytics, but triggered by Base A's viewer
+    logAnalyticsEvent('document_view', `Viewed: ${title}`);
 }
 
 function closeDocViewer() {
@@ -252,10 +259,6 @@ function closeDocViewer() {
         if (iframe) iframe.src = "";
         document.body.style.overflow = 'auto';
     }
-}
-
-function logDocumentView(title, fileId) {
-    logAnalyticsEvent('document_view', `Viewed: ${title}`);
 }
 
 // ============================================================
@@ -377,11 +380,12 @@ function startCustomShortAnswer() {
 }
 
 // ============================================================
-// === MODIFIED: Document Renderer (Now with Skeleton Grid) ===
+// === MODIFIED: Document Renderer (RESTORED FROM BASE A) ===
 // ============================================================
 
 async function renderDocuments() {
-    // NOTE: blockDemo check removed - everyone sees the list!
+    // IMPORTANT: Uses DOCS_SCRIPT_URL (Base A) to fetch data
+    // blockDemo check removed - everyone sees the list!
     
     const container = document.getElementById("quiz-form");
     
@@ -407,7 +411,8 @@ async function renderDocuments() {
             payload: { course: currentCourse, term: currentTerm }
         });
 
-        const response = await fetch(APPS_SCRIPT_URL, {
+        // FETCHING FROM BASE A URL
+        const response = await fetch(DOCS_SCRIPT_URL, {
             method: 'POST',
             redirect: "follow",
             headers: { "Content-Type": "text/plain;charset=utf-8" },
@@ -468,7 +473,7 @@ async function renderDocuments() {
 }
 
 // ============================================================
-// === 4. SECURITY & AUTHENTICATION ===
+// === 4. SECURITY & AUTHENTICATION (BASE B) ===
 // ============================================================
 
 async function checkAccessStatus() {
@@ -551,7 +556,7 @@ async function verifyCodeFromModal() {
 }
 
 // ============================================================
-// === NEW: Silent Revalidation & Session Status ===
+// === NEW: Silent Revalidation & Session Status (BASE B) ===
 // ============================================================
 
 async function silentRevalidation() {
@@ -645,7 +650,7 @@ function startSilentRevalidation() {
 }
 
 // ============================================================
-// === NEW: Silent Analytics Logging ===
+// === NEW: Silent Analytics Logging (BASE B) ===
 // ============================================================
 
 function logAnalyticsEvent(actionType, details) {
