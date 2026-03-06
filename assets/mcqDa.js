@@ -9922,6 +9922,2603 @@ const mcqData = [
   
   // --- BI110 Term 1 MCQ Data ---
 
+//NEW DATA
+
+// ============================================================
+// === KAERI EDTECH DATA BANK: BI110 CELL CONCEPTS ===
+// ============================================================
+
+
+  // SECTION 1: DEFINITION & ETYMOLOGY
+  {
+    course: "BI110",
+    term: "T1",
+    q: "The word **'biology'** is derived from which two Greek words?",
+    options: [
+      "'bios' meaning life and 'logos' meaning study",
+      "'bio' meaning body and 'logos' meaning knowledge",
+      "'bios' meaning cell and 'logos' meaning science",
+      "'bio' meaning growth and 'logos' meaning structure"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Biology comes from the Greek **'bios'** (life) and **'logos'** (study). Option A is the correct answer. 'Bio' does not mean body or growth, and 'bios' does not mean cell."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How does the etymology of **'biology'** reflect what the discipline actually studies?",
+    options: [
+      "It reflects that biology studies the chemical composition of non-living matter",
+      "It accurately reflects that biology is the scientific study of living organisms",
+      "It reflects that biology is limited to the study of human life only",
+      "It reflects that biology studies the structure of cells exclusively"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The Greek roots *bios* (life) and *logos* (study) together define biology as the scientific study of living organisms."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is biology described as being divided into many specialised fields rather than being a single unified discipline?",
+    options: [
+      "Because different scientists disagreed about the definition of life",
+      "Because biology was originally several unrelated sciences that were merged artificially",
+      "Because living organisms are so diverse in their morphology, physiology, anatomy, behaviour, origin, and distribution that no single approach can cover all aspects",
+      "Because specialisation increases funding opportunities for researchers"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The enormous diversity of living organisms means that no single method or perspective can address all of biology. Each specialised field focuses on one dimension of this complexity."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A scientist studies how deep-sea fish navigate in complete darkness by detecting electrical fields. Which aspect of biology described in the definition does this research most directly represent?",
+    options: [
+      "Morphology",
+      "Anatomy",
+      "Origin",
+      "Behaviour"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Navigation using electrical field detection is a **behavioural** phenomenon — it describes how an organism acts and responds to its environment."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student argues that biology is only the study of living things and therefore does not include the study of fossils or extinct species. Using the definition of biology, identify the flaw in this argument.",
+    options: [
+      "The flaw is that biology includes the study of the origin and distribution of organisms, which necessarily includes extinct species and fossil evidence",
+      "There is no flaw — biology only studies currently living organisms",
+      "The flaw is that fossils are non-living and therefore belong to chemistry",
+      "The flaw is that extinct species are studied by physics, not biology"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The definition of biology explicitly includes **origin** and **distribution**. Understanding origin requires examining evolutionary history, including fossils."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A research team studies how climate change alters the geographic range of a bird species, how the bird's anatomy adapts to new habitats, and how its behaviour shifts in response to temperature changes. How many aspects of biology's definition are simultaneously represented in this study?",
+    options: [
+      "One — distribution only",
+      "Three — distribution, anatomy, and behaviour",
+      "Two — distribution and anatomy",
+      "Four — distribution, anatomy, behaviour, and physiology"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The study directly addresses **distribution** (geographic range), **anatomy** (structural adaptations), and **behaviour** (response to temperature)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Biology is defined as the study of living organisms. A student argues that **virology** should not be classified under biology because viruses are not universally accepted as living organisms. Evaluate this argument.",
+    options: [
+      "The argument is fully correct — virology is a branch of chemistry",
+      "The argument is fully incorrect — viruses are definitively classified as living organisms",
+      "The argument is partially valid — virology exists in biology because viruses interact exclusively with living cells, even if their own living status is debated",
+      "The argument is irrelevant — virology studies bacteria, not viruses"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Virology is embedded within biology because viruses **obligatorily interact with living cells** and profoundly affect living systems, despite their contested status."
+  },
+
+  // SECTION 2: CHARACTERISTICS OF LIVING ORGANISMS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which characteristic of living organisms refers to the ability to maintain relatively constant internal conditions despite changes in the external environment?",
+    options: [
+      "Sensitivity",
+      "Evolutionary adaptation",
+      "Ordered complexity",
+      "Homeostasis"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Homeostasis** is the maintenance of a stable internal environment (e.g., body temperature) despite external changes."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What distinguishes **'sensitivity'** from **'evolutionary adaptation'** as characteristics of living organisms?",
+    options: [
+      "Sensitivity is an immediate response to a stimulus while evolutionary adaptation develops gradually through interactions with the environment over generations",
+      "Sensitivity occurs over generations while evolutionary adaptation occurs immediately",
+      "Sensitivity only applies to animals while evolutionary adaptation applies to plants only",
+      "Sensitivity and evolutionary adaptation are the same characteristic described differently"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Sensitivity** is an immediate individual response. **Evolutionary adaptation** is a generational change across populations."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How does the characteristic of **'ordered complexity'** explain why a living organism is fundamentally different from a non-living object of similar size and mass?",
+    options: [
+      "Living organisms are made of different atoms than non-living objects",
+      "Living organisms possess both complexity and highly organised structure at the molecular and cellular level, whereas non-living objects lack this organisation",
+      "Living organisms are always larger and heavier than non-living objects",
+      "Living organisms can move while non-living objects cannot"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Ordered complexity means living organisms are organised in a precise, functional hierarchy (cells, tissues, organs) that non-living objects lack."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A patient with diabetes cannot regulate their blood sugar levels effectively. Which characteristic of living organisms has been compromised?",
+    options: [
+      "Sensitivity",
+      "Cellular organisation",
+      "Homeostasis",
+      "Energy utilisation"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Blood sugar regulation is a **homeostatic** process. Failure to regulate internal conditions is a failure of homeostasis."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student argues that a fire satisfies several characteristics of living organisms (energy use, growth, response to wind). Therefore, a fire should be classified as alive. Identify the strongest counter-argument.",
+    options: [
+      "Fire fails sensitivity because wind extinguishes rather than stimulates it",
+      "Fire is alive because it meets three out of seven criteria",
+      "Fire is alive but belongs to a special non-biological category",
+      "Fire fails the characteristic of cellular organisation — it has no cells and therefore cannot be classified as a living organism"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Cellular organisation** is non-negotiable. All living things consist of cells. Fire has no cells, genetic material, or reproduction."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A seed lies dormant for 50 years in frozen soil, showing no visible signs of metabolism. When thawed, it germinates. Which characteristics of living organisms does this scenario challenge and how?",
+    options: [
+      "It challenges sensitivity, energy utilisation, and growth — but dormancy is a suspended state, not an absence of life",
+      "It challenges cellular organisation because dormant seeds have no cells",
+      "It challenges homeostasis only because the seed cannot regulate temperature",
+      "It does not challenge any characteristic — dormant seeds display all seven characteristics continuously"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Dormancy temporarily suspends active traits like metabolism and growth, proving that characteristics need not be active simultaneously for an organism to be 'alive'."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A scientist discovers a microscopic entity that reproduces, responds to stimuli, and consists of a single cell, but never grows in size. How should this entity be classified?",
+    options: [
+      "Non-living, because it fails two of the seven characteristics",
+      "Living, because it satisfies the core characteristics including the non-negotiable ones of cellular organisation and hereditary reproduction",
+      "Non-living, because evolutionary adaptation is mandatory for all life",
+      "Living only if it can be observed growing under different laboratory conditions"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "No single characteristic defines life alone. The entity meets the foundational criteria: **cellular organisation**, **reproduction**, and **sensitivity**."
+  },
+
+  // SECTION 3: FIELDS OF BIOLOGICAL SCIENCES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "The study of insects is specifically termed:",
+    options: [
+      "Parasitology",
+      "Mycology",
+      "Entomology",
+      "Bacteriology"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Entomology** is the specific branch of zoology that studies insects."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the relationship between Microbiology, Bacteriology, Mycology, and Virology?",
+    options: [
+      "They are four completely independent disciplines with no connection",
+      "Microbiology is a sub-discipline of both Bacteriology and Virology",
+      "Mycology and Virology are sub-disciplines of Bacteriology",
+      "Bacteriology, Mycology, and Virology are all sub-disciplines that together constitute the major discipline of Microbiology"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Microbiology** is the umbrella discipline. Bacteriology (bacteria), Mycology (fungi), and Virology (viruses) are its sub-fields."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is **Genetics** classified as a branch of biology that cuts across all other biological disciplines rather than being limited to one organism type?",
+    options: [
+      "Because heredity and biological variation occur in all living organisms, making Genetics universally applicable",
+      "Because Genetics was developed before other biological disciplines and therefore precedes them",
+      "Because Genetics only studies humans and human disease",
+      "Because Genetics replaces the need for Zoology and Botany in modern biology"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Genetics applies to all life because all organisms transmit hereditary molecules (DNA/RNA) to offspring."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A researcher investigates how mangrove forests interact with marine animal populations and how rising sea levels threaten both. Which biological field best describes this research?",
+    options: [
+      "Anatomy",
+      "Ecology",
+      "Genetics",
+      "Morphology"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Ecology** is the study of interactions between organisms and their environment."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student classifies the study of the skeletal arrangement of a bird's wing as Morphology. Another student classifies it as Anatomy. Which student is correct?",
+    options: [
+      "The first student — skeletal arrangement describes the form and structure of the organism",
+      "Both students are correct because Morphology and Anatomy are identical disciplines",
+      "The second student — skeletal arrangement involves internal structures and tissue types",
+      "Neither student is correct — skeletal studies belong to Genetics"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Anatomy** specifically deals with *internal* structures (bones/organs). **Morphology** deals with external form."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A single research paper examines: (1) external body shape of a worm, (2) how it infects a host, (3) genetic variation, and (4) distribution across ecosystems. Identify the four fields.",
+    options: [
+      "Zoology, Genetics, Ecology, and Bacteriology",
+      "Anatomy, Virology, Morphology, and Zoology",
+      "Entomology, Genetics, Anatomy, and Ecology",
+      "Morphology, Parasitology, Genetics, and Ecology"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "External shape (**Morphology**), infection of host (**Parasitology**), variation (**Genetics**), distribution (**Ecology**)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student argues that Botany and Phytology are two different disciplines because they have different names. Evaluate this argument.",
+    options: [
+      "The argument is incorrect — Botany and Phytology are two names for the same discipline: the science of plants",
+      "The argument is correct — Botany studies flowering plants while Phytology studies non-flowering plants",
+      "The argument is correct — Botany is the older term and is now replaced by Phytology in modern science",
+      "The argument is partially correct — Botany covers land plants while Phytology covers aquatic plants"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Botany** and **Phytology** are synonyms for the same discipline: the scientific study of plants."
+  },
+
+  // SECTION 4: INTRODUCTION TO CELLS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What are **cells** described as in relation to an organism?",
+    options: [
+      "The only component of living organisms",
+      "The basic unit of structure and function in an organism",
+      "The largest structural unit of life",
+      "The chemical building blocks of non-living matter"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Cells are defined as the **basic unit of structure and function**. They are the fundamental unit of life."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the difference between a **unicellular** and a **multicellular** organism?",
+    options: [
+      "Unicellular organisms are always larger than multicellular organisms",
+      "Unicellular organisms have no cell structure while multicellular organisms have complete cells",
+      "Unicellular organisms consist of a single cell while multicellular organisms consist of many cells",
+      "Unicellular organisms cannot reproduce while multicellular organisms can"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Uni-** means one. **Multi-** means many. Both types are fully alive."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do all cells share common characteristics despite enormous diversity in cell structure across different organisms?",
+    options: [
+      "Because cells are artificially standardised by scientists for research purposes",
+      "Because cells are identical in size and shape regardless of organism type",
+      "Because common characteristics only exist in eukaryotic cells, not prokaryotic cells",
+      "Because all cells evolved from the same ancestral cell type, sharing a common biochemical foundation"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "The unity of cell structure (DNA, membrane, ribosomes) reflects **evolutionary unity** — descent from a common ancestor."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A biologist discovers a single-celled organism performing all life functions independently. Which term correctly classifies this, and what does it imply?",
+    options: [
+      "Unicellular — a single cell must perform all life functions including metabolism, response, and reproduction",
+      "Multicellular — it must contain many specialised cell types to perform all functions",
+      "Acellular — organisms that perform all functions independently have no cells",
+      "Multicellular — all organisms that reproduce are multicellular"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "A **unicellular** organism carries the full burden of life in a single cell, proving that one cell is functionally complete."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student claims that because cell structure is diverse, cells cannot share common characteristics. This reasoning is flawed because:",
+    options: [
+      "Diversity and shared characteristics are mutually exclusive — the student is correct",
+      "Diversity in structure does not preclude shared foundational features (like DNA and membranes)",
+      "All cells are actually identical — there is no structural diversity",
+      "Shared characteristics only exist in animal cells, not plant or bacterial cells"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Diversity exists in **specialisation** (shape/function), but **foundational** features (DNA, ribosomes, membrane) are universal."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A scientist argues that because viruses use cells to replicate, they should be classified as cells. Evaluate this argument.",
+    options: [
+      "The argument is correct — viruses are a type of cell",
+      "The argument is correct because all entities that use cells are themselves cells",
+      "The argument is incorrect — viruses are not cells; they lack their own machinery and cannot carry out life processes independently",
+      "The argument is irrelevant — viruses are classified under chemistry, not biology"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The cell is defined by the capacity for **independent** life function. Viruses lack this and depend entirely on hosts."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Given that cells are the basic unit of life, a student concludes the simplest organism must be a single cell performing all 7 characteristics simultaneously at all times. Identify the flaw.",
+    options: [
+      "The flaw is that unicellular organisms do not perform all seven characteristics",
+      "The flaw is that cells are not the basic unit of life — molecules are",
+      "There is no flaw — all living cells must perform all seven characteristics simultaneously",
+      "The flaw is that not all characteristics need to be expressed simultaneously (e.g., dormancy)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Characteristics of life are expressed across the **life cycle**. Dormancy allows suspension of some traits (like growth) without death."
+  },
+
+  // SECTION 5: THE MICROSCOPE — BASICS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of a microscope?",
+    options: [
+      "To allow people to view specimens in detail too small for the naked eye to see",
+      "To stain specimens with chemical dyes for preservation",
+      "To measure the chemical composition of biological specimens",
+      "To photograph specimens for publication in scientific journals"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "A microscope is an optical instrument used to view objects that are too small to be seen by the naked eye."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the difference between **magnification** and **resolution**?",
+    options: [
+      "Magnification is how detailed the image appears while resolution is how many times the object is enlarged",
+      "Magnification is how many times the object is enlarged while resolution is how detailed the image appears",
+      "Magnification and resolution are the same property measured in different units",
+      "Magnification applies only to light microscopes while resolution applies only to electron microscopes"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Magnification** = size increase. **Resolution** = clarity/detail (ability to distinguish two points)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why can cells only be studied under a microscope rather than with the naked eye?",
+    options: [
+      "Because cells are transparent and cannot be seen in any lighting condition",
+      "Because cells produce light that can only be detected by microscope lenses",
+      "Because cells are so minute that they fall below the resolution limit of the human eye",
+      "Because the naked eye cannot distinguish colour differences in cells"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Most cells are smaller than 0.1mm, which is the resolution limit of the human eye."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student uses a microscope and can see the outline of a cell clearly but cannot distinguish the individual organelles inside. What does this indicate?",
+    options: [
+      "The magnification is too low but the resolution is adequate",
+      "The resolution is too high and is distorting the image",
+      "The microscope has too much light, washing out the internal structures",
+      "The magnification may be sufficient to see the cell but the resolution is insufficient to distinguish fine details"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Seeing the whole cell means magnification is okay, but blurring of internal details indicates poor **resolution**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student argues that 10,000x magnification is always superior to 1,000x. Why is this flawed?",
+    options: [
+      "Magnification without adequate resolution produces a blurry image ('empty magnification') that reveals no new detail",
+      "Higher magnification is always better — the student is correct",
+      "10,000x magnification is impossible with any microscope",
+      "Magnification above 1,000x destroys biological specimens permanently"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Empty magnification** occurs when you enlarge an image without improving resolution. It just becomes a larger blur."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why can electron microscopes reveal finer details than light microscopes?",
+    options: [
+      "Electron microscopes use stronger lenses that magnify more powerfully",
+      "Electron microscopes use electron beams with much shorter wavelengths than light, dramatically improving resolving power",
+      "Electron microscopes eliminate the need for resolving power entirely",
+      "Electron microscopes use a larger specimen chamber"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Resolution** is limited by wavelength. Electrons have a much shorter wavelength than visible light, allowing for higher resolution."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Calculate the final magnification: 10x ocular lens and 40x objective lens.",
+    options: [
+      "Final magnification = 40x — only the objective lens determines total magnification",
+      "Final magnification = 50x — calculated by adding ocular and objective magnification",
+      "Final magnification = 400x — calculated by multiplying ocular (10) by objective (40)",
+      "Final magnification = 4x — calculated by dividing objective by ocular magnification"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Formula: $Mag_{total} = Mag_{ocular} \\times Mag_{objective}$. $10 \\times 40 = 400x$."
+  },
+
+  // SECTION 6: TYPES OF MICROSCOPES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which type of microscope is designed to reveal the **surface features** of a specimen?",
+    options: [
+      "Transmission Electron Microscope (TEM)",
+      "Bright-field microscope",
+      "Phase-contrast microscope",
+      "Scanning Electron Microscope (SEM)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**SEM** (Scanning Electron Microscope) scans the surface with electrons to create a 3D-like image of topography."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What distinguishes the Transmission Electron Microscope (TEM) from the Scanning Electron Microscope (SEM)?",
+    options: [
+      "TEM passes electrons through the specimen to reveal internal structures; SEM scans the surface",
+      "TEM uses light waves while SEM uses electron beams",
+      "TEM produces 3D images while SEM produces only 2D images",
+      "TEM is used for living specimens while SEM is used for preserved specimens only"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**TEM** = Transmission (Through/Internal). **SEM** = Scanning (Surface)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why does the Bright-field microscope require specimens to be fixed (dead) when staining is used?",
+    options: [
+      "Staining requires heat that kills cells",
+      "Staining requires fixing cells to hold the dye, which kills them; thus, living processes cannot be observed",
+      "Fixing is optional for all light microscopes and has no consequence",
+      "Staining only kills bacteria, not eukaryotic cells"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Staining improves contrast but **kills the cell**, meaning dynamic living processes cannot be watched in real-time."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A forensic scientist needs to examine the 3D surface texture of a pollen grain. Which microscope is best?",
+    options: [
+      "Bright-field microscope",
+      "TEM",
+      "SEM",
+      "Phase-contrast microscope"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "For **3D surface texture** and high resolution, the **Scanning Electron Microscope (SEM)** is the standard tool."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student states that Confocal and Bright-field microscopes produce identical images because both use light. Why is this wrong?",
+    options: [
+      "The Confocal microscope uses electrons, not light",
+      "Bright-field microscopes cannot use light — they use ultraviolet radiation",
+      "Both microscopes are identical — the student is correct",
+      "Confocal microscopes use lasers to scan single planes (optical sectioning) for sharp 3D reconstruction; Bright-field creates a blurrier image of the whole depth"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Confocal** microscopy uses lasers and pinholes to eliminate out-of-focus light, allowing for 3D reconstruction."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which light microscope is best for observing a **living, unstained** cell to see internal structures?",
+    options: [
+      "Phase-contrast or Differential Interference Contrast (DIC)",
+      "Bright-field",
+      "Fluorescence microscope",
+      "Dark-field"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Phase-contrast** exploits refractive index differences to create contrast in transparent, living specimens without killing stains."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student claims **Dark-field** microscopy is superior to all others. Evaluate this claim.",
+    options: [
+      "The claim is correct — dark-field is always the best choice",
+      "The claim is incorrect — Dark-field excels at revealing outlines against dark backgrounds but lacks the internal detail of phase-contrast",
+      "The claim is correct because dark backgrounds always improve image clarity",
+      "The claim is incorrect because dark-field microscopes do not use light"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "No microscope is universally 'best'. Dark-field is great for **edges** and **motility**, but poor for internal detail."
+  },
+
+  // SECTION 7: LIGHT MICROSCOPE STRUCTURE & FORMULA
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the maximum magnification a standard light microscope can achieve?",
+    options: [
+      "10,000 times normal size",
+      "250,000 times normal size",
+      "1,000 times normal size",
+      "100 times normal size"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Light microscopes are limited by the wavelength of light to roughly **1,000x** magnification."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the primary mechanism by which the light microscope produces a magnified image?",
+    options: [
+      "It uses a beam of electrons to interact with the specimen's surface",
+      "It uses laser point-scanning to generate sharp images of individual planes",
+      "It uses polarised light split into two beams to enhance contrast at structural edges",
+      "It uses a system of lenses to flood the specimen with light waves and produce an enlarged image"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Light microscopes use **glass lenses** to refract visible **light waves**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of the **condenser lens** in a light microscope?",
+    options: [
+      "It focuses and concentrates light onto the specimen before it passes through the objective lens",
+      "It enlarges the final image for the viewer's eye",
+      "It adjusts the colour temperature of the light source",
+      "It holds the specimen slide in position during viewing"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The **condenser** concentrates light onto the specimen. It does not magnify the image itself."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student needs 100x total magnification using a 10x ocular lens. Which objective lens should they select?",
+    options: [
+      "4x objective",
+      "10x objective",
+      "40x objective",
+      "100x objective"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "$100 = 10 \\times Objective$. Therefore, Objective = $10x$."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student calculates total magnification by adding 10x ocular and 100x objective (110x). Identify the error.",
+    options: [
+      "The student is correct — magnification values are added",
+      "The student is correct but used the wrong formula name",
+      "The student incorrectly added instead of multiplied. The correct total is 1,000x",
+      "The student should have subtracted: 100 − 10 = 90x"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Magnification is **multiplicative**, not additive. $10 \\times 100 = 1,000x$."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A microscope has 4x, 10x, and 40x objectives and a 10x ocular. Can a student achieve any magnification between 40x and 400x?",
+    options: [
+      "Yes — the student can select any magnification in that range",
+      "Yes — because the focusing knob adjusts magnification continuously",
+      "No — the maximum magnification of this microscope is 40x",
+      "No — magnification is discrete: only 40x, 100x, and 400x are possible"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Standard light microscopes offer **discrete steps** based on the fixed lenses available."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A structure is 0.5 μm. The light microscope resolution limit is 0.2 μm. Can the light microscope resolve it?",
+    options: [
+      "Yes — 0.5 μm is larger than the 0.2 μm limit, so it is resolvable",
+      "No — any structure under 1 μm requires an electron microscope",
+      "Either microscope is equally suitable",
+      "No — resolution limit only applies to electron microscopes"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Since the object (0.5 μm) is **larger** than the minimum resolution distance (0.2 μm), it can be distinguished."
+  },
+
+  // SECTION 8: ELECTRON MICROSCOPE
+  {
+    course: "BI110",
+    term: "T1",
+    q: "When was the electron microscope developed?",
+    options: [
+      "1665",
+      "1950s",
+      "1838",
+      "1884"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The electron microscope was developed in the **1950s**, revolutionising cell biology."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the key difference between light and electron microscope illumination?",
+    options: [
+      "Light microscopes use laser beams while electron microscopes use white light",
+      "Light microscopes use electrons while electron microscopes use photons",
+      "Light microscopes flood specimens with light waves; electron microscopes use a beam of electrons",
+      "Both microscopes use identical illumination"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The source of illumination is the defining difference: **Photons (light)** vs. **Electrons**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why can the electron microscope magnify up to 250,000x?",
+    options: [
+      "Because electron microscopes have more lenses",
+      "Because electron microscopes are physically larger",
+      "Because electron microscope specimens are stained more heavily",
+      "Because electrons have a much shorter wavelength than light, allowing far greater resolution"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Higher magnification is useless without resolution. The **short wavelength** of electrons allows for the high resolution needed."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which microscope is best for studying the **ultrastructure** (fine internal detail) of the endoplasmic reticulum?",
+    options: [
+      "TEM",
+      "Light microscope",
+      "SEM",
+      "Confocal microscope"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**TEM** (Transmission Electron Microscope) is the gold standard for **internal ultrastructure**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why can't electron microscopes be used to view living specimens?",
+    options: [
+      "Electron microscopes are too large",
+      "Living specimens move too quickly",
+      "The high vacuum and electron beam required kill biological specimens",
+      "Electron microscopes only work with metallic specimens"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The sample must be dehydrated and placed in a **vacuum**, which is incompatible with life."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "TEM contrast reflects internal density. SEM contrast reflects surface topology. What does this mean for application?",
+    options: [
+      "Both microscopes form images identically",
+      "TEM is used for surface features",
+      "TEM maps internal structure (organelles); SEM maps external shape and texture",
+      "SEM produces higher resolution than TEM"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The image formation mechanism dictates use: **TEM for inside**, **SEM for outside**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Match the tool: (1) Bacteria surface pili, (2) Mitochondrion internal cristae.",
+    options: [
+      "Both require TEM",
+      "Both require SEM",
+      "(1) TEM, (2) SEM",
+      "(1) SEM (surface), (2) TEM (internal)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Pili are **surface** features (SEM). Cristae are **internal** membranes (TEM)."
+  },
+
+  // SECTION 9: HISTORY OF CELL DISCOVERY
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Who first described cells and in what year?",
+    options: [
+      "Robert Hooke in 1665",
+      "Antonie van Leeuwenhoek in 1683",
+      "Matthias Schleiden in 1838",
+      "Rudolf Virchow in 1855"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Robert Hooke (1665)** coined the term 'cell' after looking at cork."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What did Robert Hooke observe and name?",
+    options: [
+      "Living bacteria ('animalcules')",
+      "Dead cork cells which he called 'cellulae' (small rooms)",
+      "Dividing cells in plant tissue",
+      "Animal tissue structures"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Hooke saw empty box-like compartments in dead cork and named them **cellulae**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why were Hooke's cells 'empty'?",
+    options: [
+      "Hooke emptied them",
+      "The microscope couldn't see contents",
+      "The cork was dead tissue, so the cytoplasm had disintegrated, leaving only walls",
+      "Plant cells have no cytoplasm"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Cork is **dead**. The living protoplasm dries up, leaving only the cellulose cell walls."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What did Leeuwenhoek's term 'animalcules' imply?",
+    options: [
+      "That microscopic organisms were plants",
+      "That he was studying bacteria only",
+      "That they were non-living",
+      "That they were 'little animals' — alive and motile"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Animalcules** means 'little animals'. He recognised they were alive because they moved."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Compare Hooke and Leeuwenhoek's contributions.",
+    options: [
+      "Leeuwenhoek was more significant because he saw LIVING cells, not just dead walls",
+      "Naming the structure (Hooke) was the only important part",
+      "Hooke was foundational, Leeuwenhoek was redundant",
+      "Neither was important"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Hooke discovered the **structure** (cell wall), but Leeuwenhoek discovered the **biology** (living microorganisms)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why was there a ~170 year gap between Hooke (1665) and Cell Theory (1838)?",
+    options: [
+      "Hooke was wrong",
+      "Scientific progress depends on technology and context; microscopes needed to improve before the universality of cells was understood",
+      "Scientists lost interest",
+      "Hooke hid his findings"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Observation precedes understanding. Better microscopes were needed to realize **all** life was cellular."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What does the history of the microscope reveal about biological discovery?",
+    options: [
+      "Technology is irrelevant",
+      "The microscope was invented for cells",
+      "Discovery is technology-limited; we can only know what we can observe",
+      "Hooke and Leeuwenhoek were unique geniuses"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Biological theory is often **gated by technology**. Without the microscope, the cell is invisible and thus unknown."
+  },
+
+  // SECTION 10: CELL THEORY
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which scientist concluded in 1838 that all plants are made of cells?",
+    options: [
+      "Theodore Schwann",
+      "Rudolf Virchow",
+      "Robert Hooke",
+      "Matthias Schleiden"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Schleiden (1838)** = Plants. Schwann (1839) = Animals."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What are the three principles of Cell Theory?",
+    options: [
+      "1. All organisms made of cells. 2. Cells are basic unit. 3. Cells come from pre-existing cells.",
+      "1. Organisms made of atoms. 2. Atoms are basic unit. 3. Atoms divide.",
+      "1. Organisms made of tissues. 2. Tissues from organs. 3. Organs from cells.",
+      "1. Cells discovered by Hooke. 2. Cells have DNA. 3. DNA controls division."
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The three pillars: **Composition**, **Unit of Life**, and **Reproduction**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is Cell Theory the foundation of modern biology?",
+    options: [
+      "It was the first theory",
+      "It establishes the cell as the universal unit of life, unifying genetics, physiology, and pathology",
+      "It explains chemical reactions",
+      "It replaced microscopes"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "It unifies biology by locating all life processes (metabolism, heredity) within the **cell**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What did Virchow (1855) contribute to Cell Theory?",
+    options: [
+      "First principle (all organisms made of cells)",
+      "Second principle (basic unit)",
+      "Third principle: Cells arise only from pre-existing cells (Omnis cellula e cellula)",
+      "He contradicted Cell Theory"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Virchow** observed cell division, adding the final principle: life is continuous, cells come from cells."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Do viruses refute Cell Theory?",
+    options: [
+      "No — viruses are exceptions",
+      "Yes — viruses are cells too small to see",
+      "Yes — Cell Theory only applies to multicellulars",
+      "No — viruses confirm Cell Theory because they cannot replicate without a host cell"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Viruses are obligate parasites. Their inability to reproduce independently confirms that the **cell** is the minimum unit of autonomous life."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why was unifying plants and animals under Cell Theory significant?",
+    options: [
+      "It showed that despite diversity, all life shares a common structural foundation",
+      "It was not significant",
+      "It helped taxonomy only",
+      "It proved cells are only in complex organisms"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It proved the **unity of life**. A moss and a man are built of the same fundamental blocks."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "If all cells come from cells, where did the first cell come from? How does biology handle this?",
+    options: [
+      "Biology ignores it",
+      "Cell Theory describes current reproduction; Abiogenesis describes the origin of the first cell from non-living matter",
+      "Supernatural creation",
+      "Spontaneous generation happens rarely"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Cell Theory** governs life *as it is now*. **Abiogenesis** is the separate study of life's origin."
+  },
+
+  // SECTION 11: PROKARYOTES vs EUKARYOTES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the defining structural difference between prokaryotes and eukaryotes?",
+    options: [
+      "Prokaryotes have a cell wall",
+      "Prokaryotes have a nucleus",
+      "Eukaryotes have a membrane-bound nucleus; Prokaryotes do not",
+      "Eukaryotes are always multicellular"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Eu-** (True) **Karyon** (Nucleus). The membrane-bound nucleus is the defining feature."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Compare the size of prokaryotes and eukaryotes.",
+    options: [
+      "Prokaryotes are larger",
+      "They are identical sizes",
+      "Eukaryotes are smaller",
+      "Eukaryotes (10-100 μm) are typically 10x larger than Prokaryotes (1-5 μm)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Eukaryotes are generally **much larger** and more complex."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Where is DNA located in each?",
+    options: [
+      "Eukaryotes: Nucleus (linear chromosomes). Prokaryotes: Nucleoid (circular DNA, no membrane).",
+      "Both: Cytoplasm",
+      "Prokaryotes: Nucleus. Eukaryotes: Nucleoid.",
+      "Both: Nucleoid"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Prokaryotic DNA is **naked and circular** in the cytoplasm. Eukaryotic DNA is **protected** in the nucleus."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Identify cell: 2 μm, no nucleus, divides by binary fission.",
+    options: [
+      "Eukaryote",
+      "Prokaryote",
+      "Eukaryote (complex)",
+      "Prokaryote (only because of size)"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Small size + No Nucleus + Binary Fission = **Prokaryote**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Can prokaryotes respire without mitochondria?",
+    options: [
+      "Yes — they have small mitochondria",
+      "No — they only ferment",
+      "Yes — they use enzymes embedded in their plasma membrane",
+      "No"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Prokaryotes use their **plasma membrane** to generate ATP, performing the same function without the organelle."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Compare flagella.",
+    options: [
+      "Identical",
+      "Eukaryotic are simpler",
+      "Prokaryotic only in Archaea",
+      "Prokaryotic: Simple propeller (spins). Eukaryotic: Complex whip (undulates)."
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Same function, completely different structure. **Propeller** vs. **Whip**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Prokaryotes have diverse metabolisms; Eukaryotes are limited. Why?",
+    options: [
+      "Eukaryotes are advanced",
+      "Prokaryotes are ancient and evolved diverse strategies over billions of years; Eukaryotes acquired specific traits later",
+      "Oxygen is useless",
+      "They are unrelated"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Metabolic diversity** reflects the ancient evolutionary history of prokaryotes."
+  },
+
+  // SECTION 12: PROKARYOTIC CELL STRUCTURE
+  {
+    course: "BI110",
+    term: "T1",
+    q: "In prokaryotes, where is the circular DNA located?",
+    options: [
+      "In the nucleoid (cytoplasm)",
+      "Inside the nucleus",
+      "In mitochondria",
+      "Attached to the cell wall"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The **nucleoid** is the irregular region in the cytoplasm where DNA sits. No membrane."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the bacterial cell wall made of?",
+    options: [
+      "Cellulose",
+      "Peptidoglycan",
+      "Lipids",
+      "It has no wall"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Peptidoglycan** is unique to bacteria and is a key target for antibiotics like penicillin."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How do prokaryotic populations grow?",
+    options: [
+      "Cells get bigger",
+      "Merging cells",
+      "Binary fission (doubling numbers)",
+      "Mitosis"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Growth in bacteria usually refers to **population growth** via binary fission, not individual size increase."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Bacteria divide every 30 mins. Start with 1. How many after 2 hours?",
+    options: [
+      "4",
+      "8",
+      "32",
+      "16"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "2 hours = 4 divisions. $1 \\to 2 \\to 4 \\to 8 \\to 16$. ($2^4 = 16$)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Are prokaryotes 'weak' because they are simple?",
+    options: [
+      "No — simplicity allows rapid reproduction and metabolic diversity, making them robust survivors",
+      "Yes — simple and resistant",
+      "Yes — susceptible",
+      "They are multicellular"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Structural simplicity is an **asset**, allowing fast replication and adaptation."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How does the domain classification (Bacteria vs Archaea) refine the term 'prokaryote'?",
+    options: [
+      "It doesn't",
+      "'Prokaryote' is a structural grade, not a single lineage; Archaea are closer to Eukaryotes genetically",
+      "Prokaryotes evolved from Eukaryotes",
+      "Archaea are Eukaryotes"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Archaea look like bacteria (prokaryotic structure) but behave more like eukaryotes chemically."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Binary fission vs Mitosis: What is the main structural difference?",
+    options: [
+      "Identical",
+      "Mitosis is simpler",
+      "Fission needs a nucleus",
+      "Fission relies on membrane attachment; Mitosis relies on a spindle apparatus"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Fission is simple (**membrane-based**). Mitosis is complex (**spindle-based**) to handle multiple chromosomes."
+  },
+
+  // SECTION 13: EUKARYOTIC CELL STRUCTURE
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which groups are Eukaryotic?",
+    options: [
+      "Plants, animals, fungi, protists",
+      "Bacteria and Archaea",
+      "Bacteria, plants, fungi",
+      "Animals and bacteria"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Eukarya** domain includes Plants, Animals, Fungi, and Protists."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the defining feature of eukaryotes?",
+    options: [
+      "Plasma membrane",
+      "Membrane-bound nucleus",
+      "Cytoplasm",
+      "Ribosomes"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The **nucleus** is the defining feature."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is the nucleus important for gene regulation?",
+    options: [
+      "It prevents protein synthesis",
+      "It is only in animal cells",
+      "It separates transcription (nucleus) from translation (cytoplasm), enabling complex regulation",
+      "It prevents division"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Separating DNA from the cytoplasm allows for **post-transcriptional modification**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Identify Cell A: 50 μm, nucleus, organelles. Identify Cell B: 1 μm, no nucleus.",
+    options: [
+      "A = Prokaryote, B = Eukaryote",
+      "Both Prokaryotes",
+      "Both Eukaryotes",
+      "A = Eukaryote, B = Prokaryote"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Large + Nucleus = **Eukaryote**. Small + No Nucleus = **Prokaryote**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Are plant and animal cells in different domains?",
+    options: [
+      "No — both are Eukaryotes sharing the nucleus and organelles",
+      "Yes — separate domains",
+      "Yes — animals are prokaryotic",
+      "Partially"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "They differ in kingdom (cell wall vs no wall), but both are **Eukaryotes**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the benefit of organelles (compartmentalization)?",
+    options: [
+      "Disadvantage",
+      "It allows incompatible reactions to occur simultaneously in isolated environments",
+      "Only beneficial in animals",
+      "Only for reproduction"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Specialized compartments (e.g., acidic lysosomes) allow diverse chemistry to happen at once."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What supports the Endosymbiotic Theory for mitochondria?",
+    options: [
+      "They are large",
+      "They produce oxygen",
+      "Double membrane, circular DNA, prokaryote-like ribosomes, binary fission",
+      "Only circular DNA"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Mitochondria look and act like **trapped bacteria**."
+  },
+
+  // SECTION 14 & 15: GRAM STAINING
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Who developed the Gram stain?",
+    options: [
+      "Hooke (1665)",
+      "Virchow (1855)",
+      "Schleiden (1838)",
+      "Hans Christian Gram (1884)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Hans Christian Gram** (1884)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the purpose of Gram staining?",
+    options: [
+      "To classify bacteria based on cell wall structure (Gram+ vs Gram-)",
+      "To kill bacteria",
+      "To measure size",
+      "To see them with naked eye"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It is a differential stain based on **cell wall thickness**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do colors differ in Gram staining?",
+    options: [
+      "Pigment production",
+      "Gram+ (thick peptidoglycan) retains purple; Gram- (thin) loses it and takes pink counterstain",
+      "Light absorption",
+      "Alcohol adds color"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Thick walls hold the dye complex against the alcohol wash."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Correct order of Gram stain steps:",
+    options: [
+      "1, 2, 3, 4",
+      "3, 2, 4, 1",
+      "2. Crystal Violet -> 3. Iodine -> 4. Alcohol -> 1. Safranin",
+      "2, 4, 3, 1"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Stain (Purple) -> Fix (Iodine) -> Wash (Alcohol) -> Counterstain (Pink)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "If you skip the alcohol step, what color will Gram-negative bacteria be?",
+    options: [
+      "Red",
+      "Colorless",
+      "Green",
+      "Purple"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Without decolorization, **everything** remains the initial purple color."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do Gram+ retain dye while Gram- lose it?",
+    options: [
+      "Alcohol dehydrates thick peptidoglycan in Gram+, trapping the dye. In Gram-, alcohol dissolves outer membrane and thin wall lets dye escape.",
+      "Chemical binding",
+      "Enzymes",
+      "Iodine reaction"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It is a physical mechanism: **Trapping** vs **Washing out**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is a Gram-negative infection often harder to treat?",
+    options: [
+      "They are harmless",
+      "They possess an Outer Lipid Membrane that acts as a barrier to many antibiotics",
+      "They need higher doses",
+      "Irrelevant"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The **outer membrane** excludes drugs like penicillin."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What color are Gram-positive bacteria?",
+    options: [
+      "Red/Pink",
+      "Yellow",
+      "Purple/Violet",
+      "Blue"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Gram **Positive** = **Purple**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Key structural difference in Gram-negative cell wall?",
+    options: [
+      "No wall",
+      "Identical",
+      "Thicker peptidoglycan",
+      "Thin peptidoglycan + Outer Lipid Membrane"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "The **Outer Membrane** is the signature of Gram-negatives."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why does the outer membrane provide protection?",
+    options: [
+      "It blocks antibiotic penetration",
+      "Hides cell",
+      "Stores nutrients",
+      "Increases fission"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It acts as a **selective barrier**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Patient has a Gram-negative (Pink) infection. Which antibiotic class?",
+    options: [
+      "Standard Penicillin",
+      "Broad-spectrum capable of penetrating the outer membrane",
+      "None",
+      "Any"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "You need a drug that can cross the **outer membrane**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Is the Gram stain clinically relevant?",
+    options: [
+      "No",
+      "Only for Gram+",
+      "Yes — it determines initial antibiotic choice",
+      "Only for identity"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "It is the first step in deciding therapy to ensure the drug fits the **cell wall type**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Role of Safranin?",
+    options: [
+      "Fixes dye",
+      "Removes dye",
+      "Baseline color",
+      "Counterstain: Makes colorless Gram-negative cells visible (pink)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Without Safranin, Gram-negatives would be **invisible**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why did Penicillin fail on a Gram-negative infection?",
+    options: [
+      "Outer membrane excluded the drug from reaching peptidoglycan",
+      "Irrelevant",
+      "No peptidoglycan",
+      "Low dose"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Penicillin targets the wall, but cannot get **through** the outer shield of Gram-negatives easily."
+  },
+
+  // SECTION 16: BINARY FISSION
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Primary division method of prokaryotes?",
+    options: [
+      "Mitosis",
+      "Binary Fission",
+      "Meiosis",
+      "Budding"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Binary Fission** (splitting in two)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Fission vs Mitosis structure?",
+    options: [
+      "Fission = 4 cells",
+      "Mitosis is faster",
+      "Fission has no spindle/nucleus; Mitosis is complex",
+      "Fission needs nucleus"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Fission is a simple split. Mitosis involves **nuclear** logistics."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Sequence of Binary Fission?",
+    options: [
+      "Cross wall -> DNA copy",
+      "Divide -> Copy",
+      "Spindle -> Split",
+      "DNA Replication -> Elongation -> Cross Wall -> Separation"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "You must copy the instructions (**DNA**) before building the wall."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Bacterial growth arithmetic?",
+    options: [
+      "Exponential (Doubling: 1, 2, 4, 8...)",
+      "One time only",
+      "Limited by death",
+      "Selective"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Population **doubles** every generation ($2^n$)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Does binary fission create genetic variety?",
+    options: [
+      "Yes",
+      "No — it produces clones (genetically identical)",
+      "Identical to sex",
+      "Only in Archaea"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "It is asexual. Daughter cells are **clones**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "E. coli (20 min gen time). 1 hour growth starting with 1 cell?",
+    options: [
+      "6",
+      "60",
+      "8 (1 -> 2 -> 4 -> 8)",
+      "3"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "3 generations. $2^3 = 8$."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How does evolution happen if fission produces clones?",
+    options: [
+      "Correction",
+      "Only sex",
+      "Never",
+      "Huge populations mean even rare mutations happen often, creating variation for selection"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Scale matters. **Billions of clones** + rare mutations = significant evolution."
+  },
+
+  // SECTION 17: INTEGRATION
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Identify: Gram-negative, circular DNA, peptidoglycan, binary fission.",
+    options: [
+      "Prokaryote (Bacterium)",
+      "Eukaryote",
+      "Fungi",
+      "Archaea"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "All signs point to **Bacteria** (Peptidoglycan is the key bacterial trait)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Integration: Cell Theory + Fission + Gram Stain in blood.",
+    options: [
+      "Unrelated",
+      "Active bacterial infection growing exponentially",
+      "Viral",
+      "Impossible"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Cells come from cells (Theory) + Fast doubling (Fission) + Presence (Stain) = **Urgent Infection**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Could Cell Theory exist without microscopes?",
+    options: [
+      "Yes",
+      "Yes (Ancient)",
+      "No — Theory follows Observation. Technology limits what we know.",
+      "No (Intelligence)"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "You cannot theorize about what you cannot **see**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Gram-negative + Mutation reducing outer membrane permeability. Result?",
+    options: [
+      "Gram-positive",
+      "No effect",
+      "Easier to treat",
+      "Extreme antibiotic resistance (Superbug)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Hard to penetrate + Even harder to penetrate = **Untreatable**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Organism: Gram+, No nucleus, 3 μm, Budding division (not fission).",
+    options: [
+      "Prokaryote with anomalous division",
+      "Standard bacteria",
+      "Yeast",
+      "Virus"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It has prokaryotic structure, but the division is weird. It's a **Prokaryote**, but an interesting one."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Antibiotic resistance demonstrates which life characteristics?",
+    options: [
+      "Evolution only",
+      "All: Sensitivity, Heredity, Growth, Evolution interact",
+      "Heredity only",
+      "None"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Life is integrated. Sensing threat, passing genes, growing population, and evolving happen **together**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Are Biology, Cell Theory, Microbiology, and Gram Staining connected?",
+    options: [
+      "No",
+      "Partial",
+      "Yes — A continuous chain of applied knowledge",
+      "Historical only"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Biology (Definition) -> Theory (Framework) -> Microbiology (Subject) -> Gram Stain (Tool)."
+  },
+  
+  // ============================================================
+  // === EXPANSION BANK: Q120 to Q193 ===
+  // ============================================================
+
+  // SECTION 18: CELL SIZE & SURFACE AREA
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the primary reason most cells are microscopic in size?",
+    options: [
+      "Cells cannot survive if they are visible to the naked eye",
+      "Cells are small because they evolved from microscopic organisms and never changed size",
+      "Small size is an accidental feature with no functional significance",
+      "The nucleus can only control a certain volume of active cytoplasm, and the surface area must be large enough relative to volume to allow sufficient nutrient entry"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Cell size is limited by two factors: nuclear control capacity and the **surface area-to-volume ratio** required for adequate nutrient exchange."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A large cell and a group of smaller cells have the same total volume. Why do the smaller cells have an advantage?",
+    options: [
+      "The group of smaller cells has a relatively larger total surface area, allowing more surface for nutrients to enter per unit volume",
+      "Smaller cells have a higher metabolic rate than larger cells",
+      "Larger cells cannot absorb nutrients at all",
+      "Smaller cells do not require nutrients"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Surface area** increases with the square of dimensions, while **volume** increases with the cube. Small cells maximize surface area relative to volume."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How does **Fick's Law** explain the limitation on cell size?",
+    options: [
+      "Fick's Law only applies to non-living systems",
+      "As a cell grows, the distance from the surface to the center increases, slowing diffusion; if surface area doesn't keep pace with volume, the cell starves",
+      "Larger cells have higher concentration differences, so they diffuse faster",
+      "Distance is irrelevant to diffusion in living cells"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Fick's Law shows diffusion rate is inversely proportional to **distance**. Large cells have too much internal distance for efficient diffusion."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Calculate SA:V ratio for a 1mm cube (SA=6, V=1) vs 2mm cube (SA=24, V=8). What does this imply?",
+    options: [
+      "Both cubes have the same SA:V ratio",
+      "The larger cube has a higher SA:V ratio",
+      "1mm cube ratio = 6:1; 2mm cube ratio = 3:1. The larger cell has half the efficiency at nutrient exchange per unit volume",
+      "The calculations are irrelevant to biology"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Doubling the size halves the **SA:V ratio** (6:1 vs 3:1). This geometric reality forces cells to remain small."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student argues: 'If a cell needs more nutrients, it should just grow larger to have more surface area.' Identify the flaw.",
+    options: [
+      "The argument is correct",
+      "Larger cells cannot absorb nutrients",
+      "Nutrients cannot enter through the surface",
+      "The flaw is that surface area increases more slowly than volume; demand (volume) outpaces supply (surface area)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Demand is proportional to **volume** (cubed), but supply is proportional to **surface area** (squared). Growth creates a supply deficit."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How do large cells like liver cells adapt to the SA:V constraint?",
+    options: [
+      "They utilize extensive membrane infoldings (microvilli) to increase surface area without increasing volume proportionally",
+      "They ignore the constraint",
+      "They divide constantly",
+      "They lower their metabolism to zero"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Cells adapt via **structural modifications** like microvilli or flattened shapes to maximise surface area."
+  },
+
+  // SECTION 19: CELL SHAPE
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do neurons (nerve cells) have long, thin extensions?",
+    options: [
+      "To store more neurotransmitters",
+      "To transmit signals over long distances while maintaining rapid communication",
+      "Because they divide frequently",
+      "To increase nutrient absorption"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Cell shape follows function. Long extensions allow **rapid signal transmission** over distance."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why are red blood cells shaped like rounded disks?",
+    options: [
+      "To maximize hemoglobin storage",
+      "To divide easily",
+      "To deform and flow smoothly through narrow capillaries without getting stuck",
+      "To prevent oxygen carriage"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The biconcave disk shape provides **flexibility** to squeeze through capillaries narrower than the cell itself."
+  },
+
+  // SECTION 20: MEMBRANE STRUCTURE
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the basic structure of the cell membrane?",
+    options: [
+      "A rigid protein layer",
+      "A single layer of phospholipids",
+      "A cellulose mesh",
+      "A fluid mosaic of proteins floating in a phospholipid bilayer"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Fluid Mosaic Model**: A dynamic bilayer of phospholipids with embedded, floating proteins."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What makes the phospholipid bilayer form spontaneously in water?",
+    options: [
+      "Hydrophilic heads face water; hydrophobic tails face away, sandwiching themselves in the middle",
+      "Covalent bonds between lipids",
+      "Water repels all phospholipids",
+      "Proteins push them into place"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The **amphipathic** nature (water-loving heads, water-fearing tails) drives spontaneous self-assembly."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is the cell membrane described as 'fluid'?",
+    options: [
+      "It is made of water",
+      "Phospholipids and proteins can move laterally, drifting and changing places",
+      "It dissolves in water",
+      "The cell moves"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Fluidity** refers to the lateral movement of components within the membrane layer."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "If you chemically prevented phospholipids from moving, what would happen?",
+    options: [
+      "No effect",
+      "The cell would divide immediately",
+      "The membrane would become rigid, impairing protein function, vesicle fusion, and membrane repair",
+      "Permeability would increase"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Fluidity is essential for **function**, including transport, fusion, and repair."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A student claims the membrane is static once formed. Identify the error.",
+    options: [
+      "The student is correct",
+      "Membranes are made of protein only",
+      "Membranes are identical in all cells",
+      "The error is that membranes are dynamic; they are constantly formed, broken down, and components are in motion"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Membranes are **dynamic** structures, constantly remodeled and moving."
+  },
+
+  // SECTION 21: MEMBRANE PROTEINS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What are the two main types of membrane proteins based on position?",
+    options: [
+      "Peripheral (surface) and Integral (embedded in bilayer)",
+      "Thick and Thin",
+      "Structural and Enzymatic",
+      "Outer and Inner"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Classification is by **position**: Embedded (Integral) vs. Attached to surface (Peripheral)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of carrier proteins embedded in the bilayer?",
+    options: [
+      "Structural support",
+      "They transport specific substances across the membrane (facilitated diffusion or active transport)",
+      "Phospholipid synthesis",
+      "Cell adhesion"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Carrier proteins** act as gates or pumps to move molecules that cannot pass through the lipid bilayer."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How do surface proteins contribute to cell identification?",
+    options: [
+      "They pump out waste",
+      "They produce ATP",
+      "They have carbohydrates attached (glycoproteins) acting as antigens (e.g., blood types)",
+      "They form water channels"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Glycoproteins** act as ID tags (Antigens), allowing the immune system to recognize 'self' vs 'foreign'."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why does a Type A patient react to Type B blood transfusion?",
+    options: [
+      "Type A blood lacks a membrane",
+      "Carrier proteins are different",
+      "Blood type is cytoplasmic",
+      "Type B cells have B-antigens on their surface, which the Type A recipient's immune system recognizes as foreign and attacks"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "This is a clinical example of **membrane antigens** determining compatibility."
+  },
+
+  // SECTION 22: NUCLEUS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the nuclear envelope?",
+    options: [
+      "A double membrane surrounding the nucleus with nuclear pores",
+      "The outer cell boundary",
+      "A single phospholipid layer",
+      "The site of protein synthesis"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The nucleus is encased in a **double membrane** perforated by pores."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of nuclear pores?",
+    options: [
+      "To allow nuclear division",
+      "To permit passage of mRNA and proteins between nucleus and cytoplasm",
+      "To synthesize ribosomes",
+      "To store DNA"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Pores act as **gateways** for mRNA export and protein import."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What happens to the nucleolus during cell division?",
+    options: [
+      "It doubles in size",
+      "It moves to the cytoplasm",
+      "It disappears (disperses) as ribosome synthesis halts",
+      "It becomes the cell membrane"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The nucleolus is an active manufacturing site; it **disappears** when the cell shuts down production to divide."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A cell has multiple nuclei. What is this condition called?",
+    options: [
+      "Typical animal cell",
+      "Bacterial cell",
+      "Plant cell",
+      "Coenocytic or multinucleate (e.g., fungi, skeletal muscle)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Coenocytic** cells share a common cytoplasm with multiple nuclei."
+  },
+
+  // SECTION 23: MITOCHONDRIA
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the primary function of mitochondria?",
+    options: [
+      "Aerobic respiration — transferring energy from organic compounds to ATP",
+      "Protein synthesis",
+      "Lipid storage",
+      "DNA replication"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Mitochondria are the **powerhouse** of the cell, generating ATP via aerobic respiration."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do muscle and heart cells have many mitochondria?",
+    options: [
+      "They are large cells",
+      "They have high energy requirements and need substantial ATP",
+      "They cannot use glucose",
+      "They divide frequently"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Mitochondrial density correlates with **metabolic demand**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of cristae?",
+    options: [
+      "Calcium storage",
+      "Attach cytoskeleton",
+      "To greatly increase the surface area of the inner membrane, providing more space for ATP synthesis",
+      "Protein packaging"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Cristae** (folds) maximize the surface area available for the electron transport chain."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "A drug damages the inner mitochondrial membrane. What process stops?",
+    options: [
+      "Protein synthesis",
+      "DNA replication",
+      "Lipid storage",
+      "ATP production (Aerobic respiration)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "The machinery for ATP production sits on the **inner membrane**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Can cells make mitochondria from scratch?",
+    options: [
+      "No — they are semi-autonomous; new mitochondria arise only from the division of existing ones",
+      "Yes",
+      "No — they are nuclear structures",
+      "Only in plants"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Mitochondria must **divide** to reproduce, supporting their bacterial origin."
+  },
+
+  // SECTION 24: RIBOSOMES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the function of ribosomes?",
+    options: [
+      "ATP production",
+      "Protein synthesis",
+      "Lipid synthesis",
+      "DNA storage"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Ribosomes are the site of **protein synthesis** (Translation)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Difference between 70S and 80S ribosomes?",
+    options: [
+      "70S in eukaryotes; 80S in prokaryotes",
+      "70S synthesize lipids; 80S synthesize proteins",
+      "70S found in prokaryotes/mitochondria; 80S found in eukaryotic cytoplasm (larger)",
+      "No difference"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**70S** are prokaryotic (and organellar). **80S** are larger and eukaryotic."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is a polysome?",
+    options: [
+      "Mitochondria group",
+      "Single large ribosome",
+      "Ribosome on nucleus",
+      "A group of ribosomes working together to translate the same mRNA simultaneously"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Polysomes** increase efficiency by manufacturing multiple protein copies from one mRNA strand at once."
+  },
+
+  // SECTION 25: ENDOPLASMIC RETICULUM
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Primary function of the ER?",
+    options: [
+      "Internal transport system allowing molecules to move from one part of the cell to another",
+      "ATP synthesis",
+      "Protein digestion",
+      "Cell division"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The ER acts as the cell's **transport network**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Distinguish Rough ER from Smooth ER.",
+    options: [
+      "Rough ER is found only in plants",
+      "Rough ER has ribosomes (protein synthesis); Smooth ER lacks ribosomes (lipid synthesis, detox)",
+      "Rough ER synthesizes ATP",
+      "Rough ER is nuclear"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Rough** = Ribosomes/Proteins. **Smooth** = No Ribosomes/Lipids/Detox."
+  },
+
+  // SECTION 26: GOLGI & LYSOSOMES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Primary function of Golgi apparatus?",
+    options: [
+      "ATP production",
+      "Protein synthesis",
+      "Processing, packaging, and secreting cellular products",
+      "DNA replication"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Golgi is the **post office**: modifies, packages, and ships proteins."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "How are lysosomes formed?",
+    options: [
+      "Imported from outside",
+      "Synthesized by ribosomes",
+      "Modified mitochondria",
+      "They bud off from the Golgi apparatus"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Lysosomes are vesicles containing enzymes that pinch off from the **Golgi**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why are lysosomes rare in plant cells?",
+    options: [
+      "Plants use their central vacuole for digestion and waste management",
+      "Plants don't digest anything",
+      "Cell walls prevent them",
+      "They are toxic to plants"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The **Central Vacuole** in plants performs the lysosomal function."
+  },
+
+  // SECTION 27: CYTOSKELETON
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Function of the cytoskeleton?",
+    options: [
+      "ATP production",
+      "Maintaining cell shape, enabling movement, and serving as tracks for organelle transport",
+      "Protein synthesis",
+      "DNA storage"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "It provides **structure** and **motility**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Two main components of the cytoskeleton?",
+    options: [
+      "Rough and Smooth ER",
+      "Mitochondria and Chloroplasts",
+      "Microfilaments (actin) and Microtubules (tubulin)",
+      "Nucleus and Ribosomes"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Actin** filaments (contractile) and **Microtubules** (rigid tracks)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Function of the centriole during division?",
+    options: [
+      "Synthesizes ATP",
+      "Replicates DNA",
+      "Forms membrane",
+      "Organizes the spindle fibers to pull chromosomes apart"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Centrioles organize the **spindle apparatus** for chromosome segregation."
+  },
+
+  // SECTION 28: CILIA & FLAGELLA
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Difference between Cilia and Flagella?",
+    options: [
+      "Cilia are short, numerous, hair-like; Flagella are long, few, whip-like",
+      "Cilia are long; Flagella are short",
+      "Cilia in plants only",
+      "No difference"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Structural variants of the same organelle: **Cilia** (many/short) vs **Flagella** (few/long)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the '9 + 2' arrangement?",
+    options: [
+      "9 proteins and 2 lipids",
+      "9 outer microtubule doublets surrounding 2 central microtubules",
+      "9 mitochondria and 2 nuclei",
+      "9 cilia per flagellum"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The universal **microtubule architecture** of eukaryotic cilia and flagella."
+  },
+
+  // SECTION 29: PLANT CELL SPECIFICS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Three structures found in plant cells but not animal cells?",
+    options: [
+      "Mitochondria, Ribosomes, Nucleus",
+      "Cilia, Flagella, Centrioles",
+      "Cellulose cell walls, Chloroplasts, Central vacuole",
+      "Lysosomes, Golgi, ER"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "The classic trio: **Wall**, **Chloroplast**, **Vacuole**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Difference between Primary and Secondary cell walls?",
+    options: [
+      "Primary is chitin; Secondary is cellulose",
+      "Primary in roots; Secondary in leaves",
+      "No difference",
+      "Primary is flexible (growth); Secondary is rigid/lignified (support) and forms after growth stops"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Primary allows **growth**; Secondary provides **strength** (often in dead cells)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Function of the large central vacuole?",
+    options: [
+      "Storage of organic molecules/waste and structural support via turgor pressure",
+      "ATP production",
+      "Protein synthesis",
+      "Cell division"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "It stores **waste** and provides **hydrostatic skeleton** (turgor)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why do plants store insoluble waste in the vacuole?",
+    options: [
+      "They have no need to excrete",
+      "Because plants lack an excretory system; storing waste insolubly prevents toxicity until leaves fall",
+      "Waste is nutritious",
+      "Vacuoles cannot store soluble items"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Without kidneys, plants sequester waste in **vacuoles**."
+  },
+
+  // SECTION 30: LEVELS OF ORGANIZATION
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Levels of organization from simplest to complex?",
+    options: [
+      "Organ -> Tissue -> Cell -> System",
+      "Cell -> Organ -> Tissue -> System",
+      "Cell -> Tissue -> Organ -> Organ System",
+      "Molecule -> Cell -> Tissue -> Organism"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Cells** make **Tissues** make **Organs** make **Systems**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Distinguish colonial organisms from true multicellular ones.",
+    options: [
+      "Colonial are unicellular",
+      "They are identical",
+      "Colonial are plants",
+      "Colonial organisms exhibit cell specialization but lack true tissues and organs"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Colonial is the **middle ground**: specialized cells, but no tissues."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why are colonial organisms evolutionary 'border' cases?",
+    options: [
+      "Because they have specialized cells (multicellular trait) but lack tissues (unicellular trait)",
+      "They alternate forms",
+      "They cannot reproduce",
+      "They are half plant/half animal"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "They represent the bridge between **independence** and **interdependence**."
+  },
+
+  // SECTION 31: ADVANCED DISCIPLINES
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is Histology?",
+    options: [
+      "Study of plant chemicals",
+      "A technique/methodology for the microscopic examination of tissues",
+      "Animal behavior",
+      "Study of fungi"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Histology** is the study of tissues."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Distinguish Histology from Histochemistry.",
+    options: [
+      "Identical",
+      "Histology studies plants; Histochemistry studies animals",
+      "Histology studies tissues; Histochemistry uses dyes to identify chemical components within tissues",
+      "Microscope difference"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Histochemistry** adds chemical identification (staining) to histology."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What does Cytology study?",
+    options: [
+      "Plant chemicals",
+      "Ecology",
+      "Internal organs",
+      "Structure, function, and division of cells"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Cytology** is Cell Biology."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is Physiology?",
+    options: [
+      "The study of biological processes and functions within organisms (e.g., respiration, photosynthesis)",
+      "Study of form",
+      "Genetics",
+      "Microbiology"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Physiology studies **how it works** (function/process)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Physiology covers photosynthesis, respiration, and fear responses. What does this show?",
+    options: [
+      "It is limited to plants",
+      "It spans all life (autotrophic, heterotrophic, behavioral) — describing function at all levels",
+      "Unrelated examples",
+      "Only abnormal conditions"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Physiology is universal, covering **biochemical** to **behavioral** functions."
+  },
+
+  // SECTION 32: ECOLOGY TERMS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Synecology vs Autecology?",
+    options: [
+      "Plants vs Animals",
+      "Microscope vs Field",
+      "Synecology = Communities; Autecology = Individual Species",
+      "Identical"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "**Syn-** (Together/Community) vs **Auto-** (Self/Individual)."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Define Ecosystem vs Habitat.",
+    options: [
+      "Synonyms",
+      "Ecosystem = Living only; Habitat = Non-living",
+      "Ecosystem = Microscope type",
+      "Ecosystem = Biotic + Abiotic components; Habitat = The specific locality occupied by an organism"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Ecosystem** is the system; **Habitat** is the address."
+  },
+
+  // SECTION 33: PHYTOCHEMISTRY
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What does Phytochemistry study?",
+    options: [
+      "Chemical compounds synthesized by plants (alkaloids, lipids, etc.)",
+      "Plant distribution",
+      "Plant anatomy",
+      "Plant ecology"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "**Phyto-** (Plant) **Chemistry**."
+  },
+
+  // SECTION 34: PROKARYOTE DETAILS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Which groups are Prokaryotic?",
+    options: [
+      "Bacteria only",
+      "Bacteria and Blue-green algae (Cyanobacteria)",
+      "Bacteria and Fungi",
+      "Protists"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Cyanobacteria** (Blue-green algae) are prokaryotes."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What storage granules are found in prokaryotes?",
+    options: [
+      "Starch",
+      "Lipids only",
+      "Glycogen and poly-β-hydroxybutyric acid (PHB)",
+      "Chlorophyll"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Bacteria store carbon as **Glycogen** or **PHB**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What sugars make up Peptidoglycan?",
+    options: [
+      "Glucose/Fructose",
+      "Ribose/Deoxyribose",
+      "Sucrose/Lactose",
+      "N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**NAG** and **NAM** form the backbone of the bacterial wall."
+  },
+
+  // SECTION 35: PLANT WALL ADVANCED
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Where is Cellulose Synthase located?",
+    options: [
+      "In the plasma membrane",
+      "Nucleus",
+      "Golgi",
+      "Vacuole"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "The enzyme sits in the **membrane**, spinning cellulose out into the wall."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is Lignin?",
+    options: [
+      "Storage sugar",
+      "Rigid polymer saturating xylem/sclerenchyma for mechanical support",
+      "Pigment",
+      "Membrane protein"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Lignin** provides hardness and waterproofing (woodiness)."
+  },
+
+  // SECTION 36: PLASMODESMATA & LAMELLA
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What are Plasmodesmata?",
+    options: [
+      "Photosynthetic organelles",
+      "Storage structures",
+      "Minute channels connecting plant cell cytoplasms for transport",
+      "Plastids"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Cytoplasmic **bridges** between plant cells."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "What is the Middle Lamella made of?",
+    options: [
+      "Lignin",
+      "Plasma membrane",
+      "Organelle",
+      "Pectin (acts as glue between cells)"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "**Pectin** glues plant cells together."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is Pectin hydrophilic?",
+    options: [
+      "It attracts water, creating a hydrated, flexible matrix allowing wall plasticity/growth",
+      "It repels water",
+      "It dissolves the wall",
+      "It transports water"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Hydration keeps the wall **flexible** for growth."
+  },
+
+  // SECTION 37: FUNGI
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Composition of Fungal cell walls?",
+    options: [
+      "Cellulose",
+      "Chitin + Carbohydrates",
+      "Peptidoglycan",
+      "Lignin"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "**Chitin** (nitrogenous polysaccharide) defines fungal walls."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Chemical nature of Chitin?",
+    options: [
+      "Glucose polymer",
+      "Lipid",
+      "Polymer of Glucosamine (amino-sugar) and acetic acid",
+      "Protein"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Chitin contains **Nitrogen**, unlike cellulose."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Cell walls of lower fungi?",
+    options: [
+      "Peptidoglycan",
+      "No wall",
+      "Lignin",
+      "Cellulose masked by Chitin"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Evolutionary transition: from **cellulose** to **chitin**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Fungal nutrition?",
+    options: [
+      "Heterotrophic (Saprophytic/Parasitic); Non-photosynthetic (No chloroplasts)",
+      "Photosynthetic",
+      "Chemosynthetic",
+      "Have chloroplasts"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Fungi are **absorptive heterotrophs**."
+  },
+
+  // SECTION 38: PLANT vs ANIMAL
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Are lysosomes found in plant cells?",
+    options: [
+      "Yes",
+      "Technically rare/absent; the Central Vacuole performs the lysosomal function (digestion/waste)",
+      "More than animals",
+      "Plants don't digest"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "The **Vacuole** takes the job."
+  },
+
+  // SECTION 39: MICROSCOPY DETAILS
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Two main features of a microscope?",
+    options: [
+      "Cost/Size",
+      "Light/Lens",
+      "Magnification and Resolving Power",
+      "Color/Brand"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "To see small things clearly, you need to **enlarge** them and **resolve** detail."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "TEM has 'worse' resolution numbers (0.4nm) than SEM (0.05nm) in some texts, yet is used for internal detail. Why?",
+    options: [
+      "Numbers are wrong",
+      "TEM cannot see surfaces",
+      "SEM is always better",
+      "Application differs: TEM's transmission mode reveals internal structure, which SEM's surface scan cannot, regardless of raw numbers"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Usage depends on **mode** (Through vs Surface), not just specs."
+  },
+
+  // SECTION 40: INTEGRATION
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Identify: Chitin wall, Heterotrophic, Coenocytic, No lysosomes.",
+    options: [
+      "Fungus",
+      "Bacterium",
+      "Plant",
+      "Protist"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Chitin + Heterotroph = **Fungus**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Integration of Plant Systems: Pectin, Plasmodesmata, Cellulose, Lignin.",
+    options: [
+      "Unrelated",
+      "Integrated system: Pectin (glue), Plasmodesmata (comms), Cellulose (growth/strength), Lignin (rigid support)",
+      "Only cellulose matters",
+      "Plasmodesmata replace pectin"
+    ],
+    correct: 1, // Pattern: B
+    explanation: "Together they allow **multicellularity**, **communication**, and **upright growth**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why is 'Prokaryotes and Fungi are related because both have walls' flawed?",
+    options: [
+      "They are related",
+      "Fungi have peptidoglycan",
+      "Convergent Evolution: Different chemistry (Peptidoglycan vs Chitin), different structure (Prok vs Euk). Analogous, not homologous.",
+      "Same kingdom"
+    ],
+    correct: 2, // Pattern: C
+    explanation: "Similar trait, different origin = **Convergent Evolution**."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Why are plant cell walls so complex compared to bacteria?",
+    options: [
+      "Later evolution",
+      "Random",
+      "More genes",
+      "Lifestyle demands: Multicellularity (adhesion/comms) and Land Colonization (upright support) drove complexity"
+    ],
+    correct: 3, // Pattern: D
+    explanation: "Complexity is driven by **adaptation** to land and multicellular life."
+  },
+  {
+    course: "BI110",
+    term: "T1",
+    q: "Order by scale (Small to Large): Cytology, Histology, Anatomy, Ecology, Biogeography.",
+    options: [
+      "Cytology -> Histology -> Anatomy -> Ecology -> Biogeography",
+      "Ecology -> Cytology -> Anatomy",
+      "Reversed",
+      "Anatomy first"
+    ],
+    correct: 0, // Pattern: A
+    explanation: "Cell -> Tissue -> Organ -> Organism/Environment -> Global Distribution."
+  },
   // Questions for MICROSCOPY & STAINING
   {
     "q": "Which of the following historical figures is credited with the discovery of the first simple microscope?",
