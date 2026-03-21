@@ -684,7 +684,7 @@ function blockDemo(type) {
     
     const key = `demo_${type}_used_${currentTermKey}`;
     let attempts = parseInt(localStorage.getItem(key) || "0");
-    const maxAttempts = 1;
+    const maxAttempts = 5;
     const attemptsLeft = maxAttempts - attempts;
     
     if (attempts < maxAttempts) {
