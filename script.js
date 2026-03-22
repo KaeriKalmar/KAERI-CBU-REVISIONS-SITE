@@ -1,4 +1,3 @@
-
 // ============================================================
 // === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.9 MERGED) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
@@ -684,7 +683,7 @@ function blockDemo(type) {
     
     const key = `demo_${type}_used_${currentTermKey}`;
     let attempts = parseInt(localStorage.getItem(key) || "0");
-    const maxAttempts = 5;
+    const maxAttempts = 10;
     const attemptsLeft = maxAttempts - attempts;
     
     if (attempts < maxAttempts) {
@@ -1427,54 +1426,10 @@ function calculateNextReview(topic, cardIndex, quality) {
 }
 
 // ============================================================
-// === 8. FLASHCARD ENGINE - HYBRID MASTER (SMART SCROLL + BRAND UI) ===
+// === 8. FLASHCARD ENGINE - HYBRID MASTER (LINEAR + SRS) ===
 // ============================================================
 
-// --- 1. SMART STYLE INJECTOR (New: Handles Scrolling) ---
-function injectSmartStyles() {
-    if (document.getElementById('kaeri-smart-styles')) return;
-    
-    const style = document.createElement('style');
-    style.id = 'kaeri-smart-styles';
-    style.innerHTML = `
-        /* Fixed Height Context to allow scrolling inside cards */
-        .flashcard-wrapper {
-            height: 60vh; 
-            min-height: 300px;
-            max-height: 500px;
-            perspective: 1000px;
-            margin-bottom: 20px;
-        }
-        /* Vertical Scroll for Text */
-        .card-face {
-            overflow-y: auto;
-            overflow-x: hidden;
-            scrollbar-width: thin;
-            scrollbar-color: #3e506e transparent;
-            -webkit-overflow-scrolling: touch;
-            padding-right: 5px;
-        }
-        /* Horizontal Scroll for Long Math */
-        .katex-display {
-            overflow-x: auto !important;
-            overflow-y: hidden;
-            max-width: 100%;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(114, 239, 221, 0.1); 
-        }
-        /* Scrollbar Styling */
-        .card-face::-webkit-scrollbar, .katex-display::-webkit-scrollbar {
-            width: 6px; height: 6px;
-        }
-        .card-face::-webkit-scrollbar-thumb, .katex-display::-webkit-scrollbar-thumb {
-            background-color: #3e506e; border-radius: 3px;
-        }
-        .katex-display::-webkit-scrollbar-thumb { background-color: #007bff; }
-    `;
-    document.head.appendChild(style);
-}
-
-// --- 2. TOPIC SELECTION & MODE CHOICE ---
+// --- TOPIC SELECTION & MODE CHOICE ---
 function renderFlashcardTopics() {
     const container = document.getElementById("quiz-form");
     container.innerHTML = "";
@@ -1487,12 +1442,10 @@ function renderFlashcardTopics() {
         return;
     }
 
-    // Main Header: Pure White
     const header = document.createElement("h2");
     header.innerText = "Select Flashcard Topic";
     header.style.textAlign = "center";
     header.style.marginBottom = "25px";
-    header.style.color = "#ffffff"; 
     container.appendChild(header);
 
     const listDiv = document.createElement('div');
@@ -1524,97 +1477,108 @@ function showFlashcardModeSelection(topic) {
         if (srs.isNew || srs.dueDate <= now) dueCount++;
     });
 
-    // BRAND UI: Consistent colors
+    // Render Choice Menu
     container.innerHTML = `
         <div style="text-align: center; animation: fadeIn 0.3s;">
-            <h2 style="margin-bottom: 10px; color: #ffffff;">🗂️ ${topic}</h2>
-            <p style="margin-bottom: 25px; color: #a0a8b4;">Select your study mode:</p>
+            <h2 style="margin-bottom: 10px; color: white;">🗂️ ${topic}</h2>
+            <p style="color: #a0a8b4; margin-bottom: 25px;">Choose your study method:</p>
 
             <div style="display: flex; flex-direction: column; gap: 15px; max-width: 450px; margin: 0 auto;">
                 
-                <!-- OPTION 1: LINEAR (Review Mode) -->
+                <!-- OPTION 1: LINEAR (Review All) -->
                 <button onclick="startFlashcards('${topic}', 'linear')" 
-                    style="background: #1a1a2e; border: 2px solid #007bff; padding: 20px; border-radius: 12px; text-align: left; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                    style="background: #1e2a3a; border: 2px solid #72efdd; padding: 20px; border-radius: 12px; text-align: left; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <span style="font-size: 2em;">📖</span>
                         <div>
-                            <div style="font-size: 1.1em; color: #ffffff; font-weight: bold;">Standard Review</div>
-                            <div style="font-size: 0.9em; color: #a0a8b4; margin-top: 5px;">Review all <strong>${totalCards}</strong> cards in order.</div>
+                            <div style="font-size: 1.2em; color: white; font-weight: bold;">Standard Review</div>
+                            <div style="font-size: 0.9em; color: #a0a8b4; margin-top: 5px;">Review all <strong>${totalCards}</strong> cards in order. Perfect for cramming before a test.</div>
                         </div>
                     </div>
                 </button>
 
-                <!-- OPTION 2: SRS (Smart Mode) -->
+                <!-- OPTION 2: SRS (Smart) -->
                 <button onclick="startFlashcards('${topic}', 'srs')" 
-                    style="background: #1a1a2e; border: 2px solid #28a745; padding: 20px; border-radius: 12px; text-align: left; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                    style="background: #1e2a3a; border: 2px solid #ffc107; padding: 20px; border-radius: 12px; text-align: left; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <span style="font-size: 2em;">🧠</span>
                         <div style="flex: 1;">
                             <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="font-size: 1.1em; color: #ffffff; font-weight: bold;">Smart SRS Mode</span>
-                                <span style="background: ${dueCount > 0 ? '#ffc107' : '#28a745'}; color: #333; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;">${dueCount} Due</span>
+                                <span style="font-size: 1.2em; color: white; font-weight: bold;">Smart SRS Mode</span>
+                                <span style="background: ${dueCount > 0 ? '#ffc107' : '#28a745'}; color: #000; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;">${dueCount} Due</span>
                             </div>
-                            <div style="font-size: 0.9em; color: #a0a8b4; margin-top: 5px;">Focus on retention (Spaced Repetition).</div>
+                            <div style="font-size: 0.9em; color: #a0a8b4; margin-top: 5px;">Algorithm-based. Focus only on what you are about to forget.</div>
                         </div>
                     </div>
                 </button>
 
             </div>
             
-            <button class="back-button" style="margin-top: 30px; background: transparent; color: #888; border: 1px solid #3e506e; padding: 10px 25px; border-radius: 20px;" onclick="renderFlashcardTopics()">Cancel</button>
+            <button class="back-button" style="margin-top: 30px; background: transparent; color: #888; border: 1px solid #3e506e; padding: 10px 20px; border-radius: 20px;" onclick="renderFlashcardTopics()">Cancel</button>
         </div>
     `;
 }
 
-// --- 3. INITIALIZATION LOGIC ---
+// --- INITIALIZATION LOGIC ---
 function startFlashcards(topic, mode) {
     currentFlashcardTopic = topic;
-    currentFlashcardMode = mode;
+    currentFlashcardMode = mode; // Store mode
     currentCardIndex = 0;
     isCardFront = true;
     
     const allCards = currentFlashcardTopics[topic];
 
     if (mode === 'srs') {
+        // --- SRS PATH: Filter & Sort ---
         srsQueue = [];
         const now = Date.now();
         allCards.forEach((card, originalIndex) => {
             const srs = getCardSRS(topic, originalIndex);
             if (srs.isNew || srs.dueDate <= now) {
-                srsQueue.push({ ...card, originalIndex: originalIndex, srsData: srs });
+                srsQueue.push({
+                    ...card,
+                    originalIndex: originalIndex,
+                    srsData: srs
+                });
             }
         });
 
+        // If no cards due
         if (srsQueue.length === 0) {
             const container = document.getElementById("quiz-form");
             container.innerHTML = `
             <div style="text-align: center; animation: fadeIn 0.5s;">
                 <h2 style="font-size: 3em; margin-bottom: 10px;">🎉</h2>
                 <h2 style="color: #28a745;">You're Caught Up!</h2>
-                <p style="color: #a0a8b4; max-width: 400px; margin: 10px auto;">You have no cards due for review right now.</p>
+                <p style="color: #a0a8b4; max-width: 400px; margin: 10px auto;">You have no cards due for review right now in SRS mode.</p>
                 <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
-                    <button class="restart-button" style="background-color: #007bff;" onclick="startFlashcards('${topic}', 'linear')">📖 Switch to Standard Review</button>
+                    <button class="restart-button" onclick="startFlashcards('${topic}', 'linear')">📖 Switch to Standard Review</button>
                     <button class="back-button" onclick="renderFlashcardTopics()">⬅ Back to Topics</button>
                 </div>
             </div>`;
             return;
         }
+
         srsQueue.sort((a, b) => a.srsData.dueDate - b.srsData.dueDate);
         currentFlashcards = srsQueue;
+
     } else {
-        currentFlashcards = allCards.map((card, index) => ({ ...card, originalIndex: index }));
+        // --- LINEAR PATH: Load All ---
+        currentFlashcards = allCards.map((card, index) => ({
+            ...card,
+            originalIndex: index
+        }));
     }
 
     displayFlashcard();
     logAnalyticsEvent('flashcard_start', `${topic} (${mode} mode)`);
 }
 
-// --- 4. DISPLAY ENGINE (SCROLL + BRAND RESTORED) ---
+// --- DISPLAY ENGINE (HYBRID UI + SMART LAYOUT) ---
 function displayFlashcard() {
-    injectSmartStyles(); // Inject CSS for scroll
-
     const container = document.getElementById("quiz-form");
     
+    // Check completion
     if (currentCardIndex >= currentFlashcards.length) {
         return showFlashcardCompletion();
     }
@@ -1622,90 +1586,112 @@ function displayFlashcard() {
     const cardObj = currentFlashcards[currentCardIndex]; 
     updateProgress(currentCardIndex + 1, currentFlashcards.length);
     
-    // Layout Logic
+    // === SMART LAYOUT ANALYZER (STEM & SCROLL FIX) ===
     function getLayoutClass(text) {
+        // 1. Detect Block Math ($$ ... $$) - Needs space & horizontal scroll
         const hasBlockMath = /\$\$|\\\[/.test(text);
+        
+        // 2. Detect SPECIFIC Chemistry & Physics Signals
+        const hasScience = /(\\ce\{|\\pu\{|\\vec\{|\\int|\\sum|\\frac\{|\\sqrt\{)/.test(text);
+    
+        // 3. Detect Lists (Bullet points)
         const hasList = /^- /m.test(text) || /<ul>|<ol>|<li>/.test(parseKaeriMarkdown(text));
-        const isLong = text.length > 120;
-        return (hasBlockMath || hasList || isLong) ? "layout-detailed" : "layout-center";
+    
+        // 4. Detect Text Length (lowered to 60 for mobile safety)
+        const isLong = text.length > 60;
+    
+        // 5. Detect Newlines (3 or more lines)
+        const hasBreaks = (text.match(/\n/g) || []).length > 2;
+    
+        // IF ANY of these are true, force Top Alignment
+        if (hasBlockMath || hasScience || hasList || isLong || hasBreaks) {
+            return "layout-detailed";
+        }
+        
+        // Otherwise, center it nicely
+        return "layout-center";
     }
 
     const frontLayout = getLayoutClass(cardObj.front);
     const backLayout = getLayoutClass(cardObj.back);
-    
-    // BRAND TITLE: Kaeri Teal Label, White Info
-    const modeLabel = currentFlashcardMode === 'srs' ? "🧠 SRS Mode" : "📖 Standard Review";
+    const modeLabel = currentFlashcardMode === 'srs' ? "🧠 SRS Study" : "📖 Standard Review";
 
+    // RENDER CARD HTML
     let html = `
-        <h3 style="color: #72efdd; font-size: 1.1em; letter-spacing: 0.5px; border-bottom: 1px solid #3e506e; padding-bottom: 10px; margin-bottom: 15px;">
-            ${modeLabel} <span style="color: #ffffff; font-size: 0.9em; float: right;">${currentFlashcardTopic} (${currentCardIndex + 1}/${currentFlashcards.length})</span>
+        <h3 style="color: #a0a8b4; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase;">
+            ${modeLabel}: ${currentFlashcardTopic} <span style="color: white;">(${currentCardIndex + 1} / ${currentFlashcards.length})</span>
         </h3>
         
         <div class="flashcard-wrapper">
             <div class="flashcard ${isCardFront ? '' : 'back-active'}" onclick="flipCard()">
+                
                 <!-- FRONT FACE -->
                 <div class="card-face card-front ${frontLayout}">
                     ${parseKaeriMarkdown(cardObj.front)}
                     <div style="margin-top:20px; font-size:0.75em; color:#8892b0; font-style:italic; opacity:0.8;">(Tap to flip)</div>
                 </div>
+
                 <!-- BACK FACE -->
                 <div class="card-face card-back ${backLayout}">
                     ${parseKaeriMarkdown(cardObj.back)}
                 </div>
+
             </div>
         </div>
     `;
 
-    // --- CONTROLS SECTION (Restored Brand Colors) ---
+    // --- CONTROLS SECTION (THE HYBRID PART) ---
     html += `<div class="flashcard-nav-buttons" style="margin-top: 25px;">`;
 
     if (currentFlashcardMode === 'linear') {
-        // === LINEAR CONTROLS (Grey / Blue / Green) ===
+        // === LINEAR CONTROLS (Prev / Flip / Next) ===
         const isLast = currentCardIndex === currentFlashcards.length - 1;
         html += `
             <button onclick="prevFlashcard()" ${currentCardIndex === 0 ? 'disabled' : ''} 
-                style="background-color: #6c757d; font-weight: bold; color: #fff;">⬅️ Prev</button>
+                style="background: #3e506e; border-radius: 8px; font-weight: bold;">⬅️ Prev</button>
+            
             <button onclick="flipCard()" 
-                style="background-color: #007bff; flex: 2; font-weight: bold; box-shadow: 0 4px 0 #0056b3; color: white;">🔄 Flip Card</button>
+                style="background: #007bff; flex: 2; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 0 #0056b3;">🔄 Flip Card</button>
+            
             <button onclick="nextFlashcard()" 
-                style="background-color: ${isLast ? '#28a745' : '#007bff'}; font-weight: bold; color: white;">
+                style="background: ${isLast ? '#28a745' : '#3e506e'}; border-radius: 8px; font-weight: bold;">
                 ${isLast ? 'Finish 🏁' : 'Next ➡️'}
             </button>
         `;
     } else {
-        // === SRS CONTROLS (Standard SRS Colors) ===
+        // === SRS CONTROLS (Show / Rate) ===
         if (isCardFront) {
-            html += `<button onclick="flipCard()" style="width:100%; background-color: #007bff; padding: 15px; border-radius: 8px; font-weight: bold; color:white; box-shadow: 0 4px 0 #0056b3;">🔄 Show Answer</button>`;
+            html += `<button onclick="flipCard()" style="width:100%; background:#007bff; padding: 15px; border-radius: 8px; font-weight: bold; color:white; box-shadow: 0 4px 0 #0056b3;">🔄 Show Answer</button>`;
         } else {
             html += `
                 <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:10px; width:100%;">
-                    <button onclick="rateCard(0)" style="background-color: #dc3545; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">❌ Again<br><small style="opacity:0.8">1d</small></button>
-                    <button onclick="rateCard(3)" style="background-color: #ffc107; color: #333; font-size:0.8em; padding:12px 2px; border-radius:8px;">😬 Hard<br><small style="opacity:0.8">2d</small></button>
-                    <button onclick="rateCard(4)" style="background-color: #28a745; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">✅ Good<br><small style="opacity:0.8">4d</small></button>
-                    <button onclick="rateCard(5)" style="background-color: #17a2b8; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">🚀 Easy<br><small style="opacity:0.8">7d</small></button>
+                    <button onclick="rateCard(0)" style="background:#dc3545; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">❌ Again<br><small style="opacity:0.8">1d</small></button>
+                    <button onclick="rateCard(3)" style="background:#ffc107; color: #333; font-size:0.8em; padding:12px 2px; border-radius:8px;">😬 Hard<br><small style="opacity:0.8">2d</small></button>
+                    <button onclick="rateCard(4)" style="background:#28a745; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">✅ Good<br><small style="opacity:0.8">4d</small></button>
+                    <button onclick="rateCard(5)" style="background:#17a2b8; color: white; font-size:0.8em; padding:12px 2px; border-radius:8px;">🚀 Easy<br><small style="opacity:0.8">7d</small></button>
                 </div>
             `;
         }
     }
     
     html += `</div>`;
-    html += `<button class="back-to-topics-button" style="margin-top: 20px; background: transparent; color: #888; border: 1px solid #3e506e; padding: 10px 20px;" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
+    html += `<button class="back-to-topics-button" style="margin-top: 20px; background: transparent; color: #888;" onclick="renderFlashcardTopics()">⬅️ Back to Topics</button>`;
 
     container.innerHTML = html;
     
-    renderMath();
+    renderMath(); // KaTeX
     container.scrollIntoView({ behavior: "smooth" });
-    readFlashcard();
+    readFlashcard(); // Smart TTS
 }
 
-// --- 5. NAVIGATION HELPERS ---
+// --- NAVIGATION HELPERS ---
 function flipCard() { 
     isCardFront = !isCardFront; 
     displayFlashcard(); 
 }
 
 function prevFlashcard() { 
-    if (currentFlashcardMode !== 'linear') return;
+    if (currentFlashcardMode !== 'linear') return; // Safety
     if (currentCardIndex > 0) { 
         currentCardIndex--; 
         isCardFront = true; 
@@ -1714,7 +1700,7 @@ function prevFlashcard() {
 }
 
 function nextFlashcard() { 
-    if (currentFlashcardMode !== 'linear') return;
+    if (currentFlashcardMode !== 'linear') return; // Safety
     if (currentCardIndex < currentFlashcards.length - 1) { 
         currentCardIndex++; 
         isCardFront = true; 
@@ -1725,10 +1711,12 @@ function nextFlashcard() {
 }
 
 function rateCard(quality) {
-    if (currentFlashcardMode !== 'srs') return;
+    if (currentFlashcardMode !== 'srs') return; // Safety
     const cardObj = currentFlashcards[currentCardIndex];
+    // Calculate new date
     const result = calculateNextReview(currentFlashcardTopic, cardObj.originalIndex, quality);
     
+    // Feedback Toast
     const days = Math.round(result.interval);
     const msg = days === 1 ? "Review tomorrow" : `Review in ${days} days`;
     showAppNotification(`📅 ${msg}`, "info", 1500);
@@ -1752,12 +1740,12 @@ function showFlashcardCompletion() {
     `;
     updateProgress(currentFlashcards.length, currentFlashcards.length);
 
-    // Dynamic buttons - Styles preserved via classes
+    // Dynamic buttons based on mode
     const restartBtn = document.createElement("button");
     restartBtn.innerText = "🔁 Review Again";
     restartBtn.className = "restart-button";
     restartBtn.style.marginRight = "10px";
-    restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic);
+    restartBtn.onclick = () => attemptStartFlashcard(currentFlashcardTopic); // Go back to choice
     container.appendChild(restartBtn);
 
     const challengeBtn = document.createElement("button");
