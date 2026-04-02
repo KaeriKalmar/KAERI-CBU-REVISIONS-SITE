@@ -1,4 +1,3 @@
-
 // ============================================================
 // === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.9 MERGED) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
@@ -1844,51 +1843,248 @@ function challengeFriend(score, total, modeName) {
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
 }
 
-function generatePrintPreview() {
-    const printDiv = document.getElementById("print-preview-content");
-    const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-    
-    let modeTitle = "";
-    if (currentQuizType === 'essay') modeTitle = currentEssay.title;
-    else if (currentQuizType === 'flashcard') modeTitle = currentFlashcardTopic + " - Glossary";
-    else modeTitle = `${currentCourse} ${currentTerm} - Practice Session`;
-    
-    let html = `
-        <div class="preview-header">
-            <h1>${modeTitle}</h1>
-            <p><strong>Kaeri EdTech Study Systems</strong></p>
-            <p>📞 Call/WhatsApp: <strong>0964312504</strong> for Full Access</p>
-            <p style="font-size: 0.9em; border-top: 1px solid #ccc; padding-top: 5px; margin-top: 5px;">
-                Generated on: ${date} | Preview - Click Print to save as PDF
-            </p>
-            <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 10px; border: 1px solid #ffeaa7; font-size: 0.9em;">
-                <strong>💡 Tip:</strong> Use "Save as PDF" option in print dialog to create digital copy. Watermark will appear on all pages.
-            </div>
+// ── PRINT HELPERS ──────────────────────────────────────────────
+// Builds a self-contained HTML string for a single question/step/card.
+// Uses only inline styles so it renders correctly in both the modal
+// preview and the actual print output without relying on external CSS.
+
+function _buildPrintItemHTML(label, question, answer, explanation, accentColor) {
+    accentColor = accentColor || '#1a73e8';
+    return `
+    <div style="margin-bottom:18px; padding:14px 16px; border:1px solid #dde3ea;
+                border-left:5px solid ${accentColor}; border-radius:6px;
+                background:#ffffff; page-break-inside:avoid; font-family:Arial,sans-serif;">
+        <div style="font-size:0.72em; font-weight:700; color:${accentColor};
+                    text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">
+            ${label}
         </div>
-    `;
-    
+        <div style="font-size:0.97em; color:#1a1a1a; line-height:1.55; margin-bottom:8px;">
+            ${question}
+        </div>
+        <div style="font-size:0.92em; color:#1a6b3a; background:#f0faf4;
+                    padding:7px 10px; border-radius:4px; margin-bottom:6px; font-weight:600;">
+            ${answer}
+        </div>
+        <div style="font-size:0.88em; color:#444; background:#f7f8fa;
+                    padding:7px 10px; border-radius:4px; line-height:1.5;">
+            ${explanation}
+        </div>
+    </div>`;
+}
+
+function _buildPrintDocHTML(modeTitle, date, itemsHTML) {
+    return `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* ── Page setup ── */
+            @page {
+                size: A4 portrait;
+                margin: 18mm 15mm 20mm 15mm;
+            }
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+                color: #1a1a1a;
+                background: #fff;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            /* ── Header ── */
+            .print-header {
+                border-bottom: 3px solid #1a73e8;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            .print-header h1 {
+                font-size: 16pt;
+                color: #1a1a1a;
+                margin-bottom: 4px;
+            }
+            .print-header .meta {
+                font-size: 8.5pt;
+                color: #555;
+            }
+            .print-header .branding {
+                font-size: 8pt;
+                color: #888;
+                margin-top: 4px;
+                border-top: 1px solid #e0e0e0;
+                padding-top: 4px;
+            }
+
+            /* ── Watermark ── */
+            body::after {
+                content: "KAERI EDTECH";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-35deg);
+                font-size: 72pt;
+                font-weight: 900;
+                color: rgba(0,0,0,0.04);
+                pointer-events: none;
+                z-index: 0;
+                white-space: nowrap;
+            }
+
+            /* ── Items ── */
+            .print-item {
+                margin-bottom: 14px;
+                padding: 12px 14px;
+                border: 1px solid #dde3ea;
+                border-left: 5px solid #1a73e8;
+                border-radius: 5px;
+                background: #ffffff;
+                page-break-inside: avoid;
+            }
+            .print-item.essay  { border-left-color: #e67e00; }
+            .print-item.sa     { border-left-color: #b5830f; }
+            .print-item.flash  { border-left-color: #6f42c1; }
+
+            .item-label {
+                font-size: 7.5pt;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                color: #1a73e8;
+                margin-bottom: 5px;
+            }
+            .print-item.essay  .item-label { color: #e67e00; }
+            .print-item.sa     .item-label { color: #b5830f; }
+            .print-item.flash  .item-label { color: #6f42c1; }
+
+            .item-q {
+                font-size: 9.5pt;
+                color: #1a1a1a;
+                line-height: 1.5;
+                margin-bottom: 6px;
+            }
+            .item-ans {
+                font-size: 9pt;
+                color: #145a32;
+                background: #eafaf1;
+                padding: 5px 8px;
+                border-radius: 3px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            .item-exp {
+                font-size: 8.5pt;
+                color: #444;
+                background: #f7f8fa;
+                padding: 5px 8px;
+                border-radius: 3px;
+                line-height: 1.45;
+            }
+
+            /* ── Footer ── */
+            .print-footer {
+                margin-top: 24px;
+                padding-top: 10px;
+                border-top: 1px solid #ddd;
+                text-align: center;
+                font-size: 8pt;
+                color: #888;
+            }
+
+            /* ── Page numbers via counter ── */
+            @page { @bottom-right { content: "Page " counter(page) " of " counter(pages); font-size: 8pt; color: #888; } }
+        </style>
+    </head>
+    <body>
+        <div class="print-header">
+            <h1>${modeTitle}</h1>
+            <div class="meta">Generated: ${date}</div>
+            <div class="branding">Kaeri EdTech Study Systems &nbsp;|&nbsp; 📞 0964312504 &nbsp;|&nbsp; Full Access for unlimited practice</div>
+        </div>
+
+        ${itemsHTML}
+
+        <div class="print-footer">
+            Study smarter with Kaeri EdTech — Contact 0964312504 for Full Access
+        </div>
+    </body>
+    </html>`;
+}
+
+function generatePrintPreview() {
+    const previewContent = document.getElementById("print-preview-content");
+    const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+    let modeTitle = "";
+    if (currentQuizType === 'essay') modeTitle = currentEssay.title + " — Essay Simulation";
+    else if (currentQuizType === 'flashcard') modeTitle = currentFlashcardTopic + " — Flashcard Glossary";
+    else if (currentQuizType === 'mcq') modeTitle = `${currentCourse} ${currentTerm} — MCQ Practice`;
+    else if (currentQuizType === 'shortAnswer') modeTitle = `${currentCourse} ${currentTerm} — Short Answer Practice`;
+    else modeTitle = `${currentCourse} ${currentTerm} — Practice Session`;
+
+    // Build items HTML (preview uses same structure as print — no class renaming needed)
+    let itemsHTML = '';
+
     if (currentQuizType === 'essay') {
-        currentEssay.steps.forEach((step, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Step ${index + 1}: ${parseKaeriMarkdown(step.q)}</div><div class="preview-ans">✅ Correct Action: ${parseKaeriMarkdown(step.options[step.correct])}</div><div class="preview-exp">💡 Note: ${parseKaeriMarkdown(step.explanation || "No additional explanation.")}</div></div>`;
+        currentEssay.steps.forEach((step, i) => {
+            itemsHTML += `
+            <div class="print-item essay">
+                <div class="item-label">Step ${i + 1} of ${currentEssay.steps.length}</div>
+                <div class="item-q">${parseKaeriMarkdown(step.q)}</div>
+                <div class="item-ans">✅ ${parseKaeriMarkdown(step.options[step.correct])}</div>
+                <div class="item-exp">💡 ${parseKaeriMarkdown(step.explanation || 'No additional explanation.')}</div>
+            </div>`;
         });
     } else if (currentQuizType === 'mcq') {
-        currentQuizData.forEach((item, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${parseKaeriMarkdown(item.q)}</div><div class="preview-ans">✅ Answer: ${parseKaeriMarkdown(item.options[item.correct])}</div><div class="preview-exp">💡 Explanation: ${parseKaeriMarkdown(item.explanation || "No additional explanation.")}</div></div>`;
+        currentQuizData.forEach((item, i) => {
+            itemsHTML += `
+            <div class="print-item">
+                <div class="item-label">Question ${i + 1}</div>
+                <div class="item-q">${parseKaeriMarkdown(item.q)}</div>
+                <div class="item-ans">✅ ${parseKaeriMarkdown(item.options[item.correct])}</div>
+                <div class="item-exp">💡 ${parseKaeriMarkdown(item.explanation || 'No additional explanation.')}</div>
+            </div>`;
         });
     } else if (currentQuizType === 'shortAnswer') {
-        currentQuizData.forEach((item, index) => {
-            html += `<div class="preview-step"><div class="preview-q">Q${index + 1}: ${parseKaeriMarkdown(item.q)}</div><div class="preview-ans">🔑 Required Keywords: ${item.keywords.join(", ")}</div><div class="preview-exp">💡 Explanation: ${parseKaeriMarkdown(item.explanation || "No additional explanation.")}</div></div>`;
+        currentQuizData.forEach((item, i) => {
+            itemsHTML += `
+            <div class="print-item sa">
+                <div class="item-label">Question ${i + 1}</div>
+                <div class="item-q">${parseKaeriMarkdown(item.q)}</div>
+                <div class="item-ans">🔑 Keywords: ${item.keywords.join(', ')}</div>
+                <div class="item-exp">💡 ${parseKaeriMarkdown(item.explanation || 'No additional explanation.')}</div>
+            </div>`;
         });
     } else if (currentQuizType === 'flashcard') {
-        currentFlashcards.forEach((card, index) => {
-            html += `<div class="preview-step" style="border-left-color: #6f42c1;"><div class="preview-q" style="color: #333; font-size: 1.1em;">${index + 1}. ${parseKaeriMarkdown(card.front)}</div><div class="preview-ans" style="color: #6f42c1; border-left-color: #6f42c1;">Definition:</div><div style="margin-top:5px; padding: 8px; background: #f8f9fa; border-radius: 4px;">${parseKaeriMarkdown(card.back)}</div></div>`;
+        currentFlashcards.forEach((card, i) => {
+            itemsHTML += `
+            <div class="print-item flash">
+                <div class="item-label">Card ${i + 1}</div>
+                <div class="item-q">${parseKaeriMarkdown(card.front)}</div>
+                <div class="item-ans" style="color:#4a235a; background:#f5eeff;">📖 ${parseKaeriMarkdown(card.back)}</div>
+            </div>`;
         });
     }
-    
-    html += `<div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666;"><p>Study smarter with Kaeri EdTech. Contact 0964312504 for full access.</p></div>`;
-    
-    printContentData = { html: html.replace(/preview-/g, 'pdf-') };
-    printDiv.innerHTML = html;
+
+    // Store the full self-contained print document
+    printContentData = { modeTitle, date, itemsHTML };
+
+    // Render preview inside modal (reuse same HTML structure)
+    previewContent.innerHTML = `
+        <div style="font-family:Arial,sans-serif; color:#1a1a1a; font-size:10pt;">
+            <div style="border-bottom:3px solid #1a73e8; padding-bottom:10px; margin-bottom:18px;">
+                <h2 style="font-size:14pt; margin-bottom:3px;">${modeTitle}</h2>
+                <div style="font-size:8.5pt; color:#555;">Generated: ${date}</div>
+                <div style="font-size:8pt; color:#888; margin-top:3px; border-top:1px solid #eee; padding-top:3px;">
+                    Kaeri EdTech Study Systems | 📞 0964312504
+                </div>
+            </div>
+            ${itemsHTML}
+            <div style="margin-top:20px; padding-top:10px; border-top:1px solid #ddd; text-align:center; font-size:8pt; color:#888;">
+                Study smarter with Kaeri EdTech — Contact 0964312504 for Full Access
+            </div>
+        </div>`;
 
     renderMath('print-preview-content');
     document.getElementById('print-preview-modal').classList.add('show');
@@ -1896,16 +2092,53 @@ function generatePrintPreview() {
 }
 
 function proceedToPrint() {
+    if (!printContentData) return;
     closePrintPreview();
+
+    // Build a full self-contained A4 document in a hidden iframe and print it.
+    // This isolates the print output completely from the app's dark UI.
     setTimeout(() => {
-        const printDiv = document.getElementById("printable-summary");
-        printDiv.innerHTML = printContentData.html;
-        renderMath('printable-summary');
-        const style = document.createElement('style');
-        style.innerHTML = `@page { margin: 20mm; size: A4; }`;
-        printDiv.appendChild(style);
-        window.print();
-        setTimeout(() => { printDiv.innerHTML = ''; }, 1000);
+        const fullHTML = _buildPrintDocHTML(
+            printContentData.modeTitle,
+            printContentData.date,
+            printContentData.itemsHTML
+        );
+
+        // Create a temporary hidden iframe
+        const iframe = document.createElement('iframe');
+        iframe.style.cssText = 'position:fixed; top:-9999px; left:-9999px; width:210mm; height:297mm; border:none; visibility:hidden;';
+        document.body.appendChild(iframe);
+
+        const iDoc = iframe.contentDocument || iframe.contentWindow.document;
+        iDoc.open();
+        iDoc.write(fullHTML);
+        iDoc.close();
+
+        // Wait for iframe to fully load (fonts, KaTeX if present), then print
+        iframe.onload = function () {
+            // If KaTeX is available on the parent page, render math inside the iframe too
+            if (typeof renderMathInElement === 'function') {
+                try {
+                    renderMathInElement(iDoc.body, {
+                        delimiters: [
+                            {left:"$$", right:"$$", display:true},
+                            {left:"$", right:"$", display:false},
+                            {left:"\\(", right:"\\)", display:false},
+                            {left:"\\[", right:"\\]", display:true}
+                        ],
+                        throwOnError: false
+                    });
+                } catch(e) {}
+            }
+            setTimeout(() => {
+                iframe.contentWindow.focus();
+                iframe.contentWindow.print();
+                // Remove iframe after print dialog closes
+                setTimeout(() => {
+                    document.body.removeChild(iframe);
+                }, 2000);
+            }, 300);
+        };
     }, 300);
 }
 
@@ -2226,7 +2459,31 @@ document.addEventListener('DOMContentLoaded', function() {
             animation: shimmer 1.5s infinite;
             border-radius: 10px;
         }
+
+        /* ── Print modal preview item styles ── */
+        .print-item {
+            margin-bottom: 14px;
+            padding: 12px 14px;
+            border: 1px solid #dde3ea;
+            border-left: 5px solid #1a73e8;
+            border-radius: 5px;
+            background: #ffffff;
+            page-break-inside: avoid;
+        }
+        .print-item.essay  { border-left-color: #e67e00; }
+        .print-item.sa     { border-left-color: #b5830f; }
+        .print-item.flash  { border-left-color: #6f42c1; }
+        .item-label {
+            font-size: 0.72em; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.8px;
+            color: #1a73e8; margin-bottom: 5px;
+        }
+        .print-item.essay .item-label { color: #e67e00; }
+        .print-item.sa    .item-label { color: #b5830f; }
+        .print-item.flash .item-label { color: #6f42c1; }
+        .item-q   { font-size: 0.95em; color: #1a1a1a; line-height: 1.5; margin-bottom: 6px; }
+        .item-ans { font-size: 0.9em; color: #145a32; background: #eafaf1; padding: 5px 8px; border-radius: 3px; margin-bottom: 5px; font-weight: 600; }
+        .item-exp { font-size: 0.87em; color: #444; background: #f7f8fa; padding: 5px 8px; border-radius: 3px; line-height: 1.45; }
     `;
     document.head.appendChild(style);
 })();
-
