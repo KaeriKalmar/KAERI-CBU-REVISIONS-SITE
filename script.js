@@ -1,3 +1,4 @@
+
 // ============================================================
 // === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.9 MERGED) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
@@ -1062,10 +1063,14 @@ function checkMcqAnswer() {
     feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
     currentQuestionIndex++;
-    
+
+    // ── CHANGE 1: On last question, Finish button skips straight to final card ──
+    const isLastMcq = currentQuestionIndex >= currentQuizData.length;
     const nextBtn = document.createElement("button");
-    nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish Quiz";
-    nextBtn.onclick = displayMcqQuestion;
+    nextBtn.innerText = isLastMcq ? "Finish Quiz" : "Next ➡️";
+    nextBtn.onclick = isLastMcq
+        ? () => { document.getElementById("result").innerHTML = ""; showFinalMcqScore(); }
+        : displayMcqQuestion;
     resultDiv.appendChild(nextBtn);
 
     renderMath();
@@ -1101,6 +1106,19 @@ function showFinalMcqScore() {
     previewBtn.style.marginLeft = "10px";
     previewBtn.onclick = generatePrintPreview;
     container.appendChild(previewBtn);
+
+    // ── CHANGE 2: Switch learning modality panel ──
+    const switchDiv = document.createElement("div");
+    switchDiv.style.cssText = "margin-top:30px; padding:18px; background:#0d1b2a; border-radius:12px; border:1px solid #3e506e; text-align:center;";
+    switchDiv.innerHTML = `
+        <p style="color:#a0a8b4; margin:0 0 12px 0; font-size:0.9em;">🔄 <strong style="color:#72efdd;">Switch Learning Mode</strong></p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+            <button onclick="renderShortAnswers()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">✍️ Short Answer</button>
+            <button onclick="renderEssaySimulation()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📄 Essay Sim</button>
+            <button onclick="renderFlashcardTopics()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">🃏 Flashcards</button>
+        </div>
+    `;
+    container.appendChild(switchDiv);
 
     // Log analytics
     logAnalyticsEvent('quiz_complete', `MCQ score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
@@ -1158,10 +1176,14 @@ function checkShortAnswer() {
     feedbackText += ` Explanation: ${humanizeLaTeX(q.explanation || '')}`;
     
     currentQuestionIndex++;
-    
+
+    // ── CHANGE 1: On last question, Finish button skips straight to final card ──
+    const isLastSA = currentQuestionIndex >= currentQuizData.length;
     const nextBtn = document.createElement("button");
-    nextBtn.innerText = currentQuestionIndex < currentQuizData.length ? "Next ➡️" : "Finish";
-    nextBtn.onclick = displayShortAnswerQuestion;
+    nextBtn.innerText = isLastSA ? "Finish" : "Next ➡️";
+    nextBtn.onclick = isLastSA
+        ? () => { document.getElementById("result").innerHTML = ""; showFinalShortAnswerScore(); }
+        : displayShortAnswerQuestion;
     resultDiv.appendChild(nextBtn);
 
     renderMath();
@@ -1197,6 +1219,19 @@ function showFinalShortAnswerScore() {
     previewBtn.style.marginLeft = "10px";
     previewBtn.onclick = generatePrintPreview;
     container.appendChild(previewBtn);
+
+    // ── CHANGE 2: Switch learning modality panel ──
+    const switchDiv = document.createElement("div");
+    switchDiv.style.cssText = "margin-top:30px; padding:18px; background:#0d1b2a; border-radius:12px; border:1px solid #3e506e; text-align:center;";
+    switchDiv.innerHTML = `
+        <p style="color:#a0a8b4; margin:0 0 12px 0; font-size:0.9em;">🔄 <strong style="color:#72efdd;">Switch Learning Mode</strong></p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+            <button onclick="renderQuiz()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📝 MCQ</button>
+            <button onclick="renderEssaySimulation()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📄 Essay Sim</button>
+            <button onclick="renderFlashcardTopics()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">🃏 Flashcards</button>
+        </div>
+    `;
+    container.appendChild(switchDiv);
 
     logAnalyticsEvent('quiz_complete', `Short Answer score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
 }
@@ -1309,14 +1344,17 @@ function checkEssayStep() {
     const explanationBox = `<div class="explanation-box">${parseKaeriMarkdown(step.explanation || '')}</div>`;
     resultDiv.innerHTML += explanationBox;
     feedbackText += ` Explanation: ${humanizeLaTeX(step.explanation || '')}`;
-    
+
+    // ── CHANGE 1: On last step, Finish button skips straight to final card ──
+    const isLastStep = currentStepIndex >= essay.steps.length - 1;
     const nextBtn = document.createElement("button");
-    nextBtn.innerText = currentStepIndex < essay.steps.length - 1 ? "Next ➡️" : "Finish";
+    nextBtn.innerText = isLastStep ? "Finish" : "Next ➡️";
     nextBtn.onclick = () => {
-        if (currentStepIndex < essay.steps.length - 1) {
+        if (!isLastStep) {
             currentStepIndex++;
-            showEssayStep(currentStepIndex); 
+            showEssayStep(currentStepIndex);
         } else {
+            document.getElementById("result").innerHTML = "";
             showFinalEssayScore();
         }
     };
@@ -1362,6 +1400,19 @@ function showFinalEssayScore() {
     backBtn.className = "back-button"; 
     backBtn.onclick = renderEssaySimulation;
     container.appendChild(backBtn);
+
+    // ── CHANGE 2: Switch learning modality panel ──
+    const switchDiv = document.createElement("div");
+    switchDiv.style.cssText = "margin-top:30px; padding:18px; background:#0d1b2a; border-radius:12px; border:1px solid #3e506e; text-align:center;";
+    switchDiv.innerHTML = `
+        <p style="color:#a0a8b4; margin:0 0 12px 0; font-size:0.9em;">🔄 <strong style="color:#72efdd;">Switch Learning Mode</strong></p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+            <button onclick="renderQuiz()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📝 MCQ</button>
+            <button onclick="renderShortAnswers()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">✍️ Short Answer</button>
+            <button onclick="renderFlashcardTopics()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">🃏 Flashcards</button>
+        </div>
+    `;
+    container.appendChild(switchDiv);
 
     logAnalyticsEvent('essay_complete', `${currentEssay.title} score: ${essayScore}/${currentEssay.steps.length} (${percent}%)`);
 }
@@ -1759,6 +1810,19 @@ function showFlashcardCompletion() {
     backBtn.className = "back-button";
     backBtn.onclick = renderFlashcardTopics;
     container.appendChild(backBtn);
+
+    // ── CHANGE 2: Switch learning modality panel ──
+    const switchDiv = document.createElement("div");
+    switchDiv.style.cssText = "margin-top:30px; padding:18px; background:#0d1b2a; border-radius:12px; border:1px solid #3e506e; text-align:center;";
+    switchDiv.innerHTML = `
+        <p style="color:#a0a8b4; margin:0 0 12px 0; font-size:0.9em;">🔄 <strong style="color:#72efdd;">Switch Learning Mode</strong></p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+            <button onclick="renderQuiz()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📝 MCQ</button>
+            <button onclick="renderShortAnswers()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">✍️ Short Answer</button>
+            <button onclick="renderEssaySimulation()" style="background:#2b3a55; color:white; border:1px solid #3e506e; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:0.85em;">📄 Essay Sim</button>
+        </div>
+    `;
+    container.appendChild(switchDiv);
 
     logAnalyticsEvent('flashcard_complete', `${currentFlashcardTopic} (${currentFlashcardMode} mode)`);
 }
@@ -2165,3 +2229,4 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 })();
+
