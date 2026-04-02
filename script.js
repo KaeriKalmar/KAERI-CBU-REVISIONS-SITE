@@ -106,6 +106,23 @@ async function initializeCourseLogic() {
             updateTtsButtonText();
         }
         
+        // Add Progress Dashboard Button if missing
+        if (!document.getElementById('progress-btn')) {
+            const progressBtn = document.createElement('button');
+            progressBtn.id = 'progress-btn';
+            progressBtn.innerHTML = "\uD83D\uDCCA My Progress";
+            progressBtn.style.backgroundColor = "#6f42c1";
+            progressBtn.style.color = "white";
+            progressBtn.style.border = "none";
+            progressBtn.style.padding = "15px 20px";
+            progressBtn.style.fontSize = "1.1em";
+            progressBtn.style.borderRadius = "8px";
+            progressBtn.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+            progressBtn.style.cursor = "pointer";
+            progressBtn.onclick = renderProgressDashboard;
+            modeButtonsDiv.appendChild(progressBtn);
+        }
+
         // Add Document Button if missing
         if (!document.getElementById('docs-btn')) {
             const docBtn = document.createElement('button');
@@ -701,7 +718,273 @@ function blockDemo(type) {
 }
 
 // ============================================================
-// === 5. UI & NAVIGATION ===
+// === 5. PROGRESS TRACKING ENGINE (localStorage only) ===
+// ============================================================
+
+const PROGRESS_KEY_PREFIX = 'kaeri_progress_v1_';
+
+function _progressKey() {
+    return `${PROGRESS_KEY_PREFIX}${currentTermKey}`;
+}
+
+function _loadProgress() {
+    try {
+        return JSON.parse(localStorage.getItem(_progressKey()) || 'null') || {
+            sessions: [],
+            streak: { count: 0, lastDate: null },
+            totalQuestions: 0,
+            totalCorrect: 0,
+            flashcardSessions: 0,
+            mcqBest: 0,
+            saBest: 0,
+            essayBest: 0
+        };
+    } catch(e) {
+        return {
+            sessions: [],
+            streak: { count: 0, lastDate: null },
+            totalQuestions: 0,
+            totalCorrect: 0,
+            flashcardSessions: 0,
+            mcqBest: 0,
+            saBest: 0,
+            essayBest: 0
+        };
+    }
+}
+
+function _saveProgress(data) {
+    try {
+        if (data.sessions.length > 60) {
+            data.sessions = data.sessions.slice(-60);
+        }
+        localStorage.setItem(_progressKey(), JSON.stringify(data));
+    } catch(e) {}
+}
+
+function _updateStreak(data) {
+    const today = new Date().toISOString().slice(0, 10);
+    const last  = data.streak.lastDate;
+    if (last === today) return;
+    const yesterday = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
+    if (last === yesterday) {
+        data.streak.count += 1;
+    } else {
+        data.streak.count = 1;
+    }
+    data.streak.lastDate = today;
+}
+
+function recordProgressSession(type, score, total, label) {
+    if (!currentTermKey) return;
+    const data    = _loadProgress();
+    const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+    data.sessions.push({ type, score, total, percent, ts: Date.now(), label: label || type });
+    if (type !== 'flashcard') {
+        data.totalQuestions += total;
+        data.totalCorrect   += score;
+    }
+    if (type === 'mcq')         data.mcqBest          = Math.max(data.mcqBest,   percent);
+    if (type === 'shortAnswer') data.saBest            = Math.max(data.saBest,    percent);
+    if (type === 'essay')       data.essayBest         = Math.max(data.essayBest, percent);
+    if (type === 'flashcard')   data.flashcardSessions += 1;
+    _updateStreak(data);
+    _saveProgress(data);
+}
+
+function _timeAgo(ts) {
+    const diff  = Date.now() - ts;
+    const mins  = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days  = Math.floor(diff / 864e5);
+    if (mins  < 1)   return 'just now';
+    if (mins  < 60)  return `${mins}m ago`;
+    if (hours < 24)  return `${hours}h ago`;
+    if (days  === 1) return 'yesterday';
+    return `${days}d ago`;
+}
+
+function _confirmResetProgress() {
+    if (confirm('Reset all progress data for this course/term? This cannot be undone.')) {
+        localStorage.removeItem(_progressKey());
+        showAppNotification('\u{1F5D1}\uFE0F Progress reset.', 'info', 2000);
+        setTimeout(renderProgressDashboard, 300);
+    }
+}
+
+function renderProgressDashboard() {
+    const container = document.getElementById('quiz-form');
+    container.innerHTML = '';
+    document.getElementById('result').innerHTML = '';
+    currentQuizType = 'dashboard';
+    updateProgress(0, 0);
+
+    if (!currentTermKey) {
+        container.innerHTML = '<p style="text-align:center;color:#a0a8b4;">Load a course first.</p>';
+        return;
+    }
+
+    const data     = _loadProgress();
+    const sessions = data.sessions;
+
+    const overallPct = data.totalQuestions > 0
+        ? Math.round((data.totalCorrect / data.totalQuestions) * 100) : 0;
+
+    const last7  = sessions.filter(s => Date.now() - s.ts < 7  * 864e5);
+    const last30 = sessions.filter(s => Date.now() - s.ts < 30 * 864e5);
+    const recent = sessions.slice(-10);
+
+    function modeAvg(type) {
+        const s = sessions.filter(x => x.type === type && x.total > 0);
+        if (!s.length) return null;
+        return Math.round(s.reduce((a, b) => a + b.percent, 0) / s.length);
+    }
+    const mcqAvg = modeAvg('mcq');
+    const saAvg  = modeAvg('shortAnswer');
+    const esAvg  = modeAvg('essay');
+
+    const streakCount = data.streak.count || 0;
+    const streakColor = streakCount >= 7 ? '#ffc107' : streakCount >= 3 ? '#72efdd' : '#a0a8b4';
+
+    function bar(pct, color) {
+        if (pct === null) return '<span style="color:#555;font-size:0.85em;">No data yet</span>';
+        const fill = Math.max(0, Math.min(100, pct));
+        return `<div style="display:flex;align-items:center;gap:8px;">
+            <div style="flex:1;height:8px;background:#2b3a55;border-radius:4px;overflow:hidden;">
+                <div style="width:${fill}%;height:100%;background:${color};border-radius:4px;"></div>
+            </div>
+            <span style="font-size:0.85em;color:white;font-weight:700;min-width:36px;text-align:right;">${pct}%</span>
+        </div>`;
+    }
+
+    function sparkline(pts) {
+        if (!pts.length) return '<span style="color:#555;font-size:0.8em;">No sessions yet</span>';
+        const W = 200, H = 40, pad = 4;
+        const maxV = Math.max(...pts.map(p => p.percent), 1);
+        const xs = pts.map((_, i) => pad + i * ((W - pad*2) / Math.max(pts.length - 1, 1)));
+        const ys = pts.map(p => H - pad - (p.percent / 100) * (H - pad*2));
+        const poly = xs.map((x, i) => `${x},${ys[i]}`).join(' ');
+        const dots = pts.map((p, i) => {
+            const c = p.percent >= 70 ? '#72efdd' : p.percent >= 50 ? '#ffc107' : '#ef4444';
+            return `<circle cx="${xs[i]}" cy="${ys[i]}" r="3" fill="${c}"/>`;
+        }).join('');
+        return `<svg width="${W}" height="${H}" style="overflow:visible;display:block;">
+            <polyline points="${poly}" fill="none" stroke="#3e506e" stroke-width="1.5" stroke-linejoin="round"/>
+            ${dots}
+        </svg>`;
+    }
+
+    function sessionList() {
+        const rev = [...sessions].reverse().slice(0, 5);
+        if (!rev.length) return '<p style="color:#555;font-size:0.85em;text-align:center;">No sessions yet.</p>';
+        const icon = { mcq:'\uD83D\uDCDD', shortAnswer:'\u270D\uFE0F', essay:'\uD83D\uDCC4', flashcard:'\uD83C\uDCCF' };
+        return rev.map(s => {
+            const color = s.percent >= 70 ? '#72efdd' : s.percent >= 50 ? '#ffc107' : '#ef4444';
+            const lbl   = s.type === 'flashcard'
+                ? `${icon[s.type]||'\uD83D\uDCDA'} ${s.label} \u2014 ${s.total} cards`
+                : `${icon[s.type]||'\uD83D\uDCDA'} ${s.label} \u2014 ${s.score}/${s.total} (${s.percent}%)`;
+            return `<div style="display:flex;justify-content:space-between;align-items:center;
+                        padding:9px 12px;border-radius:8px;background:#0d1b2a;
+                        border-left:3px solid ${color};margin-bottom:6px;">
+                <span style="font-size:0.88em;color:white;">${lbl}</span>
+                <span style="font-size:0.75em;color:#555;white-space:nowrap;margin-left:8px;">${_timeAgo(s.ts)}</span>
+            </div>`;
+        }).join('');
+    }
+
+    container.innerHTML = `
+    <div style="max-width:520px;margin:0 auto;padding:4px;">
+
+        <div style="text-align:center;margin-bottom:20px;">
+            <h2 style="color:white;margin:0 0 4px 0;">\uD83D\uDCCA My Progress</h2>
+            <p style="color:#a0a8b4;font-size:0.85em;margin:0;">${currentCourse} ${currentTerm}</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:18px;">
+            <div style="background:#1e2a3a;border-radius:10px;padding:14px 10px;text-align:center;border:1px solid #2b3a55;">
+                <div style="font-size:1.6em;font-weight:900;color:#72efdd;">${overallPct}%</div>
+                <div style="font-size:0.72em;color:#a0a8b4;margin-top:3px;">Overall Accuracy</div>
+            </div>
+            <div style="background:#1e2a3a;border-radius:10px;padding:14px 10px;text-align:center;border:1px solid #2b3a55;">
+                <div style="font-size:1.6em;font-weight:900;color:${streakColor};">${streakCount}\uD83D\uDD25</div>
+                <div style="font-size:0.72em;color:#a0a8b4;margin-top:3px;">Day Streak</div>
+            </div>
+            <div style="background:#1e2a3a;border-radius:10px;padding:14px 10px;text-align:center;border:1px solid #2b3a55;">
+                <div style="font-size:1.6em;font-weight:900;color:white;">${sessions.length}</div>
+                <div style="font-size:0.72em;color:#a0a8b4;margin-top:3px;">Total Sessions</div>
+            </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;">
+            <div style="background:#1e2a3a;border-radius:10px;padding:12px;border:1px solid #2b3a55;">
+                <div style="font-size:0.72em;color:#a0a8b4;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;">Questions Answered</div>
+                <div style="font-size:1.3em;font-weight:700;color:white;">${data.totalQuestions.toLocaleString()}</div>
+                <div style="font-size:0.75em;color:#72efdd;">${data.totalCorrect.toLocaleString()} correct</div>
+            </div>
+            <div style="background:#1e2a3a;border-radius:10px;padding:12px;border:1px solid #2b3a55;">
+                <div style="font-size:0.72em;color:#a0a8b4;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;">Activity</div>
+                <div style="font-size:0.85em;color:white;">Last 7 days: <strong style="color:#72efdd;">${last7.length}</strong></div>
+                <div style="font-size:0.85em;color:white;">Last 30 days: <strong style="color:#72efdd;">${last30.length}</strong></div>
+            </div>
+        </div>
+
+        <div style="background:#1e2a3a;border-radius:10px;padding:16px;border:1px solid #2b3a55;margin-bottom:18px;">
+            <div style="font-size:0.78em;color:#a0a8b4;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:14px;">Performance by Mode</div>
+            <div style="margin-bottom:10px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                    <span style="font-size:0.85em;color:white;">\uD83D\uDCDD MCQ</span>
+                    <span style="font-size:0.75em;color:#a0a8b4;">Best: ${data.mcqBest}%</span>
+                </div>
+                ${bar(mcqAvg, '#72efdd')}
+            </div>
+            <div style="margin-bottom:10px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                    <span style="font-size:0.85em;color:white;">\u270D\uFE0F Short Answer</span>
+                    <span style="font-size:0.75em;color:#a0a8b4;">Best: ${data.saBest}%</span>
+                </div>
+                ${bar(saAvg, '#ffc107')}
+            </div>
+            <div style="margin-bottom:2px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                    <span style="font-size:0.85em;color:white;">\uD83D\uDCC4 Essay Sim</span>
+                    <span style="font-size:0.75em;color:#a0a8b4;">Best: ${data.essayBest}%</span>
+                </div>
+                ${bar(esAvg, '#e67e00')}
+            </div>
+            <div style="margin-top:12px;padding-top:10px;border-top:1px solid #2b3a55;">
+                <span style="font-size:0.85em;color:white;">\uD83C\uDCCF Flashcard Sessions</span>
+                <span style="float:right;font-size:0.85em;color:#a78bfa;font-weight:700;">${data.flashcardSessions}</span>
+            </div>
+        </div>
+
+        <div style="background:#1e2a3a;border-radius:10px;padding:16px;border:1px solid #2b3a55;margin-bottom:18px;">
+            <div style="font-size:0.78em;color:#a0a8b4;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:12px;">Score Trend (last ${recent.filter(s=>s.type!=='flashcard').length} quiz sessions)</div>
+            <div style="overflow-x:auto;">${sparkline(recent.filter(s => s.type !== 'flashcard'))}</div>
+            <div style="margin-top:8px;display:flex;gap:14px;font-size:0.72em;color:#a0a8b4;">
+                <span><span style="color:#72efdd;">●</span> \u226570%</span>
+                <span><span style="color:#ffc107;">●</span> 50\u201369%</span>
+                <span><span style="color:#ef4444;">●</span> &lt;50%</span>
+            </div>
+        </div>
+
+        <div style="background:#1e2a3a;border-radius:10px;padding:16px;border:1px solid #2b3a55;margin-bottom:20px;">
+            <div style="font-size:0.78em;color:#a0a8b4;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:12px;">Recent Sessions</div>
+            ${sessionList()}
+        </div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:10px;">
+            <button onclick="backToMenu()" class="back-button" style="margin:0;">\u2B05\uFE0F Back to Menu</button>
+            <button onclick="_confirmResetProgress()"
+                style="background:transparent;color:#ef4444;border:1px solid #ef4444;
+                       padding:10px 16px;border-radius:8px;cursor:pointer;font-size:0.85em;">
+                \uD83D\uDDD1\uFE0F Reset Progress
+            </button>
+        </div>
+    </div>`;
+}
+
+// ============================================================
+// === 5b. UI & NAVIGATION ===
 // ============================================================
 
 function enableFullAccessUI() {
@@ -1119,6 +1402,8 @@ function showFinalMcqScore() {
     `;
     container.appendChild(switchDiv);
 
+    // Record local progress
+    recordProgressSession('mcq', currentScore, currentQuizData.length, `${currentCourse} ${currentTerm} MCQ`);
     // Log analytics
     logAnalyticsEvent('quiz_complete', `MCQ score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
 }
@@ -1232,6 +1517,7 @@ function showFinalShortAnswerScore() {
     `;
     container.appendChild(switchDiv);
 
+    recordProgressSession('shortAnswer', currentScore, currentQuizData.length, `${currentCourse} ${currentTerm} Short Answer`);
     logAnalyticsEvent('quiz_complete', `Short Answer score: ${currentScore}/${currentQuizData.length} (${percent}%)`);
 }
 
@@ -1413,6 +1699,7 @@ function showFinalEssayScore() {
     `;
     container.appendChild(switchDiv);
 
+    recordProgressSession('essay', essayScore, currentEssay.steps.length, currentEssay.title);
     logAnalyticsEvent('essay_complete', `${currentEssay.title} score: ${essayScore}/${currentEssay.steps.length} (${percent}%)`);
 }
 
@@ -1823,6 +2110,7 @@ function showFlashcardCompletion() {
     `;
     container.appendChild(switchDiv);
 
+    recordProgressSession('flashcard', currentFlashcards.length, currentFlashcards.length, `${currentFlashcardTopic} Flashcards`);
     logAnalyticsEvent('flashcard_complete', `${currentFlashcardTopic} (${currentFlashcardMode} mode)`);
 }
 
@@ -2484,6 +2772,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .item-q   { font-size: 0.95em; color: #1a1a1a; line-height: 1.5; margin-bottom: 6px; }
         .item-ans { font-size: 0.9em; color: #145a32; background: #eafaf1; padding: 5px 8px; border-radius: 3px; margin-bottom: 5px; font-weight: 600; }
         .item-exp { font-size: 0.87em; color: #444; background: #f7f8fa; padding: 5px 8px; border-radius: 3px; line-height: 1.45; }
+
+        /* ── Fallback: hide app UI if user presses Ctrl+P directly ── */
+        @media print {
+            body > *:not(#printable-summary) { display: none !important; }
+            #printable-summary { display: block !important; }
+        }
     `;
     document.head.appendChild(style);
 })();
