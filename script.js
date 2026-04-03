@@ -2161,6 +2161,14 @@ function _buildPrintItemHTML(label, question, answer, explanation, accentColor) 
 }
 
 function _buildPrintDocHTML(modeTitle, date, itemsHTML) {
+    // SVG watermark: rotated text with low opacity, repeats as background
+    const svgWatermark = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+        <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" font-weight="900"
+              fill="rgba(0,0,0,0.08)" text-anchor="middle" dominant-baseline="middle"
+              transform="rotate(-35, 200, 150)">KAERI EDTECH</text>
+    </svg>`;
+    const watermarkDataUrl = 'data:image/svg+xml,' + encodeURIComponent(svgWatermark);
+
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -2178,6 +2186,9 @@ function _buildPrintDocHTML(modeTitle, date, itemsHTML) {
                 font-size: 10pt;
                 color: #1a1a1a;
                 background: #fff;
+                background-image: url('${watermarkDataUrl}');
+                background-repeat: repeat;
+                background-size: 400px 300px;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
@@ -2203,21 +2214,6 @@ function _buildPrintDocHTML(modeTitle, date, itemsHTML) {
                 margin-top: 4px;
                 border-top: 1px solid #e0e0e0;
                 padding-top: 4px;
-            }
-
-            /* ── Watermark ── */
-            body::after {
-                content: "KAERI EDTECH";
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(-35deg);
-                font-size: 72pt;
-                font-weight: 900;
-                color: rgba(0,0,0,0.04);
-                pointer-events: none;
-                z-index: 0;
-                white-space: nowrap;
             }
 
             /* ── Items ── */
@@ -2383,50 +2379,50 @@ function proceedToPrint() {
     if (!printContentData) return;
     closePrintPreview();
 
-    // Build a full self-contained A4 document in a hidden iframe and print it.
-    // This isolates the print output completely from the app's dark UI.
+    const fullHTML = _buildPrintDocHTML(
+        printContentData.modeTitle,
+        printContentData.date,
+        printContentData.itemsHTML
+    );
+
+    const iframe = document.createElement('iframe');
+    iframe.style.cssText = 'position:fixed; top:-9999px; left:-9999px; width:210mm; height:297mm; border:none; visibility:hidden;';
+    document.body.appendChild(iframe);
+
+    const iDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iDoc.open();
+    iDoc.write(fullHTML);
+    iDoc.close();
+
+    // Render KaTeX inside the iframe
+    if (typeof renderMathInElement === 'function') {
+        try {
+            renderMathInElement(iDoc.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ],
+                throwOnError: false
+            });
+        } catch (e) {
+            console.warn('KaTeX rendering in print iframe failed', e);
+        }
+    }
+
+    // Wait for layout & any async rendering, then print
     setTimeout(() => {
-        const fullHTML = _buildPrintDocHTML(
-            printContentData.modeTitle,
-            printContentData.date,
-            printContentData.itemsHTML
-        );
-
-        // Create a temporary hidden iframe
-        const iframe = document.createElement('iframe');
-        iframe.style.cssText = 'position:fixed; top:-9999px; left:-9999px; width:210mm; height:297mm; border:none; visibility:hidden;';
-        document.body.appendChild(iframe);
-
-        const iDoc = iframe.contentDocument || iframe.contentWindow.document;
-        iDoc.open();
-        iDoc.write(fullHTML);
-        iDoc.close();
-
-        // Wait for iframe to fully load (fonts, KaTeX if present), then print
-        iframe.onload = function () {
-            // If KaTeX is available on the parent page, render math inside the iframe too
-            if (typeof renderMathInElement === 'function') {
-                try {
-                    renderMathInElement(iDoc.body, {
-                        delimiters: [
-                            {left:"$$", right:"$$", display:true},
-                            {left:"$", right:"$", display:false},
-                            {left:"\\(", right:"\\)", display:false},
-                            {left:"\\[", right:"\\]", display:true}
-                        ],
-                        throwOnError: false
-                    });
-                } catch(e) {}
-            }
-            setTimeout(() => {
-                iframe.contentWindow.focus();
-                iframe.contentWindow.print();
-                // Remove iframe after print dialog closes
-                setTimeout(() => {
-                    document.body.removeChild(iframe);
-                }, 2000);
-            }, 300);
-        };
+        try {
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+        } catch (e) {
+            console.warn('Print failed', e);
+        }
+        // Remove iframe after print dialog closes
+        setTimeout(() => {
+            if (iframe.parentNode) document.body.removeChild(iframe);
+        }, 2000);
     }, 300);
 }
 
