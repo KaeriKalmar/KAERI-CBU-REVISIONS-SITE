@@ -2,6 +2,7 @@
 // === KAERI EDTECH QUIZ ENGINE - HYBRID MASTER (v11.9 MERGED) ===
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
 // === Enhanced with Silent Revalidation, Expiry Display, and Analytics ===
+// === NEW: Professional Revision Kit Generator (Branded Covers + Session Metadata) ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
@@ -2091,6 +2092,14 @@ function showFlashcardCompletion() {
     challengeBtn.onclick = () => challengeFriend(currentFlashcards.length, 0, "Flashcards");
     container.appendChild(challengeBtn);
 
+    const previewBtn = document.createElement("button");
+    previewBtn.innerText = "👁️ Preview & Print";
+    previewBtn.style.backgroundColor = "#007bff"; 
+    previewBtn.style.color = "white";
+    previewBtn.style.marginLeft = "10px";
+    previewBtn.onclick = generatePrintPreview;
+    container.appendChild(previewBtn);
+
     const backBtn = document.createElement("button");
     backBtn.innerText = "⬅️ Back to Topics";
     backBtn.className = "back-button";
@@ -2130,7 +2139,6 @@ function challengeFriend(score, total, modeName) {
     }
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
 }
-
 
 // ── PRINT HELPERS (KAERI STANDARD REVISION KIT ENGINE v2.0) ──────────────
 // Replaces the old flat _buildPrintItemHTML / _buildPrintDocHTML system.
