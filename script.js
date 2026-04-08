@@ -3,6 +3,7 @@
 // === Server-Side Access + Local Content + Doc Delivery + KaTeX + Smart TTS + Markdown ===
 // === Enhanced with Silent Revalidation, Expiry Display, and Analytics ===
 // === NEW: Professional Revision Kit Generator (Branded Covers + Session Metadata) ===
+// === ADDITIVE SAFE UPDATES: Subscription guide idempotency + extra plan info helper ===
 // ============================================================
 
 // --- CONFIGURATION & STATE ---
@@ -1090,8 +1091,18 @@ function openPaymentModal() {
     }, 300);
 }
 
+// ============================================================
+// === MODIFIED: closePaymentModal with idempotency reset for subscription guide ===
+// ============================================================
 function closePaymentModal() {
-    document.getElementById('payment-modal').classList.remove('show');
+    const modal = document.getElementById('payment-modal');
+    if (modal) modal.classList.remove('show');
+    
+    // ADDITIVE: Close the subscription guide if it exists (idempotency reset)
+    const guide = document.getElementById('subscription-guide');
+    if (guide) {
+        guide.removeAttribute('open');
+    }
 }
 
 function updateBuyNowLink(course, term, price) {
@@ -1151,6 +1162,13 @@ function clearDemoLocks() {
     ["mcq", "shortAnswer", "essay", "flashcard", "documents"].forEach(
         m => localStorage.removeItem(`demo_${m}_used_${currentTermKey}`)
     );
+}
+
+// ============================================================
+// === ADDITIVE HELPER: Show info for extra price cards (does not break existing flow) ===
+// ============================================================
+function showExtraPlanInfo(plan, price) {
+    showAppNotification(`ℹ️ ${plan} (${price}) – coming soon! For now, use "Buy Now" for single term.`, "info", 4000);
 }
 
 // ============================================================
