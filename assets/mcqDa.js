@@ -1,7 +1,617 @@
 
 const mcqData = [
 
-  // --- CS110 Term 1 Data (Existing Questions) ---
+ //CS110 NEW CONTENT MODULE 4 
+ 
+  // ==========================================
+  // MODULE 4: DATA REPRESENTATION (76 Qs)
+  // ==========================================
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "# Core Concepts\nWhat is the primary reason all data in a digital computer must be represented using only **0s and 1s**?",
+    options: [
+      "Digital computers can only understand two voltage states, corresponding to 0 and 1",
+      "Using 0s and 1s makes calculations faster than using other number systems",
+      "The decimal system is too large to fit in computer memory",
+      "Binary was chosen arbitrarily by early computer engineers"
+    ],
+    correct: 0,
+    explanation: "## Tutor Insight\nThink of a light switch—it is either **ON** or **OFF**. \n\nInside a computer, billions of tiny switches (transistors) work the same way. They recognize only two states of electricity: **High Voltage** (1) and **Low Voltage** (0). Because the hardware is built this way, every single piece of data—from text to music—must be encoded into these two simple signals before the computer can process it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which of the following is **NOT** a valid form of data input that a computer can receive?",
+    options: ["Audio", "Gravitational waves", "Fingerprints", "Magnetic cards"],
+    correct: 1,
+    explanation: "> **Tutor Tip:** Always stick to standard digital interfaces.\n\nComputers handle alphabets, digits, symbols, audio, video, and biometric data like fingerprints. **Gravitational waves** are ripples in space-time studied by physicists, but your laptop doesn't have a port or sensor to 'input' them yet!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "A number system in **base $r$** uses how many unique digit symbols?",
+    options: ["$r + 1$", "$r – 1$", "$r$", "$r^2$"],
+    correct: 2,
+    explanation: "## The Base Rule\nThe 'Base' tells you exactly how many symbols are in that system's alphabet. \n\n- **Decimal (Base 10):** Uses 10 symbols ($0-9$).\n- **Binary (Base 2):** Uses 2 symbols ($0, 1$).\n- **Octal (Base 8):** Uses 8 symbols ($0-7$).\n\nSo, for any **base $r$**, you have exactly **$r$** symbols."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In positional notation, what position does the **rightmost** digit of a number occupy?",
+    options: ["Position 1", "Position –1", "Position $n$", "Position 0"],
+    correct: 3,
+    explanation: "## Where do we start counting?\nIn Computer Science, we almost always start counting at **zero**, not one. \n\nThink of the number $52$. The $2$ is the starting point on the far right. We assign it **Position 0**. The $5$ to its left is **Position 1**. This is a universal law for every number system we use."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In the decimal number $52$, what is the **face value** of the digit at position 1?",
+    options: ["5", "2", "10", "50"],
+    correct: 0,
+    explanation: "## Face vs. Position\n- **Face Value:** What does the symbol look like? (Just the digit itself).\n- **Position Value:** What is its 'weight' or multiplier?\n\nIn $52$, Position 1 holds the digit **5**. Its *Face Value* is simply **5**. If I asked for its *Total Value*, then it would be $50$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the **position value** of the digit $2$ in the decimal number $52$?",
+    options: ["2", "$10^0$ (which equals 1)", "$10^1$ (which equals 10)", "20"],
+    correct: 1,
+    explanation: "## Calculating the Weight\nPosition Value is always calculated as: $$\text{Base}^{\text{Position}}$$\n\n1. The digit $2$ is at **Position 0**.\n2. The system is **Decimal** (Base 10).\n3. So, the weight is $10^0$. \n\n> **Note:** Anything to the power of zero equals **1**. So this is the 'ones' place."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "How is the **total value** of a number calculated from its digits?",
+    options: [
+      "By adding all face values together",
+      "By multiplying all face values together",
+      "By summing $(\text{face value} \times \text{base}^{\text{position}})$ for each digit",
+      "By multiplying each face value by its position number"
+    ],
+    correct: 2,
+    explanation: "## The Master Formula\nTo find the value of any number, you multiply every digit by the weight of its 'house' and add them all up. \n\n$$\text{Value} = \sum (\text{Digit} \times \text{Base}^{\text{Position}})$$\n\nThis is the core math used to convert Binary, Octal, and Hex back into Decimal!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "For the decimal number $52$, which expression correctly calculates its value?",
+    options: [
+      "$5 + 2 = 7$",
+      "$5 \times 2 + 2 \times 1 = 12$",
+      "$5 \times 10 + 2 \times 0 = 50$",
+      "$5 \times 10^1 + 2 \times 10^0 = 52$"
+    ],
+    correct: 3,
+    explanation: "## Expansion Check\nLet's apply the formula to $52$:\n- Digit $5$ is at Position 1: $5 \times 10^1 = 50$\n- Digit $2$ is at Position 0: $2 \times 10^0 = 2$\n- Sum: $50 + 2 = 52$.\n\n**Tutor Tip:** Option C is a common trap because people forget that $10^0$ is $1$, not $0$!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "How is a number written to explicitly indicate which **base** it belongs to?",
+    options: ["As $(\text{number})_{\text{base}}$", "As base:number", "As number[base]", "As number/base"],
+    correct: 0,
+    explanation: "We use **subscripts** to keep things clear. \n\nWithout them, you wouldn't know if $10$ means 'Ten' (Decimal) or 'Two' (Binary). By writing $(10)_2$ or $(10)_{10}$, we remove all guesswork."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "The notation $(345)_8$ indicates which of the following?",
+    options: ["Binary number", "Octal number", "Hexadecimal number", "Decimal number"],
+    correct: 1,
+    explanation: "The small number at the bottom (the subscript) is the 'ID tag' of the number system. \n- $_2$ = Binary\n- **$_8$ = Octal**\n- $_{10}$ = Decimal\n- $_{16}$ = Hexadecimal"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "How many distinct number systems are covered in **Module 4**?",
+    options: ["Two", "Three", "Four", "Five"],
+    correct: 2,
+    explanation: "## The Big Four\nThis module covers the four pillars of computing math:\n1. **Decimal** (Base 10)\n2. **Binary** (Base 2)\n3. **Octal** (Base 8)\n4. **Hexadecimal** (Base 16)"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which of the following correctly lists the bases of the **four** systems in this module?",
+    options: ["2, 4, 8, 16", "8, 10, 12, 16", "2, 8, 10, 12", "2, 8, 10, 16"],
+    correct: 3,
+    explanation: "Memory check! \n- Binary = **2**\n- Octal = **8**\n- Decimal = **10**\n- Hexadecimal = **16**\n\nThere is no Base 4 or Base 12 in this module."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "The **decimal** number system uses which set of digit symbols?",
+    options: ["0, 1, 2, 3, 4, 5, 6, 7, 8, 9", "0 to 9 plus A", "1 through 10", "0 through 8"],
+    correct: 0,
+    explanation: "Decimal (Base 10) uses exactly 10 symbols: **0 through 9**. \n\nRemember: In any system, the **base number itself** is never a single digit symbol (e.g., there is no single character for '10' in decimal)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In the decimal system, what is the **position value** at position 3?",
+    options: ["30", "1000", "300", "100"],
+    correct: 1,
+    explanation: "## The Thousands Place\nPosition 3 weight is: $$10^3 = 10 \times 10 \times 10 = 1000$$ \n\n- Pos 0 = 1 (Ones)\n- Pos 1 = 10 (Tens)\n- Pos 2 = 100 (Hundreds)\n- **Pos 3 = 1000 (Thousands)**"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the position value at **position -1** in the decimal number system?",
+    options: ["-10", "0", "0.1 (which equals 1/10)", "10"],
+    correct: 2,
+    explanation: "## Behind the Decimal Point\nWhen you go to the right of the point, exponents become negative. \n\nPosition $-1$ is: $$10^{-1} = \frac{1}{10} = 0.1$$ \nThis is the 'Tenths' place you learned in basic math."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "The **octal** number system consists of which digits?",
+    options: ["0 through 8", "0 through 9", "1 through 8", "0 through 7"],
+    correct: 3,
+    explanation: "## The 'Under 8' Rule\nIn Octal (Base 8), you can use any digit **except** 8 or 9. \n\nJust like decimal digits stop at 9, octal digits stop at 7. If you see an '8' in a number, you know immediately it isn't an octal number!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which of the following is a **valid** octal number?",
+    options: ["2375", "2895", "289A", "2F73"],
+    correct: 0,
+    explanation: "Scan the digits!\n- **2375:** All digits are 7 or lower. **Valid!**\n- 2895: Contains an 8 and 9. **Invalid.**\n- 2F73: Contains an F. That is only for Hexadecimal!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In the octal system, what is the **position value** at position 2?",
+    options: ["8", "64", "16", "512"],
+    correct: 1,
+    explanation: "Weight = $\text{Base}^{\text{Position}}$. \n\nFor Octal at position 2: $$8^2 = 8 \times 8 = 64$$ \nThis means the third digit from the right in an octal number represents how many '64s' you have."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "The **hexadecimal** number system uses how many distinct symbols?",
+    options: ["10", "14", "16", "18"],
+    correct: 2,
+    explanation: "Hexadecimal (Base 16) uses exactly **16** symbols. \n\nBecause we only have 10 digits ($0-9$), we use the first 6 letters of the alphabet ($A, B, C, D, E, F$) to represent values from 10 to 15."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In hexadecimal, the letter **D** represents which decimal value?",
+    options: ["10", "11", "12", "13"],
+    correct: 3,
+    explanation: "## Memorize the Map\n- $A = 10$\n- $B = 11$\n- $C = 12$\n- **$D = 13$**\n- $E = 14$\n- $F = 15$\n\nThis is essential for converting hex to decimal."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which hexadecimal symbol represents the decimal value **15**?",
+    options: ["F", "E", "D", "B"],
+    correct: 0,
+    explanation: "The maximum value in a single Hex position is **15**, which we write as the letter **F**. Once you go higher than 15, you must move to the next position (just like after 9 in decimal)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which of the following is a **valid** hexadecimal number?",
+    options: ["3GH2", "3FA", "3K91", "8Z24"],
+    correct: 1,
+    explanation: "Hex digits only go up to **F**. \n\n- **3FA:** All valid symbols. \n- 3GH2: 'G' and 'H' are outside the range. \n- 3K91: 'K' is invalid. \n- 8Z24: 'Z' is invalid."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In hexadecimal, what is the **position value** at position 3?",
+    options: ["256", "16", "4096", "65536"],
+    correct: 2,
+    explanation: "Position 3 weight is: $$16^3 = 16 \times 16 \times 16 = 4096$$ \n\nHexadecimal weights grow extremely fast, which is why it is used to represent large memory addresses very compactly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the position value at **position -2** in hexadecimal?",
+    options: ["-32", "1/16", "32", "1/256"],
+    correct: 3,
+    explanation: "Position $-2$ weight is: $$16^{-2} = \frac{1}{16^2} = \frac{1}{256}$$ \nThis represents the fractional part of the number."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "# Conversion: Decimal to Base $r$\nWhen converting a decimal **integer** to another base, which operation drives the process?",
+    options: [
+      "Repeated division by the target base, recording each remainder",
+      "Repeated multiplication by the target base",
+      "Repeated subtraction",
+      "Repeated addition"
+    ],
+    correct: 0,
+    explanation: "## The 'Divide & Remainder' Logic\nTo turn a whole decimal number into Binary, Octal, or Hex:\n1. Divide by the new base.\n2. Record the remainder.\n3. Repeat until you reach zero.\n\n> **Crucial:** Always read your remainders from **Bottom to Top** to get the correct answer!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "When converting $(25)_{10}$ to binary, what does the **first** division step produce?",
+    options: ["Q: 13, R: 0", "Q: 12, R: 1", "Q: 12, R: 0", "Q: 25, R: 2"],
+    correct: 1,
+    explanation: "Let's do the first step: $$25 \div 2 = 12 \text{ with a remainder of } 1$$ \n\nThe $1$ is recorded as the first bit (the far right digit of the final answer). The $12$ is passed down to the next step."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In which direction do you read the remainders to obtain the final conversion result?",
+    options: ["Top to bottom", "Left to right", "Bottom to top", "Right to left"],
+    correct: 2,
+    explanation: "## The 'Reverse' Rule\nIn the division method, the **last** remainder you find is actually the **most significant** (leftmost) part of your answer. Therefore, you must read the list from **Bottom to Top**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the binary equivalent of $(25)_{10}$?",
+    options: ["10011", "11010", "10110", "11001"],
+    correct: 3,
+    explanation: "## Step-by-Step\n- $25 \div 2 = 12$ R **1**\n- $12 \div 2 = 6$ R **0**\n- $6 \div 2 = 3$ R **0**\n- $3 \div 2 = 1$ R **1**\n- $1 \div 2 = 0$ R **1**\n\nRead Bottom-to-Top: **11001**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "A student stops the division process when the quotient reaches **1** instead of 0. What happens?",
+    options: [
+      "The final most-significant bit is lost",
+      "The result is correct because 1 is a binary digit",
+      "The student must read top-to-bottom to compensate",
+      "The result is unchanged"
+    ],
+    correct: 0,
+    explanation: "## Don't stop early!\nYou **must** divide until you reach a quotient of **zero**. \n\nIf you stop at 1, you miss the final step: $1 \div 2 = 0$ remainder **1**. That final '1' is usually the very first digit of your answer. Without it, your answer is numerically wrong and too short."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "To convert $(53)_{10}$ to binary, how many division steps are required?",
+    options: ["4", "6", "5", "7"],
+    correct: 1,
+    explanation: "Let's count the steps:\n1. $53/2 = 26$ R1\n2. $26/2 = 13$ R0\n3. $13/2 = 6$ R1\n4. $6/2 = 3$ R0\n5. $3/2 = 1$ R1\n6. $1/2 = 0$ R1\n\n**6 steps** are needed to reach the target quotient of 0."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(53)_{10}$ in binary?",
+    options: ["101011", "110100", "110101", "101101"],
+    correct: 2,
+    explanation: "Using our remainders from the previous step (read from Bottom to Top): \n$$1, 1, 0, 1, 0, 1$$ \nResult: **110101**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(68)_{10}$ in **octal**?",
+    options: ["84", "86", "108", "104"],
+    correct: 3,
+    explanation: "## Octal Division\nDivide by **8**:\n- $68 \div 8 = 8$ Remainder **4**\n- $8 \div 8 = 1$ Remainder **0**\n- $1 \div 8 = 0$ Remainder **1**\n\nRead Bottom-to-Top: **104**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(29)_{10}$ in binary?",
+    options: ["11101", "10111", "11011", "11100"],
+    correct: 0,
+    explanation: "## Fast Division\n- $29/2 = 14$ R1\n- $14/2 = 7$ R0\n- $7/2 = 3$ R1\n- $3/2 = 1$ R1\n- $1/2 = 0$ R1\n\nRead Bottom-to-Top: **11101**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "When converting a decimal **fraction** (e.g., 0.5) to binary, which operation is used?",
+    options: ["Divide by 2 repeatedly", "Multiply by 2 repeatedly", "Subtract 0.5", "Add 0.5"],
+    correct: 1,
+    explanation: "## The 'Flip' Rule\nFractions work the **exact opposite** of integers:\n- **Integers:** Repeated Division.\n- **Fractions:** Repeated Multiplication.\n\nAlso, for fractions, you read the results from **Top to Bottom**, not bottom to top!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "After multiplying a decimal fraction, which part of the result do you record as the next digit?",
+    options: ["Fractional part", "Entire product", "Integer part only", "Largest digit"],
+    correct: 2,
+    explanation: "When you multiply (e.g., $0.6 \times 2 = 1.2$), you 'grab' the **1** (the integer part) and put it in your answer column. Then, you take only the remaining **0.2** and multiply that in the next step."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In which direction do you read fractional conversion digits to form the final result?",
+    options: ["Bottom to top", "Right to left", "Numerically smallest", "Top to bottom"],
+    correct: 3,
+    explanation: "## The 'Natural' Order\nUnlike the division method, the multiplication method is **Top to Bottom**. The very first integer part you generate is the very first digit after the binary/octal point."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the recommended minimum number of multiplication steps for a decimal fraction?",
+    options: ["At least four", "Exactly two", "Until it exceeds 1", "Matches decimal places"],
+    correct: 0,
+    explanation: "Some decimal fractions never reach a perfect '0' when converting to binary. To ensure your answer is accurate enough for a standard computer science problem, we perform at least **four** steps."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the binary equivalent of $(0.2345)_{10}$ to 6 binary places?",
+    options: ["0.110011", "0.001111", "0.010111", "0.100001"],
+    correct: 1,
+    explanation: "## Step-by-Step Multiplication\n1. $0.2345 \times 2 = 0.4690$ (**0**)\n2. $0.4690 \times 2 = 0.9380$ (**0**)\n3. $0.9380 \times 2 = 1.8760$ (**1**)\n4. $0.8760 \times 2 = 1.7520$ (**1**)\n5. $0.7520 \times 2 = 1.5040$ (**1**)\n6. $0.5040 \times 2 = 1.0080$ (**1**)\n\nRead Down: **0.001111**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "To convert $(0.865)_{10}$ to **octal**, you multiply repeatedly by which number?",
+    options: ["2", "10", "8", "16"],
+    correct: 2,
+    explanation: "The base of your **target** system determines the multiplier. Since we are converting to **Octal (Base 8)**, we must multiply by 8 repeatedly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "To convert a mixed number like **23.078** to binary, what is the procedure?",
+    options: [
+      "Multiply everything by 2",
+      "Divide everything by 2",
+      "Ignore the fraction",
+      "Convert 23 by division and 0.078 by multiplication separately"
+    ],
+    correct: 3,
+    explanation: "## Split the Problem\nYou cannot use one method for both parts. \n1. Process the **23** using the division method.\n2. Process the **0.078** using the multiplication method.\n3. Combine them back together with a binary point in the middle!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "# Conversion: Base $r$ to Decimal\nWhen converting from binary, octal, or hex back to decimal, which operation is primarily used?",
+    options: [
+      "Multiply each digit by its position value and sum all products",
+      "Divide repeatedly by 10",
+      "Add all digits together",
+      "Subtract each digit from the base"
+    ],
+    correct: 0,
+    explanation: "## The 'Expansion' Method\nEvery digit sits in a 'house' with a certain weight (e.g., $1, 2, 4, 8$ for binary). To get back to decimal, you multiply each digit by its weight and add them up."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert $(1011)_2$ to decimal. Which expansion is correct?",
+    options: [
+      "$1 + 0 + 1 + 1 = 3$",
+      "$1\times 2^3 + 0\times 2^2 + 1\times 2^1 + 1\times 2^0 = 11$",
+      "$1\times 2^4 + 0\times 2^3 + 1\times 2^2 + 1\times 2^1 = 18$",
+      "None of these"
+    ],
+    correct: 1,
+    explanation: "## Power of 2 Weights\nAssign weights from right to left:\n- $1 \times 2^0 = 1$\n- $1 \times 2^1 = 2$\n- $0 \times 2^2 = 0$\n- $1 \times 2^3 = 8$\n\nSum them: $8 + 0 + 2 + 1 = 11$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the decimal value of $(C15)_{16}$?",
+    options: ["3061", "3109", "3093", "3605"],
+    correct: 2,
+    explanation: "## Hex expansion\n1. $C$ is $12$: $12 \times 16^2 = 3072$\n2. $1$ is at pos 1: $1 \times 16^1 = 16$\n3. $5$ is at pos 0: $5 \times 16^0 = 5$\n\nTotal: $3072 + 16 + 5 = 3093$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In fractional binary like $(0.1101)_2$, what position is assigned to the **first** digit after the point?",
+    options: ["Position 0", "Position 1", "Position -2", "Position -1"],
+    correct: 3,
+    explanation: "Think of a number line. If the left of the point is $0, 1, 2$, then the right of the point must be **$-1, -2, -3$**. The first digit immediately after the dot is always **Position -1**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the decimal equivalent of $(0.1101)_2$?",
+    options: ["0.8125", "0.6875", "0.5625", "0.75"],
+    correct: 0,
+    explanation: "## Negative Exponents\n- $1 \times 2^{-1} = 0.5$\n- $1 \times 2^{-2} = 0.25$\n- $0 \times 2^{-3} = 0$\n- $1 \times 2^{-4} = 0.0625$\n\nSum: $0.5 + 0.25 + 0.0625 = 0.8125$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the decimal equivalent of $(0.15)_{16}$?",
+    options: ["0.25", "0.0820 (Approx)", "0.3125", "1.5"],
+    correct: 1,
+    explanation: "## Hex Fractions\n- $1 \times 16^{-1} = 0.0625$\n- $5 \times 16^{-2} = 0.01953$\n\nSum: $0.08203...$ \nIn simple terms, $(21/256)_{10}$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert $(1011.1001)_2$ to decimal.",
+    options: ["10.5625", "11.0625", "11.5625", "12.5625"],
+    correct: 2,
+    explanation: "## Mixed Conversion\n1. **Whole part (1011):** $8 + 0 + 2 + 1 = 11$\n2. **Fractional part (.1001):** $0.5 + 0 + 0 + 0.0625 = 0.5625$\n\nTotal: **11.5625**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "# The Shortcut Methods\nWhat is the key shortcut that allows direct **Binary-to-Octal** conversion?",
+    options: [
+      "Group digits in 4s",
+      "Divide by 8",
+      "Multiply by 8",
+      "Group digits in 3s from the right and convert each group"
+    ],
+    correct: 3,
+    explanation: "## The 'Magic 3' Rule\nBecause $2^3 = 8$, exactly **three** binary bits fit into **one** octal digit. \n\nInstead of doing long math, just chop your binary number into groups of 3 (starting from the right side) and translate each group into its octal symbol."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Why does one **Hexadecimal** digit correspond to exactly **4 binary bits**?",
+    options: [
+      "Because $2^4 = 16$",
+      "Hex has 4 more symbols than decimal",
+      "Computers always process groups of 4",
+      "4 is the square root of 16"
+    ],
+    correct: 0,
+    explanation: "> **Tutor Wisdom:** It's all about the powers of 2.\n\nSince $2^4 = 16$, four bits can produce exactly 16 patterns ($0000$ up to $1111$). This perfect match allows us to swap 4 bits for 1 hex character without any leftovers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert the binary number $(1110101100110)_2$ to **Octal**.",
+    options: ["16645", "16546", "15646", "14565"],
+    correct: 1,
+    explanation: "## Grouping by 3\nStart from the right side:\n- `110` = 6\n- `100` = 4\n- `101` = 5\n- `110` = 6\n- `1` (pad to `001`) = 1\n\nJoin: **16546**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert binary $(1110101100110)_2$ to **Hexadecimal**.",
+    options: ["1E66", "1D67", "1D66", "1C66"],
+    correct: 2,
+    explanation: "## Grouping by 4\nStart from the right side:\n- `0110` = 6\n- `0110` = 6\n- `1101` = 13 (**D**)\n- `1` (pad to `0001`) = 1\n\nJoin: **1D66**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "A student converts binary to octal by grouping in **4s** instead of 3s. What happens?",
+    options: [
+      "Identical result",
+      "Always too large",
+      "Result is a valid hex number instead",
+      "Incorrect octal number"
+    ],
+    correct: 3,
+    explanation: "## Rule Violation\nOctal math depends on groups of **3**. If you group in 4s, your 'digits' will go up to 15, but octal doesn't even recognize digits higher than 7. You will get a valid **Hex** number, but an **Incorrect Octal** one."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "To convert $(473)_8$ to binary, what is the first step?",
+    options: [
+      "Convert each individual digit into its 3-bit binary equivalent",
+      "Convert to decimal first",
+      "Divide by 2 repeatedly",
+      "Group digits in pairs"
+    ],
+    correct: 0,
+    explanation: "This is the **reverse shortcut**. Instead of grouping bits, you 'expand' every octal digit into its 3-bit binary pattern. For example, the $7$ immediately becomes `111`."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the binary equivalent of the octal number $(473)_8$?",
+    options: ["100110011", "100111011", "101111011", "100101011"],
+    correct: 1,
+    explanation: "## Expansion Map\n- $4$ = `100`\n- $7$ = `111`\n- $3$ = `011`\n\nPut them together: **100111011**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "To convert $(2BA3)_{16}$ to binary, how many bits will the result contain?",
+    options: ["8 bits", "12 bits", "16 bits", "4 bits"],
+    correct: 2,
+    explanation: "Easy math: Every Hex digit expands into **4 bits**. \n\nSince there are 4 Hex characters ($2, B, A, 3$), the total bits will be $$4 \times 4 = 16$$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the binary equivalent of $(2BA3)_{16}$?",
+    options: [
+      "0010111010100011",
+      "0011101110100010",
+      "0010101110110011",
+      "0010101110100011"
+    ],
+    correct: 3,
+    explanation: "## Hex Expansion\n- $2$ = `0010`\n- $B$ (11) = `1011`\n- $A$ (10) = `1010`\n- $3$ = `0011`\n\nResult: **0010101110100011**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "When converting binary to octal and the leftmost group is incomplete, what must you do?",
+    options: ["Pad with leading zeros", "Discard it", "Add extra 1s", "Move bits to the right"],
+    correct: 0,
+    explanation: "## The 'Zero Padding' Trick\nIf your bits don't fit perfectly into groups of 3, just add zeros to the **far left**. \n\nIt's like writing $07$ instead of $7$—it makes the group look right without changing the value of the number."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert binary $(1100111100111)_2$ to **Octal**.",
+    options: ["14657", "14747", "16347", "14567"],
+    correct: 1,
+    explanation: "## Grouping by 3\n- `111` = 7\n- `100` = 4\n- `111` = 7\n- `100` = 4\n- `1` (pad to `001`) = 1\n\nResult: **14747**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the primary advantage of hexadecimal for binary memory addresses?",
+    options: [
+      "Simpler arithmetic",
+      "Only uses numbers",
+      "Compactness (1 hex digit replaces 4 bits)",
+      "Native CPU processing"
+    ],
+    correct: 2,
+    explanation: "> **Tutor Reality Check:** A 32-bit binary address is impossible for a human to read. \n\nBut in Hex, it is only 8 characters long. Hex is essentially 'Shorthand Binary' for humans—it's shorter, easier to write, and much harder to mess up."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which conversion path can **bypass** decimal entirely using a shortcut?",
+    options: ["Decimal to binary", "Decimal to octal", "Octal to decimal", "Octal to binary"],
+    correct: 3,
+    explanation: "## The Binary Shortcut\nShortcuts only work between **Binary** and its base-2 cousins (Octal/Hex). \n\nIf **Decimal** is part of the problem, you **must** do the long math. But for Octal-to-Binary, you can just expand the digits directly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(68)_{10}$ in binary?",
+    options: ["1000100", "1000010", "1001000", "1100100"],
+    correct: 0,
+    explanation: "## Division Check\n- $68/2 = 34$ R0\n- $34/2 = 17$ R0\n- $17/2 = 8$ R1\n- $8/2 = 4$ R0\n- $4/2 = 2$ R0\n- $2/2 = 1$ R0\n- $1/2 = 0$ R1\n\nRead Up: **1000100**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(68)_{10}$ in **hexadecimal**?",
+    options: ["3C", "44", "4E", "34"],
+    correct: 1,
+    explanation: "## Hex Division\n- $68 \div 16 = 4$ Remainder **4**\n- $4 \div 16 = 0$ Remainder **4**\n\nRead Up: **44**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What happens if a student incorrectly applies the **division** method to a decimal fraction?",
+    options: ["Result is correct", "Result is zero", "Result is wrong (nonsensical)", "Same result"],
+    correct: 2,
+    explanation: "Division is for growing whole numbers. If you divide a fraction like $0.5$ by $2$, it just gets smaller ($0.25$) and you will never get a remainder. You will just end up with a mess that means nothing."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the decimal value of $(4D.21)_{16}$?",
+    options: ["76.1289", "77.5195", "76.5195", "77.1289"],
+    correct: 3,
+    explanation: "## Mixed Hex Expansion\n1. **Whole (4D):** $(4 \times 16) + 13 = 64 + 13 = 77$\n2. **Fraction (.21):** $(2/16) + (1/256) = 0.125 + 0.0039 = 0.1289$\n\nTotal: **77.1289**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the correct 3-bit binary for octal digit **7**?",
+    options: ["111", "110", "011", "101"],
+    correct: 0,
+    explanation: "The digit 7 is the 'Full House' for octal. \n$4 + 2 + 1 = 7$. \nSo, in binary, every bit is flipped to **1**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the correct 4-bit binary for hex digit **B**?",
+    options: ["1010", "1011", "1100", "1001"],
+    correct: 1,
+    explanation: "## Hex Map\n1. Hex $B$ = Decimal $11$.\n2. $11 = 8 + 2 + 1$.\n3. In 4-bit binary: **1011**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which statement correctly describes binary?",
+    options: ["Uses 0, 1, 2", "Weights are powers of 10", "Weights are powers of 2", "Least efficient system"],
+    correct: 2,
+    explanation: "Binary is the **Base 2** system. This means its weights are $1, 2, 4, 8, 16...$. This matches exactly how computer hardware works (high voltage vs low voltage)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In base $r$, a digit $d$ at position $p$ contributes what value?",
+    options: ["$d + r^p$", "$d + p$", "$d \times p$", "$d \times r^p$"],
+    correct: 3,
+    explanation: "This is the **Universal Rule** for all math in this module. You take the digit symbol ($d$) and multiply it by its positional weight ($r^p$)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "In decimal, the digit immediately LEFT of the point is position ___, and to the RIGHT is position ___.",
+    options: ["0; -1", "1; 0", "0; 1", "-1; 0"],
+    correct: 0,
+    explanation: "Think of a number line. If we start at zero, moving right takes us into negatives. \n- Ones place = **Pos 0**.\n- Tenths place = **Pos -1**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is $(29)_{10}$ in hexadecimal?",
+    options: ["1C", "1D", "2D", "1E"],
+    correct: 1,
+    explanation: "## Hex Division\n- $29 \div 16 = 1$ R **13**\n- $1 \div 16 = 0$ R **1**\n\nNote: $13$ is the letter **D**. Read Up: **1D**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Which number contains an **invalid** octal digit?",
+    options: ["7654", "3012", "3819", "2047"],
+    correct: 2,
+    explanation: "> **Tutor Red Flag:** I see an **8** and a **9** in Option C. \n\nSince Octal (Base 8) stops at 7, these digits are physically impossible in that system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "What is the 4-bit binary for hex digit **A**?",
+    options: ["1000", "1001", "0111", "1010"],
+    correct: 3,
+    explanation: "1. Hex $A$ = Decimal $10$.\n2. $10 = 8 + 2$.\n3. Binary: **1010**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "A student converts a fraction and gets integer parts 0, 1, 1, 1, 0, 1 from top to bottom. Result?",
+    options: ["0.011101", "0.101110", "0.110100", "0.101011"],
+    correct: 0,
+    explanation: "Fractions are **Direct**. You do not reverse them like integers. Just put a '0.' in front and list them exactly in the order they were produced: **0.011101**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert octal $(345)_8$ to decimal.",
+    options: ["229", "229", "293", "197"],
+    correct: 0,
+    explanation: "## Octal expansion\n- $(3 \times 64) + (4 \times 8) + (5 \times 1)$\n- $192 + 32 + 5 = 229$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "Convert fraction **0.865** to binary (4 steps). What is the integer sequence?",
+    options: ["1, 0, 1, 1", "0, 1, 1, 0", "1, 1, 0, 1", "1, 1, 1, 0"],
+    correct: 2,
+    explanation: "1. $0.865 \times 2 = 1.73$ (**1**)\n2. $0.73 \times 2 = 1.46$ (**1**)\n3. $0.46 \times 2 = 0.92$ (**0**)\n4. $0.92 \times 2 = 1.84$ (**1**)\n\nSequence: **1, 1, 0, 1**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Data Representation",
+    q: "When converting **1011011** to hex, what must be done **before** grouping?",
+    options: ["Add leading 1", "Reverse order", "Convert to decimal", "Pad left with zeros to make 8 bits"],
+    correct: 3,
+    explanation: "## Safety First\nYou have 7 bits. Hex needs groups of 4. \nIf you start from the right, your last group is only 3 bits (`101`). Pad it with a zero (`0101`) so you don't miscalculate the translation!"
+  },
+  
+  //CS110 NEW CONTENT MODULE 5
+ 
+ // --- CS110 Term 1 Data (Existing Questions) ---
 
   {
 
@@ -17300,1033 +17910,7 @@ const mcqData = [
     year: "2019/2020",
     tag: "MCQ"
   },
-
-//
-{
-    "q": "EBCDIC stands for? (2012 Test One (1))",
-    "options": [
-      "Extended Binary Coded Decimal Interchange Code",
-      "Extended Bit Code Decimal Interchange Code",
-      "Extended Bit Case Decimal Interchange Code",
-      "Extended Binary Case Decimal Interchange Code"
-    ],
-    "correct": 0,
-    "explanation": "EBCDIC is an 8-bit character encoding used mainly on IBM mainframe operating systems.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "BCD is? (2012 Test One (1))",
-    "options": [
-      "Binary Coded Decimal",
-      "Bit Coded Decimal",
-      "Binary Coded Digit",
-      "Bit Coded Digit"
-    ],
-    "correct": 0,
-    "explanation": "BCD is a system of writing numerals that assigns a four-digit binary code to each decimal digit.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "ASCII stands for? (2012 Test One (1))",
-    "options": [
-      "American Stable Code for International Interchange",
-      "American Standard Case for Institutional Interchange",
-      "American Standard Code for Information Interchange",
-      "American Standard Code for Interchange Information."
-    ],
-    "correct": 2,
-    "explanation": "ASCII is a character encoding standard for electronic communication.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the following is first generation of computer? (2012 Test One (1))",
-    "options": [
-      "EDSAC",
-      "IBM-1401",
-      "CDC-1604",
-      "ICL-2900"
-    ],
-    "correct": 0,
-    "explanation": "EDSAC (Electronic Delay Storage Automatic Calculator) was an early British computer that used vacuum tubes, characteristic of the first generation.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Chief component of first generation computer was? (2012 Test One (1))",
-    "options": [
-      "Transistors",
-      "Vacuum Tubes and Valves",
-      "Integrated Circuits",
-      "None of above"
-    ],
-    "correct": 1,
-    "explanation": "First-generation computers used vacuum tubes for circuitry and magnetic drums for memory.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "FORTRAN is? (2012 Test One (1))",
-    "options": [
-      "File Translation",
-      "Format Translation",
-      "Formula Translation",
-      "Floppy Translation"
-    ],
-    "correct": 2,
-    "explanation": "FORTRAN is a programming language especially suited to numeric computation and scientific computing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "What was the name of the first commercially available microprocessor chip?? (2012 Test One (1))",
-    "options": [
-      "Intel 308",
-      "Intel 33",
-      "Intel 4004",
-      "Motorola 639"
-    ],
-    "correct": 2,
-    "explanation": "The Intel 4004 was a 4-bit microprocessor released by Intel in 1971. It was the first commercially available microprocessor.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Second Generation computers were developed during? (2012 Test One (1))",
-    "options": [
-      "1949 to 1955",
-      "1956 to 1965",
-      "1965 to 1970",
-      "1970 to 1990"
-    ],
-    "correct": 1,
-    "explanation": "Second-generation computers used transistors, developed during this period, in place of vacuum tubes.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The computer size was very large in? (2012 Test One (1))",
-    "options": [
-      "First Generation",
-      "Second Generation",
-      "Third Generation",
-      "Fourth Generation"
-    ],
-    "correct": 0,
-    "explanation": "First-generation computers, which used vacuum tubes, were very large and took up entire rooms.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Microprocessors as switching devices are for which generation computers? (2012 Test One (1))",
-    "options": [
-      "First Generation",
-      "Second Generation",
-      "Third Generation",
-      "Fourth Generation"
-    ],
-    "correct": 3,
-    "explanation": "The fourth generation of computers saw the development of the microprocessor, which brought the CPU to a single chip.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Generations",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Modern Computer are very reliable but they are not? (2012 Test One (1))",
-    "options": [
-      "Fast",
-      "Powerful",
-      "Infallible",
-      "Cheap"
-    ],
-    "correct": 2,
-    "explanation": "While computers are reliable, they are not infallible and are still susceptible to errors and failures.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "What is the name of the display feature that highlights are of the screen which requires operator attention?? (2012 Test One (1))",
-    "options": [
-      "Pixel",
-      "Reverse video",
-      "Touch screen",
-      "Cursor"
-    ],
-    "correct": 1,
-    "explanation": "Reverse video is a screen feature that inverts the colors of a specified area to make it stand out.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Personal computers use a number of chips mounted on a main circuit board. What is the common name for such boards?? (2012 Test One (1))",
-    "options": [
-      "Daughter board",
-      "Motherboard",
-      "Father board",
-      "Breadboard"
-    ],
-    "correct": 1,
-    "explanation": "The motherboard is the main circuit board of a personal computer, containing the CPU, memory, and connectors for other peripherals.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "In most IBM PCs, the CPU, the device drives, memory expansion slots and active components are mounted on a single board. What is the name of this board?? (2012 Test One (1))",
-    "options": [
-      "Motherboard",
-      "Breadboard",
-      "Daughter board",
-      "Grandmother board"
-    ],
-    "correct": 0,
-    "explanation": "This is a direct definition of a motherboard, which houses the central components of a computer.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "What is meant by a dedicated computer?? (2012 Test One (1))",
-    "options": [
-      "Which is used by one person only",
-      "Which is assigned one and only one task",
-      "Which uses one kind of software-",
-      "Which is meant for application software"
-    ],
-    "correct": 1,
-    "explanation": "A dedicated computer is a system that performs a single, specific function, such as a server, firewall, or router.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The system unit of a personal computer typically contains all of the following except:? (2012 Test One (1))",
-    "options": [
-      "Microprocessor",
-      "Disk controller",
-      "Serial interface",
-      "Modem"
-    ],
-    "correct": 3,
-    "explanation": "A modem is an external or internal device that allows a computer to communicate over a telephone line or other network connection, but it is not a core component of the system unit itself.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A computer program that converts an entire program into machine language is called a/an? (2012 Test One (1))",
-    "options": [
-      "Interpreter",
-      "Simulator",
-      "Compiler",
-      "Commander"
-    ],
-    "correct": 2,
-    "explanation": "A compiler translates a high-level language program into machine language code all at once.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A computer program that translates one program instructions at a time into machine language is called a/an? (2012 Test One (1))",
-    "options": [
-      "Interpreter",
-      "CPU",
-      "Compiler",
-      "Simulator"
-    ],
-    "correct": 0,
-    "explanation": "An interpreter translates and executes program instructions one line at a time.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A small or intelligent device is so called because it contains within it a? (2012 Test One (1))",
-    "options": [
-      "Computer",
-      "Microcomputer",
-      "Programmable.",
-      "Sensor"
-    ],
-    "correct": 1,
-    "explanation": "A smart or intelligent device typically contains an embedded microcomputer or microprocessor to control its functions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which computers are used in the weather forecasting industry?? (2012 Test One (1))",
-    "options": [
-      "Notebook computers",
-      "Supercomputers",
-      "Jon Von Neumann computers",
-      "mini Computers"
-    ],
-    "correct": 1,
-    "explanation": "Supercomputers are used for complex, large-scale scientific calculations, such as those required for weather modeling and forecasting.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Classification",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Floppy disks which are made from flexible plastic material are also called?? (2012 Test One (1))",
-    "options": [
-      "Hard disks",
-      "High-density disks",
-      "Diskettes",
-      "Templates"
-    ],
-    "correct": 2,
-    "explanation": "The term 'diskette' is another name for a floppy disk, emphasizing its small, flexible nature compared to hard disks.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Storage",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The secondary storage devices can only store data but they cannot perform? (2012 Test One (1))",
-    "options": [
-      "Arithmetic Operation",
-      "Logic operation",
-      "Fetch operations",
-      "Either of the above"
-    ],
-    "correct": 3,
-    "explanation": "Secondary storage devices are for long-term data storage and do not have the processing capabilities of a CPU, so they cannot perform arithmetic or logic operations.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Storage",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Hard disks can have a storage capacity in the region of...? (2012 Test One (1))",
-    "options": [
-      "1.44Mb",
-      "1Gb",
-      "720K",
-      "20Mb"
-    ],
-    "correct": 1,
-    "explanation": "At the time of this test, hard drive capacities were typically measured in gigabytes (GB), while the other options represent much smaller capacities associated with floppy disks.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Storage",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Formatting a disk results in all the data being...? (2012 Test One (1))",
-    "options": [
-      "Deleted from the disk",
-      "Copied from the disk",
-      "Saved to the disk",
-      "duplicated on the disk"
-    ],
-    "correct": 0,
-    "explanation": "Formatting a disk erases all existing data by creating a new file system and making the previous data inaccessible.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Storage",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which storage device has the largest capacity in Mb.s?? (2012 Test One (1))",
-    "options": [
-      "A CD-ROM",
-      "A floppy disk",
-      "Magnetic tape storage",
-      "DVD-ROM"
-    ],
-    "correct": 3,
-    "explanation": "A DVD-ROM has a capacity of at least 4.7 GB, which is significantly larger than the capacities of floppy disks (1.44 MB) and CD-ROMs (700 MB).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Storage",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Regarding a VDU, Which statement is more correct?? (2012 Test One (1))",
-    "options": [
-      "It is an output device",
-      "It is an input device",
-      "It is a peripheral device",
-      "It is hardware item"
-    ],
-    "correct": 2,
-    "explanation": "A VDU (Visual Display Unit) is a peripheral device, as it is an external component connected to a computer system.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the following is not an input device?? (2012 Test One (1))",
-    "options": [
-      "OCR",
-      "Optical scanners",
-      "Voice recognition device",
-      "COM (Computer Output to Microfilm)"
-    ],
-    "correct": 3,
-    "explanation": "COM is an output device that converts computer-generated data to microfilm or microfiche.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which is considered a direct entry input device?? (2012 Test One (1))",
-    "options": [
-      "Optical scanner",
-      "Mouse and digitizer",
-      "Light pen",
-      "All of the above"
-    ],
-    "correct": 3,
-    "explanation": "All of these devices allow for direct entry of data or commands into a computer system without the need for manual typing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the following is used only for data entry and storage, and never for processing?? (2012 Test One (1))",
-    "options": [
-      "Mouse",
-      "Dumb terminal",
-      "Micro computer",
-      "Dedicated data entry system"
-    ],
-    "correct": 1,
-    "explanation": "A dumb terminal is a device with a keyboard and screen that relies on a central computer to perform all processing tasks.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "What input device can be used for marking a multiple choice test?? (2012 Test One (1))",
-    "options": [
-      "Mouse",
-      "Bar code reader",
-      "Optical mark reader",
-      "Space Mouse"
-    ],
-    "correct": 2,
-    "explanation": "An Optical Mark Reader (OMR) is specifically designed to detect marks or shadows on paper, making it ideal for marking multiple-choice tests.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
   
- 
-  {
-    "q": "What is the name of the computer terminal which gives paper printout?? (2012 Test One (1))",
-    "options": [
-      "Display screen",
-      "Soft copy terminal",
-      "Hard copy terminal",
-      "Plotter"
-    ],
-    "correct": 2,
-    "explanation": "A hard copy terminal, such as a printer or teletype, produces a physical copy of output on paper.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Dot-matrix is a type of? (2012 Test One (1))",
-    "options": [
-      "Tape",
-      "Printer",
-      "Disk",
-      "Bus"
-    ],
-    "correct": 1,
-    "explanation": "A dot-matrix printer creates characters and graphics by striking an ink-soaked ribbon against the paper with a grid of pins.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A kind of serial dot-matrix printer that forms characters with magnetically-charged ink sprayed dots is called? (2012 Test One (1))",
-    "options": [
-      "Laser printer",
-      "Ink-jet printer",
-      "Drum printer",
-      "Chan printer"
-    ],
-    "correct": 1,
-    "explanation": "An inkjet printer works by spraying tiny droplets of ink onto the paper to form images and text.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which printer is very commonly used for desktop publishing?? (2012 Test One (1))",
-    "options": [
-      "Laser printer",
-      "Inkjet printer",
-      "Daisywheel printer",
-      "Dot matrix printer"
-    ],
-    "correct": 0,
-    "explanation": "Laser printers are known for their high-quality, fast, and quiet printing, which makes them ideal for desktop publishing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "An output device that uses words or messages recorded on a magnetic medium to produce audio response is? (2012 Test One (1))",
-    "options": [
-      "Magnetic tape",
-      "Voice response unit",
-      "Voice recognition unit",
-      "Voice band"
-    ],
-    "correct": 1,
-    "explanation": "A voice response unit is an output device that can generate speech from recorded words or phrases.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the printers used in conjunction with computers uses dry ink power?? (2012 Test One (1))",
-    "options": [
-      "Daisy wheel printer",
-      "Line printer",
-      "Laser printer",
-      "Thermal printer"
-    ],
-    "correct": 2,
-    "explanation": "Laser printers use a toner cartridge that contains a fine powder of dry ink, which is fused onto the paper with heat.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the following produces the best quality graphics reproduction?? (2012 Test One (1))",
-    "options": [
-      "Laser printer",
-      "Ink jet printer",
-      "Plotter",
-      "Dot matrix printer"
-    ],
-    "correct": 2,
-    "explanation": "A plotter is a specialized output device that draws continuous lines on paper, producing very high-quality vector graphics.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "What do you need for an ink jet printer?? (2012 Test One (1))",
-    "options": [
-      "A cartridge",
-      "A drum",
-      "A ribbon"
-    ],
-    "correct": 0,
-    "explanation": "Inkjet printers use ink cartridges that contain the ink necessary for printing.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A laser printer does NOT use?? (2012 Test One (1))",
-    "options": [
-      "A print head",
-      "A laser beam",
-      "A photoconductive drum"
-    ],
-    "correct": 0,
-    "explanation": "A print head is a component of an inkjet printer, not a laser printer.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Output",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The two kinds of main memory are:? (2012 Test One (1))",
-    "options": [
-      "Primary and secondary",
-      "Random and sequential",
-      "ROM and RAM",
-      "All of above"
-    ],
-    "correct": 2,
-    "explanation": "Main memory is also known as primary memory, which includes both ROM (Read-Only Memory) and RAM (Random-Access Memory).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which of the following will happen when data is entered into a memory location?? (2012 Test One (1))",
-    "options": [
-      "It will add to the content of the location",
-      "It will change the address of the memory location",
-      "It will erase the previous content",
-      "It will not be fruitful if there is already some data at the location"
-    ],
-    "correct": 2,
-    "explanation": "When new data is written to a memory location, it overwrites and erases the data that was previously there.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A storage area used to store data to compensate for the difference in speed at which the different units can handle data is.? (2012 Test One (1))",
-    "options": [
-      "Memory",
-      "Buffer",
-      "Accumulator",
-      "Address"
-    ],
-    "correct": 1,
-    "explanation": "A buffer is a temporary storage area that holds data while it is being transferred from one device to another.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Current SIMMs have either or ... connectors (pins)? (2012 Test One (1))",
-    "options": [
-      "9 or 32",
-      "30 or 70",
-      "28 or 72",
-      "30 or 72"
-    ],
-    "correct": 3,
-    "explanation": "SIMMs (Single In-line Memory Modules) were a type of RAM module that came in 30-pin and 72-pin versions.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The storage subsystem in a microcomputer consists mainly of ... or ... media with varying capacities? (2012 Test One (1))",
-    "options": [
-      "Memory or video",
-      "Magnetic or optical",
-      "Optical or memory",
-      "Video or magnetic"
-    ],
-    "correct": 1,
-    "explanation": "Microcomputer storage subsystems use either magnetic media (like hard drives) or optical media (like CDs and DVDs).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The central processing unit (CPU) consists of? (2012 Test One (1))",
-    "options": [
-      "Input, output and processing",
-      "Control unit, primary storage, and secondary storage",
-      "Control unit, arithmetic-logic unit and primary storage",
-      "Control unit, processing, and primary storage"
-    ],
-    "correct": 2,
-    "explanation": "The CPU is composed of the Control Unit (CU), Arithmetic-Logic Unit (ALU), and internal memory (primary storage).",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "EBCDIC can code up to how many different characters?? (2012 Test One (1))",
-    "options": [
-      "256",
-      "16",
-      "32",
-      "64"
-    ],
-    "correct": 0,
-    "explanation": "EBCDIC is an 8-bit code, and an 8-bit system can represent 2^8, or 256, unique characters.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which is used for manufacturing chips?? (2012 Test One (1))",
-    "options": [
-      "Bus",
-      "Control unit",
-      "Semiconductors",
-      "A and b only"
-    ],
-    "correct": 2,
-    "explanation": "Semiconductors, such as silicon, are the fundamental materials used to create integrated circuits or computer chips.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "A byte consists of? (2012 Test One (1))",
-    "options": [
-      "One bit",
-      "Four bits",
-      "Eight bits",
-      "Sixteen bits"
-    ],
-    "correct": 2,
-    "explanation": "A byte is a standard unit of digital information, consisting of eight bits.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "EEPROM stand for? (2012 Test One (1))",
-    "options": [
-      "Electrically Erasable Programmable Read Only Memory",
-      "Easily Erasable Programmable Read Only Memory",
-      "Electronic Erasable Programmable Read Only Memory",
-      "None of the above"
-    ],
-    "correct": 0,
-    "explanation": "EEPROM is a type of non-volatile memory that can be erased and reprogrammed using electrical signals.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Processor and Memory",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Ctrl, shift and alt are called keys.? (2012 Test One (1))",
-    "options": [
-      "Adjustment",
-      "Function",
-      "Modifier",
-      "Alphanumeric"
-    ],
-    "correct": 2,
-    "explanation": "Modifier keys are special keys on a keyboard that modify the normal action of another key when pressed together.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "To make the number pad act as directional arrows, you press the ----key.? (2012 Test One (1))",
-    "options": [
-      "Num lock.",
-      "Caps lock",
-      "Arrow lock.",
-      "Shift."
-    ],
-    "correct": 0,
-    "explanation": "The Num Lock key switches the function of the numeric keypad between number entry and directional arrows.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The modern keyboard typically has ----function keys.? (2012 Test One (1))",
-    "options": [
-      "10",
-      "12",
-      "14",
-      "16"
-    ],
-    "correct": 1,
-    "explanation": "Standard keyboards today typically have 12 function keys, labeled F1 through F12.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "To move to the beginning of a line of text, press the ----key.? (2012 Test One (1))",
-    "options": [
-      "A",
-      "Pageup",
-      "Enter",
-      "Home"
-    ],
-    "correct": 3,
-    "explanation": "The 'Home' key is a cursor control key that moves the cursor to the beginning of the line.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The ----determines how long you must hold down an alphanumeric key before the keyboard will repeat the character.? (2012 Test One (1))",
-    "options": [
-      "Strike rate",
-      "Repeat rate",
-      "Default rate",
-      "Threshold rate"
-    ],
-    "correct": 1,
-    "explanation": "The repeat rate (or keyboard repeat rate) is a setting that determines how quickly a character repeats when a key is held down.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The traditional mechanical mouse uses a ----to track the pointer position on the screen.? (2012 Test One (1))",
-    "options": [
-      "Light sensor",
-      "Wheel",
-      "Ball",
-      "Ruler"
-    ],
-    "correct": 2,
-    "explanation": "Traditional mechanical mice use a rubber ball that rolls as the mouse moves, and internal rollers track its movement.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "To access properties of an object, the mouse technique to use is ----.? (2012 Test One (1))",
-    "options": [
-      "Dragging",
-      "Dropping",
-      "Right-click",
-      "Shift-clicking"
-    ],
-    "correct": 2,
-    "explanation": "A right-click on an object typically opens a context menu that provides a list of actions or properties associated with that object.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The ----can be defined as an upside down mouse.? (2012 Test One (1))",
-    "options": [
-      "Trackpad",
-      "Trackball",
-      "Trackpoint",
-      "Trackwell"
-    ],
-    "correct": 1,
-    "explanation": "A trackball is an input device that contains a ball held within a socket. Users move the cursor by rolling the ball with their thumb, fingers, or palm.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The ----key will launch the start button.? (2012 Test One (1))",
-    "options": [
-      "Esc",
-      "Shift",
-      "Windows",
-      "Shortcut"
-    ],
-    "correct": 2,
-    "explanation": "The 'Windows' key on a keyboard is a shortcut that opens the Start Menu in the Microsoft Windows operating system.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "The wheel on a mouse can make it easier to ----.? (2012 Test One (1))",
-    "options": [
-      "Scroll through documents",
-      "Select objects",
-      "Open documents",
-      "Change volume"
-    ],
-    "correct": 0,
-    "explanation": "The scroll wheel on a mouse allows a user to move up and down through a document or web page with ease.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "Input",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "In MS-dos 6.22, which part identifies the product uniquely? (2012 Test One (1))",
-    "options": [
-      "MS",
-      "Dos",
-      "Ms-dos",
-      "6.22"
-    ],
-    "correct": 3,
-    "explanation": "The version number '6.22' uniquely identifies this specific release of the MS-DOS product.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "MS-DOS",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "In MS-DOS what command will you use to display system date?? (2012 Test One (1))",
-    "options": [
-      "Date command",
-      "Ver command",
-      "Disk command",
-      "Format Command"
-    ],
-    "correct": 0,
-    "explanation": "The 'DATE' command in MS-DOS is used to display or change the system date.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "MS-DOS",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "While working with Ms-dos which command transfer a specific file from one disk to another? (2012 Test One (1))",
-    "options": [
-      "Copy",
-      "Diskcopy",
-      "Time",
-      "Rename"
-    ],
-    "correct": 0,
-    "explanation": "The 'COPY' command is used to copy one or more files from one location to another.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "MS-DOS",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "If you don't know the current time, which command will you use to display? (2012 Test One (1))",
-    "options": [
-      "Copy",
-      "Ver",
-      "Time",
-      "Format"
-    ],
-    "correct": 2,
-    "explanation": "The 'TIME' command in MS-DOS is used to display or change the current system time.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "MS-DOS",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-  {
-    "q": "Which command divides the surface of the blank disk into sectors and assign a unique address to each one? (2012 Test One (1))",
-    "options": [
-      "Ver",
-      "Format",
-      "Fat",
-      "Chkdsk"
-    ],
-    "correct": 1,
-    "explanation": "The 'FORMAT' command prepares a storage device for initial use by creating a file system and partitioning the disk into sectors.",
-    "course": "CS110",
-    "term": "T1",
-    "topic": "MS-DOS",
-    "year": "2012",
-    "tag": "MCQ"
-  },
-
 
 //LA111
   
