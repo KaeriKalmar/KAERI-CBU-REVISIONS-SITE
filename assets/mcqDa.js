@@ -1,14 +1,6536 @@
 
 const mcqData = [
 
- //CS110 NEW CONTENT MODULE 4 
+ //CS110 NEW CONTENT 
  
-  // ==========================================
+ // ==========================================
+// UNIT 1: INTRODUCTION TO COMPUTING (136 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Defining Digital Literacy\nWhich statement best defines **digital literacy**?",
+    options: [
+      "Acquiring current knowledge and understanding of computers, mobile devices, the web, and related technologies",
+      "Being able to write computer programs in at least one language",
+      "Having daily access to high‑speed Internet and social media",
+      "Knowing how to repair hardware components"
+    ],
+    correct: 0,
+    explanation: "## Insight\nDigital literacy isn't just about being a technical 'pro' or a programmer. It simply means staying up-to-date and understanding how modern technology works and how to use it effectively to navigate the world around you. Programming and repair are specialized skills, but literacy is the foundation for everyone."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A person who knows how to copy and paste text but **not** when it is appropriate or how to credit the source is best described as which of the following?",
+    options: [
+      "A digital citizen",
+      "Digitally literate but not yet a digital citizen",
+      "A cyberbully",
+      "An identity thief"
+    ],
+    correct: 1,
+    explanation: "## The Distinction\nThink of it like this: 'Literacy' is knowing *how* to use the tool (the mechanics of copy/paste), while 'Citizenship' is knowing the *social and ethical rules* (giving credit). If you have the technical skill but lack the ethical responsibility, you haven't reached full digital citizenship yet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Understanding Memory\nWhich component of a computer holds instructions waiting to be executed, data needed by those instructions, and the results of processing?",
+    options: [
+      "Hard disk drive",
+      "Processor cache",
+      "Memory (RAM)",
+      "Solid‑state drive"
+    ],
+    correct: 2,
+    explanation: "## How it Works\nThink of **RAM** as your desk surface—it holds everything you are working on *at this very moment*. Hard drives and SSDs are like a filing cabinet in the corner (long-term storage). RAM is the high-speed 'active' workspace that feeds instructions directly to the brain of the computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What distinguishes the **Internet** from a local network?",
+    options: [
+      "The Internet uses wireless connections; local networks use cables",
+      "The Internet is private; local networks are public",
+      "The Internet cannot share files; local networks can",
+      "The Internet is a global collection of millions of linked computers; a network is any two or more connected computers sharing resources"
+    ],
+    correct: 3,
+    explanation: "## The Big Picture\nA 'network' can be as simple as your phone talking to your laptop. The **Internet**, however, is the 'Network of Networks'—a massive, worldwide web that connects millions of those smaller networks together. It's the global scale and connection of independent systems that makes it the Internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Wireless Connectivity\nWhich technology provides high‑speed wireless data connections and is **not** attached to any device?",
+    options: [
+      "Wi‑Fi",
+      "Bluetooth",
+      "Cellular 5G",
+      "Ethernet"
+    ],
+    correct: 0,
+    explanation: "## Key Difference\n**Wi-Fi** provides a general 'zone' of high-speed internet that any authorized device can join. Bluetooth is usually for 'one-to-one' connections (like your phone to a headset), and Ethernet requires a physical cable. Wi-Fi is the standard for untethered, high-speed networking."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A server is typically grouped at a physical location called what?",
+    options: [
+      "Router hub",
+      "Data center",
+      "Cloud",
+      "Network node"
+    ],
+    correct: 1,
+    explanation: "## Physical Reality\nEven though we use the term 'The Cloud,' your data isn't floating in the air. It lives on thousands of servers packed into giant, high-security buildings called **Data Centers**. These centers are the physical heart of the modern internet infrastructure."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Online Communities\nWhich of the following is the best example of an online social network?",
+    options: [
+      "A cable TV provider’s channel list",
+      "A government database of citizens",
+      "A website where registered users share interests, ideas, photos, and videos with each other",
+      "An email server"
+    ],
+    correct: 2,
+    explanation: "## Shared Content\nThe defining feature of a social network is **User Interaction**. It’s not just a place to look at information (like a TV guide), but a place where a community of users creates, posts, and discusses their own content with one another."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How is **big data** best characterized?",
+    options: [
+      "Large file sizes measured in petabytes",
+      "Data that only comes from social media",
+      "Any dataset that requires a supercomputer",
+      "Large and complex data sources that defy easy management with traditional processing methods"
+    ],
+    correct: 3,
+    explanation: "## Complexity over Size\n'Big data' isn't just a lot of files. It refers to data that is so massive, so fast-moving, and so messy (complex) that standard software like Excel or a simple database just can't handle it. You need advanced AI and massive computing power to find the patterns hidden inside."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# History of Computing\nThe first generation of computers used vacuum tubes. Which constraint was **not** a major issue for them?",
+    options: [
+      "Inability to process numerical data",
+      "Large physical size",
+      "High power consumption and heat generation",
+      "Short lifespan due to tubes wearing out"
+    ],
+    correct: 0,
+    explanation: "## The Truth About Tubes\nActually, early computers were built *specifically* for heavy math—they were excellent at processing numerical data. Their real problems were physical: they were the size of a room, used as much power as a small town, and the vacuum tubes were as fragile as old-fashioned light bulbs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Why was the **Apple II (1978)** considered a milestone in personal computing?",
+    options: [
+      "It was the first computer with a graphical user interface",
+      "It was preassembled, had color graphics, and ran VisiCalc, the first popular spreadsheet",
+      "It introduced the first hard disk drive",
+      "It was the first computer to use a microprocessor"
+    ],
+    correct: 1,
+    explanation: "## Market Shift\nBefore the Apple II, computers were usually DIY kits for hobbyists. The Apple II was a game-changer because you could buy it 'ready-to-go,' it had color, and most importantly, it ran **VisiCalc**—the first program that made businesses realize they *needed* a computer on every desk."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Internet of Things\nWhich statement best defines the **Internet of Things (IoT)**?",
+    options: [
+      "A social media platform for smart devices",
+      "The physical cables and routers that make up the Internet",
+      "An environment where processors are embedded in everyday products, and those products communicate via the Internet or wireless networks",
+      "A system for managing big data in cloud storage"
+    ],
+    correct: 2,
+    explanation: "## Connected Objects\nIoT is the idea that 'dumb' objects—like your fridge, toaster, or streetlights—should be given 'brains' (processors) and a voice (internet connection). This allows them to tell you when you're out of milk or allow a city to manage traffic lights automatically."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How does an **embedded computer** differ from a desktop computer?",
+    options: [
+      "It is always connected to the Internet",
+      "It uses vacuum tubes instead of microchips",
+      "It is larger and more powerful",
+      "It functions as a single component inside a larger product with a specific purpose"
+    ],
+    correct: 3,
+    explanation: "## Specialized Brains\nA desktop computer is a 'General Purpose' machine—it can do anything from gaming to taxes. An **embedded computer** is a 'Specialist' hidden inside another machine (like your car's engine or your microwave) with one specific, dedicated job to do."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# IoT in Vehicles\nWhich of the following is an example of an **embedded computer** in a vehicle?",
+    options: [
+      "An engine control unit that monitors fuel injection and communicates with other car systems",
+      "A CD player",
+      "A manual window crank",
+      "A paper map"
+    ],
+    correct: 0,
+    explanation: "## The ECU Example\nThe **Engine Control Unit (ECU)** is a classic embedded system. It's a tiny computer that constantly calculates how much fuel to spray into the engine. It's part of the 'guts' of the car, which makes it embedded, and it communicates with other sensors to keep the car running."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does the term **“digital divide”** refer to?",
+    options: [
+      "The difference in processing speed between old and new computers",
+      "The gap between those who have access to technology and the Internet and those who do not",
+      "The separation between hardware and software engineers",
+      "The division between urban and rural Internet speeds only"
+    ],
+    correct: 1,
+    explanation: "## The Inequality Gap\nThink of this as the 'Digital Haves' vs. the 'Digital Have-nots.' It's the gap in society where some people have the latest tech and fastest web, while others are left behind because of where they live, how much money they have, or their level of education."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Barriers to Access\nWhich factor is **not** a contributor to the digital divide?",
+    options: [
+      "Age",
+      "Income level",
+      "Brand of smartphone owned",
+      "Geographic location"
+    ],
+    correct: 2,
+    explanation: "## Choice vs. Access\nWhether you choose an iPhone or an Android doesn't create a divide—you still have access to the digital world. The divide is caused by *uncontrollable* factors like income (can you afford it?), age (do you know how to use it?), or geography (is there even a signal where you live?)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How is **identity theft** best defined?",
+    options: [
+      "Stealing a person’s physical wallet",
+      "Hacking into a company database to steal customer names",
+      "Creating a fake social media account with a celebrity’s photo",
+      "Using someone’s personal information (name, SSN, credit card) to commit financial fraud"
+    ],
+    correct: 3,
+    explanation: "## More than Stealing\nStealing a wallet is just a physical crime. **Identity Theft** is much more personal; it's when a criminal uses your unique data (like your Social Security Number) to *become you* online so they can empty your bank account or take out loans in your name."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Security Risks\nA victim of identity theft may suffer which **long‑term** consequence?",
+    options: [
+      "Damaged credit history leading to denial of loans for school, cars, and homes",
+      "Permanent loss of Internet access",
+      "Confiscation of all digital devices by the government",
+      "Mandatory change of name"
+    ],
+    correct: 0,
+    explanation: "## The Hidden Danger\nThis is the most painful part of identity theft. If a thief takes a loan in your name and doesn't pay, the banks think **you** are a bad borrower. This ruins your 'Credit Score,' which can take years to fix and may stop you from being able to buy a car or a house."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "In the identity theft method called **“pretexting,”** what does the attacker do?",
+    options: [
+      "Digs through trash for bank statements",
+      "Pretends to be from a legitimate research firm and asks for personal information",
+      "Sends fake emails that mimic a bank’s website",
+      "Submits a change‑of‑address form to redirect mail"
+    ],
+    correct: 1,
+    explanation: "## The 'Pretext'\n'Pretexting' is all about the 'Fake Story' (the pretext). The attacker calls you up and lies—saying they are from a tech support company or a bank—to trick you into giving them your password or credit card details over the phone."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Online Privacy\nWhich safeguard is most directly aimed at protecting your privacy on social networking sites?",
+    options: [
+      "Changing your password every month",
+      "Installing antivirus software",
+      "Being cautious about what you post and who can view it, and enabling privacy settings",
+      "Using a VPN"
+    ],
+    correct: 2,
+    explanation: "## Beyond Passwords\nPasswords and Antivirus protect your *account* from hackers, but they don't stop you from 'oversharing.' To protect your **privacy**, you must be the gatekeeper of your own life—choosing what to post and using settings to limit who can see your personal photos."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is an **intelligent workplace**?",
+    options: [
+      "One that uses artificial intelligence to replace all human workers",
+      "One that has no paper documents",
+      "One that requires all employees to work remotely",
+      "One that uses technology to connect employees to the network, communicate, and meet via web conferencing"
+    ],
+    correct: 3,
+    explanation: "## The Modern Office\nAn intelligent workplace isn't just about robots. It's an office environment where tools like Zoom, Microsoft Teams, and shared cloud folders allow everyone to work together efficiently, whether they are sitting in the office or working from a coffee shop."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Education Technology\nWhat does a **learning management system (LMS)** allow students to do?",
+    options: [
+      "Check progress, take practice tests, and exchange messages with instructors",
+      "Manage their financial aid and tuition payments",
+      "Play online games during class",
+      "Edit the university’s official website"
+    ],
+    correct: 0,
+    explanation: "## Your Digital Classroom\nThink of an LMS (like Moodle or Canvas) as your central hub for learning. It's the place where you get your notes, take your quizzes, see your grades, and talk to your lecturers. It's the 'operating system' for your academic life."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How is **telemedicine** specifically defined?",
+    options: [
+      "Buying medicine online",
+      "Using secure web‑based videoconferencing to diagnose and treat patients remotely",
+      "Sending prescription reminders via text message",
+      "Replacing doctors with AI chatbots"
+    ],
+    correct: 1,
+    explanation: "## Remote Healthcare\nTelemedicine is 'Doctoring from a distance.' It allows a patient in a remote area to have a face-to-face video call with a specialist in the city. It’s about actual medical diagnosis and treatment, not just an online pharmacy."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Manufacturing Tech\nWhat kind of tasks does **computer‑aided manufacturing (CAM)** use robots to perform?",
+    options: [
+      "Only creative and artistic tasks",
+      "Tasks requiring human judgment and empathy",
+      "Tasks that are too dangerous, detailed, or monotonous for people",
+      "Tasks solely related to office paperwork"
+    ],
+    correct: 2,
+    explanation: "## Robot Efficiency\nRobots are perfect for the 'Three Ds': Tasks that are **Dangerous**, **Dirty**, or **Dull** (monotonous). In a car factory, robots do the welding because it's too risky for humans, and they do it with a level of detail that a person couldn't maintain all day."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does **“convergence”** mean in technology?",
+    options: [
+      "Two companies merging into one",
+      "All devices using the same operating system",
+      "Connecting every device to a single network",
+      "Integrating technological capabilities into previously unrelated devices"
+    ],
+    correct: 3,
+    explanation: "## The 'Swiss Army' Phone\nThink of your Smartphone. In the past, you needed a separate camera, phone, music player, and GPS. **Convergence** is the process where all these separate technologies 'came together' into one single device that does everything."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# History\nWhat was the name of the first popular spreadsheet software that contributed to the Apple II’s success?",
+    options: [
+      "VisiCalc",
+      "Lotus 1‑2‑3",
+      "Excel",
+      "Calc"
+    ],
+    correct: 0,
+    explanation: "## The 'Killer App'\n**VisiCalc** (Visible Calculator) was the very first program that made regular business people want to buy a computer. It proved that a computer wasn't just for scientists, but a vital tool for managing money and data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How is a **kiosk** best described?",
+    options: [
+      "A type of server in a data center",
+      "A freestanding booth, usually placed in a public area, that provides services",
+      "A mobile app for banking",
+      "A wireless router for public Wi‑Fi"
+    ],
+    correct: 1,
+    explanation: "## Public Tech\nYou've used a kiosk! An ATM is a kiosk. The screen you use to check-in at the airport or order food at a fast-food restaurant is a kiosk. It's a public-facing computer station built for a single, specific job."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Healthcare IoT\nWhich of the following is an **IoT application** in healthcare?",
+    options: [
+      "Performing remote surgery with robotic arms",
+      "Using a stethoscope to listen to heart sounds",
+      "Connecting to a patient’s wearable glucose monitor and sending prescription updates to a pharmacy",
+      "Printing a paper prescription for the patient"
+    ],
+    correct: 2,
+    explanation: "## Smart Monitoring\nRemember: IoT is about machines 'talking' to each other. A wearable device that monitors your heart or blood sugar and automatically 'texts' your doctor or pharmacy is the perfect example of healthcare objects on the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the primary function of a **screen reader** for visually impaired users?",
+    options: [
+      "Enlarge text on the screen",
+      "Change the color scheme to high contrast",
+      "Translate text into Braille on a physical display",
+      "Use audio output to describe the contents of the screen, including alt text for images"
+    ],
+    correct: 3,
+    explanation: "## Audio Sight\nA screen reader acts as the 'eyes' for someone who cannot see. It converts every button, every sentence, and even every hidden image description (Alt Text) into speech, allowing the user to 'hear' exactly what is happening on the screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# ADA Compliance\nUnder the **Americans with Disabilities Act (ADA)**, a company with 14 employees is subject to which requirement?",
+    options: [
+      "Not required to provide reasonable accommodation because ADA applies to companies with 15+ employees",
+      "Must provide any accommodation regardless of cost",
+      "Exempt from all accessibility laws",
+      "Must apply for a government waiver"
+    ],
+    correct: 0,
+    explanation: "## The Size Limit\nThe ADA is a powerful law, but it only kicks in for companies that have **15 or more** employees. A small family shop with only 14 people is technically not forced to follow these specific federal rules (though they still usually do to be ethical)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which law requires **public schools** to purchase or fund adaptive technologies for students with disabilities?",
+    options: [
+      "Americans with Disabilities Act (ADA)",
+      "Individuals with Disabilities Education Act (IDEA)",
+      "Rehabilitation Act",
+      "Digital Accessibility Act"
+    ],
+    correct: 1,
+    explanation: "## Focus on Education\nWhile the ADA covers workplaces, **IDEA** is the law specifically for the classroom. It ensures that every student, no matter their physical or learning challenges, gets the specialized tools they need to learn alongside their peers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Ethics\nA student copies three paragraphs from a website, changes a few words, and submits it without citation. What is this an example of?",
+    options: [
+      "Netiquette violation",
+      "Fair use",
+      "Plagiarism",
+      "Identity theft"
+    ],
+    correct: 2,
+    explanation: "## Academic Theft\nEven if you don't copy word-for-word, if you take someone else's unique idea and pretend it was yours without giving them credit (a citation), you are 'stealing' their intellectual work. This is **Plagiarism** and it is a major offense in universities."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which **green computing** practice is specifically aimed at organizations rather than individuals?",
+    options: [
+      "Purchasing ENERGY STAR products",
+      "Shutting down computers overnight",
+      "Recycling ink cartridges",
+      "Consolidating servers and using outside air to cool data centers"
+    ],
+    correct: 3,
+    explanation: "## Enterprise Strategy\nAn individual can't 'consolidate a server' in their bedroom. This is a massive corporate strategy where companies replace 10 small, weak servers with 2 powerful ones, saving a huge amount of electricity and cooling costs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Image Accessibility\nWhat is the purpose of **alternative (alt) text** in digital images?",
+    options: [
+      "To be read aloud by screen readers so visually impaired users understand the image",
+      "To hide the image from search engines",
+      "To reduce the file size of the image",
+      "To add a decorative border around the image"
+    ],
+    correct: 0,
+    explanation: "## Hidden Descriptions\nAlt text is a short text description hidden behind an image. If a person is blind and uses a screen reader, the computer will say 'Image: A map of the internal CPU' instead of just saying 'Graphic 01.' It makes the web inclusive for everyone."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which assistive technology would help a user with **limited hand mobility** who cannot use a standard mouse?",
+    options: [
+      "Screen reader",
+      "Hand‑mounted pointer or puff‑controlled device",
+      "Audio book",
+      "Color‑contrast settings"
+    ],
+    correct: 1,
+    explanation: "## Alternative Control\nIf you can't use your fingers to click a mouse, you need a different input method. **Hand-mounted pointers** use head movements, and **'Sip-and-Puff'** devices allow you to control the screen by simply blowing air into a tube."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Hardware Design\nHow is an **all‑in‑one** desktop computer different from a traditional desktop?",
+    options: [
+      "It has a larger tower",
+      "It cannot connect to the Internet",
+      "It houses both the display and processing circuitry in the same case, with no separate tower",
+      "It uses only a battery for power"
+    ],
+    correct: 2,
+    explanation: "## Clean Design\nThink of an iMac. There is no 'box' sitting under the desk. The computer *is* the monitor. All the processors, RAM, and wires are packed behind the glass, which saves space and looks much more professional."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does a **digital camera** create?",
+    options: [
+      "A physical photograph on paper",
+      "A negative film strip",
+      "A 3D hologram",
+      "A digital image of an object, person, or scene"
+    ],
+    correct: 3,
+    explanation: "## Light to Bits\nOld cameras used chemicals to 'burn' an image onto film. A digital camera uses a sensor to turn light into **Data** (zeros and ones), creating a file you can see on a screen, edit on a computer, or share instantly on WhatsApp."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Portability\nWhich of the following correctly compares a **laptop** and a **notebook**?",
+    options: [
+      "They are the same thing – notebook is another term for laptop",
+      "A laptop is larger and cannot run on battery; a notebook is smaller",
+      "A notebook has a touch screen; a laptop does not",
+      "A laptop is for gaming; a notebook is for business"
+    ],
+    correct: 0,
+    explanation: "## Synonyms\nWhile some brands try to use 'Notebook' to describe their thinnest or lightest models, in the world of Computer Science, they are effectively the same thing: a portable computer with an integrated screen and keyboard."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How does **streaming** differ from downloading?",
+    options: [
+      "It permanently saves the file to your device",
+      "It plays the content as it is being received, without permanently storing the whole file",
+      "It requires a wired Internet connection",
+      "It only works for audio, not video"
+    ],
+    correct: 1,
+    explanation: "## Continuous Flow\nThink of a **Stream of water**. You don't wait for the whole river to arrive before you take a drink; you drink while it's flowing. Streaming lets you watch a movie or hear a song *while* it's downloading, so you don't have to wait."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Smart Tech\nWhat can a **smartwatch** do that an activity tracker cannot?",
+    options: [
+      "Replace a desktop computer",
+      "Project a virtual keyboard onto any surface",
+      "Make phone calls, send messages, access the web, and run apps",
+      "Perform surgery remotely"
+    ],
+    correct: 2,
+    explanation: "## Full Connectivity\nAn activity tracker (like a basic step counter) only does health metrics. A **Smartwatch** is a tiny, powerful computer on your wrist that 'converges' with your phone so you can answer texts, check the weather, and use actual apps."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does **“netiquette”** refer to?",
+    options: [
+      "A computer network security protocol",
+      "A software application for managing email",
+      "The legal penalties for Internet misuse",
+      "The rules of etiquette governing acceptable online behavior across all aspects of the Internet"
+    ],
+    correct: 3,
+    explanation: "## Internet Manners\nNetiquette = **Net** (Internet) + **Etiquette** (Manners). It is the social code of conduct for being a good person online—like being polite in comments, not 'Spamming' people, and knowing how to share credit for others' work."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Ethics\nHow is **digital ethics** best described?",
+    options: [
+      "A set of legal and moral guidelines governing the use of technology",
+      "The marketing guidelines for technology companies",
+      "The coding standards used by software developers",
+      "Rules that only apply to social media users"
+    ],
+    correct: 0,
+    explanation: "## Legal & Moral\nDigital ethics isn't just about what you are allowed to do by law; it's also about what is **right**. It covers everything from not stealing software (legal) to not being mean to someone on a forum (moral)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **cyberbullying**?",
+    options: [
+      "Unauthorized access to computer systems",
+      "A form of bullying using digital devices and platforms such as social media and email",
+      "Spreading computer viruses to harm individuals",
+      "Stealing personal data from online accounts"
+    ],
+    correct: 1,
+    explanation: "## Digital Harassment\nCyberbullying is standard bullying moved into the digital world. It involves using social media, text messages, or email to harass, threaten, or purposely embarrass someone else."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Workplace Rules\nWhat are the primary purposes of an **Acceptable Use Policy (AUP)**?",
+    options: [
+      "To advertise available company technology to employees",
+      "To provide employees with their login credentials",
+      "To list guidelines for Internet use, reduce liability, and clarify fireable offenses",
+      "To outline the company’s technology purchasing budget"
+    ],
+    correct: 2,
+    explanation: "## The Rulebook\nAn **AUP** is the document you sign when you join a school or company. It's their way of saying: 'Here is what you can and can't do on our internet.' It protects the company legally and makes sure you know the rules before you log in."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **plagiarism**?",
+    options: [
+      "Incorrectly citing a source in an academic paper",
+      "Sharing copyrighted content without profit",
+      "Translating someone’s work into another language",
+      "Copying or using someone else’s work and claiming it as your own"
+    ],
+    correct: 3,
+    explanation: "## Stealing Ideas\nPlagiarism is 'Academic Theft.' If you take someone else's words or unique ideas and pretend they are your own thoughts without giving them proper credit, you are committing plagiarism, which can get you expelled from university."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Eco-Friendly Computing\nWhat is **green computing**?",
+    options: [
+      "Reducing electricity consumed and environmental waste generated when using computers",
+      "Using only solar‑powered computers",
+      "Recycling old computer parts",
+      "Purchasing only energy‑efficient graphics cards"
+    ],
+    correct: 0,
+    explanation: "## Two-Part Mission\nGreen computing has two main goals: 1. Use **less power** while the computer is running. 2. Create **less trash** when the computer is old. It's about being an environmentally responsible user."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is a **green computing** practice for individuals?",
+    options: [
+      "Consolidating servers in a data center",
+      "Shutting down computers overnight or when not in use",
+      "Using outside air to cool server rooms",
+      "Purchasing high‑efficiency equipment for an entire office building"
+    ],
+    correct: 1,
+    explanation: "## The Easiest Step\nAs an individual, you don't need a complex strategy. The single most effective thing you can do is simply **turn off your screen and computer** when you are done. If it's not being used, it shouldn't be burning electricity."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Energy Efficiency\nWhat does the **ENERGY STAR** logo indicate about a product?",
+    options: [
+      "It is manufactured using 100% recycled materials",
+      "It will last twice as long as non‑certified products",
+      "It meets energy efficiency standards, helping reduce electricity consumption",
+      "It is legally required for all devices sold in the country"
+    ],
+    correct: 2,
+    explanation: "## Efficiency Certified\nENERGY STAR is like a 'Seal of Approval' for power savings. When you see this logo on a laptop or monitor, it means the device has been tested to prove it uses significantly less energy than a standard machine."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How can **electronic waste** be reduced?",
+    options: [
+      "Replacing devices every time a new version is released",
+      "Throwing old devices in the regular trash",
+      "Burning old devices to recover metals",
+      "Recycling devices and products such as ink and toner cartridges when they no longer provide value"
+    ],
+    correct: 3,
+    explanation: "## Toxic Trash\nElectronics contain toxic chemicals like lead and mercury. If you throw them in the normal trash, they leak into the water supply. Proper **Recycling** (especially for monitors and batteries) is the only safe way to get rid of old tech."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Gaming Technology\nHow does a **handheld game device** differ from a game console?",
+    options: [
+      "It is small enough to fit in one hand, making it more portable",
+      "It cannot play video games",
+      "It requires a TV to display the game",
+      "It only plays single‑player games"
+    ],
+    correct: 0,
+    explanation: "## Built for Travel\nA **Console** (like a PlayStation) lives under your TV and needs to be plugged into a wall. A **Handheld** (like a Nintendo Switch or a phone) has its own battery and screen so you can play it while sitting on a bus or lying in bed."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which combination of assistive technologies is most directly helpful for a user with **intellectual disabilities** who struggles with reading?",
+    options: [
+      "Braille printer and larger keyboard",
+      "Speech recognition software, graphic organizers, and audio books",
+      "Screen magnifier and color‑contrast settings",
+      "Foot pedal and facial motion receptor"
+    ],
+    correct: 1,
+    explanation: "## Simplifying Information\nFor intellectual disabilities, the problem isn't usually *seeing* the screen, but *processing* the information. **Audio books** let them listen instead of reading, and **Graphic Organizers** help them visualize how ideas fit together."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# IoT Awareness\nWhich of the following is a common **misconception** about IoT?",
+    options: [
+      "IoT devices always require a smartphone to work",
+      "IoT is only used in smart homes",
+      "Both A and B are common misconceptions",
+      "IoT cannot be used in healthcare"
+    ],
+    correct: 2,
+    explanation: "## The Bigger Picture\nMany people think IoT is just 'Smart Lightbulbs' controlled by a phone. In reality, IoT is massive in factories, hospitals, and farms. Most IoT devices talk directly to each other without needing a person's smartphone involved at all."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A student says: “The **Internet** and the **World Wide Web** are the same thing.” Which response correctly addresses this?",
+    options: [
+      "The student is correct – they are interchangeable terms",
+      "The Web is a subset of the Internet, but the distinction is unimportant",
+      "The Internet is a service that runs on the Web",
+      "The Internet is the global network of computers; the Web is one service (websites) that runs on the Internet"
+    ],
+    correct: 3,
+    explanation: "## Tracks vs. Trains\nThink of the **Internet** as the 'Tracks'—the physical infrastructure of cables and routers. The **Web** (websites) is just one 'Train' that runs on those tracks. There are other 'Trains' too, like Email or Online Gaming, that also use the same Internet tracks."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Identity Protection\nWhy might an attacker use **data mining** as an identity theft method?",
+    options: [
+      "To guess passwords or security questions by collecting personal details from social media",
+      "To physically steal a wallet from a victim’s purse",
+      "To install malware that records every keystroke",
+      "To hack into a bank’s mainframe directly"
+    ],
+    correct: 0,
+    explanation: "## Social Mining\nAttackers search your public social media profiles to find out your birthday, your high school name, or your pet's name. They 'mine' this data so they can accurately guess the answers to your 'Security Questions' at your bank or email provider."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A shipping company uses sensors to track truck mileage, location, and driving times. This is an example of what?",
+    options: [
+      "Telemedicine",
+      "IoT in the transportation industry",
+      "Computer‑aided manufacturing",
+      "A learning management system"
+    ],
+    correct: 1,
+    explanation: "## Fleet Logistics\nThis is a classic use of **IoT**. By putting smart sensors on every truck, the company can sit in a central office and see exactly where their cargo is and how fast their drivers are going in real-time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Automating the Line\nWhat is the purpose of **machine‑to‑machine (M2M)** communication on an assembly line?",
+    options: [
+      "To replace all human workers with robots",
+      "To allow workers to browse social media during shifts",
+      "To enable machines and devices to perform tasks and monitor processes automatically",
+      "To print 3D objects for sale"
+    ],
+    correct: 2,
+    explanation: "## Direct Talk\nM2M is when one machine 'tells' the next machine that it's finished its job. This allows a whole factory line to coordinate its work without a human needing to manually signal every single step."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "When creating a professional online presence for a job search, which action is **recommended**?",
+    options: [
+      "Using a humorous or informal username for your profile",
+      "Posting everything publicly without privacy settings",
+      "Including spelling and grammatical mistakes to appear “authentic”",
+      "Uploading a PDF of your resume and including links to digital content you have created"
+    ],
+    correct: 3,
+    explanation: "## First Impressions\nIn the digital age, your 'Social Media' is your first interview. Recruiters will Google you! Make sure they find a professional **PDF resume** and links to your actual work projects, rather than informal or messy public posts."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Industrial IoT\nA student argues: “The Internet of Things (IoT) is only about smart home devices like thermostats.” Which response best corrects this?",
+    options: [
+      "IoT also includes industrial applications such as manufacturing sensors, shipping fleet tracking, and healthcare wearables",
+      "The student is correct – smart homes are the only IoT application",
+      "IoT does not include healthcare devices because of privacy laws",
+      "IoT is actually a type of social media platform"
+    ],
+    correct: 0,
+    explanation: "## Universal Connection\nSmart homes are just a small piece of IoT. IoT is used in 'Smart Cities' to manage traffic lights, in hospitals to monitor patients' heartbeats, and in shipping to track containers across the ocean."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which scenario best illustrates a violation of **netiquette**?",
+    options: [
+      "Using formal language in a professional email",
+      "Posting inflammatory comments in an online discussion forum to provoke negative reactions",
+      "Enabling two‑factor authentication on a social media account",
+      "Citing sources when sharing a news article"
+    ],
+    correct: 1,
+    explanation: "## Trolling\nPosting rude or angry comments just to start a fight is called 'Flaming' or 'Trolling.' This is a major violation of netiquette, which is the code of respectful behavior we should all follow on the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Retail Technology\nA retail store uses sensors to send discount coupons to shoppers’ phones as they walk down specific aisles. This is an example of what?",
+    options: [
+      "Telemedicine",
+      "Big data storage",
+      "IoT in retail",
+      "Computer‑aided manufacturing"
+    ],
+    correct: 2,
+    explanation: "## Targeted Shopping\nThis is **IoT in Retail**. The store's shelf 'recognizes' that you are looking at cereal and 'talks' to your phone to give you a discount on milk. It uses data to make shopping more interactive and efficient."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Why is the **change‑of‑address form** technique effective for identity theft?",
+    options: [
+      "It directly steals money from the victim’s bank account",
+      "It installs malware on the victim’s computer",
+      "It uses fake emails to trick the victim into revealing passwords",
+      "It redirects the victim’s mail so they never see fraudulent charges"
+    ],
+    correct: 3,
+    explanation: "## Concealment\nThis is a very clever trick. If a thief starts spending your money but redirects your mail to a P.O. Box they own, you will never receive your bank statements. You might not realize you're being robbed until months later when it's too late."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Workforce Accessibility\nA company with **20 employees** refuses to buy a screen reader for a visually impaired worker. Under the ADA, this is:",
+    options: [
+      "Likely a violation because the company has 15+ employees",
+      "Legal because companies never have to provide assistive technology",
+      "Legal because screen readers are not considered reasonable accommodation",
+      "A violation only if the employee files a lawsuit"
+    ],
+    correct: 0,
+    explanation: "## Legal Requirements\nThe ADA specifically targets companies with **15 or more** employees. If you reach that size, you are legally required to provide 'Reasonable Accommodations' (like software) to help your employees work, as long as it doesn't cause 'undue hardship' for the company."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How does **IDEA** differ from **ADA** in terms of who is responsible for funding assistive technology?",
+    options: [
+      "IDEA covers workplaces; ADA covers schools",
+      "IDEA requires public schools to fund adaptive tech for students; ADA requires companies (15+ employees) to accommodate workers",
+      "Both laws require the federal government to pay for all assistive devices",
+      "IDEA only applies to private schools; ADA applies to public schools"
+    ],
+    correct: 1,
+    explanation: "## Student vs. Worker\nKeep it simple: **IDEA** is for students (Education). **ADA** is for employees (Employment). IDEA ensures the school pays for learning tools, while ADA ensures the employer pays for working tools."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Alternative Input\nA user with **limited hand mobility** cannot use a standard mouse. Which alternative would be most appropriate?",
+    options: [
+      "Screen reader",
+      "Audio book",
+      "On‑screen keyboard or a foot pedal that acts as a mouse button",
+      "High‑contrast color scheme"
+    ],
+    correct: 2,
+    explanation: "## No-Hands Control\nIf you can't move your fingers, you can use your **feet**. Specialized foot pedals can act as the 'Left Click' or 'Right Click' of a mouse. On-screen keyboards also allow users to 'type' using head-trackers or eye-trackers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A visually impaired person uses a **Braille printer**. This is an example of what?",
+    options: [
+      "A screen reader",
+      "A mobility aid",
+      "A learning disability tool",
+      "Assistive technology for visual impairment"
+    ],
+    correct: 3,
+    explanation: "## Tactile Reading\nA Braille printer (or 'embosser') creates tiny raised dots on paper. It allows someone who is blind to 'read' a computer document by feeling the paper with their fingers. It is a specialized tool for visual accessibility."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Theft Logic\nWhich of the following is a correct sequence of actions in a **change‑of‑address** identity theft attack?",
+    options: [
+      "Attacker submits change of address → victim’s mail is redirected → attacker uses stolen credit cards → victim never sees bills",
+      "Victim loses wallet → attacker finds address → attacker calls the victim → victim gives password",
+      "Attacker sends fake email → victim clicks link → malware installs → attacker reads keystrokes",
+      "Attacker digs through trash → finds bank statement → calls bank pretending to be victim → changes password"
+    ],
+    correct: 0,
+    explanation: "## How it Flows\nThis attack relies on the victim being **blind** to what's happening. By taking over the mailbox, the thief can get new credit cards sent to them and spend the money, while the victim sits at home wondering why they haven't received any mail lately."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the main reason **telemedicine** is particularly valuable for **rural** patients?",
+    options: [
+      "Rural patients have faster Internet speeds",
+      "They can access doctors remotely when an in‑person visit is not possible due to distance",
+      "Rural hospitals are better equipped than urban ones",
+      "Telemedicine is free in rural areas"
+    ],
+    correct: 1,
+    explanation: "## Bridging the Distance\nIn rural villages, the nearest doctor might be a 5-hour drive away. Telemedicine brings that doctor into the patient's home instantly via a video call, which is a massive help for people who are too sick or too far to travel."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Advanced Manufacturing\nA manufacturer uses robotic arms to perform welding on a car assembly line. This is an example of what?",
+    options: [
+      "Telemedicine",
+      "mHealth",
+      "Computer‑aided manufacturing (CAM)",
+      "An online social network"
+    ],
+    correct: 2,
+    explanation: "## Computer Control\nWelding is hot, dangerous, and must be perfect every time. **CAM** uses computers to control robotic arms so that they can perform these difficult tasks thousands of times a day with zero errors and zero risk to human life."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A school’s **Acceptable Use Policy (AUP)** states that students may not access personal email during school hours. A student does so anyway. What is this?",
+    options: [
+      "Always illegal under federal law",
+      "Protected free speech",
+      "Not a violation because AUPs are not enforceable",
+      "A violation of the AUP, and the student may face consequences"
+    ],
+    correct: 3,
+    explanation: "## Contractual Rules\nAn AUP is essentially a **contract** you sign to get internet access. It's not a crime against the country, but it is a break of the school's rules. Just like breaking any other school rule, it can lead to detention or loss of computer privileges."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Ethics Checkers\nWhich statement about plagiarism detection services (e.g., **Turnitin**) is correct?",
+    options: [
+      "They automatically check for plagiarised passages and can also help students find uncited passages before submitting",
+      "They are illegal because they violate copyright",
+      "They only work for math problems, not essays",
+      "They replace the need for any citation rules"
+    ],
+    correct: 0,
+    explanation: "## Learning Tool\nMany people think Turnitin is just for 'catching' cheaters. However, it's also a great **Self-Check** tool. A student can use it to see if they accidentally copied a sentence too closely or forgot to add a reference before they hand in the final paper."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the primary **ethical obligation** of a digital citizen when sharing information found online?",
+    options: [
+      "Share everything as quickly as possible",
+      "Validate the information before sharing and properly credit the source",
+      "Never share anything without payment",
+      "Only share information from social media, never from news sites"
+    ],
+    correct: 1,
+    explanation: "## Stop Fake News\nIn the digital world, information spreads like wildfire. As a responsible digital citizen, you have a 'moral duty' to make sure what you are sharing is **true** (validation) and that the person who originaly found the news gets the credit (citation)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Safety on the Road\nA driver checks a text message while stopped at a red light. Under **distracted driving** definitions, this is:",
+    options: [
+      "Completely safe because the car is not moving",
+      "Legal in all jurisdictions",
+      "Still considered distracted driving because the driver’s attention is not on the road",
+      "Only illegal if the driver causes an accident"
+    ],
+    correct: 2,
+    explanation: "## Divided Attention\nEven if your foot is on the brake, your mind is in the phone. If a child ran in front of the car or the light turned green, you wouldn't be ready. This is why the law treats using a phone while in the driver's seat as distracted driving, moving or not."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following **green computing** practices directly reduces vehicle emissions?",
+    options: [
+      "Purchasing ENERGY STAR monitors",
+      "Shutting down computers at night",
+      "Recycling ink cartridges",
+      "Allowing employees to telecommute instead of driving to an office"
+    ],
+    correct: 3,
+    explanation: "## Remote Impact\nThis is a brilliant 'side effect' of technology. If an employee works from home (**Telecommuting**), their car stays in the garage. That means zero gas burned and zero emissions for that day. It's one of the best ways a company can go green."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Healthcare Devices\nA hospital uses IoT to track a patient’s wearable glucose monitor. Which **additional** IoT function is described for healthcare?",
+    options: [
+      "Sending prescription updates to a pharmacy and alerting the patient",
+      "Performing robotic surgery from another country",
+      "Replacing all nurses with automated kiosks",
+      "Billing patients automatically without their consent"
+    ],
+    correct: 0,
+    explanation: "## Automated Care\nThe beauty of **Smart Health** is that the machines do the boring parts. If the monitor detects that your sugar is low, it can automatically 'talk' to your pharmacy to prepare your medicine and send a text to your phone to let you know."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is an example of **convergence**?",
+    options: [
+      "A company merging with a competitor",
+      "A smartphone that can take photos, navigate with GPS, play music, and browse the web",
+      "A laptop connected to an external monitor",
+      "A Wi‑Fi router that also acts as a switch"
+    ],
+    correct: 1,
+    explanation: "## Joining Together\nIn the old days, you'd have to carry a camera, a map, and a CD player in your bag. **Convergence** is the process where all these separate technologies 'moved into' the Smartphone. One device now carries out the jobs of five or six old machines."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Hacking Methods\nWhy might an attacker use **phishing** instead of pretexting?",
+    options: [
+      "Phishing is always more successful",
+      "Pretexting requires physical presence; phishing does not",
+      "Phishing can reach many victims simultaneously via email, while pretexting usually targets individuals one‑on‑one",
+      "Phishing is legal; pretexting is not"
+    ],
+    correct: 2,
+    explanation: "## Casting a Net\n'Pretexting' is slow—you have to lie to people one-on-one over the phone. **Phishing** is much more efficient for criminals. They can send a fake 'Bank Email' to 10,000 people at the same time and hope that at least a few people fall for the trick."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A student says: “I don’t need to worry about green computing because I’m just one person.” How should you respond?",
+    options: [
+      "The student is correct – individual actions have no impact",
+      "Only corporations are responsible for the environment",
+      "Green computing only applies to data centers",
+      "Individual actions like shutting down computers and recycling collectively make a significant difference"
+    ],
+    correct: 3,
+    explanation: "## Collective Power\nThere are over 5 billion people using technology today. If every single person turns off their monitor at night or chooses paperless billing, the total amount of energy saved is massive. Your individual actions are the fuel for the global green movement."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Wrist Technology\nWhat is the key difference between a **smartwatch** and an **activity tracker**?",
+    options: [
+      "A smartwatch can communicate with a smartphone to run apps; an activity tracker focuses on health metrics",
+      "An activity tracker is more expensive",
+      "A smartwatch cannot track steps or heart rate",
+      "Activity trackers require a subscription; smartwatches do not"
+    ],
+    correct: 0,
+    explanation: "## Functional Depth\nAn activity tracker is a specialized tool (it just does health). A **Smartwatch** is more like a mini-computer. While it *does* track your health, its main job is to 'converge' with your phone so you can check emails, use Maps, and run actual software on your wrist."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A visually impaired person uses a screen reader to listen to **alt text**. Who is responsible for providing it?",
+    options: [
+      "The screen reader generates it automatically",
+      "The content creator must add alt text to images when publishing",
+      "The user’s internet service provider",
+      "No one – alt text is optional and rarely needed"
+    ],
+    correct: 1,
+    explanation: "## Creator Duty\nComputers aren't yet smart enough to describe every photo perfectly. If you are building a website, you are the **Content Creator**, and it's your job to type the description for your photos. If you don't do it, the screen reader has nothing to say to the blind user."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Data Analysis\nWhich of the following best explains why **“big data”** is not simply “a lot of data”?",
+    options: [
+      "Big data is always structured; a lot of data can be unstructured",
+      "Big data refers only to social media posts",
+      "Big data includes complexity and variety that make traditional processing methods inadequate",
+      "Big data is a marketing term with no technical meaning"
+    ],
+    correct: 2,
+    explanation: "## The Three Vs\nIn Computer Science, we talk about the 'Three Vs' of big data: **Volume** (Size), **Velocity** (Speed), and **Variety** (Complexity). It’s the fact that the data is so messy and changing so fast that makes it 'Big Data,' not just the total number of gigabytes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the process of transferring data, instructions, and information from **memory to a storage medium**?",
+    options: [
+      "Reading",
+      "Accessing",
+      "Saving",
+      "Writing"
+    ],
+    correct: 3,
+    explanation: "## Technical Terms\nIn simple language, we say 'Saving.' But in tech terms, the computer is **Writing** to the disk. (The opposite is 'Reading,' where the computer takes data *from* the disk and puts it back into its active memory)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Mobile Health\nWhat does the term **“mHealth”** (mobile health) refer to?",
+    options: [
+      "Healthcare professionals using smartphones to access records, and patients monitoring conditions digitally",
+      "The use of telephones to call a doctor for advice",
+      "Replacing all hospital staff with mobile apps",
+      "Only fitness tracking on a smartwatch"
+    ],
+    correct: 0,
+    explanation: "## Modern Medicine\nmHealth is a two-way trend. It allows your doctor to carry your medical history on an iPad in the hospital, and it allows you to send your blood pressure readings to them using a phone app. It makes healthcare much faster and more accurate."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is an example of **3D printing** in healthcare?",
+    options: [
+      "Printing paper copies of patient records",
+      "Manufacturing skin for burn patients, prosthetic devices, and casts",
+      "Printing 3D models of organs for display only",
+      "Creating 3D animations of surgical procedures"
+    ],
+    correct: 1,
+    explanation: "## Living Objects\n3D printing is truly magical in healthcare. We can now print 'Biological Ink' to create new skin for victims, or use a scan of a patient's limb to print a perfectly fitting prosthetic hand. It's about creating **physical medical solutions**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Multimedia\nWhat is a **digital media player**?",
+    options: [
+      "A physical device that plays DVDs",
+      "A radio receiver for digital broadcasts",
+      "An application that lets you play audio and video files",
+      "A streaming service subscription"
+    ],
+    correct: 2,
+    explanation: "## Software Viewers\nWhether it's VLC on your laptop, Spotify on your phone, or the default Video app, a digital media player is the **Software** that knows how to read your media files and show them to you. It's the app, not the actual device."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is a **recommended** safeguard to protect your personal privacy?",
+    options: [
+      "Carry passwords in your wallet for easy access",
+      "Provide personal information over the phone if the caller sounds friendly",
+      "Permit all website and app requests to collect data automatically",
+      "Do not carry passwords in a wallet, and do not provide info over phone or email"
+    ],
+    correct: 3,
+    explanation: "## Rule of Safety\nPrivacy is about **Control**. If you carry a list of passwords in your wallet and lose it, you have handed your entire digital life to a stranger. Similarly, professional companies will almost never ask you for your private info over an unexpected phone call."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Donating Devices\nWhich of the following is a **green computing** practice for individuals?",
+    options: [
+      "Donating computer equipment instead of throwing it away",
+      "Using paper for all communications",
+      "Replacing devices every year to stay current",
+      "Keeping computers on 24/7 to avoid startup power surge"
+    ],
+    correct: 0,
+    explanation: "## Reuse over Waste\nIf your laptop is too slow for gaming, it's still powerful enough for a child in school to learn how to type. **Donating** functional equipment keeps it out of a landfill and saves the energy it would take to build a brand-new computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **“paperless communication”** in green computing?",
+    options: [
+      "Using recycled paper for printing",
+      "Sending documents electronically instead of printing them on paper",
+      "Banning all paper from an office",
+      "Shredding paper instead of throwing it away"
+    ],
+    correct: 1,
+    explanation: "## Digital Alternatives\nEvery time you choose to send an **Email** or a **PDF** instead of printing a physical letter, you are saving the trees, water, and massive amounts of energy it takes to manufacture and move paper around the world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Enterprise Energy\nWhich of the following is an **organisational** green computing practice?",
+    options: [
+      "Buying the cheapest computer available",
+      "Printing every document for record‑keeping",
+      "Using sleep modes and other power management features for all devices",
+      "Disabling all power saving features to improve performance"
+    ],
+    correct: 2,
+    explanation: "## Corporate Savings\nA big office with 1,000 computers has a massive power bill. By forcing all those machines to enter **Sleep Mode** after 10 minutes of inactivity, the company can save enough electricity to power several homes, all with one simple setting."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which organisational practice involves selecting computers with components that require **less electricity** to operate?",
+    options: [
+      "Recycling obsolete technology",
+      "Using high‑efficiency equipment",
+      "Consolidating servers",
+      "Purchasing devices with lower power consumption processors"
+    ],
+    correct: 3,
+    explanation: "## Smart Purchasing\nModern 'Green' processors are designed to do the same amount of work as old ones while using half the power. Big organizations look for these specifically (Option D) to keep their long-term costs and their impact on the earth as low as possible."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Accessible Tech\nWhat is **“accessibility”** in the context of technology?",
+    options: [
+      "The practice of removing barriers that may prevent individuals with disabilities from using tech",
+      "The ability to access the Internet from any location",
+      "A law requiring companies to provide free devices to disabled users",
+      "A type of assistive technology that only works for visual impairments"
+    ],
+    correct: 0,
+    explanation: "## Inclusivity\nAccessibility is the 'Ramp' for the digital world. If a website only works with a mouse, it's not accessible to someone who can't move their hands. The goal of accessibility is to remove those technical 'walls' so **everyone** can join the digital world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How can a **hearing‑impaired** person receive notifications from an app without relying on sound?",
+    options: [
+      "Use a screen reader",
+      "Instruct the program or app to display words or other visual clues instead of sounds",
+      "Increase the device volume to maximum",
+      "Use a Braille printer"
+    ],
+    correct: 1,
+    explanation: "## Visual Alerts\nInstead of a 'beep' or a 'ping,' the phone can **Flash the LED** or show a large text message on the screen. These 'Visual Clues' allow people who can't hear well to stay updated with what's happening on their devices."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Input Aids\nWhich of the following is an alternative input device for a user with **limited hand mobility**?",
+    options: [
+      "Screen reader",
+      "Audio book",
+      "A keyboard with larger keys",
+      "High‑contrast color scheme"
+    ],
+    correct: 2,
+    explanation: "## Easier Typing\nIf your hands shake or you find it hard to press small buttons, a **Large-Key Keyboard** is a lifesaver. The bigger targets make it much easier to hit the correct letter without accidentally hitting three others at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "A user cannot use a mouse because of mobility issues. Which alternative does **NOT** rely on hand movement?",
+    options: [
+      "Hand‑mounted pointer",
+      "Hand pad",
+      "Larger mouse",
+      "A pneumatic instrument controlled by puffs of air"
+    ],
+    correct: 3,
+    explanation: "## Breath Control\nThis is the **Sip-and-Puff** system. By blowing into or sucking on a small tube, the user can move the mouse and 'click' things on the screen. It's a miracle of technology that requires zero use of the hands or arms."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Smart Control\nWhich of the following is an example of an **IoT device** that can be controlled remotely from a smartphone?",
+    options: [
+      "A smart thermostat that allows you to adjust home temperature from anywhere",
+      "A traditional mercury thermostat",
+      "A manual light switch",
+      "A mechanical timer"
+    ],
+    correct: 0,
+    explanation: "## Real IoT\nIf you are at work and realize you left the heat on at home, you can open an app and turn it down. That **Internet-connected thermostat** is a classic example of an everyday object that has become 'Smart' through IoT technology."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How can **IoT** help with daily tasks at home?",
+    options: [
+      "By replacing all household appliances with manual versions",
+      "By enabling you to start the washing machine, prepare a grocery list, or view intruders remotely",
+      "By removing all Internet connections from the home",
+      "By requiring you to be physically present to operate every device"
+    ],
+    correct: 1,
+    explanation: "## Modern Home\nIoT is about **Convenience**. It allows your fridge to tell you that you're low on eggs, or your security camera to send a video of your front door directly to your phone while you are at the office."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Accessibility Logic\nWhat does a **screen reader** do with alternative (alt) text?",
+    options: [
+      "Ignores it",
+      "Displays it as a caption",
+      "Reads it aloud so the user understands the image",
+      "Converts it into Braille automatically"
+    ],
+    correct: 2,
+    explanation: "## Spoken Description\nSince a blind user cannot see the picture, the screen reader searches for the hidden **Alt Text** description. It then speaks those words aloud so the user knows exactly what the image is supposed to show."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is a recommended tip for creating a **professional** online presence?",
+    options: [
+      "Avoid humorous or informal names for your account profiles",
+      "Use a funny nickname to stand out to recruiters",
+      "Post everything publicly without privacy settings",
+      "Skip proofreading because mistakes show authenticity"
+    ],
+    correct: 0,
+    explanation: "## Serious Branding\n recruiters will check your social media! If your LinkedIn name is 'Partyguy99,' they won't take you seriously. Use your **real, professional name** and a high-quality photo to show that you are a serious candidate."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Public Profiles\nWhen creating a professional online presence, what should you do regarding your **photo**?",
+    options: [
+      "Include a photo that shows your best self",
+      "Never include a photo of yourself",
+      "Use a cartoon avatar instead of a real photo",
+      "Leave the photo field blank"
+    ],
+    correct: 0,
+    explanation: "## Professional Headshot\nA clear, friendly photo of your face helps recruiters feel like they 'know' you. It builds trust. Avoid photos from parties or using cartoon characters if you are looking for a professional career."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following should you do when building a **professional** online presence?",
+    options: [
+      "Upload your resume as a Word document so it can be edited",
+      "Upload a PDF of your resume and include links to digital content you have created",
+      "Never share links to your work to protect privacy",
+      "Keep all your work hidden until an interview"
+    ],
+    correct: 1,
+    explanation: "## Show Your Skills\nA **PDF** is best because it can't be accidentally changed by the recruiter. Including links to a website you built, a video you edited, or a project you finished acts as **Proof** of your skills before you even meet them."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Social Media Safety\nWhat should you do with **privacy settings** on social media accounts when job searching?",
+    options: [
+      "Disable all privacy settings so recruiters can see everything",
+      "Make all posts public to appear transparent",
+      "Share your password with potential employers",
+      "Enable privacy settings and never post anything inappropriate"
+    ],
+    correct: 3,
+    explanation: "## Cyber-Vetting\nAssume that any potential boss will search for you on Facebook or TikTok. Keep your personal life private using **Privacy Settings**, and always think twice before posting anything that could make you look unprofessional."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does online **collaborative** productivity software enable employees to do?",
+    options: [
+      "Share documents and make edits or comments together in real time",
+      "Work only on their own files without sharing",
+      "Print documents without using paper",
+      "Automatically delete all shared files"
+    ],
+    correct: 0,
+    explanation: "## Real-Time Teamwork\nIn the past, you'd have to email files back and forth. With tools like **Google Docs**, five different people can be inside the same document at the same time, making changes and chatting in the sidebar. It makes work much faster."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# School Technology\nHow do **schools** use online productivity software?",
+    options: [
+      "To enable students to work collaboratively on projects and send assignments via email",
+      "To replace teachers with automated grading",
+      "To restrict student access to the Internet",
+      "To monitor student keystrokes for security"
+    ],
+    correct: 0,
+    explanation: "## Digital Homework\nIn modern schools, you don't 'print' your homework as often. You share a link with your teacher, or you and your classmates work on a group PowerPoint project from four different homes at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is a benefit of using a **wireless printer** on a home network?",
+    options: [
+      "Only one computer can use it",
+      "It requires a cable to each device",
+      "Multiple computers and mobile devices on the network can use the printer",
+      "It cannot be used with mobile devices"
+    ],
+    correct: 2,
+    explanation: "## Shared Output\nBecause the printer is on the **Wi-Fi**, it doesn't need to be plugged into any specific computer. You can click 'Print' on your phone in the bedroom, and the printer in the living room will start working immediately."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Network Range\nWhat is a **booster (repeater)** used for in a wireless network?",
+    options: [
+      "To increase the speed of the Internet connection",
+      "To encrypt network traffic",
+      "To replace the router",
+      "To improve reception and extend the range of a wireless network"
+    ],
+    correct: 3,
+    explanation: "## Fixing Dead Zones\nIf your Wi-Fi is great in the kitchen but terrible in the garage, you use a **Booster**. It 'grabs' the Wi-Fi signal from the router and 'shouts' it further, so you can have a strong connection everywhere in the house."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Where is the **best place** to position a wireless router for optimal coverage?",
+    options: [
+      "In a central location of your home",
+      "In a corner of the basement",
+      "Inside a metal cabinet",
+      "Behind a large appliance"
+    ],
+    correct: 0,
+    explanation: "## Central Hub\nThink of Wi-Fi like light coming from a bulb. If you put the bulb in the **Center** of the house, every room gets light. If you put it in a corner or inside a cabinet, most of the 'light' (signal) will be blocked by walls."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Security Check\nWhat is the first step to determine if someone is accessing your **Wi‑Fi** without permission?",
+    options: [
+      "Sign in to the administrative interface and count the number of connected devices",
+      "Change the password",
+      "Turn off the router",
+      "Call the ISP"
+    ],
+    correct: 0,
+    explanation: "## Counting Users\nEvery router has an 'Admin Page.' If you log in, it will show you a list of every phone and laptop currently using your data. If you see 10 devices connected but only 3 people are home, you know someone is stealing your internet!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What does **“stealth mode”** on a router do?",
+    options: [
+      "Increases the signal strength",
+      "Changes the Wi‑Fi password",
+      "Makes the network less visible to outsiders",
+      "Blocks all internet traffic"
+    ],
+    correct: 2,
+    explanation: "## Going Invisible\nNormally, a router broadcasts its name (SSID) to everyone nearby. **Stealth Mode** stops this. It makes the network 'invisible' to people searching for Wi-Fi. You have to already know the name and type it in manually to find it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Open Networks\nWhat is a common **risk** of wireless networks?",
+    options: [
+      "They are slower than wired in all cases",
+      "They cannot be secured",
+      "They require no security",
+      "They are easily accessible, leading to unauthorized access or eavesdropping"
+    ],
+    correct: 3,
+    explanation: "## In the Air\nWireless signals travel **through walls**. That means someone sitting in a car outside your house can 'hear' the data your phone is sending. If you don't have security, they can steal your info or use your internet for free."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **SSID**?",
+    options: [
+      "The name of a wireless network (Service Set Identifier)",
+      "A type of encryption",
+      "A password",
+      "A network cable"
+    ],
+    correct: 0,
+    explanation: "## Network ID\nSSID is just the fancy technical name for your **Wi‑Fi Name**. When you see 'Starbucks_Guest' or 'Home_Internet' on your phone's Wi-Fi list, you are looking at the SSIDs of the nearby networks."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Improving Security\nWhat should you change from the **default** on a wireless router to improve security?",
+    options: [
+      "The power cord",
+      "The default password, SSID name, and enable encryption",
+      "The location of the router",
+      "The colour of the case"
+    ],
+    correct: 1,
+    explanation: "## Lock the Door\nWhen you buy a router, the password is often something simple like 'admin.' Hackers know these defaults! The very first thing you should do is change the name and password to something unique so strangers can't break in."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **adware**?",
+    options: [
+      "Software that tracks personal information",
+      "Software that damages data",
+      "Software that displays unwanted advertisements on your computer",
+      "Software that locks you out of your files"
+    ],
+    correct: 2,
+    explanation: "## Ad-Software\n**Ad**ware is software that 'pops up' banners or windows trying to sell you things. It's usually not trying to break your computer, but it is extremely annoying and can slow your machine down to a crawl."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Ransomware\nWhat is **ransomware**?",
+    options: [
+      "Software that displays ads",
+      "Software that tracks browsing habits",
+      "Software that spreads without user interaction",
+      "Software that locks you out of your data until you pay a ransom"
+    ],
+    correct: 3,
+    explanation: "## Digital Kidnapping\nThis is one of the most dangerous types of malware. It **encrypts (locks)** all your files so you can't open them, then a message appears saying: 'Pay us $300 or we will delete your photos forever.' Never pay the ransom!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is a **rootkit**?",
+    options: [
+      "Malware that gains administrator‑level (root) access without being detected",
+      "A type of virus that spreads via email",
+      "A harmless program",
+      "A firewall"
+    ],
+    correct: 0,
+    explanation: "## Deep Infection\nA rootkit is like a ghost. It gets into the deepest part of your operating system (the 'Root') and gives a hacker full control. The scariest part is that it's designed to be **invisible** to most standard antivirus software."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Performance Tracking\nWhat does **network monitoring software** do?",
+    options: [
+      "It blocks all incoming connections",
+      "It constantly assesses network status and can send alerts when it detects a problem",
+      "It changes the router password",
+      "It installs viruses"
+    ],
+    correct: 1,
+    explanation: "## IT Guardian\nMonitoring software is like a 'Security Camera' for your data. It watches 24/7 to make sure the internet is working fast. If a cable breaks or a server crashes, it sends an alert to the IT person immediately so they can fix it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is **packet sniffer** software used for by hackers?",
+    options: [
+      "To speed up the network",
+      "To block ads",
+      "To monitor and log packet traffic, potentially to hijack a computer",
+      "To create a VPN"
+    ],
+    correct: 2,
+    explanation: "## Eavesdropping\nEverything you do on the web travels in tiny pieces called 'packets.' A **Sniffer** 'smells' those packets as they go past. If you are on an unencrypted network, a hacker can use this to see your passwords or private messages."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Defenses\nWhat is one way to secure a wireless network from **unauthorised access**?",
+    options: [
+      "Disable the router’s firewall",
+      "Broadcast the SSID at maximum power",
+      "Use no encryption",
+      "Enable the router’s firewall and use “stealth mode”"
+    ],
+    correct: 3,
+    explanation: "## Double Protection\nA **Firewall** stops bad data from entering your house, and **Stealth Mode** makes your Wi-Fi 'invisible' so hackers don't even know it's there. Using both is the hallmark of a secure and professional home network."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the role of a **network administrator**?",
+    options: [
+      "To plan, design, purchase, set up, secure, and maintain a network",
+      "To write software applications",
+      "To repair hardware only",
+      "To answer user phone calls"
+    ],
+    correct: 0,
+    explanation: "## The IT Boss\nThe Network Admin is the person responsible for the whole system. They don't just 'fix computers'; they **architect** the network, decide which security to use, and make sure the whole company stays connected 24/7."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Professional Bodies\nWhat is **USENIX**?",
+    options: [
+      "A type of network cable",
+      "A nonprofit organisation founded to support network and system engineers",
+      "A network protocol",
+      "A brand of routers"
+    ],
+    correct: 1,
+    explanation: "## System Research\nUSENIX is one of the world's most respected associations for computer scientists and engineers. They share research, hold massive conferences, and are the 'brain trust' that helps design the future of the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is included in the **code of ethics** for network professionals?",
+    options: [
+      "Only technical skills",
+      "Only profit maximisation",
+      "Professionalism, personal integrity, and privacy responsibility",
+      "Only password management"
+    ],
+    correct: 2,
+    explanation: "## Professional Honor\nBecause network admins have the power to see almost everything on their servers, they must follow a strict **Code of Ethics**. This means they promise to respect user privacy and act with honesty (integrity) at all times."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Honesty in Tech\nWhat does **“personal integrity”** mean for a network professional?",
+    options: [
+      "Being physically strong",
+      "Having a fast computer",
+      "Knowing many programming languages",
+      "Being honest and trustworthy, especially when having access to sensitive data"
+    ],
+    correct: 3,
+    explanation: "## The Trust Rule\nIn Computer Science, **Integrity** means you can be trusted with secrets. If you are an IT manager and you have access to everyone's private emails, integrity is the quality that ensures you will never look at them without a legal reason."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Data Center Cooling\nWhich of the following is a **green computing** practice for organisations?",
+    options: [
+      "Consolidating servers and using outside air to cool data centers",
+      "Increasing the number of servers without changing cooling",
+      "Disabling all power management features",
+      "Keeping obsolete equipment running indefinitely"
+    ],
+    correct: 0,
+    explanation: "## Natural AC\nData centers get incredibly hot. Instead of using massive, power-hungry AC units, 'Green' organizations build their centers in cold climates and use the **natural outside air** to cool their machines for free. It's a huge energy saver."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the benefit of using **sleep modes** on computers in an organisation?",
+    options: [
+      "It makes computers start faster",
+      "It reduces electricity consumption when devices are not in active use",
+      "It increases processing speed",
+      "It prevents software updates"
+    ],
+    correct: 1,
+    explanation: "## Instant Savings\nA computer in **Sleep Mode** uses 95% less power than one that is fully on. For a large company with 500 laptops, this simple setting can save thousands of dollars on the electricity bill every single year."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Reducing E-Waste\nHow can organisations **reduce e‑waste**?",
+    options: [
+      "By throwing old devices in the regular trash",
+      "By burning old devices to recover metals",
+      "By recycling or properly disposing of obsolete technology",
+      "By storing all old devices indefinitely"
+    ],
+    correct: 2,
+    explanation: "## Safe Disposal\nWhen a bank gets new computers, they must follow **Responsible Disposal** rules. This means sending the old ones to a factory that can safely extract the gold and copper while making sure the toxic lead doesn't end up in the ground."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the purpose of an **LMS** in a university?",
+    options: [
+      "To replace all face‑to‑face instruction with robots",
+      "To manage university finances and payroll",
+      "To store and sell student data",
+      "To set up training sites where students check progress and practice tests"
+    ],
+    correct: 3,
+    explanation: "## Academic Hub\nThe **Learning Management System** is your digital lifeline. It's where you go to get your lecture slides, take practice exams, and see if your latest assignment was graded. It keeps the whole university organized."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Teamwork Software\nWhich of the following is an example of online **collaborative** productivity software?",
+    options: [
+      "A tool that allows multiple employees to edit the same document simultaneously",
+      "A spreadsheet that only one person can open at a time",
+      "A printer that only one computer can use",
+      "A file stored on a single local hard drive"
+    ],
+    correct: 0,
+    explanation: "## Working Together\nThe key word is **Simultaneously**. Collaborative tools (like Google Sheets or Word Online) allow you to see your team members' cursors moving while you work. It removes the need for 'Version 1,' 'Version 2,' etc."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "How do **schools** use social networking tools?",
+    options: [
+      "To replace all textbooks with social media posts",
+      "To promote school events, work on projects, and teach digital citizenship",
+      "To monitor students’ private messages",
+      "To restrict student access to educational resources"
+    ],
+    correct: 1,
+    explanation: "## Community Building\nSocial networking isn't just for 'fun' at school. It's used to announce the next football match, let students collaborate on group homework, and provide a place to discuss important issues like how to spot 'Fake News.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Business Cloud\nWhat is one advantage of using **cloud storage** for businesses?",
+    options: [
+      "Files are never backed up",
+      "The business must maintain its own servers",
+      "Flexibility of not having to purchase and maintain expensive hardware",
+      "Files cannot be shared with employees"
+    ],
+    correct: 2,
+    explanation: "## Lower Costs\nBuying your own server costs thousands of dollars and needs an IT expert to fix it. With **Cloud Storage**, a small business just pays a small fee to 'rent' space from Google. It gives them professional tools without the high cost of buying hardware."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What should you do **before** signing up for a cloud storage provider?",
+    options: [
+      "Immediately upload all your sensitive data",
+      "Disable all privacy settings",
+      "Share your password with the provider",
+      "Read the privacy policy and terms of agreement"
+    ],
+    correct: 3,
+    explanation: "## Read the Fine Print\nYou are putting your digital life on someone else's computer! You **must** check their rules to ensure they won't sell your photos to advertisers or claim that they 'own' the files you upload to their system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Selecting a Provider\nWhich of the following is a guideline for selecting a **cloud storage** provider?",
+    options: [
+      "Verify that the provider is compatible with your computers and mobile devices",
+      "Choose a provider that does not encrypt files",
+      "Ignore the privacy policy",
+      "Select the most expensive plan regardless of features"
+    ],
+    correct: 0,
+    explanation: "## Cross-Platform\nA cloud service is useless if it only works on your PC but not on your phone. You should always choose a provider that has apps for **all your devices**, so your files follow you wherever you go."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the main advantage of using an **external hard drive**?",
+    options: [
+      "It is faster than an internal drive",
+      "It adds storage capacity to your computer without opening the case, and is portable",
+      "It never fails",
+      "It does not require a power source"
+    ],
+    correct: 1,
+    explanation: "## Easy Upgrade\nIf your laptop is full, you don't need a technician. You just buy an **External Drive** and plug it into the USB port. It gives you 2,000 extra GBs instantly, and you can put it in your pocket and take it to school."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Connecting Devices\nWhat does **“hot swappable”** mean for a storage device?",
+    options: [
+      "It gets hot when used",
+      "It requires the computer to be turned off before connecting",
+      "It can be connected or removed while the computer is running",
+      "It only works with a special cable"
+    ],
+    correct: 2,
+    explanation: "## Live Plugging\nIn the old days, you had to shut down your PC to plug in a new disk. Modern **USB drives** are 'Hot Swappable'—the computer is 'Hot' (running) and you can just swap (plug/unplug) them without causing any errors."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "What is the purpose of **backing up** files to cloud storage?",
+    options: [
+      "To delete them from your local computer",
+      "To make them accessible only to you",
+      "To increase their file size",
+      "To protect against hardware failure, theft, or disaster by keeping a copy off‑site"
+    ],
+    correct: 3,
+    explanation: "## Off-Site Safety\nIf your phone is stolen or your laptop breaks, your local files are gone. But if you have a **Cloud Backup**, your data is safe in a high-security building in another city. You can just buy a new phone and get all your photos back."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Account Security\nWhat does **“two‑factor authentication”** add to password protection?",
+    options: [
+      "A second verification step in addition to your password",
+      "A second password that you never change",
+      "A fingerprint only",
+      "A picture password"
+    ],
+    correct: 0,
+    explanation: "## Double Locking\nTwo-factor (2FA) means that even if a hacker steals your password, they still can't get in. They would also need **your physical phone** to see the 6-digit code. It is the single most important thing you can do to be a secure digital citizen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Why might you choose a cloud provider that **encrypts** your files?",
+    options: [
+      "To make your files smaller",
+      "To protect your data from unauthorised access even if the provider’s servers are breached",
+      "To make your files load faster",
+      "To allow anyone to read your files"
+    ],
+    correct: 1,
+    explanation: "## Unreadable Data\nEncryption turns your files into a 'Secret Code.' Even if a super-hacker breaks into Google or Microsoft's servers, they won't be able to read your documents because they don't have your 'Encryption Key.' It keeps your data private."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "# Cloud Layers\nWhat is the role of the **front end** in cloud computing?",
+    options: [
+      "The servers that store data",
+      "The network cables",
+      "The hardware and software that the user interacts with (web browser, mobile app)",
+      "The backup generators"
+    ],
+    correct: 2,
+    explanation: "## What You See\nThe **Front End** is your screen, your app, and your browser. It is the part of the cloud system that 'faces' you. Everything behind that (the massive servers and databases) is called the 'Back End.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Digital Citizenship",
+    q: "Which of the following is a common additional **cloud service**?",
+    options: [
+      "Printing as a Service",
+      "Keyboard as a Service",
+      "Monitor as a Service",
+      "Synchronize files"
+    ],
+    correct: 3,
+    explanation: "## Magic Updates\n**File Synchronization** is the 'magic' part of the cloud. If you type a sentence on your laptop and it immediately appears on your phone's screen, that is the cloud service synchronizing your devices in real-time."
+  },
+
+// ==========================================
+// UNIT 2: COMPUTER HARDWARE (104 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Hardware Fundamentals\nWhat does the term **“hardware”** refer to in computing?",
+    options: [
+      "The device itself and its components, such as wires, cases, switches, and electronic circuits",
+      "The programs and apps that run on a computer",
+      "The data stored on a hard drive",
+      "The user’s login credentials"
+    ],
+    correct: 0,
+    explanation: "## Insight\nThink of hardware as the physical body of the computer—anything you can touch or kick. This includes the wires, the metal case, the chips, and the circuits. Apps and programs are 'software' (the instructions), but the physical machine is the hardware."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which of the following is **NOT** a basic component of computer hardware?",
+    options: ["Memory", "Operating system", "CPU", "Storage devices"],
+    correct: 1,
+    explanation: "## Component Check\nThe **Operating System** (like Windows or Android) is actually software—it is a collection of programs that manages the hardware. Memory, the CPU (the brain), and storage drives are all physical parts you can hold in your hand, making them hardware."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# The Processor\nWhat is a **processor core**?",
+    options: [
+      "The outer casing of the CPU",
+      "The fan that cools the processor",
+      "A unit on the processor with the circuitry necessary to execute instructions",
+      "The memory attached to the processor"
+    ],
+    correct: 2,
+    explanation: "## The 'Brain' Unit\nThink of a core as an individual 'worker' inside the CPU. A processor core is the actual part of the chip that does the math and follows instructions. In the past, chips had only one core (one worker), but modern chips have many to get work done faster."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What do you call a processor that contains **multiple cores** on a single chip?",
+    options: ["Dual‑core processor only", "Single‑core processor", "Hyper‑threaded processor", "Multi‑core processor"],
+    correct: 3,
+    explanation: "## Scaling Power\nWhile 'Dual-core' means two, the general term for any chip with more than one core is a **Multi-core processor**. This allows the computer to multitask by giving different jobs to different 'workers' (cores) at the exact same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Computer Memory\nWhat is computer **memory** (RAM) primarily responsible for?",
+    options: [
+      "Holding data and programs as they are being processed by the CPU",
+      "Permanently storing files even when power is off",
+      "Displaying images on the screen",
+      "Connecting the computer to a network"
+    ],
+    correct: 0,
+    explanation: "## Active Workspace\nThink of RAM as your desk. Before you can work on a file, you have to take it out of the drawer (Storage) and lay it on your desk (Memory). RAM holds the apps and data you are using *right now* so the CPU can reach them quickly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What happens when you run **many apps simultaneously** on a computer?",
+    options: [
+      "Less RAM is required",
+      "More RAM will be required",
+      "The processor shuts down",
+      "The hard drive becomes faster"
+    ],
+    correct: 1,
+    explanation: "## Capacity Management\nEvery app you open takes up a 'slice' of your memory (RAM). If you have 20 tabs open in Chrome plus a video game, you are using a lot of space. If you run out of RAM, your computer will slow down significantly as it struggles to manage the data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Virtual Memory\nWhat is a **swap file** (or paging file)?",
+    options: [
+      "A file that permanently stores deleted data",
+      "A file that contains the operating system kernel",
+      "An area of the hard drive used to store data that cannot fit in RAM",
+      "A file that encrypts all data on the hard drive"
+    ],
+    correct: 2,
+    explanation: "## The Overflow Area\nIf your RAM (your desk) gets totally full, the computer uses a trick: it moves some data to a hidden 'Swap File' on your hard drive. This keeps the computer running, but because hard drives are much slower than RAM, your computer will start to 'lag.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which type of memory is **volatile** (loses its data when power is cut)?",
+    options: ["ROM", "Flash memory", "Magneto‑resistive RAM", "RAM (Random Access Memory)"],
+    correct: 3,
+    explanation: "## Power Dependency\n**RAM** is volatile. Think of it like a whiteboard; as soon as you turn off the lights (the power), the board is wiped clean. This is why you must 'Save' your work to a hard drive (non-volatile) if you want to keep it for later."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Physical Layout\nWhere is **RAM** physically located inside a computer?",
+    options: [
+      "On one or more chips connected to the motherboard",
+      "Inside the processor",
+      "On the hard drive",
+      "In the power supply unit"
+    ],
+    correct: 0,
+    explanation: "## Connectivity\nRAM comes in the form of small rectangular sticks (chips) that plug directly into slots on the **Motherboard**. This puts them as close as possible to the CPU so that data can travel back and forth at lightning speed."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the **motherboard**?",
+    options: [
+      "The external case of the computer",
+      "A circuit board that contains the CPU, memory, and internal devices",
+      "A type of storage drive",
+      "The power supply unit"
+    ],
+    correct: 1,
+    explanation: "## The Main Hub\nThe Motherboard is the 'nervous system' of the computer. It is a large circuit board that everything else—the CPU, the RAM, the Hard Drive—plugs into. It allows all these different parts to communicate with each other."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# ROM vs RAM\nWhich type of memory is **non‑volatile** and contains the **BIOS**?",
+    options: ["RAM", "Cache memory", "ROM", "Virtual memory"],
+    correct: 2,
+    explanation: "## Permanent Instructions\n**ROM** (Read-Only Memory) is non-volatile, meaning it never forgets. It holds the 'startup' instructions (BIOS) that tell the computer how to wake up when you press the power button. Unlike RAM, you can't easily change the data on ROM."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is **firmware**?",
+    options: [
+      "Software that is frequently updated via the Internet",
+      "Physical hardware components",
+      "The operating system’s user interface",
+      "Instructions on the ROM chip that can be updated by manufacturers"
+    ],
+    correct: 3,
+    explanation: "## Hardwired Software\nFirmware is a special kind of software that lives permanently on a hardware chip (like ROM). It tells the hardware how to behave. Manufacturers can sometimes send 'Firmware Updates' to fix bugs in the hardware's internal logic."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# RAM Varieties\nWhich type of RAM needs to be **constantly recharged** or its contents will be erased?",
+    options: ["Dynamic RAM (DRAM)", "Static RAM (SRAM)", "Magneto‑resistive RAM (MRAM)", "Flash memory"],
+    correct: 0,
+    explanation: "## The 'Dynamic' Need\n**DRAM** uses tiny capacitors to store bits. These capacitors leak electricity, so the computer must 'refresh' (recharge) them thousands of times per second. If the recharge stops, the data vanishes instantly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which type of RAM uses **magnetic charges** and retains data even without power?",
+    options: ["DRAM", "Magneto‑resistive RAM (MRAM)", "SRAM", "SDRAM"],
+    correct: 1,
+    explanation: "## Magnetic Memory\n**MRAM** is a newer technology. Because it uses magnetism instead of electrical charges to store bits, it is non-volatile. It combines the speed of RAM with the permanent storage ability of a hard drive."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Flash Memory\nWhich memory type is fast, affordable, and **non‑volatile** (used in USBs and SSDs)?",
+    options: ["DRAM", "SRAM", "Flash memory", "MRAM"],
+    correct: 2,
+    explanation: "## The Modern Standard\n**Flash memory** is what makes modern life possible. It has no moving parts, it's very fast, and it doesn't need a battery to remember your files. We use it for everything from smartphone storage to the 'hard drives' (SSDs) in modern laptops."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "When buying a computer, how should you handle **different processor requirements** for various apps?",
+    options: [
+      "Choose the lowest requirement to save money",
+      "Average all processor requirements",
+      "Ignore requirements",
+      "Identify the app with the highest requirement and meet or exceed it"
+    ],
+    correct: 3,
+    explanation: "## Purchasing Strategy\nIf you want to run Photoshop (heavy) and Chrome (light), you can't just buy a computer that meets Chrome's needs—Photoshop will crash. Always look for the 'hungriest' app you plan to use and build your computer to satisfy that one."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# RAM Requirements\nFor basic web browsing and simple office tasks, how much **RAM** is typically enough?",
+    options: ["4 GB", "16 GB", "32 GB", "64 GB"],
+    correct: 0,
+    explanation: "## Entry Level\n$4\text{ GB}$ of RAM is the 'Minimum' for a modern computer. It is enough to run a web browser and type a document, but if you try to do too many things at once, you will start to feel the computer slowing down."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "For high‑end gaming or **Virtual Reality (VR)**, how much RAM is often recommended?",
+    options: ["4 GB", "32 GB", "8 GB", "2 GB"],
+    correct: 1,
+    explanation: "## Pro Level\nModern games and VR simulations are massive. They need to 'lay out' a huge amount of data for the CPU to process instantly. That is why high-end systems often jump up to $32\text{ GB}$ of RAM to ensure everything stays smooth."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Storage Planning\nHow do you determine the total **storage capacity** you need for a new computer?",
+    options: [
+      "Take the average requirement",
+      "Use the smallest requirement",
+      "Add up the requirements for all your apps/files and ensure the drive is larger than that sum",
+      "Storage is irrelevant"
+    ],
+    correct: 2,
+    explanation: "## The 'Bucket' Analogy\nThink of storage like a bucket. Every app and movie is like a cup of water. You must add up every cup you plan to put in the bucket and then buy a bucket that is even larger than that total to leave room for future files."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What does the term **“form factor”** refer to?",
+    options: ["The processor speed", "The amount of RAM", "The brand of computer", "The shape and size of the computer"],
+    correct: 3,
+    explanation: "## Physical Shape\nForm factor is just the 'industry word' for the size and shape of a device. A 'Desktop' form factor is big and sits on a desk; a 'Laptop' form factor is thin and foldable. It describes how the hardware is packaged."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# All-in-Ones\nWhich computer has the **monitor and system unit** built into the same case?",
+    options: ["All‑in‑one computer", "Desktop computer", "Laptop", "Tablet"],
+    correct: 0,
+    explanation: "## Space Savers\nAn **All-in-One** (like an iMac) looks like just a monitor, but the entire computer (CPU, RAM, etc.) is hidden behind the glass. This is different from a traditional desktop, which has a separate 'Tower' box."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a major characteristic of an **ultrathin laptop**?",
+    options: [
+      "Heavy and cheap",
+      "Lightweight, thin, long battery life, and expensive",
+      "Powerful but very heavy",
+      "Uses a separate keyboard"
+    ],
+    correct: 1,
+    explanation: "## Premium Portability\nTo make a laptop 'Ultrathin,' engineers use very expensive, tiny components that don't generate much heat. This makes the device very light and gives it a long battery life, but it also makes it more expensive than a 'chunky' budget laptop."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Tablets\nWhich tablet form factor looks like a **letter-sized pad** and has no physical keyboard?",
+    options: ["Convertible tablet", "Hybrid tablet", "Slate tablet", "Detachable tablet"],
+    correct: 2,
+    explanation: "## The Slate\nThink of an iPad. It is a single, flat sheet of glass and metal. Because it looks like a slate of stone or a pad of paper, we call it a **Slate tablet**. Any keyboard you use with it would have to be separate."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **convertible tablet**?",
+    options: [
+      "A tablet that converts to a phone",
+      "A tablet for mobile apps only",
+      "A tablet with no screen",
+      "A tablet that has a screen on its lid and a keyboard on its base"
+    ],
+    correct: 3,
+    explanation: "## 2-in-1 Design\nA convertible tablet is a 'Hybrid.' It looks like a laptop, but the screen can flip all the way around or twist, 'converting' the laptop into a tablet. It gives you the best of both worlds: a real keyboard and a touch screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Input Devices\nWhat is a **scanner**?",
+    options: [
+      "An input device that converts a paper image into an electronic file",
+      "An output device that prints documents",
+      "A storage device for images",
+      "A network device"
+    ],
+    correct: 0,
+    explanation: "## Digitizing\nA scanner 'reads' a physical piece of paper and turns it into a digital image (bits and bytes) that you can open on your computer. It is an **Input** device because data is going *into* the computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What does a **3‑D scanner** do?",
+    options: ["Scans flat documents", "Scans three‑dimensional objects", "Converts text to speech", "Scans network packets"],
+    correct: 1,
+    explanation: "## Capture the Shape\nWhile a normal scanner only sees 'Flat' paper, a 3-D scanner uses lasers or cameras to measure the height, width, and depth of a real object (like a statue). It then creates a 3D model of that object on your computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Printers\nWhat is the basic definition of a **printer**?",
+    options: [
+      "An input device for scanning",
+      "A storage device",
+      "A device that creates hard copy output on paper or other media",
+      "A display device"
+    ],
+    correct: 2,
+    explanation: "## Hard Copy\nA printer is an **Output** device. It takes digital information from the screen and 'outputs' it onto a physical medium like paper or film. We call this physical result a 'hard copy.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "How can a modern printer be connected to your computer?",
+    options: [
+      "Only with a USB cable",
+      "Only via Wi-Fi",
+      "Only through a network",
+      "Wirelessly, over a network, or with a physical cable"
+    ],
+    correct: 3,
+    explanation: "## Connectivity Options\nModern printers are very flexible. You can plug them in directly (USB), connect them to a business network (Ethernet), or simply print from your phone using Wi-Fi or Bluetooth."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Voice Synthesis\nWhat is the job of a **voice synthesizer**?",
+    options: ["Converts text to speech", "Converts speech to text", "Synthesizes music", "Amplifies sound"],
+    correct: 0,
+    explanation: "## Reading Aloud\nA voice synthesizer takes written words on the screen and 'speaks' them using a computer-generated voice. This is a vital tool for accessibility, helping people with visual impairments 'hear' their documents."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **projector**?",
+    options: [
+      "A video capture device",
+      "A device that displays computer output on a large surface like a wall",
+      "A storage device",
+      "A type of monitor"
+    ],
+    correct: 1,
+    explanation: "## Group Viewing\nA projector is an output device that shines a very bright light through a lens to 'project' whatever is on your monitor onto a large screen or wall. It allows many people to see the same image at once."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Plug-and-Play\nWhat is a **Plug‑and‑Play** device?",
+    options: [
+      "A device that requires manual setup",
+      "A device that only works on Windows",
+      "A device that starts working properly as soon as you connect it",
+      "A device that requires a reboot"
+    ],
+    correct: 2,
+    explanation: "## Instant Setup\nIn the old days, you had to manually install 'drivers' for every new gadget. A **Plug-and-Play** device (like a USB mouse) is smart enough to tell the computer what it is, allowing the computer to set it up automatically the moment you plug it in."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **device driver**?",
+    options: [
+      "A physical cable",
+      "An external drive",
+      "A power supply",
+      "A program that allows the OS to communicate with a specific piece of hardware"
+    ],
+    correct: 3,
+    explanation: "## The Translator\nThink of a driver as a 'translator.' The Operating System speaks one language, and the Printer speaks another. The **Driver** is the software that sits between them and translates the OS's commands into instructions the printer understands."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Clock Speed\nWhat does the processor’s **clock speed** measure?",
+    options: [
+      "How many instructions it can execute per second",
+      "How much data it can store",
+      "The temperature of the chip",
+      "The voltage of the battery"
+    ],
+    correct: 0,
+    explanation: "## Processing Tempo\nClock speed (measured in Gigahertz) is like the 'heartbeat' of the CPU. Every 'tick' of the clock is a chance for the CPU to do a calculation. A higher clock speed means the CPU can think through more instructions in one second."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **cycle** in terms of a processor?",
+    options: [
+      "The time to boot the PC",
+      "The smallest unit of time a processor can measure",
+      "A full reboot",
+      "Hard drive rotation"
+    ],
+    correct: 1,
+    explanation: "## The Basic Tick\nA cycle is one single 'beat' of the processor's internal clock. If a processor is $3\text{ GHz}$, it performs 3 billion of these tiny cycles every single second."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# CPU Efficiency\nHow is the **efficiency** (not just speed) of a CPU measured?",
+    options: [
+      "By clock speed only",
+      "By core count",
+      "By instructions per cycle (IPC)",
+      "By physical size"
+    ],
+    correct: 2,
+    explanation: "## Smart vs. Fast\nIf two CPUs have the same clock speed, the one with the higher **IPC** is better. It means that CPU is 'smarter'—it can get more work done during every single tick of the clock."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What does **bus width** (word size) determine?",
+    options: ["Motherboard width", "Number of ports", "Temperature", "The speed at which data travels"],
+    correct: 3,
+    explanation: "## The Highway Lanes\nThink of a 'bus' as a highway for data. **Bus width** is how many 'lanes' that highway has. A 64-bit bus can carry twice as much data at once as a 32-bit bus, making the whole system feel much faster."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Benchmarking\nWhat is a **benchmark**?",
+    options: [
+      "A performance test used to compare different processors",
+      "A standard design",
+      "A cooling system",
+      "A security feature"
+    ],
+    correct: 0,
+    explanation: "## The Race\nA benchmark is a standardized 'stress test.' By running the exact same heavy task on two different computers and timing them, we can scientifically prove which one is faster. It's how we compare hardware fairly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "How can you physically prevent a **laptop** from being stolen in a public area?",
+    options: ["Backpack use", "Use a cable lock", "Disable power", "Remove battery"],
+    correct: 1,
+    explanation: "## Physical Security\nBecause laptops are small and valuable, they are easy to steal. A **Cable Lock** works like a bike lock; it clips into a special hole in the laptop frame and loops around a heavy desk, making it impossible for someone to just walk away with it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Maintenance\nWhat is the safest way to clean a **computer screen**?",
+    options: ["Window cleaner", "Dry paper towel", "A damp, soft cloth", "Compressed air"],
+    correct: 2,
+    explanation: "## Gentle Care\nModern screens have delicate coatings. Harsh chemicals (like ammonia) or rough paper towels can scratch or strip the screen. A slightly **damp, soft cloth** is the professional way to remove dust without causing damage."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is an **uninterrupted power supply (UPS)**?",
+    options: [
+      "A speed booster",
+      "A backup battery",
+      "A surge protector",
+      "A device that provides emergency power during a blackout"
+    ],
+    correct: 3,
+    explanation: "## The Safety Net\nA **UPS** is a large battery that sits between the wall outlet and your computer. If the power suddenly goes out, the UPS kicks in instantly, giving you a few minutes of power to save your work and shut down properly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Power Protection\nWhat is the primary job of a **surge suppressor**?",
+    options: [
+      "To prevent power spikes from damaging components",
+      "To act as a battery",
+      "To increase voltage",
+      "To cool the PC"
+    ],
+    correct: 0,
+    explanation: "## Voltage Guard\nSometimes the power grid has a 'spike' (a sudden burst of too much electricity). A **Surge Suppressor** detects this and blocks the extra power before it can travel down the wire and fry your computer's motherboard."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **blackout** in electrical terms?",
+    options: ["Voltage drop", "A total loss of power", "A short spike", "High frequency energy"],
+    correct: 1,
+    explanation: "## Lights Out\nA blackout is simple: the power goes to zero. This is dangerous for computers because they don't have time to save data, which can lead to corrupted files or a 'crashed' operating system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Power Dips\nWhat is a **brownout**?",
+    options: ["Total power loss", "Short spike", "A drop in voltage that lasts for minutes or hours", "Unwanted energy"],
+    correct: 2,
+    explanation: "## Dimming Down\nA brownout is when the power doesn't go out completely, but the 'pressure' (voltage) drops. You might notice the lights dim. This is bad for electronics because they are forced to work harder with less power, which can cause them to overheat or fail."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What does **restoring** an operating system mean?",
+    options: [
+      "Deleting all files",
+      "Installing a new OS",
+      "Upgrading",
+      "Reverting settings to a previous, stable version"
+    ],
+    correct: 3,
+    explanation: "## Time Machine\nIf your computer starts acting weird after you install a new app, you can 'Restore' it. This tells the computer to 'go back in time' to how its settings were yesterday (or last week) when everything was working perfectly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Backups\nWhat can **data backups** protect you against?",
+    options: [
+      "Hardware failure, user errors, corruption, and natural disasters",
+      "Only viruses",
+      "Only hard drive failure",
+      "Only user errors"
+    ],
+    correct: 0,
+    explanation: "## Total Insurance\nA backup is a second copy of your life. It doesn't matter if your laptop is stolen, catches fire, or if you accidentally delete a file—if you have a backup in the cloud or on an external drive, your data is safe."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the central 'brain' of a **home Wi-Fi network**?",
+    options: ["A switch", "A wireless router", "A modem", "A hub"],
+    correct: 1,
+    explanation: "## The Director\nThe **Wireless Router** takes the internet coming from the wall and 'routes' it wirelessly to your phone, your laptop, and your TV. It manages who gets which data and keeps the network organized."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Network Risks\nWhich of the following is a major risk of using **unsecured Wi-Fi**?",
+    options: ["Faster speeds", "Encryption", "Hackers reading your transmissions and injecting malware", "No risks"],
+    correct: 2,
+    explanation: "## Invisible Eavesdropping\nWireless signals travel through the air. If the Wi-Fi has no password, a hacker sitting nearby can use a 'sniffer' program to see every website you visit and every password you type. Always use a secure, encrypted network!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the most common **storage medium** found inside a computer?",
+    options: ["Optical disc", "USB drive", "Cloud storage", "Internal hard drive"],
+    correct: 3,
+    explanation: "## Primary Home\nEvery PC needs a place to store the Operating System (Windows/macOS). The **Internal Hard Drive** (either an HDD or SSD) is the permanent home for all your software and files."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# HDD vs SSD\nWhat is the main difference between a **Hard Disk Drive (HDD)** and a **Solid-State Drive (SSD)**?",
+    options: [
+      "HDDs have more capacity; SSDs are faster and more durable",
+      "SSDs have more capacity; HDDs are faster",
+      "HDDs are permanent; SSDs are temporary",
+      "There is no difference"
+    ],
+    correct: 0,
+    explanation: "## Speed vs. Space\nHDDs use spinning magnetic platters (like a record player)—they are slow but can hold a massive amount of data cheaply. **SSDs** use electronic chips—they have no moving parts, so they are incredibly fast and won't break if you drop your laptop."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What technology do **optical media** (CDs and DVDs) use to read data?",
+    options: ["Magnetic charges", "Laser technology", "Flash memory", "Cloud storage"],
+    correct: 1,
+    explanation: "## Light Reading\nOptical drives use a tiny, precise **Laser beam**. The laser shines on the disc and looks for 'pits' and 'lands' (tiny bumps) that represent the zeros and ones of the digital data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Cloud Computing\nWhat is **cloud storage**?",
+    options: [
+      "External drive storage",
+      "USB storage",
+      "Storing files on a remote server reached via the Internet",
+      "Local network storage"
+    ],
+    correct: 2,
+    explanation: "## Files in the Sky\nWhen you save a file to 'The Cloud' (like Google Drive or iCloud), you are actually sending it over the internet to a massive computer owned by a big company. This allows you to access that file from any device, anywhere in the world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is required to **access files** from your cloud storage?",
+    options: ["Gaming PC", "Wired connection only", "Subscription fee", "A device with an Internet connection"],
+    correct: 3,
+    explanation: "## The Link\nThe cloud lives on the internet. Therefore, the only thing you absolutely must have to get your files is an **Internet connection**. Whether it's Wi-Fi or mobile data, you need that link to reach the remote server."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Network Nodes\nWhat are devices connected to a network (like PCs, phones, and printers) called?",
+    options: ["Nodes", "Hubs", "Routers", "Modems"],
+    correct: 0,
+    explanation: "## The Network Map\nIn Computer Science, any device that is connected to a network is called a **Node**. If your home network has 2 phones, 1 laptop, and a printer, you have a network with 4 nodes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **hub** in a network?",
+    options: [
+      "A bridge",
+      "A device that connects cables and broadcasts all data to every connected device",
+      "A data filter",
+      "A signal converter"
+    ],
+    correct: 1,
+    explanation: "## The Broadcaster\nA hub is a 'simple' device. When data comes into one port, the hub doesn't look at where it's going—it just 'shouts' that data out to every other port. This makes it inefficient compared to a switch."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Network Switching\nHow does a **switch** differ from a hub?",
+    options: [
+      "Network bridge",
+      "Wireless point",
+      "It is more intelligent; it sends data only to the specific intended recipient",
+      "It modulates signals"
+    ],
+    correct: 2,
+    explanation: "## The Targeted Messenger\nA **Switch** is 'smart.' It remembers which device is plugged into which port. If you send a file to the printer, the switch only sends that data to the printer port, keeping the rest of the network clear and fast."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the primary function of a **router**?",
+    options: [
+      "Local connector",
+      "Data storage",
+      "Analog converter",
+      "Connecting two or more networks and directing the flow of data"
+    ],
+    correct: 3,
+    explanation: "## The Traffic Controller\nA router acts like an intersection. Its job is to look at data and 'route' it to the correct network. For example, your home router connects your 'Home Network' to the 'Internet Network.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Modems\nWhat is a **modem** used for?",
+    options: [
+      "Connecting a communication channel (like the internet) to a device",
+      "Routing traffic",
+      "Wireless access",
+      "Config storage"
+    ],
+    correct: 0,
+    explanation: "## The Translator\nModem stands for **Mo**dulator-**Dem**odulator. Its job is to take the signal from your ISP (which travels over phone or cable lines) and translate it into digital data your computer can actually use."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which modem uses a **cable TV** connection to get you online?",
+    options: ["DSL modem", "Cable modem", "Dial‑up modem", "Fiber modem"],
+    correct: 1,
+    explanation: "## Coaxial Internet\nIf you have a TV cable coming into your house, you use a **Cable Modem**. It 'splits' the signal so you can watch television and browse the internet at the same time over the same thick copper wire."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# DSL Modems\nWhich modem uses standard **copper telephone lines** for high-speed internet?",
+    options: ["Cable modem", "Fiber modem", "DSL modem", "Satellite modem"],
+    correct: 2,
+    explanation: "## Digital Phone Line\n**DSL** (Digital Subscriber Line) is a technology that sends digital data over the same wires used for landline phones. It's smart enough to use different frequencies so you can talk on the phone while using the web."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **heat sink**?",
+    options: [
+      "Heat generator",
+      "Processor type",
+      "Cooling fan",
+      "A metal component with fins that disperses heat from the CPU"
+    ],
+    correct: 3,
+    explanation: "## Thermal Management\nProcessors get incredibly hot. A **Heat Sink** is a chunk of metal (usually aluminum) that sits on top of the CPU. It pulls the heat away from the chip and spreads it out through thin metal 'fins' so the air can cool it down."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Advanced Cooling\nWhat is **liquid cooling** technology?",
+    options: [
+      "Using fluid flow to transfer heat away from components",
+      "Cold air fan",
+      "Liquid metal sink",
+      "Cool processor"
+    ],
+    correct: 0,
+    explanation: "## Like a Car Engine\nFor very powerful gaming computers, air fans aren't enough. **Liquid cooling** uses a pump to move a special fluid (like water or glycol) through tubes across the hot parts of the computer, carrying the heat away to a radiator where it can be cooled."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is a **cooling pad**?",
+    options: [
+      "Internal absorber",
+      "A device that rests below a laptop to prevent it from overheating",
+      "Software utility",
+      "Thermal paste"
+    ],
+    correct: 1,
+    explanation: "## External Ventilation\nLaptops have very little space for air. A **Cooling Pad** is a platform with built-in fans that sits under your laptop. It forces extra cool air into the bottom of the laptop to keep the processor from 'throttling' due to heat."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Silicon Chips\nWhat is a **computer chip** physically made of?",
+    options: ["Storage material", "Cooling material", "A small piece of semiconducting material (usually silicon)", "Processor brand"],
+    correct: 2,
+    explanation: "## The Sand to Chip Journey\nAlmost all computer chips are made of **Silicon** (which comes from sand). Silicon is a 'semiconductor,' meaning we can control when it allows electricity to pass through, which is how we create the zeros and ones of digital logic."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is an **integrated circuit**?",
+    options: [
+      "Computer connector",
+      "Data storage",
+      "Power generator",
+      "A circuit with many microscopic pathways etched onto a semiconductor"
+    ],
+    correct: 3,
+    explanation: "## Microscopic Complexity\nAn **Integrated Circuit** is the 'magic' of modern hardware. Engineers use light and chemicals to 'etch' millions of tiny wires and switches onto a single silicon chip smaller than your fingernail."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# The Machine Cycle\nWhat is the **first step** in the machine cycle?",
+    options: ["Fetching (getting an instruction from memory)", "Decoding", "Executing", "Storing"],
+    correct: 0,
+    explanation: "## The Four Steps\nThink of the CPU like a chef. The first step is **Fetching**—the chef has to go to the recipe book (Memory) and read the next instruction to know what to cook."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What happens during the **decoding** step of the machine cycle?",
+    options: [
+      "Fetching data",
+      "Translating the instruction into signals the CPU understands",
+      "Executing commands",
+      "Writing results"
+    ],
+    correct: 1,
+    explanation: "## Making Sense\nAfter the CPU 'fetches' an instruction (like `ADD`), it must **Decode** it. This means the CPU figures out exactly which electronic circuits it needs to turn on to perform that specific task."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Registers\nWhat are **registers** in a processor?",
+    options: [
+      "Hard drive storage",
+      "Motherboard memory",
+      "Ultra-fast, high‑speed storage locations inside the processor",
+      "Cooling components"
+    ],
+    correct: 2,
+    explanation: "## The CPU's Hands\nWhile RAM is like a desk, **Registers** are like the CPU's actual hands. They are the smallest and fastest memory in the entire computer, located right inside the chip to hold the exact numbers the CPU is calculating *this microsecond*."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is **Repetitive Strain Injury (RSI)**?",
+    options: [
+      "Single lift injury",
+      "Virus injury",
+      "Shock injury",
+      "Pains caused by repeated, long‑term usage of devices"
+    ],
+    correct: 3,
+    explanation: "## Physical Health\nIf you type in a weird position for 8 hours a day for 5 years, your tendons and nerves will get damaged. This is **RSI**. It's a 'wear and tear' injury that happens because of doing the same small motion over and over again."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# RSI Symptoms\nWhich of the following is a common symptom of **RSI**?",
+    options: ["Numbness and tingling in the hands", "High fever", "Blurred vision", "Hearing loss"],
+    correct: 0,
+    explanation: "## Warning Signs\nBecause RSI affects your nerves and tendons, the first signs are usually **Numbness** or a 'pins and needles' feeling in your wrists or fingers. If you feel this, it's time to take a break and check your posture!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the primary **cause** of RSI in computing?",
+    options: [
+      "10 minutes of use",
+      "Repeating the same activity over a very long period of time",
+      "Standing",
+      "Using a wireless mouse"
+    ],
+    correct: 1,
+    explanation: "## Overuse\nYour body isn't designed to click a button 50,000 times a day. RSI is caused by **Lengthy, repetitive motion** without enough rest. It's not about doing it once; it's about doing it every day for months or years."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Ergonomics\nWhat is the science of **ergonomics**?",
+    options: [
+      "Virus study",
+      "Software design",
+      "The science of designing safe and efficient work environments",
+      "Network study"
+    ],
+    correct: 2,
+    explanation: "## Designing for Humans\nErgonomics is about making the computer fit the **human body**, rather than forcing the body to fit the computer. This includes things like 'natural' curved keyboards and chairs that support your back to prevent injury."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is **technology addiction**?",
+    options: [
+      "Annual upgrades",
+      "Reading books preference",
+      "Using tech for 8 hours",
+      "A behavioral hazard where a user is obsessed with using a device"
+    ],
+    correct: 3,
+    explanation: "## Mental Health\nTechnology addiction is when using your phone or computer becomes an **Obsession**. If you feel anxious when you're away from your device or if it starts ruining your social life or sleep, it has become a behavioral hazard."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Doxing\nWhat is **doxing**?",
+    options: [
+      "A form of cyberbullying where personal documents/info are shared publicly",
+      "Virus type",
+      "Backup method",
+      "Legal document"
+    ],
+    correct: 0,
+    explanation: "## Privacy Invasion\nDoxing (short for 'dropping docs') is a malicious attack. It's when someone finds your private home address, phone number, or bank details and posts them on the internet for everyone to see, often to encourage harassment."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is **cyber-stalking**?",
+    options: [
+      "Fitness tracking",
+      "Using technology to stalk or harass another person",
+      "Employee monitoring",
+      "Blocking calls"
+    ],
+    correct: 1,
+    explanation: "## Online Harassment\nCyber-stalking is the use of email, social media, or GPS tracking to follow and frighten someone. It is a serious crime and a major hazard in the digital world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Cyberbullying Duration\nHow does **cyberbullying** differ from traditional physical bullying regarding its 'duration'?",
+    options: [
+      "Cyber ends at school",
+      "Both end at school",
+      "Cyberbullying is 24/7 because online comments stay visible forever",
+      "No difference"
+    ],
+    correct: 2,
+    explanation: "## No Escape\nIn the real world, you can go home and be safe. But in the digital world, **Cyberbullying never stops**. The mean comments follow you into your bedroom on your phone, and because they stay online, they can continue to hurt you for years."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "How can cyberbullying follow a victim **through life**?",
+    options: [
+      "Physical injuries",
+      "Medical treatment",
+      "Legal charges",
+      "Posted comments remain visible to college recruiters and employers for years"
+    ],
+    correct: 3,
+    explanation: "## The Digital Footprint\nWhen you apply for a job or university, they will Google you. If you were a victim (or a perpetrator) of cyberbullying, those old posts and comments can show up in their search results, potentially ruining your future career."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# E-Waste\nWhat is **e‑waste**?",
+    options: [
+      "Electronic waste from discarded digital devices",
+      "Manufacturing waste",
+      "Recycled paper",
+      "Energy consumed"
+    ],
+    correct: 0,
+    explanation: "## High-Tech Trash\nEvery time someone throws an old phone or a broken monitor in the trash, it becomes **E-waste**. It is the fastest-growing type of trash in the world and it's a major environmental problem."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Why is **e‑waste** so harmful to the environment?",
+    options: [
+      "Landfill space",
+      "Toxic metals like lead and mercury contaminate ground water",
+      "Greenhouse gases",
+      "Attracts pests"
+    ],
+    correct: 1,
+    explanation: "## Chemical Leaking\nComputers aren't just plastic; they contain **toxic heavy metals**. If an old laptop sits in a landfill, the lead, mercury, and arsenic inside will eventually leak into the soil and the water supply, poisoning the earth."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Responsible Disposal\nWhat is the most **responsible** way to get rid of e‑waste?",
+    options: [
+      "Trash disposal",
+      "Burning",
+      "Sending it to a verified recycling facility",
+      "Burying it"
+    ],
+    correct: 2,
+    explanation: "## Proper Recycling\nYou should never put electronics in the regular bin. A **Certified Recycler** has the tools to safely take the computer apart, remove the toxic parts, and reuse the valuable gold and copper hidden inside."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the **first step** in the Sustainable Electronics Management (SEM) process?",
+    options: ["Buy Green", "Recycle", "Dispose", "Donate"],
+    correct: 0,
+    explanation: "## Smart Starting\nThe best way to manage waste is to not create it. **'Buy Green'** means choosing products that are designed to be energy-efficient and easy to recycle from the very first day you buy them."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# The SEM Steps\nWhat is the **second step** in the SEM action process?",
+    options: ["Donate", "Recycle", "Repair", "Reduce"],
+    correct: 0,
+    explanation: "## Extending Life\nBefore you throw a computer away, ask if someone else can use it. **Donating** functional equipment to schools or charities is the best way to keep a device out of the trash for a few more years."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the **third and final step** in the SEM process?",
+    options: ["Donate", "Recycle", "Reuse", "Refurbish"],
+    correct: 1,
+    explanation: "## The Last Resort\nIf the computer is broken and can't be fixed or donated, only then should you **Recycle** it. This ensures that the raw materials go back into the manufacturing cycle instead of into the ground."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Bad Posture\nWhich of the following is an example of an **improper technique** that causes RSI?",
+    options: ["Taking breaks", "Ergonomic keyboard", "Slouching in your chair", "Eye level monitor"],
+    correct: 2,
+    explanation: "## Posture Matters\n**Slouching** puts massive pressure on your spine and wrists. If you do this every day while typing, you are almost guaranteed to develop physical pains or long-term injuries like RSI."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What does **'uninterrupted intensity'** refer to in RSI studies?",
+    options: [
+      "Low intensity",
+      "Hourly breaks",
+      "Switching tasks",
+      "Performing high‑level activity for a long time without any rest"
+    ],
+    correct: 3,
+    explanation: "## Take a Break!\n'Intensity' isn't just about how hard you work; it's about not stopping. If you type for 4 hours without once standing up or stretching your wrists, you are putting your body in a state of high danger for RSI."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Network Cards\nWhat is a **Network Interface Card (NIC)** required for?",
+    options: ["To connect a computer to a network", "For charging", "For cooling", "Permanent storage"],
+    correct: 0,
+    explanation: "## The Network Door\nA **NIC** is the physical hardware that provides the 'port' or the antenna for your computer to talk to a network. Without a NIC, your computer is an island that can't connect to the Wi-Fi or the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Most modems today are **digital**. What does this mean?",
+    options: [
+      "Analog only",
+      "They send and receive data to and from a digital line",
+      "Wireless only",
+      "No power"
+    ],
+    correct: 1,
+    explanation: "## High Speed\nOld modems were 'analog' (slow phone sounds). Modern **Digital Modems** (like Cable or Fiber) handle data in its native digital format, which is why your internet today is thousands of times faster than it was 20 years ago."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Modem Selection\nWhat determines the **specific type of modem** you need for your home?",
+    options: [
+      "Computer brand",
+      "Operating system",
+      "Your Internet Service Provider (ISP)",
+      "Computer age"
+    ],
+    correct: 2,
+    explanation: "## Service Match\nYour **ISP** decides what technology they use (Cable, DSL, or Satellite). You must buy a modem that 'speaks' the same technology as your ISP, otherwise the signal coming from the wall won't make any sense to your router."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the function of the **Program Counter** register?",
+    options: [
+      "Data storage",
+      "Accumulator",
+      "Instruction holder",
+      "Storing the memory location of the next instruction to be fetched"
+    ],
+    correct: 3,
+    explanation: "## The CPU's GPS\nThe **Program Counter** is a tiny piece of memory inside the CPU that acts as a 'bookmark.' It tells the CPU exactly where to find the next instruction in RAM so the computer doesn't get lost while working."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Physical Hazards\nWhat is the most common **physical** health hazard related to long-term tech use?",
+    options: ["Repetitive Strain Injury (RSI)", "Technology addiction", "Cyberbullying", "E‑waste"],
+    correct: 0,
+    explanation: "## Body Wear and Tear\nWhile the others are mental or environmental risks, **RSI** is a physical injury to your muscles and nerves. It is the number one medical complaint from people who work in offices or use computers every day."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which behavioral hazard is linked to a **sedentary lifestyle**?",
+    options: [
+      "Technology addiction",
+      "Social interaction problems",
+      "Lack of exercise leading to health issues",
+      "All of the above"
+    ],
+    correct: 3,
+    explanation: "## The 'Sitting' Problem\nA 'sedentary' lifestyle means you sit still for way too long. Because using tech often keeps us in a chair, it can lead to physical problems (weight gain), social problems (not seeing people), and mental addiction. It's a combination risk."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Overheating\nWhat does a **cooling pad** protect a laptop from?",
+    options: ["Theft", "Malware", "Overheating", "Data loss"],
+    correct: 2,
+    explanation: "## External Ventilation\nLaptops have very little space for air. A **Cooling Pad** is a platform with built-in fans that sits under your laptop. It forces extra cool air into the bottom of the laptop to keep the processor from 'throttling' due to heat."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "Which of the following is **NOT** a symptom of RSI?",
+    options: ["Throbbing", "Weakness", "Numbness", "Fever"],
+    correct: 3,
+    explanation: "## Misdiagnosis\n**Fever** is an internal sign of infection or sickness. RSI is a physical injury to a joint or nerve, so you will feel pain, weakness, or numbness in that specific spot (like your wrist), but you won't get a fever from it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Storing Results\nWhat is the purpose of the **storing** step in the machine cycle?",
+    options: [
+      "Writing results to memory (RAM)",
+      "Saving to the hard drive",
+      "Deleting data",
+      "Cloud backup"
+    ],
+    correct: 0,
+    explanation: "## Final CPU Step\nIn the Machine Cycle, 'Storing' doesn't mean saving a file. It means the CPU takes the answer to a math problem and 'stores' it back into **RAM** so it can be used for the next calculation. (Saving to a disk is a much slower, separate process)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What are the three **responsible** ways to handle old electronics?",
+    options: [
+      "Burn, bury, or discard",
+      "Recycling center, donate, or trade-in at a tech store",
+      "Sell, trade, or give to a friend",
+      "Compost, melt, or crush"
+    ],
+    correct: 1,
+    explanation: "## Eco-Ethics\nResponsible disposal means making sure the toxic parts don't touch the ground. **Recycling** handles the chemicals, **Donating** helps someone else learn, and **Trade-ins** ensure the manufacturer takes responsibility for their own waste."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# SEM Initiative\nWhat does the **Sustainable Electronics Management (SEM)** initiative promote?",
+    options: ["Speed", "Price", "The reduction of e‑waste", "More frequent upgrades"],
+    correct: 2,
+    explanation: "## Global Movement\nSEM is an international effort to stop the world from being buried in tech trash. It promotes building computers that last longer, are easier to fix, and are 100% recyclable."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the main difference between a **spike** and a **surge**?",
+    options: [
+      "Spike is a dip; surge is an increase",
+      "Spike lasts longer",
+      "Surge is total power loss",
+      "Both are increases; but a spike is extremely short (milliseconds)"
+    ],
+    correct: 3,
+    explanation: "## Electric Bursts\nBoth are dangerous 'blasts' of electricity. A **Surge** lasts a few seconds (like when a high-power machine turns off). A **Spike** is almost instant (like a lightning strike nearby). Both can destroy your computer if you don't have a surge protector."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Faster RAM\nWhich type of RAM is **more expensive** but can be recharged less frequently than DRAM?",
+    options: ["Static RAM (SRAM)", "Dynamic RAM (DRAM)", "Flash memory", "MRAM"],
+    correct: 0,
+    explanation: "## Static Strength\n**SRAM** is 'Static'—it doesn't need to be recharged as often as DRAM, which makes it much faster and more reliable. Because it is so expensive, we only use small amounts of it for critical 'Cache' memory near the CPU."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the primary advantage of an **external** hard drive?",
+    options: [
+      "Speed",
+      "It adds massive storage capacity without opening your computer",
+      "No power required",
+      "It is more secure than internal storage"
+    ],
+    correct: 1,
+    explanation: "## Instant Storage\nIf your laptop is full, you don't need a technician. You just plug in an **External Drive** via USB. It gives you 1,000 extra GBs of space instantly, and you can take it with you anywhere."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Transporting Files\nWhat has largely replaced **CDs and DVDs** for moving files from one PC to another?",
+    options: [
+      "Magnetic tape",
+      "Floppy disks",
+      "USB flash drives and Cloud storage",
+      "Punch cards"
+    ],
+    correct: 2,
+    explanation: "## Modern Transfer\nWe almost never use discs anymore. **USB drives** are smaller, faster, and hold way more data. Even better, **Cloud storage** lets you 'send' files through the internet without any physical object at all."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "What is the best way to protect your mobile devices in **high-crime areas**?",
+    options: ["Use it openly", "Leave it in the car", "Turn up the volume", "Keep the device hidden and out of sight"],
+    correct: 3,
+    explanation: "## Crime Prevention\nThieves look for 'easy targets.' If they see you holding a $1,000 phone, you are a target. By **keeping your devices hidden** in a bag or pocket while walking, you significantly reduce the chance of being robbed."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Power Noise\nIn electrical terms, what is **“noise”**?",
+    options: [
+      "Unwanted high‑frequency energy on the power line",
+      "A total loss of power",
+      "A drop in voltage",
+      "A short spike"
+    ],
+    correct: 0,
+    explanation: "## Dirty Electricity\nElectrical 'Noise' is like static on a radio. It is extra, unwanted energy caused by other machines (like a microwave or an elevator) that can mess up the precise signals inside your computer and cause errors."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "How can **extreme humidity** affect computer equipment?",
+    options: [
+      "It has no effect",
+      "It can cause condensation and damage electronics permanently",
+      "It makes the case look better",
+      "It improves cooling"
+    ],
+    correct: 1,
+    explanation: "## Moisture Danger\nComputers hate water. If it is too humid, tiny droplets of water (**condensation**) can form *inside* the circuits. This can cause a short circuit that permanently 'fries' your hardware."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "# Burning Discs\nWhat is required to save files to an **optical disc** (like a CD or DVD)?",
+    options: [
+      "No special software is needed",
+      "Discs cannot be written to",
+      "Special disc-authoring software or built-in OS burning tools",
+      "Only the cloud can do it"
+    ],
+    correct: 2,
+    explanation: "## Disc Authoring\nUnlike a USB drive (where you just drag and drop), writing to a CD requires a process called 'Burning.' You need a **special program** (or a feature in Windows) that tells the laser exactly how to melt the surface of the disc to save your data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Hardware",
+    q: "How do **larger networks** (enterprises) differ from small home networks?",
+    options: [
+      "They use the same hardware",
+      "They don't need any hardware",
+      "They use default Windows features only",
+      "They require much more sophisticated and dedicated hardware/software"
+    ],
+    correct: 3,
+    explanation: "## Business Scale\nA home network handles 5 people. An **Enterprise network** (like a University) handles 10,000. This requires giant 'Managed Switches,' dedicated Server racks, and complex security software that you would never see in a normal house."
+  },
+
+// ==========================================
+// UNIT 3: INPUT AND OUTPUT (108 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Raw Data\nWhat is **data** in the context of computing?",
+    options: [
+      "A collection of unprocessed items, including text, numbers, and audio",
+      "Information that has been processed and formatted",
+      "A set of instructions",
+      "The result of a calculation"
+    ],
+    correct: 0,
+    explanation: "## Raw Facts\nData is 'raw' material. Think of it like the ingredients for a cake (flour, eggs, sugar). On their own, they aren't useful information yet—they need to be **processed** by the computer to become a result."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **command** in computing?",
+    options: [
+      "A collection of facts",
+      "An instruction that causes a program to perform a specific action",
+      "The result of processing",
+      "A type of mouse"
+    ],
+    correct: 1,
+    explanation: "## Orders\nWhen you click 'Save' or 'Print,' you are issuing a **Command**. It is a direct instruction that tells the software exactly what you want it to do next."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Human Input\nWhat is a **user response**?",
+    options: [
+      "A collection of data",
+      "An automatic reply",
+      "An instruction issued by responding to a message on the screen",
+      "A hardware part"
+    ],
+    correct: 2,
+    explanation: "## Answering the PC\nIf a window pops up and asks 'Do you want to save changes?' and you click 'Yes,' that is a **User Response**. You are interacting with the computer to guide its next move."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which of the following is **NOT** one of the four basic types of output?",
+    options: ["Text", "Graphics", "Audio", "Smell"],
+    correct: 3,
+    explanation: "## Sense Check\nComputers can show you words (**Text**), pictures (**Graphics**), and play **Audio** or Video. While scientists are working on it, your standard laptop cannot output **Smells** yet!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Direct Input\nWhat is a **manual input device**?",
+    options: [
+      "A device where you enter data directly (like a keyboard)",
+      "An automatic reader",
+      "An output-only device",
+      "A storage medium"
+    ],
+    correct: 0,
+    explanation: "## Human Interaction\n'Manual' means you have to do the work. Keyboards and mice are manual because *you* must type or click to get data into the machine. This is the opposite of an 'automatic' sensor."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which keys on a keyboard are labeled **F1, F2, etc.** and are used for shortcuts?",
+    options: ["Toggle keys", "Function keys", "Navigation keys", "Typing area"],
+    correct: 1,
+    explanation: "## Power Tools\nThese are **Function Keys**. They are pre-programmed to do specific jobs quickly. For example, in many programs, pressing **F1** immediately opens the 'Help' menu."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Key Types\nWhat is a **toggle key**?",
+    options: [
+      "A key for letters",
+      "A delete key",
+      "A key that turns a feature ON or OFF each time you press it",
+      "A cursor key"
+    ],
+    correct: 2,
+    explanation: "## The Switch\nThink of a light switch. **Caps Lock** is a toggle key. Press it once, it's ON (all caps); press it again, it's OFF (lowercase). It 'toggles' between two states."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which keys are used to move the **insertion point** (cursor) around the screen?",
+    options: ["Function keys", "Toggle keys", "Media keys", "Navigation keys (Arrows, Page Up/Down)"],
+    correct: 3,
+    explanation: "## Finding Your Way\nThese are **Navigation Keys**. They don't type letters; they allow you to 'navigate' through a document or webpage so you can get to the exact spot you want to edit."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Keyboard Shortcuts\nWhat is a **keyboard shortcut**?",
+    options: [
+      "A combination of keys used to perform a command quickly",
+      "A small keyboard",
+      "A toggle key",
+      "The settings menu"
+    ],
+    correct: 0,
+    explanation: "## Speed Efficiency\nInstead of moving your mouse to a menu, you can just press **Ctrl+C** (Copy). Using two or more keys together to trigger a command is a shortcut, and it makes you a much faster computer user."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which mouse uses **optical sensors** (LED lights) to track movement?",
+    options: ["Laser mouse", "Optical mouse", "Touch mouse", "Ergonomic mouse"],
+    correct: 1,
+    explanation: "## LED Tracking\nAn **Optical Mouse** has a tiny camera at the bottom that takes thousands of pictures per second of your desk. By comparing those pictures, it knows exactly which way you are moving the mouse."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Touchpads\nWhat is a **touchpad**?",
+    options: [
+      "A smartphone screen",
+      "A ball-tracking device",
+      "A flat pointing device on laptops sensitive to pressure and motion",
+      "A drawing pen"
+    ],
+    correct: 2,
+    explanation: "## Finger Control\nSince you can't easily carry a mouse with a laptop, we use a **Touchpad**. You slide your finger across the surface to move the cursor. It works using the electrical charge from your skin."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which touch screen gesture is used to **run a program** or press a button?",
+    options: ["Double tap", "Press and hold", "Swipe", "Tap"],
+    correct: 3,
+    explanation: "## The Click Equivalent\nA single **Tap** (one finger, once) is the touch screen version of a mouse click. It's the most basic way to select something or open an app."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Zooming\nTo **zoom in** on a touch screen, which gesture would you use?",
+    options: ["Stretch (two fingers apart)", "Pinch (two fingers together)", "Double tap", "Swipe"],
+    correct: 0,
+    explanation: "## Getting Closer\nThink of pulling the content toward you. By placing two fingers together and **stretching** them apart, you tell the computer to make the image larger so you can see more detail."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which gesture displays a **shortcut menu** (similar to right-clicking)?",
+    options: ["Tap", "Press and hold", "Swipe", "Scroll"],
+    correct: 1,
+    explanation: "## The Long Click\nIf you want more options for an icon or a file on a phone, you **Press and Hold**. After a second, a menu will 'pop up' with more commands like 'Delete' or 'Share.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Styli\nWhat is a **stylus**?",
+    options: [
+      "A gesture",
+      "Handwriting software",
+      "A pen-like device that uses pressure to input data",
+      "A signature pad"
+    ],
+    correct: 2,
+    explanation: "## Precise Input\nA **Stylus** looks like a pen but has no ink. It allows you to draw or write on a touch screen with much more precision than your 'fat' finger ever could. It's perfect for digital artists or designers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the main job of a **digital pen**?",
+    options: [
+      "Writes with real ink",
+      "Pointing only",
+      "Captures video",
+      "Converts handwriting or drawings into digital data"
+    ],
+    correct: 3,
+    explanation: "## Digitizing Handwriting\nA **Digital Pen** is a smart tool. As you write on a special tablet or screen, it tracks every stroke and turns it into a digital file. Some can even translate your handwriting into typed text automatically."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Graphics Tablets\nWhat is a **graphics tablet** (digitizer) used for?",
+    options: [
+      "A board used to create drawings with a pressure‑sensitive pen",
+      "Watching videos",
+      "Capturing signatures only",
+      "A touch monitor"
+    ],
+    correct: 0,
+    explanation: "## Artist's Workspace\nProfessional artists don't use a mouse to draw. They use a **Graphics Tablet**. It is an electronic board that feels like paper; when you draw on it with a stylus, the artwork appears instantly on your computer screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is **voice input**?",
+    options: [
+      "Hearing speakers",
+      "Entering data by speaking into a microphone",
+      "Voice security",
+      "A gesture"
+    ],
+    correct: 1,
+    explanation: "## Talking to Tech\nWhether you are using Siri, Alexa, or just 'Dictating' an email, you are using **Voice Input**. The computer uses a microphone to catch your sound and software to understand what you said."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Webcams\nWhat is a **webcam**?",
+    options: [
+      "Still photo camera",
+      "Tape recorder",
+      "A digital video camera for capturing live video for a computer",
+      "Film camera"
+    ],
+    correct: 2,
+    explanation: "## Live Streaming\nA webcam is an input device that stays connected to your PC. It captures your face and surroundings in real-time so people can see you during a Zoom meeting or a video call."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the very **first step** in using digital video (DV) technology?",
+    options: ["Manage videos", "Edit", "Distribute", "Select a DV camera"],
+    correct: 3,
+    explanation: "## Preparation\nYou can't record or edit until you have the hardware. The first logical step is **Selecting a camera** that fits your needs (resolution, size, etc.) before you ever press 'Record.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Video Effects\nWhat is **morphing** in video editing?",
+    options: [
+      "Transforming one image into another over several frames",
+      "Color change",
+      "Adding sound",
+      "Cropping"
+    ],
+    correct: 0,
+    explanation: "## Seamless Transition\nMorphing is a special effect where the computer slowly changes one object into another (e.g., a man's face turning into a wolf's face) so smoothly that it looks like one single magical transformation."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What are **air gestures**?",
+    options: [
+      "Handwriting",
+      "Moving your body or a device through the air to control a screen",
+      "Virtual typing",
+      "Voice commands"
+    ],
+    correct: 1,
+    explanation: "## Touchless Control\nImagine waving your hand to change a song or 'swiping' the air to flip a page. **Air Gestures** use cameras or sensors to watch your body movement so you can control the computer without ever touching it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Motion Input\nIn which field is **motion input** used to help soldiers with physical rehabilitation?",
+    options: ["Entertainment", "Sports", "Military", "Medical"],
+    correct: 2,
+    explanation: "## Training and Recovery\nThe **Military** uses high-tech motion tracking for flight simulators and to help injured soldiers recover their movement through specialized digital physical therapy."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the primary job of an **optical scanner**?",
+    options: [
+      "Read barcodes",
+      "Scan RFID",
+      "Read magstripes",
+      "Translate printed text and graphics into a digital format the computer can process"
+    ],
+    correct: 3,
+    explanation: "## Physical to Digital\nA scanner is like a 'Photocopier' that sends its copy to your computer instead of a piece of paper. It turns physical documents into digital files like PDFs or JPEGs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Scanner Quality\nHow is the **quality** of a scanner scientifically measured?",
+    options: [
+      "By its resolution (pixels per inch)",
+      "By its speed",
+      "By its weight",
+      "By the brand name"
+    ],
+    correct: 0,
+    explanation: "## Detail Level\nScanner quality is all about **Resolution**. The more 'dots' (pixels) the scanner can see in one inch of paper, the sharper and more professional the digital image will look."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does an **OCR device** (Optical Character Recognition) do?",
+    options: [
+      "Reads hand-drawn marks",
+      "Reads printed characters in a special font and converts them to data",
+      "Reads barcodes",
+      "Reads magstripes"
+    ],
+    correct: 1,
+    explanation: "## Reading Text\nNormal scanners just see an 'image' of words. An **OCR** device is smarter—it actually recognizes that the image contains letters and numbers, allowing you to edit the text in a Word document after scanning."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Test Grading\nWhich device is used to read **hand-drawn marks** like circles on a multiple-choice test?",
+    options: ["OCR", "Barcode reader", "OMR (Optical Mark Recognition)", "RFID"],
+    correct: 2,
+    explanation: "## Marking Patterns\n**OMR** devices don't care about letters or words. They only look for the *presence* of a dark mark in a specific box. This is how thousands of exam papers are graded in minutes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **QR code**?",
+    options: [
+      "Vertical line code",
+      "Magnetic stripe",
+      "RFID tag",
+      "A 2‑D bar code that stores information in both vertical and horizontal directions"
+    ],
+    correct: 3,
+    explanation: "## Smart Codes\nA standard barcode is just lines (1-D). A **QR code** is a square grid (2-D). Because it uses both directions, it can hold way more data—like an entire website link or your contact information."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Radio Tags\nWhat does **RFID** use to communicate with a tag?",
+    options: ["Radio signals", "Laser beams", "Magnetic stripes", "Optical light"],
+    correct: 0,
+    explanation: "## Invisible Waves\n**RFID** stands for **R**adio **F**requency **ID**. It uses invisible radio waves to 'talk' to a tiny chip. This is why a shop can scan a whole bag of clothes at once without even looking at the individual tags."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does a **magstripe reader** read?",
+    options: [
+      "QR codes",
+      "The magnetic stripe on the back of credit/ID cards",
+      "Hand-drawn marks",
+      "RFID tags"
+    ],
+    correct: 1,
+    explanation: "## Magnetic Swipe\nLook at the back of your bank card. That black/brown bar is a **Magstripe**. The reader 'feels' the magnetic patterns on that stripe to find out your account number and name when you swipe it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Banking Tech\nWhich technology is almost exclusively used by **banks** to process checks?",
+    options: ["OCR", "OMR", "MICR (Magnetic-Ink Character Recognition)", "RFID"],
+    correct: 2,
+    explanation: "## Magnetic Ink\nChecks have special numbers at the bottom printed with **Magnetic Ink (MICR)**. Banks use MICR because it's very hard to fake and can be read even if someone has written over the numbers with a regular pen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **data collection device**?",
+    options: [
+      "Document scanner",
+      "Keyboard",
+      "Printer",
+      "A portable device used to capture data exactly where a transaction happens"
+    ],
+    correct: 3,
+    explanation: "## On the Go\nThink of a courier driver delivering a package. They use a handheld **Data Collection Device** to scan the barcode and take your signature right at your front door. It sends that data to the office wirelessly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Hard Copy\nWhat is a **hard copy**?",
+    options: [
+      "Physical, permanent output on paper",
+      "Temporary screen display",
+      "Cloud storage",
+      "Audio output"
+    ],
+    correct: 0,
+    explanation: "## Real Paper\nIf you can hold the information in your hand and it doesn't disappear when you turn the computer off, it is a **Hard Copy**. This is the primary result of using a printer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which page orientation is usually used for **letters and reports**?",
+    options: ["Landscape (wider)", "Portrait (taller)", "Square", "Panoramic"],
+    correct: 1,
+    explanation: "## Vertical Layout\n**Portrait** is the standard way we read books and letters—it is taller than it is wide. Landscape is used for things like wide spreadsheets or photo galleries."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Printer Mechanisms\nWhat is a **non‑impact printer**?",
+    options: [
+      "A printer that strikes a ribbon",
+      "A hammer mechanism",
+      "A printer that forms images without actually touching the paper",
+      "B&W only"
+    ],
+    correct: 2,
+    explanation: "## Clean Printing\nModern **Inkjet** and **Laser** printers are non-impact. They 'spray' ink or 'drop' toner onto the paper. Because nothing physically hits the paper, they are much quieter and faster than old-fashioned printers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "How does an **inkjet printer** produce an image?",
+    options: [
+      "Laser beam",
+      "Ribbon strike",
+      "Thermal heating",
+      "By spraying tiny drops of liquid ink onto paper"
+    ],
+    correct: 3,
+    explanation: "## Liquid Ink\nInside an inkjet printer are tiny 'nozzles' thinner than a human hair. They **Spray** thousands of microscopic ink droplets per second to form the letters and pictures you see."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Laser Printing\nWhat does a **laser printer** use to create an image?",
+    options: [
+      "A laser beam and powdered ink called toner",
+      "Liquid ink",
+      "Thermal paper",
+      "A ribbon"
+    ],
+    correct: 0,
+    explanation: "## Static Electricity\nA laser printer is like a magic trick. A **Laser** 'paints' an invisible static-charge image on a drum. This charge attracts **Toner** (black powder), which is then melted onto the paper using high heat."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is an **all‑in‑one printer** (multifunction printer)?",
+    options: [
+      "Color only",
+      "A single device that acts as a printer, scanner, and copier",
+      "3D printer",
+      "Photo printer"
+    ],
+    correct: 1,
+    explanation: "## 3-in-1 Convenience\nInstead of buying three different machines, an **All-in-One** saves space by putting the printer (output), scanner (input), and photocopier logic into one single box."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# 3D Printing\nWhat process does a **3‑D printer** use to create objects?",
+    options: [
+      "Engraving",
+      "Spraying",
+      "Additive manufacturing (adding material layer by layer)",
+      "Carving"
+    ],
+    correct: 2,
+    explanation: "## Building Up\nTraditional manufacturing usually involves 'cutting away' material. 3D printing is **Additive**—it starts with nothing and 'adds' tiny layers of plastic or resin on top of each other until a physical object is finished."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which printer uses **heated pins** against heat‑sensitive paper (like for store receipts)?",
+    options: ["Laser", "Inkjet", "Dye-sub", "Thermal printer"],
+    correct: 3,
+    explanation: "## Heat Printing\n**Thermal printers** don't use ink or toner. They use special 'Heat Sensitive' paper. When the printer head gets hot, the paper turns black. This is why receipt paper often feels slippery and fades over time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Plotters\nWhat is a **plotter** used for?",
+    options: [
+      "Producing high‑quality blueprints and maps",
+      "Photo lab",
+      "Adhesive labels",
+      "Multipart forms"
+    ],
+    correct: 0,
+    explanation: "## Large-Scale Precision\nA **Plotter** is a specialized printer for huge documents. If you are an architect and need to print a massive **Blueprint** for a building, a standard office printer won't work—you need a plotter."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is an **impact printer**?",
+    options: [
+      "Ink sprayer",
+      "A printer that strikes a mechanism against an inked ribbon onto the paper",
+      "Laser",
+      "Dye transfer"
+    ],
+    correct: 1,
+    explanation: "## Physical Force\nThink of a typewriter. An **Impact Printer** has a metal head that physically **Hits** an inked ribbon against the paper. They are loud and slow, but they are the only printers that can print 'Carbon Copies' through multiple layers of paper."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Soft Copy\nWhat is **soft copy**?",
+    options: [
+      "Printed doc",
+      "Physical photo",
+      "Temporary information displayed on a screen",
+      "Audio output"
+    ],
+    correct: 2,
+    explanation: "## Digital View\nIf you can see the information but you can't touch it, it's a **Soft Copy**. It only exists while the screen is on. As soon as you turn the monitor off, the 'copy' is gone."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does **LCD** stand for in monitor technology?",
+    options: [
+      "Light crystal diode",
+      "Liquid crystal diode",
+      "Light crystal display",
+      "Liquid crystal display"
+    ],
+    correct: 3,
+    explanation: "## Liquid Logic\n**LCD** screens use a special liquid held between two sheets of glass. When electricity hits the 'Liquid Crystals,' they twist to block or allow light, creating the millions of tiny colored dots (pixels) you see."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# LED vs LCD\nWhat is the main advantage of an **LED display** over a traditional LCD?",
+    options: [
+      "Thinner, brighter, and more energy efficient",
+      "Cheaper",
+      "Lower resolution",
+      "Slower"
+    ],
+    correct: 0,
+    explanation: "## Better Lighting\nTraditional LCDs used long fluorescent tubes for light. **LEDs** use tiny, efficient light bulbs. This allows the screen to be much **Thinner**, use less battery, and show much 'whiter' whites and brighter colors."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does **AMOLED** stand for?",
+    options: [
+      "Active-Matrix Organic Light-Emitting Diode",
+      "Active-Matrix Organic Light-Emitting Diode",
+      "Multi-layer display",
+      "Advanced mobile LED"
+    ],
+    correct: 1,
+    explanation: "## Phone Tech\n**AMOLED** is a high-end version of OLED used in smartphones. Because it is 'Organic,' every single pixel creates its own light. This means the screen can show 'Perfect Black' by simply turning the pixels off completely."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Screen Size\nHow is the **size** of a computer monitor officially measured?",
+    options: ["Horizontally", "Vertically", "Diagonally (corner to corner)", "By pixel count"],
+    correct: 2,
+    explanation: "## Corner to Corner\nIf you buy a '24-inch' monitor, it isn't 24 inches wide. It is 24 inches from the **Top-Left corner to the Bottom-Right corner**. This is the standard way all TVs and monitors are measured."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the **native resolution** of a display?",
+    options: [
+      "Lowest resolution",
+      "Fewest pixels",
+      "User choice",
+      " The specific resolution for which the display was optimized"
+    ],
+    correct: 3,
+    explanation: "## The Sweet Spot\nEvery monitor has a physical number of pixels built into the glass. The **Native Resolution** matches that number perfectly. If you use any other resolution, the image will look 'blurry' because the computer is trying to stretch the picture."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Response Time\nWhat does a display’s **response time** measure?",
+    options: [
+      "The time (ms) to turn a pixel ON or OFF",
+      "Brightness",
+      "Pixels per inch",
+      "Contrast ratio"
+    ],
+    correct: 0,
+    explanation: "## Ghosting\nIf you are gaming and move fast, you don't want the image to look 'blurry.' **Response Time** is how fast a pixel can change color. A lower number (like $1\text{ms}$) means a sharper, clearer image during fast action."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which unit is used to measure the **brightness** of a monitor?",
+    options: ["Lumens", "Nits", "Candela", "Watts"],
+    correct: 1,
+    explanation: "## Intensity\nBrightness is measured in **Nits**. One nit is roughly the light of one candle per square meter. A phone that is '1,000 Nits' is very bright and can be easily seen even in direct sunlight."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Dot Pitch\nWhat is **dot pitch**?",
+    options: [
+      "Pixels on screen",
+      "Brightness",
+      "The distance between pixels on a display",
+      "Color change time"
+    ],
+    correct: 2,
+    explanation: "## Sharpness\n**Dot Pitch** is the physical gap between the tiny colored dots on your screen. The **smaller** the dot pitch, the closer the pixels are to each other, which makes the image look much smoother and less 'blocky.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does the **contrast ratio** describe?",
+    options: [
+      "Color count",
+      "Response time",
+      "Backlight",
+      "The difference in intensity between the brightest white and darkest black"
+    ],
+    correct: 3,
+    explanation: "## Deep Blacks\nContrast ratio tells you how much 'whiter' white is compared to black. A **High Contrast Ratio** (like 1,000,000:1) means the blacks will look very deep and the colors will 'pop' off the screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Graphics Processing\nWhat does the **GPU** (Graphics Processing Unit) control?",
+    options: [
+      "Display and manipulation of graphics on a device",
+      "Memory management",
+      "Network",
+      "Audio"
+    ],
+    correct: 0,
+    explanation: "## The Art Engine\nWhile the CPU handles the 'Logic,' the **GPU** is a specialist that only cares about **Pictures**. It calculates where every shadow, light, and color goes on your screen, which is why it's so important for gaming and video editing."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does the **aspect ratio** of a screen define?",
+    options: [
+      "Pixel count",
+      "The screen's width relative to its height",
+      "Brightness",
+      "Refresh rate"
+    ],
+    correct: 1,
+    explanation: "## Shape\nAspect ratio describes the **Shape** of the screen. A 'Square' monitor is 4:3. A 'Widescreen' monitor is 16:9. This tells you how much 'wider' the screen is than it is 'tall.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Smart TVs\nWhat defines a **Smart TV**?",
+    options: [
+      "Streaming only",
+      "Built-in DVD",
+      "An internet‑enabled HDTV that can run apps and social media",
+      "Voice TV"
+    ],
+    correct: 2,
+    explanation: "## Connected Screen\nA TV becomes 'Smart' when it has its own **Internet connection** and an Operating System. This allows you to watch Netflix, browse YouTube, or even check Facebook without needing to plug in a separate computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **data projector** used for?",
+    options: [
+      "Large printer",
+      "Video capture",
+      "Slide scanner",
+      "Projecting computer images onto a large screen for an audience"
+    ],
+    correct: 3,
+    explanation: "## Presentations\nA **Data Projector** takes the tiny image from your laptop and 'blows it up' so an entire classroom or a movie theater audience can see it. It is an essential output device for teachers and business presenters."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Interactive Boards\nWhat is an **interactive whiteboard**?",
+    options: [
+      "A touch‑sensitive device that displays and allows interaction with a computer screen",
+      "Standard dry‑erase board",
+      "Projector screen only",
+      "Drawing tablet"
+    ],
+    correct: 0,
+    explanation: "## Modern Classroom\nThink of this as a giant tablet on the wall. It uses a projector to show your PC screen, but because it is **Touch Sensitive**, you can draw, click, and drag things directly on the board using your finger or a special pen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does **force feedback** (haptics) do in a gaming controller?",
+    options: [
+      "Sound increase",
+      "Provides physical sensations like vibrations or resistance",
+      "Graphic improvement",
+      "Lag reduction"
+    ],
+    correct: 1,
+    explanation: "## Feeling the Game\nForce feedback makes the game feel more real. If you crash a car in a game, the steering wheel might shake, or if you pull a trigger, you might feel **Resistance**. It turns the controller into an output device you can feel."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Assistive Input\nWhat is an **eye gaze** pointing device?",
+    options: [
+      "Head tracker",
+      "Security scanner",
+      "A device that analyzes where the user is looking to control the mouse",
+      "Screenshot capturer"
+    ],
+    correct: 2,
+    explanation: "## Eyes as a Mouse\nFor people who cannot move their hands or head, an **Eye Gaze** camera watches the user's pupils. By simply 'looking' at an icon on the screen, the user can move the cursor and 'click' just by blinking."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is **sip‑and‑puff** (SNP) technology?",
+    options: [
+      "Screen cleaning",
+      "Voice recognition",
+      "Gesture",
+      "Controlling a computer by inhaling or exhaling into a tube"
+    ],
+    correct: 3,
+    explanation: "## Breath Control\nThis is a vital accessibility tool. A user with severe paralysis can control their whole computer by **Blowing** (puff) or **Sucking** (sip) on a small straw. Different patterns of breath act like different mouse clicks."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Braille Output\nWhat is a **refreshable Braille display**?",
+    options: [
+      "A device using pins to translate digital content into tactile Braille",
+      "Braille printer",
+      "Screen reader",
+      "Braille keyboard"
+    ],
+    correct: 0,
+    explanation: "## Tactile Reading\nSince a blind user cannot see the screen, this device has thousands of tiny **Pins**. As the user moves through a document, the pins pop up and down to form Braille letters, allowing the user to 'read' the internet with their fingers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does a **Braille printer** (embosser) do?",
+    options: [
+      "Screen display",
+      "Embosses hard copies of digital content as Braille dots on paper",
+      "Speaks Braille",
+      "Scans Braille"
+    ],
+    correct: 1,
+    explanation: "## Permanent Braille\nA standard printer uses ink. A **Braille Printer** uses metal pins to 'punch' (emboss) physical dots into thick paper. This creates a hard copy that a blind person can take with them and read anywhere."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Default Settings\nWhat are **default settings**?",
+    options: [
+      "Permanent settings",
+      "User-configured",
+      "Standard preconfigured settings like screen brightness or resolution",
+      "Printer only"
+    ],
+    correct: 2,
+    explanation: "## Factory Standard\nWhen you first buy a phone or install an app, it has **Default Settings**. These are the 'average' settings chosen by the manufacturer. You can usually change them later to fit your personal style."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which of the following is an example of **customizing** system software?",
+    options: [
+      "Hardware install",
+      "Cleaning the keyboard",
+      "Adding RAM",
+      "Changing screen brightness or resolution"
+    ],
+    correct: 3,
+    explanation: "## Personalization\nCustomizing means changing the software to fit your needs. Adjusting the **Brightness** so your eyes don't hurt, or changing the **Resolution** so icons look larger, are both common software customizations."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Radiation Protection\nHow can you protect yourself from the **radiation** emitted by electronic monitors?",
+    options: [
+      "Replace older CRT monitors with modern LCD monitors",
+      "Sit closer",
+      "Use it on your lap",
+      "Close peripherals"
+    ],
+    correct: 0,
+    explanation: "## Better Tech\nOld 'Tube' monitors (CRT) emitted much higher levels of radiation and electromagnetic fields. Modern **LCD and LED** screens are much safer and emit almost no harmful radiation, making them better for your long-term health."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which of the following is **NOT** a type of non‑impact printer?",
+    options: ["Inkjet", "Dot matrix", "Laser", "Thermal"],
+    correct: 1,
+    explanation: "## Impact Check\n**Dot Matrix** is an impact printer—it has pins that physically 'smack' an inked ribbon against the paper (like a typewriter). Inkjets, Lasers, and Thermal printers never touch the paper with a physical strike."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Dye-Sublimation\nWhat is a **dye‑sublimation printer** primarily used for?",
+    options: [
+      "Labels",
+      "Blueprints",
+      "Producing high-quality, lab-grade photos using heat",
+      "Carbon copies"
+    ],
+    correct: 2,
+    explanation: "## Photo Specialists\nThese printers use heat to turn solid dye into a gas that 'soaks' into the paper. Because there are no 'dots' of ink, the resulting **Photos** look perfect, just like the ones you would get from a professional photo lab."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What defines a **mobile printer**?",
+    options: [
+      "Desktop only",
+      "Wired only",
+      "Poster printer",
+      "A small, battery-powered printer designed for travel"
+    ],
+    correct: 3,
+    explanation: "## Printing on the Go\nA **Mobile Printer** is lightweight and fits in a briefcase. It has a built-in battery so a salesperson or a technician can print an invoice or a receipt from their car without needing a wall outlet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Carbon Copies\nWhich printer is the only choice for printing **multipart forms** (carbon copies)?",
+    options: ["Impact printer", "Inkjet", "Laser", "Thermal"],
+    correct: 0,
+    explanation: "## Mechanical Pressure\nTo make a carbon copy, you must physically 'press' through the top layer of paper to the one underneath. Only an **Impact Printer** (like a Dot Matrix) has the physical force to hit the paper hard enough to make this work."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does **OLED** technology use that eliminates the need for a backlight?",
+    options: [
+      "Liquid crystals",
+      "Organic molecules that create their own light",
+      "Fluorescent tubes",
+      "LED bulbs"
+    ],
+    correct: 1,
+    explanation: "## Self-Lighting\nIn an **OLED** screen, every pixel is its own light source. When a pixel needs to be black, it just turns off. This makes the screens thinner, more flexible, and provides the best contrast possible."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Gaming Monitors\nWhy is a display with a **lower response time** better for gaming?",
+    options: [
+      "Easier to read",
+      "Better battery",
+      "It reduces motion blur during fast action",
+      "Color accuracy"
+    ],
+    correct: 2,
+    explanation: "## Sharp Motion\nIn a fast game, things are moving across the screen every millisecond. If the pixels change color too slowly, you will see a 'trail' or blur behind objects. A **low response time** ensures the image stays perfectly sharp."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the benefit of **UHD** (Ultra High Definition) over standard HDTV?",
+    options: [
+      "Lower resolution",
+      "Slower refresh",
+      "No Internet",
+      "Significantly higher resolution (4K or 8K)"
+    ],
+    correct: 3,
+    explanation: "## Pixel Density\nUHD (often called 4K) has four times as many pixels as a standard 1080p HDTV. This makes the image look incredibly **Sharp** and realistic, even if you are sitting very close to a giant screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Audio Devices\nWhat is a **headset**?",
+    options: [
+      "A device that combines headphones and a microphone",
+      "Speakers",
+      "Noise canceling only",
+      "A controller"
+    ],
+    correct: 0,
+    explanation: "## Two-Way Audio\nA **Headset** is an input and output device combined. You use the headphones to hear (output) and the built-in microphone to speak (input), making it perfect for gaming or business calls."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the purpose of **noise-canceling** technology in headphones?",
+    options: [
+      "Volume increase",
+      "It uses electronic waves to block out unwanted background sounds",
+      "Adds bass",
+      "Converts audio to text"
+    ],
+    correct: 1,
+    explanation: "## Silence by Math\nNoise-canceling headphones have tiny microphones that 'listen' to the noise outside. They then create an **opposite sound wave** that cancels out the noise, allowing you to hear your music clearly even on a loud airplane."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Specialized Input\nWhat is a **foot mouse** used for?",
+    options: [
+      "Hand use",
+      "Gaming",
+      "Allowing people with limited arm mobility to control the cursor with their feet",
+      "Floor use"
+    ],
+    correct: 2,
+    explanation: "## Adaptive Control\nA **Foot Mouse** is an accessibility device. For a user who cannot use their hands, they can use their feet on a specialized pedal or trackball on the floor to navigate their computer perfectly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does an **OCR reader** do for a visually impaired user?",
+    options: [
+      "Reads barcodes",
+      "Scans magstripes",
+      "Reads RFID",
+      "Scans printed books and turns them into text for a screen reader to speak"
+    ],
+    correct: 3,
+    explanation: "## The Digital Reader\nIf a blind user has a physical book, they can use an **OCR Reader** to 'scan' the page. The device identifies the letters and sends the text to a 'Screen Reader' which speaks the book's content aloud."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Radiation Safety\nWhich simple habit is recommended to reduce **radiation exposure** from electronics?",
+    options: [
+      "Sit as far back from the monitor as possible",
+      "Use a CRT",
+      "Place drives on your lap",
+      "Sit very close"
+    ],
+    correct: 0,
+    explanation: "## Distance is Safety\nElectromagnetic fields get much weaker the further away you are. By simply **sitting back** from your monitor (about arm's length), you significantly reduce the amount of radiation your body absorbs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the primary use of a **signature capture pad**?",
+    options: [
+      "Art",
+      "To record a handwritten signature digitally for a transaction",
+      "Scanning images",
+      "Voice ID"
+    ],
+    correct: 1,
+    explanation: "## Digital Signing\nYou've likely used these at a bank or a store. Instead of signing paper, you sign a small electronic screen with a stylus. The **Capture Pad** turns your signature into a digital image that is permanently attached to your file."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Categorization\nWhich of the following is an example of an **adaptive output** device?",
+    options: ["Eye gaze", "Foot mouse", "Refreshable Braille display", "Sip‑and‑puff"],
+    correct: 2,
+    explanation: "## Output vs Input\nEye gaze, Foot mice, and Sip-and-puff are all ways to put data *into* the PC (Input). A **Braille Display** takes data *from* the PC and shows it to the user through tactile pins, making it an **Output** device."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does the **pinch gesture** do on a smartphone screen?",
+    options: ["Zoom in", "Scroll", "Shortcut menu", "Zoom out (to see more of the page)"],
+    correct: 3,
+    explanation: "## Shrinking Down\nWhen you place two fingers on the screen and pull them **together** (a pinch), you are telling the device to zoom out. This allows you to see the entire photo or a full map at once."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Tablet Differences\nWhat is the difference between a **slate tablet** and a **convertible tablet**?",
+    options: [
+      "Slate has no physical keyboard; Convertible has a keyboard built-in",
+      "Size",
+      "OS",
+      "Art vs Typing"
+    ],
+    correct: 0,
+    explanation: "## Package Design\nA **Slate** (like an iPad) is just a screen. A **Convertible** (like a Surface Laptop) has a keyboard permanently attached, but the screen can flip around to hide the keyboard when you want to use it like a tablet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the function of **navigation keys** on a keyboard?",
+    options: [
+      "Type letters",
+      "Move the insertion point (cursor) through text",
+      "Toggle features",
+      "Program commands"
+    ],
+    correct: 1,
+    explanation: "## Document Control\nThese include the **Arrows, Home, End, Page Up, and Page Down**. They are specifically designed to help you 'navigate' through a long essay or a giant spreadsheet without having to reach for your mouse."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Medical Motion\nWhich of the following is **NOT** a standard use of motion input in medicine?",
+    options: ["Training surgeons", "Less invasive surgery", "Replacing doctors entirely", "Movement enhancement"],
+    correct: 2,
+    explanation: "## Assistant Tech\nMotion input helps surgeons practice on virtual patients and helps them move tiny robotic tools with great precision, but it **cannot replace the doctor**. The doctor's brain and judgment are still the most important parts."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the primary role of a **data projector** in a classroom?",
+    options: [
+      "Print handouts",
+      "Scan assignments",
+      "Record audio",
+      "Allow the entire class to see the instructor's screen at once"
+    ],
+    correct: 3,
+    explanation: "## Collective View\nInstead of 40 students trying to look at one small laptop screen, the **Projector** shines the image onto a giant white board so everyone in the back of the room can follow along with the lesson."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Office Efficiency\nWhy are **laser printers** better for high-volume office work than inkjet printers?",
+    options: [
+      "They are high-speed and have a very low cost per page",
+      "They are smaller",
+      "They use liquid ink",
+      "They print on any surface"
+    ],
+    correct: 0,
+    explanation: "## Industrial Power\nInkjet cartridges are expensive and run out fast. **Laser printers** use a giant bottle of toner powder that can print thousands of pages. They are much faster and much cheaper in the long run for printing 100-page reports."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is **'additive manufacturing'**?",
+    options: [
+      "Subtracting material",
+      "Building a 3D object by adding material layer by layer",
+      "Adding ink",
+      "Adding sound"
+    ],
+    correct: 1,
+    explanation: "## 3D Logic\nThis is the technical term for **3D printing**. It 'adds' material to a base until an object is formed. This is the opposite of 'Subtractive' manufacturing, where you start with a block of wood and carve it away."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Specialized Printing\nWhat is the purpose of a **label printer**?",
+    options: [
+      "Posters",
+      "Blueprints",
+      "Printing on adhesive-backed material for envelopes or packages",
+      "Photo lab"
+    ],
+    correct: 2,
+    explanation: "## Stickers\nA **Label Printer** is built to handle rolls of 'Sticker' paper. It is used in warehouses and offices to quickly print mailing addresses or barcodes that can be peeled off and stuck directly onto a box."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the **GPU** responsible for in a computer system?",
+    options: ["Power", "Hard drive", "Audio", "Processing and displaying graphics"],
+    correct: 3,
+    explanation: "## Visual Brain\nThe **Graphics Processing Unit** is a specialist. While the CPU handles the overall logic of the computer, the GPU is dedicated 100% to calculating how to draw the pixels on the screen for games and videos."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Receipt Printing\nWhat does a **thermal printer** use to create images?",
+    options: [
+      "Electrically heated pins against special paper",
+      "Laser and toner",
+      "Liquid ink",
+      "Physical impact"
+    ],
+    correct: 0,
+    explanation: "## Heat and Chemical\nA **Thermal Printer** (like the ones used for supermarket receipts) uses no ink. It has a head with tiny pins that get very hot. When the hot pins touch special chemical paper, the paper turns black instantly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "Which display technology is **flexible** and does not require a backlight?",
+    options: ["LCD", "OLED", "LED", "Plasma"],
+    correct: 1,
+    explanation: "## Self-Glowing\n**OLED** pixels create their own light. Because there is no bulky 'backlight' panel behind them, OLED screens can be made thin enough to fold or bend, which is how 'folding phones' work."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Billboards\nWhat is a common use for a **large format printer**?",
+    options: ["Office docs", "Labels", "Signs, posters, and professional displays", "Multipart forms"],
+    correct: 2,
+    explanation: "## High-End Graphics\nIf you need to print a **Giant Movie Poster** or a banner for a shop, you use a large format printer. They are essentially giant inkjet printers that use high-quality inks to create professional signs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does **MICR** stand for in check processing?",
+    options: [
+      "Ink reader",
+      "Ink recognition",
+      "Color recognition",
+      "Magnetic-Ink Character Recognition"
+    ],
+    correct: 3,
+    explanation: "## Bank Security\n**MICR** is the system banks use to read the numbers at the bottom of checks. The ink has magnetic particles in it, so even if the check is dirty or has been written over, the computer can still 'feel' the magnetic signal of the numbers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Keyboard Customization\nWhy would you **customize** your keyboard settings in the OS?",
+    options: [
+      "To change language or create new shortcuts",
+      "To replace keys",
+      "To increase speed",
+      "To clean it"
+    ],
+    correct: 0,
+    explanation: "## User Control\nIf you move to a different country, you can change your keyboard settings so that typing 'A' produces a different symbol. You can also create **Custom Shortcuts** to open your favorite apps with just two keys."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a recommended way to reduce **e‑waste radiation** risks?",
+    options: [
+      "Use a CRT",
+      "Move other electronics (drives, printers) as far away as possible",
+      "Sit closer",
+      "Use devices on your lap"
+    ],
+    correct: 1,
+    explanation: "## Safe Spacing\nYour desk is full of electronics. By **moving printers and external drives** to the far corner of the desk rather than keeping them right next to your body, you reduce the total 'Electromagnetic Field' you are exposed to every day."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Touch Interaction\nWhat does the **'press and hold'** gesture usually do?",
+    options: [
+      "Activate a link",
+      "Zoom",
+      "Display a shortcut menu or activate 'move' mode",
+      "Scroll"
+    ],
+    correct: 2,
+    explanation: "## Secondary Commands\nOn a smartphone, if you **Press and Hold** on an app icon, a menu pops up (like right-clicking on a PC). It also allows you to 'grab' the icon so you can move it to a different screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What makes a **plotter** better than a standard printer for engineers?",
+    options: [
+      "Speed",
+      "Ink usage",
+      "Size",
+      "Precision for blueprints and circuit diagrams"
+    ],
+    correct: 3,
+    explanation: "## Extreme Precision\nA **Plotter** uses a different technology to draw lines. It is designed to be perfectly accurate for **Blueprints**. If a line is $0.1\text{mm}$ off on a blueprint, the whole building could have problems—plotters ensure that never happens."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Output Terminology\nWhat is the difference between **hard copy** and **soft copy**?",
+    options: [
+      "Hard is paper; Soft is the screen",
+      "Hard is temporary",
+      "Audio/Video",
+      "No difference"
+    ],
+    correct: 0,
+    explanation: "## Physical vs Digital\nIf you print a document, you have a **Hard Copy** in your hand. If you are reading it on your phone or monitor, you have a **Soft Copy**. One is permanent, the other is electronic."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What does a **digital pen** capture when you use it?",
+    options: [
+      "Only text",
+      "Handwriting and drawings to convert them to digital data",
+      "Voice",
+      "Fingerprints"
+    ],
+    correct: 1,
+    explanation: "## Artist's Pen\nA **Digital Pen** doesn't just 'point.' It tracks the pressure and angle of your stroke to turn your **Handwriting** into a digital file. This is how architects and digital artists create their work directly on a computer."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Pointing Devices\nWhich of the following is the most common **pointing device**?",
+    options: ["Keyboard", "Scanner", "Mouse", "Printer"],
+    correct: 2,
+    explanation: "## Direct Selection\nA **Mouse** is a pointing device because it controls a 'pointer' (cursor) on the screen. It allows you to 'point' at an object and click it to tell the computer what you want to do."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the purpose of the **'double tap'** gesture on a touch screen?",
+    options: [
+      "Activate a link",
+      "Shortcut menu",
+      "Scroll",
+      "Run an app or zoom in at that location"
+    ],
+    correct: 3,
+    explanation: "## Double Logic\nJust like double-clicking a mouse, a **Double Tap** on a phone usually 'launches' something. In a web browser or photo app, double tapping also tells the device to instantly zoom in on that specific spot."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Precise Control\nWhich mouse uses a **laser sensor** to track movement on almost any surface?",
+    options: ["Laser mouse", "Optical mouse", "Touch mouse", "Ergonomic mouse"],
+    correct: 0,
+    explanation: "## High-Tech Beam\nA **Laser Mouse** is more powerful than a standard optical mouse. Because it uses a laser, it can track your movement even on shiny or glass surfaces where a regular LED mouse would get 'lost.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **touch mouse**?",
+    options: [
+      "Requires a touch screen",
+      "A mouse that detects swipes and gestures instead of having physical buttons",
+      "A foot mouse",
+      "A vibrating mouse"
+    ],
+    correct: 1,
+    explanation: "## Gesture Mouse\nA **Touch Mouse** (like Apple's Magic Mouse) has a smooth top with no buttons. You 'swipe' your finger across the top to scroll and 'tap' the surface to click. It uses the same technology as a laptop trackpad."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Drag-and-Drop\nWhich touch screen gesture involves **moving an object** from one place to another?",
+    options: ["Tap", "Swipe", "Drag (or slide)", "Pinch"],
+    correct: 2,
+    explanation: "## Moving Content\nTo move an app icon to a new page, you first press it, then **Drag** your finger across the glass without lifting it. The computer 'slides' the object along with your finger."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is the **'scroll'** gesture on a phone?",
+    options: [
+      "Moving fingers apart",
+      "Tapping twice",
+      "Pressing until a menu appears",
+      "Moving a finger vertically or horizontally to move through a page"
+    ],
+    correct: 3,
+    explanation: "## Navigation\nWhen you are reading a long article, you **Scroll** to see more. By sliding your finger up or down the screen, you 'pull' the rest of the content into view. This is how we navigate almost everything on a mobile device."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Barcode Scanners\nWhat is a **barcode reader** officially classified as?",
+    options: [
+      "An optical reader that uses laser beams to read codes",
+      "Magnetic reader",
+      "Fingerprint scanner",
+      "RFID device"
+    ],
+    correct: 0,
+    explanation: "## Optical Light\nEven though it looks like a simple beam, a **Barcode Reader** is a high-speed optical scanner. It 'reads' the light that bounces off the lines and spaces of the code to instantly identify a product and its price."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "What is a **photo printer**?",
+    options: [
+      "B&W only",
+      "A color printer built to produce lab‑quality photos",
+      "Smartphone only",
+      "Heat only"
+    ],
+    correct: 1,
+    explanation: "## Professional Color\nA **Photo Printer** is designed with extra colors (sometimes 6 or 8 instead of just 4) so that the transitions between colors look perfect. It is built to create photos that look exactly like the ones you'd pay for at a studio."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "# Surgical Tech\nHow is **motion input** used in the medical field?",
+    options: [
+      "Replacing surgeons",
+      "Entertainment in waiting rooms",
+      "Training surgeons and allowing less invasive 'robotic' surgery",
+      "Tracking steps"
+    ],
+    correct: 2,
+    explanation: "## High Precision\nDoctors can now use **Motion Tracking** to perform surgery through tiny holes instead of large cuts. The doctor moves their hands in the air, and a robotic 'hand' inside the patient copies those movements perfectly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Input and Output",
+    q: "How do **sports coaches** use motion input technology?",
+    options: [
+      "To replace athletes",
+      "Auto-scoring",
+      "To record video for TikTok",
+      "To analyze movement and correct inefficient or dangerous technique"
+    ],
+    correct: 3,
+    explanation: "## Athletic Analysis\nBy putting sensors on an athlete, a coach can see exactly how they are throwing a ball or running. The computer **Analyzes the motion** and shows the coach where the athlete might get injured or how they can improve their speed."
+  },
+
+// ==========================================
+// UNIT 5: COMPUTER STORAGE (128 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Memory vs Storage\nWhat is the key difference between **Memory (RAM)** and **Storage**?",
+    options: [
+      "Memory is volatile and temporary; Storage is nonvolatile and permanent",
+      "Memory is nonvolatile and Storage is volatile",
+      "Memory is for the OS; Storage is for files",
+      "Memory is slower"
+    ],
+    correct: 0,
+    explanation: "## The 'Desk' Analogy\nThink of **Memory** as your desktop (you lose what's on it if the power goes out) and **Storage** as a filing cabinet (it stays there forever even if the power is off). This is the 'Volatile' vs 'Non-Volatile' difference."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which of the following is an example of **volatile** memory?",
+    options: ["Hard disk drive", "RAM", "SSD", "USB drive"],
+    correct: 1,
+    explanation: "## Wiped Clean\n**RAM** is volatile. If you are typing an essay and the power cuts before you hit save, you lose it because RAM cannot hold data without electricity. Hard drives and SSDs are 'Non-Volatile' because they hold data permanently."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Writing Data\nWhat does **“writing”** mean in storage terminology?",
+    options: [
+      "Deleting a file",
+      "Displaying on screen",
+      "Transferring data from memory to a storage medium (Saving)",
+      "Loading from disk"
+    ],
+    correct: 2,
+    explanation: "## Recording\nIn the world of computers, 'Writing' means **Saving**. You are taking the data from the 'active' memory and 'writing' it onto the permanent disk so it stays there for later."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“reading”** mean in storage terminology?",
+    options: [
+      "Transferring from memory to storage",
+      "Encrypting",
+      "Deleting",
+      "Transferring data from a storage medium into memory (Loading)"
+    ],
+    correct: 3,
+    explanation: "## Loading\n'Reading' is when the computer 'looks' at a file on your hard drive and **Loads** it into the RAM so you can see it and work with it. Every time you open a file, your computer is 'Reading.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Capacity Basics\nApproximately how many bytes are in one **Gigabyte (GB)**?",
+    options: ["1 billion", "1 million", "1 trillion", "1 thousand"],
+    correct: 0,
+    explanation: "## Power of 10\nWhile the exact math is $2^{30}$, for easy memorization: \n- KB = Thousand\n- MB = Million\n- **GB = Billion**\n- TB = Trillion"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the **exact** number of bytes in one **Megabyte (MB)**?",
+    options: ["2¹⁰ = 1,024", "2²⁰ = 1,048,576", "2³⁰", "2⁴⁰"],
+    correct: 1,
+    explanation: "## Exact Math\nComputers use binary, so we use powers of 2. $2^{10}$ is $1,024$ (Kilo). $2^{10} \times 2^{10}$ is **$2^{20}$**, which equals **$1,048,576$**. That is exactly how many bytes are in a true Megabyte."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Quadrillion Bytes\nWhich term represents approximately **1 quadrillion** (1,000,000,000,000,000) bytes?",
+    options: ["Terabyte (TB)", "Exabyte (EB)", "Petabyte (PB)", "Zettabyte (ZB)"],
+    correct: 2,
+    explanation: "## Huge Storage\nAs data grows, the names change. \n- TB = Trillion\n- **PB = Quadrillion**\n- EB = Quintillion\n- ZB = Sextillion"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **access time** measure for a storage device?",
+    options: [
+      "Storage capacity",
+      "Transfer speed",
+      "Write speed",
+      "The time it takes to find an item and deliver it to the processor"
+    ],
+    correct: 3,
+    explanation: "## Search Time\nThink of access time as how long it takes a librarian to find a book in a massive library. It's the **delay** before the data actually starts moving to your screen."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Internal Drives\nWhich storage medium is the most common for **internal** computer use?",
+    options: [
+      "Internal hard drive (HDD or SSD)",
+      "USB flash drive",
+      "Optical disc",
+      "Memory card"
+    ],
+    correct: 0,
+    explanation: "## The Home Base\nEvery computer needs a 'home' for the Operating System. The **Internal Drive** is the fast, high-capacity drive built into your PC that stores everything permanently."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the main **advantage** of an HDD over an SSD of the same price?",
+    options: [
+      "Faster speed",
+      "Greater storage capacity",
+      "No moving parts",
+      "Lower power"
+    ],
+    correct: 1,
+    explanation: "## Cost per GB\nIf you have $K50$, you can buy a tiny, fast $256\text{ GB}$ SSD or a massive $1\text{ TB}$ HDD. HDDs are 'old technology,' but they are still the best way to get **huge amounts of space** for a cheap price."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Formatting\nWhat does **“formatting”** do to a new hard disk?",
+    options: [
+      "Erases data",
+      "Installs the OS",
+      "Divides the disk into tracks and sectors so the OS can find data",
+      "Encrypts it"
+    ],
+    correct: 2,
+    explanation: "## Creating the Map\nImagine a giant field. Before you can build a city, you need to draw 'streets' and 'blocks.' Formatting creates **Tracks** (circles) and **Sectors** (wedges) so the computer knows exactly where to put every file."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a **sector** on a hard disk?",
+    options: [
+      "Concentric circle",
+      "Read/write head",
+      "Group of platters",
+      "An individual block of data on a track"
+    ],
+    correct: 3,
+    explanation: "## The Smallest Block\nA track is a big circle. A **Sector** is one small 'slice' of that circle. It is the smallest physical unit of storage on a disk—every file is made up of several of these sectors."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Floating Heads\nHow does a **read/write head** avoid touching the surface of a spinning platter?",
+    options: [
+      "The spinning creates a cushion of air that floats the head above",
+      "Non‑stick material",
+      "Only touches when reading",
+      "Always parked"
+    ],
+    correct: 0,
+    explanation: "## Hydroplaning\nThe platter spins so fast ($7,200\text{ RPM}$) that it creates a tiny **Cushion of Air**. The read/write head 'flies' on this air just nanometers above the surface. If it ever touches, it crashes and destroys your data!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the purpose of **perpendicular recording** in hard disks?",
+    options: [
+      "Horizontal alignment",
+      "Vertical alignment to increase storage density",
+      "Increasing rotation speed",
+      "Reducing platters"
+    ],
+    correct: 1,
+    explanation: "## Space Efficiency\nIn the past, magnetic bits were laid 'flat' (longitudinal). By standing them up **vertically** (perpendicular), we can pack many more bits into the same small space, allowing hard drives to reach massive capacities like $10\text{ TB}$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# SSD Tech\nWhich storage device has **no moving parts** and uses flash memory?",
+    options: [
+      "Magnetic HDD",
+      "Optical drive",
+      "Solid‑state drive (SSD)",
+      "Tape drive"
+    ],
+    correct: 2,
+    explanation: "## Solid Strength\nAn **SSD** is like a giant version of a USB stick. Because it has no spinning parts or moving arms, it is incredibly fast and can't be damaged by vibrations or bumps. This is why most modern laptops use SSDs."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a **memory card** commonly used for?",
+    options: [
+      "Storing the OS",
+      "USB port use",
+      "Permanent desktop storage",
+      "Transporting files between cameras, phones, and computers"
+    ],
+    correct: 3,
+    explanation: "## Removable Storage\nThink of **SD cards** or **MicroSDs**. They are small, durable flash storage cards designed to be swapped in and out of portable devices like cameras or smartphones to expand their memory or move photos to a laptop."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# USB Ports\nWhat does a **USB flash drive** plug into?",
+    options: ["USB port", "Ethernet port", "HDMI port", "Power outlet"],
+    correct: 0,
+    explanation: "## Simple Connection\nA **USB Flash Drive** (or thumb drive) is designed to fit into any standard USB port. It's the most common way to carry files around in your pocket today."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which type of **optical disc** can be erased and rewritten multiple times?",
+    options: ["CD‑ROM", "CD‑RW", "DVD‑ROM", "Blu‑ray ROM"],
+    correct: 1,
+    explanation: "## Rewritable\n**RW** stands for **R**e**W**ritable. Unlike a standard CD (which is read-only), a CD-RW allows you to delete the files and write new ones to the disc thousands of times."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Highest Capacity\nWhich optical disc format holds the **most** data?",
+    options: ["CD", "DVD", "Blu‑ray", "All the same"],
+    correct: 2,
+    explanation: "## Ultra Definition\nA **Blu-ray** disc uses a special blue-violet laser that is much thinner than a standard red laser. This allows it to pack way more data—$25\text{ GB}$ to $50\text{ GB}$—compared to a DVD which only holds $4.7\text{ GB}$."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What are the **two main parts** of cloud computing?",
+    options: ["Client and server", "Hardware and software", "RAM and storage", "Front end and back end"],
+    correct: 3,
+    explanation: "## Cloud Structure\n1. **Front End:** The app or browser you see on your screen. \n2. **Back End:** The massive server building where the data is actually stored and processed. You need both to 'do' cloud computing."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# SaaS\nWhat does **SaaS** stand for?",
+    options: [
+      "Software as a Service",
+      "Storage as a Service",
+      "Security as a Service",
+      "System as a Service"
+    ],
+    correct: 0,
+    explanation: "## Cloud Apps\n**SaaS** is when you use an app over the internet without installing it. Examples include Google Docs or Gmail. You just log in through a browser and use the 'Service' provided by the 'Software.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which cloud model provides **raw infrastructure** (like renting a whole server)?",
+    options: ["SaaS", "IaaS (Infrastructure as a Service)", "PaaS", "DaaS"],
+    correct: 1,
+    explanation: "## Digital Foundations\n**IaaS** is for IT experts. Instead of buying a physical server, they rent the 'Infrastructure' (CPU, RAM, and Storage) from a company like Amazon. They then install whatever Operating System they want on that rented space."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Cloud Advantages\nWhat is a major advantage of **cloud storage** for a business?",
+    options: [
+      "Files are local only",
+      "No internet needed",
+      "Flexibility of not having to buy and maintain physical servers",
+      "Files can't be shared"
+    ],
+    correct: 2,
+    explanation: "## Lower Costs\nServers are expensive and they break. With the **Cloud**, a business pays a small fee to let Google or Microsoft handle the hardware 'headaches.' This gives them professional storage without the high cost of maintenance."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which cloud service provides **built-in apps** like Docs and Sheets?",
+    options: ["Box", "Dropbox", "iCloud", "Google Drive"],
+    correct: 3,
+    explanation: "## Productivity Suite\nWhile Box and Dropbox are mostly for saving files, **Google Drive** gives you a whole office suite inside the browser. You can create, edit, and share documents without ever installing Word or Excel."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Privacy Awareness\nWhy must you check the **Privacy Policy** of a cloud provider?",
+    options: [
+      "To understand how your data is handled and your rights",
+      "To find free storage",
+      "To see the mobile app",
+      "To compare file limits"
+    ],
+    correct: 0,
+    explanation: "## Guard Your Data\nYou are trusting a company with your digital life. You **must** read the policy to ensure they aren't allowed to look at your photos, sell your contact info to advertisers, or 'own' the content you upload."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a recommended way to **secure** your cloud files?",
+    options: [
+      "Store passwords in the cloud",
+      "Use strong passwords and two‑factor authentication (2FA)",
+      "Never read agreements",
+      "Disable privacy"
+    ],
+    correct: 1,
+    explanation: "## Double Locking\nA password can be guessed. **2FA** means that even if a hacker has your password, they still can't get in without the secret code sent to **your phone**. It is the single best way to protect your account."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Encryption\nWhat does **“encryption”** do for cloud storage?",
+    options: [
+      "Compresses space",
+      "Renames files",
+      "Scrambles the data so only someone with a key can read it",
+      "Deletes files"
+    ],
+    correct: 2,
+    explanation: "## Secret Code\nEncryption turns your files into 'Gibberish.' Even if a hacker breaks into the cloud server, they will just see a mess of random letters. Your real data stays safe and unreadable because only you have the 'key' to unscramble it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which of the following is **NOT** a good guideline for selecting a cloud provider?",
+    options: [
+      "Check reputation",
+      "Choose encryption",
+      "Compare prices",
+      "Choose the one with the most free storage regardless of security"
+    ],
+    correct: 3,
+    explanation: "## Security First\nFree space is a 'trap' if the company is not secure. A cheap or unknown provider might go out of business tomorrow or get hacked easily. Always pick **Reputation and Security** over 'free gigabytes.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAID\nWhat does **RAID** stand for?",
+    options: [
+      "Redundant Array of Independent Disks",
+      "Rapid Access Integrated Drive",
+      "Random Array of Inexpensive Disks",
+      "Read/Write Advanced Interface Device"
+    ],
+    correct: 0,
+    explanation: "## Redundancy\n**RAID** is a way of connecting several hard drives together to act as one. The 'Redundant' part means the computer saves copies of your data across multiple disks so that if one drive fails, you don't lose anything."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "In **RAID Level 1** (mirroring), what happens to your data?",
+    options: [
+      "Data is split (striping)",
+      "An exact copy is written to two drives at once",
+      "Written to a parity drive",
+      "Written to the fastest drive only"
+    ],
+    correct: 1,
+    explanation: "## The 'Mirror' Effect\nThink of RAID 1 as having a 'Backup' happening every second. Every time you save a file, the computer writes it to Disk A and **Disk B** simultaneously. If Disk A breaks, you just keep working on Disk B with zero downtime."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAID Striping\nWhat does **striping** do in a RAID setup?",
+    options: [
+      "Copies for safety",
+      "Encrypts data",
+      "Splits data across multiple drives to improve speed",
+      "Compresses space"
+    ],
+    correct: 2,
+    explanation: "## Parallel Speed\nRAID 'Striping' takes a single file and cuts it into pieces. It writes one piece to Disk A and the other to Disk B at the same time. This makes your computer feel much faster because multiple drives are sharing the load."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is **Network Attached Storage (NAS)**?",
+    options: [
+      "A type of memory",
+      "A backup tape",
+      "Direct connector",
+      "A server placed on a network solely to provide shared storage to users"
+    ],
+    correct: 3,
+    explanation: "## Shared Library\nA **NAS** is a box full of hard drives that plugs into your Wi-Fi router. Every computer in the house or office can 'see' the NAS and save files to it. It's like having your own 'Private Cloud' inside your building."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# SAN\nHow does a **Storage Area Network (SAN)** differ from NAS?",
+    options: [
+      "It's a high‑speed network dedicated only to storage for servers",
+      "It is slower",
+      "Uses only tape",
+      "It is the same"
+    ],
+    correct: 0,
+    explanation: "## Industrial Scale\nWhile a NAS is for users, a **SAN** is a massive, high-speed network for **Servers**. It allows giant banks or universities to connect thousands of hard drives to a farm of servers so the data moves at incredible speeds."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which medium is very **cheap** but very **slow**, used for long-term backups?",
+    options: ["SSD", "Magnetic tape", "USB flash drive", "Memory card"],
+    correct: 1,
+    explanation: "## Archiving\n**Magnetic Tape** works like a cassette. You have to 'wind' through it to find data, which takes a long time. However, a single tape is incredibly cheap and can hold many terabytes, making it perfect for 'cold storage' backups."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Magnetic Stripes\nWhat is stored on the **magnetic stripe** of a credit card?",
+    options: [
+      "The card’s PIN",
+      "Full transaction history",
+      "Identification of the card owner and issuer",
+      "The CVV code only"
+    ],
+    correct: 2,
+    explanation: "## Card Identity\nThe brown stripe on your card doesn't know your PIN. It only stores the 'Basic' info like your **Name and Account Number**. The bank's server does the rest of the work when you swipe it."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a **smart card** (chip card)?",
+    options: [
+      "Online only card",
+      "Magstripe only",
+      "Hologram card",
+      "A card with a microprocessor or memory chip embedded in it"
+    ],
+    correct: 3,
+    explanation: "## High Security\nA **Smart Card** is way more secure than a magstripe. Because it has a tiny computer 'Chip' on it, it can encrypt your data and verify who you are without sending your account number through the air in a simple format."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RFID Components\nWhat are the **two main parts** of an RFID tag?",
+    options: [
+      "Antenna and memory chip",
+      "Battery and speaker",
+      "Screen and processor",
+      "USB and LED"
+    ],
+    correct: 0,
+    explanation: "## Signal Logic\n1. **The Antenna:** catches radio waves from the reader. \n2. **The Memory Chip:** stores a unique ID number. \nThis is how a pet microchip or an office badge works—no battery required!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the difference between **Active** and **Passive** RFID tags?",
+    options: [
+      "Active tags have no battery",
+      "Active tags have a battery; Passive tags are powered by the reader’s signal",
+      "Active is smaller",
+      "Active only works at 1 cm"
+    ],
+    correct: 1,
+    explanation: "## Power Supply\n**Passive tags** are cheap and tiny because they wait for the reader's energy to 'wake them up.' **Active tags** have their own battery, so they can 'shout' their signal over much longer distances (like a toll-bridge scanner for cars)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# NFC\nWhat technology is **NFC** (Near Field Communication) based on?",
+    options: ["Bluetooth", "Wi‑Fi", "RFID", "Infrared"],
+    correct: 2,
+    explanation: "## Close Proximity\n**NFC** is essentially 'Short-Range RFID.' It was designed to be used at very close distances (less than $10\text{ cm}$) so that you don't accidentally pay for someone else's groceries when you are just walking past."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which of the following is a typical use of **NFC**?",
+    options: [
+      "Large file transfer",
+      "Network printing",
+      "Hard drive backup",
+      "Tapping your phone at a terminal to pay for goods"
+    ],
+    correct: 3,
+    explanation: "## Mobile Payments\nEvery time you use Apple Pay or Google Pay, you are using **NFC**. Because the range is so short, it is very secure—no one can 'sniff' your payment signal from across the street."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAM Categories\nWhat **three** items must memory (RAM) store to keep a computer running?",
+    options: [
+      "Operating system, applications, and the data being processed",
+      "Only the OS",
+      "Only user documents",
+      "Temporary internet files"
+    ],
+    correct: 0,
+    explanation: "## The Three Layers\nThink of RAM like a table. You need: 1. The Tabletop (**OS**). 2. Your Tools (**Apps**). 3. Your Work (**Data**). If any of these are missing, you can't get your work done."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is an **“address”** in computer memory?",
+    options: [
+      "Hard drive location",
+      "A unique number that identifies the location of a byte in memory",
+      "File name",
+      "IP address"
+    ],
+    correct: 1,
+    explanation: "## Memory Map\nRAM is divided into millions of tiny 'cubby holes,' each holding one byte. To find your data, the CPU needs to know the **Address** (the specific number) of that cubby hole. It's like a house address for your data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Cache Memory\nWhat is the role of **cache memory**?",
+    options: [
+      "Permanent OS storage",
+      "Auto backup",
+      "To store frequently used data close to the CPU for lightning speed",
+      "To replace RAM"
+    ],
+    correct: 2,
+    explanation: "## Speed Booster\nRAM is fast, but the CPU is faster. **Cache** is ultra-fast memory that sits *inside* the CPU. It keeps a copy of the data the CPU uses most often so the 'brain' doesn't have to wait for the RAM."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“saving”** mean from a storage perspective?",
+    options: [
+      "Transfer from storage to RAM",
+      "Deleting",
+      "Encrypting",
+      "Copying data from RAM to a permanent storage device or the cloud"
+    ],
+    correct: 3,
+    explanation: "## Making it Permanent\nWhen you work on a file, it's in the 'active' RAM. When you hit **Save**, you are telling the computer to make a copy on the disk. This is the only way your work survives when you turn the power off."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# ROM\nWhat kind of memory is **ROM**?",
+    options: [
+      "Read‑only, nonvolatile, stores permanent instructions (startup)",
+      "Read‑write, volatile",
+      "Hard drive type",
+      "Cache type"
+    ],
+    correct: 0,
+    explanation: "## The Starter Instructions\n**ROM** is like a printed book—you can 'read' it, but you can't easily change the words. It stores the critical instructions the computer needs to wake up and 'find' the operating system on your hard drive."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What defines **flash memory**?",
+    options: [
+      "Volatile",
+      "Nonvolatile memory that can be erased and rewritten electronically",
+      "Magnetic medium",
+      "Optical format"
+    ],
+    correct: 1,
+    explanation: "## Solid Performance\n**Flash memory** is used in SSDs and USB sticks. It's amazing because it has no moving parts (so it won't break if dropped) and it remembers your data forever without needing a battery."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# CMOS\nHow does **CMOS memory** keep its information (like the time) when the PC is off?",
+    options: ["Built-in drive", "Flash chip", "A tiny battery on the motherboard", "Magnetic platter"],
+    correct: 2,
+    explanation: "## The Clock Keeper\nHave you ever wondered how your computer knows the correct time even if it's been unplugged for a week? A tiny **Battery** on the motherboard keeps the CMOS chip 'alive' so it can keep counting the seconds."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which device typically relies on **flash memory** for its primary storage?",
+    options: ["Main RAM", "Magnetic tape", "DVD‑ROM", "A smartphone"],
+    correct: 3,
+    explanation: "## Mobile Storage\nLaptops used to have spinning hard drives, but **Smartphones** have always used Flash. It's too risky to have spinning parts in a phone you carry in your pocket—one drop would destroy everything!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# IoT Privacy\nWhich **IoT device** often raises significant privacy concerns?",
+    options: [
+      "A smart thermostat control remotely via an app",
+      "A traditional bulb",
+      "Mechanical watch",
+      "Paper book"
+    ],
+    correct: 0,
+    explanation: "## Always Listening\nA **Smart Thermostat** doesn't just change the temperature; it tracks when you are home, your daily habits, and your location. If this data is hacked or sold, strangers can know exactly when your house is empty."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Who is primarily **responsible** for keeping your sensitive IoT data secure?",
+    options: ["User only", "The companies that collect and manage the data", "Government", "No one"],
+    correct: 1,
+    explanation: "## Corporate Duty\nWhile you should use a strong password, the **Companies** (like Google, Amazon, or Samsung) have the main duty. They are the ones who build the security 'walls' that protect your personal life from hackers."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Retail Beacons\nIn retail, what is a **“beacon”**?",
+    options: [
+      "Barcode scanner",
+      "Security camera",
+      "A device that sends deals to nearby smartphones via Bluetooth",
+      "Receipt printer"
+    ],
+    correct: 2,
+    explanation: "## Location Marketing\nA **Beacon** is a tiny radio. If you walk past one in a shop, it sends a 'ping' to your phone to say: 'Hey, the shoes you liked are $20\%$ off!' It uses data to try and sell you products in real-time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the general expert view on **IoT risks vs benefits**?",
+    options: [
+      "Banned",
+      "Experts only",
+      "No benefits",
+      "Many believe the security, health, and productivity benefits outweigh the risks"
+    ],
+    correct: 3,
+    explanation: "## The Trade-Off\nYes, there are privacy risks. But most experts agree that being able to track your heart health, save energy at home, and work faster is **worth the risk**, as long as we keep improving security technology."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# TB Math\nApproximately how many bytes are in one **Terabyte (TB)**?",
+    options: ["1 trillion", "1 billion", "1 million", "1 quadrillion"],
+    correct: 0,
+    explanation: "## Massive Space\nA **Terabyte** is the standard for modern external hard drives. It is approximately one **Trillion** bytes. That's enough space to hold about 250,000 high-quality photos!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which term represents **$2^{50}$ bytes** (approx 1 quadrillion)?",
+    options: ["Exabyte (EB)", "Petabyte (PB)", "Zettabyte (ZB)", "Yottabyte (YB)"],
+    correct: 1,
+    explanation: "## Scale Up\nWhen we talk about the storage of a whole company like YouTube, we use **Petabytes**. It's the next level up from a Terabyte. One PB is approximately 1,000 Terabytes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Declining Media\nWhy is the use of **optical discs** (CD/DVD) declining so fast?",
+    options: [
+      "Too small",
+      "Too expensive",
+      "USB drives and Cloud storage are more convenient and hold way more data",
+      "No video support"
+    ],
+    correct: 2,
+    explanation: "## Better Options\nWhy carry a fragile plastic disc that only holds $4\text{ GB}$ when a tiny **USB stick** in your pocket holds $128\text{ GB}$? USBs and the Cloud are faster, harder to break, and much easier to carry."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“hot swappable”** mean for a storage device?",
+    options: [
+      "Gets hot",
+      "Shut down first",
+      "Only special cables",
+      "You can connect or remove it while the computer is still running"
+    ],
+    correct: 3,
+    explanation: "## Live Swap\n**USB drives** are 'Hot Swappable.' You don't have to turn off your laptop just to plug in a drive. The computer can 'detect' the new hardware while it's 'Hot' (running) and set it up instantly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Actuators\nWhat is the job of the **actuator** inside a hard disk drive?",
+    options: [
+      "To move the read/write heads to the correct spot on the platter",
+      "To spin the discs",
+      "To format",
+      "To encrypt"
+    ],
+    correct: 0,
+    explanation: "## The Moving Arm\nInside a hard drive is a spinning disc (platter). The **Actuator** is the mechanical 'arm' that moves the needle across the disc to find your file. It's like the arm on a record player moving to the next song."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What are **platters** in a hard disk made of?",
+    options: [
+      "Plastic",
+      "Aluminum, glass, or ceramic with a magnetic coating",
+      "Silicon",
+      "Paper"
+    ],
+    correct: 1,
+    explanation: "## Rigidity\nA **Platter** must be perfectly flat and very strong because it spins at $120$ times per second. That's why they are made of stiff materials like glass or metal and then painted with a magnetic 'skin' to store your data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Disk Density\nWhat does **“density”** refer to in hard disk engineering?",
+    options: [
+      "Weight",
+      "Spin speed",
+      "The number of bits packed into one small area",
+      "Number of platters"
+    ],
+    correct: 2,
+    explanation: "## Packing Power\nHigher **Density** means you can squeeze more 'data dots' into a smaller space. The higher the density, the more terabytes you can fit onto a single hard drive without making the drive physically larger."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a typical use for a **CD‑R** disc?",
+    options: [
+      "Movies",
+      "Rewritable backup",
+      "HD games",
+      "Recording audio or photos once (Write Once, Read Many)"
+    ],
+    correct: 3,
+    explanation: "## Permanent Burn\n**CD-R** stands for **R**ecordable. You can 'burn' your music or photos onto it exactly one time. Once it's finished, you can't erase it or change it—it becomes a permanent physical copy."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# PaaS\nWhich cloud model allows you to **run your own apps** without managing the servers?",
+    options: ["PaaS (Platform as a Service)", "IaaS", "SaaS", "DaaS"],
+    correct: 0,
+    explanation: "## For Developers\n**PaaS** is like renting a kitchen. You bring your own ingredients (your code) and the kitchen (the platform) provides the stove and oven (servers/database) to help you bake your app. You don't have to worry about fixing the stove!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is **DaaS** (Data as a Service)?",
+    options: [
+      "Software over web",
+      "Providing on‑demand access to large data sets via APIs",
+      "Virtual desktops",
+      "Backup"
+    ],
+    correct: 1,
+    explanation: "## Data for Rent\nIf a company needs up-to-the-minute stock market data or weather info, they don't go and collect it themselves. They use **DaaS** to plug into a stream of data from another company's cloud."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# STaaS\nWhat does **STaaS** provide to a customer?",
+    options: [
+      "Virtual PCs",
+      "Apps",
+      "Online storage space that you can rent (Cloud Storage)",
+      "Coding platforms"
+    ],
+    correct: 2,
+    explanation: "## Renting Gigabytes\n**STaaS** is simply the formal name for services like Google Drive or Dropbox. You are renting 'Storage' as a 'Service' rather than buying your own physical hard drive."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the main **benefit** of an external hard drive?",
+    options: [
+      "Faster than internal",
+      "Never fails",
+      "No power needed",
+      "Adds massive space without opening the PC case"
+    ],
+    correct: 3,
+    explanation: "## Effortless Upgrade\nOpening a computer to add a new drive is scary and can void your warranty. An **External Drive** plugs in like a phone charger—it's the safest and easiest way to double or triple your computer's storage space."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Read/Write Heads\nWhat is the job of the **read/write head** in a magnetic disk?",
+    options: [
+      "To magnetize or sense the platter surface to handle data",
+      "To spin the disc",
+      "To format",
+      "To control the arm"
+    ],
+    correct: 0,
+    explanation: "## The Needle\nThink of the head as a tiny 'pen.' To 'write,' it uses magnetism to flip the direction of bits on the platter. To 'read,' it simply feels the magnetic field to see if it's a one or a zero."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“nonvolatile”** mean?",
+    options: [
+      "Loses data when power is off",
+      "Retains data when power is off",
+      "Very fast",
+      "Very slow"
+    ],
+    correct: 1,
+    explanation: "## Permanent Memory\nStorage MUST be **nonvolatile**. If it wasn't, your computer would be empty every time you turned it on. Nonvolatile devices (Hard Drives, USBs) keep their data even if they are unplugged for years."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# ZB Math\nApproximately how many bytes are in a **Zettabyte (ZB)**?",
+    options: ["1 billion", "1 trillion", "1 sextillion", "1 septillion"],
+    correct: 2,
+    explanation: "## Cosmic Scale\nA **Zettabyte** is an almost impossible number—a $1$ followed by $21$ zeros. This is the unit we use to measure the **entire amount of data on the internet**. It is one sextillion bytes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which technology uses **lasers** to read and write data?",
+    options: ["HDD", "SSD", "USB flash", "Optical discs (CD/DVD)"],
+    correct: 3,
+    explanation: "## Speed of Light\n**Optical** means light. CDs and DVDs have a thin reflective layer. The drive shines a laser at the disc; if the light bounces back, it's a one. if it hits a 'pit' and scatters, it's a zero."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Contactless Cards\nWhat is a **“contactless”** smart card?",
+    options: [
+      "Uses radio waves to communicate without being inserted into a reader",
+      "No chip",
+      "Online only",
+      "Empty card"
+    ],
+    correct: 0,
+    explanation: "## Tap to Pay\nYou don't have to 'swipe' or 'dip' a contactless card. It has a tiny **NFC antenna** inside. When you tap it near a terminal, it uses radio waves to share your encrypted payment info instantly."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the biggest **risk** of having many IoT devices in your home?",
+    options: [
+      "Price",
+      "Security concerns—strangers might access your private data/home",
+      "Wi-Fi range",
+      "Lack of updates"
+    ],
+    correct: 1,
+    explanation: "## The Hackable House\nEvery 'Smart' thing is a new door into your home for a hacker. If your smart fridge has a weak password, a hacker could use it to get onto your Wi-Fi and steal the passwords from your laptop."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Cloud Encryption\nWhy should you choose a cloud provider that **encrypts** your files?",
+    options: [
+      "Saves space",
+      "Faster loading",
+      "To protect your data even if the provider’s server is hacked",
+      "Allows public reading"
+    ],
+    correct: 2,
+    explanation: "## Safety First\nIf a hacker breaks into Dropbox and steals your files, they won't be able to open them if they are **Encrypted**. Without your private key, the files are just useless random text. It is your best layer of defense."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the **Front End** of cloud computing?",
+    options: [
+      "The storage servers",
+      "The cables",
+      "The backup power",
+      "The app or browser that the human user interacts with"
+    ],
+    correct: 3,
+    explanation: "## The User Interface\nThe **Front End** is what's on your desk or in your hand. When you click 'Upload' in the Google Drive app, you are using the Front End to send data to the giant computer 'Back End' across the world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAM Approximation\nIf a PC has **$8\text{ GB}$ of RAM**, approximately how many bytes can it hold?",
+    options: ["8 billion", "8 million", "8 trillion", "8 thousand"],
+    correct: 0,
+    explanation: "## The GB Rule\nRemember: **Giga = Billion**. So, if you have an $8\text{ GB}$ stick of memory, it has enough 'cells' to hold roughly **8 billion** individual characters (bytes) of data at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "If a drive has **$2\text{ TB}$ of capacity**, approximately how many bytes is that?",
+    options: ["2 billion", "2 trillion", "2 quadrillion", "2 million"],
+    correct: 1,
+    explanation: "## The TB Rule\nRemember: **Tera = Trillion**. A $2\text{ TB}$ drive is a massive storage space—it can hold roughly **2 trillion** bytes. This is enough for hundreds of HD movies!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# KB Math\nWhat is the **exact** number of bytes in **$1\text{ KB}$**?",
+    options: ["1,000", "1,024", "1,048,576", "2³⁰"],
+    correct: 1,
+    explanation: "## The Power of 2\nIn the normal world, 'Kilo' means 1,000. But computers speak binary (powers of 2). The closest power of 2 to a thousand is $2^{10}$, which is **1,024**. This is the 'true' size of a Kilobyte."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“transfer rate”** measure?",
+    options: [
+      "Search time",
+      "File count",
+      "Platter speed",
+      "The speed with which data moves to/from the device (e.g. MB/s)"
+    ],
+    correct: 3,
+    explanation: "## Flow Speed\nThink of transfer rate like the width of a water pipe. Access time is the 'waiting' for the water to start, but **Transfer Rate** is how many gallons (megabytes) can flow through the pipe every second once it starts."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# SSD Speed\nWhy do **SSDs** have much faster access times than HDDs?",
+    options: [
+      "No moving parts; data is accessed electronically and instantly",
+      "They spin faster",
+      "Magnetic bits",
+      "They are larger"
+    ],
+    correct: 0,
+    explanation: "## No Waiting\nIn an HDD, the arm has to physically move and wait for the disc to spin around (Mechanical delay). In an **SSD**, electricity just 'zaps' the chip to get the data. There is no physical moving, so there is almost zero waiting time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the biggest **drawback** of using magnetic tape?",
+    options: [
+      "High cost",
+      "Access is sequential (must wind through the whole tape)",
+      "Low capacity",
+      "Volatile"
+    ],
+    correct: 1,
+    explanation: "## Sequential Access\nTape is like an old VHS movie. If you want to see the end of the movie, you have to wait for the machine to 'fast-forward' through the whole tape. This makes it **very slow** to find one specific file."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Off-Site Backups\nWhat is the primary benefit of **backing up** to the cloud?",
+    options: [
+      "Delete local files",
+      "Privacy",
+      "To protect against theft or fire by keeping a copy in a different location",
+      "File size"
+    ],
+    correct: 2,
+    explanation: "## Disaster Recovery\nIf your house floods or a thief takes your laptop, your local 'USB backup' is gone too. But the **Cloud** is located in a different city or country. This means your data survives even if your entire building is destroyed."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **Two-Factor Authentication (2FA)** add to your login?",
+    options: [
+      "Two passwords",
+      "Weekly changes",
+      "Fingerprint only",
+      "A second verification step (like a phone code) in addition to your password"
+    ],
+    correct: 3,
+    explanation: "## Double Locking\n2FA is the 'Safe' way to log in. Even if a hacker steals your password, they can't get in because they don't have **your physical phone** to see the 6-digit code. It protects your storage from unauthorized access."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Storage Highways\nWhat is the main goal of a **Storage Area Network (SAN)**?",
+    options: [
+      "Dedicated high‑speed network for large storage pools that servers share",
+      "Connect one drive",
+      "Replace RAM",
+      "Connect a mouse"
+    ],
+    correct: 0,
+    explanation: "## Enterprise Storage\nIn a huge data center, you don't want every server to have its own hard drives. You build a **SAN**—a giant 'pool' of storage that all the servers can drink from at incredibly high speeds using fiber-optic cables."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does **“longitudinal recording”** mean in HDD history?",
+    options: [
+      "Vertical bits",
+      "Aligning magnetic particles horizontally (laying flat) around the disc",
+      "Circular bits",
+      "Random bits"
+    ],
+    correct: 1,
+    explanation: "## Old Method\nThink of this as laying bricks flat on the ground. It worked for years, but we eventually ran out of room. Today, we use 'Perpendicular' recording (standing the bricks up) to fit much more data into the same space."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Blu-ray Capacity\nWhat is the storage capacity of a **single-layer Blu-ray** disc?",
+    options: ["700 MB", "4.7 GB", "25 GB", "100 GB"],
+    correct: 2,
+    explanation: "## High Def\nA **Blu-ray** disc is a massive upgrade from a DVD. It can hold $25\text{ GB}$ on a single layer, which is enough to hold hours of high-definition video that a standard $4.7\text{ GB}$ DVD could never handle."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does the **“RW”** in CD-RW stand for?",
+    options: ["Read only", "Write once", "High def", "Re-Writable (can be erased and reused)"],
+    correct: 3,
+    explanation: "## Reuseable Disc\nStandard CDs are 'Permanent' once you write to them. But a **CD-RW** allows you to wipe the disc clean and use it again for new files, just like a USB drive."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# GB Exact Math\nWhat is the **exact** number of bytes in **$1\text{ GB}$**?",
+    options: ["2³⁰ = 1,073,741,824", "2²⁰", "2⁴⁰", "2¹⁰"],
+    correct: 0,
+    explanation: "## Power of 2\nTo get a Gigabyte, you multiply $1,024$ (Kilo) $\times 1,024$ (Mega) $\times 1,024$ (Giga). That result is exactly **$1,073,741,824$** bytes. In simple talk, we just say 'one billion,' but the computer knows the exact number."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which cloud provider is primarily for **storage only** (no built-in editing apps)?",
+    options: ["Google Drive", "Box", "OneDrive", "iCloud"],
+    correct: 1,
+    explanation: "## Pure Storage\nWhile Google and Microsoft give you 'Free Office Apps,' **Box** is a professional tool that focuses 100% on high-security storage and file sharing for businesses. It doesn't try to be a word processor."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Uploading Speed\nWhy is uploading **Photos and Videos** to the cloud slower than uploading a Text file?",
+    options: [
+      "Security",
+      "Compression",
+      "They are much larger files and need more bandwidth",
+      "Can't be uploaded"
+    ],
+    correct: 2,
+    explanation: "## File Size\nAn essay might be $50\text{ Kilobytes}$, but a video might be $500\text{ Megabytes}$ ($10,000$ times larger!). Since your internet 'upload pipe' only moves so much data per second, the bigger the file, the longer you have to wait."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the **most important** thing to do before signing up for a cloud service?",
+    options: [
+      "Upload data immediately",
+      "Disable privacy",
+      "Share password",
+      "Read the Privacy Policy to see how your data will be used"
+    ],
+    correct: 3,
+    explanation: "## Know Your Rights\nSome 'free' cloud services make money by scanning your photos to show you ads. **Read the rules** to make sure you are okay with how they treat your private information before you click 'Accept.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# NFC Tags\nWhat is an **NFC tag** usually used for?",
+    options: [
+      "To trigger a small action (like opening a URL) when tapped by a phone",
+      "To store Terabytes",
+      "Wireless charging",
+      "GPS tracking"
+    ],
+    correct: 0,
+    explanation: "## Instant Action\nAn **NFC Tag** is a cheap sticker with a tiny chip. When you tap your phone on it, it can automatically put your phone on 'Silent,' open a specific website, or pay for a bus ticket. It's for small, fast interactions."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "How does a **memory card** differ from a **USB flash drive**?",
+    options: [
+      "Cards are faster",
+      "Cards plug into a dedicated slot; USB drives plug into a USB port",
+      "Cards are volatile",
+      "No difference"
+    ],
+    correct: 1,
+    explanation: "## Connectors\nInside, they both use 'Flash Memory.' The only difference is the **Shape**. A USB drive has a large plug for your laptop, while a Memory Card (SD) is tiny and flat so it can fit inside a camera or a phone."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Cache Benefits\nWhat does **cache** memory primarily improve?",
+    options: [
+      "Capacity",
+      "Battery life",
+      "Processing speed by keeping data near the CPU",
+      "Resolution"
+    ],
+    correct: 2,
+    explanation: "## Avoiding the Wait\nThe CPU is like a fast-food chef. RAM is like a grocery store down the street. **Cache** is like the small fridge right next to the chef. By keeping the most important data in the 'fridge' (Cache), the CPU can cook much faster."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the biggest **disadvantage** of RAID 1 (mirroring)?",
+    options: [
+      "It is slow",
+      "No safety",
+      "No SSD support",
+      "It requires double the storage because every file is duplicated"
+    ],
+    correct: 3,
+    explanation: "## The Cost of Safety\nIf you buy two $1\text{ TB}$ drives for RAID 1, you only get **$1\text{ TB}$ of usable space**. The other drive is just an identical copy. It is very safe, but you are paying twice as much for your storage."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAID 0\nWhat is the main **benefit** of RAID 0 (striping)?",
+    options: [
+      "Incredible read/write speed",
+      "Safety",
+      "Low cost",
+      "Low power"
+    ],
+    correct: 0,
+    explanation: "## Pure Speed\n**RAID 0** splits your data across two drives. When you open a file, both drives work together to send you the pieces. This makes your computer feel twice as fast, but be careful—if either drive breaks, you lose **everything**!"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What does a **NAS** device typically NOT have?",
+    options: ["Hard drives", "A keyboard and monitor", "Network wires", "An IP address"],
+    correct: 1,
+    explanation: "## Headless Device\nA **NAS** is a 'set-it-and-forget-it' box. You don't plug a screen into it. Instead, you plug it into your router and then use your laptop's browser to 'log in' to the box to manage your files."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# SAN vs NAS\nWhy would a **Large Corporation** choose a SAN instead of a NAS?",
+    options: [
+      "Cheaper",
+      "Easier for home",
+      "Extremely high speed and massive scalability for many servers",
+      "Uses tape only"
+    ],
+    correct: 2,
+    explanation: "## Professional Grade\nA **SAN** is built for performance. It uses specialized 'Fiber Channel' cables that move data much faster than standard office Wi-Fi. It allows a company to add thousands of new drives to their network without slowing down."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# TB Exact Math\nWhat is the **exact** number of bytes in **$1\text{ TB}$**?",
+    options: ["2³⁰", "2⁴⁰ = 1,099,511,627,776", "2⁵⁰", "2⁶⁰"],
+    correct: 1,
+    explanation: "## Trillions\nTo get a Terabyte, we go $1,024$ (Kilo) $\times 1,024$ (Mega) $\times 1,024$ (Giga) $\times 1,024$ (Tera). The result is **$2^{40}$**, which is exactly **$1,099,511,627,776$** bytes. It is slightly more than a standard 'Trillion.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the exact number of bytes in one **Petabyte (PB)**?",
+    options: [
+      "2⁵⁰ = 1,125,899,906,842,624",
+      "2⁴⁰",
+      "2⁶⁰",
+      "2⁷⁰"
+    ],
+    correct: 0,
+    explanation: "## Data Center Scale\nA **Petabyte** is $2^{50}$ bytes. If you had a $1\text{ PB}$ drive, you could store roughly $13$ years of continuous high-definition video! It is exactly $1,125,899,906,842,624$ bytes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Disk Geometry\nWhat is a **“track”** on a hard disk platter?",
+    options: [
+      "A wedge slice",
+      "One of the concentric circles on the surface",
+      "The arm",
+      "The motor"
+    ],
+    correct: 1,
+    explanation: "## Circular Storage\nImagine a racing track. A **Track** on a hard drive is a perfect circle around the center. There are thousands of these circles on a single disc, and they hold all your digital data in magnetic form."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "In a hard drive with multiple platters, how many **heads** does each platter have?",
+    options: ["One (top only)", "One (bottom only)", "Two (one for each side)", "Four"],
+    correct: 2,
+    explanation: "## Double-Sided\nHard drives are efficient. They use the **Top and Bottom** of every platter to store data. Therefore, every platter has two read/write heads on a 'fork' so it can read both sides of the disc at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# DVD Rewriting\nWhich of the following is a **rewritable** DVD format?",
+    options: ["DVD‑ROM", "DVD‑R", "DVD+R", "DVD‑RW"],
+    correct: 3,
+    explanation: "## Reuseable Media\nStandard DVDs (ROM or R) can't be changed once they are printed or burned. A **DVD-RW** allows you to erase the movie or files you saved and 'burn' new data onto the same disc again."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is **DaaS** (Desktop as a Service) in the cloud?",
+    options: [
+      "Providing a full virtual desktop over the internet",
+      "App delivery",
+      "Infrastructure",
+      "Data storage"
+    ],
+    correct: 0,
+    explanation: "## Rent-a-Computer\nWith **DaaS**, you don't even need a powerful PC. You can use a cheap $K1,000$ laptop to log into a powerful 'Virtual Desktop' in the cloud. You see a full Windows screen and can run heavy apps that your real laptop couldn't handle."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Redundancy\nWhy do cloud companies save your files on **multiple different servers**?",
+    options: [
+      "To increase space",
+      "To make sure that if one server fails, you still have access to your files",
+      "To sell data",
+      "To lower costs"
+    ],
+    correct: 1,
+    explanation: "## High Reliability\nServers break all the time. Cloud providers keep **3 or 4 copies** of your file in different buildings. If one building loses power, you won't even notice—the system just pulls your file from a different server."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "When comparing cloud storage, which **criteria** should you evaluate?",
+    options: [
+      "Favorite color",
+      "CEO name",
+      "Office location",
+      "Free storage amount, cost for more, and max file size allowed"
+    ],
+    correct: 3,
+    explanation: "## Buying Guide\nYou must look at the **Practical Details**. If you want to upload $4\text{ GB}$ 4K movies but the cloud service has a '$2\text{ GB}$ Max File Size' limit, it won't work for you, no matter how much free space they give you."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# High Availability\nWhat does **“highly available”** hardware mean in a business setting?",
+    options: [
+      "Accessible 24/7/365 with almost zero downtime",
+      "Available business hours only",
+      "Weekdays only",
+      "Frequent shutdowns"
+    ],
+    correct: 0,
+    explanation: "## The Five Nines\nIn business, every second of downtime costs money. **Highly Available** hardware is designed to NEVER turn off. It has backup power, backup parts, and backup wires so that it stays online $99.999\%$ of the year."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a **data center**?",
+    options: [
+      "A secure building with many large servers that make files available to users",
+      "Single hard drive",
+      "Cloud app",
+      "Backup tape"
+    ],
+    correct: 0,
+    explanation: "## The Information Factory\nA **Data Center** is a massive warehouse filled with thousands of computers (servers) and miles of cooling pipes. These buildings are the physical place where 'The Cloud' actually lives."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Health Trackers\nWhich IoT device is designed to track your **pulse and heart rate**?",
+    options: ["Smart trash can", "Wearable technology (Smartwatches/Wristbands)", "Thermostat", "Smart meter"],
+    correct: 1,
+    explanation: "## Wearable Health\n**Smartwatches** like the Apple Watch or Fitbit use green lights (LEDs) to 'look' through your skin and measure how fast your blood is pumping. They then send this data to your phone to help you track your fitness."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a **“smart trash can”**?",
+    options: [
+      "Sorts recycling",
+      "Compresses waste",
+      "Has sensors that notify the owner when it needs to be emptied",
+      "Social media trash can"
+    ],
+    correct: 2,
+    explanation: "## Efficiency\nSmart trash cans are used in cities. Instead of a truck driving to every bin (even empty ones), the **Smart Bin** sends a text to the truck when it's $90\%$ full. This saves fuel and keeps the city cleaner."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Black Boxes\nWhat is the job of a **“black box”** (event data recorder) in a vehicle?",
+    options: [
+      "Play music",
+      "Navigate",
+      "Charge battery",
+      "To collect data about speed and braking for safety analysis"
+    ],
+    correct: 3,
+    explanation: "## Accident Analysis\nA **Black Box** is an IoT device that constantly records your driving. If you have a crash, the box 'freezes' the last 30 seconds of data so investigators can see exactly how fast you were going and if you hit the brakes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the best **default setting** for an IoT device regarding privacy?",
+    options: [
+      "The device should prevent sharing data until the user gives consent",
+      "Always share by default",
+      "Irrelevant",
+      "Settings can't be changed"
+    ],
+    correct: 0,
+    explanation: "## Privacy by Design\nTo protect your life, a smart device should be 'Closed' by default. It should only start sending your information to the cloud after you **give it permission** in the settings."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Cloud Sync\nWhich cloud service keeps your files the same across **all** your devices?",
+    options: ["Printing", "File Synchronization", "Keyboard service", "Monitor service"],
+    correct: 1,
+    explanation: "## Auto-Update\n**Synchronization** is why you can take a photo on your phone and see it on your laptop 5 seconds later. The cloud 'Syncs' the two folders so they always contain the exact same files."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Why is the **amount of free storage** an important factor when choosing a cloud provider?",
+    options: [
+      "Only factor",
+      "Irrelevant",
+      "It is a practical criterion to consider for cost-savings",
+      "Free storage doesn't exist"
+    ],
+    correct: 2,
+    explanation: "## Value for Money\nMost people don't want to pay a monthly fee. If Google gives you $15\text{ GB}$ for free and Apple only gives you $5\text{ GB}$, that's a big deal. Always look at the **Free Tier** before you commit to a service."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Password Security\nWhich of the following is a **dangerous** practice for cloud storage?",
+    options: [
+      "Read user agreement",
+      "Set privacy settings",
+      "Use 2FA",
+      "Store your passwords in an unencrypted file on the same cloud account"
+    ],
+    correct: 3,
+    explanation: "## The Key in the Lock\nIf you save a file called 'MyPasswords.txt' in your cloud, you have handed a thief the keys to your entire life. If they hack your cloud, they now have your bank password, your email password, and everything else."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "How does **RAM capacity** affect your computer's speed?",
+    options: [
+      "Generally, more RAM allows the PC to handle more tasks smoothly and quickly",
+      "No effect",
+      "Only storage affects speed",
+      "Only the CPU affects speed"
+    ],
+    correct: 0,
+    explanation: "## Breathing Room\nRAM doesn't make the CPU 'calculate' faster, but it gives the CPU more **Space** to work. If you have a lot of RAM, the CPU doesn't have to keep stopping to 'clean up' or move files, making the whole PC feel snappy."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Multi-Tasking\nWhat does having **more RAM** allow you to do that less RAM would prevent?",
+    options: [
+      "Turn on faster",
+      "Run multiple large programs simultaneously without lag",
+      "Store files forever",
+      "Connect to Wi-Fi"
+    ],
+    correct: 1,
+    explanation: "## Multitasking\nIf you only have $2\text{ GB}$ of RAM, you can only open one app. If you have $16\text{ GB}$, you can have a video game, a web browser, and a music player all open **at the same time** without the computer getting 'stuck.'"
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the purpose of a **wireless chip** in a smart medicine bottle?",
+    options: [
+      "Measure temp",
+      "Location tracking",
+      "To send reminders to your phone to take your medication",
+      "Auto-ordering"
+    ],
+    correct: 2,
+    explanation: "## Health Alerts\nA 'Smart' pill bottle can detect when it's being opened. If you forget to take your medicine at $9\text{:00 AM}$, the bottle's **IoT chip** sends an alert to your phone to remind you. It's a life-saving application of IoT."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Beacons in Retail\nWhat is a common use for **Bluetooth Beacons** in a shopping mall?",
+    options: [
+      "Scan codes",
+      "Free Wi-Fi",
+      "Track inventory",
+      "To send personalized coupons to customers when they walk near a specific store"
+    ],
+    correct: 3,
+    explanation: "## Proximity Deals\nA **Beacon** 'talks' to your phone as you walk past. If you are standing in the shoe department, the beacon tells your phone to show you a shoe discount. It's a way to target you with ads at the exact moment you are ready to buy."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "Which device can be **controlled remotely** using a smartphone app?",
+    options: [
+      "A smart thermostat",
+      "Traditional mercury thermostat",
+      "Manual switch",
+      "Mechanical timer"
+    ],
+    correct: 0,
+    explanation: "## Remote Management\nA 'Smart' device has an IP address. This means you can be in a different city and still use your phone to **Turn off the lights** or adjust the heater at your house via the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Data Responsibility\nWho is **responsible** for ensuring that your private health data in the cloud is kept secure?",
+    options: ["User only", "The companies managing the storage and devices", "Government", "No one"],
+    correct: 1,
+    explanation: "## Data Custodians\nWhile you should be careful, the **Technology Companies** (the custodians) have the legal and technical duty to protect your data. They must use firewalls and encryption to keep hackers away from your medical records."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is the **expert conclusion** regarding IoT technology today?",
+    options: [
+      "Too risky",
+      "No benefits",
+      "The health, safety, and efficiency benefits generally outweigh the privacy risks",
+      "Neutral"
+    ],
+    correct: 2,
+    explanation: "## Progress over Fear\nTechnology is never perfectly safe. But because IoT can help doctors save lives and cities save energy, most experts believe we should **Embrace the technology** while working hard to make it more secure."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# RAM Speed\nWhy is **RAM** so much faster than a Hard Drive?",
+    options: [
+      "Magnetic bits",
+      "Moving parts",
+      "Nonvolatile",
+      "It is electronic and directly connected to the CPU with high-speed wires"
+    ],
+    correct: 3,
+    explanation: "## Electronic Speed\nRAM is 'Solid State' (no moving parts) and it has a 'Direct Highway' to the processor. Hard drives have to send data through much longer, slower cables and wait for mechanical parts to move, which makes them the 'slowest' part of your PC."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a major **benefit of NAS** for a small office?",
+    options: [
+      "Quickly add shared storage to the network by just plugging in the box",
+      "High cost",
+      "Needs monitor",
+      "No RAID"
+    ],
+    correct: 0,
+    explanation: "## Scalability\nA **NAS** is a 'Storage Appliance.' If your office runs out of space, you don't have to upgrade every individual PC. You just plug one NAS box into the Wi-Fi and suddenly everyone has $10\text{ extra Terabytes}$ of shared space."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Fiber Channel\nWhat type of cable is typically used for a **SAN** to ensure maximum speed?",
+    options: ["Copper", "Phone wire", "High‑speed fibre‑optic cable", "USB"],
+    correct: 2,
+    explanation: "## Light Speed\n**Fibre-optic** cables use light instead of electricity to move data. Because SANs handle massive amounts of data for thousands of users, they need the 'Ultra-Bandwidth' of fiber optics to avoid becoming a bottleneck."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "How far can a **SAN** reach?",
+    options: ["Same room", "Same building", "100 meters", "Miles away using high-speed network links"],
+    correct: 3,
+    explanation: "## Long Distance\nA Storage Area Network isn't limited by your building. Using high-speed links, a company can have their servers in the city and their actual data storage **Miles away** in a secure, cooled data center, and the two will work together as if they were in the same room."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Disk Mechanics\nWhat is the purpose of the **Head Actuator** in a hard disk?",
+    options: [
+      "Spin platters",
+      "Read data",
+      "Write data",
+      "To position the read/write heads precisely over the correct track"
+    ],
+    correct: 3,
+    explanation: "## The Navigator\nThe **Actuator** is the high-precision motor that moves the 'Arm.' It must be incredibly accurate—it moves the head to a specific circle on the disc that is thinner than a human hair to find your data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is **“redundancy”** in professional storage?",
+    options: [
+      "Having extra parts so that if one fails, the system keeps running",
+      "One drive only",
+      "Deleting data",
+      "Using slow parts"
+    ],
+    correct: 0,
+    explanation: "## No Failure\nIn a professional setting, 'Redundancy' means having a **Backup for everything**. Redundant power, redundant wires, and redundant disks (RAID) mean the system stays online even if several parts break at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Enterprise Grade\nWhat is **enterprise hardware** specifically designed for?",
+    options: [
+      "Home use",
+      "Heavy use, 24/7 reliability, and maximum efficiency",
+      "Low cost",
+      "Single user"
+    ],
+    correct: 1,
+    explanation: "## Industrial Strength\nA home computer is turned off at night. **Enterprise Hardware** (like the servers for a bank) is built to run at $100\%$ speed for **Years** without ever being turned off. It is much stronger and more expensive than consumer hardware."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "What is a simple way to improve a **Wi‑Fi signal**?",
+    options: ["Metal cabinet", "Basement corner", "Extend antennas or use a signal booster", "Turn off"],
+    correct: 2,
+    explanation: "## Better Reach\nWi-Fi is a radio signal. If it's weak, you can **Extend the Antennas** to reach further. If that isn't enough, you can add a **Signal Booster** (Repeater) halfway between the router and your room to 'relay' the signal."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Computer Storage",
+    q: "# Stealth Mode\nWhat is **“stealth mode”** on a router?",
+    options: [
+      "Higher speed",
+      "Change password",
+      "Block traffic",
+      "Hiding the network name (SSID) from public scanners"
+    ],
+    correct: 3,
+    explanation: "## Invisible Network\nBy default, your router 'shouts' its name so you can find it. **Stealth Mode** tells the router to stay quiet. It doesn't show up on your phone's Wi-Fi list; you have to type the name manually to join, making it much harder for hackers to find."
+  },
+
+// ==========================================
+// UNIT 6: NETWORKS AND DEVICES (124 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Network Basics\nWhat is a **network**?",
+    options: [
+      "A system of two or more devices linked by wires or wireless systems",
+      "A single computer",
+      "File software",
+      "A printer"
+    ],
+    correct: 0,
+    explanation: "## The Connection\nA network is simply two or more devices 'talking' to each other. Whether they are joined by a physical cable or invisible Wi-Fi waves, the goal is to share information and work together."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the **main benefit** of a computer network?",
+    options: [
+      "Printing only",
+      "Sharing resources like hardware, software, and data",
+      "Faster CPU",
+      "No OS needed"
+    ],
+    correct: 1,
+    explanation: "## Resource Sharing\nWithout a network, every computer would need its own printer and a copy of every file. With a **Network**, ten people can share one expensive printer and access a single database, which saves a lot of money and time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Network Essentials\nWhat is required for a network to function?",
+    options: ["Only hardware", "Only software", "A combination of hardware and software", "Only a modem"],
+    correct: 2,
+    explanation: "## The Duo\nYou need **Hardware** (cables, routers, network cards) to physically move the signals, and you need **Software** (protocols and operating systems) to tell the hardware how to pack and address the data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **digital communications**?",
+    options: [
+      "Paper mail",
+      "Landline call",
+      "Handwritten letter",
+      "The process where devices transfer data, instructions, and information"
+    ],
+    correct: 3,
+    explanation: "## Electronic Exchange\nAny time you send an email, a WhatsApp message, or a file to a printer, you are performing **Digital Communications**. It is the technology that allows the transfer of digital information between two points."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Communications Devices\nWhich of the following is an example of a **communications device**?",
+    options: ["Modem", "Keyboard", "Monitor", "Mouse"],
+    correct: 0,
+    explanation: "## The Gateway\nA **Modem** is the device that connects your home network to the outside world. While keyboards and mice are 'Input' devices for humans, the modem is a 'Communication' device that speaks the language of the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "In a network, what is the role of the **sending device**?",
+    options: [
+      "Accepts data",
+      "Initiates an instruction to transmit data",
+      "The cable",
+      "The amplifier"
+    ],
+    correct: 1,
+    explanation: "## The Source\nThe **Sending Device** is the one that starts the conversation. For example, if you click 'Send' on an email, your computer is the sending device that initiates the whole transmission process."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Transmission Media\nWhat is a **transmission medium** (or communications channel)?",
+    options: [
+      "The sender",
+      "The receiver",
+      "The physical or wireless path that data travels along",
+      "The software"
+    ],
+    correct: 2,
+    explanation: "## The Path\nThink of the transmission medium as the 'Road' that the data drives on. This can be a **Physical** road (like a fiber-optic cable) or a **Wireless** road (like radio waves in the air)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does the **receiving device** do in a network?",
+    options: [
+      "Starts transmission",
+      "The cable",
+      "Converter",
+      "Accepts the transmission of data and information"
+    ],
+    correct: 3,
+    explanation: "## The Destination\nThe **Receiving Device** is the 'End Point.' It catches the data coming from the medium and processes it so the user can see it. If you get a text, your phone is the receiving device."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Home vs Business\nWhat is a major difference between **Home** and **Business** networks?",
+    options: [
+      "Home networks are small and easy to install; Business networks are large and complex",
+      "Home is more expensive",
+      "Business is only wired",
+      "No difference"
+    ],
+    correct: 0,
+    explanation: "## Scale and Complexity\nA **Home Network** is built for a few people and is usually 'set up and forget.' A **Business Network** must handle hundreds of users, secure thousands of files, and might connect different offices in different countries."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Which of the following is a key feature of a **home network**?",
+    options: [
+      "One printer per PC",
+      "Multiple users sharing a single Internet connection",
+      "No file sharing",
+      "No gaming"
+    ],
+    correct: 1,
+    explanation: "## Connection Sharing\nThe most important job of a home network is **sharing the Wi-Fi**. You only pay for one internet bill, but every phone, tablet, and laptop in the house can use it at the same time through the network."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Business Networks\nWhat is a primary advantage of a **business network**?",
+    options: [
+      "No communication",
+      "Individual scanners",
+      "Centralized storage and backup of critical information",
+      "Data hiding"
+    ],
+    correct: 2,
+    explanation: "## Central Control\nIn a company, you don't want everyone saving files on their own laptops (what if they quit or lose the laptop?). A business network allows all files to be saved to a **Central Server**, which is backed up every night for safety."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is an **intranet**?",
+    options: [
+      "Public network",
+      "Cross-company network",
+      "Wireless only",
+      "An internal, private network that uses internet technologies"
+    ],
+    correct: 3,
+    explanation: "## Inside Only\nAn **Intranet** looks and works like a website, but it is **Private**. Only employees of that company can see it. It's used to share internal news, employee forms, and training materials securely."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Extranets\nWhat is an **extranet**?",
+    options: [
+      "A network that allows customers or suppliers to access part of an intranet",
+      "Employees only",
+      "Fibre only",
+      "No security"
+    ],
+    correct: 0,
+    explanation: "## Selective Access\nAn **Extranet** is like a 'VIP Door' to the company's network. It allows trusted outside partners (like a supplier or a big customer) to log in and see specific data, like inventory levels or order status."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **VPN** (Virtual Private Network)?",
+    options: [
+      "Public network",
+      "Slow down",
+      "Router replacement",
+      "A secure 'tunnel' for accessing a private network over the public internet"
+    ],
+    correct: 3,
+    explanation: "## Secure Remote Work\nIf you are working from a coffee shop but need to see your office files, you use a **VPN**. It creates an encrypted, private 'tunnel' through the public internet so that no one can see your data as it travels to the office."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Wired vs Wireless\nHow do **wired** networks compare to wireless ones?",
+    options: [
+      "Wired are slower",
+      "Wired are less secure",
+      "Wired are generally more secure and transmit data faster",
+      "Wired are more secure but slower"
+    ],
+    correct: 2,
+    explanation: "## Physical Speed\nA physical cable (Ethernet) has much higher bandwidth and almost zero interference. Because a hacker has to physically 'plug in' to see your data, a **Wired Network** is almost always faster and more secure than Wi-Fi."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **cellular network**?",
+    options: [
+      "Cables only",
+      "Printers only",
+      "One room only",
+      "A network where the connection to the end device is wireless (3G/4G/5G)"
+    ],
+    correct: 3,
+    explanation: "## Mobile Signal\n**Cellular networks** use a grid of radio towers (cells). As you move, your phone 'hands off' the connection from one tower to the next, allowing you to have high-speed internet even while driving across the country."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Cellular Standards\nWhich of the following is a type of **cellular network** standard?",
+    options: ["Ethernet", "Token ring", "Wi‑Fi", "5G"],
+    correct: 3,
+    explanation: "## The New Standard\n**5G** is the 5th Generation of cellular technology. It provides incredibly high speeds and low latency, allowing you to download a whole movie to your phone in just a few seconds."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the job of **communications software**?",
+    options: [
+      "Print only",
+      "Edit photos",
+      "Play games",
+      "To help devices establish a connection and manage the transfer of data"
+    ],
+    correct: 3,
+    explanation: "## The Connection Manager\nHardware can't talk on its own. **Communications Software** (like your browser or a network driver) handles the 'Handshake' between two computers and makes sure the data arrives in the right order without errors."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Network Topology\nWhat does **“topology”** mean in networking?",
+    options: [
+      "Server roles",
+      "Geographic span",
+      "Speed",
+      "The physical arrangement of computers and devices on a network"
+    ],
+    correct: 3,
+    explanation: "## The Network Shape\nTopology is the 'Map' of the network. It describes how the wires are actually connected—whether the computers are in a circle (**Ring**), a line (**Bus**), or all connected to one center point (**Star**)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **“network architecture”** refer to?",
+    options: [
+      "Cables",
+      "Reach",
+      "Brands",
+      "The logical design and roles of devices (e.g. Client/Server)"
+    ],
+    correct: 3,
+    explanation: "## Roles and Rules\nWhile topology is about the wires, **Architecture** is about the 'Relationships.' It defines whether one computer is the 'Boss' (**Server**) or if all computers are equal (**Peer-to-Peer**)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Ring Topology\nIn a **ring topology**, what happens if one single computer fails?",
+    options: [
+      "Normal work",
+      "Only that one stops",
+      "Faster speed",
+      "All communication on the network could stop entirely"
+    ],
+    correct: 3,
+    explanation: "## The Break in the Chain\nIn a Ring, data travels in a circle from one PC to the next. If one PC dies, the circle is broken. The data has no way to jump over the dead computer to reach the others, so the **whole network crashes**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "In a **star topology**, what happens if a regular PC (not the hub) fails?",
+    options: [
+      "Total failure",
+      "Central failure",
+      "Network becomes a ring",
+      "Only that device loses connection; the rest keep working"
+    ],
+    correct: 3,
+    explanation: "## Isolated Failure\nThis is why **Star** is the best topology. Every PC has its own private wire to the center switch. If your PC breaks, it doesn't affect anyone else because their 'lanes' to the switch are still open."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Star Failure\nWhat happens in a star topology if the **central device** (switch) fails?",
+    options: [
+      "One PC dies",
+      "Faster speed",
+      "Mesh forms",
+      "The entire network goes down"
+    ],
+    correct: 3,
+    explanation: "## Single Point of Failure\nThe center switch is the 'Heart' of a star network. If the heart stops, data can't move between any of the computers. This is the only major risk of using a Star topology."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **tree topology**?",
+    options: [
+      "Single ring",
+      "Single bus",
+      "No center",
+      "Two or more star networks connected by a central 'backbone' cable"
+    ],
+    correct: 3,
+    explanation: "## Network of Networks\nA **Tree** topology is how big schools or offices are set up. Each room has a 'Star' network, and then all those rooms are plugged into one main 'Backbone' cable that runs through the whole building."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Clients\nIn a client/server network, what is a **client**?",
+    options: [
+      "The resource provider",
+      "The Admin",
+      "The router",
+      "A device on the network that requests resources from a server"
+    ],
+    correct: 3,
+    explanation: "## The Customer\nYou are usually the **Client**. When your phone 'asks' for a website, or your laptop 'asks' to print a file, it is acting as a client that depends on a more powerful server to fulfill those requests."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Who **controls** the security and permissions on a client/server network?",
+    options: ["Users", "No one", "Government", "A network administrator"],
+    correct: 3,
+    explanation: "## Central Authority\nA client/server network is not a democracy. The **Network Administrator** has full control. They decide who is allowed to log in, which files you can see, and what time the internet gets turned off."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# P2P\nWhat is a **peer‑to‑peer (P2P)** network?",
+    options: [
+      "Central server network",
+      "Two computers only",
+      "Requires Admin",
+      "A network where all computers share resources equally with no central boss"
+    ],
+    correct: 3,
+    explanation: "## Group of Equals\nIn a **P2P** network, there is no master server. Your computer can share its printer with my computer, and I can share my files with yours. It's great for small homes but hard to manage for big businesses."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Is it **legal** to share movies or music on a P2P internet network (like BitTorrent)?",
+    options: ["Yes", "With one person", "If you pay a fee", "No, it is illegal to share copyright‑protected files"],
+    correct: 3,
+    explanation: "## Copyright Law\nWhile the P2P *technology* is legal, using it to send a movie you didn't pay for to 1,000 other people is **Illegal**. This is called digital piracy and can lead to massive fines or legal trouble."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# LAN\nWhat does **LAN** stand for?",
+    options: ["Large Area", "Long Area", "Logical Area", "Local Area Network"],
+    correct: 3,
+    explanation: "## Nearby Connection\nA **LAN** is a network that covers a small, 'local' area. Your home Wi-Fi or the computers inside one single school building are all part of a LAN. If you can see the other computer, it's probably on your LAN."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **Wireless LAN** (WLAN)?",
+    options: ["Ethernet only", "Across a city", "Fibre optics", "A local network that uses Wi‑Fi instead of cables"],
+    correct: 3,
+    explanation: "## No Wires\n**WLAN** is simply a LAN that uses radio waves. This is what you have at home. Your devices connect to the 'Wireless Access Point' (the router) without needing to plug in a blue Ethernet cable."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# WAN\nWhat is a **Wide Area Network (WAN)**?",
+    options: [
+      "Single room",
+      "Bluetooth only",
+      "No routers",
+      "A network that connects devices across cities, countries, or the world"
+    ],
+    correct: 3,
+    explanation: "## Global Reach\nA **WAN** is massive. It connects smaller LANs together over huge distances. The biggest and most famous WAN in the world is the **Internet** itself."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **Metropolitan Area Network (MAN)**?",
+    options: ["Single building", "Single room", "Mobile only", "A network that covers a whole city or a large campus"],
+    correct: 3,
+    explanation: "## City Network\nA **MAN** is bigger than a building (LAN) but smaller than a country (WAN). It usually connects all the government offices or schools in one specific city using high-speed fiber cables."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# PAN\nWhat is a **Personal Area Network (PAN)**?",
+    options: [
+      "Country-wide",
+      "Cables only",
+      "Requires server",
+      "A network that connects your personal devices (Phone, Watch, Headphones)"
+    ],
+    correct: 3,
+    explanation: "## Around You\nA **PAN** is the tiny network that travels with you. If your smartphone is talking to your smartwatch via Bluetooth, you have created a PAN that only reaches about $10\text{ meters}$ around your body."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **Body Area Network (BAN)**?",
+    options: [
+      "Body-worn cameras",
+      "Gym equipment",
+      "Hospital only",
+      "A network of tiny medical sensors worn on or implanted in the body"
+    ],
+    correct: 3,
+    explanation: "## Medical Tech\n**BAN** is for healthcare. It involves tiny sensors (like a heart monitor or an insulin pump) that 'talk' to each other while attached to your body. This data is then sent to your phone or doctor for real-time health tracking."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Network Standards\nWhat is a **network standard**?",
+    options: [
+      "Cable type",
+      "Management software",
+      "Router brand",
+      "Guidelines that ensure different devices can work together on a network"
+    ],
+    correct: 3,
+    explanation: "## Interoperability\nStandards are like 'Agreement Rules.' Because of standards, a Samsung phone can talk to an Apple laptop on a Cisco router. Without these rules, companies would build devices that only talk to their own brands."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **protocol**?",
+    options: [
+      "Physical cable",
+      "Topology type",
+      "Network OS",
+      "A standard set of rules for how data is formatted and transmitted"
+    ],
+    correct: 3,
+    explanation: "## The Language\nA protocol is like a 'Language.' If two computers agree to use the **TCP/IP** protocol, they are agreeing to follow the same rules for packing, addressing, and sending data so they can understand each other."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Ethernet\nWhat is the most common standard for **wired** networks?",
+    options: ["Wi‑Fi", "Bluetooth", "Token ring", "Ethernet"],
+    correct: 3,
+    explanation: "## The Blue Cable\n**Ethernet** is the absolute king of wired networking. If you see a computer plugged into a wall using a 'thick' cable with a clip, it is almost certainly using the Ethernet (IEEE 802.3) standard."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **EDI** (Electronic Data Interchange) define?",
+    options: [
+      "Wi-Fi connection",
+      "Email encryption",
+      "Home networking",
+      "How business documents (invoices, orders) are exchanged digitally"
+    ],
+    correct: 3,
+    explanation: "## B2B Communication\n**EDI** is how companies talk to each other without paper. Instead of mailing a paper invoice, a company's computer sends a digital EDI file directly to the other company's computer. It's fast and error-free."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# TCP/IP\nWhat is the **foundation protocol** of the entire Internet?",
+    options: [
+      "Transfer Control",
+      "Transmit Common",
+      "Internal Protocol",
+      "TCP/IP (Transmission Control Protocol/Internet Protocol)"
+    ],
+    correct: 3,
+    explanation: "## The Internet Standard\n**TCP/IP** is the set of rules that makes the web work. **TCP** makes sure the data arrives correctly and in order, and **IP** makes sure it gets to the right address. Every device on the web uses this."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the specific job of the **IP** (Internet Protocol) part of TCP/IP?",
+    options: [
+      "Error-free delivery",
+      "Encryption",
+      "Wireless management",
+      "To ensure every device on a network has a unique identifying address"
+    ],
+    correct: 3,
+    explanation: "## The Address Book\nThink of **IP** like a postal service. Its only job is to make sure every device has a 'house number' (**IP Address**) so the data knows exactly which computer to go to among billions."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# IP Versions\nWhat are the **two versions** of IP addresses used today?",
+    options: ["IPX and SPX", "HTTP and HTTPS", "TCP and UDP", "IPv4 and IPv6"],
+    correct: 3,
+    explanation: "## The Number Shortage\n**IPv4** is the old version (looks like 192.168.1.1). We ran out of these addresses, so we created **IPv6** (much longer), which has enough unique addresses to give one to every grain of sand on earth."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does the term **“Wi‑Fi”** identify?",
+    options: ["Cellular", "Wired", "Bluetooth", "Any network based on the 802.11 standards"],
+    correct: 3,
+    explanation: "## Wireless Rules\n**Wi-Fi** is the commercial name for the **IEEE 802.11** rules. Whenever you see a 'Wi-Fi Certified' sticker, it means that device follows those exact rules and will work with any other Wi-Fi device."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# IEEE\nWhich organization developed the **802.11** Wi‑Fi standards?",
+    options: ["ISO", "ANSI", "IETF", "IEEE"],
+    correct: 3,
+    explanation: "## The Engineers\n**IEEE** (Institute of Electrical and Electronics Engineers) is the group of scientists and engineers who invent the rules for how electricity and data should move. They are the 'referees' of the tech world."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the maximum data rate of the new **802.11ax** (Wi-Fi 6) standard?",
+    options: ["11 Mbps", "54 Mbps", "100 Mbps", "Up to 7 Gbps"],
+    correct: 3,
+    explanation: "## Ultra Speed\n**802.11ax** is incredibly fast. While older Wi-Fi was like a small pipe, Wi-Fi 6 is like a massive industrial pipe that can move **7 Billion bits** of data every single second."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Backward Compatibility\nWhat does it mean if a router is labeled **“802.11 ac/b/g/n”**?",
+    options: [
+      "Only one standard",
+      "Not compatible with old",
+      "Cellular only",
+      "It supports multiple old and new Wi-Fi standards"
+    ],
+    correct: 3,
+    explanation: "## The Full Range\nThis is called **Backward Compatibility**. It means the new router is 'smart' enough to speak the language of a laptop from 2005 (802.11b) AND a brand new phone from today (802.11ac) at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the maximum data rate of **Bluetooth**?",
+    options: ["1 Gbps", "100 Mbps", "10 Mbps", "Up to 3 Mbps"],
+    correct: 3,
+    explanation: "## Small and Slow\nBluetooth wasn't built for speed; it was built to save **Battery**. Because it only moves about **3 Megabits** per second, it is perfect for music or a mouse, but it is too slow to use for high-speed internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Bluetooth Pairing\nWhat does it mean for two Bluetooth devices to be **“paired”**?",
+    options: [
+      "Physically connected",
+      "Turned off",
+      "Sharing power",
+      "They have exchanged a code and established a trusted connection"
+    ],
+    correct: 3,
+    explanation: "## Handshake\nPairing is a **Security** step. You enter a PIN or click 'Accept' so the two devices 'recognize' each other. This prevents a stranger from connecting to your headphones and listening to your music."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **UWB** (Ultra‑Wideband) best used for?",
+    options: [
+      "Short texts",
+      "Voice calls",
+      "Mice",
+      "Transmitting large files like Video and Graphics at short range"
+    ],
+    correct: 3,
+    explanation: "## Short Range Power\n**UWB** is like Bluetooth on steroids. It only works across a room, but it is fast enough to stream high-definition video from your phone to your TV with zero lag."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Infrared\nWhat is a major limitation of **IrDA** (Infrared)?",
+    options: [
+      "Too fast",
+      "Works through walls",
+      "Long range",
+      "It requires a direct 'Line-of-Sight' (like a TV remote)"
+    ],
+    correct: 3,
+    explanation: "## Blocked by Walls\nInfrared uses light waves. Just like you can't see through a wall, **Infrared** can't travel through one. You must point the device directly at the receiver with nothing in the way, which is why we only use it for remotes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What are the **two main components** of an RFID tag?",
+    options: [
+      "Battery and speaker",
+      "Screen and processor",
+      "USB and light",
+      "An antenna and a memory chip"
+    ],
+    correct: 3,
+    explanation: "## Passive ID\n1. **Antenna:** to catch radio waves. \n2. **Memory Chip:** to store the ID code. \nThis is how a shop security tag works—it doesn't need a battery, it just 'reflects' a signal back to the door sensor."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# RFID Readers\nWhat is an **RFID reader** technically called?",
+    options: ["Transponder", "Modem", "Router", "Transceiver"],
+    correct: 3,
+    explanation: "## Sender and Receiver\nAn RFID reader is a **Transceiver** (Transmitter + Receiver). It 'Transmits' a radio signal to wake up the tag, and then 'Receives' the ID code that the tag sends back."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What technology is **NFC** (Near Field Communication) based on?",
+    options: ["Bluetooth", "Wi-Fi", "IrDA", "RFID"],
+    correct: 3,
+    explanation: "## Short-Range Cousin\n**NFC** is a specialized version of RFID. It was designed to be used at extremely short distances ($4\text{ inches}$ or less) to make it safe for tapping your phone at a credit card machine."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# NFC Tags\nWhat is an **NFC tag**?",
+    options: [
+      "Hard drive",
+      "Router",
+      "Printer",
+      "A tiny chip in a sticker or card that stores small bits of data"
+    ],
+    correct: 3,
+    explanation: "## Programmable Stickers\nAn **NFC Tag** is a 'Passive' chip. You can stick one on your desk and program it so that when you 'Tap' your phone on the sticker, your phone automatically turns on Wi-Fi or opens your calendar app."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Which protocol is used for **contactless payments** (tapping your phone to pay)?",
+    options: ["IrDA", "UWB", "Token ring", "NFC"],
+    correct: 3,
+    explanation: "## Tap to Pay\nBecause **NFC** only works when the devices are touching or almost touching, it is perfect for money. It ensures that you only pay when you *intend* to pay, not just by standing near a register."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Bluetooth Range\nWhat is the **typical range** of a standard Bluetooth connection?",
+    options: [
+      "100 meters",
+      "1 kilometer",
+      "Across a city",
+      "Usually less than 30 feet (9 meters)"
+    ],
+    correct: 3,
+    explanation: "## Personal Space\nBluetooth is designed to be a 'Personal' network. It uses very low power so it doesn't drain your battery, which means the signal is weak and only reaches about **10 meters** before it cuts out."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **LTE** stand for in cellular technology?",
+    options: [
+      "Local Telephone",
+      "Low Transfer",
+      "Log Term",
+      "Long Term Evolution"
+    ],
+    correct: 3,
+    explanation: "## The Road to 5G\n**LTE** is the 'official' name for high-speed 4G data. It was designed as an 'Evolution' of the old 3G system, providing the speed we need to watch HD YouTube videos on our phones while on the bus."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Remotes\nWhich protocol is most commonly used for **TV remote controls**?",
+    options: ["Wi‑Fi", "LTE", "NFC", "IrDA (Infrared)"],
+    correct: 3,
+    explanation: "## Light Pulses\nYour TV remote has a tiny **Infrared (IrDA)** light bulb at the front. When you press a button, it flashes a 'Secret Code' of light to the TV. This is why the remote doesn't work if someone is standing in front of the TV."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **hub** in a network?",
+    options: [
+      "Bridge",
+      "Wireless only",
+      "Storage",
+      "A device that broadcasts data to every single connected device"
+    ],
+    correct: 3,
+    explanation: "## The Broadcaster\nA hub is a 'simple' device. It doesn't know which PC is which. If data comes in for PC #1, the hub 'shouts' it out to **every PC** on the network. This makes it slow and inefficient compared to a switch."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Switch vs Hub\nHow is a **switch** smarter than a hub?",
+    options: [
+      "Hub is targeted",
+      "Switch is slower",
+      "Switch needs more cables",
+      "A switch learns which device is on which port and only sends data to the intended recipient"
+    ],
+    correct: 3,
+    explanation: "## Private Messaging\nA **Switch** is intelligent. It keeps a map of the network. If you send a file to the printer, the switch only sends that electrical signal to the printer's wire, leaving the other wires 'quiet' for other work."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the primary job of a **router**?",
+    options: [
+      "Center point",
+      "Analog converter",
+      "Signal booster",
+      "To connect different networks together and direct the flow of data"
+    ],
+    correct: 3,
+    explanation: "## The Traffic Cop\nA **Router** is like a bridge between two worlds. It connects your 'Home LAN' to the 'Global WAN' (the internet). It looks at every packet of data and 'routes' it to the correct destination."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Modems\nWhat does a **modem** actually do?",
+    options: [
+      "Routes traffic",
+      "Wireless access",
+      "Switching",
+      "Connects your computer to a communication channel (like a phone line or cable)"
+    ],
+    correct: 3,
+    explanation: "## Signal Translation\nYour computer speaks 'Digital' (zeros and ones). But phone lines and cable lines often carry 'Analog' signals. The **Modem** translates the outside signal into digital data your router can understand."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **digital modem** (like Cable or DSL) often called?",
+    options: ["Dial‑up", "Analog", "Ethernet", "Broadband modem"],
+    correct: 3,
+    explanation: "## High Speed\nBecause digital modems can carry a massive amount of data compared to old dial-up modems, we call them **Broadband**. This is the technology that makes 'always-on' high-speed internet possible."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Cable Modems\nWhich digital modem connects to the **same wire as your television**?",
+    options: ["DSL", "ISDN", "Dial‑up", "Cable modem"],
+    correct: 3,
+    explanation: "## Coaxial Internet\n**Cable modems** use the same thick 'Coax' wire that brings TV shows into your house. It is one of the fastest and most reliable ways to get internet at home today."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Which digital modem uses the **standard copper telephone wires** in your house?",
+    options: ["Cable", "Fibre", "Satellite", "DSL modem"],
+    correct: 3,
+    explanation: "## Internet on the Phone\n**DSL** (Digital Subscriber Line) is a clever technology. It uses high-frequency signals to send data over your phone line without interfering with your voice calls. You can use the web and talk on the phone at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Dedicated Lines\nWhat is a **dedicated line** in business networking?",
+    options: [
+      "Business hours only",
+      "Shared line",
+      "Dial‑up",
+      "An always-on, private physical connection between two points"
+    ],
+    correct: 3,
+    explanation: "## Always Connected\nBanks and big offices don't 'Dial In' to the internet. They pay for a **Dedicated Line**—a private wire that is 'always ON' and only used by them. It is very fast, very reliable, and very expensive."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **multiplexing**?",
+    options: [
+      "Encryption",
+      "Topology",
+      "Wi-Fi range",
+      "A process that allows multiple signals to share a single transmission line"
+    ],
+    correct: 3,
+    explanation: "## Sharing the Road\nImagine a highway where $20$ cars (signals) are all 'squeezed' into one lane. **Multiplexing** allows a single fiber-optic cable to carry thousands of phone calls and internet sessions all at the same time."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# FTTP\nWhat does **FTTP** stand for in fiber technology?",
+    options: ["Fast Transfer", "Frequency Time", "File Transfer", "Fiber to the Premises"],
+    correct: 3,
+    explanation: "## Maximum Speed\n**FTTP** is the holy grail of internet. It means the ultra-fast fiber-optic cable comes **Directly to your door** (your premises), rather than stopping at a green box on the street. It provides the fastest possible speed."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **T1 line**?",
+    options: [
+      "Low speed",
+      "Wireless",
+      "Cable modem",
+      "A standard digital line used by businesses to carry data at 1.5 Mbps"
+    ],
+    correct: 3,
+    explanation: "## Business Backbone\nA **T1 line** is a famous type of dedicated line. In the past, it was the gold standard for office internet. It carries data over $24$ separate channels, allowing for $24$ phone calls or a steady internet connection."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# T3 Lines\nWhich organization would typically pay for a **T3 line**?",
+    options: [
+      "Home user",
+      "Coffee shop",
+      "Smartphone user",
+      "Large corporations and ISPs connecting to the Internet Backbone"
+    ],
+    correct: 3,
+    explanation: "## Heavy Traffic\nA **T3 line** is equal to **28** T1 lines. It is incredibly powerful and expensive. Only companies with thousands of employees or Internet Service Providers themselves use T3 lines to move massive amounts of data."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the job of a **Wireless Access Point (WAP)**?",
+    options: [
+      "Analog converter",
+      "Route traffic",
+      "Store passwords",
+      "To allow wireless devices (like phones) to connect to a wired network"
+    ],
+    correct: 3,
+    explanation: "## The Wi-Fi Bridge\nA **WAP** is the device that creates the Wi-Fi signal. It 'plugs in' to the wired internet in your wall and 'broadcasts' it into the air so your phone can catch the signal without a cable."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Hardware Requirements\nWhat **hardware** is typically needed for a complete home wireless network?",
+    options: [
+      "Only a modem",
+      "Only a router",
+      "Only a switch",
+      "A modem, a router, and a wireless access point"
+    ],
+    correct: 3,
+    explanation: "## The Starter Pack\nYou need the **Modem** to get the internet from the wall, the **Router** to organize the data, and the **Access Point** to broadcast it. (In most homes today, all three of these are built into one single box)."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a major advantage of a **wireless printer**?",
+    options: [
+      "One user only",
+      "Needs cable",
+      "No mobile support",
+      "Any device on the Wi-Fi network can use the printer from anywhere"
+    ],
+    correct: 3,
+    explanation: "## Shared Access\nBecause the printer is 'on the network,' you don't have to plug it into your laptop. You can print from your phone in the kitchen or your PC in the bedroom using the **same printer** in the office."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Boosters\nWhat is a **wireless signal booster** (repeater) used for?",
+    options: [
+      "Increase speed",
+      "Encryption",
+      "Replace router",
+      "To extend the reach of your Wi-Fi into 'dead zones' in your house"
+    ],
+    correct: 3,
+    explanation: "## Covering Distance\nIf your Wi-Fi signal is too weak to reach the garage, you put a **Booster** halfway. It 'catches' the signal from the router and 'shouts' it further, so your devices can stay connected."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Where is the **best place** to put your wireless router?",
+    options: ["Basement corner", "Metal cabinet", "Behind appliance", "A central location in the house"],
+    correct: 3,
+    explanation: "## Clear Signal\nWi-Fi is a radio signal. It travels in circles. By putting the router in the **Center** of your home, the signal can reach every room easily without being blocked by too many thick walls."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Network Auditing\nWhat is the first step to check if a **neighbor is stealing** your Wi-Fi?",
+    options: [
+      "Change password",
+      "Turn off router",
+      "Call ISP",
+      "Log into the router settings and count the connected devices"
+    ],
+    correct: 3,
+    explanation: "## The Headcount\nEvery router has an 'Admin Page.' If you log in, you can see a list of every phone and laptop using your data. If you see 'Unknown Android' and you don't own one, someone is **stealing your internet**."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **“stealth mode”** on a router do?",
+    options: [
+      "Higher signal",
+      "Change password",
+      "Block traffic",
+      "Hides the network name (SSID) so strangers can't find it"
+    ],
+    correct: 3,
+    explanation: "## Going Invisible\nNormally, a router 'shouts' its name so you can find it. **Stealth Mode** tells it to stay quiet. Your Wi-Fi won't show up on a phone's 'Available Networks' list—you have to type the name manually to join."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Wi-Fi Safety\nWhat is the biggest **risk** of using a wireless network?",
+    options: [
+      "Slow speed",
+      "Can't be secured",
+      "No security needed",
+      "The signal travels through walls, making it easy to intercept or eavesdrop"
+    ],
+    correct: 3,
+    explanation: "## Open Signal\nBecause your Wi-Fi signal goes outside your house, a hacker sitting in a car on the street can 'listen' to your data. This is why you **must** use a strong password and encryption."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **SSID**?",
+    options: ["Encryption type", "Password", "Network cable", "The public name of your Wi-Fi network"],
+    correct: 3,
+    explanation: "## Network ID\nSSID is just the technical name for your **Wi‑Fi Name**. When you see 'Starbucks_Free' or 'Home_Wi-Fi' on your phone, you are looking at the SSID."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Security Upgrades\nWhat should you change **immediately** when you get a new router?",
+    options: [
+      "Power cord",
+      "Router location",
+      "Case color",
+      "The default password, the SSID, and enable encryption"
+    ],
+    correct: 3,
+    explanation: "## Lock the Door\nNew routers come with default passwords like 'admin' or '1234.' Hackers know these! You must change the name and password to something **Unique** to keep strangers out of your network."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **adware**?",
+    options: [
+      "Info tracker",
+      "Data damager",
+      "File locker",
+      "Software that shows unwanted pop-up advertisements"
+    ],
+    correct: 3,
+    explanation: "## Ad-Software\n**Adware** is designed to annoy you. It pops up windows and banners trying to sell you things. While it's usually not trying to steal your bank info, it can slow your computer down to a crawl."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Ransomware\nWhat is **ransomware**?",
+    options: [
+      "Ad-displayer",
+      "Browsing tracker",
+      "Spreading tool",
+      "Malware that locks your data and demands money to get it back"
+    ],
+    correct: 3,
+    explanation: "## Digital Hijacking\nThis is a nightmare. **Ransomware** 'encrypts' all your photos and schoolwork and says: 'Pay us $300 in Bitcoin or we delete everything.' It is one of the most dangerous crimes on the internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **rootkit**?",
+    options: [
+      "Email virus",
+      "Harmless tool",
+      "Firewall",
+      "Malware that gains master control of a PC while staying invisible to antivirus"
+    ],
+    correct: 3,
+    explanation: "## The Invisible Ghost\nA **Rootkit** is terrifying because it hides deep in the 'Root' of the operating system. It can watch everything you do, but most standard antivirus software can't even see that it exists."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Monitoring\nWhat does **network monitoring software** do?",
+    options: [
+      "Block all",
+      "Change password",
+      "Install viruses",
+      "Constantly checks network speed/status and sends alerts if there is a problem"
+    ],
+    correct: 3,
+    explanation: "## IT Guardian\nMonitoring software is like a 'Security Camera' for your data. It watches 24/7 to make sure the internet is fast. If a cable breaks or a server crashes, it **Alerts the Admin** so they can fix it immediately."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **packet sniffer** used for by a hacker?",
+    options: [
+      "Speed up",
+      "Block ads",
+      "Create VPN",
+      "To 'listen' to and record private data as it travels across the network"
+    ],
+    correct: 3,
+    explanation: "## Eavesdropping\nEverything you do on the web travels in tiny 'packets.' A **Sniffer** 'smells' those packets as they fly through the air. If you aren't on a secure network, a hacker can see your messages and passwords inside those packets."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Securing Wi-Fi\nWhat is the best way to stop **unauthorized users** from joining your Wi-Fi?",
+    options: [
+      "Disable firewall",
+      "Max power broadcast",
+      "No encryption",
+      "Enable the firewall and use 'Stealth Mode' (Hidden SSID)"
+    ],
+    correct: 3,
+    explanation: "## Hard Target\nUsing a **Firewall** stops bad data from entering, and **Stealth Mode** makes your Wi-Fi 'invisible' to people scanning the street. Together, they make your home network a very difficult target for hackers."
+  },
+{
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Professional Bodies\nWhat is **USENIX**?",
+    options: [
+      "A type of network cable",
+      "A nonprofit organisation founded to support network and system engineers",
+      "A network protocol",
+      "A brand of routers"
+    ],
+    correct: 1,
+    explanation: "## System Research\nUSENIX is one of the world's most respected associations for computer scientists and engineers. They share research, hold massive conferences, and act as a 'brain trust' that helps design the future of the internet and advanced computing systems."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is included in the **code of ethics** for network professionals?",
+    options: [
+      "Only technical skills",
+      "Only profit maximisation",
+      "Professionalism, personal integrity, and privacy responsibility",
+      "Only password management"
+    ],
+    correct: 2,
+    explanation: "## Professional Honor\nBecause network administrators have the power to see almost everything on their servers, they must follow a strict Code of Ethics. This means they promise to respect user privacy, uphold communication system integrity, and act with honesty at all times."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Technical Honesty\nWhat does **“personal integrity”** mean specifically for a network professional?",
+    options: [
+      "Being physically strong",
+      "Having a fast computer",
+      "Knowing many programming languages",
+      "Being honest and trustworthy, especially when having access to sensitive data"
+    ],
+    correct: 3,
+    explanation: "## The Trust Rule\nIn Computer Science, **Integrity** means you can be trusted with secrets. If you are an IT manager and you have access to everyone's private emails or files, integrity is the quality that ensures you will never look at them without a valid, legal reason."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Physical Layouts\nWhat is a **bus topology**?",
+    options: [
+      "Devices form a circle",
+      "Devices connect to a central switch",
+      "Every device connects to every other device",
+      "All devices are connected to a single central cable"
+    ],
+    correct: 3,
+    explanation: "## The Backbone\nImagine a single long wire (the bus) running through a room. Every computer 'taps' into this one cable to get data. It's simple to set up, but if that one main cable breaks, the entire network fails."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **mesh topology**?",
+    options: [
+      "A single cable",
+      "A star of stars",
+      "A ring of rings",
+      "Every device connects to every other device, providing redundancy"
+    ],
+    correct: 3,
+    explanation: "## Maximum Reliability\nIn a **Mesh**, there are many paths for data. If one cable is cut, the computer just sends the data through a different neighbor. It is the most reliable topology, but it is also the most expensive because it requires so many cables."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Point of Failure\nWhich topology is no longer common because a **single failure** can bring down the whole network?",
+    options: ["Star", "Mesh", "Tree", "Ring"],
+    correct: 3,
+    explanation: "## The Broken Loop\nIn a **Ring** topology, data travels in a circle from one PC to the next. If even one computer or cable breaks, the circle is open and the data can no longer travel, causing the entire network to stop working."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the **most common** topology used in home and small office networks today?",
+    options: ["Ring", "Bus", "Mesh", "Star"],
+    correct: 3,
+    explanation: "## Central Hub\nAlmost every modern Wi-Fi or office network uses a **Star** topology. All your devices (the points of the star) connect to one central router or switch. This is great because if one device breaks, everyone else stays connected."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Architecture\nWhat does **“client”** mean in client/server networking?",
+    options: [
+      "The server itself",
+      "A network cable",
+      "A type of malware",
+      "A device that requests resources from a server"
+    ],
+    correct: 3,
+    explanation: "## The Consumer\nYou are usually the **Client**. When your phone 'asks' for a website or your laptop 'asks' to print a file, it is acting as a client that relies on a more powerful server to provide that information."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **“server”** mean in client/server networking?",
+    options: [
+      "A device that requests resources",
+      "A type of switch",
+      "A network topology",
+      "A powerful computer that provides resources like files or email to clients"
+    ],
+    correct: 3,
+    explanation: "## The Provider\nServers are the 'Waiters' of the internet. They sit in data centers waiting for a client to ask for something. When you load a YouTube video, a **Server** is the machine that physically holds that video and sends it to you."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# P2P Limits\nWhat is the maximum number of computers typically found in a **peer‑to‑peer** network?",
+    options: ["No limit", "100", "Exactly 2", "Fewer than 10"],
+    correct: 3,
+    explanation: "## Group Size\n**P2P** is great for a small family or a tiny office. Once you get more than **10 computers**, it becomes a nightmare to manage everyone's passwords and files separately. At that point, businesses usually switch to a Client/Server model."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a major **disadvantage** of a peer‑to‑peer (P2P) network?",
+    options: [
+      "It requires a network administrator",
+      "It is very expensive",
+      "It requires specialized servers",
+      "It can be less secure and harder to manage as the group grows"
+    ],
+    correct: 3,
+    explanation: "## Security Gaps\nIn **P2P**, every user is their own boss. If one person has a weak password, the whole network could be at risk. There is no central 'security guard' (Administrator) to make sure everyone is following the rules."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Geographic Reach\nWhat does the **geographic reach** of a network determine?",
+    options: [
+      "The speed of the network",
+      "The number of users",
+      "The type of cables used",
+      "How wide the network spans (e.g. LAN, MAN, WAN)"
+    ],
+    correct: 3,
+    explanation: "## Distance Categories\nWe name networks based on how much 'land' they cover. If it's one room, it's a **LAN**. If it's a whole city, it's a **MAN**. If it spans the entire world, it's a **WAN**. This is the network's geographic reach."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "Which type of network would connect computers inside a **single building**?",
+    options: ["WAN", "MAN", "PAN", "LAN"],
+    correct: 3,
+    explanation: "## Local Connection\n**LAN** stands for **Local Area Network**. It is used for small, private areas like your house, a school computer lab, or one office building. If you can walk from one computer to the other in a minute, it's a LAN."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# City Networks\nWhich type of network connects devices **across a whole city**?",
+    options: ["LAN", "WAN", "PAN", "MAN"],
+    correct: 3,
+    explanation: "## Metropolitan Area\n**MAN** stands for **Metropolitan Area Network**. Think of it as the network that connects all the different government buildings, police stations, and libraries in Lusaka or New York into one big city-wide system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **Bluetooth** use to transmit data wirelessly?",
+    options: ["Infrared light", "Laser", "Cables", "Short‑range radio waves"],
+    correct: 3,
+    explanation: "## Personal Radio\nBluetooth is essentially a very weak, short-range **Radio**. It uses the $2.4\text{ GHz}$ frequency to send signals about $10\text{ meters}$. This is enough to connect your phone to your headphones without using much battery."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Older Standards\nWhat is the maximum data rate of the older **802.11b** Wi‑Fi standard?",
+    options: ["54 Mbps", "100 Mbps", "1 Gbps", "11 Mbps"],
+    correct: 3,
+    explanation: "## Early Wi-Fi\nIn the early 2000s, **802.11b** was the standard. It was quite slow, only moving **11 Megabits** per second. Today's Wi-Fi is hundreds of times faster, but we still study 'b' as the foundation of wireless networking."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **“backward compatibility”** mean for Wi‑Fi devices?",
+    options: [
+      "They only connect to new routers",
+      "They cannot connect to any router",
+      "They require a special adapter",
+      "They can work with older standards (e.g. Wi-Fi 6 works with Wi-Fi 4)"
+    ],
+    correct: 3,
+    explanation: "## Standard Support\nThis is a great feature. It means that if you buy a brand new iPhone, it will still work with your 5-year-old router at home. The new device is 'compatible' with the 'backward' (older) technology."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Hotspots\nWhat is a **hotspot**?",
+    options: [
+      "A device that cools the router",
+      "A type of network cable",
+      "A network security tool",
+      "A physical location where people can access Wi‑Fi (often public)"
+    ],
+    correct: 3,
+    explanation: "## Public Access\nWhen you go to a cafe or an airport and join their Wi-Fi, you are at a **Hotspot**. It is the specific physical area covered by a wireless signal where the public can get online."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the purpose of a **splitter** in a cable modem setup?",
+    options: [
+      "To increase speed",
+      "To encrypt the signal",
+      "To connect two PCs to one modem",
+      "To split the signal between your TV box and your Internet modem"
+    ],
+    correct: 3,
+    explanation: "## Signal Sharing\nA cable internet connection uses the same wire as your TV. The **Splitter** is a small metal 'Y' shape that takes the one wire from the wall and creates two paths: one for your television and one for your internet."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Broadband Modems\nWhat is an **ISDN modem**?",
+    options: [
+      "A dial‑up modem",
+      "A wireless modem",
+      "A satellite modem",
+      "A broadband modem that sends digital data over an ISDN phone line"
+    ],
+    correct: 3,
+    explanation: "## Digital Phone Lines\n**ISDN** was one of the first ways to get high-speed 'digital' internet over old phone lines. An ISDN modem is the specialized translator needed to handle that specific type of digital signal."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What does **ADSL** stand for?",
+    options: [
+      "Advanced Digital",
+      "Analog Digital",
+      "Automated Data",
+      "Asymmetric Digital Subscriber Line"
+    ],
+    correct: 3,
+    explanation: "## Speed Gap\n**Asymmetric** means 'uneven.' Most home internet is ADSL because we **Download** much more than we **Upload**. ADSL is designed to give you a very 'fat' pipe for downloading movies and a 'thin' pipe for sending small emails."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Carrier Lines\nWhat is a **T‑carrier line**?",
+    options: [
+      "A wireless signal",
+      "A cable modem feature",
+      "A home internet brand",
+      "A long‑distance digital phone line that carries multiple signals using multiplexing"
+    ],
+    correct: 3,
+    explanation: "## Industrial Pipes\n**T-carrier lines** (like T1 and T3) are the 'highways' of the phone system. They use multiplexing to squeeze dozens of different phone calls or data streams into one single high-speed line."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is the **Internet backbone**?",
+    options: [
+      "The home network",
+      "The Wi‑Fi router",
+      "The Ethernet cable",
+      "The high‑speed core networks that connect major ISPs and data centers"
+    ],
+    correct: 3,
+    explanation: "## The Main Highway\nThink of the internet as a series of roads. Your home Wi-Fi is a driveway. The street outside is your local ISP. The **Backbone** is the giant 10-lane super-highway that connects whole continents together using ultra-fast fiber optics."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# High Speed Cells\nWhat is **ATM** (Asynchronous Transfer Mode) used for in networking?",
+    options: [
+      "Automated banking",
+      "Wireless security",
+      "Network topology",
+      "Carrying voice, video, and data at ultra-high speeds over the Backbone"
+    ],
+    correct: 3,
+    explanation: "## Not the Bank Machine!\nIn Computer Science, **ATM** is a specialized way of packing data into tiny, same-sized 'cells.' This makes it very easy for the Backbone routers to move data at incredible speeds without getting confused."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a major **disadvantage** of using a wired network?",
+    options: [
+      "Less secure",
+      "Slower than wireless",
+      "Laptops can't join",
+      "Cables can be inflexible and expensive to install"
+    ],
+    correct: 3,
+    explanation: "## The Messy Factor\nWired networks are fast and safe, but you have to drill holes in walls and run miles of blue cable through the ceiling. This is **Expensive** and if you want to move your desk to the other side of the room, you might not have a plug there."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Wireless Perks\nWhat is the primary **advantage** of a wireless network?",
+    options: [
+      "Always faster",
+      "Always more secure",
+      "No interference",
+      "It is much more convenient and easier to set up"
+    ],
+    correct: 3,
+    explanation: "## Total Freedom\nWith **Wireless**, there are no holes to drill. You can set up a whole office in an hour, and employees can walk around with their laptops while staying connected. This convenience is why Wi-Fi is the world standard today."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a major **disadvantage** of wireless networks?",
+    options: [
+      "More expensive",
+      "Can't share internet",
+      "Can't reach the web",
+      "They are less secure and easier for neighbors to intercept"
+    ],
+    correct: 3,
+    explanation: "## Eavesdropping\nBecause wireless signals travel **through walls**, anyone standing outside your house with a laptop can 'see' your network signal. If you don't have a strong password, they can steal your data much more easily than with a wired system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Hardware Connections\nWhat is the purpose of a **Network Interface Card (NIC)**?",
+    options: [
+      "To store data",
+      "To display graphics",
+      "To cool the processor",
+      "To allow a computer to physically connect to a network"
+    ],
+    correct: 3,
+    explanation: "## The Connection Port\nA **NIC** is the circuit board (or chip) that provides the 'door' for data. Whether it is an Ethernet port for a cable or an antenna for Wi-Fi, the NIC is the piece of hardware that actually sends and receives the signals."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **MAC address**?",
+    options: [
+      "Encryption type",
+      "A password",
+      "A network name",
+      "A unique, permanent hardware ID assigned to every network card"
+    ],
+    correct: 3,
+    explanation: "## The Fingerprint\nEvery NIC in the world has its own **MAC address** burned into the chip at the factory. While an IP address can change, the MAC address is permanent. It is how the router knows exactly which physical device it is talking to."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Stronger Wi-Fi\nWhat is a simple way to improve your **Wi‑Fi signal strength**?",
+    options: [
+      "Metal cabinet",
+      "Basement corner",
+      "Turn off router",
+      "Extend the antennas or use a signal booster (repeater)"
+    ],
+    correct: 3,
+    explanation: "## Better Coverage\nWi-Fi is a radio signal. If it is weak, you can **Move the Antennas** to point toward your room. If that isn't enough, a **Booster** acts like a 'relay racer'—it catches the signal and shouts it further into the house."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is a **worm** in networking?",
+    options: [
+      "Advertisement software",
+      "File locker",
+      "Fake file",
+      "Malware that spreads through a network automatically without you doing anything"
+    ],
+    correct: 3,
+    explanation: "## Self-Spreading\nA **Worm** is more dangerous than a standard virus. A virus needs you to open an email. A worm can 'crawl' through the network wires from one computer to the next all on its own, infecting every PC in the building in minutes."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Trojans\nWhat is a **Trojan horse**?",
+    options: [
+      "Email virus",
+      "Harmless tool",
+      "Firewall",
+      "Malware that hides inside a legitimate program to trick you into opening it"
+    ],
+    correct: 3,
+    explanation: "## The Deception\nJust like the ancient story, a **Trojan** looks like a gift—maybe a 'Free Game' or a 'Speed Booster.' But when you run it, the 'soldiers' (the virus) come out and start stealing your data or damaging your system."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **spyware**?",
+    options: [
+      "Ad-displayer",
+      "File locker",
+      "Background changer",
+      "Software that secretly watches and records your personal info"
+    ],
+    correct: 3,
+    explanation: "## The Digital Spy\n**Spyware** hides in the background and 'spies' on you. It can record every website you visit, every message you send, and even every key you press (keylogging) to steal your passwords and bank details."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Viruses\nWhat is the technical definition of a computer **virus**?",
+    options: [
+      "Self-spreading tool",
+      "File locker",
+      "Ad-software",
+      "Malware that damages data and usually spreads by 'infecting' other files"
+    ],
+    correct: 3,
+    explanation: "## The Infection\nA **Virus** is a piece of code that can't live on its own. It 'attaches' itself to a good file (like a Word doc). When you send that doc to a friend, the virus goes with it and infects their computer too. It's built to damage or change your settings."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What should an administrator do **regularly** to maintain network security?",
+    options: [
+      "Never change passwords",
+      "Disable firewalls",
+      "Ignore user lists",
+      "Monitor the number of connected devices and look for intruders"
+    ],
+    correct: 3,
+    explanation: "## Constant Vigilance\nSecurity isn't something you do once. A professional **Network Admin** checks the 'connected device' list every day. If they see an unknown laptop logged in at $2\text{:00 AM}$, they know they have a security breach."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Firewalls\nWhat is the main purpose of a **network firewall**?",
+    options: [
+      "Increase speed",
+      "Provide Wi-Fi",
+      "Store passwords",
+      "To block unauthorized access while allowing safe data to pass"
+    ],
+    correct: 3,
+    explanation: "## The Filter\nThink of a **Firewall** as a security guard at the front gate. It checks every piece of data coming from the internet. If the data looks like a hack or a virus, the guard blocks it. If it looks like a safe website, it lets it through."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "What is **phishing** in the context of network security?",
+    options: [
+      "Stealing hardware",
+      "DoS attack",
+      "Encryption protocol",
+      "A scam to trick you into giving away passwords by pretending to be a bank"
+    ],
+    correct: 3,
+    explanation: "## The Hook\nIn **Phishing**, the hacker 'fishes' for your info. They send a fake email that looks $100\%$ like it is from your bank. If you click the link and type your password, they have 'hooked' you and stolen your account access."
+  },
+  {
+    course: "CS110", term: "T1", topic: "Networks",
+    q: "# Multi-Factor\nWhat is **two‑factor authentication (2FA)**?",
+    options: [
+      "Two different passwords",
+      "Changing your password weekly",
+      "A fingerprint scan only",
+      "A process requiring two different IDs (e.g. Password + Phone Code)"
+    ],
+    correct: 3,
+    explanation: "## The Double Lock\nEven if a hacker steals your password, they still can't get into your account with **2FA**. They would also need to have your physical **Phone** in their hand to see the 6-digit code. It is the best way to keep your storage and data safe."
+  },
+
+
+// ==========================================
   // MODULE 4: DATA REPRESENTATION (76 Qs)
   // ==========================================
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "# Core Concepts\nWhat is the primary reason all data in a digital computer must be represented using only **0s and 1s**?",
+    q: "# Foundation\nWhat is the primary reason all data in a digital computer must be represented using only **0s and 1s**?",
     options: [
       "Digital computers can only understand two voltage states, corresponding to 0 and 1",
       "Using 0s and 1s makes calculations faster than using other number systems",
@@ -16,42 +6538,42 @@ const mcqData = [
       "Binary was chosen arbitrarily by early computer engineers"
     ],
     correct: 0,
-    explanation: "## Tutor Insight\nThink of a light switch—it is either **ON** or **OFF**. \n\nInside a computer, billions of tiny switches (transistors) work the same way. They recognize only two states of electricity: **High Voltage** (1) and **Low Voltage** (0). Because the hardware is built this way, every single piece of data—from text to music—must be encoded into these two simple signals before the computer can process it."
+    explanation: "## Tutor Insight\nThink of a light switch—it is either **ON** or **OFF**. \n\nInside a computer, billions of tiny switches (transistors) work the same way. They recognize only two states of electricity: **High Voltage** (1) and **Low Voltage** (0). Because the hardware is physically built this way, every piece of data must be encoded into these two signals."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which of the following is **NOT** a valid form of data input that a computer can receive?",
     options: ["Audio", "Gravitational waves", "Fingerprints", "Magnetic cards"],
     correct: 1,
-    explanation: "> **Tutor Tip:** Always stick to standard digital interfaces.\n\nComputers handle alphabets, digits, symbols, audio, video, and biometric data like fingerprints. **Gravitational waves** are ripples in space-time studied by physicists, but your laptop doesn't have a port or sensor to 'input' them yet!"
+    explanation: "> **Tutor Tip:** Standard computers handle text, digits, symbols, audio, video, and biometric data. \n\n**Gravitational waves** are ripples in space-time. While scientists use computers to *analyze* them, they are not a standard digital input format like a microphone (audio) or a scanner (fingerprints)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "A number system in **base $r$** uses how many unique digit symbols?",
     options: ["$r + 1$", "$r – 1$", "$r$", "$r^2$"],
     correct: 2,
-    explanation: "## The Base Rule\nThe 'Base' tells you exactly how many symbols are in that system's alphabet. \n\n- **Decimal (Base 10):** Uses 10 symbols ($0-9$).\n- **Binary (Base 2):** Uses 2 symbols ($0, 1$).\n- **Octal (Base 8):** Uses 8 symbols ($0-7$).\n\nSo, for any **base $r$**, you have exactly **$r$** symbols."
+    explanation: "## The Base Rule\nThe 'Base' tells you exactly how many symbols are in that system's alphabet. \n\n- **Base 10:** 10 symbols ($0-9$).\n- **Base 2:** 2 symbols ($0, 1$).\n- **Base 16:** 16 symbols ($0-F$).\n\nSo, for any **base $r$**, you have exactly **$r$** symbols."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "In positional notation, what position does the **rightmost** digit of a number occupy?",
     options: ["Position 1", "Position –1", "Position $n$", "Position 0"],
     correct: 3,
-    explanation: "## Where do we start counting?\nIn Computer Science, we almost always start counting at **zero**, not one. \n\nThink of the number $52$. The $2$ is the starting point on the far right. We assign it **Position 0**. The $5$ to its left is **Position 1**. This is a universal law for every number system we use."
+    explanation: "## Where to start?\nIn Computer Science, we start counting at **zero**. \n\nThink of the number $52$. The $2$ is the starting point on the right. We assign it **Position 0**. The $5$ to its left is **Position 1**. This is a universal rule for every system (Decimal, Binary, etc.)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In the decimal number $52$, what is the **face value** of the digit at position 1?",
+    q: "In the decimal number **52**, what is the **face value** of the digit at position 1?",
     options: ["5", "2", "10", "50"],
     correct: 0,
-    explanation: "## Face vs. Position\n- **Face Value:** What does the symbol look like? (Just the digit itself).\n- **Position Value:** What is its 'weight' or multiplier?\n\nIn $52$, Position 1 holds the digit **5**. Its *Face Value* is simply **5**. If I asked for its *Total Value*, then it would be $50$."
+    explanation: "## Face vs. Position\n- **Face Value:** What the digit looks like (the symbol itself).\n- **Position Value:** The 'weight' of that spot.\n\nIn $52$, Position 0 is $2$ and **Position 1 is 5**. The symbol at position 1 is '5', so its *Face Value* is **5**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the **position value** of the digit $2$ in the decimal number $52$?",
+    q: "What is the **position value** (weight) of the digit **2** in the decimal number **52**?",
     options: ["2", "$10^0$ (which equals 1)", "$10^1$ (which equals 10)", "20"],
     correct: 1,
-    explanation: "## Calculating the Weight\nPosition Value is always calculated as: $$\text{Base}^{\text{Position}}$$\n\n1. The digit $2$ is at **Position 0**.\n2. The system is **Decimal** (Base 10).\n3. So, the weight is $10^0$. \n\n> **Note:** Anything to the power of zero equals **1**. So this is the 'ones' place."
+    explanation: "## Calculating the Weight\nWeight is always: $$\text{Base}^{\text{Position}}$$\n\n1. The digit $2$ is at **Position 0**.\n2. The system is **Decimal** (Base 10).\n3. Weight = $10^0$.\n\n> **Reminder:** Any number raised to the power of zero is **1**. This is the 'ones' place."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
@@ -63,11 +6585,11 @@ const mcqData = [
       "By multiplying each face value by its position number"
     ],
     correct: 2,
-    explanation: "## The Master Formula\nTo find the value of any number, you multiply every digit by the weight of its 'house' and add them all up. \n\n$$\text{Value} = \sum (\text{Digit} \times \text{Base}^{\text{Position}})$$\n\nThis is the core math used to convert Binary, Octal, and Hex back into Decimal!"
+    explanation: "## The Master Formula\nTo find the value of any number, you multiply every digit by the weight of its 'house' and add them all up. \n\n$$\text{Value} = \sum (\text{Digit} \times \text{Base}^{\text{Position}})$$\n\nThis formula is the only way to convert Binary, Octal, or Hex into Decimal."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "For the decimal number $52$, which expression correctly calculates its value?",
+    q: "For the decimal number **52**, which expression correctly calculates its value?",
     options: [
       "$5 + 2 = 7$",
       "$5 \times 2 + 2 \times 1 = 12$",
@@ -75,123 +6597,123 @@ const mcqData = [
       "$5 \times 10^1 + 2 \times 10^0 = 52$"
     ],
     correct: 3,
-    explanation: "## Expansion Check\nLet's apply the formula to $52$:\n- Digit $5$ is at Position 1: $5 \times 10^1 = 50$\n- Digit $2$ is at Position 0: $2 \times 10^0 = 2$\n- Sum: $50 + 2 = 52$.\n\n**Tutor Tip:** Option C is a common trap because people forget that $10^0$ is $1$, not $0$!"
+    explanation: "## Let's Expand 52\n- Digit $5$ is at Position 1: $5 \times 10^1 = 50$\n- Digit $2$ is at Position 0: $2 \times 10^0 = 2$\n- Sum: $50 + 2 = 52$.\n\n**Watch out:** People often think $10^0$ is $0$, but it is actually $1$!"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "How is a number written to explicitly indicate which **base** it belongs to?",
     options: ["As $(\text{number})_{\text{base}}$", "As base:number", "As number[base]", "As number/base"],
     correct: 0,
-    explanation: "We use **subscripts** to keep things clear. \n\nWithout them, you wouldn't know if $10$ means 'Ten' (Decimal) or 'Two' (Binary). By writing $(10)_2$ or $(10)_{10}$, we remove all guesswork."
+    explanation: "We use **subscripts** to prevent ambiguity. \n\nWithout them, $(10)_2$ (which is 'two') would look exactly like $(10)_{10}$ (which is 'ten'). The subscript acts as the system's identity tag."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "The notation $(345)_8$ indicates which of the following?",
     options: ["Binary number", "Octal number", "Hexadecimal number", "Decimal number"],
     correct: 1,
-    explanation: "The small number at the bottom (the subscript) is the 'ID tag' of the number system. \n- $_2$ = Binary\n- **$_8$ = Octal**\n- $_{10}$ = Decimal\n- $_{16}$ = Hexadecimal"
+    explanation: "The small subscript number defines the system.\n- $_2$ = Binary\n- **$_8$ = Octal (Base 8)**\n- $_{10}$ = Decimal\n- $_{16}$ = Hexadecimal"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "How many distinct number systems are covered in **Module 4**?",
     options: ["Two", "Three", "Four", "Five"],
     correct: 2,
-    explanation: "## The Big Four\nThis module covers the four pillars of computing math:\n1. **Decimal** (Base 10)\n2. **Binary** (Base 2)\n3. **Octal** (Base 8)\n4. **Hexadecimal** (Base 16)"
+    explanation: "## The Big Four\nThis module focuses on the systems essential to modern computing:\n1. **Binary** (Base 2)\n2. **Octal** (Base 8)\n3. **Decimal** (Base 10)\n4. **Hexadecimal** (Base 16)"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which of the following correctly lists the bases of the **four** systems in this module?",
     options: ["2, 4, 8, 16", "8, 10, 12, 16", "2, 8, 10, 12", "2, 8, 10, 16"],
     correct: 3,
-    explanation: "Memory check! \n- Binary = **2**\n- Octal = **8**\n- Decimal = **10**\n- Hexadecimal = **16**\n\nThere is no Base 4 or Base 12 in this module."
+    explanation: "Memory Check!\n- Binary is **2**\n- Octal is **8**\n- Decimal is **10**\n- Hexadecimal is **16**\n\nThere is no 'Base 4' or 'Base 12' in the standard curriculum."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "The **decimal** number system uses which set of digit symbols?",
     options: ["0, 1, 2, 3, 4, 5, 6, 7, 8, 9", "0 to 9 plus A", "1 through 10", "0 through 8"],
     correct: 0,
-    explanation: "Decimal (Base 10) uses exactly 10 symbols: **0 through 9**. \n\nRemember: In any system, the **base number itself** is never a single digit symbol (e.g., there is no single character for '10' in decimal)."
+    explanation: "Decimal (Base 10) uses exactly 10 symbols: **0, 1, 2, 3, 4, 5, 6, 7, 8, and 9**. \n\nNote that the number '10' is not a symbol; it's a combination of the '1' and '0' symbols."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "In the decimal system, what is the **position value** at position 3?",
     options: ["30", "1000", "300", "100"],
     correct: 1,
-    explanation: "## The Thousands Place\nPosition 3 weight is: $$10^3 = 10 \times 10 \times 10 = 1000$$ \n\n- Pos 0 = 1 (Ones)\n- Pos 1 = 10 (Tens)\n- Pos 2 = 100 (Hundreds)\n- **Pos 3 = 1000 (Thousands)**"
+    explanation: "## The Thousands Place\nWeight = $\text{Base}^{\text{Position}}$. \nFor Decimal at Pos 3: $$10^3 = 10 \times 10 \times 10 = 1000$$"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "What is the position value at **position -1** in the decimal number system?",
-    options: ["-10", "0", "0.1 (which equals 1/10)", "10"],
+    options: ["-10", "0", "0.1", "10"],
     correct: 2,
-    explanation: "## Behind the Decimal Point\nWhen you go to the right of the point, exponents become negative. \n\nPosition $-1$ is: $$10^{-1} = \frac{1}{10} = 0.1$$ \nThis is the 'Tenths' place you learned in basic math."
+    explanation: "## Fractions\nWhen you go to the right of the decimal point, the positions become negative. \n\nPosition $-1$ is: $$10^{-1} = \frac{1}{10} = 0.1$$ \nThis is the 'Tenths' place."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "The **octal** number system consists of which digits?",
     options: ["0 through 8", "0 through 9", "1 through 8", "0 through 7"],
     correct: 3,
-    explanation: "## The 'Under 8' Rule\nIn Octal (Base 8), you can use any digit **except** 8 or 9. \n\nJust like decimal digits stop at 9, octal digits stop at 7. If you see an '8' in a number, you know immediately it isn't an octal number!"
+    explanation: "## The 'Stop at 7' Rule\nIn Octal (Base 8), you only have 8 symbols, so you count $0, 1, 2, 3, 4, 5, 6, 7$. \n\nThe digit **8** does not exist in Octal, just like a single symbol for '10' does not exist in Decimal."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which of the following is a **valid** octal number?",
     options: ["2375", "2895", "289A", "2F73"],
     correct: 0,
-    explanation: "Scan the digits!\n- **2375:** All digits are 7 or lower. **Valid!**\n- 2895: Contains an 8 and 9. **Invalid.**\n- 2F73: Contains an F. That is only for Hexadecimal!"
+    explanation: "Scan the digits!\n- **2375:** All digits are 7 or lower. **Valid.**\n- 2895: Has an 8 and 9. **Invalid.**\n- 2F73: Has an F. Only for Hex!"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "In the octal system, what is the **position value** at position 2?",
     options: ["8", "64", "16", "512"],
     correct: 1,
-    explanation: "Weight = $\text{Base}^{\text{Position}}$. \n\nFor Octal at position 2: $$8^2 = 8 \times 8 = 64$$ \nThis means the third digit from the right in an octal number represents how many '64s' you have."
+    explanation: "Weight = $\text{Base}^{\text{Position}}$. \nFor Octal at Pos 2: $$8^2 = 8 \times 8 = 64$$"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "The **hexadecimal** number system uses how many distinct symbols?",
     options: ["10", "14", "16", "18"],
     correct: 2,
-    explanation: "Hexadecimal (Base 16) uses exactly **16** symbols. \n\nBecause we only have 10 digits ($0-9$), we use the first 6 letters of the alphabet ($A, B, C, D, E, F$) to represent values from 10 to 15."
+    explanation: "Hexadecimal means 'Six' + 'Ten'. It uses **16** symbols. \n\nBecause we ran out of numbers after 9, we use $A, B, C, D, E, \text{ and } F$ to represent values 10 through 15."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "In hexadecimal, the letter **D** represents which decimal value?",
     options: ["10", "11", "12", "13"],
     correct: 3,
-    explanation: "## Memorize the Map\n- $A = 10$\n- $B = 11$\n- $C = 12$\n- **$D = 13$**\n- $E = 14$\n- $F = 15$\n\nThis is essential for converting hex to decimal."
+    explanation: "## Hex Alphabet Map\n- $A = 10$\n- $B = 11$\n- $C = 12$\n- **$D = 13$**\n- $E = 14$\n- $F = 15$"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which hexadecimal symbol represents the decimal value **15**?",
     options: ["F", "E", "D", "B"],
     correct: 0,
-    explanation: "The maximum value in a single Hex position is **15**, which we write as the letter **F**. Once you go higher than 15, you must move to the next position (just like after 9 in decimal)."
+    explanation: "The mapping for hex letters is $A=10$ through **$F=15$**. \n\n$F$ is the highest single-digit value in Hexadecimal. After $F$, you must carry over to the next position (written as $10_{16}$)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which of the following is a **valid** hexadecimal number?",
     options: ["3GH2", "3FA", "3K91", "8Z24"],
     correct: 1,
-    explanation: "Hex digits only go up to **F**. \n\n- **3FA:** All valid symbols. \n- 3GH2: 'G' and 'H' are outside the range. \n- 3K91: 'K' is invalid. \n- 8Z24: 'Z' is invalid."
+    explanation: "Hex digits are $0-9$ and $A-F$. \n\n- **3FA:** All symbols are in range. **Valid.**\n- 3GH2: 'G' and 'H' are invalid.\n- 8Z24: 'Z' is invalid."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "In hexadecimal, what is the **position value** at position 3?",
     options: ["256", "16", "4096", "65536"],
     correct: 2,
-    explanation: "Position 3 weight is: $$16^3 = 16 \times 16 \times 16 = 4096$$ \n\nHexadecimal weights grow extremely fast, which is why it is used to represent large memory addresses very compactly."
+    explanation: "Weight = $\text{Base}^{\text{Position}}$. \nFor Hex at Pos 3: $$16^3 = 4096$$ \n\nThis fast growth is why Hex can represent huge numbers with very few characters."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "What is the position value at **position -2** in hexadecimal?",
     options: ["-32", "1/16", "32", "1/256"],
     correct: 3,
-    explanation: "Position $-2$ weight is: $$16^{-2} = \frac{1}{16^2} = \frac{1}{256}$$ \nThis represents the fractional part of the number."
+    explanation: "For fractional positions: $$16^{-2} = \frac{1}{16^2} = \frac{1}{256}$$"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "# Conversion: Decimal to Base $r$\nWhen converting a decimal **integer** to another base, which operation drives the process?",
+    q: "# Decimal Integer to Base $r$\nWhen converting a decimal **integer** to another base, which operation drives the process?",
     options: [
       "Repeated division by the target base, recording each remainder",
       "Repeated multiplication by the target base",
@@ -199,110 +6721,110 @@ const mcqData = [
       "Repeated addition"
     ],
     correct: 0,
-    explanation: "## The 'Divide & Remainder' Logic\nTo turn a whole decimal number into Binary, Octal, or Hex:\n1. Divide by the new base.\n2. Record the remainder.\n3. Repeat until you reach zero.\n\n> **Crucial:** Always read your remainders from **Bottom to Top** to get the correct answer!"
+    explanation: "## Integer Conversion Rule\nTo turn a whole decimal number into something else, you use **Repeated Division**. \n\nYou divide by the base you are going *towards*, keep the remainder, and repeat until you hit zero. \n\n> **Crucial:** You must read the remainders from **Bottom to Top**!"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "When converting $(25)_{10}$ to binary, what does the **first** division step produce?",
-    options: ["Q: 13, R: 0", "Q: 12, R: 1", "Q: 12, R: 0", "Q: 25, R: 2"],
+    q: "When converting the decimal integer **25** to binary, what does the **first** division step produce?",
+    options: ["Quotient 13, remainder 0", "Quotient 12, remainder 1", "Quotient 12, remainder 0", "Quotient 25, remainder 2"],
     correct: 1,
-    explanation: "Let's do the first step: $$25 \div 2 = 12 \text{ with a remainder of } 1$$ \n\nThe $1$ is recorded as the first bit (the far right digit of the final answer). The $12$ is passed down to the next step."
+    explanation: "Let's do step 1 for (25)$_{10}$:\n$$25 \div 2 = 12 \text{ remainder } 1$$ \n\nThe 1 is our first remainder, and the 12 moves to the next line."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In which direction do you read the remainders to obtain the final conversion result?",
+    q: "After completing a division table for decimal-to-binary, in which direction do you read the remainders?",
     options: ["Top to bottom", "Left to right", "Bottom to top", "Right to left"],
     correct: 2,
-    explanation: "## The 'Reverse' Rule\nIn the division method, the **last** remainder you find is actually the **most significant** (leftmost) part of your answer. Therefore, you must read the list from **Bottom to Top**."
+    explanation: "## The 'Flip' Rule\nIn the division method, the **last** remainder you calculate is actually the **most significant** (leftmost) digit. So, always read the result from **Bottom to Top**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the binary equivalent of $(25)_{10}$?",
+    q: "What is the binary equivalent of **(25)$_{10}$**?",
     options: ["10011", "11010", "10110", "11001"],
     correct: 3,
-    explanation: "## Step-by-Step\n- $25 \div 2 = 12$ R **1**\n- $12 \div 2 = 6$ R **0**\n- $6 \div 2 = 3$ R **0**\n- $3 \div 2 = 1$ R **1**\n- $1 \div 2 = 0$ R **1**\n\nRead Bottom-to-Top: **11001**."
+    explanation: "## Full Math for (25)$_{10}$\n- $25/2 = 12$ R **1**\n- $12/2 = 6$ R **0**\n- $6/2 = 3$ R **0**\n- $3/2 = 1$ R **1**\n- $1/2 = 0$ R **1**\n\nRead Bottom-to-Top: **11001**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "A student stops the division process when the quotient reaches **1** instead of 0. What happens?",
+    q: "A student stops the division process when the quotient reaches **1** instead of 0. Result?",
     options: [
-      "The final most-significant bit is lost",
+      "The final most-significant bit is lost, making it incorrect",
       "The result is correct because 1 is a binary digit",
-      "The student must read top-to-bottom to compensate",
+      "The student must read top-to-bottom",
       "The result is unchanged"
     ],
     correct: 0,
-    explanation: "## Don't stop early!\nYou **must** divide until you reach a quotient of **zero**. \n\nIf you stop at 1, you miss the final step: $1 \div 2 = 0$ remainder **1**. That final '1' is usually the very first digit of your answer. Without it, your answer is numerically wrong and too short."
+    explanation: "## Stop at ZERO!\nYou must divide until the quotient is zero. \n\nIf you stop at 1, you miss the final step: $1 \div 2 = 0$ remainder **1**. That final '1' is almost always the very first digit of your answer. Stop early, and you lose the head of your number."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "To convert $(53)_{10}$ to binary, how many division steps are required?",
+    q: "To convert decimal **53** to binary, how many division steps are required?",
     options: ["4", "6", "5", "7"],
     correct: 1,
-    explanation: "Let's count the steps:\n1. $53/2 = 26$ R1\n2. $26/2 = 13$ R0\n3. $13/2 = 6$ R1\n4. $6/2 = 3$ R0\n5. $3/2 = 1$ R1\n6. $1/2 = 0$ R1\n\n**6 steps** are needed to reach the target quotient of 0."
+    explanation: "## Counting steps for (53)$_{10}$\n1. $53/2 = 26$ R1\n2. $26/2 = 13$ R0\n3. $13/2 = 6$ R1\n4. $6/2 = 3$ R0\n5. $3/2 = 1$ R1\n6. $1/2 = 0$ R1\n\n**6 steps** are needed to reach the target quotient of 0."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(53)_{10}$ in binary?",
+    q: "What is **(53)$_{10}$** in binary?",
     options: ["101011", "110100", "110101", "101101"],
     correct: 2,
-    explanation: "Using our remainders from the previous step (read from Bottom to Top): \n$$1, 1, 0, 1, 0, 1$$ \nResult: **110101**."
+    explanation: "## Step-by-Step for (53)$_{10}$\n- $53/2 = 26$ R **1**\n- $26/2 = 13$ R **0**\n- $13/2 = 6$ R **1**\n- $6/2 = 3$ R **0**\n- $3/2 = 1$ R **1**\n- $1/2 = 0$ R **1**\n\nRead Bottom-to-Top: **110101**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(68)_{10}$ in **octal**?",
+    q: "What is **(68)$_{10}$** in octal?",
     options: ["84", "86", "108", "104"],
     correct: 3,
-    explanation: "## Octal Division\nDivide by **8**:\n- $68 \div 8 = 8$ Remainder **4**\n- $8 \div 8 = 1$ Remainder **0**\n- $1 \div 8 = 0$ Remainder **1**\n\nRead Bottom-to-Top: **104**."
+    explanation: "## Octal Division for (68)$_{10}$\nDivide by **8**:\n- $68 \div 8 = 8$ Remainder **4**\n- $8 \div 8 = 1$ Remainder **0**\n- $1 \div 8 = 0$ Remainder **1**\n\nRead Bottom-to-Top: **104**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(29)_{10}$ in binary?",
+    q: "What is **(29)$_{10}$** in binary?",
     options: ["11101", "10111", "11011", "11100"],
     correct: 0,
-    explanation: "## Fast Division\n- $29/2 = 14$ R1\n- $14/2 = 7$ R0\n- $7/2 = 3$ R1\n- $3/2 = 1$ R1\n- $1/2 = 0$ R1\n\nRead Bottom-to-Top: **11101**."
+    explanation: "## Quick Division for (29)$_{10}$\n- $29/2 = 14$ R **1**\n- $14/2 = 7$ R **0**\n- $7/2 = 3$ R **1**\n- $3/2 = 1$ R **1**\n- $1/2 = 0$ R **1**\n\nRead Up: **11101**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "When converting a decimal **fraction** (e.g., 0.5) to binary, which operation is used?",
+    q: "# Decimal Fraction to Binary\nWhen converting a decimal **fraction** (e.g., 0.5) to binary, which operation is used?",
     options: ["Divide by 2 repeatedly", "Multiply by 2 repeatedly", "Subtract 0.5", "Add 0.5"],
     correct: 1,
-    explanation: "## The 'Flip' Rule\nFractions work the **exact opposite** of integers:\n- **Integers:** Repeated Division.\n- **Fractions:** Repeated Multiplication.\n\nAlso, for fractions, you read the results from **Top to Bottom**, not bottom to top!"
+    explanation: "## Flip the Logic\nFor whole numbers, we divide. For digits **after** the decimal point, we **Multiply** by the target base. \n\nAlso, for fractions, you read results from **Top to Bottom**, not bottom to top!"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "After multiplying a decimal fraction, which part of the result do you record as the next digit?",
     options: ["Fractional part", "Entire product", "Integer part only", "Largest digit"],
     correct: 2,
-    explanation: "When you multiply (e.g., $0.6 \times 2 = 1.2$), you 'grab' the **1** (the integer part) and put it in your answer column. Then, you take only the remaining **0.2** and multiply that in the next step."
+    explanation: "When you multiply (e.g., $0.6 \times 2 = 1.2$), you 'grab' the **1** (the integer part) for your answer. Then you take the remaining **0.2** and multiply *that* in the next step."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In which direction do you read fractional conversion digits to form the final result?",
+    q: "In which direction do you read fractional conversion results?",
     options: ["Bottom to top", "Right to left", "Numerically smallest", "Top to bottom"],
     correct: 3,
-    explanation: "## The 'Natural' Order\nUnlike the division method, the multiplication method is **Top to Bottom**. The very first integer part you generate is the very first digit after the binary/octal point."
+    explanation: "## Natural Order\nFractional digits are read **exactly in the order they were born**: from **Top to Bottom**. The first integer you get is the first digit after the dot."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the recommended minimum number of multiplication steps for a decimal fraction?",
+    q: "What is the recommended minimum number of multiplication steps for a fraction?",
     options: ["At least four", "Exactly two", "Until it exceeds 1", "Matches decimal places"],
     correct: 0,
-    explanation: "Some decimal fractions never reach a perfect '0' when converting to binary. To ensure your answer is accurate enough for a standard computer science problem, we perform at least **four** steps."
+    explanation: "Some fractions never hit zero (they loop forever!). To ensure your answer is accurate enough for an exam, the standard rule is to perform at least **four** steps."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the binary equivalent of $(0.2345)_{10}$ to 6 binary places?",
+    q: "What is the binary equivalent of **(0.2345)$_{10}$** to 6 places?",
     options: ["0.110011", "0.001111", "0.010111", "0.100001"],
     correct: 1,
-    explanation: "## Step-by-Step Multiplication\n1. $0.2345 \times 2 = 0.4690$ (**0**)\n2. $0.4690 \times 2 = 0.9380$ (**0**)\n3. $0.9380 \times 2 = 1.8760$ (**1**)\n4. $0.8760 \times 2 = 1.7520$ (**1**)\n5. $0.7520 \times 2 = 1.5040$ (**1**)\n6. $0.5040 \times 2 = 1.0080$ (**1**)\n\nRead Down: **0.001111**."
+    explanation: "## Multiplication for (0.2345)$_{10}$\n1. $0.2345 \times 2 = 0.469$ (**0**)\n2. $0.469 \times 2 = 0.938$ (**0**)\n3. $0.938 \times 2 = 1.876$ (**1**)\n4. $0.876 \times 2 = 1.752$ (**1**)\n5. $0.752 \times 2 = 1.504$ (**1**)\n6. $0.504 \times 2 = 1.008$ (**1**)\n\nRead Down: **.001111**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "To convert $(0.865)_{10}$ to **octal**, you multiply repeatedly by which number?",
+    q: "To convert **(0.865)$_{10}$** to octal, you multiply repeatedly by which number?",
     options: ["2", "10", "8", "16"],
     correct: 2,
-    explanation: "The base of your **target** system determines the multiplier. Since we are converting to **Octal (Base 8)**, we must multiply by 8 repeatedly."
+    explanation: "The base of your **target** system is always your multiplier. Since you want Octal (Base 8), you must multiply by **8**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
@@ -311,81 +6833,81 @@ const mcqData = [
       "Multiply everything by 2",
       "Divide everything by 2",
       "Ignore the fraction",
-      "Convert 23 by division and 0.078 by multiplication separately"
+      "Process 23 by division and 0.078 by multiplication separately"
     ],
     correct: 3,
-    explanation: "## Split the Problem\nYou cannot use one method for both parts. \n1. Process the **23** using the division method.\n2. Process the **0.078** using the multiplication method.\n3. Combine them back together with a binary point in the middle!"
+    explanation: "## Divide and Conquer\nYou cannot use one method for both parts. \n1. Convert the 'whole' (23) using **Division**.\n2. Convert the 'fraction' (.078) using **Multiplication**.\n3. Join them back together with a dot!"
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "# Conversion: Base $r$ to Decimal\nWhen converting from binary, octal, or hex back to decimal, which operation is primarily used?",
+    q: "# Conversion back to Decimal\nWhen converting from binary, octal, or hex back to decimal, which operation is primarily used?",
     options: [
-      "Multiply each digit by its position value and sum all products",
+      "Multiply digit by position value and sum products",
       "Divide repeatedly by 10",
       "Add all digits together",
-      "Subtract each digit from the base"
+      "Subtract digits from the base"
     ],
     correct: 0,
-    explanation: "## The 'Expansion' Method\nEvery digit sits in a 'house' with a certain weight (e.g., $1, 2, 4, 8$ for binary). To get back to decimal, you multiply each digit by its weight and add them up."
+    explanation: "## The Expansion Method\nEvery digit has a weight based on its spot ($1, 2, 4, 8$ for binary). To get back to decimal, you multiply the digit by its weight and add them up."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert $(1011)_2$ to decimal. Which expansion is correct?",
+    q: "Convert **(1011)$_2$** to decimal. Which expansion is correct?",
     options: [
-      "$1 + 0 + 1 + 1 = 3$",
+      "$1+0+1+1=3$",
       "$1\times 2^3 + 0\times 2^2 + 1\times 2^1 + 1\times 2^0 = 11$",
       "$1\times 2^4 + 0\times 2^3 + 1\times 2^2 + 1\times 2^1 = 18$",
       "None of these"
     ],
     correct: 1,
-    explanation: "## Power of 2 Weights\nAssign weights from right to left:\n- $1 \times 2^0 = 1$\n- $1 \times 2^1 = 2$\n- $0 \times 2^2 = 0$\n- $1 \times 2^3 = 8$\n\nSum them: $8 + 0 + 2 + 1 = 11$."
+    explanation: "Check the positions:\n- $1$ (Pos 3): $1 \times 8 = 8$\n- $0$ (Pos 2): $0 \times 4 = 0$\n- $1$ (Pos 1): $1 \times 2 = 2$\n- $1$ (Pos 0): $1 \times 1 = 1$\nSum: $8 + 0 + 2 + 1 = 11$."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the decimal value of $(C15)_{16}$?",
+    q: "What is the decimal value of **(C15)$_{16}$**?",
     options: ["3061", "3109", "3093", "3605"],
     correct: 2,
-    explanation: "## Hex expansion\n1. $C$ is $12$: $12 \times 16^2 = 3072$\n2. $1$ is at pos 1: $1 \times 16^1 = 16$\n3. $5$ is at pos 0: $5 \times 16^0 = 5$\n\nTotal: $3072 + 16 + 5 = 3093$."
+    explanation: "## Hex to Decimal\n1. $C$ is 12: $12 \times 16^2 = 3072$\n2. $1$ is Pos 1: $1 \times 16 = 16$\n3. $5$ is Pos 0: $5 \times 1 = 5$\nSum: $3072 + 16 + 5 = 3093$."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In fractional binary like $(0.1101)_2$, what position is assigned to the **first** digit after the point?",
+    q: "In fractional binary like **(0.1101)$_2$**, what position is the **first** digit after the point?",
     options: ["Position 0", "Position 1", "Position -2", "Position -1"],
     correct: 3,
-    explanation: "Think of a number line. If the left of the point is $0, 1, 2$, then the right of the point must be **$-1, -2, -3$**. The first digit immediately after the dot is always **Position -1**."
+    explanation: "Think of a number line. If the left of the dot is $0, 1, 2$, then the right of the dot must be **$-1, -2, -3$**. The first digit after the dot is **Position -1**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the decimal equivalent of $(0.1101)_2$?",
+    q: "What is the decimal equivalent of **(0.1101)$_2$**?",
     options: ["0.8125", "0.6875", "0.5625", "0.75"],
     correct: 0,
-    explanation: "## Negative Exponents\n- $1 \times 2^{-1} = 0.5$\n- $1 \times 2^{-2} = 0.25$\n- $0 \times 2^{-3} = 0$\n- $1 \times 2^{-4} = 0.0625$\n\nSum: $0.5 + 0.25 + 0.0625 = 0.8125$."
+    explanation: "## Negative Exponents\n- $1 \times 2^{-1} = 0.5$\n- $1 \times 2^{-2} = 0.25$\n- $0 \times 2^{-3} = 0$\n- $1 \times 2^{-4} = 0.0625$\nSum: $0.5 + 0.25 + 0.0625 = 0.8125$."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the decimal equivalent of $(0.15)_{16}$?",
-    options: ["0.25", "0.0820 (Approx)", "0.3125", "1.5"],
+    q: "What is the decimal equivalent of **(0.15)$_{16}$**?",
+    options: ["0.25", "0.082", "0.3125", "1.5"],
     correct: 1,
-    explanation: "## Hex Fractions\n- $1 \times 16^{-1} = 0.0625$\n- $5 \times 16^{-2} = 0.01953$\n\nSum: $0.08203...$ \nIn simple terms, $(21/256)_{10}$."
+    explanation: "## Hex Fraction\n- $1 \times 16^{-1} = 0.0625$\n- $5 \times 16^{-2} = 0.01953$\nSum: $0.08203$ (Approximately **0.082**)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert $(1011.1001)_2$ to decimal.",
+    q: "Convert **(1011.1001)$_2$** to decimal.",
     options: ["10.5625", "11.0625", "11.5625", "12.5625"],
     correct: 2,
-    explanation: "## Mixed Conversion\n1. **Whole part (1011):** $8 + 0 + 2 + 1 = 11$\n2. **Fractional part (.1001):** $0.5 + 0 + 0 + 0.0625 = 0.5625$\n\nTotal: **11.5625**."
+    explanation: "## Mixed Base 2 to Dec\n- Whole part (1011): $8+0+2+1 = 11$\n- Fraction part (.1001): $0.5 + 0 + 0 + 0.0625 = 0.5625$\nTotal: **11.5625**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "# The Shortcut Methods\nWhat is the key shortcut that allows direct **Binary-to-Octal** conversion?",
+    q: "# Grouping Shortcuts\nWhat shortcut allows direct **Binary-to-Octal** conversion?",
     options: [
       "Group digits in 4s",
       "Divide by 8",
       "Multiply by 8",
-      "Group digits in 3s from the right and convert each group"
+      "Group bits in 3s from the right and convert each group"
     ],
     correct: 3,
-    explanation: "## The 'Magic 3' Rule\nBecause $2^3 = 8$, exactly **three** binary bits fit into **one** octal digit. \n\nInstead of doing long math, just chop your binary number into groups of 3 (starting from the right side) and translate each group into its octal symbol."
+    explanation: "## The 'Magic 3' Rule\nBecause $2^3 = 8$, exactly **three** binary bits fit perfectly into **one** octal digit. \n\nInstead of doing long math, just chop your binary number into groups of 3 (starting from the right side) and translate each group ($000-111$) into its octal symbol ($0-7$)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
@@ -393,29 +6915,29 @@ const mcqData = [
     options: [
       "Because $2^4 = 16$",
       "Hex has 4 more symbols than decimal",
-      "Computers always process groups of 4",
+      "Computers process groups of 4",
       "4 is the square root of 16"
     ],
     correct: 0,
-    explanation: "> **Tutor Wisdom:** It's all about the powers of 2.\n\nSince $2^4 = 16$, four bits can produce exactly 16 patterns ($0000$ up to $1111$). This perfect match allows us to swap 4 bits for 1 hex character without any leftovers."
+    explanation: "> **Tutor Logic:** It's all about the powers of 2.\n\nSince $2^4 = 16$, four bits can produce exactly 16 patterns ($0000$ to $1111$). This perfect match allows us to swap 4 bits for 1 hex symbol without any leftovers."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert the binary number $(1110101100110)_2$ to **Octal**.",
+    q: "Convert binary **(1110101100110)$_2$** to Octal.",
     options: ["16645", "16546", "15646", "14565"],
     correct: 1,
-    explanation: "## Grouping by 3\nStart from the right side:\n- `110` = 6\n- `100` = 4\n- `101` = 5\n- `110` = 6\n- `1` (pad to `001`) = 1\n\nJoin: **16546**."
+    explanation: "## Grouping by 3\nStart from the right side:\n- `110` = 6\n- `100` = 4\n- `101` = 5\n- `110` = 6\n- `1` (pad to `001`) = 1\nResult: **16546**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert binary $(1110101100110)_2$ to **Hexadecimal**.",
+    q: "Convert binary **(1110101100110)$_2$** to Hexadecimal.",
     options: ["1E66", "1D67", "1D66", "1C66"],
     correct: 2,
-    explanation: "## Grouping by 4\nStart from the right side:\n- `0110` = 6\n- `0110` = 6\n- `1101` = 13 (**D**)\n- `1` (pad to `0001`) = 1\n\nJoin: **1D66**."
+    explanation: "## Grouping by 4\nStart from the right side:\n- `0110` = 6\n- `0110` = 6\n- `1101` = 13 (**D**)\n- `1` (pad to `0001`) = 1\nResult: **1D66**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "A student converts binary to octal by grouping in **4s** instead of 3s. What happens?",
+    q: "A student converts binary to octal by grouping in **4s** instead of 3s. Result?",
     options: [
       "Identical result",
       "Always too large",
@@ -423,37 +6945,37 @@ const mcqData = [
       "Incorrect octal number"
     ],
     correct: 3,
-    explanation: "## Rule Violation\nOctal math depends on groups of **3**. If you group in 4s, your 'digits' will go up to 15, but octal doesn't even recognize digits higher than 7. You will get a valid **Hex** number, but an **Incorrect Octal** one."
+    explanation: "## Wrong Tool\nGrouping in 4s is the shortcut for Hex. If you do it for Octal, your 'digits' will go up to 15, which aren't even allowed in Base 8. You will get a valid **Hex** number, but the **Octal** answer will be incorrect."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "To convert $(473)_8$ to binary, what is the first step?",
+    q: "To convert **(473)$_8$** to binary, what is the first step?",
     options: [
       "Convert each individual digit into its 3-bit binary equivalent",
       "Convert to decimal first",
-      "Divide by 2 repeatedly",
+      "Divide by 2",
       "Group digits in pairs"
     ],
     correct: 0,
-    explanation: "This is the **reverse shortcut**. Instead of grouping bits, you 'expand' every octal digit into its 3-bit binary pattern. For example, the $7$ immediately becomes `111`."
+    explanation: "This is the **reverse shortcut**. Instead of grouping bits, you 'expand' each octal digit into its 3-bit binary pattern. For example, the $7$ immediately becomes `111`."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the binary equivalent of the octal number $(473)_8$?",
+    q: "What is the binary equivalent of **(473)$_8$**?",
     options: ["100110011", "100111011", "101111011", "100101011"],
     correct: 1,
-    explanation: "## Expansion Map\n- $4$ = `100`\n- $7$ = `111`\n- $3$ = `011`\n\nPut them together: **100111011**."
+    explanation: "## Expansion\n- $4$ = `100`\n- $7$ = `111`\n- $3$ = `011`\nJoin them: **100111011**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "To convert $(2BA3)_{16}$ to binary, how many bits will the result contain?",
+    q: "To convert **(2BA3)$_{16}$** to binary, how many bits will the result contain?",
     options: ["8 bits", "12 bits", "16 bits", "4 bits"],
     correct: 2,
-    explanation: "Easy math: Every Hex digit expands into **4 bits**. \n\nSince there are 4 Hex characters ($2, B, A, 3$), the total bits will be $$4 \times 4 = 16$$."
+    explanation: "Each Hex digit expands to **4 bits**. \n\nSince there are 4 digits in $(2BA3)_{16}$, the total bits will be $$4 \times 4 = 16$$."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the binary equivalent of $(2BA3)_{16}$?",
+    q: "What is the binary equivalent of **(2BA3)$_{16}$**?",
     options: [
       "0010111010100011",
       "0011101110100010",
@@ -461,155 +6983,154 @@ const mcqData = [
       "0010101110100011"
     ],
     correct: 3,
-    explanation: "## Hex Expansion\n- $2$ = `0010`\n- $B$ (11) = `1011`\n- $A$ (10) = `1010`\n- $3$ = `0011`\n\nResult: **0010101110100011**."
+    explanation: "## Expansion\n- $2$ = `0010`\n- $B$ (11) = `1011`\n- $A$ (10) = `1010`\n- $3$ = `0011`\nCombine: **0010101110100011**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "When converting binary to octal and the leftmost group is incomplete, what must you do?",
+    q: "When grouping and the leftmost group is incomplete, what must you do?",
     options: ["Pad with leading zeros", "Discard it", "Add extra 1s", "Move bits to the right"],
     correct: 0,
-    explanation: "## The 'Zero Padding' Trick\nIf your bits don't fit perfectly into groups of 3, just add zeros to the **far left**. \n\nIt's like writing $07$ instead of $7$—it makes the group look right without changing the value of the number."
+    explanation: "## Zero Padding\nIf your bits don't fit perfectly into groups of 3 or 4, just add zeros to the **far left**. \n\nIt's like writing $07$ instead of $7$—it doesn't change the value, but it makes the shortcut work perfectly."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert binary $(1100111100111)_2$ to **Octal**.",
+    q: "Convert binary **(1100111100111)$_2$** to Octal.",
     options: ["14657", "14747", "16347", "14567"],
     correct: 1,
-    explanation: "## Grouping by 3\n- `111` = 7\n- `100` = 4\n- `111` = 7\n- `100` = 4\n- `1` (pad to `001`) = 1\n\nResult: **14747**."
+    explanation: "## Grouping by 3\n- `111` = 7\n- `100` = 4\n- `111` = 7\n- `100` = 4\n- `1` (pad to `001`) = 1\nResult: **14747**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the primary advantage of hexadecimal for binary memory addresses?",
+    q: "What is the primary advantage of hexadecimal for binary addresses?",
     options: [
       "Simpler arithmetic",
       "Only uses numbers",
-      "Compactness (1 hex digit replaces 4 bits)",
+      "Compactness (1 hex digit = 4 bits)",
       "Native CPU processing"
     ],
     correct: 2,
-    explanation: "> **Tutor Reality Check:** A 32-bit binary address is impossible for a human to read. \n\nBut in Hex, it is only 8 characters long. Hex is essentially 'Shorthand Binary' for humans—it's shorter, easier to write, and much harder to mess up."
+    explanation: "> **Tutor Reality Check:** A 32-bit binary address is impossible for a human to read. \n\nIn Hex, it is only 8 characters. Hex is the 'shorthand' that makes binary usable for human programmers."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Which conversion path can **bypass** decimal entirely using a shortcut?",
+    q: "Which path can **bypass** decimal entirely using a shortcut?",
     options: ["Decimal to binary", "Decimal to octal", "Octal to decimal", "Octal to binary"],
     correct: 3,
-    explanation: "## The Binary Shortcut\nShortcuts only work between **Binary** and its base-2 cousins (Octal/Hex). \n\nIf **Decimal** is part of the problem, you **must** do the long math. But for Octal-to-Binary, you can just expand the digits directly."
+    explanation: "## The Shortcut Link\nShortcuts only exist between **Binary** and its base-2 cousins (Octal/Hex). \n\nIf **Decimal** is part of the conversion, you **must** do the full expansion or division math. But for Octal to Binary, you just swap digits for bits."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(68)_{10}$ in binary?",
+    q: "What is **(68)$_{10}$** in binary?",
     options: ["1000100", "1000010", "1001000", "1100100"],
     correct: 0,
-    explanation: "## Division Check\n- $68/2 = 34$ R0\n- $34/2 = 17$ R0\n- $17/2 = 8$ R1\n- $8/2 = 4$ R0\n- $4/2 = 2$ R0\n- $2/2 = 1$ R0\n- $1/2 = 0$ R1\n\nRead Up: **1000100**."
+    explanation: "## Division Check\n- $68/2 = 34$ R **0**\n- $34/2 = 17$ R **0**\n- $17/2 = 8$ R **1**\n- $8/2 = 4$ R **0**\n- $4/2 = 2$ R **0**\n- $2/2 = 1$ R **0**\n- $1/2 = 0$ R **1**\nRead Up: **1000100**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(68)_{10}$ in **hexadecimal**?",
+    q: "What is **(68)$_{10}$** in hexadecimal?",
     options: ["3C", "44", "4E", "34"],
     correct: 1,
-    explanation: "## Hex Division\n- $68 \div 16 = 4$ Remainder **4**\n- $4 \div 16 = 0$ Remainder **4**\n\nRead Up: **44**."
+    explanation: "## Hex Division\n- $68 \div 16 = 4$ R **4**\n- $4 \div 16 = 0$ R **4**\nRead Up: **44**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What happens if a student incorrectly applies the **division** method to a decimal fraction?",
-    options: ["Result is correct", "Result is zero", "Result is wrong (nonsensical)", "Same result"],
+    q: "What happens if you use the division method on a decimal fraction by mistake?",
+    options: ["Correct result", "Result is zero", "Result is wrong (nonsensical)", "Same result"],
     correct: 2,
-    explanation: "Division is for growing whole numbers. If you divide a fraction like $0.5$ by $2$, it just gets smaller ($0.25$) and you will never get a remainder. You will just end up with a mess that means nothing."
+    explanation: "Division is for growing whole numbers. If you divide $0.5$ by $2$, it just gets smaller ($0.25, 0.125$) and you never get a remainder. You'll just get a mess that means nothing."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is the decimal value of $(4D.21)_{16}$?",
+    q: "What is the decimal value of **(4D.21)$_{16}$**?",
     options: ["76.1289", "77.5195", "76.5195", "77.1289"],
     correct: 3,
-    explanation: "## Mixed Hex Expansion\n1. **Whole (4D):** $(4 \times 16) + 13 = 64 + 13 = 77$\n2. **Fraction (.21):** $(2/16) + (1/256) = 0.125 + 0.0039 = 0.1289$\n\nTotal: **77.1289**."
+    explanation: "## Mixed Hex expansion\n- Whole (4D): $(4 \times 16) + 13 = 77$\n- Fraction (.21): $2/16 + 1/256 = 0.125 + 0.0039 = 0.1289$\nTotal: **77.1289**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "What is the correct 3-bit binary for octal digit **7**?",
     options: ["111", "110", "011", "101"],
     correct: 0,
-    explanation: "The digit 7 is the 'Full House' for octal. \n$4 + 2 + 1 = 7$. \nSo, in binary, every bit is flipped to **1**."
+    explanation: "The digit 7 is the 'full house' for a 3-bit group. \n$4 + 2 + 1 = 7$. \nSo, in binary, it is **111**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "What is the correct 4-bit binary for hex digit **B**?",
     options: ["1010", "1011", "1100", "1001"],
     correct: 1,
-    explanation: "## Hex Map\n1. Hex $B$ = Decimal $11$.\n2. $11 = 8 + 2 + 1$.\n3. In 4-bit binary: **1011**."
+    explanation: "1. Hex $B$ = Decimal 11.\n2. 11 = $8 + 2 + 1$.\n3. Binary = **1011**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which statement correctly describes binary?",
     options: ["Uses 0, 1, 2", "Weights are powers of 10", "Weights are powers of 2", "Least efficient system"],
     correct: 2,
-    explanation: "Binary is the **Base 2** system. This means its weights are $1, 2, 4, 8, 16...$. This matches exactly how computer hardware works (high voltage vs low voltage)."
+    explanation: "Binary is the **Base 2** system. This means its weights are $1, 2, 4, 8, 16...$. This matches exactly how computer circuits work (High vs Low voltage)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In base $r$, a digit $d$ at position $p$ contributes what value?",
+    q: "In base **r**, a digit **d** at position **p** contributes what value?",
     options: ["$d + r^p$", "$d + p$", "$d \times p$", "$d \times r^p$"],
     correct: 3,
-    explanation: "This is the **Universal Rule** for all math in this module. You take the digit symbol ($d$) and multiply it by its positional weight ($r^p$)."
+    explanation: "This is the **Atomic Formula** for all number systems. You take the digit ($d$) and multiply it by the weight of its spot ($r^p$)."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "In decimal, the digit immediately LEFT of the point is position ___, and to the RIGHT is position ___.",
+    q: "In decimal, the digit to the LEFT of the dot is position ___, and to the RIGHT is position ___.",
     options: ["0; -1", "1; 0", "0; 1", "-1; 0"],
     correct: 0,
-    explanation: "Think of a number line. If we start at zero, moving right takes us into negatives. \n- Ones place = **Pos 0**.\n- Tenths place = **Pos -1**."
+    explanation: "Think of it as a number line. \n- Ones place (left) = **Position 0**.\n- Tenths place (right) = **Position -1**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "What is $(29)_{10}$ in hexadecimal?",
+    q: "What is **(29)$_{10}$** in hexadecimal?",
     options: ["1C", "1D", "2D", "1E"],
     correct: 1,
-    explanation: "## Hex Division\n- $29 \div 16 = 1$ R **13**\n- $1 \div 16 = 0$ R **1**\n\nNote: $13$ is the letter **D**. Read Up: **1D**."
+    explanation: "## Hex Division\n- $29 \div 16 = 1$ R **13**\n- $1 \div 16 = 0$ R **1**\nIn Hex, 13 is **D**. Read Up: **1D**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "Which number contains an **invalid** octal digit?",
     options: ["7654", "3012", "3819", "2047"],
     correct: 2,
-    explanation: "> **Tutor Red Flag:** I see an **8** and a **9** in Option C. \n\nSince Octal (Base 8) stops at 7, these digits are physically impossible in that system."
+    explanation: "> **Tutor Red Flag:** Look at Option C. It contains an **8** and a **9**. \n\nSince Octal (Base 8) only goes up to 7, these digits are physically impossible in that system."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "What is the 4-bit binary for hex digit **A**?",
     options: ["1000", "1001", "0111", "1010"],
     correct: 3,
-    explanation: "1. Hex $A$ = Decimal $10$.\n2. $10 = 8 + 2$.\n3. Binary: **1010**."
+    explanation: "1. Hex $A$ = Decimal 10.\n2. 10 = $8 + 2$.\n3. Result: **1010**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "A student converts a fraction and gets integer parts 0, 1, 1, 1, 0, 1 from top to bottom. Result?",
+    q: "A student converts a fraction and gets integer parts **0, 1, 1, 1, 0, 1** from top to bottom. Result?",
     options: ["0.011101", "0.101110", "0.110100", "0.101011"],
     correct: 0,
-    explanation: "Fractions are **Direct**. You do not reverse them like integers. Just put a '0.' in front and list them exactly in the order they were produced: **0.011101**."
+    explanation: "Fractions are **Direct**. Unlike integers (which are read bottom-to-top), fractions are read exactly in the order they were produced. Result: **0.011101**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert octal $(345)_8$ to decimal.",
+    q: "Convert **(345)$_8$** to decimal.",
     options: ["229", "229", "293", "197"],
     correct: 0,
     explanation: "## Octal expansion\n- $(3 \times 64) + (4 \times 8) + (5 \times 1)$\n- $192 + 32 + 5 = 229$."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
-    q: "Convert fraction **0.865** to binary (4 steps). What is the integer sequence?",
+    q: "Convert fraction **0.865** to binary (4 steps). integer sequence?",
     options: ["1, 0, 1, 1", "0, 1, 1, 0", "1, 1, 0, 1", "1, 1, 1, 0"],
     correct: 2,
-    explanation: "1. $0.865 \times 2 = 1.73$ (**1**)\n2. $0.73 \times 2 = 1.46$ (**1**)\n3. $0.46 \times 2 = 0.92$ (**0**)\n4. $0.92 \times 2 = 1.84$ (**1**)\n\nSequence: **1, 1, 0, 1**."
+    explanation: "1. $0.865 \times 2 = 1.73$ (**1**)\n2. $0.73 \times 2 = 1.46$ (**1**)\n3. $0.46 \times 2 = 0.92$ (**0**)\n4. $0.92 \times 2 = 1.84$ (**1**)\nSequence: **1, 1, 0, 1**."
   },
   {
     course: "CS110", term: "T1", topic: "Data Representation",
     q: "When converting **1011011** to hex, what must be done **before** grouping?",
-    options: ["Add leading 1", "Reverse order", "Convert to decimal", "Pad left with zeros to make 8 bits"],
+    options: ["Add leading 1", "Reverse order", "Convert to decimal", "Pad with leading zeros to make 8 bits"],
     correct: 3,
-    explanation: "## Safety First\nYou have 7 bits. Hex needs groups of 4. \nIf you start from the right, your last group is only 3 bits (`101`). Pad it with a zero (`0101`) so you don't miscalculate the translation!"
+    explanation: "## Safety First\nYou have 7 bits. Hex needs groups of 4. \nIf you group from the right, the last group will only have 3 bits (`101`). Pad it with a zero (`0101`) to ensure you don't miscalculate the translation!"
   },
   
-  //CS110 NEW CONTENT MODULE 5
  
  // --- CS110 Term 1 Data (Existing Questions) ---
 
