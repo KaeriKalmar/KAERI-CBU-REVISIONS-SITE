@@ -7131,7 +7131,2465 @@ const mcqData = [
     explanation: "## Safety First\nYou have 7 bits. Hex needs groups of 4. \nIf you group from the right, the last group will only have 3 bits (`101`). Pad it with a zero (`0101`) to ensure you don't miscalculate the translation!"
   },
   
+ //CS110 TERM 2 DATA 
  
+ // ==========================================
+// UNIT 7: THE INTERNET (127 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Infrastructure vs. Service\nWhat is the fundamental difference between the **Internet** and the **World Wide Web**?",
+    options: [
+      "The Internet is a global network of computers; the Web is a service consisting of websites on those computers",
+      "The Internet is a collection of websites; the Web is a physical network of cables",
+      "The Internet uses HTTP; the Web uses FTP for file transfers",
+      "The Internet is wireless only; the Web runs on wired connections"
+    ],
+    correct: 0,
+    explanation: "## Insight\nThink of the **Internet** as the physical 'Highway' system (the cables, routers, and satellites). The **World Wide Web** is just one type of 'Traffic' (websites) that drives on that highway. Other types of traffic, like Email or Gaming, also use the highway but aren't part of the Web."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Which U.S. government agency initiated the networking project that became the foundation of the Internet?",
+    options: [
+      "NASA",
+      "Advanced Research Projects Agency (ARPA)",
+      "Federal Communications Commission (FCC)",
+      "National Science Foundation (NSF)"
+    ],
+    correct: 1,
+    explanation: "## History\n**ARPA** (which is part of the Department of Defense) started this in the 1960s. It was originally a military project to ensure that if one city was attacked, the rest of the computer network would stay 'alive' and keep communicating."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Design Goals\nWhat were the two primary goals of **ARPA's** original network design?",
+    options: [
+      "Commercial transactions and encrypted military talk",
+      "Free email for all and secure government hosting",
+      "Allowing scientists to share info and keeping the network functional if part of it was destroyed",
+      "Streaming video content and connecting every home"
+    ],
+    correct: 2,
+    explanation: "## Survival Strategy\nThe creators wanted a system that was 'invincible.' By making the network decentralized (no main 'brain'), they ensured that even if a nuclear strike destroyed one location, the data would simply take a different path to reach its destination."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "How many host computers comprised the original **ARPANET** at its launch?",
+    options: ["Two", "Three", "Six", "Four"],
+    correct: 3,
+    explanation: "## Humble Beginnings\nToday there are billions of devices online, but in 1969, the entire 'Internet' (ARPANET) was just **four** computers located at four different universities. That was it!"
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Early Nodes\nWhich institution was **NOT** one of the original four ARPANET host locations?",
+    options: [
+      "Massachusetts Institute of Technology (MIT)",
+      "University of California, Los Angeles (UCLA)",
+      "Stanford Research Institute",
+      "University of Utah"
+    ],
+    correct: 0,
+    explanation: "## The First Four\nThe original 'Big Four' were UCLA, UC Santa Barbara, Stanford, and the University of Utah. While **MIT** is a tech giant today, it joined the network slightly later."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What does the term **“bandwidth”** describe in computer networking?",
+    options: [
+      "The speed of a processor",
+      "The capacity of a communications channel",
+      "The number of users online",
+      "The length of a cable"
+    ],
+    correct: 1,
+    explanation: "## The 'Pipe' Analogy\nThink of a water pipe. Bandwidth isn't how fast the water is moving; it's how **wide** the pipe is. A wider pipe (higher bandwidth) can carry more 'water' (data) at the same time."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Equal Access\n**Net neutrality** is the principle that:",
+    options: [
+      "ISPs can charge extra for faster access",
+      "Governments can restrict foreign sites",
+      "All websites have equal priority and value",
+      "Only encrypted sites get full speed"
+    ],
+    correct: 2,
+    explanation: "## Fairness Online\nNet neutrality means your Internet Provider (ISP) must treat all data equally. They aren't allowed to slow down a small blog just because a giant company like Netflix didn't pay them an extra 'fast-lane' fee."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Under **net neutrality** principles, what is the primary obligation of an ISP?",
+    options: [
+      "To offer discounts to schools",
+      "To block high-bandwidth sites",
+      "To prioritize video streaming",
+      "To provide the same level of service to all websites regardless of content"
+    ],
+    correct: 3,
+    explanation: "## The Open Web\nAn ISP's only job under net neutrality is to carry the bits. They shouldn't be 'curating' your experience by deciding which sites load fast and which load slow based on their own business interests."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Internet Providers\nAn **Internet Service Provider (ISP)** is best defined as:",
+    options: [
+      "A company that sells Internet access to individuals and organisations",
+      "A government regulator",
+      "A nonprofit that maintains the Web",
+      "A hardware manufacturer"
+    ],
+    correct: 0,
+    explanation: "## Your Gateway\nThe ISP is the company you pay for your monthly data or Wi-Fi (like Liquid, MTN, or Airtel). They are the middleman that physically connects your home to the global internet infrastructure."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "A student claims that the Internet and the Web are identical. How do you correct this?",
+    options: [
+      "They are identical",
+      "The Internet is the network; the Web is one of many services running on it",
+      "The Web is larger than the Internet",
+      "The Internet is a newer version of the Web"
+    ],
+    correct: 1,
+    explanation: "## Structure vs. Content\nRemember: The **Internet** is the wires and the rules (infrastructure). The **Web** is the collection of pages (HTML) we view. You can use the Internet *without* the Web (like when you use an app or send an email)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Web Units\nA **web page** is best defined as:",
+    options: [
+      "A collection of websites",
+      "A software application",
+      "A specially formatted document that can contain text, graphics, and links",
+      "The physical server"
+    ],
+    correct: 2,
+    explanation: "## The Document\nA 'Web Page' is just a single file (like an article or a profile). When you group many of these related pages together under one name (like `google.com`), you get a **Website**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the key difference between a **static** and a **dynamic** web page?",
+    options: [
+      "Static uses HTML only",
+      "Static is encrypted",
+      "Static requires a plugin",
+      "Static shows the same content every visit; dynamic regenerates content based on time or input"
+    ],
+    correct: 3,
+    explanation: "## Living Content\nA **Static** page is like a printed poster—it stays the same. A **Dynamic** page is like a scoreboard—it changes every time the data changes (like your Facebook feed or a live weather report)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Dynamic Examples\nWhich of the following is a clear example of **dynamic** web content?",
+    options: [
+      "Live stock quotes or real-time flight availability",
+      "A company's history page",
+      "A fixed product photograph",
+      "Legal terms at the bottom of a page"
+    ],
+    correct: 0,
+    explanation: "## Real-Time Data\nIf the information has to be 'current' to be useful (like the price of Bitcoin or whether a seat is still available on a plane), it **must** be dynamic. A static page would be outdated the moment it was saved."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the technical definition of a **hyperlink**?",
+    options: [
+      "An encryption code",
+      "Words or graphics you click to access another page or resource",
+      "Metadata for search engines",
+      "Cables in the internet backbone"
+    ],
+    correct: 1,
+    explanation: "## Navigation\nHyperlinks (or just 'links') are the 'connectors' of the Web. They turn a static document into an interactive web where you can 'jump' from one idea to another by just clicking a button or a blue piece of text."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# The Collection\nA **website** is correctly defined as:",
+    options: [
+      "A single document",
+      "A browsing application",
+      "A collection of related web pages and items stored on a server",
+      "The physical server hardware"
+    ],
+    correct: 2,
+    explanation: "## The Big Picture\nThink of a **Web Page** as a single page in a book. The **Website** is the entire book. It includes all the pages, images, and documents that belong to that specific domain."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the primary function of a **web server**?",
+    options: [
+      "To display pages on a screen",
+      "To write HTML code",
+      "To encrypt local data",
+      "To deliver requested web pages to a user's browser"
+    ],
+    correct: 3,
+    explanation: "## The Librarian\nA web server is a powerful computer that 'sits and waits.' When your browser asks for a page, the server finds the file in its storage and 'serves' it to you across the internet."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Modern Design\n**Responsive web design** is the practice of:",
+    options: [
+      "Adapting a layout to fit the screen size and device being used",
+      "Compressing images for speed",
+      "Responding to voice commands",
+      "Automatic language translation"
+    ],
+    correct: 0,
+    explanation: "## Screen Flexibility\nA responsive site is 'smart.' It knows if you are on a tiny phone or a giant monitor. It moves the columns and resizes the text so the site is easy to read without you having to zoom in and out manually."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the role of **HTML** in web development?",
+    options: [
+      "To specify visual colors and fonts",
+      "To define the structure and content elements (headings, links, etc.)",
+      "To manage database queries",
+      "To encrypt connections"
+    ],
+    correct: 1,
+    explanation: "## The Skeleton\n**HTML** provides the 'Bones' of the page. It tells the browser 'this is a header,' and 'this is a paragraph.' It doesn't care about beauty; it only cares about the **structure** of the information."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Styling\nWhich technology controls the **design and visual appearance** (colors, fonts) of a web page?",
+    options: ["JavaScript", "XML", "CSS (Cascading Style Sheets)", "PHP"],
+    correct: 2,
+    explanation: "## The Makeup\n**CSS** is the 'Paint and Decoration' layer. While HTML builds the walls, CSS decides what color to paint them, which font to use, and how much space to leave between buttons."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What are **cookies** in the context of web browsing?",
+    options: [
+      "Malware that records keys",
+      "Temporary cached image files",
+      "Security tokens for identity",
+      "Small text files that store info about user activity"
+    ],
+    correct: 3,
+    explanation: "## The Memory Chip\nCookies are just simple text. They help a website 'remember' you. This is how a site knows what's in your shopping cart even if you close the tab and come back later."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Navigation Trails\nA trail showing **\"Home > Products > Laptops\"** at the top of a page is an example of:",
+    options: ["Breadcrumbs", "Cookie history", "URL display", "Navigation menu"],
+    correct: 0,
+    explanation: "## Path Tracking\n**Breadcrumbs** show you the exact path you took to get to where you are. Just like in the fairy tale, they leave a trail so you can easily 'jump back' to a higher level in the website."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Which two browser buttons allow you to move along the **breadcrumb path** of visited pages?",
+    options: ["Refresh and Home", "Back and Forward", "Stop and Reload", "Save and Print"],
+    correct: 1,
+    explanation: "## Moving Through Time\nThe **Back** button takes you one step into the past. The **Forward** button moves you back toward the present (if you've already gone back). They are your primary tools for navigating your session's history."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Browser Interface\nThe **address bar** in a browser is defined as:",
+    options: [
+      "A favorites button",
+      "A load status indicator",
+      "The area that displays the URL (address) of the current page",
+      "A default search box"
+    ],
+    correct: 2,
+    explanation: "## The Navigator\nThe address bar is where you see the **URL**. It's the most important part of the browser because it's where you type your destination and where you check for the 'Padlock' icon to see if a site is secure."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What does a standard **IP address** consist of?",
+    options: [
+      "A domain name like google.com",
+      "A string of letters after the protocol",
+      "Latitude and longitude coordinates",
+      "Four sets of numbers from 0 to 255, separated by periods"
+    ],
+    correct: 3,
+    explanation: "## The ID Number\nComputers don't use names like 'google.com' to talk to each other; they use numbers. An **IP Address** (like $192.168.1.1$) is the unique numeric address given to every device on the internet."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# IP Schemes\nThe Internet currently uses **two** IP addressing schemes. What are they?",
+    options: ["IPv4 and IPv6", "TCP and UDP", "HTTP and HTTPS", "DNS and DHCP"],
+    correct: 0,
+    explanation: "## The Upgrade\n**IPv4** was the original, but we ran out of numbers. **IPv6** is the much longer, newer version that provides enough addresses for trillions of devices. Both are working together during this transition period."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the primary job of the **Domain Name System (DNS)**?",
+    options: [
+      "To encrypt data",
+      "To translate domain names into IP addresses",
+      "To record website owners",
+      "To remember browser history"
+    ],
+    correct: 1,
+    explanation: "## The Phonebook\nHumans are bad at remembering numbers (IPs) but good at names (google.com). The **DNS** acts as the internet's phonebook—it takes the name you typed and looks up the number the computer needs to reach the server."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Anatomy of a URL\nIn the URL **http://www.example.com/student/index.html**, which part is the **domain name**?",
+    options: ["http://", "/student/index.html", "www.example.com", "index.html"],
+    correct: 2,
+    explanation: "## The Hostname\nThe **Domain Name** is the name of the 'building' you are visiting. In this case, `www.example.com`. Everything after that is just the 'room' (folder) and the 'file' you are looking at inside that building."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Which browser is the **default** for Windows and integrates with Cortana and OneDrive?",
+    options: ["Mozilla Firefox", "Google Chrome", "Apple Safari", "Microsoft Edge"],
+    correct: 3,
+    explanation: "## Ecosystem Fit\n**Microsoft Edge** is built specifically for Windows. It replaced the old Internet Explorer and is designed to work perfectly with other Microsoft tools like OneDrive and their voice assistant, Cortana."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Privacy Focused Browsers\nWhich browser, released in 2004, is famous for its massive library of **plug-ins** and privacy features?",
+    options: ["Mozilla Firefox", "Google Chrome", "Apple Safari", "Microsoft Edge"],
+    correct: 0,
+    explanation: "## Customization King\n**Firefox** was the first major 'rebel' browser. It became popular because it was independent, very secure, and allowed users to add thousands of 'Add-ons' to change how the browser works."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What specific architectural feature helps **Google Chrome** isolate problems in one tab so they don't crash the whole app?",
+    options: [
+      "Private browsing mode",
+      "Independent tabbed browsing (multi-process)",
+      "Integrated ad blocker",
+      "Built-in VPN"
+    ],
+    correct: 1,
+    explanation: "## Damage Control\nIn Chrome, every tab you open is like a separate 'mini-app.' If one tab freezes or has a bug, you can just close that one tab and the rest of your browser keeps working perfectly. This is called **Independent process management**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Behind the Scenes\nWhen you press 'Enter' after typing a URL, what must happen **before** the browser can contact the server?",
+    options: [
+      "Download a security certificate",
+      "Check the local cache",
+      "Translate the name to an IP via DNS",
+      "Check bandwidth allowance"
+    ],
+    correct: 2,
+    explanation: "## The First Step\nThe browser doesn't know where `example.com` lives. It must first ask a **DNS Server**: 'Hey, what is the IP number for this name?' Once it gets that number, only then can it travel across the web to find the website's server."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Access Points\nWhat is a **hot spot**?",
+    options: [
+      "A congested traffic area",
+      "A security warning location",
+      "A wired connection point",
+      "A wireless network device that provides internet to mobile devices"
+    ],
+    correct: 3,
+    explanation: "## Wireless Zone\nA **Hot Spot** is the specific area where you can catch a Wi-Fi signal. It is created by a wireless access point. When you are 'at a hot spot,' you are within range of that device's radio signal."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "A **mobile hot spot** specifically allows you to connect to the internet through:",
+    options: ["The cellular network", "A Wi-Fi router", "A satellite", "An Ethernet port"],
+    correct: 0,
+    explanation: "## Portable Web\nA mobile hot spot uses your phone's **Cellular Data** (the same signal you use for calls) and turns it into a private Wi-Fi signal that your laptop can join. This lets you have internet even in the middle of a park."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Mobile Costs\nWhat is a major concern when using your phone's **mobile hot spot** feature?",
+    options: [
+      "It is always free",
+      "Carrie's may charge a fee and data used counts against your monthly plan",
+      "It only works with Wi-Fi nearby",
+      "It doesn't use any plan data"
+    ],
+    correct: 1,
+    explanation: "## Watch Your Data\nUsing a hot spot is very 'expensive' for your data plan. A laptop uses much more data than a phone. If you watch a movie on your laptop through your phone's hot spot, you could use up your entire month's data in one night!"
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is the technical term for sharing your smartphone's internet with a laptop via a **USB cable**?",
+    options: ["Bridging", "Bandwidth sharing", "Tethering", "Repeating"],
+    correct: 2,
+    explanation: "## Wired Sharing\n**Tethering** is when you physically 'tether' (tie) your phone to your computer with a cable to share its data. It's often faster and uses less battery than a wireless hot spot."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Public Networks\nWireless networks in public places like hotels or restaurants are commonly called:",
+    options: ["Cellular", "Bluetooth", "NFC", "Wi-Fi networks"],
+    correct: 3,
+    explanation: "## Standard Access\n**Wi-Fi** is the universal language for public wireless. Almost every public 'Hot Spot' uses the 802.11 standards, allowing any device with a Wi-Fi chip to connect."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Which cellular generation was built specifically for **high-bandwidth** content like 4K video?",
+    options: ["5G", "4G", "3G", "LTE"],
+    correct: 0,
+    explanation: "## Ultra Speed\n**5G** is the 5th generation. It is hundreds of times faster than 4G, making it possible to stream high-definition movies or play complex online games without any 'lag' or buffering."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Reference Sites\nWhich type of site contains encyclopedias, dictionaries, and library resources?",
+    options: ["Business", "Educational", "Informational and research", "Government"],
+    correct: 2,
+    explanation: "## Knowledge Hubs\n**Informational** sites (like Wikipedia or Dictionary.com) exist as a digital library. Their only goal is to provide facts and reference material to the public."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What defines a **blog** (web log)?",
+    options: [
+      "A media organizer",
+      "An online store",
+      "A contact notification service",
+      "An informal journal with time-stamped posts in reverse chronological order"
+    ],
+    correct: 3,
+    explanation: "## Digital Diary\nThe key to a blog is the **Timeline**. The newest posts are always at the top, and the tone is usually informal or personal. It's a way for individuals or companies to share 'updates' over time."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Website Categories\nBusiness websites aim to do many things, but which of these is **NOT** a typical goal?",
+    options: [
+      "Awarding formal academic degrees",
+      "Increasing brand awareness",
+      "Providing company background",
+      "Promoting products"
+    ],
+    correct: 0,
+    explanation: "## Know the Boundary\nA business site wants to sell you things or show you their brand. Only an **Educational** site (like a University portal) has the authority to award formal degrees or provide academic accreditation."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Government websites are primarily built to provide citizens with:",
+    options: [
+      "Paid advertising space",
+      "Official info (census) and assistance (tax forms)",
+      "Competitive banking services",
+      "Entertainment documentaries"
+    ],
+    correct: 1,
+    explanation: "## Civic Service\nThe government's job online is to help you follow the law and get services. This is why you go to their sites to download tax forms, apply for a passport, or look up official national statistics."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Bookmarking\nWhat is the purpose of a **bookmarking site** (like Reddit or Digg)?",
+    options: [
+      "Local page storage",
+      "Ad blocking",
+      "Organizing, tagging, and sharing links to other content with the community",
+      "Archiving old pages"
+    ],
+    correct: 2,
+    explanation: "## Social Curation\nA bookmarking site doesn't host the content; it hosts the **links**. Users 'vote' on the best links and 'tag' them so other people can find interesting news or videos from across the whole internet."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What does the broad term **“social media”** refer to?",
+    options: [
+      "World news websites",
+      "Smartphone apps",
+      "ISP collection",
+      "The many ways individuals and businesses share info and interact online"
+    ],
+    correct: 3,
+    explanation: "## Interaction\nSocial media is the 'Umbrella' for everything interactive. If you can post content and people can 'Like' or 'Comment' on it, you are using social media. It is defined by **Two-Way communication**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Web App Pros\nWhat is a major **benefit** of using a web app (like Google Docs) instead of installed software?",
+    options: [
+      "Automatic updates to the latest version",
+      "Better protection from threats",
+      "Fully offline capability",
+      "More features"
+    ],
+    correct: 0,
+    explanation: "## Zero Maintenance\nWith web apps, you never have to click 'Update.' The company updates the software on their server, and the next time you open your browser, you are automatically using the newest version."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is a major **risk (con)** of relying on web applications?",
+    options: [
+      "Re-downloading the app daily",
+      "If the provider goes out of business, you could lose all your files",
+      "Automatic updates without permission",
+      "Limited mobile use"
+    ],
+    correct: 1,
+    explanation: "## Total Dependency\nThis is the scary part. If you save your whole life on a cloud app and that company shuts down, your files could vanish forever. This is why you should always keep a 'Local' backup of your most important work."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Online Finance\nOnline banking and trading are best categorized as which type of service?",
+    options: ["Social networking", "Educational", "Financial services", "Governmental"],
+    correct: 2,
+    explanation: "## Money Management\nAny site that lets you handle your bank account, pay bills, or buy stocks is a **Financial Service**. The key advantage is that you can manage your money from any country as long as you have a signal."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "How does a secure website protect your data during transmission?",
+    options: ["Encryption", "Compression", "Redundancy", "Caching"],
+    correct: 0,
+    explanation: "## Scrambling Data\n**Encryption** is like putting your data in a high-tech safe. Only the computer at the other end has the key. If a hacker intercepts your password in the middle, it will just look like random gibberish to them."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Secure URLs\nWhich prefix in the URL confirms that a connection is **encrypted**?",
+    options: ["httpd://", "https://", "http2://", "http+e://"],
+    correct: 1,
+    explanation: "## The 'S' Rule\nThe **S** in **HTTPS** stands for **Secure**. If you see this (and the small padlock icon), it means the site is using encryption to keep your credit card and personal info safe."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is a **digital certificate** used for?",
+    options: [
+      "Ad blocking",
+      "Speed optimization",
+      "Verifying a website's identity via a trusted third party",
+      "Saving passwords locally"
+    ],
+    correct: 2,
+    explanation: "## Trust Check\nA digital certificate is like a 'Digital Passport' for a website. It proves the site is who they say they are, so you know you're at the *real* bank website and not a fake one built by a hacker."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Safety Tips\nWhich of the following is **NOT** a recommended safety practice?",
+    options: [
+      "Verifying if a site is safe",
+      "Turning off location sharing",
+      "Enabling a pop-up blocker",
+      "Storing all passwords in the browser's autofill"
+    ],
+    correct: 3,
+    explanation: "## Avoid Single Failure\nStoring every password in your browser is dangerous. If someone steals your laptop or gets into your browser account, they have the keys to your entire life. It's much safer to use a dedicated, encrypted **Password Manager**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "A **phishing filter** is a tool designed to:",
+    options: [
+      "Warn you about fraudulent websites",
+      "Block all emails with attachments",
+      "Scan files for viruses",
+      "Generate strong passwords"
+    ],
+    correct: 0,
+    explanation: "## Fraud Detection\nPhishing filters maintain a 'Blacklist' of known fake sites. If you accidentally click a link to a fake login page, the filter will pop up a warning to stop you from typing your password into a trap."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Anonymity\nWhat is the primary benefit of using a **proxy server** for safety?",
+    options: [
+      "Faster loading",
+      "It hides your real IP address from websites you visit",
+      "Malware scanning",
+      "Stronger encryption"
+    ],
+    correct: 1,
+    explanation: "## Hiding Your Identity\nA proxy acts as a 'Middleman.' Instead of you talking to a website directly, you talk to the proxy, and the proxy talks to the website. The website only sees the proxy's IP, keeping yours secret."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What does **private browsing mode** (Incognito) actually do?",
+    options: [
+      "Encrypts your traffic from your ISP",
+      "Hides your IP from websites",
+      "Prevents the browser from saving history and cookies locally",
+      "Blocks all tracking scripts"
+    ],
+    correct: 2,
+    explanation: "## Local Privacy Only\nPrivate mode only protects you from **people using your same computer**. It won't hide your activity from your boss, your school, or your ISP. It just makes sure your history isn't saved in the browser list after you close the window."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Anonymous Browsing\nTo visit a site anonymously without being tracked by the site **OR** having history saved on your PC, which combo is best?",
+    options: [
+      "Phishing filter + Private mode",
+      "Password manager + Pop-up blocker",
+      "Digital certificate + Disable location",
+      "Private mode + Proxy server"
+    ],
+    correct: 3,
+    explanation: "## The Double Guard\nYou need **Private Mode** to keep the history off your computer, and you need a **Proxy** (or VPN) to hide your ID from the website. Using both handles both the 'local' and 'remote' sides of privacy."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Who were the **original** primary users of Email?",
+    options: [
+      "Scientists and researchers on ARPANET",
+      "Business marketers",
+      "College students",
+      "Classified government agents"
+    ],
+    correct: 0,
+    explanation: "## Academic Roots\nEmail was invented decades before it became common for the public. It was the way the first internet scientists at universities sent text messages to each other about their research projects."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Real-Time Messaging\n**Internet messaging services** are defined by their ability to:",
+    options: [
+      "Store emails for later",
+      "Notify you in real-time when contacts are online and allow instant chat",
+      "Automatic translation",
+      "Permanent legal archiving"
+    ],
+    correct: 1,
+    explanation: "## Instant Interaction\nUnlike Email (where you might wait hours for a reply), **Messaging** (like WhatsApp or Telegram) is designed for 'Live' conversation. It tells you exactly who is 'Online' right now so you can have a real-time chat."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "Which type of social network is most focused on **media distribution** (YouTube, Flickr)?",
+    options: [
+      "Blogging networks",
+      "Media sharing networks",
+      "Curation networks",
+      "File sharing networks"
+    ],
+    correct: 1,
+    explanation: "## Visual Hubs\nIf the main reason you go to a site is to **watch a video or look at a photo**, it is a media sharing network. These platforms are built specifically to handle the high bandwidth needed for video and audio."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Collaborative Projects\nWikipedia and WikiAnswers are examples of which network type?",
+    options: [
+      "Curation networks",
+      "File sharing",
+      "Collaborative project networks",
+      "Blogging"
+    ],
+    correct: 2,
+    explanation: "## Crowdsourcing\nA **Collaborative Network** is a group effort. There is no one 'author'; instead, the whole community works together to write, fix, and update the information so that it stays accurate for everyone."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What are **spiders** or **crawlers** in the world of search engines?",
+    options: [
+      "Malware trackers",
+      "Data scrapers",
+      "Internet bots",
+      "Software that combs the web to build a search index"
+    ],
+    correct: 3,
+    explanation: "## The Web Weavers\nSearch engines like Google don't just 'know' every site. They use millions of tiny programs (**Spiders**) that automatically 'crawl' from one link to the next, reading every page and adding it to a giant database index."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Precision Search\nWhat does placing a search term in **quotation marks** (e.g., \"artificial intelligence\") do?",
+    options: [
+      "Broadens the search",
+      "Excludes the phrase",
+      "Wildcard matching",
+      "Requires an exact phrase match in that specific order"
+    ],
+    correct: 3,
+    explanation: "## The Lock\nWithout quotes, Google finds any page with the words 'artificial' or 'intelligence.' With **Quotes**, you are telling the computer: 'Only show me pages where these exact words sit next to each other in this exact order.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "In a search query, what does the **hyphen (-)** operator represent?",
+    options: ["AND", "NOT (Exclusion)", "OR", "RANGE"],
+    correct: 1,
+    explanation: "## Filtering Junk\nIf you want to search for 'Jaguar' but you don't want the car, you type `Jaguar -car`. This tells the engine to find Jaguar the animal and hide any page that mentions the word 'car.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Wildcards\nWhat does the **asterisk (*)** symbol do in a web search?",
+    options: ["OR operator", "NOT operator", "Wildcard placeholder for any number of characters", "Exact match"],
+    correct: 2,
+    explanation: "## Fill in the Blank\nThe asterisk is like a 'Wildcard' in a game of cards. If you search for `augment*`, the computer will find results for 'augment', 'augmented', 'augmenting', and 'augmentation' all at once."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "A student wants to find info published between **2019 and 2023**. Which operator is correct?",
+    options: ["2019 | 2023", "2019 - 2023", "2019 * 2023", "2019..2023"],
+    correct: 3,
+    explanation: "## Number Range\nTo find dates or prices between two points, use **two dots**. Typing `2019..2023` tells the search engine to look for any number in that range. This is the professional way to filter by time."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Information Literacy\nThe **CARS checklist** is used to evaluate:",
+    options: [
+      "Connection speed",
+      "Whether online info is Credible, Accurate, Reasonable, and Supportable",
+      "Security levels",
+      "Search algorithm quality"
+    ],
+    correct: 1,
+    explanation: "## Digital Literacy\nYou can't trust everything you read! The **CARS** test helps you be a smart student by asking: Is the author an expert (**Credible**)? Is the data current (**Accurate**)? Is it fair (**Reasonable**)? Can I prove it with other sites (**Supportable**)?"
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is a **citation**?",
+    options: [
+      "A website link",
+      "A browser bookmark",
+      "A search operator",
+      "A formal reference to credit the origin of information"
+    ],
+    correct: 3,
+    explanation: "## Academic Credit\nIn a professional paper, you must give credit where it's due. A **Citation** is the formal way of saying 'I got this fact from this specific book or website.' It protects you from plagiarism charges."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Property Rights\n**Intellectual property rights** are legal protections for:",
+    options: [
+      "Those who create original works (photos, music, writing, inventions)",
+      "Server owners",
+      "Governments",
+      "Software buyers"
+    ],
+    correct: 0,
+    explanation: "## Ownership of Ideas\nJust because you can 'right-click and save' a photo doesn't mean you own it. **Intellectual Property** laws ensure that the person who spent time and talent creating something is the one who gets to decide how it's used and shared."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is **Digital Rights Management (DRM)**?",
+    options: [
+      "A speed booster",
+      "Technologies used to prevent unauthorized copying of digital content",
+      "Translation tools",
+      "Compression software"
+    ],
+    correct: 1,
+    explanation: "## Digital Locks\n**DRM** is like a 'security guard' for digital files. It is the technology that stops you from sharing a Netflix movie with a friend or copying an E-book to another device without a license. It protects the creator's income."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Usage Ethics\nAccording to academic guidelines, when are you allowed to use another person's ideas?",
+    options: [
+      "If you paraphrase them",
+      "If you get written permission",
+      "As long as you provide a proper citation",
+      "Never"
+    ],
+    correct: 2,
+    explanation: "## Build on Knowledge\nScience and education grow by sharing ideas! You are encouraged to use others' work to help your research, provided you **Always Cite the Source**. This shows you are being honest about which ideas are yours and which came from others."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "What is **public domain** content?",
+    options: [
+      "Content not subject to copyright (free to use and copy by anyone)",
+      "Government-only content",
+      "Creative Commons content",
+      "Publicly visible but copyrighted content"
+    ],
+    correct: 0,
+    explanation: "## Free for Everyone\nContent enters the **Public Domain** when its copyright expires or was never applied. You can use this material for anything—you can copy it, sell it, or change it—without asking anyone for permission."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Creative Commons\n**Creative Commons** is a nonprofit that helps creators:",
+    options: [
+      "Enforce strict copyright law",
+      "Retain copyright while allowing others to share their work under specific conditions",
+      "Watermark images",
+      "Identify free websites"
+    ],
+    correct: 1,
+    explanation: "## The Middle Ground\nInstead of 'All Rights Reserved' (Strict) or 'Public Domain' (Free), **Creative Commons** lets a creator say: 'You can share my photo as long as you give me credit and don't try to sell it.' it makes sharing easier for everyone."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "A student finds an anonymous article from 2009 claiming a product 'cures all diseases.' Why does this fail **CARS**?",
+    options: [
+      "Accuracy only",
+      "Credibility only",
+      "It fails all four: No author, outdated, extreme claims, and conflict of interest",
+      "Supportability only"
+    ],
+    correct: 2,
+    explanation: "## Total Failure\nThis is a 'Red Flag' site. No author = No **Credibility**. Extreme claims = No **Reasonableness**. Outdated = No **Accuracy**. If a site sounds too good to be true and provides no proof, you should never use it for research."
+  },
+  {
+    course: "CS110", term: "T2", topic: "The Internet",
+    q: "# Final Summary\nWhich of the following best summarizes the ultimate goal of becoming a **Digital Citizen**?",
+    options: [
+      "To have the fastest internet",
+      "To master programming",
+      "To use technology legally, ethically, and efficiently while respecting others",
+      "To move all files to the cloud"
+    ],
+    correct: 2,
+    explanation: "## The Big Picture\nDigital Citizenship is about **Responsibility**. It's not enough to be good at using computers; you must also be a good 'neighbor' online—respecting laws, being ethical with data, and being kind to other people in the digital world."
+  },
+
+// ==========================================
+// UNIT 8: PROGRAMS AND APPS (140 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# The Logic Layer\nWhat do smartphones, computers, and tablets all **require** to function?",
+    options: ["A program or app", "Internet connection only", "Physical keyboard", "Touch screen"],
+    correct: 0,
+    explanation: "## Insight\nHardware (the metal and glass) is just a 'Body.' The **Program or App** is the 'Soul.' Without a set of instructions telling the parts what to do, your phone would just be a very expensive piece of plastic."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which terms are used interchangeably to refer to **instructions** that tell a computer what to do?",
+    options: ["Hardware and firmware", "Software, program, and app", "Data and information", "OS and drivers"],
+    correct: 1,
+    explanation: "## Synonyms\nWhether you call it 'Software' (general), a 'Program' (PC-focused), or an 'App' (mobile-focused), you are talking about the same thing: the digital code that controls the machine."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Productivity\nWhich category of apps helps users manage **documents, spreadsheets, and databases**?",
+    options: ["Media apps", "Security tools", "Productivity apps", "Interest apps"],
+    correct: 2,
+    explanation: "## Getting Work Done\n**Productivity apps** are tools for the office and school. They are designed to help you produce information—like typing a report in Word, managing money in Excel, or building a presentation in PowerPoint."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "According to the module, apps are generally grouped into which **four** categories?",
+    options: [
+      "Word, Sheet, Slide, Data",
+      "Local, Portable, Native, Web",
+      "Free, Share, Open, Public",
+      "Productivity, Media, Personal Interest, and Communications"
+    ],
+    correct: 3,
+    explanation: "## Categorization\nWe group apps by **Purpose**. Some are for work (**Productivity**), some for photos/music (**Media**), some for hobbies (**Interest**), and some for talking to others (**Communications**)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Local Apps\nWhat is a **local app**?",
+    options: [
+      "An app installed on your internal hard drive",
+      "An app on a USB stick",
+      "An app for one specific OS",
+      "A browser-only app"
+    ],
+    correct: 0,
+    explanation: "## Resident Software\nA **Local App** lives inside your computer. Once it is installed on your hard drive, it's always there and usually doesn't need the internet to open its basic features."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What defines a **portable app**?",
+    options: [
+      "It only works on laptops",
+      "It runs from removable media (like a USB) without being installed on the PC",
+      "It requires a setup file",
+      "It is OS-specific only"
+    ],
+    correct: 1,
+    explanation: "## No Installation Needed\n**Portable apps** are great for travelers. You can keep the whole program on a USB flash drive, plug it into a library computer, run it, and when you pull the USB out, you leave no trace behind."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Native Apps\nWhat is a **native app**?",
+    options: [
+      "A browser app",
+      "Preinstalled apps",
+      "An app written specifically for one operating system and installed on the device",
+      "Universal apps"
+    ],
+    correct: 2,
+    explanation: "## Tailor-Made\nAn app built specifically for Android won't run on an iPhone. That's because it's **Native** to Android—it was written in the 'language' that the Android OS speaks best."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "How do you access a **web app**?",
+    options: [
+      "Download from an app store",
+      "Paid subscription only",
+      "Via a file on your disk",
+      "Through a browser via the internet"
+    ],
+    correct: 3,
+    explanation: "## Browser Based\n**Web apps** (like Gmail or Facebook) don't live on your computer. They live on the internet. You access them by typing a URL into your browser. Nothing is ever 'installed' on your device."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Mobile Apps\nWhat defines a **mobile app**?",
+    options: [
+      "Apps accessed on a smartphone or tablet",
+      "Desktop-only apps",
+      "Wired apps",
+      "Permanent apps"
+    ],
+    correct: 0,
+    explanation: "## Mobile Design\nThese apps are built for small screens and **Touch** interaction. They are usually 'lighter' than desktop software because they have to save battery and work on mobile processors."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What can mobile apps do that replaces the need for a bulky laptop?",
+    options: [
+      "Only calls",
+      "Email, calendars, contacts, and GPS maps",
+      "Only gaming",
+      "Only photography"
+    ],
+    correct: 1,
+    explanation: "## Portability\nModern mobile apps are incredibly powerful. You can manage your whole professional schedule, respond to work emails, and navigate a new city using only the **Mobile Apps** in your pocket."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Design Differences\nWhat is a typical characteristic of a mobile app compared to a desktop suite?",
+    options: [
+      "More complex features",
+      "Uses more storage",
+      "Usually focuses on one specific task",
+      "Cannot connect online"
+    ],
+    correct: 2,
+    explanation: "## Single Purpose\nDesktop apps like 'Adobe Creative Cloud' try to do everything. **Mobile apps** follow the 'One Job' rule—one app for Chat, one for Photos, one for Maps. This keeps them fast and easy to use with one hand."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "If an app is both a **web app** and a **native app**, what is the benefit?",
+    options: [
+      "Separated storage",
+      "Web version is deleted",
+      "Manual data transfer",
+      "Data and settings can be synchronized across all your devices"
+    ],
+    correct: 3,
+    explanation: "## Cloud Sync\nIf you save a note on the native app on your phone, and it 'magically' appears when you open the web version on your laptop, that is **Synchronization**. It keeps your life consistent across every screen."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Smart Typing\nWhat features do modern **on-screen keyboards** use to speed up typing?",
+    options: [
+      "Word prediction, auto-correction, and voice-to-text",
+      "Only caps",
+      "Only symbols",
+      "Physical vibrations only"
+    ],
+    correct: 0,
+    explanation: "## Intelligence\nBecause typing on glass is hard, mobile OSs use **Prediction**. The computer 'guesses' what word you are typing before you finish, allowing you to just tap the word and move on."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the best solution for a smartphone user who needs to type a **long essay**?",
+    options: ["Larger screen", "Connect a portable Bluetooth keyboard", "Use a tablet", "Voice only"],
+    correct: 1,
+    explanation: "## External Hardware\nYour phone is a computer! You can pair it with a physical **Bluetooth Keyboard**. This turns your small phone into a writing station, allowing you to type as fast as you would on a desktop."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Web App Cons\nWhat is a common **disadvantage** of mobile web apps compared to native apps?",
+    options: [
+      "Slow to build",
+      "Zero offline use",
+      "They are often slower and have fewer features",
+      "Take up too much space"
+    ],
+    correct: 2,
+    explanation: "## Performance Gap\nBecause a web app has to run 'inside' a browser, it's like a runner wearing a heavy coat. It will always be **Slower** and have less access to your phone's hardware (like the camera) than a native app built specifically for the phone."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which three technologies form the 'holy trinity' of **web app development**?",
+    options: [
+      "Java, Python, SQL",
+      "C++, HTML, JS",
+      "PHP, Ruby, CSS",
+      "HTML5, JavaScript (JS), and CSS"
+    ],
+    correct: 3,
+    explanation: "## Web Foundations\n1. **HTML5:** The structure. \n2. **CSS:** The style. \n3. **JavaScript:** The logic and movement. \nIf you know these three, you can build almost any web app in existence today."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Coding Efficiency\nWhat are **cross-platform** development tools used for?",
+    options: [
+      "To build apps for multiple OSs from one single codebase",
+      "To turn native apps into web apps",
+      "To lock apps to one OS",
+      "For desktop design only"
+    ],
+    correct: 0,
+    explanation: "## Write Once, Run Anywhere\nInstead of paying one team to build an iPhone app and another to build an Android app, developers use **Cross-Platform** tools to write the code once. The software then 'translates' itself to work on both types of phones."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which sensor in a wearable device uses **light** to monitor your heart rate?",
+    options: ["Temperature", "Heart rate sensor (optical)", "Motion", "Voice"],
+    correct: 1,
+    explanation: "## Optical Sensing\nHave you seen the green light on the back of a smartwatch? That's an **Optical Sensor**. it shines light through your skin and measures how the light bounces back to detect the 'pulse' of your blood flow."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Voice Interaction\nWhat kind of sensor does a **Smart Speaker** (like Alexa) use to wait for your command?",
+    options: ["Temperature", "Motion", "Microphone (Sound)", "Light"],
+    correct: 2,
+    explanation: "## Always Listening\nSmart speakers are essentially a high-quality **Microphone** connected to an AI. They are constantly 'listening' for a specific 'wake word' (like 'Hey Google') to start processing your voice data."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the legal consequence of **software piracy** (copying apps without paying)?",
+    options: ["Allowed for personal use", "Companies only", "No risk once", "You are breaking the law and can be fined"],
+    correct: 3,
+    explanation: "## Digital Law\nSoftware is 'Intellectual Property.' If you use a paid app for free, you are effectively stealing from the creators. This is **Illegal** and can lead to serious fines or your computer being blocked by the manufacturer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# DRM\nWhat does **Digital Rights Management (DRM)** do for software?",
+    options: [
+      "Defines restrictions for use, modification, and distribution",
+      "Speeds up install",
+      "Determines price",
+      "Checks hardware"
+    ],
+    correct: 0,
+    explanation: "## The Digital Lock\n**DRM** is the technology that makes sure you follow the rules. It prevents you from copying a game onto 10 different computers or changing the code of an app you bought."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the job of **access controls** in an app?",
+    options: [
+      "Select internet",
+      "Define who can use the app and what they can do inside it",
+      "Manage updates",
+      "Set language"
+    ],
+    correct: 1,
+    explanation: "## Gatekeeping\nAccess controls (like passwords or fingerprints) act as the 'Security Guard.' They make sure only **Authorized Users** can see the data. It also allows an 'Admin' to see more than a regular 'Guest.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Shareware\nWhat defines **shareware**?",
+    options: [
+      "Free forever",
+      "Open source",
+      "Copyrighted software with a free trial, then payment is required",
+      "No copyright"
+    ],
+    correct: 2,
+    explanation: "## Try Before You Buy\n**Shareware** is built on trust. You get to use the full app for 7 or 30 days to see if you like it. After that, the app will lock itself unless you pay for a license key."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the key characteristic of **freeware**?",
+    options: [
+      "Requires payment later",
+      "Can be modified",
+      "Is in public domain",
+      "Copyrighted software provided at no cost, but all rights stay with the creator"
+    ],
+    correct: 3,
+    explanation: "## Free but Private\nJust because it's 'Free' doesn't mean you own it. **Freeware** (like Skype or Adobe Reader) is free to use, but you aren't allowed to see the code, change it, or sell it as your own."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Open Source\nWhat does **open-source** software allow you to do?",
+    options: [
+      "Modify and redistribute the code with almost no restrictions",
+      "Use only for personal tasks",
+      "Read but not change",
+      "Requires a paid license"
+    ],
+    correct: 0,
+    explanation: "## The Community Code\n**Open Source** (like Linux or VLC) is 'Transparent.' The creators share the actual code with the world, inviting you to fix bugs, add new features, and share your version with everyone else."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What defines **public domain** software?",
+    options: [
+      "Still under copyright",
+      "Software donated for public use with NO copyright restrictions",
+      "Government only",
+      "Subscription based"
+    ],
+    correct: 1,
+    explanation: "## Completely Free\nPublic domain is the 'Wild West.' There is no owner. You can take the software, change it, sell it, or throw it away. No one can ever sue you for using it because the **Copyright has been waived**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Licenses\nWhat is a **EULA** (End-User License Agreement)?",
+    options: [
+      "Unlimited install license",
+      "Organizational license",
+      "A contract that grants permission for one installation on one device",
+      "Multi-user only"
+    ],
+    correct: 2,
+    explanation: "## One-to-One\nMost software you buy comes with a **EULA**. It's a legal contract that says: 'You can use this app, but only on **one computer**.' If you want it on your laptop and your desktop, you technically need two licenses."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **site license**?",
+    options: [
+      "One install per site",
+      "Building-only use",
+      "Academic only",
+      "A license that allows an organization to provide access to unlimited users at a specific location"
+    ],
+    correct: 3,
+    explanation: "## Corporate Deals\nA big bank doesn't buy 5,000 separate EULAs. They buy a **Site License**. This allows them to install the software on every computer in their building for one single (large) fee."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Updates\nWhat is a software **update**?",
+    options: [
+      "A release that fixes problems, adds features, or patches security",
+      "A version that always costs money",
+      "An OS replacement",
+      "A file deletion tool"
+    ],
+    correct: 0,
+    explanation: "## Continuous Improvement\nSoftware is never 'finished.' Creators send **Updates** to fix mistakes (bugs) they missed, or to make the app more secure against new hackers. Most minor updates are free."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **patch**?",
+    options: [
+      "A major update",
+      "An update designed to fix one specific, small issue",
+      "A new major version",
+      "A security certificate"
+    ],
+    correct: 1,
+    explanation: "## The 'Quick Fix'\nJust like a patch for a hole in your jeans, a software **Patch** is a tiny piece of code sent to fix one specific 'hole' or bug in the program. It doesn't change the whole app, just the broken part."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Service Packs\nWhat is a **service pack**?",
+    options: [
+      "A single fix",
+      "A paid version",
+      "A collection of many updates and patches bundled into one big package",
+      "A license type"
+    ],
+    correct: 2,
+    explanation: "## The Big Bundle\nInstead of making you download 100 small patches, a company will group them all together into a **Service Pack**. This is an easy way to bring a very old computer completely 'up-to-date' with one single download."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the difference between an update and an **upgrade**?",
+    options: [
+      "Update is minor; Upgrade is a major new release that often requires a fee",
+      "Update costs more",
+      "No difference",
+      "Upgrades are for security only"
+    ],
+    correct: 0,
+    explanation: "## The Next Level\nAn update (like version 1.1) is a tweak. An **Upgrade** (like moving from Windows 10 to Windows 11) is a major transformation. Because the company spent years building the upgrade, they usually charge you a fee to get it."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Cleaning Up\nWhat is an **uninstaller**?",
+    options: [
+      "A tool that removes the app files and all its hidden system entries",
+      "A shortcut deletion tool",
+      "A 'hide' button",
+      "A disabling tool"
+    ],
+    correct: 0,
+    explanation: "## Clean Removal\nNever just 'delete' a program folder! It leaves 'junk' behind in the system registry. Always use the **Uninstaller**. It acts like a digital maid, making sure every single piece of the program is scrubbed out of your computer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **software piracy**?",
+    options: [
+      "Legal copying",
+      "Illegally copying, sharing, or using copyrighted digital material",
+      "Sharing open source",
+      "Using freeware"
+    ],
+    correct: 1,
+    explanation: "## Digital Theft\nIf you download a 'cracked' version of a game or a movie for free, you are committing **Piracy**. It's the same as walking into a shop and stealing a physical disc. It hurts the people who worked hard to create the content."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Work Tools\nWhat are **productivity apps** used for?",
+    options: [
+      "Gaming",
+      "Anti-malware",
+      "Creating documents, presentations, and staying organized",
+      "Media editing"
+    ],
+    correct: 2,
+    explanation: "## Professional Output\nThese are the 'Office' tools. Whether you are a student or a manager, you use **Productivity Apps** to create things (like this quiz!) or to manage your time and data efficiently."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What does it mean to **edit** a document in a productivity app?",
+    options: [
+      "Save it",
+      "Print it",
+      "Delete it",
+      "To change the content, font, spacing, or alignment"
+    ],
+    correct: 3,
+    explanation: "## Making Changes\nEditing is the 'Action' of writing. It's when you fix a typo, change the color of a heading, or move a paragraph around. You are 'modifying' the existing work."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Saving\nWhat physically happens when you click **'Save'**?",
+    options: [
+      "Data moves from temporary memory (RAM) to permanent storage (Disk)",
+      "File is deleted from memory",
+      "File is printed",
+      "Sent to cloud only"
+    ],
+    correct: 0,
+    explanation: "## Persistence\nWhile you are typing, your work is 'floating' in volatile RAM. If the power cuts, it's gone. **Saving** 'writes' that data onto the hard drive or SSD so it survives even after the computer is turned off."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **hard copy**?",
+    options: [
+      "A file on a disk",
+      "Information printed on a physical medium like paper",
+      "A backup file",
+      "A cloud copy"
+    ],
+    correct: 1,
+    explanation: "## Real and Physical\nIf you can touch it with your hands, it's a **Hard Copy**. If you can only see it on a screen, it's a 'Soft Copy.' Converting a soft copy to a hard copy is the primary job of a printer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Word Processing\nWhich of these can a **word processor** (like Microsoft Word) create?",
+    options: [
+      "Plain text only",
+      "Spreadsheets only",
+      "Reports, brochures, newsletters, resumes, and letters",
+      "Slide shows only"
+    ],
+    correct: 2,
+    explanation: "## Versatility\nA word processor isn't just for typing letters. You can use it to design **Brochures** with images, write professional **Resumes**, or even create a community newsletter with columns and graphics."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "In a **spreadsheet app**, what is a worksheet?",
+    options: [
+      "A single cell",
+      "A collection of workbooks",
+      "A chart",
+      "The grid of columns and rows used to organize data"
+    ],
+    correct: 3,
+    explanation: "## The Grid\nA **Worksheet** is the 'Page' you see in Excel. It is a giant table made of thousands of little boxes called cells, where you can perform math and organize data."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Cells and Boxes\nWhat is a **cell** in a spreadsheet?",
+    options: [
+      "The intersection of a column and a row",
+      "The whole page",
+      "A formula bar",
+      "A graph"
+    ],
+    correct: 0,
+    explanation: "## The Target Box\nEvery box in a spreadsheet has a 'Home.' If you are in Column B and Row 4, you are in **Cell B4**. This intersection is the fundamental unit where you type your numbers or formulas."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **workbook** in spreadsheet terminology?",
+    options: [
+      "A single page",
+      "A collection of related worksheets saved in one file",
+      "A printed copy",
+      "A math formula"
+    ],
+    correct: 1,
+    explanation: "## The File\nThink of it like a real book. A 'Worksheet' is one page. The **Workbook** is the entire file that contains all those pages. When you save an Excel file, you are saving a workbook."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Presentations\nWhat is the primary purpose of a **presentation app** (like PowerPoint)?",
+    options: [
+      "Creating databases",
+      "Editing photos",
+      "To create professional-looking digital slide shows",
+      "Managing email"
+    ],
+    correct: 2,
+    explanation: "## Visual Aids\nPresentation apps are for **Audience Engagement**. They help you organize your ideas into a series of 'Slides' that use images and bullet points to help people understand your speech."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **slide master**?",
+    options: [
+      "A single slide",
+      "A transition effect",
+      "An animation",
+      "The 'Blueprint' or template that defines the style for the whole presentation"
+    ],
+    correct: 3,
+    explanation: "## Master Control\nIf you want every slide in your presentation to have a blue background and a logo in the corner, you don't do it 50 times. You edit the **Slide Master**, and it automatically applies that style to every page."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Databases\nWhat is a **database**?",
+    options: [
+      "A word document",
+      "A collection of data organized for easy access, retrieval, and reporting",
+      "A spreadsheet with formulas",
+      "A slide deck"
+    ],
+    correct: 1,
+    explanation: "## Organized Info\nA database is like a 'Super-Spreadsheet.' It is designed to hold **Millions of pieces of info** (like a bank's customer list) so that you can search for and find one specific name in a split second."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What defines a **Relational Database** (RDBMS)?",
+    options: [
+      "A single data table",
+      "Multiple separate sheets",
+      "A collection of tables that are linked to each other by common data",
+      "A presentation tool"
+    ],
+    correct: 2,
+    explanation: "## Connecting Data\nIn a **Relational** system, you have one table for 'Customers' and another for 'Orders.' They are 'Related' by a customer ID number. This allows the computer to instantly see which customer placed which order without duplicating info."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Software Suites\nWhat is a **productivity suite**?",
+    options: [
+      "A super-app",
+      "A type of OS",
+      "Cloud only storage",
+      "A collection of related apps (Word, Excel, PPT) sold together as a unit"
+    ],
+    correct: 3,
+    explanation: "## The Bundle\nMicrosoft Office is a **Suite**. Instead of buying 5 different apps from 5 different companies, you buy one 'Suite' where all the apps are designed to work together perfectly."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What are the two general categories of **media apps**?",
+    options: [
+      "Apps that create media and apps that play media",
+      "Paid and free",
+      "Mobile and desktop",
+      "Online and offline"
+    ],
+    correct: 0,
+    explanation: "## Creation vs Consumption\n1. **Creation:** Apps like Photoshop or Premiere (you build the file). \n2. **Consumption:** Apps like Spotify or Netflix (you just play what's already built)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Digitization\nWhat is the process of converting **analog** sound waves into digital numbers called?",
+    options: ["Compression", "Encryption", "Digitizing (or sampling)", "Rendering"],
+    correct: 2,
+    explanation: "## Analog to Digital\nReal sound is a 'wave.' Computers only understand 'numbers.' **Digitizing** is when the computer takes thousands of 'snapshots' (samples) of that wave per second and converts them into bits and bytes."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the difference between **bitmap** (raster) and **vector** graphics?",
+    options: [
+      "Bitmap uses math; Vector uses pixels",
+      "Bitmap is for logos; Vector is for photos",
+      "Bitmap is lossless; Vector is lossy",
+      "Bitmap uses pixels; Vector uses mathematical formulas to define lines and shapes"
+    ],
+    correct: 3,
+    explanation: "## Scale vs Detail\n**Bitmap** images (like photos) are made of tiny colored dots. If you zoom in too far, they look 'pixelated.' **Vector** images are made of math. You can zoom into a vector logo until it's the size of a building and it will stay perfectly sharp."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Image Resolution\nWhat does **resolution** refer to in digital photography?",
+    options: [
+      "File size",
+      "Color count",
+      "The clarity/sharpness of the image (more pixels = higher resolution)",
+      "Compression type"
+    ],
+    correct: 2,
+    explanation: "## Quality Level\nResolution is the 'density' of information. A high-resolution photo has millions of pixels packed together, which makes the image look **crystal clear** and professional."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the purpose of **compression** in media files?",
+    options: [
+      "Increase resolution",
+      "Convert analog to digital",
+      "Add more colors",
+      "To make files smaller by removing or simplifying data"
+    ],
+    correct: 3,
+    explanation: "## Saving Space\nA raw video file is massive. **Compression** uses smart math to find parts of the file that aren't necessary and removes them so you can download the movie faster and save it on your phone."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# GIF\nWhich graphics format is best for **simple web animations** but limited to 256 colors?",
+    options: ["GIF", "JPEG", "PNG", "TIFF"],
+    correct: 0,
+    explanation: "## Short Loops\n**GIF** is the king of simple web graphics. Because it has a very small file size and supports 'frames,' it is perfect for those short, funny looping animations you see on social media."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which file format is the 'gold standard' for **high-quality photos** on the web?",
+    options: ["GIF", "JPEG", "PNG", "BMP"],
+    correct: 1,
+    explanation: "## Photo Precision\n**JPEG** was designed specifically for photos. It can show millions of colors and uses 'Lossy' compression to keep the file size small enough to load quickly on a website while still looking great."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# PNG\nWhich format supports **transparency** and is best for logos and icons?",
+    options: ["GIF", "JPEG", "PNG", "TIFF"],
+    correct: 2,
+    explanation: "## Invisible Backgrounds\nIf you want a logo to sit on top of a colorful background without a 'white box' around it, you use a **PNG**. It supports 'Alpha Transparency,' allowing parts of the image to be $100\%$ see-through."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which graphics format is used for **professional printing** and has very large file sizes?",
+    options: ["GIF", "JPEG", "PNG", "TIFF"],
+    correct: 3,
+    explanation: "## High-End Quality\n**TIFF** is for the pros. It doesn't compress data at all, so it keeps every single bit of detail. Photographers and book publishers use TIFF because they don't care about file size; they only care about **perfection**."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# SVG\nWhich vector format is the standard for **illustrations and icons** on the web?",
+    options: ["SVG", "EPS", "AI", "CDR"],
+    correct: 0,
+    explanation: "## Scalable Graphics\n**SVG** stands for **S**calable **V**ector **G**raphics. Because they are made of code and math, SVG files are tiny and will look perfectly sharp on any screen, from a small phone to a $4K$ television."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "Which common **audio format** uses lossy compression and is playable on almost every device?",
+    options: ["WAV", "MP3", "AIFF", "WMA"],
+    correct: 1,
+    explanation: "## The Music Standard\n**MP3** changed the world. By removing sounds that the human ear can't really hear, it shrinks a giant song into a small file that sounds almost identical to the original CD."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Sound Cards\nWhat is a **sound card**?",
+    options: [
+      "A type of microphone",
+      "Audio editing software",
+      "The hardware circuit board used to process and output sound",
+      "A speaker"
+    ],
+    correct: 2,
+    explanation: "## Audio Processing\nThe **Sound Card** is the 'translator' for your ears. It takes the digital zeros and ones from the CPU and turns them into an 'Analog' electrical signal that your speakers can turn into real sound."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **synthesized music**?",
+    options: [
+      "Recorded live music",
+      "Downloaded music",
+      "Sampled music",
+      "Music created as a digital file from the start using electronic instruments"
+    ],
+    correct: 3,
+    explanation: "## Pure Electronic\nIn synthesized music, there are no 'real' instruments (like a wood guitar) being recorded. Instead, a computer program or an electronic **Synthesizer** creates the sound waves from scratch using electricity."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Recognition Types\nWhat is the difference between **Voice** and **Speech** recognition?",
+    options: [
+      "Voice identifies 'who' is talking; Speech identifies 'what' is being said",
+      "They are identical",
+      "Voice is for phones only",
+      "Voice is for dictation"
+    ],
+    correct: 0,
+    explanation: "## Identity vs. Content\n1. **Voice Recognition:** Like a fingerprint; it proves you are YOU. \n2. **Speech Recognition:** Like a secretary; it takes your spoken words and turns them into text on the screen."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What does a **text‑to‑speech** app do?",
+    options: [
+      "Converts voice to text",
+      "Converts written text into synthesized spoken words",
+      "Records audio",
+      "Translates languages"
+    ],
+    correct: 1,
+    explanation: "## Reading for You\nText-to-speech is a powerful accessibility tool. It allows a computer to 'Read' a book or an email to you while you are driving or if you have trouble seeing the screen."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Codecs\nWhat are the **two parts** of a digital video file?",
+    options: [
+      "Audio and Subtitles",
+      "Metadata and Thumbnails",
+      "Header and Footer",
+      "A codec (to compress) and a container (to bundle everything)"
+    ],
+    correct: 3,
+    explanation: "## The Package\n1. **Codec:** The 'Brain' that shrinks the video data. \n2. **Container:** The 'Box' (like .MP4) that holds the video, audio, and subtitles together in one file."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **simulation** in digital animation?",
+    options: [
+      "A sophisticated animation used for training in dangerous/difficult situations",
+      "A simple GIF",
+      "A game cutscene",
+      "A slideshow"
+    ],
+    correct: 0,
+    explanation: "## Realistic Practice\nA **Simulation** is more than just a movie. It is an interactive 3D world (like a flight simulator) where a student can practice something dangerous (like landing a plane) without any risk to real life."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Rendering\nWhat is **rendering** in 3‑D animation?",
+    options: [
+      "Drawing wireframes",
+      "Applying light and shadows to a 3D model to create a solid final image",
+      "Exporting to video",
+      "Adding sound"
+    ],
+    correct: 1,
+    explanation: "## The Final Polish\nThink of a 3D model as a clay statue. **Rendering** is the computer's job of deciding exactly how the 'light' should bounce off that statue to make it look real and solid in the final image."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **virtual reality (VR)**?",
+    options: [
+      "Digital info on top of real world",
+      "A computer-simulated 3D environment that you can explore and manipulate",
+      "A 2D game",
+      "Social media platform"
+    ],
+    correct: 1,
+    explanation: "## Immersive Worlds\nIn **VR**, you wear a headset that completely covers your eyes. You are 'teleported' into a digital world where you can look around and interact with things as if they were actually there."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Augmented Reality\nWhat is **augmented reality (AR)**?",
+    options: [
+      "Full simulation",
+      "Text interface",
+      "Overlaying digital content on top of real physical objects",
+      "Virtual assistant"
+    ],
+    correct: 2,
+    explanation: "## Mixed Reality\nThink of **Pokémon GO** or IKEA's 'Place' app. You are still looking at the real world through your phone's camera, but the computer 'adds' or 'augments' it with digital characters or furniture."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **Artificial Intelligence (AI)**?",
+    options: [
+      "A video game",
+      "A coding language",
+      "A virus",
+      "The use of logic and prior experience to simulate human intelligence"
+    ],
+    correct: 3,
+    explanation: "## Machines That 'Think'\n**AI** is about teaching computers to solve problems, recognize faces, or make decisions by learning from past data, much like a human child learns from experience."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Machine Learning\nWhat is **machine learning**?",
+    options: [
+      "A branch of AI that trains machines to learn from data and improve without human help",
+      "Manual programming",
+      "Hardware type",
+      "Database system"
+    ],
+    correct: 0,
+    explanation: "## Self-Education\nInstead of a human writing a rule for everything, **Machine Learning** gives the computer millions of examples. The computer finds its own rules and gets 'smarter' the more data it sees."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **natural language processing**?",
+    options: [
+      "Encrypting speech",
+      "A computer interpreting and digitizing spoken human language",
+      "Text-to-speech",
+      "Translation service"
+    ],
+    correct: 1,
+    explanation: "## Understanding Humans\nWhen you talk to Siri or Alexa, they use **Natural Language Processing**. It's the complex task of the computer figuring out what you actually 'mean' when you use human slang or accents."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Robotics\nWhat is an advantage of **robotic surgery**?",
+    options: [
+      "Longer healing",
+      "Larger incisions",
+      "Less precision",
+      "Faster healing and less infection due to tiny incisions"
+    ],
+    correct: 3,
+    explanation: "## Precision Health\nRobotic arms don't shake and can move in much smaller spaces than a human hand. This allows the doctor to do the surgery through a 'Keyhole' rather than a large cut, which means the patient goes home much sooner."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **firewall**?",
+    options: [
+      "Internet blocker",
+      "A protective barrier that controls incoming and outgoing network traffic",
+      "Antivirus",
+      "Backup tool"
+    ],
+    correct: 1,
+    explanation: "## The Digital Security Guard\nThink of a **Firewall** as a guard at the gate of your network. It checks the 'ID' of every piece of data. If it looks like a hacker or a virus, the guard blocks it from entering your computer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Antivirus\nWhat is the primary job of an **antivirus** app?",
+    options: [
+      "Block all emails",
+      "Encrypt files",
+      "Back up data",
+      "Identify and remove viruses in memory or files"
+    ],
+    correct: 3,
+    explanation: "## The Doctor\nAn **Antivirus** program is always scanning your 'Digital Bloodstream' (your RAM and disk). When it finds a 'Sickness' (a virus), it quarantines the file to stop it from hurting your computer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is **spyware**?",
+    options: [
+      "Malware that secretly collects info about a user without their knowledge",
+      "Ad-displayer",
+      "Firewall tool",
+      "Backup utility"
+    ],
+    correct: 0,
+    explanation: "## The Secret Spy\n**Spyware** is a 'stalker' program. It hides in the background and records which websites you visit and what you type. It then sends this private info to a criminal who can use it to steal your identity."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Adware\nWhat is **adware**?",
+    options: [
+      "Info tracker",
+      "A program that displays advertisements in banners or pop‑ups",
+      "Virus type",
+      "Security patch"
+    ],
+    correct: 1,
+    explanation: "## The Annoyance\n**Adware** isn't usually trying to steal your data; it just wants to show you **Ads**. It can pop up windows every few minutes, slowing your computer down and being generally very annoying."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **quarantine** in antivirus software?",
+    options: [
+      "File deletion",
+      "File repair",
+      "A separate isolated area that holds an infected file so it can't run",
+      "Backup copy"
+    ],
+    correct: 2,
+    explanation: "## The Jail Cell\nIf an antivirus isn't sure if a file is safe, it puts it in **Quarantine**. This 'locks' the file in a safe place where it can't interact with your OS. You can then decide to 'clean' the file or delete it forever."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Phishing Filter\nWhat does a **phishing filter** do?",
+    options: [
+      "Warns you about fraudulent websites attempting to steal your info",
+      "Blocks all email",
+      "Encrypts history",
+      "Pop-up blocker"
+    ],
+    correct: 0,
+    explanation: "## Scam Protection\nIf you click a link that looks like your bank but is actually a fake site, the **Phishing Filter** in your browser will pop up a giant red warning to stop you before you type in your password."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is a **crash** in computing?",
+    options: [
+      "Disk damage",
+      "Power outage",
+      "Disconnection",
+      "When a program stops functioning correctly due to an error"
+    ],
+    correct: 3,
+    explanation: "## The Freeze\nA **Crash** is a total failure of the software. The app might just disappear, or your whole screen might freeze. It usually happens when the computer gets an instruction that makes no sense or runs out of memory."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Troubleshooting\nWhat is **troubleshooting**?",
+    options: [
+      "The systematic steps taken to identify and fix a computer problem",
+      "Reinstalling only",
+      "Restarting",
+      "Making a backup"
+    ],
+    correct: 0,
+    explanation: "## Finding the Cure\n**Troubleshooting** is like being a detective. You look at the error messages, try different solutions, and slowly narrow down the cause of the problem until you find the fix."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "What is the main job of a **file manager** (like Windows Explorer)?",
+    options: [
+      "Delete files only",
+      "Displaying, organizing, copying, and moving files and folders",
+      "Searching only",
+      "Compresing only"
+    ],
+    correct: 1,
+    explanation: "## The Digital Cabinet\nThe **File Manager** is your view into your computer's storage. It lets you create 'folders' to stay organized and allows you to 'drag and drop' files to keep everything where it belongs."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Shareware Scenario\nA student uses a 'Free Trial' of an app that locks itself after 30 days. This is called:",
+    options: ["Freeware", "Open source", "Public domain", "Shareware"],
+    correct: 3,
+    explanation: "## Try Before You Buy\nThis is the classic **Shareware** model. They 'share' the app with you for a short time for free, hoping that you will love it enough to pay for the full version after the trial ends."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "A business needs to store customer records and run complex searches. Which tool is best?",
+    options: ["Word processor", "Spreadsheet", "Presentation", "Database (RDBMS)"],
+    correct: 3,
+    explanation: "## Data Expert\nWhile you *can* save names in a list in Word, a **Database** is built specifically for it. It can handle millions of names and find 'Every customer who bought a blue hat' in less than a second."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "# Scalable Logos\nA designer needs a logo that can be scaled to any size without becoming blurry. Use:",
+    options: ["JPEG", "GIF", "PNG", "Vector (SVG or EPS)"],
+    correct: 3,
+    explanation: "## Mathematical Sharpness\n**Vector** graphics don't use dots; they use math formulas to draw lines. This means you can stretch the logo to the size of a billboard and it will still be perfectly sharp."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Programs and Apps",
+    q: "A user gets an email with an attachment named **'invoice.pdf.exe'**. They should:",
+    options: ["Open it", "Save it", "Rename it", "Delete it immediately"],
+    correct: 3,
+    explanation: "## The Double Extension Trick\nThis is a huge danger sign! Real PDFs end in `.pdf`. If you see `.exe` at the end, it is actually a **Program** (and likely a virus) disguised as a document. Never open a file with two extensions like this."
+  },
+  
+  
+  
+  
+  
+
+// ==========================================
+// UNIT 9: OPERATING SYSTEMS (124 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# The Essential Software\nWhat is the primary piece of software that manages every interaction between a computer's hardware and its applications?",
+    options: [
+      "The operating system (OS)",
+      "The web browser",
+      "The word processor",
+      "The antivirus program"
+    ],
+    correct: 0,
+    explanation: "## Insight\nThink of the **Operating System** as the 'manager' of a hotel. It doesn't do the laundry or cook the food (the apps do that), but it makes sure the rooms are assigned, the electricity is running, and the guests (the users) get what they need from the staff (the hardware)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "When you launch a word processor, what specific role does the **operating system** play?",
+    options: [
+      "It writes the text for you",
+      "It starts the program, provides tools to open files, and manages the RAM",
+      "It checks for spelling errors automatically",
+      "It saves the file to the cloud without being asked"
+    ],
+    correct: 1,
+    explanation: "## Resource Management\nThe OS is the middleman. When you click 'Open,' the OS tells the hardware to find the file on the disk and move it into the **RAM** (memory) so the word processor can show it to you. It handles the 'heavy lifting' in the background."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Data Persistence\nWhat complex task does the **OS** perform when you click the 'Save' button?",
+    options: [
+      "It only renames the file",
+      "It deletes the old version permanently",
+      "It finds space on the disk, writes the data, and records the file name and location for later",
+      "It compresses the file to 10% of its size"
+    ],
+    correct: 2,
+    explanation: "## The Filing System\nSaving isn't just one step. The **OS** has to look at the hard drive map, find a 'blank' spot that is big enough, physically write the bits onto the disk, and then update its 'Index' so that when you look for the file tomorrow, it knows exactly where it is."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is the collective term for the icons, buttons, and menus you use to interact with your device?",
+    options: [
+      "Command-line interface",
+      "Kernel",
+      "Binary logic",
+      "Graphical User Interface (GUI)"
+    ],
+    correct: 3,
+    explanation: "## Visual Interaction\nInstead of typing complex code, we use a **GUI** (pronounced 'gooey'). It allows us to use our eyes and fingers to click icons and drag windows. It’s what makes modern computers easy for everyone to use."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# GUI Elements\nWhat does an **icon** represent in a graphical user interface?",
+    options: [
+      "A small picture representing a program, file, or hardware device",
+      "A text command",
+      "A type of error message",
+      "A hidden system setting"
+    ],
+    correct: 0,
+    explanation: "## Visual Shortcuts\nIcons are 'shortcuts' for your brain. Instead of reading a list of filenames, you see a small 'W' and instantly know it’s a Word document. Clicking the icon tells the OS to run the specific resource it represents."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "In a GUI, what is a **button**?",
+    options: [
+      "A small picture of a file",
+      "A graphic you click to execute a command (like 'Print' or 'Save')",
+      "A list of multiple options",
+      "A box for typing text"
+    ],
+    correct: 1,
+    explanation: "## Triggering Actions\nButtons are the 'Action' points. Unlike icons (which represent *things*), buttons usually represent **Tasks**. When you click a button, you are giving the OS a direct order to do something right now."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Menus\nHow is a **menu** defined in an operating system?",
+    options: [
+      "A type of dialog box",
+      "A keyboard shortcut",
+      "A list of related items, such as folders, apps, and commands",
+      "A toolbar icon"
+    ],
+    correct: 2,
+    explanation: "## Organized Options\nMenus prevent the screen from getting cluttered. Instead of having 50 buttons on the screen, the OS hides them in a **Menu**. You click the header (like 'File'), and a list drops down with all the related options."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What do you call a menu that only appears when you **Right-Click** an object?",
+    options: [
+      "The Main Menu",
+      "A Dialog Box",
+      "A Toolbar",
+      "A Shortcut Menu (or Context Menu)"
+    ],
+    correct: 3,
+    explanation: "## Context is Key\nThese are called 'Context Menus' because they change depending on **what** you clicked. If you right-click a photo, you see 'Edit Image'; if you right-click a folder, you see 'Open Folder.' It gives you the most relevant commands for that specific object."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Dialog Boxes\nWhat is the purpose of a **dialog box**?",
+    options: [
+      "To provide the OS more information on how to complete a specific task",
+      "To display an unfixable error",
+      "To act as a main menu",
+      "To show a list of all files"
+    ],
+    correct: 0,
+    explanation: "## The Conversation\nA 'Dialog' is a talk. The computer is saying: 'I'm ready to print, but I need more info. Which pages? How many copies?' The **Dialog Box** is the window where you provide those final details."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "In a dialog box, which control allows you to select **only one** option from a set?",
+    options: [
+      "Check boxes",
+      "Option buttons (Radio buttons)",
+      "Text boxes",
+      "Command buttons"
+    ],
+    correct: 1,
+    explanation: "## Mutually Exclusive\nThink of an old car radio—when you push one button in, the others pop out. **Radio Buttons** work the same way. If you are choosing 'Portrait' vs 'Landscape,' you can't have both, so selecting one automatically unselects the other."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Memory Management\nWhere does the OS temporarily store your open apps and work while the computer is running?",
+    options: [
+      "Hard drive",
+      "SSD",
+      "RAM (Random Access Memory)",
+      "ROM"
+    ],
+    correct: 2,
+    explanation: "## The Active Desk\nEverything you see on your screen right now is sitting in **RAM**. RAM is ultra-fast but 'volatile,' meaning it needs power to remember. If the power goes out, everything in RAM is wiped clean, which is why saving to a disk is so important."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is **virtual memory**?",
+    options: [
+      "An area of the hard disk used by the OS to act as additional RAM",
+      "A fast cache on the CPU",
+      "Cloud storage for backups",
+      "RAM stored on a USB drive"
+    ],
+    correct: 0,
+    explanation: "## The Overflow Trick\nIf you open so many apps that your RAM gets full, the OS doesn't crash. Instead, it 'borrows' some empty space from your **Hard Drive** to use as extra RAM. This is Virtual Memory. It's much slower than real RAM, but it keeps your computer running."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Paging\nWhat is the technical term for swapping data between **RAM** and **Virtual Memory**?",
+    options: [
+      "Saving",
+      "Paging",
+      "Printing",
+      "Booting"
+    ],
+    explanation: "## Moving Data\nWhen the OS moves a 'page' of data from the fast RAM to the slow hard disk (to make room for a new app), the process is called **Paging**. If your computer is doing this too much, it will feel very laggy—this is often called 'thrashing.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is a **buffer** in an operating system?",
+    options: [
+      "A temporary storage area for data waiting to be sent to an input or output device",
+      "A type of computer virus",
+      "A privacy setting",
+      "A hardware fan"
+    ],
+    correct: 3,
+    explanation: "## The Waiting Room\nThink of a **Buffer** as a waiting room. Your CPU is much faster than your printer. The CPU 'dumps' the whole document into a buffer so it can go back to work, while the printer slowly pulls the data out of the buffer one page at a time."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Multi-Tasking\nWhat defines a **multitasking** operating system?",
+    options: [
+      "It only runs one program at a time",
+      "It requires two physical processors",
+      "It allows two or more programs to reside in memory at the same time",
+      "It only works on mobile devices"
+    ],
+    correct: 2,
+    explanation: "## Jugging Jobs\nAlmost all modern OSs are multitasking. This allows you to listen to music on Spotify while typing a paper in Word and having $20$ tabs open in Chrome. The OS rapidly switches between these apps so it feels like they are all running at once."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "In a multitasking environment, what is the **foreground** program?",
+    options: [
+      "The program using the least memory",
+      "A program performing background updates",
+      "An unresponsive program",
+      "The active program you are currently using, displayed on top"
+    ],
+    correct: 3,
+    explanation: "## The Active Window\nThe **Foreground** program is the one that has your attention. It's the window on top of all the others, and it's the one that receives your typing and mouse clicks. Everything else is running in the 'Background.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# OS Categories\nWhat are the three basic categories of operating systems?",
+    options: [
+      "Windows, Mac, Linux",
+      "Desktop, Server, and Mobile",
+      "Open, Closed, and Free",
+      "32-bit, 64-bit, and 128-bit"
+    ],
+    correct: 1,
+    explanation: "## Form Follows Function\nWe group OSs by the device they serve. **Desktop** (for PCs), **Server** (for network hosting), and **Mobile** (for phones/tablets). While Windows is an OS, it falls into the 'Desktop' or 'Server' categories depending on the version."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "Which of the following is an example of a **desktop** operating system?",
+    options: [
+      "Android",
+      "iOS",
+      "Windows Server",
+      "Windows, macOS, or Linux"
+    ],
+    correct: 3,
+    explanation: "## Stand-Alone Systems\nDesktop OSs (also called 'Stand-alone' OSs) are built to be used by a single person at a time on a laptop or desktop computer. They include everything you need to manage your personal files and apps."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# UNIX\nWhat is **UNIX**?",
+    options: [
+      "A mobile-only OS",
+      "A closed-source system from Microsoft",
+      "A powerful multitasking OS developed in the 1970s that forms the basis for many modern systems",
+      "A web browser"
+    ],
+    correct: 2,
+    explanation: "## The Ancestor\n**UNIX** is the 'Grandfather' of modern computing. It was built for power and stability. Today, macOS and Linux are both 'cousins' of UNIX. Because it is so reliable, it is still the top choice for the giant servers that run the internet."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What defines **Linux** as an operating system?",
+    options: [
+      "An Apple-only system",
+      "A Microsoft product",
+      "A Google mobile OS",
+      "A popular open-source, multitasking OS that anyone can copy, modify, and redistribute"
+    ],
+    correct: 3,
+    explanation: "## Freedom in Code\n**Linux** is unique because it is 'Open Source.' It wasn't built by one company, but by thousands of volunteers. This means it's usually free, highly customizable, and runs on everything from supercomputers to your smart fridge."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Chrome OS\nWhat is the primary focus of **Chrome OS**?",
+    options: [
+      "High-end video editing",
+      "Running legacy Windows apps",
+      "Working primarily with web apps and cloud storage (Google Drive)",
+      "Managing database servers"
+    ],
+    correct: 2,
+    explanation: "## Cloud First\n**Chrome OS** (used on Chromebooks) is a very 'light' system. It assumes you will be doing almost everything in a browser. Most of your 'files' aren't on the laptop—they are saved in the cloud on Google Drive."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is a **server** operating system?",
+    options: [
+      "An OS for gaming",
+      "A phone OS",
+      "An OS for a single user",
+      "A multiuser OS that controls a centralized computer providing services to a network"
+    ],
+    correct: 3,
+    explanation: "## The Service Hub\nA **Server OS** (like Windows Server) is the 'Boss' of a network. It manages hundreds of people logging in, handles the office printer, and hosts the company's shared files. It is built to be much more powerful and secure than a home PC."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Mobile OS\nWhich operating system is developed by Google and is based on Linux?",
+    options: ["Android", "iOS", "Windows Mobile", "macOS"],
+    correct: 0,
+    explanation: "## Open Mobile\n**Android** is an open-source mobile OS. Because it is based on Linux and is free for manufacturers to use, you can find it on thousands of different types of phones and tablets from companies like Samsung, Huawei, and Sony."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is the key difference between **Android** and **iOS** regarding availability?",
+    options: [
+      "Android is only for Samsung; iOS is for everyone",
+      "Android is for many manufacturers; iOS is proprietary and runs only on Apple devices",
+      "iOS is open source; Android is closed",
+      "Android has no touch support"
+    ],
+    correct: 1,
+    explanation: "## Ecosystem Lock\n**iOS** is 'proprietary.' Apple builds the hardware (iPhone/iPad) and the software (iOS) to work perfectly together, but they don't let anyone else use their OS. Android is the opposite—Google lets almost any company put it on their hardware."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# File Extensions\nWhat is a **file extension**?",
+    options: [
+      "The name of a file",
+      "The physical size",
+      "A 3 or 4 letter code at the end of a name that identifies the file type (e.g., .docx)",
+      "The folder location"
+    ],
+    correct: 2,
+    explanation: "## Identifying Data\nThe extension tells the OS: 'This is a Word document, use Microsoft Word to open it.' If you change a `.jpg` to a `.txt`, the computer will get confused and try to 'read' your photo as if it were a text note."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "Which extension is used for a standard **Microsoft Word** document?",
+    options: [".xlsx", ".pptx", ".txt", ".docx"],
+    correct: 3,
+    explanation: "## Office Formats\nModern Word files use the **.docx** extension. The 'x' at the end stands for XML, which is a modern way of packing the document's data so it is smaller and safer from corruption."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Metadata\nWhat is **metadata** in the context of a computer file?",
+    options: [
+      "Encrypted data",
+      "Deleted data",
+      "The actual text inside a file",
+      "Information about the file (creation date, author, modification time)"
+    ],
+    correct: 3,
+    explanation: "## Data About Data\nEven if a file is empty, it has **Metadata**. The OS tracks when you made the file, who owns it, and when you last looked at it. This is how you can sort your 'Downloads' folder by 'Date'—you are sorting by metadata."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is the name of the file manager application in **Windows**?",
+    options: ["Finder", "File Manager", "File Explorer", "Windows Browser"],
+    correct: 2,
+    explanation: "## Windows Navigation\n**File Explorer** is the app you use every day to look at your 'Documents' or 'Pictures' folders. (In the very old days, it was called Windows Explorer, but modern versions use File Explorer)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Task Manager\nWhat can you do with a **Task Manager** utility?",
+    options: [
+      "Only check CPU speed",
+      "View running apps, check RAM usage, and shut down 'frozen' programs",
+      "Change the desktop wallpaper",
+      "Delete permanent files"
+    ],
+    correct: 1,
+    explanation: "## Emergency Control\nIf a program 'Freezes' and won't close, you use the **Task Manager**. It shows you exactly how much 'brain power' (CPU) and memory (RAM) each app is using, allowing you to force-close any app that is causing trouble."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is the function of **Disk Cleanup**?",
+    options: [
+      "To defragment the drive",
+      "To back up files",
+      "To find and remove unnecessary temporary files to free up space",
+      "To scan for viruses"
+    ],
+    correct: 2,
+    explanation: "## Digital Housekeeping\nAs you use the web, the OS saves thousands of 'Temporary' files that you don't need once you close the site. **Disk Cleanup** finds this 'digital trash' and deletes it, giving you more gigabytes for your own photos and music."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# File Compression\nWhat is the primary goal of **File Compression** (Zipping)?",
+    options: [
+      "To delete files",
+      "To encrypt files",
+      "To copy files",
+      "To shrink the size of a file to save storage space or make it easier to email"
+    ],
+    correct: 3,
+    explanation: "## Squeezing Data\nCompression uses math to 'squish' a file down. A large folder of $100\text{ MB}$ might become a $60\text{ MB}$ **.zip** file. This is perfect for sending a large group of files to someone in a single email attachment."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is the difference between **Sleep** and **Hibernate**?",
+    options: [
+      "Sleep shuts down; Hibernate stays on",
+      "No difference",
+      "Sleep keeps data in RAM (fast wake); Hibernate saves data to the hard disk (slower wake, zero power)",
+      "Hibernate is only for desktops"
+    ],
+    correct: 2,
+    explanation: "## Power States\n**Sleep** is like a 'nap'—the computer stays slightly on so it can wake up in 1 second. **Hibernate** is like 'deep sleep'—the computer saves your work to the hard drive and turns OFF completely. It takes longer to wake up, but it won't drain your battery."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# User Accounts\nWhat is an **Administrator** account?",
+    options: [
+      "A guest account",
+      "A restricted account",
+      "A standard user",
+      "An account with full control to install software and change all system settings"
+    ],
+    correct: 3,
+    explanation: "## Total Power\nThe **Admin** is the 'Owner' of the computer. Only an Admin can install new programs or change the security settings. For safety, you should use a 'Standard' account for daily work so that a virus can't accidentally get Admin power."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What do **permissions** define in an operating system?",
+    options: [
+      "The processor speed",
+      "The amount of RAM",
+      "Who can see or change specific files and when they can do it",
+      "The file extension"
+    ],
+    correct: 2,
+    explanation: "## Access Rights\nPermissions allow you to share a computer without sharing your secrets. You can set a folder so that your brother can 'Read' your homework, but he doesn't have **Permission** to 'Delete' or 'Edit' it."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Virtual Machines\nWhat is a **Virtual Machine (VM)**?",
+    options: [
+      "A program that allows you to run a second operating system 'inside' your main one",
+      "A physical computer built for VR gaming",
+      "A type of virus",
+      "A backup utility"
+    ],
+    correct: 0,
+    explanation: "## Computer Inside a Computer\nA **VM** is a piece of software that 'pretends' to be hardware. This allows you to run Windows inside a window on your Mac. It’s great for testing new software or running old apps without messing up your main system."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "What is a disk **partition** (or volume)?",
+    options: [
+      "A type of file",
+      "A section of a hard drive that acts like a separate physical drive",
+      "A folder for system files",
+      "A cloud backup"
+    ],
+    correct: 1,
+    explanation: "## Dividing the Disk\nPartitioning is like putting a 'fence' through your hard drive. You can have one **Partition** (C:) for your Windows files and another Partition (D:) for your movies. If Windows crashes, the data in the other partition is usually safer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Troubleshooting\nA user accidentally emptied the Recycle Bin. What is the **best immediate** action?",
+    options: [
+      "Run antivirus",
+      "Use file recovery (undelete) software immediately before the space is overwritten",
+      "Restart the computer",
+      "Reinstall the OS"
+    ],
+    correct: 1,
+    explanation: "## Don't Panic\nWhen you 'Delete' a file, the data is still there! The OS just marks that spot as 'Empty.' If you use **Recovery Software** quickly, you can get it back. But if you keep using the PC, the OS will eventually write *new* data over that spot, destroying the old file forever."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "A user receives an email with a file named **'invoice.pdf.exe'**. Why is this dangerous?",
+    options: [
+      "PDFs are too large for email",
+      "It has a missing extension",
+      "The file is encrypted",
+      "A double extension hides an executable (.exe) program, which is a common virus trick"
+    ],
+    correct: 3,
+    explanation: "## The Disguise\nHackers hope you only see the `.pdf` and think it's a document. But the OS sees the **.exe** at the very end. If you click it, you aren't opening a document—you are 'Running' a program that can take control of your whole computer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "# Safe Mode\nIf a virus stops your antivirus software from opening, what should you try?",
+    options: [
+      "Run Disk Cleanup",
+      "Increase virtual memory",
+      "Delete all documents",
+      "Boot into 'Safe Mode' and run the scan from there"
+    ],
+    correct: 3,
+    explanation: "## Minimal Start\n**Safe Mode** tells the computer to start with only the 'bare essentials' running. Most viruses aren't allowed to start in Safe Mode, which gives you a chance to run your antivirus and 'kill' the virus while it is 'sleeping.'"
+  },
+  {
+    course: "CS110", term: "T2", topic: "Operating Systems",
+    q: "A user wants to move a file to a new folder and **remove** it from the old one. Which action?",
+    options: ["Copy then Paste", "Cut (Ctrl+X) then Paste (Ctrl+V)", "Rename", "Backup"],
+    correct: 1,
+    explanation: "## Moving vs. Copying\n- **Copy:** Leave the original, make a second one. \n- **Cut:** Pick up the original and 'Move' it to the new spot. Once you paste, it is gone from the old location."
+  },
+
+// ==========================================
+// UNIT 10: SECURITY, ETHICS, AND PRIVACY (148 Qs)
+// ==========================================
+
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Security Risks\nWhat is the technical definition of a **digital security risk**?",
+    options: [
+      "Any event or action that could cause loss of or damage to computer hardware, software, or data",
+      "Only physical theft of a laptop",
+      "A virus that only affects email",
+      "A legal agreement with an ISP"
+    ],
+    correct: 0,
+    explanation: "## Insight\nSecurity risks are broad. They aren't just 'hackers.' A flood that destroys a server (hardware damage) or an employee accidentally deleting a database (data loss) are both digital security risks."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is a **state‑sponsored** attacker?",
+    options: [
+      "A corporate hacker",
+      "A credit card thief",
+      "An attacker employed by a government to attack 'enemy' nations",
+      "A high-school student using scripts"
+    ],
+    correct: 2,
+    explanation: "## Cyberwarfare\nThese are the 'Elite' soldiers of the digital world. Governments hire them to break into the power grids, military secrets, or banks of other countries. It is a key part of modern international conflict."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Cyber Extortion\nWhat is the primary goal of a **cyber extortionist**?",
+    options: [
+      "To expose secrets or launch attacks unless they are paid a ransom",
+      "To fix security flaws for free",
+      "To test network defenses legally",
+      "To spread political beliefs"
+    ],
+    correct: 0,
+    explanation: "## The Digital Threat\nA cyber extortionist is like a blackmailer. They might steal your company's private emails and say: 'Pay us $10,000 or we post these on the internet.' They use fear to get money."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is the difference between a **computer crime** and a **cybercrime**?",
+    options: [
+      "Computer crime is always physical theft",
+      "Computer crime is legal",
+      "Computer crime is any illegal act involving a computer; cybercrime is specifically online/internet-based",
+      "No difference"
+    ],
+    correct: 2,
+    explanation: "## Scope of Law\nIf you hit someone with a keyboard, it's a computer crime (assault). If you use that keyboard to hack into a bank across the ocean, it's a **Cybercrime**. Cybercrime specifically uses the power of the **Internet** to commit the act."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Digital Forensics\nWhat is the purpose of **digital forensics**?",
+    options: [
+      "To encrypt hard drives",
+      "To find, collect, and analyze digital evidence for a court case",
+      "To delete evidence permanently",
+      "To speed up the internet"
+    ],
+    correct: 1,
+    explanation: "## The Digital Detective\nWhen a cybercrime happens, 'Forensics' experts come in. They can find files you thought you deleted, track where an email really came from, and prove in court exactly who was sitting at the computer."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is the **Dark Web**?",
+    options: [
+      "A part of the web that needs a subscription",
+      "Google's private database",
+      "A government classified network",
+      "A hidden part of the internet accessed via special software (like Tor) where users remain anonymous"
+    ],
+    correct: 3,
+    explanation: "## The Hidden Layers\nThink of the internet like an iceberg. The part we see (Google, Facebook) is the 'Surface Web.' The **Dark Web** is hidden deep underwater. Because it is anonymous, it is often used for both good (whistleblowers) and bad (illegal markets)."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Script Kiddies\nWho are **script kiddies**?",
+    options: [
+      "Attackers who lack advanced skills and use pre‑written hacking tools (scripts) created by others",
+      "Professional security testers",
+      "Advanced AI hackers",
+      "Hardware repair technicians"
+    ],
+    correct: 0,
+    explanation: "## Amateurs\nScript kiddies don't usually know how to code. They just download 'Hacking Kits' from the internet and click buttons to try and crash websites. They are often teenagers doing it for 'fun,' but they can still cause real damage."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is a **hacktivist**?",
+    options: [
+      "A hacker for hire",
+      "A harmless gamer",
+      "A hacker motivated by social or political beliefs",
+      "A government spy"
+    ],
+    correct: 2,
+    explanation: "## Hacking for a Cause\n**Hacktivists** (Hacker + Activist) use their skills to make a point. They might hack a company that they think is hurting the environment to show their 'protest' to the world."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Social Engineering\nIn social engineering, what is the principle of **Urgency**?",
+    options: [
+      "People follow the crowd",
+      "People trust celebrities",
+      "People fear missing out on a deal",
+      "Making the victim feel they must act immediately to stop a 'problem' (like a locked bank account)"
+    ],
+    correct: 3,
+    explanation: "## Bypassing Logic\nHackers use **Urgency** to make you panic. If you get a text saying 'Your account will be DELETED in 10 minutes, click here,' you might panic and click the link without thinking. Panic is the hacker's best friend."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What does the term **'malware'** stand for?",
+    options: ["Malicious software", "Malfunctioning hardware", "Managed App", "Memory error"],
+    correct: 0,
+    explanation: "## Bad Intentions\n**Malware** is the 'umbrella' term for any program built to do harm. Whether it’s a virus, a worm, or ransomware, if it was made to steal, spy, or break things, it is malware."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Malware Payloads\nWhat is a **payload** in the context of a virus?",
+    options: [
+      "The file size of the virus",
+      "The destructive action the malware performs (like deleting files)",
+      "The way the virus spreads",
+      "The hacker's ID number"
+    ],
+    correct: 1,
+    explanation: "## The Payload\nThink of a missile. The rocket engine gets it there, but the **Payload** is the bomb that explodes. For a virus, the 'infection' gets it into your PC, but the 'Payload' is the part that actually deletes your photos."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "How does a **worm** differ from a **virus**?",
+    options: [
+      "Worms are harmless",
+      "Viruses need a human to share an infected file; Worms spread automatically across networks",
+      "Worms only affect phones",
+      "There is no difference"
+    ],
+    correct: 1,
+    explanation: "## Self-Replication\nA virus is like a cold—you have to touch someone (share a file) to get it. A **Worm** is like a mosquito—it flies across the network wires and infects your computer all on its own without you doing a thing."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Botnets\nWhat is a **zombie** in the world of hacking?",
+    options: [
+      "A broken computer",
+      "A computer being controlled remotely by a hacker without the owner's knowledge",
+      "A backup server",
+      "A type of firewall"
+    ],
+    correct: 1,
+    explanation: "## Enslaved Machines\nIf a hacker infects your PC with 'bot' software, they can use it as a **Zombie**. You can still use your PC normally, but in the background, the hacker is using your computer's power to attack other websites."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is a **DoS** (Denial of Service) attack?",
+    options: [
+      "A data theft",
+      "An encryption attack",
+      "A website defacement",
+      "Flooding a server with fake traffic so it crashes and real users can't get in"
+    ],
+    correct: 3,
+    explanation: "## The Digital Jam\nImagine 1,000 people standing in the doorway of a small shop so no real customers can get in. That is a **DoS attack**. It doesn't steal your money; it just stops your business from working."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Spoofing\nWhat is **IP spoofing**?",
+    options: [
+      "Changing an email address",
+      "A hacker computer pretending to have a 'trusted' IP address to sneak past security",
+      "Spoofing a MAC address",
+      "Encrypting your own IP"
+    ],
+    correct: 1,
+    explanation: "## The Fake ID\nSecurity systems often have a 'VIP list' of trusted IP addresses. **Spoofing** is when a hacker 'masks' their true address and puts a fake one on their data packets so the firewall thinks they are a trusted employee and lets them in."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What is a **digital footprint**?",
+    options: [
+      "A physical signature",
+      "The permanent record of everything you do and post online",
+      "A biometric scan",
+      "A backup of your history"
+    ],
+    correct: 1,
+    explanation: "## Permanent Record\nEvery comment, like, search, and photo you post stays on a server somewhere forever. That is your **Digital Footprint**. Even if you 'delete' a post, someone might have screenshotted it—your footprint is very hard to erase."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Backup Types\nWhich backup method is the **fastest** to perform but takes the **longest** to restore?",
+    options: ["Full backup", "Incremental backup", "Differential backup", "Continuous protection"],
+    correct: 1,
+    explanation: "## Speed Trade-Offs\n**Incremental backups** only save what changed *today*. This is fast to do. But if your PC crashes, you have to restore the last 'Full' backup plus every single 'Incremental' day after it, which can take a very long time."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What does **WPA2** do for your Wi-Fi?",
+    options: [
+      "Speeds up the connection",
+      "Encrypts the data traveling through the air and limits who can join",
+      "Blocks all signals",
+      "Creates a guest network"
+    ],
+    correct: 1,
+    explanation: "## Scrambling the Airwaves\nWi-Fi signals are just radio waves anyone can 'hear.' **WPA2** is the security protocol that scrambles those waves. Even if a neighbor catches the signal, they can't read your messages without the password."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Authentication\nWhat is **Two-Factor Authentication (2FA)**?",
+    options: [
+      "Using two different elements to prove identity (e.g., password + phone code)",
+      "Using two passwords",
+      "Using two usernames",
+      "Using two computers"
+    ],
+    correct: 0,
+    explanation: "## Double Locking\n2FA is the 'Gold Standard' of security. Even if a hacker steals your password (something you **know**), they can't get in because they don't have your phone (something you **have**) to get the second code."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What does **CAPTCHA** stand for?",
+    options: [
+      "Computer Automated Password Test",
+      "Completely Automated Public Turing test to tell Computers and Humans Apart",
+      "Captured Public Test",
+      "Certified Access Program"
+    ],
+    correct: 1,
+    explanation: "## Stopping the Bots\n**CAPTCHA** is those 'click the traffic lights' puzzles. It's designed to be easy for a human eye but very difficult for a computer 'bot' to solve. This stops hackers from using automated programs to create millions of fake accounts."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Privacy Laws\nWhich law protects **children under 13** from having their personal info collected by websites?",
+    options: ["CIPA", "HIPAA", "PATRIOT Act", "COPPA"],
+    correct: 3,
+    explanation: "## Protecting Kids\n**COPPA** (Children's Online Privacy Protection Act) is the reason many apps say you must be 13 to join. It puts strict rules on companies to make sure they aren't 'stalking' or advertising to children without parent permission."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "What does **HIPAA** protect?",
+    options: [
+      "Credit card info",
+      "Your private health and medical information from being shared without your consent",
+      "Online privacy for kids",
+      "Federal government records"
+    ],
+    correct: 1,
+    explanation: "## Medical Privacy\n**HIPAA** is the law that ensures your doctor or hospital can't just sell your medical data to a health insurance company or post it online. It keeps your health history strictly private."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Intellectual Property\nWhat does the **DMCA** (Digital Millennium Copyright Act) make illegal?",
+    options: [
+      "Circumventing (breaking) digital locks or pirating commercial software",
+      "Sharing open-source code",
+      "Using personal encryption",
+      "Backing up your own files"
+    ],
+    correct: 0,
+    explanation: "## Anti-Piracy\nThe **DMCA** was built to fight digital theft. It makes it a crime to create or use 'crack' software that bypasses the security on a video game or a movie to watch it for free."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "A user gets a call from someone claiming to be 'Microsoft Support' asking for remote access. What is this?",
+    options: [
+      "A social engineering scam",
+      "A real tech alert",
+      "A firewall update",
+      "A system prompt"
+    ],
+    correct: 0,
+    explanation: "## The 'Vishing' Trap\nReal companies like Microsoft or your bank will **never** call you out of the blue to ask for your password or remote access. This is a scam designed to let a criminal into your computer to steal your bank details."
+  },
+  {
+    course: "CS110", term: "T2", topic: "Digital Security",
+    q: "# Secure Erasure\nWhy is simply 'Deleting' a file from an **SSD** before selling it insufficient?",
+    options: [
+      "SSDs can't be erased",
+      "Deleting only removes the 'link' to the file; the data stays until a new file writes over it",
+      "SSDs are read-only",
+      "SSDs don't store data"
+    ],
+    correct: 1,
+    explanation: "## Ghost Data\nThink of a book's table of contents. Deleting is like ripping out the contents page. The **chapters (the data)** are still in the book! To be safe, you must use a 'Secure Erase' tool that writes random zeros over the entire drive."
+  },
+
+
  // --- CS110 Term 1 Data (Existing Questions) ---
 
   {
