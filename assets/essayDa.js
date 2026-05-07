@@ -12145,5 +12145,2606 @@
   },
 
 
+//CS110 TERM 2 ESSAYS DATA
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 1: THE INTERNET EVOLUTION
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 1: THE INTERNET EVOLUTION",
+    topic: "Internet History, Bandwidth & Net Neutrality",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "Why was the ARPANET project specifically designed to function even if part of the network was destroyed or disabled?",
+        options: [
+          "To allow commercial companies to sell internet access globally",
+          "To meet a U.S. Department of Defense requirement that the network survive a nuclear attack or other disaster",
+          "To test whether fiber‑optic cables could replace copper wire",
+          "To enable universities to share student grades electronically"
+        ],
+        correct: 1,
+        explanation: "## Insight\nARPANET was funded by ARPA, a Pentagon agency. A core design goal was **resilience** — the network had to remain operational even if individual nodes were taken offline, using packet switching to reroute traffic automatically. Commercial sales came decades later with the privatisation of the Internet backbone. Fibre‑optic testing was not a design goal of ARPANET. Sharing student grades was not the primary mission of a defence‑funded project.\n\n> **Key Takeaway:** The Internet was born from a military requirement for survivable communications."
+      },
+      {
+        q: "Which statement correctly distinguishes the Internet from the World Wide Web?",
+        options: [
+          "The Internet is a service; the Web is the physical network of cables and routers",
+          "The Internet and the Web are identical concepts and can be used interchangeably",
+          "The World Wide Web was developed by ARPA, while the Internet was developed at CERN",
+          "The Internet is the global network infrastructure; the World Wide Web is a collection of interlinked hypertext documents and resources accessed via that network"
+        ],
+        correct: 3,
+        explanation: "## Insight\nThe **Internet** is the hardware and protocols that connect millions of computers globally. The **Web**, invented by Tim Berners‑Lee at CERN, is a system of interlinked web pages and resources that runs on top of the Internet. Option A reverses the relationship — the Internet is the infrastructure, not a service. Option B ignores the fundamental distinction between network and content. Option D gets the history wrong: ARPA built ARPANET (the precursor to the Internet), while CERN produced the Web.\n\n> **Key Takeaway:** Internet = global network; Web = documents on that network."
+      },
+      {
+        q: "The term **bandwidth** describes the capacity of a communications channel. Which of the following provides the best analogy for bandwidth?",
+        options: [
+          "The speed limit on a motorway",
+          "The distance data must travel to reach its destination",
+          "The number of lanes on a highway — more lanes allow more cars to travel simultaneously",
+          "The number of emails you can send per day"
+        ],
+        correct: 2,
+        explanation: "## Insight\nBandwidth is about **capacity**, not speed alone. A wider highway with more lanes can carry more vehicles at once, reducing congestion — just as higher bandwidth carries more data simultaneously. The speed limit analogy measures only movement rate, not volume. Distance represents **latency** (travel time), not carrying capacity. Number of emails per day is a quantity restriction, not a measure of channel width.\n\n> **Key Takeaway:** Bandwidth = Data carrying capacity (like highway lanes)."
+      },
+      {
+        q: "What does the principle of **net neutrality** require Internet Service Providers (ISPs) to do?",
+        options: [
+          "Treat all internet traffic equally, without blocking, throttling, or prioritising specific websites",
+          "Provide free internet access to all citizens",
+          "Block websites that consume high bandwidth",
+          "Charge the same price for every internet plan"
+        ],
+        correct: 0,
+        explanation: "## Insight\nNet neutrality mandates that ISPs cannot create \"fast lanes\" for companies that pay more or slow down competitors' services. It ensures equal treatment of all data. The other options are incorrect: net neutrality does not require free access, does not block high‑bandwidth sites, and does not dictate pricing — it only governs how traffic is handled once the user is connected.\n\n> **Key Takeaway:** Net Neutrality = All internet traffic must be treated equally."
+      },
+      {
+        q: "The original ARPANET consisted of four host computers located at research institutions. Which set of locations is historically accurate?",
+        options: [
+          "Harvard, MIT, Stanford, and Carnegie Mellon",
+          "UCLA, UCSB, Stanford Research Institute, and the University of Utah",
+          "University of Oxford, CERN, ETH Zurich, and TU Berlin",
+          "UCLA, MIT, University of California Berkeley, and Caltech"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe first four IMP (Interface Message Processor) nodes were installed at UCLA, the Stanford Research Institute, UCSB, and the University of Utah in 1969. Harvard and MIT were not part of the original four; they joined later. Oxford, CERN, and ETH were European institutions not connected until international links were established. UC Berkeley and Caltech were early Internet adopters but not the first four nodes.\n\n> **Key Takeaway:** The first four ARPANET nodes were all in the western United States."
+      },
+      {
+        q: "What is an **Internet Service Provider (ISP)** primarily responsible for?",
+        options: [
+          "Creating and maintaining the content of websites",
+          "Manufacturing the hardware used in data centres",
+          "Assigning IP addresses to individual web pages",
+          "Providing end users with access to the Internet and routing their traffic"
+        ],
+        correct: 3,
+        explanation: "## Insight\nISPs like MTN, Zamtel, or Airtel provide the physical or wireless connection that allows your device to communicate with the global Internet. Content creation is the job of website owners. Hardware manufacturing is done by companies like Cisco or Huawei. IP addresses are assigned to devices by DHCP servers or manually, not to individual web pages.\n\n> **Key Takeaway:** The ISP is your gateway to the Internet — it does not create web content."
+      },
+      {
+        q: "Why is packet switching, the technology pioneered by ARPANET, considered fundamental to modern networking?",
+        options: [
+          "It allowed circuits to be dedicated to a single call for its entire duration",
+          "It enabled computers to understand human speech",
+          "It breaks data into smaller packets that can travel independently along the best available path, improving efficiency and resilience",
+          "It replaced the need for physical cables entirely"
+        ],
+        correct: 2,
+        explanation: "## Insight\nPacket switching divides data into small chunks (packets) that can take different paths to their destination and be reassembled there. This makes the network more efficient and fault‑tolerant. Dedicated circuits are the opposite concept — they tie up a path for the entire call. Packet switching still uses physical cables; it just uses them more efficiently. Speech understanding is unrelated to packet switching.\n\n> **Key Takeaway:** Packet switching = smarter, more resilient data delivery."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 2: USING THE WORLD WIDE WEB
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 2: USING THE WORLD WIDE WEB",
+    topic: "Web Pages, Browsers, URLs, IP Addresses & DNS",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "What is the term for a web page that displays the same fixed content every time it is visited, regardless of user interaction?",
+        options: [
+          "Dynamic web page",
+          "Static web page",
+          "Interactive web page",
+          "Personalised web page"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Static** web pages are coded in HTML and show identical content to every visitor until the developer manually edits the source code. **Dynamic** pages can change based on user input, location, or time. Interactive is a feature of some pages, not a type of page delivery. Personalised pages are a subset of dynamic pages that tailor content to the individual.\n\n> **Key Takeaway:** Static = fixed content; Dynamic = content that updates automatically."
+      },
+      {
+        q: "What is the primary function of a **hyperlink** on a web page?",
+        options: [
+          "To change the style and layout of the current page",
+          "To embed video content directly into the browser window",
+          "To authenticate the user before granting access to the website",
+          "To provide a clickable connection to another web page, file, email address, or location on the same page"
+        ],
+        correct: 3,
+        explanation: "## Insight\nHyperlinks (or **links**) are the fundamental connective tissue of the Web, enabling non‑linear navigation and the concept of \"surfing\" between related documents. Styling is handled by CSS, not hyperlinks. Embedding video uses the `<video>` tag, not a hyperlink. Authentication is a security function, not a linking function.\n\n> **Key Takeaway:** Hyperlinks connect one resource to another — they are the web's navigation system."
+      },
+      {
+        q: "Which markup language provides the standard structure for all web pages on the World Wide Web?",
+        options: [
+          "JavaScript (JS)",
+          "Cascading Style Sheets (CSS)",
+          "Hypertext Markup Language (HTML)",
+          "Extensible Markup Language (XML)"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**HTML** defines the elements (headings, paragraphs, images, links) that form the skeleton of a web page. CSS controls visual presentation; it does not define structure. JavaScript adds interactive behaviour. XML is a general-purpose markup language for data, not specifically for web page structure.\n\n> **Key Takeaway:** HTML = the structural blueprint of every web page."
+      },
+      {
+        q: "**Cookies** are small text files stored by a website on a user's computer. What legitimate purpose do they serve?",
+        options: [
+          "To remember user preferences, login status, and shopping‑cart contents across browsing sessions",
+          "To serve as a backup of the entire hard drive",
+          "To block advertisements from third‑party networks",
+          "To encrypt the connection between the browser and the server"
+        ],
+        correct: 0,
+        explanation: "## Insight\nCookies allow websites to maintain **state** — recognising returning users, keeping items in a shopping cart, and personalising content without requiring the user to re‑identify themselves. They store tiny text snippets, not entire hard drives. They do not block ads (ad blockers do that). Encryption is handled by SSL/TLS, not cookies.\n\n> **Key Takeaway:** Cookies = the web's short‑term memory for user sessions."
+      },
+      {
+        q: "The **address bar** in a web browser displays the URL of the current page. Which part of the URL \"https://www.example.com/page\" identifies the specific web server being contacted?",
+        options: [
+          "The protocol \"https\"",
+          "The domain name \"www.example.com\"",
+          "The path \"/page\"",
+          "The prefix \"www\""
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe **domain name** (e.g., \"www.example.com\") uniquely identifies the server on the Internet. The protocol (\"https\") specifies the communication rules. The path (\"/page\") points to a specific resource on that server. The \"www\" prefix is a subdomain, not sufficient alone to identify the server.\n\n> **Key Takeaway:** The domain name is the server's unique address on the Internet."
+      },
+      {
+        q: "An **IP address** is a unique numerical identifier assigned to every device on the Internet. How are IPv4 addresses typically represented?",
+        options: [
+          "As a 64‑bit hexadecimal string",
+          "As a single 32‑digit binary number",
+          "As an alphanumeric string ending with the domain \".com\"",
+          "As four groups of numbers from 0 to 255 separated by periods (e.g., 192.168.1.1)"
+        ],
+        correct: 3,
+        explanation: "## Insight\nIPv4 uses 32‑bit addresses, divided into four octets written in dotted decimal notation. IPv6 uses 128‑bit addresses to overcome IPv4 exhaustion. A 64‑bit hexadecimal string describes an IPv6 address, not IPv4. Binary notation is rarely displayed to users. Alphanumeric strings ending with \".com\" are domain names, not IP addresses.\n\n> **Key Takeaway:** IPv4 = four octets from 0 to 255 separated by dots."
+      },
+      {
+        q: "What is the role of the **Domain Name System (DNS)**?",
+        options: [
+          "To physically route traffic through undersea cables",
+          "To encrypt all data transmitted between a browser and a web server",
+          "To translate human‑readable domain names (e.g., \"google.com\") into machine‑readable IP addresses",
+          "To manage the registration of all domain names worldwide"
+        ],
+        correct: 2,
+        explanation: "## Insight\nDNS acts like a global phone book. When you type a domain name, a DNS server resolves it to the corresponding IP address so your browser can locate the correct server. Physical routing is handled by routers. Encryption is done by SSL/TLS. Domain name registration is managed by registrars like GoDaddy, not the DNS itself.\n\n> **Key Takeaway:** DNS = the internet's phonebook that matches names to numbers."
+      },
+      {
+        q: "Which browser is developed by Apple and comes preinstalled as the default on macOS and iOS devices?",
+        options: [
+          "Apple Safari",
+          "Mozilla Firefox",
+          "Microsoft Edge",
+          "Google Chrome"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Safari** has been the default browser on Apple devices since 2003. Firefox is developed by Mozilla. Edge is Microsoft's browser, default on Windows. Chrome is developed by Google and must be downloaded separately. All are viable browsers, but only Safari comes preinstalled on Apple hardware.\n\n> **Key Takeaway:** Safari = Apple's built‑in browser for Mac, iPhone, and iPad."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 3: CONNECTING TO THE INTERNET
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 3: CONNECTING TO THE INTERNET",
+    topic: "Hot Spots, Cellular Networks, Wi‑Fi & Tethering",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "What is a **wireless hot spot**?",
+        options: [
+          "A special type of browser used only on smartphones",
+          "A physical location where a wireless network provides Internet access to mobile devices",
+          "A server that hosts social media websites",
+          "A security protocol for encrypting wireless connections"
+        ],
+        correct: 1,
+        explanation: "## Insight\nHot spots are commonly found in cafés, airports, and hotels. They use a wireless access point connected to an ISP to offer local Wi‑Fi connectivity. A hot spot is a physical place, not a browser, not a server, and not a security protocol.\n\n> **Key Takeaway:** A hot spot is a physical location offering wireless Internet access."
+      },
+      {
+        q: "How does a **mobile hot spot** differ from a traditional stationary hot spot?",
+        options: [
+          "It can only connect a single device at a time",
+          "It requires a physical Ethernet cable to function",
+          "It is permanently installed in public libraries",
+          "It uses a cellular network connection (e.g., 4G/5G) to provide Internet access for other devices wirelessly"
+        ],
+        correct: 3,
+        explanation: "## Insight\nSmartphones and dedicated mobile hot spot devices share their cellular data connection over Wi‑Fi, making them portable access points. They can typically connect multiple devices. They do not require Ethernet — that would defeat their mobility. They are not permanently installed; they move with the user.\n\n> **Key Takeaway:** A mobile hot spot turns cellular data into a portable Wi‑Fi signal."
+      },
+      {
+        q: "Which technology standard is the **fifth generation** of cellular networks and offers significantly higher data speeds and lower latency than its predecessor?",
+        options: [
+          "4G LTE",
+          "Wi‑Fi 6",
+          "5G",
+          "Bluetooth 5.0"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**5G** introduces millimetre‑wave spectrum, massive MIMO, and network slicing. 4G LTE is the previous generation. Wi‑Fi 6 is a wireless local networking standard, not cellular. Bluetooth 5.0 is a short‑range personal area network technology, not a cellular network standard.\n\n> **Key Takeaway:** 5G = fifth‑generation cellular, the fastest mobile network standard."
+      },
+      {
+        q: "What is **tethering**?",
+        options: [
+          "Using a smartphone's Internet connection to provide network access to another device, either wirelessly or via USB",
+          "Connecting a device to the Internet via a satellite link",
+          "Securing a Wi‑Fi network with a strong password",
+          "Extending the range of a router with a signal booster"
+        ],
+        correct: 0,
+        explanation: "## Insight\nTethering turns a mobile device into a modem. It can be done via Wi‑Fi, Bluetooth, or USB cable. Satellite linking is not tethering. Securing Wi‑Fi involves encryption, not connection sharing. Extending range is done with repeaters, not tethering.\n\n> **Key Takeaway:** Tethering = sharing a phone's data connection with another device."
+      },
+      {
+        q: "Why might an ISP charge an additional fee for mobile hot spot usage?",
+        options: [
+          "The hot spot feature requires significantly more battery power",
+          "The data consumed through the hot spot is often higher and contributes to increased overall data usage",
+          "Mobile hot spots are illegal in most countries without a licence",
+          "The signal from a mobile hot spot interferes with other wireless networks"
+        ],
+        correct: 1,
+        explanation: "## Insight\nHot spot data is drawn from the same cellular data plan. Because users often consume more data when connecting laptops or other high‑usage devices, providers may restrict or charge extra. Battery consumption is a device issue, not a billing reason. Mobile hot spots are legal. Signal interference is not the cause of extra charges.\n\n> **Key Takeaway:** Extra hot spot fees reflect potentially higher data consumption."
+      },
+      {
+        q: "Which of the following correctly describes a **public Wi‑Fi network**?",
+        options: [
+          "A private, encrypted network that requires a password",
+          "A network that routes traffic exclusively through government servers",
+          "A cellular network that is open to all mobile users",
+          "A wireless network available in public places such as coffee shops, airports, and hotels, often with minimal security"
+        ],
+        correct: 3,
+        explanation: "## Insight\nPublic Wi‑Fi is convenient but typically uses open authentication or a shared password. It is the opposite of a private, encrypted network. It routes through standard commercial ISPs, not exclusively government servers. It is not a cellular network; cellular networks use towers, not Wi‑Fi access points.\n\n> **Key Takeaway:** Public Wi‑Fi = open, often unencrypted wireless in shared spaces."
+      },
+      {
+        q: "What advantage does a **wired Ethernet connection** typically offer over a wireless (Wi‑Fi) connection?",
+        options: [
+          "Greater portability and flexibility in device placement",
+          "The ability to connect more devices simultaneously",
+          "Lower latency, higher reliability, and generally faster consistent speeds",
+          "No need for a modem or router"
+        ],
+        correct: 2,
+        explanation: "## Insight\nEthernet cables provide a dedicated, interference‑free physical link. Wi‑Fi excels at portability, not Ethernet. Ethernet can support many devices via switches, but Wi‑Fi can also handle many simultaneous connections. Both connections still require a modem/router for Internet access.\n\n> **Key Takeaway:** Wired connections are faster and more stable because they avoid wireless interference."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 4: ONLINE ACTIVITIES AND SERVICES
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 4: ONLINE ACTIVITIES AND SERVICES",
+    topic: "Website Types, Social Media, Web Apps Pros & Cons",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "How is a website whose primary purpose is to provide formal instruction, course materials, and learning assessments classified?",
+        options: [
+          "As an informational website",
+          "As an educational website",
+          "As a government agency website",
+          "As a business website"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Educational websites** are designed for teaching and learning. Informational sites provide reference data but not formal instruction. Government sites serve citizens with official services. Business sites promote or sell products. Only educational sites have pedagogy as their core purpose.\n\n> **Key Takeaway:** Educational websites are built for structured learning, not just reference."
+      },
+      {
+        q: "What distinguishes a **blog** from a traditional news website?",
+        options: [
+          "Blogs are always written by a single author; news sites have multiple authors",
+          "News websites cannot contain images; blogs always do",
+          "Blogs are hosted on government servers",
+          "Blogs typically feature informal, time‑stamped posts in reverse chronological order, often with a comment section for discussion"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA **blog** (weblog) is a frequently updated online journal with posts organised chronologically. Many blogs have multiple authors, so the single‑author claim is false. News sites commonly include images. Blogs are hosted on standard web servers, not government infrastructure.\n\n> **Key Takeaway:** A blog = a personal or professional journal with dated entries."
+      },
+      {
+        q: "**Online banking** enables customers to perform financial transactions. Which of the following is a critical security feature of such services?",
+        options: [
+          "The ability to print paper statements",
+          "A countdown timer that logs you out after a set period of inactivity",
+          "Multi‑factor authentication and encrypted connections (HTTPS) to protect login credentials and data",
+          "A colour‑coded interface for different account types"
+        ],
+        correct: 2,
+        explanation: "## Insight\nFinancial websites employ SSL/TLS encryption and often require two‑factor authentication (2FA) to prevent unauthorised access. Printing statements is a convenience, not a security feature. A countdown timer is a secondary safety measure, not the primary security layer. Colour coding is a design choice with no security impact.\n\n> **Key Takeaway:** HTTPS and multi‑factor authentication are the backbone of banking security."
+      },
+      {
+        q: "What is a **bookmarking site** used for?",
+        options: [
+          "To organise, tag, and share links to web pages and other online resources",
+          "To purchase physical books online",
+          "To convert web pages into PDF documents",
+          "To check the spelling and grammar of online articles"
+        ],
+        correct: 0,
+        explanation: "## Insight\nBookmarking sites like Delicious and Reddit allow users to save, categorise (tag), and share their favourite web content. They are not e‑commerce bookstores. They do not convert files. They are not spelling checkers.\n\n> **Key Takeaway:** Bookmarking sites = platforms for saving and sharing links with tags."
+      },
+      {
+        q: "A **web app** offers cross‑platform accessibility, but it also has limitations. Which of the following is a genuine disadvantage of using web apps compared to native apps?",
+        options: [
+          "They require manual installation on each device",
+          "They typically have fewer features and may run slower because they operate within a browser",
+          "They can only be used on desktop computers",
+          "They cannot store any user data"
+        ],
+        correct: 1,
+        explanation: "## Insight\nWeb apps run in a browser and often lack deep integration with device hardware (camera, GPS). They do not require installation — that is a key advantage, not a disadvantage. They run on any device with a browser, not just desktops. They can and do store user data, often in the cloud.\n\n> **Key Takeaway:** Web apps sacrifice performance and features for convenience and cross‑platform access."
+      },
+      {
+        q: "Which definition most accurately describes **social media**?",
+        options: [
+          "A collection of websites that sell products online",
+          "A government‑regulated platform for public announcements",
+          "A term synonymous with email and instant messaging",
+          "Digital platforms and applications that enable users to create, share content, and participate in social networking"
+        ],
+        correct: 3,
+        explanation: "## Insight\nSocial media encompasses interactive technologies where users generate content and build communities. E‑commerce sites sell products; that is not social media. Government platforms are a specific subset, not the definition. Email and messaging are communication tools, not synonymous with the broad social media landscape.\n\n> **Key Takeaway:** Social media = user‑generated content plus community interaction."
+      },
+      {
+        q: "What is a **tag** in the context of bookmarking and social media?",
+        options: [
+          "A security label that blocks unauthorised access to content",
+          "A copyright notice embedded in an image file",
+          "Descriptive text used to categorise media and content, making it easier to search and organise",
+          "A type of hyperlink that only works within a single website"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Tags** are keywords or labels assigned to content to improve discoverability. They are not security labels. Copyright notices are separate legal statements, not organisational keywords. Tags are not hyperlinks; they are metadata attached to content.\n\n> **Key Takeaway:** Tags = user‑generated labels that organise content for searching."
+      },
+      {
+        q: "If a web app provider goes out of business, what critical risk do users face?",
+        options: [
+          "They may permanently lose access to data and files stored exclusively on that provider's servers",
+          "Their device's operating system may stop functioning",
+          "Their internet service will be disconnected",
+          "Their browser will automatically delete all cookies"
+        ],
+        correct: 0,
+        explanation: "## Insight\nCloud‑based services store user data remotely. If the company ceases operations without providing data export tools, users can lose years of work. The operating system is unaffected. Internet service continues independently. Browsers do not auto‑delete cookies when a web service shuts down.\n\n> **Key Takeaway:** Always maintain local backups — cloud services can disappear."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 5: ONLINE SAFETY
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 5: ONLINE SAFETY",
+    topic: "Digital Certificates, Security Tips & Safe Practices",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "What is the primary purpose of a **digital certificate** on a website?",
+        options: [
+          "To increase the loading speed of the web page",
+          "To authenticate the website's identity and enable an encrypted HTTPS connection",
+          "To block advertisements and pop‑ups",
+          "To store the user's login credentials securely"
+        ],
+        correct: 1,
+        explanation: "## Insight\nDigital certificates are issued by Certificate Authorities (CAs). They contain the site's public key and the CA's digital signature, allowing browsers to verify identity and establish a TLS‑encrypted session. Speed is unrelated to certificates. Ad blocking is a browser function. Credential storage is handled by the browser or password manager, not the certificate.\n\n> **Key Takeaway:** A digital certificate proves a website is genuine and enables encryption."
+      },
+      {
+        q: "**Private browsing** mode (Incognito) in a web browser achieves which of the following?",
+        options: [
+          "Makes the user completely anonymous to their ISP and the websites they visit",
+          "Encrypts all internet traffic through a secure tunnel",
+          "Changes the user's IP address to a different geographic location",
+          "Prevents the browser from saving browsing history, cookies, and temporary files after the session ends"
+        ],
+        correct: 3,
+        explanation: "## Insight\nPrivate browsing only affects the local device — it does not hide activity from the ISP, network administrator, or the websites themselves. For true anonymity, a VPN or Tor browser is needed. Encryption is a separate function (HTTPS). IP address changes require a VPN or proxy.\n\n> **Key Takeaway:** Incognito mode hides your tracks on your device, not from the outside world."
+      },
+      {
+        q: "What is the function of a **phishing filter**?",
+        options: [
+          "To automatically delete all emails from unknown senders",
+          "To encrypt all outgoing email messages",
+          "To scan web pages and emails for characteristics of fraudulent sites designed to steal personal information, then warn or block the user",
+          "To filter out spam based solely on keywords in the subject line"
+        ],
+        correct: 2,
+        explanation: "## Insight\nPhishing filters compare URLs and content against a database of known phishing attacks and use heuristics to detect deceptive patterns like domain spoofing. They do not delete emails. Encryption is a separate function. Spam filters operate on different criteria — phishing filters specifically detect deception attempts.\n\n> **Key Takeaway:** A phishing filter identifies and blocks deceptive websites trying to steal your data."
+      },
+      {
+        q: "What does a **pop‑under blocker** prevent?",
+        options: [
+          "Unwanted advertisement windows that hide behind the active browser window from opening",
+          "A type of malware from infecting the computer",
+          "Social media notifications from appearing",
+          "The browser from recording history"
+        ],
+        correct: 0,
+        explanation: "## Insight\nPop‑under ads open behind the current window and are only noticed when the main window is closed. A pop‑under blocker suppresses these intrusive advertisements. It does not block malware — that is the job of antivirus software. It does not affect notifications. It does not control browser history.\n\n> **Key Takeaway:** Pop‑under blockers stop hidden advertisement windows from launching."
+      },
+      {
+        q: "What is the function of a **proxy server**?",
+        options: [
+          "It physically connects multiple computers within a home network",
+          "It acts as an intermediary between a user's device and the Internet, forwarding requests and potentially masking the user's IP address",
+          "It stores copies of popular websites to reduce bandwidth usage",
+          "It assigns IP addresses to devices on a local network"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA proxy server relays requests, often used for content filtering, access control, or to bypass geographic restrictions. It does not physically connect devices — that is a switch or hub. Storing website copies is caching, not proxying. Assigning IP addresses is the job of a DHCP server.\n\n> **Key Takeaway:** A proxy acts as a middleman between you and the Internet."
+      },
+      {
+        q: "Why should you never store passwords directly in the browser's built‑in password manager on a shared computer?",
+        options: [
+          "The browser's password manager is always less secure than writing passwords on paper",
+          "The passwords can only be stored for a maximum of seven days",
+          "Storing passwords in the browser automatically sends them to the website owner",
+          "Any subsequent user of that computer could access your stored accounts without knowing your master password"
+        ],
+        correct: 3,
+        explanation: "## Insight\nOn a shared or public computer, saved passwords are tied to the browser profile. Another user could navigate to the password settings and view or use them. Browser password managers can be secure, but the risk is sharing the physical device. Passwords are not automatically sent to website owners. There is no seven‑day storage limit.\n\n> **Key Takeaway:** Never save passwords in a browser on a computer others can access."
+      },
+      {
+        q: "What is the purpose of **clearing your browser's cache and history**?",
+        options: [
+          "To increase the amount of RAM available for other applications",
+          "To reset the browser's default search engine",
+          "To remove locally stored records of visited websites, search queries, and temporary internet files, protecting your privacy from other users of the same device",
+          "To update the browser to the latest version"
+        ],
+        correct: 2,
+        explanation: "## Insight\nCache and history files can reveal a detailed log of online activity. Clearing them is basic privacy hygiene, especially on shared computers. It does not free significant RAM — that is managed by the OS. It does not change the search engine or update software.\n\n> **Key Takeaway:** Clear history and cache to remove traces of your online activity from a device."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 6: COMMUNICATING ONLINE AND SOCIAL NETWORKS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 6: COMMUNICATING ONLINE AND SOCIAL NETWORKS",
+    topic: "Email, Messaging, Social Network Types & Privacy",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "Email was one of the earliest Internet services. What was its original primary use on ARPANET?",
+        options: [
+          "Broadcasting news to the general public",
+          "Enabling scientists and researchers at different locations to communicate efficiently",
+          "Sending multimedia files between corporations",
+          "Providing a platform for anonymous online discussions"
+        ],
+        correct: 1,
+        explanation: "## Insight\nEmail allowed researchers on the ARPANET to send messages to colleagues at other nodes, fostering collaboration well before the Web existed. Public news broadcasting came later with the Web. Multimedia attachments were not supported in early email. Anonymous discussion platforms are separate from the original email purpose.\n\n> **Key Takeaway:** Email began as a research collaboration tool, not a mass‑media platform."
+      },
+      {
+        q: "What is a defining characteristic of **Internet messaging services** compared to email?",
+        options: [
+          "Delayed delivery of messages, similar to postal mail",
+          "The inability to exchange files or media",
+          "Unlimited message length and formal structure",
+          "Real‑time or near‑real‑time communication with presence indicators showing when contacts are online"
+        ],
+        correct: 3,
+        explanation: "## Insight\nInstant messaging is designed for live conversation, often including typing indicators, read receipts, and voice/video call integration. Email is asynchronous and delayed by nature. File sharing is standard in modern messaging apps. Messages tend to be short and informal, not long and structured.\n\n> **Key Takeaway:** Messaging apps = real‑time chat with presence indicators."
+      },
+      {
+        q: "Which of the following platforms is primarily classified as a **professional social networking** site?",
+        options: [
+          "Instagram",
+          "TikTok",
+          "LinkedIn",
+          "Pinterest"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**LinkedIn** is designed for career networking, job searching, and professional development. Instagram and TikTok are general social media for photo and video sharing. Pinterest is a visual discovery and bookmarking platform. None of them centre on professional identity like LinkedIn.\n\n> **Key Takeaway:** LinkedIn = the professional network for career building."
+      },
+      {
+        q: "What is a defining characteristic of **microblogging** platforms?",
+        options: [
+          "They limit posts to short‑form content, often with a character limit, enabling rapid dissemination of information",
+          "They require users to submit a lengthy biography before posting",
+          "They only support text posts, with no support for images or links",
+          "They are exclusively used by government agencies"
+        ],
+        correct: 0,
+        explanation: "## Insight\nPlatforms like Twitter and Tumblr emphasise brevity. The short‑form format facilitates quick updates and broad sharing. They do not require long biographies. They fully support images and links. They are used by individuals, organisations, and governments alike.\n\n> **Key Takeaway:** Microblogging = short, rapid posts for timely communication."
+      },
+      {
+        q: "YouTube and Flickr are categorised as **media sharing** sites. What is their primary function?",
+        options: [
+          "Host collaborative encyclopedia articles",
+          "Allow users to upload, view, and share videos or photographs",
+          "Provide online banking services",
+          "Facilitate private, encrypted messaging"
+        ],
+        correct: 1,
+        explanation: "## Insight\nMedia sharing platforms focus on user‑generated visual content. YouTube specialises in video; Flickr in photography. Encyclopedias are wikis. Banking is a financial service. Private messaging is a communication function, not the core purpose of these platforms.\n\n> **Key Takeaway:** Media sharing sites = user‑uploaded video and photo content."
+      },
+      {
+        q: "**Collaborative projects** like Wikipedia rely on which core principle?",
+        options: [
+          "Exclusive access by paid subscribers",
+          "Automated AI generation of all articles",
+          "Government‑mandated content standards",
+          "Content created and edited by a community of volunteers, with version tracking and discussion pages"
+        ],
+        correct: 3,
+        explanation: "## Insight\nWikis are built on collective intelligence. Anyone can contribute, but changes are tracked, discussed, and can be reverted. Wikipedia is free, not paid. Articles are human‑written, not AI‑generated. Content is governed by community consensus, not government mandates.\n\n> **Key Takeaway:** Wikis = community‑edited knowledge bases with version control."
+      },
+      {
+        q: "When registering for an online social network, which privacy practice is most effective at reducing the risk of identity theft?",
+        options: [
+          "Using your full legal name, address, and phone number to appear credible",
+          "Accepting all friend requests to maximise your network size",
+          "Registering with caution, reviewing default privacy settings, and limiting the personal information visible to the public",
+          "Immediately posting about your daily activities to establish a presence"
+        ],
+        correct: 2,
+        explanation: "## Insight\nRestricting personally identifiable information (PII) reduces the attack surface for identity theft. Providing full details increases risk. Accepting all friend requests exposes you to unknown actors. Posting daily activities reveals patterns that can be exploited.\n\n> **Key Takeaway:** Limit public personal data to protect your identity online."
+      },
+      {
+        q: "Cloud‑based **file sharing** services such as Dropbox or WeTransfer are advantageous for what key reason?",
+        options: [
+          "They allow users to send and receive large files via a shared link, bypassing email attachment size limits",
+          "They encrypt every file automatically with military‑grade encryption, requiring no user action",
+          "They provide unlimited free storage to all users",
+          "They require both the sender and recipient to be using the same operating system"
+        ],
+        correct: 0,
+        explanation: "## Insight\nBy storing files on a server and sharing a download link, these services overcome the typical 25 MB attachment limit of most email providers. Encryption is not always automatic. Storage is limited on free plans. They are cross‑platform and do not require the same OS.\n\n> **Key Takeaway:** Cloud sharing bypasses email attachment limits by using download links."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 7: INFORMATION LITERACY AND WEB SEARCHES
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 7: INFORMATION LITERACY AND WEB SEARCHES",
+    topic: "Search Engines, Spiders, Query Strategies & Boolean Operators",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "A **search engine spider** (crawler) performs which task?",
+        options: [
+          "It blocks access to malicious websites",
+          "It automatically browses the web, discovers new and updated pages, and adds information about them to the engine's index",
+          "It compresses web pages so they load faster",
+          "It monitors user activity and reports browsing habits to advertisers"
+        ],
+        correct: 1,
+        explanation: "## Insight\nSpiders systematically traverse the hyperlink structure of the Web, fetching documents and reporting their contents to the search engine's indexing system. They are not security tools and do not block malicious sites. They do not compress pages. They do not track user behaviour — that is the role of analytics scripts.\n\n> **Key Takeaway:** Spiders build the search index by crawling linked pages."
+      },
+      {
+        q: "When you enter a **query** into a search engine, what is actually being searched?",
+        options: [
+          "The entire live Internet in real time",
+          "All files stored on your computer's hard drive",
+          "A directory maintained by the International Telecommunication Union",
+          "The search engine's pre‑built index, a massive database of words and their locations on web pages"
+        ],
+        correct: 3,
+        explanation: "## Insight\nSearch engines do not search the Web directly for each query. They search their cached **index**, which is continuously updated by spiders. Real‑time searching would be impossibly slow. Local hard drive searching is a desktop function. The ITU does not maintain web directories.\n\n> **Key Takeaway:** A search query searches a pre‑built index, not the live Internet."
+      },
+      {
+        q: "Searching with **quotation marks** around a phrase (e.g., \"climate change policy\") instructs the engine to do what?",
+        options: [
+          "Exclude all pages containing the exact phrase",
+          "Broaden the search to include synonyms of each word",
+          "Find web pages containing those exact words in the exact sequence specified",
+          "Translate the phrase into the user's preferred language"
+        ],
+        correct: 2,
+        explanation: "## Insight\nQuotation marks force an **exact‑phrase match**. Without them, a search engine retrieves pages containing the individual words anywhere, regardless of order or proximity. Excluding is done with the hyphen operator. Broadening is done with OR. Translation is a separate tool.\n\n> **Key Takeaway:** Quotation marks = search for that exact phrase."
+      },
+      {
+        q: "The **Boolean operator OR** (or the pipe \"|\" symbol) is used in a search to accomplish what?",
+        options: [
+          "Broaden the search to include results containing at least one of the specified terms",
+          "Require that both terms appear in every result",
+          "Narrow the search to only government domains",
+          "Rank results by page load speed"
+        ],
+        correct: 0,
+        explanation: "## Insight\nOR expands the result set. \"college OR university\" retrieves pages containing either term, or both. Requiring both terms is AND. Narrowing to a specific domain uses the site: operator. Ranking by speed is not a Boolean operator function.\n\n> **Key Takeaway:** OR broadens your search to include more possibilities."
+      },
+      {
+        q: "What does the **hyphen (-)** search operator accomplish?",
+        options: [
+          "It hyphenates compound words automatically",
+          "It excludes pages containing the word or phrase that follows the hyphen",
+          "It joins two terms so they are treated as a single query",
+          "It searches only within a specified range of dates"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe hyphen (NOT operator) refines a search. \"bass -music\" returns pages about the fish, not the musical instrument. It does not hyphenate words — that is a grammar function. It does not join terms. Date range uses the \"..\" operator.\n\n> **Key Takeaway:** The hyphen removes unwanted terms from your results."
+      },
+      {
+        q: "How does a **web directory** differ from a search engine?",
+        options: [
+          "It uses more advanced artificial intelligence",
+          "It only indexes academic journals",
+          "It requires a subscription to use",
+          "It is organised by human editors who categorise websites into subject hierarchies, rather than using automated spiders"
+        ],
+        correct: 3,
+        explanation: "## Insight\nWeb directories (like the Open Directory Project) are curated by people, which can improve quality for broad topics but often lag behind search engines in comprehensiveness. AI is more associated with modern search engines. Directories cover all topics, not just academic journals. Many are free.\n\n> **Key Takeaway:** Web directories = human‑curated; search engines = algorithm‑driven."
+      },
+      {
+        q: "What does the **CARS checklist** help a user determine about online information?",
+        options: [
+          "The download speed of a web page",
+          "The age of the domain registration",
+          "Whether the information is **Credible, Accurate, Reasonable, and Supported** by evidence",
+          "The number of advertisements on the page"
+        ],
+        correct: 2,
+        explanation: "## Insight\nCARS is a framework for critical evaluation. **Credibility** asks about the author's qualifications; **Accuracy** checks factual correctness; **Reasonableness** considers bias; **Support** demands cited sources. It does not measure speed, domain age, or ad quantity.\n\n> **Key Takeaway:** CARS = a checklist to verify online information trustworthiness."
+      },
+      {
+        q: "Why is it essential to evaluate online sources before using them in research?",
+        options: [
+          "Because the Internet has no universal quality control — anyone can publish, regardless of whether the information is accurate",
+          "Because all online information is intentionally false",
+          "Because search engines rank unreliable pages higher",
+          "Because universities require all citations to be from books"
+        ],
+        correct: 0,
+        explanation: "## Insight\nUnlike peer‑reviewed journals, most web content is self‑published with no editorial oversight. Not all online information is false, but it lacks a quality gatekeeper. Search engines rank by relevance, not reliability. Universities accept credible online sources when properly evaluated.\n\n> **Key Takeaway:** Critical evaluation is essential because the Internet has no built‑in quality filter."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 7: THE INTERNET – SECTION 8: USING ONLINE CONTENT RESPONSIBLY
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 7: THE INTERNET – SECTION 8: USING ONLINE CONTENT RESPONSIBLY",
+    topic: "Citations, IP Rights, DRM, Public Domain & Creative Commons",
+    year: "2025",
+    tag: "Module 7",
+    steps: [
+      {
+        q: "**Intellectual property rights** protect the works of creators. Which of the following is an example of intellectual property?",
+        options: [
+          "A physical computer sold on the open market",
+          "A photograph, a piece of music, a novel, and an invention",
+          "A public domain book printed before 1923",
+          "An internet service provider's network infrastructure"
+        ],
+        correct: 1,
+        explanation: "## Insight\nIP law covers creative and innovative works: copyright protects artistic works; patents protect inventions; trademarks protect brand identifiers. A physical computer is tangible property, not intellectual property. A public domain work has no IP protection remaining. Network infrastructure is physical, not creative work.\n\n> **Key Takeaway:** Intellectual property = creations of the mind, protected by copyright, patents, and trademarks."
+      },
+      {
+        q: "What are the legal implications of using a copyrighted image from the Internet in a university assignment without permission or a licence?",
+        options: [
+          "It is always allowed because education is exempt from copyright law",
+          "It is legal as long as the image is not sold",
+          "It cannot be detected because images are too small",
+          "It may constitute infringement unless the use falls under **fair use** provisions or the image is licensed for reuse"
+        ],
+        correct: 3,
+        explanation: "## Insight\nCopyright applies online just as offline. Even for educational purposes, you must obtain permission, use a Creative Commons licence, or rely on limited fair‑use exceptions. Education is not a blanket exemption. Not selling does not equal legality. Detection is irrelevant to the legality of the act.\n\n> **Key Takeaway:** Always check the licence before using any online image."
+      },
+      {
+        q: "**Digital Rights Management (DRM)** technologies are used by publishers for what primary purpose?",
+        options: [
+          "To increase the resolution of digital images",
+          "To speed up downloads from online stores",
+          "To prevent unauthorised copying, sharing, and piracy of digital content such as software, e‑books, and music",
+          "To track user browsing behaviour for advertising purposes"
+        ],
+        correct: 2,
+        explanation: "## Insight\nDRM includes encryption, restrictive licences, and digital watermarks to control access and distribution. It does not affect image resolution. It does not improve download speeds — in fact, it can add overhead. It is not a tracking mechanism; that is analytics.\n\n> **Key Takeaway:** DRM = digital lock that prevents unauthorised copying."
+      },
+      {
+        q: "What does it mean when a work is described as being in the **public domain**?",
+        options: [
+          "It is not protected by copyright and can be used freely by anyone without permission or payment",
+          "It must be purchased from a government agency before use",
+          "It can only be used by the original creator",
+          "It is protected by the strictest copyright laws"
+        ],
+        correct: 0,
+        explanation: "## Insight\nWorks enter the public domain when their copyright expires, they were never copyrighted, or the creator dedicates them to public use. They do not require government purchase. They can be used by anyone, not just the creator. They are the opposite of strictly protected works.\n\n> **Key Takeaway:** Public domain = free for anyone to use, no permission needed."
+      },
+      {
+        q: "**Creative Commons** licences allow a copyright holder to do what?",
+        options: [
+          "Automatically place the work into the public domain",
+          "Grant specific permissions for others to use, share, and sometimes modify their work, while retaining copyright",
+          "Prevent any use of the work by anyone else",
+          "Monitor all internet traffic for copyright infringement"
+        ],
+        correct: 1,
+        explanation: "## Insight\nCreative Commons provides standardised licence modules (Attribution, Non‑Commercial, Share‑Alike, No‑Derivatives) that creators can mix to communicate which rights they reserve and which they waive. It does not place work into the public domain. It enables sharing, not prevents it. It is not a monitoring system.\n\n> **Key Takeaway:** Creative Commons = flexible licensing that lets you share your work on your terms."
+      },
+      {
+        q: "What is the primary purpose of a **citation** in a research paper?",
+        options: [
+          "To increase the word count of the document",
+          "To replace the need for an introduction",
+          "To prove that the writer attended a specific university",
+          "To formally credit the original author whose work was used as a source, enabling readers to locate it and verifying the factual basis of the author's claims"
+        ],
+        correct: 3,
+        explanation: "## Insight\nCitations acknowledge intellectual debt, support arguments, and demonstrate that the research is grounded in existing scholarship. They are not filler for word counts. They supplement, not replace, introductions. They do not prove university attendance.\n\n> **Key Takeaway:** Citations give credit and let readers verify your sources."
+      },
+      {
+        q: "The **CARS checklist** criteria 'Reasonableness' asks the evaluator to consider what?",
+        options: [
+          "The speed at which the page loads",
+          "The colour scheme and design of the web page",
+          "Whether the information is presented objectively, with a balanced perspective, and free from extreme bias or conflict of interest",
+          "Whether the domain uses an HTTPS connection"
+        ],
+        correct: 2,
+        explanation: "## Insight\nReasonableness examines tone, bias, and whether the author acknowledges alternative viewpoints. Page speed, design, and HTTPS status are technical factors unrelated to the reasonableness of the information.\n\n> **Key Takeaway:** Reasonableness = checking for fairness, balance, and lack of extreme bias."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 1: UNDERSTANDING PROGRAMS, APPS, AND THEIR TYPES
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 1: UNDERSTANDING PROGRAMS, APPS, AND THEIR TYPES",
+    topic: "Program Categories, App Types & Mobile Features",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "The terms \"software\", \"program\", and \"app\" are often used interchangeably. What do they all refer to?",
+        options: [
+          "Physical components of a computer",
+          "Instructions that tell a device what to do",
+          "Only applications on a smartphone",
+          "Only operating systems"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAll three terms refer to the sets of instructions that run on computers and mobile devices. Physical components are hardware. Apps exist on smartphones but also on desktops and the web. Operating systems are a specific type of software, not the entire category.\n\n> **Key Takeaway:** Software, program, and app = instructions that make a device do something."
+      },
+      {
+        q: "A business professional needs to write reports, analyse budgets, and deliver slide presentations. Which software category should they primarily rely on?",
+        options: [
+          "Security",
+          "Productivity",
+          "Graphics and media",
+          "Communications"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Productivity** apps include word processing, spreadsheets, and presentations — exactly what is needed for reports, budgets, and slides. Security apps protect the computer. Communications apps handle messaging. Graphics and media apps create visual content.\n\n> **Key Takeaway:** Productivity apps = the business toolkit: word processing, spreadsheets, presentations."
+      },
+      {
+        q: "A real‑time messaging app (e.g., WhatsApp) belongs to which software category?",
+        options: [
+          "File management",
+          "Personal interest",
+          "Communications",
+          "Graphics and media"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Communications** apps encompass email, instant messaging, video conferencing, and other tools for exchanging information electronically. Graphics and media apps handle visual and audio content. File management tools organise files. Personal interest apps cover hobbies and lifestyle.\n\n> **Key Takeaway:** Messaging apps are communications tools, not graphics or file managers."
+      },
+      {
+        q: "What type of program is installed directly onto a computer's internal hard drive and run from there?",
+        options: [
+          "Local app",
+          "Web app",
+          "Portable app",
+          "Mobile app"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA **local app** is installed on the computer's hard drive. Web apps run in a browser without installation. Portable apps run from removable storage. Mobile apps are for smartphones and tablets.\n\n> **Key Takeaway:** Local apps = installed on your hard drive; always available."
+      },
+      {
+        q: "What type of program runs directly from a USB flash drive on any compatible computer without installation?",
+        options: [
+          "Native app",
+          "Portable app",
+          "Web app",
+          "System utility"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Portable apps** are designed to run directly from removable storage. Native apps are installed on a specific OS. Web apps need a browser. System utilities manage the computer, not run portably.\n\n> **Key Takeaway:** Portable apps = software on a stick, no installation needed."
+      },
+      {
+        q: "How would you describe an app that works only on Android and was downloaded from the Google Play Store?",
+        options: [
+          "Web app",
+          "Portable app",
+          "Cross‑platform app",
+          "Native app"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA **native app** is written for a specific operating system. Cross‑platform apps run on multiple OSes. Web apps are browser‑based. Portable apps run from removable media.\n\n> **Key Takeaway:** Native app = built for one operating system (Android, iOS, etc.)."
+      },
+      {
+        q: "What type of application is accessed through a browser over the internet without any installation?",
+        options: [
+          "Native app",
+          "Portable app",
+          "Web app",
+          "Local app"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Web apps** run in a browser. Local apps are installed. Native apps are OS‑specific and installed. Portable apps run from USB drives.\n\n> **Key Takeaway:** Web apps = no install, runs in your browser."
+      },
+      {
+        q: "Why can a weather app on your phone and the same service's website display your saved locations identically?",
+        options: [
+          "Data synchronises between the mobile and web versions",
+          "The phone has a faster processor",
+          "The app uses Bluetooth",
+          "The app is installed on multiple hard drives"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Synchronisation** keeps data consistent across all devices. Processor speed is irrelevant. Bluetooth is a short‑range connection technology. The app is not installed on multiple hard drives — it is one app with synced cloud data.\n\n> **Key Takeaway:** Synchronisation makes your data the same on your phone and the web."
+      },
+      {
+        q: "What is a common drawback of using mobile apps for heavy text entry?",
+        options: [
+          "They cannot connect to any external keyboard",
+          "Typing on a small on‑screen keyboard can be slow and cumbersome",
+          "Voice input is never available",
+          "Mobile apps cannot save documents"
+        ],
+        correct: 1,
+        explanation: "## Insight\nSmall on‑screen keyboards make prolonged typing awkward. Many apps support external keyboards via Bluetooth. Voice input is widely available. Mobile apps can save documents, often in the cloud.\n\n> **Key Takeaway:** Small keyboards slow you down; connect an external keyboard for heavy typing."
+      },
+      {
+        q: "Compared to a native app installed on your device, how does a mobile web app typically perform?",
+        options: [
+          "It has full access to all device hardware",
+          "It runs faster and has more features",
+          "It never needs an internet connection",
+          "It is slower and has fewer features"
+        ],
+        correct: 3,
+        explanation: "## Insight\nMobile web apps run in a browser and cannot match the performance or deep hardware access of native apps. Native apps are faster and more feature‑rich. Web apps always need an internet connection.\n\n> **Key Takeaway:** Web apps are convenient but less powerful than native apps."
+      },
+      {
+        q: "Web apps rely on three core technologies to function in a browser. Which set is correct?",
+        options: [
+          "Java, XML, and SQL",
+          "Python, Django, and C++",
+          "HTML5, CSS, and JavaScript",
+          "Swift, Objective‑C, and Kotlin"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**HTML5** provides structure, **CSS** provides styling, and **JavaScript** manages interactivity. Java and SQL are server‑side technologies. Swift and Kotlin are native mobile languages. Python and Django are backend frameworks.\n\n> **Key Takeaway:** Web apps = HTML5 + CSS + JavaScript."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 2: ACQUIRING PROGRAMS AND APPS RESPONSIBLY
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 2: ACQUIRING PROGRAMS AND APPS RESPONSIBLY",
+    topic: "Software Licensing, DRM, Updates & Piracy",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "What is the primary function of **Digital Rights Management (DRM)**?",
+        options: [
+          "To increase download speeds for software updates",
+          "To define restrictions on the use, modification, and distribution of software",
+          "To provide free technical support to users",
+          "To store passwords and login credentials"
+        ],
+        correct: 1,
+        explanation: "## Insight\nDRM consists of access control technologies that limit what you can do with a program or app. It does not affect download speed. Technical support is a separate service. Password storage is an OS or browser function.\n\n> **Key Takeaway:** DRM = digital lock that restricts how you can use the software."
+      },
+      {
+        q: "A full‑featured program is free for 30 days, then requires payment. What is this distribution model called?",
+        options: [
+          "Freeware",
+          "Open source",
+          "Public domain",
+          "Shareware"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Shareware** offers a trial period. Freeware is permanently free. Open source refers to accessible source code, not price. Public domain works have no copyright at all.\n\n> **Key Takeaway:** Shareware = try before you buy (trial then pay)."
+      },
+      {
+        q: "You obtain a program's source code, add new functionality, and legally distribute your improved version. What type of software is this?",
+        options: [
+          "Freeware",
+          "Protected by a site license",
+          "Open source",
+          "Shareware"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Open source** software permits modification and redistribution. Shareware and freeware do not grant modification rights. A site license allows many users, not code modification.\n\n> **Key Takeaway:** Open source = you can see, change, and share the code."
+      },
+      {
+        q: "A university wants all its students and staff to use a particular application. Which license type is most appropriate?",
+        options: [
+          "Site license",
+          "Single‑user EULA",
+          "Multiple‑user license",
+          "Public domain grant"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA **site license** allows an organisation to grant access to an unlimited number of users at a specific location. Single‑user and multiple‑user licences have numerical limits. Public domain is not a purchased licence.\n\n> **Key Takeaway:** Site license = one licence covering an entire organisation."
+      },
+      {
+        q: "What is a small software update that fixes a single security vulnerability called?",
+        options: [
+          "Service pack",
+          "Patch",
+          "Upgrade",
+          "New release"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA **patch** addresses a single issue. A service pack bundles many patches. An upgrade is a major new version. A new release is a full version, not a fix.\n\n> **Key Takeaway:** Patch = a single, targeted fix for one problem."
+      },
+      {
+        q: "Which tool completely removes a program along with its associated system entries?",
+        options: [
+          "Disk cleanup",
+          "File compression tool",
+          "Backup utility",
+          "Uninstaller"
+        ],
+        correct: 3,
+        explanation: "## Insight\nAn **uninstaller** deletes program files and cleans related system entries. Disk cleanup removes temporary files. Compression reduces file size. Backup utilities copy files for safety.\n\n> **Key Takeaway:** Use an uninstaller to remove a program completely."
+      },
+      {
+        q: "What is the act of illegally copying and distributing copyrighted music, movies, or software called?",
+        options: [
+          "Piracy",
+          "Phishing",
+          "Spamming",
+          "Troubleshooting"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Piracy** is unauthorised copying and distribution. Phishing steals personal information. Spamming sends bulk unwanted messages. Troubleshooting diagnoses and fixes problems.\n\n> **Key Takeaway:** Piracy = illegal copying and sharing of copyrighted material."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 3: PRODUCTIVITY APPLICATIONS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 3: PRODUCTIVITY APPLICATIONS",
+    topic: "Word Processing, Spreadsheets, Presentations, Databases & Suites",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "What type of action is changing the font size of a title in a document?",
+        options: [
+          "Saving",
+          "Editing",
+          "Creating",
+          "Formatting the drive"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Editing** means changing existing content. Creating is generating new content. Saving stores the file. Formatting a drive erases and prepares storage media.\n\n> **Key Takeaway:** Editing = modifying what already exists in a document."
+      },
+      {
+        q: "What does the computer do when you save a file?",
+        options: [
+          "It prints the document automatically",
+          "It sends the file to the cloud",
+          "It compresses the file to save space",
+          "It transfers the project from memory to a local storage medium"
+        ],
+        correct: 3,
+        explanation: "## Insight\nSaving copies data from volatile RAM to permanent storage. It does not print, automatically upload to the cloud, or necessarily compress data.\n\n> **Key Takeaway:** Save moves your work from temporary memory to permanent storage."
+      },
+      {
+        q: "What is the primary function of a word processor?",
+        options: [
+          "To perform complex mathematical calculations",
+          "To manage email and calendars",
+          "To create and format text‑based documents",
+          "To edit digital photographs"
+        ],
+        correct: 2,
+        explanation: "## Insight\nWord processors create and format text documents. Spreadsheets handle calculations. Email and calendar apps manage communication. Photo editing software handles images.\n\n> **Key Takeaway:** Word processors are for text — letters, reports, essays."
+      },
+      {
+        q: "In a spreadsheet, what is the basic unit formed by the intersection of a column and a row called?",
+        options: [
+          "Cell",
+          "Record",
+          "Field",
+          "Slide"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA **cell** is the fundamental box for data or a formula. Records and fields are database terms. A slide belongs to presentation software.\n\n> **Key Takeaway:** Cell = the individual box in a spreadsheet where you enter data."
+      },
+      {
+        q: "What do you call a single file that contains multiple spreadsheet pages?",
+        options: [
+          "Document",
+          "Workbook",
+          "Database",
+          "Portfolio"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA **workbook** contains one or more worksheets. Document is a word processor file. Database stores structured data. Portfolio is a collection term, not an application file type.\n\n> **Key Takeaway:** Workbook = a spreadsheet file that can hold many worksheets."
+      },
+      {
+        q: "To visually communicate trends in a sales table, what would you most likely insert?",
+        options: [
+          "A text box",
+          "A transition",
+          "A bulleted list",
+          "A chart"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Charts** (graphs) turn numeric data into visual representations. Bulleted lists present text items. Text boxes hold labelled content. Transitions are slide effects in presentations.\n\n> **Key Takeaway:** Use charts to visualise numbers and reveal trends."
+      },
+      {
+        q: "What is a pre‑designed set of colours, fonts, and backgrounds applied to every slide for a consistent look called?",
+        options: [
+          "Animation",
+          "Placeholder",
+          "Slide master",
+          "Transition"
+        ],
+        correct: 2,
+        explanation: "## Insight\nThe **slide master** defines the overall template. Transitions are slide‑change effects. Animations are element movements. Placeholders are content areas on a slide.\n\n> **Key Takeaway:** Slide master = the template that controls the look of all slides."
+      },
+      {
+        q: "What is the visual effect when moving from one slide to the next called?",
+        options: [
+          "Transition",
+          "Animation",
+          "Media clip",
+          "Build"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Transitions** control movement between slides. Animations affect individual elements. Media clips are inserted audio/video. Builds are a type of animation sequence.\n\n> **Key Takeaway:** Transitions = the effect when a new slide appears."
+      },
+      {
+        q: "In a customer database, what do you call all the information about one specific customer stored together?",
+        options: [
+          "Field",
+          "Record",
+          "Table",
+          "Column"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA **record** is a complete set of data about one entity. A field is a single piece of data. A column holds one category. A table holds many records.\n\n> **Key Takeaway:** Record = all the data about one person or thing in a database."
+      },
+      {
+        q: "How is data organised in a relational database table?",
+        options: [
+          "By slides and bullet points",
+          "By drawings and layers",
+          "By audio and video clips",
+          "In rows (records) and columns (fields)"
+        ],
+        correct: 3,
+        explanation: "## Insight\nRelational databases store data in rows (records) and columns (fields). Slides are for presentations. Drawings and layers are design concepts. Audio/video clips are media files.\n\n> **Key Takeaway:** Rows and columns = the grid structure of a database table."
+      },
+      {
+        q: "What is a bundle of word processor, spreadsheet, and presentation software sold together called?",
+        options: [
+          "Service pack",
+          "System utility",
+          "Productivity suite",
+          "Media package"
+        ],
+        correct: 2,
+        explanation: "## Insight\nA **productivity suite** (e.g., Microsoft Office) bundles multiple applications. A service pack is a collection of updates. System utilities manage the computer. Media packages contain audio/video software.\n\n> **Key Takeaway:** Productivity suite = multiple office apps in one package."
+      },
+      {
+        q: "If you use Apple Pages for word processing, which spreadsheet application belongs to the same suite?",
+        options: [
+          "Numbers",
+          "Microsoft Excel",
+          "Google Sheets",
+          "LibreOffice Calc"
+        ],
+        correct: 0,
+        explanation: "## Insight\nApple's iWork includes Pages, **Numbers**, and Keynote. Excel is in Microsoft Office. Google Sheets is in Workspace. LibreOffice Calc is in LibreOffice.\n\n> **Key Takeaway:** Apple's spreadsheet app is Numbers, part of the iWork suite."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 4: GRAPHICS AND MEDIA APPLICATIONS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 4: GRAPHICS AND MEDIA APPLICATIONS",
+    topic: "Digital Graphics, Audio, Video & Animation",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "Which of the following is NOT one of the four major types of digital media?",
+        options: [
+          "Graphics",
+          "Text documents",
+          "Animation",
+          "Audio"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe four major digital media types are graphics, animation, video, and audio. Text documents are associated with word processing, not digital media.\n\n> **Key Takeaway:** The big four of digital media: graphics, animation, video, audio."
+      },
+      {
+        q: "What is sound that has been recorded and stored as numerical data on a computer called?",
+        options: [
+          "Analog audio",
+          "Synthesized audio",
+          "Streaming audio",
+          "Digital audio"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Digital audio** is sound represented as numerical data. Analog audio is continuous wave. Synthesized audio is computer‑generated. Streaming audio is a delivery method.\n\n> **Key Takeaway:** Digital audio = sound turned into numbers and stored as a file."
+      },
+      {
+        q: "A microphone captures your voice as an analog signal. To edit it on a computer, what process must the audio first go through?",
+        options: [
+          "Compression",
+          "Rendering",
+          "Sampling",
+          "Streaming"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Sampling** measures the analog wave at regular intervals and converts it into digital data. Compression reduces file size. Rendering creates final images. Streaming transmits data.\n\n> **Key Takeaway:** Sampling converts analog sound into digital form for editing."
+      },
+      {
+        q: "What type of image reveals a grid of tiny coloured squares when you zoom in?",
+        options: [
+          "Bitmap graphic",
+          "Vector graphic",
+          "3D model",
+          "Animated GIF"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Bitmap** images are made of fixed pixels. Vector graphics scale smoothly. 3D models are wireframe structures. Animated GIFs are a sequence of images.\n\n> **Key Takeaway:** Bitmap = pixel grid; zooming in shows the squares."
+      },
+      {
+        q: "A company logo must be resized from a business card to a billboard without losing sharpness. What type of graphic is best?",
+        options: [
+          "JPEG photo",
+          "Vector graphic",
+          "Bitmap image",
+          "GIF animation"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Vector graphics** use math, so scaling is lossless. Bitmaps and JPEGs get blurry when enlarged. GIFs are for simple web animations, not detailed logos.\n\n> **Key Takeaway:** Vector = perfect scaling from tiny to huge."
+      },
+      {
+        q: "How is the resolution of a digital camera, describing how much detail it captures, often measured?",
+        options: [
+          "In megabytes per second",
+          "In frames per second",
+          "In dots per inch",
+          "In megapixels"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Megapixels** equal millions of pixels. Megabytes per second measures data transfer. Frames per second measures video speed. Dots per inch measures print quality.\n\n> **Key Takeaway:** Camera resolution is in megapixels — more pixels, more detail."
+      },
+      {
+        q: "What technique is used to make a high‑resolution photo file smaller for emailing?",
+        options: [
+          "Antivirus",
+          "A password",
+          "File compression",
+          "A larger screen"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Compression** reduces file size. Antivirus protects against malware. Passwords secure files but do not shrink them. Screen size is irrelevant.\n\n> **Key Takeaway:** Compress a large photo to make it small enough to email."
+      },
+      {
+        q: "A web designer wants a small file that supports animation and transparency for a simple icon. Which format is best?",
+        options: [
+          "GIF",
+          "JPEG",
+          "PNG",
+          "TIF"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**GIF** supports animation and transparency. JPEG has no transparency or animation. PNG supports transparency but not animation. TIF is for high‑quality print.\n\n> **Key Takeaway:** GIF = small animated graphics with transparency."
+      },
+      {
+        q: "A photographer wants to print large, high‑quality images without any data loss. Which format is most appropriate?",
+        options: [
+          "JPEG",
+          "GIF",
+          "Web‑optimised PNG",
+          "TIF"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**TIF** stores uncompressed, high‑quality images. JPEG is lossy. GIF is limited to 256 colours. Web‑optimised PNG is compressed for screens.\n\n> **Key Takeaway:** TIF = uncompressed, professional print quality."
+      },
+      {
+        q: "Which audio format is widely used for music downloads because it balances good quality with small file size through lossy compression?",
+        options: [
+          "WAV",
+          "MP3",
+          "AIFF",
+          "TIF"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**MP3** uses lossy compression to create small files. WAV and AIFF are uncompressed and large. TIF is an image format.\n\n> **Key Takeaway:** MP3 = the standard compressed audio format for music."
+      },
+      {
+        q: "What hardware component enables a computer to produce sound through speakers or headphones?",
+        options: [
+          "Video card",
+          "CPU",
+          "Network adapter",
+          "Sound card"
+        ],
+        correct: 3,
+        explanation: "## Insight\nThe **sound card** processes digital audio into analog signals. The video card handles graphics. The CPU processes general instructions. The network adapter connects to networks.\n\n> **Key Takeaway:** Sound card = the component that makes your computer produce audio."
+      },
+      {
+        q: "In a digital video file, what is the part called that encodes, compresses, and decompresses the video and audio data?",
+        options: [
+          "File extension",
+          "Resolution",
+          "Codec",
+          "Container"
+        ],
+        correct: 2,
+        explanation: "## Insight\nThe **codec** compresses and decompresses media. The file extension identifies the format. Resolution is pixel dimensions. The container bundles all parts into one file.\n\n> **Key Takeaway:** Codec = the compression engine for video and audio."
+      },
+      {
+        q: "How is a display resolution of 1920 × 1080 typically classified?",
+        options: [
+          "High Definition (Full HD)",
+          "Standard Definition",
+          "4K Ultra High Definition",
+          "8K Ultra High Definition"
+        ],
+        correct: 0,
+        explanation: "## Insight\n1920×1080 is Full HD (1080p). Standard Definition is lower. 4K is 3840×2160. 8K is 7680×4320.\n\n> **Key Takeaway:** 1080p = Full HD, the standard for most modern screens."
+      },
+      {
+        q: "What is the process called that turns a 3D wireframe model into a realistic‑looking solid object by computing light and shadows?",
+        options: [
+          "Sampling",
+          "Rendering",
+          "Cropping",
+          "Narrating"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Rendering** adds textures, lighting, and shadows. Sampling converts analog to digital. Cropping trims images. Narrating adds voiceover.\n\n> **Key Takeaway:** Rendering turns a skeleton 3D model into a photorealistic image."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 5: DIGITAL MEDIA ON THE WEB, VR, AR, AND AI
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 5: DIGITAL MEDIA ON THE WEB, VR, AR, AND AI",
+    topic: "Streaming, Virtual Reality, Augmented Reality & Artificial Intelligence",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "What is the technique called when a YouTube video plays while the rest of the file continues to download?",
+        options: [
+          "Uploading",
+          "Streaming",
+          "Transcoding",
+          "Compressing"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Streaming** delivers media in real time. Uploading sends data to a server. Transcoding converts formats. Compression reduces file size.\n\n> **Key Takeaway:** Streaming = play while downloading, no waiting for the whole file."
+      },
+      {
+        q: "A sports event broadcast over the internet exactly as it happens is an example of what?",
+        options: [
+          "On‑demand content",
+          "Podcasting",
+          "Offline playback",
+          "Live video streaming"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Live streaming** sends content in real time. On‑demand is stored and played later. Podcasting is audio. Offline playback requires the file to be fully downloaded.\n\n> **Key Takeaway:** Live streaming = broadcast happening right now."
+      },
+      {
+        q: "What is a television that connects to the internet to stream shows and browse the web called?",
+        options: [
+          "Cable TV",
+          "Analog TV",
+          "Smart TV",
+          "Projector"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Smart TVs** have built‑in Wi‑Fi and apps. Cable TV uses coaxial signals. Analog TV is the old broadcast standard. Projectors display video but lack built‑in streaming apps.\n\n> **Key Takeaway:** Smart TV = internet‑connected television with streaming apps."
+      },
+      {
+        q: "Pokémon GO overlays digital creatures on your phone's screen as if they were in the real world. What technology is this?",
+        options: [
+          "Augmented reality (AR)",
+          "Virtual reality (VR)",
+          "Artificial intelligence (AI)",
+          "Streaming media"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Augmented reality** adds digital content on top of the real world. VR replaces the real world with a digital one. AI simulates intelligence. Streaming delivers media.\n\n> **Key Takeaway:** AR = digital objects placed in the real world."
+      },
+      {
+        q: "What is a fully computer‑generated 3D world that you explore with a headset called?",
+        options: [
+          "A simulation",
+          "Virtual reality",
+          "Augmented reality",
+          "Robotics"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Virtual reality** immerses you in a completely digital environment. Augmented reality adds to the real world. A simulation can exist without VR. Robotics is physical machines.\n\n> **Key Takeaway:** VR = wear a headset and step into a digital world."
+      },
+      {
+        q: "A program that improves at playing chess the more games it analyses, without being explicitly programmed for each strategy, is using what technology?",
+        options: [
+          "Speech recognition",
+          "Virtual reality",
+          "Augmented reality",
+          "Machine learning"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Machine learning** enables systems to learn from data. Speech recognition converts voice to text. VR and AR are visual technologies.\n\n> **Key Takeaway:** Machine learning = the computer teaches itself from examples."
+      },
+      {
+        q: "Digital assistants like Siri and Alexa understand your spoken commands through what technology?",
+        options: [
+          "Audio compression",
+          "3‑D rendering",
+          "Natural language processing (NLP)",
+          "Speech synthesis only"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Natural language processing** enables computers to interpret spoken words. Audio compression shrinks files. 3‑D rendering creates graphics. Speech synthesis produces spoken output, but NLP handles understanding.\n\n> **Key Takeaway:** NLP = how machines understand what you say."
+      },
+      {
+        q: "What is a key advantage of robotic surgeries over traditional methods?",
+        options: [
+          "More precise movements and smaller incisions, leading to faster healing",
+          "Larger incisions",
+          "Elimination of the need for a surgeon",
+          "Increased risk of infection"
+        ],
+        correct: 0,
+        explanation: "## Insight\nRobotic arms provide greater precision and allow for minimally invasive procedures. Incisions are smaller, not larger. A surgeon still operates the robot. Infection risk is generally lower due to smaller incisions.\n\n> **Key Takeaway:** Robotic surgery = more precision, smaller cuts, faster recovery."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 8: PROGRAMS AND APPS – SECTION 6: PERSONAL INTEREST, SECURITY, AND SYSTEM TOOLS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 8: PROGRAMS AND APPS – SECTION 6: PERSONAL INTEREST, SECURITY, AND SYSTEM TOOLS",
+    topic: "Personal Apps, Malware, Firewalls & Troubleshooting",
+    year: "2025",
+    tag: "Module 8",
+    steps: [
+      {
+        q: "How would you classify an app that helps you track your diet, exercise, and sleep?",
+        options: [
+          "As a security app",
+          "As a personal interest app (lifestyle/medical)",
+          "As a communications app",
+          "As a graphics app"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Personal interest apps** cover lifestyle, medical, entertainment, education, and finance. Security apps protect the computer. Communications apps handle messaging. Graphics apps create visuals.\n\n> **Key Takeaway:** Diet and exercise trackers = personal interest (lifestyle) apps."
+      },
+      {
+        q: "What is the main job of a **personal firewall**?",
+        options: [
+          "To remove temporary files from the hard drive",
+          "To physically block access to the computer",
+          "To block all advertisements",
+          "To monitor and control network traffic to prevent unauthorised intrusions"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA firewall filters incoming and outgoing network traffic. Removing temporary files is the job of disk cleanup. Physical access is not managed by software. Ad blocking is a separate function.\n\n> **Key Takeaway:** Firewall = a digital barrier that keeps hackers out of your network."
+      },
+      {
+        q: "What type of program is one that you accidentally installed and now constantly displays pop‑up ads?",
+        options: [
+          "Spyware",
+          "A firewall",
+          "Adware",
+          "A phishing filter"
+        ],
+        correct: 2,
+        explanation: "## Insight\n**Adware** displays unwanted advertisements. Spyware secretly collects information. A firewall blocks intrusions. A phishing filter blocks deceptive sites.\n\n> **Key Takeaway:** Adware = intrusive advertising software."
+      },
+      {
+        q: "An email that looks like it is from your bank, asking you to click a link and enter your password, is an example of what?",
+        options: [
+          "Phishing",
+          "A legitimate security alert",
+          "A warranty update",
+          "Antivirus notification"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Phishing** impersonates trusted entities to steal credentials. Legitimate banks never request passwords via email. Warranty updates are unrelated. Antivirus notifications come from your installed software.\n\n> **Key Takeaway:** Phishing = fake emails designed to steal your login details."
+      },
+      {
+        q: "What is malware that encrypts your files and demands payment to unlock them called?",
+        options: [
+          "Adware",
+          "Ransomware",
+          "Spyware",
+          "A pop‑up blocker"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Ransomware** holds data hostage. Adware shows ads. Spyware collects data secretly. A pop‑up blocker stops pop‑up windows.\n\n> **Key Takeaway:** Ransomware = your files are locked until you pay a ransom."
+      },
+      {
+        q: "What does an antivirus program often do when it cannot remove a virus?",
+        options: [
+          "It deletes the file immediately",
+          "It sends the file to the software vendor",
+          "It renames the file",
+          "It quarantines the infected file in a secure area"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Quarantine** isolates the infected file. Immediate deletion may destroy recoverable data. Files are not automatically sent to vendors. Renaming does not neutralise the threat.\n\n> **Key Takeaway:** Quarantine = locking a dangerous file away until you decide its fate."
+      },
+      {
+        q: "What is it called when your word processor suddenly freezes and stops responding?",
+        options: [
+          "Service pack",
+          "Patch",
+          "Crash",
+          "Backup"
+        ],
+        correct: 2,
+        explanation: "## Insight\nA **crash** is a program failure. A service pack is a collection of updates. A patch is a single fix. A backup is a copy of data.\n\n> **Key Takeaway:** Crash = the program unexpectedly stops working."
+      },
+      {
+        q: "What is the systematic process of figuring out why a program crashed and how to fix it known as?",
+        options: [
+          "Troubleshooting",
+          "Upgrading",
+          "Scanning",
+          "Defragmenting"
+        ],
+        correct: 0,
+        explanation: "## Insight\n**Troubleshooting** is the logical diagnosis and repair process. Upgrading installs a newer version. Scanning checks for malware. Defragmenting reorganises disk data.\n\n> **Key Takeaway:** Troubleshooting = diagnosing and fixing computer problems step by step."
+      },
+      {
+        q: "What type of tool helps you find a specific document you saved months ago but cannot remember where?",
+        options: [
+          "Firewall",
+          "Search tool",
+          "Disk defragmenter",
+          "Screen saver"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Search tools** index and locate files. Firewalls block intrusions. Disk defragmenter reorganises storage. Screen savers protect the display, not locate files.\n\n> **Key Takeaway:** Use the search tool to find lost files by name or content."
+      }
+    ]
+  },
+
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 1: OS FUNDAMENTALS & FUNCTIONS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 1: OS FUNDAMENTALS & FUNCTIONS",
+    topic: "Definition, Purpose, and Core Roles",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "Which term is defined as a set of programs that coordinate all the activities of computer or mobile device hardware?",
+        options: [
+          "Application software",
+          "Operating system",
+          "Firmware",
+          "Device driver"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAn **operating system** (OS) manages hardware and software resources and provides common services for computer programs. Application software performs specific tasks for users, not hardware coordination. Firmware is low‑level software embedded in hardware. Device drivers enable OS communication with hardware but do not coordinate all activities.\n\n> **Key Takeaway:** The OS is the boss that runs the computer and coordinates everything."
+      },
+      {
+        q: "Which of the following is NOT a standard operating system function?",
+        options: [
+          "Managing programs",
+          "Monitoring performance",
+          "Providing file management",
+          "Compiling source code into executable programs"
+        ],
+        correct: 3,
+        explanation: "## Insight\nCompiling source code is performed by a compiler, not the OS. The OS handles program management, performance monitoring, and file management. It starts and shuts down the computer, manages memory, configures devices, and more.\n\n> **Key Takeaway:** The OS runs your computer but does not compile your code."
+      },
+      {
+        q: "What happens when an operating system uses **virtual memory**?",
+        options: [
+          "It replaces physical RAM entirely",
+          "It makes the computer run faster by adding real RAM chips",
+          "It allocates a portion of a storage medium to function as additional RAM",
+          "It prevents any data from being swapped between memory and storage"
+        ],
+        correct: 2,
+        explanation: "## Insight\nVirtual memory extends the apparent RAM by using hard drive space as temporary storage. It does not replace RAM; RAM is still needed. It does not make the computer faster — paging can slow performance. It actively swaps data between RAM and storage, opposite to preventing swapping.\n\n> **Key Takeaway:** Virtual memory = hard‑drive space pretending to be RAM when real RAM is full."
+      },
+      {
+        q: "What does **paging** refer to in an operating system?",
+        options: [
+          "The technique of swapping items between memory and storage",
+          "The process of opening multiple programs at once",
+          "The method of encrypting memory contents",
+          "The act of shutting down unresponsive applications"
+        ],
+        correct: 0,
+        explanation: "## Insight\nPaging is the OS's method of moving data between RAM and a storage device (swap space). It does not open programs, encrypt data, or shut down applications — that's task management.\n\n> **Key Takeaway:** Paging = moving data between RAM and disk to manage memory."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 2: HOW AN OS WORKS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 2: HOW AN OS WORKS",
+    topic: "Memory, Buffers, Multitasking, and Input/Output",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "What is the primary role of **RAM** in a computer?",
+        options: [
+          "Permanently store all files and applications",
+          "Temporarily store open apps and document data while the device is on",
+          "Manage network connections",
+          "Display images on the screen"
+        ],
+        correct: 1,
+        explanation: "## Insight\nRAM (Random Access Memory) is volatile temporary storage that holds the operating system, active applications, and current data. Permanent storage is the hard drive/SSD. Network management is done by the OS and drivers. Display is handled by the graphics card.\n\n> **Key Takeaway:** RAM = the computer's short‑term, working memory."
+      },
+      {
+        q: "What is a **buffer** used for in an operating system?",
+        options: [
+          "To permanently archive data",
+          "To encrypt sensitive information",
+          "To compress large files automatically",
+          "To temporarily store data waiting to be sent to an input or output device"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA buffer is a temporary area in memory that holds data while it is being transferred between devices (e.g., keyboard to CPU, CPU to printer). It does not archive, encrypt, or compress.\n\n> **Key Takeaway:** Buffer = temporary waiting area for data in transit."
+      },
+      {
+        q: "What does a **multitasking** operating system allow?",
+        options: [
+          "Only one user at a time",
+          "Only one program to run at a time",
+          "Two or more programs or apps to reside in memory at the same time",
+          "The computer to run without any RAM"
+        ],
+        correct: 2,
+        explanation: "## Insight\nMultitasking OSs let you have multiple applications open simultaneously, switching between foreground and background. Single‑tasking limits to one program. Multiuser involves multiple users, not programs. All computers need RAM.\n\n> **Key Takeaway:** Multitasking = multiple apps running at once."
+      },
+      {
+        q: "In a multitasking environment, what is the **foreground program**?",
+        options: [
+          "The one you are currently using and is typically displayed on the screen",
+          "The program that uses the most RAM",
+          "The program that starts automatically at boot",
+          "The program that runs without any user interface"
+        ],
+        correct: 0,
+        explanation: "## Insight\nThe foreground program is active and visible. Background programs are hidden or partially obscured. The amount of RAM or auto‑start does not define foreground status.\n\n> **Key Takeaway:** Foreground = active, visible app; Background = apps running behind the scenes."
+      },
+      {
+        q: "What is **spoofing** in the context of an operating system buffer?",
+        options: [
+          "A security attack that impersonates a user",
+          "Placing data into a buffer",
+          "Removing data from a buffer",
+          "Encrypting buffer contents"
+        ],
+        correct: 1,
+        explanation: "## Insight\n'Spoofing' in OS terms refers to putting data into a buffer (spooling). The security attack is a different context. It does not involve removal or encryption.\n\n> **Key Takeaway:** Spoofing (spooling) = loading data into a buffer for processing."
+      },
+      {
+        q: "Which statement about **virtual memory** and **paging** is correct?",
+        options: [
+          "Virtual memory completely eliminates the need for RAM",
+          "Paging is the process of moving data between RAM and storage as part of virtual memory",
+          "Paging happens only when the computer is idle",
+          "Virtual memory is physical memory added via a USB stick"
+        ],
+        correct: 1,
+        explanation: "## Insight\nVirtual memory uses paging to swap data between RAM and disk. It does not replace RAM. Paging can occur anytime the system needs memory. Virtual memory is not a physical device.\n\n> **Key Takeaway:** Paging = swapping; Virtual memory = the system that uses disk as extra 'RAM'."
+      },
+      {
+        q: "What is the correct sequence of the information processing cycle?",
+        options: [
+          "Output, Processing, Input, Storage",
+          "Input, Processing, Output, Storage (optional)",
+          "Processing, Input, Storage, Output",
+          "Storage, Output, Input, Processing"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe basic cycle: Input (data enters), Processing (CPU interprets/executes), Output (results released), and Storage (saving for later).\n\n> **Key Takeaway:** Input → Process → Output → (Storage) is the fundamental flow."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 3: TYPES OF OS & GUI
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 3: TYPES OF OS & GUI",
+    topic: "Desktop, Server, Mobile OS; GUI Elements",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "Which of the following is an example of a **desktop operating system**?",
+        options: [
+          "Windows Server",
+          "macOS",
+          "Google Android",
+          "Apple iOS"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**macOS** is a desktop OS for Mac computers. Windows Server is a server OS. Android and iOS are mobile operating systems.\n\n> **Key Takeaway:** Desktop OS = runs on personal computers (Windows, macOS, Linux, ChromeOS)."
+      },
+      {
+        q: "Which operating system is a **multitasking, UNIX‑based OS** initially developed at Bell Laboratories?",
+        options: [
+          "Linux",
+          "Chrome OS",
+          "Windows 10",
+          "UNIX"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**UNIX** was developed at Bell Labs in the early 1970s. Linux is a UNIX‑like OS, but created later by Linus Torvalds. Chrome OS is Linux‑based. Windows is not UNIX‑based.\n\n> **Key Takeaway:** UNIX is the original multitasking OS from Bell Labs."
+      },
+      {
+        q: "What is a **graphical user interface (GUI)**?",
+        options: [
+          "The physical screen of a monitor",
+          "A collective term for all the ways you interact with a device using visuals like icons and menus",
+          "A programming language for creating graphics",
+          "A type of operating system"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA GUI uses icons, buttons, menus, and windows to allow interaction. The monitor is the hardware; GUI is the software shell. It's not a programming language or an OS category.\n\n> **Key Takeaway:** GUI = visual way to communicate with your computer (icons, menus, windows)."
+      },
+      {
+        q: "What is a **dialog box**?",
+        options: [
+          "A box with controls that lets you tell the OS how to complete a command",
+          "A window that always stays on top",
+          "A type of file storage folder",
+          "A program for chatting online"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA dialog box appears when the OS needs more information from you before executing a command, containing option buttons, check boxes, etc. It is not a folder, not a chat program, and not permanently on top.\n\n> **Key Takeaway:** Dialog box = OS asking \"how do you want to do this?\""
+      },
+      {
+        q: "Which of the following is a **mobile operating system**?",
+        options: [
+          "Windows 11",
+          "Google Android",
+          "macOS Sonoma",
+          "Linux Mint"
+        ],
+        correct: 1,
+        explanation: "## Insight\n**Android** runs on smartphones and tablets. Windows 11, macOS, and Linux Mint are desktop OSs.\n\n> **Key Takeaway:** Android and iOS are the two dominant mobile operating systems."
+      },
+      {
+        q: "What does the term **proprietary software** mean?",
+        options: [
+          "Software that is free for anyone to modify",
+          "Software that runs on any device without installation",
+          "Privately owned software limited to a specific vendor or device model",
+          "Software that is always open source"
+        ],
+        correct: 2,
+        explanation: "## Insight\nProprietary software is owned by an organization and restricted by license; e.g., Windows and macOS. Free to modify describes open source, not proprietary.\n\n> **Key Takeaway:** Proprietary = closed, owned, and restricted."
+      },
+      {
+        q: "What is an **icon** in a graphical user interface?",
+        options: [
+          "A type of dialog box",
+          "A small picture that represents a program, file, or hardware device",
+          "A bar that shows the status of a task",
+          "A command that shuts down the computer"
+        ],
+        correct: 1,
+        explanation: "## Insight\nIcons are visual shortcuts to programs, files, or functions. They are not dialog boxes, status bars, or commands.\n\n> **Key Takeaway:** Icon = a picture you click to open something."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 4: FILE MANAGEMENT
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 4: FILE MANAGEMENT",
+    topic: "Files, Extensions, Properties, Compression & Libraries",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "What is a **file extension**?",
+        options: [
+          "A password to open a file",
+          "A three- or four-letter sequence at the end of a file name that identifies its type",
+          "The full name of a file including its location",
+          "The date and time the file was created"
+        ],
+        correct: 1,
+        explanation: "## Insight\nFile extensions like .docx or .jpg tell the OS which program to use to open the file. The full path includes location; creation date is metadata.\n\n> **Key Takeaway:** File extension = the suffix that identifies file type."
+      },
+      {
+        q: "Which file extension is associated with a **Microsoft Word document**?",
+        options: [
+          ".xlsx",
+          ".pptx",
+          ".txt",
+          ".docx"
+        ],
+        correct: 3,
+        explanation: "## Insight\n.docx is Word; .xlsx is Excel; .pptx is PowerPoint; .txt is plain text.\n\n> **Key Takeaway:** .docx = Microsoft Word document."
+      },
+      {
+        q: "What are **file properties**?",
+        options: [
+          "The contents of the file",
+          "Only the file's name and size",
+          "Characteristics such as name, type, location, size, and dates created/modified",
+          "The permissions set on the file"
+        ],
+        correct: 2,
+        explanation: "## Insight\nProperties provide metadata about a file, not the content itself. They include size, date, type, etc. Permissions are a subset of properties but not the full definition.\n\n> **Key Takeaway:** File properties = the details about a file, not what's inside."
+      },
+      {
+        q: "Why might you **compress** a file or folder?",
+        options: [
+          "To make the file read-only",
+          "To save storage space and make it easier to share or transfer",
+          "To change its file extension",
+          "To permanently delete its contents"
+        ],
+        correct: 1,
+        explanation: "## Insight\nCompression reduces file size for storage efficiency and faster transfer. It does not alter permissions, change extensions, or delete content.\n\n> **Key Takeaway:** Compress = shrink file size for storage and sharing."
+      },
+      {
+        q: "What is the **Clipboard** used for in file management?",
+        options: [
+          "To permanently store deleted files",
+          "To temporarily hold files or folders you have copied or moved until you paste them",
+          "To create new folders",
+          "To change a file's properties"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe Clipboard is a temporary holding area for cut/copied items. It does not permanently store or create folders.\n\n> **Key Takeaway:** Clipboard = temporary storage for copy‑paste operations."
+      },
+      {
+        q: "What is a **library** in Windows file management?",
+        options: [
+          "A physical folder on the hard drive",
+          "A collection of related settings",
+          "A special folder that catalogues files from various locations into a central view",
+          "A backup of the entire system"
+        ],
+        correct: 2,
+        explanation: "## Insight\nLibraries aggregate files by type (documents, music) regardless of physical location. They are not a single physical folder or backup.\n\n> **Key Takeaway:** Library = virtual folder that gathers related files from multiple places."
+      },
+      {
+        q: "What does the **File Explorer** in Windows or **Finder** in macOS do?",
+        options: [
+          "Manages internet connections",
+          "Allows you to navigate, organize, and manage files and folders",
+          "Edits photographs",
+          "Secures the computer against viruses"
+        ],
+        correct: 1,
+        explanation: "## Insight\nFile manager applications provide a graphical interface to browse, copy, move, and delete files. They do not manage connections, edit media, or act as security tools.\n\n> **Key Takeaway:** File Explorer / Finder = your window into all your files and folders."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 5: OS UTILITIES & SECURITY
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 5: OS UTILITIES & SECURITY",
+    topic: "Management Tools, User Accounts, Permissions & Firewalls",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "What is the primary function of a **disk cleanup utility**?",
+        options: [
+          "Defragment the hard drive",
+          "Find and remove unnecessary files, such as temporary Internet files",
+          "Encrypt the entire hard drive",
+          "Create a backup of the operating system"
+        ],
+        correct: 1,
+        explanation: "## Insight\nDisk cleanup frees space by deleting temporary files, cache, and system junk. Defragmentation reorganises data, encryption secures it, and backup copies it.\n\n> **Key Takeaway:** Disk cleanup = remove junk to free up storage."
+      },
+      {
+        q: "What does a **performance monitor** do?",
+        options: [
+          "Tracks internet usage for billing",
+          "Assesses and reports information about computer resources like CPU and memory usage",
+          "Automatically updates all installed applications",
+          "Blocks unauthorised network access"
+        ],
+        correct: 1,
+        explanation: "## Insight\nPerformance monitor provides real‑time resource utilisation data. It is not for billing, updating apps, or acting as a firewall.\n\n> **Key Takeaway:** Performance monitor = check how hard your computer is working."
+      },
+      {
+        q: "What is the purpose of an **administrator account**?",
+        options: [
+          "To allow everyday users to browse the web",
+          "To provide temporary guest access",
+          "To enable full access to all files, programs, and settings, including installing software",
+          "To automatically log in without a password"
+        ],
+        correct: 2,
+        explanation: "## Insight\nAdministrator accounts have full control. Standard user accounts have limited privileges. Guest accounts are temporary. Auto‑login is a separate convenience setting.\n\n> **Key Takeaway:** Admin account = the boss account that can change everything."
+      },
+      {
+        q: "What is a **firewall** in the context of operating system security?",
+        options: [
+          "A protective barrier that monitors and controls network traffic based on security rules",
+          "Software that deletes viruses",
+          "A physical wall around the server room",
+          "A tool to clean up disk space"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA firewall filters network traffic to block unauthorised access. Antivirus removes malware. Physical walls are not software, and disk cleanup is unrelated.\n\n> **Key Takeaway:** Firewall = network traffic filter protecting your computer."
+      },
+      {
+        q: "What are **permissions** in an operating system?",
+        options: [
+          "Rules that define who can access certain resources and when",
+          "A list of all installed programs",
+          "The speed of the internet connection",
+          "The colour scheme of the desktop"
+        ],
+        correct: 0,
+        explanation: "## Insight\nPermissions control access to files, folders, and settings. They are not a software inventory, speed measure, or visual theme.\n\n> **Key Takeaway:** Permissions = who can do what on your system."
+      },
+      {
+        q: "Which security practice is recommended for automatic operating system updates?",
+        options: [
+          "Disable all updates to save bandwidth",
+          "Enable automatic updates to receive the latest security patches without manual checking",
+          "Only update the OS once a year",
+          "Uninstall the current OS and reinstall from scratch"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAutomatic updates ensure vulnerabilities are patched promptly. Disabling updates leaves systems exposed. Yearly updates miss critical fixes. Reinstalling is excessive.\n\n> **Key Takeaway:** Auto‑update = the OS fixes itself in the background."
+      },
+      {
+        q: "What is a **user account** used for in an operating system?",
+        options: [
+          "To track internet browsing history",
+          "To identify and authenticate a user, and provide personalised settings and security",
+          "To speed up the computer's processing",
+          "To manage the computer's power supply"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA user account separates your files and settings from others. Browsing history is tracked by the browser, not the account itself. It does not directly affect processing speed or power management.\n\n> **Key Takeaway:** User account = your personal key and space on a shared computer."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 9: OPERATING SYSTEMS – SECTION 6: VIRTUAL MACHINES
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 9: OPERATING SYSTEMS – SECTION 6: VIRTUAL MACHINES",
+    topic: "Purpose, Setup, and Operation of VMs",
+    year: "2025",
+    tag: "Module 9",
+    steps: [
+      {
+        q: "What is a **virtual machine (VM)**?",
+        options: [
+          "A physical server located remotely",
+          "A software‑based emulation of a computer that runs an operating system within another operating system",
+          "A cloud storage service",
+          "A type of computer virus"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA VM uses software to mimic hardware, allowing you to run a second OS inside your main OS. It is not a physical machine, storage service, or malware.\n\n> **Key Takeaway:** VM = a computer inside your computer, created by software."
+      },
+      {
+        q: "What is a **partition** in the context of a virtual machine?",
+        options: [
+          "A type of network protocol",
+          "A section of a hard drive that functions like a separate drive",
+          "A security certificate",
+          "An operating system update"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA partition divides a physical drive into logical sections. It is not a protocol, certificate, or update.\n\n> **Key Takeaway:** Partition = dividing a physical disk into separate virtual drives."
+      },
+      {
+        q: "What is the first step to set up a virtual machine?",
+        options: [
+          "Install the guest operating system immediately",
+          "Run the virtual machine without any software",
+          "Obtain and install an app that creates and runs virtual machines",
+          "Delete the host operating system"
+        ],
+        correct: 2,
+        explanation: "## Insight\nYou need VM software (like VirtualBox or VMware) first. Then you can create a new VM and install an OS. Deleting the host OS would remove the base system.\n\n> **Key Takeaway:** First get a VM app, then create the virtual computer."
+      },
+      {
+        q: "After you finish using a virtual machine, what should you do?",
+        options: [
+          "Leave it running indefinitely",
+          "Shut down the guest OS and exit the VM software",
+          "Physically unplug the computer",
+          "Just close the VM window without shutting down the OS"
+        ],
+        correct: 1,
+        explanation: "## Insight\nYou should gracefully shut down the guest OS (like a real computer) before exiting the VM software. Leaving it running consumes resources; improperly closing may corrupt data.\n\n> **Key Takeaway:** Shut down the VM like a physical machine before closing."
+      },
+      {
+        q: "Which of the following is a benefit of using a virtual machine?",
+        options: [
+          "It replaces the need for any physical hardware",
+          "It allows you to run multiple operating systems on one physical computer simultaneously",
+          "It permanently deletes the host operating system",
+          "It is immune to all security threats"
+        ],
+        correct: 1,
+        explanation: "## Insight\nVMs enable cross‑platform testing, safe experimentation, and running legacy applications. They still need physical hardware. They do not delete the host OS. They can be infected like any system.\n\n> **Key Takeaway:** VMs let you run multiple OSs side by side for testing or compatibility."
+      }
+    ]
+  },
+  
+  
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 1: DIGITAL SECURITY RISKS, THREAT ACTORS & SOCIAL ENGINEERING
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 1: DIGITAL SECURITY RISKS, THREAT ACTORS & SOCIAL ENGINEERING",
+    topic: "Cybercrimes, Criminals, and Attack Techniques",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What is a **digital security risk**?",
+        options: [
+          "A scheduled software update",
+          "Any event or action that could cause a loss of or damage to computer hardware, software, data, or processing capability",
+          "A type of firewall configuration",
+          "The process of backing up files to the cloud"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA digital security risk encompasses any threat to your devices, data, or information. Scheduled updates protect, not risk. Firewall configuration is a protection method, not a risk. Cloud backups are a safeguard, not a threat.\n\n> **Key Takeaway:** Digital security risk = anything that could harm your digital world."
+      },
+      {
+        q: "What term describes an attack whose goal ranges from disabling a government's computer network to crippling a country?",
+        options: [
+          "Phishing",
+          "Social engineering",
+          "Data mining",
+          "Cyberwarfare"
+        ],
+        correct: 3,
+        explanation: "## Insight\n**Cyberwarfare** involves nation‑state actors launching attacks against another country's infrastructure. Phishing steals personal data. Social engineering tricks individuals. Data mining analyses large datasets, it is not inherently an attack.\n\n> **Key Takeaway:** Cyberwarfare = nation‑vs‑nation digital attacks on critical infrastructure."
+      },
+      {
+        q: "What is **social engineering** in the context of cybersecurity?",
+        options: [
+          "Building online communities",
+          "Writing software for social networking",
+          "A category of attack that attempts to trick the victim into giving valuable information to the attacker",
+          "Designing user interfaces for social media apps"
+        ],
+        correct: 2,
+        explanation: "## Insight\nSocial engineering exploits human psychology, not software vulnerabilities. Building communities is social networking. Writing software is programming. Interface design is UX work — none involve deception.\n\n> **Key Takeaway:** Social engineering = tricking people, not hacking machines."
+      },
+      {
+        q: "What is **cybercrime**?",
+        options: [
+          "Online or Internet‑based illegal acts such as distributing malicious software or committing identity theft",
+          "Any crime involving physical violence",
+          "Only crimes committed via email",
+          "Legal hacking performed by certified security professionals"
+        ],
+        correct: 0,
+        explanation: "## Insight\nCybercrime is specifically illegal activity using computers and the Internet. Physical violence is not in scope. Cybercrime extends beyond email. Legal hacking (penetration testing) is authorised, not criminal.\n\n> **Key Takeaway:** Cybercrime = illegal acts committed using computers and the Internet."
+      },
+      {
+        q: "What is **cybersecurity**?",
+        options: [
+          "The study of how computers are manufactured",
+          "The practice of protecting against digital threats, including unauthorised or illegal access to data",
+          "A type of antivirus software",
+          "The physical security of server rooms and data centres"
+        ],
+        correct: 1,
+        explanation: "## Insight\nCybersecurity protects systems, networks, and data from digital attacks. Manufacturing study is engineering. Antivirus is one tool within cybersecurity. Physical security is a subset, not the full definition.\n\n> **Key Takeaway:** Cybersecurity = the shield protecting everything digital."
+      },
+      {
+        q: "What is the **dark web**?",
+        options: [
+          "A website with a black background colour scheme",
+          "Any website that requires a password to access",
+          "A search engine that indexes only dark‑themed content",
+          "A part of the web accessed using specialised software where users and website operators can remain anonymous"
+        ],
+        correct: 3,
+        explanation: "## Insight\nThe dark web requires tools like Tor to access and hides both user identity and server location. A black website is just a design choice. Password‑protected sites are still on the surface web. There is no 'dark‑themed' search engine.\n\n> **Key Takeaway:** Dark web = the hidden, anonymous part of the Internet."
+      },
+      {
+        q: "What is **data mining** in the context of cybercrime?",
+        options: [
+          "Extracting physical minerals from the earth",
+          "Deleting unnecessary data from a hard drive",
+          "The process of sifting through Big Data to find valuable information that can be exploited",
+          "Encrypting data for secure storage"
+        ],
+        correct: 2,
+        explanation: "## Insight\nCriminals use data mining to extract personal and financial information from massive datasets. It is not physical mining, disk cleanup, or encryption — it is about finding patterns and secrets in data.\n\n> **Key Takeaway:** Data mining = digging through data mountains for valuable nuggets of information."
+      },
+      {
+        q: "What is a **script kiddie**?",
+        options: [
+          "An individual who wants to attack computers but lacks the technical expertise to write their own tools",
+          "A professional security researcher employed by a government",
+          "A programmer who writes complex automation scripts for legitimate purposes",
+          "A child learning to write computer code"
+        ],
+        correct: 0,
+        explanation: "## Insight\nScript kiddies use pre‑written tools made by others to launch attacks. Professional researchers are ethical hackers. Programmers writing legitimate scripts are not attackers. Learning to code is not inherently malicious.\n\n> **Key Takeaway:** Script kiddie = attacker using tools they do not understand."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 2: ETHICS, INFORMATION ACCURACY, IP RIGHTS & GREEN COMPUTING
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 2: ETHICS, INFORMATION ACCURACY, IP RIGHTS & GREEN COMPUTING",
+    topic: "Ethics, Accuracy, Intellectual Property, and Environment",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What are **technology ethics**?",
+        options: [
+          "Laws passed by governments to regulate technology",
+          "Moral guidelines that govern the use of computers, mobile devices, information systems, and related technologies",
+          "A type of software used to monitor employee behaviour",
+          "The study of how technology affects physical health"
+        ],
+        correct: 1,
+        explanation: "## Insight\nEthics are moral principles; they are not the same as laws. Employee monitoring software is one tool, not the definition of ethics. Health effects are a separate concern.\n\n> **Key Takeaway:** Technology ethics = the moral compass for how we use digital tools."
+      },
+      {
+        q: "Why is **information accuracy** a growing ethical concern in the digital age?",
+        options: [
+          "Because all online information is verified by governments",
+          "Because search engines automatically fact‑check every web page",
+          "Because artificial intelligence creates all web content",
+          "Because many users access information maintained by others, and digital editing tools make manipulation of text, photos, and video easy"
+        ],
+        correct: 3,
+        explanation: "## Insight\nDigitally altered content can spread misinformation rapidly. Governments do not verify all online content. Search engines rank, they do not fact‑check. AI creates some content but is not the root cause of accuracy concerns.\n\n> **Key Takeaway:** Digital editing makes it easy to fake information, so verifying accuracy is essential."
+      },
+      {
+        q: "What are **intellectual property rights**?",
+        options: [
+          "The right to access any website for free",
+          "The cost of purchasing a domain name",
+          "The rights to which creators are entitled for their original work",
+          "The licence to use public Wi‑Fi networks"
+        ],
+        correct: 2,
+        explanation: "## Insight\nIP rights protect creations — music, books, software, inventions. They are not about free website access, domain purchasing, or Wi‑Fi licences.\n\n> **Key Takeaway:** Intellectual property rights = legal ownership over your creative work."
+      },
+      {
+        q: "What is **green computing**?",
+        options: [
+          "Reducing electricity consumption and environmental waste while using computers and related technologies",
+          "Using computers with green‑coloured cases",
+          "Developing software for environmental agencies only",
+          "Computing that takes place outdoors"
+        ],
+        correct: 0,
+        explanation: "## Insight\nGreen computing focuses on energy efficiency, recycling, and reducing e‑waste. The colour of the case is irrelevant. Environmental software is one application, not the whole concept. Location does not define it.\n\n> **Key Takeaway:** Green computing = environmentally responsible use of technology."
+      },
+      {
+        q: "Which of the following is a **green computing practice**?",
+        options: [
+          "Leaving computers running overnight for updates",
+          "Using paperless methods to communicate and recycling toner cartridges",
+          "Printing all emails for physical filing",
+          "Discarding old electronics in household trash"
+        ],
+        correct: 1,
+        explanation: "## Insight\nGoing paperless and recycling consumables reduce waste. Leaving computers on wastes energy. Printing everything consumes paper. Household trash disposal of electronics creates toxic e‑waste.\n\n> **Key Takeaway:** Reduce, reuse, recycle — even with technology."
+      },
+      {
+        q: "What is **piracy** in the context of intellectual property?",
+        options: [
+          "A type of fishing conducted at sea",
+          "Legally copying software for backup purposes",
+          "The authorised distribution of digital content",
+          "The illegal copying and distribution of copyrighted software, movies, and music"
+        ],
+        correct: 3,
+        explanation: "## Insight\nPiracy violates copyright law. It is not maritime theft. Legal backup copies are permitted. Authorised distribution is, by definition, not piracy.\n\n> **Key Takeaway:** Piracy = stealing digital content by copying and distributing without permission."
+      },
+      {
+        q: "What does the **ENERGY STAR** program signify?",
+        options: [
+          "A government programme for renewable energy",
+          "A compliance rating for devices that meet strict energy‑efficiency guidelines",
+          "A type of computer processor",
+          "A backup power supply system"
+        ],
+        correct: 1,
+        explanation: "## Insight\nENERGY STAR labels help consumers identify energy‑efficient products. It is not a renewable energy programme, a processor type, or a backup system.\n\n> **Key Takeaway:** ENERGY STAR = the label that says 'this device saves electricity.'"
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 3: MALWARE TYPES, BOTNETS, DoS/DDoS, SPOOFING & BACK DOORS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 3: MALWARE TYPES, BOTNETS, DoS/DDoS, SPOOFING & BACK DOORS",
+    topic: "Malicious Software and Network Attacks",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What is **malware**?",
+        options: [
+          "Hardware that malfunctions due to age",
+          "Malicious software consisting of programs that act without a user's knowledge and deliberately alter computer operations",
+          "A type of firewall",
+          "Software designed to speed up computer performance"
+        ],
+        correct: 1,
+        explanation: "## Insight\nMalware = malicious + software. It is not failing hardware, a firewall (which protects), or performance software (which improves speed).\n\n> **Key Takeaway:** Malware = software with bad intentions."
+      },
+      {
+        q: "What is a **Trojan horse** in computing?",
+        options: [
+          "A virus that replicates itself across networks",
+          "A program that blocks access until a ransom is paid",
+          "A program that secretly collects user information",
+          "A program that hides within or looks like a legitimate program but does not replicate itself"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA Trojan horse disguises itself as useful software to trick users into installing it. A virus does replicate — Trojans do not. Ransomware demands payment. Spyware secretly collects data.\n\n> **Key Takeaway:** Trojan horse = malicious software disguised as something you want."
+      },
+      {
+        q: "What is a **botnet**?",
+        options: [
+          "A single infected computer",
+          "A network security protocol",
+          "A group of compromised computers connected to a network used to attack other networks",
+          "A type of antivirus software"
+        ],
+        correct: 2,
+        explanation: "## Insight\nA botnet (zombie army) is many infected machines controlled as a group. A single machine is a bot or zombie. It is not a protocol or antivirus.\n\n> **Key Takeaway:** Botnet = an army of infected computers controlled by a criminal."
+      },
+      {
+        q: "What is a **DoS (Denial of Service) attack**?",
+        options: [
+          "An attack that overloads a server with network traffic so it cannot provide necessary services",
+          "A method of encrypting server data",
+          "A technique for speeding up network connections",
+          "A legal test performed by network administrators"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA DoS attack floods a server, making it unavailable. It does not encrypt, speed up, or legally test — it disrupts.\n\n> **Key Takeaway:** DoS attack = crushing a server with too much traffic so legitimate users cannot access it."
+      },
+      {
+        q: "How does a **DDoS (Distributed DoS) attack** differ from a regular DoS attack?",
+        options: [
+          "It uses a single powerful computer",
+          "It uses multiple computers, often a zombie army, to attack the target simultaneously",
+          "It targets only individual users, not servers",
+          "It only works on wireless networks"
+        ],
+        correct: 1,
+        explanation: "## Insight\nDDoS multiplies the attack power by using many machines (botnets). A single machine is just DoS. Targets can be servers or individuals. Network type is irrelevant.\n\n> **Key Takeaway:** DDoS = many computers attacking one target at the same time."
+      },
+      {
+        q: "What is **spoofing**?",
+        options: [
+          "A technique intruders use to make their network transmission appear legitimate",
+          "A method of securely encrypting emails",
+          "A humourous prank played on social media",
+          "A legal form of network testing"
+        ],
+        correct: 0,
+        explanation: "## Insight\nSpoofing impersonates trusted sources (IP addresses, email headers). It is not encryption, a joke, or a legitimate test.\n\n> **Key Takeaway:** Spoofing = faking your digital identity to look trustworthy."
+      },
+      {
+        q: "What is a **back door** in software?",
+        options: [
+          "A physical door in a data centre",
+          "A secondary entrance to a building",
+          "A program or set of instructions that allows users to bypass security controls when accessing a program, computer, or network",
+          "A type of firewall rule"
+        ],
+        correct: 2,
+        explanation: "## Insight\nBack doors bypass normal authentication. They are not physical doors, not building entrances, and not firewall rules (which control, not bypass, access).\n\n> **Key Takeaway:** Back door = secret entrance to a system that skips security checks."
+      },
+      {
+        q: "What is **ransomware**?",
+        options: [
+          "A program that displays unwanted advertisements",
+          "Software that secretly monitors user activity",
+          "A program that hides and allows remote control",
+          "A program that blocks or limits access to a computer or files until the user pays a specified amount"
+        ],
+        correct: 3,
+        explanation: "## Insight\nRansomware holds your data hostage for money. Adware shows ads. Spyware monitors secretly. A rootkit — not ransomware — hides and provides remote control.\n\n> **Key Takeaway:** Ransomware = your files are kidnapped until you pay the ransom."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 4: PROTECTING DATA WITH FIREWALLS, VPNS, ACCESS CONTROLS & BACKUPS
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 4: PROTECTING DATA WITH FIREWALLS, VPNS, ACCESS CONTROLS & BACKUPS",
+    topic: "Network Protection, VPNs, AUPs, and Backup Strategies",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What is a **virtual private network (VPN)**?",
+        options: [
+          "A physical cable that connects offices together",
+          "A private, secure path across a public network that allows authorised users secure access to a company network",
+          "A type of web browser",
+          "A cloud storage service for personal files"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA VPN encrypts your connection and makes remote access secure. It is not a physical cable, not a browser, and not a storage service.\n\n> **Key Takeaway:** VPN = a secure, encrypted tunnel through the public Internet."
+      },
+      {
+        q: "What is the primary purpose of a **firewall**?",
+        options: [
+          "To speed up internet connections",
+          "To store backup copies of important files",
+          "To detect and remove viruses from email attachments",
+          "To protect network resources from outsiders and restrict employees' access to sensitive data"
+        ],
+        correct: 3,
+        explanation: "## Insight\nA firewall filters traffic based on security rules. It does not accelerate connections, store files, or specifically remove viruses — antivirus does that.\n\n> **Key Takeaway:** Firewall = the gatekeeper that decides what traffic enters and exits your network."
+      },
+      {
+        q: "What is an **Acceptable Use Policy (AUP)**?",
+        options: [
+          "A warranty for computer hardware",
+          "A software licence agreement",
+          "A document that specifies the acceptable use of technology by employees for personal and work‑related reasons",
+          "A certificate of antivirus compliance"
+        ],
+        correct: 2,
+        explanation: "## Insight\nAn AUP sets the rules for technology use at work or school. It is not a warranty, a software licence, or a security certificate.\n\n> **Key Takeaway:** AUP = the rulebook for using an organisation's technology."
+      },
+      {
+        q: "What is **unauthorised access**?",
+        options: [
+          "The use of a computer or network without permission — possibly an illegal activity",
+          "Accessing a website that requires a login",
+          "Using a public Wi‑Fi network",
+          "Logging into your own account from a different device"
+        ],
+        correct: 0,
+        explanation: "## Insight\nUnauthorised access violates permission boundaries. Logging into a site with your credentials is authorised. Public Wi‑Fi is open access. Using your own account from another device is still authorised.\n\n> **Key Takeaway:** Unauthorised access = using a system you have no right to use."
+      },
+      {
+        q: "What is an **audit trail** in the context of access control?",
+        options: [
+          "A physical path through a data centre",
+          "A record that tracks access attempts, both successful and unsuccessful",
+          "A list of all software installed on a computer",
+          "A report on internet speed and bandwidth usage"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAn audit trail logs who accessed what and when. It is not a physical walkway, a software inventory, or a bandwidth report.\n\n> **Key Takeaway:** Audit trail = the digital paper trail of who did what on a system."
+      },
+      {
+        q: "What is a **full backup**?",
+        options: [
+          "Only copying files changed since the last backup",
+          "Copying only user‑selected folders",
+          "Backing up data whenever a change is made",
+          "Copying all files on media in the computer — the fastest recovery method but longest backup time"
+        ],
+        correct: 3,
+        explanation: "## Insight\nFull backups are comprehensive but time‑consuming. Incremental backups only save changes. Selective backups let users choose. Continuous data protection is real‑time.\n\n> **Key Takeaway:** Full backup = copy everything; slow to create, fast to restore."
+      },
+      {
+        q: "What is the advantage of **online backup services** (cloud backups)?",
+        options: [
+          "They are always free with unlimited storage",
+          "They eliminate the need for any local storage on your device",
+          "They can save the cost of maintaining physical backup hardware and automatically monitor changed files",
+          "They guarantee 100% security against all types of data loss"
+        ],
+        correct: 2,
+        explanation: "## Insight\nCloud backups reduce upfront hardware costs and automate monitoring. They are not always free, do not eliminate local storage needs, and do not guarantee absolute security.\n\n> **Key Takeaway:** Cloud backup = off‑site automated safety for your files."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 5: AUTHENTICATION, ENCRYPTION, WIRELESS & CLOUD SECURITY
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 5: AUTHENTICATION, ENCRYPTION, WIRELESS & CLOUD SECURITY",
+    topic: "Passwords, Biometrics, 2FA, CAPTCHA, Wi‑Fi & Cloud Privacy",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What is **authentication** in computer security?",
+        options: [
+          "The process of installing new software",
+          "The process of ensuring that the person requesting access to a computer or resource is authentic and not an imposter",
+          "The process of encrypting all files on a hard drive",
+          "The process of backing up data to an external drive"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAuthentication verifies identity — proving you are who you claim to be. Software installation, encryption, and backup are separate functions.\n\n> **Key Takeaway:** Authentication = proving you are really you."
+      },
+      {
+        q: "What is a **password manager**?",
+        options: [
+          "A person who manages password policies for a company",
+          "A program that helps create and store multiple strong passwords in a single vault protected by one master password",
+          "A hardware device that generates random passwords",
+          "A browser setting that automatically fills in forms"
+        ],
+        correct: 1,
+        explanation: "## Insight\nPassword managers use encryption to secure all your passwords behind one master key. It is not a person, not a dedicated hardware token, and not just a browser auto‑fill feature.\n\n> **Key Takeaway:** Password manager = one secure vault for all your passwords."
+      },
+      {
+        q: "What is **two‑factor authentication (2FA)**?",
+        options: [
+          "Using two different passwords for the same account",
+          "Logging in from two devices simultaneously",
+          "Combining multiple types of authentication, such as a password and a code sent to your phone",
+          "Having two separate user accounts on the same computer"
+        ],
+        correct: 2,
+        explanation: "## Insight\n2FA requires something you know (password) and something you have (phone for code). Two passwords are still one factor type. Two devices are not a security requirement. Separate accounts are unrelated.\n\n> **Key Takeaway:** 2FA = double‑checking identity with two different types of proof."
+      },
+      {
+        q: "What is a **CAPTCHA**?",
+        options: [
+          "A program that displays distorted characters to verify human input and distinguish humans from automated bots",
+          "A type of encryption algorithm",
+          "A password strength testing tool",
+          "A biometric authentication method using facial recognition"
+        ],
+        correct: 0,
+        explanation: "## Insight\nCAPTCHA = \"Completely Automated Public Turing test to tell Computers and Humans Apart.\" It is not encryption, not a password tester, and not a biometric method — it challenges visual recognition.\n\n> **Key Takeaway:** CAPTCHA = the \"Are you a human?\" test on websites."
+      },
+      {
+        q: "What is **encryption**?",
+        options: [
+          "The process of deleting data permanently",
+          "The process of scrambling information so it cannot be read without the correct key to unlock it",
+          "The process of compressing files to save storage space",
+          "The process of copying data to a backup location"
+        ],
+        correct: 1,
+        explanation: "## Insight\nEncryption turns readable text into unreadable ciphertext using an algorithm and key. Deleting destroys data, compression shrinks it, and copying duplicates it.\n\n> **Key Takeaway:** Encryption = scrambling your data so only authorised people can read it."
+      },
+      {
+        q: "Which Wi‑Fi security setting should be **turned on** to encrypt wireless data transmissions?",
+        options: [
+          "WPS (Wi‑Fi Protected Setup)",
+          "Remote management",
+          "SSID broadcasting",
+          "WPA2 Personal with a strong pre‑shared key"
+        ],
+        correct: 3,
+        explanation: "## Insight\nWPA2 encrypts wireless traffic. WPS has known vulnerabilities and should be disabled. Remote management allows outside configuration changes — risky. SSID broadcasting should remain on; turning it off provides very weak security.\n\n> **Key Takeaway:** WPA2 + strong password = essential Wi‑Fi security."
+      },
+      {
+        q: "What is **biometric security**?",
+        options: [
+          "A security method using unique physical characteristics like fingerprints, face, or iris to authenticate users",
+          "A type of antivirus software",
+          "A method of encrypting biological research data",
+          "A fitness tracking application"
+        ],
+        correct: 0,
+        explanation: "## Insight\nBiometrics leverages what you are — your body's unique traits. It is not antivirus, not encryption for research data, and not fitness tracking.\n\n> **Key Takeaway:** Biometrics = your body is your password."
+      },
+      {
+        q: "What is a **digital signature**?",
+        options: [
+          "A scanned image of your handwritten signature",
+          "An electronic, encrypted, and secure stamp of authentication on a document issued by a Certificate Authority",
+          "The name you type at the end of an email",
+          "A password you use to sign into your computer"
+        ],
+        correct: 1,
+        explanation: "## Insight\nA digital signature verifies the authenticity and integrity of a digital document. A scanned image is easily forged. Typing a name provides no cryptographic security. A password is authentication, not a signature.\n\n> **Key Takeaway:** Digital signature = cryptographic proof that a document is genuine and unaltered."
+      }
+    ]
+  },
+
+  // ================================================================
+  // UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 6: ORGANISATIONAL POLICIES, DISASTER RECOVERY & DIGITAL INCLUSION
+  // ================================================================
+  {
+    course: "CS110",
+    term: "T2",
+    title: "UNIT 10: DIGITAL SECURITY, ETHICS, AND PRIVACY – SECTION 6: ORGANISATIONAL POLICIES, DISASTER RECOVERY & DIGITAL INCLUSION",
+    topic: "IT Conduct, Monitoring, Recovery & Accessibility",
+    year: "2025",
+    tag: "Module 10",
+    steps: [
+      {
+        q: "What is an **IT code of conduct**?",
+        options: [
+          "A programming language used to build websites",
+          "A written guideline that helps determine whether a specific technology‑related action is ethical, unethical, allowed, or not allowed",
+          "A licence to operate a computer business",
+          "A certification earned by passing a security exam"
+        ],
+        correct: 1,
+        explanation: "## Insight\nAn IT code of conduct sets behavioural standards for technology use. It is not a programming language, a business licence, or a professional certification.\n\n> **Key Takeaway:** IT code of conduct = the ethical rulebook for technology in the workplace."
+      },
+      {
+        q: "What is **content filtering**?",
+        options: [
+          "Improving the quality of website design",
+          "Organising files into folders by topic",
+          "Rating the accuracy of online articles",
+          "The process of restricting access to certain materials, often used by businesses to limit employees' web access"
+        ],
+        correct: 3,
+        explanation: "## Insight\nContent filtering blocks specified websites or content categories. It is not about design quality, file organisation, or accuracy rating.\n\n> **Key Takeaway:** Content filtering = blocking access to certain websites at work or school."
+      },
+      {
+        q: "What is **employee monitoring**?",
+        options: [
+          "Conducting annual performance reviews",
+          "Observing employees through office windows",
+          "The use of computers, mobile devices, or cameras to observe, record, and review an employee's technology use",
+          "Checking an employee's social media profiles after work hours"
+        ],
+        correct: 2,
+        explanation: "## Insight\nEmployee monitoring tracks technology usage during work time — email, keyboard activity, websites visited. Performance reviews are evaluations, not continuous monitoring. Physical observation through windows is not a technology‑based method.\n\n> **Key Takeaway:** Employee monitoring = employer surveillance of your digital activity at work."
+      },
+      {
+        q: "What is a **disaster recovery plan**?",
+        options: [
+          "A written plan describing the steps an organisation would take to restore computer operations after a disaster",
+          "An insurance policy covering computer equipment",
+          "A schedule for regular software updates",
+          "A checklist for daily computer maintenance"
+        ],
+        correct: 0,
+        explanation: "## Insight\nA disaster recovery plan ensures business continuity after catastrophes. Insurance covers financial loss, not operational restoration. Update schedules are routine maintenance. Daily checklists are not disaster‑specific.\n\n> **Key Takeaway:** Disaster recovery plan = the emergency playbook for getting systems back online."
+      },
+      {
+        q: "Which of the following is a component of a **disaster recovery plan**?",
+        options: [
+          "Employee holiday schedule",
+          "Emergency plan specifying steps organised by disaster type, including who to notify and evacuation procedures",
+          "Office decorating guidelines",
+          "Social media marketing strategy"
+        ],
+        correct: 1,
+        explanation: "## Insight\nThe four components are: Emergency plan, Backup plan, Recovery plan, and Test plan. The others are unrelated business functions.\n\n> **Key Takeaway:** A disaster plan covers emergencies, backups, recovery steps, and testing."
+      },
+      {
+        q: "What is **digital inclusion**?",
+        options: [
+          "Requiring all citizens to own a smartphone",
+          "Forcing companies to offer only digital services",
+          "The movement to ensure that all users, regardless of economic or geographic constraints, have access to devices, data, and infrastructure for high‑speed, accurate information",
+          "A government programme to replace paper documents with digital files"
+        ],
+        correct: 2,
+        explanation: "## Insight\nDigital inclusion aims to close the digital divide. It does not mandate device ownership, force digital‑only services, or merely digitise paperwork.\n\n> **Key Takeaway:** Digital inclusion = making sure everyone can access the digital world."
+      },
+      {
+        q: "Which of the following is a **barrier to digital inclusion**?",
+        options: [
+          "High‑speed fibre‑optic internet in urban centres",
+          "Affordable devices available to all income levels",
+          "Free public Wi‑Fi in all government buildings",
+          "Geographic areas that lack the infrastructure necessary to provide reliable Internet access"
+        ],
+        correct: 3,
+        explanation: "## Insight\nLack of infrastructure is a core barrier. The other options describe solutions, not barriers. High‑speed internet, affordable devices, and free Wi‑Fi are all enablers of inclusion.\n\n> **Key Takeaway:** The digital divide grows where infrastructure, affordability, or education are missing."
+      }
+    ]
+  },
+
 ];
   
