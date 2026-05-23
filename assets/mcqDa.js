@@ -21088,6 +21088,1409 @@ const mcqData = [
     year: "Notes",
     tag: "MCQ"
   },
+  
+  //BI110 TERM 2 TAXONOMY NEW CONTENT 
+  
+  // =========================================================================
+// === KAERI EDTECH - BI110 (BIOLOGY) MASTER QUESTION BANK - COMPLETE    ===
+// === ALL QUESTIONS (1 TO 205) | TERM T2                               ===
+// === COMBINED: Batch 1 (Q1-40) + Original Bank (Q41-205)             ===
+// =========================================================================
+
+  // ==================== BATCH 1 (QUESTIONS 1 TO 40) ====================
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary scientific focus of taxonomy?`,
+    options: [
+      `The description, identification, nomenclature, and classification of organisms`,
+      `The study of animal behavior in their natural habitats`,
+      `The chemical analysis of cellular components and metabolic pathways`,
+      `The investigation of ecological interactions between different populations`
+    ],
+    correct: 0,
+    explanation: `## Insight\nTaxonomy provides the foundational language of biology. It is the rigorous science of finding new organisms (discovery), describing their traits, assigning them a universally recognized scientific name (nomenclature), and placing them into an organized hierarchical system (classification).\n- Option A is correct because it perfectly encapsulates the four main activities of taxonomy.\n- Option B is wrong because studying animal behavior is ethology.\n- Option C is wrong because cellular chemical analysis is biochemistry or cytology.\n- Option D is wrong because studying population interactions is ecology.\n\n> **Key Takeaway:** Taxonomy is the biological science dedicated entirely to the description, identification, naming, and classification of organisms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Who is historically recognized as the "father of taxonomy"?`,
+    options: [
+      `Charles Darwin`,
+      `Carl Linnaeus`,
+      `Ernst Mayr`,
+      `Gregor Mendel`
+    ],
+    correct: 1,
+    explanation: `## Insight\nIn the 18th century, Swedish botanist Carl Linnaeus revolutionized biology by introducing a standardized system for classifying nature. He developed the hierarchical Linnaean classification system (Kingdom, Class, Order, Genus, Species) and formalized binomial nomenclature, the two-part naming system still used today.\n- Option A is wrong because Darwin is the father of evolutionary theory.\n- Option B is correct because Linnaeus created the foundational systems of modern taxonomy.\n- Option C is wrong because Mayr developed the biological species concept in the 20th century.\n- Option D is wrong because Mendel is the father of modern genetics.\n\n> **Key Takeaway:** Carl Linnaeus is considered the father of taxonomy for developing hierarchical classification and binomial nomenclature.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific biological discipline refers to the description, identification, nomenclature, and classification of organisms?`,
+    options: [
+      `Ecology`,
+      `Phylogeny`,
+      `Taxonomy`,
+      `Morphology`
+    ],
+    correct: 2,
+    explanation: `## Insight\nWhile many fields study organisms, only one is dedicated to organizing them. Taxonomy provides the strict framework for naming (nomenclature) and grouping (classification) living things so that scientists globally can communicate without ambiguity.\n- Option A is wrong because ecology studies interactions between organisms and their environment.\n- Option B is wrong because phylogeny specifically traces the evolutionary history and relationships of organisms.\n- Option C is correct because taxonomy is explicitly defined as the science of classifying and naming life.\n- Option D is wrong because morphology studies the physical form and structure of organisms.\n\n> **Key Takeaway:** Taxonomy is the specific discipline dedicated to the description, identification, nomenclature, and classification of life.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the professional title for a scientist who specializes in identifying, naming, and classifying organisms?`,
+    options: [
+      `Ecologist`,
+      `Geneticist`,
+      `Morphologist`,
+      `Taxonomist`
+    ],
+    correct: 3,
+    explanation: `## Insight\nA taxonomist is a specialized biologist whose primary work involves sorting the incredible diversity of life on Earth. They examine physical and genetic characteristics to discover new species, apply proper binomial names, and update classification systems to reflect evolutionary relationships.\n- Option A is wrong because ecologists study environmental interactions.\n- Option B is wrong because geneticists study DNA, heredity, and variation.\n- Option C is wrong because morphologists study physical structures and anatomy.\n- Option D is correct because a taxonomist is the expert dedicated to classification and nomenclature.\n\n> **Key Takeaway:** A taxonomist is a specialized scientist who formally identifies, names, and classifies living organisms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which foundational classification system was originally developed by Carl Linnaeus?`,
+    options: [
+      `The Linnaean classification system`,
+      `The cladistic classification system`,
+      `The numerical taxonomy system`,
+      `The phylogenetic systematics approach`
+    ],
+    correct: 0,
+    explanation: `## Insight\nBefore Charles Darwin introduced evolution, Carl Linnaeus grouped organisms purely by shared physical traits. He created a nested hierarchy ranging from broad kingdoms down to specific species. This structured, non-evolutionary grouping became known as the Linnaean classification system.\n- Option A is correct because Linnaeus developed the hierarchical system that bears his name.\n- Option B is wrong because cladistics groups organisms strictly by common ancestry (evolution), developed much later by Willi Hennig.\n- Option C is wrong because numerical taxonomy uses statistical algorithms to group organisms by overall similarity, ignoring evolutionary history.\n- Option D is wrong because phylogenetic systematics focuses on evolutionary relationships, which were unknown to Linnaeus.\n\n> **Key Takeaway:** The Linnaean classification system is a hierarchical method of grouping organisms based on shared physical characteristics.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In modern phylogenetic taxonomy, how are organisms primarily grouped?`,
+    options: [
+      `Into broad, vaguely defined kingdoms based entirely on geographic location`,
+      `Into clades, which consist of a single common ancestor and all of its descendants`,
+      `Into arbitrary domains based strictly on whether they possess a cell wall`,
+      `Into genera based exclusively on their dietary habits and ecological niches`
+    ],
+    correct: 1,
+    explanation: `## Insight\nModern taxonomy has shifted from simply looking at physical similarities (Linnaean) to mapping actual evolutionary history (phylogenetics). The fundamental unit of phylogenetic taxonomy is the clade: a "branch" on the tree of life that includes one specific ancestor and every single species that evolved from it.\n- Option A is wrong because geography does not determine taxonomic grouping.\n- Option B is correct because clades (monophyletic groups) are the foundation of phylogenetic classification.\n- Option C is wrong because cell walls exist across multiple domains (Bacteria, Archaea, Eukarya) and do not define the domain system alone.\n- Option D is wrong because dietary habits are ecological traits, not evolutionary grouping criteria.\n\n> **Key Takeaway:** Phylogenetic taxonomy groups organisms into clades, representing a common ancestor and all its evolutionary descendants.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What specific criterion defines a 'clade' in evolutionary biology?`,
+    options: [
+      `Organisms that occupy similar ecological niches in different parts of the world`,
+      `Organisms that share superficially similar analogous structures due to convergent evolution`,
+      `A group of organisms defined by homologous features inherited directly from a shared common ancestor`,
+      `Organisms that share a completely identical geographic distribution range`
+    ],
+    correct: 2,
+    explanation: `## Insight\nTo build a valid clade (a monophyletic group), biologists look for "homologous" traits—features that are similar because they were inherited from the same ancestor (like the bone structure in a human arm and a bat wing). They must ignore "analogous" traits, which look similar but evolved independently (like bird wings and insect wings).\n- Option A is wrong because occupying similar niches leads to convergent evolution, not a shared clade.\n- Option B is wrong because analogous structures trick observers; they do not indicate a recent common ancestor.\n- Option C is correct because clades are built exclusively on homologous features derived from a common ancestor.\n- Option D is wrong because geographic distribution does not determine deep evolutionary lineage.\n\n> **Key Takeaway:** A clade is defined by homologous features, which are traits inherited directly from a shared common ancestor.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which taxonomic rank represents the highest, most broad, and most inclusive category in biological classification?`,
+    options: [
+      `Kingdom`,
+      `Phylum`,
+      `Class`,
+      `Domain`
+    ],
+    correct: 3,
+    explanation: `## Insight\nFor centuries, "Kingdom" was the highest rank in biology. However, as scientists discovered fundamental genetic and cellular differences among microbes, a new, broader category was needed to sit above Kingdoms. This ultimate top-level rank is the Domain, grouping all life into Bacteria, Archaea, and Eukarya.\n- Option A is wrong because Kingdoms (like Animalia or Plantae) sit beneath Domains.\n- Option B is wrong because Phylum sits below Kingdom.\n- Option C is wrong because Class sits below Phylum.\n- Option D is correct because Domain is the absolute highest, most inclusive taxonomic rank.\n\n> **Key Takeaway:** The Domain is the highest and most inclusive taxonomic rank, sitting directly above the Kingdom level.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In what year was the 'Domain' rank formally introduced by Carl Woese to revolutionize biological classification?`,
+    options: [
+      `1990`,
+      `1735`,
+      `1859`,
+      `2000`
+    ],
+    correct: 0,
+    explanation: `## Insight\nIn 1990, microbiologist Carl Woese analyzed ribosomal RNA and discovered that prokaryotes were not one uniform group. He found that Archaea were genetically distinct from standard Bacteria. To accommodate this massive discovery, he proposed adding "Domain" as a new taxonomic rank above Kingdom, creating the three-domain system.\n- Option A is correct because the Domain rank was formally proposed by Carl Woese in 1990.\n- Option B is wrong because 1735 is when Linnaeus published *Systema Naturae*.\n- Option C is wrong because 1859 is when Darwin published *On the Origin of Species*.\n- Option D is wrong because the domain system was widely accepted before the year 2000.\n\n> **Key Takeaway:** Carl Woese introduced the Domain rank in 1990 to separate Archaea from Bacteria based on deep genetic differences.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following is NOT one of the three recognized domains of life?`,
+    options: [
+      `Bacteria`,
+      `Protista`,
+      `Archaea`,
+      `Eukarya`
+    ],
+    correct: 1,
+    explanation: `## Insight\nAll life on Earth is classified into three massive domains based on cellular structure and genetics. Bacteria and Archaea contain all prokaryotic organisms (no nucleus). Eukarya contains all eukaryotic organisms (true nucleus). Protista is merely a Kingdom tucked inside the Eukarya domain, not a domain itself.\n- Option A is wrong because Bacteria is a valid domain.\n- Option B is correct because Protista is a kingdom, not one of the three major domains.\n- Option C is wrong because Archaea is a valid domain.\n- Option D is wrong because Eukarya is a valid domain.\n\n> **Key Takeaway:** The three domains of life are Bacteria, Archaea, and Eukarya; Protista is a subordinate kingdom within Eukarya.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which biological domain exclusively contains organisms that possess membrane-bound nuclei within their cells?`,
+    options: [
+      `Bacteria`,
+      `Archaea`,
+      `Eukarya`,
+      `Monera`
+    ],
+    correct: 2,
+    explanation: `## Insight\nThe prefix "eu-" means true, and "karyon" means kernel (nucleus). Therefore, eukaryotes are organisms whose DNA is safely enclosed within a true, membrane-bound nucleus. Every plant, animal, fungus, and protist on Earth belongs to this domain.\n- Option A is wrong because Bacteria are prokaryotes and lack a membrane-bound nucleus.\n- Option B is wrong because Archaea are prokaryotes and lack a true nucleus.\n- Option C is correct because the domain Eukarya is defined by the presence of a membrane-bound nucleus and organelles.\n- Option D is wrong because Monera is an obsolete kingdom that used to group all prokaryotes together.\n\n> **Key Takeaway:** The domain Eukarya exclusively contains organisms that possess a true, membrane-bound nucleus.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What critical biochemical feature distinguishes the domain Archaea from the domain Bacteria?`,
+    options: [
+      `Archaea possess a thick peptidoglycan cell wall.`,
+      `Archaea contain a true, membrane-bound nucleus inside their cells.`,
+      `Archaea possess extremely large cells, similar in size to plant cells.`,
+      `Archaea possess unique ether-linked lipids in their cell membranes.`
+    ],
+    correct: 3,
+    explanation: `## Insight\nUnder a standard microscope, Archaea and Bacteria look almost identical (both lack a nucleus). However, chemically, they are vastly different. Bacterial cell membranes are made of ester-linked lipids, while Archaeal membranes are made of highly resilient ether-linked lipids, allowing them to survive in extreme environments.\n- Option A is wrong because peptidoglycan is the defining feature of Bacterial cell walls, while Archaea use pseudopeptidoglycan.\n- Option B is wrong because Archaea are prokaryotes and lack a nucleus.\n- Option C is wrong because both Archaea and Bacteria are microscopic and roughly the same size.\n- Option D is correct because ether-linked membrane lipids are a unique, diagnostic feature of Archaea.\n\n> **Key Takeaway:** Archaea are biochemically distinguished from Bacteria by the presence of unique ether-linked lipids in their cell membranes.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which domain is famous for containing 'extremophiles', including hyperthermophiles and methanogens?`,
+    options: [
+      `Archaea`,
+      `Bacteria`,
+      `Eukarya`,
+      `Protista`
+    ],
+    correct: 0,
+    explanation: `## Insight\nWhile Archaea are found in many standard environments, they are most famous for thriving where no other life can survive. Thanks to their resilient ether-linked cell membranes, they can live in boiling hydrothermal vents (hyperthermophiles), hypersaline lakes, and deep oxygen-free mud where they produce methane gas (methanogens).\n- Option A is correct because the domain Archaea contains the majority of the world's extreme extremophiles and all known methanogens.\n- Option B is wrong because while some bacteria tolerate extremes, Archaea dominate these extreme niches.\n- Option C is wrong because Eukarya (plants, animals) generally cannot survive such extremes.\n- Option D is wrong because Protista is a kingdom of Eukarya, not a domain known for these extremophiles.\n\n> **Key Takeaway:** The domain Archaea is famous for containing extreme extremophiles, such as heat-loving hyperthermophiles and methane-producing methanogens.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What specific structural polymer is exclusively found in the cell walls of Bacteria?`,
+    options: [
+      `Cellulose`,
+      `Peptidoglycan`,
+      `Chitin`,
+      `Pseudomurein`
+    ],
+    correct: 1,
+    explanation: `## Insight\nCell walls act as protective armor for cells, but different domains use different materials. Plants use cellulose. Fungi use chitin. The domain Bacteria uses a unique mesh-like polymer of sugars and amino acids called peptidoglycan. This substance is the primary target for many antibiotics, like penicillin.\n- Option A is wrong because cellulose forms the cell walls of plants.\n- Option B is correct because peptidoglycan is the unique structural polymer found only in bacterial cell walls.\n- Option C is wrong because chitin forms the cell walls of fungi and the exoskeletons of insects.\n- Option D is wrong because pseudomurein is found in the cell walls of some Archaea.\n\n> **Key Takeaway:** Peptidoglycan is a unique structural polymer found exclusively in the cell walls of the domain Bacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific domain of life is characterized by possessing ester-linked membrane lipids?`,
+    options: [
+      `Archaea`,
+      `Both Bacteria and Archaea`,
+      `Bacteria`,
+      `Eukarya only`
+    ],
+    correct: 2,
+    explanation: `## Insight\nCell membranes are made of lipid bilayers. The chemical bonds connecting the lipid tails to the glycerol heads differ across domains. Eukaryotes and Bacteria both utilize ester bonds, making them chemically distinct from Archaea. However, among the prokaryotes, ester-linked lipids belong strictly to Bacteria.\n- Option A is wrong because Archaea use ether-linked lipids, making them highly stable in extreme heat.\n- Option B is wrong because Archaea do not use ester links.\n- Option C is correct because Bacteria specifically utilize ester-linked lipids in their cell membranes.\n- Option D is wrong because while Eukarya use ester links, they are not the *only* domain to do so; Bacteria do as well.\n\n> **Key Takeaway:** The domain Bacteria is chemically characterized by possessing ester-linked lipids in its cell membranes.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `According to genetic analysis, the domain Eukarya shares a more recent common evolutionary ancestor with which other domain?`,
+    options: [
+      `Bacteria`,
+      `Neither; it evolved completely independently`,
+      `Viruses`,
+      `Archaea`
+    ],
+    correct: 3,
+    explanation: `## Insight\nFor a long time, scientists assumed all prokaryotes (Bacteria and Archaea) were closely related. However, modern genetic sequencing of ribosomal RNA revealed a shock: the DNA replication and transcription machinery of Archaea looks far more like human (Eukaryotic) machinery than Bacterial machinery. Eukarya and Archaea are sister domains.\n- Option A is wrong because Bacteria split off earliest in the evolutionary tree of life.\n- Option B is wrong because all three domains share a universal common ancestor (LUCA).\n- Option C is wrong because viruses are not considered cellular life and do not sit on the primary domain tree.\n- Option D is correct because genetic evidence proves Eukarya and Archaea share a more recent common ancestor.\n\n> **Key Takeaway:** Genetic analysis shows that the domain Eukarya is more closely related to Archaea than it is to Bacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the hierarchical Linnaean classification system, which taxonomic rank comes immediately beneath Domain?`,
+    options: [
+      `Kingdom`,
+      `Phylum`,
+      `Class`,
+      `Order`
+    ],
+    correct: 0,
+    explanation: `## Insight\nTaxonomy works like Russian nesting dolls, starting broad and getting highly specific. The absolute broadest category is the Domain (e.g., Eukarya). The very next level down divides that domain into major, fundamentally different groups of life, which are the Kingdoms (e.g., Animalia, Plantae).\n- Option A is correct because Kingdom sits immediately beneath Domain in the hierarchy.\n- Option B is wrong because Phylum sits beneath Kingdom.\n- Option C is wrong because Class sits beneath Phylum.\n- Option D is wrong because Order sits beneath Class.\n\n> **Key Takeaway:** In the standard taxonomic hierarchy, the Kingdom rank comes immediately below the Domain rank.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following correctly displays a segment of taxonomic ranks ordered from general (broad) to specific?`,
+    options: [
+      `Phylum → Class → Kingdom → Order`,
+      `Kingdom → Phylum → Class → Order`,
+      `Class → Family → Order → Genus`,
+      `Domain → Phylum → Kingdom → Class`
+    ],
+    correct: 1,
+    explanation: `## Insight\nThe standard taxonomic hierarchy from most broad to most specific is: Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species. A helpful mnemonic is "Dear King Philip Came Over For Good Soup."\n- Option A is wrong because Kingdom is broader than Phylum and Class, breaking the sequence.\n- Option B is correct because it perfectly follows the descending order: Kingdom, then Phylum, then Class, then Order.\n- Option C is wrong because Order is broader than Family; they are reversed here.\n- Option D is wrong because Kingdom is broader than Phylum and must come before it.\n\n> **Key Takeaway:** The correct descending order of taxonomic ranks is Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In scientific writing, which specific rule applies to the capitalization of taxonomic ranks?`,
+    options: [
+      `Only the Genus name is ever capitalized.`,
+      `Only the Species name (specific epithet) is capitalized.`,
+      `All taxonomic ranks from Domain down to Genus are capitalized, while the species name is completely lowercase.`,
+      `Only the Domain and Kingdom ranks are allowed to be capitalized.`
+    ],
+    correct: 2,
+    explanation: `## Insight\nTaxonomic grammar is extremely strict. Every high-level classification group acts as a proper noun and must be capitalized (e.g., Domain Eukarya, Kingdom Animalia, Phylum Chordata, Genus Homo). The only exception is the specific epithet (the species name), which is always written entirely in lowercase.\n- Option A is wrong because all ranks above Genus are also capitalized.\n- Option B is wrong because the species name is the *only* rank that is strictly lowercase.\n- Option C is correct because every rank down to the Genus is capitalized, leaving only the species name lowercase.\n- Option D is wrong because Phylum, Class, Order, Family, and Genus are also capitalized.\n\n> **Key Takeaway:** In scientific nomenclature, all taxonomic ranks are capitalized except for the species name (specific epithet), which is always lowercase.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which taxonomic ranks must be italicized (or underlined) when written in scientific text?`,
+    options: [
+      `All ranks from Domain down to Species`,
+      `Kingdom and Phylum only`,
+      `Only the Species name (specific epithet)`,
+      `Only the Genus and the Species names`
+    ],
+    correct: 3,
+    explanation: `## Insight\nWhile high-level groups like Animalia or Chordata are capitalized, they are written in normal text. However, because the Genus and Species form the unique binomial name of an organism, they must stand out from the rest of the text. They are always italicized (e.g., *Homo sapiens*), or underlined if handwritten.\n- Option A is wrong because higher ranks (Kingdom, Phylum, Class, etc.) are never italicized.\n- Option B is wrong because Kingdom and Phylum are never italicized.\n- Option C is wrong because the Genus must also be italicized alongside the Species.\n- Option D is correct because only the Genus and Species names receive italic formatting.\n\n> **Key Takeaway:** In scientific writing, only the Genus and Species names are italicized (or underlined) to denote the formal binomial name.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `According to the strict rules of binomial nomenclature, what is the correct formatting for the scientific name of humans?`,
+    options: [
+      `*Homo sapiens*`,
+      `*Homo Sapiens*`,
+      `*homo sapiens*`,
+      `*HOMO SAPIENS*`
+    ],
+    correct: 0,
+    explanation: `## Insight\nBinomial nomenclature requires three things: the name must be italicized, the first part (the Genus) must be capitalized, and the second part (the specific epithet) must be entirely lowercase. Therefore, the human species is correctly written as *Homo sapiens*.\n- Option A is correct because it features an italicized, capitalized genus (*Homo*) and a lowercase specific epithet (*sapiens*).\n- Option B is wrong because the specific epithet (*sapiens*) is incorrectly capitalized.\n- Option C is wrong because the genus (*homo*) must be capitalized.\n- Option D is wrong because writing in all capital letters violates taxonomic grammar.\n\n> **Key Takeaway:** The correct binomial name for humans is *Homo sapiens*, with a capitalized genus and a lowercase species name, all italicized.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the scientific name *Homo sapiens*, what specific taxonomic level does the word "sapiens" represent?`,
+    options: [
+      `The Genus`,
+      `The Specific epithet`,
+      `The Family`,
+      `The Order`
+    ],
+    correct: 1,
+    explanation: `## Insight\nA binomial name consists of two parts. The first word is the Genus (e.g., *Homo*), which acts like a biological "last name" shared by closely related species. The second word is the specific epithet (e.g., *sapiens*), which acts like a "first name," distinguishing that exact species from all others in the genus.\n- Option A is wrong because *Homo* is the genus.\n- Option B is correct because the second word in a binomial name is the specific epithet.\n- Option C is wrong because the family for humans is Hominidae.\n- Option D is wrong because the order for humans is Primates.\n\n> **Key Takeaway:** In a binomial scientific name, the first word is the genus and the second word is the specific epithet.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `After being written out fully for the first time in a scientific paper, how is the name *Homo sapiens* correctly abbreviated?`,
+    options: [
+      `*H. Sapiens*`,
+      `*Homo s.*`,
+      `*H. sapiens*`,
+      `*H.sapiens* (without a space)`
+    ],
+    correct: 2,
+    explanation: `## Insight\nTo save space in academic writing, once a binomial name has been introduced, the genus can be abbreviated. The rule is to use the capitalized first letter of the genus, followed by a period, a space, and the full lowercase specific epithet. Thus, *Homo sapiens* becomes *H. sapiens*.\n- Option A is wrong because the specific epithet must remain lowercase.\n- Option B is wrong because the genus is abbreviated, not the specific epithet.\n- Option C is correct because *H. sapiens* perfectly follows the abbreviation rules.\n- Option D is wrong because a space is required between the period and the specific epithet.\n\n> **Key Takeaway:** Scientific names are abbreviated by using the capitalized initial of the genus, a period, a space, and the full lowercase species name (e.g., *H. sapiens*).`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which language is universally utilized for constructing binomial nomenclature in biology?`,
+    options: [
+      `English`,
+      `Greek`,
+      `French`,
+      `Latin (or Latinized words)`
+    ],
+    correct: 3,
+    explanation: `## Insight\nIn the 18th century, Latin was the universal language of European scholars. Carl Linnaeus used Latin (and Latinized Greek words) to name organisms so that a scientist in Sweden and a scientist in Italy would know exactly what organism was being discussed, bypassing confusing local common names.\n- Option A is wrong because English common names (like "bear") vary wildly across the globe and are not scientifically precise.\n- Option B is wrong because while Greek roots are often used, they are Latinized for the formal name.\n- Option C is wrong because French is a localized language.\n- Option D is correct because Latin ensures a dead, unchanging, and universally recognized scientific language.\n\n> **Key Takeaway:** Binomial nomenclature relies on Latin or Latinized words to provide a universally recognized, stable scientific name for every organism.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following represents the correctly formatted binomial name for a plant species?`,
+    options: [
+      `*Yucca filamentosa*`,
+      `*Yucca Filamentosa*`,
+      `*yucca filamentosa*`,
+      `*YUCCA FILAMENTOSA*`
+    ],
+    correct: 0,
+    explanation: `## Insight\nThe formatting rules for binomial nomenclature are universal across all domains of life, including botany. The name must be italicized, the genus (first word) must be capitalized, and the specific epithet (second word) must be entirely lowercase.\n- Option A is correct because *Yucca filamentosa* features an italicized, capitalized genus and a lowercase specific epithet.\n- Option B is wrong because the specific epithet must not be capitalized.\n- Option C is wrong because the genus must be capitalized.\n- Option D is wrong because all-caps violates standard taxonomic grammar.\n\n> **Key Takeaway:** Like all scientific names, a plant's binomial name requires a capitalized genus and a lowercase specific epithet, both italicized.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The exact same specific epithet (species name) can be used to describe entirely different animals, as long as they belong to different genera. Which pair exemplifies this rule?`,
+    options: [
+      `*Homo sapiens* and *Canis sapiens*`,
+      `*Ursus americanus* (American black bear) and *Bufo americanus* (American toad)`,
+      `*Felis catus* and *Canis catus*`,
+      `*Rosa indica* and *Homo indica*`
+    ],
+    correct: 1,
+    explanation: `## Insight\nA specific epithet acts like a descriptor (often noting geography, color, or shape). Because it is just an adjective, the word "americanus" can be applied to a bear (*Ursus americanus*) or a toad (*Bufo americanus*) without any confusion, as long as the Genus acts as the unique identifier.\n- Option A is wrong because *Canis sapiens* does not exist; dogs are not "wise."\n- Option B is correct because the descriptor *americanus* is legally used in completely unrelated genera (bears and toads).\n- Option C is wrong because *Canis catus* does not exist (dogs are not cats).\n- Option D is wrong because humans (*Homo*) do not have an *indica* species.\n\n> **Key Takeaway:** The same specific epithet can be reused across biology as long as the organisms belong to completely different genera.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Approximately how many species are estimated to currently exist on Earth?`,
+    options: [
+      `1.2 million`,
+      `5.0 million`,
+      `8.7 million`,
+      `15.0 million`
+    ],
+    correct: 2,
+    explanation: `## Insight\nWhile scientists have formally described and named roughly 1.2 million species, biological models analyzing ecosystems and discovery rates suggest the true diversity of life is much higher. The current accepted scientific estimate places the total number of eukaryotic species on Earth at approximately 8.7 million.\n- Option A is wrong because 1.2 million is roughly the number of *described* species, not the total estimated existence.\n- Option B is wrong because 5 million underestimates global diversity.\n- Option C is correct because 8.7 million is the widely cited consensus estimate for global species richness.\n- Option D is wrong because 15 million overshoots current models.\n\n> **Key Takeaway:** While only about 1.2 million species have been described, scientists estimate that roughly 8.7 million species exist on Earth.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which eminent evolutionary biologist formulated and proposed the Biological Species Concept (BSC) in 1942?`,
+    options: [
+      `Carl Linnaeus`,
+      `Charles Darwin`,
+      `Alfred Wallace`,
+      `Ernst Mayr`
+    ],
+    correct: 3,
+    explanation: `## Insight\nFor a long time, biologists struggled to define exactly what made a "species." In 1942, evolutionary biologist Ernst Mayr revolutionized taxonomy by proposing the Biological Species Concept, shifting the definition away from mere physical appearance toward actual reproductive compatibility.\n- Option A is wrong because Linnaeus relied entirely on physical (morphological) similarities centuries earlier.\n- Option B is wrong because Darwin focused on natural selection, not defining the exact boundary of a species.\n- Option C is wrong because Wallace was a co-discoverer of natural selection alongside Darwin.\n- Option D is correct because Ernst Mayr explicitly formulated the Biological Species Concept.\n\n> **Key Takeaway:** Ernst Mayr proposed the Biological Species Concept in 1942, shifting taxonomy toward reproductive isolation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `According to the Biological Species Concept (BSC), how is a species formally defined?`,
+    options: [
+      `A group of populations whose members can interbreed in nature and produce viable, fertile offspring, and are reproductively isolated from other groups.`,
+      `A group of organisms that share identical morphological (physical) characteristics, regardless of their ability to breed.`,
+      `A population of organisms that permanently live in the exact same geographic area.`,
+      `A group of organisms that share the exact same DNA sequence without any genetic variation.`
+    ],
+    correct: 0,
+    explanation: `## Insight\nThe Biological Species Concept argues that biology, not appearance, dictates a species. Even if two birds look identical, if they cannot mate and produce healthy, fertile chicks, they are different species. Conversely, dogs look incredibly different (Chihuahuas and Great Danes), but because they can interbreed and produce fertile offspring, they are the same species.\n- Option A is correct because the BSC strictly defines species by interbreeding and reproductive isolation.\n- Option B is wrong because this describes the Morphological Species Concept, which the BSC replaced.\n- Option C is wrong because populations can be geographically separated but still be the same species if they retain the ability to interbreed.\n- Option D is wrong because significant genetic variation exists within every healthy species.\n\n> **Key Takeaway:** The Biological Species Concept defines a species as a group of organisms capable of interbreeding and producing fertile offspring.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific biological process maintains the broad genetic uniformity of members within a single species under the Biological Species Concept?`,
+    options: [
+      `Genetic drift`,
+      `Sexual reproduction and gene flow`,
+      `Natural selection`,
+      `Genetic mutation`
+    ],
+    correct: 1,
+    explanation: `## Insight\nPopulations of the same species often live in slightly different environments. What prevents them from evolving away from each other into different species? Gene flow. Because individuals occasionally migrate and mate (sexual reproduction) between populations, they shuffle their genes together, maintaining a shared, uniform gene pool.\n- Option A is wrong because genetic drift causes random divergence, tearing populations apart genetically rather than keeping them uniform.\n- Option B is correct because sexual reproduction and gene flow act like a blender, keeping the species' gene pool mixed and uniform.\n- Option C is wrong because natural selection drives adaptation to local environments, which can promote divergence if gene flow stops.\n- Option D is wrong because mutations introduce new variations; they do not maintain uniformity.\n\n> **Key Takeaway:** Sexual reproduction and the continuous flow of genes between populations maintain the genetic uniformity of a species.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary evolutionary function of 'isolating mechanisms' between different populations?`,
+    options: [
+      `To prevent natural adaptation to environmental stress.`,
+      `To accelerate the rate of genetic mutation within a dying species.`,
+      `To prevent gene flow between groups, allowing them to genetically diverge into separate species.`,
+      "To encourage the formation of perfectly preserved fossils in sedimentary rock."
+    ],
+    correct: 2,
+    explanation: `## Insight\nFor one species to split into two (speciation), the gene blender must be stopped. Isolating mechanisms (like a new mountain range or different mating rituals) act as a barrier. By stopping gene flow, the two populations begin to accumulate different mutations and adapt to different environments until they can no longer interbreed.\n- Option A is wrong because isolation actually *allows* distinct adaptations to occur.\n- Option B is wrong because isolation does not change the inherent background rate of mutation.\n- Option C is correct because isolating mechanisms block gene flow, forcing populations onto separate evolutionary paths.\n- Option D is wrong because isolating mechanisms are reproductive/ecological barriers, unrelated to paleontology.\n\n> **Key Takeaway:** Isolating mechanisms block gene flow between populations, which is the required first step for speciation to occur.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which group of organisms exposes a major limitation of the Biological Species Concept, meaning the concept cannot be applied to them?`,
+    options: [
+      `Deep-ocean mammals like whales and dolphins`,
+      `Migratory birds that span multiple continents`,
+      `Flowering plants that utilize wind pollination`,
+      `Asexually reproducing organisms, such as bacteria`
+    ],
+    correct: 3,
+    explanation: `## Insight\nThe Biological Species Concept relies entirely on the question: "Do they interbreed?" This works perfectly for animals. However, organisms like bacteria, archaea, and some lizards reproduce asexually (by cloning themselves). Because they never interbreed, the BSC completely fails to define what a "species" is for these groups.\n- Option A is wrong because mammals reproduce sexually and interbreed, fitting the BSC perfectly.\n- Option B is wrong because migratory birds interbreed.\n- Option C is wrong because flowering plants reproduce sexually (pollination is plant sex).\n- Option D is correct because asexual organisms do not interbreed, rendering the BSC useless for classifying them.\n\n> **Key Takeaway:** The Biological Species Concept cannot be applied to asexual organisms because it relies entirely on the act of interbreeding.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `By what primary mechanism do bacteria, an asexually reproducing group, multiply?`,
+    options: [
+      `Binary fission`,
+      `Mitosis`,
+      `Meiosis`,
+      `Budding`
+    ],
+    correct: 0,
+    explanation: `## Insight\nBacteria are simple prokaryotes lacking a nucleus. When it is time to reproduce, a bacterium copies its single circular chromosome, elongates, and pinches exactly in half to create two identical clones. This rapid, asexual process is called binary fission.\n- Option A is correct because binary fission is the fundamental reproductive mechanism of bacteria.\n- Option B is wrong because mitosis involves the complex division of a nucleus, which bacteria lack.\n- Option C is wrong because meiosis creates sex cells (gametes), and bacteria are strictly asexual.\n- Option D is wrong because while yeast (a fungus) uses budding, bacteria rely overwhelmingly on binary fission.\n\n> **Key Takeaway:** Bacteria reproduce asexually through a process called binary fission, where one cell splits into two identical clones.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Some reptile species, like certain whiptail lizards, reproduce exclusively via parthenogenesis. What does this mean?`,
+    options: [
+      `They lay sterile eggs that must be fertilized externally by wandering males.`,
+      `Females produce unfertilized eggs that develop directly into fully functional female clones.`,
+      `They physically change their biological sex based on the temperature of their environment.`,
+      `They require highly specific captive environments to trigger their reproductive cycles.`
+    ],
+    correct: 1,
+    explanation: `## Insight\nParthenogenesis is a form of asexual reproduction found in some plants, insects, and reptiles. In these unique species, there are no males. The females produce eggs that already contain a full set of chromosomes. These unfertilized eggs develop directly into embryos, creating exact genetic clones of the mother.\n- Option A is wrong because external fertilization is sexual reproduction (common in fish and frogs), not parthenogenesis.\n- Option B is correct because parthenogenesis explicitly means an unfertilized egg developing into a viable clone.\n- Option C is wrong because sex-switching is sequential hermaphroditism (like clownfish), not parthenogenesis.\n- Option D is wrong because this is just environmental dependency, completely unrelated to the mechanism of parthenogenesis.\n\n> **Key Takeaway:** Parthenogenesis is an asexual reproductive strategy where females produce unfertilized eggs that develop directly into female clones.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What taxonomic challenge does the dark-eyed junco (a North American bird) perfectly illustrate?`,
+    options: [
+      `It represents a completely distinct genus that has no known living relatives.`,
+      `It is an artificially engineered hybrid species created entirely in a laboratory.`,
+      `It exists as a complex of vastly different-looking subspecies that nonetheless freely interbreed where their territories overlap.`,
+      `It is a separate biological phylum masquerading as a bird species.`
+    ],
+    correct: 2,
+    explanation: `## Insight\nThe dark-eyed junco looks incredibly different depending on where it lives (e.g., slate-colored in the East, white-winged in the West). Previously, they were classified as different species. However, where their ranges overlap, they freely interbreed and produce healthy chicks. Because of the Biological Species Concept, scientists had to lump them all into one highly variable species with multiple subspecies.\n- Option A is wrong because juncos are a highly abundant, well-related bird species.\n- Option B is wrong because they are naturally evolving wild birds.\n- Option C is correct because the junco illustrates how drastically different-looking animals can still be the same biological species if they interbreed.\n- Option D is wrong because birds belong to the phylum Chordata; a single bird cannot be a phylum.\n\n> **Key Takeaway:** The dark-eyed junco demonstrates that vastly different-looking populations must be classified as a single species if they successfully interbreed.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why do 'hybrid zones' present a significant complication for taxonomists applying the Biological Species Concept?`,
+    options: [
+      `They completely isolate populations, permanently stopping any evolutionary changes from occurring.`,
+      `They eliminate all genetic diversity within the overlapping populations, leading to immediate extinction.`,
+      `They completely prevent any successful reproduction from ever occurring.`,
+      `They allow interbreeding between seemingly distinct species, blurring the strict lines of reproductive isolation.`
+    ],
+    correct: 3,
+    explanation: `## Insight\nNature is messy. Sometimes, two distinct species that normally live apart will meet in a boundary area (a hybrid zone) and occasionally mate, producing hybrid offspring. This creates a headache for the Biological Species Concept, which demands strict reproductive isolation. If they interbreed in this zone, are they two species, or just one?\n- Option A is wrong because hybrid zones are areas of connection, not isolation.\n- Option B is wrong because hybrid zones actually introduce *new* genetic diversity via mixing (introgression).\n- Option C is wrong because the existence of a hybrid zone proves reproduction *is* occurring.\n- Option D is correct because hybridization blurs the strict reproductive boundaries required by the BSC.\n\n> **Key Takeaway:** Hybrid zones complicate taxonomy because interbreeding blurs the strict reproductive boundaries required to define separate species.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `When two distinct species successfully mate, their hybrid offspring are frequently:`,
+    options: [
+      `Less fertile than the pure parent species, often exhibiting severe reproductive viability issues or complete sterility.`,
+      `Significantly more fertile than either of their parent species due to genetic enhancement.`,
+      `Always completely sterile, with absolutely zero exceptions across the animal and plant kingdoms.`,
+      `Genetically identical clones of the maternal parent.`
+    ],
+    correct: 0,
+    explanation: `## Insight\nWhile species sometimes crossbreed, nature enforces a penalty. Because the parent chromosomes do not match perfectly, the resulting hybrid (like a mule, from a horse and donkey) usually struggles to produce healthy sex cells. Therefore, hybrids are generally far less fertile than their parents, which helps keep the two parent species distinct.\n- Option A is correct because hybrids generally suffer from reduced fertility or sterility (like mules).\n- Option B is wrong because hybridization usually damages reproductive viability via chromosomal mismatching.\n- Option C is wrong because some hybrids (especially in plants and some birds) are fully fertile, so it is not an absolute rule.\n- Option D is wrong because hybrids contain a 50/50 genetic mix of both parents, not a maternal clone.\n\n> **Key Takeaway:** Hybrids produced by mating distinct species frequently suffer from reduced fertility or complete sterility.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following describes a major limitation of using the Biological Species Concept (BSC) to classify life?`,
+    options: [
+      `It cannot be successfully applied to any plant species.`,
+      `It excludes asexual organisms because it relies entirely on the act of interbreeding.`,
+      `It completely ignores all visible morphological differences between organisms.`,
+      `It requires highly advanced genetic sequencing to be applied in the field.`
+    ],
+    correct: 1,
+    explanation: `## Insight\nThe BSC rests on a single pillar: reproductive isolation (who mates with whom). This completely excludes massive swaths of the tree of life. Bacteria, Archaea, and many single-celled eukaryotes reproduce asexually by dividing in half. Because they do not mate, the BSC cannot define where one bacterial species ends and another begins.\n- Option A is wrong because the BSC works well for the vast majority of sexually reproducing plants.\n- Option B is correct because the BSC is utterly useless for classifying asexually reproducing organisms.\n- Option C is wrong because while the BSC prioritizes interbreeding, morphology is still heavily used as a proxy to identify species initially.\n- Option D is wrong because the BSC was developed in 1942 based on field observation of mating, long before genetic sequencing existed.\n\n> **Key Takeaway:** The Biological Species Concept is fundamentally limited because it cannot classify asexually reproducing organisms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How does the phenomenon of 'horizontal gene transfer' in bacteria actively challenge the Biological Species Concept?`,
+    options: [
+      `Bacteria do not possess actual DNA, rendering genetic classification impossible.`,
+      `Bacteria are only capable of reproducing sexually, creating too many hybrid zones to track.`,
+      `It allows genes to be exchanged directly between entirely different bacterial lineages without any sexual reproduction occurring.`,
+      `It only occurs in highly controlled artificial laboratory settings, skewing natural data.`
+    ],
+    correct: 2,
+    explanation: `## Insight\nThe BSC assumes genes only flow vertically (from parents to offspring via mating). Bacteria cheat this system. A bacterium can build a physical bridge (a pilus) and shoot a copy of a gene (like antibiotic resistance) directly into a completely unrelated bacterial species next to it. This "horizontal" sharing blurs evolutionary lines without any sexual reproduction taking place.\n- Option A is wrong because bacteria possess DNA organized in a circular chromosome and plasmids.\n- Option B is wrong because bacteria are strictly asexual.\n- Option C is correct because horizontal gene transfer bypasses reproduction, moving genes between distinct lineages and blurring species lines.\n- Option D is wrong because horizontal gene transfer happens constantly in nature (e.g., in the human gut or in soil).\n\n> **Key Takeaway:** Horizontal gene transfer challenges species definitions because it allows bacteria to exchange genes directly with unrelated species without mating.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the context of taxonomy and biological classification, what exactly is a 'character'?`,
+    options: [
+      `The official, globally recognized scientific binomial name of an organism.`,
+      `A specific taxonomic rank representing a group of related species, such as a Family or Genus.`,
+      `The complete, mapped evolutionary history of a specific group of organisms.`,
+      `Any recognizable, observable, or measurable trait of an organism used to group or separate it from others.`
+    ],
+    correct: 3,
+    explanation: `## Insight\nTo sort organisms, taxonomists need data points. A "character" is simply any trait you can observe or measure. It could be morphological (e.g., number of petals on a flower), behavioral (e.g., mating calls), or genetic (e.g., a specific DNA sequence). Taxonomists use these characters to build identification keys.\n- Option A is wrong because the binomial name is nomenclature, not a character.\n- Option B is wrong because a group of species is a taxon, not a character.\n- Option C is wrong because evolutionary history is a phylogeny.\n- Option D is correct because a character is any observable biological trait used for classification.\n\n> **Key Takeaway:** A taxonomic character is any observable or measurable trait (physical, genetic, or behavioral) used to classify an organism.`
+  },
+
+  // ==================== ORIGINAL BANK (QUESTIONS 41 TO 205) ====================
+  // All original questions have term changed from "T1" to "T2"
+  {
+    course: "BI110", term: "T2",
+    q: `In biological classification, what is an alternate form of a taxonomic character called?`,
+    options:[`A character state`, `A genotype`, `A defining trait`, `A phenotype`],
+    correct: 0,
+    explanation: `## Insight\nA character is an observable feature, and the specific manifestation of that feature is its state. For example, if "leaf arrangement" is the character, then "opposite" or "whorled" are the character states.\n- Option A is correct because "character state" is the formal taxonomic term for alternate forms.\n- Option B is wrong because genotype refers to genetic makeup, not a taxonomic feature state.\n- Option C is wrong because "defining trait" is a generic term, not formal nomenclature.\n- Option D is wrong because phenotype refers to the overall physical expression of an organism.\n> **Key Takeaway:** An alternate or specific form of a taxonomic character is formally called a character state.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `If a specific taxonomic character can appear in more than two forms (e.g., leaf arrangement being opposite, alternate, or whorled), what is it classified as?`,
+    options:[`A binary character`, `A multistate character`, `A continuous character`, `A quantitative character`],
+    correct: 1,
+    explanation: `## Insight\nCharacters used in keys are defined by their possible states. A binary character only has two options (e.g., present/absent). A multistate character has three or more distinct possible forms.\n- Option A is wrong because binary means exactly two states.\n- Option B is correct because multistate explicitly defines a character with three or more forms.\n- Option C is wrong because continuous characters are measured on a scale (like height), not in discrete states.\n- Option D is wrong because quantitative implies numerical measurement.\n> **Key Takeaway:** A character with three or more distinct forms is classified as a multistate character.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What does a dichotomous key provide at each step of the identification process?`,
+    options:[`A list of all possible species within a specific region`, `Three or more highly specific descriptive choices`, `Two mutually exclusive choices that lead to the next step`, `A single evolutionary pathway leading back to a common ancestor`],
+    correct: 2,
+    explanation: `## Insight\nThe prefix "di-" means two. A dichotomous key works by forcing the user to make a choice between two mutually exclusive physical descriptions. Each choice leads to another pair of descriptions until the organism is identified.\n- Option A is wrong because it provides choices, not a master list.\n- Option B is wrong because three choices would make it a polychotomous key.\n- Option C is correct because dichotomous strictly means dividing into two mutually exclusive paths.\n- Option D is wrong because keys identify species, they do not map phylogenies.\n> **Key Takeaway:** A dichotomous key identifies organisms by providing exactly two mutually exclusive choices at each step.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In a dichotomous key, what are the paired, mutually exclusive choices at each step formally called?`,
+    options:[`Clades`, `Taxa`, `Characters`, `Couplets`],
+    correct: 3,
+    explanation: `## Insight\nA dichotomous key is built of paired statements (e.g., "1a. Leaves are round" vs "1b. Leaves are pointed"). Because these statements always come in pairs, the pair itself is termed a couplet.\n- Option A is wrong because clades are evolutionary branches.\n- Option B is wrong because taxa are groups of organisms.\n- Option C is wrong because characters are the traits themselves, not the paired statements.\n- Option D is correct because a couplet is the formal name for the paired choices in a key.\n> **Key Takeaway:** The paired, mutually exclusive descriptive statements in a dichotomous key are called couplets.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How is an indented (yoked) taxonomic key visually structured?`,
+    options:[`The paired choices are indented equally from the left margin, grouping related subsequent choices beneath them.`, `The choices are arranged in a circular, expanding diagram.`, `The choices are presented side by side in a comparative table.`, `The choices are written entirely in capital letters to denote higher taxonomic ranks.`],
+    correct: 0,
+    explanation: `## Insight\nIn an indented key, the two parts of a couplet are aligned at the same distance from the left margin. Subsequent questions derived from the first choice are indented further to the right, creating a nested, visual hierarchy.\n- Option A is correct because uniform indentation from the margin defines a yoked key.\n- Option B is wrong because circular diagrams describe cladograms or radial phylogenetic trees.\n- Option C is wrong because side-by-side presentation describes a bracketed key.\n- Option D is wrong because capitalization is a nomenclature rule, not a key structure.\n> **Key Takeaway:** An indented key spaces each paired couplet equally from the left margin, nesting subsequent choices visually.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is a major biological disadvantage of relying exclusively on printed dichotomous keys for identification?`,
+    options:[`They constantly require internet access to function in remote environments.`, `They often rely on specific seasonal features, such as flowers or fruits, which may not be present when the organism is found.`, `They are far too fast to use, leading to careless misidentifications by researchers.`, `They can only be used to classify extinct fossilised organisms.`],
+    correct: 1,
+    explanation: `## Insight\nDichotomous keys require you to answer every question in a fixed sequence. If step 2 asks "Are the flowers red or blue?", and you find the plant in winter when it has no flowers, you cannot proceed any further. The identification fails.\n- Option A is wrong because printed keys are physical books requiring no internet.\n- Option B is correct because fixed-sequence keys fail if seasonal characters are absent.\n- Option C is wrong because dichotomous keys are actually quite slow and methodical.\n- Option D is wrong because they are primarily used for living species.\n> **Key Takeaway:** Dichotomous keys are rigid; if an organism lacks a required seasonal feature (like a flower), the key becomes useless.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How does a poly-clave (multi-access) key improve upon the traditional dichotomous key?`,
+    options:[`It only utilizes morphological characters visible to the naked eye.`, `It strictly enforces a fixed, unchangeable sequence of questions to prevent errors.`, `It allows the user to start the identification process using any available character, rather than a fixed sequence.`, `It restricts the identification process to plant species only.`],
+    correct: 2,
+    explanation: `## Insight\nA poly-clave key is order-free. If a plant has no flowers but has distinct leaves, you can skip the flower questions and search the database purely by leaf shape. It filters down possibilities based on whatever data you currently have.\n- Option A is wrong because poly-clave keys can use genetic or microscopic data.\n- Option B is wrong because enforcing a fixed sequence is the exact flaw of a dichotomous key.\n- Option C is correct because being order-free is the defining advantage of a poly-clave key.\n- Option D is wrong because they are used for all domains of life.\n> **Key Takeaway:** Poly-clave (multi-access) keys are order-free, allowing identification to start with any observable character.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is a primary operational advantage of utilizing poly-clave keys in taxonomy?`,
+    options:[`They are significantly slower and more methodical than dichotomous keys.`, `They require every single character of the organism to be present simultaneously.`, `They are completely impossible to digitise or computerise.`, `They are order-free, allowing for faster and more flexible identification based on whatever data is available.`],
+    correct: 3,
+    explanation: `## Insight\nBecause poly-clave keys operate like a filtering database rather than a rigid pathway, users eliminate choices rapidly based on obvious features, making identification much faster and highly resilient to missing data (like a missing tail on an animal).\n- Option A is wrong because they are generally faster, not slower.\n- Option B is wrong because their main advantage is working with incomplete data.\n- Option C is wrong because they are almost exclusively computerized today.\n- Option D is correct because being order-free provides immense flexibility and speed.\n> **Key Takeaway:** Poly-clave keys offer faster, flexible identification because they do not require a rigid order of observation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because they handle massive, non-linear data sets efficiently, poly-clave keys are most commonly deployed in what format?`,
+    options:[`Computer-aided interactive software programs`, `Hand-drawn, monochromatic field illustrations`, `Traditional, printed pocket field guides`, `Black-and-white photographic archives`],
+    correct: 0,
+    explanation: `## Insight\nTrying to print a poly-clave key requires hundreds of punch-cards or complex tables. However, software databases handle multi-access filtering instantly. Today, poly-clave keys are almost universally deployed as interactive digital applications.\n- Option A is correct because computers easily process the non-linear filtering required by poly-clave keys.\n- Option B is wrong because illustrations cannot filter data.\n- Option C is wrong because printed guides usually rely on linear dichotomous keys.\n- Option D is wrong because static photographs offer no interactive filtering.\n> **Key Takeaway:** Due to their non-linear, multi-access nature, poly-clave keys are most efficiently deployed as computer-aided interactive programs.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which 19th-century scientist was the first to propose the Kingdom Protista to group single-celled organisms?`,
+    options:[`Carl Linnaeus`, `Ernst Haeckel`, `Robert Whittaker`, `Carl Woese`],
+    correct: 1,
+    explanation: `## Insight\nIn 1886, Ernst Haeckel recognized that microscopic, single-celled organisms did not fit neatly into the established Plant or Animal kingdoms. To solve this, he proposed a third kingdom, Protista, to accommodate these unique microorganisms.\n- Option A is wrong because Linnaeus only used a two-kingdom system (Plantae and Animalia).\n- Option B is correct because Ernst Haeckel historically introduced the Kingdom Protista.\n- Option C is wrong because Whittaker later expanded this to the five-kingdom system.\n- Option D is wrong because Woese developed the three-domain system using genetics.\n> **Key Takeaway:** Ernst Haeckel first proposed the Kingdom Protista in 1886 to classify single-celled organisms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `According to the fossil record, approximately when did the first protists (early eukaryotes) evolve on Earth?`,
+    options:[`500 million years ago`, `3.8 billion years ago`, `1.7 billion years ago`, `65 million years ago`],
+    correct: 2,
+    explanation: `## Insight\nLife on Earth was exclusively prokaryotic (bacteria/archaea) for billions of years. The fossil record indicates that the first complex, membrane-bound eukaryotic cells (early protists) appeared roughly 1.7 billion years ago, likely through endosymbiosis.\n- Option A is wrong because 500 million years ago marks the Cambrian explosion of complex animals.\n- Option B is wrong because 3.8 billion years ago is roughly when the first simple prokaryotic life appeared.\n- Option C is correct because the earliest eukaryotic protists appear in the fossil record around 1.7 billion years ago.\n- Option D is wrong because 65 million years ago marks the extinction of the dinosaurs.\n> **Key Takeaway:** The first eukaryotic protists evolved approximately 1.7 billion years ago.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What fundamental cellular characteristic unites all organisms classified as protists?`,
+    options:[`They are all obligate intracellular parasites lacking their own DNA.`, `They are strictly multicellular organisms with highly specialized tissue systems.`, `They completely lack a cell membrane and possess a peptidoglycan cell wall.`, `They are all eukaryotic, meaning they possess a true, membrane-bound nucleus.`],
+    correct: 3,
+    explanation: `## Insight\nProtista is a highly diverse "catch-all" kingdom. Some photosynthesize, some hunt, some are single-celled, and some are massive kelps. The single unifying feature of all protists is that they are eukaryotes—their DNA is safely housed inside a nucleus.\n- Option A is wrong because most protists are free-living, and all possess DNA.\n- Option B is wrong because the vast majority of protists are unicellular, and they lack true specialized tissues.\n- Option C is wrong because lacking a nucleus and having peptidoglycan defines Bacteria.\n- Option D is correct because possessing a true nucleus is the defining trait of all protists.\n> **Key Takeaway:** The unifying characteristic of all protists is that they are eukaryotic organisms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because they are highly susceptible to desiccation (drying out), in what habitats are protists primarily found?`,
+    options:[`Aquatic or highly moist environments`, `Deep, arid desert sands`, `High-altitude, frozen mountain peaks`, `Inside solid, impermeable igneous rock`],
+    correct: 0,
+    explanation: `## Insight\nProtists lack the waxy cuticles of plants or the thick skin of animals that prevent water loss. Consequently, they must live where water is abundant—whether in oceans, freshwater lakes, damp soil, or the internal fluids of host organisms.\n- Option A is correct because protists require water or constant moisture to survive and reproduce.\n- Option B is wrong because arid sand would instantly desiccate and kill them.\n- Option C is wrong because frozen peaks lack liquid water.\n- Option D is wrong because solid rock provides no fluid medium for survival.\n> **Key Takeaway:** Due to their lack of protective outer layers, protists are primarily found in aquatic or highly moist environments.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which unique protist demonstrates a mixotrophic lifestyle, meaning it is both photosynthetic (like a plant) and highly motile (like an animal)?`,
+    options:[`Amoeba`, `Euglena`, `Paramecium`, `Plasmodium`],
+    correct: 1,
+    explanation: `## Insight\nEuglena is a fascinating evolutionary bridge. It contains bright green chloroplasts to produce its own food via photosynthesis in the light. However, it also possesses a whip-like flagellum allowing it to swim actively, and it can consume nutrients from the water in the dark.\n- Option A is wrong because Amoebas are heterotrophic hunters, not photosynthetic.\n- Option B is correct because Euglena combines photosynthetic chloroplasts with a motile flagellum.\n- Option C is wrong because Paramecia are strictly heterotrophic ciliates.\n- Option D is wrong because Plasmodium is a non-motile, parasitic sporozoan.\n> **Key Takeaway:** Euglena is a unique mixotrophic protist that is both actively motile and capable of photosynthesis.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `By what specific cellular mechanism does an Amoeba ingest its food?`,
+    options:[`By absorbing dissolved nutrients strictly through passive osmosis`, `By utilizing a rigid oral groove lined with beating cilia`, `By extending its cell membrane to engulf prey in a process called phagocytosis`, `By secreting highly acidic digestive enzymes externally onto the food source`],
+    correct: 2,
+    explanation: `## Insight\nAn Amoeba has no fixed shape. When it encounters prey (like a bacterium), it pushes its cytoplasm outward to form "false feet" (pseudopodia) that completely wrap around and swallow the prey whole. This cellular engulfing is called phagocytosis.\n- Option A is wrong because osmosis moves water, not solid food particles.\n- Option B is wrong because an oral groove is utilized by Paramecia, not Amoebas.\n- Option C is correct because phagocytosis is the physical engulfing of prey using pseudopodia.\n- Option D is wrong because external digestion is characteristic of fungi, not Amoebas.\n> **Key Takeaway:** Amoebas feed through phagocytosis, utilizing their flexible membranes to surround and engulf prey.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific group of protozoans utilizes temporary cytoplasmic extensions called 'pseudopodia' for both locomotion and feeding?`,
+    options:[`Zooflagellates`, `Ciliates`, `Sporozoans`, `Sarcodinians (Amoebas)`],
+    correct: 3,
+    explanation: `## Insight\nProtozoans are classified by how they move. The Sarcodina group relies on pseudopodia (literally "false feet"). They stream their internal cytoplasm in a desired direction, pushing the cell membrane outward to drag themselves forward or to surround food.\n- Option A is wrong because zooflagellates move using whip-like flagella.\n- Option B is wrong because ciliates move using tiny hair-like cilia.\n- Option C is wrong because sporozoans are generally non-motile parasites.\n- Option D is correct because Sarcodinians, such as Amoebas, rely exclusively on pseudopodia.\n> **Key Takeaway:** Sarcodinians (like Amoebas) utilize temporary cytoplasmic extensions called pseudopodia for movement and feeding.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The parasitic flagellate *Trypanosoma gambiense* is the causative agent of which severe human disease?`,
+    options:[`African sleeping sickness`, `Malaria`, `Chagas disease`, `Amoebic dysentery`],
+    correct: 0,
+    explanation: `## Insight\n*Trypanosoma gambiense* is a deadly, blood-borne protozoan parasite found in Sub-Saharan Africa. It invades the central nervous system and the brain, causing extreme lethargy, disruption of the sleep cycle, and eventually death if untreated—a disease known as African sleeping sickness.\n- Option A is correct because *T. gambiense* causes African sleeping sickness.\n- Option B is wrong because malaria is caused by the *Plasmodium* parasite.\n- Option C is wrong because Chagas is caused by *Trypanosoma cruzi* in the Americas.\n- Option D is wrong because dysentery is caused by *Entamoeba histolytica*.\n> **Key Takeaway:** *Trypanosoma gambiense* is the parasitic protozoan responsible for causing African sleeping sickness.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific insect acts as the biological vector responsible for transmitting *Trypanosoma gambiense* to humans?`,
+    options:[`The Anopheles mosquito`, `The Tsetse fly`, `The deer tick`, `The Sandfly`],
+    correct: 1,
+    explanation: `## Insight\nParasites require a vector to travel between hosts. For African sleeping sickness, the vector is the Tsetse fly. When the fly bites an infected host, it ingests the *Trypanosoma* parasite, which multiplies in the fly's gut and is injected into the next human the fly bites.\n- Option A is wrong because the Anopheles mosquito transmits malaria.\n- Option B is correct because the Tsetse fly is the exclusive vector for African sleeping sickness.\n- Option C is wrong because ticks transmit diseases like Lyme disease.\n- Option D is wrong because sandflies transmit Leishmaniasis.\n> **Key Takeaway:** The Tsetse fly is the biological vector that transmits the *Trypanosoma* parasite.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which locomotion structure does the protist *Paramecium* utilize to move rapidly through aquatic environments?`,
+    options:[`A single, long flagellum`, `Temporary pseudopodia`, `Thousands of tiny, hair-like cilia`, `Resistant, airborne spores`],
+    correct: 2,
+    explanation: `## Insight\n*Paramecium* belongs to a group of protists called ciliates. Its entire outer membrane is covered in thousands of microscopic, hair-like structures called cilia. These cilia beat in a highly coordinated, wave-like rhythm, acting like thousands of tiny oars propelling the cell through water.\n- Option A is wrong because flagella belong to flagellates like Euglena or sperm cells.\n- Option B is wrong because pseudopodia belong to amoebas.\n- Option C is correct because *Paramecium* relies entirely on the coordinated beating of cilia for movement.\n- Option D is wrong because spores are for reproduction/survival, not active aquatic locomotion.\n> **Key Takeaway:** *Paramecium* moves efficiently through water using thousands of beating, hair-like cilia.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because it relies on thousands of beating hairs for movement and feeding, to which specific protozoan group does *Paramecium* belong?`,
+    options:[`Sarcodina`, `Mastigophora`, `Sporozoa`, `Ciliophora`],
+    correct: 3,
+    explanation: `## Insight\nProtozoans are classified by their mode of locomotion. Sarcodina use false feet, Mastigophora use flagella, Sporozoa don't move, and Ciliophora (ciliates) use cilia. Because *Paramecium* is completely covered in cilia, it is the textbook example of the Ciliophora group.\n- Option A is wrong because Sarcodina includes amoebas.\n- Option B is wrong because Mastigophora includes flagellates.\n- Option C is wrong because Sporozoa are non-motile parasites.\n- Option D is correct because *Paramecium* is classified under Ciliophora due to its ciliated membrane.\n> **Key Takeaway:** *Paramecium* belongs to the protozoan group Ciliophora because it utilizes cilia for movement.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which distinct group of protozoans is characterised by being entirely non-motile and exclusively parasitic in nature?`,
+    options:[`Sporozoans`, `Ciliophorans`, `Zooflagellates`, `Sarcodinians`],
+    correct: 0,
+    explanation: `## Insight\nMost protozoans hunt or scavenge, requiring movement. Sporozoans (also called Apicomplexans), however, have evolved to live entirely inside other organisms. Because they absorb nutrients directly from their host's bodily fluids, they have completely lost the need for locomotory structures like cilia or flagella.\n- Option A is correct because Sporozoans lack locomotion structures and are obligate parasites.\n- Option B is wrong because Ciliophorans move rapidly using cilia.\n- Option C is wrong because Zooflagellates move using flagella.\n- Option D is wrong because Sarcodinians move using pseudopodia.\n> **Key Takeaway:** Sporozoans are unique among protozoans because they completely lack locomotory structures and are obligate parasites.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The devastating human disease malaria is caused by a parasitic protozoan belonging to which genus?`,
+    options:[`*Trypanosoma*`, `*Plasmodium*`, `*Leishmania*`, `*Toxoplasma*`],
+    correct: 1,
+    explanation: `## Insight\nMalaria is not caused by a virus or a bacterium; it is caused by a single-celled eukaryotic parasite. This parasite belongs to the genus *Plasmodium* (specifically *P. falciparum* and others). It invades and destroys human red blood cells, causing severe fever and anemia.\n- Option A is wrong because *Trypanosoma* causes sleeping sickness.\n- Option B is correct because *Plasmodium* is the causative agent of malaria.\n- Option C is wrong because *Leishmania* causes leishmaniasis (flesh-eating disease).\n- Option D is wrong because *Toxoplasma* causes toxoplasmosis (often via cat feces).\n> **Key Takeaway:** The malaria parasite belongs to the protozoan genus *Plasmodium*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific organism serves as the biological vector responsible for transmitting the *Plasmodium* parasite to humans?`,
+    options:[`The Tsetse fly`, `The Culex mosquito`, `The female Anopheles mosquito`, `The Sandfly`],
+    correct: 2,
+    explanation: `## Insight\nThe *Plasmodium* parasite cannot survive outside a host. It relies on the female *Anopheles* mosquito to act as a flying syringe. When the mosquito takes a blood meal to nourish her eggs, she unknowingly injects the parasite into the human bloodstream via her saliva.\n- Option A is wrong because the Tsetse fly transmits sleeping sickness.\n- Option B is wrong because the *Culex* mosquito primarily transmits viruses like West Nile, not malaria.\n- Option C is correct because only the female *Anopheles* mosquito acts as the vector for malaria.\n- Option D is wrong because the sandfly transmits leishmaniasis.\n> **Key Takeaway:** Malaria is transmitted exclusively through the bite of an infected female *Anopheles* mosquito.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In algal taxonomy, the phylum Chlorophyta is more commonly known by what name?`,
+    options:[`Brown algae`, `Red algae`, `Fire algae`, `Green algae`],
+    correct: 3,
+    explanation: `## Insight\nThe prefix "chloro-" means green. Members of the phylum Chlorophyta contain the exact same photosynthetic pigments (Chlorophyll *a* and *b*) as terrestrial land plants. This gives them a distinct bright green colour and heavily implies they are the evolutionary ancestors of modern plants.\n- Option A is wrong because brown algae are Phaeophyta.\n- Option B is wrong because red algae are Rhodophyta.\n- Option C is wrong because fire algae are Pyrrophyta (dinoflagellates).\n- Option D is correct because Chlorophyta literally translates to "green plants/algae."\n> **Key Takeaway:** The phylum Chlorophyta is commonly known as the green algae.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The filamentous, spiral-chloroplast-bearing alga known as *Spirogyra* belongs to which specific phylum?`,
+    options:[`Chlorophyta`, `Rhodophyta`, `Phaeophyta`, `Pyrrophyta`],
+    correct: 0,
+    explanation: `## Insight\n*Spirogyra* is a classic freshwater alga that forms long, unbranched filaments. Under a microscope, its chloroplasts form beautiful, spiral ribbon shapes. Because it utilizes chlorophyll *a* and *b* to photosynthesize, it is a quintessential member of the green algae family.\n- Option A is correct because *Spirogyra* is a filamentous member of the green algae (Chlorophyta).\n- Option B is wrong because it does not possess red phycoerythrin pigments.\n- Option C is wrong because it lacks the brown pigment fucoxanthin.\n- Option D is wrong because it is not a dinoflagellate.\n> **Key Takeaway:** *Spirogyra* is a well-known, filamentous green alga belonging to the phylum Chlorophyta.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How do green algae (Chlorophyta) biochemically store their excess food reserves?`,
+    options:[`As glycogen`, `As starch`, `As lipid oils`, `As laminarin`],
+    correct: 1,
+    explanation: `## Insight\nOne of the strongest pieces of evidence linking green algae to modern land plants is their biochemistry. Just like potatoes and wheat, green algae synthesize excess glucose during photosynthesis and link it together into long, complex chains to store it as solid starch.\n- Option A is wrong because glycogen is the primary storage molecule in animals and fungi, not green algae.\n- Option B is correct because green algae, like terrestrial plants, store food as starch.\n- Option C is wrong because storing food as oil is characteristic of diatoms.\n- Option D is wrong because laminarin is the storage carbohydrate of brown algae.\n> **Key Takeaway:** Green algae share a critical biochemical trait with land plants: they store their food reserves as starch.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific phylum of marine algae is commercially harvested to produce the gelatinous substance known as agar?`,
+    options:[`Green algae (Chlorophyta)`, `Brown algae (Phaeophyta)`, `Red algae (Rhodophyta)`, `Golden algae (Chrysophyta)`],
+    correct: 2,
+    explanation: `## Insight\nRed algae live in deep marine environments. To survive the immense water pressure and crashing waves, their cell walls contain highly flexible, gelatinous polysaccharides. Humans harvest these specific red algae and extract this gelatinous material to produce agar.\n- Option A is wrong because green algae do not produce agar.\n- Option B is wrong because brown algae produce algin, not agar.\n- Option C is correct because agar is derived directly from the cell walls of red algae (Rhodophyta).\n- Option D is wrong because golden algae (diatoms) produce silica shells, not agar.\n> **Key Takeaway:** Agar is a commercially valuable gelatinous substance extracted from the cell walls of red algae (Rhodophyta).`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary, critical use of agar in scientific microbiology laboratories?`,
+    options:[`It is used as a chemical fixative to preserve dead tissue.`, `It is used as a highly reactive stain to identify DNA.`, `It is used as a liquid solvent to dissolve bacterial cell walls.`, `It is used as a solidifying agent to create nutrient culture media for growing bacteria and fungi.`],
+    correct: 3,
+    explanation: `## Insight\nBacteria need food to grow, but they can't be grown easily in plain liquid broth if you want to isolate individual colonies. Agar is a perfect structural matrix; it dissolves in boiling water, solidifies at room temperature, and importantly, bacteria cannot digest it. This makes it the perfect solid jelly for petri dishes.\n- Option A is wrong because fixatives are chemicals like formaldehyde.\n- Option B is wrong because agar is a clear structural jelly, not a chemical stain.\n- Option C is wrong because it is inert and does not dissolve cell walls.\n- Option D is correct because agar provides the stable, solid surface needed for microbial culture plates.\n> **Key Takeaway:** In laboratories, agar is essential as a solidifying agent for biological culture media used to grow microbes.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The thickener 'carrageenan', widely used in dairy products like ice cream and chocolate milk, is extracted from which algal group?`,
+    options:[`Red algae (Rhodophyta)`, `Brown algae (Phaeophyta)`, `Green algae (Chlorophyta)`, `Diatoms (Chrysophyta)`],
+    correct: 0,
+    explanation: `## Insight\nSimilar to agar, carrageenan is a complex, gelatinous carbohydrate found in the cell walls of red algae (specifically Irish moss). Because it binds strongly to milk proteins and prevents liquids from separating, it is a globally ubiquitous ingredient in the modern food industry.\n- Option A is correct because carrageenan is exclusively extracted from red algae.\n- Option B is wrong because brown algae yield a different thickener called algin.\n- Option C is wrong because green algae are not used for industrial thickeners.\n- Option D is wrong because diatoms provide silica (diatomaceous earth), not food thickeners.\n> **Key Takeaway:** Carrageenan is a valuable industrial thickening agent extracted from the cell walls of red algae.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `To which specific taxonomic group do the massive, underwater forest-forming organisms known as 'kelps' belong?`,
+    options:[`Red algae (Rhodophyta)`, `Brown algae (Phaeophyta)`, `Green algae (Chlorophyta)`, `Fire algae (Pyrrophyta)`],
+    correct: 1,
+    explanation: `## Insight\nKelps are not true plants; they are massive, multicellular protists. They belong to the brown algae group. Thriving in cold, nutrient-rich coastal waters, they can grow up to 50 meters long, creating dense underwater forests that provide critical habitats for marine life.\n- Option A is wrong because red algae are typically smaller, deep-water organisms.\n- Option B is correct because kelps are the largest members of the brown algae phylum (Phaeophyta).\n- Option C is wrong because green algae rarely achieve massive, tree-like multicellular forms.\n- Option D is wrong because fire algae are microscopic, single-celled dinoflagellates.\n> **Key Takeaway:** Kelps are massive, multicellular marine organisms classified as brown algae (Phaeophyta).`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The industrial compound 'algin', which is widely used as a stabilizer in cosmetics and ice cream, is extracted from:`,
+    options:[`Red algae`, `Green algae`, `Brown algae`, `Dinoflagellates`],
+    correct: 2,
+    explanation: `## Insight\nBrown algae (like kelp) constantly endure the violent mechanical stress of crashing ocean waves. To prevent their tissues from tearing, their cell walls contain alginic acid (algin), a highly flexible, rubbery carbohydrate. Industry extracts this to make products smooth and prevent ingredients from separating.\n- Option A is wrong because red algae provide agar and carrageenan.\n- Option B is wrong because green algae do not produce industrial stabilizers.\n- Option C is correct because algin is the specific structural carbohydrate found in brown algae.\n- Option D is wrong because dinoflagellates are toxic micro-organisms, not a source of stabilizers.\n> **Key Takeaway:** Algin is an industrial stabilizer and thickener extracted from the cell walls of brown algae.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What unique inorganic material comprises the intricate, glass-like cell walls (frustules) of diatoms?`,
+    options:[`Cellulose`, `Chitin`, `Calcium carbonate`, `Hydrated silica`],
+    correct: 3,
+    explanation: `## Insight\nDiatoms are photosynthetic micro-organisms, but instead of using soft organic molecules for protection, they extract dissolved silicon from the water. They build incredibly intricate, rigid, two-part shells (frustules) out of hydrated silica—essentially living inside microscopic glass boxes.\n- Option A is wrong because cellulose forms the walls of plants and green algae.\n- Option B is wrong because chitin forms fungal walls and insect exoskeletons.\n- Option C is wrong because calcium carbonate forms the shells of foraminifera and corals.\n- Option D is correct because diatom shells are uniquely made of hydrated silica (glass).\n> **Key Takeaway:** Diatoms are unique among algae because their cell walls (frustules) are constructed entirely from rigid, hydrated silica.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the geological origin of the industrial material known as 'diatomaceous earth'?`,
+    options:[`The massive accumulation of fossilized silica shells from ancient dead diatoms.`, `The crushing of solid granite boulders by glacial movement.`, `The chemical precipitation of calcium carbonate in shallow lakes.`, `The accumulation of volcanic ash from explosive eruptions.`],
+    correct: 0,
+    explanation: `## Insight\nWhen diatoms die, their organic parts decay, but their microscopic glass (silica) shells sink to the ocean floor. Over millions of years, these shells accumulate in massive layers hundreds of feet thick. When these seabed layers are uplifted and mined, the resulting chalky, highly porous white powder is called diatomaceous earth.\n- Option A is correct because diatomaceous earth is literally fossilized diatom silica shells.\n- Option B is wrong because crushed granite creates glacial flour, not diatomaceous earth.\n- Option C is wrong because calcium carbonate creates limestone or chalk.\n- Option D is wrong because volcanic ash creates tuff.\n> **Key Takeaway:** Diatomaceous earth is a powdery rock formed from the accumulated, fossilized silica shells of ancient diatoms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Under which specific algal phylum are diatoms officially classified?`,
+    options:[`Chlorophyta`, `Chrysophyta (Golden algae)`, `Rhodophyta`, `Phaeophyta`],
+    correct: 1,
+    explanation: `## Insight\nDiatoms contain chlorophyll but also possess abundant accessory pigments (carotenes and xanthophylls) that mask the green colour, giving them a distinct yellow-brown or golden hue. Because of this pigmentation and their unique biochemistry, they are grouped into the phylum Chrysophyta.\n- Option A is wrong because Chlorophyta encompasses green algae.\n- Option B is correct because diatoms belong to the golden algae phylum, Chrysophyta.\n- Option C is wrong because Rhodophyta represents red algae.\n- Option D is wrong because Phaeophyta represents large brown algae like kelp.\n> **Key Takeaway:** Due to their golden-brown photosynthetic pigments, diatoms are classified under the phylum Chrysophyta.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which algal phylum is frequently referred to as the 'fire algae' due to their bioluminescent properties and association with toxic red tides?`,
+    options:[`Phaeophyta`, `Chlorophyta`, `Pyrrophyta (Dinoflagellates)`, `Chrysophyta`],
+    correct: 2,
+    explanation: `## Insight\nThe prefix "pyro-" means fire. Members of the phylum Pyrrophyta (the dinoflagellates) earned this dramatic nickname for two reasons: many species literally glow in the dark when disturbed (bioluminescence), and when they bloom uncontrollably, they turn the ocean a fiery red colour.\n- Option A is wrong because brown algae do not bioluminesce or cause red tides.\n- Option B is wrong because green algae lack these specific toxic and glowing properties.\n- Option C is correct because Pyrrophyta translates to "fire algae," reflecting their glowing and red-tide behaviors.\n- Option D is wrong because golden algae (diatoms) do not cause classic toxic red tides.\n> **Key Takeaway:** Dinoflagellates are classified as Pyrrophyta (fire algae) due to their spectacular bioluminescence and red tide blooms.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The microscopic, armoured organisms known as 'dinoflagellates' belong to which taxonomic phylum?`,
+    options:[`Chlorophyta`, `Rhodophyta`, `Phaeophyta`, `Pyrrophyta`],
+    correct: 3,
+    explanation: `## Insight\nDinoflagellates are bizarre, single-celled organisms. They wear armor plates made of cellulose and possess two flagella that spin them through the water like a top. Taxonomically, because of their unique pigments and genetics, they are placed in the phylum Pyrrophyta.\n- Option A is wrong because green algae do not possess the unique armored plates of dinoflagellates.\n- Option B is wrong because red algae are mostly multicellular macro-algae.\n- Option C is wrong because brown algae include the massive kelps.\n- Option D is correct because dinoflagellates are the defining members of the phylum Pyrrophyta.\n> **Key Takeaway:** Dinoflagellates are the microscopic, armored, spinning organisms that make up the phylum Pyrrophyta.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The devastating ecological phenomenon known as a 'red tide' is caused by explosive population blooms of which organism?`,
+    options:[`Dinoflagellates (e.g., *Gonyaulax*)`, `Diatoms`, `Green algae`, `Brown algae`],
+    correct: 0,
+    explanation: `## Insight\nWhen ocean waters become unusually warm and nutrient-rich, certain dinoflagellates (like *Gonyaulax* or *Karenia*) reproduce exponentially. Their millions of microscopic bodies contain reddish pigments, literally dying the coastal waters red. This massive, explosive growth is a red tide.\n- Option A is correct because dinoflagellate blooms are the direct cause of red tides.\n- Option B is wrong because while diatoms bloom, they do not cause the classic toxic red tide.\n- Option C is wrong because green algae blooms cause green pond scum, not red tides.\n- Option D is wrong because brown algae do not cause toxic microbial blooms.\n> **Key Takeaway:** Red tides are caused by the explosive, uncontrolled population blooms of specific dinoflagellates.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why are red tide blooms ecologically devastating and highly dangerous to humans?`,
+    options:[`The organisms rapidly consume all the liquid water, drying out the coastline.`, `The organisms produce potent neurotoxins that accumulate in shellfish and kill marine life.`, `The organisms physically entangle fish and marine mammals in massive, unbreakable nets.`, `The organisms emit high levels of radioactive radiation into the surrounding water.`],
+    correct: 1,
+    explanation: `## Insight\nDuring a red tide, the sheer volume of dinoflagellates is a problem, but their biochemistry is the true danger. Many species produce saxitoxin, a devastating neurotoxin. Filter-feeding clams and oysters concentrate this toxin. If humans eat the shellfish, it causes paralytic shellfish poisoning, which can be fatal.\n- Option A is wrong because microorganisms cannot dry out an ocean.\n- Option B is correct because the release of potent neurotoxins is what makes red tides lethal.\n- Option C is wrong because dinoflagellates are microscopic and cannot physically entangle large animals.\n- Option D is wrong because biology does not generate nuclear radiation.\n> **Key Takeaway:** Red tide dinoflagellates produce severe neurotoxins that kill fish and cause paralytic poisoning in humans who eat contaminated shellfish.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Bioluminescence, the ability to emit visible light, is a famous characteristic of which group of marine protists?`,
+    options:[`Diatoms`, `Green algae`, `Dinoflagellates`, `Red algae`],
+    correct: 2,
+    explanation: `## Insight\nIf you disturb the water at night on certain beaches, it glows with a brilliant blue-green light. This is bioluminescence, a chemical reaction (using luciferin and luciferase) triggered by mechanical stress. The organisms responsible are predominantly marine dinoflagellates (like *Noctiluca*), which flash to scare off predators.\n- Option A is wrong because diatoms do not possess bioluminescent chemistry.\n- Option B is wrong because green algae do not glow in the dark.\n- Option C is correct because bioluminescence is a famous, defining trait of many dinoflagellates.\n- Option D is wrong because macroscopic red algae do not emit light.\n> **Key Takeaway:** Many dinoflagellates possess the unique biochemical ability to emit visible light (bioluminescence) when physically disturbed.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because they absorb nutrients from dead organic matter and produce spores, slime molds are broadly classified as:`,
+    options:[`Plant-like protists`, `Animal-like protists`, `Bacteria`, `Fungi-like protists`],
+    correct: 3,
+    explanation: `## Insight\nSlime molds are an evolutionary puzzle. They creep around and eat bacteria like an animal (amoeba), but when food runs out, they grow stalks and release spores exactly like a fungus. Because their ecological role and reproduction mimic fungi so closely, they are classified as fungi-like protists.\n- Option A is wrong because they do not photosynthesize like plants.\n- Option B is wrong because animals do not grow stalks and release airborne spores.\n- Option C is wrong because slime molds are highly complex eukaryotes, not bacteria.\n- Option D is correct because their saprophytic lifestyle and spore reproduction make them fungi-like.\n> **Key Takeaway:** Slime molds are considered fungi-like protists because they decompose dead organic matter and reproduce using spores.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `During favorable environmental conditions, plasmodial slime molds exist as a massive, single-celled, creeping mass of cytoplasm known as a:`,
+    options:[`Plasmodium`, `Fruiting body`, `Sporangium`, `Mycelium`],
+    correct: 0,
+    explanation: `## Insight\nWhen the environment is damp and food is plentiful, the slime mold thrives. It forms a single, gigantic membrane containing thousands of nuclei but no internal cell walls. This brightly coloured, creeping blob of slime (which actively hunts bacteria and engulfs rotting wood) is called a plasmodium.\n- Option A is correct because the feeding stage of the slime mold is scientifically termed a plasmodium.\n- Option B is wrong because the fruiting body only forms when conditions become unfavorable.\n- Option C is wrong because a sporangium is the specific capsule that holds spores on the fruiting body.\n- Option D is wrong because a mycelium is the underground root network of a true fungus.\n> **Key Takeaway:** The active, creeping, multinucleate feeding stage of a slime mold is called a plasmodium.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `When environmental conditions become dry and unfavorable, what structure does a slime mold construct to ensure survival?`,
+    options:[`It forms a rigid silica shell to trap moisture.`, `It constructs delicate fruiting bodies that release resistant spores into the air.`, `It dissolves entirely back into a liquid state.`, `It burrows miles underground and hibernates as a single giant cell.`],
+    correct: 1,
+    explanation: `## Insight\nWhen the plasmodium runs out of food or water, it triggers a drastic survival mechanism. The blob stops moving and physically transforms itself into tiny, upright stalks topped with capsules. These are fruiting bodies, and they release millions of tough, microscopic spores to be carried away by the wind to better environments.\n- Option A is wrong because building a silica shell is characteristic of diatoms, not slime molds.\n- Option B is correct because slime molds survive starvation by building fruiting bodies to disperse spores.\n- Option C is wrong because they do not dissolve into liquid; they build complex solid structures.\n- Option D is wrong because they do not burrow; they seek open air to disperse their spores.\n> **Key Takeaway:** To survive starvation or drought, slime molds construct fruiting bodies that release highly resistant spores.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why are viruses scientifically classified as 'non-cellular' entities?`,
+    options:[`They have no nucleus.`, `They are smaller than bacteria.`, `They entirely lack cytoplasm, metabolic enzymes, and cellular organelles.`, `They cannot mutate or evolve over time.`],
+    correct: 2,
+    explanation: `## Insight\nA true cell requires machinery: cytoplasm to hold things, ribosomes to build proteins, and mitochondria to make energy. A virus has absolutely none of this. It is literally just a snippet of genetic code wrapped in a protein box. Without cellular machinery, it is essentially inert chemistry until it hits a host.\n- Option A is wrong because bacteria also lack a nucleus, yet they are fully cellular and alive.\n- Option B is wrong because size does not define whether something is cellular (mycoplasmas are tiny but cellular).\n- Option C is correct because lacking cytoplasm and organelles means the virus is not a cell.\n- Option D is wrong because viruses mutate and evolve extremely rapidly (e.g., flu variants).\n> **Key Takeaway:** Viruses are non-cellular because they completely lack cytoplasm, ribosomes, and the organelles required for independent metabolism.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the formal structural term for the protective protein coat that encloses a viral genome?`,
+    options:[`The Peptidoglycan wall`, `The Lipid envelope`, `The Nucleolus`, `The Capsid`],
+    correct: 3,
+    explanation: `## Insight\nA virus needs a way to protect its fragile DNA or RNA while floating in the harsh outside environment. It achieves this by building a geometric shell out of repeating protein subunits. This protective protein box is called the capsid.\n- Option A is wrong because peptidoglycan forms the cell wall of living bacteria.\n- Option B is wrong because while some viruses steal a lipid envelope from their host, the core protein shell itself is the capsid.\n- Option C is wrong because a nucleolus is a structure inside a eukaryotic nucleus.\n- Option D is correct because the capsid is explicitly the protein shell that houses the viral genome.\n> **Key Takeaway:** The capsid is the protective protein shell that encloses and protects the genetic material of a virus.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Regarding its genetic payload, a single viral particle can contain:`,
+    options:[`Either DNA or RNA, but never both simultaneously`, `Only DNA, regardless of the virus type`, `Only RNA, regardless of the virus type`, `Both DNA and RNA simultaneously, perfectly mimicking a human cell`],
+    correct: 0,
+    explanation: `## Insight\nEvery living cell on Earth (bacteria, plants, humans) uses double-stranded DNA as the master blueprint and single-stranded RNA as the messenger. Viruses, being extremely stripped-down, only carry one. A virus is either a DNA virus (like Herpes) or an RNA virus (like HIV or Coronavirus), but never both.\n- Option A is correct because a fundamental rule of virology is that a virus genome consists of either DNA or RNA, but not both.\n- Option B is wrong because thousands of viruses (like Influenza) use RNA.\n- Option C is wrong because thousands of viruses (like Chickenpox) use DNA.\n- Option D is wrong because carrying both is a trait of true living cells, not viruses.\n> **Key Takeaway:** A fundamental rule of viruses is that they contain either DNA or RNA as their genetic material, never both.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why are viruses classified strictly as 'obligate intracellular parasites'?`,
+    options:[`They intentionally hunt and kill other viruses in the bloodstream.`, `They entirely lack the metabolic machinery to reproduce outside of a living host cell.`, `They can only survive if they are permanently frozen in glacial ice.`, `They naturally synthesize their own food using host chloroplasts.`],
+    correct: 1,
+    explanation: `## Insight\n"Obligate" means mandatory. "Intracellular" means inside a cell. Because a virus has no ribosomes to build proteins and no ATP to power reactions, it is completely helpless on its own. It must hijack a living cell, force that cell to read the viral code, and turn the host into a virus-manufacturing factory.\n- Option A is wrong because viruses do not hunt; they drift passively until they collide with a receptor.\n- Option B is correct because lacking metabolic machinery forces them to be obligate parasites.\n- Option C is wrong because freezing preserves them, but they "survive" globally in hosts.\n- Option D is wrong because viruses do not photosynthesize.\n> **Key Takeaway:** Viruses are obligate intracellular parasites because they lack the machinery to reproduce and must hijack a living host cell.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What historic physical property originally allowed scientists to distinguish viruses from bacteria in the laboratory?`,
+    options:[`Viruses are brightly coloured, whereas bacteria are completely invisible.`, `Viruses emit high levels of radioactive alpha particles.`, `Viruses are significantly smaller than bacteria and can easily pass through fine porcelain bacterial filters.`, `Viruses instantly dissolve when placed in pure, distilled water.`],
+    correct: 2,
+    explanation: `## Insight\nBefore the electron microscope was invented, scientists couldn't see viruses. But they proved they existed using a physical filter. They passed infected sap through a porcelain filter with pores so tiny that all bacteria were trapped. The liquid that came out the other side was still infectious, proving the pathogen was "filterable"—vastly smaller than a bacterium.\n- Option A is wrong because neither are visible to the naked eye.\n- Option B is wrong because viruses are not radioactive.\n- Option C is correct because their ability to pass through ultra-fine bacterial filters was their defining early characteristic.\n- Option D is wrong because viruses do not dissolve in water.\n> **Key Takeaway:** Viruses were historically identified by their incredibly small size, which allowed them to pass easily through filters that trapped bacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the specific term for a virus that exclusively targets and infects bacterial cells?`,
+    options:[`A Viroid`, `A Prion`, `A Retrovirus`, `A Bacteriophage`],
+    correct: 3,
+    explanation: `## Insight\nViruses are highly specific to their hosts. A plant virus cannot infect a human, and a human virus cannot infect a bacterium. Viruses that have evolved to hunt and hijack bacteria look like tiny lunar landers and are formally called bacteriophages (literally "bacteria eaters").\n- Option A is wrong because a viroid is a naked piece of RNA that infects plants.\n- Option B is wrong because a prion is a misfolded, infectious protein (causing Mad Cow disease).\n- Option C is wrong because a retrovirus (like HIV) infects animal cells.\n- Option D is correct because a bacteriophage exclusively infects bacteria.\n> **Key Takeaway:** A bacteriophage (or phage) is a highly specialized virus that specifically targets and infects bacterial cells.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the specific biological function of the tail fibers on a bacteriophage?`,
+    options:[`To act as sensory receptors that perfectly match and bind to specific chemical sites on the bacterial cell wall.`, `To aggressively drill a massive hole directly through the host's nucleus.`, `To store the highly condensed viral DNA before injection.`, `To act as a motorized propeller to swim aggressively toward the bacteria.`],
+    correct: 0,
+    explanation: `## Insight\nA virus cannot infect just anything; it requires a physical "lock and key" match. The long, spider-like legs at the bottom of a bacteriophage are the tail fibers. They drift randomly until they bump into the exact right protein receptor on a specific bacterium's cell wall, anchoring the virus in place for infection.\n- Option A is correct because tail fibers are the specific attachment mechanism matching host receptors.\n- Option B is wrong because drilling is done by the central sheath and enzymes, not the legs, and bacteria lack a nucleus.\n- Option C is wrong because the DNA is stored in the polyhedral head (capsid).\n- Option D is wrong because viruses have no motors; they drift passively.\n> **Key Takeaway:** The tail fibers of a bacteriophage are highly specialized sensory receptors that bind exactly to specific proteins on the host's cell wall.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific enzyme does a bacteriophage utilize to chemically burn a hole through the tough bacterial cell wall?`,
+    options:[`DNA polymerase`, `Muramidase (lysozyme)`, `Reverse transcriptase`, `Helicase`],
+    correct: 1,
+    explanation: `## Insight\nBacterial cell walls are made of tough peptidoglycan. To inject its DNA, the bacteriophage must breach this armor. The base of the virus secretes an enzyme called muramidase (also known as lysozyme). This enzyme chemically degrades the peptidoglycan, opening a microscopic pore for the viral DNA to enter.\n- Option A is wrong because DNA polymerase copies DNA; it does not cut walls.\n- Option B is correct because muramidase (lysozyme) specifically targets and breaks down the bacterial cell wall.\n- Option C is wrong because reverse transcriptase converts RNA to DNA in retroviruses.\n- Option D is wrong because helicase unzips the DNA double helix.\n> **Key Takeaway:** Bacteriophages secrete muramidase (lysozyme) to dissolve the bacterial cell wall and inject their DNA.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the ultimate fate of the host cell at the conclusion of the viral 'lytic cycle'?`,
+    options:[`It incorporates the viral DNA into its own genome and divides normally, surviving unharmed.`, `It becomes completely paralyzed but remains biologically alive as a permanent factory.`, `It is violently ruptured and completely destroyed (lysed) to release the newly assembled viral particles.`, `It violently transforms into a hard, impenetrable spore to trap the virus inside forever.`],
+    correct: 2,
+    explanation: `## Insight\nThe lytic cycle is the active, aggressive viral reproduction pathway. The virus hijacks the cell, forces it to build hundreds of new viruses, and then secretes enzymes that cause the cell to burst open (lysis). The host cell is completely destroyed, and the new viruses flood out to infect neighbors.\n- Option A is wrong because this describes the peaceful lysogenic cycle.\n- Option B is wrong because the cell does not survive the end of the lytic cycle.\n- Option C is correct because "lytic" means to burst or destroy, which is the exact fate of the host cell.\n- Option D is wrong because the host has no defense mechanism to trap the virus as a spore.\n> **Key Takeaway:** In the lytic cycle, the host cell is completely destroyed (lysed) to release the newly formed viruses.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How does the viral 'lysogenic cycle' fundamentally differ from the lytic cycle regarding the host's DNA?`,
+    options:[`The virus completely destroys the host's DNA immediately upon entry.`, `The virus completely ignores the host's DNA, replicating freely in the cytoplasm.`, `The virus translates its RNA into proteins without ever interacting with DNA.`, `The viral DNA secretly integrates itself directly into the host's chromosome, hiding and replicating harmlessly every time the cell divides.`],
+    correct: 3,
+    explanation: `## Insight\nThe lysogenic cycle is the stealth pathway. Instead of destroying the cell, the injected viral DNA seamlessly splices itself into the bacterium's own circular chromosome (becoming a "prophage"). The bacterium doesn't notice. Every time the bacterium divides normally, it faithfully copies the hidden viral DNA into its daughter cells.\n- Option A is wrong because destroying the DNA triggers the violent lytic cycle.\n- Option B is wrong because ignoring the DNA prevents the stealth integration that defines lysogeny.\n- Option C is wrong because lysogeny involves DNA integration, not just RNA translation.\n- Option D is correct because the hallmark of the lysogenic cycle is the hidden integration of viral DNA into the host genome.\n> **Key Takeaway:** In the lysogenic cycle, the viral DNA integrates silently into the host's chromosome, replicating harmlessly as the host cell divides.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `After a bacteriophage forcefully injects its DNA into the host, what is the empty, lifeless protein shell left attached to the outside of the bacterium called?`,
+    options:[`A Ghost`, `A Prion`, `A Viroid`, `A Prophage`],
+    correct: 0,
+    explanation: `## Insight\nA bacteriophage works like a hypodermic needle. Once the plunger compresses and the DNA is shot into the bacterium, the virus's job is done. The protein body (capsid and tail) does not enter the cell. It remains stuck to the outer wall, an empty, hollow shell appropriately referred to by virologists as a "ghost."\n- Option A is correct because the empty capsid left outside the cell is formally called a ghost.\n- Option B is wrong because a prion is an infectious misfolded protein.\n- Option C is wrong because a viroid is a naked piece of plant RNA.\n- Option D is wrong because a prophage is the viral DNA *inside* the cell.\n> **Key Takeaway:** Once a bacteriophage injects its genetic material, the empty protein shell left on the outside of the cell is called a ghost.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How is the genetic material physically organized within a typical prokaryotic cell?`,
+    options:[`It is broken into multiple, linear chromosomes wrapped tightly around histones.`, `It exists as a single, continuous, circular DNA molecule floating freely in the nucleoid region.`, `It is completely trapped inside a double-membrane nucleus.`, `It is stored exclusively as short, single-stranded RNA molecules.`],
+    correct: 1,
+    explanation: `## Insight\nProkaryotes (Bacteria and Archaea) are highly efficient. They do not have complex, linear chromosomes packaged inside a nucleus like humans do. Instead, their entire genome consists of one massive, continuous loop of DNA (a circular chromosome) that sits bunched up in a central area of the cytoplasm called the nucleoid.\n- Option A is wrong because multiple linear chromosomes define Eukaryotes.\n- Option B is correct because prokaryotic DNA is a single, circular loop in the nucleoid.\n- Option C is wrong because prokaryotes fundamentally lack a nucleus.\n- Option D is wrong because their primary genetic material is double-stranded DNA, not RNA.\n> **Key Takeaway:** Prokaryotic DNA is organized as a single, circular chromosome located in the unbound nucleoid region of the cytoplasm.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why do Gram-positive bacteria retain a deep purple color after the complete Gram staining procedure?`,
+    options:[`Because they completely lack a cell wall, allowing the dye to bind directly to the DNA.`, `Because their highly acidic cytoplasm permanently alters the chemical structure of the dye.`, `Because they possess a massive, thick layer of peptidoglycan that tightly traps the crystal violet-iodine complex.`, `Because they possess a thick, impenetrable outer lipid membrane that absorbs the purple dye.`],
+    correct: 2,
+    explanation: `## Insight\nThe Gram stain is a foundational microbiology test based on cell wall architecture. Gram-positive bacteria are essentially wearing a thick, heavy sweater of peptidoglycan. When the crystal violet dye and iodine bind together inside the cell, this massive wall acts like a net, trapping the purple dye so tightly that the alcohol wash cannot rinse it out.\n- Option A is wrong because Gram-positive bacteria have very thick cell walls.\n- Option B is wrong because the stain mechanism is physical trapping, not a cytoplasmic chemical reaction.\n- Option C is correct because the thick peptidoglycan layer traps the primary purple stain.\n- Option D is wrong because the outer lipid membrane is a feature of Gram-negative bacteria.\n> **Key Takeaway:** Gram-positive bacteria stain purple because their thick peptidoglycan cell wall tightly traps the crystal violet dye.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Why do Gram-negative bacteria appear pink (or red) at the end of the Gram staining procedure?`,
+    options:[`They possess highly reactive chloroplasts that naturally reflect red light.`, `They naturally secrete a red pigment to protect themselves from ultraviolet radiation.`, `They have no peptidoglycan whatsoever and therefore can only absorb the pink dye.`, `The alcohol wash destroys their outer lipid membrane and washes the purple dye out of their thin peptidoglycan layer, forcing them to absorb the pink safranin counterstain.`],
+    correct: 3,
+    explanation: `## Insight\nGram-negative bacteria wear a thin shirt of peptidoglycan covered by a greasy outer lipid membrane. The alcohol wash dissolves this outer grease and easily flushes the purple dye straight through the thin wall. Now completely colorless, the bacteria easily absorb the final pink counterstain (safranin).\n- Option A is wrong because bacteria do not have chloroplasts.\n- Option B is wrong because the color is from the artificial stain, not a natural pigment.\n- Option C is wrong because Gram-negative bacteria *do* have peptidoglycan, it is just very thin.\n- Option D is correct because the loss of the outer membrane and the thin wall allows the purple dye to escape, leaving the cell open to the pink counterstain.\n> **Key Takeaway:** Gram-negative bacteria stain pink because their thin cell wall fails to hold the purple dye, allowing them to absorb the pink safranin counterstain.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In bacterial morphology, what is the formal scientific term for a bacterium that is perfectly spherical in shape?`,
+    options:[`Coccus`, `Bacillus`, `Spirillum`, `Vibrio`],
+    correct: 0,
+    explanation: `## Insight\nBacterial shapes are given Latin/Greek names. A bacterium that looks like a perfect little ball or sphere is called a coccus (plural: cocci). Examples include *Staphylococcus* (spheres clustered like grapes) and *Streptococcus* (spheres linked in a chain).\n- Option A is correct because "coccus" translates directly to a spherical shape.\n- Option B is wrong because bacillus means rod-shaped.\n- Option C is wrong because spirillum means spiral-shaped.\n- Option D is wrong because vibrio means comma-shaped.\n> **Key Takeaway:** A bacterium that exhibits a spherical, ball-like shape is formally classified as a coccus.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the formal morphological classification for a bacterium that is shaped like a cylindrical rod?`,
+    options:[`Coccus`, `Bacillus`, `Spirillum`, `Vibrio`],
+    correct: 1,
+    explanation: `## Insight\nBacteria that look like tiny hot dogs, pills, or cylinders are rod-shaped. The formal taxonomic term for this shape is bacillus (plural: bacilli). A classic example is *E. coli*, which is a typical Gram-negative bacillus.\n- Option A is wrong because cocci are spherical.\n- Option B is correct because "bacillus" specifically denotes a rod-shaped bacterium.\n- Option C is wrong because spirilla are spiral-shaped.\n- Option D is wrong because vibrio bacteria are curved like commas.\n> **Key Takeaway:** Bacteria that exhibit a cylindrical, rod-like shape are formally classified as bacilli.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which group of bacteria is characterised by a rigid, wavy, spiral shape and typically uses external flagella for locomotion?`,
+    options:[`Spirochetes`, `Bacilli`, `Spirilla`, `Cocci`],
+    correct: 2,
+    explanation: `## Insight\nThere are two types of spiral bacteria. A spirillum is rigid—it holds its distinct, wavy spiral shape like a twisted piece of dry pasta. Because it is rigid, it cannot wiggle its body to move; instead, it relies on standard external flagella acting like propellers at its ends.\n- Option A is wrong because spirochetes are flexible corkscrews, not rigid spirals.\n- Option B is wrong because bacilli are straight rods.\n- Option C is correct because spirilla are rigid, spiral-shaped bacteria that use external flagella.\n- Option D is wrong because cocci are spheres.\n> **Key Takeaway:** Spirilla are rigid, spiral-shaped bacteria that utilize external flagella for movement.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which group of bacteria is uniquely characterised by a highly flexible, tightly coiled corkscrew shape and a twisting, drilling motion?`,
+    options:[`Spirilla`, `Vibrios`, `Mycoplasmas`, `Spirochetes`],
+    correct: 3,
+    explanation: `## Insight\nUnlike the rigid spirilla, a spirochete is highly flexible, resembling a tightly wound metal spring or a corkscrew. It has a unique internal motor—axial filaments wrapped *inside* its outer membrane. When these filaments contract, the entire bacterium twists and drills its way through viscous fluids, which is how *Treponema pallidum* (syphilis) burrows into tissue.\n- Option A is wrong because spirilla are rigid and use external flagella.\n- Option B is wrong because vibrios are merely curved rods.\n- Option C is wrong because mycoplasmas lack cell walls entirely and are formless.\n- Option D is correct because spirochetes are flexible, corkscrew-shaped bacteria with internal motility.\n> **Key Takeaway:** Spirochetes are uniquely flexible, corkscrew-shaped bacteria that move via a twisting, drilling motion.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which bacterial phylum is the absolute largest and most metabolically diverse, containing famous pathogens like *E. coli* and *Salmonella*?`,
+    options:[`Proteobacteria`, `Firmicutes`, `Chlamydiae`, `Cyanobacteria`],
+    correct: 0,
+    explanation: `## Insight\nThe phylum Proteobacteria (named after the Greek god Proteus, who could change his shape) is massive. It encompasses an incredible diversity of Gram-negative bacteria. This group includes almost all the famous gut bacteria (enterics) like *E. coli*, *Salmonella*, and *Vibrio cholerae*.\n- Option A is correct because Proteobacteria is the largest and most diverse bacterial phylum.\n- Option B is wrong because Firmicutes are mostly Gram-positive (like *Bacillus*).\n- Option C is wrong because Chlamydiae is a small phylum of intracellular parasites.\n- Option D is wrong because Cyanobacteria are photosynthetic specialists.\n> **Key Takeaway:** Proteobacteria represents the largest, most diverse phylum of bacteria, including *E. coli* and *Salmonella*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Due to their distinct colour and ability to photosynthesise, Cyanobacteria are frequently (though incorrectly) referred to by what common name?`,
+    options:[`Red algae`, `Blue-green algae`, `Golden algae`, `Fire algae`],
+    correct: 1,
+    explanation: `## Insight\nBefore microscopes revealed that they lacked a nucleus (making them true bacteria), early biologists saw these organisms performing photosynthesis in ponds and grouped them with plant-like algae. Because of their distinct bluish-green pigment (phycocyanin mixed with chlorophyll), they were dubbed "blue-green algae"—a historically sticky misnomer.\n- Option A is wrong because red algae are true eukaryotic protists (Rhodophyta).\n- Option B is correct because Cyanobacteria are historically referred to as blue-green algae.\n- Option C is wrong because golden algae are diatoms.\n- Option D is wrong because fire algae are dinoflagellates.\n> **Key Takeaway:** Despite being true prokaryotic bacteria, Cyanobacteria are historically and commonly called blue-green algae.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What critical, planet-altering biological process are Cyanobacteria uniquely capable of performing?`,
+    options:[`Extreme radiation resistance`, `Anaerobic fermentation of heavy metals`, `Oxygenic photosynthesis`, `Viral encapsulation`],
+    correct: 2,
+    explanation: `## Insight\nMany bacteria can photosynthesize, but most use sulfur and do not release oxygen (anoxygenic). Cyanobacteria were the first organisms on Earth to figure out how to split water ($H_2O$) for energy. By splitting water, they released free oxygen ($O_2$) into the atmosphere as a waste product, causing the Great Oxidation Event and making animal life possible.\n- Option A is wrong because this is a trait of *Deinococcus radiodurans*, not a defining trait of cyanobacteria.\n- Option B is wrong because this is a chemolithotrophic process.\n- Option C is correct because Cyanobacteria uniquely perform oxygen-producing (oxygenic) photosynthesis.\n- Option D is wrong because viruses encapsulate, not bacteria.\n> **Key Takeaway:** Cyanobacteria are uniquely responsible for inventing oxygenic photosynthesis, which oxygenated the Earth's atmosphere.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What specific, water-soluble pigment gives Cyanobacteria their distinct blue tint?`,
+    options:[`Chlorophyll a`, `Fucoxanthin`, `Carotene`, `Phycocyanin`],
+    correct: 3,
+    explanation: `## Insight\nCyanobacteria contain standard green chlorophyll, but they also use accessory pigments to catch wavelengths of light the chlorophyll misses. Their most famous accessory pigment is phycocyanin (from the Greek 'kyanos' meaning blue). This blue pigment mixes with the green chlorophyll to create their trademark "blue-green" color.\n- Option A is wrong because chlorophyll *a* provides the green pigment.\n- Option B is wrong because fucoxanthin provides the brown color in kelps.\n- Option C is wrong because carotene provides an orange/yellow hue.\n- Option D is correct because phycocyanin is the specific blue pigment defining Cyanobacteria.\n> **Key Takeaway:** Phycocyanin is the characteristic blue accessory pigment found in Cyanobacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `While primarily blue-green, some Cyanobacteria (and red algae) contain an accessory pigment that gives them a distinct red color. What is this pigment?`,
+    options:[`Phycoerythrin`, `Phycocyanin`, `Xanthophyll`, `Melanin`],
+    correct: 0,
+    explanation: `## Insight\nThe prefix "erythro-" means red (like erythrocytes, red blood cells). Some cyanobacteria adapt to specific light conditions by producing massive amounts of phycoerythrin. This red pigment is incredibly efficient at capturing blue light deep underwater. (This is the same pigment that makes the Red Sea red!).\n- Option A is correct because phycoerythrin is the red accessory pigment.\n- Option B is wrong because phycocyanin is blue.\n- Option C is wrong because xanthophyll is yellow.\n- Option D is wrong because melanin is a brown/black animal pigment.\n> **Key Takeaway:** Phycoerythrin is the accessory pigment that gives certain cyanobacteria and red algae their distinct red colour.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How do Cyanobacteria biochemically store their excess food reserves, proving an evolutionary divergence from green algae and plants?`,
+    options:[`As solid starch granules`, `As glycogen`, `As lipid oil droplets`, `As laminarin`],
+    correct: 1,
+    explanation: `## Insight\nPlants and green algae store their excess glucose as starch. Animals and fungi store their excess glucose as glycogen. Interestingly, Cyanobacteria also pack their glucose into the highly branched carbohydrate structure of glycogen. This biochemical trait separates them sharply from true plants.\n- Option A is wrong because starch is the storage method of green algae and plants.\n- Option B is correct because Cyanobacteria specifically store their food reserves as glycogen.\n- Option C is wrong because lipid oils are stored by diatoms.\n- Option D is wrong because laminarin is stored by brown algae.\n> **Key Takeaway:** Unlike plants, Cyanobacteria biochemically store their excess carbohydrate reserves as glycogen.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because the enzyme required for nitrogen fixation is immediately destroyed by oxygen, how do filamentous Cyanobacteria protect this process while simultaneously producing oxygen?`,
+    options:[`They perform nitrogen fixation exclusively at night when photosynthesis shuts down.`, `They bury themselves deep in anoxic ocean mud.`, `They develop specialized, thick-walled, oxygen-free cells called 'heterocysts' dedicated solely to nitrogen fixation.`, `They construct a massive, external silica shell to block all incoming oxygen gas.`],
+    correct: 2,
+    explanation: `## Insight\nCyanobacteria have a paradox: they produce oxygen, but the enzyme they use to "eat" nitrogen (nitrogenase) is instantly destroyed by oxygen. To solve this, a cyanobacteria filament will grow a few special, thick-walled cells called heterocysts. These cells shut down their oxygen production entirely, creating a safe, oxygen-free bunker where nitrogen fixation can occur.\n- Option A is wrong because while some do this, the primary physical adaptation in filamentous species is the heterocyst.\n- Option B is wrong because they must remain in sunlight to survive.\n- Option C is correct because heterocysts are specialized, anoxic cells dedicated to protecting the nitrogen fixation process.\n- Option D is wrong because silica shells belong to diatoms.\n> **Key Takeaway:** Heterocysts are specialized, thick-walled cells in Cyanobacteria that provide an oxygen-free environment for nitrogen fixation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the specific name of the extremely oxygen-sensitive enzyme that allows Cyanobacteria to perform nitrogen fixation?`,
+    options:[`Nitrate reductase`, `Nitrite oxidase`, `Urease`, `Nitrogenase`],
+    correct: 3,
+    explanation: `## Insight\nNitrogen gas ($N_2$) in the atmosphere is locked together by a massive triple bond that almost nothing in nature can break. The enzyme "nitrogenase" is a biological miracle capable of smashing this bond and turning inert gas into usable ammonia ($NH_3$). However, nitrogenase is instantly deactivated if it touches free oxygen.\n- Option A is wrong because nitrate reductase reduces nitrate to nitrite, it does not fix atmospheric $N_2$.\n- Option B is wrong because nitrite oxidase oxidizes nitrite to nitrate.\n- Option C is wrong because urease breaks down urea.\n- Option D is correct because nitrogenase is the specific enzyme that breaks the $N_2$ triple bond.\n> **Key Takeaway:** Nitrogenase is the powerful, but highly oxygen-sensitive, enzyme that drives nitrogen fixation in Cyanobacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary biological function of the 'mucilaginous sheath' that surrounds many colonies of Cyanobacteria?`,
+    options:[`It actively performs photosynthesis when the internal chloroplasts fail.`, `It acts as an impenetrable shield that aggressively destroys incoming viruses.`, `It fixes atmospheric nitrogen directly into the surrounding water.`, `It binds the individual cells into a continuous filament and prevents the colony from drying out.`],
+    correct: 0,
+    explanation: `## Insight\nCyanobacteria often grow in chains or colonies. To keep the cells glued together and to protect the colony from the harsh environment (specifically desiccation/drying out during low tides or droughts), they secrete a thick, slimy, jelly-like coating. This is the mucilaginous sheath.\n- Option A is correct because the sheath's primary role is physical binding and moisture retention.\n- Option B is wrong because the sheath is a passive jelly, not an active viral defense system.\n- Option C is wrong because nitrogen fixation occurs inside the heterocyst, not the external jelly.\n- Option D is wrong because the sheath has no photosynthetic capabilities; it lacks pigments.\n> **Key Takeaway:** The mucilaginous sheath is a slimy outer coating that binds Cyanobacteria together and protects them from desiccation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Certain toxic blooms of Cyanobacteria produce the potent chemical 'microcystin'. What specific type of damage does this toxin cause in humans and animals?`,
+    options:[`It induces severe, immediate paralysis of the respiratory muscles.`, `It aggressively attacks and destroys the liver, functioning as a deadly hepatotoxin.`, `It dissolves tooth enamel and bone calcium within hours.`, `It causes spontaneous, aggressive blood clotting throughout the circulatory system.`],
+    correct: 1,
+    explanation: `## Insight\nWhen Cyanobacteria like *Microcystis aeruginosa* bloom in polluted lakes, they release microcystin into the water. If livestock or humans drink this water, the toxin travels directly to the liver. It aggressively destroys the liver cells' cytoskeleton, causing massive internal hemorrhage and liver failure. It is a severe hepatotoxin ("hepato-" means liver).\n- Option A is wrong because paralysis is caused by a neurotoxin (like anatoxin).\n- Option B is correct because microcystin explicitly targets and destroys the liver (hepatotoxin).\n- Option C is wrong because it does not attack bones or calcium.\n- Option D is wrong because it does not cause systemic blood clotting.\n> **Key Takeaway:** Microcystin is a highly dangerous hepatotoxin produced by Cyanobacteria that causes severe liver damage.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which highly lethal toxin produced by Cyanobacteria functions specifically as a neurotoxin, causing rapid muscle paralysis and death by asphyxiation?`,
+    options:[`Microcystin`, `Cylindrospermopsin`, `Anatoxin`, `Lipopolysaccharide`],
+    correct: 2,
+    explanation: `## Insight\nWhile microcystin slowly destroys the liver, anatoxin acts like nerve gas. Often called "Very Fast Death Factor" (VFDF), anatoxin binds permanently to nerve receptors in the muscles. The muscles lock up entirely, including the diaphragm, leading to rapid paralysis and death by suffocation within minutes of ingestion.\n- Option A is wrong because microcystin is a liver toxin (hepatotoxin).\n- Option B is wrong because cylindrospermopsin is a slower-acting liver and kidney toxin.\n- Option C is correct because anatoxin is a rapid-acting, highly lethal neurotoxin.\n- Option D is wrong because lipopolysaccharide is an endotoxin causing fever, not rapid paralysis.\n> **Key Takeaway:** Anatoxin is a potent neurotoxin produced by Cyanobacteria that causes rapid muscle paralysis and asphyxiation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific Cyanobacterium forms a critical mutualistic relationship by living inside the leaves of the water fern *Azolla*, providing it with fixed nitrogen?`,
+    options:[`*Oscillatoria*`, `*Microcystis*`, `*Nostoc*`, `*Anabaena azollae*`],
+    correct: 3,
+    explanation: `## Insight\nRice farmers have used the water fern *Azolla* for centuries as a natural fertilizer. The fern itself doesn't fix nitrogen. It has tiny pockets in its leaves where the cyanobacterium *Anabaena azollae* lives. The fern provides safety and sugar, and the bacteria provide endless fixed nitrogen, acting as a biological fertilizer factory.\n- Option A is wrong because *Oscillatoria* is a free-living, non-nitrogen-fixing species.\n- Option B is wrong because *Microcystis* is a toxic, free-living bloom species.\n- Option C is wrong because while *Nostoc* fixes nitrogen, it partners mostly with fungi (lichens) or cycads.\n- Option D is correct because *Anabaena azollae* is the specific symbiont of the *Azolla* fern.\n> **Key Takeaway:** *Anabaena azollae* is a cyanobacterium that lives symbiotically inside the *Azolla* water fern, providing it with essential fixed nitrogen.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In 1993, a massive, deadly bloom of toxic Cyanobacteria occurred in the reservoir of the Itaparica Dam in Brazil. What was the devastating human toll of this event?`,
+    options:[`88 deaths resulting from drinking contaminated water`, `63 deaths resulting from contaminated dialysis equipment`, `200 deaths resulting from eating contaminated fish`, `10 deaths resulting from swimming in the reservoir`],
+    correct: 0,
+    explanation: `## Insight\nThe Itaparica Dam disaster is a textbook case of cyanotoxin poisoning. A massive bloom in the reservoir overloaded the local water treatment plant. Residents drank the highly toxic water, leading to a massive outbreak of severe gastroenteritis that resulted in the tragic deaths of 88 people, mostly children.\n- Option A is correct because the 1993 Itaparica event resulted in exactly 88 deaths from drinking contaminated water.\n- Option B is wrong because the 63 deaths from dialysis occurred later, in the 1996 Caruaru tragedy.\n- Option C is wrong because the primary vector was the drinking water itself, not fish.\n- Option D is wrong because the death toll was significantly higher (88).\n> **Key Takeaway:** The 1993 Cyanobacteria outbreak at the Itaparica Dam in Brazil resulted in 88 tragic deaths due to contaminated drinking water.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In 1996, a catastrophic failure at a hemodialysis clinic in Caruaru, Brazil, exposed patients directly to water heavily contaminated with cyanotoxins. How many patients died from acute liver failure as a result?`,
+    options:[`10 deaths`, `63 deaths`, `88 deaths`, `200 deaths`],
+    correct: 1,
+    explanation: `## Insight\nThe Caruaru tragedy is one of the most infamous medical disasters involving Cyanobacteria. The local water supply experienced a toxic bloom. A dialysis clinic failed to adequately filter the municipal water. Microcystin was pumped directly into the bloodstreams of patients, causing horrific acute liver failure and the deaths of 63 individuals.\n- Option A is wrong because the death toll was much higher.\n- Option B is correct because exactly 63 patients died of liver failure in the Caruaru clinic disaster.\n- Option C is wrong because 88 deaths occurred in the earlier 1993 Itaparica Dam incident.\n- Option D is wrong because it drastically overstates the documented death toll.\n> **Key Takeaway:** In 1996, 63 patients in Caruaru, Brazil, died from acute liver failure after being exposed to cyanotoxins through contaminated dialysis water.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The severe, life-threatening diarrheal disease known as cholera is caused by which specific bacterium?`,
+    options:[`*Escherichia coli*`, `*Salmonella typhi*`, `*Vibrio cholerae*`, `*Shigella dysenteriae*`],
+    correct: 2,
+    explanation: `## Insight\nCholera is a rapid, devastating disease. The comma-shaped bacterium *Vibrio cholerae* enters the gut and secretes a powerful toxin. This toxin forces the intestinal cells to pump massive amounts of water and electrolytes out of the body, leading to "rice-water stool" and death by severe dehydration within hours if untreated.\n- Option A is wrong because *E. coli* causes standard food poisoning or UTIs.\n- Option B is wrong because *Salmonella typhi* causes typhoid fever.\n- Option C is correct because *Vibrio cholerae* is the exact causative agent of cholera.\n- Option D is wrong because *Shigella* causes dysentery (bloody diarrhea), which is different from the watery diarrhea of cholera.\n> **Key Takeaway:** Cholera is a severe, dehydrating intestinal disease caused directly by the bacterium *Vibrio cholerae*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary epidemiological route of transmission for the cholera bacterium?`,
+    options:[`Through the bite of an infected Anopheles mosquito`, `Through prolonged, direct skin-to-skin contact with an infected individual`, `Through the inhalation of airborne droplets from a coughing patient`, `Through the ingestion of water or food heavily contaminated with human feces`],
+    correct: 3,
+    explanation: `## Insight\nCholera is a disease of poor sanitation. Because the bacteria reproduce in the gut and are expelled in massive quantities through diarrhea, they easily enter local water supplies if sewage is not managed properly. Anyone who drinks that contaminated water ingests the bacteria, completing the "fecal-oral" route of transmission.\n- Option A is wrong because mosquitoes transmit blood-borne parasites like malaria, not gut bacteria.\n- Option B is wrong because cholera requires ingestion, not just skin contact.\n- Option C is wrong because cholera is not a respiratory disease like tuberculosis.\n- Option D is correct because the fecal-oral route (contaminated water/food) is the absolute primary vector for cholera.\n> **Key Takeaway:** Cholera is transmitted almost entirely through the ingestion of food or water contaminated with infected human feces (the fecal-oral route).`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which highly resilient bacterium is the primary causative agent of Tuberculosis (TB)?`,
+    options:[`*Mycobacterium tuberculosis*`, `*Streptococcus pneumoniae*`, `*Haemophilus influenzae*`, `*Klebsiella pneumoniae*`],
+    correct: 0,
+    explanation: `## Insight\nTuberculosis is one of the deadliest infectious diseases in human history. It is caused by *Mycobacterium tuberculosis*, a rod-shaped bacterium with an incredibly thick, waxy cell wall (mycolic acid). This waxy coat makes the bacterium immune to standard Gram staining, highly resistant to drying out, and very difficult for the immune system to destroy.\n- Option A is correct because *Mycobacterium tuberculosis* explicitly causes TB.\n- Option B is wrong because this causes standard bacterial pneumonia.\n- Option C is wrong because this causes childhood meningitis and pneumonia.\n- Option D is wrong because this causes a highly destructive, bloody pneumonia.\n> **Key Takeaway:** Tuberculosis, a severe respiratory disease, is caused by the highly resilient bacterium *Mycobacterium tuberculosis*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which spore-forming bacterium is responsible for causing the deadly disease anthrax?`,
+    options:[`*Clostridium tetani*`, `*Bacillus anthracis*`, `*Yersinia pestis*`, `*Brucella abortus*`],
+    correct: 1,
+    explanation: `## Insight\nAnthrax is an acute disease that primarily affects grazing livestock but can be deadly to humans. It is caused by *Bacillus anthracis*. Because this bacterium can form virtually indestructible endospores, it can survive in the soil for decades. If an animal ingests the spores, or a human inhales them, the spores germinate and release lethal toxins.\n- Option A is wrong because *Clostridium tetani* causes tetanus (lockjaw).\n- Option B is correct because *Bacillus anthracis* is the specific pathogen that causes anthrax.\n- Option C is wrong because *Yersinia pestis* causes the bubonic plague.\n- Option D is wrong because *Brucella* causes brucellosis (undulant fever).\n> **Key Takeaway:** The severe, spore-driven disease anthrax is caused by the bacterium *Bacillus anthracis*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which corkscrew-shaped spirochete bacterium is the causative agent of the sexually transmitted infection syphilis?`,
+    options:[`*Neisseria gonorrhoeae*`, `*Chlamydia trachomatis*`, `*Treponema pallidum*`, `*Haemophilus ducreyi*`],
+    correct: 2,
+    explanation: `## Insight\nSyphilis is a devastating systemic disease that progresses through multiple stages, eventually causing severe neurological and cardiovascular damage if left untreated. The pathogen responsible is *Treponema pallidum*. Because of its flexible, corkscrew shape (a spirochete), it can literally drill its way through mucous membranes and into the bloodstream.\n- Option A is wrong because *Neisseria* causes the distinct infection gonorrhea.\n- Option B is wrong because *Chlamydia* causes the infection chlamydia.\n- Option C is correct because the spirochete *Treponema pallidum* is the explicit cause of syphilis.\n- Option D is wrong because *Haemophilus ducreyi* causes chancroid.\n> **Key Takeaway:** Syphilis is caused by the corkscrew-shaped spirochete bacterium *Treponema pallidum*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific bacterium is the causative agent of the sexually transmitted infection gonorrhoea?`,
+    options:[`*Treponema pallidum*`, `*Chlamydia trachomatis*`, `*Mycoplasma genitalium*`, `*Neisseria gonorrhoeae*`],
+    correct: 3,
+    explanation: `## Insight\nGonorrhoea is a highly common bacterial STI that can cause severe pelvic inflammatory disease and infertility if untreated. Under a microscope, the pathogen *Neisseria gonorrhoeae* is easily identifiable: it is a Gram-negative diplococcus, meaning it looks like two tiny pink coffee beans pressed together.\n- Option A is wrong because *Treponema* causes syphilis.\n- Option B is wrong because *Chlamydia* causes chlamydia.\n- Option C is wrong because *Mycoplasma* is a different, wall-less pathogen.\n- Option D is correct because *Neisseria gonorrhoeae* explicitly causes gonorrhoea.\n> **Key Takeaway:** The sexually transmitted infection gonorrhoea is caused directly by the bacterium *Neisseria gonorrhoeae*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Lyme disease, which often presents with a characteristic 'bullseye' rash and causes severe joint and neurological issues, is caused by:`,
+    options:[`*Borrelia burgdorferi*`, `*Rickettsia rickettsii*`, `*Ehrlichia chaffeensis*`, `*Anaplasma phagocytophilum*`],
+    correct: 0,
+    explanation: `## Insight\nLyme disease is an escalating public health issue in the Northern Hemisphere. It is caused by *Borrelia burgdorferi*, a spirochete bacterium. It relies entirely on blood-sucking ticks (specifically the deer tick) to act as a vector, transmitting the spiral bacteria from forest animals directly into the human bloodstream.\n- Option A is correct because *Borrelia burgdorferi* is the established causative agent of Lyme disease.\n- Option B is wrong because *Rickettsia* causes Rocky Mountain spotted fever.\n- Option C is wrong because *Ehrlichia* causes ehrlichiosis.\n- Option D is wrong because *Anaplasma* causes anaplasmosis.\n> **Key Takeaway:** Lyme disease is a tick-borne illness caused by the spirochete bacterium *Borrelia burgdorferi*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following bacteria is globally recognized as a leading cause of bacterial pneumonia in humans?`,
+    options:[`*Mycobacterium tuberculosis*`, `*Streptococcus pneumoniae*`, `*Bacillus anthracis*`, `*Clostridium perfringens*`],
+    correct: 1,
+    explanation: `## Insight\nPneumonia is an infection that inflames the air sacs in one or both lungs, causing them to fill with fluid. While viruses can cause it, the most common bacterial culprit is *Streptococcus pneumoniae*. This Gram-positive bacterium surrounds itself with a thick, sugary capsule that prevents the human immune system from easily destroying it.\n- Option A is wrong because it causes TB, a distinct, chronic lung infection.\n- Option B is correct because *Streptococcus pneumoniae* (the pneumococcus) is the leading cause of bacterial pneumonia.\n- Option C is wrong because it causes inhalation anthrax, which is extremely rare.\n- Option D is wrong because *Clostridium perfringens* primarily causes gas gangrene in wounds.\n> **Key Takeaway:** The bacterium *Streptococcus pneumoniae* is one of the most common and dangerous causes of bacterial pneumonia.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which two genera of Gram-positive bacteria are infamous for their ability to form highly resilient, indestructible endospores?`,
+    options:[`*Escherichia* and *Salmonella*`, `*Staphylococcus* and *Streptococcus*`, `*Bacillus* and *Clostridium*`, `*Treponema* and *Borrelia*`],
+    correct: 2,
+    explanation: `## Insight\nWhen faced with starvation, extreme heat, or toxic chemicals, a few specific bacteria can pack their DNA into a biological safe-room called an endospore. The bacteria die, but the spore survives for decades. When conditions improve, the spore "hatches" back into a deadly bacterium. This superpower is almost entirely restricted to the genera *Bacillus* (causing anthrax) and *Clostridium* (causing tetanus and botulism).\n- Option A is wrong because these are Gram-negative and do not form spores.\n- Option B is wrong because these are Gram-positive cocci that do not form spores.\n- Option C is correct because *Bacillus* and *Clostridium* are the classic, deadly spore-forming genera.\n- Option D is wrong because these are fragile spirochetes.\n> **Key Takeaway:** The ability to form highly resilient, indestructible endospores is a defining characteristic of the bacterial genera *Bacillus* and *Clostridium*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which unique group of bacteria completely lacks a rigid cell wall, making them entirely immune to antibiotics like penicillin?`,
+    options:[`Firmicutes`, `Chlamydiae`, `Spirochetes`, `Mycoplasmas`],
+    correct: 3,
+    explanation: `## Insight\nAlmost every bacterium on Earth wears a tough suit of armor made of peptidoglycan (the cell wall). Antibiotics like penicillin work by destroying this wall. However, Mycoplasmas have evolved to completely abandon the cell wall. They are tiny, shapeless blobs protected only by a flexible cell membrane. Because they have no wall, penicillin is utterly useless against them.\n- Option A is wrong because Firmicutes possess very thick Gram-positive cell walls.\n- Option B is wrong because Chlamydiae are intracellular parasites that still possess a modified wall structure.\n- Option C is wrong because Spirochetes have a standard Gram-negative cell wall.\n- Option D is correct because Mycoplasmas are biologically unique for entirely lacking a cell wall.\n> **Key Takeaway:** Mycoplasmas are a unique group of incredibly small bacteria that completely lack a rigid cell wall.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the primary ecological role of Cyanobacteria when they colonize extreme or highly barren environments?`,
+    options:[`They actively degrade and destroy any remaining organic soil.`, `They single-handedly drive the global depletion of atmospheric oxygen.`, `They act as pioneer organisms, enriching the barren environment by fixing both atmospheric carbon and nitrogen.`, `They function primarily as aggressive, water-purifying filter feeders.`],
+    correct: 2,
+    explanation: `## Insight\nIf a volcano creates a brand new, completely lifeless island of bare rock, Cyanobacteria are the first responders. Because they can photosynthesize (fixing carbon from the air to make sugar) and use heterocysts to fix nitrogen (turning nitrogen gas into fertilizer), they literally pull their own food and fertilizer out of thin air. When they die, their bodies create the very first organic soil, allowing plants to eventually grow.\n- Option A is wrong because they create soil, they do not destroy it.\n- Option B is wrong because they produce oxygen; they do not deplete it.\n- Option C is correct because their dual ability to fix both carbon and nitrogen makes them the ultimate pioneer species in barren ecosystems.\n- Option D is wrong because they are photosynthetic producers, not animal-like filter feeders.\n> **Key Takeaway:** Cyanobacteria are vital pioneer organisms because they enrich barren environments by fixing both atmospheric carbon and nitrogen.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which single-celled green alga is extensively utilized in modern biological research to study the exact mechanisms of photosynthesis?`,
+    options:[`*Plasmodium*`, `*Paramecium*`, `*Amoeba*`, `*Chlorella*`],
+    correct: 3,
+    explanation: `## Insight\nWhen scientists wanted to figure out exactly how the Calvin Cycle worked (the dark reactions of photosynthesis), they needed a simple, fast-growing organism. They chose *Chlorella*, a microscopic, single-celled green alga. Because it is essentially just a floating chloroplast, it is the perfect laboratory model for studying photosynthesis and algal biofuels.\n- Option A is wrong because *Plasmodium* is a parasite, not a photosynthetic alga.\n- Option B is wrong because *Paramecium* is a heterotrophic ciliate.\n- Option C is wrong because *Amoeba* is a hunting predator.\n- Option D is correct because *Chlorella* is the gold-standard model organism for photosynthetic research.\n> **Key Takeaway:** The single-celled green alga *Chlorella* is extensively used in laboratories as a model organism to study photosynthesis.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `According to standard binomial nomenclature, what is the officially recognized scientific name for the American black bear?`,
+    options:[`*Ursus americanus*`, `*Ursus arctos*`, `*Ursus maritimus*`, `*Ursus thibetanus*`],
+    correct: 0,
+    explanation: `## Insight\nAll bears belong to the genus *Ursus*. The specific epithet (the second word) identifies the exact species. *Ursus arctos* is the brown/grizzly bear, and *Ursus maritimus* is the polar bear (maritime = ocean). The American black bear is straightforwardly named *Ursus americanus*.\n- Option A is correct because *Ursus americanus* is the exact binomial name for the American black bear.\n- Option B is wrong because *Ursus arctos* is the brown bear.\n- Option C is wrong because *Ursus maritimus* is the polar bear.\n- Option D is wrong because *Ursus thibetanus* is the Asian black bear.\n> **Key Takeaway:** The correct scientific binomial name for the American black bear is *Ursus americanus*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the taxonomic classification of insects, which specific Order encompasses all butterflies and moths?`,
+    options:[`Coleoptera`, `Lepidoptera`, `Diptera`, `Hymenoptera`],
+    correct: 1,
+    explanation: `## Insight\nInsect orders are usually named for their wings (the Greek suffix "-ptera"). "Lepo" means scale. If you touch a butterfly's wing, colorful dust rubs off on your finger—those are actually thousands of microscopic, overlapping scales. Therefore, butterflies and moths are classified in the order Lepidoptera (scale-winged).\n- Option A is wrong because Coleoptera (sheath-winged) contains the beetles.\n- Option B is correct because Lepidoptera exclusively contains the butterflies and moths.\n- Option C is wrong because Diptera (two-winged) contains the flies and mosquitoes.\n- Option D is wrong because Hymenoptera (membrane-winged) contains bees, wasps, and ants.\n> **Key Takeaway:** All butterflies and moths are classified together in the insect order Lepidoptera.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Within the mammalian Order Carnivora, which specific Family encompasses all true cats, from domestic house cats to lions?`,
+    options:[`Canidae`, `Ursidae`, `Felidae`, `Mephitidae`],
+    correct: 2,
+    explanation: `## Insight\nIn mammalian taxonomy, families are grouped by deep evolutionary morphology, particularly skull and tooth shape. All dogs, wolves, and foxes belong to Canidae. All bears belong to Ursidae. Every single true cat—whether a tiny house cat (*Felis catus*) or a roaring African lion (*Panthera leo*)—belongs to the family Felidae.\n- Option A is wrong because Canidae is the dog family.\n- Option B is wrong because Ursidae is the bear family.\n- Option C is correct because Felidae explicitly represents the cat family.\n- Option D is wrong because Mephitidae is the skunk family.\n> **Key Takeaway:** All cat species, ranging from domestic cats to lions and tigers, belong to the family Felidae.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In traditional mammalian taxonomy, how many distinct biological families currently constitute the Order Carnivora?`,
+    options:[`8`, `10`, `14`, `12`],
+    correct: 3,
+    explanation: `## Insight\nThe Order Carnivora is a massive grouping of mammals that primarily hunt and eat meat (though bears and raccoons are omnivores). Taxonomists divide this vast order into 12 distinct families. These range from the famous Felidae (cats) and Canidae (dogs) to the Viverridae (civets) and Mustelidae (weasels).\n- Option A is wrong because 8 underestimates the diversity of the order.\n- Option B is wrong because 10 is slightly too low.\n- Option C is wrong because 14 overestimates the officially recognized terrestrial families.\n- Option D is correct because traditional taxonomy formally divides the terrestrial Order Carnivora into 12 specific families.\n> **Key Takeaway:** The mammalian Order Carnivora is officially subdivided into 12 distinct biological families.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which animal phylum encompasses every single vertebrate organism on Earth, including fish, birds, and humans?`,
+    options:[`Chordata`, `Arthropoda`, `Mollusca`, `Annelida`],
+    correct: 0,
+    explanation: `## Insight\nTo belong to this phylum, an animal must have a flexible rod running down its back (a notochord) at some point in its life. In vertebrates like humans, this rod develops into the solid, bony spinal column. Therefore, every single animal with a backbone belongs to the massive phylum Chordata.\n- Option A is correct because the phylum Chordata houses all vertebrates, alongside a few primitive invertebrates like lancelets.\n- Option B is wrong because Arthropoda contains insects, spiders, and crabs (invertebrates with exoskeletons).\n- Option C is wrong because Mollusca contains snails, clams, and octopuses.\n- Option D is wrong because Annelida contains segmented worms.\n> **Key Takeaway:** Every vertebrate animal on Earth, including humans, belongs to the phylum Chordata.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Under which specific phylum are all reptiles and amphibians classified?`,
+    options:[`Arthropoda`, `Chordata`, `Mollusca`, `Annelida`],
+    correct: 1,
+    explanation: `## Insight\nReptiles (snakes, lizards) and amphibians (frogs, salamanders) are vertebrates—they possess a central spinal column that houses their nerve cord. Because the defining characteristic of a vertebrate is a developed notochord, both of these massive classes fit squarely within the same overarching phylum as mammals and birds.\n- Option A is wrong because Arthropoda contains invertebrates with hard outer shells.\n- Option B is correct because reptiles and amphibians are vertebrates, making them members of the phylum Chordata.\n- Option C is wrong because Mollusca contains soft-bodied invertebrates.\n- Option D is wrong because Annelida contains soft-bodied, segmented worms.\n> **Key Takeaway:** Because they are vertebrates possessing a spinal cord, reptiles and amphibians are classified within the phylum Chordata.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which unique structural feature is an exclusive, defining characteristic of Gram-negative bacteria?`,
+    options:[`A massive, incredibly thick outer layer of peptidoglycan.`, `The ability to permanently retain the purple crystal violet dye.`, `The presence of a highly complex outer lipid membrane containing lipopolysaccharides (LPS).`, `The complete and total absence of any cell wall whatsoever.`],
+    correct: 2,
+    explanation: `## Insight\nWhile Gram-positive bacteria just have one huge, thick wall of peptidoglycan, Gram-negative bacteria have a much more complex, three-layer system. They have an inner membrane, a very thin wall of peptidoglycan, and then a totally unique *outer* lipid membrane. This outer membrane is packed with toxic lipopolysaccharides (LPS) that make Gram-negative infections very dangerous.\n- Option A is wrong because a thick peptidoglycan layer defines Gram-positive bacteria.\n- Option B is wrong because retaining the purple dye defines Gram-positive bacteria.\n- Option C is correct because the outer lipid membrane is the absolute defining hallmark of Gram-negative bacteria.\n- Option D is wrong because Gram-negative bacteria *do* have a cell wall, it is just very thin.\n> **Key Takeaway:** Gram-negative bacteria are uniquely characterized by possessing an outer lipid membrane that sits on top of their thin cell wall.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the standard four-step Gram staining protocol, which chemical serves as the primary stain?`,
+    options:[`Safranin`, `Gram's iodine`, `Alcohol`, `Crystal violet`],
+    correct: 3,
+    explanation: `## Insight\nThe very first step in the Gram stain is to flood the bacterial slide with a deep purple dye. This dye penetrates the cell walls of every single bacterium on the slide, turning both Gram-positive and Gram-negative cells completely purple. This initial, universal dye is crystal violet.\n- Option A is wrong because safranin is the final, pink counterstain.\n- Option B is wrong because iodine is the mordant (the fixing agent).\n- Option C is wrong because alcohol is the decolorizer.\n- Option D is correct because crystal violet is the primary stain applied at the beginning of the process.\n> **Key Takeaway:** Crystal violet is the primary stain in the Gram staining procedure, initially turning all bacterial cells purple.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `During the Gram staining procedure, what is the specific role of Gram's iodine?`,
+    options:[`It acts as the primary stain, turning the cells a deep brown color.`, `It acts as a chemical mordant, binding with the crystal violet to form massive molecular complexes trapped inside the cell wall.`, `It aggressively dissolves the outer lipid membrane of Gram-negative bacteria.`, `It acts as the final counterstain, turning decolorised cells pink.`],
+    correct: 1,
+    explanation: `## Insight\nIf you just dye the cells with crystal violet, the dye will easily wash right back out. You need to lock it in place. You add iodine. The iodine chemically bonds to the crystal violet molecules inside the cell, creating massive "crystal violet-iodine (CV-I) complexes." These molecules are now so huge they get physically tangled and trapped inside the thick peptidoglycan net of Gram-positive cells.\n- Option A is wrong because iodine is not the primary stain.\n- Option B is correct because iodine functions specifically as a mordant, fixing the primary dye in place.\n- Option C is wrong because alcohol (the decolorizer) dissolves the outer membrane.\n- Option D is wrong because safranin acts as the counterstain.\n> **Key Takeaway:** In the Gram stain, iodine acts as a mordant, chemically binding with crystal violet to lock the dye inside the thick Gram-positive cell wall.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the specific function of Safranin in the Gram staining protocol?`,
+    options:[`It acts as the critical decolorizing agent that dissolves lipid membranes.`, `It acts as the chemical mordant that permanently fixes the primary dye.`, `It acts as a high-contrast counterstain, imparting a bright pink color to the now-transparent Gram-negative bacteria.`, `It serves as the initial primary stain, turning all bacteria red before the alcohol wash.`],
+    correct: 2,
+    explanation: `## Insight\nAfter the alcohol wash, the thick Gram-positive cells are still bright purple, but the thin Gram-negative cells have lost all their dye and are completely invisible under the microscope. To see them, you must apply a final, contrasting dye (a counterstain). Safranin is a pink/red dye. The purple cells ignore it, but the invisible Gram-negative cells absorb it and turn pink.\n- Option A is wrong because alcohol is the decolorizing agent.\n- Option B is wrong because iodine is the mordant.\n- Option C is correct because safranin is the counterstain used to visualize the Gram-negative cells.\n- Option D is wrong because crystal violet is the primary stain.\n> **Key Takeaway:** Safranin is used as a final counterstain to dye the decolorised, invisible Gram-negative bacteria a bright pink color.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which distinct bacterial phylum is entirely composed of obligate intracellular parasites, meaning they must live directly inside a host's cells to survive?`,
+    options:[`Proteobacteria`, `Firmicutes`, `Spirochetes`, `Chlamydiae`],
+    correct: 3,
+    explanation: `## Insight\nMost bacteria are free-living; they scavenge food from the environment. The phylum Chlamydiae, however, has evolved a terrifying, virus-like lifestyle. They are so incredibly small and specialized that they cannot make their own ATP (energy). They must invade the inside of a human or animal cell, steal its energy to reproduce, and then destroy the cell to escape.\n- Option A is wrong because Proteobacteria (like *E. coli*) are overwhelmingly free-living.\n- Option B is wrong because Firmicutes (like *Staphylococcus*) are overwhelmingly free-living.\n- Option C is wrong because Spirochetes (like *Treponema*) move freely through host tissues, not strictly intracellularly.\n- Option D is correct because Chlamydiae are absolutely restricted to an obligate intracellular lifestyle.\n> **Key Takeaway:** The bacterial phylum Chlamydiae consists entirely of obligate intracellular parasites that must steal energy from inside a host cell.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific genus of Cyanobacteria is famous for forming incredibly long, macroscopic gelatinous filaments that can reach up to a meter in length?`,
+    options:[`*Nostoc*`, `*Anabaena*`, `*Oscillatoria*`, `*Microcystis*`],
+    correct: 0,
+    explanation: `## Insight\nWhile most Cyanobacteria are microscopic, the genus *Nostoc* forms massive, communal colonies. The individual bacterial cells link together into long chains (like pearls on a necklace). These chains secrete a massive amount of firm, rubbery, gelatinous mucus, forming macroscopic blobs or mats that can literally stretch for a meter across wet rocks or soil.\n- Option A is correct because *Nostoc* specifically forms these massive, macroscopic gelatinous filaments and colonies.\n- Option B is wrong because while *Anabaena* forms filaments, they are generally microscopic and planktonic.\n- Option C is wrong because *Oscillatoria* forms short, oscillating microscopic threads.\n- Option D is wrong because *Microcystis* forms formless, toxic, floating blobs, not organized long filaments.\n> **Key Takeaway:** The cyanobacterium *Nostoc* is renowned for forming massive, macroscopic gelatinous colonies and filaments.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Within the cytoplasm of a Cyanobacterium, what specific physical structures serve as the actual site of oxygenic photosynthesis?`,
+    options:[`The rigid peptidoglycan cell wall`, `The highly folded, pigment-bearing thylakoid membranes`, `The massive, central nucleoid region`, `The nitrogen-fixing heterocysts`],
+    correct: 1,
+    explanation: `## Insight\nBecause Cyanobacteria are prokaryotes, they do not possess true, membrane-bound chloroplasts like plants do. Instead, they fold their own outer cell membrane inward to create a massive, internal labyrinth of flat sacks. These internal membrane folds are called thylakoids. All the chlorophyll and photosynthetic machinery are physically bolted into these membranes.\n- Option A is wrong because the cell wall provides structure, not photosynthesis.\n- Option B is correct because the thylakoid membranes hold the pigments and machinery for photosynthesis.\n- Option C is wrong because the nucleoid holds the DNA.\n- Option D is wrong because heterocysts shut down photosynthesis to protect nitrogen fixation.\n> **Key Takeaway:** In Cyanobacteria, photosynthesis occurs directly on specialized, highly folded internal structures called thylakoid membranes.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In 1886, which pioneering scientist first proposed the creation of the Kingdom Protista to solve the problem of classifying microscopic, single-celled life?`,
+    options:[`Carl Linnaeus`, `Robert Whittaker`, `Ernst Haeckel`, `Carl Woese`],
+    correct: 2,
+    explanation: `## Insight\nFor centuries, biology had a strict binary: everything was either a Plant (it didn't move) or an Animal (it moved). When microscopes revealed organisms like *Euglena*—which swam like an animal but photosynthesized like a plant—the binary system broke. In 1886, German biologist Ernst Haeckel solved this by creating a third "junk drawer" kingdom: Protista.\n- Option A is wrong because Linnaeus lived in the 1700s and only used Plants and Animals.\n- Option B is wrong because Whittaker proposed the five-kingdom model in 1969.\n- Option C is correct because Ernst Haeckel historically created the Kingdom Protista.\n- Option D is wrong because Woese created the three-domain system in 1990.\n> **Key Takeaway:** Ernst Haeckel was the first scientist to formally propose the Kingdom Protista in 1886.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific cellular structures do bacteria in the genus *Spirillum* utilize to propel themselves through their aquatic environments?`,
+    options:[`Thousands of tiny, rhythmic cilia covering their entire membrane`, `Temporary, streaming cytoplasmic extensions called pseudopodia`, `Short, rigid, harpoon-like attachment pili`, `Long, whip-like external motors called flagella`],
+    correct: 3,
+    explanation: `## Insight\nSpirilla are rigid, spiral-shaped bacteria. Because their cell wall is stiff like a corkscrew, they cannot wiggle or flex their bodies to swim. Instead, they rely entirely on external biological outboard motors. They have tufts of long, whip-like flagella attached to their ends that spin rapidly to push them through the water.\n- Option A is wrong because cilia are found on eukaryotic protists (like *Paramecium*), never on bacteria.\n- Option B is wrong because pseudopodia are used by amoebas, not bacteria.\n- Option C is wrong because pili are used for attaching to surfaces or exchanging DNA, not for swimming.\n- Option D is correct because rigid spirilla rely entirely on external flagella for locomotion.\n> **Key Takeaway:** Spirilla are rigid, spiral-shaped bacteria that move through water using long, whip-like external flagella.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the formal biological term for the process where bacteria actively exchange genetic material without undergoing any form of reproduction?`,
+    options:[`Horizontal gene transfer`, `Vertical gene transfer`, `Binary fission`, `Asexual budding`],
+    correct: 0,
+    explanation: `## Insight\nIn humans, genes only move downward from parent to child (vertical transfer). Bacteria have a massive evolutionary advantage: they can pass genes sideways to their neighbors. A bacterium can copy a plasmid containing an antibiotic resistance gene and physically shoot it into a completely unrelated bacterium next to it. This non-reproductive sharing is horizontal gene transfer.\n- Option A is correct because horizontal gene transfer explicitly describes the direct, sideways exchange of DNA between living bacteria.\n- Option B is wrong because vertical transfer means passing genes to offspring during reproduction.\n- Option C is wrong because binary fission is the actual process of asexual reproduction.\n- Option D is wrong because budding is a form of reproduction.\n> **Key Takeaway:** Horizontal gene transfer is the process by which bacteria exchange genetic material directly with their neighbors without reproducing.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `During which specific viral life cycle does the virus effectively hide by integrating its DNA directly into the host bacterium's chromosome to form a 'prophage'?`,
+    options:[`The highly destructive lytic cycle`, `The stealthy lysogenic cycle`, `The reproductive binary fission cycle`, `The active conjugation cycle`],
+    correct: 1,
+    explanation: `## Insight\nViruses have two main strategies. The lytic cycle is a smash-and-grab: build viruses quickly and blow up the cell. The lysogenic cycle is a sleeper agent strategy. The viral DNA sneaks into the host's chromosome (becoming a prophage). Now, every time the bacterium naturally divides, it unknowingly copies the viral DNA into all of its millions of offspring.\n- Option A is wrong because the lytic cycle actively destroys the host DNA; it does not hide within it.\n- Option B is correct because the lysogenic cycle is explicitly defined by the silent integration of viral DNA into the host genome.\n- Option C is wrong because binary fission is bacterial reproduction, not a viral cycle.\n- Option D is wrong because conjugation is bacterial DNA sharing, not a viral cycle.\n> **Key Takeaway:** In the lysogenic cycle, viral DNA integrates silently into the host's chromosome, forming a hidden prophage.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following notorious human pathogens is formally classified as a 'retrovirus'?`,
+    options:[`The Influenza virus`, `The bacteriophage T4`, `The Human Immunodeficiency Virus (HIV)`, `The severe acute respiratory syndrome Coronavirus`],
+    correct: 2,
+    explanation: `## Insight\nA retrovirus breaks the central dogma of biology. Normally, DNA is transcribed into RNA. A retrovirus (like HIV) enters the cell carrying only RNA. It then uses a special enzyme to reverse-engineer that RNA backward into DNA, which it then permanently splices into the human host's chromosomes. \n- Option A is wrong because Influenza is a standard RNA virus, not a retrovirus.\n- Option B is wrong because T4 is a DNA virus that infects bacteria.\n- Option C is correct because HIV is the most infamous and studied retrovirus in human medicine.\n- Option D is wrong because Coronaviruses are positive-sense RNA viruses, not retroviruses.\n> **Key Takeaway:** The Human Immunodeficiency Virus (HIV) is a retrovirus, meaning it converts its RNA genome backward into DNA once inside a host.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the name of the unique, critical enzyme that a retrovirus utilizes to convert its RNA genome backward into DNA?`,
+    options:[`DNA polymerase`, `RNA polymerase`, `Helicase`, `Reverse transcriptase`],
+    correct: 3,
+    explanation: `## Insight\nHuman cells do not possess the machinery to turn RNA into DNA. Therefore, a retrovirus like HIV must bring its own factory equipment. Packed inside the viral capsid is a highly specialized enzyme. Because it performs transcription in reverse (RNA to DNA), it is perfectly named reverse transcriptase. \n- Option A is wrong because DNA polymerase copies DNA into more DNA.\n- Option B is wrong because RNA polymerase converts DNA into RNA (normal transcription).\n- Option C is wrong because helicase unzips the DNA double helix.\n- Option D is correct because reverse transcriptase is the specific enzyme that retroviruses use to convert RNA into DNA.\n> **Key Takeaway:** Retroviruses rely on the unique enzyme reverse transcriptase to convert their RNA genome into DNA.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific species of Cyanobacteria is globally notorious for producing massive, toxic blooms that release the deadly hepatotoxin 'microcystin'?`,
+    options:[`*Microcystis aeruginosa*`, `*Anabaena azollae*`, `*Oscillatoria princeps*`, `*Nostoc commune*`],
+    correct: 0,
+    explanation: `## Insight\nWhen agricultural fertilizer runs off into a warm lake, it triggers a catastrophic bacterial bloom. The most infamous culprit is *Microcystis aeruginosa*. This cyanobacterium forms massive, foul-smelling green scums on the water surface and pumps out microcystin, a toxin that aggressively destroys the livers of any animal or human that drinks the water.\n- Option A is correct because *Microcystis aeruginosa* is the primary producer of the liver toxin microcystin.\n- Option B is wrong because *Anabaena azollae* is a helpful, symbiotic nitrogen-fixer in ferns.\n- Option C is wrong because *Oscillatoria* is generally non-toxic.\n- Option D is wrong because *Nostoc* forms harmless, jelly-like ground mats.\n> **Key Takeaway:** The cyanobacterium *Microcystis aeruginosa* is notorious for blooming in polluted lakes and producing the deadly liver toxin microcystin.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which highly potent toxin, produced by certain Cyanobacteria, specifically attacks the nervous system and causes rapid muscle paralysis?`,
+    options:[`Microcystin`, `Anatoxin`, `Cylindrospermopsin`, `Botulinum toxin`],
+    correct: 1,
+    explanation: `## Insight\nCyanobacteria produce two main types of poisons: hepatotoxins (liver destroyers) and neurotoxins (nerve destroyers). Anatoxin is a neurotoxin. It binds permanently to the nerve receptors in muscles, forcing them to lock in a state of continuous contraction. The victim becomes completely paralyzed and quickly dies of asphyxiation because the diaphragm cannot move to pump the lungs.\n- Option A is wrong because microcystin attacks the liver, not the nervous system.\n- Option B is correct because anatoxin is a rapid-acting, highly lethal neurotoxin.\n- Option C is wrong because cylindrospermopsin primarily damages the liver and kidneys slowly.\n- Option D is wrong because botulinum toxin is produced by *Clostridium*, not Cyanobacteria.\n> **Key Takeaway:** Anatoxin is a potent neurotoxin produced by Cyanobacteria that causes rapid muscle paralysis and respiratory failure.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `During the final stages of the viral lytic cycle, what specific enzyme does the bacteriophage synthesize to actively destroy the host bacterium's cell wall from the inside out?`,
+    options:[`Protease`, `Lipase`, `Muramidase (lysozyme)`, `Nuclease`],
+    correct: 2,
+    explanation: `## Insight\nOnce the virus has successfully turned the bacterium into a factory and built hundreds of new viral clones, those clones are trapped inside the tough peptidoglycan cell wall. To escape, the viral DNA commands the host to build one final protein: muramidase (also called lysozyme). This enzyme acts like a chemical bomb, dissolving the cell wall until the bacterium bursts open (lyses).\n- Option A is wrong because protease breaks down proteins, not the sugar-amino acid mesh of the cell wall.\n- Option B is wrong because lipase breaks down fats.\n- Option C is correct because muramidase (lysozyme) specifically hydrolyzes and destroys bacterial peptidoglycan.\n- Option D is wrong because nuclease destroys DNA/RNA.\n> **Key Takeaway:** In the final step of the lytic cycle, viruses produce muramidase (lysozyme) to dissolve the host's cell wall and escape.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What is the specific structural component of the bacterial cell wall that the enzyme lysozyme (muramidase) aggressively attacks and destroys?`,
+    options:[`The outer lipid membrane`, `Solid cellulose microfibrils`, `The internal nuclear envelope`, `The structural peptidoglycan mesh`],
+    correct: 3,
+    explanation: `## Insight\nBacterial cell walls derive all their immense physical strength from a chain-link fence-like molecule called peptidoglycan. Lysozyme is uniquely designed to act like a pair of chemical wire-cutters. It specifically targets the glycosidic bonds connecting the sugar chains in peptidoglycan, causing the entire wall structure to unravel and collapse.\n- Option A is wrong because lysozyme ignores lipids; it only attacks sugars/amino acids in the wall.\n- Option B is wrong because cellulose is found in plant cell walls, not bacteria.\n- Option C is wrong because bacteria do not have a nuclear envelope.\n- Option D is correct because peptidoglycan is the exact, specific molecular target of lysozyme.\n> **Key Takeaway:** Lysozyme (muramidase) destroys bacteria by chemically cutting the bonds in the structural peptidoglycan mesh of their cell walls.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific parasitic protozoan navigates through the human bloodstream using a combination of a single flagellum attached to a fin-like 'undulating membrane'?`,
+    options:[`*Trypanosoma*`, `*Plasmodium*`, `*Amoeba proteus*`, `*Paramecium*`],
+    correct: 0,
+    explanation: `## Insight\nBlood is a highly viscous (thick) fluid, packed with red blood cells. To swim through it effectively, the parasite *Trypanosoma* (which causes sleeping sickness) has evolved a brilliant motor. Its flagellum is anchored along the entire length of its body by a flexible sheet of tissue. When the flagellum beats, the entire sheet ripples like a fish fin—this is an undulating membrane.\n- Option A is correct because *Trypanosoma* uniquely uses a flagellum and an undulating membrane to swim through thick blood.\n- Option B is wrong because *Plasmodium* is a non-motile sporozoan.\n- Option C is wrong because *Amoeba* uses slow, creeping pseudopodia.\n- Option D is wrong because *Paramecium* uses thousands of tiny cilia.\n> **Key Takeaway:** The blood parasite *Trypanosoma* moves using a highly specialized flagellum attached to a rippling undulating membrane.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `When environmental conditions are favorable, a slime mold enters its active feeding stage. What is this massive, creeping, single-celled blob formally called?`,
+    options:[`A resilient resting cyst`, `A massive, multinucleate plasmodium`, `An airborne sporangium`, `A densely packed fruiting body`],
+    correct: 1,
+    explanation: `## Insight\nWhen a slime mold is happy and eating rotting wood, it abandons normal cellular rules. Instead of dividing into millions of separate cells, it just keeps replicating its nucleus while letting its cytoplasm grow into one massive, continuous, slimy blob. This giant, single-celled, multi-nucleated hunting machine is called a plasmodium.\n- Option A is wrong because a cyst is a dormant survival structure, not an active feeding stage.\n- Option B is correct because the active, creeping, giant-cell feeding stage is the plasmodium.\n- Option C is wrong because a sporangium is a reproductive capsule.\n- Option D is wrong because the fruiting body only forms when the slime mold is starving.\n> **Key Takeaway:** The active, massive, single-celled feeding stage of a slime mold is called a plasmodium.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific phylum of marine algae contains the unique brown accessory pigment known as 'fucoxanthin'?`,
+    options:[`Chlorophyta (Green algae)`, `Rhodophyta (Red algae)`, `Phaeophyta (Brown algae)`, `Pyrrophyta (Dinoflagellates)`],
+    correct: 2,
+    explanation: `## Insight\nAll algae have green chlorophyll to photosynthesize. However, different ocean depths require different pigments to catch the available light. The massive kelps and seaweeds of the phylum Phaeophyta produce overwhelming amounts of an accessory pigment called fucoxanthin. This pigment is highly efficient at catching light underwater, and it completely masks the green chlorophyll, turning the entire plant a deep olive-brown.\n- Option A is wrong because green algae rely almost entirely on standard green chlorophyll.\n- Option B is wrong because red algae utilize the red pigment phycoerythrin.\n- Option C is correct because the brown pigment fucoxanthin is the defining characteristic of Phaeophyta.\n- Option D is wrong because while dinoflagellates have some related pigments, Phaeophyta is the primary phylum defined by massive fucoxanthin use.\n> **Key Takeaway:** The phylum Phaeophyta (brown algae) is characterized by the presence of the brown accessory pigment fucoxanthin.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `What specific visual effect does the heavy presence of the pigment 'fucoxanthin' have on an alga?`,
+    options:[`It causes the alga to glow brilliantly in the dark (bioluminescence).`, `It turns the alga a bright, highly reflective neon green.`, `It completely masks the green chlorophyll, giving the alga a distinct olive-brown or dark brown color.`, `It renders the alga completely transparent and invisible to aquatic predators.`],
+    correct: 3,
+    explanation: `## Insight\nFucoxanthin is a very dark, dominant pigment. Even though brown algae are packed with green chlorophyll (which they need for photosynthesis), the sheer volume of fucoxanthin acts like a heavy brown paint over a green canvas. It absorbs blue-green to yellow-green light, reflecting back only muddy brown and olive tones.\n- Option A is wrong because bioluminescence is a chemical light reaction (luciferin), not a passive pigment effect.\n- Option B is wrong because fucoxanthin is definitively brown, not green.\n- Option C is correct because fucoxanthin overpowers the green chlorophyll, resulting in a brown color.\n- Option D is wrong because pigments actively absorb light, making the organism highly visible, not transparent.\n> **Key Takeaway:** The pigment fucoxanthin physically masks the green of chlorophyll, giving brown algae their characteristic dark, olive-brown color.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which specific group of microscopic, unicellular algae is defined by constructing a rigid, two-part protective shell (test) made entirely out of hydrated silica (glass)?`,
+    options:[`Diatoms`, `Dinoflagellates`, `Slime molds`, `Green algae`],
+    correct: 0,
+    explanation: `## Insight\nDiatoms are evolutionary marvels. Instead of building cell walls out of soft, organic cellulose like a plant, they extract dissolved silicon dioxide straight from the ocean water. They construct a microscopic, perfectly geometric shell (a frustule or test) that fits together in two overlapping halves, exactly like a glass shoebox or a petri dish.\n- Option A is correct because building a two-part silica (glass) shell is the absolute defining characteristic of diatoms.\n- Option B is wrong because dinoflagellates wear armor made of organic cellulose plates, not silica.\n- Option C is wrong because slime molds have no rigid shell; they are naked blobs of cytoplasm.\n- Option D is wrong because green algae use standard cellulose cell walls.\n> **Key Takeaway:** Diatoms are unique, single-celled algae that live inside a rigid, two-part shell made entirely of hydrated silica (glass).`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `By what specific cellular mechanism do diatoms primarily reproduce asexually, resulting in their silica shells getting progressively smaller over generations?`,
+    options:[`Aggressive horizontal gene transfer`, `Simple binary fission (cell division)`, `The explosive release of thousands of airborne spores`, `The continuous budding of tiny, mature clones from the parent cell`],
+    correct: 1,
+    explanation: `## Insight\nDiatom shells fit together like a box and a lid. When a diatom reproduces asexually, the box and the lid separate, and the cell divides exactly in half (binary fission). Each new daughter cell takes one piece of the old shell and builds a *new* bottom piece to fit *inside* it. Because the new piece always fits inside the old piece, one half of the diatom lineage gets physically smaller and smaller with every generation!\n- Option A is wrong because gene transfer is DNA swapping in bacteria, not reproduction.\n- Option B is correct because diatoms split directly in half via binary fission.\n- Option C is wrong because diatoms do not use explosive airborne spores; they are aquatic.\n- Option D is wrong because budding is an asymmetrical pinching process (used by yeast), whereas fission is a symmetrical split.\n> **Key Takeaway:** Diatoms reproduce asexually primarily through binary fission, a process where the two halves of their glass shell separate.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which well-known, highly motile protist possesses a distinct red 'eyespot' (stigma) used specifically to detect and swim toward light sources?`,
+    options:[`*Amoeba proteus*`, `*Plasmodium falciparum*`, `*Euglena*`, `*Paramecium caudatum*`],
+    correct: 2,
+    explanation: `## Insight\n*Euglena* is a mixotroph. It has a flagellum to swim, but it also has green chloroplasts, meaning it relies heavily on photosynthesis to survive. To find the sun in a dark, murky pond, it utilizes a highly specialized organelle—a bright red, light-sensitive eyespot (stigma). This primitive "eye" guides the flagellum to swim directly into the brightest available light (positive phototaxis).\n- Option A is wrong because the blind, creeping *Amoeba* hunts in the dark mud and has no eyespot.\n- Option B is wrong because *Plasmodium* is a non-motile blood parasite.\n- Option C is correct because the red eyespot is the famous, defining sensory organelle of *Euglena*.\n- Option D is wrong because *Paramecium* is a heterotroph that hunts by touch/chemicals, not light.\n> **Key Takeaway:** *Euglena* utilizes a specialized red eyespot (stigma) to navigate toward sunlight for photosynthesis.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In a freshwater protist like *Paramecium*, what is the absolutely critical physiological function of the star-shaped 'contractile vacuole'?`,
+    options:[`To rapidly digest complex, captured bacterial proteins.`, `To store massive amounts of dense, heavy lipid oil for long-term energy.`, `To act as a central hub for swapping DNA during sexual conjugation.`, `To actively pump out the excess water that constantly floods into the cell via osmosis, preventing the cell from exploding.`],
+    correct: 3,
+    explanation: `## Insight\nFreshwater is a lethal environment for a single cell. Because the inside of a *Paramecium* is salty and packed with proteins, pure freshwater constantly rushes into the cell through the membrane (osmosis). Without a cell wall to stop it, the *Paramecium* would swell up and pop like a balloon. To survive, it uses a contractile vacuole—a biological bilge pump that violently squeezes the excess water back out into the pond every few seconds.\n- Option A is wrong because digestion happens in a food vacuole, not the contractile vacuole.\n- Option B is wrong because storing oil is a static process (used by diatoms), not an active pumping one.\n- Option C is wrong because DNA swapping happens between the micronuclei.\n- Option D is correct because the contractile vacuole is strictly an active, life-saving water pump.\n> **Key Takeaway:** The contractile vacuole actively pumps excess water out of the protist, preventing the cell from swelling and bursting due to osmosis.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In bacterial morphological classification, what specific shape is denoted by the term 'vibrio'?`,
+    options:[`A curved, bent rod resembling a comma`, `A perfectly symmetrical, spherical ball`, `A rigid, tightly wound, multi-loop spiral`, `A perfectly straight, elongated cylinder`],
+    correct: 0,
+    explanation: `## Insight\nBacteria are named by what they look like under a microscope. A "vibrio" looks exactly like a standard rod (bacillus) that someone grabbed and bent slightly in the middle. It looks like a crescent moon, a boomerang, or a punctuation comma. The most terrifying example in human history is *Vibrio cholerae*, the comma-shaped bacterium that causes cholera.\n- Option A is correct because the term "vibrio" specifically designates a curved, comma-like shape.\n- Option B is wrong because a perfect sphere is a coccus.\n- Option C is wrong because a rigid, multi-loop spiral is a spirillum.\n- Option D is wrong because a straight cylinder is a bacillus.\n> **Key Takeaway:** A bacterium classified as a 'vibrio' exhibits a distinct, curved, comma-like morphological shape.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `The highly specialized, acid-resistant bacterium *Helicobacter pylori* is famous in human medicine for being the primary biological cause of:`,
+    options:[`Aggressive, flesh-eating skin infections`, `Painful peptic ulcers and chronic inflammation in the lining of the stomach`, `Severe, dehydrating intestinal cholera`, `Deep-tissue, paralytic tetanus infections`],
+    correct: 1,
+    explanation: `## Insight\nFor decades, doctors believed stomach ulcers were caused by stress or spicy food, because they assumed no bacteria could survive the horrific acid of the human stomach. They were wrong. *Helicobacter pylori* burrows deep into the protective mucus lining of the stomach, secretes an enzyme (urease) to neutralize the acid around it, and slowly destroys the stomach wall, causing incredibly painful peptic ulcers.\n- Option A is wrong because flesh-eating disease is usually caused by *Streptococcus pyogenes*.\n- Option B is correct because *H. pylori* is the definitive, proven cause of most peptic stomach ulcers.\n- Option C is wrong because cholera is caused by *Vibrio cholerae* in the intestines, not the stomach.\n- Option D is wrong because tetanus is caused by *Clostridium tetani* via deep puncture wounds.\n> **Key Takeaway:** The bacterium *Helicobacter pylori* is the primary cause of chronic gastritis and painful peptic ulcers in the human stomach.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which major domain of life is biochemically defined by having its massive, linear DNA molecules tightly wrapped around highly complex organizational proteins called histones?`,
+    options:[`The domain Bacteria`, `The viral kingdom`, `The domain Eukarya`, `The domain Monera`],
+    correct: 2,
+    explanation: `## Insight\nHuman DNA is roughly two meters long. To fit that immense length inside a microscopic nucleus without it tangling into an impossible knot, the cell must organize it. Eukaryotes solve this by wrapping their linear DNA tightly around spool-like proteins called histones. This highly organized packaging system (chromatin) is a defining hallmark of complex eukaryotic life.\n- Option A is wrong because Bacteria have simple, naked, circular DNA without true histones.\n- Option B is wrong because viruses do not have complex histone packaging (and are not a domain).\n- Option C is correct because the domain Eukarya is uniquely defined by possessing true, complex histone proteins to package linear DNA.\n- Option D is wrong because Monera is an obsolete kingdom representing simple prokaryotes, not a domain.\n> **Key Takeaway:** The domain Eukarya is defined by possessing complex histone proteins, which act as spools to tightly organize and package their linear DNA.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Because prokaryotes (Bacteria and Archaea) entirely lack a membrane-bound nucleus, where exactly is their single, circular chromosome located within the cell?`,
+    options:[`Trapped securely inside the rigid layers of the peptidoglycan cell wall`, `Anchored permanently to the spinning base of the external flagellum motor`, `Stored inside a highly protective, dormant, internal survival spore`, `Floating freely in a centralized, unbound region of the cytoplasm known as the nucleoid`],
+    correct: 3,
+    explanation: `## Insight\nProkaryotes are the ultimate minimalists. They do not waste energy building complex internal walls or vaults. Because they have no nuclear membrane to lock their DNA away, their single, massive loop of DNA just floats bare in the middle of the cellular fluid. This specific, messy, unbound region where the DNA congregates is called the nucleoid.\n- Option A is wrong because the cell wall is the outermost armor, completely separate from the internal DNA.\n- Option B is wrong because the flagellum motor is on the cell boundary, far from the central genome.\n- Option C is wrong because while spores protect DNA during emergencies, the active, living cell uses the nucleoid.\n- Option D is correct because the nucleoid is the specific, unbound region of the cytoplasm where prokaryotic DNA resides.\n> **Key Takeaway:** In prokaryotes, the single circular chromosome floats freely in an unbound central region of the cytoplasm called the nucleoid.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which of the following statements represents an INCORRECT assumption about the characteristics of the Kingdom Protista?`,
+    options:[`Every single protist on Earth possesses a rigid, protective cell wall.`, `All protists are fundamentally classified as eukaryotic organisms.`, `The vast majority of protist species are microscopic and unicellular.`, `Protists are absolutely dependent on aquatic, marine, or highly moist environments to survive.`],
+    correct: 0,
+    explanation: `## Insight\nProtista is the "junk drawer" of biology; it contains all the eukaryotes that don't fit into Plants, Animals, or Fungi. Because it is so diverse, there are very few absolute rules. While *some* protists have walls (like the glass shell of a diatom or the cellulose plates of a dinoflagellate), many others are completely naked. An Amoeba, for example, is just a blob of cytoplasm wrapped in a flexible membrane; it has absolutely no cell wall.\n- Option A is correct (it is the INCORRECT assumption) because many protists, like Amoebas, completely lack a cell wall.\n- Option B is wrong because all protists truly are eukaryotes (they have a nucleus).\n- Option C is wrong because the vast majority truly are unicellular.\n- Option D is wrong because protists truly do require water or moisture to prevent fatal desiccation.\n> **Key Takeaway:** It is false to assume all protists have a cell wall; many active hunters, like the Amoeba, lack one entirely to remain flexible.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How do members of the marine phylum Phaeophyta (the massive brown algae, like kelps) biochemically store their excess photosynthetic food reserves?`,
+    options:[`As perfectly rigid, solid crystals of pure quartz`, `As the complex, unique carbohydrate polymer known as laminarin`, `As highly flammable, liquid hydrocarbon oil droplets`, `As heavy, dense granules of standard terrestrial plant starch`],
+    correct: 1,
+    explanation: `## Insight\nBiochemistry is a major tool for classifying algae. Green algae (Chlorophyta) store food exactly like land plants: as starch. However, the massive brown kelps of the Phaeophyta phylum took a different evolutionary path. They synthesize their excess glucose into a totally unique, specialized carbohydrate chain called laminarin (named after the brown kelp genus *Laminaria*).\n- Option A is wrong because quartz is an inorganic rock mineral, not a biological food source.\n- Option B is correct because laminarin is the specific, defining storage carbohydrate for brown algae.\n- Option C is wrong because oil droplet storage is a hallmark of diatoms, not brown algae.\n- Option D is wrong because starch is the storage medium of green algae, not brown.\n> **Key Takeaway:** Brown algae (Phaeophyta) uniquely store their excess photosynthetic energy as the complex carbohydrate laminarin.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `How do members of the deep-sea phylum Rhodophyta (the red algae) biochemically store their excess photosynthetic food reserves?`,
+    options:[`As massive, internal pockets of highly pressurized methane gas`, `As liquid lipid oils that simultaneously increase their aquatic buoyancy`, `As a highly specialized, highly branched polymer known specifically as floridean starch`, `As standard, simple glycogen granules identical to those found in the human liver`],
+    correct: 2,
+    explanation: `## Insight\nRed algae live in some of the deepest, darkest waters of the ocean where light is scarce. To survive, their biochemistry is highly specialized. While green algae use standard starch, red algae (Rhodophyta) synthesize a unique, highly branched variation of starch that lacks the molecule amylose. Because this specific starch is unique to them, scientists named it "floridean starch."\n- Option A is wrong because algae do not store energy as pressurized methane gas.\n- Option B is wrong because oil storage is the strategy used by golden diatoms, not red algae.\n- Option C is correct because floridean starch is the exclusive, defining storage carbohydrate of red algae.\n- Option D is wrong because glycogen is used by animals, fungi, and cyanobacteria, not red algae.\n> **Key Takeaway:** Red algae (Rhodophyta) store their excess energy as a unique, highly branched carbohydrate known as floridean starch.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which highly specialized group of protozoans is defined by being entirely non-motile (lacking any cilia, flagella, or pseudopodia) and living exclusively as obligate internal parasites?`,
+    options:[`The Sarcodinians (Amoebas)`, `The Mastigophorans (Zooflagellates)`, `The Ciliophorans (Ciliates)`, `The Sporozoans (Apicomplexans)`],
+    correct: 3,
+    explanation: `## Insight\nEvolution follows a simple rule: if you don't need it, you lose it. Most protozoans have to actively swim or crawl to hunt for food. Sporozoans (like the malaria parasite *Plasmodium*), however, have evolved to live their entire lives completely submerged inside the rich, warm, nutrient-filled bloodstream or cells of a host animal. Because the food is brought directly to them, they have completely lost all ability to move on their own.\n- Option A is wrong because Sarcodinians actively hunt using creeping pseudopodia.\n- Option B is wrong because Mastigophorans actively swim using whipping flagella.\n- Option C is wrong because Ciliophorans actively swim using thousands of beating cilia.\n- Option D is correct because Sporozoans are the only protozoan group that completely lacks motility and lives strictly as parasites.\n> **Key Takeaway:** Sporozoans are a unique group of protozoans that completely lack locomotory structures and survive exclusively as internal parasites.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In Robert Whittaker's historical five-kingdom classification system (proposed in 1969), the Kingdom Protista was created specifically to include:`,
+    options:[`All microscopic, single-celled eukaryotic organisms, such as slime molds, amoebas, and algae.`, `All entirely blind, deep-ocean invertebrate animals lacking a central spinal cord.`, `All extremophile prokaryotic bacteria capable of surviving in boiling, highly acidic hydrothermal vents.`, `All terrestrial, multicellular fungi capable of producing massive, airborne reproductive spores.`],
+    correct: 0,
+    explanation: `## Insight\nBefore the discovery of genetics and DNA domains, Whittaker tried to clean up the Tree of Life based on how things ate and how complex they were. Plants made food, Animals ate food, and Fungi absorbed food. But there were millions of microscopic, single-celled creatures that didn't fit these neat boxes. He shoved all of these single-celled eukaryotes (the algae, the amoebas, the slime molds) into one massive "catch-all" drawer called the Kingdom Protista.\n- Option A is correct because Protista was explicitly designed to hold all the single-celled (and simple multicellular) eukaryotes.\n- Option B is wrong because blind invertebrates belong firmly in the Kingdom Animalia.\n- Option C is wrong because extremophile prokaryotes belonged to the Kingdom Monera (now the domain Archaea).\n- Option D is wrong because terrestrial fungi belong to their own dedicated Kingdom Fungi.\n> **Key Takeaway:** The Kingdom Protista was established to group together all the simple, mostly single-celled eukaryotic organisms like algae and slime molds.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which pioneering 20th-century ecologist formally proposed the highly influential five-kingdom classification system (Monera, Protista, Fungi, Plantae, Animalia)?`,
+    options:[`Carl Linnaeus`, `Robert Whittaker`, `Ernst Haeckel`, `Carl Woese`],
+    correct: 1,
+    explanation: `## Insight\nIn 1969, Robert Whittaker realized that lumping fungi in with plants was biologically incorrect, because fungi don't photosynthesize; they absorb dead matter. He revolutionized biology by breaking life into five distinct kingdoms based on cellular structure (prokaryote vs eukaryote) and how they gained nutrition (photosynthesis, ingestion, or absorption).\n- Option A is wrong because Linnaeus lived in the 1700s and used only two kingdoms.\n- Option B is correct because Robert Whittaker is the architect of the famous five-kingdom system.\n- Option C is wrong because Haeckel proposed the three-kingdom system (adding Protista) in 1886.\n- Option D is wrong because Woese developed the modern three-domain system in 1990 using RNA genetics.\n> **Key Takeaway:** Robert Whittaker formally proposed the five-kingdom classification system in 1969, elevating Fungi to their own kingdom.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which groundbreaking microbiologist fundamentally rewrote the Tree of Life in 1990 by introducing the three-domain system (Bacteria, Archaea, Eukarya) based on ribosomal RNA analysis?`,
+    options:[`Charles Darwin`, `Gregor Mendel`, `Carl Woese`, `Alexander Fleming`],
+    correct: 2,
+    explanation: `## Insight\nFor decades, scientists thought all bacteria were exactly the same (the Kingdom Monera). In the 1970s and 80s, Carl Woese began looking at the actual genetic code (16S ribosomal RNA) of these microbes. He made a shocking discovery: the extremophile "bacteria" (Archaea) were so genetically different from normal bacteria that they required an entirely new, highest-level category. This discovery birthed the Domain system.\n- Option A is wrong because Darwin founded the theory of evolution by natural selection in 1859.\n- Option B is wrong because Mendel founded the science of genetics using pea plants.\n- Option C is correct because Carl Woese is the undisputed discoverer of Archaea and the architect of the three-domain system.\n- Option D is wrong because Fleming discovered the antibiotic penicillin.\n> **Key Takeaway:** Carl Woese revolutionized taxonomy in 1990 by using genetic analysis to divide all life into three distinct Domains: Bacteria, Archaea, and Eukarya.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `Which historically devastating, fungus-like protist is directly responsible for causing the disease 'late blight' in potatoes, which triggered the catastrophic Irish Potato Famine in the 1840s?`,
+    options:[`*Trypanosoma gambiense*`, `*Vibrio cholerae*`, `*Plasmodium falciparum*`, `*Phytophthora infestans*`],
+    correct: 3,
+    explanation: `## Insight\nFor over a century, scientists thought the organism that destroyed the Irish potato crop was a fungus, because it grew fuzzy white mold on the rotting potatoes. Modern genetics revealed it is actually a highly destructive, water-mold protist (an oomycete). Its scientific name, *Phytophthora infestans*, literally translates from Greek as the "plant-destroying infector."\n- Option A is wrong because *Trypanosoma* causes human sleeping sickness.\n- Option B is wrong because *Vibrio cholerae* causes human cholera.\n- Option C is wrong because *Plasmodium* causes human malaria.\n- Option D is correct because *Phytophthora infestans* is the exact protist pathogen that causes late blight in potatoes.\n> **Key Takeaway:** The catastrophic Irish Potato Famine was caused by *Phytophthora infestans*, a highly destructive, fungus-like protist that rots potatoes.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: `In the rigorous, modern practice of phylogenetic taxonomy, what does the concept of a 'clade' strictly refer to?`,
+    options:[`A monophyletic grouping that includes one single evolutionary common ancestor and absolutely every single one of its descendant species.`, `A grouping of highly unrelated species that happen to look identical because they live in the exact same desert environment.`, `A specific, man-made taxonomic rank that sits exactly halfway between a Phylum and a Class.`, `A completely random collection of genetically identical, asexually reproducing bacterial clones.`],
+    correct: 0,
+    explanation: `## Insight\nPhylogenetics is about drawing the true family tree of life. If you grab a branch on that tree and cut it off, everything you are holding in your hand is a clade. It must include the ancient grandparent at the base of the cut, and every single child, grandchild, and great-grandchild that ever evolved from it. If you leave even one descendant out, it is not a true clade.\n- Option A is correct because a clade (a monophyletic group) is strictly defined as a single common ancestor and all of its descendants.\n- Option B is wrong because unrelated species looking similar is convergent evolution (polyphyly), which is the exact opposite of a clade.\n- Option C is wrong because a clade is an evolutionary lineage, not a fixed Linnaean rank.\n- Option D is wrong because a clade maps deep-time evolutionary divergence, not just modern bacterial cloning.\n> **Key Takeaway:** In modern evolutionary taxonomy, a clade is strictly defined as a single common ancestor and all of its descendant lineages.`
+  },
 
 // term 2 
 
