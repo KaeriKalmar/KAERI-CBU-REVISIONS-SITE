@@ -2158,14 +2158,11 @@ function challengeFriend(score, total, modeName) {
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
 }
 
-// ── PRINT HELPERS (KAERI STANDARD REVISION KIT ENGINE v2.0) ──────────────
-// Replaces the old flat _buildPrintItemHTML / _buildPrintDocHTML system.
-// On preview: clean card list, no cover.
-// On print:   full branded A4 document — front cover, TOC, JS-paginated
-//             content pages (no card bleeds), back cover with QR code.
-// ─────────────────────────────────────────────────────────────────────────
+// ── PRINT HELPERS (KAERI STANDARD REVISION KIT ENGINE v3.0 – HYBRID) ──────────
+// Uses a real window (not iframe) and a robust pagination engine that measures
+// each card in a sandbox. Guarantees print works on all mobile and desktop browsers.
 
-// ── COURSE IDENTITY MAP ───────────────────────────────────────────────────
+// Constants (unchanged from original)
 const COURSE_IDENTITY = {
     'CS110': { accent: '#00bcd4', name: 'Introduction to Computing' },
     'MA110': { accent: '#42a5f5', name: 'Mathematics' },
@@ -2176,7 +2173,6 @@ const COURSE_IDENTITY = {
     'MT221': { accent: '#26a69a', name: 'Mineral Processing' },
 };
 
-// ── SECTION COLOUR PALETTE (9 rotating slots) ────────────────────────────
 const SECTION_PALETTE = [
     { bg: '#f1f8e9', acc: '#7cb342' },
     { bg: '#e0f7fa', acc: '#00bcd4' },
@@ -2189,7 +2185,6 @@ const SECTION_PALETTE = [
     { bg: '#f9fbe7', acc: '#c0ca33' },
 ];
 
-// ── SESSION LABELS ────────────────────────────────────────────────────────
 const SESSION_LABELS = {
     mcq:         { title: 'Multiple Choice',    icon: '📋' },
     shortAnswer: { title: 'Short Answer',       icon: '✍️'  },
@@ -2197,7 +2192,6 @@ const SESSION_LABELS = {
     flashcard:   { title: 'Flashcard Glossary', icon: '🃏' },
 };
 
-// ── HELPERS ───────────────────────────────────────────────────────────────
 function _courseIdentity(course) {
     return COURSE_IDENTITY[course] || { accent: '#111435', name: course };
 }
@@ -2205,7 +2199,6 @@ function _termLabel(term) {
     return term ? 'Term ' + term.replace('T', '') : '';
 }
 
-// ── GROUP SESSION DATA INTO SECTIONS ─────────────────────────────────────
 function _buildSectionsFromSession() {
     const type = currentQuizType;
     const sections = [];
@@ -2225,7 +2218,6 @@ function _buildSectionsFromSession() {
                 items: groups[topic],
             });
         });
-
     } else if (type === 'essay' && currentEssay) {
         sections.push({
             num:   1,
@@ -2233,7 +2225,6 @@ function _buildSectionsFromSession() {
             pal:   SECTION_PALETTE[0],
             items: currentEssay.steps,
         });
-
     } else if (type === 'flashcard') {
         sections.push({
             num:   1,
@@ -2245,7 +2236,6 @@ function _buildSectionsFromSession() {
     return sections;
 }
 
-// ── SINGLE CARD HTML (used in both preview and print doc) ─────────────────
 function _itemCardHTML(item, sectionName, type, idx, pal) {
     const acc = pal.acc;
     let labelText = '', qHTML = '', aHTML = '', eHTML = '';
@@ -2291,389 +2281,7 @@ function _itemCardHTML(item, sectionName, type, idx, pal) {
     </div>`;
 }
 
-// ── FULL BRANDED A4 PRINT DOCUMENT ────────────────────────────────────────
-// Returns a complete, self-contained HTML string for window.open().
-// Key changes from the iframe version:
-//   • The print trigger is embedded INSIDE the HTML, runs in the new window's
-//     own context, and waits for fonts.ready + rAF before calling print().
-//   • No external KaTeX injection needed from parent — the new window loads
-//     its own KaTeX from CDN inside its <head>.
-//   • QR image URL is unchanged (works fine in a real top-level window).
-function _buildFullPrintDocument(course, term, sessionType, sections, date) {
-    const identity  = _courseIdentity(course);
-    const termLabel = _termLabel(term);
-    const sessInfo  = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
-    const qrUrl     = 'https://quickchart.io/qr?text=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbCc0hEL7UVMs55diC3i&dark=111435&size=300';
-
-    let totalItems = 0;
-    sections.forEach(s => { totalItems += s.items.length; });
-
-    // TOC rows
-    let tocRows = '';
-    sections.forEach(s => {
-        const typePrefix = sessionType === 'flashcard' ? 'Card' : sessionType === 'essay' ? 'Step' : 'Q';
-        tocRows += `
-        <div style="display:flex;align-items:center;padding:11px 18px;border-radius:4px;
-                    font-size:12px;font-weight:500;background:${s.pal.bg};margin-bottom:6px;
-                    page-break-inside:avoid;break-inside:avoid;">
-            <span style="font-weight:800;color:${s.pal.acc};margin-right:18px;min-width:22px;">${String(s.num).padStart(2,'0')}</span>
-            <span style="flex-grow:1;color:#222;">${s.name}</span>
-            <span style="color:#666;margin-right:14px;font-size:10px;">${typePrefix}1 – ${typePrefix}${s.items.length}</span>
-            <span style="font-weight:700;color:${s.pal.acc};">${s.items.length} items</span>
-        </div>`;
-    });
-
-    // Sections JSON embedded directly into the new window's script
-    const sectionsJSON = JSON.stringify(sections.map(s => ({
-        num: s.num, name: s.name, pal: s.pal,
-        items: s.items,
-    })));
-
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kaeri EdTech · ${course} · ${termLabel} · ${sessInfo.title}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-    :root { --primary:#111435; --yellow:#fccb00; }
-    *, *::before, *::after { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-    body { margin:0; padding:0; background:#e6e6e6; font-family:'Inter',Arial,sans-serif; }
-    @page { size:A4; margin:0; }
-    .sheet { width:210mm; height:297mm; background:white; margin:20px auto;
-             position:relative; overflow:hidden; page-break-after:always;
-             box-shadow:0 0 15px rgba(0,0,0,0.25); }
-    @media print { body { background:none; } .sheet { margin:0; box-shadow:none; } }
-    .pg-header { position:absolute; top:13mm; left:14mm; right:14mm; height:14mm;
-                 border-bottom:2px solid var(--primary); display:flex;
-                 justify-content:space-between; align-items:flex-end;
-                 padding-bottom:5px; color:var(--primary); }
-    .pg-footer { position:absolute; bottom:13mm; left:14mm; right:14mm; height:10mm;
-                 border-top:1px solid #ccc; display:flex; justify-content:space-between;
-                 align-items:center; font-size:9px; color:#888; padding-top:4px; }
-    .pg-content { position:absolute; top:32mm; bottom:27mm; left:14mm; right:14mm;
-                  overflow:hidden; display:flex; flex-direction:column; }
-    .brand { font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
-    .meta  { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
-    .pg-num { font-weight:700; color:var(--primary); }
-    .sheet.cover { background:var(--primary); color:white; display:flex;
-                   flex-direction:column; justify-content:center; padding:18mm; }
-    .cover-graphics { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
-    .diag { position:absolute; top:-50%; right:-20%; width:150%; height:150%;
-            background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.13) 45%,rgba(252,203,0,0.13) 55%,transparent 55%);
-            transform:rotate(25deg); }
-    .circ { position:absolute; bottom:-150px; left:-150px; width:400px; height:400px;
-            border-radius:50%; background:rgba(26,32,85,0.75); }
-    .cover-inner { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; }
-    .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:36px 0; max-width:72%; }
-    .stat-num { font-size:40px; font-weight:800; color:var(--yellow); display:block; line-height:1; }
-    .stat-lbl { font-size:10px; text-transform:uppercase; color:#ddd; letter-spacing:1px; }
-    .cover-rule { border-top:1px solid var(--yellow); padding-top:18px; margin-top:auto; }
-    .sec-title { font-size:13px; font-weight:800; color:var(--primary);
-                 border-bottom:3px solid var(--yellow); padding-bottom:8px; margin-bottom:14px; }
-
-    /* ── Loading indicator shown while pagination engine runs ── */
-    #kaeri-loading {
-        position:fixed; inset:0; background:rgba(17,20,53,0.92);
-        display:flex; flex-direction:column; align-items:center; justify-content:center;
-        z-index:9999; color:white; font-family:'Inter',Arial,sans-serif;
-        gap:18px;
-    }
-    .kaeri-spinner {
-        width:48px; height:48px; border:4px solid rgba(252,203,0,0.2);
-        border-top-color:#fccb00; border-radius:50%;
-        animation:spin 0.8s linear infinite;
-    }
-    @keyframes spin { to { transform:rotate(360deg); } }
-    #kaeri-loading p { font-size:14px; color:#fccb00; font-weight:600; margin:0; }
-    #kaeri-loading small { font-size:11px; color:#aaa; margin:0; }
-</style>
-</head>
-<body>
-
-<!-- Loading overlay — visible while pagination engine builds pages -->
-<div id="kaeri-loading">
-    <div class="kaeri-spinner"></div>
-    <p>Building your revision kit…</p>
-    <small>Print dialog will open automatically</small>
-</div>
-
-<!-- FRONT COVER -->
-<div class="sheet cover">
-    <div class="cover-graphics"><div class="diag"></div><div class="circ"></div></div>
-    <div class="cover-inner">
-        <div style="color:var(--yellow);font-weight:700;font-size:11px;letter-spacing:2px;margin-bottom:18px;">
-            ${course} · ${identity.name.toUpperCase()}
-        </div>
-        <h1 style="font-size:46px;font-weight:800;line-height:1.1;margin:0 0 16px 0;">
-            ${termLabel}<br>${sessInfo.icon} ${sessInfo.title}
-        </h1>
-        <p style="font-size:16px;font-weight:300;color:#ddd;line-height:1.5;margin:0;">
-            Complete Study Kit &mdash; ${totalItems} Items
-        </p>
-        <div class="stats-grid">
-            <div><span class="stat-num">${totalItems}</span><span class="stat-lbl">ITEMS</span></div>
-            <div><span class="stat-num">${sections.length}</span><span class="stat-lbl">SECTIONS</span></div>
-            <div><span class="stat-num" style="font-size:22px;">${course}</span><span class="stat-lbl">COURSE</span></div>
-            <div><span class="stat-num">A4</span><span class="stat-lbl">FORMAT</span></div>
-        </div>
-        <div class="cover-rule">
-            <h3 style="color:var(--yellow);margin:0;">KAERI EDTECH</h3>
-            <p style="font-size:10px;opacity:0.75;margin-top:4px;">${identity.name} · ${termLabel} · ${date}</p>
-        </div>
-    </div>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<div class="sheet">
-    <div class="pg-header">
-        <span class="brand">KAERI EDTECH</span>
-        <span class="meta">${course} · ${termLabel}</span>
-    </div>
-    <div class="pg-footer">
-        <span>&copy; 2026 Kaeri EdTech</span><span class="pg-num">Page 2</span>
-    </div>
-    <div class="pg-content">
-        <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
-        ${tocRows}
-        <div style="margin-top:16px;padding:12px 16px;background:#f8f9fc;border-radius:6px;font-size:12px;color:#444;line-height:1.6;">
-            <strong style="color:var(--primary);">How to use this kit:</strong>
-            Cover the answer, attempt the question, then reveal and read the explanation.
-            This kit contains <strong>${totalItems} items</strong> across <strong>${sections.length} section${sections.length !== 1 ? 's' : ''}</strong>.
-        </div>
-    </div>
-</div>
-
-<!-- CONTENT PAGES — built by the pagination engine below -->
-<div id="dynamic-content"></div>
-
-<!-- BACK COVER -->
-<div class="sheet cover" style="justify-content:flex-start;">
-    <div class="cover-graphics">
-        <div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div>
-    </div>
-    <div class="cover-inner" style="justify-content:space-between;">
-        <div>
-            <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
-            <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.05);border-left:5px solid var(--yellow);padding:22px;border-radius:8px;">
-            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
-                <div style="flex:1;">
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">CALL / WHATSAPP</div>
-                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:3px;">096-100-5406</div>
-                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:18px;">096-431-2504</div>
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:4px;">FOLLOW OUR WHATSAPP CHANNEL</div>
-                    <div style="font-size:11px;color:#aaa;">Scan to join the official Kaeri EdTech community.</div>
-                </div>
-                <img src="${qrUrl}" width="110" height="110" style="border:2px solid white;border-radius:8px;" loading="eager">
-            </div>
-        </div>
-        <div style="font-size:10px;color:#aaa;line-height:1.7;border-top:1px solid #333;padding-top:16px;">
-            <strong>Document:</strong> ${course} · ${identity.name} · ${termLabel} · ${sessInfo.title}<br>
-            <strong>Generated:</strong> ${date} &nbsp;&nbsp;
-            <strong>&copy; 2026 Kaeri EdTech. All rights reserved.</strong>
-        </div>
-    </div>
-</div>
-
-<!-- ══════════════════════════════════════════════════════════════
-     PAGINATION ENGINE
-     Runs inside the new window's own context.
-     Waits for: (1) Google Fonts via document.fonts.ready
-                (2) one requestAnimationFrame after all pages are built
-     THEN removes the loading overlay and calls window.print().
-     This guarantees the browser has fully rendered all content
-     before the print / save-PDF dialog opens.
-══════════════════════════════════════════════════════════════ -->
-<script>
-(function(){
-    'use strict';
-
-    const MM       = 3.7795275591;
-    const PAGE_H   = 297 * MM;
-    const TOP      = 32  * MM;
-    const BOT      = 27  * MM;
-    const CONT_H   = PAGE_H - TOP - BOT - 22; // 22px buffer same as before
-    const CONT_W   = (210 - 14 - 14) * MM;
-    const GAP      = 10;
-
-    const TYPE       = ${JSON.stringify(sessionType)};
-    const COURSE     = ${JSON.stringify(course)};
-    const TERM       = ${JSON.stringify(termLabel)};
-    const SESS_TITLE = ${JSON.stringify(sessInfo.title)};
-    const SECS       = ${sectionsJSON};
-
-    const root = document.getElementById('dynamic-content');
-
-    // Off-screen measurement sandbox
-    const sb = document.createElement('div');
-    sb.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:' + CONT_W + 'px;' +
-                       'visibility:hidden;pointer-events:none;font-family:Inter,Arial,sans-serif;';
-    document.body.appendChild(sb);
-
-    let pageCount = 2; // cover=1, TOC=2; content starts at 3
-
-    function measure(el) {
-        sb.innerHTML = '';
-        var cl = el.cloneNode(true);
-        sb.appendChild(cl);
-        var st = window.getComputedStyle(cl);
-        return cl.offsetHeight + (parseFloat(st.marginTop) || 0) + (parseFloat(st.marginBottom) || 0);
-    }
-
-    function newPage() {
-        pageCount++;
-        var sheet = document.createElement('div');
-        sheet.className = 'sheet';
-        sheet.innerHTML =
-            '<div class="pg-header"><span class="brand">KAERI EDTECH</span>' +
-            '<span class="meta">' + COURSE + ' \xB7 ' + TERM + ' \xB7 ' + SESS_TITLE + '</span></div>' +
-            '<div class="pg-footer"><span>\u00A9 2026 Kaeri EdTech</span>' +
-            '<span class="pg-num">Page ' + pageCount + '</span></div>' +
-            '<div class="pg-content" id="pg-' + pageCount + '"></div>';
-        root.appendChild(sheet);
-        return { el: sheet.querySelector('#pg-' + pageCount), used: 0 };
-    }
-
-    function place(el, state, gap) {
-        gap = (gap === undefined) ? GAP : gap;
-        var h = measure(el), g = state.used > 0 ? gap : 0;
-        if (state.used + h + g > CONT_H) state = newPage();
-        if (state.used > 0) {
-            var sp = document.createElement('div');
-            sp.style.height = GAP + 'px';
-            state.el.appendChild(sp);
-        }
-        state.el.appendChild(el);
-        state.used += h + (state.used > 0 ? GAP : 0);
-        return state;
-    }
-
-    function banner(sec) {
-        var d = document.createElement('div');
-        d.style.cssText = 'background:' + sec.pal.bg + ';color:' + sec.pal.acc + ';padding:8px 14px;' +
-            'border-left:6px solid ' + sec.pal.acc + ';display:flex;align-items:center;' +
-            'font-weight:700;font-size:12px;font-family:Inter,Arial,sans-serif;' +
-            'page-break-inside:avoid;break-inside:avoid;border-radius:0 4px 4px 0;';
-        d.textContent = 'SECTION ' + sec.num + ' \xB7 ' + sec.name.toUpperCase();
-        return d;
-    }
-
-    function md(t) {
-        if (!t) return '';
-        return t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                .replace(/__(.*?)__/g, '<u>$1</u>')
-                .replace(/\n/g, '<br>');
-    }
-
-    function cardEl(item, secName, idx, pal) {
-        var acc = pal.acc, lbl = '', qH = '', aH = '', eH = '';
-        if (TYPE === 'mcq') {
-            lbl = 'Q' + (idx + 1);
-            qH  = md(item.q || '');
-            var o = (item.options && item.options[item.correct] !== undefined)
-                ? String.fromCharCode(65 + item.correct) + '. ' + md(item.options[item.correct]) : '\u2014';
-            aH = '<strong>Answer:</strong> ' + o;
-            eH = md(item.explanation || 'No additional explanation.');
-        } else if (TYPE === 'shortAnswer') {
-            lbl = 'Q' + (idx + 1);
-            qH  = md(item.q || '');
-            aH  = '<strong>Keywords:</strong> ' + (item.keywords || []).join(', ');
-            eH  = md(item.explanation || 'No additional explanation.');
-        } else if (TYPE === 'essay') {
-            lbl = 'Step ' + (idx + 1);
-            qH  = md(item.q || '');
-            var oe = (item.options && item.options[item.correct] !== undefined)
-                ? String.fromCharCode(65 + item.correct) + '. ' + md(item.options[item.correct]) : '\u2014';
-            aH = '<strong>Correct:</strong> ' + oe;
-            eH = md(item.explanation || 'No additional explanation.');
-        } else {
-            lbl = 'Card ' + (idx + 1);
-            qH  = md(item.front || '');
-            aH  = md(item.back || '');
-            eH  = '';
-        }
-        var d = document.createElement('div');
-        d.innerHTML =
-            '<div style="border:1px solid #ddd;border-left:5px solid ' + acc + ';border-radius:6px;' +
-            'background:#fff;padding:13px 15px;box-shadow:0 2px 5px rgba(0,0,0,0.05);' +
-            'page-break-inside:avoid;break-inside:avoid;">' +
-            '<div style="font-size:10px;font-weight:800;color:' + acc + ';letter-spacing:0.5px;' +
-            'margin-bottom:3px;text-transform:uppercase;">' + lbl + '</div>' +
-            '<div style="font-size:9px;font-weight:600;color:' + acc + ';text-transform:uppercase;' +
-            'letter-spacing:0.3px;margin-bottom:5px;">' + secName + '</div>' +
-            '<div style="font-size:13px;font-weight:700;color:#111435;margin-bottom:9px;line-height:1.4;">' + qH + '</div>' +
-            '<div style="font-size:12px;font-weight:500;color:#1e3a2f;background:#f0faf4;' +
-            'padding:6px 10px;border-radius:4px;margin-bottom:6px;">' + aH + '</div>' +
-            (eH ? '<div style="background:#f9f9f9;padding:6px 10px;font-size:11px;color:#333;' +
-            'line-height:1.45;border-left:4px solid ' + acc + ';border-radius:0 4px 4px 0;">' +
-            '<span style="font-weight:800;color:' + acc + ';text-transform:uppercase;font-size:10px;' +
-            'margin-right:4px;">EXPLANATION</span>' + eH + '</div>' : '') +
-            '</div>';
-        return d.firstElementChild;
-    }
-
-    function build() {
-        SECS.forEach(function(sec) {
-            var state = newPage();
-            state = place(banner(sec), state, 0);
-            sec.items.forEach(function(item, idx) {
-                state = place(cardEl(item, sec.name, idx, sec.pal), state, 10);
-            });
-        });
-    }
-
-    // ── RELIABLE PRINT TRIGGER ──────────────────────────────────────────
-    // Strategy:
-    //   1. Wait for document.fonts.ready (Google Fonts loaded — affects measurements)
-    //   2. Run the pagination engine (build())
-    //   3. Wait one requestAnimationFrame so the browser paints the new DOM
-    //   4. Remove the loading overlay
-    //   5. Call window.print()
-    //
-    // This chain guarantees: fonts loaded → pages built → browser rendered → print.
-    // It works on iOS Safari, Android Chrome, and all desktop browsers because
-    // this script runs in a real top-level window context, not a sandboxed iframe.
-
-    function triggerPrint() {
-        var loading = document.getElementById('kaeri-loading');
-        if (loading) loading.style.display = 'none';
-
-        // Remove measurement sandbox before printing
-        if (sb.parentNode) sb.parentNode.removeChild(sb);
-
-        // Small breathing room for the browser paint cycle
-        requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-                window.print();
-            });
-        });
-    }
-
-    if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(function() {
-            build();
-            triggerPrint();
-        });
-    } else {
-        // Fallback for browsers without FontFaceSet API
-        window.addEventListener('load', function() {
-            build();
-            triggerPrint();
-        });
-    }
-
-})();
-</script>
-</body>
-</html>`;
-}
-
-// ── IN-APP PREVIEW (no cover — clean scannable list) ─────────────────────
+// ── IN-APP PREVIEW (unchanged) ─────────────────────────────────────────────
 function generatePrintPreview() {
     const sections = _buildSectionsFromSession();
     const date     = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
@@ -2715,7 +2323,6 @@ function generatePrintPreview() {
         </div>
     </div>`;
 
-    // Store for proceedToPrint
     printContentData = {
         sections,
         date,
@@ -2734,29 +2341,7 @@ function generatePrintPreview() {
     document.body.style.overflow = 'hidden';
 }
 
-// ── PROCEED TO PRINT (new-window approach — works on all mobile browsers) ──
-//
-// WHY THE OLD IFRAME APPROACH FAILED:
-//   1. Hidden iframes (top:-9999px) are not fully composited on mobile browsers.
-//      The browser's print compositor captures a visual snapshot — an off-screen
-//      iframe that has never been painted simply prints blank.
-//   2. The 1200ms setTimeout is not enough for: Google Fonts to load inside the
-//      iframe, the JS pagination engine to finish measuring + building all pages,
-//      and KaTeX to render — all inside a separate, never-visible document context.
-//   3. On iOS Safari and Android Chrome, calling print() on an iframe from within
-//      a parent page is blocked or silently ignored by security policy.
-//   4. External images (the QR code from quickchart.io) are sandboxed in iframe
-//      contexts, producing the broken-watermark symptom in saved PDFs.
-//
-// THE FIX — window.open() new tab:
-//   A new top-level browsing context has no sandbox restrictions, is fully
-//   composited by the browser, and can call window.print() on itself freely.
-//   We embed a self-contained readiness check inside the generated HTML that
-//   waits for fonts + one complete requestAnimationFrame after pagination
-//   finishes, then triggers print() — guaranteeing content is built before
-//   the dialog opens. On mobile, the print/save-PDF dialog works correctly
-//   because the content is in a real, visible, fully-rendered window.
-
+// ── HYBRID PRINT FUNCTION (replaces old iframe version) ───────────────────
 function proceedToPrint() {
     if (!printContentData) return;
     closePrintPreview();
@@ -2764,34 +2349,20 @@ function proceedToPrint() {
     const { sections, date, course, term, sessionType } = printContentData;
     const fullHTML = _buildFullPrintDocument(course, term, sessionType, sections, date);
 
-    // Open a real new window — not a hidden iframe.
-    // '_blank' creates a new top-level context with no sandbox restrictions.
     const printWin = window.open('', '_blank');
-
     if (!printWin) {
-        // Pop-up was blocked — fall back to a Blob URL opened by user gesture.
-        // This is the only reliable fallback when the browser blocks window.open().
-        showAppNotification(
-            '⚠️ Pop-up blocked. Allow pop-ups for this site, then tap Print again.',
-            'warning', 5000
-        );
-        // Secondary fallback: create a blob and open it
-        try {
-            const blob = new Blob([fullHTML], { type: 'text/html' });
-            const url  = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href   = url;
-            link.target = '_blank';
-            link.rel    = 'noopener';
-            link.click();
-            setTimeout(() => URL.revokeObjectURL(url), 60000);
-        } catch(e) { console.warn('Blob fallback failed:', e); }
+        // Popup blocker fallback
+        showAppNotification('⚠️ Pop-up blocked. Allow pop-ups for this site, then tap Print again.', 'warning', 5000);
+        const blob = new Blob([fullHTML], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 60000);
         return;
     }
 
-    // Write the complete HTML into the new window.
-    // The HTML itself contains the pagination engine + a self-contained print trigger
-    // that waits for fonts and one rAF before calling window.print().
     printWin.document.open();
     printWin.document.write(fullHTML);
     printWin.document.close();
@@ -2803,6 +2374,312 @@ function closePrintPreview() {
     document.body.style.overflow = 'auto';
 }
 
+// ── FULL BRANDED A4 PRINT DOCUMENT (HYBRID PAGINATION ENGINE) ──────────────
+function _buildFullPrintDocument(course, term, sessionType, sections, date) {
+    const identity  = _courseIdentity(course);
+    const termLabel = _termLabel(term);
+    const sessInfo  = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
+    const qrUrl     = 'https://quickchart.io/qr?text=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbCc0hEL7UVMs55diC3i&dark=111435&size=300';
+
+    let totalItems = 0;
+    sections.forEach(s => { totalItems += s.items.length; });
+
+    // Build TOC rows
+    let tocRows = '';
+    sections.forEach(s => {
+        const typePrefix = sessionType === 'flashcard' ? 'Card' : sessionType === 'essay' ? 'Step' : 'Q';
+        tocRows += `
+        <div style="display:flex;align-items:center;padding:11px 18px;border-radius:4px;
+                    font-size:12px;font-weight:500;background:${s.pal.bg};margin-bottom:6px;
+                    page-break-inside:avoid;break-inside:avoid;">
+            <span style="font-weight:800;color:${s.pal.acc};margin-right:18px;min-width:22px;">${String(s.num).padStart(2, '0')}</span>
+            <span style="flex-grow:1;color:#222;">${s.name}</span>
+            <span style="color:#666;margin-right:14px;font-size:10px;">${typePrefix}1 – ${typePrefix}${s.items.length}</span>
+            <span style="font-weight:700;color:${s.pal.acc};">${s.items.length} items</span>
+        </div>`;
+    });
+
+    // Serialize sections for the new window's script
+    const sectionsJSON = JSON.stringify(sections);
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaeri EdTech · ${course} ${termLabel} · ${sessInfo.title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    :root { --primary:#111435; --yellow:#fccb00; }
+    *, *::before, *::after { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    body { margin:0; padding:0; background:#e6e6e6; font-family:'Inter',Arial,sans-serif; }
+    @page { size:A4; margin:0; }
+    .sheet { width:210mm; height:297mm; background:white; margin:20px auto; position:relative; overflow:hidden; page-break-after:always; box-shadow:0 0 15px rgba(0,0,0,0.25); }
+    @media print { body { background:none; } .sheet { margin:0; box-shadow:none; } }
+    .pg-header { position:absolute; top:13mm; left:14mm; right:14mm; height:14mm; border-bottom:2px solid var(--primary); display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:5px; color:var(--primary); }
+    .pg-footer { position:absolute; bottom:13mm; left:14mm; right:14mm; height:10mm; border-top:1px solid #ccc; display:flex; justify-content:space-between; align-items:center; font-size:9px; color:#888; padding-top:4px; }
+    .pg-content { position:absolute; top:32mm; bottom:27mm; left:14mm; right:14mm; overflow:hidden; display:flex; flex-direction:column; }
+    .brand { font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
+    .meta { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
+    .pg-num { font-weight:700; color:var(--primary); }
+    .sheet.cover { background:var(--primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:18mm; }
+    .cover-graphics { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+    .diag { position:absolute; top:-50%; right:-20%; width:150%; height:150%; background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.13) 45%,rgba(252,203,0,0.13) 55%,transparent 55%); transform:rotate(25deg); }
+    .circ { position:absolute; bottom:-150px; left:-150px; width:400px; height:400px; border-radius:50%; background:rgba(26,32,85,0.75); }
+    .cover-inner { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; }
+    .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:36px 0; max-width:72%; }
+    .stat-num { font-size:40px; font-weight:800; color:var(--yellow); display:block; line-height:1; }
+    .stat-lbl { font-size:10px; text-transform:uppercase; color:#ddd; letter-spacing:1px; }
+    .cover-rule { border-top:1px solid var(--yellow); padding-top:18px; margin-top:auto; }
+    .sec-title { font-size:13px; font-weight:800; color:var(--primary); border-bottom:3px solid var(--yellow); padding-bottom:8px; margin-bottom:14px; }
+    #kaeri-loading { position:fixed; inset:0; background:rgba(17,20,53,0.92); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:9999; color:white; font-family:'Inter',Arial,sans-serif; gap:18px; }
+    .kaeri-spinner { width:48px; height:48px; border:4px solid rgba(252,203,0,0.2); border-top-color:#fccb00; border-radius:50%; animation:spin 0.8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #kaeri-loading p { font-size:14px; color:#fccb00; font-weight:600; margin:0; }
+    .how-to-box { background:#e8eaf6; border-left:5px solid #1a237e; padding:12px 16px; border-radius:0 8px 8px 0; margin:15px 0; }
+    .how-to-step { display:flex; gap:10px; margin-bottom:7px; }
+    .step-num { width:20px; height:20px; border-radius:50%; background:#1a237e; color:white; font-size:10px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .toc-item { display:flex; align-items:center; padding:10px 16px; border-radius:5px; font-size:12px; font-weight:500; margin-bottom:5px; background:#f4f4fa; }
+    .toc-num { font-weight:800; margin-right:16px; width:22px; }
+    .q-card { border:1px solid #c0c0e0; padding:12px 14px; border-radius:7px; background:white; margin-bottom:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .q-head { font-size:10.5px; font-weight:800; margin-bottom:4px; }
+    .q-text { font-size:14px; font-weight:700; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+    .ans { font-size:12px; font-weight:500; background:#f0faf4; padding:7px 11px; border-radius:6px; margin-bottom:7px; border-left:4px solid var(--acc); }
+    .expl { background:#f4f4fa; padding:6px 10px; font-size:11px; border-left:3px solid var(--acc); border-radius:0 5px 5px 0; }
+    .topic-banner { background:var(--bg); color:var(--acc); padding:8px 13px; border-left:6px solid var(--acc); font-weight:700; margin-bottom:12px; }
+</style>
+</head>
+<body>
+
+<div id="kaeri-loading">
+    <div class="kaeri-spinner"></div>
+    <p>Building your revision kit…</p>
+    <small>Print dialog will open automatically</small>
+</div>
+
+<!-- FRONT COVER -->
+<div class="sheet cover">
+    <div class="cover-graphics"><div class="diag"></div><div class="circ"></div></div>
+    <div class="cover-inner">
+        <div style="color:var(--yellow);font-weight:700;font-size:11px;letter-spacing:2px;margin-bottom:18px;">
+            ${course} · ${identity.name.toUpperCase()}
+        </div>
+        <h1 style="font-size:46px;font-weight:800;line-height:1.1;margin:0 0 16px 0;">
+            ${termLabel}<br>${sessInfo.icon} ${sessInfo.title}
+        </h1>
+        <p style="font-size:16px;font-weight:300;color:#ddd;line-height:1.5;margin:0;">
+            Complete Study Kit &mdash; ${totalItems} Items
+        </p>
+        <div class="stats-grid">
+            <div><span class="stat-num">${totalItems}</span><span class="stat-lbl">ITEMS</span></div>
+            <div><span class="stat-num">${sections.length}</span><span class="stat-lbl">SECTIONS</span></div>
+            <div><span class="stat-num" style="font-size:22px;">${course}</span><span class="stat-lbl">COURSE</span></div>
+            <div><span class="stat-num">A4</span><span class="stat-lbl">FORMAT</span></div>
+        </div>
+        <div class="cover-rule">
+            <h3 style="color:var(--yellow);margin:0;">KAERI EDTECH</h3>
+            <p style="font-size:10px;opacity:0.75;margin-top:4px;">${identity.name} · ${termLabel} · ${date}</p>
+        </div>
+    </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="sheet">
+    <div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
+    <div class="pg-footer"><span>&copy; 2026 Kaeri EdTech</span><span class="pg-num">Page 2</span></div>
+    <div class="pg-content">
+        <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
+        ${tocRows}
+        <div class="how-to-box">
+            <div class="how-to-step"><div class="step-num">1</div><div><strong>Study the Question.</strong> Read each as a learning objective.</div></div>
+            <div class="how-to-step"><div class="step-num">2</div><div><strong>Memorize the Answer.</strong> These are the direct facts for the exam.</div></div>
+            <div class="how-to-step"><div class="step-num">3</div><div><strong>Internalize the Explanation.</strong> This is the standalone teaching.</div></div>
+        </div>
+    </div>
+</div>
+
+<div id="dynamic-content"></div>
+
+<!-- BACK COVER -->
+<div class="sheet cover" style="justify-content:flex-start;">
+    <div class="cover-graphics"><div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div></div>
+    <div class="cover-inner" style="justify-content:space-between;">
+        <div>
+            <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
+            <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-left:5px solid var(--yellow);padding:22px;border-radius:8px;">
+            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+                <div style="flex:1;">
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">CALL / WHATSAPP</div>
+                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:3px;">096-100-5406</div>
+                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:18px;">096-431-2504</div>
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:4px;">FOLLOW OUR WHATSAPP CHANNEL</div>
+                    <div style="font-size:11px;color:#aaa;">Scan to join the official Kaeri EdTech community.</div>
+                </div>
+                <img src="${qrUrl}" width="110" height="110" style="border:2px solid white;border-radius:8px;">
+            </div>
+        </div>
+        <div style="font-size:10px;color:#aaa;line-height:1.7;border-top:1px solid #333;padding-top:16px;">
+            <strong>Document:</strong> ${course} · ${identity.name} · ${termLabel} · ${sessInfo.title}<br>
+            <strong>Generated:</strong> ${date} &nbsp;&nbsp;
+            <strong>&copy; 2026 Kaeri EdTech. All rights reserved.</strong>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    'use strict';
+    const sectionsData = ${sectionsJSON};
+    const sessionType = '${sessionType}';
+    const courseName = '${course}';
+    const termLabel = '${termLabel}';
+    const sessTitle = '${sessInfo.title}';
+
+    // Pagination setup
+    const MM = 3.7795275591;
+    const PAGE_H = 297 * MM;
+    const TOP = 32 * MM;
+    const BOT = 27 * MM;
+    const CONT_H = PAGE_H - TOP - BOT - 22;
+    const CONT_W = (210 - 28) * MM;
+    const GAP = 10;
+
+    const root = document.getElementById('dynamic-content');
+    const sb = document.createElement('div');
+    sb.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:' + CONT_W + 'px;visibility:hidden;pointer-events:none;font-family:Inter,Arial,sans-serif;';
+    document.body.appendChild(sb);
+
+    let pageCount = 2; // cover=1, TOC=2
+    function newPage() {
+        pageCount++;
+        const sheet = document.createElement('div');
+        sheet.className = 'sheet';
+        sheet.innerHTML = '<div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
+                          '<div class="pg-footer"><span>© 2026 Kaeri EdTech</span><span class="pg-num">Page ' + pageCount + '</span></div>' +
+                          '<div class="pg-content" id="pg-' + pageCount + '"></div>';
+        root.appendChild(sheet);
+        return { el: sheet.querySelector('#pg-' + pageCount), used: 0 };
+    }
+
+    function measure(el) {
+        sb.innerHTML = '';
+        const clone = el.cloneNode(true);
+        clone.style.width = '100%';
+        sb.appendChild(clone);
+        return clone.offsetHeight + 5;
+    }
+
+    function place(el, state, gap = GAP) {
+        const h = measure(el);
+        const g = state.used > 0 ? gap : 0;
+        if (state.used + h + g > CONT_H) state = newPage();
+        if (state.used > 0) {
+            const spacer = document.createElement('div');
+            spacer.style.height = gap + 'px';
+            state.el.appendChild(spacer);
+        }
+        state.el.appendChild(el);
+        state.used += h + (state.used > 0 ? gap : 0);
+        return state;
+    }
+
+    function createCard(item, secName, idx, pal) {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.style.setProperty('--acc', pal.acc);
+        card.style.setProperty('--bg', pal.bg);
+
+        let qText = '', ansHtml = '', explHtml = '';
+        if (sessionType === 'mcq') {
+            qText = item.q || '';
+            const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
+            ansHtml = '<strong>Answer:</strong> ' + correctOpt;
+            explHtml = item.explanation || 'No additional explanation.';
+        } else if (sessionType === 'shortAnswer') {
+            qText = item.q || '';
+            ansHtml = '<strong>Keywords:</strong> ' + (item.keywords || []).join(', ');
+            explHtml = item.explanation || 'No additional explanation.';
+        } else if (sessionType === 'essay') {
+            qText = item.q || '';
+            const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
+            ansHtml = '<strong>Correct:</strong> ' + correctOpt;
+            explHtml = item.explanation || 'No additional explanation.';
+        } else { // flashcard
+            qText = item.front || '';
+            ansHtml = item.back || '';
+            explHtml = '';
+        }
+
+        card.innerHTML = \`
+            <div class="q-head" style="color:\${pal.acc}">\${secName} · Item \${idx+1}</div>
+            <div class="q-text">\${qText}</div>
+            <div class="ans" style="border-left-color:\${pal.acc}">\${ansHtml}</div>
+            \${explHtml ? '<div class="expl" style="border-left-color:\${pal.acc}"><span class="expl-label" style="color:\${pal.acc}">📖 Explanation</span> ' + explHtml + '</div>' : ''}
+        \`;
+        return card;
+    }
+
+    function build() {
+        let state = newPage();
+        for (let sec of sectionsData) {
+            const banner = document.createElement('div');
+            banner.className = 'topic-banner';
+            banner.style.backgroundColor = sec.pal.bg;
+            banner.style.color = sec.pal.acc;
+            banner.style.borderLeftColor = sec.pal.acc;
+            banner.innerHTML = '<div class="banner-text">SECTION ' + sec.num + ': ' + sec.name.toUpperCase() + '</div>';
+            state = place(banner, state, 0);
+            sec.items.forEach((item, idx) => {
+                const card = createCard(item, sec.name, idx, sec.pal);
+                state = place(card, state, 10);
+            });
+        }
+    }
+
+    let timeoutId = setTimeout(() => {
+        console.warn('Font loading timeout – forcing print');
+        const loading = document.getElementById('kaeri-loading');
+        if (loading) loading.style.display = 'none';
+        if (sb.parentNode) sb.parentNode.removeChild(sb);
+        requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+    }, 3000);
+
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => {
+            clearTimeout(timeoutId);
+            build();
+            const loading = document.getElementById('kaeri-loading');
+            if (loading) loading.style.display = 'none';
+            if (sb.parentNode) sb.parentNode.removeChild(sb);
+            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        }).catch(err => {
+            console.warn(err);
+            clearTimeout(timeoutId);
+            build();
+            const loading = document.getElementById('kaeri-loading');
+            if (loading) loading.style.display = 'none';
+            if (sb.parentNode) sb.parentNode.removeChild(sb);
+            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        });
+    } else {
+        window.addEventListener('load', () => {
+            clearTimeout(timeoutId);
+            build();
+            const loading = document.getElementById('kaeri-loading');
+            if (loading) loading.style.display = 'none';
+            if (sb.parentNode) sb.parentNode.removeChild(sb);
+            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        });
+    }
+})();
+</script>
+</body>
+</html>`;
+}
 
 // ============================================================
 // === 10. UTILITIES ===
