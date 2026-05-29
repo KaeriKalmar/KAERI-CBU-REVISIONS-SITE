@@ -2158,11 +2158,107 @@ function challengeFriend(score, total, modeName) {
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
 }
 
-// ── PRINT HELPERS (KAERI STANDARD REVISION KIT ENGINE v3.0 – HYBRID) ──────────
-// Uses a real window (not iframe) and a robust pagination engine that measures
-// each card in a sandbox. Guarantees print works on all mobile and desktop browsers.
+// ── PER‑COURSE THEMES (NO DEFAULTING FOR THE LISTED COURSES) ──────────────
+const COURSE_THEMES = {
+    // Safety fallback (for future courses not yet defined)
+    'DEFAULT': {
+        primary: '#111435', accent: '#00bcd4', icon: '📘', decorativeSvg: 'hex',
+        coverWave: 'single', titleMain: 'Revision Kit', titleSub: 'Complete Study Material',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {}
+    },
+    'CS110': {
+        primary: '#111435', accent: '#00bcd4', icon: '💻', decorativeSvg: 'hex',
+        coverWave: 'single', titleMain: 'Programs', titleSub: '& Apps',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Understanding Programs, Apps, and Their Types': '📱',
+            'Acquiring Programs and Apps Responsibly': '🔒',
+            'Productivity Applications': '📊',
+            'Graphics and Media Applications': '🎨',
+            'Digital Media on the Web, VR, AR, and AI': '🧠',
+            'Personal Interest, Security, and System Tools': '🛡️'
+        }
+    },
+    'BI110': {
+        primary: '#0d2b1f', accent: '#2e7d4f', icon: '🌿', decorativeSvg: 'virus',
+        coverWave: 'double', titleMain: 'Viruses', titleSub: 'Structure, Replication & Disease',
+        coverTagline: 'Complete Short Answer Question Bank', sectionEmoji: {
+            'Viral Structure': '🦠', 'Replication': '🧬', 'HIV/AIDS': '🩺',
+            'Epidemiology': '🌍', 'Antivirals': '💊'
+        }
+    },
+    'CH110': {
+        primary: '#1a3a2a', accent: '#ef5350', icon: '⚗️', decorativeSvg: 'molecule',
+        coverWave: 'single', titleMain: 'Chemical Reactions', titleSub: '& Equations',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Organic Chemistry': '🧪', 'Thermodynamics': '⚡',
+            'Analytical Chemistry': '🔬', 'Stoichiometry': '🧴'
+        }
+    },
+    'PH110': {
+        primary: '#1a1a4e', accent: '#ab47bc', icon: '⚛️', decorativeSvg: 'atom',
+        coverWave: 'single', titleMain: 'Physics', titleSub: 'Laws & Motion',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Mechanics': '⚡', 'Waves & Optics': '🌀',
+            'Electricity & Magnetism': '🔋', 'Quantum Physics': '✨'
+        }
+    },
+    'LA111': {
+        primary: '#9e5a3a', accent: '#ffb74d', icon: '🗣️', decorativeSvg: 'speech',
+        coverWave: 'single', titleMain: 'Effective', titleSub: 'Communication',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Essay Writing': '📝', 'Public Speaking': '🗣️',
+            'Business Correspondence': '✉️', 'Interpersonal Skills': '🤝'
+        }
+    },
+    'MT221': {
+        primary: '#4e342e', accent: '#ffa726', icon: '⛏️', decorativeSvg: 'crystal',
+        coverWave: 'single', titleMain: 'Mineral', titleSub: 'Processing',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Comminution': '⛏️', 'Froth Flotation': '🧪',
+            'Pyrometallurgy': '🔥', 'Hydrometallurgy': '💧'
+        }
+    },
+    'GM220': {
+        primary: '#5d4037', accent: '#ff8c42', icon: '⛰️', decorativeSvg: 'mountain',
+        coverWave: 'single', titleMain: 'Geology', titleSub: 'Earth Materials & Processes',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Mineralogy': '🪨', 'Petrology': '🌋', 'Stratigraphy': '📉', 'Structural Geology': '🧭'
+        }
+    },
+    'MI213': {
+        primary: '#3e2723', accent: '#f57c00', icon: '⛏️', decorativeSvg: 'mine',
+        coverWave: 'single', titleMain: 'Mining', titleSub: 'Methods & Safety',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Surface Mining': '🚧', 'Underground Methods': '⛏️',
+            'Ventilation': '💨', 'Mine Planning': '📊'
+        }
+    },
+    'MA210': {
+        primary: '#1a237e', accent: '#00bcd4', icon: '∫', decorativeSvg: 'math',
+        coverWave: 'single', titleMain: 'Engineering', titleSub: 'Mathematics II',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Differential Equations': '📈', 'Linear Algebra': '🔢',
+            'Vector Calculus': '🌀', 'Complex Analysis': '📊'
+        }
+    },
+    'CH210': {
+        primary: '#1a3a2a', accent: '#ef5350', icon: '⚗️', decorativeSvg: 'molecule',
+        coverWave: 'single', titleMain: 'Chemistry II', titleSub: 'Reactions & Mechanisms',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Organic II': '🧪', 'Kinetics': '⚡', 'Analytical': '🔬', 'Electrochemistry': '🧴'
+        }
+    },
+    'PH210': {
+        primary: '#1a1a4e', accent: '#ab47bc', icon: '⚛️', decorativeSvg: 'atom',
+        coverWave: 'single', titleMain: 'Physics II', titleSub: 'Electricity, Magnetism & Beyond',
+        coverTagline: 'Complete Question Bank', sectionEmoji: {
+            'Electromagnetism': '⚡', 'Waves & Optics': '🌀',
+            'Quantum': '✨', 'Thermodynamics': '🌌'
+        }
+    }
+};
 
-// Constants (unchanged from original)
+// ── BRAND CONSTANTS ──────────────────────────────────────────────────────
 const COURSE_IDENTITY = {
     'CS110': { accent: '#00bcd4', name: 'Introduction to Computing' },
     'MA110': { accent: '#42a5f5', name: 'Mathematics' },
@@ -2281,7 +2377,7 @@ function _itemCardHTML(item, sectionName, type, idx, pal) {
     </div>`;
 }
 
-// ── IN-APP PREVIEW (unchanged) ─────────────────────────────────────────────
+// ── IN-APP PREVIEW ───────────────────────────────────────────────────────
 function generatePrintPreview() {
     const sections = _buildSectionsFromSession();
     const date     = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
@@ -2341,17 +2437,31 @@ function generatePrintPreview() {
     document.body.style.overflow = 'hidden';
 }
 
-// ── HYBRID PRINT FUNCTION (replaces old iframe version) ───────────────────
+// ── PROCEED TO PRINT (with access guard, analytics, correct modal flow) ──
 function proceedToPrint() {
+    // Free users: close preview, notify, open payment modal, and log attempt
+    if (!hasFullAccess) {
+        closePrintPreview();
+        showAppNotification("🔒 Unlock Full Access To Print The Revision Kits.", "warning", 5000);
+        openPaymentModal();
+        logAnalyticsEvent('print_attempt_blocked', `${currentCourse} ${currentTerm} - ${currentQuizType}`);
+        return;
+    }
+
+    // Paid users: continue
     if (!printContentData) return;
     closePrintPreview();
 
     const { sections, date, course, term, sessionType } = printContentData;
+    const totalItems = sections.reduce((sum, s) => sum + s.items.length, 0);
+    
+    // Log successful print generation
+    logAnalyticsEvent('print_pdf_generated', `${course} ${term} | ${sessionType} | ${totalItems} items`);
+
     const fullHTML = _buildFullPrintDocument(course, term, sessionType, sections, date);
 
     const printWin = window.open('', '_blank');
     if (!printWin) {
-        // Popup blocker fallback
         showAppNotification('⚠️ Pop-up blocked. Allow pop-ups for this site, then tap Print again.', 'warning', 5000);
         const blob = new Blob([fullHTML], { type: 'text/html' });
         const url = URL.createObjectURL(blob);
@@ -2374,12 +2484,34 @@ function closePrintPreview() {
     document.body.style.overflow = 'auto';
 }
 
-// ── FULL BRANDED A4 PRINT DOCUMENT (HYBRID PAGINATION ENGINE) ──────────────
+// ── FULL BRANDED A4 PRINT DOCUMENT (DYNAMIC THEMING + RELIABLE ENGINE) ──
 function _buildFullPrintDocument(course, term, sessionType, sections, date) {
-    const identity  = _courseIdentity(course);
+    // Use course-specific theme if defined, otherwise DEFAULT (safety fallback)
+    const theme = COURSE_THEMES[course] || COURSE_THEMES['DEFAULT'];
+    const primary = theme.primary;
+    const accent = theme.accent;
+    const icon = theme.icon;
+    const decorativeSvg = theme.decorativeSvg;
+    const coverWave = theme.coverWave;
+    const titleMain = theme.titleMain;
+    const titleSub = theme.titleSub;
+    const coverTagline = theme.coverTagline;
+    const sectionEmojiMap = theme.sectionEmoji || {};
+    const defaultEmoji = '📌';
+
+    // Dynamic tags from actual sections (never hardcoded)
+    const tags = sections.map(section => {
+        const emoji = sectionEmojiMap[section.name] || defaultEmoji;
+        return `${emoji} ${section.name}`;
+    });
+    const tagsHtml = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+    const identity = _courseIdentity(course);
     const termLabel = _termLabel(term);
-    const sessInfo  = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
-    const qrUrl     = 'https://quickchart.io/qr?text=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbCc0hEL7UVMs55diC3i&dark=111435&size=300';
+    const sessInfo = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
+    
+    // ✅ QR code points to REVISION PLATFORM (not WhatsApp)
+    const qrUrl = 'https://quickchart.io/qr?text=https%3A%2F%2Fkaerikalmar.github.io%2FKAERI-CBU-REVISIONS-SITE%2F&dark=111435&size=300';
 
     let totalItems = 0;
     sections.forEach(s => { totalItems += s.items.length; });
@@ -2399,8 +2531,8 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
         </div>`;
     });
 
-    // Serialize sections for the new window's script
     const sectionsJSON = JSON.stringify(sections);
+    const currentYear = new Date().getFullYear();
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -2411,8 +2543,12 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
 <style>
-    :root { --primary:#111435; --yellow:#fccb00; }
+    :root { --primary: ${primary}; --accent: ${accent}; --yellow: #fccb00; }
     *, *::before, *::after { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     body { margin:0; padding:0; background:#e6e6e6; font-family:'Inter',Arial,sans-serif; }
     @page { size:A4; margin:0; }
@@ -2424,31 +2560,43 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     .brand { font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
     .meta { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
     .pg-num { font-weight:700; color:var(--primary); }
-    .sheet.cover { background:var(--primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:18mm; }
+    .sheet.cover { background:var(--primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:18mm; position:relative; }
     .cover-graphics { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
     .diag { position:absolute; top:-50%; right:-20%; width:150%; height:150%; background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.13) 45%,rgba(252,203,0,0.13) 55%,transparent 55%); transform:rotate(25deg); }
     .circ { position:absolute; bottom:-150px; left:-150px; width:400px; height:400px; border-radius:50%; background:rgba(26,32,85,0.75); }
+    .gold-stripe { position:absolute; top:0; left:0; bottom:0; width:8px; background:var(--yellow); z-index:3; }
+    .gold-stripe-r { position:absolute; top:0; right:0; bottom:0; width:3px; background:rgba(252,203,0,0.35); z-index:3; }
+    .hex-grid { position:absolute; top:-60px; right:-80px; width:320px; height:320px; opacity:0.07; pointer-events:none; }
+    .wave-top { position:absolute; top:0; left:0; right:0; height:220px; overflow:hidden; pointer-events:none; }
+    .wave-bot { position:absolute; bottom:0; left:0; right:0; height:200px; overflow:hidden; pointer-events:none; }
+    .virus-deco, .atom-deco, .molecule-deco, .mountain-deco, .mine-deco, .math-deco, .speech-deco, .crystal-deco {
+        position:absolute; right:16mm; top:36mm; width:125px; height:125px; opacity:0.16; pointer-events:none;
+    }
     .cover-inner { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; }
+    .cover-eyebrow { font-size:11px; font-weight:700; letter-spacing:3px; color:var(--yellow); text-transform:uppercase; margin-bottom:12px; display:flex; align-items:center; gap:10px; }
+    .eyebrow-line { flex:1; max-width:38px; height:2px; background:var(--yellow); opacity:0.6; }
+    .cover-kicker { font-size:13px; font-weight:600; color:rgba(255,255,255,0.5); margin-bottom:6px; }
+    .cover-title { font-size:46px; font-weight:800; line-height:1.08; margin:0 0 8px 0; }
     .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:36px 0; max-width:72%; }
     .stat-num { font-size:40px; font-weight:800; color:var(--yellow); display:block; line-height:1; }
     .stat-lbl { font-size:10px; text-transform:uppercase; color:#ddd; letter-spacing:1px; }
     .cover-rule { border-top:1px solid var(--yellow); padding-top:18px; margin-top:auto; }
+    .tags-container { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 0 0; }
+    .tag { font-size:10px; font-weight:700; letter-spacing:0.7px; text-transform:uppercase; padding:4px 10px; border-radius:20px; border:1px solid rgba(252,203,0,0.42); color:rgba(255,255,255,0.85); background:transparent; }
     .sec-title { font-size:13px; font-weight:800; color:var(--primary); border-bottom:3px solid var(--yellow); padding-bottom:8px; margin-bottom:14px; }
     #kaeri-loading { position:fixed; inset:0; background:rgba(17,20,53,0.92); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:9999; color:white; font-family:'Inter',Arial,sans-serif; gap:18px; }
     .kaeri-spinner { width:48px; height:48px; border:4px solid rgba(252,203,0,0.2); border-top-color:#fccb00; border-radius:50%; animation:spin 0.8s linear infinite; }
     @keyframes spin { to { transform:rotate(360deg); } }
-    #kaeri-loading p { font-size:14px; color:#fccb00; font-weight:600; margin:0; }
     .how-to-box { background:#e8eaf6; border-left:5px solid #1a237e; padding:12px 16px; border-radius:0 8px 8px 0; margin:15px 0; }
-    .how-to-step { display:flex; gap:10px; margin-bottom:7px; }
-    .step-num { width:20px; height:20px; border-radius:50%; background:#1a237e; color:white; font-size:10px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .toc-item { display:flex; align-items:center; padding:10px 16px; border-radius:5px; font-size:12px; font-weight:500; margin-bottom:5px; background:#f4f4fa; }
-    .toc-num { font-weight:800; margin-right:16px; width:22px; }
-    .q-card { border:1px solid #c0c0e0; padding:12px 14px; border-radius:7px; background:white; margin-bottom:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .how-to-step { display:flex; gap:10px; margin-bottom:7px; font-size:12.5px; }
+    .step-num { width:20px; height:20px; border-radius:50%; background:#1a237e; color:white; font-size:10px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; }
+    .q-card { border:1px solid #c8e6c9; padding:12px 14px; border-radius:7px; background:white; margin-bottom:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
     .q-head { font-size:10.5px; font-weight:800; margin-bottom:4px; }
     .q-text { font-size:14px; font-weight:700; color:var(--primary); margin-bottom:8px; line-height:1.4; }
-    .ans { font-size:12px; font-weight:500; background:#f0faf4; padding:7px 11px; border-radius:6px; margin-bottom:7px; border-left:4px solid var(--acc); }
-    .expl { background:#f4f4fa; padding:6px 10px; font-size:11px; border-left:3px solid var(--acc); border-radius:0 5px 5px 0; }
+    .ans { font-size:12px; font-weight:500; background:#f0faf4; padding:7px 11px; border-radius:6px; margin-bottom:7px; border-left:4px solid var(--accent); }
+    .expl { background:#f4f4fa; padding:6px 10px; font-size:11px; border-left:3px solid var(--accent); border-radius:0 5px 5px 0; }
     .topic-banner { background:var(--bg); color:var(--acc); padding:8px 13px; border-left:6px solid var(--acc); font-weight:700; margin-bottom:12px; }
+    .katex-display { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; }
 </style>
 </head>
 <body>
@@ -2459,19 +2607,28 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     <small>Print dialog will open automatically</small>
 </div>
 
-<!-- FRONT COVER -->
+<!-- FRONT COVER (dynamic themed) -->
 <div class="sheet cover">
-    <div class="cover-graphics"><div class="diag"></div><div class="circ"></div></div>
+    <div class="gold-stripe"></div>
+    <div class="gold-stripe-r"></div>
+    <svg class="hex-grid" viewBox="0 0 320 320" fill="none">
+        <defs><pattern id="hex" x="0" y="0" width="40" height="46.18" patternUnits="userSpaceOnUse"><polygon points="20,2 38,12 38,34 20,44 2,34 2,12" fill="none" stroke="white" stroke-width="1"/></pattern></defs>
+        <rect width="320" height="320" fill="url(#hex)"/>
+    </svg>
+    ${decorativeSvg === 'virus' ? `<svg class="virus-deco" viewBox="0 0 125 125"><circle cx="63" cy="62" r="35" stroke="white" stroke-width="2"/><path d="M28 35 L98 35 M28 62 L98 62 M28 89 L98 89" stroke="white" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="42" cy="48" r="4" stroke="white" fill="none"/><circle cx="84" cy="48" r="4" stroke="white" fill="none"/><path d="M52 77 L74 77" stroke="white" stroke-width="2"/></svg>` : ''}
+    ${decorativeSvg === 'atom' ? `<svg class="atom-deco" viewBox="0 0 125 125"><ellipse cx="63" cy="62" rx="40" ry="15" stroke="white" stroke-width="1.5" fill="none"/><ellipse cx="63" cy="62" rx="40" ry="15" stroke="white" stroke-width="1.5" fill="none" transform="rotate(60 63 62)"/><ellipse cx="63" cy="62" rx="40" ry="15" stroke="white" stroke-width="1.5" fill="none" transform="rotate(120 63 62)"/><circle cx="63" cy="62" r="6" fill="white"/></svg>` : ''}
+    ${decorativeSvg === 'molecule' ? `<svg class="molecule-deco" viewBox="0 0 125 125"><circle cx="40" cy="45" r="8" stroke="white" stroke-width="1.5" fill="none"/><circle cx="85" cy="45" r="8" stroke="white" stroke-width="1.5" fill="none"/><circle cx="62" cy="80" r="8" stroke="white" stroke-width="1.5" fill="none"/><line x1="48" y1="45" x2="77" y2="45" stroke="white" stroke-width="1.5"/><line x1="52" y1="52" x2="58" y2="72" stroke="white" stroke-width="1.5"/><line x1="74" y1="52" x2="66" y2="72" stroke="white" stroke-width="1.5"/></svg>` : ''}
+    ${decorativeSvg === 'mountain' ? `<svg class="mountain-deco" viewBox="0 0 125 125"><path d="M20 100 L50 45 L80 70 L105 30 L115 100 Z" stroke="white" stroke-width="1.5" fill="none"/><circle cx="62" cy="62" r="4" fill="white"/></svg>` : ''}
+    ${decorativeSvg === 'mine' ? `<svg class="mine-deco" viewBox="0 0 125 125"><rect x="40" y="50" width="45" height="30" stroke="white" stroke-width="1.5" fill="none"/><line x1="40" y1="50" x2="30" y2="35" stroke="white" stroke-width="1.5"/><line x1="85" y1="50" x2="95" y2="35" stroke="white" stroke-width="1.5"/><circle cx="62" cy="65" r="5" fill="white"/></svg>` : ''}
+    ${decorativeSvg === 'math' ? `<svg class="math-deco" viewBox="0 0 125 125"><text x="30" y="70" fill="white" font-size="50" font-family="Inter">∫</text></svg>` : ''}
+    ${decorativeSvg === 'speech' ? `<svg class="speech-deco" viewBox="0 0 125 125"><path d="M30 40 L95 40 L95 80 L70 80 L55 95 L60 80 L30 80 Z" stroke="white" stroke-width="1.5" fill="none"/></svg>` : ''}
+    ${decorativeSvg === 'crystal' ? `<svg class="crystal-deco" viewBox="0 0 125 125"><polygon points="62,30 85,55 75,85 50,85 40,55" stroke="white" stroke-width="1.5" fill="none"/><line x1="62" y1="30" x2="62" y2="85" stroke="white" stroke-width="1"/></svg>` : ''}
+    ${coverWave === 'double' ? `<svg class="wave-bot" viewBox="0 0 794 200" preserveAspectRatio="none"><path d="M0 200 L794 200 L794 60 Q550 0 300 80 Q150 130 0 60 Z" fill="rgba(46,125,79,0.2)"/></svg>` : ''}
     <div class="cover-inner">
-        <div style="color:var(--yellow);font-weight:700;font-size:11px;letter-spacing:2px;margin-bottom:18px;">
-            ${course} · ${identity.name.toUpperCase()}
-        </div>
-        <h1 style="font-size:46px;font-weight:800;line-height:1.1;margin:0 0 16px 0;">
-            ${termLabel}<br>${sessInfo.icon} ${sessInfo.title}
-        </h1>
-        <p style="font-size:16px;font-weight:300;color:#ddd;line-height:1.5;margin:0;">
-            Complete Study Kit &mdash; ${totalItems} Items
-        </p>
+        <div class="cover-eyebrow"><div class="eyebrow-line"></div>${course} · ${identity.name.toUpperCase()} · ${termLabel}<div class="eyebrow-line"></div></div>
+        <div class="cover-kicker">${coverTagline}</div>
+        <div class="cover-title">${titleMain}<br>${titleSub}</div>
+        <div class="tags-container">${tagsHtml}</div>
         <div class="stats-grid">
             <div><span class="stat-num">${totalItems}</span><span class="stat-lbl">ITEMS</span></div>
             <div><span class="stat-num">${sections.length}</span><span class="stat-lbl">SECTIONS</span></div>
@@ -2487,8 +2644,8 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 
 <!-- TABLE OF CONTENTS -->
 <div class="sheet">
-    <div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
-    <div class="pg-footer"><span>&copy; 2026 Kaeri EdTech</span><span class="pg-num">Page 2</span></div>
+    <div class="pg-header"><span class="brand">${icon} KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
+    <div class="pg-footer"><span>© ${currentYear} Kaeri EdTech. All rights reserved.</span><span class="pg-num">Page 2</span></div>
     <div class="pg-content">
         <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
         ${tocRows}
@@ -2502,30 +2659,31 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 
 <div id="dynamic-content"></div>
 
-<!-- BACK COVER -->
+<!-- BACK COVER (brand consistent, QR code → revision platform) -->
 <div class="sheet cover" style="justify-content:flex-start;">
-    <div class="cover-graphics"><div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div></div>
+    <div class="gold-stripe"></div>
+    <div class="gold-stripe-r"></div>
     <div class="cover-inner" style="justify-content:space-between;">
         <div>
-            <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
-            <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
+            <h1 style="color:white;font-size:40px;font-weight:800;margin:0 0 8px 0;">KAERI EDTECH</h1>
+            <p style="color:rgba(255,255,255,0.55);font-weight:300;font-size:14px;margin-bottom:28px;">Empowering Learners Through Smart Educational Technology<br><span style="color:var(--yellow);font-weight:600;">Copperbelt University · ${course} ${identity.name} · ${termLabel}</span></p>
         </div>
         <div style="background:rgba(255,255,255,0.05);border-left:5px solid var(--yellow);padding:22px;border-radius:8px;">
-            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+            <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
                 <div style="flex:1;">
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">CALL / WHATSAPP</div>
-                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:3px;">096-100-5406</div>
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1.2px;margin-bottom:9px;">CALL / WHATSAPP</div>
+                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:4px;">096-100-5406</div>
                     <div style="font-size:22px;font-weight:800;color:white;margin-bottom:18px;">096-431-2504</div>
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:4px;">FOLLOW OUR WHATSAPP CHANNEL</div>
-                    <div style="font-size:11px;color:#aaa;">Scan to join the official Kaeri EdTech community.</div>
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1.2px;margin-bottom:5px;">ACCESS OUR REVISION PLATFORM</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.5);">Scan to access the official Kaeri EdTech revision site for ${course} resources, past papers, and more.</div>
                 </div>
-                <img src="${qrUrl}" width="110" height="110" style="border:2px solid white;border-radius:8px;">
+                <img src="${qrUrl}" width="115" height="115" style="border:2px solid rgba(255,255,255,0.25);border-radius:8px;">
             </div>
         </div>
-        <div style="font-size:10px;color:#aaa;line-height:1.7;border-top:1px solid #333;padding-top:16px;">
-            <strong>Document:</strong> ${course} · ${identity.name} · ${termLabel} · ${sessInfo.title}<br>
-            <strong>Generated:</strong> ${date} &nbsp;&nbsp;
-            <strong>&copy; 2026 Kaeri EdTech. All rights reserved.</strong>
+        <div style="font-size:10px;color:rgba(255,255,255,0.4);line-height:1.7;border-top:1px solid rgba(252,203,0,0.18);padding-top:16px;margin-top:auto;">
+            <strong style="color:rgba(255,255,255,0.65);">Document:</strong> ${course} · ${sessInfo.title} Question Bank · ${termLabel}<br>
+            <strong style="color:rgba(255,255,255,0.65);">Edition:</strong> ${currentYear} · Standalone Single Source of Truth Edition &nbsp;|&nbsp;<strong style="color:rgba(255,255,255,0.65);">Owner:</strong> Kaeri EdTech<br>
+            <strong style="color:rgba(255,255,255,0.65);">© ${currentYear} Kaeri EdTech. All rights reserved.</strong>
         </div>
     </div>
 </div>
@@ -2538,8 +2696,23 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     const courseName = '${course}';
     const termLabel = '${termLabel}';
     const sessTitle = '${sessInfo.title}';
+    const accentColor = '${accent}';
 
-    // Pagination setup
+    // Full Markdown parser (same as main engine)
+    function parseKaeriMarkdown(text) {
+        if (!text) return "";
+        let t = text;
+        t = t.replace(/^## (.*$)/gim, "<h3 style='margin:10px 0; color:#72efdd;'>$1</h3>");
+        t = t.replace(/^# (.*$)/gim, "<h2 style='margin:15px 0; color:#fff;'>$1</h2>");
+        t = t.replace(/^> (.*$)/gim, "<blockquote style='border-left:4px solid #72efdd; margin:10px 0; padding-left:15px; color:#a0a8b4; font-style:italic;'>$1</blockquote>");
+        t = t.replace(/^- (.*$)/gim, "<li style='margin-left:20px;'>$1</li>");
+        t = t.replace(/\\*\\*(.*?)\\*\\*/g, "<strong>$1</strong>");
+        t = t.replace(/__(.*?)__/g, "<u>$1</u>");
+        t = t.replace(/(?<!\\\\)\\*([^\\s].*?)(?<!\\\\)\\*/g, "<em>$1</em>");
+        t = t.replace(/\\n/g, "<br>");
+        return t;
+    }
+
     const MM = 3.7795275591;
     const PAGE_H = 297 * MM;
     const TOP = 32 * MM;
@@ -2553,13 +2726,13 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     sb.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:' + CONT_W + 'px;visibility:hidden;pointer-events:none;font-family:Inter,Arial,sans-serif;';
     document.body.appendChild(sb);
 
-    let pageCount = 2; // cover=1, TOC=2
+    let pageCount = 2;
     function newPage() {
         pageCount++;
         const sheet = document.createElement('div');
         sheet.className = 'sheet';
-        sheet.innerHTML = '<div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
-                          '<div class="pg-footer"><span>© 2026 Kaeri EdTech</span><span class="pg-num">Page ' + pageCount + '</span></div>' +
+        sheet.innerHTML = '<div class="pg-header"><span class="brand">${icon} KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
+                          '<div class="pg-footer"><span>© ${currentYear} Kaeri EdTech. All rights reserved.</span><span class="pg-num">Page ' + pageCount + '</span></div>' +
                           '<div class="pg-content" id="pg-' + pageCount + '"></div>';
         root.appendChild(sheet);
         return { el: sheet.querySelector('#pg-' + pageCount), used: 0 };
@@ -2595,22 +2768,22 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 
         let qText = '', ansHtml = '', explHtml = '';
         if (sessionType === 'mcq') {
-            qText = item.q || '';
+            qText = parseKaeriMarkdown(item.q || '');
             const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
-            ansHtml = '<strong>Answer:</strong> ' + correctOpt;
-            explHtml = item.explanation || 'No additional explanation.';
+            ansHtml = '<strong>Answer:</strong> ' + parseKaeriMarkdown(correctOpt);
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
         } else if (sessionType === 'shortAnswer') {
-            qText = item.q || '';
+            qText = parseKaeriMarkdown(item.q || '');
             ansHtml = '<strong>Keywords:</strong> ' + (item.keywords || []).join(', ');
-            explHtml = item.explanation || 'No additional explanation.';
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
         } else if (sessionType === 'essay') {
-            qText = item.q || '';
+            qText = parseKaeriMarkdown(item.q || '');
             const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
-            ansHtml = '<strong>Correct:</strong> ' + correctOpt;
-            explHtml = item.explanation || 'No additional explanation.';
-        } else { // flashcard
-            qText = item.front || '';
-            ansHtml = item.back || '';
+            ansHtml = '<strong>Correct:</strong> ' + parseKaeriMarkdown(correctOpt);
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
+        } else {
+            qText = parseKaeriMarkdown(item.front || '');
+            ansHtml = parseKaeriMarkdown(item.back || '');
             explHtml = '';
         }
 
@@ -2640,39 +2813,47 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
         }
     }
 
+    function renderMathAndPrint() {
+        if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\\\(', right: '\\\\)', display: false},
+                    {left: '\\\\[', right: '\\\\]', display: true}
+                ],
+                throwOnError: false
+            });
+        }
+        setTimeout(() => {
+            const loading = document.getElementById('kaeri-loading');
+            if (loading) loading.style.display = 'none';
+            if (sb.parentNode) sb.parentNode.removeChild(sb);
+            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        }, 200);
+    }
+
     let timeoutId = setTimeout(() => {
         console.warn('Font loading timeout – forcing print');
-        const loading = document.getElementById('kaeri-loading');
-        if (loading) loading.style.display = 'none';
-        if (sb.parentNode) sb.parentNode.removeChild(sb);
-        requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        renderMathAndPrint();
     }, 3000);
 
     if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(() => {
             clearTimeout(timeoutId);
             build();
-            const loading = document.getElementById('kaeri-loading');
-            if (loading) loading.style.display = 'none';
-            if (sb.parentNode) sb.parentNode.removeChild(sb);
-            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+            renderMathAndPrint();
         }).catch(err => {
             console.warn(err);
             clearTimeout(timeoutId);
             build();
-            const loading = document.getElementById('kaeri-loading');
-            if (loading) loading.style.display = 'none';
-            if (sb.parentNode) sb.parentNode.removeChild(sb);
-            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+            renderMathAndPrint();
         });
     } else {
         window.addEventListener('load', () => {
             clearTimeout(timeoutId);
             build();
-            const loading = document.getElementById('kaeri-loading');
-            if (loading) loading.style.display = 'none';
-            if (sb.parentNode) sb.parentNode.removeChild(sb);
-            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+            renderMathAndPrint();
         });
     }
 })();
@@ -2680,7 +2861,6 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 </body>
 </html>`;
 }
-
 // ============================================================
 // === 10. UTILITIES ===
 // ============================================================
