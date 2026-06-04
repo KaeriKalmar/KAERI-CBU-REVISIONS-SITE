@@ -21088,6 +21088,2136 @@ const mcqData = [
     year: "Notes",
     tag: "MCQ"
   },
+  
+  //BI110 TERM 2 DOMAIN BACTERIA NEW CONTENT 
+  
+  // Q1 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What defines a prokaryote in cellular biology?",
+    options: [
+      "A single-celled organism that completely lacks a membrane-bound nucleus and specialized organelles.",
+      "A multicellular organism whose cells contain a true, membrane-bound nucleus.",
+      "An infectious viral particle consisting solely of naked RNA without a protective capsid.",
+      "A complex cell containing highly specialized organelles such as mitochondria and chloroplasts."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The prefix "pro-" means before, and "karyon" means kernel (nucleus). Prokaryotes evolved before the nucleus. Their DNA floats freely in the cytoplasm, and they lack complex cellular machinery.
+- Option A is correct because the complete lack of a nucleus and organelles explicitly defines a prokaryote.
+- Option B is wrong because this defines a eukaryote.
+- Option C is wrong because this defines a viroid.
+- Option D is wrong because specialized organelles define eukaryotes.
+> **Key Takeaway:** A prokaryote is a simple, single-celled organism that completely lacks a membrane-bound nucleus and specialized organelles.`
+  },
+  // Q2 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "How is a eukaryote fundamentally distinguished from a prokaryote?",
+    options: [
+      "A eukaryote is an extremely simple cell lacking any internal membrane structures.",
+      "A eukaryote is an organism whose cells contain a true, membrane-bound nucleus and complex organelles.",
+      "A eukaryote is an infectious protein particle devoid of any genetic material.",
+      "A eukaryote is a single-celled archaean that thrives in boiling, highly acidic environments."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Eukaryotes (from "eu-" meaning true, and "karyon" meaning nucleus) evolved complex internal compartmentalization. Their DNA is safely locked inside a nuclear envelope, and they possess energy-producing factories like mitochondria.
+- Option A is wrong because this describes a prokaryote.
+- Option B is correct because possessing a true nucleus and complex organelles defines a eukaryote.
+- Option C is wrong because this describes a prion.
+- Option D is wrong because archaea are prokaryotes.
+> **Key Takeaway:** Eukaryotes are defined by possessing cells with a true, membrane-bound nucleus and complex organelles.`
+  },
+  // Q3 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What defines the 'nucleoid region' within a prokaryotic cell?",
+    options: [
+      "The rigid external protein shell that completely protects the viral genome.",
+      "The distinct, double-membrane vault that securely stores linear DNA molecules.",
+      "The unbound, central region of the cytoplasm where the single, circular chromosome is loosely located.",
+      "The highly specialized, folded internal membrane where oxygenic photosynthesis occurs."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Because bacteria do not waste energy building a nuclear envelope, their DNA is not segregated from the rest of the cell. The single, massive loop of DNA simply bunches up in a central, messy area of the fluid cytoplasm. This general location is called the nucleoid.
+- Option A is wrong because this describes a viral capsid.
+- Option B is wrong because this describes a eukaryotic nucleus.
+- Option C is correct because the nucleoid is explicitly the unbound cytoplasmic region containing the bacterial chromosome.
+- Option D is wrong because this describes a thylakoid membrane.
+> **Key Takeaway:** The nucleoid is the unbound, central region of a prokaryotic cell where the circular chromosome naturally congregates.`
+  },
+  // Q4 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What is the specific biological process known as binary fission?",
+    options: [
+      "A sexual reproduction process involving the complete fusion of two distinct gametes.",
+      "The direct, horizontal transfer of DNA through a physical pilus bridge.",
+      "The asymmetrical budding of a small, unequal daughter cell directly from the parent membrane.",
+      "A method of asexual reproduction where a single cell copies its DNA and divides symmetrically into two identical clone cells."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Bacteria reproduce exceptionally quickly using binary fission. The bacterium copies its single circular chromosome, the cell elongates to pull the two copies apart, and a wall (septum) grows exactly down the middle, splitting the parent into two identical halves.
+- Option A is wrong because binary fission is strictly asexual.
+- Option B is wrong because this describes bacterial conjugation.
+- Option C is wrong because this describes budding, an asymmetrical process.
+- Option D is correct because binary fission involves the symmetrical division of a cell into two identical clones.
+> **Key Takeaway:** Binary fission is the primary asexual reproductive process of bacteria, where one cell divides symmetrically into two identical clones.`
+  },
+  // Q5 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "How does the process of 'budding' in bacteria fundamentally operate?",
+    options: [
+      "An asexual reproductive process where a small outgrowth develops on the parent cell, enlarges, and eventually separates.",
+      "The perfectly symmetrical splitting of a parent cell into two equally sized daughter cells.",
+      "The explosive release of highly durable internal endospores to survive harsh environments.",
+      "The mutual exchange of accessory plasmids between two physically adjacent bacteria."
+    ],
+    correct: 0,
+    explanation: `## Insight
+While most bacteria use binary fission to split evenly in half, some species use budding. The parent cell pushes a small blister of membrane outward. A copy of the DNA moves into the blister, which grows until it pinches off as a new, smaller daughter cell.
+- Option A is correct because budding is defined by asymmetrical growth and separation.
+- Option B is wrong because symmetrical splitting defines binary fission.
+- Option C is wrong because endospore release is a survival mechanism, not active reproduction.
+- Option D is wrong because plasmid exchange is conjugation (horizontal gene transfer).
+> **Key Takeaway:** Budding is an asexual reproductive process where a small, unequal outgrowth develops on the parent cell before separating.`
+  },
+  // Q6 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What specific type of ribosomes are found within bacterial cells?",
+    options: [
+      "80S ribosomes, structurally identical to the machinery found in human cells.",
+      "70S ribosomes, which are physically smaller than the ribosomes found in eukaryotic cells.",
+      "90S ribosomes, uniquely specialized for surviving extreme, boiling high temperatures.",
+      "Bacteria completely lack ribosomes, forcing them to rely entirely on host cells for protein synthesis."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Ribosomes are the 3D printers of the cell, building proteins. Bacterial ribosomes are smaller and structurally different from human ribosomes. They are classified by how fast they sink in a centrifuge (Svedberg units). Bacteria use 70S ribosomes, while humans use 80S. This is crucial because antibiotics can target and destroy 70S ribosomes without harming human 80S ribosomes.
+- Option A is wrong because 80S ribosomes define eukaryotes.
+- Option B is correct because 70S ribosomes are the specific, smaller manufacturing units found in prokaryotes.
+- Option C is wrong because 90S ribosomes do not exist in biology.
+- Option D is wrong because viruses lack ribosomes; all living bacteria possess them.
+> **Key Takeaway:** Bacterial cells exclusively utilize 70S ribosomes, which are structurally smaller than eukaryotic 80S ribosomes.`
+  },
+  // Q7 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which taxonomic rank currently represents the absolute highest and most inclusive category in biological classification?",
+    options: [
+      "Phylum, which categorizes major distinct anatomical body plans.",
+      "Species, which represents the most inclusive, fundamental reproductive group.",
+      "Domain, which sits directly above the Kingdom level and divides all life based on cellular genetics.",
+      "Order, which organizes and groups highly related biological families."
+    ],
+    correct: 2,
+    explanation: `## Insight
+For centuries, the Kingdom was the highest rank. In 1990, Carl Woese discovered that bacteria and archaea were so fundamentally different at the genetic level that a new, ultimate top-tier category was required. The Domain system (Bacteria, Archaea, Eukarya) was established as the highest rank.
+- Option A is wrong because Phylum sits far below Domain and Kingdom.
+- Option B is wrong because Species is the lowest, most specific rank.
+- Option C is correct because the Domain is universally accepted as the highest taxonomic rank.
+- Option D is wrong because Order sits beneath Class.
+> **Key Takeaway:** The Domain represents the absolute highest, most broad, and most inclusive rank in modern biological classification.`
+  },
+  // Q8 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Historically, what did the former Superkingdom 'Prokaryonta' (or Monera) contain?",
+    options: [
+      "Exclusively single-celled fungi, yeasts, and molds.",
+      "All photosynthetic organisms, including marine algae and terrestrial land plants.",
+      "Only extremophile organisms naturally found deep within oceanic trenches.",
+      "All organisms lacking a true nucleus, incorrectly lumping both modern Bacteria and Archaea together into one group."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Before modern DNA sequencing, scientists grouped life based on what it looked like under a microscope. Everything that lacked a nucleus was lumped into one massive group called Prokaryonta (or Monera). We now know this was a mistake, as Archaea and Bacteria are as genetically different from each other as humans are from plants.
+- Option A is wrong because fungi are eukaryotes with true nuclei.
+- Option B is wrong because plants are complex eukaryotes.
+- Option C is wrong because it contained all bacteria, not just extremophiles.
+- Option D is correct because Prokaryonta historically served as a catch-all group for all anucleate organisms.
+> **Key Takeaway:** The former Superkingdom Prokaryonta inaccurately lumped all organisms lacking a true nucleus (Bacteria and Archaea) into a single category.`
+  },
+  // Q9 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "In older taxonomic systems, what was the formal division name used to classify true bacteria?",
+    options: [
+      "Schizomycophyta (meaning fission fungi), heavily reflecting their tendency to reproduce by binary fission.",
+      "Cyanophyta, representing all blue-green algae and photosynthetic pathogens.",
+      "Rhodophyta, representing the deep-sea, structurally complex red algae.",
+      "Pyrrophyta, representing the armored, highly bioluminescent dinoflagellates."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Early taxonomists thought bacteria were closely related to fungi. Because bacteria reproduce by physically splitting in half (fission), they were placed in the division Schizomycophyta, which literally translates from Greek as "fission fungi." This terminology is now obsolete.
+- Option A is correct because Schizomycophyta was the historical division name for true bacteria.
+- Option B is wrong because Cyanophyta was the specific division for blue-green algae, not all bacteria.
+- Option C is wrong because Rhodophyta are eukaryotic red algae.
+- Option D is wrong because Pyrrophyta are eukaryotic dinoflagellates.
+> **Key Takeaway:** True bacteria were historically classified under the division Schizomycophyta, which translates to 'fission fungi.'`
+  },
+  // Q10 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "Under which former taxonomic division were the blue-green algae grouped before they were correctly identified as bacteria?",
+    options: [
+      "Schizomycophyta, representing the true, heterotrophic bacteria.",
+      "Cyanophyta, heavily reflecting their distinct blue-green pigmentation.",
+      "Phaeophyta, representing the massive, forest-forming marine kelps.",
+      "Chlorophyta, representing the true, starch-storing green algae."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Because they lived in ponds and performed photosynthesis just like plants, early biologists classified blue-green algae alongside true plants. They were placed in the division Cyanophyta ("blue plants"). Once electron microscopes proved they lacked a nucleus, they were stripped of their plant status and moved into the Domain Bacteria.
+- Option A is wrong because this division housed standard, non-photosynthetic bacteria.
+- Option B is correct because Cyanophyta was the historical division for blue-green algae.
+- Option C is wrong because Phaeophyta represents brown algae.
+- Option D is wrong because Chlorophyta represents true green algae.
+> **Key Takeaway:** Blue-green algae were historically grouped in the division Cyanophyta before being correctly reclassified as Cyanobacteria.`
+  },
+  // Q11 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What represents the absolute primary mode of nutrition for the vast majority of all known bacteria?",
+    options: [
+      "Oxygenic photosynthesis relying heavily on internal chloroplasts.",
+      "Chemosynthesis using pure inorganic iron and highly toxic hydrogen sulfide.",
+      "Heterotrophic absorption, where they secrete external enzymes and absorb dissolved organic nutrients from their environment.",
+      "Intracellular phagocytosis designed to aggressively engulf and digest live prey whole."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Most bacteria are scavengers or decomposers. They cannot make their own food, and they cannot open a mouth to eat. Instead, they secrete powerful digestive enzymes outside their bodies to break down dead organic matter into a biological soup. They then absorb this nutrient-rich liquid directly through their cell walls (saprophytic heterotrophy).
+- Option A is wrong because only a small fraction (Cyanobacteria) photosynthesize, and they lack chloroplasts.
+- Option B is wrong because chemosynthesis is restricted to highly specialized extremophiles.
+- Option C is correct because heterotrophic absorption is the dominant nutritional strategy for bacteria.
+- Option D is wrong because bacteria have rigid cell walls and cannot perform phagocytosis (unlike amoebas).
+> **Key Takeaway:** The primary mode of nutrition for most bacteria is heterotrophic absorption, where they absorb externally digested organic nutrients.`
+  },
+  // Q12 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What defines an 'autotrophic' bacterium?",
+    options: [
+      "A bacterium that relies exclusively on decomposing dead plant and animal matter for its carbon.",
+      "A bacterium that must aggressively infect a living host cell to steal its raw ATP energy.",
+      "A bacterium that feeds strictly by engulfing smaller microbes via specialized pseudopodia.",
+      "A bacterium highly capable of synthesizing its own complex organic food from simple inorganic substances, using light or chemical energy."
+    ],
+    correct: 3,
+    explanation: `## Insight
+"Auto" means self, and "troph" means feeder. Autotrophic bacteria are the ultimate independent survivors. They do not need to eat other organisms. They pull inorganic carbon dioxide ($CO_2$) directly out of the air or water and use either sunlight (photoautotrophs) or chemical reactions (chemoautotrophs) to build their own sugars.
+- Option A is wrong because this describes a saprophytic heterotroph.
+- Option B is wrong because this describes an obligate intracellular parasite (like Chlamydia).
+- Option C is wrong because bacteria cannot use pseudopodia.
+- Option D is correct because autotrophs explicitly synthesize their own organic food from inorganic precursors.
+> **Key Takeaway:** Autotrophic bacteria are capable of synthesizing their own complex organic food from simple inorganic substances.`
+  },
+  // Q13 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What is the precise biological function of the bacterial 'capsule' (or slime layer)?",
+    options: [
+      "It acts as a thick, gelatinous outer coating that protects the bacterium from host immune phagocytosis and prevents severe desiccation.",
+      "It acts as a rigid, internal scaffolding protein that dictates the bacterium's specific morphological shape.",
+      "It acts as a specialized organelle responsible for translating messenger RNA directly into functional proteins.",
+      "It acts as the inner lipid bilayer that strictly controls nutrient transport into the cellular cytoplasm."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Outside the cell wall, many pathogenic bacteria secrete a massive, sticky layer of polysaccharides called a capsule. This slime layer acts like a physical forcefield. It prevents the bacterium from drying out in the environment, and if it enters a human body, it makes the bacterium so incredibly slippery that human white blood cells cannot grab and swallow it.
+- Option A is correct because the capsule is explicitly a protective, anti-phagocytic, anti-desiccation layer.
+- Option B is wrong because shape is dictated by the rigid peptidoglycan cell wall.
+- Option C is wrong because translation is the job of ribosomes.
+- Option D is wrong because the inner boundary is the plasma membrane, not the capsule.
+> **Key Takeaway:** The bacterial capsule is a thick, gelatinous outer layer that prevents desiccation and protects the bacterium from immune system phagocytosis.`
+  },
+  // Q14 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What is the absolute primary function of the bacterial cell wall?",
+    options: [
+      "To aggressively synthesize massive amounts of ATP for cellular motility.",
+      "To maintain the cell's rigid shape and prevent it from catastrophically bursting due to internal osmotic pressure.",
+      "To securely store massive amounts of excess starch and glycogen reserves during periods of starvation.",
+      "To precisely package and protect the single, fragile circular DNA chromosome from UV radiation."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Bacteria are packed full of proteins, salts, and sugars. When they live in freshwater, osmosis forces water aggressively into the cell. Without a rigid suit of armor, the cell membrane would swell like a balloon and instantly explode (lysis). The strong peptidoglycan cell wall physically stops this expansion, maintaining the cell's shape and integrity.
+- Option A is wrong because ATP is synthesized by the plasma membrane, not the wall.
+- Option B is correct because the cell wall explicitly provides structural shape and resists osmotic lysis.
+- Option C is wrong because food is stored in internal inclusion bodies, not the wall.
+- Option D is wrong because the DNA is protected by the inner membrane and cytoplasm.
+> **Key Takeaway:** The primary function of the bacterial cell wall is to maintain the cell's physical shape and prevent osmotic bursting.`
+  },
+  // Q15 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "In the context of bacterial morphology, what exactly are flagella?",
+    options: [
+      "Short, hair-like protein structures used exclusively for mating and horizontal DNA transfer.",
+      "Internal muscle fibers that aggressively contract to bend the entire bacterial cell body.",
+      "Long, whip-like external appendages that rotate actively like highly efficient outboard propellers to drive bacterial motility.",
+      "Microscopic suction cups that permanently anchor the bacterium to a smooth biological surface."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Bacteria cannot swim by flapping a tail like a fish. Instead, they use a biological motor built into their cell wall. This motor spins a long, stiff, corkscrew-shaped protein filament called a flagellum. Because it rotates like a boat propeller, it effectively pushes the bacterium through viscous liquid environments.
+- Option A is wrong because short mating structures are called sex pili.
+- Option B is wrong because bacteria lack internal muscle fibers; spiral movement uses internal axial filaments.
+- Option C is correct because flagella are long, rotating, whip-like structures used specifically for locomotion.
+- Option D is wrong because anchoring structures are called fimbriae.
+> **Key Takeaway:** Bacterial flagella are long, rotating, whip-like external appendages that act like propellers to drive cellular motility.`
+  },
+  // Q16 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What defines 'gliding motility' in certain specialized bacterial species?",
+    options: [
+      "The violent, twisting, corkscrew motion driven exclusively by internal axial filaments.",
+      "The passive, aimless drifting of bacteria entirely dictated by prevailing ocean currents.",
+      "The rapid, chaotic tumbling motion caused by multiple flagella spinning simultaneously in opposite directions.",
+      "A smooth, sliding movement over solid surfaces achieved without the use of any visible external structures like flagella."
+    ],
+    correct: 3,
+    explanation: `## Insight
+While most bacteria swim through liquids using flagella, some bacteria (like *Myxococcus* or some cyanobacteria) move across solid, dry surfaces. They secrete a trail of slime and use internal motor proteins to smoothly glide across the surface without relying on external spinning tails. This is gliding motility.
+- Option A is wrong because corkscrew motion is the hallmark of spirochetes using axial filaments.
+- Option B is wrong because passive drifting is simply planktonic movement, not active gliding.
+- Option C is wrong because tumbling is a flagellar reorientation maneuver.
+- Option D is correct because gliding motility is smooth surface movement achieved without flagella.
+> **Key Takeaway:** Gliding motility is a smooth, continuous sliding movement over solid surfaces performed without the use of visible external flagella.`
+  },
+  // Q17 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which highly unique, structural polymer acts as a mesh-like armor and is found exclusively in the cell walls of the domain Bacteria?",
+    options: [
+      "Peptidoglycan, a massive, highly cross-linked network of sugars and amino acids.",
+      "Solid cellulose, the incredibly tough carbohydrate that forms the structural trunk of large trees.",
+      "Chitin, the highly flexible, waterproof polymer heavily utilized in insect exoskeletons.",
+      "Pseudomurein, a specialized, highly acid-resistant chemical found exclusively in Archaea."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Cell walls act as protective armor for cells, but different domains use completely different materials. Plants use cellulose; fungi use chitin; Archaea use pseudomurein. The domain Bacteria uses a unique, highly durable, chain-link fence made of alternating sugars and short protein bridges called peptidoglycan. This polymer is the primary target for antibiotics like penicillin.
+- Option A is correct because peptidoglycan is the absolute defining structural polymer of bacterial cell walls.
+- Option B is wrong because cellulose belongs to plants.
+- Option C is wrong because chitin belongs to fungi and arthropods.
+- Option D is wrong because pseudomurein belongs to Archaea.
+> **Key Takeaway:** Peptidoglycan is a highly unique structural polymer found exclusively in the cell walls of the domain Bacteria.`
+  },
+  // Q18 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What two specific amino sugars alternate to form the massive, continuous carbohydrate backbone of the peptidoglycan molecule?",
+    options: [
+      "Glucose and highly highly concentrated fructose.",
+      "N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM).",
+      "Ribose and highly phosphorylated deoxyribose.",
+      "Galactose and heavily oxidized mannose."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Peptidoglycan gets its strength from its structure. The "glycan" (sugar) part consists of two modified glucose molecules—NAG and NAM. These two sugars link together in an alternating, endless chain (NAG-NAM-NAG-NAM). These long sugar chains run parallel to each other, forming the main structural cables of the bacterial cell wall.
+- Option A is wrong because glucose and fructose form standard sucrose, not peptidoglycan.
+- Option B is correct because NAG and NAM are the explicit, alternating amino sugars that form the peptidoglycan backbone.
+- Option C is wrong because ribose and deoxyribose are the sugars in RNA and DNA.
+- Option D is wrong because galactose and mannose are standard metabolic sugars.
+> **Key Takeaway:** The carbohydrate backbone of peptidoglycan is constructed from alternating chains of N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM).`
+  },
+  // Q19 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific group of chemical compounds acts as the strong, cross-linking bridges that physically tie the parallel NAG-NAM sugar chains together in peptidoglycan?",
+    options: [
+      "Heavy, highly complex, saturated lipid fats.",
+      "Massive, unbroken, double-stranded DNA chains.",
+      "Short peptides containing unusual amino acids like D-alanine, D-glutamic acid, and diaminopimelic acid.",
+      "Extremely long, highly charged chains of pure, inorganic silica."
+    ],
+    correct: 2,
+    explanation: `## Insight
+A chain-link fence isn't strong if the wires aren't welded together. In peptidoglycan, the parallel NAG-NAM sugar chains are welded together by the "peptido" part—short chains of amino acids (peptides) that hang off the NAM molecules. Interestingly, bacteria use bizarre "D-form" amino acids in these bridges, which protects the wall from being easily digested by environmental enzymes.
+- Option A is wrong because lipids form the cell membrane, not the wall bridges.
+- Option B is wrong because DNA stores genetic information deep inside the cell.
+- Option C is correct because short peptide chains (containing unusual D-amino acids) cross-link the sugar backbone.
+- Option D is wrong because silica forms the shells of diatoms, not bacterial walls.
+> **Key Takeaway:** Short peptide chains (containing unusual D-amino acids) act as cross-linking bridges to tie the NAG-NAM sugar chains tightly together.`
+  },
+  // Q20 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "In microbiology, what is the exact operational purpose of the Gram stain procedure?",
+    options: [
+      "To explicitly determine the exact viral payload contained within an infected bacterial cell.",
+      "To physically measure the exact length and rotational speed of a bacterium's flagellum.",
+      "To aggressively induce lethal genetic mutations in order to test bacterial antibiotic resistance.",
+      "To act as a rapid, differential staining technique that fundamentally classifies bacteria into two broad groups based entirely on their cell wall architecture."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Developed by Hans Christian Gram in 1884, the Gram stain is the absolute first test run in any microbiology lab. Because almost all bacteria are transparent, this test uses colored dyes to reveal their structural secrets. Because thick walls trap dye and thin walls lose it, the test instantly separates all bacteria into Gram-positive or Gram-negative, dictating which antibiotics a doctor should prescribe.
+- Option A is wrong because stains cannot reveal internal viral genomes.
+- Option B is wrong because the Gram stain does not measure flagella.
+- Option C is wrong because the stain is a visual diagnostic tool, not a mutagen.
+- Option D is correct because the Gram stain is explicitly designed to differentiate bacteria based on cell wall thickness and lipid content.
+> **Key Takeaway:** The Gram stain is a critical differential test that categorizes bacteria into two broad groups based entirely on their cell wall structure.`
+  },
+  // Q21 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "In the standard four-step Gram staining protocol, what is the explicit function of Crystal Violet?",
+    options: [
+      "It acts as the primary stain, flooding the slide and initially turning every single bacterial cell a deep, uniform purple color.",
+      "It acts as the highly aggressive chemical decolorizer, dissolving the lipid membranes of Gram-negative bacteria.",
+      "It acts as the final, high-contrast counterstain, imparting a bright pink color to the invisible cells.",
+      "It acts as the chemical mordant, binding massively with the underlying cellular DNA."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The very first step in the Gram stain is to apply a deep purple dye called Crystal Violet. Because this dye is small and highly soluble, it easily penetrates the cell walls of every single bacterium on the slide. At this stage in the test, both Gram-positive and Gram-negative cells appear completely, uniformly purple.
+- Option A is correct because Crystal Violet is explicitly the primary stain that turns all cells purple initially.
+- Option B is wrong because alcohol is the decolorizer.
+- Option C is wrong because safranin is the pink counterstain.
+- Option D is wrong because iodine is the mordant, and it binds with the dye in the wall, not the DNA.
+> **Key Takeaway:** Crystal Violet serves as the primary stain in the Gram procedure, initially turning all bacterial cells a deep purple color.`
+  },
+  // Q22 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "During the Gram staining procedure, what is the highly specific role of Gram's iodine?",
+    options: [
+      "It aggressively dissolves the outer lipid membrane, preparing the cell for the counterstain.",
+      "It acts as a chemical mordant, binding heavily with the crystal violet to create massive complexes that become physically trapped inside thick peptidoglycan layers.",
+      "It acts as the primary stain, turning the cells a deep, dark brown color.",
+      "It acts as a potent antibiotic, freezing the bacteria in place so they do not swim off the slide."
+    ],
+    correct: 1,
+    explanation: `## Insight
+If you just dye the cells with crystal violet, the dye will easily wash right back out. You must add iodine. The iodine chemically bonds to the crystal violet molecules inside the cell, creating massive "crystal violet-iodine (CV-I) complexes." Because these molecules are now incredibly large, they get physically tangled and securely trapped inside the thick peptidoglycan net of Gram-positive cells.
+- Option A is wrong because alcohol dissolves the outer lipid membrane.
+- Option B is correct because iodine explicitly acts as a mordant to lock the primary dye inside the cell wall.
+- Option C is wrong because crystal violet is the primary stain.
+- Option D is wrong because bacteria are killed (fixed) by heat before staining, not by iodine.
+> **Key Takeaway:** In the Gram stain, iodine acts as a mordant, chemically binding with crystal violet to form massive complexes that get trapped in thick cell walls.`
+  },
+  // Q23 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What specific substance is utilized as the critical 'decolorizer' during the third step of the Gram staining procedure?",
+    options: [
+      "Highly concentrated, pure, boiling sulfuric acid.",
+      "Deep red safranin dye.",
+      "An alcohol or acetone-alcohol solution, which aggressively dehydrates peptidoglycan and completely dissolves outer lipid membranes.",
+      "Pure, sterile, highly pressurized distilled water."
+    ],
+    correct: 2,
+    explanation: `## Insight
+The decolorizer is the make-or-break step. When alcohol is poured onto Gram-positive cells, it dehydrates their thick peptidoglycan wall, shrinking the pores and locking the purple dye inside permanently. When poured onto Gram-negative cells, the alcohol dissolves their outer greasy lipid membrane and washes the purple dye completely out of their thin, fragile wall.
+- Option A is wrong because sulfuric acid would completely destroy the slide and the cells.
+- Option B is wrong because safranin is the counterstain.
+- Option C is correct because alcohol (or acetone-alcohol) is the universal decolorizing agent.
+- Option D is wrong because water cannot dissolve lipid membranes effectively enough to decolorize the cells.
+> **Key Takeaway:** An alcohol or acetone-alcohol solution serves as the decolorizer, stripping the purple dye away from thin-walled Gram-negative bacteria.`
+  },
+  // Q24 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What is the specific function of Safranin in the Gram staining protocol?",
+    options: [
+      "It acts as the primary stain, turning all bacteria a bright red color before the alcohol wash.",
+      "It acts as the crucial chemical mordant that permanently fixes the primary dye into the cell wall.",
+      "It acts as the highly aggressive decolorizing agent that rapidly dissolves lipid membranes.",
+      "It acts as a high-contrast pink/red counterstain to successfully visualize the invisible, decolorized Gram-negative bacteria."
+    ],
+    correct: 3,
+    explanation: `## Insight
+After the alcohol wash, the thick Gram-positive cells are still bright purple, but the thin Gram-negative cells have lost all their dye and are completely transparent under the microscope. To see them, you must apply a final, contrasting dye (a counterstain). Safranin is a pink/red dye. The purple cells ignore it, but the invisible Gram-negative cells absorb it and turn distinctly pink.
+- Option A is wrong because crystal violet is the primary stain.
+- Option B is wrong because iodine is the mordant.
+- Option C is wrong because alcohol is the decolorizing agent.
+- Option D is correct because safranin specifically acts as the final pink/red counterstain.
+> **Key Takeaway:** Safranin is used as a final counterstain to dye the decolorized, invisible Gram-negative bacteria a bright pink color.`
+  },
+  // Q25 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Why do Gram-positive bacteria definitively retain a deep purple color at the absolute end of the Gram staining procedure?",
+    options: [
+      "Because they possess a massive, extremely thick layer of peptidoglycan that aggressively traps the crystal violet-iodine complex even when washed with alcohol.",
+      "Because they completely lack a cell wall entirely, allowing the purple dye to securely bind directly to their massive DNA structure.",
+      "Because they possess a highly thick, impenetrable outer lipid membrane that absorbs the purple dye permanently.",
+      "Because their highly acidic cytoplasm chemically reacts with the dye, permanently altering its structure."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Gram-positive bacteria are essentially wearing a thick, heavy sweater of peptidoglycan (accounting for 50-90% of their wall). When the alcohol wash hits this thick wall, it severely dehydrates the sugars, causing the microscopic pores in the mesh to shrink tightly shut. This clamps down on the massive crystal violet-iodine molecules, securely trapping the purple dye inside.
+- Option A is correct because the thick peptidoglycan layer traps the primary purple stain during decolorization.
+- Option B is wrong because lacking a wall (like Mycoplasma) prevents staining; DNA does not hold the stain this way.
+- Option C is wrong because Gram-positive bacteria lack an outer lipid membrane (Gram-negative bacteria possess it).
+- Option D is wrong because the Gram stain is based on physical trapping in the wall, not a cytoplasmic chemical reaction.
+> **Key Takeaway:** Gram-positive bacteria stain deep purple because their incredibly thick peptidoglycan cell wall securely traps the primary crystal violet dye.`
+  },
+  // Q26 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "Why do Gram-negative bacteria definitively appear pink (or red) at the conclusion of the Gram staining procedure?",
+    options: [
+      "They naturally secrete a massive amount of bright red pigment to protect themselves from intense ultraviolet radiation.",
+      "The alcohol wash heavily destroys their outer lipid membrane and easily washes the purple dye out of their very thin peptidoglycan layer, allowing them to absorb the pink safranin counterstain.",
+      "They have absolutely no peptidoglycan in their structure and therefore can only absorb the pink dye.",
+      "They possess highly reactive chloroplasts that naturally reflect red light into the microscope."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Gram-negative bacteria wear a very thin shirt of peptidoglycan (only 10% of their wall) covered by a greasy outer lipid membrane. The alcohol wash dissolves this outer grease and easily flushes the purple dye straight through the thin wall. Now completely colorless, the bacteria freely absorb the final pink counterstain (safranin).
+- Option A is wrong because the color comes from the artificial safranin dye, not a natural bacterial pigment.
+- Option B is correct because the loss of the outer membrane and the inability of the thin wall to hold the dye leaves the cell open to the pink counterstain.
+- Option C is wrong because Gram-negative bacteria *do* have peptidoglycan, it is simply very thin.
+- Option D is wrong because bacteria are prokaryotes and completely lack chloroplasts.
+> **Key Takeaway:** Gram-negative bacteria stain pink because their thin cell wall fails to trap the purple dye, allowing them to absorb the pink safranin counterstain.`
+  },
+  // Q27 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What is lipopolysaccharide (LPS), and which specific group of bacteria exclusively possesses it in their structure?",
+    options: [
+      "A dense, massive, sticky carbohydrate capsule possessed exclusively by Gram-positive bacteria.",
+      "A highly specialized, internal structural protein possessed exclusively by corkscrew-shaped spirochetes.",
+      "A highly toxic molecule embedded exclusively in the outer lipid membrane of Gram-negative bacteria.",
+      "A massive, flexible storage molecule possessed exclusively by photosynthetic cyanobacteria."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Lipopolysaccharide (LPS) is a complex molecule made of lipid and sugar. It is physically built into the outer lipid membrane of Gram-negative bacteria. When the bacterium is destroyed by the human immune system, this LPS molecule breaks loose and acts as an "endotoxin." It triggers an aggressive, massive immune response that causes severe fever, drop in blood pressure, and often fatal toxic shock.
+- Option A is wrong because capsules are extracellular slime, while LPS is a membrane component of Gram-negatives.
+- Option B is wrong because LPS is not an internal structural protein.
+- Option C is correct because LPS (endotoxin) is the exclusive, defining, highly toxic component of the Gram-negative outer membrane.
+- Option D is wrong because storage molecules are internal (like glycogen), not external membrane components.
+> **Key Takeaway:** Lipopolysaccharide (LPS) is a highly toxic structural molecule embedded exclusively in the outer membrane of Gram-negative bacteria.`
+  },
+  // Q28 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following highly notorious pathogens is a classic, textbook example of a Gram-positive bacterium?",
+    options: [
+      "The *Escherichia coli* (*E. coli*) bacterium, which aggressively colonizes the human intestinal tract.",
+      "The *Vibrio cholerae* bacterium, which aggressively causes severe, dehydrating cholera.",
+      "The *Neisseria gonorrhoeae* bacterium, which causes the sexually transmitted infection gonorrhea.",
+      "The *Staphylococcus aureus* bacterium, which is highly renowned for causing severe skin infections and MRSA."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Gram-positive bacteria have massive, thick peptidoglycan walls that stain a deep purple. When viewing a swab from an infected skin wound under a microscope, clusters of deep purple spheres strongly indicate *Staphylococcus aureus*, the notorious culprit behind Staph infections and the antibiotic-resistant superbug MRSA.
+- Option A is wrong because *E. coli* is the classic textbook example of a Gram-negative bacillus (stains pink).
+- Option B is wrong because *Vibrio cholerae* is a Gram-negative curved rod (stains pink).
+- Option C is wrong because *Neisseria* is a Gram-negative diplococcus (stains pink).
+- Option D is correct because *Staphylococcus aureus* is a classic, heavily walled Gram-positive coccus (stains purple).
+> **Key Takeaway:** *Staphylococcus aureus* (which causes Staph infections and MRSA) is a classic, textbook example of a Gram-positive bacterium.`
+  },
+  // Q29 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following highly infamous pathogens is a classic, textbook example of a Gram-negative bacterium?",
+    options: [
+      "The *Escherichia coli* (*E. coli*) bacterium, widely known for causing severe gastrointestinal distress.",
+      "The *Bacillus anthracis* bacterium, universally known as the highly lethal, spore-forming cause of anthrax.",
+      "The *Streptococcus pneumoniae* bacterium, globally recognized as a leading cause of severe pneumonia.",
+      "The *Clostridium tetani* bacterium, universally known as the heavily shielded cause of tetanus (lockjaw)."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Gram-negative bacteria possess a thin cell wall and an outer lipid membrane containing toxic LPS. When dyed, they lose the purple stain and take on the pink safranin counterstain. *E. coli* is the absolute benchmark standard for a Gram-negative bacterium. It lives in the human gut and, while mostly harmless, certain strains can cause catastrophic food poisoning.
+- Option A is correct because *E. coli* is the undisputed classic textbook example of a Gram-negative bacillus (stains pink).
+- Option B is wrong because *Bacillus* is a heavily walled Gram-positive rod.
+- Option C is wrong because *Streptococcus* is a heavily walled Gram-positive coccus.
+- Option D is wrong because *Clostridium* is a heavily walled Gram-positive rod.
+> **Key Takeaway:** *Escherichia coli* (*E. coli*) is the absolute classic textbook example of a Gram-negative bacterium.`
+  },
+  // Q30 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In bacterial morphological classification, what specific shape is denoted by the formal term 'coccus'?",
+    options: [
+      "A highly curved, bent rod that deeply resembles a punctuation comma.",
+      "A bacterium that exhibits a perfectly spherical, round, ball-like shape.",
+      "A rigid, tightly wound, multi-loop spiral resembling dry, twisted pasta.",
+      "A perfectly straight, highly elongated, rigid cylinder."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Bacterial shapes are given Latin/Greek names to ensure universal scientific understanding. The Greek word 'kokkos' means berry. Therefore, any bacterium that looks like a perfect little round ball or sphere under the microscope is formally classified as a coccus (plural: cocci).
+- Option A is wrong because a comma shape defines a vibrio.
+- Option B is correct because "coccus" translates directly to a spherical or round shape.
+- Option C is wrong because a rigid spiral defines a spirillum.
+- Option D is wrong because a straight cylinder defines a bacillus.
+> **Key Takeaway:** A bacterium that exhibits a spherical, ball-like shape is formally classified as a coccus.`
+  },
+  // Q31 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What is the formal morphological classification term for a bacterium that is shaped exactly like a straight, cylindrical rod?",
+    options: [
+      "Coccus",
+      "Vibrio",
+      "Bacillus",
+      "Spirochete"
+    ],
+    correct: 2,
+    explanation: `## Insight
+Bacteria that look like tiny hot dogs, pills, or straight, elongated cylinders are categorized as rod-shaped. The formal taxonomic term for this specific shape is bacillus (from Latin 'baculum', meaning stick or rod). The plural form is bacilli. A classic example is the *E. coli* bacterium.
+- Option A is wrong because cocci are perfectly spherical.
+- Option B is wrong because vibrios are bent, curved rods (comma-shaped).
+- Option C is correct because "bacillus" specifically denotes a straight, cylindrical, rod-shaped bacterium.
+- Option D is wrong because spirochetes are highly flexible corkscrews.
+> **Key Takeaway:** Bacteria that exhibit a straight, cylindrical, rod-like shape are formally classified as bacilli.`
+  },
+  // Q32 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific group of bacteria is characterized by possessing a rigid, wavy, spiral shape and typically utilizing external flagella for locomotion?",
+    options: [
+      "Cocci",
+      "Bacilli",
+      "Spirochetes",
+      "Spirilla"
+    ],
+    correct: 3,
+    explanation: `## Insight
+There are two types of spiral bacteria. A spirillum is rigid—it holds its distinct, wavy spiral shape firmly, much like a twisted piece of dry fusilli pasta. Because its body is rigid, it cannot wiggle to move; instead, it relies entirely on standard external flagella acting like outboard propellers attached to its ends.
+- Option A is wrong because cocci are spheres, not spirals.
+- Option B is wrong because bacilli are straight rods, not spirals.
+- Option C is wrong because spirochetes are highly flexible corkscrews utilizing internal axial filaments.
+- Option D is correct because spirilla are rigidly structured, spiral-shaped bacteria utilizing external flagella.
+> **Key Takeaway:** Spirilla are rigid, spiral-shaped bacteria that utilize external flagella for movement.`
+  },
+  // Q33 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific group of bacteria is uniquely characterized by possessing a highly flexible, tightly coiled corkscrew shape and a twisting, drilling motion driven entirely by internal axial filaments?",
+    options: [
+      "Spirochetes",
+      "Spirilla",
+      "Vibrios",
+      "Mycoplasmas"
+    ],
+    correct: 0,
+    explanation: `## Insight
+Unlike the rigid spirilla, a spirochete is highly flexible, deeply resembling a tightly wound metal spring or a corkscrew. It has a unique internal motor—axial filaments wrapped *inside* its outer membrane sheath. When these filaments contract, the entire bacterium twists and drills its way through highly viscous fluids, allowing pathogens like *Treponema pallidum* to burrow into human tissue.
+- Option A is correct because spirochetes are explicitly defined by their highly flexible, corkscrew shape and internal motility.
+- Option B is wrong because spirilla are rigid spirals utilizing external flagella.
+- Option C is wrong because vibrios are merely curved rods (comma-shaped).
+- Option D is wrong because mycoplasmas lack cell walls entirely and are formless (pleomorphic).
+> **Key Takeaway:** Spirochetes are uniquely flexible, corkscrew-shaped bacteria that move via a twisting, drilling motion powered by internal axial filaments.`
+  },
+  // Q34 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In bacterial cellular arrangement, what does the specific prefix 'diplo-' (as in diplococci or diplobacilli) indicate about how the cells exist post-division?",
+    options: [
+      "It heavily indicates that the bacterial cells divide in multiple, random planes, forming completely irregular, massive, grape-like clusters.",
+      "It clearly indicates that the bacterial cells remain firmly attached in pairs (groups of two) immediately following binary fission.",
+      "It severely indicates that the bacterial cells completely separate from one another, living exclusively as solitary, single cells.",
+      "It aggressively indicates that the bacterial cells remain firmly attached in long, continuous, unbroken chains."
+    ],
+    correct: 1,
+    explanation: `## Insight
+When bacteria undergo binary fission, the new daughter cells do not always separate completely. Depending on the species, they may remain attached. The prefix "diplo-" means double. Therefore, a diplococcus consists of two spherical cells stuck together, appearing remarkably like two tiny coffee beans pressed face-to-face.
+- Option A is wrong because irregular, grape-like clusters are denoted by the prefix 'staphylo-'.
+- Option B is correct because the prefix 'diplo-' explicitly denotes cells remaining attached in pairs.
+- Option C is wrong because completely separated single cells do not utilize an arrangement prefix.
+- Option D is wrong because long, continuous chains are denoted by the prefix 'strepto-'.
+> **Key Takeaway:** The prefix 'diplo-' indicates that bacterial cells remain attached in pairs immediately following division.`
+  },
+  // Q35 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "In bacterial cellular arrangement, what does the specific prefix 'strepto-' (as in streptococci or streptobacilli) indicate about how the cells exist post-division?",
+    options: [
+      "It heavily indicates that the bacterial cells divide across two perpendicular planes to form perfect squares of four cells (tetrads).",
+      "It clearly indicates that the bacterial cells remain firmly attached in solitary, isolated pairs.",
+      "It strongly indicates that the bacterial cells divide repeatedly in exactly the same plane, remaining firmly attached in long, continuous, unbroken chains.",
+      "It aggressively indicates that the bacterial cells divide in entirely random planes, clustering heavily like a massive bunch of grapes."
+    ],
+    correct: 2,
+    explanation: `## Insight
+If a bacterial cell divides down the middle, and then the two resulting cells divide down the middle again in the exact same orientation without separating, they form a straight line. The prefix "strepto-" means twisted chain. Therefore, streptococci look exactly like a long pearl necklace under a microscope.
+- Option A is wrong because squares of four cells are explicitly called tetrads.
+- Option B is wrong because pairs are denoted by the prefix 'diplo-'.
+- Option C is correct because the prefix 'strepto-' explicitly denotes cells remaining attached in long, continuous chains.
+- Option D is wrong because grape-like clusters are denoted by the prefix 'staphylo-'.
+> **Key Takeaway:** The prefix 'strepto-' indicates that bacterial cells divide in a single plane and remain attached in long, continuous chains.`
+  },
+  // Q36 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "In bacterial cellular arrangement, what specifically are 'staphylococci'?",
+    options: [
+      "Spherical bacterial cells that vigorously divide across a single plane to form immensely long, continuous chains.",
+      "Cylindrical, rod-shaped bacterial cells that divide entirely longitudinally, stacking heavily on top of one another like logs.",
+      "Spherical bacterial cells that divide carefully to remain attached exclusively as solitary, isolated pairs.",
+      "Spherical bacterial cells that divide aggressively across multiple, random planes, forming irregular, massive, grape-like clusters."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Unlike streptococci (which divide neatly in one line), some spherical bacteria divide chaotically. They split along the X-axis, then the Y-axis, then the Z-axis, and never separate. The prefix "staphylo-" means bunch of grapes. Under a microscope, staphylococci look like a massive, irregular cluster of spheres.
+- Option A is wrong because this describes chain-forming 'streptococci'.
+- Option B is wrong because this describes palisade or stacked bacilli arrangements.
+- Option C is wrong because this describes paired 'diplococci'.
+- Option D is correct because 'staphylococci' explicitly denotes spherical cells dividing randomly to form grape-like clusters.
+
+> **Key Takeaway:** The term 'staphylococci' indicates spherical bacterial cells that divide in multiple random planes, forming irregular, grape-like clusters.`
+  },
+  // Q37 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific bacterial genus is universally characterized by forming long chains of spherical cells and is highly infamous for causing severe throat infections (pharyngitis)?",
+    options: [
+      "The *Streptococcus* genus",
+      "The *Staphylococcus* genus",
+      "The *Escherichia* genus",
+      "The *Mycobacterium* genus"
+    ],
+    correct: 0,
+    explanation: `## Insight
+"Strep throat" is a common, highly painful bacterial infection of the tonsils and throat. It is caused by *Streptococcus pyogenes*. As the name implies ("strepto-" = chain, "coccus" = sphere), if you swab a patient's throat and look under a microscope, you will see long chains of spherical bacteria resembling pearl necklaces.
+- Option A is correct because the *Streptococcus* genus forms chains and is the exact cause of strep throat.
+- Option B is wrong because *Staphylococcus* forms grape-like clusters and typically causes skin infections.
+- Option C is wrong because *Escherichia* (*E. coli*) is a rod-shaped bacterium found in the gut.
+- Option D is wrong because *Mycobacterium* causes tuberculosis and leprosy.
+
+> **Key Takeaway:** The *Streptococcus* genus forms long chains of spherical cells and is the primary causative agent of strep throat.`
+  },
+  // Q38 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific bacterial genus is universally characterized by forming irregular, grape-like clusters of spherical cells and is highly infamous for causing severe skin infections and MRSA?",
+    options: [
+      "The *Streptococcus* genus",
+      "The *Staphylococcus* genus",
+      "The *Treponema* genus",
+      "The *Bacillus* genus"
+    ],
+    correct: 1,
+    explanation: `## Insight
+"Staph infections" range from minor skin boils to severe, flesh-eating diseases and deadly hospital superbugs like MRSA. The culprit is *Staphylococcus aureus*. As the name implies ("staphylo-" = bunch of grapes, "coccus" = sphere), it appears under a microscope as massive, chaotic clumps of spherical cells.
+- Option A is wrong because *Streptococcus* forms chains and typically targets the respiratory tract.
+- Option B is correct because the *Staphylococcus* genus forms grape-like clusters and is notorious for skin infections and MRSA.
+- Option C is wrong because *Treponema* is a corkscrew spirochete causing syphilis.
+- Option D is wrong because *Bacillus* is a straight rod causing anthrax.
+
+> **Key Takeaway:** The *Staphylococcus* genus forms irregular, grape-like clusters of spherical cells and is infamous for causing severe skin infections.`
+  },
+  // Q39 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "In the context of bacterial nutrition and ecological roles, what exactly are 'saprophytic' bacteria?",
+    options: [
+      "Bacteria that utilize massive amounts of pure sunlight to synthesize complex organic food from carbon dioxide.",
+      "Bacteria that survive exclusively as obligate intracellular parasites, violently destroying living host tissue.",
+      "Bacteria that obtain their essential nutrients by aggressively decomposing dead and decaying organic matter in the environment.",
+      "Bacteria that survive by oxidizing highly toxic inorganic chemicals like iron and hydrogen sulfide without utilizing any sunlight."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Saprophytic bacteria are the ultimate recyclers of the Earth. "Sapro" means rotten or putrid. When a tree falls or an animal dies in the forest, saprophytic bacteria (along with fungi) secrete powerful enzymes to break the complex dead tissue down into simple nutrients, absorbing them to survive while simultaneously returning critical elements to the soil.
+- Option A is wrong because this describes photosynthetic autotrophs (like Cyanobacteria).
+- Option B is wrong because this describes pathogenic parasites (like Chlamydia), not decomposers.
+- Option C is correct because saprophytes explicitly obtain nutrients by decomposing dead and decaying organic matter.
+- Option D is wrong because this describes chemosynthetic autotrophs.
+
+> **Key Takeaway:** Saprophytic bacteria are decomposers that obtain their nutrients by breaking down dead and decaying organic matter.`
+  },
+  // Q40 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following perfectly describes the fundamental biological process of binary fission in bacteria?",
+    options: [
+      "The bacterium rapidly builds a highly resilient internal spore to survive freezing temperatures, killing the parent cell in the process.",
+      "Two distinct bacteria merge together perfectly, aggressively shuffling their DNA before splitting into four entirely new cells.",
+      "The bacterium pushes a small, blister-like outgrowth from its side which slowly enlarges and pinches off as a completely unequal daughter cell.",
+      "The single circular chromosome heavily replicates, the cell elongates significantly, and a rigid septum forms directly down the middle to divide it into two identical, equal clones."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Binary fission is a masterpiece of biological efficiency. Because bacteria lack a nucleus, they do not need complex mitosis. They simply copy their single loop of DNA, stretch the cell to pull the two DNA copies to opposite ends, and pinch the cell wall exactly in half. One cell becomes two identical clones in as little as 20 minutes.
+- Option A is wrong because this describes endospore formation, a survival tactic, not reproduction.
+- Option B is wrong because this vaguely describes sexual reproduction/meiosis, which bacteria cannot perform.
+- Option C is wrong because asymmetrical growth and pinching off defines budding, not binary fission.
+- Option D is correct because it perfectly details the symmetrical replication and splitting that defines binary fission.
+
+> **Key Takeaway:** Binary fission is the process where a bacterium copies its chromosome, elongates, and divides symmetrically into two identical clones.`
+  },
+  // Q41 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "How does the asexual reproductive process of 'budding' fundamentally differ from binary fission in bacteria?",
+    options: [
+      "Binary fission forcefully splits the parent into two perfectly equal halves, whereas budding produces a small, initially unequal outgrowth that eventually separates.",
+      "Binary fission requires two parent cells to merge, whereas budding requires only a single parent cell.",
+      "Binary fission occurs exclusively in deeply freezing environments, whereas budding occurs exclusively in boiling hot springs.",
+      "Binary fission produces highly diverse, mutated offspring, whereas budding produces completely identical genetic clones."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The key difference is symmetry. In binary fission, the parent cell splits exactly down the middle, creating two daughter cells of the exact same size (the parent effectively disappears). In budding, the parent cell remains intact and pushes out a tiny "blister" (a bud) containing a copy of DNA. The bud grows and falls off as a smaller, unequal daughter cell.
+- Option A is correct because the symmetrical split of fission is diametrically opposed to the unequal, localized outgrowth of budding.
+- Option B is wrong because both binary fission and budding are strictly single-parent, asexual processes.
+- Option C is wrong because temperature does not dictate which fundamental reproductive strategy a species uses.
+- Option D is wrong because both fission and budding are asexual processes that produce genetic clones, not mutated offspring.
+
+> **Key Takeaway:** Binary fission splits a cell into two equal halves, whereas budding produces a small, unequal outgrowth from the parent cell.`
+  },
+  // Q42 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What explicitly defines 'heterotrophic' bacteria in terms of microbial nutrition?",
+    options: [
+      "Bacteria heavily capable of surviving entirely without any carbon source whatsoever.",
+      "Bacteria that cannot synthesize their own food and must aggressively consume pre-formed organic compounds from their environment.",
+      "Bacteria that completely synthesize their own massive organic food reserves by utilizing pure sunlight.",
+      "Bacteria that synthesize organic food exclusively by oxidizing highly toxic inorganic compounds like hydrogen sulfide."
+    ],
+    correct: 1,
+    explanation: `## Insight
+"Hetero" means other, and "troph" means feeder. Just like humans, heterotrophic bacteria cannot build their own sugar from scratch. To survive, they must eat (consume) organic molecules that were built by other organisms. This includes everything from the *E. coli* eating sugars in your gut to the saprophytes decomposing dead logs in the forest.
+- Option A is wrong because all known life on Earth is carbon-based and requires a carbon source to survive.
+- Option B is correct because heterotrophs must consume pre-formed organic compounds from external sources.
+- Option C is wrong because synthesizing food via sunlight defines photoautotrophs (like Cyanobacteria).
+- Option D is wrong because oxidizing inorganic chemicals defines chemoautotrophs.
+
+> **Key Takeaway:** Heterotrophic bacteria cannot synthesize their own food and must consume pre-formed organic compounds from their environment.`
+  },
+  // Q43 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What explicitly defines 'photosynthetic' bacteria, and what is the absolute premier example of this group?",
+    options: [
+      "Bacteria that aggressively decompose dead plant matter; Example: the *Streptococcus* genus.",
+      "Bacteria that oxidize purely inorganic metallic iron to generate massive heat; Example: the *Bacillus* genus.",
+      "Bacteria that use immense solar energy to heavily synthesize organic food from carbon dioxide; Example: the Cyanobacteria.",
+      "Bacteria that live exclusively as deep, obligate intracellular parasites; Example: the *Chlamydia* genus."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Photosynthetic bacteria act exactly like plants. They utilize pigments (like chlorophyll) to capture photons from the Sun. They use this solar energy to smash water and carbon dioxide together to build complex sugars for food. The undisputed champions of this process are the Cyanobacteria, which literally oxygenated the Earth billions of years ago.
+- Option A is wrong because decomposers are saprophytic heterotrophs, not photosynthetic.
+- Option B is wrong because oxidizing iron is chemosynthesis, not photosynthesis.
+- Option C is correct because photosynthetic bacteria explicitly use sunlight to build food from $CO_2$, with Cyanobacteria being the premier example.
+- Option D is wrong because obligate parasites steal energy; they do not photosynthesize.
+
+> **Key Takeaway:** Photosynthetic bacteria, such as Cyanobacteria, utilize sunlight to synthesize complex organic food from carbon dioxide.`
+  },
+  // Q44 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What defines 'chemosynthetic' bacteria in extreme environmental microbiology?",
+    options: [
+      "Bacteria that heavily absorb highly complex organic sugars directly through their rigid cell walls.",
+      "Bacteria that rely exclusively on capturing massive amounts of ultraviolet sunlight to drive their internal metabolism.",
+      "Bacteria that survive entirely by acting as massive, aggressive predators that phagocytose smaller microbes.",
+      "Bacteria that synthesize complex organic food entirely by oxidizing inorganic compounds (like ammonia or hydrogen sulfide) without utilizing any sunlight whatsoever."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Deep at the bottom of the ocean, sunlight never penetrates. Yet, massive ecosystems thrive around hydrothermal vents. The base of this food chain is chemosynthetic bacteria. Instead of using solar energy, these alien-like microbes crack open the chemical bonds of toxic, inorganic molecules (like hydrogen sulfide spewing from the vents) to generate the energy needed to build sugars.
+- Option A is wrong because this describes heterotrophic absorption, not chemosynthesis.
+- Option B is wrong because reliance on sunlight defines photosynthesis, whereas chemosynthesis happens in pitch blackness.
+- Option C is wrong because bacteria cannot phagocytose prey due to their rigid cell walls.
+- Option D is correct because chemosynthetic bacteria explicitly derive energy by oxidizing inorganic compounds, completely independent of sunlight.
+
+> **Key Takeaway:** Chemosynthetic bacteria synthesize organic food by oxidizing inorganic compounds like hydrogen sulfide, surviving completely without sunlight.`
+  },
+  // Q45 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "By what specific mechanical process do heterotrophic bacteria successfully absorb massively complex nutrients from their environment?",
+    options: [
+      "They secrete aggressive digestive enzymes externally into the environment to break down complex molecules, then efficiently absorb the resulting simple nutrients directly through their cell wall.",
+      "They actively open massive pores in their cell membrane to physically swallow entire, living host cells intact.",
+      "They generate intense, localized magnetic fields to physically pull heavy metallic elements directly into their cytoplasm.",
+      "They utilize their rapidly spinning flagella to physically grind surrounding food particles into a fine, ingestible dust."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Bacteria are trapped inside a rigid cage of peptidoglycan (the cell wall). Because they cannot open a mouth or use amoeba-like arms to swallow food, they must digest their food *before* they eat it. They pump powerful digestive enzymes out into the surrounding environment. These enzymes break massive proteins and starches into tiny sugar and amino acid molecules, which easily slip through the cell wall.
+- Option A is correct because bacteria rely entirely on external digestion followed by absorption of the simplified nutrients.
+- Option B is wrong because bacteria cannot swallow cells (phagocytosis) due to their rigid cell wall.
+- Option C is wrong because while some bacteria detect magnetic fields for navigation, magnetism is not used for bulk nutrient absorption.
+- Option D is wrong because flagella are strictly for swimming, not physically grinding food.
+
+> **Key Takeaway:** Heterotrophic bacteria feed by secreting digestive enzymes externally to break down complex matter, then absorbing the resulting simple nutrients.`
+  },
+  // Q46 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What is the absolute, primary biological function of a bacterial flagellum?",
+    options: [
+      "To severely puncture the host cell membrane during the initial stages of a highly virulent viral infection.",
+      "To act as a motorized, aggressively rotating propeller that successfully drives the bacterium through highly viscous liquid environments.",
+      "To deeply anchor the bacterial cell permanently to the smooth enamel surface of a human tooth.",
+      "To aggressively facilitate the horizontal transfer of highly resistant plasmid DNA to adjacent neighbor cells."
+    ],
+    correct: 1,
+    explanation: `## Insight
+A bacterial flagellum is an incredibly complex biological motor built directly into the cell wall. Unlike eukaryotic flagella (which whip back and forth), the bacterial flagellum spins on a rotary bearing, turning at hundreds of revolutions per second. It acts exactly like the propeller on a submarine, pushing the bacterium rapidly through fluids to find food or escape danger.
+- Option A is wrong because penetrating a host membrane is the function of a viral tail sheath, not a bacterial flagellum.
+- Option B is correct because the flagellum acts explicitly as a rotating propeller for active liquid locomotion.
+- Option C is wrong because anchoring structures are called fimbriae or pili (which cause dental plaque), not flagella.
+- Option D is wrong because DNA transfer is facilitated by a specialized sex pilus, not a flagellum.
+
+> **Key Takeaway:** The primary function of a bacterial flagellum is to act as a rotating propeller, driving the bacterium through liquid environments.`
+  },
+  // Q47 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific, highly resilient bacterium is the definitive cause of anthrax, and what is its absolute primary mode of environmental transmission?",
+    options: [
+      "The *Clostridium tetani* bacterium, transmitted exclusively through the bite of a deeply infected tick.",
+      "The *Treponema pallidum* bacterium, transmitted heavily through contaminated municipal drinking water.",
+      "The *Bacillus anthracis* bacterium, transmitted primarily through direct contact with or inhalation of its highly resilient, virtually indestructible environmental endospores.",
+      "The *Mycobacterium tuberculosis* bacterium, transmitted strictly through prolonged, unprotected sexual intercourse."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Anthrax is an acute disease primarily affecting grazing livestock, caused by *Bacillus anthracis*. Because this bacterium can form highly armored endospores, it can survive in the soil for decades. If an animal ingests the spores from the dirt, or a human inhales them while sorting wool, the spores germinate in the lungs or gut, releasing lethal toxins that cause massive internal bleeding and rapid death.
+- Option A is wrong because *C. tetani* causes tetanus via deep puncture wounds, not tick bites.
+- Option B is wrong because *T. pallidum* causes syphilis via sexual contact, not water.
+- Option C is correct because *Bacillus anthracis* causes anthrax, relying heavily on its indestructible environmental endospores for transmission.
+- Option D is wrong because *M. tuberculosis* causes TB via respiratory droplets, not sexual contact.
+
+> **Key Takeaway:** Anthrax is caused by *Bacillus anthracis*, a highly lethal bacterium transmitted primarily through contact with or inhalation of its resilient endospores.`
+  },
+  // Q48 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific comma-shaped bacterium is the causative agent of cholera, and what are its devastating primary clinical symptoms?",
+    options: [
+      "The *Escherichia coli* bacterium, causing massive, highly aggressive skin boils and deep tissue necrosis.",
+      "The *Streptococcus pneumoniae* bacterium, causing severe lung inflammation and coughing up thick, bloody sputum.",
+      "The *Neisseria gonorrhoeae* bacterium, causing highly painful urination and permanent pelvic inflammatory disease.",
+      "The *Vibrio cholerae* bacterium, causing severe, massive watery diarrhea (rice-water stool) and rapid, fatal dehydration via the fecal-oral route."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Cholera is a disease of poor sanitation. When humans ingest water contaminated with feces containing the *Vibrio cholerae* bacterium, the bacteria settle in the intestines and secrete a powerful toxin. This toxin forces the intestinal cells to dump massive amounts of water and electrolytes out of the body, leading to explosive "rice-water" diarrhea. Without immediate IV fluids, the patient dies of severe dehydration within hours.
+- Option A is wrong because skin boils and necrosis are typically caused by *Staphylococcus aureus* or *Streptococcus pyogenes*.
+- Option B is wrong because this describes bacterial pneumonia.
+- Option C is wrong because this describes the sexually transmitted infection gonorrhea.
+- Option D is correct because *Vibrio cholerae* is the definitive cause of cholera, marked by catastrophic watery diarrhea and dehydration.
+
+> **Key Takeaway:** Cholera is caused by *Vibrio cholerae*, leading to severe, dehydrating watery diarrhea transmitted via the fecal-oral route.`
+  },
+  // Q49 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific bacterium (a Gram-negative diplococcus) is the direct causative agent of the sexually transmitted infection gonorrhoea?",
+    options: [
+      "The *Neisseria gonorrhoeae* bacterium, transmitted exclusively through direct, unprotected sexual contact.",
+      "The *Helicobacter pylori* bacterium, transmitted heavily through inhaling aerosolized respiratory droplets.",
+      "The *Borrelia burgdorferi* bacterium, transmitted exclusively by the aggressive bite of an infected deer tick.",
+      "The *Clostridium botulinum* bacterium, transmitted heavily through the ingestion of improperly canned, contaminated food."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Gonorrhoea is a highly common bacterial STI that can cause severe pelvic inflammatory disease and infertility if untreated. Under a microscope, the pathogen *Neisseria gonorrhoeae* is easily identifiable: it is a Gram-negative diplococcus, meaning it looks like two tiny pink coffee beans pressed together. Because it is highly fragile outside the body, it requires direct, intimate sexual contact to spread from host to host.
+- Option A is correct because *Neisseria gonorrhoeae* explicitly causes gonorrhoea and requires direct sexual contact for transmission.
+- Option B is wrong because *H. pylori* causes stomach ulcers.
+- Option C is wrong because *B. burgdorferi* causes Lyme disease via tick bites.
+- Option D is wrong because *C. botulinum* causes botulism (fatal food poisoning).
+
+> **Key Takeaway:** The sexually transmitted infection gonorrhoea is caused directly by the *Neisseria gonorrhoeae* bacterium via unprotected sexual contact.`
+  },
+  // Q50 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "Which corkscrew-shaped spirochete bacterium is the causative agent of syphilis, and how is it successfully transmitted?",
+    options: [
+      "The *Chlamydia trachomatis* bacterium, transmitted heavily through sharing deeply contaminated hypodermic needles.",
+      "The *Treponema pallidum* bacterium, transmitted heavily via direct sexual contact or vertically from an infected mother across the placenta to her developing fetus.",
+      "The *Bacillus anthracis* bacterium, transmitted entirely by handling deeply infected livestock hides.",
+      "The *Vibrio cholerae* bacterium, transmitted exclusively through swimming in highly polluted, stagnant ponds."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Syphilis is a devastating, multi-stage systemic disease. The pathogen responsible is *Treponema pallidum*. Because of its flexible, corkscrew shape (a spirochete), it literally drills its way through mucosal membranes and into the bloodstream. It is primarily transmitted through sexual contact, but terrifyingly, it is also one of the few bacteria that can drill directly through the placenta to infect an unborn child (congenital syphilis).
+- Option A is wrong because *Chlamydia* causes chlamydia, not syphilis, and is primarily sexual, not blood-borne via needles.
+- Option B is correct because the spirochete *Treponema pallidum* explicitly causes syphilis via sexual or vertical (mother-to-fetus) transmission.
+- Option C is wrong because handling infected hides transmits cutaneous anthrax.
+- Option D is wrong because contaminated water transmits cholera.
+
+> **Key Takeaway:** Syphilis is caused by the corkscrew-shaped *Treponema pallidum* bacterium, transmitted primarily via sexual contact or vertically from mother to fetus.`
+  },
+  // Q51 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following highly recognized bacterial genera are globally associated as the primary causative agents of severe bacterial pneumonia?",
+    options: [
+      "The *Microcystis*, *Anabaena*, and *Oscillatoria* genera.",
+      "The *Treponema*, *Borrelia*, and *Leptospira* genera.",
+      "The *Streptococcus*, *Klebsiella*, and *Haemophilus* genera.",
+      "The *Clostridium*, *Bacillus*, and *Mycoplasma* genera."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Pneumonia is an infection that deeply inflames the air sacs in one or both lungs, causing them to fill with fluid. While viruses can cause it, bacterial pneumonia is often much more severe. The undisputed leading cause is *Streptococcus pneumoniae* (the pneumococcus), but *Klebsiella pneumoniae* and *Haemophilus influenzae* are also notorious, highly dangerous culprits in hospital and community settings.
+- Option A is wrong because these are photosynthetic Cyanobacteria.
+- Option B is wrong because these are corkscrew-shaped spirochetes (causing syphilis and Lyme disease).
+- Option C is correct because *Streptococcus*, *Klebsiella*, and *Haemophilus* are the major, recognized clinical culprits of bacterial pneumonia.
+- Option D is wrong because *Clostridium* and *Bacillus* primarily cause tetanus, botulism, and anthrax.
+
+> **Key Takeaway:** *Streptococcus*, *Klebsiella*, and *Haemophilus* are the primary, globally recognized bacterial genera responsible for causing severe pneumonia.`
+  },
+  // Q52 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which highly resilient bacterium is the primary causative agent of Tuberculosis (TB), and what is its absolute primary mode of transmission?",
+    options: [
+      "The *Staphylococcus aureus* bacterium, transmitted entirely through direct physical skin-to-skin contact.",
+      "The *Salmonella typhi* bacterium, transmitted deeply through the aggressive ingestion of highly contaminated poultry.",
+      "The *Yersinia pestis* bacterium, transmitted heavily through the bite of highly infected rat fleas.",
+      "The *Mycobacterium tuberculosis* bacterium, transmitted primarily via the deep inhalation of highly infectious airborne respiratory droplets expelled by a coughing patient."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Tuberculosis is one of the deadliest infectious diseases in human history. It is caused by *Mycobacterium tuberculosis*, a rod-shaped bacterium wrapped in an incredibly thick, waxy cell wall (mycolic acid). This waxy coat prevents the bacterium from drying out in the air, allowing it to survive for hours in airborne droplets after an infected person coughs, making inhalation the incredibly efficient primary transmission route.
+- Option A is wrong because *Staph* causes skin infections (MRSA), not TB.
+- Option B is wrong because *Salmonella typhi* causes typhoid fever via ingestion.
+- Option C is wrong because *Yersinia pestis* causes the bubonic plague via flea bites.
+- Option D is correct because *Mycobacterium tuberculosis* explicitly causes TB and is spread incredibly efficiently through airborne respiratory droplets.
+
+> **Key Takeaway:** Tuberculosis is caused by the highly resilient *Mycobacterium tuberculosis* bacterium, transmitted efficiently through the inhalation of airborne respiratory droplets.`
+  },
+  // Q53 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific bacterium, acting as a normal, healthy resident of the human gastrointestinal tract, is paradoxically globally recognized as the absolute most common cause of Urinary Tract Infections (UTIs)?",
+    options: [
+      "The *Escherichia coli* (*E. coli*) bacterium.",
+      "The *Vibrio cholerae* bacterium.",
+      "The *Treponema pallidum* bacterium.",
+      "The *Bacillus anthracis* bacterium."
+    ],
+    correct: 0,
+    explanation: `## Insight
+*E. coli* is a completely normal, helpful resident of the human large intestine, assisting in digestion and vitamin K production. However, biology is about location. If feces cross-contaminate the urethra, the *E. coli* bacteria aggressively swim up into the bladder. Because they are not supposed to be there, they aggressively colonize the sterile urinary tract, causing roughly 80-90% of all UTIs globally.
+- Option A is correct because displaced *E. coli* from the gastrointestinal tract is the undisputed leading cause of UTIs.
+- Option B is wrong because *Vibrio* causes intestinal cholera, not UTIs.
+- Option C is wrong because *Treponema* causes syphilis.
+- Option D is wrong because *Bacillus* causes anthrax.
+
+> **Key Takeaway:** The *Escherichia coli* (*E. coli*) bacterium, originating from the gastrointestinal tract, is universally the most common cause of Urinary Tract Infections (UTIs).`
+  },
+  // Q54 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In the epidemiology of infectious diseases, what explicitly defines a 'zoonotic' disease?",
+    options: [
+      "An infectious disease heavily transmitted exclusively between highly isolated human populations.",
+      "An infectious disease transmitted naturally from wild or domestic vertebrate animals directly to humans, such as Rabies or Anthrax.",
+      "An infectious disease that severely targets and destroys agricultural plants, completely ignoring animal biology.",
+      "An infectious disease that is entirely eradicated from nature but fiercely maintained in laboratory animal testing facilities."
+    ],
+    correct: 1,
+    explanation: `## Insight
+The vast majority of new, terrifying human diseases do not start in humans; they spill over from the animal kingdom. A "zoonosis" is a disease that naturally circulates in wild or domestic animals (like bats carrying Rabies or sheep carrying Anthrax). When a human interacts with the infected animal, the pathogen jumps the species barrier, triggering a zoonotic outbreak.
+- Option A is wrong because human-to-human transmission excludes the animal reservoir required to define a zoonosis.
+- Option B is correct because the defining feature of a zoonosis is the natural transmission of a pathogen from a vertebrate animal to a human.
+- Option C is wrong because zoonotic diseases explicitly affect humans and animals, not plants.
+- Option D is wrong because eradicated diseases (like smallpox) are not circulating zoonoses.
+
+> **Key Takeaway:** A zoonotic disease is an infectious disease naturally transmitted from wild or domestic vertebrate animals to humans.`
+  },
+  // Q55 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What defines a 'congenital' infection in clinical microbiology?",
+    options: [
+      "An infection acquired aggressively through the heavy inhalation of deeply contaminated hospital air.",
+      "An infection strictly transmitted through the accidental sharing of deeply contaminated hypodermic needles.",
+      "An infection successfully transmitted vertically from a mother completely across the protective placenta to her developing fetus, such as Syphilis or CMV.",
+      "An infection completely restricted to the superficial, outermost layers of the human skin."
+    ],
+    correct: 2,
+    explanation: `## Insight
+The placenta is a highly guarded fortress designed to keep maternal blood and fetal blood separate, preventing pathogens from reaching the vulnerable baby. A congenital infection occurs when a highly invasive pathogen (like the Syphilis spirochete or the Cytomegalovirus) physically breaches this fortress, moving "vertically" from the mother into the developing fetus, often causing catastrophic, permanent birth defects.
+- Option A is wrong because airborne hospital infections are "nosocomial," not congenital.
+- Option B is wrong because needle transmission is a blood-borne, horizontal pathway.
+- Option C is correct because congenital infections explicitly define vertical transmission from mother to fetus across the placenta.
+- Option D is wrong because superficial skin infections are topical, not systemic congenital breaches.
+
+> **Key Takeaway:** A congenital infection is explicitly defined by the vertical transmission of a pathogen from a mother across the placenta to her developing fetus.`
+  },
+  // Q56 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What is the clinical definition of an 'opportunistic' infection?",
+    options: [
+      "An infection caused by a highly virulent, aggressive superbug that universally kills every single healthy patient it infects.",
+      "An infection completely restricted to highly isolated, tropical jungle environments.",
+      "An infection heavily engineered in a laboratory to aggressively target specific cancer cells.",
+      "An infection explicitly caused by typically harmless microbes that aggressively cause severe disease only when the host's immune system is heavily compromised, such as in AIDS patients."
+    ],
+    correct: 3,
+    explanation: `## Insight
+You are currently covered in millions of bacteria and fungi (like *Candida* yeast). They do not hurt you because your immune system acts like an aggressive police force, keeping them in check. However, if your immune system collapses (due to advanced HIV/AIDS, chemotherapy, or severe burns), these normally harmless microbes seize the "opportunity." They aggressively invade deep tissues and cause fatal diseases, which is why they are termed opportunistic.
+- Option A is wrong because highly virulent superbugs (like Ebola) kill healthy people; opportunistic bugs only kill the weak.
+- Option B is wrong because opportunistic infections happen everywhere, especially in modern hospitals.
+- Option C is wrong because laboratory-engineered cancer treatments are viral therapies, not standard opportunistic infections.
+- Option D is correct because opportunistic infections are defined by harmless microbes exploiting a severely compromised immune system.
+
+> **Key Takeaway:** An opportunistic infection is caused by typically harmless microbes that only cause severe disease when the host's immune system is heavily compromised.`
+  },
+  // Q57 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What defines an 'endotoxin', and which specific group of bacteria is universally responsible for producing it?",
+    options: [
+      "A highly toxic structural component (lipopolysaccharide) securely embedded explicitly in the outer lipid membrane of Gram-negative bacteria, violently released only when the cell dies and breaks apart.",
+      "A highly lethal, continuously secreted poison released actively by heavily armored Gram-positive bacteria to aggressively paralyze surrounding host cells.",
+      "A highly volatile gas emitted continuously by deeply buried, photosynthetic Cyanobacteria during extreme daylight hours.",
+      "A massive, aggressively destructive enzyme secreted exclusively by heavily reproducing bacteriophages during the lytic cycle."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Bacteria produce two types of toxins: exotoxins (which they actively spit out like venom) and endotoxins (which are physically built into their own bodies). The lipopolysaccharide (LPS) layer of a Gram-negative bacterium's outer membrane is the ultimate endotoxin. The bacterium doesn't secrete it. But when the human immune system or antibiotics destroy the bacterium, the cell shatters, dumping massive amounts of this toxic structural lipid into the bloodstream, triggering catastrophic, fatal septic shock.
+- Option A is correct because endotoxins are the toxic lipopolysaccharide (LPS) components permanently embedded in the outer membrane of Gram-negative bacteria, released upon cell death.
+- Option B is wrong because toxins actively secreted by Gram-positive bacteria are called *exotoxins* (like tetanus toxin).
+- Option C is wrong because cyanobacteria emit oxygen, not endotoxic gases.
+- Option D is wrong because bacteriophages secrete lysozyme to burst cells, not endotoxins.
+
+> **Key Takeaway:** An endotoxin is a toxic structural component (LPS) embedded exclusively in the outer membrane of Gram-negative bacteria, released aggressively upon cell death.`
+  },
+  // Q58 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In the history of Earth's biosphere, what defines the organisms known as Cyanobacteria?",
+    options: [
+      "Deep-earth, chemosynthetic eukaryotes completely responsible for the initial formation of iron ore.",
+      "Photosynthetic, oxygen-producing prokaryotes that are historically responsible for the Great Oxidation Event, making complex animal life possible.",
+      "Aggressive, completely obligate intracellular viruses that actively dictate the global carbon cycle.",
+      "Massive, multicellular marine fungi that aggressively construct all modern coral reefs."
+    ],
+    correct: 1,
+    explanation: `## Insight
+For the first two billion years of Earth's history, the atmosphere was a toxic soup completely devoid of free oxygen. Then, a massive evolutionary leap occurred: Cyanobacteria figured out how to use sunlight to split water ($H_2O$) for energy, releasing free oxygen ($O_2$) as a waste product. They pumped so much oxygen into the atmosphere during the Great Oxidation Event that they literally changed the chemistry of the entire planet, paving the way for oxygen-breathing animals.
+- Option A is wrong because Cyanobacteria are surface-dwelling photosynthetic prokaryotes, not deep-earth eukaryotes.
+- Option B is correct because Cyanobacteria are explicitly defined as the pioneer, oxygen-producing photosynthetic prokaryotes.
+- Option C is wrong because Cyanobacteria are free-living bacteria, not intracellular viruses.
+- Option D is wrong because coral reefs are built by biological animals (polyps) and algae, not fungi.
+
+> **Key Takeaway:** Cyanobacteria are revolutionary, photosynthetic, oxygen-producing prokaryotes historically responsible for oxygenating the Earth's atmosphere.`
+  },
+  // Q59 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Under which highly specific, top-level modern taxonomic division are Cyanobacteria formally classified?",
+    options: [
+      "The Kingdom Protista",
+      "The Domain Eukarya",
+      "The Domain Bacteria",
+      "The Domain Archaea"
+    ],
+    correct: 2,
+    explanation: `## Insight
+Despite their historical, highly misleading nickname ("blue-green algae"), Cyanobacteria are not algae at all. True algae are complex eukaryotes with membrane-bound chloroplasts and nuclei. When electron microscopes revealed that Cyanobacteria completely lacked a nucleus, they were instantly stripped of their plant status and moved into their correct evolutionary home: the Domain Bacteria.
+- Option A is wrong because Protista contains true eukaryotic algae, not prokaryotic Cyanobacteria.
+- Option B is wrong because Cyanobacteria completely lack a true nucleus, excluding them from Eukarya.
+- Option C is correct because the complete lack of a nucleus and the presence of peptidoglycan firmly places them in the Domain Bacteria.
+- Option D is wrong because Archaea possess unique ether-linked lipids; Cyanobacteria do not.
+
+> **Key Takeaway:** Because they completely lack a membrane-bound nucleus, Cyanobacteria are formally classified as prokaryotes under the Domain Bacteria.`
+  },
+  // Q60 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Why are Cyanobacteria strictly no longer considered 'true algae' by modern taxonomists?",
+    options: [
+      "Because they completely lack the ability to perform any form of photosynthesis whatsoever.",
+      "Because they exist exclusively as aggressive, deep-tissue human parasites rather than free-living marine organisms.",
+      "Because they aggressively construct massive shells made of pure silica glass, unlike any known algae.",
+      "Because they completely lack a membrane-bound nucleus and true chloroplasts, placing them firmly as prokaryotes rather than eukaryotic algae."
+    ],
+    correct: 3,
+    explanation: `## Insight
+To be a true alga (like green algae or massive kelp), an organism must be a eukaryote. It must have its DNA locked in a safe (the nucleus) and its photosynthetic machinery locked in a dedicated factory (the chloroplast). Cyanobacteria have neither. Their DNA floats freely in the nucleoid, and their photosynthesis happens directly on folded internal membranes (thylakoids). Therefore, they are bacteria.
+- Option A is wrong because Cyanobacteria are the undisputed champions of global photosynthesis.
+- Option B is wrong because they are free-living environmental organisms, not deep-tissue human parasites.
+- Option C is wrong because building silica glass shells is the defining characteristic of diatoms, not Cyanobacteria.
+- Option D is correct because the absolute lack of a nucleus and chloroplasts biologically disqualifies them as true eukaryotic algae.
+
+> **Key Takeaway:** Cyanobacteria are not true algae because they completely lack a membrane-bound nucleus and distinct chloroplasts, confirming they are prokaryotes.`
+  },
+  // Q61 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which highly essential, primary photosynthetic pigment is universally found in all Cyanobacteria?",
+    options: [
+      "Chlorophyll *a*, the exact same primary photosynthetic pigment universally utilized by modern green terrestrial plants.",
+      "Fucoxanthin, the incredibly dark, heavy brown pigment heavily utilized by massive marine kelps.",
+      "Rhodopsin, the highly specialized sensory pigment aggressively utilized by the human retina for low-light vision.",
+      "Melanin, the dense, dark structural pigment completely responsible for aggressively blocking ultraviolet radiation."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The evolutionary link between Cyanobacteria and modern plants is undeniable. If you extract the primary pigment used by a towering oak tree to catch sunlight, and the primary pigment used by a microscopic cyanobacterium floating in a puddle, you will find the exact same molecule: Chlorophyll *a*. (In fact, modern plant chloroplasts are just ancient cyanobacteria that got swallowed by another cell!).
+- Option A is correct because Chlorophyll *a* is the universal, primary photosynthetic pigment in both Cyanobacteria and modern plants.
+- Option B is wrong because fucoxanthin is the brown accessory pigment defining the Phaeophyta (brown algae).
+- Option C is wrong because rhodopsin is a biological visual pigment in animal eyes, entirely unrelated to photosynthesis.
+- Option D is wrong because melanin is an animal/fungal protective pigment, not a photosynthetic engine.
+
+> **Key Takeaway:** Cyanobacteria utilize Chlorophyll *a*, the exact same primary photosynthetic pigment utilized by modern green plants.`
+  },
+  // Q62 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In the photosynthetic machinery of Cyanobacteria, what exactly are 'phycobilins'?",
+    options: [
+      "Aggressive, highly toxic internal poisons secreted to completely paralyze surrounding competing microbes.",
+      "Highly specialized, water-soluble accessory pigments that capture highly specific wavelengths of light missed by chlorophyll, including phycocyanin and phycoerythrin.",
+      "Massive, incredibly rigid structural proteins that firmly anchor the bacterial cell wall to solid coastal rocks.",
+      "The completely invisible, highly volatile gases heavily expelled during the final stages of aggressive anaerobic fermentation."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Chlorophyll is a fantastic pigment, but it has a blind spot: it reflects green light and misses other wavelengths, especially deep underwater. To maximize their energy capture, Cyanobacteria evolved "phycobilins." These are accessory pigments that act like specialized solar panels, catching the blue and red light that chlorophyll misses and funneling that energy directly to the main engine.
+- Option A is wrong because these are strictly light-harvesting pigments, not aggressive chemical toxins.
+- Option B is correct because phycobilins are exactly defined as the water-soluble accessory pigments (phycocyanin and phycoerythrin) used for light capture.
+- Option C is wrong because anchoring structures are fimbriae or holdfasts, completely unrelated to pigmentation.
+- Option D is wrong because phycobilins are solid molecular pigments, not volatile fermentation gases.
+
+> **Key Takeaway:** Phycobilins are highly specialized accessory pigments that capture specific wavelengths of light missed by standard chlorophyll.`
+  },
+  // Q63 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific accessory pigment is primarily responsible for giving Cyanobacteria their characteristic, trademark 'blue-green' tint?",
+    options: [
+      "Xanthophyll, which introduces a heavy, deeply saturated golden-yellow hue to the cellular structure.",
+      "Phycoerythrin, an aggressive, deeply saturated red pigment that excels at absorbing blue light in deep aquatic environments.",
+      "Phycocyanin, an incredibly distinct blue pigment that mixes seamlessly with green chlorophyll to produce the trademark blue-green tint.",
+      "Carotene, a highly vibrant, intensely bright orange pigment highly common in terrestrial root vegetables."
+    ],
+    correct: 2,
+    explanation: `## Insight
+"Cyano-" literally translates from Greek as blue. Cyanobacteria possess standard green chlorophyll, but they also pump out massive amounts of a water-soluble blue accessory pigment called phycocyanin. When you mix the deep blue of phycocyanin with the bright green of chlorophyll, the result is the distinct, vibrant "blue-green" color that defines the entire group.
+- Option A is wrong because xanthophyll is yellow, dominating golden algae.
+- Option B is wrong because phycoerythrin is red, dominating red algae (and some deep-water cyanobacteria).
+- Option C is correct because phycocyanin is the explicit, defining blue pigment that creates the blue-green appearance.
+- Option D is wrong because carotene is orange (like in carrots), not blue.
+
+> **Key Takeaway:** Phycocyanin is the distinct blue accessory pigment that mixes with green chlorophyll to give Cyanobacteria their trademark blue-green colour.`
+  },
+  // Q64 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "While mostly blue-green, some Cyanobacteria occasionally exhibit a deep, highly vibrant red color. Which specific accessory pigment causes this red coloration?",
+    options: [
+      "Fucoxanthin",
+      "Phycocyanin",
+      "Melanin",
+      "Phycoerythrin"
+    ],
+    correct: 3,
+    explanation: `## Insight
+The prefix "erythro-" means red (like erythrocytes, red blood cells). While phycocyanin is great for surface light, some cyanobacteria live in deep water where only blue light penetrates. To survive, they produce massive amounts of phycoerythrin. This red pigment is incredibly efficient at catching blue light. (In fact, a massive bloom of red-pigmented *Trichodesmium* cyanobacteria is what gives the Red Sea its name!).
+- Option A is wrong because fucoxanthin is the brown pigment found in kelp.
+- Option B is wrong because phycocyanin provides the blue color.
+- Option C is wrong because melanin is an animal/fungal protective dark pigment.
+- Option D is correct because phycoerythrin is the specific red accessory pigment used for deep-water light absorption.
+
+> **Key Takeaway:** Phycoerythrin is the red accessory pigment that allows some Cyanobacteria to appear deeply red and absorb light in deep water.`
+  },
+  // Q65 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Because they completely lack true, membrane-bound chloroplasts, on what specific internal cellular structures do Cyanobacteria actively perform photosynthesis?",
+    options: [
+      "Highly folded internal membranes called 'thylakoids' that physically house the entire photosynthetic machinery and pigments.",
+      "The massive, incredibly thick outer layers of the rigid peptidoglycan cell wall.",
+      "The highly active, rapidly spinning base motor of the external flagellum.",
+      "The central, heavily compacted circular DNA chromosome located directly in the nucleoid."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Eukaryotic plants have dedicated "solar panel rooms" called chloroplasts. Prokaryotes don't have rooms (organelles). To maximize their solar panel surface area, Cyanobacteria simply take their outer cell membrane and fold it inward hundreds of times, creating a dense, layered maze of flat sacks floating in the cytoplasm. These folds are called thylakoid membranes, and all the chlorophyll is bolted directly onto them.
+- Option A is correct because the internal, folded thylakoid membranes are the exact physical site of cyanobacterial photosynthesis.
+- Option B is wrong because the cell wall provides structure, not photosynthesis.
+- Option C is wrong because flagella are for swimming, not capturing light.
+- Option D is wrong because DNA handles genetics, totally unrelated to photon capture.
+
+> **Key Takeaway:** Cyanobacteria perform photosynthesis directly on highly folded internal membranes known as thylakoids.`
+  },
+  // Q66 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "How do Cyanobacteria biochemically store their excess photosynthetic food reserves, heavily proving an evolutionary divergence from standard green plants?",
+    options: [
+      "As massive, highly compressed solid blocks of pure inorganic silica.",
+      "As glycogen, a highly branched carbohydrate completely similar to that found heavily in animal livers, rather than standard plant starch.",
+      "As highly explosive, deeply saturated liquid lipid oil droplets.",
+      "As a highly specialized, absolutely linear polymer exclusively known as floridean starch."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Plants and green algae store their excess glucose as starch (like in a potato). Animals and fungi store their excess glucose as glycogen (like in your liver). Interestingly, despite acting exactly like plants, Cyanobacteria pack their glucose into the highly branched carbohydrate structure of glycogen. This major biochemical trait separates them sharply from the true eukaryotic plants.
+- Option A is wrong because silica is inorganic glass used by diatoms for shells, not a biological food reserve.
+- Option B is correct because Cyanobacteria specifically store their carbohydrate reserves as glycogen.
+- Option C is wrong because lipid oil storage is the primary strategy of diatoms, not Cyanobacteria.
+- Option D is wrong because floridean starch is the exclusive, defining storage polymer of red algae (Rhodophyta).
+
+> **Key Takeaway:** Unlike plants, Cyanobacteria biochemically store their excess carbohydrate reserves in the form of glycogen.`
+  },
+  // Q67 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What is the primary biological function of the thick, jelly-like 'mucilaginous sheath' that frequently completely surrounds colonies of Cyanobacteria?",
+    options: [
+      "It aggressively acts as an impenetrable, highly toxic biological weapon that instantly kills any approaching white blood cells.",
+      "It acts exclusively as a highly specialized, focused lens to heavily magnify incoming sunlight for maximum photosynthesis.",
+      "It acts as a thick, gelatinous outer coating that physically binds the colony together and heavily protects it from severe desiccation (drying out).",
+      "It aggressively absorbs pure atmospheric nitrogen directly from the air, completely bypassing the need for specialized heterocyst cells."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Cyanobacteria often grow in harsh, fluctuating environments, like tidal pools or coastal rocks that are baked by the sun at low tide. To keep the cells glued together into a continuous chain, and to protect the colony from drying out and dying, they secrete a massive amount of thick, slimy, water-trapping mucus. This is the mucilaginous sheath.
+- Option A is wrong because the sheath is a passive jelly for moisture, not an aggressive, toxic anti-immune weapon (like a pathogenic capsule).
+- Option B is wrong because the sheath does not possess optical, lens-like magnifying properties.
+- Option C is correct because the sheath explicitly provides physical binding and severe protection against desiccation.
+- Option D is wrong because nitrogen absorption requires the highly specialized internal enzyme nitrogenase, not the external jelly.
+
+> **Key Takeaway:** The mucilaginous sheath is a thick, gelatinous outer coating that binds Cyanobacteria together and heavily protects them from fatal desiccation.`
+  },
+  // Q68 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Because the critical enzyme required for nitrogen fixation is immediately destroyed by oxygen, what highly specialized, protective cells do filamentous Cyanobacteria develop?",
+    options: [
+      "Massive, highly active photosynthetic cells explicitly designed to pump out completely pure oxygen gas.",
+      "Incredibly dense, deeply buried reproductive spores completely immune to absolute boiling temperatures.",
+      "Highly motile, aggressively spinning cells that constantly flush the surrounding water completely clear of all dissolved gases.",
+      "Specialized, incredibly thick-walled cells called 'heterocysts', completely dedicated exclusively to providing a strictly anoxic (oxygen-free) environment."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Cyanobacteria have a massive biological paradox: they need to produce oxygen to survive (photosynthesis), but the enzyme they use to "eat" nitrogen (nitrogenase) is instantly destroyed if it touches a single molecule of free oxygen. To solve this, a cyanobacteria filament will grow a few special, thick-walled cells called heterocysts. These cells shut down their oxygen production entirely, creating a safe, anoxic bunker where nitrogen fixation can occur safely.
+- Option A is wrong because pumping out oxygen is exactly what the heterocyst must *stop* doing.
+- Option B is wrong because survival spores in Cyanobacteria are called akinetes, not heterocysts.
+- Option C is wrong because spinning cells flushing gases do not exist in Cyanobacteria.
+- Option D is correct because heterocysts are specialized, anoxic cells dedicated entirely to protecting the nitrogen fixation process.
+
+> **Key Takeaway:** Heterocysts are specialized, thick-walled, anoxic cells in Cyanobacteria that explicitly protect the oxygen-sensitive process of nitrogen fixation.`
+  },
+  // Q69 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What highly specific molecular adaptations inside the walls of a 'heterocyst' successfully block deadly oxygen gas from diffusing into the cell?",
+    options: [
+      "Highly specialized glycolipids and an extra, incredibly thickened cell wall layer that severely restrict any external oxygen permeability.",
+      "Massive, highly aggressive internal vacuum pumps that continuously eject any entering oxygen straight back into the ocean.",
+      "A completely solid, impenetrable sphere of pure, metallic iron that immediately rusts to trap any incoming oxygen.",
+      "A highly acidic, continuously boiling liquid barrier that violently destroys oxygen molecules upon contact."
+    ],
+    correct: 0,
+    explanation: `## Insight
+To keep the nitrogenase enzyme safe, the heterocyst must be physically sealed off from the oxygen-rich water outside. It achieves this by laying down massive, extra-thick layers of cell wall material. More importantly, it packs this wall with highly specialized, greasy glycolipids. Because oxygen does not diffuse easily through these specific lipids, the wall acts like an airtight submarine hatch.
+- Option A is correct because the combination of specialized glycolipids and a thickened wall creates the critical, oxygen-impermeable barrier.
+- Option B is wrong because bacteria do not possess mechanical vacuum pumps for gases.
+- Option C is wrong because while iron does oxidize, bacteria do not build solid metallic iron spheres for membranes.
+- Option D is wrong because a boiling acidic barrier is biological nonsense.
+
+> **Key Takeaway:** Heterocysts physically block oxygen using an extra thickened cell wall layer heavily packed with specialized, oxygen-blocking glycolipids.`
+  },
+  // Q70 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What is the specific name of the highly complex, extremely oxygen-sensitive enzyme that allows Cyanobacteria to actively perform nitrogen fixation?",
+    options: [
+      "Nitrate reductase, which aggressively converts toxic nitrate into benign, highly stable nitrite.",
+      "Nitrogenase, an absolute biological miracle that successfully breaks the incredibly strong triple bond of atmospheric nitrogen gas ($N_2$).",
+      "Urease, which heavily breaks down concentrated urea into highly volatile ammonia gas.",
+      "Nitrite oxidase, which heavily synthesizes pure, solid nitrogen blocks inside the deep cellular cytoplasm."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Nitrogen gas ($N_2$) makes up 78% of the atmosphere, but it is locked together by a massive triple covalent bond that almost nothing in nature can break. Plants cannot use it. The enzyme "nitrogenase" is the biological miracle capable of smashing this bond, turning inert atmospheric gas into usable ammonia fertilizer ($NH_3$). However, nitrogenase is instantly deactivated if it touches free oxygen.
+- Option A is wrong because nitrate reductase reduces existing nitrate; it does not pull inert $N_2$ from the air.
+- Option B is correct because nitrogenase is the specific, defining enzyme that breaks the $N_2$ triple bond for nitrogen fixation.
+- Option C is wrong because urease breaks down urea, not atmospheric nitrogen.
+- Option D is wrong because nitrite oxidase is used in nitrification, and biology does not synthesize solid nitrogen blocks.
+
+> **Key Takeaway:** Nitrogenase is the powerful, highly oxygen-sensitive enzyme that explicitly drives nitrogen fixation by breaking the triple bond of atmospheric nitrogen gas.`
+  },
+  // Q71 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Why absolutely must the internal cellular environment of a heterocyst remain strictly anaerobic (oxygen-free) at all times?",
+    options: [
+      "Because the immediate presence of oxygen aggressively forces the cell to prematurely explode and release its deeply hidden spores.",
+      "Because oxygen violently reacts with the cell's internal hydrogen supply, aggressively creating explosive internal steam.",
+      "Because the critical nitrogen-fixing enzyme, nitrogenase, is incredibly fragile and is rapidly and permanently destroyed by any exposure to free oxygen.",
+      "Because anaerobic environments are the only places where perfectly pure, solid silica glass can actively crystallize."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Nitrogenase is an incredibly powerful enzyme, but it has a fatal flaw: it is completely incompatible with oxygen. If a single molecule of $O_2$ touches the active site of the nitrogenase enzyme, it permanently oxidizes the iron-molybdenum core, utterly destroying the enzyme's ability to fix nitrogen. Thus, the heterocyst must maintain a strict zero-oxygen (anaerobic) lockdown.
+- Option A is wrong because oxygen does not trigger spore (akinete) release.
+- Option B is wrong because biology does not create explosive internal steam via spontaneous hydrogen combustion.
+- Option C is correct because the absolute fragility of the nitrogenase enzyme to oxygen dictates the strict anaerobic requirement of the heterocyst.
+- Option D is wrong because silica glass crystallization is a property of diatoms, completely unrelated to nitrogen fixation.
+
+> **Key Takeaway:** The environment inside a heterocyst must remain anaerobic because the critical enzyme nitrogenase is permanently destroyed by exposure to oxygen.`
+  },
+  // Q72 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "While many bacteria exist solely as isolated, single cells, what is the highly typical, highly organized growth form of most prominent Cyanobacteria species?",
+    options: [
+      "They grow exclusively as massive, perfectly spherical, completely solid metallic boulders.",
+      "They exist exclusively as aggressively fast, highly isolated solitary swimmers completely incapable of physical attachment.",
+      "They form intricate, completely invisible, microscopic gaseous clouds floating high above the ocean surface.",
+      "They exist as microscopic, single-celled organisms that frequently link together heavily to form long, highly organized filaments or massive, macroscopic gelatinous colonies."
+    ],
+    correct: 3,
+    explanation: `## Insight
+While Cyanobacteria are technically single-celled prokaryotes, they hate being alone. After they divide, they frequently refuse to separate. They stack up end-to-end, forming incredibly long, hair-like chains called filaments (like *Oscillatoria*). Often, thousands of these filaments will secrete slime to bind together into a massive, macroscopic jelly-like colony (like *Nostoc*) that you can hold in your hand.
+- Option A is wrong because bacteria are biological cells, not solid metallic boulders.
+- Option B is wrong because while some are solitary, the hallmark of the most prominent species (like *Anabaena* or *Nostoc*) is their highly colonial/filamentous nature.
+- Option C is wrong because bacteria are solid organisms living in water or soil, not invisible gaseous clouds.
+- Option D is correct because linking into long filaments and massive gelatinous colonies is the defining, typical growth form of most Cyanobacteria.
+
+> **Key Takeaway:** Most Cyanobacteria typically grow by linking together to form long, organized filaments or massive, gelatinous colonies.`
+  },
+  // Q73 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following correctly identifies three of the most famous, heavily studied genera of Cyanobacteria?",
+    options: [
+      "*Nostoc*, *Anabaena*, and *Oscillatoria*.",
+      "*Staphylococcus*, *Streptococcus*, and *Escherichia*.",
+      "*Treponema*, *Borrelia*, and *Leptospira*.",
+      "*Plasmodium*, *Trypanosoma*, and *Paramecium*."
+    ],
+    correct: 0,
+    explanation: `## Insight
+In introductory biology, three Cyanobacteria are always heavily studied because they perfectly showcase the group's diversity. *Nostoc* is famous for forming massive, macroscopic jelly blobs. *Anabaena* is famous for looking like a pearl necklace and forming nitrogen-fixing heterocysts. *Oscillatoria* is famous for forming smooth, straight filaments that magically sway and glide without flagella.
+- Option A is correct because *Nostoc*, *Anabaena*, and *Oscillatoria* are the absolute textbook benchmark genera for Cyanobacteria.
+- Option B is wrong because these are standard, pathogenic heterotrophic bacteria.
+- Option C is wrong because these are corkscrew-shaped spirochetes.
+- Option D is wrong because these are eukaryotic protozoan protists.
+
+> **Key Takeaway:** *Nostoc*, *Anabaena*, and *Oscillatoria* are three of the most prominent, heavily studied genera of Cyanobacteria.`
+  },
+  // Q74 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "Which highly specific species of Cyanobacterium lives in an aggressive, permanently symbiotic relationship inside the leaves of the water fern *Azolla*?",
+    options: [
+      "The highly toxic *Microcystis aeruginosa*.",
+      "The nitrogen-fixing *Anabaena azollae*.",
+      "The massively colonial *Nostoc commune*.",
+      "The rapidly gliding *Oscillatoria princeps*."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Rice farmers have used the tiny water fern *Azolla* for centuries as a natural, free fertilizer. The fern itself doesn't fix nitrogen. It has tiny pockets in its leaves where the cyanobacterium *Anabaena azollae* lives permanently. The fern provides absolute safety and sugar, and the bacteria provide endless fixed nitrogen. They are a perfect, obligate biological team.
+- Option A is wrong because *Microcystis* is a toxic, free-living, bloom-forming species.
+- Option B is correct because *Anabaena azollae* explicitly acts as the permanent, nitrogen-fixing symbiont inside the *Azolla* fern.
+- Option C is wrong because while *Nostoc* fixes nitrogen, it partners mostly with fungi (lichens) or cycads, not *Azolla*.
+- Option D is wrong because *Oscillatoria* is a free-living, non-nitrogen-fixing species.
+
+> **Key Takeaway:** *Anabaena azollae* is a highly specific cyanobacterium that lives symbiotically inside the *Azolla* water fern, providing it with essential fixed nitrogen.`
+  },
+  // Q75 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific genus of Cyanobacteria is globally renowned for secreting immense amounts of mucilage to form macroscopic, jelly-like colonies capable of stretching up to a meter across?",
+    options: [
+      "The highly aggressive *Vibrio* genus.",
+      "The perfectly spherical *Staphylococcus* genus.",
+      "The heavily colonial *Nostoc* genus.",
+      "The strictly obligate intracellular *Chlamydia* genus."
+    ],
+    correct: 2,
+    explanation: `## Insight
+While most bacteria are microscopic, the genus *Nostoc* defies scale. The individual bacterial cells link together into long chains. These chains secrete a massive amount of firm, rubbery, gelatinous mucus. Thousands of these chains clump together, forming macroscopic blobs, mats, or spheres that can literally stretch for a meter across wet rocks or soil (often called "star jelly" after a rainstorm).
+- Option A is wrong because *Vibrio* are single, microscopic, comma-shaped cells.
+- Option B is wrong because *Staph* forms microscopic grape-like clusters.
+- Option C is correct because *Nostoc* is explicitly famous for forming massive, macroscopic, jelly-like colonies.
+- Option D is wrong because *Chlamydia* lives entirely invisibly inside host cells.
+
+> **Key Takeaway:** The cyanobacterium *Nostoc* is globally renowned for secreting massive amounts of mucilage to form macroscopic, jelly-like colonies.`
+  },
+  // Q76 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific genus of Cyanobacteria earns its name because it exhibits a distinct, rhythmic gliding and swaying motion, despite completely lacking any visible flagella?",
+    options: [
+      "The highly toxic *Microcystis* genus.",
+      "The nitrogen-fixing *Anabaena* genus.",
+      "The deeply dormant *Bacillus* genus.",
+      "The smoothly gliding *Oscillatoria* genus."
+    ],
+    correct: 3,
+    explanation: `## Insight
+*Oscillatoria* forms incredibly long, smooth, unbranched filaments. When viewed under a microscope, these long threads do not just sit still. They actively slide forward and backward, and the tip of the filament bends and sways side-to-side in a mesmerizing, rhythmic oscillation. They achieve this gliding motility by secreting slime, entirely without the use of flagella.
+- Option A is wrong because *Microcystis* forms formless, floating, non-motile blobs.
+- Option B is wrong because *Anabaena* filaments are largely non-motile and resemble beaded necklaces.
+- Option C is wrong because *Bacillus* are standard rods that use typical flagella to swim.
+- Option D is correct because *Oscillatoria* explicitly earns its name from its distinct, rhythmic, flagella-free gliding and swaying motion.
+
+> **Key Takeaway:** The cyanobacterium *Oscillatoria* is named for its distinct, rhythmic gliding and swaying motion, achieved completely without visible flagella.`
+  },
+  // Q77 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific species of Cyanobacteria is globally notorious for forming massive, toxic blooms in warm, nutrient-rich lakes, producing the lethal liver toxin 'microcystin'?",
+    options: [
+      "The highly toxic *Microcystis aeruginosa*.",
+      "The highly resilient *Mycobacterium tuberculosis*.",
+      "The extremely fast-moving *Treponema pallidum*.",
+      "The highly beneficial *Anabaena azollae*."
+    ],
+    correct: 0,
+    explanation: `## Insight
+When agricultural fertilizer runs off into a warm, stagnant lake, it triggers a catastrophic bacterial bloom. The absolute most infamous culprit globally is *Microcystis aeruginosa*. This cyanobacterium forms massive, foul-smelling, opaque green scums on the water surface and pumps out microcystin, a highly stable toxin that aggressively destroys the livers of any animal or human that drinks the water.
+- Option A is correct because *Microcystis aeruginosa* is the primary, globally notorious producer of the deadly liver toxin microcystin.
+- Option B is wrong because this causes TB in the lungs.
+- Option C is wrong because this causes syphilis.
+- Option D is wrong because this is a helpful, symbiotic nitrogen-fixer, not a toxic bloom creator.
+
+> **Key Takeaway:** *Microcystis aeruginosa* is notorious for forming massive, toxic blooms in polluted lakes and producing the deadly liver toxin microcystin.`
+  },
+  // Q78 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In the context of biology and Cyanobacteria, what is the formal definition of 'symbiosis'?",
+    options: [
+      "The aggressive, unilateral destruction of an entire host organism by a highly virulent, obligate intracellular virus.",
+      "A close, long-term biological interaction between two entirely different biological organisms, often heavily mutually beneficial.",
+      "The complete physical separation of two highly competing species to opposite sides of a vast, geographic mountain range.",
+      "The sudden, completely random mutation of a bacterial genome caused entirely by extreme exposure to ultraviolet radiation."
+    ],
+    correct: 1,
+    explanation: `## Insight
+"Sym" means together, and "biosis" means living. In nature, organisms rarely exist in total isolation. When two completely different species evolve to live intimately with one another for long periods, it is called symbiosis. A classic example is the Cyanobacterium *Anabaena* living permanently inside the leaves of the *Azolla* fern, where they perfectly trade sugar for fixed nitrogen.
+- Option A is wrong because total, aggressive destruction defines a lethal pathogenesis (like the lytic viral cycle), not a stable symbiosis.
+- Option B is correct because symbiosis explicitly defines a close, long-term, often mutually beneficial living arrangement between different species.
+- Option C is wrong because physical separation is geographic isolation (allopatric speciation), the exact opposite of symbiosis.
+- Option D is wrong because random mutation is a genetic event, entirely unrelated to inter-species ecological relationships.
+
+> **Key Takeaway:** Symbiosis is a close, long-term biological interaction between two different species, which is often mutually beneficial to both.`
+  },
+  // Q79 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "How is the highly efficient *Azolla-Anabaena* symbiotic relationship practically utilized by modern agriculture as a natural, 'green' fertilizer?",
+    options: [
+      "Farmers aggressively burn the fern to ash, using the resulting heavy carbon powder to dramatically raise the soil's pH level.",
+      "Farmers intentionally feed the highly toxic fern to livestock, aggressively killing internal parasites before using the manure as fertilizer.",
+      "Rice farmers actively cultivate the floating fern; the symbiotic cyanobacteria fix massive amounts of nitrogen from the air, naturally heavily fertilizing the flooded rice paddies when the fern eventually dies and decays.",
+      "Farmers aggressively extract the pure, liquid nitrogen directly from the living fern using massive, industrial chemical centrifuges."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Nitrogen fertilizer is incredibly expensive to manufacture industrially. Asian rice farmers bypassed this cost centuries ago using biology. They allow the *Azolla* water fern to grow wildly, completely covering the surface of the flooded rice paddies. The *Anabaena* bacteria living inside the fern continuously pull free nitrogen from the air. When the rice grows tall and blocks the sun, the fern dies, rotting into the water and releasing thousands of pounds of free, fixed nitrogen directly to the rice roots.
+- Option A is wrong because burning the fern destroys the nitrogen compounds, defeating the purpose.
+- Option B is wrong because the fern is not used as a toxic livestock dewormer.
+- Option C is correct because the fern acts as a biological factory, capturing airborne nitrogen and delivering it naturally to the rice crop upon decay.
+- Option D is wrong because farmers use the natural decay of the plant, not heavy industrial extraction centrifuges.
+
+> **Key Takeaway:** The *Azolla-Anabaena* symbiosis acts as a natural "green fertilizer" because the bacteria fix massive amounts of atmospheric nitrogen, which fertilizes rice paddies when the fern decays.`
+  },
+  // Q80 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "In environmental microbiology, what precisely defines a 'Harmful Algal Bloom' (HAB)?",
+    options: [
+      "A highly beautiful, entirely harmless seasonal change where oceanic kelp forests naturally turn a deep, vibrant red color during the autumn months.",
+      "The slow, continuous growth of completely benign green algae that heavily oxygenates deep, pristine mountain lakes.",
+      "A sudden, massive die-off of all microscopic marine life triggered entirely by an aggressive, localized drop in ocean temperatures.",
+      "A rapid, highly uncontrolled overgrowth of aquatic algae or cyanobacteria that actively produces lethal toxins or severely depletes the water's oxygen supply, killing marine life."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Algae are the base of the food chain, but too much of a good thing is deadly. When water gets too warm and too full of fertilizer, cyanobacteria or dinoflagellates reproduce exponentially. This massive, choking blanket of microbes is a Harmful Algal Bloom (HAB). It blocks sunlight, sucks all the oxygen out of the water when the microbes die and rot, and frequently pumps out highly lethal neurotoxins or hepatotoxins, resulting in catastrophic fish kills.
+- Option A is wrong because HABs are inherently dangerous and highly destructive, not harmless seasonal color changes.
+- Option B is wrong because HABs actively *destroy* water quality and deplete oxygen, rather than benignly improving it.
+- Option C is wrong because a HAB is a massive *overgrowth*, not a sudden die-off of the microscopic life itself.
+- Option D is correct because a HAB is explicitly defined by rapid overgrowth resulting in severe toxicity or catastrophic oxygen depletion (hypoxia).
+
+> **Key Takeaway:** A Harmful Algal Bloom (HAB) is a rapid, uncontrolled overgrowth of algae or cyanobacteria that produces lethal toxins or catastrophically depletes aquatic oxygen.`
+  },
+  // Q81 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What defines the destructive ecological process of 'eutrophication', and how does it directly drive the formation of Harmful Algal Blooms (HABs)?",
+    options: [
+      "The severe, artificial over-enrichment of a water body with massive amounts of nutrients (like agricultural nitrogen and phosphorus runoff), which heavily fuels massive, explosive algal overgrowth.",
+      "The aggressive, intentional removal of all dissolved oxygen from a lake by highly specialized industrial water-purification plants.",
+      "The sudden, massive influx of completely pure, distilled rainwater that aggressively dilutes the natural salinity of a coastal estuary.",
+      "The heavy, continuous freezing of the entire ocean surface during severe, prolonged winter months, entirely blocking all sunlight."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Cyanobacteria and algae are usually limited by a lack of food (nitrogen and phosphorus). When humans dump millions of gallons of raw sewage or agricultural fertilizer into a river, it eventually hits a lake or the ocean. Suddenly, the microbes have an infinite food supply. They gorge on the fertilizer and reproduce exponentially. This severe, artificial nutrient overloading of a water body is called eutrophication, and it is the absolute primary trigger for devastating HABs.
+- Option A is correct because eutrophication is explicitly the severe nutrient over-enrichment that fuels explosive, uncontrollable algal blooms.
+- Option B is wrong because industrial oxygen removal is not a natural biological process, and eutrophication causes oxygen loss *after* the bloom dies.
+- Option C is wrong because dilution of salinity does not provide the massive nutrient spikes required to fuel a bloom.
+- Option D is wrong because freezing blocks light and halts growth; it does not drive massive algal reproduction.
+
+> **Key Takeaway:** Eutrophication is the severe over-enrichment of a water body with nutrients (like agricultural runoff), which acts as explosive fuel for Harmful Algal Blooms.`
+  },
+  // Q82 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "In environmental toxicology, what explicitly are 'cyanotoxins'?",
+    options: [
+      "Highly benign, completely harmless sugar molecules secreted continuously by all green terrestrial plants.",
+      "Highly potent, naturally occurring chemical poisons produced specifically and exclusively by massive blooms of Cyanobacteria.",
+      "Aggressive, heavily synthetic, man-made industrial pesticides designed explicitly to eradicate all aquatic weed growth.",
+      "Highly concentrated, completely pure pockets of ozone gas trapped deeply within glacial ice sheets."
+    ],
+    correct: 1,
+    explanation: `## Insight
+When Cyanobacteria (blue-green algae) bloom out of control, many species do not just block the sunlight; they actively manufacture and release incredibly powerful, complex chemical weapons into the water. Because these unique, highly lethal biological poisons are synthesized exclusively by Cyanobacteria, they are universally classified by science as cyanotoxins.
+- Option A is wrong because cyanotoxins are highly lethal poisons, completely opposite to benign sugar molecules.
+- Option B is correct because cyanotoxins are explicitly defined as the highly potent natural poisons manufactured by Cyanobacteria.
+- Option C is wrong because cyanotoxins are 100% natural, biological molecules, not synthetic, man-made industrial pesticides.
+- Option D is wrong because cyanotoxins are complex biological molecules, totally unrelated to trapped atmospheric ozone gas.
+
+> **Key Takeaway:** Cyanotoxins are highly potent, naturally occurring biological poisons produced specifically by blooming Cyanobacteria.`
+  },
+  // Q83 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What defines a 'neurotoxin', and what is the absolute premier example of a neurotoxin produced by Cyanobacteria?",
+    options: [
+      "A toxin that strictly dissolves human tooth enamel; Example: heavily concentrated citric acid.",
+      "A toxin that aggressively destroys the internal lining of the stomach; Example: highly potent botulinum toxin.",
+      "A toxin that specifically and aggressively attacks the nervous system; Example: the highly lethal anatoxin (Very Fast Death Factor).",
+      "A toxin that completely halts the body's ability to clot blood; Example: aggressive hemotoxin venom."
+    ],
+    correct: 2,
+    explanation: `## Insight
+The prefix "neuro-" refers to the nerves and the brain. A neurotoxin is a specialized poison that chemically targets the communication pathways of the nervous system, often causing instant paralysis or seizures. In the realm of Cyanobacteria, the absolute most famous and terrifying neurotoxin is anatoxin-a. Because it locks the respiratory muscles and causes death by suffocation in minutes, it earned the grim nickname "Very Fast Death Factor."
+- Option A is wrong because dissolving tooth enamel is acidic erosion, completely unrelated to the nervous system.
+- Option B is wrong because destroying the stomach lining is the action of an enterotoxin or caustic agent, not a neurotoxin.
+- Option C is correct because a neurotoxin explicitly targets the nervous system, with anatoxin being the premier cyanobacterial example.
+- Option D is wrong because halting blood clotting is the specific action of a hemotoxin (like rattlesnake venom), not a neurotoxin.
+
+> **Key Takeaway:** A neurotoxin is a poison that specifically attacks the nervous system, with anatoxin (Very Fast Death Factor) being the primary cyanobacterial example.`
+  },
+  // Q84 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What defines a 'hepatotoxin', and what are two prominent examples produced aggressively by Cyanobacteria?",
+    options: [
+      "A toxin that explicitly targets and destroys the human heart muscle; Examples: highly concentrated adrenaline and cortisol.",
+      "A toxin that aggressively paralyzes the central nervous system; Examples: highly lethal tetrodotoxin and saxitoxin.",
+      "A toxin that explicitly targets and dissolves the deep tissues of the human lungs; Examples: highly toxic asbestos and silica dust.",
+      "A toxin that explicitly targets and aggressively destroys the liver; Examples: the highly lethal microcystin and nodularin."
+    ],
+    correct: 3,
+    explanation: `## Insight
+The prefix "hepato-" refers directly to the liver (like hepatitis, inflammation of the liver). A hepatotoxin is a highly specialized poison that travels through the bloodstream, ignores other organs, and actively attacks and destroys liver cells. Cyanobacteria are globally notorious for producing massive amounts of two incredibly stable, highly lethal hepatotoxins: microcystin and nodularin.
+- Option A is wrong because a toxin targeting the heart is a cardiotoxin, not a hepatotoxin.
+- Option B is wrong because paralyzing the nervous system is the exact definition of a neurotoxin.
+- Option C is wrong because lung-destroying agents are pneumotoxins or physical particulate hazards, not hepatotoxins.
+- Option D is correct because a hepatotoxin explicitly targets the liver, perfectly exemplified by the cyanotoxins microcystin and nodularin.
+
+> **Key Takeaway:** A hepatotoxin is a highly specific poison that aggressively targets and destroys the liver, heavily exemplified by the cyanotoxins microcystin and nodularin.`
+  },
+  // Q85 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What specifically defines a 'dermatotoxin' in the context of cyanobacterial exposure?",
+    options: [
+      "A highly irritating toxin that specifically targets the skin upon direct contact, causing severe blistering, aggressive dermatitis, and localized inflammation.",
+      "A highly lethal toxin that aggressively attacks the deep neurological pathways of the brain, causing instant, permanent coma.",
+      "A highly specialized toxin that aggressively destroys the internal lining of the human small intestine, causing rapid, fatal dehydration.",
+      "A highly benign, completely harmless chemical that merely temporarily dyes the outer layer of the skin a deep, vibrant blue-green."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The prefix "derm-" refers to the skin (like a dermatologist). You don't always have to drink cyanobacteria to be harmed by them. If you swim in a lake during an active bloom of certain species (like *Lyngbya*), the physical contact with the bacteria releases dermatotoxins. These chemicals aggressively irritate the skin on contact, causing severe, itchy, burning rashes and blistering dermatitis (often called "swimmer's itch").
+- Option A is correct because a dermatotoxin explicitly targets and severely irritates the skin upon direct contact.
+- Option B is wrong because a toxin targeting the brain is explicitly a neurotoxin.
+- Option C is wrong because a toxin destroying the intestinal lining is explicitly an enterotoxin.
+- Option D is wrong because a true dermatotoxin causes actual physical tissue damage and blistering, not just a harmless, temporary color change.
+
+> **Key Takeaway:** A dermatotoxin is a highly irritating poison that specifically targets the skin on contact, causing severe blistering and aggressive dermatitis.`
+  },
+  // Q86 correct: 1
+  {
+    course: "BI110", term: "T2",
+    q: "What exactly is 'microcystin', and which specific genus of Cyanobacteria is globally notorious for producing it in massive quantities?",
+    options: [
+      "A highly aggressive neurotoxin entirely responsible for causing rapid respiratory failure; produced exclusively by the *Oscillatoria* genus.",
+      "A highly lethal, incredibly stable hepatotoxin that aggressively destroys liver cells; produced predominantly by massive blooms of the *Microcystis* genus.",
+      "A completely benign, highly sweet-tasting sugar molecule utilized safely as a food additive; produced abundantly by the *Spirulina* genus.",
+      "A highly volatile, invisible atmospheric gas that aggressively depletes the global ozone layer; produced continuously by the *Anabaena* genus."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Microcystin is an incredibly dangerous, highly complex cyclic peptide toxin. It is incredibly stable, meaning boiling your drinking water will not destroy it. Once ingested, it travels straight to the liver, where it aggressively destroys the structural scaffolding (cytoskeleton) of the liver cells, causing massive internal bleeding and liver failure. It is the signature, highly lethal weapon produced by massive blooms of the cyanobacterium *Microcystis*.
+- Option A is wrong because microcystin targets the liver (hepatotoxin), not the nervous system.
+- Option B is correct because microcystin is a definitive, highly lethal hepatotoxin primarily manufactured by the *Microcystis* genus.
+- Option C is wrong because microcystin is a highly lethal biological poison, absolutely not a benign, safe food additive.
+- Option D is wrong because microcystin is a massive, solid liquid-borne toxin, utterly unrelated to atmospheric, ozone-depleting gases.
+
+> **Key Takeaway:** Microcystin is a highly stable, completely lethal hepatotoxin (liver poison) produced predominantly by massive blooms of the *Microcystis* cyanobacterium.`
+  },
+  // Q87 correct: 2
+  {
+    course: "BI110", term: "T2",
+    q: "What is 'cylindrospermopsin', and which specific, notoriously invasive cyanobacterium is primarily responsible for producing it?",
+    options: [
+      "A highly aggressive neurotoxin that specifically targets and destroys the human optic nerve; produced exclusively by the *Nostoc* genus.",
+      "A highly beneficial, heavily engineered antibiotic utilized globally to cure tuberculosis; produced abundantly by the *Streptococcus* genus.",
+      "A highly potent, slow-acting toxin that severely damages both the liver and the kidneys; famously produced by the invasive cyanobacterium *Cylindrospermopsis raciborskii*.",
+      "A highly stable, completely harmless blue pigment utilized safely in the commercial textile industry; produced continuously by the *Azolla* water fern."
+    ],
+    correct: 2,
+    explanation: `## Insight
+While microcystin only attacks the liver, cylindrospermopsin is a dual-threat toxin. It aggressively blocks protein synthesis inside human cells, severely damaging both the liver *and* the kidneys simultaneously. It is the signature, highly lethal toxin produced by *Cylindrospermopsis raciborskii*, an incredibly aggressive, invasive cyanobacterium that has been spreading rapidly into drinking water reservoirs globally due to warming climates.
+- Option A is wrong because cylindrospermopsin targets the liver and kidneys, totally unrelated to the optic nerve.
+- Option B is wrong because it is a highly lethal cyanotoxin, absolutely not a beneficial, life-saving antibiotic.
+- Option C is correct because cylindrospermopsin is a definitive, highly potent liver and kidney toxin produced heavily by *Cylindrospermopsis raciborskii*.
+- Option D is wrong because cylindrospermopsin is a massive, lethal biological poison, absolutely not a harmless commercial textile dye.
+
+> **Key Takeaway:** Cylindrospermopsin is a highly potent liver and kidney toxin famously produced by the aggressive, invasive cyanobacterium *Cylindrospermopsis raciborskii*.`
+  },
+  // Q88 correct: 3
+  {
+    course: "BI110", term: "T2",
+    q: "What is 'anatoxin', and what specific physiological system does it violently target to cause rapid death?",
+    options: [
+      "A highly acidic, deeply corrosive digestive enzyme that aggressively targets and completely dissolves the human stomach lining within hours.",
+      "A highly sophisticated, stealthy retrovirus that aggressively targets and permanently destroys human CD4+ T-helper immune cells.",
+      "A highly massive, physically heavy heavy-metal compound that aggressively targets and completely calcifies human bone marrow.",
+      "A highly lethal, fast-acting neurotoxin that binds permanently to muscle receptors, aggressively targeting the nervous system to trigger rapid, fatal respiratory paralysis."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Anatoxin-a does not damage organs slowly. It acts exactly like military-grade nerve gas. It floods the neuromuscular junctions (where nerves tell muscles to move) and jams the "ON" switch permanently. Every muscle in the body locks into a massive, unbreakable cramp. Because the diaphragm muscle locks up, the victim can no longer breathe. It aggressively targets the nervous system, causing rapid death by asphyxiation (hence its nickname, "Very Fast Death Factor").
+- Option A is wrong because anatoxin is a targeted neurotoxin, totally unrelated to corrosive acidic stomach digestion.
+- Option B is wrong because this perfectly describes the pathology of the HIV retrovirus, not a cyanotoxin.
+- Option C is wrong because anatoxin is a biological, organic alkaloid poison, absolutely not a heavy-metal bone calcifier.
+- Option D is correct because anatoxin is explicitly a fast-acting neurotoxin that binds muscle receptors, causing fatal respiratory paralysis.
+
+> **Key Takeaway:** Anatoxin (Very Fast Death Factor) is a highly lethal cyanobacterial neurotoxin that binds permanently to muscle receptors, causing rapid, fatal respiratory paralysis.`
+  },
+  // Q89 correct: 0
+  {
+    course: "BI110", term: "T2",
+    q: "What catastrophic human tragedy occurred during the 1993 Itaparica Dam cyanotoxin outbreak in Brazil?",
+    options: [
+      "A massive, highly toxic cyanobacterial bloom in the drinking water reservoir heavily overloaded the treatment plant, killing exactly 88 people who drank the contaminated, microcystin-laced municipal water.",
+      "A massive, highly explosive underground methane gas pocket completely ruptured the concrete dam, instantly drowning the entire valley.",
+      "A highly aggressive, totally unprecedented swarm of malaria-infected mosquitoes bred in the stagnant dam water, killing exactly 500 locals.",
+      "A massive, highly corrosive cloud of pure sulfuric acid violently outgassed from the deep reservoir, instantly suffocating 88 local fishermen."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The 1993 Itaparica Dam disaster is a grim textbook case of cyanotoxin poisoning on a massive municipal scale. A massive bloom of toxic cyanobacteria occurred in the reservoir. The local water treatment plant was not equipped to filter out the microscopic, dissolved microcystin toxins. The highly lethal, poisoned water was pumped directly into city homes, leading to a massive outbreak of severe, hemorrhagic gastroenteritis that tragically resulted in the deaths of exactly 88 people, mostly vulnerable children.
+- Option A is correct because the 1993 Itaparica event resulted precisely in exactly 88 tragic deaths caused directly by drinking cyanotoxin-contaminated municipal water.
+- Option B is wrong because this describes a catastrophic physical infrastructure failure, not a biological cyanotoxin outbreak.
+- Option C is wrong because while stagnant water breeds mosquitoes, the 1993 tragedy was explicitly a direct cyanotoxin poisoning event.
+- Option D is wrong because reservoirs do not suddenly outgas massive clouds of pure sulfuric acid; the threat was the dissolved biological microcystin toxin.
+
+> **Key Takeaway:** The 1993 Cyanobacteria outbreak at the Itaparica Dam in Brazil resulted in exactly 88 tragic deaths due to heavily contaminated, toxic drinking water.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What catastrophic medical failure occurred during the 1996 Caruaru cyanotoxin disaster in Brazil?",
+    options: [
+      "A highly aggressive, completely uncontained airborne virus violently swept through the entire hospital ventilation system, suffocating exactly 63 patients.",
+      "A massive, highly toxic cyanobacterial bloom heavily contaminated the municipal water supply, which bypassed the clinic's failed filters and pumped lethal microcystin directly into the bloodstreams of hemodialysis patients, causing 63 deaths from acute liver failure.",
+      "A highly incompetent surgeon accidentally administered massive, lethal overdoses of raw penicillin directly to exactly 63 deeply allergic patients.",
+      "A massive, totally unprecedented earthquake violently shattered the clinic's foundation, tragically crushing exactly 63 hemodialysis patients."
+    ],
+    correct: 1,
+    explanation: `## Insight
+The Caruaru tragedy remains one of the most infamous, horrific medical disasters involving Cyanobacteria. The local municipal water supply experienced a massive, highly toxic cyanobacterial bloom. A local hemodialysis clinic failed to adequately maintain their reverse-osmosis water filters. The heavily contaminated water was used to mix the dialysis fluid, bypassing the digestive system entirely and pumping raw, highly lethal microcystin toxin directly into the veins of the patients. This caused horrific, immediate, acute liver failure, resulting in the deaths of exactly 63 individuals.
+- Option A is wrong because the disaster involved a liquid-borne biological toxin, totally unrelated to an airborne respiratory virus.
+- Option B is correct because exactly 63 patients tragically died of acute liver failure after raw microcystin was pumped directly into their bloodstreams during hemodialysis.
+- Option C is wrong because this describes massive medical malpractice via drug allergy, not environmental cyanotoxin poisoning.
+- Option D is wrong because this describes a physical tectonic disaster, utterly unrelated to a biological water-contamination event.
+
+> **Key Takeaway:** In 1996, exactly 63 patients in Caruaru, Brazil, died from acute liver failure after being exposed directly to cyanotoxins through heavily contaminated dialysis water.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What severe public health crisis unfolded during the 1983 Palm Island cyanotoxin incident in Australia?",
+    options: [
+      "A massive, highly aggressive swarm of highly venomous jellyfish entirely surrounded the island, completely preventing all maritime resupply efforts.",
+      "A highly explosive, totally unprecedented volcanic eruption completely buried the entire island under fifty feet of suffocating, highly toxic pyroclastic ash.",
+      "A massive, highly toxic cyanobacterial bloom poisoned the island's sole drinking water reservoir, heavily causing widespread, severe hepatotoxicity and massive gastrointestinal illness among the local indigenous population.",
+      "A highly aggressive, totally uncontained outbreak of the deadly Ebola virus violently swept through the island's single hospital."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Palm Island, located off the coast of Queensland, Australia, relied on Solomon Dam for its drinking water. In 1979 (the incident was heavily reported and analyzed in 1983 literature), the local council treated a massive cyanobacterial bloom in the dam with copper sulfate. This killed the bacteria but caused their cells to violently burst, dumping massive, concentrated amounts of the hepatotoxin cylindrospermopsin directly into the drinking water. Nearly 150 people (mostly indigenous children) were hospitalized with severe, agonizing liver and kidney damage.
+- Option A is wrong because the crisis involved contaminated municipal drinking water, entirely unrelated to venomous marine wildlife.
+- Option B is wrong because this describes an explosive, physical igneous disaster, completely unrelated to a biological cyanotoxin outbreak.
+- Option C is correct because the Palm Island incident explicitly involved a massive cyanotoxin contamination of the drinking water, causing widespread, severe hepatotoxicity.
+- Option D is wrong because the crisis was a toxicological poisoning event, utterly unrelated to an infectious, hemorrhagic viral outbreak.
+
+> **Key Takeaway:** The Palm Island incident involved a massive cyanotoxin contamination of the local drinking water, causing widespread, severe hepatotoxicity and illness.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What massive agricultural disaster occurred during the 1983 Armidale cyanobacteria event in Australia?",
+    options: [
+      "A massive, completely uncontained swarm of trillions of locusts aggressively consumed every single blade of grass within a 500-mile radius.",
+      "A highly explosive, totally unprecedented subterranean methane gas pocket completely ruptured, instantly incinerating thousands of acres of dry farmland.",
+      "A highly aggressive, completely uncontained outbreak of foot-and-mouth disease violently swept through the region, instantly killing thousands of cattle.",
+      "A highly toxic *Microcystis* bloom severely contaminated a major municipal water supply and local farm dams, leading to massive, extensive livestock deaths and severe human illness."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Australia is highly prone to severe droughts, causing farm dams and reservoirs to become incredibly stagnant and warm. During the Armidale event, massive, highly toxic blooms of *Microcystis* cyanobacteria exploded across the region's water sources. Thirsty livestock drank the heavily contaminated, microcystin-laced water, resulting in catastrophic, massive die-offs of cattle and sheep, alongside significant reports of severe human gastroenteritis.
+- Option A is wrong because this describes a massive biological insect plague, entirely unrelated to toxic water blooms.
+- Option B is wrong because this describes a physical, explosive gas disaster, completely unrelated to biological cyanotoxin poisoning.
+- Option C is wrong because foot-and-mouth is a highly contagious viral infection, totally unrelated to drinking toxic cyanobacteria.
+- Option D is correct because the Armidale event was explicitly characterized by toxic *Microcystis* blooms causing massive livestock deaths and human illness via contaminated water.
+
+> **Key Takeaway:** The Armidale event was characterized by a massive, highly toxic *Microcystis* bloom that severely contaminated water supplies, causing extensive livestock deaths.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What historical public health event occurred during the early 1931 Charleston cyanobacteria outbreak in the United States?",
+    options: [
+      "An early, extensively documented case where thousands of people suffered severe, aggressive gastroenteritis after unknowingly drinking municipal water heavily contaminated by toxic cyanobacteria.",
+      "A massive, highly unprecedented earthquake completely shattered the city's main water reservoir, instantly flooding the downtown district.",
+      "A highly aggressive, totally uncontained outbreak of the deadly bubonic plague violently swept through the city's heavily rat-infested shipping ports.",
+      "A massive, highly toxic cloud of pure chlorine gas violently outgassed from a local chemical factory, instantly suffocating thousands of residents."
+    ],
+    correct: 0,
+    explanation: `## Insight
+The 1931 Charleston outbreak is one of the earliest, heavily documented cases of cyanotoxin poisoning in the United States. During a severe drought, a massive cyanobacterial bloom occurred in the rivers supplying the city. Because the water treatment plants at the time could not filter out the dissolved toxins, thousands of residents drank the heavily contaminated water, resulting in a massive, city-wide outbreak of severe, agonizing gastroenteritis.
+- Option A is correct because the 1931 Charleston event is historically famous for thousands suffering severe gastroenteritis after drinking cyanotoxin-contaminated municipal water.
+- Option B is wrong because this describes a catastrophic physical infrastructure failure, completely unrelated to a biological water-contamination event.
+- Option C is wrong because the bubonic plague is a bacterial infection transmitted by fleas, totally unrelated to drinking toxic algae.
+- Option D is wrong because this describes a massive industrial chemical disaster, entirely unrelated to natural biological cyanotoxins.
+
+> **Key Takeaway:** The 1931 Charleston outbreak is an early, highly documented case where thousands suffered severe gastroenteritis after drinking municipal water heavily contaminated by toxic cyanobacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What are the two primary methods of asexual reproduction utilized effectively by bacterial populations?",
+    options: [
+      "The massive, highly explosive release of billions of airborne spores and the aggressive horizontal transfer of deeply hidden plasmid DNA.",
+      "The highly symmetrical process of binary fission and the highly asymmetrical process of budding.",
+      "The seamless, perfect fusion of two distinct parent gametes and the highly chaotic process of multiple, rapid cell fragmentation.",
+      "The highly aggressive, continuous shedding of the outer lipid membrane and the massive, rapid regeneration of the internal nucleoid."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Because bacteria lack a nucleus and cannot perform complex meiosis, they reproduce entirely asexually (cloning). The absolute dominant method is binary fission, where the cell copies its DNA and splits perfectly symmetrically down the middle into two identical halves. A much rarer method is budding, where a small, localized, unequal blister grows on the side of the parent cell, eventually pinching off as a tiny, unequal daughter clone.
+- Option A is wrong because spore release is a survival mechanism, and plasmid transfer is horizontal gene sharing, not true vertical reproduction.
+- Option B is correct because binary fission and budding are the two explicit, primary mechanisms of asexual bacterial reproduction.
+- Option C is wrong because gamete fusion is explicitly sexual reproduction, completely impossible for bacteria.
+- Option D is wrong because shedding the membrane does not produce a new, viable daughter cell.
+
+> **Key Takeaway:** The two primary, highly efficient methods of asexual reproduction in bacteria are symmetrical binary fission and asymmetrical budding.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "In microbiology, what is the exact biological function of 'spore formation' (endospores) in certain bacterial genera?",
+    options: [
+      "It is a highly aggressive, rapid method of sexual reproduction specifically designed to massive increase the genetic diversity of a failing colony.",
+      "It is an aggressive, highly toxic biological weapon explicitly designed to violently puncture and destroy the cell walls of competing bacterial species.",
+      "It is the formation of a highly resilient, heavily armored, deeply dormant internal survival structure designed explicitly to withstand extreme environmental stress; classical examples include the indestructible endospores of *Bacillus* and *Clostridium*.",
+      "It is a massive, completely empty external balloon specifically designed to permanently trap and sequester highly lethal antibiotic drugs."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Endospores are not seeds, and they are not for reproduction. When a bacterium (like *Bacillus* or *Clostridium*) runs out of food or faces boiling heat, it copies its DNA, wraps it in multiple, incredibly thick layers of keratin armor, and completely shuts down its metabolism. The main cell dies, but the practically indestructible spore can survive for centuries in the dirt, waiting to "hatch" back into a living bacterium when conditions improve.
+- Option A is wrong because endospores are strictly for individual survival, totally unrelated to sexual reproduction or genetic mixing.
+- Option B is wrong because a spore is a dormant survival vault, absolutely not an aggressive, cell-puncturing biological weapon.
+- Option C is correct because spore formation explicitly creates a highly resilient, deeply dormant internal survival structure to endure extreme stress.
+- Option D is wrong because a spore tightly protects the cell's own DNA; it is not an empty, external antibiotic trap.
+
+> **Key Takeaway:** Spore formation creates a highly resilient, deeply dormant internal survival structure explicitly designed to withstand extreme environmental stress.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Why do the vast majority of highly effective medical antibiotics specifically target and destroy the bacterial cell wall (peptidoglycan)?",
+    options: [
+      "Because the cell wall is the absolute only part of the bacterium that actually contains any functional DNA.",
+      "Because heavily destroying the cell wall forces the bacterium to instantly mutate into a completely harmless, highly beneficial probiotic strain.",
+      "Because the cell wall aggressively produces all the highly lethal endotoxins that constantly attack the human immune system.",
+      "Because these highly unique peptidoglycan structures exist exclusively in bacteria, allowing the drug to aggressively destroy the pathogen without causing the slightest harm to human cells, which completely lack them."
+    ],
+    correct: 3,
+    explanation: `## Insight
+The holy grail of medicine is finding a drug that kills the invader without killing the patient. Human cells are just squishy bags of liquid; they completely lack a rigid cell wall. Bacteria, however, absolutely require their thick peptidoglycan cell wall to survive the osmotic pressure of fluids. Because humans do not produce peptidoglycan, an antibiotic like penicillin acts like a smart bomb. It aggressively destroys the peptidoglycan wall, causing the bacterium to violently pop, while remaining completely harmless and invisible to human cells.
+- Option A is wrong because DNA is securely housed deep inside the internal nucleoid, entirely separate from the outer cell wall.
+- Option B is wrong because destroying the cell wall violently kills the bacterium (lysis); it does not magically mutate it into a helpful probiotic.
+- Option C is wrong because while the outer membrane contains endotoxins, the actual target of most antibiotics is the structural peptidoglycan mesh underneath it.
+- Option D is correct because targeting the unique peptidoglycan wall allows the antibiotic to destroy the bacteria completely safely without harming human cells.
+
+> **Key Takeaway:** Antibiotics specifically target the bacterial cell wall because these unique peptidoglycan structures exist exclusively in bacteria, allowing the drug to destroy the pathogen without harming human cells.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What is the biological process of 'phagocytosis', and how does the bacterial capsule heavily protect the pathogen against it?",
+    options: [
+      "The process by which human white blood cells aggressively swallow and destroy bacteria; the highly slippery, gelatinous capsule acts like a thick layer of grease, completely preventing the white blood cell from grabbing and engulfing the bacterium.",
+      "The process by which bacteria violently drill directly into red blood cells; the heavy capsule acts like an incredibly sharp, rotating diamond drill bit.",
+      "The process by which bacteria aggressively synthesize massive amounts of light energy; the transparent capsule acts like a highly focused magnifying glass.",
+      "The process by which human antibodies completely dissolve the bacterial DNA; the capsule acts like a massive, impenetrable lead shield."
+    ],
+    correct: 0,
+    explanation: `## Insight
+"Phago" means to eat, and "cyto" means cell. Your immune system's primary weapons are macrophages (giant white blood cells) that literally crawl up to bacteria, grab them, swallow them whole, and dissolve them in acid. To survive, many deadly bacteria secrete a massive, thick, gelatinous slime layer (the capsule). This slime is so incredibly slippery that the macrophage simply cannot get a grip on the bacterium, allowing the pathogen to easily slide away and continue multiplying.
+- Option A is correct because phagocytosis is the swallowing of bacteria by white blood cells, and the slippery capsule explicitly prevents them from getting a grip.
+- Option B is wrong because bacteria do not drill into red blood cells using their capsules (spirochetes use axial filaments to drill).
+- Option C is wrong because bacteria synthesize light energy using internal thylakoids, totally unrelated to the external protective capsule.
+- Option D is wrong because antibodies tag the outside of the cell; they do not dissolve internal DNA, and the capsule is slime, not a lead shield.
+
+> **Key Takeaway:** Phagocytosis is the process where white blood cells swallow bacteria; the highly slippery, gelatinous capsule completely prevents the immune cell from grabbing the pathogen.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "In the study of infectious diseases, what precisely defines a pathogen's 'virulence', and which specific bacterial features heavily increase it?",
+    options: [
+      "The absolute speed at which a bacterium can swim through pure, distilled water; flagella and highly buoyant internal gas vesicles heavily increase it.",
+      "The precise degree of severe pathology or measurable damage a microbe actively causes to its host; thick capsules, highly lethal toxins, and aggressive antibiotic resistance genes heavily increase a bacterium's virulence.",
+      "The exact temperature at which a bacterium completely freezes solid; a massive, highly insulated lipid membrane heavily increases it.",
+      "The total, absolute number of completely harmless bacteria living peacefully inside the human gut; massive, highly efficient digestive enzymes heavily increase it."
+    ],
+    correct: 1,
+    explanation: `## Insight
+Pathogenicity is simply the ability to cause disease (yes or no). Virulence is the *intensity* or severity of that disease (how bad is it?). A virus that causes a mild sniffle has low virulence; a virus that causes your organs to bleed out has high virulence. Bacteria aggressively increase their virulence by equipping themselves with weapons and armor: slippery capsules to dodge white blood cells, lethal toxins to destroy host tissue, and plasmids that make them immune to antibiotics.
+- Option A is wrong because virulence is explicitly about causing disease and tissue damage, entirely unrelated to simple swimming speed.
+- Option B is correct because virulence explicitly defines the degree of pathology, heavily increased by weapons like capsules, toxins, and resistance genes.
+- Option C is wrong because surviving freezing temperatures defines an extremophile's hardiness, not its active disease-causing virulence.
+- Option D is wrong because harmless gut bacteria are commensal flora; they lack virulence entirely.
+
+> **Key Takeaway:** Virulence is the specific degree of pathology or damage a microbe causes; weapons like thick capsules, lethal toxins, and antibiotic resistance genes heavily increase it.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Within the internal architecture of a prokaryotic cell, what explicitly defines the 'nucleoid region'?",
+    options: [
+      "A massive, highly complex, double-layered, heavily armored vault that perfectly stores and protects thousands of linear DNA molecules.",
+      "A highly specialized, completely isolated, deeply microscopic internal pocket dedicated exclusively to the aggressive, high-speed synthesis of pure ATP energy.",
+      "The completely unbound, messy, centralized region of the fluid prokaryotic cytoplasm where the single, massive circular chromosome loosely congregates.",
+      "The extremely rigid, geometrically perfect outer protein shell that tightly encloses and protects the fragile viral RNA genome."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Prokaryotes are the ultimate biological minimalists. They do not waste energy building a complex nuclear envelope to lock their DNA away. Instead, their single, massive, tangled loop of DNA (the circular chromosome) simply bunches up and floats bare in the very center of the cellular fluid. Because this messy, unbound area vaguely resembles a nucleus, it is formally called the nucleoid region.
+- Option A is wrong because a double-layered armored vault storing linear DNA explicitly defines the eukaryotic true nucleus.
+- Option B is wrong because ATP synthesis in bacteria occurs aggressively across the internal plasma membrane, entirely unrelated to the nucleoid.
+- Option C is correct because the nucleoid region explicitly defines the unbound, centralized cytoplasmic area where the circular chromosome floats.
+- Option D is wrong because a rigid outer protein shell explicitly defines a viral capsid, completely unrelated to cellular DNA storage.
+
+> **Key Takeaway:** The nucleoid region is the completely unbound, centralized area of the prokaryotic cytoplasm where the single, circular chromosome loosely congregates.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "In bacterial genetics, what exactly is a 'plasmid', and why is it so heavily dangerous in the context of modern medicine?",
+    options: [
+      "A massive, primary circular chromosome that contains absolutely every single gene required to keep the bacterium alive.",
+      "A highly rigid, impenetrable external protein shield that completely deflects all known modern antibiotics.",
+      "An incredibly aggressive, highly lethal neurotoxin continuously secreted by the bacterium to instantly paralyze white blood cells.",
+      "A tiny, circular, extrachromosomal piece of accessory DNA that frequently carries highly dangerous genes (like those for severe antibiotic resistance) and can be easily shared horizontally with unrelated bacteria."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Bacteria have their main, massive chromosome that holds all the instructions for basic life. But they also have tiny, separate, floating rings of DNA called plasmids. Think of plasmids as highly useful "app downloads" or "expansion packs." Plasmids often contain bonus genes, like the instructions for how to destroy penicillin. Because they are small and separate, a bacterium can easily copy a plasmid and shoot it through a pilus (horizontal gene transfer) directly into a neighboring bacterium, instantly granting the neighbor complete antibiotic resistance.
+- Option A is wrong because the main chromosome is massive and essential; a plasmid is tiny and strictly accessory (extrachromosomal).
+- Option B is wrong because this describes the physical cell wall or capsule, completely unrelated to a DNA molecule.
+- Option C is wrong because a neurotoxin is a secreted protein poison, utterly unrelated to an internal DNA ring.
+- Option D is correct because a plasmid is explicitly a small, accessory ring of DNA that frequently carries resistance genes and is easily shared horizontally.
+
+> **Key Takeaway:** A plasmid is a small, circular, extrachromosomal piece of DNA that carries accessory genes, such as those for antibiotic resistance, and can be shared horizontally.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific, highly unique structural polymer is found exclusively in the cell walls of the Domain Bacteria, acting as their absolute defining characteristic?",
+    options: [
+      "Peptidoglycan, a massive, highly durable, cross-linked network of sugars and amino acids that forms the structural mesh of the bacterial cell wall.",
+      "Solid cellulose, the incredibly tough, highly fibrous carbohydrate that forms the rigid structural trunk of large terrestrial trees.",
+      "Chitin, the highly flexible, heavily waterproof polymer heavily utilized in the exoskeletons of massive marine arthropods.",
+      "Pseudomurein, a highly specialized, incredibly acid-resistant chemical found exclusively in the walls of the extremophile Archaea."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Cell walls act as protective armor for cells, but different domains use completely different materials. Plants use cellulose; fungi use chitin; Archaea use pseudomurein. The domain Bacteria uses a unique, highly durable, chain-link fence made of alternating sugars and short protein bridges called peptidoglycan. This polymer is the primary target for antibiotics like penicillin.
+- Option A is correct because peptidoglycan is the absolute defining, unique structural polymer of bacterial cell walls.
+- Option B is wrong because cellulose belongs strictly to plants.
+- Option C is wrong because chitin belongs strictly to fungi and arthropods.
+- Option D is wrong because pseudomurein belongs strictly to Archaea.
+
+> **Key Takeaway:** Peptidoglycan is the highly unique, defining structural polymer found exclusively in the cell walls of the Domain Bacteria.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What is the exact chronological sequence of the four chemicals applied during the standard Gram stain procedure, and what are the final, definitive color results for Gram-positive and Gram-negative bacteria?",
+    options: [
+      "Safranin, alcohol, iodine, crystal violet; Gram-positive becomes deep pink, while Gram-negative becomes deep purple.",
+      "Crystal violet, iodine, alcohol, safranin; Gram-positive becomes deep purple, while Gram-negative becomes bright pink/red.",
+      "Alcohol, safranin, crystal violet, iodine; Gram-positive becomes totally transparent, while Gram-negative becomes deep black.",
+      "Iodine, crystal violet, safranin, alcohol; Gram-positive becomes deep blue, while Gram-negative becomes bright yellow."
+    ],
+    correct: 1,
+    explanation: `## Insight
+The Gram stain follows a strict, unforgiving logical sequence. First, you flood everything with the primary dye (Crystal Violet), turning all cells purple. Second, you add the mordant (Iodine) to lock the purple dye into massive chunks. Third, you wash with the decolorizer (Alcohol) to aggressively strip the dye out of the thin-walled Gram-negative cells, leaving them invisible. Fourth, you add the counterstain (Safranin) to dye those invisible Gram-negative cells pink. The thick-walled Gram-positive cells simply ignore the pink dye and stay deep purple.
+- Option A is wrong because it completely reverses the chronological sequence and the final color results.
+- Option B is correct because it perfectly lists the four chemicals in exact order and accurately identifies the final, definitive colors.
+- Option C is wrong because alcohol must never be applied first, and the final colors are utterly incorrect.
+- Option D is wrong because iodine must follow crystal violet to act as a mordant, and the final colors are biological nonsense.
+
+> **Key Takeaway:** The exact sequence is Crystal violet, Iodine, Alcohol, Safranin; Gram-positive bacteria finish deep purple, while Gram-negative bacteria finish bright pink/red.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What is the absolute fundamental structural difference in cell wall architecture that explains precisely why Gram-positive and Gram-negative bacteria stain completely different colors?",
+    options: [
+      "Gram-positive bacteria lack any cell wall entirely, while Gram-negative bacteria possess a massive, completely solid iron wall.",
+      "Gram-positive bacteria possess a highly active internal chloroplast that absorbs purple light, while Gram-negative bacteria possess a highly active red eyespot.",
+      "Gram-positive bacteria have a massive, extremely thick peptidoglycan layer that traps the purple dye, whereas Gram-negative bacteria have a very thin peptidoglycan layer hidden under an outer lipid membrane that dissolves in alcohol, allowing the purple dye to escape.",
+      "Gram-positive bacteria actively secrete a massive, highly toxic purple venom, while Gram-negative bacteria actively secrete a highly benign pink slime."
+    ],
+    correct: 2,
+    explanation: `## Insight
+The Gram stain is purely a test of physical wall thickness. Gram-positive bacteria wear a massive, incredibly thick "sweater" of peptidoglycan. When the alcohol wash hits, the pores in this thick sweater shrink, clamping down tight and permanently trapping the massive purple crystal violet-iodine chunks inside. Gram-negative bacteria wear a very thin "shirt" of peptidoglycan covered by a greasy outer lipid membrane. The alcohol instantly dissolves the grease and easily flushes the purple dye straight through the thin shirt, leaving the cell totally colorless and ready to absorb the pink safranin counterstain.
+- Option A is wrong because Gram-positive bacteria absolutely require their massive cell walls to survive.
+- Option B is wrong because bacteria are prokaryotes completely lacking chloroplasts or eyespots.
+- Option C is correct because the massive difference in peptidoglycan thickness and the presence of the outer lipid membrane flawlessly explains the staining disparity.
+- Option D is wrong because the colors are the result of artificial laboratory dyes, not naturally secreted venoms or slimes.
+
+> **Key Takeaway:** Gram-positive bacteria have a massive, thick peptidoglycan layer that traps the dye, whereas Gram-negative bacteria have a thin layer hidden under a dissolvable outer lipid membrane.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What exactly is a 'heterocyst', and what is its highly critical, explicit biological function within a filamentous cyanobacterial colony?",
+    options: [
+      "A highly active, massively inflated sensory cell specifically designed to actively detect and aggressively swim toward bright sunlight.",
+      "A massively dense, heavily armored, deeply dormant internal survival spore specifically designed to wait out centuries of freezing temperatures.",
+      "A highly aggressive, deeply penetrating harpoon cell explicitly designed to physically puncture and drain nutrients from adjacent, competing algae.",
+      "A highly specialized, extremely thick-walled cyanobacterial cell uniquely designed to provide a strictly oxygen-free (anaerobic) environment dedicated exclusively to the highly sensitive process of nitrogen fixation."
+    ],
+    correct: 3,
+    explanation: `## Insight
+Cyanobacteria have a massive biological paradox: they need to produce oxygen to survive (via photosynthesis), but the enzyme they use to "eat" nitrogen from the air (nitrogenase) is instantly and permanently destroyed if it touches a single molecule of free oxygen. To solve this, the filament grows a few special, heavily armored cells called heterocysts. These cells completely shut down their oxygen production and seal their walls, creating a perfectly safe, oxygen-free bunker where nitrogen fixation can occur flawlessly.
+- Option A is wrong because swimming toward light is phototaxis (often using an eyespot), completely unrelated to a heterocyst.
+- Option B is wrong because survival spores in Cyanobacteria are explicitly called akinetes, not heterocysts.
+- Option C is wrong because Cyanobacteria are autotrophs; they do not physically harpoon and drain competing algae.
+- Option D is correct because heterocysts are explicitly specialized, thick-walled, anoxic cells dedicated entirely to protecting the nitrogen fixation process.
+
+> **Key Takeaway:** A heterocyst is a specialized, thick-walled cyanobacterial cell uniquely designed to provide a strictly oxygen-free environment for nitrogen fixation.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Why is the critical biological enzyme 'nitrogenase' so incredibly sensitive to oxygen, and exactly how do heterocysts successfully protect it?",
+    options: [
+      "Oxygen aggressively oxidizes and permanently destroys the iron-molybdenum core of the nitrogenase enzyme; heterocysts build extremely thick walls packed with specific glycolipids and completely shut down internal oxygen production to create a perfectly impenetrable, oxygen-free shield.",
+      "Oxygen aggressively forces the nitrogenase enzyme to violently explode into highly toxic hydrogen gas; heterocysts constantly pump massive amounts of pure water over the enzyme to keep it constantly cooled.",
+      "Oxygen aggressively forces the nitrogenase enzyme to completely solidify into a useless, heavy rock; heterocysts aggressively vibrate to continuously shake the oxygen molecules loose.",
+      "Oxygen aggressively causes the nitrogenase enzyme to instantly evaporate into thin air; heterocysts aggressively freeze the entire cell solid to permanently lock the enzyme in place."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Nitrogenase is a miracle enzyme that smashes apart the incredibly strong triple bonds of atmospheric nitrogen gas ($N_2$). However, the active site of the enzyme contains highly reactive iron and molybdenum. If a single molecule of free oxygen touches this active site, it instantly oxidizes (rusts) the metals, permanently destroying the enzyme. The heterocyst protects the enzyme by laying down massive, extra-thick cell walls packed with highly specialized, greasy glycolipids that physically block oxygen from diffusing in, while simultaneously turning off the cell's own oxygen-producing photosynthetic machinery.
+- Option A is correct because oxygen explicitly oxidizes the enzyme's metallic core, and heterocysts physically block oxygen using thickened, glycolipid-packed walls and shutting down internal $O_2$ production.
+- Option B is wrong because oxygen does not trigger biological hydrogen explosions.
+- Option C is wrong because enzymes do not solidify into rock, and cells do not vibrate to shake oxygen loose.
+- Option D is wrong because oxygen does not cause enzymes to evaporate into thin air.
+
+> **Key Takeaway:** Oxygen aggressively oxidizes and destroys the nitrogenase enzyme; heterocysts physically protect it by building thickened, glycolipid-packed walls and completely shutting down internal oxygen production.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Which of the following correctly identifies three highly distinct, notoriously lethal cyanotoxins, and accurately matches them to the specific human organ system they aggressively target?",
+    options: [
+      "Penicillin (targets the brain), Amoxicillin (targets the liver), and Tetracycline (targets the incredibly fragile kidneys).",
+      "Microcystin (aggressively targets the liver), Anatoxin (aggressively targets the nervous system), and Cylindrospermopsin (aggressively targets both the liver and the kidneys).",
+      "Melanin (targets the skin), Chlorophyll (targets the eyes), and Hemoglobin (targets the deep tissues of the lungs).",
+      "Serotonin (targets the central heart muscle), Dopamine (targets the deep bone marrow), and Endorphin (targets the upper respiratory tract)."
+    ],
+    correct: 1,
+    explanation: `## Insight
+When Cyanobacteria (blue-green algae) bloom out of control, they actively manufacture and release incredibly powerful, complex chemical weapons into the water. Microcystin is a highly stable hepatotoxin that aggressively destroys the structural scaffolding of liver cells, causing massive internal bleeding. Anatoxin is a rapid-acting neurotoxin (Very Fast Death Factor) that locks the respiratory muscles, causing death by suffocation. Cylindrospermopsin is a dual-threat toxin that blocks protein synthesis, severely damaging both the liver and the kidneys simultaneously.
+- Option A is wrong because these are highly beneficial, life-saving antibiotics produced heavily by fungi and bacteria, entirely unrelated to lethal cyanotoxins.
+- Option B is correct because it flawlessly identifies the three most notorious cyanotoxins and perfectly maps them to their respective targeted organ systems (liver, nervous system, liver/kidneys).
+- Option C is wrong because these are standard, highly benign biological pigments and proteins, utterly unrelated to lethal toxins.
+- Option D is wrong because these are standard, naturally occurring human neurotransmitters, absolutely not lethal bacterial poisons.
+
+> **Key Takeaway:** Microcystin aggressively targets the liver, Anatoxin aggressively targets the nervous system, and Cylindrospermopsin aggressively targets both the liver and the kidneys.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "Which specific list flawlessly identifies the exact bacterial species responsible for causing Cholera, Tuberculosis (TB), Syphilis, and Anthrax, respectively?",
+    options: [
+      "Cholera: *Escherichia coli*; TB: *Staphylococcus aureus*; Syphilis: *Neisseria gonorrhoeae*; Anthrax: *Clostridium tetani*.",
+      "Cholera: *Salmonella typhi*; TB: *Streptococcus pneumoniae*; Syphilis: *Chlamydia trachomatis*; Anthrax: *Yersinia pestis*.",
+      "Cholera: *Vibrio cholerae*; TB: *Mycobacterium tuberculosis*; Syphilis: *Treponema pallidum*; Anthrax: *Bacillus anthracis*.",
+      "Cholera: *Helicobacter pylori*; TB: *Haemophilus influenzae*; Syphilis: *Mycoplasma genitalium*; Anthrax: *Borrelia burgdorferi*."
+    ],
+    correct: 2,
+    explanation: `## Insight
+Cholera is a devastating, dehydrating intestinal disease caused by the comma-shaped *Vibrio cholerae*. Tuberculosis is a highly resilient, airborne lung infection caused by the wax-coated *Mycobacterium tuberculosis*. Syphilis is a severe, multi-stage systemic infection caused by the corkscrew-shaped spirochete *Treponema pallidum*. Anthrax is a highly lethal, spore-driven disease caused by the indestructible endospores of *Bacillus anthracis*.
+- Option A is wrong because it incorrectly maps every single disease to the completely wrong pathogen.
+- Option B is wrong because it incorrectly attributes the diseases to typhoid, standard pneumonia, chlamydia, and the bubonic plague.
+- Option C is correct because it flawlessly and exactly matches all four devastating diseases to their definitive, widely recognized bacterial causative agents.
+- Option D is wrong because it incorrectly attributes the diseases to stomach ulcers, childhood meningitis, mild STIs, and Lyme disease.
+
+> **Key Takeaway:** Cholera is caused by *Vibrio cholerae*, TB by *Mycobacterium tuberculosis*, Syphilis by *Treponema pallidum*, and Anthrax by *Bacillus anthracis*.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "What are the three fundamental, universally recognized 'Domains of Life' that sit at the absolute top of the modern biological classification hierarchy?",
+    options: [
+      "Animalia, Plantae, and Fungi, representing the three most massive and visible eukaryotic kingdoms.",
+      "Prokaryota, Monera, and Protista, representing the three most primitive, microscopic, and ancient forms of life.",
+      "Troposphere, Stratosphere, and Mesosphere, representing the three highly distinct atmospheric spheres of the planet.",
+      "Bacteria, Archaea, and Eukarya, representing the ultimate genetic separation of all known cellular life on Earth."
+    ],
+    correct: 3,
+    explanation: `## Insight
+In 1990, Carl Woese completely revolutionized biology by proving that not all microbes are the same. By analyzing the deep, fundamental genetic code (ribosomal RNA), he discovered that the extremophile Archaea were just as different from standard Bacteria as they were from humans. He created the Domain system to sit above the Kingdoms, permanently dividing all cellular life into three massive, fundamentally distinct genetic branches.
+- Option A is wrong because these are merely kingdoms tucked entirely inside the single domain Eukarya.
+- Option B is wrong because Prokaryota and Monera are completely obsolete, scientifically inaccurate historical classifications.
+- Option C is wrong because these are physical atmospheric layers, utterly unrelated to biological taxonomy.
+- Option D is correct because Bacteria, Archaea, and Eukarya are the three undisputed, universally recognized Domains of Life.
+
+> **Key Takeaway:** The three ultimate, fundamental Domains of Life are Bacteria, Archaea, and Eukarya.`
+  },
+  {
+    course: "BI110", term: "T2",
+    q: "In the study of bacterial morphology, what are the three absolute primary, fundamental shapes used to initially classify bacterial cells under a microscope?",
+    options: [
+      "Coccus (perfectly spherical), Bacillus (cylindrical, rod-shaped), and Spirillum/Spirochete (rigid or flexible spiral-shaped).",
+      "Icosahedral (perfectly geometric 20-sided), Helical (rigid rod), and Filamentous (highly tangled thread).",
+      "Equant (perfectly blocky), Tabular (flat and flaky), and Acicular (long, sharp needle).",
+      "Plutonic (deep and massive), Volcanic (surface erupted), and Clastic (physically shattered)."
+    ],
+    correct: 0,
+    explanation: `## Insight
+Before modern DNA sequencing, the very first step in identifying a bacterium was simply looking at its physical outline. The Greek and Latin roots perfectly describe these three fundamental shapes: a perfect, round ball is a "coccus" (berry); a straight, elongated cylinder is a "bacillus" (stick or rod); and a wavy, twisted corkscrew is a "spirillum" or "spirochete." Every single bacterium on Earth is a variation of one of these three fundamental architectures.
+- Option A is correct because it flawlessly lists and defines the three absolute primary shapes of all bacterial cells.
+- Option B is wrong because these shapes perfectly describe non-cellular viral capsids (like TMV or Ebola), completely unrelated to bacterial cells.
+- Option C is wrong because these explicitly describe inorganic mineral crystal habits (like quartz or mica), entirely unrelated to bacteria.
+- Option D is wrong because these explicitly describe massive geological rock formations, utterly unrelated to microscopic bacteria.
+
+> **Key Takeaway:** The three primary, fundamental bacterial shapes are Coccus (spherical), Bacillus (rod-shaped), and Spirillum/Spirochete (spiral-shaped).`
+  },
+
+  
   //BI110 TERM 2 VIRUSES NEW CONTENT 
   
   
