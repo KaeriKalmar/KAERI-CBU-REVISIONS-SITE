@@ -1,5 +1,5 @@
 // ============================================================
-// KAERI EDTECH — EXAM COUNTDOWN v1.0
+// KAERI EDTECH — EXAM COUNTDOWN v1.1 (Live)
 // Additive only – no changes to script.js or index.html structure
 // ============================================================
 
@@ -9,10 +9,9 @@
   // Use Lusaka time (GMT+2). The time is set to midnight.
   const TARGET_DATE = new Date('2026-08-24T00:00:00+02:00');
 
-  // ── 2. CREATE THE BANNER ELEMENT ─────────────────────────
+  // ── 2. CREATE THE BANNER TEMPLATE ────────────────────────
   const banner = document.createElement('div');
   banner.id = 'sessional-countdown';
-  // Inline styles to match the dark Kaeri theme
   banner.style.cssText = `
     display: none;
     text-align: center;
@@ -24,106 +23,89 @@
     font-size: 0.95em;
     font-family: 'Roboto', sans-serif;
   `;
-  // Placeholder text – will be updated immediately
   banner.innerHTML = '📅 <span id="countdown-days">--</span> days until Sessional Exams (24 Aug 2026)';
 
-  // ── 3. CALCULATE DAYS REMAINING ──────────────────────────
-  function updateCountdown() {
-    const now = new Date();
-    const diffTime = TARGET_DATE - now;
-    let daysRemaining = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    if (diffTime < 0) {
-      // Past the target date – keep hidden
-      daysRemaining = -1;
-    }
-
-    const daysSpan = banner.querySelector('#countdown-days');
+  // ── 3. UNIFIED, LIVE REFRESH LOGIC ───────────────────────
+  // Days remaining while >24h out; switches to a ticking
+  // HH:MM:SS countdown during the final 24 hours.
+  function refreshBanner(b) {
+    const daysSpan = b.querySelector('#countdown-days');
     if (!daysSpan) return;
 
-    if (daysRemaining > 0) {
-      daysSpan.textContent = daysRemaining;
-      banner.style.display = 'block';
-    } else if (daysRemaining === 0) {
-      daysSpan.textContent = 'Today';
-      banner.style.display = 'block';
-    } else {
-      // Negative – hide the banner
-      banner.style.display = 'none';
+    const diffMs = TARGET_DATE - new Date();
+
+    if (diffMs <= 0) {
+      b.style.display = 'none';
+      return;
     }
+
+    const daysRemaining = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+
+    if (daysRemaining > 1) {
+      daysSpan.textContent = daysRemaining;
+    } else {
+      // Final 24 hours – live ticking countdown
+      const totalSeconds = Math.floor(diffMs / 1000);
+      const h = Math.floor(totalSeconds / 3600);
+      const m = Math.floor((totalSeconds % 3600) / 60);
+      const s = totalSeconds % 60;
+      const pad = n => String(n).padStart(2, '0');
+      daysSpan.textContent = `${pad(h)}:${pad(m)}:${pad(s)}`;
+    }
+
+    b.style.display = 'block';
+  }
+
+  function refreshAllBanners() {
+    document.querySelectorAll('#sessional-countdown').forEach(refreshBanner);
   }
 
   // ── 4. INSERT INTO BOTH VIEWS ────────────────────────────
   function injectBanners() {
     const landingView = document.getElementById('landing-view');
     const courseView  = document.getElementById('course-view');
-    
-    // Clone the banner for each view so both can show independently
-    if (landingView) {
-      const landingBanner = banner.cloneNode(true);
-      landingView.insertBefore(landingBanner, landingView.firstChild);
+
+    if (landingView && !landingView.querySelector('#sessional-countdown')) {
+      landingView.insertBefore(banner.cloneNode(true), landingView.firstChild);
     }
-    if (courseView) {
-      const courseBanner = banner.cloneNode(true);
-      courseView.insertBefore(courseBanner, courseView.firstChild);
+    if (courseView && !courseView.querySelector('#sessional-countdown')) {
+      courseView.insertBefore(banner.cloneNode(true), courseView.firstChild);
     }
-    // After cloning, update all banners (they share the same logic)
-    updateAllCountdowns();
+    refreshAllBanners();
   }
 
-  function updateAllCountdowns() {
-    const banners = document.querySelectorAll('#sessional-countdown');
-    banners.forEach(b => {
-      const daysSpan = b.querySelector('#countdown-days');
-      if (!daysSpan) return;
-      
-      const now = new Date();
-      const diffTime = TARGET_DATE - now;
-      let daysRemaining = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      if (diffTime < 0) daysRemaining = -1;
-
-      if (daysRemaining > 0) {
-        daysSpan.textContent = daysRemaining;
-        b.style.display = 'block';
-      } else if (daysRemaining === 0) {
-        daysSpan.textContent = 'Today';
-        b.style.display = 'block';
-      } else {
-        b.style.display = 'none';
-      }
-    });
-  }
-
-  // ── 5. REFRESH AFTER COURSE LOAD ─────────────────────────
-  // Since the course view is toggled, we need to refresh the
-  // countdown whenever a course is selected. We do this by
-  // overriding the existing loadCourse function safely.
+  // ── 5. REFRESH AFTER VIEW SWITCHES ───────────────────────
   const originalLoadCourse = window.loadCourse;
   if (typeof originalLoadCourse === 'function') {
     window.loadCourse = function () {
       originalLoadCourse.apply(this, arguments);
-      // Small delay to ensure the view has switched and the
-      // cloned banner is present in the course view.
-      setTimeout(updateAllCountdowns, 100);
+      setTimeout(refreshAllBanners, 100);
     };
   }
 
-  // Also refresh when returning to menu
   const originalBackToMenu = window.backToMenu;
   if (typeof originalBackToMenu === 'function') {
     window.backToMenu = function () {
       originalBackToMenu.apply(this, arguments);
-      setTimeout(updateAllCountdowns, 100);
+      setTimeout(refreshAllBanners, 100);
     };
   }
 
-  // ── 6. INITIALISE ────────────────────────────────────────
+  // ── 6. KEEP IT LIVE ───────────────────────────────────────
+  // Tick every second — cheap (max 2 DOM nodes) and keeps the
+  // day count and the final-24h HH:MM:SS countdown perfectly
+  // in sync without needing a reload or course switch.
+  setInterval(refreshAllBanners, 1000);
+
+  // Catch up immediately if the tab/device was asleep.
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) refreshAllBanners();
+  });
+
+  // ── 7. INITIALISE ────────────────────────────────────────
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      injectBanners();
-      updateAllCountdowns();
-    });
+    document.addEventListener('DOMContentLoaded', injectBanners);
   } else {
     injectBanners();
-    updateAllCountdowns();
   }
 })();
