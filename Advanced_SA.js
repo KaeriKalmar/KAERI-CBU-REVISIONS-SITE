@@ -1,7 +1,8 @@
 // ============================================================
-// === KAERI EDTECH — HYBRID SHORT ANSWER PATCH (v1.0) ===
+// === KAERI EDTECH — HYBRID SHORT ANSWER PATCH (v1.1) ===
+// === FINAL RELEASE — PRODUCTION READY ===
 // === Drop-in additive override for the SA marking engine ===
-// === Requires: kaeri_master.js loaded BEFORE this file  ===
+// === Fix: Properly increments global currentQuestionIndex ===
 // === Data contract: question must have { q, keywords,   ===
 // ===   explanation } — zero schema changes needed.       ===
 // ============================================================
@@ -103,8 +104,8 @@
 
     // ──────────────────────────────────────────────────────────
     // 2. CONTRADICTION PATTERNS
-    //    Regex pairs: if pattern[0] (negative frame) is found
-    //    near keyword, the match is penalised.
+    //    Regex pairs: if pattern is found near keyword,
+    //    the match is penalised.
     // ──────────────────────────────────────────────────────────
     const CONTRADICTION_PATTERNS = [
         /\b(not|no|never|doesn'?t|don'?t|cannot|can'?t|prevents?|stops?|blocks?|inhibits?)\s+\w{0,10}\s*(allow|caus|enabl|produc|creat|increas)/i,
@@ -251,7 +252,7 @@
     // ──────────────────────────────────────────────────────────
     function phraseMatches(phrase, studentTokens) {
         const phraseTokens = normalise(phrase);
-        if (phraseTokens.length < 2) return null; // not a phrase
+        if (phraseTokens.length < 2) return null;
         return phraseTokens.every(pt =>
             studentTokens.some(st => st === pt || jaroWinkler(st, pt) >= 0.88)
         );
@@ -266,7 +267,6 @@
         const lc = rawAnswer.toLowerCase();
         const kwIdx = lc.indexOf(keyword.toLowerCase());
         if (kwIdx === -1) return 0;
-        // Check a window of ±60 chars around keyword
         const window = lc.slice(Math.max(0, kwIdx - 60), kwIdx + keyword.length + 60);
         for (const pattern of CONTRADICTION_PATTERNS) {
             if (pattern.test(window)) return 0.4;
@@ -292,7 +292,6 @@
         const studentTokens = normalise(rawAnswer);
         const lc = rawAnswer.toLowerCase();
 
-        // Legacy check (original engine behaviour preserved)
         const isLegacyPass = keywords.some(k => lc.includes(k.toLowerCase()));
 
         let weightedScore = 0;
@@ -305,7 +304,7 @@
             const weight = keywordWeight(kw);
             totalWeight += weight;
 
-            // --- Step A: Direct substring (legacy fast-path) ---
+            // --- Step A: Direct substring ---
             if (lc.includes(kw.toLowerCase())) {
                 const penalty = contradictionPenalty(rawAnswer, kw);
                 weightedScore += weight * (1 - penalty);
@@ -348,17 +347,14 @@
                 const partialWeight = weight * tokenRatio;
                 const penalty = contradictionPenalty(rawAnswer, kw);
                 weightedScore += partialWeight * (1 - penalty);
-                // Full match credit only if 100% tokens hit
                 if (tokenRatio === 1.0) {
                     matchedKeywords.push(kw);
                 } else {
-                    // Partial — show as "nearly matched"
                     matchedKeywords.push(`~${kw}`);
                 }
                 return;
             }
 
-            // --- No match ---
             missedKeywords.push(kw);
         });
 
@@ -398,7 +394,6 @@
                 matchedKeywords, missedKeywords, isLegacyPass } = result;
         const grade = gradeLabel(percent);
 
-        // Pill renderer
         function pill(text, bg, color) {
             const display = text.startsWith('~') ? text.slice(1) + ' ≈' : text;
             return `<span style="
@@ -410,18 +405,16 @@
 
         const matchedPills = matchedKeywords.map(k =>
             k.startsWith('~')
-                ? pill(k, '#fff3cd', '#856404')   // partial — amber
-                : pill(k, '#d1f7e0', '#145a32')   // full — green
+                ? pill(k, '#fff3cd', '#856404')
+                : pill(k, '#d1f7e0', '#145a32')
         ).join('');
 
         const missedPills = missedKeywords.map(k =>
             pill(k, '#f8d7da', '#721c24')
         ).join('');
 
-        // Score bar
         const barColor = percent >= 75 ? '#28a745' : percent >= 50 ? '#ffc107' : '#dc3545';
 
-        // Insight message
         let insightMsg = '';
         if (percent === 100) {
             insightMsg = 'Complete recall — every concept identified correctly.';
@@ -438,7 +431,6 @@
             background:#0d1b2a; border:1px solid #3e506e; border-radius:10px;
             padding:15px 16px; margin:10px 0; font-family:inherit;
         ">
-            <!-- Header row -->
             <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span style="font-size:1.5em;">${grade.icon}</span>
@@ -453,22 +445,18 @@
                 </div>
             </div>
 
-            <!-- Progress bar -->
             <div style="height:6px; background:#1e2a3a; border-radius:3px; overflow:hidden; margin-bottom:14px;">
                 <div style="width:${percent}%; height:100%; background:${barColor}; border-radius:3px; transition:width 0.5s;"></div>
             </div>
 
-            <!-- Insight message -->
             <div style="color:#c9d1d9; font-size:0.88em; line-height:1.5; margin-bottom:12px;">${insightMsg}</div>
 
-            <!-- Matched keywords -->
             ${matchedKeywords.length > 0 ? `
             <div style="margin-bottom:10px;">
                 <div style="font-size:0.72em; font-weight:700; color:#72efdd; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:5px;">✓ Identified</div>
                 <div>${matchedPills}</div>
             </div>` : ''}
 
-            <!-- Missed keywords -->
             ${missedKeywords.length > 0 ? `
             <div style="margin-bottom:4px;">
                 <div style="font-size:0.72em; font-weight:700; color:#f08080; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:5px;">✗ Missing Concepts</div>
@@ -479,11 +467,8 @@
 
     // ──────────────────────────────────────────────────────────
     // 13. SCORE ACCUMULATOR
-    //     Replaces integer counting with weighted accumulation.
-    //     Session total and correct are tracked separately so
-    //     the final score card shows both legacy and hybrid.
     // ──────────────────────────────────────────────────────────
-    let _hybridSessionScores = [];  // Array of percent per question
+    let _hybridSessionScores = [];
 
     function resetHybridSession() {
         _hybridSessionScores = [];
@@ -500,12 +485,10 @@
     }
 
     // ──────────────────────────────────────────────────────────
-    // 14. OVERRIDE: displayShortAnswerQuestion
-    //     Identical to original — no visual changes to the
-    //     question display. Included for completeness / safety.
+    // 14. OVERRIDE: displayShortAnswerQuestion (unchanged)
     // ──────────────────────────────────────────────────────────
+    const originalDisplay = window.displayShortAnswerQuestion;
     window.displayShortAnswerQuestion = function () {
-        // Reset lock (matches original)
         window.isSubmissionLocked = false;
 
         const container = document.getElementById('quiz-form');
@@ -531,9 +514,10 @@
     };
 
     // ──────────────────────────────────────────────────────────
-    // 15. OVERRIDE: checkShortAnswer  ← THE CORE CHANGE
+    // 15. OVERRIDE: checkShortAnswer  (CORE CHANGE)
     //     Preserves original flow + adds hybrid intelligence.
     // ──────────────────────────────────────────────────────────
+    const originalCheck = window.checkShortAnswer;
     window.checkShortAnswer = function () {
         if (window.isSubmissionLocked) return;
 
@@ -545,7 +529,6 @@
             return;
         }
 
-        // Lock submission
         window.isSubmissionLocked = true;
         const submitBtn = document.getElementById('sa-submit-btn');
         if (submitBtn) {
@@ -558,24 +541,18 @@
         const q = currentQuizData[currentQuestionIndex];
         const result = hybridMark(rawAnswer, q.keywords);
 
-        // ── Legacy compatibility ──────────────────────────────
-        // Original engine increments currentScore by 1 for a
-        // pass. We preserve this so showFinalShortAnswerScore
-        // still works unmodified. Hybrid score is layered on top.
-        const isPass = result.percent >= 60; // 60% threshold = "correct"
+        // Legacy compatibility — original pass/fail still works
+        const isPass = result.percent >= 60;
         if (isPass) {
             window.currentScore = (window.currentScore || 0) + 1;
         }
         recordHybridScore(result.percent);
 
-        // ── Build result panel ────────────────────────────────
         const resultDiv = document.getElementById('result');
         resultDiv.innerHTML = '';
 
-        // Hybrid feedback panel
         resultDiv.innerHTML += buildFeedbackHTML(result, q);
 
-        // Explanation box (original structure preserved)
         if (q.explanation) {
             resultDiv.innerHTML += `
                 <div class="explanation-box">
@@ -583,7 +560,6 @@
                 </div>`;
         }
 
-        // TTS feedback (humanised)
         const ttsText = isPass
             ? `Good. You scored ${result.percent} percent. ${result.missedKeywords.length > 0
                 ? 'Missing concepts: ' + result.missedKeywords.join(', ') + '.'
@@ -592,10 +568,10 @@
                 q.explanation ? 'Explanation: ' + humanizeLaTeX(q.explanation) : ''}`;
         readText(ttsText);
 
-        // ── Advance index ─────────────────────────────────────
-        window.currentQuestionIndex = (window.currentQuestionIndex || 0) + 1;
+        // ★★★ FIX: increment global currentQuestionIndex (not window) ★★★
+        currentQuestionIndex = (currentQuestionIndex || 0) + 1;
 
-        const isLast = window.currentQuestionIndex >= currentQuizData.length;
+        const isLast = currentQuestionIndex >= currentQuizData.length;
         const nextBtn = document.createElement('button');
         nextBtn.innerText = isLast ? 'Finish' : 'Next ➡️';
         nextBtn.onclick = isLast
@@ -609,8 +585,8 @@
     // ──────────────────────────────────────────────────────────
     // 16. OVERRIDE: showFinalShortAnswerScore
     //     Adds hybrid average alongside the existing score card.
-    //     All original buttons preserved.
     // ──────────────────────────────────────────────────────────
+    const originalFinal = window.showFinalShortAnswerScore;
     window.showFinalShortAnswerScore = function () {
         const container = document.getElementById('quiz-form');
         container.innerHTML = '';
@@ -621,7 +597,6 @@
         const legacyPercent = Math.round((legacyScore / total) * 100);
         const hybridAvg     = hybridSessionAverage();
 
-        // Choose which percent to use for the comment
         const displayPercent = hybridAvg;
         let comment =
             displayPercent >= 90 ? '🎉 Excellent work!' :
@@ -634,17 +609,14 @@
         <div style="text-align:center; padding:10px 0 20px;">
             <h2 style="color:white; margin-bottom:6px;">Session Complete!</h2>
 
-            <!-- Dual score display -->
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:380px; margin:18px auto;">
                 
-                <!-- Legacy score -->
                 <div style="background:#1e2a3a; border:1px solid #3e506e; border-radius:10px; padding:16px 10px;">
                     <div style="font-size:0.7em; color:#a0a8b4; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:4px;">Pass / Fail</div>
                     <div style="font-size:2em; font-weight:800; color:white;">${legacyScore}/${total}</div>
                     <div style="font-size:0.85em; color:#72efdd;">${legacyPercent}%</div>
                 </div>
 
-                <!-- Hybrid score -->
                 <div style="background:#0d1b2a; border:2px solid ${hybridGrade.color}; border-radius:10px; padding:16px 10px;">
                     <div style="font-size:0.7em; color:#a0a8b4; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:4px;">Hybrid Score</div>
                     <div style="font-size:2em; font-weight:800; color:${hybridGrade.color};">${hybridAvg}%</div>
@@ -654,7 +626,6 @@
 
             <p style="color:#a0a8b4; font-style:italic; margin-bottom:20px;">${comment}</p>
 
-            <!-- What is Hybrid Score? tooltip -->
             <details style="background:#1e2a3a; border:1px solid #3e506e; border-radius:8px; padding:10px 14px; max-width:380px; margin:0 auto 20px; text-align:left; cursor:pointer;">
                 <summary style="color:#72efdd; font-size:0.85em; font-weight:600; list-style:none;">ℹ️ What is the Hybrid Score?</summary>
                 <p style="color:#a0a8b4; font-size:0.82em; line-height:1.6; margin:10px 0 0;">
@@ -663,7 +634,7 @@
             </details>
         </div>`;
 
-        // ── Restore all original buttons ──────────────────────
+        // Restore original buttons
         const restartBtn = document.createElement('button');
         restartBtn.innerText = '🔁 Try Again';
         restartBtn.className = 'restart-button';
@@ -685,7 +656,6 @@
         previewBtn.onclick = generatePrintPreview;
         container.appendChild(previewBtn);
 
-        // Switch modality panel (original structure)
         const switchDiv = document.createElement('div');
         switchDiv.style.cssText = 'margin-top:30px; padding:18px; background:#0d1b2a; border-radius:12px; border:1px solid #3e506e; text-align:center;';
         switchDiv.innerHTML = `
@@ -698,10 +668,8 @@
         `;
         container.appendChild(switchDiv);
 
-        // ── Reset hybrid session accumulator ──────────────────
         resetHybridSession();
 
-        // ── Progress & analytics (original calls preserved) ───
         recordProgressSession('shortAnswer', legacyScore, total,
             `${currentCourse} ${currentTerm} Short Answer`);
         logAnalyticsEvent('quiz_complete',
@@ -721,6 +689,6 @@
     // ──────────────────────────────────────────────────────────
     // 18. PATCH CONFIRMATION
     // ──────────────────────────────────────────────────────────
-    console.info('[Kaeri] ✅ Hybrid Short Answer Patch v1.0 loaded.');
+    console.info('[Kaeri] ✅ Hybrid Short Answer Patch v1.1 (fixed index) loaded.');
 
 })();
