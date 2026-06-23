@@ -501,7 +501,6 @@ async function renderDocuments() {
         </div>
     </div>`;
 });
-
         html += `</div>`;
         html += `<div style="text-align:center; margin-top:20px;"><button class="restart-button" onclick="backToMenu()">⬅ Back to Menu</button></div>`;
         container.innerHTML = html;
@@ -2981,72 +2980,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .viewer-loader {
             position: absolute;
             top: 50px; /* below header */
-            left: 0;
-            width: 100%;
-            height: calc(100% - 100px); /* accounting for header + footer */
-            background: #1a1a2e;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-        }
-
-        .viewer-skeleton-box {
-            width: 80%;
-            height: 60%;
-            background: linear-gradient(90deg, #2b3a55 25%, #3e506e 50%, #2b3a55 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-            border-radius: 8px;
-        }
-
-        @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-
-        .skeleton {
-            height: 180px;
-            background: linear-gradient(90deg, #2b3a55 25%, #3e506e 50%, #2b3a55 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-            border-radius: 10px;
-        }
-
-        /* ── Print modal preview item styles ── */
-        .print-item {
-            margin-bottom: 14px;
-            padding: 12px 14px;
-            border: 1px solid #dde3ea;
-            border-left: 5px solid #1a73e8;
-            border-radius: 5px;
-            background: #ffffff;
-            page-break-inside: avoid;
-        }
-        .print-item.essay  { border-left-color: #e67e00; }
-        .print-item.sa     { border-left-color: #b5830f; }
-        .print-item.flash  { border-left-color: #6f42c1; }
-        .item-label {
-            font-size: 0.72em; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.8px;
-            color: #1a73e8; margin-bottom: 5px;
-        }
-        .print-item.essay .item-label { color: #e67e00; }
-        .print-item.sa    .item-label { color: #b5830f; }
-        .print-item.flash .item-label { color: #6f42c1; }
-        .item-q   { font-size: 0.95em; color: #1a1a1a; line-height: 1.5; margin-bottom: 6px; }
-        .item-ans { font-size: 0.9em; color: #145a32; background: #eafaf1; padding: 5px 8px; border-radius: 3px; margin-bottom: 5px; font-weight: 600; }
-        .item-exp { font-size: 0.87em; color: #444; background: #f7f8fa; padding: 5px 8px; border-radius: 3px; line-height: 1.45; }
-
-        /* ── Fallback: hide app UI if user presses Ctrl+P directly ── */
-        @media print {
-            body > *:not(#printable-summary) { display: none !important; }
-            #printable-summary { display: block !important; }
-        }
-    `;
-    document.head.appendChild(style);
-})();header */
             left: 0;
             width: 100%;
             height: calc(100% - 100px); /* accounting for header + footer */
