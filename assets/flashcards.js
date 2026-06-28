@@ -13767,545 +13767,3285 @@ const flashcards = {
 
 
 
-// =================================================================
-  // CH110 - MODULE 1: INTRODUCTION TO CHEMISTRY
-  // =================================================================
+ {
+  "TOPIC 1: INTRODUCTION TO GENERAL CHEMISTRY": [
+    // ============================================================
+    // SECTION A: SCIENTIFIC METHOD & FOUNDATIONS (Cards 1 – 4)
+    // ============================================================
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 1 - Scientific Method & Matter": [
+    // Card 1
     {
-      "front": "What is chemistry?",
-      "back": "Chemistry is the study of matter and the changes it undergoes.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Foundations\nWhat is the formal definition of **Chemistry**?",
+      back: "## The Central Science\n\n**Insight:** Chemistry acts as a bridge between the fundamental laws of physics and the complex biological systems of life.\n\n**Analysis:** Chemistry is the branch of natural science that studies the **composition**, structure, properties, and changes of matter.\n\n> **Key Takeaway:** Chemistry is the rulebook for how the physical world works."
     },
+    // Card 2
     {
-      "front": "What are the 5 steps of the Scientific Method?",
-      "back": "1. Careful definition of the problem\n2. Performing experiments (observation/data)\n3. Interpretation of results (hypothesis)\n4. Summarizing information as a law\n5. Developing theories",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Scientific Method\nIn science, what exactly is a **Hypothesis**?",
+      back: "## The Testable Explanation\n\n**Insight:** A hypothesis is not a random guess; it is an informed statement that must be capable of being proven wrong.\n\n**Analysis:** A hypothesis is a **tentative**, testable explanation for a set of observations. It must be **falsifiable**, meaning an experiment can potentially disprove it.\n\n> **Key Takeaway:** A hypothesis is a 'proposed answer' that must survive rigorous testing to become a theory."
     },
+    // Card 3
     {
-      "front": "What is the difference between qualitative and quantitative data?",
-      "back": "Qualitative data: General observations (e.g., 'solution turned blue').\nQuantitative data: Numbers obtained by measurements (e.g., '25.3 mL').",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Scientific Method\nWhat defines a **Scientific Law**?",
+      back: "## The Observed Pattern\n\n**Insight:** Laws tell us what will happen every time, but they do not explain the mechanism behind the event.\n\n**Analysis:** A scientific law is a concise, universally applicable statement—often a mathematical equation like $P_1V_1 = P_2V_2$—that describes a fundamental relationship in nature observed to be true under **fixed conditions**.\n\n> **Key Takeaway:** Laws describe 'What' happens; Theories explain 'Why' it happens."
     },
+    // Card 4
     {
-      "front": "Define hypothesis.",
-      "back": "A tentative explanation for a set of observations.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Scientific Method\nHow does a **Scientific Theory** differ from a Law?",
+      back: "## The Explanatory Framework\n\n**Insight:** In science, 'theory' is the highest level of certainty, representing a model that has survived countless attempts at disproof.\n\n**Analysis:** A theory is a well-substantiated, **unifying principle** that explains *why* facts and laws occur. For example, the Kinetic Molecular Theory explains *why* gases follow Boyle's Law.\n\n> **Key Takeaway:** A theory provides the underlying mechanism or model for our observations."
     },
+
+    // ============================================================
+    // SECTION B: CLASSIFICATION OF MATTER (Cards 5 – 12)
+    // ============================================================
+
+    // Card 5
     {
-      "front": "Define scientific law.",
-      "back": "A concise verbal or mathematical statement of a relationship between phenomena that is always the same under the same conditions (e.g., F = ma).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nWhat is the strict scientific definition of **Matter**?",
+      back: "## Mass and Volume\n\n**Insight:** While everything we touch is matter, energy forms like light and heat are not matter because they lack mass and volume.\n\n**Analysis:** Matter is anything that occupies physical **space** (volume) and possesses **mass** (the quantity of substance).\n\n> **Key Takeaway:** To be matter, it must have mass and take up space."
     },
+    // Card 6
     {
-      "front": "Define scientific theory.",
-      "back": "A unifying principle that explains a body of facts and/or laws. Theories are tested and modified if disproven.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific method"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nWhat defines a **Pure Substance** in chemistry?",
+      back: "## Fixed Composition\n\n**Insight:** Tap water is a mixture due to dissolved minerals; only distilled or deionized water qualifies as a pure substance in the lab.\n\n**Analysis:** A pure substance has a **definite composition** and distinct chemical properties. It cannot be separated into simpler components by any **physical process** (like filtering or boiling).\n\n> **Key Takeaway:** Pure substances include only elements and compounds."
     },
+    // Card 7
     {
-      "front": "What is matter?",
-      "back": "Anything that occupies space and has mass.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nDefine an **Element** based on its fundamental nature.",
+      back: "## Atomic Identity\n\n**Insight:** The number of protons is the 'ID card' of an atom; if this number changes, the element itself changes.\n\n**Analysis:** An element is a pure substance that cannot be broken down chemically. It consists entirely of atoms that have the same **atomic number** (number of protons).\n\n> **Key Takeaway:** Elements are the primary building blocks of all matter."
     },
+    // Card 8
     {
-      "front": "What is a substance?",
-      "back": "A form of matter that has a definite (constant) composition and distinct properties. It cannot be separated by physical processes (e.g., water, gold).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nWhat strictly defines a **Compound**?",
+      back: "## Chemical Unions\n\n**Insight:** Compounds like $\\ce{H2O}$ have completely different properties than the elements that make them up ($\\ce{H2}$ and $\\ce{O2}$ gases).\n\n**Analysis:** A compound is a pure substance composed of two or more different elements **chemically bonded** in a fixed, unchangeable ratio by mass.\n\n> **Key Takeaway:** Compounds can only be separated by chemical means (like electrolysis), never physical ones."
     },
+    // Card 9
     {
-      "front": "What is a mixture?",
-      "back": "A combination of two or more substances in which the substances retain their distinct identities. They can be separated by physical methods.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nCan a **Compound** be separated by physical methods?",
+      back: "## Chemical vs. Physical Separation\n\n**Insight:** If you can filter it or boil it apart, it was a mixture, not a compound.\n\n**Analysis:** No. A compound can only be separated into its elements through **chemical reactions** that break chemical bonds (e.g., electrolysis of water).\n\n> **Key Takeaway:** Physical methods (filtering, magnetism) only work on mixtures."
     },
+    // Card 10
     {
-      "front": "Difference between homogeneous and heterogeneous mixtures?",
-      "back": "Homogeneous: Composition is uniform throughout (e.g., sugar water).\nHeterogeneous: Composition is not uniform (e.g., sand and iron filings).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Matter\nWhat is a **Mixture** in the context of matter?",
+      back: "## Physical Combinations\n\n**Insight:** In a mixture, components are just 'sitting next to each other' and keep their original chemical identities.\n\n**Analysis:** A mixture is a **physical combination** of two or more substances where each substance retains its own properties and can be separated by **physical methods**.\n\n> **Key Takeaway:** Mixtures have variable compositions, unlike pure substances."
     },
+    // Card 11
     {
-      "front": "What is an element?",
-      "back": "A substance that cannot be separated into simpler substances by chemical means. Composed of only one kind of atom.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Mixtures\nDescribe a **Homogeneous Mixture** and provide an example.",
+      back: "## Solutions\n\n**Insight:** Homogeneous mixtures are visually identical throughout, even under a microscope.\n\n**Analysis:** A homogeneous mixture (or **solution**) has a perfectly uniform composition. An example is **sugar dissolved in water**, where you cannot see the individual components.\n\n> **Key Takeaway:** Homogeneous = Visually indistinguishable and uniform."
     },
+    // Card 12
     {
-      "front": "What is a compound?",
-      "back": "A substance composed of two or more elements chemically united in fixed proportions. Examples: H₂O, CO₂.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Mixtures\nWhat are the key differences between **Homogeneous** and **Heterogeneous** mixtures?",
+      back: "## Uniform vs. Non-Uniform\n\n**Insight:** The distinction is purely about visual uniformity and the ability to see separate components.\n\n**Analysis:** \n- **Homogeneous:** Uniform throughout, cannot see components (e.g., salt water).\n- **Heterogeneous:** Non-uniform, components are visible (e.g., sand and water).\n\n> **Key Takeaway:** Both are physical combinations; the difference is in uniformity of distribution."
     },
+    // Card 13
     {
-      "front": "Define physical vs. chemical properties.",
-      "back": "Physical: Can be measured/observed without changing composition (e.g., melting point).\nChemical: Observed only during a chemical change (e.g., flammability).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Mixtures\nHow do you identify a **Heterogeneous Mixture**?",
+      back: "## Multiple Phases\n\n**Insight:** If you can see layers, cloudiness, or different chunks, the mixture is heterogeneous.\n\n**Analysis:** A heterogeneous mixture is a combination where the composition is **not uniform**. You can visibly distinguish the different components (e.g., **oil and water**).\n\n> **Key Takeaway:** Heterogeneous mixtures contain physically separate phases."
     },
+
+    // ============================================================
+    // SECTION C: PROPERTIES OF MATTER (Cards 14 – 17)
+    // ============================================================
+
+    // Card 14
     {
-      "front": "Define extensive vs. intensive properties.",
-      "back": "Extensive: Depends on amount of matter (e.g., mass, volume).\nIntensive: Does not depend on amount (e.g., density, temperature).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "classification of matter"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Properties\nDefine a **Physical Property** of matter.",
+      back: "## Observation without Change\n\n**Insight:** If you can measure it and still have the same substance at the end, it is a physical property.\n\n**Analysis:** These are characteristics that can be measured without changing the **chemical identity** of the substance (e.g., color, density, boiling point).\n\n> **Key Takeaway:** Phase changes (like boiling) involve physical properties, not chemical ones."
+    },
+    // Card 15
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Properties\nWhat defines a **Chemical Property**?",
+      back: "## Ability to React\n\n**Insight:** Chemical properties describe a substance's potential to transform into something entirely new.\n\n**Analysis:** A chemical property describes a substance's ability to undergo a **chemical change**, forming a new substance (e.g., **flammability** or reactivity with acid).\n\n> **Key Takeaway:** Chemical properties are only observable during a chemical reaction."
+    },
+    // Card 16
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Properties\nWhat is an **Extensive Property**?",
+      back: "## Amount-Dependent\n\n**Insight:** Extensive properties are 'additive'—the more you have, the bigger the value.\n\n**Analysis:** An extensive property depends on the **total amount** of matter present in the sample (e.g., **mass** and **volume**).\n\n> **Key Takeaway:** Mass and Volume are the primary examples of extensive properties."
+    },
+    // Card 17
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Properties\nWhat is an **Intensive Property**?",
+      back: "## The Substance Fingerprint\n\n**Insight:** Intensive properties are the best tools for identifying unknowns because they never change, regardless of sample size.\n\n**Analysis:** An intensive property is **independent** of the amount of matter present (e.g., **temperature** and **density**).\n\n> **Key Takeaway:** Density is an intensive property; mass is extensive."
+    },
+
+    // ============================================================
+    // SECTION D: SI UNITS & BASE MEASUREMENTS (Cards 18 – 25)
+    // ============================================================
+
+    // Card 18
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Units\nIdentify the SI base units for **Length**, **Mass**, and **Time**.",
+      back: "## The Fundamental Triad\n\n**Insight:** All scientific measurements are built from these standard base units.\n\n**Analysis:** \n- **Length:** Metre ($\\text{m}$)\n- **Mass:** Kilogram ($\\text{kg}$)\n- **Time:** Second ($\\text{s}$)\n\n> **Key Takeaway:** The Kilogram is the only base unit with a prefix built-in."
+    },
+    // Card 19
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Units\nWhat is the SI base unit for **Temperature** and **Amount of Substance**?",
+      back: "## Kelvin and the Mole\n\n**Insight:** Kelvin is absolute; it measures energy directly from zero motion. The mole is the counting unit for atoms.\n\n**Analysis:** \n- **Temperature:** Kelvin ($K$)\n- **Amount of Substance:** Mole ($\\text{mol}$)\n\n> **Key Takeaway:** 0 $K$ is absolute zero; 1 mol = $6.022 \\times 10^{23}$ particles."
+    },
+    // Card 20
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Units\nWhat is the SI base unit for **Electrical Current**?",
+      back: "## Ampere\n\n**Insight:** This is the base unit for measuring the flow of electric charge.\n\n**Analysis:** The SI base unit for electrical current is the **Ampere** (symbol: $\\text{A}$).\n\n> **Key Takeaway:** Ampere is one of the seven SI base units."
+    },
+    // Card 21
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Units\nWhat is the SI base unit for **Luminous Intensity**?",
+      back: "## Candela\n\n**Insight:** This is the base unit for the brightness of a light source in a given direction.\n\n**Analysis:** The SI base unit for luminous intensity is the **Candela** (symbol: $\\text{cd}$).\n\n> **Key Takeaway:** Candela is one of the seven SI base units."
+    },
+    // Card 22
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Measurement\nWhat is the SI derived unit for **Volume**?",
+      back: "## Cubic Metre\n\n**Insight:** A cubic metre is too large for most lab work; chemists use litres and millilitres instead.\n\n**Analysis:** The SI derived unit for volume is the cubic metre ($\\text{m}^3$). In the lab, $1 \\, \\text{L} = 1 \\, \\text{dm}^3$ and $1 \\, \\text{mL} = 1 \\, \\text{cm}^3$.\n\n> **Key Takeaway:** $1 \\, \\text{L} = 1000 \\, \\text{mL} = 1000 \\, \\text{cm}^3$."
+    },
+    // Card 23
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Measurement\nWhat is the SI derived unit for **Pressure**?",
+      back: "## Pascal\n\n**Insight:** Pressure is force per unit area; named after Blaise Pascal.\n\n**Analysis:** The SI derived unit for pressure is the **Pascal** ($\\text{Pa}$), where $1 \\, \\text{Pa} = 1 \\, \\text{N/m}^2$. Also common: atm, mmHg, torr.\n\n> **Key Takeaway:** $1 \\, \\text{atm} = 760 \\, \\text{mmHg} = 101325 \\, \\text{Pa}$."
+    },
+    // Card 24
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Measurement\nIn chemistry, how does **Mass** differ from **Weight**?",
+      back: "## Constant vs. Variable\n\n**Insight:** Balances in the lab measure mass, even when we use the term 'weighing.'\n\n**Analysis:** **Mass** is the constant quantity of matter in an object. **Weight** is a force dependent on gravity ($W = mg$).\n\n> **Key Takeaway:** Your mass is the same on the Moon, but your weight is different."
+    },
+    // Card 25
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Volume\nState the exact relationship between **Millilitres** and **Cubic Centimetres**.",
+      back: "## Unit Equivalence\n\n**Insight:** This is a direct metric equivalence; you can swap these units without any math.\n\n**Analysis:** $1 \\, \\text{mL}$ is exactly equal to $1 \\, \\text{cm}^3$. Furthermore, $1 \\, \\text{L} = 1 \\, \\text{dm}^3$.\n\n> **Key Takeaway:** $1 \\, \\text{mL} = 1 \\, \\text{cm}^3$."
+    },
+
+    // ============================================================
+    // SECTION E: SI PREFIXES & CONVERSIONS (Cards 26 – 33)
+    // ============================================================
+
+    // Card 26
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Prefixes\nDefine the multipliers for **Kilo**, **Milli**, and **Nano**.",
+      back: "## Powers of Ten\n\n**Insight:** Prefixes are 'cheat codes' to avoid writing long strings of zeroes.\n\n**Analysis:** \n- **Kilo (k):** $10^3$ (1,000)\n- **Milli (m):** $10^{-3}$ (0.001)\n- **Nano (n):** $10^{-9}$ (0.000000001)\n\n> **Key Takeaway:** Nano is the scale of individual atoms."
+    },
+    // Card 27
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Prefixes\nDefine the multipliers for **Micro**, **Centi**, and **Deci**.",
+      back: "## Fractional Prefixes\n\n**Insight:** These prefixes help us express very small measurements without using scientific notation.\n\n**Analysis:** \n- **Micro (μ):** $10^{-6}$ (0.000001)\n- **Centi (c):** $10^{-2}$ (0.01)\n- **Deci (d):** $10^{-1}$ (0.1)\n\n> **Key Takeaway:** Micro is one-millionth; centi is one-hundredth."
+    },
+    // Card 28
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# SI Prefixes\nDefine the multipliers for **Mega**, **Giga**, and **Tera**.",
+      back: "## Large Number Prefixes\n\n**Insight:** These are used for very large quantities like computer memory or astronomical distances.\n\n**Analysis:** \n- **Mega (M):** $10^6$ (1,000,000)\n- **Giga (G):** $10^9$ (1,000,000,000)\n- **Tera (T):** $10^{12}$ (1,000,000,000,000)\n\n> **Key Takeaway:** Tera is a trillion — a 1 followed by 12 zeros."
+    },
+    // Card 29
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nConvert $2.5 \\, \\text{km}$ into **Metres**.",
+      back: "## Kilo to Base\n\n**Insight:** Kilometres are larger than metres, so the number of metres should be larger.\n\n**Analysis:** $2.5 \\, \\text{km} = 2.5 \\times 1000 = 2500 \\, \\text{m} = 2.5 \\times 10^3 \\, \\text{m}$.\n\n> **Key Takeaway:** Multiply by $10^3$ (1000) when converting from km to m."
+    },
+    // Card 30
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nConvert $0.003 \\, \\text{g}$ into **Micrograms**.",
+      back: "## Grams to Micrograms\n\n**Insight:** Micrograms are much smaller than grams, so the number should increase.\n\n**Analysis:** $0.003 \\, \\text{g} = 0.003 \\times 10^6 = 3000 \\, \\mu\\text{g} = 3.0 \\times 10^3 \\, \\mu\\text{g}$.\n\n> **Key Takeaway:** $1 \\, \\text{g} = 10^6 \\, \\mu\\text{g}$."
+    },
+    // Card 31
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nConvert $450 \\, \\text{nm}$ into **Metres**.",
+      back: "## Metric Scaling\n\n**Insight:** Since nanometres are smaller than metres, the final number must be very tiny.\n\n**Analysis:** $450 \\, \\text{nm} = 450 \\times 10^{-9} \\, \\text{m} = 4.50 \\times 10^{-7} \\, \\text{m}$.\n\n> **Key Takeaway:** Multiplying by $10^{-9}$ moves the decimal 9 places to the left."
+    },
+    // Card 32
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Density\nState the **Density** formula and identify its variables.",
+      back: "## Mass-Volume Ratio\n\n**Insight:** Density measures 'crowdedness'—how much mass is packed into a specific volume.\n\n**Analysis:** $d = \\frac{m}{V}$. Density ($d$) stays constant for a pure substance regardless of size.\n\n> **Key Takeaway:** Density is an intensive physical property."
+    },
+    // Card 33
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Density Problem\nEthanol has a density of $0.798 \\, \\text{g/mL}$. Calculate the mass of a $17.4 \\, \\text{mL}$ sample.",
+      back: "## Calculating Mass\n\n**Insight:** If density is less than 1, the mass in grams should be less than the volume in mL.\n\n**Analysis:** $m = d \\times V = (0.798 \\, \\text{g/mL}) \\times (17.4 \\, \\text{mL}) = 13.9 \\, \\text{g}$ (rounded to 3 sig figs).\n\n> **Key Takeaway:** Units must cancel diagonally to leave the desired unit (grams)."
+    },
+    // Card 34
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Density Problem\nPlatinum has density $21.5 \\, \\text{g/cm}^3$ and volume $4.49 \\, \\text{cm}^3$. Calculate its mass.",
+      back: "## Heavy Metal\n\n**Insight:** Platinum is extremely dense; a small volume should weigh a lot.\n\n**Analysis:** $m = d \\times V = (21.5 \\, \\text{g/cm}^3) \\times (4.49 \\, \\text{cm}^3) = 96.5 \\, \\text{g}$ (3 sig figs).\n\n> **Key Takeaway:** The $\\text{cm}^3$ units cancel, leaving grams. A sugar-cube-sized piece weighs ~96 g."
+    },
+
+    // ============================================================
+    // SECTION G: TEMPERATURE SCALES & CONVERSIONS (Cards 35 – 39)
+    // ============================================================
+
+    // Card 35
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Temperature\nConvert $25^\\circ\\text{C}$ to **Kelvin**.",
+      back: "## The Absolute Shift\n\n**Insight:** You must use Kelvin for all Gas Law calculations ($PV=nRT$).\n\n**Analysis:** $K = {}^\\circ\\text{C} + 273.15$. \n$25 + 273.15 = 298.15 \\, K$.\n\n> **Key Takeaway:** Kelvin never uses the degree symbol and is never negative."
+    },
+    // Card 36
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Temperature\nConvert $224^\\circ\\text{C}$ (solder melting point) to **Fahrenheit**.",
+      back: "## Celsius to Fahrenheit\n\n**Insight:** $224^\\circ\\text{C}$ is very hot, so the Fahrenheit value should be a larger number.\n\n**Analysis:** ${}^\\circ\\text{F} = ({}^\\circ\\text{C} \\times \\frac{9}{5}) + 32$.\n$(224 \\times 1.8) + 32 = 403.2 + 32 = 435^\\circ\\text{F}$.\n\n> **Key Takeaway:** At high temperatures, °F numbers are larger than °C numbers."
+    },
+    // Card 37
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Temperature\nConvert $-452^\\circ\\text{F}$ (He boiling point) to **Celsius**.",
+      back: "## Cryogenic Cooling\n\n**Insight:** This temperature is just a few degrees above absolute zero.\n\n**Analysis:** ${}^\\circ\\text{C} = ({}^\\circ\\text{F} - 32) \\times \\frac{5}{9}$. \n$(-452 - 32) \\times 0.555 = -269^\\circ\\text{C}$.\n\n> **Key Takeaway:** $-269$ is near the limit of $-273.15$."
+    },
+    // Card 38
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Temperature\nConvert $77 \\, K$ (liquid nitrogen boiling point) to **Celsius**.",
+      back: "## Cryogenic Temperature\n\n**Insight:** $77 \\, K$ is extremely cold, so the Celsius value should be negative.\n\n**Analysis:** ${}^\\circ\\text{C} = K - 273.15$. \n$77 - 273.15 = -196.15^\\circ\\text{C}$ (approx $-196^\\circ\\text{C}$).\n\n> **Key Takeaway:** Kelvin values are always positive; Celsius can be negative."
+    },
+
+    // ============================================================
+    // SECTION H: SCIENTIFIC NOTATION (Cards 39 – 43)
+    // ============================================================
+
+    // Card 39
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Math Skills\nExpress **568.762** in Scientific Notation.",
+      back: "## Large Number Scaling\n\n**Insight:** Moving the decimal left gives a positive exponent.\n\n**Analysis:** $568.762 = 5.68762 \\times 10^2$.\n\n> **Key Takeaway:** Coefficient must be between 1 and 10."
+    },
+    // Card 40
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Math Skills\nExpress **0.00000772** in proper Scientific Notation.",
+      back: "## Small Number Scaling\n\n**Insight:** Negative exponents represent fractions (one-millionth in this case).\n\n**Analysis:** Move decimal 6 places right: $7.72 \\times 10^{-6}$.\n\n> **Key Takeaway:** Scientific notation coefficients must be between 1 and 10."
+    },
+    // Card 41
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Math Skills\nMultiply ($8.0 \\times 10^4$) by ($5.0 \\times 10^2$).",
+      back: "## Exponential Math\n\n**Insight:** When multiplying, coefficients multiply but exponents add.\n\n**Analysis:** $(8.0 \\times 5.0) \\times 10^{4+2} = 40 \\times 10^6 = 4.0 \\times 10^7$.\n\n> **Key Takeaway:** Always adjust the final coefficient to be between 1 and 10."
+    },
+    // Card 42
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Math Skills\nDivide ($6.9 \\times 10^7$) by ($3.0 \\times 10^{-5}$).",
+      back: "## Exponential Division\n\n**Insight:** Subtracting a negative exponent is the same as adding.\n\n**Analysis:** $\\frac{6.9}{3.0} \\times 10^{7 - (-5)} = 2.3 \\times 10^{12}$.\n\n> **Key Takeaway:** $7 - (-5) = 12$; a common mistake is forgetting the double negative."
+    },
+
+    // ============================================================
+    // SECTION I: SIGNIFICANT FIGURES (Cards 43 – 51)
+    // ============================================================
+
+    // Card 43
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nCount the sig figs in **0.043 kg**, **6.01 g**, and **100. mL**.",
+      back: "## Counting Rules\n\n**Insight:** Significant figures show how precise your instrument was.\n\n**Analysis:** \n- **0.043:** 2 (leading zeroes don't count)\n- **6.01:** 3 (captive zeroes count)\n- **100.:** 3 (trailing zero with decimal counts)\n\n> **Key Takeaway:** Leading zeroes are never significant; trailing zeroes need a decimal."
+    },
+    // Card 44
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nHow many sig figs in **1.310 × 10²² atoms**?",
+      back: "## Scientific Notation Rule\n\n**Insight:** Scientific notation removes all ambiguity about trailing zeros.\n\n**Analysis:** **Four** (1, 3, 1, and the trailing zero). All digits in the coefficient are significant.\n\n> **Key Takeaway:** $1.310$ means the measurement was precise to 4 sig figs; $1.31$ would be 3."
+    },
+    // Card 45
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nRound **8.724** to two decimal places.",
+      back: "## Rounding Down\n\n**Insight:** The first dropped digit is 4, which is less than 5.\n\n**Analysis:** $8.724 \\rightarrow \\mathbf{8.72}$.\n\n> **Key Takeaway:** If the digit to drop is $< 5$, leave the preceding digit unchanged."
+    },
+    // Card 46
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nRound **8.727** to two decimal places.",
+      back: "## Rounding Up\n\n**Insight:** The first dropped digit is 7, which is $\\geq 5$.\n\n**Analysis:** $8.727 \\rightarrow \\mathbf{8.73}$.\n\n> **Key Takeaway:** If the digit to drop is $\\geq 5$, increase the preceding digit by 1."
+    },
+    // Card 47
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nAdd **4.51** and **3.2** with correct sig figs.",
+      back: "## Addition Rule\n\n**Insight:** The answer must have the same number of decimal places as the least precise measurement.\n\n**Analysis:** $4.51 + 3.2 = 7.71 \\rightarrow \\mathbf{7.7}$ (1 decimal place).\n\n> **Key Takeaway:** Addition/Subtraction uses **decimal places**, not total sig figs."
+    },
+    // Card 48
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Figs\nMultiply **3.2** and **4.51** with correct sig figs.",
+      back: "## Multiplication Rule\n\n**Insight:** The answer must have the same total sig figs as the least precise measurement.\n\n**Analysis:** $3.2 \\times 4.51 = 14.432 \\rightarrow \\mathbf{14}$ (2 sig figs).\n\n> **Key Takeaway:** Multiplication/Division uses **total sig figs**, not decimal places."
+    },
+    // Card 49
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Sig Fig Math\nRule for **Addition** vs. **Multiplication**.",
+      back: "## Operation Discipline\n\n**Insight:** Your final answer cannot be more precise than your weakest measurement.\n\n**Analysis:** \n- **Addition:** Round to least **decimal places**.\n- **Multiplication:** Round to least **total sig figs**.\n\n> **Key Takeaway:** Do not mix these rules on the exam!"
+    },
+
+    // ============================================================
+    // SECTION J: ACCURACY, PRECISION & ERRORS (Cards 50 – 53)
+    // ============================================================
+
+    // Card 50
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Measurement Quality\nDefine **Accuracy** vs. **Precision**.",
+      back: "## Reliability\n\n**Insight:** You can be precise (consistent) but totally inaccurate (wrong).\n\n**Analysis:** **Accuracy** is closeness to the true value. **Precision** is closeness of repeated measurements to each other.\n\n> **Key Takeaway:** Accurate = Truth; Precise = Consistency."
+    },
+    // Card 51
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Measurement Quality\nCan a measurement be **Precise** but **Inaccurate**? Explain.",
+      back: "## Yes — Systematic Error\n\n**Insight:** A broken scale that is always 2 grams too high gives precise (consistent) but inaccurate (wrong) readings.\n\n**Analysis:** Yes. A measurement can have high precision (good reproducibility) but low accuracy if there is a **systematic error**.\n\n> **Key Takeaway:** High precision does **not** guarantee high accuracy."
+    },
+    // Card 52
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Errors\n**Random** vs. **Systematic** Errors.",
+      back: "## Error Analysis\n\n**Insight:** Systematic errors (like a broken scale) are the most dangerous because they cannot be fixed by averaging.\n\n**Analysis:** **Random errors** fluctuate and average out. **Systematic errors** happen in one direction every time (always too high/low).\n\n> **Key Takeaway:** Calibrate instruments to fix systematic errors."
+    },
+    // Card 53
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Errors\nHow can **Random Errors** be reduced?",
+      back: "## Averaging\n\n**Insight:** Random errors are unpredictable fluctuations that average out over many measurements.\n\n**Analysis:** Take **multiple measurements** and average them. The more measurements, the closer the average gets to the true value.\n\n> **Key Takeaway:** Random errors affect precision; averaging reduces them."
+    },
+
+    // ============================================================
+    // SECTION K: DIMENSIONAL ANALYSIS (Cards 54 – 57)
+    // ============================================================
+
+    // Card 54
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nFrom $1 \\, \\text{ft} = 12 \\, \\text{in}$, write the two conversion factors.",
+      back: "## Factor-Label Method\n\n**Insight:** A conversion factor is a ratio equal to 1. Choose the one that cancels the unwanted unit.\n\n**Analysis:** $\\frac{1 \\, \\text{ft}}{12 \\, \\text{in}}$ and $\\frac{12 \\, \\text{in}}{1 \\, \\text{ft}}$.\n\n> **Key Takeaway:** Put the unit you **want** on top; the unit you **want to cancel** on the bottom."
+    },
+    // Card 55
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nConvert $1.25 \\, \\text{miles}$ to **Furlongs** given $8 \\, \\text{furlongs} = 1 \\, \\text{mile}$.",
+      back: "## Unit Cancellation\n\n**Insight:** Furlongs are smaller than miles, so the number should increase.\n\n**Analysis:** $1.25 \\, \\text{miles} \\times \\frac{8 \\, \\text{furlongs}}{1 \\, \\text{mile}} = \\mathbf{10.0 \\, \\text{furlongs}}$.\n\n> **Key Takeaway:** The 'miles' cancels, leaving 'furlongs'."
+    },
+    // Card 56
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Conversions\nConvert $400 \\, \\text{rods}$ to **Yards** given $11 \\, \\text{yds} = 2 \\, \\text{rods}$.",
+      back: "## Two-Step Conversion\n\n**Insight:** A yard is smaller than a rod, so the number should increase.\n\n**Analysis:** $400 \\, \\text{rods} \\times \\frac{11 \\, \\text{yds}}{2 \\, \\text{rods}} = \\mathbf{2.20 \\times 10^3 \\, \\text{yds}}$ (2200 yds).\n\n> **Key Takeaway:** Always check that your answer makes physical sense."
+    },
+    // Card 57
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Units\nUsing the Ideal Gas Law ($PV = nRT$), prove that $R$ has units $\\text{J} \\cdot \\text{mol}^{-1} \\cdot \\text{K}^{-1}$.",
+      back: "## Derivation by Units\n\n**Insight:** Unit analysis is your best tool for checking if you've rearranged a formula correctly.\n\n**Analysis:** \n- $R = \\frac{PV}{nT}$\n- $PV$ units: $\\text{Pa} \\cdot \\text{m}^3 = \\text{N/m}^2 \\cdot \\text{m}^3 = \\text{N} \\cdot \\text{m} = \\text{J}$\n- $nT$ units: $\\text{mol} \\cdot \\text{K}$\n- Therefore, $R = \\text{J} \\cdot \\text{mol}^{-1} \\cdot \\text{K}^{-1}$\n\n> **Key Takeaway:** The Joule ($\\text{J}$) is $\\text{N} \\cdot \\text{m}$."
+    },
+
+    // ============================================================
+    // SECTION L: DALTON'S ATOMIC THEORY & LAWS (Cards 58 – 64)
+    // ============================================================
+
+    // Card 58
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atomic Theory\nState Dalton's **First** Postulate.",
+      back: "## Indivisible Atoms\n\n**Insight:** This postulate is now known to be technically false (atoms are divisible), but it works for chemical reactions.\n\n**Analysis:** All matter is composed of extremely small, **indivisible particles** called atoms.\n\n> **Key Takeaway:** Atoms retain their identity during chemical reactions."
+    },
+    // Card 59
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atomic Theory\nState Dalton's **Second** Postulate.",
+      back: "## Identical Atoms\n\n**Insight:** This postulate is now known to be false because of **isotopes** (Carbon-12 vs Carbon-14).\n\n**Analysis:** All atoms of a given element are identical in **mass** and properties; atoms of different elements have different masses.\n\n> **Key Takeaway:** Isotopes challenge this postulate."
+    },
+    // Card 60
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atomic Theory\nState Dalton's **Third** Postulate.",
+      back: "## Fixed Proportions\n\n**Insight:** This explains the Law of Definite Proportions.\n\n**Analysis:** A compound is formed by atoms of two or more elements chemically combined in fixed, **simple whole-number ratios**.\n\n> **Key Takeaway:** $\\ce{H2O}$ always has exactly 2 H for every 1 O."
+    },
+    // Card 61
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atomic Theory\nState Dalton's **Fourth** Postulate (Indestructibility).",
+      back: "## Law of Conservation of Mass\n\n**Insight:** This rule is why we must balance chemical equations—atoms cannot vanish.\n\n**Analysis:** Dalton stated that in a chemical reaction, atoms are merely **rearranged**. They are never created, destroyed, or broken down.\n\n> **Key Takeaway:** Atoms are the fundamental, indestructible units of chemical change."
+    },
+    // Card 62
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Chemical Laws\nState the **Law of Conservation of Mass**.",
+      back: "## Mass is Conserved\n\n**Insight:** This law means that in a closed system, the mass before and after a reaction is exactly the same.\n\n**Analysis:** Mass is neither created nor destroyed during a chemical reaction. Total mass of reactants = total mass of products.\n\n> **Key Takeaway:** This is the foundation of balancing chemical equations."
+    },
+    // Card 63
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Chemical Laws\nDefine the **Law of Definite Proportions**.",
+      back: "## Constant Composition\n\n**Insight:** Pure water is always 11% H and 89% O, whether it's from a river or a lab.\n\n**Analysis:** A compound always contains the same elements in the **exact same proportion** by mass, regardless of its source.\n\n> **Key Takeaway:** Ratios in compounds are fixed and unchangeable."
+    },
+    // Card 64
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Chemical Laws\nExplain the **Law of Multiple Proportions**.",
+      back: "## Simple Ratios\n\n**Insight:** Elements can form different compounds (like CO and $\\ce{CO2}$) but the masses will always be in small integer ratios.\n\n**Analysis:** If two elements form more than one compound, the masses of B that combine with a fixed mass of A are in ratios of **small whole numbers**.\n\n> **Key Takeaway:** This law proved that atoms combine as discrete units."
+    },
+
+    // ============================================================
+    // SECTION M: ATOMIC STRUCTURE & EXPERIMENTS (Cards 65 – 79)
+    // ============================================================
+
+    // Card 65
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Discovery\nWhat did **J.J. Thomson** discover and which model did he propose?",
+      back: "## The Electron\n\n**Insight:** Thomson used cathode ray tubes to prove that atoms were divisible.\n\n**Analysis:** He discovered the **electron** (negative charge) and proposed the **Plum Pudding Model**, where electrons are raisins in a positive 'dough'.\n\n> **Key Takeaway:** Thomson established that atoms contain subatomic particles."
+    },
+    // Card 66
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Discovery\nWhat specific value did **Millikan's Oil Drop Experiment** determine?",
+      back: "## The Electron Charge\n\n**Insight:** Millikan determined the fundamental charge of a single electron.\n\n**Analysis:** Millikan found the charge of an electron to be $1.602 \\times 10^{-19}$ Coulombs.\n\n> **Key Takeaway:** Combining with Thomson's $e/m$ ratio, the mass of the electron was calculated."
+    },
+    // Card 67
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Discovery\nWhat was the key result of **Rutherford's Gold Foil Experiment**?",
+      back: "## The Nucleus\n\n**Insight:** Rutherford was shocked when alpha particles bounced back; he said it was like a bullet bouncing off tissue paper.\n\n**Analysis:** He concluded the atom is mostly empty space with a tiny, dense, **positively charged nucleus** at the center.\n\n> **Key Takeaway:** Disproved 'Plum Pudding' and established the Nuclear Model."
+    },
+    // Card 68
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Discovery\nWho discovered the **Neutron** and in what year?",
+      back: "## James Chadwick (1932)\n\n**Insight:** The neutron was the last of the three main subatomic particles to be discovered.\n\n**Analysis:** James Chadwick discovered the neutron in **1932** by bombarding beryllium with $\\alpha$ particles.\n\n> **Key Takeaway:** $\\ce{^9Be + ^4_2\\alpha -> ^12_6C + ^1_0n}$."
+    },
+    // Card 69
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Subatomic Particles\nCompare the masses of **Protons**, **Neutrons**, and **Electrons**.",
+      back: "## Nucleons vs. Electrons\n\n**Insight:** Protons and Neutrons weigh almost the same, while electrons are weightless ghosts by comparison.\n\n**Analysis:** Protons and Neutrons are $\\approx 1 \\, \\text{amu}$. Electrons are $1/1840 \\, \\text{amu}$ (negligible mass).\n\n> **Key Takeaway:** Atomic mass is calculated solely as $A = Z + N$."
+    },
+    // Card 70
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Subatomic Particles\nState the relative mass and charge of a **Proton**.",
+      back: "## Nucleon Properties\n\n**Insight:** Protons define the identity of an element ($Z$).\n\n**Analysis:** Mass = **$\\approx 1 \\, \\text{amu}$**; Charge = **$+1$**.\n\n> **Key Takeaway:** Protons are located in the nucleus."
+    },
+    // Card 71
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Subatomic Particles\nState the relative mass and charge of a **Neutron**.",
+      back: "## Nuclear Glue\n\n**Insight:** Neutrons hold the nucleus together by overcoming proton-proton repulsion.\n\n**Analysis:** Mass = **$\\approx 1 \\, \\text{amu}$**; Charge = **$0$** (neutral).\n\n> **Key Takeaway:** Neutrons are located in the nucleus; discovered by Chadwick in 1932."
+    },
+    // Card 72
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Subatomic Particles\nState the relative mass and charge of an **Electron**.",
+      back: "## The Light Particle\n\n**Insight:** Electrons are so light that they barely contribute to atomic mass.\n\n**Analysis:** Mass = **$1/1840 \\, \\text{amu}$** (negligible); Charge = **$\\mathbf{-1}$**.\n\n> **Key Takeaway:** Electrons determine chemical behavior; discovered by Thomson."
+    },
+    // Card 73
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atoms\nDefine **Atomic Number** ($Z$) and **Mass Number** ($A$).",
+      back: "## Atomic Identification\n\n**Insight:** $Z$ is the identity of the element. $A$ tells you the weight of that specific isotope.\n\n**Analysis:** \n- **$Z$:** Number of protons in the nucleus.\n- **$A$:** Total number of protons + neutrons.\n\n> **Key Takeaway:** In a neutral atom, electrons equal $Z$."
+    },
+    // Card 74
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atoms\nWhat is the shorthand notation for a nuclide?",
+      back: "## Nuclide Symbol\n\n**Insight:** This notation tells you the element, atomic number, and mass number in one compact form.\n\n**Analysis:** $^{A}_{Z}\\ce{X}$ where:\n- $X$ = Element symbol\n- $Z$ = Atomic number (protons)\n- $A$ = Mass number (protons + neutrons)\n\n> **Key Takeaway:** Example: ${}^{23}_{11}\\ce{Na}$ is sodium-23."
+    },
+    // Card 75
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atoms\nDefine **Isotopes** of an element.",
+      back: "## Neutronic Variation\n\n**Insight:** Isotopes have the same 'ID' (protons) but different 'weights' (neutrons).\n\n**Analysis:** Atoms of the same element with the same $Z$ but different **neutrons** and therefore different mass numbers ($A$).\n\n> **Key Takeaway:** Isotopes are chemically identical but physically different."
+    },
+    // Card 76
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Atoms\nFor the isotope ${}^{23}_{11}\\ce{Na}$, state protons, neutrons, and electrons.",
+      back: "## Neutral Atom Math\n\n**Insight:** The subscript is $Z$, the superscript is $A$.\n\n**Analysis:** \n- Protons = **11** ($Z$)\n- Electrons = **11** (neutral atom)\n- Neutrons = $A - Z = 23 - 11 = \\mathbf{12}$\n\n> **Key Takeaway:** For a neutral atom, electrons = protons."
+    },
+    // Card 77
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Ion Math\nDetermine particles for ${}^{40}_{20}\\ce{Ca^{2+}}$.",
+      back: "## Cation Calculation\n\n**Insight:** A $2+$ charge means the atom 'lost' 2 negative electrons.\n\n**Analysis:** \n- Protons = 20 ($Z$)\n- Neutrons = 20 ($A - Z = 40 - 20$)\n- Electrons = 18 ($20 - 2$)\n\n> **Key Takeaway:** Cations (positive) have fewer electrons than protons."
+    },
+
+    // ============================================================
+    // SECTION N: PERIODIC TABLE (Cards 78 – 85)
+    // ============================================================
+
+    // Card 78
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\n**Periods** vs. **Groups**.",
+      back: "## The Grid System\n\n**Insight:** Groups are more important for predicting reactions because elements in a column share the same valence electrons.\n\n**Analysis:** **Periods** are horizontal rows ($1-7$). **Groups** are vertical columns ($1-18$).\n\n> **Key Takeaway:** Group elements share similar chemical properties."
+    },
+    // Card 79
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nName the elements in **Group 1 (IA)**.",
+      back: "## Alkali Metals\n\n**Insight:** These are soft, silvery metals that react violently with water.\n\n**Analysis:** **Alkali metals**: Lithium (Li), Sodium (Na), Potassium (K), Rubidium (Rb), Cesium (Cs), Francium (Fr).\n\n> **Key Takeaway:** They all have **1 valence electron** and form $+1$ ions."
+    },
+    // Card 80
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nName the elements in **Group 2 (IIA)**.",
+      back: "## Alkaline Earth Metals\n\n**Insight:** These are harder and less reactive than alkali metals.\n\n**Analysis:** **Alkaline earth metals**: Beryllium (Be), Magnesium (Mg), Calcium (Ca), Strontium (Sr), Barium (Ba), Radium (Ra).\n\n> **Key Takeaway:** They have **2 valence electrons** and form $+2$ ions."
+    },
+    // Card 81
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nName the elements in **Group 17 (VIIA)**.",
+      back: "## Halogens\n\n**Insight:** These are highly reactive non-metals that form salts with metals.\n\n**Analysis:** **Halogens**: Fluorine (F), Chlorine (Cl), Bromine (Br), Iodine (I), Astatine (At).\n\n> **Key Takeaway:** They have **7 valence electrons** and form $-1$ ions."
+    },
+    // Card 82
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nName the elements in **Group 18 (VIIIA)**.",
+      back: "## Noble Gases\n\n**Insight:** These are inert gases with a full outer shell; they rarely react.\n\n**Analysis:** **Noble gases**: Helium (He), Neon (Ne), Argon (Ar), Krypton (Kr), Xenon (Xe), Radon (Rn).\n\n> **Key Takeaway:** They have a complete valence shell (8 electrons, except He with 2)."
+    },
+    // Card 83
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nIdentify **Alkali Metals**, **Halogens**, and **Noble Gases**.",
+      back: "## Major Families\n\n**Insight:** Families are grouped by how 'desperate' they are for a full outer shell.\n\n**Analysis:** \n- **Alkali Metals:** Group 1 (Very reactive metals)\n- **Halogens:** Group 17 (Very reactive non-metals)\n- **Noble Gases:** Group 18 (Inert, non-reactive gases)\n\n> **Key Takeaway:** Noble gases are stable because they have a full outer shell."
+    },
+    // Card 84
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Periodic Table\nWhat are **Metalloids**?",
+      back: "## The Semiconductors\n\n**Insight:** Metalloids are the 'staircase' that separates metals from non-metals.\n\n**Analysis:** Elements with properties **intermediate** between metals and non-metals (e.g., Silicon). They are essential for computer chips.\n\n> **Key Takeaway:** Metalloids sitting on the staircase diagonal are semiconductors."
+    },
+
+    // ============================================================
+    // SECTION O: MOLECULES, IONS & COMPOUND STRUCTURE (Cards 85 – 92)
+    // ============================================================
+
+    // Card 85
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Molecules\nWhat is a **Molecule**?",
+      back: "## Covalent Unit\n\n**Insight:** Molecules are discrete, independent particles held together by covalent bonds.\n\n**Analysis:** A molecule is a neutral group of **two or more atoms** held together by **covalent** (shared) bonds. It is the smallest unit of a covalent compound.\n\n> **Key Takeaway:** Examples: $\\ce{H2O}$, $\\ce{CO2}$, $\\ce{CH4}$."
+    },
+    // Card 86
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Formulas\nWhat does a **Molecular Formula** tell you?",
+      back: "## Exact Atom Count\n\n**Insight:** A molecular formula is an exact count, not just a ratio.\n\n**Analysis:** A molecular formula provides the **exact number** of atoms of each element in a single molecule. For example, $\\ce{H2O2}$ means 2 H and 2 O atoms per molecule.\n\n> **Key Takeaway:** $\\ce{H2O2}$ (hydrogen peroxide) vs $\\ce{H2O}$ (water) are different compounds."
+    },
+    // Card 87
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Formulas\nWhat is a **Structural Formula**?",
+      back: "## Bond Connectivity\n\n**Insight:** Structural formulas show how atoms are connected, which is essential for understanding reactivity.\n\n**Analysis:** A structural formula shows how atoms are bonded in a molecule. Example: Ethanol can be written as $\\ce{CH3CH2OH}$ or with line drawings.\n\n> **Key Takeaway:** Molecular formula gives count; structural formula gives arrangement."
+    },
+    // Card 88
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Ions\nWhat is an **Ion**?",
+      back: "## Charged Particle\n\n**Insight:** Ions form when atoms gain or lose electrons to achieve a stable electron configuration.\n\n**Analysis:** An ion is an atom or group of atoms that has a **net electrical charge** due to the loss or gain of electrons.\n\n> **Key Takeaway:** Ions are the basis for ionic compounds and electrolyte solutions."
+    },
+    // Card 89
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Ions\nIdentify **Cations** and **Anions**.",
+      back: "## Charged Species\n\n**Insight:** Metals want to lose electrons (Cation); Non-metals want to gain them (Anion).\n\n**Analysis:** **Cations** are positive (lost electrons). **Anions** are negative (gained electrons).\n\n> **Key Takeaway:** Mnemonic: A **Cat**ion is **Paws**-itive."
+    },
+    // Card 90
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Ions\nWhat is a **Polyatomic Ion**? Give an example.",
+      back: "## Group Charge\n\n**Insight:** Polyatomic ions are covalently bonded atoms that act as a single charged unit.\n\n**Analysis:** A polyatomic ion is a tightly bound group of atoms that carries an **overall charge** as a unit. Example: Sulfate ($\\ce{SO4^{2-}}$), Ammonium ($\\ce{NH4+}$).\n\n> **Key Takeaway:** You must memorize common polyatomic ions — they cannot be predicted."
+    },
+    // Card 91
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Compounds\nWhat is a **Formula Unit** in an ionic compound?",
+      back: "## Ionic Lattice Unit\n\n**Insight:** Ionic compounds don't form molecules; they form continuous lattices.\n\n**Analysis:** A formula unit is the simplest whole-number ratio of ions in an ionic compound. For $\\ce{NaCl}$, the formula unit is 1 Na$^+$ and 1 Cl$^-$.\n\n> **Key Takeaway:** Use 'formula unit' for ionic compounds, not 'molecule'."
+    },
+    // Card 92
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Compounds\nWhat is an **Ionic Compound**?",
+      back: "## Electrostatic Attraction\n\n**Insight:** Ionic compounds are held together by the strong attraction between positive and negative ions.\n\n**Analysis:** An ionic compound is composed of **cations** and **anions** held together by ionic bonds. Examples: $\\ce{NaCl}$, $\\ce{CaCO3}$.\n\n> **Key Takeaway:** Metals lose electrons to become cations; non-metals gain electrons to become anions."
+    },
+
+    // ============================================================
+    // SECTION P: NOMENCLATURE (Cards 93 – 107)
+    // ============================================================
+
+    // Card 93
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nRule for naming the **Anion** in a Type I binary ionic compound.",
+      back: "## The -ide Suffix\n\n**Insight:** The '-ide' suffix is used for monatomic anions (e.g., Chloride, Oxide).\n\n**Analysis:** Take the root of the non-metal's name and add **'-ide'**.\n$\\ce{Cl^-}$ → Chloride, $\\ce{O^{2-}}$ → Oxide, $\\ce{N^{3-}}$ → Nitride.\n\n> **Key Takeaway:** This is rule #1 for anions."
+    },
+    // Card 94
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nWhen are **Roman Numerals** mandatory in a name?",
+      back: "## The Stock System\n\n**Insight:** Transition metals are 'chameleons'—they can take multiple charges, so the name must clarify which one.\n\n**Analysis:** Use Roman numerals for **Transition Metals** (variable charge). The number represents the **charge** of the metal ion, not the count of atoms.\n\n> **Key Takeaway:** $\\ce{FeCl2}$ is Iron(II) chloride; the $2$ is the iron charge."
+    },
+    // Card 95
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{CaS}$**.",
+      back: "## Type I Binary Compound\n\n**Insight:** Calcium has a fixed $+2$ charge; no Roman numeral needed.\n\n**Analysis:** **Calcium sulfide**.\n\n> **Key Takeaway:** Group 2 metals never require Roman numerals."
+    },
+    // Card 96
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{Li3N}$**.",
+      back: "## Lithium Nitride\n\n**Insight:** Lithium has a fixed $+1$ charge; no Roman numeral needed.\n\n**Analysis:** **Lithium nitride**.\n\n> **Key Takeaway:** Group 1 metals never require Roman numerals."
+    },
+    // Card 97
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{Na2SO4}$**.",
+      back: "## Polyatomic Ion Compound\n\n**Insight:** Sulfate ($\\ce{SO4^{2-}}$) is a polyatomic ion.\n\n**Analysis:** **Sodium sulfate**.\n\n> **Key Takeaway:** The name of the polyatomic ion is used as-is."
+    },
+    // Card 98
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{Fe(NO3)3}$**.",
+      back: "## Variable Charge Metal\n\n**Insight:** Nitrate is $-1$; three nitrates mean iron is $+3$.\n\n**Analysis:** **Iron(III) nitrate**.\n\n> **Key Takeaway:** The Roman numeral (III) indicates the charge on iron ($+3$)."
+    },
+    // Card 99
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{FeCl2}$**.",
+      back: "## Iron(II) Chloride\n\n**Insight:** Chloride is $-1$; two chlorides mean iron is $+2$.\n\n**Analysis:** **Iron(II) chloride**.\n\n> **Key Takeaway:** The Roman numeral (II) indicates the charge on iron ($+2$)."
+    },
+    // Card 100
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the compound **$\\ce{Cu2O}$**.",
+      back: "## Copper(I) Oxide\n\n**Insight:** Oxide is $-2$; two coppers mean each copper is $+1$.\n\n**Analysis:** **Copper(I) oxide**.\n\n> **Key Takeaway:** $2 \\times (+1) = +2$, balancing the $-2$ from oxide."
+    },
+    // Card 101
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nRule for naming **Binary Covalent** compounds (non-metals).",
+      back: "## Prefixes Only\n\n**Insight:** Unlike ionic compounds, covalent molecules use Greek prefixes to count exactly how many atoms are in the 'cluster'.\n\n**Analysis:** Use prefixes (Mono, Di, Tri, Tetra...). Rule: Never use 'Mono' on the **first** element.\n\n> **Key Takeaway:** $\\ce{CO2}$ is Carbon **di**oxide; $\\ce{N2O4}$ is **di**nitrogen **tetr**oxide."
+    },
+    // Card 102
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nWhat is the prefix for **two** in covalent compounds?",
+      back: "## Di-\n\n**Insight:** Greek prefixes count the number of atoms in the molecule.\n\n**Analysis:** The prefix for **2** is **Di-**.\n\n> **Key Takeaway:** $\\ce{CO2}$ is Carbon **di**oxide."
+    },
+    // Card 103
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nRule for **Mono-** prefix in covalent names.",
+      back: "## First Element Exception\n\n**Insight:** 'Mono' is redundant on the first element.\n\n**Analysis:** The prefix 'mono-' is **never used** for the first element in the formula.\n\n> **Key Takeaway:** $\\ce{CO}$ is Carbon Monoxide, not Monocarbon Monoxide."
+    },
+    // Card 104
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the covalent compound **$\\ce{N2O}$**.",
+      back: "## Dinitrogen Monoxide\n\n**Insight:** 2 Nitrogens (Di-) and 1 Oxygen (mono-).\n\n**Analysis:** **Dinitrogen monoxide**.\n\n> **Key Takeaway:** 'Mono' is used on the second element."
+    },
+    // Card 105
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nName the covalent compound **$\\ce{N2O4}$**.",
+      back: "## Dinitrogen Tetroxide\n\n**Insight:** The 'a' in 'tetra' is dropped before 'oxide'.\n\n**Analysis:** **Dinitrogen tetroxide**.\n\n> **Key Takeaway:** 'Tetraoxide' becomes 'tetroxide' to avoid a double vowel."
+    },
+    // Card 106
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Nomenclature\nNaming rule for **Oxyacids** (-ate vs. -ite).",
+      back: "## Acidic Suffixes\n\n**Insight:** The name of the acid is a direct code for the polyatomic ion hidden inside it.\n\n**Analysis:** \n- Ion **-ate** $\\rightarrow$ Acid **-ic**\n- Ion **-ite** $\\rightarrow$ Acid **-ous**\n\n> **Key Takeaway:** Mnemonic: 'I **ate** something **ic**ky; the b**ite** was poison**ous**.'"
+    },
+    // Card 107
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 1: Introduction to Chemistry",
+      front: "# Exceptions\nList the common names for $\\ce{H2O}$, $\\ce{NH3}$, and $\\ce{H2O2}$.",
+      back: "## Universal Trivial Names\n\n**Insight:** Using systematic names for these common chemicals would confuse other scientists.\n\n**Analysis:** \n- $\\ce{H2O}$: **Water**\n- $\\ce{NH3}$: **Ammonia**\n- $\\ce{H2O2}$: **Hydrogen peroxide**\n\n> **Key Takeaway:** Never write 'dihydrogen monoxide' on a lab report."
     }
   ],
+  
+  
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 2 - Measurement & Units": [
+  "TOPIC 2: STOICHIOMETRY": [
+    // ============================================================
+    // SECTION A: COUNTING BY WEIGHING & ATOMIC MASSES (Cards 1 – 4)
+    // ============================================================
+
+    // Card 1
     {
-      "front": "What are the 7 SI base units?",
-      "back": "Length (m), Mass (kg), Time (s), Current (A), Temperature (K), Amount (mol), Luminous intensity (cd).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Counting Atoms\nWhat is the fundamental principle behind **Counting by Weighing** atoms?",
+      back: "## Average Mass Method\n\n**Insight:** Since atoms are far too small and numerous to count directly, we count them by measuring total mass and dividing by the average mass of one atom.\n\n**Analysis:** Chemists use the **average atomic mass** (weighted average of all isotopes) as the conversion factor. Just as you can count screws by weighing a pile and dividing by the mass of one screw, we count atoms by weighing a sample and dividing by the average atomic mass.\n\n> **Key Takeaway:** We count atoms by weighing them because individual atoms are invisible and countless."
     },
+    // Card 2
     {
-      "front": "Difference between mass and weight?",
-      "back": "Mass: Measure of amount of matter (constant).\nWeight: Force of gravity on an object (variable by location).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Atomic Mass\nWhat is an **Atomic Mass Unit** (amu) and how is it defined?",
+      back: "## The Carbon-12 Standard\n\n**Insight:** The amu is the 'measuring stick' for the microscopic world, allowing us to compare the masses of different atoms.\n\n**Analysis:** One atomic mass unit (amu) is defined as exactly **one-twelfth (1/12) of the mass of one atom of Carbon-12** ($^{12}\\ce{C}$). By definition, a $^{12}\\ce{C}$ atom has a mass of exactly 12 amu.\n\n> **Key Takeaway:** All other atomic masses are relative to this fixed standard."
     },
+    // Card 3
     {
-      "front": "What is the SI derived unit for volume?",
-      "back": "Cubic metre (m³). Chemists also use cm³ and dm³ (Liter).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Atomic Mass\nWhy is the **Average Atomic Mass** of an element rarely a whole number?",
+      back: "## Weighted Average\n\n**Insight:** The average is a weighted mean of all isotopes, not a simple count of protons and neutrons.\n\n**Analysis:** The average atomic mass is the **weighted average** of the masses of all naturally occurring isotopes, based on their relative abundances. Chlorine (Cl) has Cl-35 (75%) and Cl-37 (25%), giving an average of ~35.45 amu, not 35 or 36.\n\n> **Key Takeaway:** The average atomic mass is a weighted average, like a GPA, not a simple integer count."
     },
+    // Card 4
     {
-      "front": "Volume relationships (L, mL, cm³).",
-      "back": "1 L = 1 dm³ = 1000 mL\n1 mL = 1 cm³",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Atomic Mass Problem\nNeon has three isotopes: Ne-20 (19.9924 amu, 90.48%), Ne-21 (20.9938 amu, 0.27%), and Ne-22 (21.9914 amu, 9.25%). Calculate its average atomic mass.",
+      back: "## Weighted Average Calculation\n\n**Insight:** The average is pulled strongly toward the most abundant isotope.\n\n**Analysis:** \n1. Convert % to fractions: 0.9048, 0.0027, 0.0925\n2. Formula: $A_{av} = (f_1 \\times m_1) + (f_2 \\times m_2) + (f_3 \\times m_3)$\n3. Substitute: $(0.9048 \\times 19.9924) + (0.0027 \\times 20.9938) + (0.0925 \\times 21.9914)$\n4. Multiply: $18.0891 + 0.0567 + 2.0342 = 20.1800$ amu\n5. Round to 4 sig figs: **$\\mathbf{20.18}$ amu**\n\n> **Key Takeaway:** The average must fall between the lightest and heaviest isotope masses."
     },
+
+    // ============================================================
+    // SECTION B: THE MOLE & AVOGADRO'S NUMBER (Cards 5 – 10)
+    // ============================================================
+
+    // Card 5
     {
-      "front": "Density equation and common units.",
-      "back": "Density = mass/volume (ρ = m/V).\nUnits: g/cm³ (solids), g/mL (liquids), g/L (gases).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# The Mole\nWhat is the formal SI definition of the **Mole** (mol)?",
+      back: "## The Chemist's Dozen\n\n**Insight:** The mole is a counting unit that bridges the microscopic world of atoms and the macroscopic world of grams.\n\n**Analysis:** The mole is the amount of substance that contains exactly as many elementary entities (atoms, molecules, ions) as there are atoms in exactly **12 grams** of Carbon-12.\n\n> **Key Takeaway:** Just as a dozen always means 12, a mole always means $6.022 \\times 10^{23}$ particles."
     },
+    // Card 6
     {
-      "front": "Temperature conversion: °F to °C",
-      "back": "°C = (°F − 32) × 5/9",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Avogadro's Number\nWhat is the numerical value of **Avogadro's Number** ($N_A$)?",
+      back: "## The Conversion Factor\n\n**Insight:** Avogadro's number is the experimentally determined bridge between moles and particle count.\n\n**Analysis:** $N_A = \\mathbf{6.022 \\times 10^{23}} \\, \\text{particles/mol}$.\n\n> **Key Takeaway:** $1 \\, \\text{mol} = 6.022 \\times 10^{23}$ atoms, molecules, or formula units."
     },
+    // Card 7
     {
-      "front": "Temperature conversion: °C to °F",
-      "back": "°F = (9/5 × °C) + 32",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molar Mass\nWhat is the **Molar Mass** of an element?",
+      back: "## Grams per Mole\n\n**Insight:** The molar mass in grams is numerically equal to the atomic mass in amu.\n\n**Analysis:** The molar mass is the mass in grams of exactly **1 mole** of atoms. For Carbon, atomic mass = 12.01 amu, so molar mass = **12.01 g/mol**.\n\n> **Key Takeaway:** Change the unit from 'amu' to 'g/mol' and you have the molar mass."
     },
+    // Card 8
     {
-      "front": "Temperature conversion: °C to K",
-      "back": "K = °C + 273.15",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Mole Conversion\nHow many moles of Helium (He) atoms are in $6.46 \\, \\text{g}$ of He? (Molar mass He = 4.003 g/mol).",
+      back: "## Grams to Moles\n\n**Insight:** 1 mole of He weighs about 4 grams, so 6.46 g should be slightly more than 1 mole.\n\n**Analysis:** $n = \\frac{m}{M} = \\frac{6.46 \\, \\text{g}}{4.003 \\, \\text{g/mol}} = \\mathbf{1.61 \\, \\text{mol}}$ (3 sig figs).\n\n> **Key Takeaway:** Grams cancel, leaving moles. Always check if your answer makes physical sense."
     },
+    // Card 9
     {
-      "front": "What is absolute zero?",
-      "back": "0 K (-273.15°C). The lowest theoretically attainable temperature.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "measurement"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Mole Conversion\nCalculate the mass of $0.356 \\, \\text{mol}$ of Zinc (Zn). (Molar mass Zn = 65.39 g/mol).",
+      back: "## Moles to Grams\n\n**Insight:** 1 mole of Zn weighs ~65 g, so 0.356 mol should weigh about 23 g.\n\n**Analysis:** $m = n \\times M = 0.356 \\, \\text{mol} \\times 65.39 \\, \\text{g/mol} = \\mathbf{23.3 \\, \\text{g}}$ (3 sig figs).\n\n> **Key Takeaway:** Moles cancel, leaving grams. A third of a mole weighs about a third of the molar mass."
+    },
+    // Card 10
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Atoms from Mass\nHow many **atoms** of Sulfur (S) are in $16.3 \\, \\text{g}$ of S? (M = 32.07 g/mol, $N_A = 6.022 \\times 10^{23}$).",
+      back: "## Two-Step Highway\n\n**Insight:** You cannot go directly from grams to atoms; you must pass through moles first.\n\n**Analysis:** \n1. $n = \\frac{16.3 \\, \\text{g}}{32.07 \\, \\text{g/mol}} = 0.5083 \\, \\text{mol}$\n2. $N = n \\times N_A = 0.5083 \\, \\text{mol} \\times 6.022 \\times 10^{23} \\, \\text{atoms/mol}$\n3. $= \\mathbf{3.06 \\times 10^{23}}$ atoms (3 sig figs).\n\n> **Key Takeaway:** The road is: **Grams → Moles → Particles**."
+    },
+
+    // ============================================================
+    // SECTION C: MOLAR MASS OF MOLECULES & COMPOUNDS (Cards 11 – 15)
+    // ============================================================
+
+    // Card 11
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molecular Mass\nWhat is the **Molecular Mass** (or molecular weight) of a compound?",
+      back: "## Sum of Atomic Masses\n\n**Insight:** The molecular mass in amu is numerically identical to the molar mass in g/mol.\n\n**Analysis:** The molecular mass is the sum of the atomic masses (in amu) of all the atoms in one molecule. For $\\ce{H2O}$: $2(1.008) + 1(16.00) = \\mathbf{18.02 \\, \\text{amu}}$.\n\n> **Key Takeaway:** Molecular mass (amu) = Molar mass (g/mol) numerically."
+    },
+    // Card 12
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molecular Mass\nCalculate the molecular mass of Sulfur Dioxide ($\\ce{SO2}$). (S = 32.07, O = 16.00 amu).",
+      back: "## Simple Sum\n\n**Insight:** $\\ce{SO2}$ should weigh about 32 + 32 = 64 amu.\n\n**Analysis:** $1(32.07) + 2(16.00) = 32.07 + 32.00 = \\mathbf{64.07 \\, \\text{amu}}$.\n\n> **Key Takeaway:** Always multiply each atom's mass by its subscript."
+    },
+    // Card 13
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molecular Mass\nCalculate the molecular mass of Caffeine ($\\ce{C8H10N4O2}$). (C = 12.01, H = 1.008, N = 14.01, O = 16.00 amu).",
+      back: "## Organic Compound Sum\n\n**Insight:** Caffeine is a large molecule; the molar mass will be ~194 g/mol.\n\n**Analysis:** $8(12.01) + 10(1.008) + 4(14.01) + 2(16.00)$\n$= 96.08 + 10.08 + 56.04 + 32.00 = \\mathbf{194.20 \\, \\text{amu}}$.\n\n> **Key Takeaway:** Double-check your subscripts! $\\ce{C8}$ means 8 Carbons."
+    },
+    // Card 14
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Mole Conversion\nHow many moles of Methane ($\\ce{CH4}$) are in $6.07 \\, \\text{g}$? (C = 12.01, H = 1.008 g/mol).",
+      back: "## Compound Molar Mass\n\n**Insight:** Methane is light; 1 mole weighs ~16 g, so 6 g is about one-third of a mole.\n\n**Analysis:** \n1. Molar mass of $\\ce{CH4} = 12.01 + 4(1.008) = 16.04 \\, \\text{g/mol}$\n2. $n = \\frac{6.07 \\, \\text{g}}{16.04 \\, \\text{g/mol}} = \\mathbf{0.378 \\, \\text{mol}}$ (3 sig figs).\n\n> **Key Takeaway:** Calculate the molar mass of the compound *before* using the formula."
+    },
+    // Card 15
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Atoms in Compound\nUrea $(\\ce{(NH2)2CO})$ has molar mass 60.06 g/mol. How many **Hydrogen atoms** are in $25.6 \\, \\text{g}$ of urea? ($N_A = 6.022 \\times 10^{23}$).",
+      back: "## Multi-Step Analysis\n\n**Insight:** Each urea molecule has 4 H atoms. You must go: grams → moles of compound → moles of H → atoms of H.\n\n**Analysis:** \n1. $n_{urea} = \\frac{25.6 \\, \\text{g}}{60.06 \\, \\text{g/mol}} = 0.4262 \\, \\text{mol}$\n2. Moles of H = $0.4262 \\times 4 = 1.7048 \\, \\text{mol}$\n3. $N_H = 1.7048 \\times 6.022 \\times 10^{23} = \\mathbf{1.03 \\times 10^{24}}$ atoms (3 sig figs).\n\n> **Key Takeaway:** Use the subscript from the formula to find moles of a specific element."
+    },
+
+    // ============================================================
+    // SECTION D: PERCENT COMPOSITION (Cards 16 – 18)
+    // ============================================================
+
+    // Card 16
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Percent Composition\nDefine **Percent Composition by Mass** of a compound.",
+      back: "## Elemental Fingerprint\n\n**Insight:** Percent composition is a 'fingerprint' that helps identify unknown substances.\n\n**Analysis:** It is the percentage by mass of each element in 1 mole of the compound. Formula: $\\% \\text{Element} = \\frac{n \\times \\text{Molar mass of element}}{\\text{Molar mass of compound}} \\times 100\\%$.\n\n> **Key Takeaway:** The sum of all percent compositions in a compound must equal 100%."
+    },
+    // Card 17
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Percent Composition\nCalculate the % composition of **Hydrogen** in $\\ce{H2O2}$. (H = 1.008, O = 16.00, total M = 34.02 g/mol).",
+      back: "## Hydrogen Peroxide\n\n**Insight:** Since Oxygen is much heavier, Hydrogen will be a small percentage.\n\n**Analysis:** \n- Mass of H in 1 mole = $2 \\times 1.008 = 2.016 \\, \\text{g}$\n- $\\% H = \\frac{2.016}{34.02} \\times 100\\% = 5.926\\%$\n- Rounded to 3 sig figs: **$\\mathbf{5.93\\%}$**\n\n> **Key Takeaway:** Check your work: $5.93\\% + 94.07\\% = 100.00\\%$."
+    },
+    // Card 18
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Percent Composition\nCalculate the % composition of **Phosphorus** in $\\ce{H3PO4}$ (M = 97.99 g/mol, P = 30.97 g/mol).",
+      back: "## Phosphoric Acid\n\n**Insight:** Phosphorus is a key component of fertilizers; its percentage tells farmers how much nutrient is in the product.\n\n**Analysis:** \n- Mass of P in 1 mole = $30.97 \\, \\text{g}$\n- $\\% P = \\frac{30.97}{97.99} \\times 100\\% = 31.61\\%$\n\n> **Key Takeaway:** This percentage is used in agricultural and industrial calculations."
+    },
+
+    // ============================================================
+    // SECTION E: EMPIRICAL & MOLECULAR FORMULAS (Cards 19 – 22)
+    // ============================================================
+
+    // Card 19
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Empirical Formula\nWhat is an **Empirical Formula**?",
+      back: "## Simplest Ratio\n\n**Insight:** The empirical formula is like a reduced fraction—it shows the smallest whole-number ratio of atoms.\n\n**Analysis:** The empirical formula is the simplest, whole-number ratio of atoms of each element in a compound. For $\\ce{H2O2}$, the empirical formula is $\\ce{HO}$ (1:1 ratio).\n\n> **Key Takeaway:** Many different compounds can share the same empirical formula."
+    },
+    // Card 20
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molecular Formula\nHow does a **Molecular Formula** relate to the Empirical Formula?",
+      back: "## Exact Count\n\n**Insight:** The molecular formula is always a whole-number multiple of the empirical formula.\n\n**Analysis:** The molecular formula gives the exact number of atoms in one molecule. For glucose, empirical formula = $\\ce{CH2O}$ (M = 30.03), molecular formula = $\\ce{C6H12O6}$, which is 6 times the empirical formula.\n\n> **Key Takeaway:** To find the molecular formula, you need the experimental molar mass."
+    },
+    // Card 21
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Empirical Formula Problem\nAscorbic acid (Vitamin C) is 40.92% C, 4.58% H, 54.50% O. Determine its empirical formula. (C=12.01, H=1.008, O=16.00).",
+      back: "## Percent to Ratio\n\n**Insight:** Convert percentages to grams (assume 100g), then to moles, then divide by the smallest mole value.\n\n**Analysis:** \n1. $n_C = \\frac{40.92}{12.01} = 3.407$, $n_H = \\frac{4.58}{1.008} = 4.544$, $n_O = \\frac{54.50}{16.00} = 3.406$\n2. Divide by smallest (3.406): C = 1.00, H = 1.334, O = 1.00\n3. Multiply by 3 to get whole numbers: H = $1.334 \\times 3 \\approx 4$\n4. Empirical formula = **$\\mathbf{C3H4O3}$**\n\n> **Key Takeaway:** $1.33$ is a common ratio; multiply by 3 to reach whole numbers."
+    },
+    // Card 22
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Molecular Formula Problem\nA compound contains 1.52 g N and 3.47 g O. Its molar mass is between 90–95 g/mol. Determine its molecular formula. (N=14.01, O=16.00).",
+      back: "## From Empirical to Molecular\n\n**Insight:** The molar mass range tells you which multiple of the empirical formula to use.\n\n**Analysis:** \n1. $n_N = \\frac{1.52}{14.01} = 0.1085$, $n_O = \\frac{3.47}{16.00} = 0.2169$\n2. Divide by 0.1085: N=1, O=2 → Empirical = $\\ce{NO2}$ (M = 46.01 g/mol)\n3. Multiple = $\\frac{92}{46.01} \\approx 2$\n4. Molecular = $(\\ce{NO2})_2 = \\mathbf{\\ce{N2O4}}$ (M = 92.02 g/mol)\n\n> **Key Takeaway:** The molar mass range is the key clue for finding the molecular formula."
+    },
+
+    // ============================================================
+    // SECTION F: CHEMICAL EQUATIONS & BALANCING (Cards 23 – 26)
+    // ============================================================
+
+    // Card 23
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Equations\nWhat do the state symbols **(s)**, **(l)**, **(g)**, and **(aq)** represent in a chemical equation?",
+      back: "## Physical States\n\n**Insight:** State symbols provide crucial physical context for the reaction.\n\n**Analysis:** \n- **(s)** = solid\n- **(l)** = liquid\n- **(g)** = gas\n- **(aq)** = aqueous (dissolved in water)\n\n> **Key Takeaway:** Always include state symbols for clarity in balanced equations."
+    },
+    // Card 24
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Balancing\nWhat fundamental principle governs the balancing of chemical equations?",
+      back: "## Conservation of Mass\n\n**Insight:** Atoms are never created or destroyed; they are just rearranged.\n\n**Analysis:** The **Law of Conservation of Mass** states that the number of atoms of each element must be exactly the same on both sides of the equation. You can only change **coefficients** (numbers in front), never **subscripts** (numbers inside formulas).\n\n> **Key Takeaway:** Changing subscripts changes the identity of the compound!"
+    },
+    // Card 25
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Balancing\nBalance the decomposition of Potassium Chlorate: $\\ce{KClO3} \\rightarrow \\ce{KCl} + \\ce{O2}$.",
+      back: "## Inspection Method\n\n**Insight:** Balance oxygen first because it appears alone on one side.\n\n**Analysis:** \n1. Start: $\\ce{KClO3} \\rightarrow \\ce{KCl} + \\ce{O2}$\n2. Balance O: LCM of 2 and 3 is 6 → $2\\ce{KClO3} \\rightarrow \\ce{KCl} + 3\\ce{O2}$\n3. Balance K and Cl: $2\\ce{KClO3} \\rightarrow 2\\ce{KCl} + 3\\ce{O2}$\n4. Check: K=2, Cl=2, O=6 both sides.\n\n> **Key Takeaway:** **$\\mathbf{2KClO3(s) \\rightarrow 2KCl(s) + 3O2(g)}$**"
+    },
+    // Card 26
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Balancing\nBalance the combustion of Ethane: $\\ce{C2H6} + \\ce{O2} \\rightarrow \\ce{CO2} + \\ce{H2O}$.",
+      back: "## Combustion Reaction\n\n**Insight:** Combustion of hydrocarbons always produces $\\ce{CO2}$ and $\\ce{H2O}$.\n\n**Analysis:** \n1. Start: $\\ce{C2H6} + \\ce{O2} \\rightarrow \\ce{CO2} + \\ce{H2O}$\n2. Balance C: $\\ce{C2H6} + \\ce{O2} \\rightarrow 2\\ce{CO2} + \\ce{H2O}$\n3. Balance H: $\\ce{C2H6} + \\ce{O2} \\rightarrow 2\\ce{CO2} + 3\\ce{H2O}$\n4. Balance O: RHS = 4+3=7 → use $\\frac{7}{2}$ for O2\n5. Multiply by 2 to remove fraction: **$\\mathbf{2C2H6 + 7O2 \\rightarrow 4CO2 + 6H2O}$**\n\n> **Key Takeaway:** Fractions are allowed in intermediate steps; final must be whole numbers."
+    },
+
+    // ============================================================
+    // SECTION G: STOICHIOMETRIC CALCULATIONS (Cards 27 – 29)
+    // ============================================================
+
+    // Card 27
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Stoichiometry\nWhat is the **Mole Method** in stoichiometry?",
+      back: "## The Road Map\n\n**Insight:** Stoichiometry is a 4-step road trip: Balanced Equation → Convert to Moles → Use Mole Ratio → Convert to Desired Units.\n\n**Analysis:** The mole method uses the balanced equation's coefficients as **mole ratios** to convert between amounts of reactants and products.\n\n> **Key Takeaway:** The mole ratio is the bridge that connects different substances in a reaction."
+    },
+    // Card 28
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Mole to Mole\n$2\\ce{Li} + 2\\ce{H2O} \\rightarrow 2\\ce{LiOH} + \\ce{H2}$. How many moles of $\\ce{H2}$ are produced from 6.23 mol of Li?",
+      back: "## Mole Ratio\n\n**Insight:** 2 moles of Li produce 1 mole of $\\ce{H2}$.\n\n**Analysis:** $6.23 \\, \\text{mol Li} \\times \\frac{1 \\, \\text{mol } \\ce{H2}}{2 \\, \\text{mol Li}} = \\mathbf{3.12 \\, \\text{mol } \\ce{H2}}$ (3 sig figs).\n\n> **Key Takeaway:** The mole ratio comes directly from the coefficients."
+    },
+    // Card 29
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Gram to Gram\nUsing the same reaction, calculate the mass of $\\ce{H2}$ produced when 80.57 g of Li reacts completely. (Li=6.941, H2=2.016 g/mol).",
+      back: "## Full Journey\n\n**Insight:** Roadmap: Grams Li → Moles Li → Moles H2 → Grams H2.\n\n**Analysis:** \n1. $n_{Li} = \\frac{80.57 \\, \\text{g}}{6.941 \\, \\text{g/mol}} = 11.61 \\, \\text{mol}$\n2. $n_{H2} = 11.61 \\, \\text{mol Li} \\times \\frac{1 \\, \\text{mol } \\ce{H2}}{2 \\, \\text{mol Li}} = 5.805 \\, \\text{mol}$\n3. $m_{H2} = 5.805 \\, \\text{mol} \\times 2.016 \\, \\text{g/mol} = \\mathbf{11.70 \\, \\text{g}}$\n\n> **Key Takeaway:** Always check that units cancel at each step."
+    },
+
+    // ============================================================
+    // SECTION H: LIMITING REAGENT (Cards 30 – 33)
+    // ============================================================
+
+    // Card 30
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Limiting Reagent\nWhat is the **Limiting Reagent** in a chemical reaction?",
+      back: "## The Bottleneck\n\n**Insight:** The limiting reagent is the reactant that runs out first and stops the reaction.\n\n**Analysis:** The limiting reagent is completely consumed first, determining the maximum amount of product that can be formed. The other reactant(s) are called **excess reagents**.\n\n> **Key Takeaway:** Think of making sandwiches: if you run out of bread, you stop making sandwiches—bread is the limiting reagent."
+    },
+    // Card 31
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Limiting Reagent Problem\n$2\\ce{NH3} + \\ce{CO2} \\rightarrow (\\ce{NH2})2\\ce{CO} + \\ce{H2O}$. If 637.2 g NH3 reacts with 1142 g CO2, which is the limiting reagent? (NH3=17.03, CO2=44.01 g/mol).",
+      back: "## Who Runs Out First?\n\n**Insight:** Convert both to moles, then check if there is enough of each.\n\n**Analysis:** \n1. $n_{NH3} = \\frac{637.2}{17.03} = 37.42 \\, \\text{mol}$, $n_{CO2} = \\frac{1142}{44.01} = 25.95 \\, \\text{mol}$\n2. If all CO2 reacts, it needs $25.95 \\times 2 = 51.90$ mol NH3. We only have 37.42 mol → Not enough.\n3. **$\\mathbf{NH3}$ is the limiting reagent.**\n\n> **Key Takeaway:** The limiting reagent determines how much product you get."
+    },
+    // Card 32
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Theoretical Yield\nUsing the limiting reagent (NH3) from the urea synthesis, calculate the theoretical mass of Urea produced. (Urea M = 60.06 g/mol).",
+      back: "## Max Product\n\n**Insight:** The theoretical yield is calculated from the limiting reagent only.\n\n**Analysis:** \n1. Moles Urea = $37.42 \\, \\text{mol NH3} \\times \\frac{1 \\, \\text{mol Urea}}{2 \\, \\text{mol NH3}} = 18.71 \\, \\text{mol}$\n2. Mass Urea = $18.71 \\, \\text{mol} \\times 60.06 \\, \\text{g/mol} = \\mathbf{1124 \\, \\text{g}}$\n\n> **Key Takeaway:** Excess reagents do not affect the theoretical yield."
+    },
+    // Card 33
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Excess Reagent\nHow much of the excess reagent (CO2) is left over from the urea synthesis? (Initial CO2 = 25.95 mol).",
+      back: "## Leftover Mass\n\n**Insight:** Leftover = Initial moles – Moles consumed.\n\n**Analysis:** \n1. Moles CO2 consumed = moles Urea produced = 18.71 mol (1:1 ratio)\n2. Moles CO2 left = $25.95 - 18.71 = 7.24 \\, \\text{mol}$\n3. Mass CO2 left = $7.24 \\, \\text{mol} \\times 44.01 \\, \\text{g/mol} = \\mathbf{319 \\, \\text{g}}$\n\n> **Key Takeaway:** Mass is conserved: leftover CO2 is unreacted starting material."
+    },
+
+    // ============================================================
+    // SECTION I: REACTION YIELD (Cards 34 – 39)
+    // ============================================================
+
+    // Card 34
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Yield\nWhat is the **Theoretical Yield** of a reaction?",
+      back: "## The Perfect World\n\n**Insight:** The theoretical yield is calculated, never measured. It assumes 100% efficiency.\n\n**Analysis:** The theoretical yield is the maximum amount of product that can be formed from a given amount of limiting reagent, as calculated from the balanced equation.\n\n> **Key Takeaway:** You can never exceed the theoretical yield in real life."
+    },
+    // Card 35
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Yield\nWhat is the **Actual Yield** of a reaction?",
+      back: "## The Real World\n\n**Insight:** The actual yield is what you physically collect from the experiment.\n\n**Analysis:** The actual yield is the amount of product actually obtained when the reaction is performed in the lab. It is almost always less than the theoretical yield due to losses, side reactions, or incomplete reactions.\n\n> **Key Takeaway:** Real life is messy; losses are inevitable."
+    },
+    // Card 36
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Yield\nDefine **Percent Yield** and provide its formula.",
+      back: "## Efficiency Report Card\n\n**Insight:** Percent yield tells you how efficient your reaction was.\n\n**Analysis:** \n$\\% \\text{Yield} = \\frac{\\text{Actual Yield}}{\\text{Theoretical Yield}} \\times 100\\%$\n\n> **Key Takeaway:** Percent yield can never exceed 100% (theoretical yield is the max)."
+    },
+    // Card 37
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Theoretical Yield Problem\n$\\ce{TiCl4} + 2\\ce{Mg} \\rightarrow \\ce{Ti} + 2\\ce{MgCl2}$. $3.54 \\times 10^7$ g TiCl4 reacts with $1.13 \\times 10^7$ g Mg. Calculate the theoretical yield of Ti. (TiCl4=189.7, Ti=47.88, Mg=24.31 g/mol).",
+      back: "## Industrial Stoichiometry\n\n**Insight:** Find the limiting reagent first, then calculate product.\n\n**Analysis:** \n1. $n_{TiCl4} = \\frac{3.54 \\times 10^7}{189.7} = 1.87 \\times 10^5$ mol, $n_{Mg} = \\frac{1.13 \\times 10^7}{24.31} = 4.65 \\times 10^5$ mol\n2. TiCl4 needs $1.87 \\times 10^5 \\times 2 = 3.74 \\times 10^5$ mol Mg. We have enough → TiCl4 is limiting.\n3. Moles Ti = moles TiCl4 = $1.87 \\times 10^5$ mol\n4. Mass Ti = $1.87 \\times 10^5 \\times 47.88 = \\mathbf{8.93 \\times 10^6 \\, \\text{g}}$\n\n> **Key Takeaway:** Large-scale calculations require careful unit management."
+    },
+    // Card 38
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Percent Yield Problem\nIf the actual yield of Ti is $7.91 \\times 10^6$ g, what is the percent yield from the previous reaction?",
+      back: "## Efficiency Calculation\n\n**Insight:** Percent yield is the ratio of actual to theoretical, multiplied by 100.\n\n**Analysis:** \n$\\% \\text{Yield} = \\frac{7.91 \\times 10^6}{8.93 \\times 10^6} \\times 100\\% = 88.58\\%$\nRounded to 3 sig figs: **$\\mathbf{88.6\\%}$**\n\n> **Key Takeaway:** An 88.6% yield is considered excellent in industrial chemistry."
+    },
+    // Card 39
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 2: Stoichiometry",
+      front: "# Excess Reagent Problem\nHow much of the excess reagent (Mg) is left over after the Titanium reaction? (Initial Mg = $4.65 \\times 10^5$ mol).",
+      back: "## Leftover Calculation\n\n**Insight:** Leftover = initial moles – consumed moles.\n\n**Analysis:** \n1. Moles Mg consumed = $2 \\times \\text{moles TiCl4} = 2 \\times 1.87 \\times 10^5 = 3.74 \\times 10^5$ mol\n2. Moles Mg left = $4.65 \\times 10^5 - 3.74 \\times 10^5 = 9.1 \\times 10^4$ mol\n3. Mass Mg left = $9.1 \\times 10^4 \\times 24.31 = \\mathbf{2.21 \\times 10^6 \\, \\text{g}}$\n\n> **Key Takeaway:** Excess reagent is wasted; in industry, they try to recover and recycle it."
     }
   ],
+  
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 3 - Mathematical Concepts": [
+
+  "TOPIC 3: REACTIONS IN AQUEOUS SOLUTIONS": [
+    // ============================================================
+    // SECTION A: WATER AS THE UNIVERSAL SOLVENT (Cards 1 – 3)
+    // ============================================================
+
+    // Card 1
     {
-      "front": "What is scientific notation?",
-      "back": "Expressing numbers as N × 10ⁿ, where N is between 1 and 10.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific notation"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Water\nWhy is water described as a **Polar** molecule, and what causes this polarity?",
+      back: "## The Bent Magnet\n\n**Insight:** The bent shape means the positive and negative ends are physically separated, creating a permanent dipole.\n\n**Analysis:** Water is polar because Oxygen (electronegativity 3.5) pulls shared electrons strongly toward itself, creating a partial negative charge ($\\delta^-$) on Oxygen and partial positive charges ($\\delta^+$) on the two Hydrogens. The molecule is **bent**, so these dipoles do not cancel out.\n\n> **Key Takeaway:** Water acts like a tiny magnet with a positive end and a negative end."
     },
+    // Card 2
     {
-      "front": "Scientific Notation: Multiplication rule.",
-      "back": "Multiply the coefficients and ADD the exponents.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific notation"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Solvation\nWhat is **Hydration** and how does water dissolve an ionic compound like $\\ce{NaCl}$?",
+      back: "## Ion-Dipole Attraction\n\n**Insight:** Water molecules actively grab and surround ions, pulling them apart from the crystal lattice.\n\n**Analysis:** Hydration is the process where water molecules surround and interact with solute particles. The partially positive Hydrogen ends attract negative ions ($\\ce{Cl^-}$). The partially negative Oxygen ends attract positive ions ($\\ce{Na^+}$). These ion-dipole attractions overcome the ionic bonds holding the crystal together.\n\n> **Key Takeaway:** The dissolved ions are now free to move independently in solution."
     },
+    // Card 3
     {
-      "front": "Scientific Notation: Division rule.",
-      "back": "Divide the coefficients and SUBTRACT the exponents.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "scientific notation"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Solubility\nWhat does the phrase **\"Like Dissolves Like\"** mean in chemistry?",
+      back: "## Polarity Matching\n\n**Insight:** Polar solvents dissolve polar solutes; non-polar solvents dissolve non-polar solutes.\n\n**Analysis:** \"Like dissolves like\" means that polar solvents (like water) tend to dissolve polar solutes (like ionic compounds and polar molecules), while non-polar solvents (like petrol, hexane) dissolve non-polar solutes (like fats, oils, and waxes).\n\n> **Key Takeaway:** Water cannot dissolve oil because oil is non-polar and water is polar."
     },
+
+    // ============================================================
+    // SECTION B: ELECTROLYTES (Cards 4 – 7)
+    // ============================================================
+
+    // Card 4
     {
-      "front": "Significant Figures: Non-zero digits.",
-      "back": "All non-zero digits are significant (e.g., 845 has 3 sig figs).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "significant figures"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Electrolytes\nWhat is an **Electrolyte**?",
+      back: "## Ion Carrier\n\n**Insight:** The bulb in a conductivity apparatus lights up because ions carry the charge through the solution.\n\n**Analysis:** An electrolyte is a substance that, when dissolved in water, produces a solution that can conduct an electric current because it produces free-moving **ions**.\n\n> **Key Takeaway:** Pure water does not conduct electricity well; salt water does because of ions."
     },
+    // Card 5
     {
-      "front": "Significant Figures: Zeros.",
-      "back": "Between non-zeros: Significant.\nLeft of first non-zero: NOT significant.\nRight of decimal (>1): Significant.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "significant figures"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Strong Electrolytes\nDefine a **Strong Electrolyte** and provide three common examples.",
+      back: "## 100% Ionization\n\n**Insight:** Strong electrolytes are represented with a single arrow ($\\rightarrow$) in their dissociation equations.\n\n**Analysis:** A strong electrolyte completely dissociates (ionizes) into its constituent ions when dissolved in water. It conducts electricity very efficiently.\n**Examples:**\n1. Soluble ionic salts (e.g., $\\ce{NaCl}$)\n2. Strong acids (e.g., $\\ce{HCl}$, $\\ce{HNO3}$)\n3. Strong bases (e.g., $\\ce{NaOH}$, $\\ce{KOH}$)\n\n> **Key Takeaway:** 100% of the dissolved substance exists as separate ions."
     },
+    // Card 6
     {
-      "front": "Sig Fig Rule: Addition/Subtraction",
-      "back": "The answer cannot have more digits to the right of the decimal point than the original number with the fewest decimal places.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "significant figures"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Weak Electrolytes\nDefine a **Weak Electrolyte** and provide two common examples.",
+      back: "## Partial Ionization\n\n**Insight:** Weak electrolytes are represented with a double arrow ($\\rightleftharpoons$) because the reaction is reversible.\n\n**Analysis:** A weak electrolyte only partially ionizes in water. Only a small fraction of the dissolved molecules break apart into ions, so the solution conducts electricity only weakly.\n**Examples:**\n1. Weak acids (e.g., acetic acid, $\\ce{CH3COOH}$)\n2. Weak bases (e.g., ammonia, $\\ce{NH3}$)\n\n> **Key Takeaway:** Most of the molecules remain intact; only a few form ions."
     },
+    // Card 7
     {
-      "front": "Sig Fig Rule: Multiplication/Division",
-      "back": "The result is limited by the original number with the smallest number of significant figures.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "significant figures"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Nonelectrolytes\nDefine a **Nonelectrolyte** and provide examples.",
+      back: "## No Ions\n\n**Insight:** \"Dissolves\" does NOT equal \"ionizes.\"\n\n**Analysis:** A nonelectrolyte dissolves in water but produces **no ions** at all. It does not conduct electricity because there are no charged particles to carry the current.\n**Examples:** Sugars (sucrose, glucose), alcohols (ethanol, methanol).\n\n> **Key Takeaway:** Sugar water won't light a bulb because sugar molecules don't break into ions."
     },
+
+    // ============================================================
+    // SECTION C: CONCENTRATION & MOLARITY (Cards 8 – 14)
+    // ============================================================
+
+    // Card 8
     {
-      "front": "Define Accuracy vs. Precision.",
-      "back": "Accuracy: How close a measurement is to the true value.\nPrecision: How close measurements are to each other.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision and accuracy"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Molarity\nDefine **Molarity** ($M$) and state its formula.",
+      back: "## Moles per Liter\n\n**Insight:** Molarity uses the final volume of solution, not the volume of solvent added.\n\n**Analysis:** Molarity is the number of moles of solute per liter of **solution** (the final mixture).\n$M = \\frac{\\text{moles of solute}}{\\text{liters of solution}} = \\frac{n}{V}$\n\n> **Key Takeaway:** Molarity is temperature-dependent because volume changes with temperature."
     },
+    // Card 9
     {
-      "front": "Random vs. Systematic Error.",
-      "back": "Random: Equal chance of being high or low (reduces precision).\nSystematic: Consistently in the same direction (reduces accuracy).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "precision and accuracy"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Molarity Problem\n$27 \\, \\text{g}$ of $\\ce{CaCl2}$ is dissolved to make $500 \\, \\text{mL}$ of solution. Calculate its molarity. (CaCl2 = 110.98 g/mol).",
+      back: "## Moles per Liter\n\n**Insight:** 27 g is roughly a quarter of a mole, dissolved in half a liter, gives about 0.5 M.\n\n**Analysis:** \n1. $n = \\frac{27 \\, \\text{g}}{110.98 \\, \\text{g/mol}} = 0.2433 \\, \\text{mol}$\n2. $V = 500 \\, \\text{mL} \\times \\frac{1 \\, \\text{L}}{1000 \\, \\text{mL}} = 0.500 \\, \\text{L}$\n3. $M = \\frac{0.2433}{0.500} = 0.4866 \\, \\text{M}$\n4. Rounded to 2 sig figs (27 g has 2): **$\\mathbf{0.48 \\, \\text{M}}$**\n\n> **Key Takeaway:** Always convert mL to L before dividing."
     },
+    // Card 10
     {
-      "front": "What is Dimensional Analysis?",
-      "back": "A problem-solving method using unit conversion factors to cancel unwanted units and obtain desired units.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "dimensional analysis"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Molarity Problem\n$34.6 \\, \\text{g}$ of $\\ce{NaCl}$ dissolved in $125 \\, \\text{mL}$ of water. Calculate molarity. (NaCl = 58.44 g/mol).",
+      back: "## Concentrated Solution\n\n**Insight:** This is a very concentrated salt solution—almost 5 moles per liter.\n\n**Analysis:** \n1. $n = \\frac{34.6 \\, \\text{g}}{58.44 \\, \\text{g/mol}} = 0.5920 \\, \\text{mol}$\n2. $V = 125 \\, \\text{mL} \\times \\frac{1 \\, \\text{L}}{1000 \\, \\text{mL}} = 0.125 \\, \\text{L}$\n3. $M = \\frac{0.5920}{0.125} = 4.736 \\, \\text{M}$\n4. Rounded to 3 sig figs: **$\\mathbf{4.74 \\, \\text{M}}$**\n\n> **Key Takeaway:** Small volume with moderate mass gives high molarity."
+    },
+    // Card 11
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Ion Concentration\nHow do you calculate the molarity of **Individual Ions** in a solution?",
+      back: "## Multiply by Subscript\n\n**Insight:** 1 mole of $\\ce{CaCl2}$ produces 1 mole of $\\ce{Ca^{2+}}$ but 2 moles of $\\ce{Cl^-}$.\n\n**Analysis:** Multiply the molarity of the compound by the subscript (the number of that specific ion per formula unit).\n**Example:** For $0.50 \\, \\text{M} \\, \\ce{CaCl2}$:\n- $[\\ce{Ca^{2+}}] = 0.50 \\, \\text{M}$\n- $[\\ce{Cl^-}] = 2 \\times 0.50 = 1.00 \\, \\text{M}$\n\n> **Key Takeaway:** The moles of ions are not the same as the moles of the compound."
+    },
+    // Card 12
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Standard Solution\nWhat is a **Standard Solution**?",
+      back: "## Accurately Known\n\n**Insight:** The accuracy of your entire titration depends on how carefully you prepared your standard solution.\n\n**Analysis:** A standard solution is a solution whose exact concentration is accurately known, typically to 4 or more significant figures. It is prepared by dissolving a precisely weighed amount of a **primary standard** (a highly pure, stable compound) in a volumetric flask and making up to the mark with solvent.\n\n> **Key Takeaway:** Always fill the volumetric flask to the calibration mark exactly."
+    },
+    // Card 13
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Dilution\nWhat is the **Dilution Formula** and why does it work?",
+      back: "## Conservation of Moles\n\n**Insight:** Adding solvent does not change the number of moles of solute—it just spreads them over a larger volume.\n\n**Analysis:** The dilution formula is $M_1V_1 = M_2V_2$, where:\n- $M_1$ = initial molarity, $V_1$ = initial volume\n- $M_2$ = final molarity, $V_2$ = final volume\nIt works because the number of moles of solute does NOT change during dilution: $\\text{moles} = M \\times V$.\n\n> **Key Takeaway:** The units for $V$ must be the same on both sides (both mL or both L)."
+    },
+    // Card 14
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Dilution Problem\nHow many mL of $2.00 \\, \\text{M} \\, \\ce{HCl}$ are needed to prepare $500 \\, \\text{mL}$ of $0.250 \\, \\text{M} \\, \\ce{HCl}$?",
+      back: "## Calculate Volume\n\n**Insight:** You take 62.5 mL of the strong acid and add water until the total volume is exactly 500 mL.\n\n**Analysis:** \n1. Use $M_1V_1 = M_2V_2$\n2. $M_1 = 2.00 \\, \\text{M}$, $M_2 = 0.250 \\, \\text{M}$, $V_2 = 500 \\, \\text{mL}$\n3. $V_1 = \\frac{M_2 \\times V_2}{M_1} = \\frac{0.250 \\times 500}{2.00} = 62.5 \\, \\text{mL}$\n\n> **Key Takeaway:** If you got 62.5 L, you'd know instantly you made a decimal error!"
+    },
+
+    // ============================================================
+    // SECTION D: TYPES OF REACTIONS & PRECIPITATION (Cards 15 – 19)
+    // ============================================================
+
+    // Card 15
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Precipitation\nWhat is a **Precipitation Reaction**?",
+      back: "## Solid Formation\n\n**Insight:** The word \"precipitate\" literally means \"to fall out\"—the solid appears suddenly and settles to the bottom.\n\n**Analysis:** A precipitation reaction is a reaction in which two soluble ionic solutions are mixed, and an **insoluble** solid (called a precipitate) forms and falls out of solution.\n\n> **Key Takeaway:** These reactions are useful for identifying ions and for gravimetric analysis."
+    },
+    // Card 16
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Dissociation\nWhat happens when an ionic compound **Dissolves** in water?",
+      back: "## Lattice Breaks\n\n**Insight:** The \"(aq)\" state symbol tells you the ion is surrounded by water and moving freely.\n\n**Analysis:** When an ionic compound dissolves, it undergoes **dissociation**—the crystal lattice breaks apart and the individual ions separate and move independently. Each ion becomes hydrated (surrounded by water molecules).\n$\\ce{NaCl(s) ->[H2O] Na+(aq) + Cl-(aq)}$\n\n> **Key Takeaway:** The ions are now free to move and react."
+    },
+    // Card 17
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Products\nHow do you predict the products of a **Precipitation Reaction**?",
+      back: "## Switch Partners\n\n**Insight:** This is called a \"metathesis\" or \"double displacement\" reaction.\n\n**Analysis:** The cations and anions \"switch partners\" to form two new ionic compounds. One of these new compounds will be the **precipitate** (insoluble), and the other will remain dissolved (soluble).\n$\\ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}$\n\n> **Key Takeaway:** The key is knowing the solubility rules to predict which product is insoluble."
+    },
+    // Card 18
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Solubility\nWhat are the general rules for the **Solubility of Salts** in water?",
+      back: "## The Rules\n\n**Insight:** Mnemonic: \"N\" for Nitrates always soluble. \"NA\" for Sodium and Ammonium always soluble.\n\n**Analysis:** \n1. **Nitrates ($\\ce{NO3^-}$)** are always soluble.\n2. **Alkali metal ions ($\\ce{Li^+}$, $\\ce{Na^+}$, $\\ce{K^+}$)** and **Ammonium ($\\ce{NH4^+}$)** salts are always soluble.\n3. **Chlorides, Bromides, and Iodides** are soluble, except those of $\\ce{Ag^+}$, $\\ce{Pb^{2+}}$, and $\\ce{Hg2^{2+}}$.\n4. **Sulfates ($\\ce{SO4^{2-}}$)** are soluble, except $\\ce{BaSO4}$, $\\ce{PbSO4}$, $\\ce{HgSO4}$, and $\\ce{CaSO4}$.\n5. **Hydroxides ($\\ce{OH^-}$)** are mostly insoluble, except $\\ce{NaOH}$, $\\ce{KOH}$, and $\\ce{Ba(OH)2}$.\n6. **Sulfides ($\\ce{S^{2-}}$), Carbonates ($\\ce{CO3^{2-}}$), Chromates ($\\ce{CrO4^{2-}}$), and Phosphates ($\\ce{PO4^{3-}}$)** are mostly insoluble.\n\n> **Key Takeaway:** You will use these rules constantly to predict precipitates."
+    },
+    // Card 19
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# No Reaction\nDoes a reaction occur when $\\ce{NaCl(aq)}$ is mixed with $\\ce{KNO3(aq)}$? Explain.",
+      back: "## All Soluble\n\n**Insight:** If all possible products are soluble, no reaction occurs—just a mixture of ions.\n\n**Analysis:** No reaction occurs. The possible products are $\\ce{NaNO3}$ and $\\ce{KCl}$. Both are soluble in water (nitrates are soluble, and chlorides are soluble except with $\\ce{Ag^+}$, $\\ce{Pb^{2+}}$). Since all possible products remain dissolved, there is no chemical change.\n\n> **Key Takeaway:** Always check the solubility rules before assuming a reaction occurs!"
+    },
+
+    // ============================================================
+    // SECTION E: EQUATIONS FOR REACTIONS IN SOLUTION (Cards 20 – 23)
+    // ============================================================
+
+    // Card 20
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Equations\nWhat is a **Molecular Equation**?",
+      back: "## Overall Stoichiometry\n\n**Insight:** The \"molecular equation\" is a bit of a misnomer because ionic compounds don't exist as molecules, but it's the standard way to write the overall reaction.\n\n**Analysis:** A molecular equation shows the complete, balanced formulas of all reactants and products as if they were intact molecules. It does not show the actual ionic forms present in solution.\n$\\ce{Na2CO3(aq) + Ca(NO3)2(aq) -> 2NaNO3(aq) + CaCO3(s)}$\n\n> **Key Takeaway:** It tells you *what* reacts with *what* and *what* is produced."
+    },
+    // Card 21
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Equations\nWhat is a **Complete Ionic Equation**?",
+      back: "## Realistic Representation\n\n**Insight:** This equation is more realistic because it shows what's really in the beaker: free-floating ions.\n\n**Analysis:** A complete ionic equation shows all soluble strong electrolytes (ionic compounds) as their dissociated ions in solution. The insoluble precipitate remains as a solid formula.\n$2\\ce{Na+}(aq) + \\ce{CO3^{2-}}(aq) + \\ce{Ca^{2+}}(aq) + 2\\ce{NO3^-}(aq) \\rightarrow 2\\ce{Na+}(aq) + 2\\ce{NO3^-}(aq) + \\ce{CaCO3}(s)$\n\n> **Key Takeaway:** The solid precipitate stays as a formula because it is not dissolved."
+    },
+    // Card 22
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Equations\nWhat is a **Net Ionic Equation**?",
+      back: "## The Heart of the Reaction\n\n**Insight:** Spectator ions are just \"watching\" the reaction; they are crossed out.\n\n**Analysis:** A net ionic equation shows only the ions and molecules that actually undergo a chemical change. **Spectator ions**—ions that appear unchanged on both sides—are cancelled out.\n$\\ce{Ca^{2+}}(aq) + \\ce{CO3^{2-}}(aq) \\rightarrow \\ce{CaCO3}(s)$\n\n> **Key Takeaway:** The net ionic equation shows exactly what is happening: two ions meeting to form a solid."
+    },
+    // Card 23
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Spectators\nDefine **Spectator Ions**.",
+      back: "## Bystanders\n\n**Insight:** Spectator ions do not affect the reaction; they just come along for the ride.\n\n**Analysis:** Spectator ions are ions that are present in the solution but do not participate in the chemical reaction. They remain dissolved and unchanged throughout the reaction.\n\n> **Key Takeaway:** Identifying them is the key step to writing net ionic equations—cross them out."
+    },
+
+    // ============================================================
+    // SECTION F: ACID-BASE REACTIONS (Cards 24 – 29)
+    // ============================================================
+
+    // Card 24
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Acids & Bases\nWhat is an **Arrhenius Acid** and an **Arrhenius Base**?",
+      back: "## The Original Definition\n\n**Insight:** This definition only works for aqueous solutions and doesn't cover bases like ammonia.\n\n**Analysis:** \n- **Arrhenius acid**: Produces $\\ce{H+}$ ions in water.\n- **Arrhenius base**: Produces $\\ce{OH^-}$ ions in water.\n$\\ce{HCl(aq) -> H+(aq) + Cl-(aq)}$ (acid)\n$\\ce{NaOH(aq) -> Na+(aq) + OH-(aq)}$ (base)\n\n> **Key Takeaway:** It has limitations—it doesn't cover bases like $\\ce{NH3}$."
+    },
+    // Card 25
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Acids & Bases\nWhat is a **Brønsted-Lowry Acid** and **Base**?",
+      back: "## Proton Transfer\n\n**Insight:** This definition is broader because it includes bases like $\\ce{NH3}$ that don't have $\\ce{OH^-}$ ions.\n\n**Analysis:** \n- **Brønsted-Lowry acid**: Donates a proton ($\\ce{H+}$).\n- **Brønsted-Lowry base**: Accepts a proton ($\\ce{H+}$).\n$\\ce{NH3 + H2O <=> NH4+ + OH-}$\n\n> **Key Takeaway:** It introduces conjugate acid-base pairs."
+    },
+    // Card 26
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Neutralization\nWrite the net ionic equation for the neutralization between a **Strong Acid** and **Strong Base**.",
+      back: "## The Heart of Acid-Base Chemistry\n\n**Insight:** Every strong acid + strong base reaction is the same—a proton meets a hydroxide and forms water.\n\n**Analysis:** The net ionic equation is:\n$\\ce{H+(aq) + OH-(aq) -> H2O(l)}$\n**Example:** $\\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}$\nThe $\\ce{Na+}$ and $\\ce{Cl^-}$ are spectator ions that cancel out.\n\n> **Key Takeaway:** The heat released is always the same per mole of water formed."
+    },
+    // Card 27
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Titration\nWhat is a **Titration**?",
+      back: "## Analytical Technique\n\n**Insight:** Titrations are the workhorses of analytical chemistry—highly accurate and relatively simple.\n\n**Analysis:** A titration is a laboratory technique used to determine the unknown concentration of a substance (the **analyte**) by reacting it with a standard solution (the **titrant**) of known concentration. The titrant is slowly added from a burette until the reaction is complete (the equivalence point).\n\n> **Key Takeaway:** The key is choosing a good indicator that changes color at the equivalence point."
+    },
+    // Card 28
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Titration Terms\nDefine: (a) **Titrant**, (b) **Analyte**, (c) **Equivalence point**, (d) **Endpoint**, (e) **Indicator**.",
+      back: "## Titration Vocabulary\n\n**Insight:** The goal is to make the endpoint *as close as possible* to the equivalence point.\n\n**Analysis:** \n- **(a) Titrant**: Solution of known concentration (in the burette).\n- **(b) Analyte**: Solution of unknown concentration (in the flask).\n- **(c) Equivalence point**: Theoretical point where exactly the right amount of titrant has been added to react completely with the analyte.\n- **(d) Endpoint**: The point where the indicator changes color, signaling the equivalence point has been reached.\n- **(e) Indicator**: A substance added to the analyte that changes color at (or near) the equivalence point.\n\n> **Key Takeaway:** A good indicator changes color within 1 drop of the equivalence point."
+    },
+    // Card 29
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Titration Requirements\nWhat are the five requirements for a successful acid-base titration?",
+      back: "## Accuracy Essentials\n\n**Insight:** Using a weak acid as a titrant would result in a very gradual color change, making it hard to pinpoint the endpoint.\n\n**Analysis:** \n1. The exact reaction between titrant and analyte must be known.\n2. The reaction must proceed rapidly (instantaneous).\n3. The equivalence point must be marked accurately (choose the correct indicator).\n4. The volume of titrant required must be measured accurately.\n5. The titrant should be a **strong acid** or **strong base**.\n\n> **Key Takeaway:** Violating any condition makes your titration inaccurate."
+    },
+
+    // ============================================================
+    // SECTION G: OXIDATION-REDUCTION (REDOX) (Cards 30 – 33)
+    // ============================================================
+
+    // Card 30
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox\nWhat is an **Oxidation-Reduction** (Redox) reaction?",
+      back: "## Electron Transfer\n\n**Insight:** Redox reactions are everywhere: battery chemistry, photosynthesis, rusting, and combustion.\n\n**Analysis:** A redox reaction is a reaction in which electrons are transferred from one substance (the **reducing agent**) to another (the **oxidizing agent**). One substance loses electrons (oxidation) while another gains electrons (reduction).\n\n> **Key Takeaway:** If oxidation states change, it's a redox reaction."
+    },
+    // Card 31
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Mnemonics\nWhat does \"**LEO says GER**\" stand for?",
+      back: "## Remembering Electron Transfer\n\n**Insight:** This is the most famous mnemonic in redox chemistry.\n\n**Analysis:** \n- **LEO** = **L**ose **E**lectrons = **O**xidation\n- **GER** = **G**ain **E**lectrons = **R**eduction\n\n> **Key Takeaway:** If you get these mixed up, your entire analysis will be wrong."
+    },
+    // Card 32
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidizing Agent\nWhat is an **Oxidizing Agent** and what does it do to itself?",
+      back: "## Electron Acceptor\n\n**Insight:** A common trap is thinking the oxidizing agent gets oxidized. No—it gets reduced!\n\n**Analysis:** An oxidizing agent causes another substance to be oxidized. In doing so, the oxidizing agent itself is **reduced** (it gains electrons). It is the \"electron acceptor.\"\n**Example:** In $2\\ce{Na} + \\ce{Cl2} \\rightarrow 2\\ce{NaCl}$, $\\ce{Cl2}$ is the oxidizing agent.\n\n> **Key Takeaway:** Oxidizing agent → gets reduced (gains e⁻)."
+    },
+    // Card 33
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Reducing Agent\nWhat is a **Reducing Agent** and what does it do to itself?",
+      back: "## Electron Donor\n\n**Insight:** The reducing agent is the \"hero\" that gives away electrons.\n\n**Analysis:** A reducing agent causes another substance to be reduced. In doing so, the reducing agent itself is **oxidized** (it loses electrons). It is the \"electron donor.\"\n**Example:** In $2\\ce{Na} + \\ce{Cl2} \\rightarrow 2\\ce{NaCl}$, $\\ce{Na}$ is the reducing agent.\n\n> **Key Takeaway:** Reducing agent → gets oxidized (loses e⁻)."
+    },
+
+    // ============================================================
+    // SECTION H: OXIDATION STATES (Cards 34 – 39)
+    // ============================================================
+
+    // Card 34
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nWhat is the oxidation state of an atom in a **Free Element**?",
+      back: "## Zero Rule\n\n**Insight:** Any element by itself has an oxidation state of zero—even diatomic molecules like $\\ce{O2}$.\n\n**Analysis:** The oxidation state of any atom in a free (uncombined) element is **0**.\n**Examples:** $\\ce{Na}$ = 0, $\\ce{Cl2}$ = 0, $\\ce{O2}$ = 0, $\\ce{Fe}$ = 0.\n\n> **Key Takeaway:** This is the easiest rule! Whenever you see an element by itself, its oxidation state is zero."
+    },
+    // Card 35
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nWhat is the oxidation state of a **Monatomic Ion**?",
+      back: "## Equal to Charge\n\n**Insight:** Just look at the charge on the ion.\n\n**Analysis:** The oxidation state of a monatomic ion is equal to its charge.\n**Examples:** $\\ce{Na+}$ = +1, $\\ce{Ca^{2+}}$ = +2, $\\ce{Cl^-}$ = -1, $\\ce{O^{2-}}$ = -2.\n\n> **Key Takeaway:** For polyatomic ions, the sum of oxidation states must equal the total charge."
+    },
+    // Card 36
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nWhat is the oxidation state of **Oxygen** in most compounds? What are the exceptions?",
+      back: "## Usually -2\n\n**Insight:** The peroxide exception (-1) is a classic exam trap!\n\n**Analysis:** In most compounds, Oxygen has an oxidation state of **-2**.\n**Exceptions:**\n- In *peroxides* (e.g., $\\ce{H2O2}$, $\\ce{Na2O2}$): **-1**\n- In *superoxides* (e.g., $\\ce{KO2}$): **-1/2**\n- In *oxygen difluoride* ($\\ce{OF2}$): **+2** (because F is more electronegative)\n\n> **Key Takeaway:** If you see $\\ce{O2^{2-}}$ (peroxide ion), each O is -1, not -2."
+    },
+    // Card 37
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nWhat is the oxidation state of **Hydrogen** in most compounds? What are the exceptions?",
+      back: "## Usually +1\n\n**Insight:** In hydrides (like $\\ce{NaH}$), Hydrogen is -1.\n\n**Analysis:** In most compounds with non-metals, Hydrogen has an oxidation state of **+1**.\n**Exception:** When bonded to a metal in a *metal hydride* (e.g., $\\ce{NaH}$, $\\ce{CaH2}$), Hydrogen is **-1**.\n\n> **Key Takeaway:** Always check what element Hydrogen is bonded to."
+    },
+    // Card 38
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nWhat is the oxidation state of **Fluorine** in all compounds?",
+      back: "## Always -1\n\n**Insight:** Fluorine is the most electronegative element, so it never loses electrons in a compound.\n\n**Analysis:** Fluorine always has an oxidation state of **-1** in all its compounds.\n\n> **Key Takeaway:** This rule has no exceptions."
+    },
+    // Card 39
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Oxidation States\nDetermine the oxidation state of Chlorine in (a) $\\ce{Cl2}$ and (b) $\\ce{NaCl}$.",
+      back: "## Applying Rules\n\n**Insight:** Chlorine can have many different oxidation states depending on what it's bonded to.\n\n**Analysis:** \n- (a) In $\\ce{Cl2}$: **0** (free element rule).\n- (b) In $\\ce{NaCl}$: **-1** ($\\ce{Na}$ is +1, compound is neutral, so Cl must be -1).\n\n> **Key Takeaway:** Always use the other rules to deduce the value."
+    },
+
+    // ============================================================
+    // SECTION I: BALANCING REDOX EQUATIONS (Cards 40 – 50)
+    // ============================================================
+
+    // Card 40
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox Balancing\nWhat is the **Half-Reaction Method** for balancing redox reactions?",
+      back: "## Systematic Approach\n\n**Insight:** This method may seem like a lot of steps, but once you learn the pattern, it becomes a reliable tool.\n\n**Analysis:** The half-reaction method separates a redox reaction into two separate \"half-reactions\": one for **oxidation** (loss of electrons) and one for **reduction** (gain of electrons). Each half-reaction is balanced separately for atoms and charge, then combined to give the balanced overall equation.\n\n> **Key Takeaway:** Works even for complex reactions in acidic or basic solutions."
+    },
+    // Card 41
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox Balancing\nOutline the steps for balancing a redox reaction in **Acidic Solution** using the half-reaction method.",
+      back: "## The Order Matters\n\n**Insight:** Memorize this order: Atoms (except O/H) → O → H → Charge!\n\n**Analysis:** \n1. Write the unbalanced equation and separate into two half-reactions.\n2. **Balance atoms (except O and H)** for each half-reaction.\n3. **Balance O atoms** by adding $\\ce{H2O}$ to the side lacking oxygen.\n4. **Balance H atoms** by adding $\\ce{H+}$ to the side lacking hydrogen.\n5. **Balance charge** by adding electrons ($\\ce{e^-}$) to the more positive side.\n6. **Equalize electrons** by multiplying one or both half-reactions by integers.\n7. **Add the half-reactions** together, canceling electrons and any species that appear on both sides.\n8. **Check** that atoms and charges are balanced.\n\n> **Key Takeaway:** If you try to balance charge before H and O, you'll get confused."
+    },
+    // Card 42
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox Balancing\nBalance $\\ce{Fe^{2+}(aq) + Cr2O7^{2-}(aq) -> Fe^{3+}(aq) + Cr^{3+}(aq)}$ in **Acidic Solution**.",
+      back: "## Dichromate Oxidation\n\n**Insight:** The dichromate ion ($\\ce{Cr2O7^{2-}}$) is a powerful oxidizing agent in acidic solution.\n\n**Analysis:** \n1. **Oxidation:** $\\ce{Fe^{2+} -> Fe^{3+} + e^-}$\n2. **Reduction:** $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{e^-} -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n3. Equalize electrons (multiply oxidation by 6): $6\\ce{Fe^{2+}} \\rightarrow 6\\ce{Fe^{3+}} + 6\\ce{e^-}$\n4. Add and cancel electrons:\n**$\\mathbf{14H+(aq) + Cr2O7^{2-}(aq) + 6Fe^{2+}(aq) -> 2Cr^{3+}(aq) + 6Fe^{3+}(aq) + 7H2O(l)}$**\n\n> **Key Takeaway:** Key step: balancing oxygen with water and hydrogen with $\\ce{H+}$."
+    },
+    // Card 43
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox Balancing\nOutline the steps for balancing a redox reaction in **Basic Solution**.",
+      back: "## Acid First, Then Convert\n\n**Insight:** The key is to balance in acid first, then convert to basic solution.\n\n**Analysis:** \n1. First, balance the reaction as if it were in **acidic solution** (using $\\ce{H+}$ and $\\ce{H2O}$).\n2. Add the same number of $\\ce{OH^-}$ ions to *both sides* of the equation as there are $\\ce{H+}$ ions.\n3. Combine $\\ce{H+}$ and $\\ce{OH^-}$ on the same side to form $\\ce{H2O}$.\n4. Cancel any $\\ce{H2O}$ molecules that appear on both sides.\n5. Check that atoms and charges are balanced.\n\n> **Key Takeaway:** The final equation should have no $\\ce{H+}$ ions—only $\\ce{OH^-}$ and $\\ce{H2O}$."
+    },
+    // Card 44
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Redox Balancing\nBalance $\\ce{MnO4^-(aq) + I^-(aq) -> MnO2(s) + I2(s)}$ in **Basic Solution**.",
+      back: "## Permanganate to Manganese Dioxide\n\n**Insight:** The $\\ce{MnO4^-}$ ion in basic solution reduces to solid $\\ce{MnO2}$ (manganese dioxide).\n\n**Analysis:** \n1. **Oxidation:** $6\\ce{I^-} \\rightarrow 3\\ce{I2} + 6\\ce{e^-}$\n2. **Reduction (balanced as acidic first):** $4\\ce{H2O} + 2\\ce{MnO4^-} + 6\\ce{e^-} \\rightarrow 2\\ce{MnO2} + 8\\ce{OH^-}$\n3. Add and cancel electrons:\n**$\\mathbf{2MnO4^-(aq) + 4H2O(l) + 6I^-(aq) -> 2MnO2(s) + 3I2(s) + 8OH^-(aq)}$**\n\n> **Key Takeaway:** The conversion from acidic to basic is the step most students forget—always add $\\ce{OH^-}$ to both sides!"
+    },
+    // Card 45
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Key Terms\nWhat is the Arrhenius definition of an **Acid** and **Base**?",
+      back: "## Simple Definition\n\n**Insight:** This works well for strong acids like $\\ce{HCl}$ and strong bases like $\\ce{NaOH}$.\n\n**Analysis:** \n- **Acid**: Produces $\\ce{H+}$ ions in water.\n- **Base**: Produces $\\ce{OH^-}$ ions in water.\n\n> **Key Takeaway:** Limited to aqueous solutions—doesn't cover bases like $\\ce{NH3}$."
+    },
+    // Card 46
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Key Terms\nWhat is the Brønsted-Lowry definition of an **Acid** and **Base**?",
+      back: "## Proton Transfer\n\n**Insight:** This definition introduces the concept of conjugate acid-base pairs.\n\n**Analysis:** \n- **Acid**: Proton ($\\ce{H+}$) donor.\n- **Base**: Proton ($\\ce{H+}$) acceptor.\n\n> **Key Takeaway:** Broader definition—includes bases like $\\ce{NH3}$ that don't have $\\ce{OH^-}$."
+    },
+    // Card 47
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Key Terms\nHow do you identify a **Strong Acid** in aqueous solution?",
+      back: "## Complete Ionization\n\n**Insight:** You must memorize the six strong acids! If not on the list, it's a weak acid.\n\n**Analysis:** A strong acid is completely dissociated (ionized) into $\\ce{H+}$ and its conjugate base in solution. There are no intact acid molecules left.\n**Common strong acids:** $\\ce{HCl}$, $\\ce{HBr}$, $\\ce{HI}$, $\\ce{HNO3}$, $\\ce{H2SO4}$, $\\ce{HClO4}$.\n\n> **Key Takeaway:** If an acid is not on this list, it is a weak acid."
+    },
+    // Card 48
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Key Terms\nHow do you identify a **Weak Acid** in aqueous solution?",
+      back: "## Partial Ionization\n\n**Insight:** A common mistake is thinking all acids are strong. In reality, most organic acids are weak.\n\n**Analysis:** A weak acid only partially ionizes in water. Most acid molecules remain intact. It establishes an equilibrium between the undissociated acid and its ions.\n**Common weak acids:** Acetic acid ($\\ce{CH3COOH}$), carbonic acid ($\\ce{H2CO3}$), citric acid, hydrofluoric acid ($\\ce{HF}$).\n\n> **Key Takeaway:** The equilibrium sign ($\\rightleftharpoons$) is your clue that it's weak."
+    },
+    // Card 49
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Key Terms\nWhat is a **Salt** in the context of acid-base reactions?",
+      back: "## Neutralization Product\n\n**Insight:** Salts can be acidic, basic, or neutral depending on the strength of the acid and base they came from.\n\n**Analysis:** A salt is an ionic compound formed when the $\\ce{H+}$ from an acid is replaced by a metal cation or the ammonium ion ($\\ce{NH4+}$). It is the \"other product\" of a neutralization reaction, alongside water.\n$\\ce{HCl + NaOH -> NaCl + H2O}$\n\n> **Key Takeaway:** $\\ce{NaCl}$ is neutral because it came from a strong acid and strong base."
+    },
+    // Card 50
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 3: Aqueous Reactions",
+      front: "# Titration Terms\nWhat is the difference between the **Equivalence Point** and the **Endpoint** in a titration?",
+      back: "## Theory vs. Practice\n\n**Insight:** In an ideal titration, they are identical. In practice, there is always a tiny difference (indicator error).\n\n**Analysis:** \n- **Equivalence point**: Theoretical point where the exact stoichiometric amount of titrant has been added to completely react with the analyte.\n- **Endpoint**: Experimental point where the indicator changes color, signaling that the equivalence point has been reached.\n\n> **Key Takeaway:** A good indicator changes color within 1 drop of the equivalence point to minimize this error."
     }
   ],
+  
+  
+  
+  "TOPIC 4: GASES": [
+    // ============================================================
+    // SECTION 4.1: PRESSURE & PROPERTIES OF GASES (Cards 1 – 3)
+    // ============================================================
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 4 - Atomic Theory & Structure": [
+    // Card 1
     {
-      "front": "Who proposed the modern Atomic Theory?",
-      "back": "John Dalton.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "atomic theory"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Gas Properties\nWhat are the key physical properties that define a **Gas**?",
+      back: "## The Fluid State\n\n**Insight:** Gases are the most energetic state of matter, with particles moving freely and independently.\n\n**Analysis:** Gases have the following defining properties:\n1. They are **readily compressible** (particles are far apart).\n2. They **completely fill any container** (no fixed shape or volume).\n3. They have **low density** compared to liquids and solids.\n4. They **mix completely** with any other gas (diffusion).\n5. They **exert pressure** on their surroundings (collisions with walls).\n\n**Note:** The term *vapour* refers specifically to a gas formed by evaporation of a liquid or sublimation of a solid.\n\n> **Key Takeaway:** Gases are highly compressible and fill their containers uniformly."
     },
+    // Card 2
     {
-      "front": "Dalton's Atomic Theory postulates (summary).",
-      "back": "1. Matter is made of indivisible atoms.\n2. Atoms of an element are identical.\n3. Compounds are atoms chemically combined in fixed ratios.\n4. Chemical reactions rearrange atoms (neither created nor destroyed).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "atomic theory"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Pressure\nDefine **Pressure** and list its common units with their conversions.",
+      back: "## Force per Unit Area\n\n**Insight:** Gas pressure is caused by billions of gas particles colliding with the walls of their container.\n\n**Analysis:** Pressure is defined as **force per unit area**: $P = \\frac{F}{A}$.\n\n**Common Units & Conversions:**\n- $1 \\, \\text{atm} = 760 \\, \\text{mm Hg} = 760 \\, \\text{Torr}$\n- $1 \\, \\text{atm} = 101325 \\, \\text{Pa} = 101.325 \\, \\text{kPa}$\n- $1 \\, \\text{Pa} = 1 \\, \\text{N/m}^2$\n\n**Instrument:** A **barometer** measures atmospheric pressure; a **manometer** measures the pressure difference between a gas and the atmosphere.\n\n> **Key Takeaway:** $1 \\, \\text{atm}$ is the average pressure of Earth's atmosphere at sea level."
     },
+    // Card 3
     {
-      "front": "Law of Conservation of Mass.",
-      "back": "Total mass remains constant during a chemical reaction (atoms are neither created nor destroyed).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "atomic theory"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Pressure Measurement\nWhat is the difference between a **Barometer** and a **Manometer**?",
+      back: "## Atmospheric vs. Gas Pressure\n\n**Insight:** Evangelista Torricelli invented the barometer in 1643.\n\n**Analysis:**\n- **Barometer:** Measures **atmospheric pressure** directly using a column of mercury in an evacuated tube.\n- **Manometer:** Measures the **difference in pressure** between a gas in a vessel and the atmospheric pressure. It is essentially a U-shaped tube filled with a liquid (often mercury or water).\n\n> **Key Takeaway:** The barometer tells you the weather (high/low pressure); the manometer tells you if your gas cylinder is pressurized."
     },
+
+    // ============================================================
+    // SECTION 4.2: THE GAS LAWS (Cards 4 – 10)
+    // ============================================================
+
+    // Card 4
     {
-      "front": "Law of Definite Proportions.",
-      "back": "A pure compound always contains constant proportions of elements by mass.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "atomic theory"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Boyle's Law\nState **Boyle's Law** and its mathematical equation.",
+      back: "## Inverse Relationship (1662)\n\n**Insight:** Squeezing a gas (decreasing volume) forces particles closer together, increasing the frequency of collisions with the walls.\n\n**Analysis:** Boyle's Law states that the pressure ($P$) of a fixed amount of gas is **inversely proportional** to its volume ($V$) when temperature ($T$) is held constant.\n\n$V \\propto \\frac{1}{P} \\quad \\Rightarrow \\quad PV = k \\quad \\Rightarrow \\quad P_1V_1 = P_2V_2$\n\n**Graph shape:** $P$ vs $V$ is a hyperbola; $P$ vs $1/V$ is a straight line.\n\n> **Key Takeaway:** $P_1V_1 = P_2V_2$ — if volume goes down, pressure goes up proportionally."
     },
+    // Card 5
     {
-      "front": "Discovery of the Electron.",
-      "back": "Discovered by J.J. Thomson (1897) using cathode ray tubes. Determined charge-to-mass ratio.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Charles's Law\nState **Charles's Law** and its mathematical equation.",
+      back: "## Direct Relationship (1787)\n\n**Insight:** Heating a gas gives particles more kinetic energy; they push outward, requiring more space to maintain the same pressure.\n\n**Analysis:** Charles's Law states that the volume ($V$) of a fixed amount of gas is **directly proportional** to its absolute temperature ($T$) in Kelvin when pressure ($P$) is held constant.\n\n$V \\propto T \\quad \\Rightarrow \\quad \\frac{V}{T} = k \\quad \\Rightarrow \\quad \\frac{V_1}{T_1} = \\frac{V_2}{T_2}$\n\n**Crucial Rule:** Temperature must be in **Kelvin** ($K = \\,^\\circ\\text{C} + 273.15$).\n\n> **Key Takeaway:** $\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$ — if temperature increases, volume increases."
     },
+    // Card 6
     {
-      "front": "Millikan's Oil Drop Experiment.",
-      "back": "Determined the charge of an electron (1.602×10⁻¹⁹ C), allowing calculation of its mass.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Gay-Lussac's Law\nState **Gay-Lussac's Law** and its mathematical equation.",
+      back: "## Direct Pressure-Temperature (1802)\n\n**Insight:** Heating a gas inside a rigid container (fixed volume) increases the speed and force of particle collisions, raising the pressure.\n\n**Analysis:** Gay-Lussac's Law states that the pressure ($P$) of a fixed amount of gas is **directly proportional** to its absolute temperature ($T$) in Kelvin when volume ($V$) is held constant.\n\n$P \\propto T \\quad \\Rightarrow \\quad \\frac{P}{T} = k \\quad \\Rightarrow \\quad \\frac{P_1}{T_1} = \\frac{P_2}{T_2}$\n\n> **Key Takeaway:** $\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$ — rigid containers explode when heated because pressure rises."
     },
+    // Card 7
     {
-      "front": "Rutherford's Gold Foil Experiment Findings.",
-      "back": "Most alpha particles passed through (atom is empty space), but some deflected (dense, positive nucleus). Disproved Plum Pudding model.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "early atomic experiments"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Combined Gas Law\nWrite the **Combined Gas Law** equation and state its use.",
+      back: "## Boyle, Charles, and Gay-Lussac Unified\n\n**Insight:** This equation allows you to calculate new pressure, volume, or temperature when the other two conditions change simultaneously.\n\n**Analysis:** The Combined Gas Law relates pressure, volume, and temperature for a **fixed amount** of gas ($n$ is constant):\n\n$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$\n\n**Rearranged to solve for $V_2$:** $V_2 = V_1 \\times \\frac{P_1}{P_2} \\times \\frac{T_2}{T_1}$\n\n> **Key Takeaway:** This equation works for all gas law problems where $n$ does not change."
     },
+    // Card 8
     {
-      "front": "Proton, Neutron, Electron charges.",
-      "back": "Proton: +1 (Nucleus)\nNeutron: 0 (Nucleus)\nElectron: -1 (Outside nucleus)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Avogadro's Law\nState **Avogadro's Law** and its equation.",
+      back: "## Equal Volumes, Equal Moles (1811)\n\n**Insight:** Gas particles are so far apart that the size of individual particles doesn't matter—only the count matters.\n\n**Analysis:** Avogadro's Law states that equal volumes of all gases, at the same temperature and pressure, contain the **same number of molecules**.\n\n$V \\propto n \\quad \\Rightarrow \\quad \\frac{V}{n} = k \\quad \\Rightarrow \\quad \\frac{V_1}{n_1} = \\frac{V_2}{n_2}$\n\n> **Key Takeaway:** $\\frac{V_1}{n_1} = \\frac{V_2}{n_2}$ — more gas particles require more volume at constant $T$ and $P$."
     },
+    // Card 9
     {
-      "front": "Atomic Number (Z) vs. Mass Number (A).",
-      "back": "Z = Number of protons (identifies element).\nA = Protons + Neutrons.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Ideal Gas Law\nWrite the **Ideal Gas Law** equation, define all variables, and state the value of $R$.",
+      back: "## The Master Equation\n\n**Insight:** An ideal gas is a hypothetical concept where particles have no volume and no intermolecular forces. Real gases approximate this at low pressure and high temperature.\n\n**Analysis:** The Ideal Gas Law combines Boyle's, Charles's, and Avogadro's laws into one master equation:\n\n$PV = nRT$\n\nWhere:\n- $P$ = Pressure (atm)\n- $V$ = Volume (L)\n- $n$ = Number of moles (mol)\n- $R$ = Universal gas constant = **$0.08206 \\, \\text{L} \\cdot \\text{atm} \\cdot \\text{mol}^{-1} \\cdot \\text{K}^{-1}$**\n- $T$ = Temperature (Kelvin)\n\n> **Key Takeaway:** The units of $R$ dictate the units you must use for $P$ and $V$. If you use $R = 0.08206$, $P$ must be in atm and $V$ in L."
     },
+    // Card 10
     {
-      "front": "What are isotopes?",
-      "back": "Atoms with the same Atomic Number (Z) but different Mass Numbers (A) (different number of neutrons).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "modern atomic structure"
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# STP & Molar Volume\nWhat are **STP** conditions and what is the **Molar Volume** at STP?",
+      back: "## Standard Conditions\n\n**Insight:** STP is a convenient reference point for comparing gas volumes across different experiments.\n\n**Analysis:** \n- **STP** (Standard Temperature and Pressure): $T = 0^\\circ\\text{C} = 273.15 \\, \\text{K}$, $P = 1 \\, \\text{atm}$.\n- At STP, $1 \\, \\text{mol}$ of any ideal gas occupies **$22.4 \\, \\text{L}$**.\n\n**Room Temperature and Pressure (RTP):** $25^\\circ\\text{C}$, $1 \\, \\text{atm}$ → Molar volume = **$24 \\, \\text{L/mol}$**.\n\n> **Key Takeaway:** Memorize: $22.4 \\, \\text{L}$ at STP, $24 \\, \\text{L}$ at RTP."
+    },
+
+    // ============================================================
+    // SECTION 4.3: GAS STOICHIOMETRY (Cards 11 – 13)
+    // ============================================================
+
+    // Card 11
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Gas Density\nDerive the formula for **Gas Density** ($d$) from the Ideal Gas Law.",
+      back: "## $PM = dRT$\n\n**Insight:** Density of a gas depends on pressure, temperature, and molar mass—unlike liquids and solids.\n\n**Analysis:**\n1. Start with $PV = nRT$.\n2. Substitute $n = \\frac{m}{M}$ (mass over molar mass): $PV = \\frac{m}{M} RT$.\n3. Rearrange: $PM = \\frac{m}{V} RT$.\n4. Since density $d = \\frac{m}{V}$: \n\n$PM = dRT \\quad \\Rightarrow \\quad d = \\frac{PM}{RT}$\n\n**Key Insight:** At constant $T$ and $P$, gas density is directly proportional to molar mass ($M$).\n\n> **Key Takeaway:** $d = \\frac{PM}{RT}$ — heavier gases are denser at the same temperature and pressure."
+    },
+    // Card 12
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Density Problem\nA gas at 450 K has a density of $1.41 \\, \\text{g/dm}^3$ at $2.0 \\, \\text{atm}$. What is its density at STP?",
+      back: "## Changing Conditions\n\n**Insight:** As pressure drops and temperature drops, density decreases significantly.\n\n**Analysis:**\nUse the combined gas law applied to density: $\\frac{P_1}{T_1 d_1} = \\frac{P_2}{T_2 d_2}$\n\nGiven:\n- $P_1 = 2.0 \\, \\text{atm}$, $T_1 = 450 \\, \\text{K}$, $d_1 = 1.41 \\, \\text{g/dm}^3$\n- STP: $P_2 = 1.0 \\, \\text{atm}$, $T_2 = 273 \\, \\text{K}$, $d_2 = ?$\n\n$d_2 = \\frac{T_1 d_1 P_2}{T_2 P_1} = \\frac{450 \\times 1.41 \\times 1.0}{273 \\times 2.0} = \\frac{634.5}{546} = 1.16 \\, \\text{g/dm}^3$\n\n> **Key Takeaway:** $\\mathbf{d_2 = 1.16 \\, \\text{g/dm}^3}$ — density decreased because STP has lower pressure."
+    },
+    // Card 13
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Molecular Mass\nHow can the Ideal Gas Law be used to determine the **Molecular Mass** ($M$) of an unknown gas?",
+      back: "## $M = \\frac{dRT}{P}$\n\n**Insight:** If you can measure the density of a gas, you can identify the gas.\n\n**Analysis:**\nStarting from $PM = dRT$, rearrange to solve for molar mass:\n\n$M = \\frac{dRT}{P}$\n\n**Procedure:**\n1. Weigh a known volume of gas at a known temperature and pressure.\n2. Calculate its density ($d = m/V$).\n3. Plug into $M = dRT/P$ to get molar mass (g/mol).\n\n**Example:** If a gas has $d = 1.96 \\, \\text{g/L}$ at STP ($1 \\, \\text{atm}$, $273 \\, \\text{K}$):\n$M = \\frac{1.96 \\times 0.08206 \\times 273}{1} \\approx 43.9 \\, \\text{g/mol}$.\n\n> **Key Takeaway:** $M = \\frac{dRT}{P}$ — this is how chemists identify unknown gases."
+    },
+
+    // ============================================================
+    // SECTION 4.4: DALTON'S LAW OF PARTIAL PRESSURES (Cards 14 – 16)
+    // ============================================================
+
+    // Card 14
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Dalton's Law\nState **Dalton's Law of Partial Pressures** and its equation.",
+      back: "## Sum of Independent Pressures (1803)\n\n**Insight:** Gas particles act independently. The identity of the gas doesn't matter—only the total number of moles matters.\n\n**Analysis:** Dalton's Law states that the total pressure exerted by a mixture of non-reacting gases is equal to the **sum** of the partial pressures that each gas would exert if it were alone in the container.\n\n$P_{\\text{total}} = P_1 + P_2 + P_3 + \\dots$\n\n**Derivation:** Since all gases share the same $V$ and $T$:\n$P_{\\text{total}} = \\frac{n_1 RT}{V} + \\frac{n_2 RT}{V} + \\dots = \\frac{(n_1 + n_2 + \\dots) RT}{V} = \\frac{n_{\\text{total}} RT}{V}$\n\n> **Key Takeaway:** $P_{\\text{total}} = \\sum P_i$ — each gas contributes independently."
+    },
+    // Card 15
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Mole Fraction\nDefine **Mole Fraction** ($X$) and show how it relates to partial pressure.",
+      back: "## Fractional Contribution\n\n**Insight:** Mole fraction is a dimensionless ratio that tells you the proportion of a specific gas in a mixture.\n\n**Analysis:** The mole fraction of gas $i$ is the ratio of moles of $i$ to the total moles of the mixture:\n\n$X_i = \\frac{n_i}{n_{\\text{total}}}$\n\nSince $P_i = \\frac{n_i RT}{V}$ and $P_{\\text{total}} = \\frac{n_{\\text{total}} RT}{V}$, we get:\n\n$X_i = \\frac{P_i}{P_{\\text{total}}}$\n\n**Important:** The sum of all mole fractions in a mixture equals 1: $\\sum X_i = 1$.\n\n> **Key Takeaway:** $X_i = \\frac{P_i}{P_{\\text{total}}}$ — partial pressure is the mole fraction times total pressure."
+    },
+    // Card 16
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Collection Over Water\nHow do you account for **Water Vapour Pressure** when collecting a gas over water?",
+      back: "## Correcting for Humidity\n\n**Insight:** The gas collected in the bottle is a mixture of the desired gas and water vapour.\n\n**Analysis:** When a gas is collected by displacement of water, the total pressure in the collection vessel is the sum of the gas pressure plus the pressure of the water vapour (which depends only on temperature).\n\n$P_{\\text{total}} = P_{\\text{gas}} + P_{\\text{water}}$\n\nTo find the pressure of the dry gas:\n\n$P_{\\text{gas}} = P_{\\text{total}} - P_{\\text{water}}$\n\n**Note:** $P_{\\text{water}}$ (vapour pressure of water) is a known value that depends on temperature (looked up in a table).\n\n> **Key Takeaway:** $P_{\\text{gas}} = P_{\\text{atm}} - P_{\\text{water}}$ — always subtract water vapour pressure."
+    },
+
+    // ============================================================
+    // SECTION 4.5: KINETIC MOLECULAR THEORY (KMT) (Cards 17 – 22)
+    // ============================================================
+
+    // Card 17
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT\nWhat are the four **Postulates** of the Kinetic Molecular Theory (KMT)?",
+      back: "## The Ideal Gas Model\n\n**Insight:** KMT is a model that explains gas behavior at the particle level.\n\n**Analysis:** The four postulates are:\n1. **Negligible Volume:** Particles are so small compared to the distances between them that their individual volumes are negligible (zero).\n2. **Constant Motion:** Particles are in constant, random straight-line motion. Collisions with the walls cause pressure.\n3. **No Forces:** Particles exert no attractive or repulsive forces on each other; they pass through each other without interacting.\n4. **KE ∝ T:** The average kinetic energy of the particles is directly proportional to the absolute Kelvin temperature.\n\n> **Key Takeaway:** Real gases deviate from these assumptions, but ideal gases follow them perfectly."
+    },
+    // Card 18
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT & Boyle's Law\nHow does KMT qualitatively explain **Boyle's Law** ($P \\propto 1/V$)?",
+      back: "## Collision Frequency\n\n**Insight:** Decreasing volume increases the concentration of particles, leading to more frequent wall collisions.\n\n**Analysis:** If the volume of a gas is decreased (at constant $T$ and $n$), particles are confined to a smaller space. This means they travel a shorter distance before hitting the walls, increasing the **frequency of collisions**. More collisions per unit area means higher pressure.\n\n**Mathematical expression:** $P \\propto \\frac{1}{V}$.\n\n> **Key Takeaway:** Squeeze the gas → particles hit walls more often → pressure increases."
+    },
+    // Card 19
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT & Gay-Lussac's Law\nHow does KMT explain **Gay-Lussac's Law** ($P \\propto T$)?",
+      back: "## Force and Frequency\n\n**Insight:** Heating increases both the force and frequency of particle collisions.\n\n**Analysis:** When temperature increases (at constant $V$ and $n$), the average kinetic energy and particle speed increase. Faster particles hit the walls **more often** and with **greater force** per collision. Both effects increase the pressure.\n\n$P \\propto T$ (at constant $V$).\n\n> **Key Takeaway:** Hotter gas → faster particles → harder and more frequent hits → higher pressure."
+    },
+    // Card 20
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT & Charles's Law\nHow does KMT explain **Charles's Law** ($V \\propto T$)?",
+      back: "## Expanding to Maintain Pressure\n\n**Insight:** To keep pressure constant when heating, the volume must expand to keep collision frequency the same.\n\n**Analysis:** When temperature increases (at constant $P$ and $n$), particles move faster, which would increase pressure. To maintain constant pressure, the volume must **expand** so that particles travel further between walls, reducing collision frequency back to the original level.\n\n$V \\propto T$ (at constant $P$).\n\n> **Key Takeaway:** Heating a balloon makes it expand because the gas needs more space to keep the pressure balanced."
+    },
+    // Card 21
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT & Avogadro's Law\nHow does KMT explain **Avogadro's Law** ($V \\propto n$)?",
+      back: "## More Particles, More Space\n\n**Insight:** Adding more particles increases collision frequency, so volume must increase to keep pressure constant.\n\n**Analysis:** When more gas particles are added to a container at constant $T$ and $P$, the increased number of particles would collide with the walls more frequently, raising the pressure. To keep the pressure from changing, the volume must **increase** so the particles have more room and maintain the same collision frequency.\n\n$V \\propto n$ (at constant $T$ and $P$).\n\n> **Key Takeaway:** More gas needs more space—equal volumes contain equal moles at the same $T$ and $P$."
+    },
+    // Card 22
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# KMT Derivation\nHow does KMT **derive** the Ideal Gas Law ($PV = nRT$)?",
+      back: "## From Physics to Chemistry\n\n**Insight:** By applying principles of physics (velocity, momentum, force) to a collection of gas particles, we can derive the ideal gas law.\n\n**Analysis:** Physics derivations show that:\n$P = \\frac{2}{3} \\cdot \\frac{n (KE)_{\\text{avg}}}{V}$\n\nWhere $(KE)_{\\text{avg}} = N_A \\cdot \\frac{1}{2} m \\overline{u^2}$ is the average kinetic energy per mole.\n\nSince the 4th KMT postulate states $(KE)_{\\text{avg}} \\propto T$, we can write:\n$\\frac{PV}{n} \\propto T \\quad \\Rightarrow \\quad \\frac{PV}{n} = R T \\quad \\Rightarrow \\quad PV = nRT$\n\n> **Key Takeaway:** The experimentally observed gas laws perfectly match the theoretical derivation from KMT—validating the model."
+    },
+
+    // ============================================================
+    // SECTION 4.6: EFFUSION & DIFFUSION (Cards 23 – 25)
+    // ============================================================
+
+    // Card 23
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Effusion & Diffusion\nDefine **Effusion** and **Diffusion**.",
+      back: "## Moving Through Holes vs. Mixing\n\n**Insight:** Both processes depend on the speed of gas particles.\n\n**Analysis:**\n- **Effusion:** The movement of a gas through a tiny opening (pinhole) into an evacuated container or vacuum.\n- **Diffusion:** The gradual mixing of molecules of one gas with molecules of another due to their random kinetic motion. Diffusion always proceeds from a region of **higher concentration** to lower concentration.\n\n> **Key Takeaway:** Effusion is \"escaping through a hole\"; Diffusion is \"mixing with another gas.\""
+    },
+    // Card 24
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Graham's Law\nState **Graham's Law of Effusion** and its equation.",
+      back: "## Lighter Gases Move Faster (1846)\n\n**Insight:** At a given temperature, lighter gases effuse faster than heavier gases because they have higher average speeds.\n\n**Analysis:** Graham's Law states that the rate of effusion ($r$) of a gas is **inversely proportional** to the square root of its molar mass ($M$).\n\n$\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}$\n\n**Also true:** Since density $d \\propto M$ at constant $T$ and $P$:\n$\\frac{r_1}{r_2} = \\sqrt{\\frac{d_2}{d_1}}$\n\n> **Key Takeaway:** $\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}$ — Hydrogen ($M=2$) effuses $\\sqrt{32/2} = 4$ times faster than Oxygen ($M=32$)."
+    },
+    // Card 25
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Graham's Law Problem\nCalculate the ratio of effusion rates for Helium ($M = 4.00$) and Argon ($M = 39.95$).",
+      back: "## Lighter Wins\n\n**Insight:** Helium is about 10 times lighter than Argon, so it should effuse about $\\sqrt{10} \\approx 3.16$ times faster.\n\n**Analysis:** \n$\\frac{r_{\\text{He}}}{r_{\\text{Ar}}} = \\sqrt{\\frac{M_{\\text{Ar}}}{M_{\\text{He}}}} = \\sqrt{\\frac{39.95}{4.00}} = \\sqrt{9.9875} = 3.16$\n\n**Interpretation:** Helium effuses **3.16 times faster** than Argon.\n\n> **Key Takeaway:** Lighter gases escape through a pinhole significantly faster than heavier gases."
+    },
+
+    // ============================================================
+    // SECTION 4.7: REAL GASES & VAN DER WAALS (Cards 26 – 30)
+    // ============================================================
+
+    // Card 26
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Real Gases\nUnder what conditions do real gases deviate from ideal behavior?",
+      back: "## High Pressure, Low Temperature\n\n**Insight:** The KMT assumptions (zero volume, no forces) break down when particles are forced close together.\n\n**Analysis:** Real gases deviate most from ideal behavior at:\n1. **High pressures:** Particles are crowded, so the volume of the particles is no longer negligible.\n2. **Low temperatures:** Particles move slower, so intermolecular attractions become significant.\n\n**Ideal behavior is approached at:** **Low pressure** and **High temperature** (particles are far apart and moving fast).\n\n> **Key Takeaway:** Ideal gas behavior is best at low $P$ and high $T$."
+    },
+    // Card 27
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Deviations\nWhat are the **two main reasons** for deviations from the Ideal Gas Law?",
+      back: "## Finite Volume & Attractive Forces\n\n**Insight:** The two assumptions of KMT that fail for real gases are the zero volume of particles and the absence of intermolecular forces.\n\n**Analysis:**\n1. **Finite Molecular Volume ($b$):** The actual volume occupied by gas molecules is not zero. At high pressures, molecules take up a significant fraction of the container space, leaving less empty volume for movement. The effective volume is $V_{\\text{available}} = V - nb$.\n2. **Intermolecular Attractions ($a$):** Gas molecules do exert weak forces on each other. At high pressures/low temperatures, molecules are close enough to attract, reducing the force with which they hit the walls. The observed pressure is lower than ideal: $P_{\\text{obs}} = P_{\\text{ideal}} - a\\left(\\frac{n}{V}\\right)^2$.\n\n> **Key Takeaway:** Real gases have **volume** (correction $b$) and **attraction** (correction $a$)."
+    },
+    // Card 28
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Van der Waals\nWhat is the **Volume Correction** in the Van der Waals equation, and what does $b$ represent?",
+      back: "## $V - nb$\n\n**Insight:** The available space for molecules to move is the container volume minus the space occupied by the molecules themselves.\n\n**Analysis:** In the Van der Waals equation, the ideal volume $V$ is replaced by the effective volume:\n$V_{\\text{effective}} = V - nb$\n\nWhere:\n- $V$ = total container volume\n- $n$ = number of moles\n- $b$ = empirical constant specific to each gas, representing the **excluded volume per mole** (related to the size of the molecules).\n\n**Effect:** At high pressures ($n/V$ is large), $nb$ becomes significant, and the available volume is much smaller than $V$, increasing the observed pressure.\n\n> **Key Takeaway:** $b$ is a measure of molecular size—larger molecules have larger $b$ values."
+    },
+    // Card 29
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Van der Waals\nWhat is the **Pressure Correction** in the Van der Waals equation, and what does $a$ represent?",
+      back: "## $a\\left(\\frac{n}{V}\\right)^2$\n\n**Insight:** Attractive forces between molecules reduce the impact force with which they hit the container walls.\n\n**Analysis:** In the Van der Waals equation, the observed pressure $P_{\\text{obs}}$ is lower than the ideal pressure because attractions pull particles inward. The correction is:\n$P_{\\text{obs}} = P_{\\text{ideal}} - a\\left(\\frac{n}{V}\\right)^2$\n\nWhere:\n- $a$ = empirical constant specific to each gas, representing the **strength of intermolecular attractions**.\n- $\\left(\\frac{n}{V}\\right)^2$ accounts for the probability of two particles interacting (dependent on concentration squared).\n\n**Effect:** At high pressures (concentrated gas), the correction is larger, and the observed pressure is significantly lower than predicted.\n\n> **Key Takeaway:** $a$ is a measure of attraction strength—larger molecules with stronger London forces have larger $a$ values."
+    },
+    // Card 30
+    {
+      course: "CH110",
+      term: "T1",
+      topic: "Topic 4: Gases",
+      front: "# Van der Waals Equation\nWrite the complete **Van der Waals Equation** and identify the corrections.",
+      back: "## Correcting the Ideal Gas Law (1873)\n\n**Insight:** Johannes van der Waals won the 1910 Nobel Prize for this equation—it accounts for real gas behavior.\n\n**Analysis:** The Van der Waals equation introduces two correction constants, $a$ and $b$, to the ideal gas law:\n\n$\\left(P + a\\left(\\frac{n}{V}\\right)^2\\right)(V - nb) = nRT$\n\n**Corrections:**\n- **$a\\left(\\frac{n}{V}\\right)^2$** (Pressure correction): Accounts for intermolecular attractions. Observed pressure = ideal pressure minus this term.\n- **$V - nb$** (Volume correction): Accounts for finite molecular volume. Effective volume = container volume minus the volume occupied by the molecules themselves.\n\n**When $a$ and $b$ are zero (ideal gas), the equation simplifies to $PV = nRT$.**\n\n> **Key Takeaway:** The Van der Waals equation is the Ideal Gas Law with two 'fudge factors' ($a$ and $b$) to make it work for real gases."
     }
   ],
+  
+  
+  "TOPIC 5: THERMOCHEMISTRY": [
+  // ============================================================
+  // SECTION 5.2: INTRODUCTION & COMMONLY USED TERMS (Cards 1 – 8)
+  // ============================================================
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 5 - The Periodic Table": [
-    {
-      "front": "Who developed the Periodic Table?",
-      "back": "Dmitri Mendeleev and Lothar Meyer (1869).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Periods vs. Groups.",
-      "back": "Periods: Horizontal rows (7 total).\nGroups: Vertical columns (elements have similar properties).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Main-group vs. Transition elements.",
-      "back": "Main-group: A groups (1, 2, 13-18).\nTransition: B groups (3-12).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Group IA (1) Name.",
-      "back": "Alkali Metals (Li, Na, K...)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Group IIA (2) Name.",
-      "back": "Alkaline Earth Metals (Be, Mg, Ca...)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Group VIIA (17) Name.",
-      "back": "Halogens (F, Cl, Br...)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Group VIIIA (18) Name.",
-      "back": "Noble Gases (He, Ne, Ar...)",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Properties of Metals.",
-      "back": "Shiny (lustre), good conductors, malleable, ductile, mostly solids.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "Properties of Non-metals.",
-      "back": "Poor conductors, often gases or brittle solids.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    },
-    {
-      "front": "What is a Metalloid?",
-      "back": "Element with properties of both metals and non-metals (semiconductors). Ex: Si, Ge.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "periodic table"
-    }
-  ],
+  // Card 1
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is **Thermodynamics**?",
+    back: "## Energy Transformations\n\n**Insight:** Thermo = heat, Dynamics = movement or change.\n\n**Analysis:** Thermodynamics is the study of **energy** and its changes or transformations. It tells us whether a change is possible and what the composition of equilibrium will be.\n\n**Thermochemistry** is the study of the relationships between chemical reactions and energy changes involving heat.\n\n> **Key Takeaway:** Thermodynamics = Energy; Thermochemistry = Heat in reactions."
+  },
+  // Card 2
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is a **System** and its **Surroundings**?",
+    back: "## Focus of Study\n\n**Insight:** The boundary between the system and surroundings is where energy exchange occurs.\n\n**Analysis:**\n- **System:** The portion of the universe on which we focus our attention.\n- **Surroundings:** Everything else outside the system.\n- **Boundary/Interface:** Separates the system from its surroundings.\n\n> **Key Takeaway:** The system is what we study; everything else is the surroundings."
+  },
+  // Card 3
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is an **Adiabatic Process**?",
+    back: "## No Heat Exchange\n\n**Insight:** In an adiabatic process, heat cannot enter or leave the system.\n\n**Analysis:** An adiabatic process is a process in which **heat cannot be transferred** across the interface between the system and its surroundings.\n\n**Examples:**\n1. A reaction in an insulated container (like a thermos bottle).\n2. An explosive reaction that occurs so rapidly that heat cannot dissipate.\n\n> **Key Takeaway:** Adiabatic = No heat flow ($q = 0$)."
+  },
+  // Card 4
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is an **Isothermal Process**?",
+    back: "## Constant Temperature\n\n**Insight:** The system and surroundings remain at the same temperature throughout the process.\n\n**Analysis:** An isothermal process occurs when thermal contact between the system and surroundings is maintained at **constant temperature** while the change takes place.\n\n**Example:** Biochemical reactions in the human body.\n\n> **Key Takeaway:** Isothermal = Constant temperature ($\\Delta T = 0$)."
+  },
+  // Card 5
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is a **State Function** or **State Variable**?",
+    back: "## Path Independence\n\n**Insight:** State functions depend only on the current state, not on how the system got there.\n\n**Analysis:** A state function is a property whose value does **not depend on the path** taken to reach that state. It depends only on the current state of the system.\n\n**Examples:** Pressure ($P$), Volume ($V$), Temperature ($T$), Internal Energy ($E$), Enthalpy ($H$).\n\n**Non-state functions:** Heat ($q$) and Work ($w$) — they are path-dependent.\n\n> **Key Takeaway:** State functions are path-independent; $q$ and $w$ are path-dependent."
+  },
+  // Card 6
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is an **Equation of State**?",
+    back: "## Interrelation of State Functions\n\n**Insight:** An equation of state shows the mathematical relationship between state variables for a given system.\n\n**Analysis:** An equation of state is an equation that expresses the interrelations between state functions.\n\n**Example:** The ideal gas law, $PV = nRT$, is an equation of state for an ideal gas.\n\n> **Key Takeaway:** $PV = nRT$ is the classic equation of state for gases."
+  },
+  // Card 7
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat is **Heat Capacity** and how is it calculated?",
+    back: "## Energy per Degree\n\n**Insight:** Heat capacity tells you how much energy is needed to raise the temperature of a substance by 1°C.\n\n**Analysis:** Heat capacity is the quantity of heat energy required to raise the temperature of a given quantity of a substance by **one degree Celsius**.\n\n**Units:** $\\text{J} \\cdot ^\\circ\\text{C}^{-1}$ or $\\text{kJ} \\cdot ^\\circ\\text{C}^{-1}$.\n\n**Calculation:** Heat capacity = (mass) × (specific heat).\n\n> **Key Takeaway:** Heat capacity is an extensive property — it depends on the amount of substance."
+  },
+  // Card 8
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Definitions\nWhat are **Specific Heat** and **Molar Heat Capacity**?",
+    back: "## Per Gram vs. Per Mole\n\n**Insight:** Both are intensive properties that depend only on the substance, not on the amount.\n\n**Analysis:**\n- **Specific heat:** The heat capacity **per gram** of substance. Units: $\\text{J} \\cdot \\text{g}^{-1} \\cdot ^\\circ\\text{C}^{-1}$. Water: 4.184 J/g·°C.\n- **Molar heat capacity:** The heat needed to raise the temperature of **1 mole** of a substance by 1°C. Units: $\\text{J} \\cdot \\text{mol}^{-1} \\cdot ^\\circ\\text{C}^{-1}$.\n\n**Relation:** Molar heat capacity = Specific heat × Molar mass.\n\n> **Key Takeaway:** Specific heat (per gram) × molar mass = molar heat capacity (per mole)."
+  },
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 6 - Molecules & Ions": [
-    {
-      "front": "What is a molecule?",
-      "back": "A definite group of atoms chemically bonded together (e.g., H₂O).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "molecules"
-    },
-    {
-      "front": "Molecular vs. Structural Formula.",
-      "back": "Molecular: Gives exact number of atoms (H₂O).\nStructural: Shows how atoms are bonded (H-O-H).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "molecules"
-    },
-    {
-      "front": "What is an ion?",
-      "back": "An electrically charged particle obtained by adding or removing electrons.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    },
-    {
-      "front": "Cation vs. Anion.",
-      "back": "Cation: Positive ion (loss of electrons, usually metals).\nAnion: Negative ion (gain of electrons, usually non-metals).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    },
-    {
-      "front": "What is a polyatomic ion?",
-      "back": "A charged group of two or more atoms chemically bonded (e.g., SO₄²⁻).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    },
-    {
-      "front": "Properties of Ionic Compounds.",
-      "back": "Composed of cations and anions, held by electrostatic attraction, electrically neutral, no distinct molecules (formula units).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "ionic compounds"
-    }
-  ],
+  // ============================================================
+  // SECTION 5.3: FIRST LAW OF THERMODYNAMICS (Cards 9 – 14)
+  // ============================================================
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 7 - Naming Ionic Compounds": [
-    {
-      "front": "General rule for naming ionic compounds.",
-      "back": "Cation named first, Anion named second.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Naming Type I Binary Compounds (Metal + Non-metal).",
-      "back": "1. Metal name.\n2. Non-metal root + '-ide'.\nExample: NaCl = Sodium Chloride.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "What are Type II Binary Ionic Compounds?",
-      "back": "Compounds containing metals that can form multiple cations (Transition metals like Fe, Cu).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Naming rule for Type II compounds.",
-      "back": "Use Roman numerals to indicate charge.\nExample: FeCl₂ = Iron(II) chloride.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Transition metals that do NOT need Roman numerals.",
-      "back": "Silver (Ag⁺), Zinc (Zn²⁺), Cadmium (Cd²⁺).",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Common Polyatomic Ions: Nitrate and Sulfate.",
-      "back": "Nitrate: NO₃⁻\nSulfate: SO₄²⁻",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Common Polyatomic Ions: Carbonate and Phosphate.",
-      "back": "Carbonate: CO₃²⁻\nPhosphate: PO₄³⁻",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Common Polyatomic Ions: Hydroxide and Ammonium.",
-      "back": "Hydroxide: OH⁻\nAmmonium: NH₄⁺",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    }
-  ],
+  // Card 9
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# First Law\nState the **First Law of Thermodynamics**.",
+    back: "## Conservation of Energy\n\n**Insight:** Energy is never created or destroyed — it is only transformed from one form to another.\n\n**Analysis:** The First Law of Thermodynamics states that if a system undergoes a series of changes that brings it back to its original state, the **net energy change is zero**.\n\n**Mathematical form:** $\\Delta E = q + w$.\n\n> **Key Takeaway:** Energy is conserved; $\\Delta E = q + w$."
+  },
+  // Card 10
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Internal Energy\nDefine **Internal Energy** ($E$) and its change ($\\Delta E$).",
+    back: "## Total Energy Content\n\n**Insight:** While absolute internal energy ($E$) cannot be measured, the change in internal energy ($\\Delta E$) can be measured.\n\n**Analysis:** Internal energy ($E$) is the total energy of a system — the sum of kinetic energy (motion of particles) and potential energy (binding forces between particles).\n\n**Change in internal energy:** $\\Delta E = E_{\\text{final}} - E_{\\text{initial}}$.\n\n**Sign conventions:**\n- $\\Delta E > 0$: Energy absorbed by the system (endothermic).\n- $\\Delta E < 0$: Energy released by the system (exothermic).\n\n> **Key Takeaway:** $\\Delta E$ is a state function; absolute $E$ cannot be measured."
+  },
+  // Card 11
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Work\nHow is **Pressure-Volume Work** ($P\\Delta V$) calculated?",
+    back: "## Expansion Work\n\n**Insight:** When a gas expands against an external pressure, it does work on the surroundings.\n\n**Analysis:** When a system expands against an external pressure, the work done is:\n\n$w = -P_{\\text{ext}} \\Delta V$ (for a system doing work on surroundings).\n\n**Sign conventions:**\n- $w > 0$: Work done **on** the system (compression).\n- $w < 0$: Work done **by** the system (expansion).\n\n> **Key Takeaway:** $w = -P\\Delta V$ for gas expansion; units are Joules ($\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$)."
+  },
+  // Card 12
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# First Law\nWhat are the sign conventions for $q$ and $w$ in the First Law ($\\Delta E = q + w$)?",
+    back: "## Sign Convention Summary\n\n**Insight:** The sign indicates the direction of energy flow relative to the system.\n\n**Analysis:**\n\n**Heat ($q$):**\n- Positive ($q > 0$): Heat **added to** system (endothermic)\n- Negative ($q < 0$): Heat **released by** system (exothermic)\n\n**Work ($w$):**\n- Positive ($w > 0$): Work done **on** system (compression)\n- Negative ($w < 0$): Work done **by** system (expansion)\n\n**Internal Energy ($\\Delta E$):**\n- Positive ($\\Delta E > 0$): Energy **gained** by system\n- Negative ($\\Delta E < 0$): Energy **lost** by system\n\n> **Key Takeaway:** $\\Delta E = q + w$; the signs tell you the direction of energy flow."
+  },
+  // Card 13
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Constant Volume\nWhat is the relationship between $\\Delta E$ and heat at **Constant Volume** ($q_v$)?",
+    back: "## Bomb Calorimeter\n\n**Insight:** In a bomb calorimeter, the volume is fixed, so no $P\\Delta V$ work is done.\n\n**Analysis:** At constant volume, $\\Delta V = 0$, so $w = -P\\Delta V = 0$.\n\nTherefore, $\\Delta E = q_v + 0 = q_v$.\n\n**Interpretation:**\n- **Endothermic:** $q_v > 0$, $\\Delta E > 0$.\n- **Exothermic:** $q_v < 0$, $\\Delta E < 0$.\n\n> **Key Takeaway:** At constant volume, $\\Delta E = q_v$ — the heat measured is the change in internal energy."
+  },
+  // Card 14
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Constant Pressure\nWhat is the relationship between $\\Delta H$ and heat at **Constant Pressure** ($q_p$)?",
+    back: "## Enthalpy\n\n**Insight:** Most chemical reactions occur in open containers at constant pressure (atmospheric pressure).\n\n**Analysis:** At constant pressure, the heat absorbed or evolved is the **enthalpy change** ($\\Delta H$):\n\n$\\Delta H = q_p$.\n\n**Definition:** $H = E + PV$.\n\n**At constant pressure:** $\\Delta H = \\Delta E + P\\Delta V$.\n\n**Interpretation:**\n- $\\Delta H > 0$: Endothermic (heat absorbed).\n- $\\Delta H < 0$: Exothermic (heat released).\n\n> **Key Takeaway:** At constant pressure, $\\Delta H = q_p$ — the heat measured is the change in enthalpy."
+  },
 
-  "MODULE 1: INTRODUCTION TO CHEMISTRY - Section 8 - Naming Covalent Compounds & Acids": [
-    {
-      "front": "Naming Type III Binary Covalent Compounds (Non-metal + Non-metal).",
-      "back": "Use prefixes (mono, di, tri...) to denote number of atoms. Second element ends in -ide.\nExample: CO₂ = Carbon dioxide.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Rules for 'mono-' prefix.",
-      "back": "Never use 'mono-' for the first element. Used for the second element if single.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming compounds"
-    },
-    {
-      "front": "Naming Binary Acids (no oxygen).",
-      "back": "Prefix 'hydro-', root of anion, suffix '-ic', add 'acid'.\nExample: HCl = Hydrochloric acid.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    },
-    {
-      "front": "Naming Oxyacids (with oxygen) ending in -ate.",
-      "back": "Change '-ate' to '-ic' acid.\nExample: H₂SO₄ (Sulfate) = Sulfuric acid.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    },
-    {
-      "front": "Naming Oxyacids (with oxygen) ending in -ite.",
-      "back": "Change '-ite' to '-ous' acid.\nExample: H₂SO₃ (Sulfite) = Sulfurous acid.",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    },
-    {
-      "front": "Oxyacids of Chlorine.",
-      "back": "HClO₄: Perchloric acid\nHClO₃: Chloric acid\nHClO₂: Chlorous acid\nHClO: Hypochlorous acid",
-      "course": "CH110",
-      "term": "T1",
-      "topic": "naming acids"
-    }
-  ],
+  // ============================================================
+  // SECTION 5.4: HEATS OF REACTION (Cards 15 – 18)
+  // ============================================================
 
+  // Card 15
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Enthalpy\nWhat is **Enthalpy** ($H$) and how is it defined?",
+    back: "## Heat Content\n\n**Insight:** Enthalpy is a state function that accounts for both internal energy and $P\\Delta V$ work.\n\n**Analysis:** Enthalpy ($H$) is a thermodynamic function defined as:\n\n$H = E + PV$\n\nwhere:\n- $E$ = internal energy\n- $P$ = pressure\n- $V$ = volume\n\n**Change in enthalpy:** $\\Delta H = \\Delta E + P\\Delta V$ (at constant pressure).\n\n> **Key Takeaway:** $H$ is a state function; $\\Delta H = q_p$ at constant pressure."
+  },
+  // Card 16
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Exothermic vs. Endothermic\nDistinguish between **Exothermic** and **Endothermic** reactions.",
+    back: "## Heat Flow Direction\n\n**Insight:** Exothermic reactions release heat to the surroundings; endothermic reactions absorb heat from the surroundings.\n\n**Analysis:**\n- **Exothermic:** Heat is **released** by the system to the surroundings ($\\Delta H < 0$, $\\Delta E < 0$). The system gets colder.\n- **Endothermic:** Heat is **absorbed** by the system from the surroundings ($\\Delta H > 0$, $\\Delta E > 0$). The system gets hotter.\n\n**Examples:**\n- Exothermic: Combustion, neutralization.\n- Endothermic: Photosynthesis, melting ice.\n\n> **Key Takeaway:** Exothermic = $\\Delta H < 0$ (heat out); Endothermic = $\\Delta H > 0$ (heat in)."
+  },
+  // Card 17
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Calorimetry\nHow does a **Bomb Calorimeter** measure $\\Delta E$?",
+    back: "## Constant Volume Measurement\n\n**Insight:** The bomb calorimeter is a sealed steel vessel where reactants are ignited; the heat released warms a surrounding water bath.\n\n**Analysis:** A bomb calorimeter measures the heat of reaction at constant volume ($q_v$).\n\n**Calculation:** $q_{\\text{rxn}} = -C_{\\text{cal}} \\times \\Delta T$\n\nWhere:\n- $C_{\\text{cal}}$ = heat capacity of the calorimeter (including water)\n- $\\Delta T$ = temperature change of the water bath\n\nThen $\\Delta E = q_v$.\n\n> **Key Takeaway:** Bomb calorimeter measures $q_v$; $\\Delta E = q_v$."
+  },
+  // Card 18
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Calorimetry Problem\n0.100 g $\\ce{H2}$ and 0.800 g $\\ce{O2}$ burn in a bomb calorimeter. $T_i = 25.000^\\circ\\text{C}$, $T_f = 25.155^\\circ\\text{C}$, $C_p = 90.8\\ \\text{kJ}/^\\circ\\text{C}$. Calculate $\\Delta E$.",
+    back: "## Bomb Calorimeter Calculation\n\n**Insight:** The heat released by the reaction is absorbed by the calorimeter.\n\n**Analysis:**\n\n$\\Delta T = 25.155 - 25.000 = 0.155^\\circ\\text{C}$\n\n$q_{\\text{cal}} = C_p \\times \\Delta T = 90.8 \\times 0.155 = 14.1\\ \\text{kJ}$\n\n$q_{\\text{rxn}} = -q_{\\text{cal}} = -14.1\\ \\text{kJ}$\n\nSince $\\Delta E = q_v$, $\\Delta E = -14.1\\ \\text{kJ}$.\n\nFor 0.0500 mol $\\ce{H2O}$ produced, $\\Delta E = -282\\ \\text{kJ/mol}$.\n\n> **Key Takeaway:** $q_{\\text{rxn}} = -C_{\\text{cal}} \\times \\Delta T$; $\\Delta E = q_v$."
+  },
+
+  // ============================================================
+  // SECTION 5.5: HESS'S LAW (Cards 19 – 23)
+  // ============================================================
+
+  // Card 19
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Hess's Law\nState **Hess's Law of Heat Summation**.",
+    back: "## Path Independence\n\n**Insight:** Because enthalpy is a state function, the total $\\Delta H$ for a reaction is the same regardless of the pathway.\n\n**Analysis:** Hess's Law states that if a reaction is carried out in a series of steps, the $\\Delta H$ for the overall reaction is equal to the **sum of the enthalpy changes** for the individual steps.\n\n**Alternative statement:** The enthalpy change for a reaction depends only on the initial and final states, not on the pathway.\n\n> **Key Takeaway:** $\\Delta H_{\\text{overall}} = \\sum \\Delta H_{\\text{steps}}$."
+  },
+  // Card 20
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Thermochemical Equations\nWhat is a **Thermochemical Equation**?",
+    back: "## Equation with Energy\n\n**Insight:** Thermochemical equations show both the chemical change and the associated energy change.\n\n**Analysis:** A thermochemical equation is a balanced chemical equation that includes the **enthalpy change** ($\\Delta H$) for the reaction.\n\n**Example:**\n$\\ce{H2O(l) -> H2O(g)}\\quad \\Delta H = +41\\ \\text{kJ}$\n\n**Interpretation:** 1 mole of liquid water absorbs 41 kJ of heat to become 1 mole of water vapour.\n\n> **Key Takeaway:** Thermochemical equations include $\\Delta H$; fractional coefficients are allowed."
+  },
+  // Card 21
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Hess's Law\nHow do you combine thermochemical equations using Hess's Law?",
+    back: "## Algebraic Addition\n\n**Insight:** Just like simultaneous equations, you can add, subtract, reverse, and multiply thermochemical equations — and do the same to their $\\Delta H$ values.\n\n**Analysis:** Rules for combining:\n1. **Reverse an equation:** Change the sign of $\\Delta H$.\n2. **Multiply an equation:** Multiply $\\Delta H$ by the same factor.\n3. **Add equations:** Add their $\\Delta H$ values.\n4. **Cancel species:** Species appearing on both sides cancel out.\n\n> **Key Takeaway:** Manipulate equations like algebra; $\\Delta H$ values are treated consistently."
+  },
+  // Card 22
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Hess's Law Problem\nCalculate $\\Delta H$ for: $\\ce{C2H2(g) + 2H2(g) -> C2H6(g)}$.\n\nGiven:\n(1) $2\\ce{C2H2} + 5\\ce{O2} -> 4\\ce{CO2} + 2\\ce{H2O}$ $\\Delta H = -2602\\ \\text{kJ}$\n(2) $2\\ce{C2H6} + 7\\ce{O2} -> 4\\ce{CO2} + 6\\ce{H2O}$ $\\Delta H = -3123\\ \\text{kJ}$\n(3) $\\ce{H2} + \\frac{1}{2}\\ce{O2} -> \\ce{H2O}$ $\\Delta H = -286\\ \\text{kJ}$",
+    back: "## Hess's Law Calculation\n\n**Insight:** The target equation has 1 $\\ce{C2H2}$ and 2 $\\ce{H2}$ on the left, and 1 $\\ce{C2H6}$ on the right.\n\n**Analysis:**\n\n**Step 1 (Reverse and divide equation 2 by 2):**\n$\\ce{2CO2} + 3\\ce{H2O} -> \\ce{C2H6} + \\frac{7}{2}\\ce{O2}$ $\\Delta H = +1561.5\\ \\text{kJ}$\n\n**Step 2 (Divide equation 1 by 2):**\n$\\ce{C2H2} + \\frac{5}{2}\\ce{O2} -> 2\\ce{CO2} + \\ce{H2O}$ $\\Delta H = -1301\\ \\text{kJ}$\n\n**Step 3 (Multiply equation 3 by 2):**\n$2\\ce{H2} + \\ce{O2} -> 2\\ce{H2O}$ $\\Delta H = -572\\ \\text{kJ}$\n\n**Add all steps:**\n$\\ce{C2H2} + 2\\ce{H2} -> \\ce{C2H6}$ $\\Delta H = -312\\ \\text{kJ}$\n\n> **Key Takeaway:** $\\Delta H_{\\text{target}} = -1301 + (-572) + (+1561.5) = -312\\ \\text{kJ}$."
+  },
+  // Card 23
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Enthalpy Diagram\nWhat is an **Enthalpy Diagram** and how is it used?",
+    back: "## Visualizing Energy Changes\n\n**Insight:** Enthalpy diagrams show the relative energy levels of reactants, products, and intermediates.\n\n**Analysis:** An enthalpy diagram is a graphical representation of the enthalpy changes during a reaction.\n\n**Features:**\n- Reactants are at an initial enthalpy level.\n- Products are at a final enthalpy level.\n- $\\Delta H$ is the vertical difference between products and reactants.\n- $\\Delta H > 0$: Products higher (endothermic).\n- $\\Delta H < 0$: Products lower (exothermic).\n\n> **Key Takeaway:** Enthalpy diagrams show $\\Delta H$ as the vertical distance between reactants and products."
+  },
+
+  // ============================================================
+  // SECTION 5.6: STANDARD STATES & HEATS OF FORMATION (Cards 24 – 29)
+  // ============================================================
+
+  // Card 24
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Standard State\nWhat is the **Standard State** of a substance?",
+    back: "## Reference Conditions\n\n**Insight:** Standard state allows comparison of enthalpies across different compounds.\n\n**Analysis:** The standard state of a substance is its state at **$25^\\circ\\text{C}$ (298 K)** and **1 atm pressure**.\n\n**For pure substances:**\n- Solid: Pure crystalline form.\n- Liquid: Pure liquid.\n- Gas: Pure gas at 1 atm (assuming ideal behavior).\n\n**Notation:** Standard enthalpy changes are denoted with a superscript $^\\circ$ (e.g., $\\Delta H^\\circ$).\n\n> **Key Takeaway:** Standard state = $25^\\circ\\text{C}$, 1 atm; denoted by $^\\circ$."
+  },
+  // Card 25
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Heat of Formation\nWhat is the **Standard Heat of Formation** ($\\Delta H_f^\\circ$)?",
+    back: "## Formation from Elements\n\n**Insight:** The heat of formation tells you the energy change when a compound is formed from its elements.\n\n**Analysis:** The standard heat of formation ($\\Delta H_f^\\circ$) is the enthalpy change when **1 mole** of a compound is formed from its elements in their **standard states**.\n\n**Example:** $\\ce{H2(g)} + \\frac{1}{2}\\ce{O2(g)} -> \\ce{H2O(l)}$ $\\Delta H_f^\\circ = -286\\ \\text{kJ/mol}$\n\n**Convention:** $\\Delta H_f^\\circ = 0$ for pure elements in their standard states.\n\n> **Key Takeaway:** $\\Delta H_f^\\circ$ = 1 mole of compound from elements; pure elements have $\\Delta H_f^\\circ = 0$."
+  },
+  // Card 26
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Formation Reaction\nWrite the standard formation reaction for **$\\ce{CH4(g)}$**.",
+    back: "## Methane Formation\n\n**Insight:** The formation reaction for a compound uses the most stable form of each element.\n\n**Analysis:** For methane ($\\ce{CH4}$):\n\n$\\ce{C(s, graphite)} + 2\\ce{H2(g)} -> \\ce{CH4(g)}$\n\n**Note:** Carbon is in its most stable form (graphite), and hydrogen is $\\ce{H2}$ gas.\n\n**$\\Delta H_f^\\circ$ for $\\ce{CH4(g)}$ = $-74.9$ kJ/mol.**\n\n> **Key Takeaway:** Formation reaction uses the most stable elemental form at standard conditions."
+  },
+  // Card 27
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Reaction Enthalpy\nHow do you calculate $\\Delta H^\\circ$ for a reaction using $\\Delta H_f^\\circ$ values?",
+    back: "## Products Minus Reactants\n\n**Insight:** The enthalpy of reaction is the difference between the sum of product enthalpies and the sum of reactant enthalpies.\n\n**Analysis:**\n\n$\\Delta H^\\circ_{\\text{rxn}} = \\sum n \\Delta H_f^\\circ(\\text{products}) - \\sum n \\Delta H_f^\\circ(\\text{reactants})$\n\nwhere $n$ is the stoichiometric coefficient.\n\n> **Key Takeaway:** $\\Delta H^\\circ_{\\text{rxn}} = \\Sigma \\Delta H_f^\\circ(\\text{products}) - \\Sigma \\Delta H_f^\\circ(\\text{reactants})$."
+  },
+  // Card 28
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Enthalpy Problem\nCalculate $\\Delta H^\\circ$ for: $2\\ce{NaHCO3(s)} -> \\ce{Na2CO3(s)} + \\ce{H2O(g)} + \\ce{CO2(g)}$.\n\nGiven: $\\Delta H_f^\\circ$ NaHCO3 = $-947.7\\ \\text{kJ/mol}$, Na2CO3 = $-1131\\ \\text{kJ/mol}$, H2O(g) = $-242\\ \\text{kJ/mol}$, CO2(g) = $-394\\ \\text{kJ/mol}$.",
+    back: "## Products Minus Reactants\n\n**Insight:** Baking soda decomposition is endothermic, which helps smother flames.\n\n**Analysis:**\n\nProducts: $[-1131 + (-242) + (-394)] = -1767\\ \\text{kJ}$\n\nReactants: $2 \\times (-947.7) = -1895.4\\ \\text{kJ}$\n\n$\\Delta H^\\circ = -1767 - (-1895.4) = +128\\ \\text{kJ}$\n\n**Interpretation:** $\\Delta H^\\circ = +128\\ \\text{kJ}$ (endothermic).\n\n> **Key Takeaway:** Positive $\\Delta H$ means heat is absorbed; baking soda absorbs heat when it decomposes."
+  },
+  // Card 29
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Indirect Determination\nHow can $\\Delta H_f^\\circ$ be determined indirectly using heat of combustion?",
+    back: "## Bomb Calorimetry Method\n\n**Insight:** Some compounds cannot be formed directly from their elements, so their heats of formation must be calculated indirectly.\n\n**Analysis:** The heat of combustion of a compound is measured in a bomb calorimeter. Using Hess's Law:\n\n$\\Delta H_f^\\circ(\\text{compound}) = \\Sigma \\Delta H_f^\\circ(\\text{products}) - \\Delta H^\\circ_{\\text{combustion}}$\n\n**Example for benzene ($\\ce{C6H6}$):**\n$\\ce{C6H6(l)} + \\frac{15}{2}\\ce{O2(g)} -> 6\\ce{CO2(g)} + 3\\ce{H2O(l)}$\n\n$\\Delta H^\\circ_{\\text{comb}} = -3271\\ \\text{kJ/mol}$\n\n$\\Delta H_f^\\circ(\\ce{C6H6}) = 6(-394) + 3(-286) - (-3271) = +49\\ \\text{kJ/mol}$\n\n> **Key Takeaway:** $\\Delta H_f^\\circ$ can be calculated from combustion data using Hess's Law."
+  },
+
+  // ============================================================
+  // SECTION 5.7: BOND ENERGIES (Cards 30 – 35)
+  // ============================================================
+
+  // Card 30
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Bond Energy\nWhat is **Bond Energy** (or Bond Enthalpy)?",
+    back: "## Energy to Break Bonds\n\n**Insight:** Bond energy is the energy required to break 1 mole of bonds in the gas phase.\n\n**Analysis:** Bond energy is the energy required to break a bond to produce neutral fragments (atoms) in the gas phase.\n\n**For a diatomic molecule:** Bond energy = atomisation energy.\n\n**For a polyatomic molecule:** Atomisation energy = sum of all bond energies.\n\n**Units:** kJ/mol.\n\n> **Key Takeaway:** Bond breaking is endothermic ($\\Delta H > 0$); bond formation is exothermic ($\\Delta H < 0$)."
+  },
+  // Card 31
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Bond Energy\nHow do you estimate $\\Delta H$ for a reaction using average bond energies?",
+    back: "## Bonds Broken Minus Bonds Formed\n\n**Insight:** The enthalpy change is the energy to break bonds (positive) minus the energy released when bonds form (negative).\n\n**Analysis:**\n\n$\\Delta H = \\Sigma n \\times D(\\text{bonds broken}) - \\Sigma n \\times D(\\text{bonds formed})$\n\nwhere:\n- $D$ = bond energy (kJ/mol)\n- $n$ = number of moles of each bond type\n\n**Interpretation:**\n- $\\Delta H > 0$: Endothermic (more energy to break than to form).\n- $\\Delta H < 0$: Exothermic (more energy released forming than breaking).\n\n> **Key Takeaway:** $\\Delta H = \\Sigma D_{\\text{broken}} - \\Sigma D_{\\text{formed}}$."
+  },
+  // Card 32
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Bond Energy Problem\nCalculate $\\Delta H$ for: $\\ce{H2(g) + F2(g) -> 2HF(g)}$.\n\nGiven: $D_{\\ce{H-H}} = 432$, $D_{\\ce{F-F}} = 154$, $D_{\\ce{H-F}} = 565$ (all in kJ/mol).",
+    back: "## Bond Energy Calculation\n\n**Insight:** The formation of HF releases a large amount of energy because H-F bonds are very strong.\n\n**Analysis:**\n\nBonds broken:\n- 1 mol H-H: 432 kJ\n- 1 mol F-F: 154 kJ\n- Total broken = 586 kJ\n\nBonds formed:\n- 2 mol H-F: $2 \\times 565 = 1130$ kJ\n\n$\\Delta H = 586 - 1130 = -544\\ \\text{kJ}$\n\n**Compare with $\\Delta H_f^\\circ$:** Using $\\Delta H_f^\\circ$ for HF = -271 kJ/mol, $\\Delta H = 2 \\times (-271) = -542$ kJ (very close!).\n\n> **Key Takeaway:** $\\Delta H = -544$ kJ (exothermic); good agreement with experimental values."
+  },
+  // Card 33
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Bond Energy Problem\nCalculate $\\Delta H$ for: $\\ce{CH4(g) + 2Cl2(g) + 2F2(g) -> CF2Cl2(g) + 2HF(g) + 2HCl(g)}$.\n\nGiven bond energies (kJ/mol): C-H=413, Cl-Cl=239, F-F=154, C-F=485, C-Cl=339, H-F=565, H-Cl=427.",
+    back: "## Freon-12 Formation\n\n**Insight:** This is the industrial synthesis of Freon-12 (a refrigerant).\n\n**Analysis:**\n\n**Bonds broken:**\n- C-H: 4 × 413 = 1652 kJ\n- Cl-Cl: 2 × 239 = 478 kJ\n- F-F: 2 × 154 = 308 kJ\n- **Total broken = 2438 kJ**\n\n**Bonds formed:**\n- C-F: 2 × 485 = 970 kJ\n- C-Cl: 2 × 339 = 678 kJ\n- H-F: 2 × 565 = 1130 kJ\n- H-Cl: 2 × 427 = 854 kJ\n- **Total formed = 3632 kJ**\n\n$\\Delta H = 2438 - 3632 = -1194$ kJ\n\n> **Key Takeaway:** $\\Delta H = -1194$ kJ (highly exothermic)."
+  },
+  // Card 34
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Atomisation Energy\nWhat is **Atomisation Energy** and how is it related to bond energies?",
+    back: "## Total Bond Energy\n\n**Insight:** The energy to break a molecule into individual atoms is the sum of all its bond energies.\n\n**Analysis:** Atomisation energy is the energy required to break **all the bonds** in a molecule and reduce gaseous molecules to neutral gaseous atoms.\n\n**For $\\ce{CH4}$:** The atomisation energy is the sum of the energies of all 4 C-H bonds.\n\n**Calculation:**\n- $\\Delta H_{\\text{atomisation}} = 4 \\times D_{\\ce{C-H}}$ (if all C-H bonds are equivalent).\n\n**If bond energies vary:** Atomisation energy = sum of individual bond energies for each bond type in the molecule.\n\n> **Key Takeaway:** Atomisation energy = sum of bond energies in a molecule."
+  },
+  // Card 35
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 5: Thermochemistry",
+    front: "# Bond Energy Problem\nCalculate the $\\ce{C=C}$ bond energy given: $\\Delta H_f^\\circ(\\ce{C2H4}) = +51.9\\ \\text{kJ/mol}$, $D_{\\ce{C-H}} = 415\\ \\text{kJ/mol}$, $\\Delta H_{\\text{atom}}(\\ce{C}) = +715\\ \\text{kJ/mol}$, $\\Delta H_{\\text{atom}}(\\ce{H}) = +218\\ \\text{kJ/mol}$.",
+    back: "## Ethylene Double Bond\n\n**Insight:** The $\\ce{C=C}$ bond is stronger than a single C-C bond but weaker than two C-C bonds.\n\n**Analysis:**\n\n**Hess's Law for atomisation:**\n\n$\\Delta H_{\\text{atom}} = 2\\Delta H_{\\text{atom}}(\\ce{C}) + 4\\Delta H_{\\text{atom}}(\\ce{H}) - \\Delta H_f^\\circ(\\ce{C2H4})$\n\n$\\Delta H_{\\text{atom}} = 2(715) + 4(218) - 51.9 = 1430 + 872 - 51.9 = 2250\\ \\text{kJ}$\n\nNow, $\\Delta H_{\\text{atom}} = 4D_{\\ce{C-H}} + D_{\\ce{C=C}}$\n\n$D_{\\ce{C=C}} = 2250 - 4(415) = 2250 - 1660 = 590\\ \\text{kJ/mol}$\n\n**Accepted value:** 607 kJ/mol (error < 3%).\n\n> **Key Takeaway:** $D_{\\ce{C=C}} \\approx 590\\ \\text{kJ/mol}$ — consistent with experimental values."
+  }
+],
+"TOPIC 6: ATOMIC STRUCTURE AND PERIODICITY": [
+  // ============================================================
+  // SECTION 6.1: ELECTROMAGNETIC RADIATION (Cards 1 – 6)
+  // ============================================================
+
+  // Card 1
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electromagnetic Radiation\nWhat is the relationship between wavelength ($\\lambda$), frequency ($\\nu$), and the speed of light ($c$)?",
+    back: "## Wave Equation\n\n**Insight:** All electromagnetic radiation travels at the same speed in a vacuum ($c = 3.00 \\times 10^8$ m/s).\n\n**Analysis:**\n\n$c = \\lambda \\nu$\n\nwhere:\n- $c = 3.00 \\times 10^8 \\ \\text{m/s}$ (speed of light)\n- $\\lambda$ = wavelength (metres)\n- $\\nu$ = frequency (Hz or s$^{-1}$)\n\n**Relationship:** As wavelength increases, frequency decreases (inversely proportional).\n\n> **Key Takeaway:** $c = \\lambda \\nu$; frequency and wavelength are inversely proportional."
+  },
+  // Card 2
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Light Spectra\nWhat is a **Continuous Spectrum**?",
+    back: "## All Wavelengths Present\n\n**Insight:** A continuous spectrum shows all wavelengths of visible light, like a rainbow.\n\n**Analysis:** A continuous spectrum is produced when visible light is passed through a prism, dividing it into its component colours. All wavelengths of visible light are present.\n\n**Example:** White light from a bulb or the sun produces a continuous spectrum.\n\n> **Key Takeaway:** Continuous spectrum = all wavelengths; produced by white light."
+  },
+  // Card 3
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Light Spectra\nWhat is a **Line Spectrum** (or Atomic Emission Spectrum)?",
+    back: "## Unique Fingerprint\n\n**Insight:** Each element has a unique line spectrum, like a fingerprint, that can be used to identify it.\n\n**Analysis:** A line spectrum consists of only a few discrete coloured lines. It is produced when light emitted by excited atoms of an element is passed through a prism.\n\n**Hydrogen:** Has a line spectrum with lines in the visible, ultraviolet, and infrared regions.\n\n**Application:** Atomic Emission Spectrometry (AES) uses line spectra to identify elements.\n\n> **Key Takeaway:** Line spectrum = discrete lines; unique to each element."
+  },
+  // Card 4
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Hydrogen Spectrum\nWhat is the **Rydberg Equation** and what does it describe?",
+    back: "## Hydrogen Line Positions\n\n**Insight:** The Rydberg equation mathematically predicts the wavelengths of all lines in the hydrogen spectrum.\n\n**Analysis:**\n\n$\\frac{1}{\\lambda} = 109678 \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right) \\ \\text{cm}^{-1}$\n\nwhere $n_1$ and $n_2$ are integers ($n_2 > n_1$).\n\n**Series:**\n- **Lyman:** $n_1 = 1$ (ultraviolet)\n- **Balmer:** $n_1 = 2$ (visible)\n- **Paschen:** $n_1 = 3$ (infrared)\n\n> **Key Takeaway:** Rydberg equation predicts hydrogen line positions; $n_1$ determines the series."
+  },
+  // Card 5
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Planck's Quantum Theory\nWhat did Max Planck propose about energy emission?",
+    back: "## Energy is Quantized\n\n**Insight:** Energy is not continuous; it comes in discrete packets called \"quanta.\"\n\n**Analysis:** Planck proposed that atoms and molecules can emit (or absorb) energy only in **discrete quantities** called **quanta**.\n\n**Equation:** $E = h\\nu$\n\nwhere:\n- $h = 6.626 \\times 10^{-34} \\ \\text{J} \\cdot \\text{s}$ (Planck's constant)\n- $\\nu$ = frequency of radiation\n\n> **Key Takeaway:** $E = h\\nu$; energy is quantized, not continuous."
+  },
+  // Card 6
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Photoelectric Effect\nWhat is the **Photoelectric Effect** and how did Einstein explain it?",
+    back: "## Light as Particles\n\n**Insight:** The photoelectric effect provided evidence that light behaves as particles (photons), not just waves.\n\n**Analysis:** The photoelectric effect is the ejection of electrons from a metal surface when light of at least a certain minimum frequency (threshold frequency) shines on it.\n\n**Einstein's explanation:**\n$KE = h\\nu - BE$\n\nwhere:\n- $KE$ = kinetic energy of ejected electron\n- $h\\nu$ = photon energy\n- $BE$ = binding energy (work function) of the electron\n\n**Key insight:** Below the threshold frequency, no electrons are ejected regardless of intensity.\n\n> **Key Takeaway:** Photoelectric effect = light behaves as particles (photons); $KE = h\\nu - BE$."
+  },
+
+  // ============================================================
+  // SECTION 6.2: BOHR MODEL (Cards 7 – 10)
+  // ============================================================
+
+  // Card 7
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Bohr Model\nWhat are the key postulates of the **Bohr Model** of the hydrogen atom?",
+    back: "## Quantized Energy Levels\n\n**Insight:** Bohr incorporated Planck's quantum theory to explain why atoms emit light only at specific frequencies.\n\n**Analysis:** Bohr's postulates:\n1. The electron in a hydrogen atom can only have certain **restricted energies** (quantized).\n2. Energy levels are given by: $E_n = -A \\times \\frac{1}{n^2}$, where $A = 2.18 \\times 10^{-18}$ J and $n = 1, 2, 3, ...$\n3. Light is emitted when an electron jumps from a higher energy level to a lower one.\n\n> **Key Takeaway:** $E_n = -A/n^2$; energy is quantized by the principal quantum number $n$."
+  },
+  // Card 8
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Bohr Model\nWhat is the energy difference ($\\Delta E$) when an electron transitions between energy levels?",
+    back: "## Emission or Absorption\n\n**Insight:** The energy of emitted or absorbed light equals the difference between the two energy levels.\n\n**Analysis:**\n\n$\\Delta E = E_{n_2} - E_{n_1}$\n\n$\\Delta E = -A\\left(\\frac{1}{n_2^2}\\right) - \\left(-A\\frac{1}{n_1^2}\\right) = A\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$\n\nSince $\\Delta E = h\\nu = \\frac{hc}{\\lambda}$, we get:\n\n$\\frac{1}{\\lambda} = \\frac{A}{hc}\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$\n\nThis matches the Rydberg equation!\n\n> **Key Takeaway:** $\\Delta E = A(1/n_1^2 - 1/n_2^2)$; Bohr's model explains the hydrogen spectrum."
+  },
+  // Card 9
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Bohr Model\nWhat were the **limitations** of the Bohr Model?",
+    back: "## Beyond Hydrogen\n\n**Insight:** Bohr's model was a stepping stone but failed for multi-electron atoms and didn't explain why energy levels are quantized.\n\n**Analysis:** Limitations of Bohr's model:\n1. **Failed for multi-electron atoms:** Could not account for emission spectra of atoms with more than one electron (e.g., He, Li).\n2. **Failed to explain extra lines:** Did not explain why extra lines appear in the hydrogen spectrum when a magnetic field is applied (Zeeman effect).\n3. **Failed to justify quantization:** Why are energies quantized? Bohr just assumed it.\n4. **Electron as a particle:** Did not account for the wave-like properties of electrons.\n\n> **Key Takeaway:** Bohr model works for hydrogen only; it was replaced by quantum mechanics."
+  },
+
+  // ============================================================
+  // SECTION 6.3: QUANTUM MECHANICAL MODEL (Cards 10 – 19)
+  // ============================================================
+
+  // Card 10
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# de Broglie\nWhat is the **de Broglie Relation** and what does it imply?",
+    back: "## Wave-Particle Duality\n\n**Insight:** de Broglie proposed that particles, like electrons, can exhibit wave properties, and waves can exhibit particle properties.\n\n**Analysis:**\n\n$\\lambda = \\frac{h}{mu}$\n\nwhere:\n- $\\lambda$ = wavelength associated with a moving particle\n- $h$ = Planck's constant\n- $m$ = mass of particle\n- $u$ = velocity of particle\n\n**Implication:** An electron in an atom behaves like a standing wave. The circumference of an allowed orbit must be an integral number of wavelengths: $2\\pi r = n\\lambda$.\n\n> **Key Takeaway:** $\\lambda = h/mu$; electrons have wave-like properties."
+  },
+  // Card 11
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Heisenberg Uncertainty Principle\nState the **Heisenberg Uncertainty Principle** and its equation.",
+    back: "## Position vs. Momentum\n\n**Insight:** It is impossible to know both the position and momentum of a particle with perfect accuracy.\n\n**Analysis:** The Heisenberg Uncertainty Principle states that it is impossible to know simultaneously both the **position** ($x$) and **momentum** ($p = mu$) of a particle with certainty.\n\n$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$\n\nwhere:\n- $\\Delta x$ = uncertainty in position\n- $\\Delta p$ = uncertainty in momentum\n- $h$ = Planck's constant\n\n**Implication:** The more precisely we know a particle's position, the less we know about its momentum (and vice versa).\n\n> **Key Takeaway:** $\\Delta x \\cdot \\Delta p \\geq h/4\\pi$; position and momentum cannot both be known exactly."
+  },
+  // Card 12
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Schrödinger Equation\nWhat is the **Schrödinger Equation** and what does it describe?",
+    back: "## Wave Mechanics\n\n**Insight:** The Schrödinger Equation is the quantum mechanical equivalent of Newton's laws for particles.\n\n**Analysis:** The Schrödinger Equation is a wave equation that describes the behaviour and energies of sub-microscopic particles. Its solutions are **wave functions** ($\\psi$) that describe the shape and energy of electron waves.\n\n**Each wave function is called an orbital** — a region around the nucleus where the electron can be expected to be found.\n\n> **Key Takeaway:** Schrödinger Equation = quantum mechanical model; solutions are orbitals ($\\psi$)."
+  },
+  // Card 13
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Quantum Numbers\nWhat are the four **Quantum Numbers** and what do they describe?",
+    back: "## Atomic Address\n\n**Insight:** Quantum numbers are like the address of an electron in an atom.\n\n**Analysis:**\n\n**Principal ($n$):** Values 1, 2, 3, ... → Energy level (shell) and size.\n\n**Azimuthal ($\\ell$):** Values 0, 1, 2, ..., $n-1$ → Shape of orbital (subshell). $\\ell=0$ is $s$, $\\ell=1$ is $p$, $\\ell=2$ is $d$, $\\ell=3$ is $f$.\n\n**Magnetic ($m_\\ell$):** Values $-\\ell$ to $+\\ell$ → Orientation in space.\n\n**Spin ($m_s$):** Values $+\\frac{1}{2}$ or $-\\frac{1}{2}$ → Electron spin direction.\n\n> **Key Takeaway:** Quantum numbers describe the energy, shape, orientation, and spin of an electron in an atom."
+  },
+  // Card 14
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Principal Quantum Number\nWhat does the **Principal Quantum Number** ($n$) describe?",
+    back: "## Shell and Energy\n\n**Insight:** The larger $n$ is, the higher the energy and the farther the electron is from the nucleus.\n\n**Analysis:** The principal quantum number ($n$) determines:\n- **Main energy level (shell)**\n- **Average distance** of the electron from the nucleus\n- **Size** of the orbital\n\n**Allowed values:** $n = 1, 2, 3, \\ldots, \\infty$\n\n**Shell designations:**\n- $n = 1$: K shell\n- $n = 2$: L shell\n- $n = 3$: M shell\n- $n = 4$: N shell\n\n> **Key Takeaway:** $n$ determines shell, energy, and size; $n = 1$ is the lowest energy."
+  },
+  // Card 15
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Azimuthal Quantum Number\nWhat does the **Azimuthal (Angular Momentum) Quantum Number** ($\\ell$) describe?",
+    back: "## Subshell and Shape\n\n**Insight:** The value of $\\ell$ determines the shape of the orbital.\n\n**Analysis:** The azimuthal quantum number ($\\ell$) determines:\n- **Subshell (sublevel)**\n- **Shape** of the orbital\n\n**Allowed values:** $\\ell = 0, 1, 2, \\ldots, n-1$\n\n**Subshell designations:**\n- $\\ell = 0$: $s$ orbital (spherical)\n- $\\ell = 1$: $p$ orbital (dumbbell)\n- $\\ell = 2$: $d$ orbital (cloverleaf)\n- $\\ell = 3$: $f$ orbital (complex)\n\n**Number of subshells in a shell:** $n$ (e.g., $n = 2$ has $s$ and $p$ subshells).\n\n> **Key Takeaway:** $\\ell$ determines shape; $\\ell = 0$ = $s$, $\\ell = 1$ = $p$, $\\ell = 2$ = $d$."
+  },
+  // Card 16
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Magnetic Quantum Number\nWhat does the **Magnetic Quantum Number** ($m_\\ell$) describe?",
+    back: "## Orientation in Space\n\n**Insight:** The magnetic quantum number determines the orientation of the orbital in 3D space.\n\n**Analysis:** The magnetic quantum number ($m_\\ell$) determines:\n- **Orientation** of the orbital in space\n\n**Allowed values:** $m_\\ell = -\\ell, \\ldots, 0, \\ldots, +\\ell$\n\n**Number of orbitals in a subshell:** $2\\ell + 1$\n\n**Examples:**\n- $s$ subshell ($\\ell = 0$): 1 orbital ($m_\\ell = 0$)\n- $p$ subshell ($\\ell = 1$): 3 orbitals ($m_\\ell = -1, 0, +1$)\n- $d$ subshell ($\\ell = 2$): 5 orbitals ($m_\\ell = -2, -1, 0, +1, +2$)\n\n> **Key Takeaway:** $m_\\ell$ gives orientation; $2\\ell + 1$ orbitals per subshell."
+  },
+  // Card 17
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Spin Quantum Number\nWhat does the **Spin Quantum Number** ($m_s$) describe?",
+    back: "## Electron Spin\n\n**Insight:** Electrons behave as if they are spinning, creating a magnetic moment.\n\n**Analysis:** The spin quantum number ($m_s$) describes the direction of electron spin.\n\n**Allowed values:** $m_s = +\\frac{1}{2}$ or $-\\frac{1}{2}$\n\n**Implication:** An orbital can hold a maximum of **two electrons**, and they must have **opposite spins**.\n\n> **Key Takeaway:** $m_s = \\pm\\frac{1}{2}$; two electrons in the same orbital must have opposite spins."
+  },
+  // Card 18
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Pauli Exclusion Principle\nState the **Pauli Exclusion Principle**.",
+    back: "## No Two Electrons Alike\n\n**Insight:** No two electrons in the same atom can have all four quantum numbers identical.\n\n**Analysis:** The Pauli Exclusion Principle states that **no two electrons in any atom may have all four quantum numbers the same**.\n\n**Consequences:**\n1. A maximum of **two electrons per orbital** (one with $m_s = +\\frac{1}{2}$, one with $m_s = -\\frac{1}{2}$).\n2. This limits the number of electrons in subshells:\n   - $s$: 2 electrons\n   - $p$: 6 electrons\n   - $d$: 10 electrons\n   - $f$: 14 electrons\n\n> **Key Takeaway:** No two electrons have the same set of four quantum numbers; max 2 electrons per orbital."
+  },
+  // Card 19
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Madelung's Rule\nWhat is the **$n + \\ell$ Rule** (Madelung's Rule) for filling orbitals?",
+    back: "## Diagonal Rule\n\n**Insight:** Orbitals are filled in order of increasing $n + \\ell$; if two orbitals have the same $n + \\ell$, the one with lower $n$ fills first.\n\n**Analysis:** Madelung's rule (also called the diagonal rule or Aufbau principle) states that:\n\n1. **Atomic orbitals are filled in order of increasing $n + \\ell$.**\n2. **When two $n + \\ell$ values are equal, the orbital with the lower $n$ fills first.**\n\n**Filling order:**\n\n$1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < 5f < 6d < 7p$\n\n> **Key Takeaway:** Orbitals fill by increasing $n + \\ell$; 4s fills before 3d because $4+0=4$ is less than $3+2=5$."
+  },
+
+  // ============================================================
+  // SECTION 6.4: ELECTRONIC CONFIGURATION (Cards 20 – 27)
+  // ============================================================
+
+  // Card 20
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Configuration\nWhat is **Hund's Rule** for filling degenerate orbitals?",
+    back: "## Maximum Unpaired Electrons\n\n**Insight:** Electrons occupy orbitals singly before pairing up because it minimizes electron-electron repulsion.\n\n**Analysis:** Hund's Rule states that the most stable arrangement of electrons in a subshell is the one with the **maximum number of unpaired electrons** with **parallel spins**.\n\n**Example:** For nitrogen ($1s^2 2s^2 2p^3$), the three 2p electrons occupy three separate $p$ orbitals with parallel spins (not paired in one orbital).\n\n**Consequence:** Atoms with unpaired electrons are **paramagnetic** (attracted to magnetic fields).\n\n> **Key Takeaway:** Electrons fill orbitals singly first; maximum unpaired electrons = most stable."
+  },
+  // Card 21
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Configuration\nWrite the electron configuration for **Oxygen** ($Z = 8$).",
+    back: "## Paramagnetic Configuration\n\n**Insight:** Oxygen has two unpaired electrons, making it paramagnetic.\n\n**Analysis:**\n\n**Full configuration:** $1s^2 2s^2 2p^4$\n\n**Orbital diagram (in words):**\n- 1s: ↑↓\n- 2s: ↑↓\n- 2p: ↑ ↑ _ (two unpaired electrons in separate orbitals)\n\n**Note:** The two 2p electrons occupy separate orbitals with parallel spins (Hund's rule).\n\n**Abbreviated configuration:** $[\\ce{He}] 2s^2 2p^4$\n\n> **Key Takeaway:** Oxygen: $1s^2 2s^2 2p^4$; paramagnetic with 2 unpaired electrons."
+  },
+  // Card 22
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Configuration\nWrite the electron configuration for **Chromium** ($Z = 24$).",
+    back: "## Half-Filled Stability\n\n**Insight:** Chromium has a $4s^1 3d^5$ configuration (not $4s^2 3d^4$) because a half-filled $d$ subshell is exceptionally stable.\n\n**Analysis:**\n\n**Expected:** $[\\ce{Ar}] 4s^2 3d^4$\n\n**Actual:** $[\\ce{Ar}] 4s^1 3d^5$\n\n**Reason:** Half-filled $d^5$ configuration provides extra stability due to exchange energy.\n\n**This is an exception to the Madelung rule.**\n\n> **Key Takeaway:** Chromium: $[\\ce{Ar}] 4s^1 3d^5$; half-filled $d$ subshell is unusually stable."
+  },
+  // Card 23
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Configuration\nWrite the electron configuration for **Copper** ($Z = 29$).",
+    back: "## Completely Filled Stability\n\n**Insight:** Copper has a $4s^1 3d^{10}$ configuration (not $4s^2 3d^9$) because a completely filled $d$ subshell is exceptionally stable.\n\n**Analysis:**\n\n**Expected:** $[\\ce{Ar}] 4s^2 3d^9$\n\n**Actual:** $[\\ce{Ar}] 4s^1 3d^{10}$\n\n**Reason:** Filled $d^{10}$ configuration provides extra stability.\n\n**This is an exception to the Madelung rule.**\n\n> **Key Takeaway:** Copper: $[\\ce{Ar}] 4s^1 3d^{10}$; fully filled $d$ subshell is unusually stable."
+  },
+  // Card 24
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Configuration\nWhat are **Valence Electrons** and **Core Electrons**?",
+    back: "## Outer vs. Inner\n\n**Insight:** Valence electrons are the most important for chemical bonding.\n\n**Analysis:**\n- **Valence electrons:** Electrons in the **outermost principal quantum level** (shell) of an atom. These are involved in chemical bonding.\n- **Core electrons:** Electrons in **inner shells** (not involved in bonding).\n\n**Example:** For Sodium ($[\\ce{Ne}] 3s^1$):\n- Valence electron: the $3s^1$ electron.\n- Core electrons: the 10 electrons in the $[\\ce{Ne}]$ configuration.\n\n> **Key Takeaway:** Valence electrons = outermost shell; core electrons = inner shells."
+  },
+  // Card 25
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Periodic Table Blocks\nWhat are the $s$, $p$, $d$, and $f$ blocks of the periodic table?",
+    back: "## Orbital Filling Regions\n\n**Insight:** The blocks of the periodic table correspond to the subshell being filled.\n\n**Analysis:**\n\n**$s$-block:** $s$ orbital being filled → Groups 1–2 (IA, IIA).\n\n**$p$-block:** $p$ orbital being filled → Groups 13–18 (IIIA–VIIIA).\n\n**$d$-block:** $d$ orbital being filled → Transition metals (Groups 3–12).\n\n**$f$-block:** $f$ orbital being filled → Lanthanides and Actinides.\n\n**Note:** The $s$-block and $p$-block together are the **main-group (representative) elements**.\n\n> **Key Takeaway:** The periodic table is organized by the subshell being filled ($s$, $p$, $d$, or $f$)."
+  },
+  // Card 26
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Ion Configuration\nHow do you write the electron configuration for a cation?",
+    back: "## Remove Electrons from the Highest Shell\n\n**Insight:** When forming cations, electrons are removed from the highest $n$ shell first.\n\n**Analysis:**\n\n**Example: Na ($Z = 11$)**\n- Neutral: $[\\ce{Ne}] 3s^1$\n- $\\ce{Na+}$: Remove the $3s^1$ electron → $[\\ce{Ne}]$\n\n**Example: Ca ($Z = 20$)**\n- Neutral: $[\\ce{Ar}] 4s^2$\n- $\\ce{Ca^{2+}}$: Remove both $4s$ electrons → $[\\ce{Ar}]$\n\n**Rule:** Remove electrons from the highest principal quantum number ($n$) shell first (the valence shell).\n\n> **Key Takeaway:** Cations lose valence electrons first; $\\ce{Na+}$ = $[\\ce{Ne}]$."
+  },
+  // Card 27
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Ion Configuration\nHow do you write the electron configuration for an anion?",
+    back: "## Add Electrons to the Highest Shell\n\n**Insight:** When forming anions, electrons are added to the highest $n$ shell.\n\n**Analysis:**\n\n**Example: F ($Z = 9$)**\n- Neutral: $[\\ce{He}] 2s^2 2p^5$\n- $\\ce{F-}$: Add one $2p$ electron → $[\\ce{Ne}]$\n\n**Example: O ($Z = 8$)**\n- Neutral: $[\\ce{He}] 2s^2 2p^4$\n- $\\ce{O^{2-}}$: Add two $2p$ electrons → $[\\ce{Ne}]$\n\n**Rule:** Add electrons to the highest principal quantum number ($n$) shell (the valence shell) until a noble gas configuration is achieved.\n\n> **Key Takeaway:** Anions gain electrons to achieve noble gas configuration; $\\ce{F-}$ = $[\\ce{Ne}]$."
+  },
+
+  // ============================================================
+  // SECTION 6.6: PERIODIC TRENDS (Cards 28 – 37)
+  // ============================================================
+
+  // Card 28
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Atomic Radius\nWhat is the trend for **Atomic Radius** across a period and down a group?",
+    back: "## Periodic Trend\n\n**Insight:** Atomic radius decreases across a period (same shell, more protons) and increases down a group (more shells).\n\n**Analysis:**\n- **Across a period (L → R):** Atomic radius **decreases** because effective nuclear charge increases, pulling electrons closer.\n- **Down a group (Top → Bottom):** Atomic radius **increases** because electrons are in higher principal energy levels (more shells).\n\n**Reason:** Effective nuclear charge increases across a period; orbital size increases down a group.\n\n> **Key Takeaway:** Atomic radius: decreases across a period; increases down a group."
+  },
+  // Card 29
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Ionic Radius\nWhat is the trend for **Ionic Radius** for cations and anions?",
+    back: "## Cations Smaller, Anions Larger\n\n**Insight:** Cations are smaller than their parent atoms; anions are larger than their parent atoms.\n\n**Analysis:**\n- **Cations (+):** **Smaller** than parent atom. Removal of electrons reduces electron-electron repulsion, so remaining electrons are pulled in tighter.\n- **Anions (-):** **Larger** than parent atom. Addition of electrons increases electron-electron repulsion, causing the electron cloud to expand.\n\n**Isoelectronic series:** For ions with the same number of electrons (e.g., $\\ce{O^{2-}}, \\ce{F^-}, \\ce{Na^+}, \\ce{Mg^{2+}}, \\ce{Al^{3+}}$), size decreases as nuclear charge increases.\n\n> **Key Takeaway:** Cations smaller; anions larger; isoelectronic ions: higher $Z$ = smaller radius."
+  },
+  // Card 30
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Ionization Energy\nWhat is **Ionization Energy** ($IE$)?",
+    back: "## Energy to Remove an Electron\n\n**Insight:** Ionization energy measures how tightly an electron is held by an atom.\n\n**Analysis:** Ionization energy is the **minimum energy required to remove an electron** from a gaseous atom in its ground state.\n\n$\\text{Energy} + \\ce{X(g) -> X+(g) + e-}$\n\n**Trends:**\n- **Across a period (L → R):** Ionization energy **increases** (electrons held more tightly).\n- **Down a group (Top → Bottom):** Ionization energy **decreases** (electrons farther from nucleus).\n\n**Successive ionization energies:** $IE_1 < IE_2 < IE_3$ (each successive electron is harder to remove).\n\n> **Key Takeaway:** IE increases across a period; decreases down a group; metals have low IE."
+  },
+  // Card 31
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Electron Affinity\nWhat is **Electron Affinity** ($EA$)?",
+    back: "## Energy Change when Adding an Electron\n\n**Insight:** Electron affinity measures how readily an atom accepts an electron.\n\n**Analysis:** Electron affinity is the **negative of the energy change** when an atom in the gaseous state accepts an electron.\n\n$\\ce{X(g) + e- -> X-(g)}\\quad \\Delta H$\n\n$EA = -\\Delta H$\n\n**Trends:**\n- **Across a period (L → R):** Electron affinity becomes **more positive** (greater tendency to accept electrons).\n- **Halogens** have the **highest electron affinities** (they readily accept electrons to form stable anions).\n\n> **Key Takeaway:** EA measures ability to accept electrons; halogens have the highest EA."
+  },
+  // Card 32
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Periodic Trends Summary\nSummarize the major **Periodic Trends**.",
+    back: "## Four Key Properties\n\n**Insight:** All trends can be explained by effective nuclear charge and the number of energy levels.\n\n**Analysis:**\n\n**Across a Period (Left → Right):**\n- Atomic Radius: Decreases\n- Ionic Radius (cations): Decreases\n- Ionization Energy: Increases\n- Electron Affinity: Increases\n- Metallic Character: Decreases\n\n**Down a Group (Top → Bottom):**\n- Atomic Radius: Increases\n- Ionic Radius (cations): Increases\n- Ionization Energy: Decreases\n- Electron Affinity: Decreases (generally)\n- Metallic Character: Increases\n\n> **Key Takeaway:** Opposite trends for atomic properties across periods vs. down groups."
+  },
+  // Card 33
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Isoelectronic Ions\nArrange $\\ce{O^{2-}}, \\ce{F^-}, \\ce{Na^+}, \\ce{Mg^{2+}}, \\ce{Al^{3+}}$ in order of increasing ionic radius.",
+    back: "## Nuclear Charge Effect\n\n**Insight:** All these ions have the same number of electrons (10), but different numbers of protons.\n\n**Analysis:**\n\n**Electron count:** All have 10 electrons (neon configuration).\n\n**Nuclear charge ($Z$):**\n- $\\ce{O^{2-}}$: 8 protons\n- $\\ce{F^-}$: 9 protons\n- $\\ce{Na^+}$: 11 protons\n- $\\ce{Mg^{2+}}$: 12 protons\n- $\\ce{Al^{3+}}$: 13 protons\n\n**Size:** As nuclear charge increases, the 10 electrons are pulled in more tightly → ionic radius decreases.\n\n**Order (increasing radius):** $\\ce{Al^{3+}} < \\ce{Mg^{2+}} < \\ce{Na^+} < \\ce{F^-} < \\ce{O^{2-}}$\n\n> **Key Takeaway:** For isoelectronic ions, higher nuclear charge = smaller ionic radius."
+  },
+  // Card 34
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Magnetic Properties\nWhat are **Diamagnetic**, **Paramagnetic**, and **Ferromagnetic** materials?",
+    back: "## Electron Spin Responses\n\n**Insight:** Magnetic properties depend on the arrangement of unpaired electrons.\n\n**Analysis:**\n- **Diamagnetic:** All electrons are paired. Not attracted to magnetic fields (e.g., $\\ce{Ne}$, $\\ce{Zn^{2+}}$).\n- **Paramagnetic:** Have unpaired electrons. Weakly attracted to magnetic fields (e.g., $\\ce{O2}$, $\\ce{N}$, $\\ce{Fe^{3+}}$).\n- **Ferromagnetic:** Strong magnetic behavior due to interactions between paramagnetic atoms in the solid state (e.g., Fe, Co, Ni). ~$10^6$ times stronger than paramagnetism.\n\n> **Key Takeaway:** Paired electrons = diamagnetic; unpaired electrons = paramagnetic; ferromagnetic = strong."
+  },
+  // Card 35
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Quantum Numbers Problem\nWrite all possible sets of four quantum numbers for a **5p orbital** electron.",
+    back: "## $n = 5$, $\\ell = 1$\n\n**Insight:** For a 5p orbital, $n = 5$ and $\\ell = 1$; $m_\\ell$ can be $-1, 0, +1$; $m_s$ can be $\\pm\\frac{1}{2}$.\n\n**Analysis:**\n\n**For $m_\\ell = -1$:**\n- Set 1: $(5, 1, -1, +\\frac{1}{2})$\n- Set 2: $(5, 1, -1, -\\frac{1}{2})$\n\n**For $m_\\ell = 0$:**\n- Set 3: $(5, 1, 0, +\\frac{1}{2})$\n- Set 4: $(5, 1, 0, -\\frac{1}{2})$\n\n**For $m_\\ell = +1$:**\n- Set 5: $(5, 1, +1, +\\frac{1}{2})$\n- Set 6: $(5, 1, +1, -\\frac{1}{2})$\n\n**Total:** 6 possible sets (2 electrons per orbital × 3 orbitals).\n\n> **Key Takeaway:** $n = 5$, $\\ell = 1$; 6 possible $(n, \\ell, m_\\ell, m_s)$ combinations."
+  },
+  // Card 36
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Effective Nuclear Charge\nWhat is **Effective Nuclear Charge** ($Z_{\\text{eff}}$)?",
+    back: "## Net Pull on Electrons\n\n**Insight:** Effective nuclear charge is the net positive charge experienced by an electron after accounting for shielding by core electrons.\n\n**Analysis:**\n\n$Z_{\\text{eff}} = Z - S$\n\nwhere:\n- $Z$ = actual nuclear charge (number of protons)\n- $S$ = shielding constant (approximated by number of core electrons)\n\n**Trend:** $Z_{\\text{eff}}$ increases across a period (more protons, same number of shells), explaining why atomic radius decreases and ionization energy increases.\n\n> **Key Takeaway:** $Z_{\\text{eff}} = Z - S$; increases across a period, pulling electrons closer."
+  },
+  // Card 37
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 6: Atomic Structure",
+    front: "# Orbital Shapes\nDescribe the shapes of $s$, $p$, and $d$ orbitals.",
+    back: "## Visualizing Orbitals\n\n**Insight:** Orbitals have characteristic shapes that determine bond directions and molecular geometry.\n\n**Analysis:**\n\n- **$s$ orbital ($\\ell = 0$):** **Spherical** shape. One lobe around the nucleus.\n- **$p$ orbital ($\\ell = 1$):** **Dumbbell** shape. Two lobes on opposite sides of the nucleus. Three orientations: $p_x$, $p_y$, $p_z$.\n- **$d$ orbital ($\\ell = 2$):** **Cloverleaf** shape (most). Four lobes. Five orbitals: $d_{xy}$, $d_{xz}$, $d_{yz}$, $d_{x^2-y^2}$, $d_{z^2}$.\n- **$f$ orbital ($\\ell = 3$):** Complex shapes; seven orbitals.\n\n> **Key Takeaway:** $s$ = spherical; $p$ = dumbbell; $d$ = cloverleaf."
+  }
+],
+"TOPIC 7: CHEMICAL BONDING AND MOLECULAR GEOMETRY": [
+  // ============================================================
+  // SECTION 5.2: TYPES OF CHEMICAL BONDS (Cards 1 – 5)
+  // ============================================================
+
+  // Card 1
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Chemical Bond\nWhat is a **Chemical Bond** and why do bonds form?",
+    back: "## Force Holding Atoms Together\n\n**Insight:** Chemical bonds form because collections of atoms are more stable (lower in energy) than separate atoms.\n\n**Analysis:** A chemical bond is a force that holds a group of atoms together so they function as a unit. Bonds form because the **system seeks its lowest possible energy**.\n\n**Bond energy:** The energy required to break a bond (a measure of bond strength).\n\n> **Key Takeaway:** Bonds form when atoms are more stable together than apart; bond energy measures strength."
+  },
+  // Card 2
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Ionic Bonding\nWhat is an **Ionic Bond** and how does it form?",
+    back: "## Electrostatic Attraction\n\n**Insight:** Ionic bonds form between atoms with very different electronegativities (metal + non-metal).\n\n**Analysis:** An ionic bond is formed by the **electrostatic attraction between positive and negative ions**.\n\n**Process:** One atom transfers one or more electrons to another atom.\n- **Cation:** Atom that loses electrons (metal).\n- **Anion:** Atom that gains electrons (non-metal).\n\n**Example:** $\\ce{Na} + \\ce{Cl} \\rightarrow \\ce{Na+} + \\ce{Cl-} \\rightarrow \\ce{NaCl}$\n\n**Coulomb's Law:** $E = \\frac{Q_1 Q_2}{4\\pi\\epsilon_0 r}$\n\n> **Key Takeaway:** Ionic bond = electron transfer + electrostatic attraction; metal + non-metal."
+  },
+  // Card 3
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Covalent Bonding\nWhat is a **Covalent Bond** and how does it form?",
+    back: "## Electron Sharing\n\n**Insight:** Covalent bonds form when atoms share electrons to achieve noble gas configurations.\n\n**Analysis:** A covalent bond is formed when **electrons are shared** between two atoms, residing primarily in the space between the nuclei.\n\n**Example:** $\\ce{H2}$: Two hydrogen atoms share a pair of electrons.\n\n**Types of bonds by electron pairs shared:**\n- **Single bond:** 1 shared pair ($\\ce{H-H}$)\n- **Double bond:** 2 shared pairs ($\\ce{O=O}$)\n- **Triple bond:** 3 shared pairs ($\\ce{N≡N}$)\n\n> **Key Takeaway:** Covalent bond = sharing electrons; non-metals with non-metals."
+  },
+  // Card 4
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Polar Covalent Bonding\nWhat is a **Polar Covalent Bond**?",
+    back: "## Unequal Sharing\n\n**Insight:** Polar covalent bonds occur when atoms have different electronegativities, leading to unequal electron sharing.\n\n**Analysis:** A polar covalent bond is an **intermediate case** between ionic and pure covalent bonding. The electrons are **shared unequally** because one atom is more electronegative than the other.\n\n**Example:** $\\ce{H-F}$: Fluorine (EN = 4.0) pulls electrons more strongly than hydrogen (EN = 2.1).\n\n$\\ce{H^{\\delta+} - F^{\\delta-}}$\n\n**Dipole moment:** Polarity creates a dipole — a separation of positive and negative charge.\n\n> **Key Takeaway:** Polar covalent = unequal sharing; partial charges ($\\delta^+$, $\\delta^-$)."
+  },
+  // Card 5
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Metallic Bonding\nWhat is **Metallic Bonding**?",
+    back: "## Sea of Electrons\n\n**Insight:** Metallic bonds hold metal atoms together through delocalized valence electrons.\n\n**Analysis:** Metallic bonding occurs when **valence electrons are delocalized** and move freely throughout the crystal, attracted to the positive cores of metal ions.\n\n**Model:** The \"sea of electrons\" model — metal ions in a lattice surrounded by a \"sea\" of mobile electrons.\n\n**Properties explained by metallic bonding:**\n- **Electrical conductivity:** Mobile electrons carry charge.\n- **Thermal conductivity:** Electrons transfer heat.\n- **Malleability/Ductility:** Layers of ions can slide without breaking bonds.\n\n> **Key Takeaway:** Metallic bond = delocalized electrons in a \"sea\"; metals are good conductors."
+  },
+
+  // ============================================================
+  // SECTION 5.3: ELECTRONEGATIVITY (Cards 6 – 9)
+  // ============================================================
+
+  // Card 6
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Electronegativity\nWhat is **Electronegativity** and how is it used?",
+    back: "## Ability to Attract Electrons\n\n**Insight:** Electronegativity is the \"pull\" an atom has on shared electrons in a bond.\n\n**Analysis:** Electronegativity is the ability of an atom in a molecule to **attract shared electrons** to itself.\n\n**Trends:**\n- **Across a period (L → R):** Electronegativity **increases**.\n- **Down a group (Top → Bottom):** Electronegativity **decreases**.\n\n**Range:** Fluorine (4.0) has the highest; Cesium (0.7) has the lowest.\n\n> **Key Takeaway:** Electronegativity = ability to attract electrons in a bond; increases across a period, decreases down a group."
+  },
+  // Card 7
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Electronegativity Difference\nHow does electronegativity difference relate to bond type?",
+    back: "## Predicting Bond Character\n\n**Insight:** The difference in electronegativity determines whether a bond is covalent, polar covalent, or ionic.\n\n**Analysis:**\n\n**$\\Delta$EN = 0:** Pure Covalent (e.g., $\\ce{Cl-Cl}$)\n\n**$\\Delta$EN between 0 and 2.0:** Polar Covalent (e.g., $\\ce{H-F}$)\n\n**$\\Delta$EN > 2.0:** Ionic (e.g., $\\ce{NaCl}$)\n\n**Rule of thumb:** If $\\Delta$EN > 2.0, the bond is considered ionic (electron transfer).\n\n> **Key Takeaway:** $\\Delta$EN = 0 (covalent); $\\Delta$EN > 2.0 (ionic); between = polar covalent."
+  },
+  // Card 8
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Bond Polarity Problem\nOrder the following bonds by polarity: $\\ce{H-H}$, $\\ce{O-H}$, $\\ce{Cl-H}$, $\\ce{S-H}$, $\\ce{F-H}$.",
+    back: "## Electronegativity Differences\n\n**Insight:** Greater electronegativity difference = more polar bond.\n\n**Analysis:**\n\n**Listed from least polar to most polar:**\n- $\\ce{H-H}$: EN diff = 0.0 (pure covalent)\n- $\\ce{S-H}$: EN diff = 0.4\n- $\\ce{Cl-H}$: EN diff = 0.9\n- $\\ce{O-H}$: EN diff = 1.4\n- $\\ce{F-H}$: EN diff = 1.9 (most polar)\n\n**Order (least to most polar):** $\\ce{H-H} < \\ce{S-H} < \\ce{Cl-H} < \\ce{O-H} < \\ce{F-H}$\n\n> **Key Takeaway:** Polarity increases with increasing electronegativity difference."
+  },
+
+  // ============================================================
+  // SECTION 5.4: BOND POLARITY & DIPOLE MOMENTS (Cards 9 – 11)
+  // ============================================================
+
+  // Card 9
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Dipole Moment\nWhat is a **Dipole Moment** and when does a molecule have one?",
+    back: "## Net Charge Separation\n\n**Insight:** A dipole moment exists when there is a separation of positive and negative charge centres in a molecule.\n\n**Analysis:** A dipole moment occurs when a molecule has a **centre of positive charge** and a **centre of negative charge** that do not coincide.\n\n**Diatomic molecules:** Any diatomic molecule with a polar bond has a dipole moment.\n\n**Polyatomic molecules:** Dipole moment depends on both bond polarity and molecular geometry.\n\n**Representation:** Arrow pointing to the negative end (tail at positive end).\n\n> **Key Takeaway:** Dipole moment = net charge separation; occurs when bond polarities do not cancel."
+  },
+  // Card 10
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Molecular Polarity\nWhy is $\\ce{H2O}$ polar but $\\ce{CO2}$ nonpolar?",
+    back: "## Cancellation of Bond Dipoles\n\n**Insight:** Molecular polarity depends on both bond polarity and geometry.\n\n**Analysis:**\n\n**$\\ce{H2O}$ (bent geometry):**\n- O-H bonds are polar (O is more electronegative).\n- The bent shape means bond dipoles do **not** cancel → **polar molecule**.\n\n**$\\ce{CO2}$ (linear geometry):**\n- C-O bonds are polar (O is more electronegative).\n- The linear shape means bond dipoles point in opposite directions and **cancel** → **nonpolar molecule**.\n\n> **Key Takeaway:** $\\ce{H2O}$ is polar (bent); $\\ce{CO2}$ is nonpolar (linear, dipoles cancel)."
+  },
+  // Card 11
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Molecular Polarity\nWhy is $\\ce{CH4}$ nonpolar despite having polar C-H bonds?",
+    back: "## Symmetrical Cancellation\n\n**Insight:** In a tetrahedral molecule, bond dipoles are arranged symmetrically and cancel.\n\n**Analysis:**\n\n**$\\ce{CH4}$ (tetrahedral geometry):**\n- C-H bonds are polar (C is slightly more electronegative).\n- The tetrahedral shape is perfectly symmetrical, so the bond dipoles point in directions that **cancel each other out** → **nonpolar molecule**.\n\n**Rule:** A molecule can have polar bonds but be nonpolar if the geometry is symmetrical (e.g., $\\ce{CH4}$, $\\ce{CCl4}$, $\\ce{BF3}$).\n\n> **Key Takeaway:** Symmetrical molecules (tetrahedral, trigonal planar) are often nonpolar even with polar bonds."
+  },
+
+  // ============================================================
+  // SECTION 5.6: ENERGY EFFECTS (Cards 12 – 13)
+  // ============================================================
+
+  // Card 12
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lattice Energy\nWhat is **Lattice Energy** and how is it calculated?",
+    back: "## Ionic Solid Stability\n\n**Insight:** Lattice energy is the energy released when ions pack together to form an ionic solid — a key factor in ionic bond strength.\n\n**Analysis:** Lattice energy is the **change in energy when separated gaseous ions are packed together to form an ionic solid**.\n\n$\\ce{M+(g) + X-(g) -> MX(s)}$\n\n**Modified Coulomb's Law:** $\\text{Lattice energy} = k \\cdot \\frac{Q_1 Q_2}{r}$\n\nwhere:\n- $Q_1, Q_2$ = charges on ions\n- $r$ = distance between ions (sum of ionic radii)\n\n**Key insight:** Lattice energy increases with higher ion charges and smaller ionic radii.\n\n> **Key Takeaway:** Lattice energy increases with higher charge and smaller size; higher lattice energy = stronger ionic solid."
+  },
+  // Card 13
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Born-Haber Cycle\nHow do you calculate lattice energy using the **Born-Haber Cycle**?",
+    back: "## Hess's Law for Ionic Solids\n\n**Insight:** Lattice energy cannot be measured directly; it is calculated using Hess's Law and experimental data.\n\n**Analysis:** The Born-Haber cycle uses Hess's Law to calculate lattice energy from:\n\n1. **Sublimation energy** (solid metal → gaseous atoms)\n2. **Ionization energy** (atom → cation)\n3. **Bond dissociation energy** (diatomic molecule → atoms)\n4. **Electron affinity** (atom → anion)\n5. **Enthalpy of formation** ($\\Delta H_f^\\circ$)\n\n**Example: LiF formation:**\n- Sublimation: $\\ce{Li(s) -> Li(g)}$ $\\Delta H = +161$ kJ\n- Ionization: $\\ce{Li(g) -> Li+(g)}$ $\\Delta H = +520$ kJ\n- Dissociation: $\\frac{1}{2}\\ce{F2(g) -> F(g)}$ $\\Delta H = +77$ kJ\n- Electron affinity: $\\ce{F(g) -> F-(g)}$ $\\Delta H = -328$ kJ\n- **Lattice energy:** $\\ce{Li+(g) + F-(g) -> LiF(s)}$ $\\Delta H = -1047$ kJ\n\n**Overall:** $\\Delta H_f^\\circ = -617$ kJ/mol\n\n> **Key Takeaway:** Born-Haber cycle uses Hess's Law to calculate lattice energy from measurable values."
+  },
+
+  // ============================================================
+  // SECTION 5.8: LEWIS STRUCTURES (Cards 14 – 25)
+  // ============================================================
+
+  // Card 14
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lewis Structures\nWhat is a **Lewis Structure** and what are the rules for drawing them?",
+    back: "## Valence Electron Arrangement\n\n**Insight:** Lewis structures show how valence electrons are arranged among atoms in a molecule.\n\n**Analysis:** A Lewis structure shows the arrangement of **valence electrons** among atoms in a molecule using dots (:) to represent electrons and lines (-) to represent bonds.\n\n**Rules:**\n1. **Sum valence electrons** from all atoms (account for charge).\n2. **Use a pair of electrons** to form a bond between each pair of bound atoms.\n3. **Distribute remaining electrons** to satisfy the **duet rule** (H) and **octet rule** (2nd period elements).\n\n> **Key Takeaway:** Lewis structures show valence electrons; follow octet/duet rules."
+  },
+  // Card 15
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lewis Structure\nDraw the Lewis structure for **$\\ce{H2O}$**.",
+    back: "## Water Molecule\n\n**Insight:** Oxygen has 6 valence electrons; each H contributes 1; total = 8 electrons.\n\n**Analysis:**\n\n**Step 1:** Total valence electrons = 6 + 1 + 1 = 8.\n\n**Step 2:** Form two O-H single bonds (4 electrons used).\n\n**Step 3:** Remaining 4 electrons placed on O as two lone pairs.\n\n$\\ce{H - \\overset{..}{O} - H}$\n\n**Check:** O has 8 electrons (octet); each H has 2 (duet).\n\n> **Key Takeaway:** $\\ce{H2O}$ has bent structure; O has two lone pairs."
+  },
+  // Card 16
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lewis Structure\nDraw the Lewis structure for **$\\ce{CO2}$**.",
+    back: "## Carbon Dioxide\n\n**Insight:** Carbon must share two pairs with each oxygen to achieve an octet for all atoms.\n\n**Analysis:**\n\n**Step 1:** Total valence electrons = 4 + 6 + 6 = 16.\n\n**Step 2:** Try single bonds: $\\ce{O-C-O}$ uses 4 electrons, leaving 12.\n\n**Step 3:** Placing 3 lone pairs on each O (12 electrons) gives O octets but C only has 4 electrons — **invalid**.\n\n**Step 4:** Use double bonds: $\\ce{:O::C::O:}$\n\n**Correct structure:** $\\ce{ \u00b7O=C=O\u00b7 }$\n\n**Check:** All atoms have octets; total = 16 electrons.\n\n> **Key Takeaway:** $\\ce{CO2}$ has two double bonds; linear structure."
+  },
+  // Card 17
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lewis Structure\nDraw the Lewis structure for the **Cyanide Ion ($\\ce{CN^-}$)**.",
+    back: "## Polyatomic Ion\n\n**Insight:** The negative charge means there is an extra electron to include.\n\n**Analysis:**\n\n**Step 1:** Total valence electrons = (C:4) + (N:5) + (negative charge:1) = 10.\n\n**Step 2:** Try a triple bond: $\\ce{:C≡N:}$\n\n**Check:**\n- C has 4 electrons (2 from bond + 2 lone pair?) → actually C: 5 electrons.\n\n**Correct structure:** $\\ce{[:C≡N:]^-}$\n\n**Resonance structures:** Multiple valid Lewis structures can be drawn.\n\n> **Key Takeaway:** $\\ce{CN^-}$ has a triple bond; charge is included in electron count."
+  },
+  // Card 18
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Octet Rule Exceptions\nWhat are the exceptions to the **Octet Rule**?",
+    back: "## Less than or More than 8\n\n**Insight:** Some elements can have fewer than 8 electrons (electron deficient) or more than 8 (expanded octet).\n\n**Analysis:** Three types of exceptions:\n\n1. **Less than an octet (electron deficient):**\n   - **Boron** compounds (e.g., $\\ce{BF3}$) have only 6 electrons around B.\n   - **Beryllium** compounds (e.g., $\\ce{BeCl2}$) have only 4 electrons around Be.\n\n2. **Expanded octet (more than 8):**\n   - Elements in **Period 3 and below** can use empty $d$ orbitals to accommodate more than 8 electrons.\n   - **Examples:** $\\ce{PCl5}$ (10 electrons), $\\ce{SF6}$ (12 electrons).\n\n3. **Radicals:** Molecules with an odd number of electrons (e.g., $\\ce{NO}$).\n\n> **Key Takeaway:** Exceptions: electron deficient (Be, B) and expanded octet (P, S, Cl)."
+  },
+  // Card 19
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Expanded Octet\nWhy can Sulfur form $\\ce{SF6}$ but Oxygen cannot?",
+    back: "## d-Orbital Availability\n\n**Insight:** Sulfur (Period 3) has empty 3d orbitals that can accommodate extra electrons; Oxygen (Period 2) does not.\n\n**Analysis:**\n- **Sulfur ($Z = 16$):** Electron configuration: $[\\ce{Ne}] 3s^2 3p^4$ with empty 3d orbitals available. It can use these $d$ orbitals to form 6 bonds in $\\ce{SF6}$.\n- **Oxygen ($Z = 8$):** Electron configuration: $[\\ce{He}] 2s^2 2p^4$. No $d$ orbitals available; it cannot expand beyond an octet.\n\n**Key principle:** Only elements in Period 3 and below can have expanded octets.\n\n> **Key Takeaway:** Expanded octet requires empty $d$ orbitals; only Period 3+ elements can expand."
+  },
+  // Card 20
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Resonance\nWhat is **Resonance** and when does it occur?",
+    back: "## Delocalized Electrons\n\n**Insight:** Resonance occurs when more than one valid Lewis structure can be drawn for a molecule; the actual structure is an average of all resonance forms.\n\n**Analysis:** Resonance occurs when more than one valid Lewis structure can be drawn for the same molecule. The actual molecule is a **hybrid (average)** of all resonance structures.\n\n**Example: $\\ce{NO3^-}$ (Nitrate Ion)**\n\nThree equivalent resonance structures:\n\n$\\ce{O=N+(-O^-)-O^-} \\leftrightarrow \\ce{O^- -N+ (=O)-O^-} \\leftrightarrow \\ce{O^- -N+(-O^-)=O}$\n\n**Key insight:** All N-O bonds in nitrate are equivalent (not one double and two singles).\n\n> **Key Takeaway:** Resonance = multiple valid structures; actual is an average; represented by $\\leftrightarrow$."
+  },
+  // Card 21
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Resonance Examples\nName three molecules/ions that exhibit resonance.",
+    back: "## Delocalized Systems\n\n**Insight:** Resonance occurs in molecules with conjugated $\\pi$ bonds or where multiple equivalent structures exist.\n\n**Analysis:** Common examples of resonance:\n\n1. **Nitrate ion ($\\ce{NO3^-}$):** Three equivalent structures with one double bond.\n2. **Nitrite ion ($\\ce{NO2^-}$):** Two equivalent structures.\n3. **Ozone ($\\ce{O3}$):** Two equivalent structures.\n4. **Benzene ($\\ce{C6H6}$):** Two resonance structures (Kekulé structures); actual is delocalized.\n5. **Carbonate ion ($\\ce{CO3^{2-}}$):** Three equivalent structures.\n\n> **Key Takeaway:** Resonance occurs in nitrate, nitrite, ozone, benzene, and carbonate."
+  },
+  // Card 22
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Formal Charge\nWhat is **Formal Charge** and how is it calculated?",
+    back: "## Electron Bookkeeping\n\n**Insight:** Formal charge helps determine the most stable Lewis structure when multiple structures are possible.\n\n**Analysis:** Formal charge is the charge assigned to an atom assuming **equal sharing of bonding electrons**.\n\n**Formula:**\n\n$\\text{Formal Charge} = \\text{Valence electrons} - \\text{Lone pair electrons} - \\frac{1}{2}(\\text{Bonding electrons})$\n\n**Rules for best Lewis structure:**\n1. Minimize formal charges (they should be as close to zero as possible).\n2. Negative formal charges should be on the most electronegative atoms.\n\n> **Key Takeaway:** Formal charge = valence electrons - lone pairs - 1/2(bonding electrons); choose structure with smallest formal charges."
+  },
+  // Card 23
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Lewis Acids/Bases\nWhat are **Lewis Acids** and **Lewis Bases**?",
+    back: "## Electron Pair Acceptors/Donors\n\n**Insight:** Lewis theory defines acids and bases in terms of electron pairs, not protons.\n\n**Analysis:**\n- **Lewis acid:** A substance that can **accept** an electron pair. (Electron pair acceptor)\n- **Lewis base:** A substance that can **donate** an electron pair. (Electron pair donor)\n\n**Examples:**\n- $\\ce{BF3}$ (boron has only 6 electrons) is a Lewis acid.\n- $\\ce{NH3}$ (has a lone pair) is a Lewis base.\n\n**Reaction:** $\\ce{BF3} + \\ce{NH3} \\rightarrow \\ce{F3B-NH3}$\n\n> **Key Takeaway:** Lewis acid = electron pair acceptor; Lewis base = electron pair donor."
+  },
+
+  // ============================================================
+  // SECTION 5.10: VSEPR MODEL (Cards 24 – 29)
+  // ============================================================
+
+  // Card 24
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR Model\nWhat is the **VSEPR Model** and what does it predict?",
+    back: "## Minimizing Repulsion\n\n**Insight:** VSEPR predicts molecular geometry by minimizing electron pair repulsions around the central atom.\n\n**Analysis:** The Valence Shell Electron Pair Repulsion (VSEPR) model predicts molecular geometry by minimizing repulsions between electron pairs (both bonding and lone pairs) around a central atom.\n\n**Steps:**\n1. Draw Lewis structure.\n2. Count electron pairs around central atom.\n3. Arrange pairs to minimize repulsion (maximize distance).\n4. Determine geometry from atom positions.\n\n> **Key Takeaway:** VSEPR = electron pairs arrange to be as far apart as possible; predicts 3D shape."
+  },
+  // Card 25
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR Geometries\nWhat are the geometries for 2, 3, 4, 5, and 6 electron pairs (no lone pairs)?",
+    back: "## Five Basic Shapes\n\n**Insight:** The number of electron pairs determines the base geometry.\n\n**Analysis:**\n\n**2 electron pairs:** Linear, 180° (e.g., $\\ce{BeCl2}$, $\\ce{CO2}$)\n\n**3 electron pairs:** Trigonal Planar, 120° (e.g., $\\ce{BF3}$, $\\ce{SO3}$)\n\n**4 electron pairs:** Tetrahedral, 109.5° (e.g., $\\ce{CH4}$, $\\ce{NH4+}$)\n\n**5 electron pairs:** Trigonal Bipyramidal, 90°/120° (e.g., $\\ce{PCl5}$)\n\n**6 electron pairs:** Octahedral, 90° (e.g., $\\ce{SF6}$)\n\n> **Key Takeaway:** 2 pairs = linear; 3 = trigonal planar; 4 = tetrahedral; 5 = trigonal bipyramidal; 6 = octahedral."
+  },
+  // Card 26
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR with Lone Pairs\nWhat are the geometries with **Lone Pairs** on the central atom?",
+    back: "## Distorted Shapes\n\n**Insight:** Lone pairs take up more space than bonding pairs, distorting bond angles.\n\n**Analysis:**\n\n**4 electron pairs (1 lone pair):** Trigonal Pyramidal, ~107° (e.g., $\\ce{NH3}$)\n\n**4 electron pairs (2 lone pairs):** Bent (V-shaped), ~104.5° (e.g., $\\ce{H2O}$)\n\n**5 electron pairs (1 lone pair):** See-saw (e.g., $\\ce{SF4}$)\n\n**5 electron pairs (2 lone pairs):** T-shaped (e.g., $\\ce{ClF3}$)\n\n**5 electron pairs (3 lone pairs):** Linear, 180° (e.g., $\\ce{XeF2}$)\n\n**6 electron pairs (1 lone pair):** Square Pyramidal (e.g., $\\ce{BrF5}$)\n\n**6 electron pairs (2 lone pairs):** Square Planar, 90° (e.g., $\\ce{XeF4}$)\n\n**Note:** Lone pairs occupy more space → bond angles reduced.\n\n> **Key Takeaway:** Lone pairs distort geometry; trigonal pyramidal ($\\ce{NH3}$), bent ($\\ce{H2O}$)."
+  },
+  // Card 27
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR Example\nPredict the geometry of **$\\ce{NH3}$**.",
+    back: "## Trigonal Pyramidal\n\n**Insight:** Ammonia has 4 electron pairs around N (3 bonding + 1 lone pair), giving a tetrahedral electron-pair arrangement but a trigonal pyramidal molecular shape.\n\n**Analysis:**\n\n**Lewis structure:** $\\ce{H-N-H}$ with one lone pair on N.\n\n**Electron pairs:** 4 (3 bonding, 1 lone pair).\n\n**Electron-pair geometry:** Tetrahedral (109.5°).\n\n**Molecular geometry:** Trigonal pyramidal (~107°).\n\n**Why?** The lone pair takes up more space, pushing the H atoms closer together.\n\n> **Key Takeaway:** $\\ce{NH3}$ = trigonal pyramidal (4 electron pairs, 1 lone pair)."
+  },
+  // Card 28
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR Example\nPredict the geometry of **$\\ce{H2O}$**.",
+    back: "## Bent (V-shaped)\n\n**Insight:** Water has 4 electron pairs around O (2 bonding + 2 lone pairs), giving a tetrahedral electron-pair arrangement but a bent molecular shape.\n\n**Analysis:**\n\n**Lewis structure:** $\\ce{H-O-H}$ with two lone pairs on O.\n\n**Electron pairs:** 4 (2 bonding, 2 lone pairs).\n\n**Electron-pair geometry:** Tetrahedral (109.5°).\n\n**Molecular geometry:** Bent (V-shaped) (~104.5°).\n\n**Why?** Two lone pairs compress the bond angle more than one lone pair.\n\n> **Key Takeaway:** $\\ce{H2O}$ = bent (4 electron pairs, 2 lone pairs)."
+  },
+  // Card 29
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# VSEPR Example\nPredict the geometry of **$\\ce{CO2}$**.",
+    back: "## Linear\n\n**Insight:** Carbon dioxide has 2 electron pairs around C (2 double bonds), giving a linear shape.\n\n**Analysis:**\n\n**Lewis structure:** $\\ce{O=C=O}$\n\n**Electron pairs around C:** 2 (each double bond counts as one electron pair).\n\n**Electron-pair geometry:** Linear (180°).\n\n**Molecular geometry:** Linear (180°).\n\n**Note:** No lone pairs on the central atom; shape is perfectly linear.\n\n> **Key Takeaway:** $\\ce{CO2}$ = linear (2 electron pairs, no lone pairs)."
+  },
+
+  // ============================================================
+  // SECTION 5.11: HYBRIDIZATION (Cards 30 – 40)
+  // ============================================================
+
+  // Card 30
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Hybridization\nWhat is **Hybridization** and why is it necessary?",
+    back: "## Mixing Atomic Orbitals\n\n**Insight:** Hybridization explains how atoms form identical bonds when their native orbitals are different shapes and energies.\n\n**Analysis:** Hybridization is the mixing of **native atomic orbitals** (e.g., $s$, $p$) to form **new hybrid orbitals** that are identical in shape and energy.\n\n**Why necessary?**\n1. Native orbitals have different shapes ($s$ is spherical, $p$ are dumbbells).\n2. Native orbitals have different energies.\n3. To form identical bonds (like 4 identical C-H bonds in $\\ce{CH4}$), the orbitals must be equivalent.\n\n> **Key Takeaway:** Hybridization mixes atomic orbitals to form equivalent hybrid orbitals for bonding."
+  },
+  // Card 31
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $sp^3$ Hybridization\nWhat is **$sp^3$ Hybridization** and what geometry does it produce?",
+    back: "## Tetrahedral Geometry\n\n**Insight:** $sp^3$ hybridization produces four equivalent orbitals arranged tetrahedrally (109.5°).\n\n**Analysis:**\n\n**Formation:** One $s$ orbital + three $p$ orbitals → four $sp^3$ hybrid orbitals.\n\n**Geometry:** Tetrahedral (109.5°).\n\n**Examples:** $\\ce{CH4}$ (methane), $\\ce{NH3}$ (ammonia), $\\ce{H2O}$ (water).\n\n**Energy level diagram:** $2s + 2p_x + 2p_y + 2p_z \\rightarrow$ four $sp^3$ orbitals.\n\n**Note:** In $\\ce{NH3}$ and $\\ce{H2O}$, lone pairs occupy $sp^3$ orbitals (giving tetrahedral electron-pair geometry).\n\n> **Key Takeaway:** $sp^3$ = 4 orbitals, tetrahedral; used by C, N, O with 4 electron pairs."
+  },
+  // Card 32
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $sp^2$ Hybridization\nWhat is **$sp^2$ Hybridization** and what geometry does it produce?",
+    back: "## Trigonal Planar Geometry\n\n**Insight:** $sp^2$ hybridization produces three equivalent orbitals arranged trigonally planar (120°), with one unhybridized $p$ orbital.\n\n**Analysis:**\n\n**Formation:** One $s$ orbital + two $p$ orbitals → three $sp^2$ hybrid orbitals. One $p$ orbital remains unhybridized.\n\n**Geometry:** Trigonal Planar (120°).\n\n**Examples:** $\\ce{BF3}$, $\\ce{C2H4}$ (ethylene), $\\ce{SO3}$.\n\n**The unhybridized $p$ orbital:** Used to form $\\pi$ bonds (double bonds).\n\n> **Key Takeaway:** $sp^2$ = 3 orbitals, trigonal planar; unhybridized $p$ orbital forms $\\pi$ bonds."
+  },
+  // Card 33
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $sp$ Hybridization\nWhat is **$sp$ Hybridization** and what geometry does it produce?",
+    back: "## Linear Geometry\n\n**Insight:** $sp$ hybridization produces two equivalent orbitals arranged linearly (180°), with two unhybridized $p$ orbitals.\n\n**Analysis:**\n\n**Formation:** One $s$ orbital + one $p$ orbital → two $sp$ hybrid orbitals. Two $p$ orbitals remain unhybridized.\n\n**Geometry:** Linear (180°).\n\n**Examples:** $\\ce{CO2}$ (carbon dioxide), $\\ce{C2H2}$ (acetylene), $\\ce{BeCl2}$.\n\n**The unhybridized $p$ orbitals:** Used to form $\\pi$ bonds (double or triple bonds).\n\n> **Key Takeaway:** $sp$ = 2 orbitals, linear; two $\\pi$ bonds possible (triple bond)."
+  },
+  // Card 34
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $sp^3d$ Hybridization\nWhat is **$sp^3d$ Hybridization** and what geometry does it produce?",
+    back: "## Trigonal Bipyramidal Geometry\n\n**Insight:** $sp^3d$ hybridization produces five equivalent orbitals arranged in a trigonal bipyramidal geometry (120° equatorial, 90° axial).\n\n**Analysis:**\n\n**Formation:** One $s$ + three $p$ + one $d$ orbital → five $sp^3d$ hybrid orbitals.\n\n**Geometry:** Trigonal Bipyramidal (120° equatorial, 90° axial).\n\n**Examples:** $\\ce{PCl5}$ (phosphorus pentachloride).\n\n**Electron pairs:** 5 electron pairs around the central atom.\n\n> **Key Takeaway:** $sp^3d$ = 5 orbitals, trigonal bipyramidal; uses one $d$ orbital."
+  },
+  // Card 35
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $sp^3d^2$ Hybridization\nWhat is **$sp^3d^2$ Hybridization** and what geometry does it produce?",
+    back: "## Octahedral Geometry\n\n**Insight:** $sp^3d^2$ hybridization produces six equivalent orbitals arranged in octahedral geometry (90°).\n\n**Analysis:**\n\n**Formation:** One $s$ + three $p$ + two $d$ orbitals → six $sp^3d^2$ hybrid orbitals.\n\n**Geometry:** Octahedral (90°).\n\n**Examples:** $\\ce{SF6}$ (sulfur hexafluoride).\n\n**Electron pairs:** 6 electron pairs around the central atom.\n\n> **Key Takeaway:** $sp^3d^2$ = 6 orbitals, octahedral; uses two $d$ orbitals."
+  },
+  // Card 36
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# $\\sigma$ and $\\pi$ Bonds\nWhat are **$\\sigma$** and **$\\pi$ Bonds**?",
+    back: "## End-to-End vs. Side-by-Side\n\n**Insight:** Single bonds are $\\sigma$ bonds; multiple bonds consist of one $\\sigma$ plus one or two $\\pi$ bonds.\n\n**Analysis:**\n\n- **$\\sigma$ (sigma) bond:** Formed by **head-on (end-to-end)** overlap of orbitals. Electron density is concentrated along the internuclear axis. All single bonds are $\\sigma$ bonds.\n- **$\\pi$ (pi) bond:** Formed by **side-by-side (parallel)** overlap of $p$ orbitals. Electron density is concentrated above and below the internuclear axis. Found in double and triple bonds.\n\n**Bond types:**\n- **Single bond:** 1 $\\sigma$\n- **Double bond:** 1 $\\sigma$ + 1 $\\pi$\n- **Triple bond:** 1 $\\sigma$ + 2 $\\pi$\n\n> **Key Takeaway:** $\\sigma$ = end-to-end overlap; $\\pi$ = side-by-side overlap; double bond = 1$\\sigma$ + 1$\\pi$."
+  },
+  // Card 37
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Hybridization and Geometry\nWhat is the hybridization of Carbon in **$\\ce{CH4}$**, **$\\ce{C2H4}$**, and **$\\ce{C2H2}$**?",
+    back: "## $sp^3$, $sp^2$, $sp$\n\n**Insight:** The hybridization of an atom depends on the number of electron pairs (bonding + lone) around it.\n\n**Analysis:**\n\n**$\\ce{CH4}$:** 4 electron pairs (all $\\sigma$ bonds) → $sp^3$ → Tetrahedral\n\n**$\\ce{C2H4}$:** 3 electron pairs (1 double = 1 effective pair) → $sp^2$ → Trigonal Planar\n\n**$\\ce{C2H2}$:** 2 electron pairs (1 triple = 1 effective pair) → $sp$ → Linear\n\n**Rule:** Count effective pairs (multiple bonds count as one pair).\n\n> **Key Takeaway:** 4 pairs = $sp^3$; 3 pairs = $sp^2$; 2 pairs = $sp$."
+  },
+  // Card 38
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Hybridization Summary\nComplete the summary for hybridization.",
+    back: "## Quick Reference\n\n**Insight:** Hybridization directly determines geometry and bond angles.\n\n**Analysis:**\n\n**$sp$:** 2 hybrid orbitals → Linear → 180° → $\\ce{BeCl2}$\n\n**$sp^2$:** 3 hybrid orbitals → Trigonal Planar → 120° → $\\ce{BF3}$\n\n**$sp^3$:** 4 hybrid orbitals → Tetrahedral → 109.5° → $\\ce{CH4}$\n\n**$sp^3d$:** 5 hybrid orbitals → Trigonal Bipyramidal → 90°/120° → $\\ce{PCl5}$\n\n**$sp^3d^2$:** 6 hybrid orbitals → Octahedral → 90° → $\\ce{SF6}$\n\n> **Key Takeaway:** $sp$ = 2 orbitals (linear); $sp^2$ = 3 (trigonal planar); $sp^3$ = 4 (tetrahedral)."
+  },
+  // Card 39
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Hybridization and Lone Pairs\nWhat is the hybridization of Nitrogen in $\\ce{NH3}$ and Oxygen in $\\ce{H2O}$?",
+    back: "## $sp^3$ with Lone Pairs\n\n**Insight:** Lone pairs count as electron pairs for determining hybridization.\n\n**Analysis:**\n\n**$\\ce{NH3}$:** 4 electron pairs (3 bonding + 1 lone) → $sp^3$ → Trigonal Pyramidal\n\n**$\\ce{H2O}$:** 4 electron pairs (2 bonding + 2 lone) → $sp^3$ → Bent\n\n**Rule:** Count all electron pairs (bonding + lone) around the central atom. Lone pairs occupy hybrid orbitals too!\n\n> **Key Takeaway:** Lone pairs count for hybridization; $\\ce{NH3}$ and $\\ce{H2O}$ are both $sp^3$ hybridized."
+  },
+  // Card 40
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 7: Chemical Bonding",
+    front: "# Hybridization Problem\nDetermine the hybridization of the central atom in **$\\ce{PCl5}$** and **$\\ce{SF6}$**.",
+    back: "## $sp^3d$ and $sp^3d^2$\n\n**Insight:** Expanded octets require the involvement of $d$ orbitals in hybridization.\n\n**Analysis:**\n\n**$\\ce{PCl5}$:** 5 bonding pairs → 5 electron pairs → $sp^3d$ → Trigonal Bipyramidal\n\n**$\\ce{SF6}$:** 6 bonding pairs → 6 electron pairs → $sp^3d^2$ → Octahedral\n\n**Key principle:** $d$ orbitals are involved when there are more than 4 electron pairs (expanded octet).\n\n> **Key Takeaway:** 5 pairs = $sp^3d$; 6 pairs = $sp^3d^2$; both require $d$ orbitals."
+  }
+],
+"TOPIC 8: ORGANIC CHEMISTRY": [
+  // ============================================================
+  // SECTION 6.2: INTRODUCTION (Card 1)
+  // ============================================================
+
+  // Card 1
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Introduction\nWhat is **Organic Chemistry** and why is carbon special?",
+    back: "## The Chemistry of Carbon\n\n**Insight:** Carbon's ability to form strong bonds to itself allows for the vast diversity of organic compounds.\n\n**Analysis:** Organic chemistry is the study of **carbon-containing compounds** and their properties.\n\n**Why carbon is special:**\n1. Carbon forms **strong C-C bonds** (long chains and rings).\n2. Carbon bonds to H, N, O, halogens, and other elements.\n3. Carbon forms single, double, and triple bonds.\n4. Over 20 million organic compounds are known.\n\n**Comparison:** Silicon forms Si-O-Si chains (geological materials); carbon forms C-C chains (organic molecules).\n\n> **Key Takeaway:** Organic chemistry = study of carbon compounds; carbon's versatility comes from strong C-C bonds."
+  },
+
+  // ============================================================
+  // SECTION 6.3: ALKANES (Cards 2 – 7)
+  // ============================================================
+
+  // Card 2
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alkanes\nWhat are **Alkanes** and what is their general formula?",
+    back: "## Saturated Hydrocarbons\n\n**Insight:** Alkanes are the simplest class of hydrocarbons, with only single bonds.\n\n**Analysis:** Alkanes are **saturated hydrocarbons** containing only **carbon-carbon single bonds**.\n\n**General formula:** $\\ce{C_nH_{2n+2}}$\n\n**Characteristics:**\n- All C are $sp^3$ hybridized.\n- Tetrahedral geometry (109.5°).\n- Relatively unreactive (except combustion and halogenation).\n\n**First 3 alkanes:** Methane ($\\ce{CH4}$), Ethane ($\\ce{C2H6}$), Propane ($\\ce{C3H8}$).\n\n> **Key Takeaway:** Alkanes = saturated hydrocarbons; general formula $\\ce{C_nH_{2n+2}}$."
+  },
+  // Card 3
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Structural Isomerism\nWhat is **Structural Isomerism** in alkanes?",
+    back: "## Same Formula, Different Connectivity\n\n**Insight:** Structural isomers have the same molecular formula but different arrangements of atoms (different bonds).\n\n**Analysis:** Structural isomerism occurs when molecules have the **same molecular formula** but **different bonding arrangements**.\n\n**Example: Butane ($\\ce{C4H10}$)**\n- **n-Butane:** Straight chain $\\ce{CH3CH2CH2CH3}$\n- **Isobutane:** Branched chain $\\ce{CH(CH3)3}$\n\n**Number of isomers:** Increases with carbon count (e.g., hexane has 5 isomers).\n\n> **Key Takeaway:** Structural isomers = same atoms, different bonds; butane has two (n-butane and isobutane)."
+  },
+  // Card 4
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Nomenclature\nWhat are the IUPAC rules for naming **Alkanes**?",
+    back: "## Systematic Naming\n\n**Insight:** IUPAC nomenclature provides a systematic way to name organic compounds.\n\n**Analysis:** Steps:\n1. **Find the longest continuous chain** of carbon atoms (parent name).\n2. **Number the chain** from the end closest to the first branch.\n3. **Name substituents** (alkyl groups) by replacing \"-ane\" with \"-yl\".\n4. **Assign numbers** to each substituent (use commas between numbers, hyphens between numbers and letters).\n5. **List substituents alphabetically** (ignore prefixes like di-, tri-).\n6. **Combine** names with the parent chain.\n\n> **Key Takeaway:** IUPAC naming: longest chain → number → substituents → alphabetize."
+  },
+  // Card 5
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alkyl Groups\nWhat are the common **Alkyl Groups** and their names?",
+    back: "## Removing Hydrogen\n\n**Insight:** Alkyl groups are formed by removing one hydrogen from an alkane.\n\n**Analysis:**\n\n**Methyl:** $\\ce{CH3}$\n\n**Ethyl:** $\\ce{CH2CH3}$\n\n**Propyl:** $\\ce{CH2CH2CH3}$\n\n**Isopropyl:** $\\ce{CH(CH3)2}$\n\n**Butyl:** $\\ce{CH2CH2CH2CH3}$\n\n**Sec-butyl:** $\\ce{CH(CH3)CH2CH3}$\n\n**Isobutyl:** $\\ce{CH2CH(CH3)2}$\n\n**Tert-butyl:** $\\ce{C(CH3)3}$\n\n**Naming:** Replace \"-ane\" with \"-yl\".\n\n> **Key Takeaway:** Alkyl groups = alkane minus H; named with \"-yl\" suffix."
+  },
+  // Card 6
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Nomenclature Example\nName the following alkane: $\\ce{CH3CH(CH3)CH2CH2CH3}$.",
+    back: "## 2-Methylpentane\n\n**Insight:** The longest chain has 5 carbons (pentane); a methyl group is on carbon 2.\n\n**Analysis:**\n\n**Step 1:** Longest chain = 5 carbons → pentane.\n\n**Step 2:** Number from the end closest to branching:\n$\\ce{CH3-CH(CH3)-CH2-CH2-CH3}$\nCarbon 2 has a methyl substituent.\n\n**Step 3:** Name = 2-methylpentane.\n\n**Check:** The longest chain is pentane; methyl at position 2.\n\n> **Key Takeaway:** 2-methylpentane (5-carbon chain with methyl at C2)."
+  },
+  // Card 7
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Cycloalkanes\nWhat are **Cycloalkanes** and what is their general formula?",
+    back: "## Ringed Saturated Hydrocarbons\n\n**Insight:** Cycloalkanes have carbon atoms arranged in a ring, giving the general formula $\\ce{C_nH_{2n}}$.\n\n**Analysis:** Cycloalkanes are alkanes in which carbon atoms form a **ring**.\n\n**General formula:** $\\ce{C_nH_{2n}}$ (two fewer H than acyclic alkanes).\n\n**Examples:**\n- Cyclopropane ($\\ce{C3H6}$)\n- Cyclobutane ($\\ce{C4H8}$)\n- Cyclopentane ($\\ce{C5H10}$)\n- Cyclohexane ($\\ce{C6H12}$)\n\n**Naming:** Prefix \"cyclo-\" before the parent alkane name.\n\n**Note:** Cyclopropane and cyclobutane have strained bonds (ring strain) and are more reactive.\n\n> **Key Takeaway:** Cycloalkanes = rings; formula $\\ce{C_nH_{2n}}$; prefix \"cyclo-\"."
+  },
+
+  // ============================================================
+  // SECTION 6.4: ALKENES & ALKYNES (Cards 8 – 13)
+  // ============================================================
+
+  // Card 8
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alkenes\nWhat are **Alkenes** and what is their general formula?",
+    back: "## Unsaturated with Double Bonds\n\n**Insight:** Alkenes contain a C=C double bond; they are unsaturated.\n\n**Analysis:** Alkenes are **unsaturated hydrocarbons** containing at least one **carbon-carbon double bond**.\n\n**General formula:** $\\ce{C_nH_{2n}}$\n\n**Simplest alkene:** Ethene ($\\ce{C2H4}$ or $\\ce{CH2=CH2}$)\n\n**Hybridization:** Double-bonded carbons are $sp^2$ hybridized (trigonal planar, 120°).\n\n**Naming:** Replace \"-ane\" with \"-ene\"; indicate the position of the double bond with a number.\n\n> **Key Takeaway:** Alkenes = C=C double bond; formula $\\ce{C_nH_{2n}}$; suffix \"-ene\"."
+  },
+  // Card 9
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Cis-Trans Isomerism\nWhat is **Cis-Trans Isomerism** in alkenes?",
+    back: "## Restricted Rotation\n\n**Insight:** The C=C double bond prevents rotation, allowing cis-trans isomerism (geometric isomers).\n\n**Analysis:** Cis-trans isomerism occurs because the C=C double bond restricts rotation. Substituents can be on the **same side** (cis) or **opposite sides** (trans) of the double bond.\n\n**Example: 2-Butene ($\\ce{CH3CH=CHCH3}$)**\n- **cis-2-Butene:** Both $\\ce{CH3}$ groups on the same side.\n- **trans-2-Butene:** $\\ce{CH3}$ groups on opposite sides.\n\n**Requirements:** Each double-bonded carbon must have two different substituents.\n\n> **Key Takeaway:** cis = same side; trans = opposite side; requires restricted rotation around C=C."
+  },
+  // Card 10
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alkynes\nWhat are **Alkynes** and what is their general formula?",
+    back: "## Unsaturated with Triple Bonds\n\n**Insight:** Alkynes contain a C≡C triple bond; they are highly unsaturated.\n\n**Analysis:** Alkynes are **unsaturated hydrocarbons** containing at least one **carbon-carbon triple bond**.\n\n**General formula:** $\\ce{C_nH_{2n-2}}$\n\n**Simplest alkyne:** Ethyne ($\\ce{C2H2}$ or $\\ce{HC≡CH}$), commonly called acetylene.\n\n**Hybridization:** Triple-bonded carbons are $sp$ hybridized (linear, 180°).\n\n**Naming:** Replace \"-ane\" with \"-yne\"; indicate the position of the triple bond.\n\n> **Key Takeaway:** Alkynes = C≡C triple bond; formula $\\ce{C_nH_{2n-2}}$; suffix \"-yne\"."
+  },
+  // Card 11
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Nomenclature Example\nName the compound: $\\ce{CH3CH2C≡CCH3}$.",
+    back: "## 2-Pentyne\n\n**Insight:** The longest chain containing the triple bond has 5 carbons (pentyne); the triple bond is at position 2.\n\n**Analysis:**\n\n**Step 1:** Longest chain containing the triple bond = 5 carbons → pentyne.\n\n**Step 2:** Number from the end closest to the triple bond:\n$\\ce{CH3-CH2-C≡C-CH3}$\nThe triple bond is between C2 and C3 → position 2.\n\n**Step 3:** Name = 2-pentyne.\n\n> **Key Takeaway:** 2-pentyne (5-carbon chain with triple bond at C2)."
+  },
+  // Card 12
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Addition Reactions\nWhat are the characteristic reactions of **Alkenes** and **Alkynes**?",
+    back: "## Addition to $\\pi$ Bonds\n\n**Insight:** The $\\pi$ bonds in alkenes and alkynes are weaker than $\\sigma$ bonds and can be broken to add new atoms.\n\n**Analysis:** Alkenes and alkynes undergo **addition reactions** where the $\\pi$ bond breaks and new $\\sigma$ bonds form.\n\n**Types:**\n1. **Hydrogenation:** Add $\\ce{H2}$ (with catalyst Ni/Pt) → alkane.\n   $\\ce{CH2=CH2 + H2 -> CH3CH3}$\n\n2. **Halogenation:** Add $\\ce{X2}$ (e.g., $\\ce{Br2}$) → dihaloalkane.\n   $\\ce{CH2=CH2 + Br2 -> CH2BrCH2Br}$\n\n3. **Hydrohalogenation:** Add $\\ce{HX}$ (e.g., $\\ce{HBr}$) → haloalkane.\n   $\\ce{CH2=CH2 + HBr -> CH3CH2Br}$\n\n**Markovnikov's Rule:** The H adds to the carbon with more H atoms (for unsymmetrical alkenes).\n\n> **Key Takeaway:** Alkenes/alkynes undergo addition reactions; $\\pi$ bonds break."
+  },
+  // Card 13
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Markovnikov's Rule\nWhat is **Markovnikov's Rule**?",
+    back: "## Hydrogen to the Rich\n\n**Insight:** When adding $\\ce{HX}$ to an unsymmetrical alkene, the hydrogen adds to the carbon with more hydrogen atoms already.\n\n**Analysis:** Markovnikov's Rule states that in the addition of $\\ce{HX}$ (e.g., $\\ce{HBr}$, $\\ce{HCl}$) to an unsymmetrical alkene:\n\n**\"The hydrogen atom adds to the carbon with more hydrogen atoms attached, and the halogen adds to the carbon with fewer hydrogen atoms.\"**\n\n**Example:** $\\ce{CH3CH=CH2 + HBr -> CH3CHBrCH3}$ (major product, 2-bromopropane)\n- H adds to $\\ce{CH2}$ (more H), Br adds to $\\ce{CH}$ (fewer H).\n\n> **Key Takeaway:** Markovnikov = H adds to the carbon with more H atoms; \"rich get richer.\""
+  },
+
+  // ============================================================
+  // SECTION 6.5: AROMATIC HYDROCARBONS (Cards 14 – 17)
+  // ============================================================
+
+  // Card 14
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aromatic Compounds\nWhat is **Benzene** and what is its structure?",
+    back: "## The Aromatic Ring\n\n**Insight:** Benzene is a cyclic, planar molecule with delocalized $\\pi$ electrons, giving it exceptional stability.\n\n**Analysis:** Benzene ($\\ce{C6H6}$) is the simplest aromatic hydrocarbon.\n\n**Structure:**\n- Planar hexagonal ring\n- All C-C bonds are equivalent (1.39 Å, intermediate between single and double).\n- Each carbon is $sp^2$ hybridized.\n- 6 $\\pi$ electrons are **delocalized** over the entire ring (shown as a circle inside the ring).\n\n**Resonance structures:** Two Kekulé structures (alternating single/double bonds).\n\n**Stability:** Delocalization gives benzene exceptional stability (resonance energy).\n\n> **Key Takeaway:** Benzene = $\\ce{C6H6}$; planar ring with delocalized $\\pi$ electrons; shown with a circle inside."
+  },
+  // Card 15
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aromatic Reactions\nWhat type of reactions does Benzene undergo?",
+    back: "## Electrophilic Substitution\n\n**Insight:** Benzene does not undergo addition reactions like alkenes; it undergoes substitution reactions that preserve the aromatic ring.\n\n**Analysis:** Benzene undergoes **substitution reactions** where a hydrogen atom is replaced by another atom or group.\n\n**Why not addition?** Addition would destroy the delocalized $\\pi$ system and the aromatic stability.\n\n**Examples:**\n1. **Halogenation:** $\\ce{C6H6 + Cl2 -> C6H5Cl + HCl}$ (chlorobenzene)\n2. **Nitration:** $\\ce{C6H6 + HNO3 -> C6H5NO2 + H2O}$ (nitrobenzene)\n3. **Sulfonation:** $\\ce{C6H6 + H2SO4 -> C6H5SO3H + H2O}$ (benzenesulfonic acid)\n\n> **Key Takeaway:** Benzene undergoes substitution (not addition) to preserve aromaticity."
+  },
+  // Card 16
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aromatic Nomenclature\nHow are substituted benzenes named?",
+    back: "## Benzene Derivatives\n\n**Insight:** Aromatic compounds are named as derivatives of benzene.\n\n**Analysis:**\n\n**Common names:** Some have common names.\n- $\\ce{C6H5CH3}$ = Toluene\n- $\\ce{C6H5OH}$ = Phenol\n- $\\ce{C6H5NH2}$ = Aniline\n\n**IUPAC naming:**\n- **Mono-substituted:** Name the substituent + benzene. (e.g., Chlorobenzene)\n- **Di-substituted:** Use numbers or prefixes:\n  - **o- (ortho):** 1,2 positions\n  - **m- (meta):** 1,3 positions\n  - **p- (para):** 1,4 positions\n\n**Example:** 1,2-dimethylbenzene = o-xylene.\n\n> **Key Takeaway:** Benzene derivatives named with substituent positions (o, m, p for disubstituted)."
+  },
+  // Card 17
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Phenyl Group\nWhat is the **Phenyl Group**?",
+    back: "## Benzene as a Substituent\n\n**Insight:** When benzene acts as a substituent, it is called a phenyl group.\n\n**Analysis:** The phenyl group is a benzene ring attached as a substituent.\n\n**Structure:** $\\ce{C6H5}$\n\n**Naming:** Add \"phenyl\" to the name of the parent compound.\n\n**Example:** $\\ce{C6H5CH2CH3}$ = ethylbenzene? Actually, if phenyl is a substituent on a longer chain, it's named as phenylalkane.\n\n**Distinction:** \n- **Benzene:** The parent molecule.\n- **Phenyl:** The substituent group derived from benzene.\n\n> **Key Takeaway:** Phenyl = $\\ce{C6H5}$; benzene ring used as a substituent."
+  },
+
+  // ============================================================
+  // SECTION 6.6: HYDROCARBON DERIVATIVES (Cards 18 – 30)
+  // ============================================================
+
+  // Card 18
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Functional Groups\nWhat is a **Functional Group**?",
+    back: "## Reactive Centre\n\n**Insight:** Functional groups determine the chemical properties and reactivity of organic compounds.\n\n**Analysis:** A functional group is an **atom or group of atoms** that gives a molecule its characteristic chemical properties.\n\n**Common functional groups:**\n\n**Halohydrocarbons:** $\\ce{-X}$ (F, Cl, Br, I) — R-X\n\n**Alcohols:** $\\ce{-OH}$ — R-OH\n\n**Ethers:** $\\ce{-O-}$ — R-O-R'\n\n**Aldehydes:** $\\ce{-CHO}$ — R-CHO\n\n**Ketones:** $\\ce{-CO-}$ — R-CO-R'\n\n**Carboxylic Acids:** $\\ce{-COOH}$ — R-COOH\n\n**Esters:** $\\ce{-COOR'}$ — R-COOR'\n\n**Amines:** $\\ce{-NH2}$ — R-NH2\n\n> **Key Takeaway:** Functional groups determine reactivity; each class has a characteristic group."
+  },
+  // Card 19
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alcohols\nWhat are **Alcohols** and how are they classified?",
+    back: "## Hydroxyl Group\n\n**Insight:** Alcohols contain the $\\ce{-OH}$ group; they are classified by the number of carbon groups attached to the $\\ce{-OH}$ carbon.\n\n**Analysis:** Alcohols contain a **hydroxyl group ($\\ce{-OH}$)** bonded to a carbon atom.\n\n**General formula:** R-OH\n\n**Classification:**\n- **Primary (1°):** $\\ce{R-CH2OH}$ (one R group)\n- **Secondary (2°):** $\\ce{R2CHOH}$ (two R groups)\n- **Tertiary (3°):** $\\ce{R3COH}$ (three R groups)\n\n**Naming:** Replace \"-ane\" with \"-ol\"; indicate position of $\\ce{-OH}$.\n\n> **Key Takeaway:** Alcohols = R-OH; primary (1 R), secondary (2 R), tertiary (3 R)."
+  },
+  // Card 20
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Boiling Points\nWhy do alcohols have higher boiling points than alkanes of similar molar mass?",
+    back: "## Hydrogen Bonding\n\n**Insight:** The polar $\\ce{-OH}$ group allows hydrogen bonding, significantly increasing boiling points.\n\n**Analysis:**\n\n**Alcohols vs. Alkanes:**\n- Methanol ($\\ce{CH3OH}$, M = 32 g/mol) bp = 65°C\n- Ethane ($\\ce{CH3CH3}$, M = 30 g/mol) bp = -89°C\n\n**Reason:** Alcohols have strong **hydrogen bonding** between $\\ce{-OH}$ groups, requiring more energy to separate molecules.\n\n**Trend:** Boiling point increases with chain length (more surface area for dispersion forces).\n\n> **Key Takeaway:** Alcohols have higher boiling points due to hydrogen bonding."
+  },
+  // Card 21
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Alcohol Production\nHow is **Ethanol** produced commercially?",
+    back: "## Fermentation and Hydration\n\n**Insight:** Ethanol is produced for beverages via fermentation and for industrial use via hydration of ethylene.\n\n**Analysis:**\n\n**1. Fermentation (beverages):**\n$\\ce{C6H12O6 ->[yeast] 2CH3CH2OH + 2CO2}$\n(Glucose → Ethanol + Carbon dioxide)\n\n**2. Industrial synthesis (hydration of ethylene):**\n$\\ce{CH2=CH2 + H2O ->[H2SO4] CH3CH2OH}$\n\n**Methanol:** Prepared by hydrogenation of CO:\n$\\ce{CO + 2H2 ->[ZnO/Cr2O3, 400°C] CH3OH}$\n\n> **Key Takeaway:** Ethanol from fermentation (beverages) or hydration of ethylene (industrial)."
+  },
+  // Card 22
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Ethers\nWhat are **Ethers** and how are they formed?",
+    back: "## R-O-R' Linkage\n\n**Insight:** Ethers have two alkyl groups attached to an oxygen atom; they are formed by condensation reactions.\n\n**Analysis:** Ethers contain the **R-O-R'** linkage where R and R' are hydrocarbon groups.\n\n**Formation:** Reaction of an alkoxide with an alkyl halide:\n$\\ce{CH3ONa + CH3Br -> CH3OCH3 + NaBr}$\n\n**Industrial synthesis:** Dehydration of alcohols:\n$\\ce{2C2H5OH ->[H2SO4, 140°C] C2H5OC2H5 + H2O}$\n\n**Properties:** Ethers are flammable; they can form explosive peroxides on standing.\n\n> **Key Takeaway:** Ethers = R-O-R'; formed by condensation of alcohols."
+  },
+  // Card 23
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aldehydes & Ketones\nWhat is the carbonyl group and how do aldehydes and ketones differ?",
+    back: "## Aldehyde = at End; Ketone = in Middle\n\n**Insight:** Both contain $\\ce{C=O}$; aldehydes have at least one H on the carbonyl carbon, ketones have two carbon groups.\n\n**Analysis:**\n\n**Carbonyl group:** $\\ce{C=O}$ (polar, strong dipole).\n\n**Aldehydes:** Carbonyl group bonded to **at least one H**.\n$\\ce{R-CHO}$ (e.g., formaldehyde $\\ce{HCHO}$, acetaldehyde $\\ce{CH3CHO}$)\n\n**Ketones:** Carbonyl group bonded to **two carbon groups**.\n$\\ce{R-CO-R'}$ (e.g., acetone $\\ce{CH3COCH3}$)\n\n**Naming:**\n- Aldehydes: \"-al\" (e.g., ethanal)\n- Ketones: \"-one\" (e.g., propanone)\n\n> **Key Takeaway:** Aldehydes = R-CHO (carbonyl at end); Ketones = R-CO-R' (carbonyl in middle)."
+  },
+  // Card 24
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aldehydes & Ketones\nWhat are the uses of aldehydes and ketones?",
+    back: "## Odours and Solvents\n\n**Insight:** Aldehydes often have distinctive odours (pleasant or unpleasant); ketones are common solvents.\n\n**Analysis:**\n\n**Aldehydes (odours):**\n- Vanillin: Vanilla beans\n- Cinnamaldehyde: Cinnamon\n- Butanal (butyraldehyde): Rancid butter (unpleasant)\n\n**Ketones (solvents):**\n- Acetone ($\\ce{CH3COCH3}$): Nail polish remover, solvent for Tippex.\n\n**Production:** Oxidation of alcohols:\n- Primary alcohol → mild oxidation → aldehyde\n- Secondary alcohol → oxidation → ketone\n\n> **Key Takeaway:** Aldehydes have characteristic odours; acetone is a common solvent."
+  },
+  // Card 25
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Carboxylic Acids\nWhat are **Carboxylic Acids** and what is their general formula?",
+    back: "## R-COOH\n\n**Insight:** Carboxylic acids contain the carboxyl group ($\\ce{-COOH}$) and are weak acids.\n\n**Analysis:** Carboxylic acids contain the **carboxyl group** ($\\ce{-COOH}$).\n\n**General formula:** R-COOH\n\n**Naming:** Replace \"-ane\" with \"-oic acid\".\n- $\\ce{CH3COOH}$ = Ethanoic acid (acetic acid)\n- $\\ce{HCOOH}$ = Methanoic acid (formic acid)\n\n**Acidity:** Carboxylic acids are **weak acids** (partially dissociate in water).\n\n**Production:** Oxidation of primary alcohols:\n$\\ce{CH3CH2OH ->[KMnO4] CH3COOH}$\n\n> **Key Takeaway:** Carboxylic acids = R-COOH; weak acids; suffix \"-oic acid.\""
+  },
+  // Card 26
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Esterification\nWhat is **Esterification** and what are esters used for?",
+    back: "## Condensation Reaction\n\n**Insight:** Esterification is the reaction of a carboxylic acid with an alcohol to form an ester (with a fruity odour).\n\n**Analysis:** Esterification is the reaction of a **carboxylic acid** with an **alcohol** to form an **ester** and water.\n\n$\\ce{RCOOH + R'OH -> RCOOR' + H2O}$\n\n**Example:** Ethanoic acid + Ethanol → Ethyl ethanoate + Water.\n\n**Odours:** Esters have **sweet, fruity odours**.\n- $\\ce{n-Amyl acetate}$: Banana\n- $\\ce{n-Octyl acetate}$: Orange\n\n> **Key Takeaway:** Esterification = acid + alcohol → ester + water; esters have fruity odours."
+  },
+  // Card 27
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Amines\nWhat are **Amines** and how are they classified?",
+    back: "## Derivatives of Ammonia\n\n**Insight:** Amines are derivatives of ammonia where one or more H atoms are replaced by organic groups.\n\n**Analysis:** Amines are derivatives of ammonia ($\\ce{NH3}$) where one or more N-H bonds are replaced by N-C bonds.\n\n**Classification:**\n- **Primary (1°):** R-NH2 (one organic group)\n- **Secondary (2°):** R2-NH (two organic groups)\n- **Tertiary (3°):** R3-N (three organic groups)\n\n**Properties:**\n- Many amines have **unpleasant \"fish-like\" odours**.\n- Amines are **weak bases** (like ammonia).\n\n**Examples:** Methylamine ($\\ce{CH3NH2}$), Aniline ($\\ce{C6H5NH2}$).\n\n> **Key Takeaway:** Amines = R-NH2 (primary), R2NH (secondary), R3N (tertiary); fishy odour, weak bases."
+  },
+  // Card 28
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Amine Nomenclature\nHow are amines named?",
+    back: "## Common and Systematic Names\n\n**Insight:** Simple amines use common names; complex amines use systematic nomenclature.\n\n**Analysis:**\n\n**Common names:** Name the alkyl group(s) + \"amine\".\n- $\\ce{CH3NH2}$: Methylamine\n- $\\ce{CH3CH2NH2}$: Ethylamine\n- $(\\ce{CH3})2NH$: Dimethylamine\n- $(\\ce{CH3})3N$: Trimethylamine\n\n**Systematic (IUPAC):** Use \"amino-\" as a substituent on the parent chain.\n- $\\ce{CH3CH(NH2)CH2CH3}$: 2-Aminobutane\n\n> **Key Takeaway:** Common names = alkyl + amine; systematic = amino- as substituent."
+  },
+  // Card 29
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Polyhydroxyl Alcohols\nWhat are **Polyhydroxyl Alcohols**?",
+    back: "## Multiple -OH Groups\n\n**Insight:** Polyhydroxyl alcohols contain more than one $\\ce{-OH}$ group; examples include glycerol and ethylene glycol.\n\n**Analysis:** Polyhydroxyl alcohols have **two or more hydroxyl groups**.\n\n**Examples:**\n- **Ethylene glycol:** $\\ce{HOCH2CH2OH}$ (used as antifreeze)\n- **Glycerol:** $\\ce{HOCH2CH(OH)CH2OH}$ (used in cosmetics and soaps)\n\n**Properties:** They are more viscous and have higher boiling points than mono-alcohols due to extensive hydrogen bonding.\n\n> **Key Takeaway:** Polyhydroxyl alcohols = multiple $\\ce{-OH}$ groups; e.g., glycerol, ethylene glycol."
+  },
+  // Card 30
+  {
+    course: "CH110",
+    term: "T2",
+    topic: "Topic 8: Organic Chemistry",
+    front: "# Aromatic Alcohols\nWhat is **Phenol**?",
+    back: "## Hydroxybenzene\n\n**Insight:** Phenol is an aromatic alcohol with a benzene ring directly attached to the $\\ce{-OH}$ group.\n\n**Analysis:** Phenol is an alcohol where the $\\ce{-OH}$ group is attached directly to a benzene ring.\n\n**Structure:** $\\ce{C6H5OH}$\n\n**Properties:**\n- Phenol is a **weak acid** (more acidic than aliphatic alcohols).\n- Used as a disinfectant and in the production of plastics.\n\n**Reactions:** Phenol undergoes electrophilic substitution reactions (like benzene) but is more reactive due to the activating $\\ce{-OH}$ group.\n\n> **Key Takeaway:** Phenol = $\\ce{C6H5OH}$; benzene with $\\ce{-OH}$; weak acid."
+  }
+],
   
 
 
