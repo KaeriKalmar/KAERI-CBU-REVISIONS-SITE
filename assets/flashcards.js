@@ -13766,8 +13766,6 @@ const flashcards = {
   ],
 
 
-
- {
   "TOPIC 1: INTRODUCTION TO GENERAL CHEMISTRY": [
     // ============================================================
     // SECTION A: SCIENTIFIC METHOD & FOUNDATIONS (Cards 1 – 4)
