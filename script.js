@@ -461,27 +461,46 @@ async function renderDocuments() {
         html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:15px; padding:20px 0;">`;
 
         documents.forEach(doc => {
-            const shortDesc = doc.description ? (doc.description.length > 80 ? doc.description.substring(0, 80) + '...' : doc.description) : '';
-            
-            // Dynamic styling based on access
-            const lockIcon = hasFullAccess ? "👁️ Open" : "🔒 Locked";
-            const lockColor = hasFullAccess ? "#28a745" : "#dc3545";
-            const cardOpacity = hasFullAccess ? "1" : "0.75";
-            
-            html += `
-            <div class="doc-card" onclick="attemptOpenDoc('${doc.fileId}', '${doc.title.replace(/'/g, "\\'")}')" 
-                 style="background:#2b3a55; padding:15px; border-radius:10px; border-left:5px solid ${lockColor}; 
-                        cursor:pointer; transition:0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.2); opacity: ${cardOpacity};">
-                <div style="font-size:0.7em; text-transform:uppercase; color:${lockColor}; font-weight:bold; letter-spacing:1px; margin-bottom:5px;">${doc.topic || 'General'}</div>
-                <div style="font-size:1.1em; font-weight:bold; color:white; margin-bottom:8px; line-height:1.3;">${doc.title}</div>
-                <div style="font-size:0.85em; color:#a0a8b4; margin-bottom:10px;">${shortDesc}</div>
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; border-top:1px solid #3e506e; padding-top:10px;">
-                    <span style="background:#0d1b2a; padding:2px 8px; border-radius:4px; font-size:0.7em; color:#fff;">${doc.type || 'FILE'} • ${doc.size || 'Unknown'}</span>
-                    <span style="color:${lockColor}; font-size:0.9em; font-weight:bold;">${lockIcon}</span>
-                </div>
-            </div>`;
-        });
+    const shortDesc = doc.description ? (doc.description.length > 80 ? doc.description.substring(0, 80) + '...' : doc.description) : '';
+    
+    // ── Determine fallback icon based on file type ──
+    let fallbackIcon = '📄';
+    const fileType = (doc.type || '').toLowerCase();
+    if (fileType.includes('pdf')) fallbackIcon = '📕';
+    else if (fileType.includes('image') || fileType.includes('jpg') || fileType.includes('png')) fallbackIcon = '🖼️';
+    else if (fileType.includes('word') || fileType.includes('doc')) fallbackIcon = '📘';
+    else if (fileType.includes('excel') || fileType.includes('sheet')) fallbackIcon = '📊';
+    
+    const lockIcon = hasFullAccess ? "👁️ Open" : "🔒 Locked";
+    const lockColor = hasFullAccess ? "#28a745" : "#dc3545";
+    const cardOpacity = hasFullAccess ? "1" : "0.75";
+    
+    html += `
+    <div class="doc-card" onclick="attemptOpenDoc('${doc.fileId}', '${doc.title.replace(/'/g, "\\'")}')" 
+         style="background:#2b3a55; padding:15px; border-radius:10px; border-left:5px solid ${lockColor}; 
+                cursor:pointer; transition:0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.2); opacity: ${cardOpacity};">
 
+        <!-- ── THUMBNAIL CONTAINER ── -->
+        <div style="width:100%; height:140px; background:linear-gradient(135deg, #1b263b, #0d1b2a); border-radius:8px; margin-bottom:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; border:1px solid #3e506e; position:relative;">
+            <img src="https://drive.google.com/thumbnail?id=${doc.fileId}&sz=w400" 
+                 alt="${doc.title}"
+                 loading="lazy"
+                 style="width:100%; height:100%; object-fit:cover; transition:0.3s;"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\\'font-size:48px; opacity:0.5; color:#a0a8b4;\\'>${fallbackIcon}</span>';">
+            <div style="position:absolute; bottom:6px; right:8px; background:rgba(0,0,0,0.7); padding:2px 10px; border-radius:12px; font-size:9px; color:#fff; text-transform:uppercase; letter-spacing:0.5px;">
+                ${doc.type || 'FILE'}
+            </div>
+        </div>
+
+        <div style="font-size:0.7em; text-transform:uppercase; color:${lockColor}; font-weight:bold; letter-spacing:1px; margin-bottom:5px;">${doc.topic || 'General'}</div>
+        <div style="font-size:1.1em; font-weight:bold; color:white; margin-bottom:8px; line-height:1.3;">${doc.title}</div>
+        <div style="font-size:0.85em; color:#a0a8b4; margin-bottom:10px;">${shortDesc}</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; border-top:1px solid #3e506e; padding-top:10px;">
+            <span style="background:#0d1b2a; padding:2px 8px; border-radius:4px; font-size:0.7em; color:#fff;">${doc.type || 'FILE'} • ${doc.size || 'Unknown'}</span>
+            <span style="color:${lockColor}; font-size:0.9em; font-weight:bold;">${lockIcon}</span>
+        </div>
+    </div>`;
+});
         html += `</div>`;
         html += `<div style="text-align:center; margin-top:20px;"><button class="restart-button" onclick="backToMenu()">⬅ Back to Menu</button></div>`;
         container.innerHTML = html;
