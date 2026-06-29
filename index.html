@@ -1206,6 +1206,59 @@
         text-align: center;
         margin-top: 5px;
     }
+    
+    /* ============================================================
+   FIX: Flashcard horizontal overflow – make equations scrollable
+   ============================================================ */
+
+/* The card wrapper must not clip overflow */
+.flashcard-wrapper {
+    overflow: visible; /* not hidden */
+}
+
+/* The card face itself must allow horizontal scrolling */
+.card-face {
+    overflow-x: auto;
+    overflow-y: auto; /* keep vertical scroll if needed */
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 25px; /* add extra right padding to avoid cut-off */
+    box-sizing: border-box;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+/* Ensure KaTeX display blocks inside the card also scroll */
+.card-face .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 5px; /* space for scrollbar */
+    margin: 0.5em 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* For very wide inline math, also add scroll */
+.card-face .katex {
+    font-size: 1em; /* consistent */
+}
+
+/* Optional: style the scrollbar to match your theme */
+.card-face::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+.card-face::-webkit-scrollbar-track {
+    background: rgba(13, 27, 42, 0.2);
+    border-radius: 3px;
+}
+.card-face::-webkit-scrollbar-thumb {
+    background: #72efdd;
+    border-radius: 3px;
+}
+
+/* Prevent any parent from hiding overflow */
+.flashcard {
+    overflow: visible;
+}
   </style>
 </head>
 <body>
