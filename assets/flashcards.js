@@ -1,5 +1,2501 @@
 
 const flashcards = {
+  
+  // ============================================================
+// COMPLETE FLASHCARD DATASET – CH110, TERM 3
+// TOPICS 9, 10, 11, 12
+// ============================================================
+
+  // ============================================================
+  // TOPIC 9: CHEMICAL KINETICS
+  // ============================================================
+  "TOPIC 9: CHEMICAL KINETICS": [
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is the **rate** of a chemical reaction?",
+      back: `
+## Insight
+The rate tells us how fast reactants are consumed or products are formed over time.
+
+## Analysis
+**Reaction rate** is measured as the change in concentration of a reactant or product per unit time.
+
+- **For a reactant:** Rate = $–\\Delta[\\text{reactant}]/\\Delta t$ (negative because concentration decreases)
+- **For a product:** Rate = $+\\Delta[\\text{product}]/\\Delta t$ (positive because concentration increases)
+
+**Units:** $\\text{mol L}^{-1} \\text{s}^{-1}$ (or M/s).
+
+## Key Takeaway
+Rate = change in concentration / change in time; units are $\\text{mol L}^{-1} \\text{s}^{-1}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Distinguish between **average rate**, **instantaneous rate**, and **initial rate**.",
+      back: `
+## Insight
+The rate of a reaction changes over time as reactants are consumed.
+
+## Analysis
+- **Average rate:** Change in concentration over a finite time interval ($\\Delta[\\text{A}]/\\Delta t$).
+- **Instantaneous rate:** Rate at a specific moment; slope of the tangent to the concentration‑vs‑time curve at that point.
+- **Initial rate:** Instantaneous rate at $t = 0$; often used because product concentration is zero and the reverse reaction is negligible.
+
+## Key Takeaway
+- Average rate = slope of secant line.
+- Instantaneous rate = slope of tangent line.
+- Initial rate = instantaneous rate at $t = 0$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "For the general reaction $aA + bB \\rightarrow cC + dD$, write the general rate expression.",
+      back: `
+## Insight
+The rate of disappearance of reactants and appearance of products are related through stoichiometric coefficients.
+
+## Analysis
+$$ \\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = -\\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = \\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t} $$
+
+**Example:** For $2\\ce{N2O5} \\rightarrow 4\\ce{NO2} + \\ce{O2}$:
+$$ \\text{Rate} = -\\frac{1}{2}\\frac{\\Delta[\\ce{N2O5}]}{\\Delta t} = \\frac{1}{4}\\frac{\\Delta[\\ce{NO2}]}{\\Delta t} = \\frac{\\Delta[\\ce{O2}]}{\\Delta t} $$
+
+## Key Takeaway
+The rate is the same for all substances when divided by their stoichiometric coefficients.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "List the main factors that affect the rate of a chemical reaction.",
+      back: `
+## Insight
+Reaction rates depend on the physical state of reactants and the conditions under which the reaction occurs.
+
+## Analysis
+1. **Temperature:** Higher temperature increases kinetic energy → more frequent and energetic collisions.
+2. **Concentration of reactants:** Higher concentration → more collisions → faster rate (except zero‑order).
+3. **Catalysts:** Provide an alternative pathway with lower activation energy.
+4. **Surface area of solid reactants:** Finer particles have more surface area → more collisions.
+5. **Pressure (for gases):** Increasing pressure increases concentration → faster rate.
+
+## Key Takeaway
+Rate increases with: ↑T, ↑concentration, ↑surface area, presence of catalyst, ↑pressure (for gases).
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is a **rate law** and what does the **rate constant** $k$ represent?",
+      back: `
+## Insight
+The rate law expresses how the rate depends on reactant concentrations.
+
+## Analysis
+For a reaction $aA + bB \\rightarrow$ products, the general rate law is:
+$$ \\text{Rate} = k[A]^x[B]^y $$
+
+- $x, y$ are the **reaction orders** with respect to A and B (determined experimentally).
+- Overall order = $x + y$.
+- $k$ is the **rate constant** – a proportionality constant that is **temperature‑dependent** and has units that depend on the overall order.
+
+## Key Takeaway
+Rate law must be determined experimentally; orders are not derived from stoichiometric coefficients.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Explain what is meant by **zero‑order**, **first‑order**, and **second‑order** with respect to a reactant.",
+      back: `
+## Insight
+The order describes how the rate changes when the concentration of that reactant changes.
+
+## Analysis
+- **Zero‑order ($x = 0$):** Rate is independent of [A]; doubling [A] does not change rate.
+- **First‑order ($x = 1$):** Rate ∝ [A]; doubling [A] doubles the rate.
+- **Second‑order ($x = 2$):** Rate ∝ [A]²; doubling [A] quadruples the rate.
+
+**Overall order** = sum of individual orders.
+
+## Key Takeaway
+Order must be determined from experimental data; it is not related to stoichiometric coefficients.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Describe the **method of initial rates** for determining the rate law.",
+      back: `
+## Insight
+By measuring the initial rate at different initial concentrations, we can deduce the order for each reactant.
+
+## Analysis
+1. Run a series of experiments, varying the concentration of one reactant at a time while keeping others constant.
+2. Measure the **initial rate** (rate at $t \\approx 0$) for each experiment.
+3. Compare how the rate changes when the concentration changes:
+   - If rate doubles when [A] doubles → first order in A.
+   - If rate quadruples when [A] doubles → second order in A.
+   - If rate is unchanged → zero order in A.
+4. Combine orders to write the rate law and calculate $k$ using any experiment.
+
+## Key Takeaway
+Initial rates are used to avoid complications from reverse reactions and product formation.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Write the integrated rate law for a **first‑order** reaction ($A \\rightarrow$ products).",
+      back: `
+## Insight
+The integrated rate law shows how concentration changes with time.
+
+## Analysis
+For a first‑order reaction: $\\text{Rate} = k[A]$
+
+**Integrated form:** $$ \\ln[A]_t = -kt + \\ln[A]_0 \\quad \\text{or} \\quad [A]_t = [A]_0 e^{-kt} $$
+
+**Linear plot:** A graph of $\\ln[A]$ vs. time gives a straight line with slope = $-k$.
+
+## Key Takeaway
+The half‑life of a first‑order reaction is independent of initial concentration: $$ t_{1/2} = \\frac{0.693}{k} $$
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Write the integrated rate law for a **second‑order** reaction ($A \\rightarrow$ products) and its half‑life.",
+      back: `
+## Insight
+For a second‑order reaction, the rate depends on the square of the concentration.
+
+## Analysis
+**Rate law:** $\\text{Rate} = k[A]^2$
+
+**Integrated form:** $$ \\frac{1}{[A]_t} = kt + \\frac{1}{[A]_0} $$
+
+**Linear plot:** $1/[A]$ vs. time gives a straight line with slope = $k$.
+
+**Half‑life:** $$ t_{1/2} = \\frac{1}{k[A]_0} $$ (depends on initial concentration).
+
+## Key Takeaway
+Second‑order half‑life increases as the reaction proceeds because concentration decreases.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Write the integrated rate law for a **zero‑order** reaction ($A \\rightarrow$ products) and its half‑life.",
+      back: `
+## Insight
+In a zero‑order reaction, the rate is constant and does not depend on concentration.
+
+## Analysis
+**Rate law:** $\\text{Rate} = k$ (constant)
+
+**Integrated form:** $$ [A]_t = -kt + [A]_0 $$
+
+**Linear plot:** $[A]$ vs. time gives a straight line with slope = $-k$.
+
+**Half‑life:** $$ t_{1/2} = \\frac{[A]_0}{2k} $$ (proportional to initial concentration).
+
+## Key Takeaway
+Zero‑order reactions are often observed when a catalyst surface is saturated or when the reaction is limited by a constant factor.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Derive the half‑life expression for a **first‑order** reaction and explain its significance.",
+      back: `
+## Insight
+The half‑life is the time required for the concentration of a reactant to decrease to half its initial value.
+
+## Analysis
+From $\\ln[A]_t = -kt + \\ln[A]_0$, set $[A]_t = [A]_0/2$:
+
+$$ \\ln\\left(\\frac{[A]_0}{2}\\right) = -k t_{1/2} + \\ln[A]_0 $$
+
+$$ \\ln\\left(\\frac{1}{2}\\right) = -k t_{1/2} \\quad \\Rightarrow \\quad t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k} $$
+
+**Key point:** $t_{1/2}$ is **independent** of the initial concentration.
+
+## Key Takeaway
+For first‑order reactions, the half‑life is constant – a useful property for radioactive decay and many chemical reactions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Write the Arrhenius equation and explain the meaning of each term.",
+      back: `
+## Insight
+The Arrhenius equation describes how the rate constant $k$ depends on temperature and activation energy.
+
+## Analysis
+$$ k = A e^{-E_a / RT} $$
+
+- $k$ = rate constant
+- $A$ = frequency factor (number of effective collisions)
+- $E_a$ = activation energy (J/mol)
+- $R$ = gas constant ($8.314 \\, \\text{J mol}^{-1} \\text{K}^{-1}$)
+- $T$ = absolute temperature (K)
+
+**Linear form:** $$ \\ln k = -\\frac{E_a}{R}\\frac{1}{T} + \\ln A $$
+
+A plot of $\\ln k$ vs. $1/T$ gives a straight line with slope = $-E_a/R$.
+
+## Key Takeaway
+Higher temperature → larger $k$ → faster reaction. Activation energy is the energy barrier that must be overcome.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is **activation energy** ($E_a$) and the **transition state**?",
+      back: `
+## Insight
+Reactants must overcome an energy barrier to form products; the highest‑energy configuration is the transition state.
+
+## Analysis
+- **Activation energy ($E_a$):** The minimum energy required for a reaction to occur.
+- **Transition state (activated complex):** The fleeting, high‑energy arrangement of atoms at the peak of the energy barrier. It is not an isolable species.
+
+In an energy diagram, $E_a$ is the difference in energy between the reactants and the transition state.
+
+## Key Takeaway
+A catalyst lowers $E_a$ by providing an alternative pathway, but does not change the energies of reactants or products.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Summarise the **collision theory** of reaction rates.",
+      back: `
+## Insight
+For a reaction to occur, reactant molecules must collide with sufficient energy and proper orientation.
+
+## Analysis
+**Key postulates:**
+1. **Collision frequency:** Rate depends on the number of collisions per unit time.
+2. **Energy:** Only collisions with kinetic energy $\\ge E_a$ lead to reaction.
+3. **Orientation:** The reactant molecules must be correctly aligned for bonds to break/form.
+
+**Rate expression:** $\\text{Rate} = Z \\cdot f \\cdot p$
+- $Z$ = collision frequency
+- $f$ = fraction of collisions with energy $\\ge E_a$ (given by $e^{-E_a/RT}$)
+- $p$ = steric factor (orientation probability)
+
+## Key Takeaway
+Collision theory provides a qualitative picture; the Arrhenius equation is its quantitative form.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Explain the **transition state theory** (activated complex theory) and its key equation.",
+      back: `
+## Insight
+The reaction proceeds through a high‑energy activated complex that is in equilibrium with the reactants.
+
+## Analysis
+**Key equation:**
+$$ k = \\frac{\\kappa T}{h} e^{-\\Delta G^\\ddagger / RT} $$
+where:
+- $\\kappa$ = Boltzmann constant
+- $h$ = Planck constant
+- $\\Delta G^\\ddagger$ = Gibbs free energy of activation
+
+This can be rewritten as:
+$$ k = \\frac{\\kappa T}{h} e^{\\Delta S^\\ddagger / R} e^{-\\Delta H^\\ddagger / RT} $$
+
+**Interpretation:** The rate constant depends on the entropy and enthalpy of activation.
+
+## Key Takeaway
+Transition state theory gives a more detailed molecular picture than collision theory and relates the rate to thermodynamic parameters.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Define a **catalyst** and distinguish between **homogeneous** and **heterogeneous** catalysis.",
+      back: `
+## Insight
+A catalyst speeds up a reaction without being consumed; it lowers the activation energy.
+
+## Analysis
+- **Catalyst:** A substance that increases the reaction rate by providing an alternative pathway with lower $E_a$. It is regenerated at the end.
+- **Homogeneous catalysis:** Catalyst and reactants are in the same phase (e.g., acid‑catalysed ester hydrolysis).
+- **Heterogeneous catalysis:** Catalyst and reactants are in different phases (e.g., solid catalyst in a gas‑phase reaction). Often involves adsorption on the catalyst surface.
+
+## Key Takeaway
+Catalysts do not affect the equilibrium constant; they only speed up the approach to equilibrium.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is a **reaction mechanism** and what is the **rate‑determining step** (RDS)?",
+      back: `
+## Insight
+A mechanism is a series of elementary steps that describe how reactants transform into products.
+
+## Analysis
+- **Elementary step:** A single molecular event (unimolecular, bimolecular, or termolecular).
+- **Rate‑determining step (RDS):** The slowest step in the mechanism; it determines the overall rate law.
+
+**Rules:**
+- The overall reaction is the sum of all elementary steps.
+- The rate law for the overall reaction is determined by the RDS.
+- Intermediates (species produced in one step and consumed in a later step) do not appear in the overall reaction.
+
+## Key Takeaway
+The proposed mechanism must be consistent with the experimentally determined rate law.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Explain the **steady‑state approximation** (SSA) in reaction kinetics.",
+      back: `
+## Insight
+For reactive intermediates, their concentration changes very slowly; we can assume they remain constant.
+
+## Analysis
+**Steady‑state assumption:** $$ \\frac{d[\\text{intermediate}]}{dt} \\approx 0 $$
+
+This is valid when the intermediate is consumed as fast as it is produced, so its concentration is low and nearly constant.
+
+**Application:** Used to derive rate laws for complex mechanisms with multiple steps, especially when there is no single rate‑determining step.
+
+## Key Takeaway
+SSA simplifies the mathematics of complex kinetics; it is widely used in enzyme kinetics and chain reactions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Write the Michaelis‑Menten equation and define $K_M$ and $v_{\\max}$.",
+      back: `
+## Insight
+Enzyme kinetics often follow the Michaelis‑Menten model, which describes the rate of enzyme‑catalysed reactions.
+
+## Analysis
+**Michaelis‑Menten equation:**
+$$ v = \\frac{v_{\\max}[S]}{K_M + [S]} $$
+
+- $v$ = initial reaction rate
+- $v_{\\max}$ = maximum rate (when enzyme is saturated with substrate)
+- $[S]$ = substrate concentration
+- $K_M$ = Michaelis constant = $(k_{-1} + k_2)/k_1$; it is a measure of the enzyme's affinity for the substrate (lower $K_M$ = higher affinity).
+
+**Lineweaver‑Burk double‑reciprocal plot:**
+$$ \\frac{1}{v} = \\frac{K_M}{v_{\\max}} \\frac{1}{[S]} + \\frac{1}{v_{\\max}} $$
+
+## Key Takeaway
+$K_M$ and $v_{\\max}$ are determined experimentally; they characterise the enzyme.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "How do catalytic converters work and what is the role of the catalyst?",
+      back: `
+## Insight
+Catalytic converters reduce harmful emissions by converting pollutants into less toxic substances.
+
+## Analysis
+- **Catalyst:** Usually Pt, Pd, Rh (noble metals) supported on a ceramic honeycomb.
+- **Reactions:**
+  1. Oxidation of CO to CO₂: $2\\ce{CO} + \\ce{O2} \\rightarrow 2\\ce{CO2}$
+  2. Oxidation of unburned hydrocarbons (HC) to CO₂ and H₂O.
+  3. Reduction of NOx to N₂: $2\\ce{NO} + 2\\ce{CO} \\rightarrow \\ce{N2} + 2\\ce{CO2}$ (using CO as reductant)
+- **Poison:** Lead in petrol destroys the catalyst – hence the need for unleaded fuel.
+
+## Key Takeaway
+Heterogeneous catalysis plays a crucial role in environmental protection.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "State the Langmuir adsorption isotherm and explain the assumptions behind it.",
+      back: `
+## Insight
+The Langmuir isotherm describes the coverage of a surface by gas molecules at equilibrium.
+
+## Analysis
+$$ \\theta = \\frac{bP}{1 + bP} $$
+where:
+- $\\theta$ = fraction of surface covered
+- $P$ = gas pressure
+- $b$ = adsorption equilibrium constant (related to the strength of adsorption)
+
+**Assumptions:**
+- Uniform surface with identical adsorption sites.
+- Each site can hold only one molecule.
+- No interaction between adsorbed molecules.
+- Adsorption is limited to a monolayer.
+
+## Key Takeaway
+The Langmuir isotherm is the foundation for many heterogeneous catalysis models.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Describe the Langmuir‑Hinshelwood mechanism for surface‑catalysed reactions.",
+      back: `
+## Insight
+In a Langmuir‑Hinshelwood mechanism, both reactants adsorb on the surface and react with each other.
+
+## Analysis
+**Steps:**
+1. Adsorption of A: $A + S \\rightleftharpoons AS$
+2. Adsorption of B: $B + S \\rightleftharpoons BS$
+3. Surface reaction: $AS + BS \\rightarrow$ products
+
+**Rate law (if both adsorb weakly):** $r = k \\theta_A \\theta_B \\propto P_A P_B$
+
+**If one is strongly adsorbed:** rate becomes zero‑order in that reactant.
+
+## Key Takeaway
+This mechanism explains many heterogeneous catalytic reactions, such as the oxidation of CO over Pt.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Explain the Eley‑Rideal mechanism for surface reactions.",
+      back: `
+## Insight
+In the Eley‑Rideal mechanism, one reactant is adsorbed on the surface, and the other reacts directly from the gas phase.
+
+## Analysis
+**Steps:**
+1. Adsorption of A: $A + S \\rightleftharpoons AS$
+2. Reaction of gas‑phase B with adsorbed A: $B_{(g)} + AS \\rightarrow$ products
+
+**Rate law:** $r = k \\theta_A P_B$
+
+- If A is weakly adsorbed ($\\theta_A \\propto P_A$): $r \\propto P_A P_B$
+- If A is strongly adsorbed ($\\theta_A \\approx 1$): $r \\propto P_B$
+
+## Key Takeaway
+The Eley‑Rideal mechanism is less common but important for reactions where one reactant does not adsorb.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "State the Freundlich adsorption isotherm and its empirical form.",
+      back: `
+## Insight
+The Freundlich isotherm is an empirical model that accounts for surface heterogeneity.
+
+## Analysis
+$$ \\theta = a P^{1/n} \\quad \\text{or} \\quad x/m = k P^{1/n} $$
+
+Where:
+- $x/m$ = amount adsorbed per unit mass of adsorbent
+- $P$ = equilibrium pressure
+- $k$ and $n$ are empirical constants ($n > 1$).
+
+**Features:**
+- It does not assume monolayer coverage.
+- It works well for adsorption on heterogeneous surfaces.
+
+## Key Takeaway
+The Freundlich isotherm is often used when the Langmuir model does not fit the data.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is the difference between diffusion‑controlled and activation‑controlled reactions in solution?",
+      back: `
+## Insight
+In solution, the overall rate can be limited by how fast reactants meet (diffusion) or by the chemical step itself.
+
+## Analysis
+- **Diffusion‑controlled:** The rate is limited by the speed at which reactants diffuse together. Typical rate constants are ~$10^9$ – $10^{10}$ M⁻¹ s⁻¹. The activation energy is very low (≤ 5 kcal/mol).
+- **Activation‑controlled:** The chemical reaction (bond breaking/forming) is slower than diffusion. The rate constant is smaller, and $E_a$ is larger (> 5 kcal/mol).
+
+**Smoluchowski equation** gives the diffusion‑limited rate constant:
+$$ k_{\\text{diff}} = \\frac{4\\pi N_A (D_A + D_B)(r_A + r_B)}{1000} \\quad (\\text{L mol}^{-1} \\text{s}^{-1}) $$
+
+## Key Takeaway
+If $E_a$ is high, the reaction is activation‑controlled; if $E_a$ is very low, it is diffusion‑controlled.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Describe the general mechanism of a chain reaction (initiation, propagation, termination).",
+      back: `
+## Insight
+Chain reactions involve reactive intermediates (free radicals) that regenerate and propagate the reaction.
+
+## Analysis
+**Three stages:**
+1. **Initiation:** Formation of reactive species (e.g., $\\ce{Br2} \\rightarrow 2\\ce{Br^\\cdot}$).
+2. **Propagation:** The reactive species reacts with a molecule to form product and regenerate another reactive species (e.g., $\\ce{Br^\\cdot + H2} \\rightarrow \\ce{HBr + H^\\cdot}$; $\\ce{H^\\cdot + Br2} \\rightarrow \\ce{HBr + Br^\\cdot}$).
+3. **Termination:** Two reactive species combine to form a stable product (e.g., $\\ce{Br^\\cdot + Br^\\cdot} \\rightarrow \\ce{Br2}$).
+
+**Example:** The photochemical halogenation of alkanes and the H₂ + Br₂ reaction.
+
+## Key Takeaway
+Chain reactions can have very long chains (many propagation steps per initiation) and are sensitive to inhibitors.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "What is **photochemistry** and how does it differ from thermal chemistry?",
+      back: `
+## Insight
+Photochemistry involves chemical reactions initiated by absorption of light, often leading to excited electronic states.
+
+## Analysis
+- **Thermal reactions:** Driven by heat; molecules in the ground state overcome the activation barrier.
+- **Photochemical reactions:** Driven by light; a photon is absorbed, promoting a molecule to an excited state with different reactivity.
+
+**Key features:**
+- The rate depends on light intensity.
+- The reaction may proceed even if it is thermodynamically unfavourable (e.g., photosynthesis).
+- Often leads to radical formation.
+
+## Key Takeaway
+Photochemistry is essential in natural processes (photosynthesis) and industrial applications (photopolymerisation).
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Give an example of a homogeneous catalytic reaction and explain the catalytic cycle.",
+      back: `
+## Insight
+In homogeneous catalysis, the catalyst and reactants are in the same phase, often in solution.
+
+## Analysis
+**Example:** The oxidation of Tl⁺ by Ce⁴⁺ catalysed by Mn²⁺:
+- Uncatalysed reaction is slow.
+- Mn²⁺ acts as a catalyst: it is oxidised by Ce⁴⁺ to Mn³⁺, which then oxidises Tl⁺ to Tl³⁺, regenerating Mn²⁺.
+
+**Catalytic cycle:**
+$$ \\ce{Ce^{4+} + Mn^{2+}} \\rightarrow \\ce{Ce^{3+} + Mn^{3+}} $$
+$$ \\ce{Mn^{3+} + Tl^{+}} \\rightarrow \\ce{Mn^{2+} + Tl^{3+}} $$
+
+The net reaction is the same, but the catalyst lowers the activation energy.
+
+## Key Takeaway
+Homogeneous catalysts are often transition metal complexes that cycle between oxidation states.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Outline the steps in a heterogeneous catalytic reaction (e.g., gas‑solid).",
+      back: `
+## Insight
+Heterogeneous catalysis occurs at the interface between phases, typically a solid catalyst and gaseous or liquid reactants.
+
+## Analysis
+**Steps:**
+1. **Diffusion** of reactants from the bulk to the catalyst surface.
+2. **Adsorption** of reactant molecules onto active sites.
+3. **Surface reaction** (chemical transformation).
+4. **Desorption** of products from the surface.
+5. **Diffusion** of products back to the bulk.
+
+**Example:** The hydrogenation of ethene over a Ni catalyst.
+
+## Key Takeaway
+The rate is often controlled by the adsorption and surface reaction steps; high surface area catalysts (e.g., porous supports) are used.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Kinetics",
+      front: "Explain why the rate constant increases with temperature, using the Arrhenius equation.",
+      back: `
+## Insight
+Higher temperature gives more molecules enough energy to overcome the activation barrier.
+
+## Analysis
+From $k = A e^{-E_a / RT}$:
+- As $T$ increases, the exponent $-E_a/RT$ becomes less negative, so $e^{-E_a/RT}$ increases.
+- The fraction of molecules with energy $\\ge E_a$ increases, leading to a higher rate constant.
+
+**Rule of thumb:** A $10^\\circ$C rise in temperature often doubles the reaction rate (for many reactions near room temperature).
+
+## Key Takeaway
+Temperature affects the rate constant exponentially; a small change in $T$ can cause a large change in $k$.
+      `
+    }
+  ],
+
+  // ============================================================
+  // TOPIC 10: CHEMICAL EQUILIBRIUM
+  // ============================================================
+  "TOPIC 10: CHEMICAL EQUILIBRIUM": [
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What is chemical equilibrium?",
+      back: `
+## Insight
+Chemical equilibrium is a dynamic state where the forward and reverse reactions occur at the same rate.
+
+## Analysis
+At equilibrium:
+- The concentrations of reactants and products remain constant over time (they are not necessarily equal).
+- Both forward and reverse reactions are still occurring.
+- The reaction is reversible and is represented with a double arrow: $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$.
+
+## Key Takeaway
+Equilibrium is dynamic, not static – the system appears unchanged but reactions continue at equal rates.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Write the equilibrium constant expression for the general reaction $aA + bB \\rightleftharpoons cC + dD$.",
+      back: `
+## Insight
+The equilibrium constant (Kc) is the ratio of product concentrations to reactant concentrations, each raised to the power of their stoichiometric coefficients.
+
+## Analysis
+$$ K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b} $$
+
+This is the **law of mass action**. $K_c$ has no units (since activities are used in rigorous treatment, but concentrations are often used in introductory chemistry).
+
+## Key Takeaway
+Products over reactants, each raised to its coefficient – but only for species in solution or gas (not pure solids or liquids).
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, write the equilibrium constant expression.",
+      back: `
+## Insight
+The equilibrium constant for this reaction is $K_c = [\\ce{NO2}]^2/[\\ce{N2O4}]$.
+
+## Analysis
+This expression is derived from the rate laws:
+- Forward rate = $k_f [\\ce{N2O4}]$
+- Reverse rate = $k_r [\\ce{NO2}]^2$
+At equilibrium, $k_f [\\ce{N2O4}] = k_r [\\ce{NO2}]^2$, so
+$$ K_c = \\frac{k_f}{k_r} = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]} $$
+
+## Key Takeaway
+$K_c$ is the ratio of rate constants and is constant at a given temperature.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Calculate $K_c$ for $\\ce{NH3(aq) + H2O(l) \\rightleftharpoons NH4+(aq) + OH-(aq)}$ given $[\\ce{NH3}] = 0.02\\, \\text{M}$, $[\\ce{NH4+}] = 0.05\\, \\text{M}$, and $[\\ce{OH-}] = 0.6\\, \\text{M}$.",
+      back: `
+## Insight
+Pure liquids (like water) are omitted from the equilibrium expression.
+
+## Analysis
+The equilibrium expression (excluding water) is:
+$$ K_c = \\frac{[\\ce{NH4+}][\\ce{OH-}]}{[\\ce{NH3}]} $$
+
+Substitute values:
+$$ K_c = \\frac{(0.05)(0.6)}{0.02} = \\frac{0.03}{0.02} = 1.5 $$
+
+## Key Takeaway
+Remember to exclude pure solids and liquids; they have constant concentrations and do not appear in $K$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What is $K_p$ and how is it related to $K_c$?",
+      back: `
+## Insight
+$K_p$ is the equilibrium constant expressed in terms of partial pressures (for gases).
+
+## Analysis
+For a gas-phase reaction, the equilibrium expression can be written using partial pressures:
+$$ K_p = \\frac{(P_C)^c (P_D)^d}{(P_A)^a (P_B)^b} $$
+
+The relationship between $K_p$ and $K_c$ is:
+$$ K_p = K_c (RT)^{\\Delta n} $$
+
+where $\\Delta n = (\\text{moles of gaseous products}) - (\\text{moles of gaseous reactants})$.
+
+## Key Takeaway
+Use $K_p$ when dealing with gas pressures; convert to $K_c$ using $\\Delta n$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$, $K_p = 3.9 \\times 10^4$. Calculate $K_c$ at $35^\\circ\\text{C}$.",
+      back: `
+## Insight
+Use $K_p = K_c (RT)^{\\Delta n}$ with $\\Delta n = 2 - 4 = -2$.
+
+## Analysis
+$$ 3.9 \\times 10^4 = K_c (0.08206 \\times 308)^{-2} $$
+$$ (0.08206 \\times 308) = 25.27 $$
+$$ (25.27)^{-2} = 1.566 \\times 10^{-3} $$
+$$ K_c = \\frac{3.9 \\times 10^4}{1.566 \\times 10^{-3}} \\approx 2.5 \\times 10^7 $$
+
+## Key Takeaway
+When $\\Delta n < 0$, $K_c$ is larger than $K_p$; when $\\Delta n > 0$, $K_c$ is smaller.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Why are pure solids and pure liquids omitted from equilibrium constant expressions?",
+      back: `
+## Insight
+The concentrations of pure solids and liquids are constant (density divided by molar mass) and do not change during the reaction.
+
+## Analysis
+For a heterogeneous equilibrium, e.g., $\\ce{CaCO3(s) \\rightleftharpoons CaO(s) + CO2(g)}$, the expression is simply:
+$$ K_p = P_{\\ce{CO2}} \\quad \\text{or} \\quad K_c = [\\ce{CO2}] $$
+
+because the activities of solids are taken as 1.
+
+## Key Takeaway
+Only species with variable concentrations (gases and aqueous solutions) appear in $K$ expressions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "At $800^\\circ\\text{C}$, the pressure of $\\ce{CO2}$ above a mixture of $\\ce{CaCO3(s)}$ and $\\ce{CaO(s)}$ is $0.236\\, \\text{atm}$. Calculate $K_p$ and $K_c$ for $\\ce{CaCO3(s) \\rightleftharpoons CaO(s) + CO2(g)}$.",
+      back: `
+## Insight
+Since only $\\ce{CO2}$ is a gas, $K_p = P_{\\ce{CO2}}$.
+
+## Analysis
+- $K_p = 0.236$
+- To find $K_c$: $K_p = K_c (RT)^{\\Delta n}$, where $\\Delta n = 1$.
+- $T = 273 + 800 = 1073\\, \\text{K}$
+- $0.236 = K_c (0.08206 \\times 1073)^1$
+- $K_c = 0.236 / 88.0 = 2.68 \\times 10^{-3}$
+
+## Key Takeaway
+$K_p$ is simply the partial pressure of the gaseous product when only one gas is involved.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What is the reaction quotient ($Q$) and how is it used?",
+      back: `
+## Insight
+$Q$ is calculated the same way as $K$, but using concentrations (or pressures) at any given moment, not necessarily at equilibrium.
+
+## Analysis
+- If $Q < K$: the reaction will proceed forward (toward products) to reach equilibrium.
+- If $Q > K$: the reaction will proceed in reverse (toward reactants).
+- If $Q = K$: the system is at equilibrium.
+
+## Key Takeaway
+$Q$ tells you which direction the reaction must shift to achieve equilibrium.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What is Le Châtelier's principle?",
+      back: `
+## Insight
+Le Châtelier's principle states that if a system at equilibrium is disturbed, it will shift to counteract the disturbance.
+
+## Analysis
+Disturbances can be:
+- **Change in concentration:** Adding reactant shifts right; removing product shifts right.
+- **Change in pressure (for gases):** Increasing pressure favors the side with fewer gas moles.
+- **Change in temperature:** Increasing temperature favors the endothermic direction; decreasing favors the exothermic direction.
+
+## Key Takeaway
+The system responds to oppose the change and re‑establish equilibrium.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For $\\ce{CO2 + H2O \\rightleftharpoons H2CO3}$, what happens if more water is added?",
+      back: `
+## Insight
+Adding a reactant (water) will shift the equilibrium to the right to consume the added water.
+
+## Analysis
+The reaction will produce more $\\ce{H2CO3}$ to partially counteract the increase in water concentration.
+
+## Key Takeaway
+Adding a reactant pushes the equilibrium toward products.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For the exothermic reaction $\\ce{CO2(g) + 2NH3(g) \\rightleftharpoons NH2CONH2(aq) + H2O(l) + energy}$, what happens if temperature is increased?",
+      back: `
+## Insight
+Increasing temperature favors the endothermic direction (the reverse reaction in this case, because the forward reaction releases energy).
+
+## Analysis
+Since the forward reaction is exothermic (energy is a product), raising temperature shifts equilibrium to the left (toward reactants) to absorb the added heat.
+
+## Key Takeaway
+For exothermic reactions, higher temperature favors reactants; for endothermic, it favors products.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$, what is the effect of increasing pressure?",
+      back: `
+## Insight
+Increasing pressure favors the side with fewer moles of gas.
+
+## Analysis
+- Reactant side: $1 + 3 = 4$ moles gas.
+- Product side: $2$ moles gas.
+- Increasing pressure will shift the equilibrium to the right (toward products) to reduce the total number of gas moles.
+
+## Key Takeaway
+Pressure changes only affect gaseous equilibria where $\\Delta n \\neq 0$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Does a catalyst affect the equilibrium position?",
+      back: `
+## Insight
+A catalyst increases the rate of both forward and reverse reactions equally; it does not change the equilibrium composition.
+
+## Analysis
+The catalyst provides an alternative pathway with lower activation energy, but it does not alter the thermodynamic equilibrium constant or the relative amounts of reactants and products at equilibrium.
+
+## Key Takeaway
+Catalysts speed up the attainment of equilibrium but do not shift the position.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Given $K_{c,1}=3.92$ and $K_{c,2}=3.3 \\times 10^4$, calculate $K_c$ for $\\ce{CO(g) + 2H2S(g) \\rightleftharpoons H2O(g) + CS2(g) + H2(g)}$.",
+      back: `
+## Insight
+When adding reactions, multiply the equilibrium constants.
+
+## Analysis
+Reaction (1) + Reaction (2) gives the desired reaction (CH₄ cancels, and 3H₂ cancel with 4H₂ leaving 1H₂ on products side).
+$$ K_{c,\\text{net}} = K_{c,1} \\times K_{c,2} = 3.92 \\times 3.3 \\times 10^4 = 1.29 \\times 10^5 $$
+
+## Key Takeaway
+For a net reaction composed of multiple steps, $K_{\\text{net}} = \\prod K_i$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "If a reaction has $K = 0.212$ for the forward direction, what is the equilibrium constant for the reverse reaction?",
+      back: `
+## Insight
+The equilibrium constant for the reverse reaction is the reciprocal of the forward reaction's $K$.
+
+## Analysis
+For $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$ with $K_c = 0.212$, the reverse reaction $2\\ce{NO2(g) \\rightleftharpoons N2O4(g)}$ has:
+$$ K_{\\text{reverse}} = \\frac{1}{0.212} = 4.72 $$
+
+## Key Takeaway
+Reversing a reaction inverts the equilibrium constant.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "If a reaction is multiplied by 2, how does the equilibrium constant change?",
+      back: `
+## Insight
+Multiplying a reaction by a factor $n$ raises the equilibrium constant to the power $n$.
+
+## Analysis
+For $\\ce{N2O4 \\rightleftharpoons 2NO2}$ with $K = 0.212$, doubling the reaction gives $2\\ce{N2O4 \\rightleftharpoons 4NO2}$ with:
+$$ K_{\\text{new}} = (0.212)^2 = 0.0449 $$
+
+## Key Takeaway
+If you double the coefficients, you square $K$; if you halve them, you take the square root.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "A closed system initially contains $1.000 \\times 10^{-3}\\, \\text{M} \\, \\ce{H2}$ and $2.000 \\times 10^{-3}\\, \\text{M} \\, \\ce{I2}$ at $448^\\circ\\text{C}$. At equilibrium, $[\\ce{HI}] = 1.87 \\times 10^{-3}\\, \\text{M}$. Calculate $K_c$ for $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$.",
+      back: `
+## Insight
+Use an ICE table (Initial, Change, Equilibrium) to find equilibrium concentrations.
+
+## Analysis
+Initial: $[\\ce{H2}] = 1.000 \\times 10^{-3}$, $[\\ce{I2}] = 2.000 \\times 10^{-3}$, $[\\ce{HI}] = 0$.
+
+Change: For every 2 mol HI formed, 1 mol H₂ and 1 mol I₂ are consumed. $[\\ce{HI}]$ increases by $1.87 \\times 10^{-3}$, so the change in H₂ and I₂ is $-\\frac{1.87 \\times 10^{-3}}{2} = -9.35 \\times 10^{-4}$.
+
+Equilibrium:
+$[\\ce{H2}] = 1.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 6.5 \\times 10^{-5}\\, \\text{M}$
+$[\\ce{I2}] = 2.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 1.065 \\times 10^{-3}\\, \\text{M}$
+$[\\ce{HI}] = 1.87 \\times 10^{-3}\\, \\text{M}$
+
+$$ K_c = \\frac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]} = \\frac{(1.87 \\times 10^{-3})^2}{(6.5 \\times 10^{-5})(1.065 \\times 10^{-3})} = 51 $$
+
+## Key Takeaway
+ICE tables are essential for solving equilibrium problems; stoichiometry determines the changes.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What does it mean if $K > 1$ or $K < 1$?",
+      back: `
+## Insight
+$K > 1$ means products are favored at equilibrium; $K < 1$ means reactants are favored.
+
+## Analysis
+- If $K$ is large ($>>1$), the equilibrium lies far to the right; most reactants are converted to products.
+- If $K$ is small ($<<1$), the equilibrium lies far to the left; little product forms.
+- If $K \\approx 1$, comparable amounts of reactants and products are present.
+
+## Key Takeaway
+$K$ tells you the extent of the reaction, not the rate.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "How do you predict the direction of a reaction using $Q$ and $K$?",
+      back: `
+## Insight
+Compare $Q$ (reaction quotient) with $K$ to see which way the reaction must shift.
+
+## Analysis
+- $Q < K$: Not enough products; reaction proceeds forward (toward products).
+- $Q > K$: Too much products; reaction proceeds reverse (toward reactants).
+- $Q = K$: At equilibrium; no net change.
+
+## Key Takeaway
+$Q$ is calculated the same way as $K$, but with initial (non‑equilibrium) concentrations.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For $\\ce{NO2(g) + CO(g) \\rightleftharpoons NO(g) + CO2(g)}$, what action will shift the equilibrium to the right?",
+      back: `
+## Insight
+Shifting right means consuming reactants and forming more products.
+
+## Analysis
+- Add more $\\ce{NO2}$ or $\\ce{CO}$ (reactants) → shifts right.
+- Remove $\\ce{NO}$ or $\\ce{CO2}$ (products) → also shifts right.
+
+## Key Takeaway
+Le Châtelier's principle: adding a reactant or removing a product drives the reaction toward products.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "Explain the effect of temperature on equilibrium for an exothermic reaction using Le Châtelier's principle.",
+      back: `
+## Insight
+For an exothermic reaction, heat is a product. Increasing temperature adds heat, so the system shifts to consume heat (endothermic direction).
+
+## Analysis
+Example: $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$ $\\Delta H < 0$ (exothermic).
+- Increasing T: shifts left (toward reactants).
+- Decreasing T: shifts right (toward products).
+
+## Key Takeaway
+Temperature changes alter the equilibrium constant; higher T favours endothermic direction.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "For a reaction with $\\Delta n = 0$ (equal moles of gas on both sides), what is the effect of pressure change?",
+      back: `
+## Insight
+If the number of gas moles is the same on both sides, changing pressure has no effect on equilibrium position.
+
+## Analysis
+Example: $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$ has 2 moles gas on both sides. Increasing pressure (by decreasing volume) will not shift the equilibrium; it will merely increase the concentration of all species equally.
+
+## Key Takeaway
+Pressure affects only equilibria where $\\Delta n \\neq 0$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Chemical Equilibrium",
+      front: "What is the significance of the equilibrium constant being unitless?",
+      back: `
+## Insight
+In strict thermodynamics, activities are used, which are dimensionless; thus $K$ is dimensionless.
+
+## Analysis
+In introductory chemistry, we often use molar concentrations or partial pressures, which do have units. However, the numerical value of $K$ is reported without units because the units cancel in the ratio (when using standard states). For simplicity, we treat $K$ as unitless.
+
+## Key Takeaway
+$K$ is a dimensionless number that depends only on temperature.
+      `
+    }
+  ],
+
+  // ============================================================
+  // TOPIC 11: ACID-BASE EQUILIBRIA AND TITRATIONS
+  // ============================================================
+  "TOPIC 11: ACID-BASE EQUILIBRIA AND TITRATIONS": [
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "State the Arrhenius definition of an **acid** and a **base**.",
+      back: `
+## Insight
+The Arrhenius definition is historically the first and is limited to aqueous solutions.
+
+## Analysis
+- **Acid:** A substance that, when dissolved in water, increases the concentration of hydrogen ions ($\\ce{H+}$).
+- **Base:** A substance that, when dissolved in water, increases the concentration of hydroxide ions ($\\ce{OH-}$).
+
+**Example:** $\\ce{HCl} \\rightarrow \\ce{H+} + \\ce{Cl-}$; $\\ce{NaOH} \\rightarrow \\ce{Na+} + \\ce{OH-}$
+
+**Limitation:** Does not explain basicity of ammonia ($\\ce{NH3}$) since it has no $\\ce{OH-}$.
+
+## Key Takeaway
+Arrhenius: acid produces $\\ce{H+}$ in water; base produces $\\ce{OH-}$ in water. Limited to aqueous solutions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "State the Brønsted–Lowry definition of an **acid** and a **base**.",
+      back: `
+## Insight
+The Brønsted–Lowry definition is broader and focuses on proton transfer.
+
+## Analysis
+- **Acid:** A proton ($\\ce{H+}$) donor.
+- **Base:** A proton ($\\ce{H+}$) acceptor.
+
+**Example:** $\\ce{NH3} + \\ce{H2O} \\rightleftharpoons \\ce{NH4+} + \\ce{OH-}$
+- $\\ce{NH3}$ is the base (accepts $\\ce{H+}$)
+- $\\ce{H2O}$ is the acid (donates $\\ce{H+}$)
+
+**Advantage:** Explains basicity of ammonia and other non‑hydroxide bases.
+
+## Key Takeaway
+Brønsted–Lowry: acid = proton donor; base = proton acceptor.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Define a **Lewis acid** and a **Lewis base**.",
+      back: `
+## Insight
+The Lewis definition is the broadest; it is based on electron pairs, not protons.
+
+## Analysis
+- **Lewis acid:** Electron‑pair acceptor (has an empty orbital).
+- **Lewis base:** Electron‑pair donor (has a lone pair).
+
+**Example:** $\\ce{BF3} + \\ce{NH3} \\rightarrow \\ce{F3B-NH3}$
+- $\\ce{BF3}$ is a Lewis acid (accepts electron pair from $\\ce{NH3}$).
+- $\\ce{NH3}$ is a Lewis base (donates its lone pair).
+
+**Note:** All Brønsted–Lowry bases are also Lewis bases, but not all Lewis acids are Brønsted acids.
+
+## Key Takeaway
+Lewis acid = electron‑pair acceptor; Lewis base = electron‑pair donor.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "What is a **conjugate acid‑base pair**? Give an example.",
+      back: `
+## Insight
+A conjugate pair differs by the presence or absence of one proton ($\\ce{H+}$).
+
+## Analysis
+A **conjugate acid‑base pair** consists of two species related by the gain or loss of one proton:
+- **Conjugate acid:** The species formed when a base gains a proton.
+- **Conjugate base:** The species formed when an acid loses a proton.
+
+**Example:** For the reaction: $\\ce{CH3COOH} + \\ce{H2O} \\rightleftharpoons \\ce{CH3COO-} + \\ce{H3O+}$
+- Pair 1: $\\ce{CH3COOH}$ (acid) and $\\ce{CH3COO-}$ (conjugate base)
+- Pair 2: $\\ce{H2O}$ (base) and $\\ce{H3O+}$ (conjugate acid)
+
+## Key Takeaway
+Conjugate pairs differ by one $\\ce{H+}$. Acid $\\rightleftharpoons$ conjugate base + $\\ce{H+}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "What does **amphiprotic** mean? Give examples.",
+      back: `
+## Insight
+An amphiprotic substance can both donate and accept a proton.
+
+## Analysis
+Amphiprotic species act as either an acid or a base depending on the reaction.
+
+**Examples:**
+- Water: $\\ce{H2O} + \\ce{HCl} \\rightarrow \\ce{H3O+} + \\ce{Cl-}$ (acts as base); $\\ce{H2O} + \\ce{NH3} \\rightarrow \\ce{NH4+} + \\ce{OH-}$ (acts as acid)
+- $\\ce{HCO3-}$: can donate $\\ce{H+}$ to form $\\ce{CO3^{2-}}$ or accept $\\ce{H+}$ to form $\\ce{H2CO3}$
+- $\\ce{HSO4-}$
+
+**Note:** Amphiprotic is a subset of amphoteric (all amphiprotic are amphoteric, but not all amphoteric involve proton transfer).
+
+## Key Takeaway
+Amphiprotic = can act as both acid and base by donating or accepting $\\ce{H+}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Write the equilibrium expression for the **autoionisation of water** and define $K_w$.",
+      back: `
+## Insight
+Water is amphiprotic; a few molecules act as acids and bases, forming $\\ce{H3O+}$ and $\\ce{OH-}$.
+
+## Analysis
+Autoionisation: $2\\ce{H2O(l)} \\rightleftharpoons \\ce{H3O+(aq)} + \\ce{OH-(aq)}$  (simplified: $\\ce{H2O} \\rightleftharpoons \\ce{H+} + \\ce{OH-}$)
+
+The equilibrium constant is:
+$$ K_w = [\\ce{H3O+}][\\ce{OH-}] \\quad \\text{or} \\quad K_w = [\\ce{H+}][\\ce{OH-}] $$
+
+At $25^\\circ\\text{C}$: $K_w = 1.0 \\times 10^{-14}$
+
+**Note:** $K_w$ is temperature‑dependent (increases with $T$ because autoionisation is endothermic).
+
+## Key Takeaway
+$K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Define **pH** and **pOH**, and state the relationship between them.",
+      back: `
+## Insight
+pH and pOH are logarithmic measures of ion concentrations.
+
+## Analysis
+$$ \\text{pH} = -\\log[\\ce{H3O+}] \\quad \\text{or} \\quad \\text{pH} = -\\log[\\ce{H+}] $$
+$$ \\text{pOH} = -\\log[\\ce{OH-}] $$
+
+**Relationship:** $$ \\text{pH} + \\text{pOH} = 14.00 $$ at $25^\\circ\\text{C}$ (from $K_w = 1.0 \\times 10^{-14}$).
+
+**Acidic:** $\\text{pH} < 7$; **Neutral:** $\\text{pH} = 7$; **Basic:** $\\text{pH} > 7$ (at $25^\\circ\\text{C}$).
+
+**Note:** The neutral pH changes with temperature because $K_w$ changes.
+
+## Key Takeaway
+pH = –log[H⁺]; pOH = –log[OH⁻]; pH + pOH = 14.00 at 25°C.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "List the seven **strong acids** and explain how to calculate the pH of a strong acid solution.",
+      back: `
+## Insight
+Strong acids are completely ionised in water; [H⁺] equals the acid concentration.
+
+## Analysis
+**Seven strong acids:** HCl, HBr, HI, HNO₃, H₂SO₄, HClO₃, HClO₄.
+
+**pH calculation:**
+For a monoprotic strong acid (e.g., HCl, HNO₃):
+$$ [\\ce{H+}] = [\\text{acid}] \\quad \\Rightarrow \\quad \\text{pH} = -\\log[\\text{acid}] $$
+
+**Example:** $0.10\\, \\text{M}$ HCl → $[\\ce{H+}] = 0.10\\, \\text{M}$ → $\\text{pH} = 1.00$.
+
+## Key Takeaway
+Strong acids are 100% ionised. For monoprotic acids, $[\\ce{H+}] = [\\text{acid}]$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "List common **strong bases** and explain how to calculate the pH of a strong base solution.",
+      back: `
+## Insight
+Strong bases are completely dissociated; [OH⁻] equals the base concentration (for MOH type).
+
+## Analysis
+**Strong bases:** Soluble hydroxides of Group 1 metals (LiOH, NaOH, KOH, RbOH, CsOH) and heavier Group 2 hydroxides (Ca(OH)₂, Sr(OH)₂, Ba(OH)₂).
+
+**pH calculation:**
+1. $[\\ce{OH-}] = [\\text{base}]$ (for MOH) or $2 \\times [\\text{base}]$ for M(OH)₂.
+2. $\\text{pOH} = -\\log[\\ce{OH-}]$
+3. $\\text{pH} = 14.00 - \\text{pOH}$
+
+**Example:** $0.0050\\, \\text{M}$ NaOH → $[\\ce{OH-}] = 0.0050\\, \\text{M}$ → $\\text{pOH} = 2.30$ → $\\text{pH} = 11.70$.
+
+## Key Takeaway
+Strong bases are 100% ionised. Calculate pOH first, then pH.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Define the **acid dissociation constant ($K_a$)** and write the expression for a general weak acid $\\ce{HA}$.",
+      back: `
+## Insight
+$K_a$ measures the extent of ionisation of a weak acid; a small $K_a$ means the acid is weak.
+
+## Analysis
+For $\\ce{HA(aq)} + \\ce{H2O(l)} \\rightleftharpoons \\ce{H3O+(aq)} + \\ce{A-(aq)}$:
+$$ K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]} \\quad \\text{(water omitted because its concentration is constant)} $$
+
+**Stronger acid** = larger $K_a$; **Weaker acid** = smaller $K_a$.
+
+**p$K_a$:** $$ pK_a = -\\log K_a $$; smaller $pK_a$ = stronger acid.
+
+## Key Takeaway
+$K_a = [\\ce{H3O+}][\\ce{A-}]/[\\ce{HA}]$; larger $K_a$ = stronger acid.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Calculate $K_a$ for a $0.10\\, \\text{M}$ solution of formic acid ($\\ce{HCOOH}$) with $\\text{pH} = 2.38$.",
+      back: `
+## Insight
+Use the pH to find $[\\ce{H3O+}] = [\\ce{HCOO-}]$, then apply the $K_a$ expression.
+
+## Analysis
+1. $[\\ce{H3O+}] = 10^{-\\text{pH}} = 10^{-2.38} = 4.2 \\times 10^{-3}\\, \\text{M}$.
+2. ICE table:
+   - Initial: $[\\ce{HCOOH}] = 0.10$, $[\\ce{H3O+}] = 0$, $[\\ce{HCOO-}] = 0$.
+   - Change: $-x$, $+x$, $+x$; $x = 4.2 \\times 10^{-3}$.
+   - Equilibrium: $[\\ce{HCOOH}] = 0.10 - 4.2 \\times 10^{-3} = 0.0958\\, \\text{M}$.
+3. $$ K_a = \\frac{(4.2 \\times 10^{-3})(4.2 \\times 10^{-3})}{0.0958} = 1.8 \\times 10^{-4} $$
+
+## Key Takeaway
+$K_a = 1.8 \\times 10^{-4}$ for formic acid; matches the literature value.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Define the **base dissociation constant ($K_b$)** and write the expression for a weak base $\\ce{B}$.",
+      back: `
+## Insight
+$K_b$ measures the extent to which a weak base accepts a proton from water.
+
+## Analysis
+For $\\ce{B(aq)} + \\ce{H2O(l)} \\rightleftharpoons \\ce{BH+(aq)} + \\ce{OH-(aq)}$:
+$$ K_b = \\frac{[\\ce{BH+}][\\ce{OH-}]}{[\\ce{B}]} $$
+
+**Relation to $K_a$ and $K_w$:** For a conjugate acid‑base pair:
+$$ K_a \\times K_b = K_w = 1.0 \\times 10^{-14} \\quad (\\text{at }25^\\circ\\text{C}) $$
+
+**Example:** For $\\ce{NH3}$, $K_b = 1.8 \\times 10^{-5}$; for $\\ce{NH4+}$, $K_a = K_w / K_b = 5.6 \\times 10^{-10}$.
+
+## Key Takeaway
+$K_b = [\\ce{BH+}][\\ce{OH-}]/[\\ce{B}]$; $K_a \\times K_b = K_w$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Explain why a solution of **NaF** is basic, and write the hydrolysis reaction.",
+      back: `
+## Insight
+The anion of a weak acid ($\\ce{F-}$) is a weak base that hydrolyses water to produce $\\ce{OH-}$.
+
+## Analysis
+**Dissociation:** $\\ce{NaF(s)} \\rightarrow \\ce{Na+(aq)} + \\ce{F-(aq)}$
+
+**Hydrolysis:** $\\ce{F-(aq)} + \\ce{H2O(l)} \\rightleftharpoons \\ce{HF(aq)} + \\ce{OH-(aq)}$
+
+**$K_b$ for $\\ce{F-}$:** $$ K_b = \\frac{K_w}{K_a(\\ce{HF})} $$
+
+Since $K_b > 0$, the solution is basic.
+
+**General rule:** Salts of strong base + weak acid → basic solution.
+
+## Key Takeaway
+The anion of a weak acid hydrolyses to produce $\\ce{OH-}$, making the solution basic.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Explain why a solution of **NH₄Cl** is acidic, and write the hydrolysis reaction.",
+      back: `
+## Insight
+The cation of a weak base ($\\ce{NH4+}$) is a weak acid that hydrolyses water to produce $\\ce{H3O+}$.
+
+## Analysis
+**Dissociation:** $\\ce{NH4Cl(s)} \\rightarrow \\ce{NH4+(aq)} + \\ce{Cl-(aq)}$
+
+**Hydrolysis:** $\\ce{NH4+(aq)} + \\ce{H2O(l)} \\rightleftharpoons \\ce{NH3(aq)} + \\ce{H3O+(aq)}$
+
+**$K_a$ for $\\ce{NH4+}$:** $$ K_a = \\frac{K_w}{K_b(\\ce{NH3})} $$
+
+Since $K_a > 0$, the solution is acidic.
+
+**General rule:** Salts of weak base + strong acid → acidic solution.
+
+## Key Takeaway
+The cation of a weak base hydrolyses to produce $\\ce{H3O+}$, making the solution acidic.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "State the relationship between $K_a$, $K_b$ and $K_w$ for a conjugate acid‑base pair.",
+      back: `
+## Insight
+The product of $K_a$ for an acid and $K_b$ for its conjugate base is always $K_w$.
+
+## Analysis
+For a weak acid $\\ce{HA}$ and its conjugate base $\\ce{A-}$:
+$$ K_a(\\ce{HA}) \\times K_b(\\ce{A-}) = K_w = 1.0 \\times 10^{-14} \\quad (\\text{at }25^\\circ\\text{C}) $$
+
+**Example:** Acetic acid ($K_a = 1.8 \\times 10^{-5}$) and acetate ion:
+$$ K_b(\\ce{CH3COO-}) = \\frac{1.0 \\times 10^{-14}}{1.8 \\times 10^{-5}} = 5.6 \\times 10^{-10} $$
+
+## Key Takeaway
+$K_a \\times K_b = K_w$. If you know one, you can find the other.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "How does the number of oxygen atoms affect the strength of oxyacids? Give examples.",
+      back: `
+## Insight
+More oxygen atoms increase the polarity of the $\\ce{O-H}$ bond, making the acid stronger.
+
+## Analysis
+For oxyacids of chlorine:
+$$ \\ce{HClO4} > \\ce{HClO3} > \\ce{HClO2} > \\ce{HClO} $$
+
+**Explanation:** Oxygen is highly electronegative; it pulls electron density away from the $\\ce{O-H}$ bond, weakening it and making proton donation easier. More oxygens = greater inductive effect = stronger acid.
+
+## Key Takeaway
+Acid strength increases with number of oxygen atoms: $\\ce{HClO4} > \\ce{HClO3} > \\ce{HClO2} > \\ce{HClO}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Explain why non‑metal oxides dissolved in water form acids, while metal oxides form bases.",
+      back: `
+## Insight
+Non‑metal oxides react with water to form acids; metal oxides form bases.
+
+## Analysis
+- **Non‑metal oxide (acidic oxide):** $\\ce{SO3(g)} + \\ce{H2O(l)} \\rightarrow \\ce{H2SO4(aq)}$
+- **Metal oxide (basic oxide):** $\\ce{CaO(s)} + \\ce{H2O(l)} \\rightarrow \\ce{Ca(OH)2(aq)}$
+
+**Explanation:** Non‑metal oxides are covalent and form oxyacids; metal oxides are ionic and produce hydroxide ions when they dissolve.
+
+## Key Takeaway
+Non‑metal oxides → acidic solutions; metal oxides → basic solutions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Calculate the pH of a $1.00\\, \\text{M}$ $\\ce{NaCN}$ solution. $K_a(\\ce{HCN}) = 6.2 \\times 10^{-10}$.",
+      back: `
+## Insight
+$\\ce{CN-}$ is the conjugate base of $\\ce{HCN}$, so the solution is basic. Use $K_b$ to find $[\\ce{OH-}]$.
+
+## Analysis
+1. $$ K_b = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{6.2 \\times 10^{-10}} = 1.61 \\times 10^{-5} $$
+2. Hydrolysis: $\\ce{CN-} + \\ce{H2O} \\rightleftharpoons \\ce{HCN} + \\ce{OH-}$; let $x = [\\ce{OH-}] = [\\ce{HCN}]$.
+   $$ K_b = \\frac{x^2}{1.00 - x} \\approx \\frac{x^2}{1.00} \\quad (x \\ll 1.00) $$
+   $$ x = \\sqrt{1.61 \\times 10^{-5}} = 4.01 \\times 10^{-3}\\, \\text{M} $$
+3. $\\text{pOH} = -\\log(4.01 \\times 10^{-3}) = 2.40$ → $\\text{pH} = 14.00 - 2.40 = 11.60$.
+
+## Key Takeaway
+pH = 11.60 for 1.00 M NaCN. Salts of weak acids yield basic solutions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "Calculate the pH of a $0.40\\, \\text{M}$ $\\ce{NH4Cl}$ solution. $K_b(\\ce{NH3}) = 1.8 \\times 10^{-5}$.",
+      back: `
+## Insight
+$\\ce{NH4+}$ is the conjugate acid of $\\ce{NH3}$, so the solution is acidic. Use $K_a$ to find $[\\ce{H3O+}]$.
+
+## Analysis
+1. $$ K_a(\\ce{NH4+}) = \\frac{K_w}{K_b(\\ce{NH3})} = \\frac{1.0 \\times 10^{-14}}{1.8 \\times 10^{-5}} = 5.56 \\times 10^{-10} $$
+2. Hydrolysis: $\\ce{NH4+} + \\ce{H2O} \\rightleftharpoons \\ce{NH3} + \\ce{H3O+}$; let $x = [\\ce{H3O+}] = [\\ce{NH3}]$.
+   $$ K_a = \\frac{x^2}{0.40 - x} \\approx \\frac{x^2}{0.40} \\quad (x \\ll 0.40) $$
+   $$ x = \\sqrt{5.56 \\times 10^{-10} \\times 0.40} = \\sqrt{2.22 \\times 10^{-10}} = 1.49 \\times 10^{-5}\\, \\text{M} $$
+3. $\\text{pH} = -\\log(1.49 \\times 10^{-5}) = 4.83$.
+
+## Key Takeaway
+pH = 4.83 for 0.40 M NH₄Cl. Salts of weak bases yield acidic solutions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "Describe the pH curve for the titration of a **strong acid** with a **strong base**.",
+      back: `
+## Insight
+The pH changes very slowly until near the equivalence point, then jumps steeply.
+
+## Analysis
+- **Start:** Low pH (acidic).
+- **Before equivalence:** pH rises slowly as base neutralises the acid.
+- **At equivalence:** pH = 7.00 (neutral, because the salt formed, e.g., NaCl, does not hydrolyse).
+- **After equivalence:** pH rises sharply, then levels off as excess base is added.
+
+**Example:** $50.0\\, \\text{mL}$ of $0.10\\, \\text{M}$ HCl titrated with $0.10\\, \\text{M}$ NaOH:
+- At equivalence point ($25.0\\, \\text{mL}$ NaOH): pH = 7.00.
+- pH changes from ~1 to ~13 over just 2–3 drops near equivalence.
+
+## Key Takeaway
+Strong acid + strong base equivalence point: pH = 7.00. The curve has a very steep vertical section.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "Calculate the pH at 0%, 10%, 90%, 100%, and 110% titration for $50.0\\, \\text{mL}$ of $0.10\\, \\text{M}$ HCl with $0.10\\, \\text{M}$ NaOH.",
+      back: `
+## Insight
+Use stoichiometry and the fact that HCl and NaOH are fully ionised.
+
+## Analysis
+- **Initial (0%):** $[\\ce{H+}] = 0.10\\, \\text{M}$ → pH = 1.00.
+- **10% (5.00 mL NaOH):** mmols acid left = $5.0 - 0.5 = 4.5$; $V = 55\\, \\text{mL}$ → $[\\ce{H+}] = 4.5/55 = 0.0818\\, \\text{M}$ → pH = 1.09.
+- **90% (45.0 mL NaOH):** mmols acid left = $5.0 - 4.5 = 0.5$; $V = 95\\, \\text{mL}$ → $[\\ce{H+}] = 0.5/95 = 0.00526\\, \\text{M}$ → pH = 2.28.
+- **100% (50.0 mL NaOH):** all acid neutralised; solution contains NaCl and water → pH = 7.00.
+- **110% (55.0 mL NaOH):** excess OH⁻ = $0.5$ mmol; $V = 105\\, \\text{mL}$ → $[\\ce{OH-}] = 0.5/105 = 0.00476\\, \\text{M}$ → pOH = 2.32 → pH = 11.68.
+
+## Key Takeaway
+The pH jumps from 2.28 to 7.00 to 11.68 between 90% and 110% titration – a very steep rise.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "Describe the pH curve for the titration of a **weak acid** (e.g., acetic acid) with a **strong base** (e.g., NaOH).",
+      back: `
+## Insight
+The curve starts at a higher pH than for a strong acid, has a buffer region, and the equivalence point is basic.
+
+## Analysis
+- **Start:** pH is calculated from $K_a$ of the weak acid (e.g., pH ≈ 2.88 for $0.10\\, \\text{M}$ acetic acid).
+- **Buffer region:** After adding some base, a buffer solution ($\\ce{HA} + \\ce{A-}$) is formed; pH changes slowly.
+- **Half‑equivalence point:** pH = $pK_a$ (for acetic acid, pH ≈ 4.76).
+- **Equivalence point:** All $\\ce{HA}$ converted to $\\ce{A-}$; solution contains salt of weak acid → basic (pH ≈ 8.72 for acetic acid/NaOH).
+- **After equivalence:** Excess NaOH drives pH up sharply.
+
+## Key Takeaway
+Weak acid + strong base equivalence point is basic (pH > 7). The curve has a buffer region and a less steep jump than strong acid/strong base.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "Calculate the pH at various points during the titration of $50.0\\, \\text{mL}$ of $0.10\\, \\text{M}$ acetic acid ($K_a = 1.75 \\times 10^{-5}$) with $0.10\\, \\text{M}$ NaOH.",
+      back: `
+## Insight
+Use the Henderson–Hasselbalch equation in the buffer region; at equivalence, use $K_b$ of the acetate ion.
+
+## Analysis
+- **0 mL NaOH:** pH = $\\frac{1}{2}(pK_a - \\log[\\ce{HA}]) = \\frac{1}{2}(4.76 - \\log 0.10) = 2.88$.
+- **10 mL NaOH:** mmols HA left = 4.0; mmols A⁻ formed = 1.0; pH = $pK_a + \\log(1.0/4.0) = 4.76 - 0.60 = 4.16$.
+- **25 mL NaOH (half equivalence):** $[\\ce{HA}] = [\\ce{A-}]$; pH = $pK_a = 4.76$.
+- **50 mL NaOH (equivalence):** $[\\ce{A-}] = 5.0\\, \\text{mmol} / 100\\, \\text{mL} = 0.050\\, \\text{M}$; $K_b = K_w/K_a = 5.6 \\times 10^{-10}$; $[\\ce{OH-}] = \\sqrt{K_b \\times C} = \\sqrt{5.6 \\times 10^{-10} \\times 0.050} = 5.3 \\times 10^{-6}\\, \\text{M}$; pOH = 5.28 → pH = 8.72.
+- **60 mL NaOH:** excess OH⁻ = 1.0 mmol; V = 110 mL → $[\\ce{OH-}] = 0.00909\\, \\text{M}$; pOH = 2.04 → pH = 11.96.
+
+## Key Takeaway
+pH values: start 2.88; half‑equivalence 4.76; equivalence 8.72; after 60 mL, 11.96.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "How does an **acid‑base indicator** work? Use methyl orange as an example.",
+      back: `
+## Insight
+Indicators are weak acids (or bases) whose acid and conjugate base forms have different colours.
+
+## Analysis
+General equilibrium for an acid‑type indicator HIn:
+$$ \\text{HIn} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{In}^- $$
+- **HIn (acid form):** one colour (e.g., red for methyl orange).
+- **In⁻ (base form):** different colour (e.g., yellow for methyl orange).
+
+**Methyl orange:** In acid (low pH), equilibrium shifts left → red. In base (high pH), equilibrium shifts right → yellow. The colour change occurs over pH 3.1–4.4 ($pK_{\\text{ind}} = 3.7$).
+
+## Key Takeaway
+Indicators change colour when the pH crosses their $pK_{\\text{ind}}$; the colour change range is roughly $pK_{\\text{ind}} \\pm 1$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "How do you choose the correct indicator for a titration? Give examples.",
+      back: `
+## Insight
+The indicator must change colour at (or very close to) the equivalence point pH of the titration.
+
+## Analysis
+- **Strong acid + strong base (equivalence pH = 7):** Methyl orange (3.1–4.4) or phenolphthalein (8.2–10.0) both work because the pH jump is so steep.
+- **Weak acid + strong base (equivalence pH > 7, e.g., ~8.7):** Use phenolphthalein (changes ~8.2–10.0).
+- **Strong acid + weak base (equivalence pH < 7, e.g., ~5):** Use methyl orange (changes ~3.1–4.4).
+- **Weak acid + weak base:** No suitable indicator because the pH change is gradual; not recommended for titration.
+
+## Key Takeaway
+Choose an indicator whose pH range brackets the equivalence point pH. Phenolphthalein for weak acid/strong base; methyl orange for strong acid/weak base.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Titrations",
+      front: "Explain the two‑stage titration curve when HCl is added to $\\ce{Na2CO3}$ solution.",
+      back: `
+## Insight
+Carbonate ($\\ce{CO3^{2-}}$) is a diprotic base; it reacts with acid in two distinct steps.
+
+## Analysis
+**Step 1:** $\\ce{CO3^{2-}} + \\ce{H+} \\rightarrow \\ce{HCO3-}$ (completion at pH ~8.3, first equivalence point).
+- $\\ce{Na2CO3} + \\ce{HCl} \\rightarrow \\ce{NaHCO3} + \\ce{NaCl}$
+- No $\\ce{CO2}$ gas is released in this step.
+
+**Step 2:** $\\ce{HCO3-} + \\ce{H+} \\rightarrow \\ce{H2CO3} \\rightarrow \\ce{H2O} + \\ce{CO2(g)}$ (completion at pH ~3.7, second equivalence point).
+- $\\ce{NaHCO3} + \\ce{HCl} \\rightarrow \\ce{NaCl} + \\ce{H2O} + \\ce{CO2(g)}$
+
+**Indicator choice:**
+- Phenolphthalein detects the first equivalence point (colourless at pH ~8.3).
+- Methyl orange detects the second equivalence point (yellow → red at pH ~3.7).
+
+The volume of acid to the methyl orange end point is **twice** that to the phenolphthalein end point.
+
+## Key Takeaway
+$\\ce{Na2CO3} + \\ce{HCl}$ has two equivalence points: first at pH 8.3 ($\\ce{HCO3-}$), second at pH 3.7 ($\\ce{CO2}$). Phenolphthalein for the first; methyl orange for the second.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Acid-Base Equilibria",
+      front: "What is a **buffer solution** and how does it resist pH changes?",
+      back: `
+## Insight
+A buffer consists of a weak acid and its conjugate base (or a weak base and its conjugate acid) and resists pH change upon addition of small amounts of acid or base.
+
+## Analysis
+**Example:** Acetic acid / acetate buffer: $\\ce{CH3COOH}$ and $\\ce{CH3COO-}$.
+
+- **Adding acid ($\\ce{H+}$):** $\\ce{CH3COO-} + \\ce{H+} \\rightarrow \\ce{CH3COOH}$ (consumes $\\ce{H+}$).
+- **Adding base ($\\ce{OH-}$):** $\\ce{CH3COOH} + \\ce{OH-} \\rightarrow \\ce{CH3COO-} + \\ce{H2O}$ (consumes $\\ce{OH-}$).
+
+**Henderson–Hasselbalch equation:**
+$$ \\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right) $$
+
+The buffer capacity is greatest when $[\\ce{HA}] \\approx [\\ce{A-}]$ (i.e., pH ≈ $pK_a$).
+
+## Key Takeaway
+A buffer resists pH change by neutralising added acid or base; pH = $pK_a + \\log([\\ce{A-}]/[\\ce{HA}])$.
+      `
+    }
+  ],
+
+  // ============================================================
+  // TOPIC 12: ELECTROCHEMISTRY
+  // ============================================================
+  "TOPIC 12: ELECTROCHEMISTRY": [
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Define **oxidation** and **reduction** in terms of electron transfer.",
+      back: `
+## Insight
+Redox reactions involve the transfer of electrons from one species to another. Oxidation and reduction always occur together.
+
+## Analysis
+**Oxidation:** Loss of electrons – the species is **oxidised** and acts as a **reducing agent** (it causes reduction of another species).
+
+**Reduction:** Gain of electrons – the species is **reduced** and acts as an **oxidising agent** (it causes oxidation of another species).
+
+**Mnemonic:** **LEO** says **GER**
+- **L**ose **E**lectrons = **O**xidation
+- **G**ain **E**lectrons = **R**eduction
+
+**Example:** $2\\ce{KClO3(s)} \\rightarrow 2\\ce{KCl(s)} + 3\\ce{O2(g)}$
+- Chlorine: $+5 \\rightarrow -1$ (**reduction** – gains electrons)
+- Oxygen: $-2 \\rightarrow 0$ (**oxidation** – loses electrons)
+
+## Key Takeaway
+Oxidation = loss of $e^-$; Reduction = gain of $e^-$. Both must occur simultaneously in a **redox reaction**.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is a **reducing agent** and what is an **oxidising agent**?",
+      back: `
+## Insight
+The reducing agent is oxidised; the oxidising agent is reduced. They are the electron donors and acceptors.
+
+## Analysis
+- **Reducing agent:** The substance that **donates** electrons and is **oxidised** in the process.
+- **Oxidising agent:** The substance that **accepts** electrons and is **reduced** in the process.
+
+**Example:** In $2\\ce{Al(s)} + 3\\ce{Ni^{2+}(aq)} \\rightarrow 2\\ce{Al^{3+}(aq)} + 3\\ce{Ni(s)}$:
+- $\\ce{Al}$ is oxidised ($0 \\rightarrow +3$) → **reducing agent**
+- $\\ce{Ni^{2+}}$ is reduced ($+2 \\rightarrow 0$) → **oxidising agent**
+
+## Key Takeaway
+Reducing agent → loses electrons (is oxidised). Oxidising agent → gains electrons (is reduced).
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Outline the steps for balancing a redox reaction using the **half-reaction method**.",
+      back: `
+## Insight
+The half-reaction method separates oxidation and reduction, balances atoms and charge independently, then combines them.
+
+## Analysis
+**Steps:**
+
+1. **Separate** the reaction into two half-reactions (oxidation and reduction).
+2. **Balance atoms** (other than H and O) in each half-reaction.
+3. **Balance oxygen** by adding $\\ce{H2O}$ to the side needing oxygen.
+4. **Balance hydrogen** by adding $\\ce{H+}$ (in acidic solution) or $\\ce{OH-}$ (in basic solution).
+5. **Balance charge** by adding electrons ($e^-$) to the more positive side.
+6. **Equalise electrons** by multiplying half-reactions by appropriate integers.
+7. **Add** the half-reactions and cancel common species.
+8. **Check** mass and charge balance.
+
+## Key Takeaway
+Remember: **Atoms (except O/H) → O → H → Charge** – this is the correct order.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Balance the redox reaction: $\\ce{Al(s)} + \\ce{Ni^{2+}(aq)} \\rightarrow \\ce{Al^{3+}(aq)} + \\ce{Ni(s)}$.",
+      back: `
+## Insight
+Use the half-reaction method: separate into oxidation and reduction, balance atoms and charge, then combine.
+
+## Analysis
+**Step 1 – Oxidation:** $\\ce{Al(s)} \\rightarrow \\ce{Al^{3+}(aq)} + 3e^-$
+
+**Step 2 – Reduction:** $\\ce{Ni^{2+}(aq)} + 2e^- \\rightarrow \\ce{Ni(s)}$
+
+**Step 3 – Equalise electrons (LCM of 2 and 3 is 6):**
+- Oxidation × 2: $2\\ce{Al(s)} \\rightarrow 2\\ce{Al^{3+}(aq)} + 6e^-$
+- Reduction × 3: $3\\ce{Ni^{2+}(aq)} + 6e^- \\rightarrow 3\\ce{Ni(s)}$
+
+**Step 4 – Add and cancel electrons:**
+$$ 2\\ce{Al(s)} + 3\\ce{Ni^{2+}(aq)} \\rightarrow 2\\ce{Al^{3+}(aq)} + 3\\ce{Ni(s)} $$
+
+## Key Takeaway
+Balanced by both mass and charge; electrons lost = electrons gained.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Balance the redox reaction in **acidic solution**: $\\ce{Cr2O7^{2-}} + \\ce{Fe^{2+}} \\rightarrow \\ce{Cr^{3+}} + \\ce{Fe^{3+}}$.",
+      back: `
+## Insight
+In acidic solution, use $\\ce{H+}$ to balance hydrogen and $\\ce{H2O}$ to balance oxygen.
+
+## Analysis
+**Step 1 – Reduction half-reaction:** $\\ce{Cr2O7^{2-}} \\rightarrow \\ce{Cr^{3+}}$
+
+**Step 2 – Balance Cr:** $\\ce{Cr2O7^{2-}} \\rightarrow 2\\ce{Cr^{3+}}$
+
+**Step 3 – Balance O:** $\\ce{Cr2O7^{2-}} \\rightarrow 2\\ce{Cr^{3+}} + 7\\ce{H2O}$
+
+**Step 4 – Balance H:** $14\\ce{H+} + \\ce{Cr2O7^{2-}} \\rightarrow 2\\ce{Cr^{3+}} + 7\\ce{H2O}$
+
+**Step 5 – Balance charge:** $6e^- + 14\\ce{H+} + \\ce{Cr2O7^{2-}} \\rightarrow 2\\ce{Cr^{3+}} + 7\\ce{H2O}$
+
+**Step 6 – Oxidation:** $\\ce{Fe^{2+}} \\rightarrow \\ce{Fe^{3+}} + e^-$  (×6)
+
+**Step 7 – Add:**
+$$ 14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} \\rightarrow 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O} $$
+
+## Key Takeaway
+Check: LHS charge = +24; RHS charge = +24. Mass and charge are balanced.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Balance the redox reaction in **basic solution**: $\\ce{SO3^{2-}} + \\ce{MnO4^-} \\rightarrow \\ce{SO4^{2-}} + \\ce{MnO2}$.",
+      back: `
+## Insight
+First balance as if in acidic solution, then convert to basic by adding $\\ce{OH^-}$ to both sides.
+
+## Analysis
+**Step 1 – Balance as acidic:**
+$$ 2\\ce{H+} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} \\rightarrow 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + \\ce{H2O} $$
+
+**Step 2 – Convert to basic:** Add $2\\ce{OH^-}$ to both sides:
+$$ 2\\ce{OH^-} + 2\\ce{H+} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} \\rightarrow 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + \\ce{H2O} + 2\\ce{OH^-} $$
+
+**Step 3 – Combine $\\ce{H+} + \\ce{OH^-} \\rightarrow \\ce{H2O}$:**
+$$ \\ce{H2O} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} \\rightarrow 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + 2\\ce{OH^-} $$
+
+**Final balanced equation:**
+$$ \\ce{H2O} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} \\rightarrow 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + 2\\ce{OH^-} $$
+
+## Key Takeaway
+For basic solutions: balance in acid first, then add $\\ce{OH^-}$ to neutralise $\\ce{H+}$ and form water.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is a **galvanic cell** (voltaic cell) and what are its key components?",
+      back: `
+## Insight
+A galvanic cell converts chemical energy from a spontaneous redox reaction into electrical energy.
+
+## Analysis
+**Components:**
+- **Anode:** The electrode where **oxidation** occurs (negative in a galvanic cell).
+- **Cathode:** The electrode where **reduction** occurs (positive in a galvanic cell).
+- **Salt bridge:** A conducting medium (often a U‑tube with electrolyte) that allows ions to migrate between half‑cells, maintaining **electrical neutrality**.
+- **External circuit:** Wire through which electrons flow from anode to cathode, generating an electric current.
+
+**Ion migration:** Anions migrate toward the anode; cations migrate toward the cathode.
+
+**Cell notation (shorthand):**
+$$ \\text{Anode} \\, | \\, \\text{Anode ion} \\, || \\, \\text{Cathode ion} \\, | \\, \\text{Cathode} $$
+
+**Example:** $\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$
+
+## Key Takeaway
+Anode = oxidation (negative); Cathode = reduction (positive). Electrons flow from anode to cathode through the external circuit.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is the purpose of the **salt bridge** in a galvanic cell?",
+      back: `
+## Insight
+The salt bridge maintains electrical neutrality by allowing ion migration between the two half-cells.
+
+## Analysis
+As the reaction proceeds:
+- At the anode: $\\ce{Zn(s)} \\rightarrow \\ce{Zn^{2+}(aq)} + 2e^-$ → positive charge builds up in the anode compartment.
+- At the cathode: $\\ce{Cu^{2+}(aq)} + 2e^- \\rightarrow \\ce{Cu(s)}$ → negative charge builds up in the cathode compartment.
+
+If these charges are not neutralised, the reaction stops.
+
+**Salt bridge function:**
+- **Anions** move into the anode compartment to neutralise the $\\ce{Zn^{2+}}$ buildup.
+- **Cations** move into the cathode compartment to neutralise the $\\ce{OH^-}$ or $\\ce{SO4^{2-}}$ buildup.
+
+**Result:** The circuit is completed, and the reaction continues.
+
+## Key Takeaway
+The salt bridge maintains electrical neutrality and prevents the cell from stopping due to charge buildup.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is the **Standard Hydrogen Electrode (SHE)** and how is it used?",
+      back: `
+## Insight
+The SHE is the reference half-cell with a defined potential of exactly $0.00\\, \\text{V}$.
+
+## Analysis
+**SHE reaction:**
+$$ 2\\ce{H+}(1\\, \\text{M}) + 2e^- \\rightarrow \\ce{H2}(1\\, \\text{atm}) \\qquad E^\\circ = 0.00\\, \\text{V} $$
+
+**How to measure a standard reduction potential (e.g., for $\\ce{Cu^{2+}/Cu}$):**
+1. Connect the unknown half-cell (Cu electrode in $1\\, \\text{M}$ $\\ce{Cu^{2+}}$) to the SHE.
+2. If the Cu electrode is positive, $\\ce{Cu^{2+}}$ is reduced at the cathode.
+3. The measured cell potential is the reduction potential of $\\ce{Cu^{2+}/Cu}$.
+
+**Result:** $E^\\circ(\\ce{Cu^{2+}/Cu}) = +0.34\\, \\text{V}$
+
+## Key Takeaway
+The SHE is the reference ($0\\, \\text{V}$). All other reduction potentials are measured relative to it.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "How do you calculate $E^\\circ_{\\text{cell}}$ from standard reduction potentials?",
+      back: `
+## Insight
+$E^\\circ_{\\text{cell}}$ is the sum of the reduction potential at the cathode and the oxidation potential at the anode.
+
+## Analysis
+$$ E_{\\text{cell}}^\\circ = E_{\\text{red}}^\\circ(\\text{cathode}) + E_{\\text{ox}}^\\circ(\\text{anode}) $$
+
+Since oxidation is the reverse of reduction:
+$$ E_{\\text{ox}}^\\circ = -E_{\\text{red}}^\\circ(\\text{anode}) $$
+
+**Therefore:**
+$$ E_{\\text{cell}}^\\circ = E_{\\text{red}}^\\circ(\\text{cathode}) - E_{\\text{red}}^\\circ(\\text{anode}) $$
+
+**Example:** For $\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$:
+- $E^\\circ(\\ce{Cu^{2+}/Cu}) = +0.34\\, \\text{V}$
+- $E^\\circ(\\ce{Zn^{2+}/Zn}) = -0.76\\, \\text{V}$
+- $E^\\circ_{\\text{cell}} = 0.34 - (-0.76) = \\mathbf{+1.10\\, \\text{V}}$
+
+## Key Takeaway
+$E^\\circ_{\\text{cell}} = E^\\circ(\\text{cathode}) - E^\\circ(\\text{anode})$. A positive $E^\\circ_{\\text{cell}}$ means the reaction is spontaneous under standard conditions.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Predict whether Pb metal will react with (a) $\\ce{Ni^{2+}(aq)}$ and (b) $\\ce{H+(aq)}$ under standard conditions. Use $E^\\circ$ values.",
+      back: `
+## Insight
+A spontaneous reaction occurs when the overall cell potential is positive ($E^\\circ_{\\text{cell}} > 0$).
+
+## Analysis
+**Given:**
+- $\\ce{Pb^{2+} + 2e^- -> Pb(s)}$ $E^\\circ = -0.13\\, \\text{V}$
+- $\\ce{Ni^{2+} + 2e^- -> Ni(s)}$ $E^\\circ = -0.25\\, \\text{V}$
+- $2\\ce{H+} + 2e^- -> \\ce{H2(g)}$ $E^\\circ = 0.00\\, \\text{V}$
+
+**(a) $\\ce{Pb(s)} + \\ce{Ni^{2+}(aq)}$:**
+- Oxidation of Pb: $E^\\circ_{\\text{ox}} = +0.13\\, \\text{V}$
+- Reduction of $\\ce{Ni^{2+}}$: $E^\\circ_{\\text{red}} = -0.25\\, \\text{V}$
+- $E^\\circ_{\\text{cell}} = -0.25 + 0.13 = -0.12\\, \\text{V}$ → **not spontaneous**.
+
+**(b) $\\ce{Pb(s)} + \\ce{H+(aq)}$:**
+- Oxidation of Pb: $E^\\circ_{\\text{ox}} = +0.13\\, \\text{V}$
+- Reduction of $\\ce{H+}$: $E^\\circ_{\\text{red}} = 0.00\\, \\text{V}$
+- $E^\\circ_{\\text{cell}} = 0.00 + 0.13 = +0.13\\, \\text{V}$ → **spontaneous**.
+
+## Key Takeaway
+The half-reaction with the more positive $E^\\circ$ goes as reduction; the other goes as oxidation. $E^\\circ_{\\text{cell}} > 0$ means a spontaneous reaction.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is the relationship between $\\Delta G^\\circ$, $E^\\circ_{\\text{cell}}$, and the equilibrium constant $K$?",
+      back: `
+## Insight
+The maximum work a galvanic cell can do is related to $E^\\circ_{\\text{cell}}$; this connects thermodynamics to electrochemistry.
+
+## Analysis
+The **maximum work** (electrical work) a cell can do is:
+$$ W_{\\text{max}} = n\\mathcal{F} E_{\\text{cell}} $$
+
+Since $\\Delta G = -W_{\\text{max}}$:
+$$ \\Delta G^\\circ = -n\\mathcal{F} E_{\\text{cell}}^\\circ $$
+
+Where:
+- $n$ = moles of electrons transferred
+- $\\mathcal{F}$ = Faraday constant = $96,485\\, \\text{C/mol } e^-$
+
+Also, from thermodynamics:
+$$ \\Delta G^\\circ = -RT \\ln K $$
+
+Combining:
+$$ E_{\\text{cell}}^\\circ = \\frac{RT}{n\\mathcal{F}} \\ln K $$
+
+At $25^\\circ\\text{C}$ ($298\\, \\text{K}$):
+$$ E_{\\text{cell}}^\\circ = \\frac{0.0592}{n} \\log K $$
+
+**Interpretation:**
+- $E^\\circ_{\\text{cell}} > 0$ → $\\Delta G^\\circ < 0$ → $K > 1$ (spontaneous, product‑favoured)
+- $E^\\circ_{\\text{cell}} < 0$ → $\\Delta G^\\circ > 0$ → $K < 1$ (non‑spontaneous, reactant‑favoured)
+
+## Key Takeaway
+$E^\\circ > 0 \\Leftrightarrow \\Delta G^\\circ < 0 \\Leftrightarrow K > 1$. All three are equivalent indicators of spontaneity.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Calculate $\\Delta G^\\circ$ for $\\ce{Pb(s)} + \\ce{Ni^{2+}(aq)} \\rightarrow \\ce{Pb^{2+}(aq)} + \\ce{Ni(s)}$ if $E^\\circ_{\\text{cell}} = -0.12\\, \\text{V}$.",
+      back: `
+## Insight
+$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$; a negative $E^\\circ$ gives a positive $\\Delta G^\\circ$ (non‑spontaneous).
+
+## Analysis
+- $n = 2$ (from $\\ce{Pb^{2+} + 2e^-}$ and $\\ce{Ni^{2+} + 2e^-}$)
+- $\\mathcal{F} = 96,485\\, \\text{C/mol}$
+- $E^\\circ_{\\text{cell}} = -0.12\\, \\text{V}$
+
+$$ \\Delta G^\\circ = -2 \\times 96,485 \\times (-0.12) $$
+$$ \\Delta G^\\circ = +23,156\\, \\text{J/mol} = +23.16\\, \\text{kJ/mol} $$
+
+Since $\\Delta G^\\circ > 0$, the reaction is **not spontaneous** under standard conditions.
+
+## Key Takeaway
+$\\Delta G^\\circ = +23.16\\, \\text{kJ/mol}$; $E^\\circ_{\\text{cell}} < 0$ means non‑spontaneous.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Calculate $K$ for $2\\ce{Ag(s)} + \\ce{Fe^{2+}(aq)} \\rightarrow 2\\ce{Ag+(aq)} + \\ce{Fe(s)}$ at $25^\\circ\\text{C}$ if $E^\\circ_{\\text{cell}} = -1.24\\, \\text{V}$.",
+      back: `
+## Insight
+Use $E^\\circ_{\\text{cell}} = (0.0592 / n) \\log K$.
+
+## Analysis
+- $n = 2$ (two electrons transferred)
+- $E^\\circ_{\\text{cell}} = -1.24\\, \\text{V}$
+
+$$ \\log K = \\frac{nE^\\circ}{0.0592} = \\frac{2 \\times (-1.24)}{0.0592} = -41.89 $$
+
+$$ K = 10^{-41.89} = 1.28 \\times 10^{-42} $$
+
+Since $K \\ll 1$, the reaction strongly favours reactants (non‑spontaneous).
+
+## Key Takeaway
+$K = 1.28 \\times 10^{-42}$; a very small $K$ means the reaction does not occur to any significant extent.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "State the **Nernst Equation** and explain its significance.",
+      back: `
+## Insight
+The Nernst equation relates the cell potential to the concentrations of species under **non‑standard** conditions.
+
+## Analysis
+$$ E = E^\\circ - \\frac{RT}{n\\mathcal{F}} \\ln Q $$
+
+At $25^\\circ\\text{C}$ ($298\\, \\text{K}$):
+$$ E = E^\\circ - \\frac{0.0592}{n} \\log Q $$
+
+Where:
+- $Q$ = reaction quotient (same form as $K$, but with non‑equilibrium concentrations)
+- $n$ = moles of electrons transferred
+
+**Significance:**
+- As the reaction proceeds, $Q$ increases and $E$ decreases.
+- At equilibrium, $Q = K$ and $E = 0$.
+- Allows calculation of cell potential under any concentration conditions.
+- Can be used to determine unknown concentrations from measured potential.
+
+## Key Takeaway
+$E = E^\\circ - (0.0592/n) \\log Q$. This is the core equation for non‑standard electrochemistry.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Will $\\ce{Cd(s)} + \\ce{Fe^{2+}(aq)} \\rightarrow \\ce{Cd^{2+}(aq)} + \\ce{Fe(s)}$ be spontaneous at $298\\, \\text{K}$ if $[\\ce{Fe^{2+}}] = 0.60\\, \\text{M}$ and $[\\ce{Cd^{2+}}] = 0.010\\, \\text{M}$?",
+      back: `
+## Insight
+Use the Nernst equation to find $E$ under the given conditions. If $E > 0$, the reaction is spontaneous.
+
+## Analysis
+**Given:**
+- $E^\\circ(\\ce{Cd^{2+}/Cd}) = -0.40\\, \\text{V}$
+- $E^\\circ(\\ce{Fe^{2+}/Fe}) = -0.44\\, \\text{V}$
+- Cathode: $\\ce{Fe^{2+}} + 2e^- \\rightarrow \\ce{Fe}$ ($E^\\circ_{\\text{red}} = -0.44\\, \\text{V}$)
+- Anode: $\\ce{Cd} \\rightarrow \\ce{Cd^{2+}} + 2e^-$ ($E^\\circ_{\\text{ox}} = +0.40\\, \\text{V}$)
+- $E^\\circ_{\\text{cell}} = -0.44 + 0.40 = -0.04\\, \\text{V}$
+
+**Nernst equation:** $n = 2$, $Q = [\\ce{Cd^{2+}}]/[\\ce{Fe^{2+}}] = 0.010/0.60 = 0.0167$
+
+$$ E = -0.04 - \\frac{0.0592}{2} \\log(0.0167) $$
+$$ \\log(0.0167) = -1.778 $$
+$$ E = -0.04 - (0.0296 \\times -1.778) = -0.04 + 0.0526 = +0.0126\\, \\text{V} $$
+
+$E = +0.01\\, \\text{V} > 0$ → **spontaneous** under these conditions.
+
+## Key Takeaway
+Even though $E^\\circ_{\\text{cell}}$ is negative, the reaction can be spontaneous if the concentration ratio is favourable (large excess of reactants over products).
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is a **concentration cell** and how does it work?",
+      back: `
+## Insight
+A concentration cell has the same electrodes and ions, but different concentrations in the two half‑cells. The potential arises from the concentration difference.
+
+## Analysis
+**Zinc concentration cell:**
+$$ \\ce{Zn(s) | Zn^{2+}(0.10\\, \\text{M}) || Zn^{2+}(1.0\\, \\text{M}) | Zn(s)} $$
+
+- Reduction occurs in the more concentrated half‑cell: $\\ce{Zn^{2+}} + 2e^- \\rightarrow \\ce{Zn}$
+- Oxidation occurs in the more dilute half‑cell: $\\ce{Zn} \\rightarrow \\ce{Zn^{2+}} + 2e^-$
+- $E^\\circ_{\\text{cell}} = 0$ (same electrodes)
+
+**Nernst equation for concentration cell:**
+$$ E = 0 - \\frac{0.0592}{n} \\log\\left(\\frac{[\\text{dilute}]}{[\\text{concentrated}]}\\right) $$
+
+**Example:**
+$$ E = -\\frac{0.0592}{2} \\log\\left(\\frac{0.10}{1.0}\\right) = +0.0296\\, \\text{V} $$
+
+The cell runs until the concentrations become equal ($E = 0$).
+
+## Key Takeaway
+Concentration cells convert concentration differences into electrical energy. $E = 0$ when concentrations are equal.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "A copper concentration cell has one half‑cell with $1.00\\, \\text{M}$ $\\ce{CuNO3}$ and the other with a saturated $\\ce{CuCl}$ solution. The cell potential is $0.175\\, \\text{V}$. Find $K_{\\text{sp}}$ for $\\ce{CuCl}$.",
+      back: `
+## Insight
+Use the Nernst equation for the concentration cell to find $[\\ce{Cu+}]$ in the saturated solution, then calculate $K_{\\text{sp}}$.
+
+## Analysis
+**Cell:** $\\ce{Cu(s) | Cu+(x\\, \\text{M}) || Cu+(1.00\\, \\text{M}) | Cu(s)}$
+
+$$ E = -\\frac{0.0592}{1} \\log\\left(\\frac{[\\ce{Cu+}]_{\\text{dilute}}}{[\\ce{Cu+}]_{\\text{concentrated}}}\\right) $$
+
+$$ 0.175 = -0.0592 \\log\\left(\\frac{x}{1.00}\\right) $$
+
+$$ \\log x = -\\frac{0.175}{0.0592} = -2.956 $$
+
+$$ x = 1.11 \\times 10^{-3}\\, \\text{M} $$
+
+Since $\\ce{CuCl(s)} \\rightleftharpoons \\ce{Cu+(aq)} + \\ce{Cl-(aq)}$:
+$$ K_{\\text{sp}} = [\\ce{Cu+}][\\ce{Cl-}] = (1.11 \\times 10^{-3})^2 = 1.22 \\times 10^{-6} $$
+
+## Key Takeaway
+$K_{\\text{sp}} = 1.22 \\times 10^{-6}$. Concentration cells can be used to measure very low ion concentrations.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Describe the **dry cell** (Leclanché) battery: reactions and voltage.",
+      back: `
+## Insight
+The dry cell is a common primary battery with a zinc anode and a manganese dioxide cathode, using an acidic electrolyte.
+
+## Analysis
+**Anode (oxidation):**
+$$ \\ce{Zn(s)} \\rightarrow \\ce{Zn^{2+}(aq)} + 2e^- $$
+
+**Cathode (reduction):**
+$$ 2\\ce{NH4+(aq)} + 2\\ce{MnO2(s)} + 2e^- \\rightarrow \\ce{Mn2O3(s)} + 2\\ce{NH3(aq)} + \\ce{H2O(l)} $$
+
+**Overall:**
+$$ \\ce{Zn(s)} + 2\\ce{NH4+(aq)} + 2\\ce{MnO2(s)} \\rightarrow \\ce{Zn^{2+}(aq)} + \\ce{Mn2O3(s)} + 2\\ce{NH3(aq)} + \\ce{H2O(l)} $$
+
+**Voltage:** ~$1.5\\, \\text{V}$
+
+**Note:** The $\\ce{NH3}$ produced complexes with $\\ce{Zn^{2+}}$ to prevent polarisation.
+
+## Key Takeaway
+Dry cell: Zn anode, MnO₂ cathode, NH₄Cl electrolyte; $E^\\circ \\approx 1.5\\, \\text{V}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Describe the **alkaline battery** and how it differs from the dry cell.",
+      back: `
+## Insight
+The alkaline battery uses a basic (alkaline) electrolyte, typically KOH, and has a slightly higher voltage and longer shelf life.
+
+## Analysis
+**Anode (oxidation):**
+$$ \\ce{Zn(s)} + 2\\ce{OH-(aq)} \\rightarrow \\ce{Zn(OH)2(s)} + 2e^- $$
+
+**Cathode (reduction):**
+$$ 2\\ce{MnO2(s)} + 2\\ce{H2O(l)} + 2e^- \\rightarrow 2\\ce{MnO(OH)(s)} + 2\\ce{OH-(aq)} $$
+
+**Overall:**
+$$ \\ce{Zn(s)} + 2\\ce{MnO2(s)} + 2\\ce{H2O(l)} \\rightarrow \\ce{Zn(OH)2(s)} + 2\\ce{MnO(OH)(s)} $$
+
+**Voltage:** ~$1.54\\, \\text{V}$
+
+**Advantages over dry cell:**
+- Longer shelf life
+- Better performance at low temperatures
+- No gas evolution (sealed)
+- More stable voltage during discharge
+
+## Key Takeaway
+Alkaline battery: Zn anode, MnO₂ cathode, KOH electrolyte; $E^\\circ \\approx 1.54\\, \\text{V}$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Describe the **lead‑acid battery**, including the reactions and voltage.",
+      back: `
+## Insight
+The lead‑acid battery is a rechargeable (secondary) battery used in cars. It consists of six cells in series (total ~12 V).
+
+## Analysis
+**Anode (oxidation):**
+$$ \\ce{Pb(s)} + \\ce{SO4^{2-}(aq)} \\rightarrow \\ce{PbSO4(s)} + 2e^- $$
+
+**Cathode (reduction):**
+$$ \\ce{PbO2(s)} + 4\\ce{H+(aq)} + \\ce{SO4^{2-}(aq)} + 2e^- \\rightarrow \\ce{PbSO4(s)} + 2\\ce{H2O(l)} $$
+
+**Overall (discharge):**
+$$ \\ce{Pb(s)} + \\ce{PbO2(s)} + 2\\ce{H2SO4(aq)} \\rightarrow 2\\ce{PbSO4(s)} + 2\\ce{H2O(l)} $$
+
+**Voltage:** ~$2.0\\, \\text{V}$ per cell (6 cells = 12 V)
+
+**Discharge effects:**
+- $\\ce{H2SO4}$ is consumed
+- Density of electrolyte decreases (can be measured with a hydrometer)
+
+**Recharge:** Apply an external voltage to reverse the reaction (electrolysis).
+
+## Key Takeaway
+Lead‑acid battery: Pb anode, PbO₂ cathode, H₂SO₄ electrolyte; $E^\\circ \\approx 2.0\\, \\text{V}$ per cell.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Describe the **lithium‑ion battery** and its advantages.",
+      back: `
+## Insight
+Lithium‑ion batteries are rechargeable, have high energy density, and are used in portable electronics.
+
+## Analysis
+**Anode (oxidation):**
+$$ \\ce{Li(s)} \\rightarrow \\ce{Li+} + e^- $$
+
+**Cathode (reduction):**
+$$ \\ce{Li+} + \\ce{CoO2} + e^- \\rightarrow \\ce{LiCoO2(s)} $$
+
+**Overall:**
+$$ \\ce{Li(s)} + \\ce{CoO2} \\rightarrow \\ce{LiCoO2(s)} $$
+
+**Voltage:** ~$3.4\\, \\text{V}$ (higher than most other batteries)
+
+**Advantages:**
+- Rechargeable hundreds of times
+- High energy density (lightweight)
+- No memory effect
+- Low self‑discharge
+
+**Disadvantage:** Can overheat and catch fire if damaged (thermal runaway).
+
+## Key Takeaway
+Lithium‑ion battery: Li anode, LiCoO₂ cathode; $E^\\circ \\approx 3.4\\, \\text{V}$; high energy density.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Describe the **hydrogen fuel cell** and its advantages.",
+      back: `
+## Insight
+A fuel cell converts chemical energy directly into electricity via a redox reaction, with high efficiency and minimal pollution.
+
+## Analysis
+**Anode (oxidation):**
+$$ 2\\ce{H2(g)} + 4\\ce{OH-(aq)} \\rightarrow 4\\ce{H2O(l)} + 4e^- \\qquad E^\\circ_{\\text{ox}} = +0.83\\, \\text{V} $$
+
+**Cathode (reduction):**
+$$ \\ce{O2(g)} + 2\\ce{H2O(l)} + 4e^- \\rightarrow 4\\ce{OH-(aq)} \\qquad E^\\circ_{\\text{red}} = +0.40\\, \\text{V} $$
+
+**Overall:**
+$$ 2\\ce{H2(g)} + \\ce{O2(g)} \\rightarrow 2\\ce{H2O(l)} \\qquad E^\\circ_{\\text{cell}} = 1.23\\, \\text{V} $$
+
+**Advantages:**
+- Very efficient (up to 60–80%, vs ~25% for combustion engines)
+- Only waste product is water
+- No moving parts (silent)
+- Continuous operation as long as fuel is supplied
+
+**Disadvantages:**
+- Requires a continuous supply of $\\ce{H2}$ and $\\ce{O2}$
+- Storage of $\\ce{H2}$ is challenging (low density, compression/ liquefaction costs)
+
+## Key Takeaway
+Fuel cell: $2\\ce{H2} + \\ce{O2} \\rightarrow 2\\ce{H2O}$, $E^\\circ = 1.23\\, \\text{V}$. Clean, efficient, but requires fuel supply.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is **electrolysis** and how does it differ from a galvanic cell?",
+      back: `
+## Insight
+Electrolysis uses electrical energy to drive a non‑spontaneous redox reaction – the reverse of a galvanic cell.
+
+## Analysis
+| Feature | Galvanic Cell | Electrolysis Cell |
+|---------|---------------|-------------------|
+| Energy conversion | Chemical → Electrical | Electrical → Chemical |
+| Reaction type | Spontaneous | Non‑spontaneous |
+| $E_{\\text{cell}}$ | Positive | Negative (requires external voltage) |
+| Electrodes | Anode (−), Cathode (+) | Anode (+), Cathode (−) |
+
+**Example: Electrolysis of molten $\\ce{NaCl}$:**
+- Cathode (reduction): $2\\ce{Na+(l)} + 2e^- \\rightarrow 2\\ce{Na(l)}$
+- Anode (oxidation): $2\\ce{Cl-(l)} \\rightarrow \\ce{Cl2(g)} + 2e^-$
+- Overall: $2\\ce{NaCl(l)} \\rightarrow 2\\ce{Na(l)} + \\ce{Cl2(g)}$
+- Required voltage: $> 4\\, \\text{V}$ (since $E^\\circ_{\\text{cell}} = -4\\, \\text{V}$)
+
+## Key Takeaway
+Electrolysis is the reverse of a galvanic cell; it requires an external power source to force a non‑spontaneous reaction.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Explain why the electrolysis of aqueous $\\ce{NaCl}$ produces $\\ce{H2}$ at the cathode and $\\ce{Cl2}$ at the anode, not $\\ce{Na}$ and $\\ce{O2}$.",
+      back: `
+## Insight
+The products at each electrode depend on the reduction (or oxidation) potential and the concentration of species, as well as **overvoltage** effects.
+
+## Analysis
+**Cathode (reduction) possibilities:**
+- $\\ce{Na+} + e^- \\rightarrow \\ce{Na}$ $E^\\circ = -2.71\\, \\text{V}$ (too negative)
+- $2\\ce{H2O} + 2e^- \\rightarrow \\ce{H2} + 2\\ce{OH-}$ $E^\\circ = -0.83\\, \\text{V}$ (favoured)
+
+Since $E^\\circ$ for water reduction is much less negative, $\\ce{H2}$ is produced at the cathode.
+
+**Anode (oxidation) possibilities:**
+- $2\\ce{Cl-} \\rightarrow \\ce{Cl2} + 2e^-$ (observed – lower overvoltage)
+- $2\\ce{H2O} \\rightarrow \\ce{O2} + 4\\ce{H+} + 4e^-$ (has high overvoltage, so not observed despite favourable $E^\\circ$)
+
+**Overall reaction:**
+$$ 2\\ce{H2O(l)} + 2\\ce{Cl-(aq)} \\rightarrow \\ce{H2(g)} + \\ce{Cl2(g)} + 2\\ce{OH-(aq)} $$
+
+## Key Takeaway
+Water is reduced at the cathode ($\\ce{H2}$), and $\\ce{Cl-}$ is oxidised at the anode ($\\ce{Cl2}$). The products depend on electrode potentials and overvoltage.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "Calculate the mass of Mg produced when a constant current of $0.912\\, \\text{A}$ is passed through molten $\\ce{MgCl2}$ for 18 hours.",
+      back: `
+## Insight
+The amount of product is directly proportional to the charge passed ($Q = I \\times t$). This is Faraday's first law.
+
+## Analysis
+**Reduction half-reaction:** $\\ce{Mg^{2+}} + 2e^- \\rightarrow \\ce{Mg}$
+
+**Step 1 – Calculate charge:**
+$$ Q = I \\times t = 0.912\\, \\text{A} \\times (18 \\times 3600\\, \\text{s}) = 59,098\\, \\text{C} $$
+
+**Step 2 – Moles of electrons:**
+$$ n_e = \\frac{Q}{\\mathcal{F}} = \\frac{59,098}{96,485} = 0.6125\\, \\text{mol} $$
+
+**Step 3 – Moles of Mg:** $n_{\\text{Mg}} = n_e / 2 = 0.3063\\, \\text{mol}$
+
+**Step 4 – Mass of Mg:** $m = n \\times M = 0.3063 \\times 24.31 = \\mathbf{7.44\\, \\text{g}}$
+
+**General formula:**
+$$ m = \\frac{I \\times t \\times M}{n \\times \\mathcal{F}} $$
+
+Where $n$ = number of electrons transferred per ion.
+
+## Key Takeaway
+Mass = $(I \\times t \\times M) / (n \\times F)$. $1\\, \\text{F} = 96,485\\, \\text{C/mol } e^-$.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "A constant current is passed through molten $\\ce{MgCl2}$ for 12 hours. If $4.83\\, \\text{L}$ of $\\ce{Cl2}$ (at STP) is produced at the anode, what is the current?",
+      back: `
+## Insight
+Use stoichiometry to relate volume of $\\ce{Cl2}$ to moles of electrons, then find current from $I = Q/t$.
+
+## Analysis
+**Oxidation half-reaction:** $2\\ce{Cl-} \\rightarrow \\ce{Cl2} + 2e^-$
+
+**Step 1 – Moles of $\\ce{Cl2}$:**
+$$ n = \\frac{PV}{RT} = \\frac{1\\, \\text{atm} \\times 4.83\\, \\text{L}}{0.08206 \\times 273\\, \\text{K}} = 0.216\\, \\text{mol} $$
+
+**Step 2 – Moles of electrons:** $n_e = 2 \\times 0.216 = 0.432\\, \\text{mol}$
+
+**Step 3 – Charge:** $Q = n_e \\times \\mathcal{F} = 0.432 \\times 96,485 = 41,680\\, \\text{C}$
+
+**Step 4 – Time:** $t = 12 \\times 3600 = 43,200\\, \\text{s}$
+
+**Step 5 – Current:** $I = Q / t = 41,680 / 43,200 = \\mathbf{0.965\\, \\text{A}}$
+
+## Key Takeaway
+Current = (moles of gas × electrons per mole × F) / time.
+      `
+    },
+    {
+      course: "CH110",
+      term: "T3",
+      topic: "Electrochemistry",
+      front: "What is **corrosion** and how can it be prevented?",
+      back: `
+## Insight
+Corrosion is the gradual destruction of metals through redox reactions with the environment (e.g., rusting of iron). It is an electrochemical process.
+
+## Analysis
+**Rusting of iron:**
+- Iron is oxidised to $\\ce{Fe^{2+}}$ at anodic sites:
+$$ \\ce{Fe(s)} \\rightarrow \\ce{Fe^{2+}(aq)} + 2e^- $$
+- Oxygen is reduced at cathodic sites:
+$$ \\ce{O2(g)} + 2\\ce{H2O(l)} + 4e^- \\rightarrow 4\\ce{OH-(aq)} $$
+- $\\ce{Fe^{2+}}$ further oxidises and hydrolyses to form rust ($\\ce{Fe2O3 \\cdot xH2O}$).
+
+**Prevention methods:**
+
+1. **Passivation:** Formation of a thin, protective oxide layer (e.g., aluminium oxide).
+
+2. **Alloying:** Stainless steel (contains Cr, which forms a protective oxide layer).
+
+3. **Coating:** Tin cans (tin is less active, protects iron). Galvanisation (zinc coating).
+
+4. **Cathodic protection:** Connect the metal to a more active metal (e.g., Zn or Mg). The **sacrificial anode** corrodes instead of the protected metal.
+
+**Sacrificial anode:** $\\ce{Zn(s)} \\rightarrow \\ce{Zn^{2+}(aq)} + 2e^-$ (Zn is oxidised instead of Fe).
+
+## Key Takeaway
+Corrosion is an electrochemical process. Prevention methods include coatings, alloying, and sacrificial anodes (cathodic protection).
+      `
+    }
+  ],
+  
+  
   "MODULE 1: INTRODUCTION (BEING A DIGITAL CITIZEN: AT HOME, SCHOOL, AND WORK)": [
     {
       "front": "What is digital literacy?",
