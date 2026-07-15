@@ -1,4 +1,2354 @@
-  const essayData = [// --- BI110 Term 1 Essay Simulations ---
+  const essayData = [
+    
+    
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "title": "Complete Topic 1: Introduction to General Chemistry",
+    "year": "2024",
+    "steps": [
+      // ============================================================
+      // Step 1: Definition of Chemistry (Correct: 0)
+      // ============================================================
+      {
+        "step": 1,
+        "q": "What is the formal definition of **Chemistry**?",
+        "options": [
+          "The study of matter and the changes it undergoes",
+          "The study of living organisms and their interactions",
+          "The study of energy and its transformations",
+          "The study of the fundamental laws of physics"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nChemistry is often called the 'central science' because it bridges physics and biology. It explains the composition, structure, properties, and transformations of all matter.\n\n## Analysis\n- **Option A (Correct):** Chemistry is defined as the study of **matter** (anything with mass and volume) and the **changes** it undergoes. This encompasses both composition and reactivity.\n- **Option B (Incorrect):** This describes **Biology** — the study of living organisms.\n- **Option C (Incorrect):** This describes **Thermodynamics** or **Physics**, not chemistry specifically.\n- **Option D (Incorrect):** This describes **Physics**, which studies fundamental laws, not the composition of matter.\n\n> **Key Takeaway:** Chemistry is the study of matter — what it is made of, how it behaves, and how it changes."
+      },
+      // ============================================================
+      // Step 2: Scientific Method (Correct: 2)
+      // ============================================================
+      {
+        "step": 2,
+        "q": "In the scientific method, what is a **hypothesis**?",
+        "options": [
+          "A well-established, unifying principle that explains a body of facts",
+          "A concise statement of a relationship that is always true under the same conditions",
+          "A tentative, testable explanation for a set of observations",
+          "A proven fact that cannot be disproved by any experiment"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nA hypothesis is an educated guess — an informed statement that must be capable of being proven wrong (falsifiable).\n\n## Analysis\n- **Option A (Incorrect):** This describes a **theory** — a well-substantiated unifying principle.\n- **Option B (Incorrect):** This describes a **scientific law** — a concise statement of a relationship (e.g., Boyle's Law).\n- **Option C (Correct):** A hypothesis is a **tentative, testable explanation** for observations. It must be falsifiable — an experiment must be able to disprove it.\n- **Option D (Incorrect):** No scientific statement is beyond disproof. All hypotheses, laws, and theories are subject to testing and revision.\n\n> **Key Takeaway:** A hypothesis is a testable explanation that must be falsifiable."
+      },
+      // ============================================================
+      // Step 3: Law vs. Theory (Correct: 1)
+      // ============================================================
+      {
+        "step": 3,
+        "q": "What is the difference between a **scientific law** and a **scientific theory**?",
+        "options": [
+          "A law describes what happens; a theory explains why it happens",
+          "A law explains why it happens; a theory describes what happens",
+          "Both are the same thing",
+          "A law is always true; a theory is just a guess"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nThe relationship between a law and a theory is that the law describes *what* happens, and the theory explains *why* it happens.\n\n## Analysis\n- **Option A (Incorrect):** This is the correct relationship, but it is reversed — a law describes *what* happens; a theory explains *why*.\n- **Option B (Correct):** A law tells us *what* happens under specific conditions (e.g., Boyle's Law). A theory explains *why* it happens (e.g., Kinetic Molecular Theory).\n- **Option C (Incorrect):** Laws and theories are distinct concepts in science.\n- **Option D (Incorrect):** Theories are not guesses; they are well-substantiated explanations that have survived extensive testing.\n\n> **Key Takeaway:** Laws describe *what* happens; theories explain *why* it happens."
+      },
+      // ============================================================
+      // Step 4: Classification of Matter (Correct: 3)
+      // ============================================================
+      {
+        "step": 4,
+        "q": "Which of the following is classified as a **pure substance**?",
+        "options": [
+          "Salt water",
+          "Air",
+          "Granite rock",
+          "Distilled water"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nA pure substance has a fixed composition and distinct properties; it cannot be separated by physical methods.\n\n## Analysis\n- **Option A (Incorrect):** Salt water is a **homogeneous mixture** — it contains salt dissolved in water.\n- **Option B (Incorrect):** Air is a **homogeneous mixture** of gases (N₂, O₂, Ar, CO₂, etc.).\n- **Option C (Incorrect):** Granite is a **heterogeneous mixture** — you can see different mineral grains.\n- **Option D (Correct):** Distilled water is $\\ce{H2O}$ with a fixed composition — a **pure substance**.\n\n> **Key Takeaway:** A pure substance has a fixed composition; distilled water is a pure substance, while salt water, air, and granite are mixtures."
+      },
+      // ============================================================
+      // Step 5: Elements vs. Compounds (Correct: 0)
+      // ============================================================
+      {
+        "step": 5,
+        "q": "Which of the following is an **element**?",
+        "options": [
+          "$\\ce{Fe}$ (Iron)",
+          "$\\ce{H2O}$ (Water)",
+          "$\\ce{NaCl}$ (Sodium chloride)",
+          "$\\ce{CO2}$ (Carbon dioxide)"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nAn element consists of only one type of atom and cannot be broken down chemically.\n\n## Analysis\n- **Option A (Correct):** $\\ce{Fe}$ (iron) is an **element** — it cannot be broken down into simpler substances.\n- **Option B (Incorrect):** $\\ce{H2O}$ (water) is a **compound** — it contains hydrogen and oxygen.\n- **Option C (Incorrect):** $\\ce{NaCl}$ (sodium chloride) is a **compound** — it contains sodium and chlorine.\n- **Option D (Incorrect):** $\\ce{CO2}$ (carbon dioxide) is a **compound** — it contains carbon and oxygen.\n\n> **Key Takeaway:** An element is a pure substance represented by a symbol with no subscripts (e.g., Fe, O, N, C)."
+      },
+      // ============================================================
+      // Step 6: Homogeneous vs. Heterogeneous (Correct: 2)
+      // ============================================================
+      {
+        "step": 6,
+        "q": "What is the key difference between a **homogeneous** and a **heterogeneous** mixture?",
+        "options": [
+          "Homogeneous mixtures are always liquids; heterogeneous mixtures are always solids",
+          "Homogeneous mixtures have no visible components; heterogeneous mixtures have visible components",
+          "Homogeneous mixtures have uniform composition; heterogeneous mixtures have non-uniform composition",
+          "Homogeneous mixtures are mixtures; heterogeneous mixtures are pure substances"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nThe distinction is purely about uniformity of composition and whether you can see separate components.\n\n## Analysis\n- **Option A (Incorrect):** Both types of mixtures can exist in solid, liquid, or gas states.\n- **Option B (Incorrect):** This is often true, but the core definition is about composition uniformity.\n- **Option C (Correct):** A homogeneous mixture has **uniform composition** throughout (e.g., sugar dissolved in water). A heterogeneous mixture has **non-uniform composition** with visibly distinguishable components (e.g., sand and water).\n- **Option D (Incorrect):** Both are mixtures; neither is a pure substance.\n\n> **Key Takeaway:** Homogeneous = uniform composition; heterogeneous = non-uniform composition with visible components."
+      },
+      // ============================================================
+      // Step 7: Physical vs. Chemical Properties (Correct: 1)
+      // ============================================================
+      {
+        "step": 7,
+        "q": "Which of the following is a **chemical property** of matter?",
+        "options": [
+          "Density",
+          "Flammability",
+          "Melting point",
+          "Color"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nChemical properties describe a substance's ability to undergo a chemical change, forming an entirely new substance.\n\n## Analysis\n- **Option A (Incorrect):** Density is a **physical property** — it can be measured without changing the substance.\n- **Option B (Correct):** Flammability is a **chemical property** — it involves a chemical reaction (burning).\n- **Option C (Incorrect):** Melting point is a **physical property** — it does not change the substance's identity.\n- **Option D (Incorrect):** Color is a **physical property** — it does not involve a chemical change.\n\n> **Key Takeaway:** Chemical properties involve reactions that produce new substances; flammability is a chemical property."
+      },
+      // ============================================================
+      // Step 8: Extensive vs. Intensive Properties (Correct: 3)
+      // ============================================================
+      {
+        "step": 8,
+        "q": "Which of the following is an **intensive property**?",
+        "options": [
+          "Mass",
+          "Volume",
+          "Total energy",
+          "Density"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nIntensive properties are 'sample-size independent' — they stay the same regardless of how much matter you have.\n\n## Analysis\n- **Option A (Incorrect):** Mass is an **extensive property** — it depends on the amount of matter.\n- **Option B (Incorrect):** Volume is an **extensive property** — it depends on the amount of matter.\n- **Option C (Incorrect):** Total energy is an **extensive property** — it depends on the amount of matter.\n- **Option D (Correct):** Density is an **intensive property** — it is characteristic of the substance itself, regardless of sample size.\n\n> **Key Takeaway:** Intensive properties are sample-size independent; density and temperature are examples."
+      },
+      // ============================================================
+      // Step 9: SI Units and Conversions (Correct: 0)
+      // ============================================================
+      {
+        "step": 9,
+        "q": "What is the SI base unit for **temperature**?",
+        "options": [
+          "Kelvin (K)",
+          "Degrees Celsius (°C)",
+          "Degrees Fahrenheit (°F)",
+          "Joule (J)"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nThe Kelvin is the absolute temperature scale used in all scientific calculations.\n\n## Analysis\n- **Option A (Correct):** The SI base unit for temperature is the **Kelvin (K)**. It is absolute; 0 K is the lowest possible temperature.\n- **Option B (Incorrect):** Celsius is commonly used but is not the SI base unit.\n- **Option C (Incorrect):** Fahrenheit is not a scientific unit.\n- **Option D (Incorrect):** The Joule (J) is the SI unit for **energy**.\n\n> **Key Takeaway:** The SI unit for temperature is Kelvin (K); never use the degree symbol with K."
+      },
+      // ============================================================
+      // Step 10: Density Calculation (Correct: 2)
+      // ============================================================
+      {
+        "step": 10,
+        "q": "A liquid has a mass of 25.0 g and a volume of 31.7 mL. What is its density?",
+        "options": [
+          "0.789 g/mL",
+          "1.27 g/mL",
+          "25.0 g/mL",
+          "31.7 g/mL"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nDensity is mass per unit volume: $d = \\frac{m}{V}$.\n\n## Analysis\n**Step 1:** Identify the formula: $d = \\frac{m}{V}$\n\n**Step 2:** Substitute the values:\n$d = \\frac{25.0 \\, \\text{g}}{31.7 \\, \\text{mL}}$\n\n**Step 3:** Calculate:\n$d = 0.789 \\, \\text{g/mL}$\n\n**Step 4:** Check units: $\\text{g/mL}$ is correct for density of liquids.\n\n> **Key Takeaway:** $d = \\frac{m}{V}$; always check that your answer makes physical sense and has the correct units."
+      },
+      // ============================================================
+      // Step 11: Temperature Conversion (Correct: 1)
+      // ============================================================
+      {
+        "step": 11,
+        "q": "Convert $25^\\circ\\text{C}$ to Kelvin.",
+        "options": [
+          "$273 \\, \\text{K}$",
+          "$298 \\, \\text{K}$",
+          "$25 \\, \\text{K}$",
+          "$248 \\, \\text{K}$"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\n$K = ^\\circ\\text{C} + 273.15$; $25^\\circ\\text{C}$ is room temperature, about 298 K.\n\n## Analysis\n**Step 1:** Use the conversion formula: $K = ^\\circ\\text{C} + 273.15$\n\n**Step 2:** Substitute: $K = 25 + 273.15 = 298.15 \\, \\text{K}$\n\n**Step 3:** Round to 3 significant figures: **298 K**.\n\n> **Key Takeaway:** $K = ^\\circ\\text{C} + 273.15$; Kelvin never uses the degree symbol."
+      },
+      // ============================================================
+      // Step 12: Dimensional Analysis (Correct: 3)
+      // ============================================================
+      {
+        "step": 12,
+        "q": "Convert $1.25 \\, \\text{miles}$ to **furlongs** using the conversion: $8 \\, \\text{furlongs} = 1 \\, \\text{mile}$.",
+        "options": [
+          "$0.156 \\, \\text{furlongs}$",
+          "$1.25 \\, \\text{furlongs}$",
+          "$8.00 \\, \\text{furlongs}$",
+          "$10.0 \\, \\text{furlongs}$"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nFurlongs are smaller than miles, so the number of furlongs should be larger than the number of miles.\n\n## Analysis\n**Step 1:** Identify the conversion factor: $\\frac{8 \\, \\text{furlongs}}{1 \\, \\text{mile}}$\n\n**Step 2:** Set up the conversion:\n$1.25 \\, \\text{miles} \\times \\frac{8 \\, \\text{furlongs}}{1 \\, \\text{mile}}$\n\n**Step 3:** Cancel units:\nThe 'miles' cancels, leaving 'furlongs'.\n\n**Step 4:** Calculate:\n$1.25 \\times 8 = 10.0 \\, \\text{furlongs}$\n\n> **Key Takeaway:** $1.25$ miles = $10.0$ furlongs; always check that the answer makes physical sense (furlongs are smaller than miles, so the number should be larger)."
+      }
+    ]
+  },
+
+// ============================================================
+// TOPIC 2: STOICHIOMETRY (14 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T1",
+  "topic": "Topic 2: Stoichiometry",
+  "title": "Complete Topic 2: Stoichiometry",
+  "year": "2024",
+  "steps": [
+    // Step 1: Atomic Mass Unit (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is an **atomic mass unit** (amu) and how is it defined?",
+      "options": [
+        "It is exactly 1/12 of the mass of one Carbon-12 atom",
+        "It is the mass of one proton",
+        "It is the mass of one neutron",
+        "It is the mass of one Hydrogen-1 atom"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe amu is the 'measuring stick' for the microscopic world, allowing us to compare the masses of different atoms.\n\n## Analysis\n- **Option A (Correct):** One atomic mass unit (amu) is defined as exactly **one-twelfth (1/12) of the mass of one Carbon-12 atom**. By definition, a $^{12}\\ce{C}$ atom has a mass of exactly 12 amu.\n- **Option B (Incorrect):** A proton has a mass of approximately 1.0073 amu, not exactly 1 amu.\n- **Option C (Incorrect):** A neutron has a mass of approximately 1.0087 amu, not exactly 1 amu.\n- **Option D (Incorrect):** A Hydrogen-1 atom has a mass of approximately 1.008 amu, not exactly 1 amu.\n\n> **Key Takeaway:** 1 amu = 1/12 the mass of a Carbon-12 atom."
+    },
+    // Step 2: Average Atomic Mass (Correct: 2)
+    {
+      "step": 2,
+      "q": "Neon has three isotopes: Ne-20 (19.9924 amu, 90.48%), Ne-21 (20.9938 amu, 0.27%), and Ne-22 (21.9914 amu, 9.25%). What is the average atomic mass of Neon?",
+      "options": [
+        "19.99 amu",
+        "20.99 amu",
+        "20.18 amu",
+        "21.99 amu"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe average is pulled strongly toward the most abundant isotope (Ne-20).\n\n## Analysis\n**Step 1:** Convert percent abundances to fractional abundances:\n- $f_1 = 0.9048$, $f_2 = 0.0027$, $f_3 = 0.0925$\n\n**Step 2:** Apply the formula:\n$A_{av} = (f_1 \\times m_1) + (f_2 \\times m_2) + (f_3 \\times m_3)$\n\n**Step 3:** Substitute:\n$A_{av} = (0.9048 \\times 19.9924) + (0.0027 \\times 20.9938) + (0.0925 \\times 21.9914)$\n\n**Step 4:** Multiply:\n$18.0891 + 0.0567 + 2.0342 = 20.1800$ amu\n\n**Step 5:** Round to 4 significant figures: **20.18 amu**.\n\n> **Key Takeaway:** The average atomic mass is a weighted average; it must fall between the lightest and heaviest isotope masses."
+    },
+    // Step 3: The Mole Definition (Correct: 1)
+    {
+      "step": 3,
+      "q": "What is the formal SI definition of the **mole** (mol)?",
+      "options": [
+        "The mass of 1 litre of water at 4°C",
+        "The amount of substance containing exactly as many entities as there are atoms in 12 g of Carbon-12",
+        "The volume occupied by 1 gram of any substance",
+        "The number of atoms in 1 gram of Hydrogen-1"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe mole is a counting unit — just as a dozen means 12, a mole means $6.022 \\times 10^{23}$ particles.\n\n## Analysis\n- **Option A (Incorrect):** This is a definition of density, not the mole.\n- **Option B (Correct):** The mole is defined as the amount of substance that contains exactly as many elementary entities as there are atoms in exactly **12 grams** of Carbon-12.\n- **Option C (Incorrect):** Volume is not part of the mole definition.\n- **Option D (Incorrect):** The mole is based on Carbon-12, not Hydrogen-1.\n\n> **Key Takeaway:** 1 mole = $6.022 \\times 10^{23}$ particles; defined by 12 g of Carbon-12."
+    },
+    // Step 4: Molar Mass and Conversions (Correct: 3)
+    {
+      "step": 4,
+      "q": "How many moles of Helium (He) atoms are in $6.46 \\, \\text{g}$ of He? (Molar mass He = 4.003 g/mol).",
+      "options": [
+        "25.9 mol",
+        "0.619 mol",
+        "4.00 mol",
+        "1.61 mol"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\n1 mole of He weighs about 4 grams, so 6.46 g should be slightly more than 1 mole.\n\n## Analysis\n**Step 1:** Use the formula $n = \\frac{m}{M}$.\n\n**Step 2:** Substitute:\n$n = \\frac{6.46 \\, \\text{g}}{4.003 \\, \\text{g/mol}} = 1.6138$ mol\n\n**Step 3:** Round to 3 significant figures: **1.61 mol**.\n\n> **Key Takeaway:** Grams cancel, leaving moles. 6.46 g He = 1.61 mol He."
+    },
+    // Step 5: Moles to Particles (Correct: 0)
+    {
+      "step": 5,
+      "q": "How many atoms are in $16.3 \\, \\text{g}$ of Sulfur (S)? (M = 32.07 g/mol, $N_A = 6.022 \\times 10^{23}$).",
+      "options": [
+        "$3.06 \\times 10^{23}$ atoms",
+        "$1.53 \\times 10^{23}$ atoms",
+        "$6.02 \\times 10^{23}$ atoms",
+        "$9.82 \\times 10^{24}$ atoms"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nRoadmap: grams → moles → atoms.\n\n## Analysis\n**Step 1:** Convert grams to moles:\n$n = \\frac{16.3 \\, \\text{g}}{32.07 \\, \\text{g/mol}} = 0.5083 \\, \\text{mol}$\n\n**Step 2:** Convert moles to atoms:\n$N = 0.5083 \\, \\text{mol} \\times 6.022 \\times 10^{23} \\, \\text{atoms/mol} = 3.061 \\times 10^{23}$ atoms\n\n**Step 3:** Round to 3 significant figures: **$3.06 \\times 10^{23}$ atoms**.\n\n> **Key Takeaway:** The road is: **Grams → Moles → Particles**."
+    },
+    // Step 6: Molecular Mass (Correct: 2)
+    {
+      "step": 6,
+      "q": "Calculate the molecular mass of Caffeine ($\\ce{C8H10N4O2}$). (C = 12.01, H = 1.008, N = 14.01, O = 16.00 amu).",
+      "options": [
+        "178.20 amu",
+        "210.20 amu",
+        "194.20 amu",
+        "166.20 amu"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nCaffeine is a large molecule; the molar mass will be ~194 g/mol.\n\n## Analysis\n**Step 1:** Sum the masses of all atoms:\n$8(12.01) + 10(1.008) + 4(14.01) + 2(16.00)$\n\n**Step 2:** Calculate:\n$96.08 + 10.08 + 56.04 + 32.00 = 194.20$ amu\n\n> **Key Takeaway:** $\\ce{C8H10N4O2}$ molecular mass = 194.20 amu."
+    },
+    // Step 7: Percent Composition (Correct: 1)
+    {
+      "step": 7,
+      "q": "Calculate the percent composition of **Phosphorus** in $\\ce{H3PO4}$. (M = 97.99 g/mol, P = 30.97 g/mol).",
+      "options": [
+        "3.08%",
+        "31.61%",
+        "65.31%",
+        "10.00%"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nPhosphorus is a key component of fertilizers; its percentage tells farmers how much nutrient is in the product.\n\n## Analysis\n**Step 1:** Mass of P in 1 mole:\n$30.97 \\, \\text{g}$\n\n**Step 2:** Percent P:\n$\\% P = \\frac{30.97}{97.99} \\times 100\\% = 31.61\\%$\n\n> **Key Takeaway:** $\\ce{H3PO4}$ is 31.61% P by mass."
+    },
+    // Step 8: Empirical Formula (Correct: 3)
+    {
+      "step": 8,
+      "q": "Ascorbic acid (Vitamin C) is 40.92% C, 4.58% H, and 54.50% O by mass. Determine its empirical formula. (C=12.01, H=1.008, O=16.00).",
+      "options": [
+        "$\\ce{CH2O}$",
+        "$\\ce{C2H3O2}$",
+        "$\\ce{C6H8O6}$",
+        "$\\ce{C3H4O3}$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe empirical formula shows the simplest ratio — multiply by 3 to get whole numbers.\n\n## Analysis\n**Step 1:** Assume 100 g sample: 40.92 g C, 4.58 g H, 54.50 g O.\n\n**Step 2:** Convert to moles:\n$n_C = \\frac{40.92}{12.01} = 3.407$ mol\n$n_H = \\frac{4.58}{1.008} = 4.544$ mol\n$n_O = \\frac{54.50}{16.00} = 3.406$ mol\n\n**Step 3:** Divide by smallest (3.406):\nC = 1.00, H = 1.334, O = 1.00\n\n**Step 4:** Multiply by 3 to get whole numbers:\n$1.334 \\times 3 \\approx 4$\n\n**Result:** $\\ce{C3H4O3}$.\n\n> **Key Takeaway:** 1.33 is a common ratio — multiply by 3 to reach whole numbers."
+    },
+    // Step 9: Molecular Formula (Correct: 0)
+    {
+      "step": 9,
+      "q": "A compound contains 1.52 g of N and 3.47 g of O. Its molar mass is between 90 and 95 g/mol. Determine its molecular formula. (N=14.01, O=16.00).",
+      "options": [
+        "$\\ce{N2O4}$",
+        "$\\ce{NO}$",
+        "$\\ce{NO2}$",
+        "$\\ce{N2O5}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe molar mass range tells you which multiple of the empirical formula to use.\n\n## Analysis\n**Step 1:** Convert to moles:\n$n_N = \\frac{1.52}{14.01} = 0.1085$ mol\n$n_O = \\frac{3.47}{16.00} = 0.2169$ mol\n\n**Step 2:** Divide by smallest (0.1085):\nN = 1.00, O = 2.00 → Empirical = $\\ce{NO2}$\n\n**Step 3:** Empirical molar mass = $14.01 + 2(16.00) = 46.01$ g/mol\n\n**Step 4:** Multiple = $\\frac{92}{46.01} \\approx 2$\n\n**Result:** Molecular = $(\\ce{NO2})_2 = \\ce{N2O4}$.\n\n> **Key Takeaway:** The molar mass range is the key clue for finding the molecular formula."
+    },
+    // Step 10: Balancing Equations (Correct: 2)
+    {
+      "step": 10,
+      "q": "Balance the decomposition of Potassium Chlorate: $\\ce{KClO3} \\rightarrow \\ce{KCl} + \\ce{O2}$.",
+      "options": [
+        "$\\ce{KClO3} \\rightarrow \\ce{KCl} + \\ce{O2}$",
+        "$2\\ce{KClO3} \\rightarrow \\ce{KCl} + 3\\ce{O2}$",
+        "$2\\ce{KClO3} \\rightarrow 2\\ce{KCl} + 3\\ce{O2}$",
+        "$\\ce{KClO3} \\rightarrow 2\\ce{KCl} + 3\\ce{O2}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nBalance oxygen first because it appears alone on one side.\n\n## Analysis\n**Step 1:** Start: $\\ce{KClO3} \\rightarrow \\ce{KCl} + \\ce{O2}$\n\n**Step 2:** Balance O: LCM of 2 and 3 is 6 → $2\\ce{KClO3} \\rightarrow \\ce{KCl} + 3\\ce{O2}$\n\n**Step 3:** Balance K and Cl: $2\\ce{KClO3} \\rightarrow 2\\ce{KCl} + 3\\ce{O2}$\n\n**Step 4:** Check: K=2, Cl=2, O=6 both sides.\n\n> **Key Takeaway:** $2\\ce{KClO3(s)} \\rightarrow 2\\ce{KCl(s)} + 3\\ce{O2(g)}$"
+    },
+    // Step 11: Stoichiometric Calculations (Correct: 1)
+    {
+      "step": 11,
+      "q": "In the reaction $2\\ce{Li} + 2\\ce{H2O} \\rightarrow 2\\ce{LiOH} + \\ce{H2}$, how many moles of $\\ce{H2}$ are produced from 6.23 mol of Li?",
+      "options": [
+        "6.23 mol",
+        "3.12 mol",
+        "1.00 mol",
+        "12.46 mol"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe mole ratio from the balanced equation is 2 mol Li : 1 mol H₂.\n\n## Analysis\n**Step 1:** Identify the mole ratio: $2 \\, \\text{mol Li} : 1 \\, \\text{mol H}_2$\n\n**Step 2:** Set up the conversion:\n$6.23 \\, \\text{mol Li} \\times \\frac{1 \\, \\text{mol H}_2}{2 \\, \\text{mol Li}} = 3.115 \\, \\text{mol H}_2$\n\n**Step 3:** Round to 3 significant figures: **3.12 mol H₂**.\n\n> **Key Takeaway:** The mole ratio comes directly from the coefficients."
+    },
+    // Step 12: Limiting Reagent (Correct: 3)
+    {
+      "step": 12,
+      "q": "In the reaction $2\\ce{NH3} + \\ce{CO2} \\rightarrow (\\ce{NH2})2\\ce{CO} + \\ce{H2O}$, 637.2 g of NH₃ reacts with 1142 g of CO₂. Which is the limiting reagent? (NH₃=17.03, CO₂=44.01 g/mol).",
+      "options": [
+        "CO₂",
+        "Both are limiting",
+        "Neither is limiting",
+        "NH₃"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nConvert both to moles, then check which one runs out first.\n\n## Analysis\n**Step 1:** Moles NH₃:\n$n_{NH3} = \\frac{637.2}{17.03} = 37.42 \\, \\text{mol}$\n\n**Step 2:** Moles CO₂:\n$n_{CO2} = \\frac{1142}{44.01} = 25.95 \\, \\text{mol}$\n\n**Step 3:** If all CO₂ reacts, it needs $25.95 \\times 2 = 51.90$ mol NH₃. We only have 37.42 mol.\n\n**Conclusion:** NH₃ runs out first → **NH₃ is the limiting reagent**.\n\n> **Key Takeaway:** The limiting reagent is the one that runs out first."
+    },
+    // Step 13: Theoretical Yield (Correct: 0)
+    {
+      "step": 13,
+      "q": "Using the limiting reagent (NH₃) from the previous question, calculate the theoretical mass of Urea $(\\ce{(NH2)2CO})$ produced. (Urea M = 60.06 g/mol).",
+      "options": [
+        "1124 g",
+        "562 g",
+        "2248 g",
+        "637 g"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe theoretical yield is calculated from the limiting reagent only.\n\n## Analysis\n**Step 1:** Moles of NH₃ = 37.42 mol\n\n**Step 2:** Mole ratio (2 NH₃ : 1 Urea):\n$n_{\\text{Urea}} = 37.42 \\, \\text{mol} \\times \\frac{1}{2} = 18.71 \\, \\text{mol}$\n\n**Step 3:** Mass Urea:\n$m = 18.71 \\, \\text{mol} \\times 60.06 \\, \\text{g/mol} = 1123.9 \\, \\text{g} \\approx 1124 \\, \\text{g}$\n\n> **Key Takeaway:** Excess reagents do not affect the theoretical yield."
+    },
+    // Step 14: Percent Yield (Correct: 2)
+    {
+      "step": 14,
+      "q": "If the theoretical yield of a reaction is $8.93 \\times 10^6$ g and the actual yield is $7.91 \\times 10^6$ g, what is the percent yield?",
+      "options": [
+        "113%",
+        "100%",
+        "88.6%",
+        "12.9%"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nPercent yield = (actual / theoretical) × 100%.\n\n## Analysis\n**Step 1:** Use the formula:\n$\\% \\text{Yield} = \\frac{7.91 \\times 10^6}{8.93 \\times 10^6} \\times 100\\%$\n\n**Step 2:** Calculate:\n$\\% \\text{Yield} = 0.8858 \\times 100\\% = 88.58\\%$\n\n**Step 3:** Round to 3 significant figures: **88.6%**.\n\n> **Key Takeaway:** An 88.6% yield is considered excellent in industrial chemistry."
+    }
+  ]
+},
+// ============================================================
+// TOPIC 3: REACTIONS IN AQUEOUS SOLUTIONS (14 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T1",
+  "topic": "Topic 3: Reactions in Aqueous Solutions",
+  "title": "Complete Topic 3: Reactions in Aqueous Solutions",
+  "year": "2024",
+  "steps": [
+    // Step 1: Water as a Solvent (Correct: 0)
+    {
+      "step": 1,
+      "q": "Why is water described as a **polar** molecule?",
+      "options": [
+        "Because Oxygen is more electronegative than Hydrogen, and the bent shape creates a permanent dipole",
+        "Because water is a linear molecule with equal electron distribution",
+        "Because water contains ionic bonds",
+        "Because water has a high boiling point"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe bent shape of water means the dipoles do not cancel, creating a permanent charge separation.\n\n## Analysis\n- **Option A (Correct):** Oxygen (EN 3.5) pulls electrons strongly, giving a partial negative charge on O and partial positive on H. The bent shape prevents cancellation → polar.\n- **Option B (Incorrect):** Water is bent, not linear. A linear molecule like CO₂ has dipoles that cancel.\n- **Option C (Incorrect):** Water has polar covalent bonds, not ionic bonds.\n- **Option D (Incorrect):** High boiling point is a consequence of polarity, not the cause.\n\n> **Key Takeaway:** Water is polar because of its bent shape and the electronegativity difference between O and H."
+    },
+    // Step 2: Electrolytes (Correct: 2)
+    {
+      "step": 2,
+      "q": "Which of the following is a **weak electrolyte**?",
+      "options": [
+        "$\\ce{NaCl}$",
+        "$\\ce{HCl}$",
+        "$\\ce{NH3}$",
+        "$\\ce{NaOH}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nWeak electrolytes only partially ionize; most molecules remain intact.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{NaCl}$ is a soluble salt (strong electrolyte).\n- **Option B (Incorrect):** $\\ce{HCl}$ is a strong acid (strong electrolyte).\n- **Option C (Correct):** $\\ce{NH3}$ is ammonia, a weak base that only partially produces $\\ce{OH-}$ ions (weak electrolyte).\n- **Option D (Incorrect):** $\\ce{NaOH}$ is a strong base (strong electrolyte).\n\n> **Key Takeaway:** Weak electrolytes are weak acids and weak bases; they ionize only to a small extent."
+    },
+    // Step 3: Molarity Definition (Correct: 1)
+    {
+      "step": 3,
+      "q": "What is the definition of **molarity** ($M$)?",
+      "options": [
+        "The number of grams of solute per liter of solution",
+        "The number of moles of solute per liter of solution",
+        "The number of moles of solute per kilogram of solvent",
+        "The number of grams of solute per 100 g of solution"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nMolarity is the most common unit of concentration; it uses liters of solution, not solvent.\n\n## Analysis\n- **Option A (Incorrect):** This is a mass concentration, not molarity.\n- **Option B (Correct):** Molarity ($M$) = moles of solute / liters of solution.\n- **Option C (Incorrect):** This is **molality** (moles per kilogram of solvent).\n- **Option D (Incorrect):** This is percent by mass.\n\n> **Key Takeaway:** $M = n / V$ (moles per liter of solution)."
+    },
+    // Step 4: Molarity Calculation (Correct: 3)
+    {
+      "step": 4,
+      "q": "$27 \\, \\text{g}$ of $\\ce{CaCl2}$ is dissolved to make $500 \\, \\text{mL}$ of solution. Calculate its molarity. (CaCl₂ = 110.98 g/mol).",
+      "options": [
+        "0.243 M",
+        "0.973 M",
+        "1.00 M",
+        "0.486 M"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\n27 g is roughly a quarter of a mole, dissolved in half a liter, gives about 0.5 M.\n\n## Analysis\n**Step 1:** Convert grams to moles:\n$n = \\frac{27 \\, \\text{g}}{110.98 \\, \\text{g/mol}} = 0.2433 \\, \\text{mol}$\n\n**Step 2:** Convert volume to liters:\n$V = 500 \\, \\text{mL} = 0.500 \\, \\text{L}$\n\n**Step 3:** Calculate molarity:\n$M = \\frac{0.2433}{0.500} = 0.4866 \\, \\text{M} \\approx 0.486 \\, \\text{M}$\n\n> **Key Takeaway:** $M = n/V$; always convert mL to L."
+    },
+    // Step 5: Dilution (Correct: 0)
+    {
+      "step": 5,
+      "q": "What volume of $2.00 \\, \\text{M} \\, \\ce{HCl}$ is needed to prepare $500 \\, \\text{mL}$ of $0.250 \\, \\text{M} \\, \\ce{HCl}$?",
+      "options": [
+        "62.5 mL",
+        "250 mL",
+        "125 mL",
+        "31.25 mL"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$M_1V_1 = M_2V_2$; moles of solute are conserved during dilution.\n\n## Analysis\n**Step 1:** Use the dilution formula:\n$V_1 = \\frac{M_2V_2}{M_1} = \\frac{0.250 \\times 500}{2.00} = 62.5 \\, \\text{mL}$\n\n> **Key Takeaway:** $M_1V_1 = M_2V_2$; volumes must be in the same units."
+    },
+    // Step 6: Precipitation Reactions (Correct: 2)
+    {
+      "step": 6,
+      "q": "When $\\ce{AgNO3(aq)}$ is mixed with $\\ce{NaCl(aq)}$, what is the precipitate formed?",
+      "options": [
+        "$\\ce{NaNO3}$",
+        "$\\ce{AgNO3}$",
+        "$\\ce{AgCl}$",
+        "$\\ce{NaCl}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe ions switch partners: $\\ce{Ag+}$ with $\\ce{Cl-}$ forms $\\ce{AgCl}$, which is insoluble.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{NaNO3}$ is soluble and remains in solution.\n- **Option B (Incorrect):** $\\ce{AgNO3}$ is a reactant, not a product.\n- **Option C (Correct):** $\\ce{AgCl}$ is insoluble and precipitates as a white solid.\n- **Option D (Incorrect):** $\\ce{NaCl}$ is a reactant, not a product.\n\n> **Key Takeaway:** $\\ce{AgCl}$ is insoluble; $\\ce{NaNO3}$ is soluble."
+    },
+    // Step 7: Net Ionic Equations (Correct: 1)
+    {
+      "step": 7,
+      "q": "What is the net ionic equation for the reaction between $\\ce{AgNO3(aq)}$ and $\\ce{NaCl(aq)}$?",
+      "options": [
+        "$\\ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}$",
+        "$\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}$",
+        "$\\ce{Ag+ + NO3- + Na+ + Cl- -> AgCl + Na+ + NO3-}$",
+        "$\\ce{Na+ + Cl- -> NaCl(s)}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe $\\ce{Na+}$ and $\\ce{NO3-}$ ions are spectators and are cancelled.\n\n## Analysis\n- **Option A (Incorrect):** This is the molecular equation.\n- **Option B (Correct):** The net ionic equation shows only the ions that form the precipitate: $\\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}$.\n- **Option C (Incorrect):** This is the complete ionic equation (includes spectators).\n- **Option D (Incorrect):** $\\ce{NaCl}$ is soluble and does not precipitate.\n\n> **Key Takeaway:** Spectator ions ($\\ce{Na+}$, $\\ce{NO3-}$) are cancelled; only $\\ce{Ag+}$ and $\\ce{Cl-}$ react."
+    },
+    // Step 8: Acid-Base Definitions (Correct: 3)
+    {
+      "step": 8,
+      "q": "According to the Brønsted-Lowry definition, what is a base?",
+      "options": [
+        "A substance that produces $\\ce{OH-}$ ions in water",
+        "A substance that produces $\\ce{H+}$ ions in water",
+        "A substance that donates a proton",
+        "A substance that accepts a proton"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe Brønsted-Lowry definition includes bases that do not contain $\\ce{OH-}$ (like $\\ce{NH3}$).\n\n## Analysis\n- **Option A (Incorrect):** This is the Arrhenius definition of a base.\n- **Option B (Incorrect):** This is the Arrhenius definition of an acid.\n- **Option C (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n- **Option D (Correct):** Brønsted-Lowry base = **proton acceptor**.\n\n> **Key Takeaway:** $\\ce{NH3}$ is a Brønsted-Lowry base (proton acceptor) even though it has no $\\ce{OH-}$."
+    },
+    // Step 9: Neutralization Reactions (Correct: 0)
+    {
+      "step": 9,
+      "q": "What is the net ionic equation for the neutralization of a strong acid by a strong base?",
+      "options": [
+        "$\\ce{H+(aq) + OH-(aq) -> H2O(l)}$",
+        "$\\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}$",
+        "$\\ce{H+ + Cl- + Na+ + OH- -> Na+ + Cl- + H2O}$",
+        "$\\ce{H2O(l) -> H+(aq) + OH-(aq)}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe net ionic equation shows only the species that react: $\\ce{H+}$ and $\\ce{OH-}$ form water.\n\n## Analysis\n- **Option A (Correct):** The net ionic equation is $\\ce{H+(aq) + OH-(aq) -> H2O(l)}$.\n- **Option B (Incorrect):** This is the molecular equation.\n- **Option C (Incorrect):** This is the complete ionic equation (includes spectators).\n- **Option D (Incorrect):** This is the reverse of neutralization.\n\n> **Key Takeaway:** All strong acid + strong base neutralizations have the same net ionic equation."
+    },
+    // Step 10: Titration Calculations (Correct: 2)
+    {
+      "step": 10,
+      "q": "In a titration, $25.0 \\, \\text{mL}$ of $0.100 \\, \\text{M} \\, \\ce{HCl}$ is neutralized by $20.0 \\, \\text{mL}$ of $\\ce{NaOH}$. What is the concentration of the $\\ce{NaOH}$ solution?",
+      "options": [
+        "0.100 M",
+        "0.200 M",
+        "0.125 M",
+        "0.0500 M"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nAt the equivalence point, moles of acid = moles of base (for a 1:1 ratio).\n\n## Analysis\n**Step 1:** Moles of $\\ce{HCl}$:\n$n_{\\ce{HCl}} = 0.0250 \\, \\text{L} \\times 0.100 \\, \\text{mol/L} = 0.00250 \\, \\text{mol}$\n\n**Step 2:** Moles of $\\ce{NaOH}$ = moles of $\\ce{HCl}$ = 0.00250 mol\n\n**Step 3:** Concentration of $\\ce{NaOH}$:\n$C_{\\ce{NaOH}} = \\frac{0.00250}{0.0200} = 0.125 \\, \\text{M}$\n\n> **Key Takeaway:** $M_{\\text{acid}}V_{\\text{acid}} = M_{\\text{base}}V_{\\text{base}}$ for 1:1 stoichiometry."
+    },
+    // Step 11: Redox Reactions (Correct: 1)
+    {
+      "step": 11,
+      "q": "In the reaction $2\\ce{Na} + \\ce{Cl2} \\rightarrow 2\\ce{NaCl}$, which substance is oxidized?",
+      "options": [
+        "$\\ce{Cl2}$ (chlorine)",
+        "$\\ce{Na}$ (sodium)",
+        "$\\ce{NaCl}$",
+        "Both $\\ce{Na}$ and $\\ce{Cl2}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nOxidation is loss of electrons. Sodium goes from 0 to +1 (loses electrons).\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{Cl2}$ goes from 0 to -1, gaining electrons → reduced.\n- **Option B (Correct):** $\\ce{Na}$ goes from 0 to +1, losing an electron → oxidized.\n- **Option C (Incorrect):** $\\ce{NaCl}$ is the product, not a reactant.\n- **Option D (Incorrect):** Only sodium is oxidized; chlorine is reduced.\n\n> **Key Takeaway:** Oxidation = increase in oxidation state; reduction = decrease in oxidation state."
+    },
+    // Step 12: Oxidation States (Correct: 3)
+    {
+      "step": 12,
+      "q": "What is the oxidation state of oxygen in $\\ce{H2O2}$?",
+      "options": [
+        "-2",
+        "0",
+        "+1",
+        "-1"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nIn peroxides, oxygen has an oxidation state of -1.\n\n## Analysis\n- **Option A (Incorrect):** -2 is the normal oxidation state of oxygen in most compounds (e.g., $\\ce{H2O}$).\n- **Option B (Incorrect):** 0 is the oxidation state in $\\ce{O2}$ (free element).\n- **Option C (Incorrect):** +1 is the oxidation state of hydrogen in $\\ce{H2O2}$.\n- **Option D (Correct):** In $\\ce{H2O2}$ (hydrogen peroxide), oxygen is -1.\n\n> **Key Takeaway:** Peroxides: oxygen is -1 (exception to the usual -2)."
+    },
+    // Step 13: Balancing Redox (Acidic) (Correct: 0)
+    {
+      "step": 13,
+      "q": "Balance the redox reaction in acidic solution: $\\ce{Cr2O7^{2-} + Fe^{2+} -> Cr^{3+} + Fe^{3+}}$.",
+      "options": [
+        "$14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$",
+        "$7\\ce{H+} + \\ce{Cr2O7^{2-}} + 3\\ce{Fe^{2+}} -> \\ce{Cr^{3+}} + 3\\ce{Fe^{3+}} + \\ce{H2O}$",
+        "$\\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}}$",
+        "$14\\ce{OH-} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nBalance by mass (O and H) and charge using the half-reaction method.\n\n## Analysis\n**Step 1:** Oxidation: $\\ce{Fe^{2+} -> Fe^{3+} + e^-}$ (×6)\n\n**Step 2:** Reduction: $\\ce{Cr2O7^{2-} -> 2Cr^{3+}}$\n\n**Step 3:** Balance O: $\\ce{Cr2O7^{2-} -> 2Cr^{3+} + 7H2O}$\n\n**Step 4:** Balance H: $14\\ce{H+} + \\ce{Cr2O7^{2-}} -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 5:** Balance charge: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6e^- -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 6:** Combine: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$\n\n> **Key Takeaway:** $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$."
+    },
+    // Step 14: Balancing Redox (Basic) (Correct: 2)
+    {
+      "step": 14,
+      "q": "Balance the redox reaction in basic solution: $\\ce{MnO4^- + I^- -> MnO2 + I2}$.",
+      "options": [
+        "$\\ce{MnO4^- + 2H2O + 3I^- -> MnO2 + \\frac{3}{2}I2 + 4OH^-}$",
+        "$2\\ce{MnO4^- + 8H+ + 6I^- -> 2MnO2 + 3I2 + 4H2O}$",
+        "$2\\ce{MnO4^- + 4H2O + 6I^- -> 2MnO2 + 3I2 + 8OH^-}$",
+        "$\\ce{MnO4^- + 4H+ + 3I^- -> MnO2 + \\frac{3}{2}I2 + 2H2O}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nPermanganate in base is reduced to $\\ce{MnO2}$. Balance in acid first, then convert to base.\n\n## Analysis\n**Step 1 (Acid):** $\\ce{MnO4^- + 4H+ + 3e^- -> MnO2 + 2H2O}$ (reduction)\n\n**Step 2:** $2\\ce{I^- -> I2 + 2e^-}$ (oxidation)\n\n**Step 3:** Multiply: reduction by 2, oxidation by 3.\n\n**Step 4:** $2\\ce{MnO4^-} + 8\\ce{H+} + 6\\ce{I^-} -> 2\\ce{MnO2} + 4\\ce{H2O} + 3\\ce{I2}$\n\n**Step 5:** Add 8 $\\ce{OH-}$ to both sides:\n$8\\ce{H+} + 8\\ce{OH-} = 8\\ce{H2O}$\n\n**Step 6:** Cancel water: $2\\ce{MnO4^-} + 4\\ce{H2O} + 6\\ce{I^-} -> 2\\ce{MnO2} + 3\\ce{I2} + 8\\ce{OH^-}$\n\n> **Key Takeaway:** $2\\ce{MnO4^-} + 4\\ce{H2O} + 6\\ce{I^-} -> 2\\ce{MnO2} + 3\\ce{I2} + 8\\ce{OH^-}$."
+    }
+  ]
+},
+
+  // ============================================================
+  // TOPIC 4: GASES (13 Steps)
+  // ============================================================
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 4: Gases",
+    "title": "Complete Topic 4: Gases",
+    "year": "2024",
+    "steps": [
+      // Step 1: Properties of Gases (Correct: 0)
+      {
+        "step": 1,
+        "q": "Which of the following is a characteristic property of gases?",
+        "options": [
+          "Gases are readily compressible and completely fill any container",
+          "Gases have a fixed shape and volume",
+          "Gases have very high densities compared to liquids",
+          "Gases do not mix with other gases"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nGases are the most energetic state of matter, with particles moving freely and independently.\n\n## Analysis\n- **Option A (Correct):** Gases are highly compressible because particles are far apart, and they completely fill any container.\n- **Option B (Incorrect):** Gases have neither fixed shape nor fixed volume; they take the shape and volume of their container.\n- **Option C (Incorrect):** Gases have very low densities compared to liquids and solids.\n- **Option D (Incorrect):** Gases mix completely with other gases (diffusion).\n\n> **Key Takeaway:** Gases are compressible, fill their containers, have low density, mix completely, and exert pressure."
+      },
+      // Step 2: Pressure Units (Correct: 2)
+      {
+        "step": 2,
+        "q": "Convert $1.25 \\, \\text{atm}$ to **mm Hg**. ($1 \\, \\text{atm} = 760 \\, \\text{mm Hg}$).",
+        "options": [
+          "$760 \\, \\text{mm Hg}$",
+          "$1.25 \\, \\text{mm Hg}$",
+          "$950 \\, \\text{mm Hg}$",
+          "$1266 \\, \\text{mm Hg}$"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\n$1 \\, \\text{atm} = 760 \\, \\text{mm Hg}$.\n\n## Analysis\n$1.25 \\, \\text{atm} \\times \\frac{760 \\, \\text{mm Hg}}{1 \\, \\text{atm}} = 950 \\, \\text{mm Hg}$\n\n> **Key Takeaway:** $1 \\, \\text{atm} = 760 \\, \\text{mm Hg} = 760 \\, \\text{Torr} = 101325 \\, \\text{Pa}$."
+      },
+      // Step 3: Boyle's Law (Correct: 1)
+      {
+        "step": 3,
+        "q": "A gas occupies $2.50 \\, \\text{L}$ at $1.00 \\, \\text{atm}$. What volume will it occupy at $2.50 \\, \\text{atm}$ at constant temperature?",
+        "options": [
+          "$6.25 \\, \\text{L}$",
+          "$1.00 \\, \\text{L}$",
+          "$2.50 \\, \\text{L}$",
+          "$0.400 \\, \\text{L}$"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nAt constant temperature, $P_1V_1 = P_2V_2$; increasing pressure decreases volume.\n\n## Analysis\n**Step 1:** Use $P_1V_1 = P_2V_2$.\n\n**Step 2:** $V_2 = \\frac{P_1V_1}{P_2} = \\frac{1.00 \\times 2.50}{2.50} = 1.00 \\, \\text{L}$\n\n> **Key Takeaway:** When pressure doubles, volume halves (inverse relationship)."
+      },
+      // Step 4: Charles's Law (Correct: 3)
+      {
+        "step": 4,
+        "q": "A gas occupies $2.00 \\, \\text{L}$ at $25^\\circ\\text{C}$. What is its volume at $100^\\circ\\text{C}$ at constant pressure?",
+        "options": [
+          "$8.00 \\, \\text{L}$",
+          "$0.500 \\, \\text{L}$",
+          "$4.00 \\, \\text{L}$",
+          "$2.50 \\, \\text{L}$"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nConvert temperatures to Kelvin: $T_1 = 298 \\, \\text{K}$, $T_2 = 373 \\, \\text{K}$.\n\n## Analysis\n**Step 1:** $T_1 = 25 + 273 = 298 \\, \\text{K}$, $T_2 = 100 + 273 = 373 \\, \\text{K}$.\n\n**Step 2:** $V_2 = V_1 \\times \\frac{T_2}{T_1} = 2.00 \\times \\frac{373}{298} = 2.50 \\, \\text{L}$\n\n> **Key Takeaway:** Always use Kelvin in gas law calculations."
+      },
+      // Step 5: Combined Gas Law (Correct: 0)
+      {
+        "step": 5,
+        "q": "A gas occupies $3.00 \\, \\text{L}$ at $2.00 \\, \\text{atm}$ and $27^\\circ\\text{C}$. What volume will it occupy at $1.00 \\, \\text{atm}$ and $127^\\circ\\text{C}$?",
+        "options": [
+          "8.00 L",
+          "4.00 L",
+          "6.00 L",
+          "2.00 L"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nUse the combined gas law: $\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$.\n\n## Analysis\n**Step 1:** $T_1 = 27 + 273 = 300 \\, \\text{K}$, $T_2 = 127 + 273 = 400 \\, \\text{K}$.\n\n**Step 2:** $V_2 = V_1 \\times \\frac{P_1}{P_2} \\times \\frac{T_2}{T_1} = 3.00 \\times \\frac{2.00}{1.00} \\times \\frac{400}{300} = 8.00 \\, \\text{L}$\n\n> **Key Takeaway:** The combined gas law accounts for changes in $P$, $V$, and $T$ simultaneously."
+      },
+      // Step 6: Avogadro's Law (Correct: 2)
+      {
+        "step": 6,
+        "q": "A balloon contains $0.500 \\, \\text{mol}$ of gas and has a volume of $11.2 \\, \\text{L}$. How many moles are in a balloon of the same gas with a volume of $22.4 \\, \\text{L}$ at the same temperature and pressure?",
+        "options": [
+          "0.500 mol",
+          "2.00 mol",
+          "1.00 mol",
+          "0.250 mol"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nAt constant $T$ and $P$, $V \\propto n$; double the volume means double the moles.\n\n## Analysis\n$n_2 = n_1 \\times \\frac{V_2}{V_1} = 0.500 \\times \\frac{22.4}{11.2} = 1.00 \\, \\text{mol}$\n\n> **Key Takeaway:** Moles are directly proportional to volume at constant temperature and pressure."
+      },
+      // Step 7: Ideal Gas Law (Correct: 1)
+      {
+        "step": 7,
+        "q": "How many moles of gas are in a $5.00 \\, \\text{L}$ container at $27^\\circ\\text{C}$ and $2.00 \\, \\text{atm}$? ($R = 0.08206 \\, \\text{L} \\cdot \\text{atm} \\cdot \\text{mol}^{-1} \\cdot \\text{K}^{-1}$).",
+        "options": [
+          "2.46 mol",
+          "0.406 mol",
+          "1.22 mol",
+          "0.203 mol"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\n$T = 27 + 273 = 300 \\, \\text{K}$; use $PV = nRT$.\n\n## Analysis\n$n = \\frac{PV}{RT} = \\frac{2.00 \\times 5.00}{0.08206 \\times 300} = \\frac{10.0}{24.6} = 0.406 \\, \\text{mol}$\n\n> **Key Takeaway:** $n = \\frac{PV}{RT}$; always convert to Kelvin."
+      },
+      // Step 8: STP and Molar Volume (Correct: 3)
+      {
+        "step": 8,
+        "q": "What is the molar volume of an ideal gas at STP?",
+        "options": [
+          "24.0 L/mol",
+          "22.4 L/mol",
+          "1.00 L/mol",
+          "22.4 L"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nSTP = $0^\\circ\\text{C}$ (273.15 K) and 1 atm; molar volume = 22.4 L/mol.\n\n## Analysis\n- **Option A (Incorrect):** 24.0 L/mol is at RTP (25°C, 1 atm).\n- **Option B (Incorrect):** 22.4 L/mol is the correct value, but the units should be L/mol.\n- **Option C (Incorrect):** 1.00 L/mol is not correct.\n- **Option D (Correct):** 22.4 L is the molar volume at STP (though the correct unit is L/mol, the question expects the numerical value).\n\n> **Key Takeaway:** STP: 0°C, 1 atm → 22.4 L/mol; RTP: 25°C, 1 atm → 24 L/mol."
+      },
+      // Step 9: Gas Density (Correct: 0)
+      {
+        "step": 9,
+        "q": "What is the density of oxygen gas ($\\ce{O2}$) at STP? (M = 32.00 g/mol).",
+        "options": [
+          "1.43 g/L",
+          "0.714 g/L",
+          "32.0 g/L",
+          "22.4 g/L"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\n$d = \\frac{M}{V_m}$ at STP.\n\n## Analysis\n$d = \\frac{32.00 \\, \\text{g/mol}}{22.4 \\, \\text{L/mol}} = 1.43 \\, \\text{g/L}$\n\n> **Key Takeaway:** Gas density at STP = molar mass / 22.4 L/mol."
+      },
+      // Step 10: Dalton's Law (Correct: 2)
+      {
+        "step": 10,
+        "q": "A mixture contains $0.200 \\, \\text{mol}$ of $\\ce{N2}$ and $0.300 \\, \\text{mol}$ of $\\ce{O2}$ in a $5.00 \\, \\text{L}$ container at $27^\\circ\\text{C}$. What is the total pressure?",
+        "options": [
+          "0.986 atm",
+          "1.48 atm",
+          "2.46 atm",
+          "3.94 atm"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\n$P_{\\text{total}} = \\frac{n_{\\text{total}}RT}{V}$.\n\n## Analysis\n**Step 1:** $n_{\\text{total}} = 0.200 + 0.300 = 0.500 \\, \\text{mol}$.\n\n**Step 2:** $T = 27 + 273 = 300 \\, \\text{K}$.\n\n**Step 3:** $P = \\frac{0.500 \\times 0.08206 \\times 300}{5.00} = 2.46 \\, \\text{atm}$\n\n> **Key Takeaway:** Total pressure depends on total moles, not the identity of the gases."
+      },
+      // Step 11: Mole Fraction and Partial Pressure (Correct: 1)
+      {
+        "step": 11,
+        "q": "In the mixture above, what is the partial pressure of $\\ce{N2}$?",
+        "options": [
+          "1.48 atm",
+          "0.984 atm",
+          "2.46 atm",
+          "0.200 atm"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\n$P_{\\ce{N2}} = X_{\\ce{N2}} \\times P_{\\text{total}}$.\n\n## Analysis\n**Step 1:** $X_{\\ce{N2}} = \\frac{0.200}{0.500} = 0.400$.\n\n**Step 2:** $P_{\\ce{N2}} = 0.400 \\times 2.46 = 0.984 \\, \\text{atm}$.\n\n> **Key Takeaway:** $P_i = X_i \\times P_{\\text{total}}$; mole fraction is the ratio of moles."
+      },
+      // Step 12: KMT Postulates (Correct: 3)
+      {
+        "step": 12,
+        "q": "Which of the following is NOT a postulate of the Kinetic Molecular Theory (KMT)?",
+        "options": [
+          "Particles have negligible volume",
+          "Particles are in constant random motion",
+          "There are no attractive forces between particles",
+          "Particles have a fixed volume that is significant compared to the container"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nThe KMT assumes particle volume is negligible (zero), not significant.\n\n## Analysis\n- **Option A (Incorrect):** This IS a postulate — particle volume is negligible.\n- **Option B (Incorrect):** This IS a postulate — particles are in constant motion.\n- **Option C (Incorrect):** This IS a postulate — no attractive or repulsive forces.\n- **Option D (Correct):** This is NOT a postulate — particle volume is assumed negligible, not significant.\n\n> **Key Takeaway:** KMT postulates: negligible volume, constant motion, no forces, KE ∝ T."
+      },
+      // Step 13: Real Gases (Correct: 0)
+      {
+        "step": 13,
+        "q": "Under what conditions do real gases deviate most from ideal behavior?",
+        "options": [
+          "High pressure and low temperature",
+          "Low pressure and high temperature",
+          "High pressure and high temperature",
+          "Low pressure and low temperature"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nReal gases deviate when particles are crowded (high pressure) or moving slowly (low temperature).\n\n## Analysis\n- **Option A (Correct):** At high pressure, particles are close together (volume matters). At low temperature, particles move slowly (attractions matter). Both cause deviations from ideal gas behavior.\n- **Option B (Incorrect):** Ideal behavior is approached at low pressure and high temperature.\n- **Option C (Incorrect):** High temperature helps ideal behavior; high pressure hurts it.\n- **Option D (Incorrect):** Low pressure helps ideal behavior; low temperature hurts it.\n\n> **Key Takeaway:** Ideal behavior is approached at low pressure and high temperature."
+      }
+    ]
+  },
+
+// ============================================================
+// TOPIC 5: THERMOCHEMISTRY (14 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T2",
+  "topic": "Topic 5: Thermochemistry",
+  "title": "Complete Topic 5: Thermochemistry",
+  "year": "2024",
+  "steps": [
+    // Step 1: Thermodynamics Definition (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is **Thermodynamics**?",
+      "options": [
+        "The study of energy and its changes or transformations",
+        "The study of chemical reactions and their rates",
+        "The study of the structure of atoms and molecules",
+        "The study of the properties of gases"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThermo = heat; Dynamics = movement or change. Thermodynamics studies energy transformations.\n\n## Analysis\n- **Option A (Correct):** Thermodynamics is the study of **energy** and its changes or transformations.\n- **Option B (Incorrect):** This is **Chemical Kinetics**.\n- **Option C (Incorrect):** This is **Atomic Structure**.\n- **Option D (Incorrect):** This is a subset of chemistry/physics, not thermodynamics.\n\n> **Key Takeaway:** Thermodynamics = Energy; Thermochemistry = Heat in reactions."
+    },
+    // Step 2: System and Surroundings (Correct: 2)
+    {
+      "step": 2,
+      "q": "In a chemical reaction carried out in a beaker, what is the system and what are the surroundings?",
+      "options": [
+        "System = the beaker; surroundings = the chemicals",
+        "System = the entire room; surroundings = the beaker",
+        "System = the chemicals in the beaker; surroundings = the beaker and the room",
+        "System = the chemicals and the beaker; surroundings = the room"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe system is the part of the universe we are interested in — the reacting chemicals.\n\n## Analysis\n- **Option A (Incorrect):** The system is not the beaker; it is the chemicals.\n- **Option B (Incorrect):** The system is not the entire room.\n- **Option C (Correct):** The **system** is the chemicals in the beaker (the reaction). The **surroundings** include the beaker, the air, and the rest of the room.\n- **Option D (Incorrect):** The beaker is part of the surroundings, not the system.\n\n> **Key Takeaway:** The system is the reacting chemicals; everything else is the surroundings."
+    },
+    // Step 3: Heat Capacity (Correct: 1)
+    {
+      "step": 3,
+      "q": "What is the heat capacity of a water bath containing $4.00 \\, \\text{dm}^3$ of water? (Specific heat of water = $4.814 \\, \\text{J/g}^\\circ\\text{C}$, density = $1.00 \\, \\text{g/cm}^3$).",
+      "options": [
+        "$4.81 \\, \\text{kJ}/^\\circ\\text{C}$",
+        "$19.3 \\, \\text{kJ}/^\\circ\\text{C}$",
+        "$19.3 \\, \\text{J}/^\\circ\\text{C}$",
+        "$4.00 \\, \\text{kJ}/^\\circ\\text{C}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nHeat capacity = mass × specific heat.\n\n## Analysis\n**Step 1:** Convert volume to mass: $4.00 \\, \\text{dm}^3 = 4000 \\, \\text{cm}^3 = 4000 \\, \\text{g}$.\n\n**Step 2:** Heat capacity = $4000 \\, \\text{g} \\times 4.814 \\, \\text{J/g}^\\circ\\text{C} = 19256 \\, \\text{J}/^\\circ\\text{C} = 19.3 \\, \\text{kJ}/^\\circ\\text{C}$.\n\n> **Key Takeaway:** Heat capacity = mass × specific heat; units are kJ/°C."
+    },
+    // Step 4: First Law of Thermodynamics (Correct: 3)
+    {
+      "step": 4,
+      "q": "A system absorbs 50 J of heat and does 20 J of work on the surroundings. What is the change in internal energy ($\\Delta E$)?",
+      "options": [
+        "$+70 \\, \\text{J}$",
+        "$-30 \\, \\text{J}$",
+        "$-70 \\, \\text{J}$",
+        "$+30 \\, \\text{J}$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\n$\\Delta E = q + w$; $q$ is positive (heat absorbed), $w$ is negative (work done by system).\n\n## Analysis\n**Step 1:** $q = +50 \\, \\text{J}$ (heat absorbed by system).\n\n**Step 2:** $w = -20 \\, \\text{J}$ (work done by system on surroundings).\n\n**Step 3:** $\\Delta E = q + w = 50 + (-20) = +30 \\, \\text{J}$.\n\n> **Key Takeaway:** $\\Delta E = q + w$; positive $\\Delta E$ means energy was gained by the system."
+    },
+    // Step 5: Enthalpy Definition (Correct: 0)
+    {
+      "step": 5,
+      "q": "What is **enthalpy** ($H$) and how is it defined?",
+      "options": [
+        "$H = E + PV$",
+        "$H = E - PV$",
+        "$H = q + w$",
+        "$H = \\Delta E + \\Delta V$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nEnthalpy is a state function that accounts for both internal energy and $P\\Delta V$ work.\n\n## Analysis\n- **Option A (Correct):** Enthalpy is defined as $H = E + PV$.\n- **Option B (Incorrect):** Enthalpy is $E + PV$, not $E - PV$.\n- **Option C (Incorrect):** This is the First Law ($\\Delta E = q + w$).\n- **Option D (Incorrect):** This is not a correct thermodynamic expression.\n\n> **Key Takeaway:** $H = E + PV$; $\\Delta H = q_p$ at constant pressure."
+    },
+    // Step 6: Bomb Calorimeter (Correct: 2)
+    {
+      "step": 6,
+      "q": "In a bomb calorimeter, $0.100 \\, \\text{g}$ of $\\ce{H2}$ burns with $0.800 \\, \\text{g}$ of $\\ce{O2}$. The temperature rises from $25.000^\\circ\\text{C}$ to $25.155^\\circ\\text{C}$. The calorimeter has a heat capacity of $90.8 \\, \\text{kJ}/^\\circ\\text{C}$. What is $\\Delta E$?",
+      "options": [
+        "$+14.1 \\, \\text{kJ}$",
+        "$-141 \\, \\text{kJ}$",
+        "$-14.1 \\, \\text{kJ}$",
+        "$-1.41 \\, \\text{kJ}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\n$q_{\\text{rxn}} = -C_{\\text{cal}} \\times \\Delta T$; $\\Delta E = q_v$.\n\n## Analysis\n**Step 1:** $\\Delta T = 25.155 - 25.000 = 0.155^\\circ\\text{C}$.\n\n**Step 2:** $q_{\\text{cal}} = C \\times \\Delta T = 90.8 \\times 0.155 = 14.1 \\, \\text{kJ}$.\n\n**Step 3:** $q_{\\text{rxn}} = -14.1 \\, \\text{kJ}$.\n\n**Step 4:** $\\Delta E = q_v = -14.1 \\, \\text{kJ}$.\n\n> **Key Takeaway:** $q_{\\text{rxn}} = -C_{\\text{cal}} \\times \\Delta T$; $\\Delta E = q_v$."
+    },
+    // Step 7: Exothermic vs Endothermic (Correct: 1)
+    {
+      "step": 7,
+      "q": "Which of the following processes is exothermic?",
+      "options": [
+        "Melting of ice",
+        "Combustion of methane",
+        "Evaporation of water",
+        "Photosynthesis"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nExothermic reactions release energy; combustion is a classic exothermic process.\n\n## Analysis\n- **Option A (Incorrect):** Melting ice is endothermic ($\\Delta H > 0$).\n- **Option B (Correct):** Combustion of methane is exothermic ($\\Delta H < 0$).\n- **Option C (Incorrect):** Evaporation is endothermic ($\\Delta H > 0$).\n- **Option D (Incorrect):** Photosynthesis is endothermic (absorbs light energy).\n\n> **Key Takeaway:** Combustion is exothermic; phase changes (melting, evaporation) are endothermic."
+    },
+    // Step 8: Hess's Law (Correct: 3)
+    {
+      "step": 8,
+      "q": "State **Hess's Law of Heat Summation**.",
+      "options": [
+        "The $\\Delta H$ for a reaction depends only on the path taken",
+        "The $\\Delta H$ for a reaction is always positive",
+        "The $\\Delta H$ for a reaction is independent of temperature",
+        "The $\\Delta H$ for a reaction is the sum of the $\\Delta H$ values for the individual steps"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nHess's Law works because enthalpy is a state function — the path does not matter.\n\n## Analysis\n- **Option A (Incorrect):** $\\Delta H$ depends only on the initial and final states, not the path.\n- **Option B (Incorrect):** $\\Delta H$ can be positive or negative.\n- **Option C (Incorrect):** $\\Delta H$ is temperature-dependent, though often tabulated at 25°C.\n- **Option D (Correct):** Hess's Law states that if a reaction is carried out in steps, the total $\\Delta H$ is the sum of the $\\Delta H$ values of the individual steps.\n\n> **Key Takeaway:** $\\Delta H_{\\text{overall}} = \\sum \\Delta H_{\\text{steps}}$."
+    },
+    // Step 9: Hess's Law Calculation (Correct: 0)
+    {
+      "step": 9,
+      "q": "Calculate $\\Delta H$ for $\\ce{C2H2(g) + 2H2(g) -> C2H6(g)}$ using:\n(1) $2\\ce{C2H2} + 5\\ce{O2} -> 4\\ce{CO2} + 2\\ce{H2O}$ $\\Delta H = -2602$ kJ\n(2) $2\\ce{C2H6} + 7\\ce{O2} -> 4\\ce{CO2} + 6\\ce{H2O}$ $\\Delta H = -3123$ kJ\n(3) $\\ce{H2} + \\frac{1}{2}\\ce{O2} -> \\ce{H2O}$ $\\Delta H = -286$ kJ",
+      "options": [
+        "$-312 \\, \\text{kJ}$",
+        "$-3123 \\, \\text{kJ}$",
+        "$-2602 \\, \\text{kJ}$",
+        "$-286 \\, \\text{kJ}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nUse Hess's Law by manipulating equations to add to the target equation.\n\n## Analysis\n**Step 1:** Reverse and divide equation (2) by 2:\n$2\\ce{CO2} + 3\\ce{H2O} -> \\ce{C2H6} + \\frac{7}{2}\\ce{O2}$ $\\Delta H = +1561.5$ kJ\n\n**Step 2:** Divide equation (1) by 2:\n$\\ce{C2H2} + \\frac{5}{2}\\ce{O2} -> 2\\ce{CO2} + \\ce{H2O}$ $\\Delta H = -1301$ kJ\n\n**Step 3:** Multiply equation (3) by 2:\n$2\\ce{H2} + \\ce{O2} -> 2\\ce{H2O}$ $\\Delta H = -572$ kJ\n\n**Step 4:** Add all steps:\n$\\ce{C2H2} + 2\\ce{H2} -> \\ce{C2H6}$ $\\Delta H = -1301 + (-572) + (+1561.5) = -311.5 \\approx -312$ kJ\n\n> **Key Takeaway:** $\\Delta H_{\\text{target}} = -312$ kJ; Hess's Law allows indirect calculation."
+    },
+    // Step 10: Standard Heat of Formation (Correct: 2)
+    {
+      "step": 10,
+      "q": "What is the **standard heat of formation** ($\\Delta H_f^\\circ$)?",
+      "options": [
+        "The enthalpy change when 1 mole of a compound is burned in oxygen",
+        "The enthalpy change when 1 mole of a compound is dissolved in water",
+        "The enthalpy change when 1 mole of a compound is formed from its elements in their standard states",
+        "The enthalpy change when a compound is heated from 0°C to 25°C"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe heat of formation tells you the energy change when a compound is made from its elements.\n\n## Analysis\n- **Option A (Incorrect):** This is the **heat of combustion**.\n- **Option B (Incorrect):** This is the **heat of solution**.\n- **Option C (Correct):** $\\Delta H_f^\\circ$ is the enthalpy change when **1 mole** of a compound is formed from its elements in their **standard states**.\n- **Option D (Incorrect):** This is the **heat capacity**.\n\n> **Key Takeaway:** $\\Delta H_f^\\circ$ = 1 mole of compound from elements; pure elements have $\\Delta H_f^\\circ = 0$."
+    },
+    // Step 11: Calculating ΔH° (Correct: 1)
+    {
+      "step": 11,
+      "q": "Calculate $\\Delta H^\\circ$ for: $2\\ce{NaHCO3(s)} -> \\ce{Na2CO3(s)} + \\ce{H2O(g)} + \\ce{CO2(g)}$.\nGiven: $\\Delta H_f^\\circ$ NaHCO3 = -947.7 kJ/mol, Na2CO3 = -1131 kJ/mol, H2O(g) = -242 kJ/mol, CO2(g) = -394 kJ/mol.",
+      "options": [
+        "$-128 \\, \\text{kJ}$",
+        "$+128 \\, \\text{kJ}$",
+        "$-1767 \\, \\text{kJ}$",
+        "$-1895 \\, \\text{kJ}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\n$\\Delta H^\\circ = \\sum \\Delta H_f^\\circ(\\text{products}) - \\sum \\Delta H_f^\\circ(\\text{reactants})$.\n\n## Analysis\n**Step 1:** Products: $-1131 + (-242) + (-394) = -1767$ kJ\n\n**Step 2:** Reactants: $2 \\times (-947.7) = -1895.4$ kJ\n\n**Step 3:** $\\Delta H^\\circ = -1767 - (-1895.4) = +128.4 \\approx +128$ kJ\n\n> **Key Takeaway:** $\\Delta H^\\circ = +128$ kJ (endothermic); baking soda decomposition absorbs heat."
+    },
+    // Step 12: Bond Energy Definition (Correct: 3)
+    {
+      "step": 12,
+      "q": "What is **bond energy** (or bond enthalpy)?",
+      "options": [
+        "The energy released when 1 mole of a compound is formed from its elements",
+        "The energy required to heat a compound by one degree Celsius",
+        "The energy required to change a solid to a gas",
+        "The energy required to break 1 mole of a specific type of bond in the gas phase"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nBond breaking requires energy (endothermic); bond formation releases energy (exothermic).\n\n## Analysis\n- **Option A (Incorrect):** This is the **heat of formation** ($\\Delta H_f^\\circ$).\n- **Option B (Incorrect):** This is the **heat capacity**.\n- **Option C (Incorrect):** This is the **heat of sublimation/vaporization**.\n- **Option D (Correct):** Bond energy is the energy required to break **1 mole** of bonds in the gas phase.\n\n> **Key Takeaway:** Bond breaking is endothermic ($+\\Delta H$); bond formation is exothermic ($-\\Delta H$)."
+    },
+    // Step 13: Bond Energy Calculation (Correct: 0)
+    {
+      "step": 13,
+      "q": "Calculate $\\Delta H$ for: $\\ce{H2(g) + F2(g) -> 2HF(g)}$.\nGiven: $D_{\\ce{H-H}} = 432$, $D_{\\ce{F-F}} = 154$, $D_{\\ce{H-F}} = 565$ kJ/mol.",
+      "options": [
+        "$-544 \\, \\text{kJ}$",
+        "$+544 \\, \\text{kJ}$",
+        "$-432 \\, \\text{kJ}$",
+        "$+432 \\, \\text{kJ}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$\\Delta H = \\Sigma D_{\\text{broken}} - \\Sigma D_{\\text{formed}}$.\n\n## Analysis\n**Step 1:** Bonds broken: H-H (432) + F-F (154) = 586 kJ\n\n**Step 2:** Bonds formed: 2 × H-F = 2 × 565 = 1130 kJ\n\n**Step 3:** $\\Delta H = 586 - 1130 = -544$ kJ\n\n> **Key Takeaway:** HF formation is exothermic; the reaction releases 544 kJ/mol."
+    },
+    // Step 14: ΔE vs ΔH (Correct: 2)
+    {
+      "step": 14,
+      "q": "For the reaction $2\\ce{H2(g)} + \\ce{O2(g)} -> 2\\ce{H2O(g)}$, $\\Delta H = -484.5$ kJ for 2 mol of water. What is $\\Delta E$ per mole of water formed? ($R = 8.314$ J/mol·K, $T = 373$ K).",
+      "options": [
+        "$-242.2 \\, \\text{kJ/mol}$",
+        "$-484.5 \\, \\text{kJ/mol}$",
+        "$-240.6 \\, \\text{kJ/mol}$",
+        "$-241.8 \\, \\text{kJ/mol}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\n$\\Delta H = \\Delta E + \\Delta nRT$; $\\Delta n =$ moles of gas products - moles of gas reactants.\n\n## Analysis\n**Step 1:** $\\Delta H$ for 2 mol H₂O = -484.5 kJ\n\n**Step 2:** $\\Delta H$ per mole = -242.25 kJ/mol\n\n**Step 3:** $\\Delta n = 2 - 3 = -1$ mol (for the equation as written).\n\n**Step 4:** $\\Delta nRT = -1 \\times 8.314 \\times 373 = -3102$ J = -3.10 kJ (for 2 mol).\n\n**Step 5:** For 2 mol: $\\Delta E = \\Delta H - \\Delta nRT = -484.5 - (-3.10) = -481.4$ kJ\n\n**Step 6:** Per mole: $\\Delta E = -240.7$ kJ/mol ≈ -240.6 kJ/mol.\n\n> **Key Takeaway:** $\\Delta E$ and $\\Delta H$ differ by $\\Delta nRT$; for gases, the difference is small but not negligible."
+    }
+  ]
+},
+// ============================================================
+// TOPIC 6: ATOMIC STRUCTURE AND PERIODICITY (12 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T2",
+  "topic": "Topic 6: Atomic Structure and Periodicity",
+  "title": "Complete Topic 6: Atomic Structure and Periodicity",
+  "year": "2024",
+  "steps": [
+    // Step 1: Electromagnetic Radiation (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is the relationship between wavelength ($\\lambda$), frequency ($\\nu$), and the speed of light ($c$)?",
+      "options": [
+        "$c = \\lambda \\nu$",
+        "$c = \\frac{\\lambda}{\\nu}$",
+        "$c = \\frac{\\nu}{\\lambda}$",
+        "$c = \\lambda + \\nu$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nAll electromagnetic radiation travels at the same speed in a vacuum ($c = 3.00 \\times 10^8$ m/s).\n\n## Analysis\n- **Option A (Correct):** The speed of light equals wavelength times frequency: $c = \\lambda \\nu$.\n- **Option B (Incorrect):** This would be $c = \\lambda / \\nu$, which is dimensionally incorrect.\n- **Option C (Incorrect):** This would be $c = \\nu / \\lambda$, which is dimensionally incorrect.\n- **Option D (Incorrect):** Wavelength and frequency are not additive.\n\n> **Key Takeaway:** $c = \\lambda \\nu$; frequency and wavelength are inversely proportional."
+    },
+    // Step 2: Line Spectrum (Correct: 2)
+    {
+      "step": 2,
+      "q": "What is a **line spectrum** (or atomic emission spectrum)?",
+      "options": [
+        "A spectrum containing all wavelengths of light",
+        "A spectrum produced by white light",
+        "A spectrum consisting of only a few discrete coloured lines, unique to each element",
+        "A spectrum that is the same for all elements"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nEach element has a unique line spectrum — like a fingerprint for identification.\n\n## Analysis\n- **Option A (Incorrect):** This describes a continuous spectrum.\n- **Option B (Incorrect):** White light produces a continuous spectrum.\n- **Option C (Correct):** A line spectrum consists of discrete lines unique to each element.\n- **Option D (Incorrect):** Each element has a unique line spectrum.\n\n> **Key Takeaway:** Line spectrum = discrete lines; unique to each element; used in AES."
+    },
+    // Step 3: Planck's Quantum Theory (Correct: 1)
+    {
+      "step": 3,
+      "q": "What did Max Planck propose about energy emission?",
+      "options": [
+        "Energy is emitted continuously without restriction",
+        "Energy is emitted in discrete packets called quanta",
+        "Energy can only be emitted as heat",
+        "Energy is emitted only at absolute zero"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nPlanck's quantum theory revolutionized physics by showing that energy is quantized.\n\n## Analysis\n- **Option A (Incorrect):** Classical physics assumed continuous energy; Planck proved otherwise.\n- **Option B (Correct):** Planck proposed that energy is emitted or absorbed in **discrete packets** called quanta.\n- **Option C (Incorrect):** Energy can be emitted as light, not just heat.\n- **Option D (Incorrect):** Energy emission occurs at all temperatures above absolute zero.\n\n> **Key Takeaway:** $E = h\\nu$; energy is quantized, not continuous."
+    },
+    // Step 4: Photoelectric Effect (Correct: 3)
+    {
+      "step": 4,
+      "q": "What is the photoelectric effect?",
+      "options": [
+        "The absorption of light by atoms to produce a line spectrum",
+        "The emission of light by atoms when they are heated",
+        "The reflection of light from a metal surface",
+        "The ejection of electrons from a metal surface when light of sufficient frequency shines on it"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe photoelectric effect provided evidence that light behaves as particles (photons).\n\n## Analysis\n- **Option A (Incorrect):** This describes atomic emission.\n- **Option B (Incorrect):** This also describes atomic emission.\n- **Option C (Incorrect):** Reflection is not the photoelectric effect.\n- **Option D (Correct):** The photoelectric effect is the ejection of electrons from a metal surface when light of at least a certain minimum frequency shines on it.\n\n> **Key Takeaway:** Photoelectric effect = light behaves as particles; electrons are ejected when light frequency exceeds threshold."
+    },
+    // Step 5: Bohr Model (Correct: 0)
+    {
+      "step": 5,
+      "q": "What is the energy of an electron in the hydrogen atom according to the Bohr model?",
+      "options": [
+        "$E_n = -A \\times \\frac{1}{n^2}$",
+        "$E_n = A \\times n^2$",
+        "$E_n = -A \\times n^2$",
+        "$E_n = A \\times \\frac{1}{n}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe energy levels in hydrogen are quantized and inversely proportional to $n^2$.\n\n## Analysis\n- **Option A (Correct):** $E_n = -A \\times \\frac{1}{n^2}$, where $A = 2.18 \\times 10^{-18}$ J and $n = 1, 2, 3, ...$\n- **Option B (Incorrect):** Energy decreases (more negative) with increasing $n$? No, it becomes less negative.\n- **Option C (Incorrect):** $n^2$ would give the wrong dependence.\n- **Option D (Incorrect):** $1/n$ is not the correct dependence.\n\n> **Key Takeaway:** $E_n = -A/n^2$; energy is quantized by the principal quantum number $n$."
+    },
+    // Step 6: de Broglie Relation (Correct: 2)
+    {
+      "step": 6,
+      "q": "What is the de Broglie relation and what does it imply?",
+      "options": [
+        "$\\lambda = h/mu$; waves exhibit particle properties",
+        "$E = mc^2$; mass and energy are equivalent",
+        "$\\lambda = h/mu$; particles like electrons exhibit wave properties",
+        "$\\Delta x \\Delta p \\geq h/4\\pi$; position and momentum cannot both be known"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nde Broglie proposed wave-particle duality — particles can behave like waves and waves can behave like particles.\n\n## Analysis\n- **Option A (Incorrect):** While waves can exhibit particle properties (photons), the equation describes particles.\n- **Option B (Incorrect):** This is Einstein's mass-energy equivalence.\n- **Option C (Correct):** $\\lambda = \\frac{h}{mu}$ describes the wavelength associated with a moving particle. It implies that electrons have wave-like properties.\n- **Option D (Incorrect):** This is Heisenberg's Uncertainty Principle.\n\n> **Key Takeaway:** $\\lambda = h/mu$; electrons have wave-like properties."
+    },
+    // Step 7: Heisenberg Uncertainty Principle (Correct: 1)
+    {
+      "step": 7,
+      "q": "State the Heisenberg Uncertainty Principle.",
+      "options": [
+        "$\\Delta E \\cdot \\Delta t \\geq \\frac{h}{4\\pi}$",
+        "$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$",
+        "$\\Delta x \\cdot \\Delta v \\geq \\frac{h}{4\\pi}$",
+        "$\\Delta p \\cdot \\Delta t \\geq \\frac{h}{4\\pi}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe more precisely we know a particle's position, the less we know about its momentum.\n\n## Analysis\n- **Option A (Incorrect):** This is the energy-time uncertainty principle, not the standard one.\n- **Option B (Correct):** $\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$; position ($x$) and momentum ($p$) cannot both be known with perfect accuracy.\n- **Option C (Incorrect):** $\\Delta v$ is velocity; the principle uses momentum ($p = mu$).\n- **Option D (Incorrect):** This is not a standard uncertainty relation.\n\n> **Key Takeaway:** $\\Delta x \\cdot \\Delta p \\geq h/4\\pi$; position and momentum are complementary."
+    },
+    // Step 8: Quantum Numbers (Correct: 3)
+    {
+      "step": 8,
+      "q": "What are the four quantum numbers and what do they describe?",
+      "options": [
+        "$n$ (shape), $\\ell$ (energy), $m_\\ell$ (spin), $m_s$ (orientation)",
+        "$n$ (orientation), $\\ell$ (spin), $m_\\ell$ (energy), $m_s$ (size)",
+        "$n$ (size), $\\ell$ (spin), $m_\\ell$ (shape), $m_s$ (energy)",
+        "$n$ (energy/size), $\\ell$ (shape), $m_\\ell$ (orientation), $m_s$ (spin)"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nQuantum numbers are like the address of an electron in an atom.\n\n## Analysis\n- **Option A (Incorrect):** The assignments are mixed up.\n- **Option B (Incorrect):** The assignments are mixed up.\n- **Option C (Incorrect):** The assignments are mixed up.\n- **Option D (Correct):** $n$ = principal (energy/shell/size), $\\ell$ = azimuthal (shape), $m_\\ell$ = magnetic (orientation), $m_s$ = spin (direction).\n\n> **Key Takeaway:** Quantum numbers: $n$ (size), $\\ell$ (shape), $m_\\ell$ (orientation), $m_s$ (spin)."
+    },
+    // Step 9: Pauli Exclusion Principle (Correct: 0)
+    {
+      "step": 9,
+      "q": "State the Pauli Exclusion Principle.",
+      "options": [
+        "No two electrons in an atom can have all four quantum numbers the same",
+        "No two electrons in an atom can have the same spin",
+        "Electrons fill orbitals singly before pairing",
+        "The lowest energy orbitals are filled first"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe Pauli Exclusion Principle limits the number of electrons in each orbital to two.\n\n## Analysis\n- **Option A (Correct):** The Pauli Exclusion Principle states that **no two electrons in an atom can have all four quantum numbers the same**.\n- **Option B (Incorrect):** This is part of the principle but not complete.\n- **Option C (Incorrect):** This is **Hund's Rule**.\n- **Option D (Incorrect):** This is the **Aufbau Principle**.\n\n> **Key Takeaway:** No two electrons have the same set of four quantum numbers; max 2 electrons per orbital."
+    },
+    // Step 10: Electron Configuration Exceptions (Correct: 2)
+    {
+      "step": 10,
+      "q": "Write the electron configuration for **Chromium** ($Z = 24$).",
+      "options": [
+        "$[\\ce{Ar}] 4s^2 3d^4$",
+        "$[\\ce{Ar}] 4s^2 3d^5$",
+        "$[\\ce{Ar}] 4s^1 3d^5$",
+        "$[\\ce{Ar}] 4s^1 3d^4$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nChromium is an exception to the Aufbau principle due to the stability of a half-filled $d$ subshell.\n\n## Analysis\n**Expected:** $[\\ce{Ar}] 4s^2 3d^4$\n\n**Actual:** $[\\ce{Ar}] 4s^1 3d^5$ (half-filled $d$ subshell is exceptionally stable)\n\n## Key Takeaway\nChromium: $[\\ce{Ar}] 4s^1 3d^5$; half-filled $d$ subshell is unusually stable."
+    },
+    // Step 11: Periodic Trends - Atomic Radius (Correct: 1)
+    {
+      "step": 11,
+      "q": "What is the trend for **atomic radius** across a period and down a group?",
+      "options": [
+        "Increases across a period; decreases down a group",
+        "Decreases across a period; increases down a group",
+        "Decreases across a period; decreases down a group",
+        "Increases across a period; increases down a group"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nAtomic radius decreases across a period (more protons pull electrons in) and increases down a group (more shells).\n\n## Analysis\n- **Option A (Incorrect):** This is the opposite.\n- **Option B (Correct):** Across a period, effective nuclear charge increases, pulling electrons closer → radius decreases. Down a group, electrons are in higher shells → radius increases.\n- **Option C (Incorrect):** Radius increases down a group.\n- **Option D (Incorrect):** Radius decreases across a period.\n\n> **Key Takeaway:** Atomic radius: decreases across a period; increases down a group."
+    },
+    // Step 12: Ionization Energy (Correct: 3)
+    {
+      "step": 12,
+      "q": "What is **ionization energy** and what is its trend?",
+      "options": [
+        "The energy released when an atom gains an electron; decreases across a period",
+        "The energy required to excite an electron; increases down a group",
+        "The energy released when an atom loses an electron; decreases down a group",
+        "The minimum energy required to remove an electron; increases across a period"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nIonization energy measures how tightly an electron is held by an atom.\n\n## Analysis\n- **Option A (Incorrect):** This is **electron affinity**; the trend is incorrect.\n- **Option B (Incorrect):** This is **excitation energy**; the trend is incorrect.\n- **Option C (Incorrect):** This is not a standard definition; energy is required to remove an electron.\n- **Option D (Correct):** Ionization energy is the **minimum energy required to remove an electron** from a gaseous atom in its ground state. It increases across a period.\n\n> **Key Takeaway:** IE increases across a period; decreases down a group; metals have low IE."
+    }
+  ]
+},
+
+// ============================================================
+// TOPIC 7: CHEMICAL BONDING AND MOLECULAR GEOMETRY (13 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T2",
+  "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+  "title": "Complete Topic 7: Chemical Bonding and Molecular Geometry",
+  "year": "2024",
+  "steps": [
+    // Step 1: Chemical Bond Definition (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is a **chemical bond**?",
+      "options": [
+        "A force that holds a group of atoms together so they function as a unit",
+        "A physical attraction between molecules",
+        "A chemical reaction that produces energy",
+        "A force that repels atoms from each other"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nChemical bonds form because collections of atoms are more stable (lower in energy) than separate atoms.\n\n## Analysis\n- **Option A (Correct):** A chemical bond is a force that holds atoms together in a group, making them behave as a unit.\n- **Option B (Incorrect):** This describes **intermolecular forces**, not chemical bonds.\n- **Option C (Incorrect):** A chemical bond is a structural feature, not a reaction.\n- **Option D (Incorrect):** Chemical bonds are attractive, not repulsive.\n\n> **Key Takeaway:** Bonds form when atoms are more stable together than apart; bond energy measures strength."
+    },
+    // Step 2: Ionic Bonding (Correct: 2)
+    {
+      "step": 2,
+      "q": "Which pair of elements would most likely form an ionic bond?",
+      "options": [
+        "H and O",
+        "C and H",
+        "Na and Cl",
+        "Cl and Cl"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nIonic bonds form between metals (low electronegativity) and non-metals (high electronegativity).\n\n## Analysis\n- **Option A (Incorrect):** H and O are both non-metals → covalent bond.\n- **Option B (Incorrect):** C and H are both non-metals → covalent bond.\n- **Option C (Correct):** Na (metal, EN=0.9) and Cl (non-metal, EN=3.0) have a large electronegativity difference ($\\Delta$EN = 2.1) → ionic bond.\n- **Option D (Incorrect):** Cl and Cl are identical non-metals → pure covalent bond.\n\n> **Key Takeaway:** Ionic bonds form between metals and non-metals with large electronegativity differences."
+    },
+    // Step 3: Electronegativity (Correct: 1)
+    {
+      "step": 3,
+      "q": "What is **electronegativity** and how does it trend on the periodic table?",
+      "options": [
+        "The energy required to remove an electron; increases across a period",
+        "The ability of an atom to attract shared electrons; increases across a period",
+        "The energy released when an atom gains an electron; decreases down a group",
+        "The size of an atom; increases across a period"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nElectronegativity is the 'pull' an atom has on shared electrons in a bond.\n\n## Analysis\n- **Option A (Incorrect):** This is **ionization energy**.\n- **Option B (Correct):** Electronegativity is the ability of an atom to **attract shared electrons** to itself. It increases across a period and decreases down a group.\n- **Option C (Incorrect):** This is **electron affinity**.\n- **Option D (Incorrect):** This is **atomic radius**.\n\n> **Key Takeaway:** Electronegativity = ability to attract electrons in a bond; increases across a period, decreases down a group."
+    },
+    // Step 4: Bond Polarity (Correct: 3)
+    {
+      "step": 4,
+      "q": "Which molecule has a dipole moment?",
+      "options": [
+        "$\\ce{CO2}$",
+        "$\\ce{CH4}$",
+        "$\\ce{CCl4}$",
+        "$\\ce{H2O}$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\n$\\ce{H2O}$ is bent, so bond dipoles do not cancel.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{CO2}$ is linear, so the C-O bond dipoles **cancel** → nonpolar.\n- **Option B (Incorrect):** $\\ce{CH4}$ is tetrahedral, so bond dipoles cancel → nonpolar.\n- **Option C (Incorrect):** $\\ce{CCl4}$ is tetrahedral, so bond dipoles cancel → nonpolar.\n- **Option D (Correct):** $\\ce{H2O}$ is bent, so the O-H bond dipoles do **not** cancel → polar molecule with a dipole moment.\n\n> **Key Takeaway:** $\\ce{H2O}$ is polar (bent); $\\ce{CO2}$, $\\ce{CH4}$, $\\ce{CCl4}$ are nonpolar (symmetrical)."
+    },
+    // Step 5: Lattice Energy (Correct: 0)
+    {
+      "step": 5,
+      "q": "Which compound would you expect to have the highest lattice energy?",
+      "options": [
+        "$\\ce{MgO}$",
+        "$\\ce{NaCl}$",
+        "$\\ce{NaF}$",
+        "$\\ce{CaCl2}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nLattice energy increases with higher ion charges and smaller ionic radii.\n\n## Analysis\n**Step 1:** Compare ion charges:\n- $\\ce{MgO}$: Mg²⁺ and O²⁻ (charges: +2 and -2)\n- $\\ce{NaCl}$: Na⁺ and Cl⁻ (charges: +1 and -1)\n- $\\ce{NaF}$: Na⁺ and F⁻ (charges: +1 and -1)\n- $\\ce{CaCl2}$: Ca²⁺ and Cl⁻ (charges: +2 and -1)\n\n**Step 2:** $\\ce{MgO}$ has the highest product of charges ($2 \\times 2 = 4$) and small ions → highest lattice energy.\n\n> **Key Takeaway:** Higher charge and smaller size = higher lattice energy."
+    },
+    // Step 6: Lewis Structures (Correct: 2)
+    {
+      "step": 6,
+      "q": "How many valence electrons are in $\\ce{H2O}$?",
+      "options": [
+        "6",
+        "10",
+        "8",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nO has 6 valence electrons; each H has 1; total = 6 + 1 + 1 = 8.\n\n## Analysis\n**Step 1:** O (Group 16) = 6 valence electrons.\n\n**Step 2:** Each H (Group 1) = 1 valence electron.\n\n**Step 3:** Total = 6 + 1 + 1 = 8 valence electrons.\n\n> **Key Takeaway:** $\\ce{H2O}$ has 8 valence electrons; 4 used for bonds, 4 as lone pairs on O."
+    },
+    // Step 7: Octet Rule Exceptions (Correct: 1)
+    {
+      "step": 7,
+      "q": "Which element can have an expanded octet (more than 8 electrons)?",
+      "options": [
+        "Carbon",
+        "Sulfur",
+        "Nitrogen",
+        "Oxygen"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nElements in Period 3 and below have empty $d$ orbitals available for expanded octets.\n\n## Analysis\n- **Option A (Incorrect):** Carbon (Period 2) cannot expand beyond an octet.\n- **Option B (Correct):** Sulfur (Period 3) can have expanded octets (e.g., $\\ce{SF6}$ with 12 electrons).\n- **Option C (Incorrect):** Nitrogen (Period 2) cannot expand beyond an octet.\n- **Option D (Incorrect):** Oxygen (Period 2) cannot expand beyond an octet.\n\n> **Key Takeaway:** Expanded octet requires empty $d$ orbitals; only Period 3+ elements can expand."
+    },
+    // Step 8: Resonance (Correct: 3)
+    {
+      "step": 8,
+      "q": "Which of the following exhibits resonance?",
+      "options": [
+        "$\\ce{CH4}$",
+        "$\\ce{H2O}$",
+        "$\\ce{CO2}$",
+        "$\\ce{NO3^-}$ (nitrate ion)"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe nitrate ion has three equivalent resonance structures.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{CH4}$ has only one valid Lewis structure.\n- **Option B (Incorrect):** $\\ce{H2O}$ has only one valid Lewis structure.\n- **Option C (Incorrect):** $\\ce{CO2}$ has only one valid Lewis structure.\n- **Option D (Correct):** $\\ce{NO3^-}$ has three resonance structures with delocalized electrons.\n\n> **Key Takeaway:** Resonance occurs in nitrate, nitrite, ozone, benzene, and carbonate."
+    },
+    // Step 9: VSEPR Model (Correct: 0)
+    {
+      "step": 9,
+      "q": "What is the molecular geometry of $\\ce{NH3}$ according to VSEPR?",
+      "options": [
+        "Trigonal pyramidal",
+        "Tetrahedral",
+        "Bent",
+        "Trigonal planar"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$\\ce{NH3}$ has 4 electron pairs around N (3 bonding + 1 lone pair).\n\n## Analysis\n**Step 1:** Lewis structure: 3 bonding pairs, 1 lone pair on N.\n\n**Step 2:** 4 electron pairs → tetrahedral electron-pair geometry.\n\n**Step 3:** One lone pair means the molecular shape is **trigonal pyramidal** (~107°).\n\n> **Key Takeaway:** $\\ce{NH3}$ = trigonal pyramidal (4 electron pairs, 1 lone pair)."
+    },
+    // Step 10: Hybridization - sp3 (Correct: 2)
+    {
+      "step": 10,
+      "q": "What is the hybridization of carbon in $\\ce{CH4}$?",
+      "options": [
+        "$sp$",
+        "$sp^2$",
+        "$sp^3$",
+        "$sp^3d$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\n$\\ce{CH4}$ has 4 electron pairs around C, all bonding → $sp^3$ hybridization.\n\n## Analysis\n**Step 1:** 4 electron pairs around C.\n\n**Step 2:** 4 electron pairs → $sp^3$ hybridization.\n\n**Step 3:** Geometry = tetrahedral (109.5°).\n\n> **Key Takeaway:** 4 pairs = $sp^3$; tetrahedral (e.g., $\\ce{CH4}$)."
+    },
+    // Step 11: Hybridization - sp2 (Correct: 1)
+    {
+      "step": 11,
+      "q": "What is the hybridization of carbon in $\\ce{C2H4}$ (ethene)?",
+      "options": [
+        "$sp^3$",
+        "$sp^2$",
+        "$sp$",
+        "$sp^3d$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nEach carbon in $\\ce{C2H4}$ has 3 electron pairs (2 C-H bonds + 1 C=C double bond).\n\n## Analysis\n**Step 1:** Each C has 3 bonding pairs (2 H and 1 C).\n\n**Step 2:** 3 electron pairs → $sp^2$ hybridization.\n\n**Step 3:** Geometry = trigonal planar (120°).\n\n> **Key Takeaway:** 3 pairs = $sp^2$; trigonal planar (e.g., $\\ce{C2H4}$)."
+    },
+    // Step 12: σ and π Bonds (Correct: 3)
+    {
+      "step": 12,
+      "q": "How many $\\sigma$ and $\\pi$ bonds are in a double bond?",
+      "options": [
+        "2 $\\sigma$, 0 $\\pi$",
+        "0 $\\sigma$, 2 $\\pi$",
+        "1 $\\sigma$, 2 $\\pi$",
+        "1 $\\sigma$, 1 $\\pi$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nA double bond consists of one $\\sigma$ bond and one $\\pi$ bond.\n\n## Analysis\n- **Option A (Incorrect):** This describes a single bond (1 $\\sigma$).\n- **Option B (Incorrect):** This is not correct; a double bond always has 1 $\\sigma$.\n- **Option C (Incorrect):** A triple bond = 1 $\\sigma$ + 2 $\\pi$.\n- **Option D (Correct):** A double bond = 1 $\\sigma$ + 1 $\\pi$.\n\n> **Key Takeaway:** Double bond = 1$\\sigma$ + 1$\\pi$; triple bond = 1$\\sigma$ + 2$\\pi$."
+    },
+    // Step 13: Hybridization - sp3d (Correct: 0)
+    {
+      "step": 13,
+      "q": "What is the hybridization of the central atom in $\\ce{PCl5}$?",
+      "options": [
+        "$sp^3d$",
+        "$sp^3d^2$",
+        "$sp^3$",
+        "$sp^2$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$\\ce{PCl5}$ has 5 bonding pairs around P, no lone pairs.\n\n## Analysis\n**Step 1:** Lewis structure: 5 bonding pairs, no lone pairs on P.\n\n**Step 2:** 5 electron pairs → $sp^3d$ hybridization.\n\n**Step 3:** Geometry = trigonal bipyramidal (90°, 120°).\n\n> **Key Takeaway:** $\\ce{PCl5}$: $sp^3d$ hybridization, trigonal bipyramidal geometry."
+    }
+  ]
+},
+  // ============================================================
+  // TOPIC 8: ORGANIC CHEMISTRY (14 Steps)
+  // ============================================================
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "title": "Complete Topic 8: Organic Chemistry",
+    "year": "2024",
+    "steps": [
+      // Step 1: Organic Chemistry Definition (Correct: 0)
+      {
+        "step": 1,
+        "q": "What is **Organic Chemistry**?",
+        "options": [
+          "The study of carbon-containing compounds and their properties",
+          "The study of compounds containing only hydrogen and oxygen",
+          "The study of all elements in the periodic table",
+          "The study of inorganic minerals and rocks"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nOrganic chemistry is the study of carbon compounds — the chemistry of life and synthetic materials.\n\n## Analysis\n- **Option A (Correct):** Organic chemistry is the study of **carbon-containing compounds** and their properties.\n- **Option B (Incorrect):** This is too narrow; organic compounds contain carbon and often hydrogen, oxygen, nitrogen, and halogens.\n- **Option C (Incorrect):** This describes general chemistry.\n- **Option D (Incorrect):** This describes geology or inorganic chemistry.\n\n> **Key Takeaway:** Organic chemistry = study of carbon compounds; over 20 million known organic compounds."
+      },
+      // Step 2: Alkanes (Correct: 2)
+      {
+        "step": 2,
+        "q": "What is the general formula for acyclic alkanes?",
+        "options": [
+          "$\\ce{C_nH_{2n}}$",
+          "$\\ce{C_nH_{2n-2}}$",
+          "$\\ce{C_nH_{2n+2}}$",
+          "$\\ce{C_nH_n}$"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nThe general formula for alkanes is $\\ce{C_nH_{2n+2}}$; each carbon is bonded to four atoms.\n\n## Analysis\n- **Option A (Incorrect):** This is the formula for **alkenes** or **cycloalkanes**.\n- **Option B (Incorrect):** This is the formula for **alkynes**.\n- **Option C (Correct):** Acyclic alkanes have the general formula $\\ce{C_nH_{2n+2}}$.\n- **Option D (Incorrect):** This is not a general formula for hydrocarbons.\n\n> **Key Takeaway:** Alkanes: $\\ce{C_nH_{2n+2}}$; all carbon atoms are $sp^3$ hybridized."
+      },
+      // Step 3: Structural Isomerism (Correct: 1)
+      {
+        "step": 3,
+        "q": "How many structural isomers does butane ($\\ce{C4H10}$) have?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nButane has two structural isomers: n-butane and isobutane (2-methylpropane).\n\n## Analysis\n**Step 1:** Draw all possible carbon skeletons for $\\ce{C4H10}$:\n- Straight chain: $\\ce{CH3CH2CH2CH3}$ (n-butane)\n- Branched chain: $\\ce{CH(CH3)3}$ (isobutane or 2-methylpropane)\n\n**Step 2:** Total = 2 isomers.\n\n> **Key Takeaway:** Butane has 2 structural isomers; isomers increase with carbon count."
+      },
+      // Step 4: IUPAC Nomenclature (Correct: 3)
+      {
+        "step": 4,
+        "q": "Name the compound: $\\ce{CH3CH(CH3)CH2CH2CH3}$.",
+        "options": [
+          "3-methylpentane",
+          "2-methylhexane",
+          "4-methylpentane",
+          "2-methylpentane"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nThe longest chain has 5 carbons (pentane); a methyl group is on carbon 2.\n\n## Analysis\n**Step 1:** Find the longest chain: 5 carbons → pentane.\n\n**Step 2:** Number from the end closest to branching:\n$\\ce{CH3-CH(CH3)-CH2-CH2-CH3}$\nThe methyl group is on carbon 2.\n\n**Step 3:** Name = 2-methylpentane.\n\n> **Key Takeaway:** 2-methylpentane (5-carbon chain with methyl at C2)."
+      },
+      // Step 5: Cycloalkanes (Correct: 0)
+      {
+        "step": 5,
+        "q": "What are **cycloalkanes** and what is their general formula?",
+        "options": [
+          "Alkanes in which carbon atoms form a ring; formula $\\ce{C_nH_{2n}}$",
+          "Alkanes with a straight chain; formula $\\ce{C_nH_{2n+2}}$",
+          "Alkanes with a double bond; formula $\\ce{C_nH_{2n}}$",
+          "Alkanes with a triple bond; formula $\\ce{C_nH_{2n-2}}$"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nCycloalkanes have carbon atoms arranged in a ring, giving the general formula $\\ce{C_nH_{2n}}$.\n\n## Analysis\n- **Option A (Correct):** Cycloalkanes are alkanes that form a **ring**; general formula $\\ce{C_nH_{2n}}$.\n- **Option B (Incorrect):** This is the formula for acyclic alkanes.\n- **Option C (Incorrect):** This describes **alkenes**.\n- **Option D (Incorrect):** This describes **alkynes**.\n\n> **Key Takeaway:** Cycloalkanes = rings; formula $\\ce{C_nH_{2n}}$; prefix 'cyclo-'."
+      },
+      // Step 6: Alkenes (Correct: 2)
+      {
+        "step": 6,
+        "q": "What is the general formula for alkenes with one double bond?",
+        "options": [
+          "$\\ce{C_nH_{2n+2}}$",
+          "$\\ce{C_nH_{2n-2}}$",
+          "$\\ce{C_nH_{2n}}$",
+          "$\\ce{C_nH_n}$"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nAlkenes have two fewer hydrogens than alkanes due to the double bond.\n\n## Analysis\n- **Option A (Incorrect):** This is the formula for **alkanes**.\n- **Option B (Incorrect):** This is the formula for **alkynes**.\n- **Option C (Correct):** Alkenes have the general formula $\\ce{C_nH_{2n}}$.\n- **Option D (Incorrect):** This is not a general formula for hydrocarbons.\n\n> **Key Takeaway:** Alkenes: $\\ce{C_nH_{2n}}$; double-bonded carbons are $sp^2$ hybridized."
+      },
+      // Step 7: Cis-Trans Isomerism (Correct: 1)
+      {
+        "step": 7,
+        "q": "Which of the following alkenes can exhibit cis-trans isomerism?",
+        "options": [
+          "$\\ce{CH2=CH2}$ (ethene)",
+          "$\\ce{CH3CH=CHCH3}$ (2-butene)",
+          "$\\ce{CH2=CHCH3}$ (propene)",
+          "$\\ce{CH2=C(CH3)2}$ (2-methylpropene)"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nCis-trans isomerism requires each double-bonded carbon to have two different substituents.\n\n## Analysis\n- **Option A (Incorrect):** Ethene has $\\ce{H}$ on both carbons → identical substituents → no cis-trans.\n- **Option B (Correct):** 2-butene has $\\ce{CH3}$ and $\\ce{H}$ on each double-bonded carbon → two different groups → can exhibit cis-trans.\n- **Option C (Incorrect):** Propene has $\\ce{H}$ and $\\ce{H}$ on one carbon → identical → no cis-trans.\n- **Option D (Incorrect):** 2-methylpropene has two $\\ce{CH3}$ groups on one carbon → identical → no cis-trans.\n\n> **Key Takeaway:** Cis-trans isomerism requires each C=C carbon to have two different groups."
+      },
+      // Step 8: Alkynes (Correct: 3)
+      {
+        "step": 8,
+        "q": "What is the simplest alkyne?",
+        "options": [
+          "$\\ce{C2H4}$ (ethene)",
+          "$\\ce{C2H6}$ (ethane)",
+          "$\\ce{C6H6}$ (benzene)",
+          "$\\ce{C2H2}$ (ethyne, acetylene)"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nThe simplest alkyne is ethyne ($\\ce{C2H2}$), commonly called acetylene.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{C2H4}$ is ethene (alkene).\n- **Option B (Incorrect):** $\\ce{C2H6}$ is ethane (alkane).\n- **Option C (Incorrect):** $\\ce{C6H6}$ is benzene (aromatic).\n- **Option D (Correct):** $\\ce{C2H2}$ (ethyne or acetylene) is the simplest alkyne.\n\n> **Key Takeaway:** Ethyne ($\\ce{C2H2}$) is the simplest alkyne; triple-bonded carbons are $sp$ hybridized."
+      },
+      // Step 9: Alkene Nomenclature (Correct: 0)
+      {
+        "step": 9,
+        "q": "Name the compound: $\\ce{CH3CH2CH=CH2}$.",
+        "options": [
+          "1-butene",
+          "2-butene",
+          "1-butyne",
+          "2-butyne"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nThe longest chain containing the double bond has 4 carbons; the double bond is at position 1.\n\n## Analysis\n**Step 1:** Longest chain containing the double bond: 4 carbons → butene.\n\n**Step 2:** Number from the end closest to the double bond:\n$\\ce{CH3CH2CH=CH2}$\nThe double bond is between C1 and C2 → position 1.\n\n**Step 3:** Name = 1-butene.\n\n> **Key Takeaway:** 1-butene (4-carbon chain with double bond at C1)."
+      },
+      // Step 10: Aromatic Hydrocarbons (Correct: 2)
+      {
+        "step": 10,
+        "q": "What type of reaction is characteristic of benzene?",
+        "options": [
+          "Addition reactions",
+          "Elimination reactions",
+          "Substitution reactions",
+          "Oxidation reactions"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nBenzene undergoes substitution reactions that preserve the aromatic ring and its stability.\n\n## Analysis\n- **Option A (Incorrect):** Addition would destroy the delocalized $\\pi$ system and aromatic stability.\n- **Option B (Incorrect):** Elimination is not characteristic of benzene.\n- **Option C (Correct):** Benzene undergoes **substitution reactions** where a hydrogen atom is replaced by another atom or group.\n- **Option D (Incorrect):** Oxidation is not the defining reaction of benzene.\n\n> **Key Takeaway:** Benzene undergoes substitution (not addition) to preserve aromaticity."
+      },
+      // Step 11: Functional Groups (Correct: 1)
+      {
+        "step": 11,
+        "q": "Which functional group is present in alcohols?",
+        "options": [
+          "$\\ce{-COOH}$",
+          "$\\ce{-OH}$",
+          "$\\ce{-NH2}$",
+          "$\\ce{-CO-}$"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nAlcohols contain the hydroxyl group ($\\ce{-OH}$).\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{-COOH}$ is the carboxyl group (carboxylic acids).\n- **Option B (Correct):** Alcohols have the **hydroxyl group** ($\\ce{-OH}$).\n- **Option C (Incorrect):** $\\ce{-NH2}$ is the amino group (amines).\n- **Option D (Incorrect):** $\\ce{-CO-}$ is the carbonyl group (ketones).\n\n> **Key Takeaway:** Alcohols = $\\ce{-OH}$; carboxylic acids = $\\ce{-COOH}$; amines = $\\ce{-NH2}$; ketones = $\\ce{-CO-}$."
+      },
+      // Step 12: Alcohol Classification (Correct: 3)
+      {
+        "step": 12,
+        "q": "Classify $\\ce{CH3CH2OH}$ as primary, secondary, or tertiary alcohol.",
+        "options": [
+          "Secondary",
+          "Tertiary",
+          "Quaternary",
+          "Primary"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\n$\\ce{CH3CH2OH}$ has one carbon group attached to the carbon bearing the $\\ce{-OH}$ group.\n\n## Analysis\n**Step 1:** Identify the carbon bearing the $\\ce{-OH}$ group: $\\ce{CH3CH2OH}$ → the $\\ce{-OH}$ is on the terminal carbon ($\\ce{CH2OH}$).\n\n**Step 2:** Count R groups attached to that carbon: only one R group ($\\ce{CH3CH2-}$).\n\n**Step 3:** One R group = primary (1°).\n\n> **Key Takeaway:** $\\ce{CH3CH2OH}$ is a primary alcohol (1°)."
+      },
+      // Step 13: Carboxylic Acids (Correct: 0)
+      {
+        "step": 13,
+        "q": "What is the common name for $\\ce{CH3COOH}$?",
+        "options": [
+          "Acetic acid",
+          "Formic acid",
+          "Propionic acid",
+          "Butyric acid"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\n$\\ce{CH3COOH}$ is ethanoic acid, commonly called acetic acid.\n\n## Analysis\n- **Option A (Correct):** $\\ce{CH3COOH}$ is **acetic acid** (ethanoic acid).\n- **Option B (Incorrect):** Formic acid is $\\ce{HCOOH}$.\n- **Option C (Incorrect):** Propionic acid is $\\ce{CH3CH2COOH}$.\n- **Option D (Incorrect):** Butyric acid is $\\ce{CH3CH2CH2COOH}$.\n\n> **Key Takeaway:** Acetic acid = $\\ce{CH3COOH}$; the acid in vinegar."
+      },
+      // Step 14: Esters and Amines (Correct: 2)
+      {
+        "step": 14,
+        "q": "What is the product of esterification of ethanoic acid ($\\ce{CH3COOH}$) with ethanol ($\\ce{C2H5OH}$)?",
+        "options": [
+          "$\\ce{CH3CH2COOCH3}$ (methyl propanoate)",
+          "$\\ce{CH3CH2OH}$ (ethanol)",
+          "$\\ce{CH3COOC2H5}$ (ethyl ethanoate)",
+          "$\\ce{CH3COOH}$ (ethanoic acid)"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\n$\\ce{CH3COOH + C2H5OH -> CH3COOC2H5 + H2O}$\n\n## Analysis\n$\\ce{CH3COOH + C2H5OH -> CH3COOC2H5 + H2O}$\nEthanoic acid + Ethanol → Ethyl ethanoate + Water.\n\n> **Key Takeaway:** Ethyl ethanoate ($\\ce{CH3COOC2H5}$) has a fruity odour."
+      }
+    ]
+  },
+// ============================================================
+// TOPIC 9: CHEMICAL KINETICS (14 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T3",
+  "topic": "Topic 9: Chemical Kinetics",
+  "title": "Complete Topic 9: Chemical Kinetics",
+  "year": "2024",
+  "steps": [
+    // Step 1: Reaction Rate Definition (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is the **rate** of a chemical reaction?",
+      "options": [
+        "The change in concentration of a reactant or product per unit time",
+        "The total amount of product formed in a reaction",
+        "The time required for a reaction to go to completion",
+        "The energy required to start a reaction"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe rate of a reaction tells us how fast reactants are consumed or products are formed.\n\n## Analysis\n- **Option A (Correct):** Reaction rate is measured as the **decrease in concentration of a reactant** or the **increase in concentration of a product** per unit time.\n- **Option B (Incorrect):** This is the total yield, not the rate.\n- **Option C (Incorrect):** This describes the reaction time, not the rate.\n- **Option D (Incorrect):** This is the activation energy, not the rate.\n\n> **Key Takeaway:** Rate = change in concentration / change in time; units are mol L⁻¹ s⁻¹."
+    },
+    // Step 2: Average Rate (Correct: 2)
+    {
+      "step": 2,
+      "q": "For the reaction $2\\ce{H2O2(aq)} \\rightarrow 2\\ce{H2O(l)} + \\ce{O2(g)}$, the concentration of $\\ce{H2O2}$ decreases from 1.000 M to 0.500 M over $2.16 \\times 10^4$ seconds. What is the average rate of decomposition of $\\ce{H2O2}$?",
+      "options": [
+        "$1.16 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+        "$4.63 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+        "$2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+        "$5.79 \\times 10^{-6} \\, \\text{mol L}^{-1} \\text{s}^{-1}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe average rate is the change in concentration divided by the change in time.\n\n## Analysis\n**Step 1:** $\\Delta[\\ce{H2O2}] = 0.500 - 1.000 = -0.500$ M\n\n**Step 2:** $\\Delta t = 2.16 \\times 10^4$ s\n\n**Step 3:** Rate = $-\\frac{\\Delta[\\ce{H2O2}]}{\\Delta t} = -\\frac{-0.500}{2.16 \\times 10^4} = 2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$\n\n> **Key Takeaway:** Average rate = -Δ[reactant]/Δt; the rate of disappearance of H₂O₂ is $2.31 \\times 10^{-5}$ M/s."
+    },
+    // Step 3: Rate Expression (Correct: 1)
+    {
+      "step": 3,
+      "q": "For the general reaction $aA + bB \\rightarrow cC + dD$, what is the correct rate expression?",
+      "options": [
+        "$\\text{Rate} = -\\frac{\\Delta[A]}{\\Delta t} = -\\frac{\\Delta[B]}{\\Delta t} = \\frac{\\Delta[C]}{\\Delta t} = \\frac{\\Delta[D]}{\\Delta t}$",
+        "$\\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = -\\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = \\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t}$",
+        "$\\text{Rate} = \\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = \\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = -\\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = -\\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t}$",
+        "$\\text{Rate} = a\\frac{\\Delta[A]}{\\Delta t} = b\\frac{\\Delta[B]}{\\Delta t} = c\\frac{\\Delta[C]}{\\Delta t} = d\\frac{\\Delta[D]}{\\Delta t}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe rate of reaction is the same regardless of which substance is used to measure it, when divided by the stoichiometric coefficient.\n\n## Analysis\n- **Option A (Incorrect):** This does not account for stoichiometric coefficients.\n- **Option B (Correct):** The rate expression accounts for stoichiometric coefficients: reactants have negative signs (disappearing), products have positive signs (appearing).\n- **Option C (Incorrect):** The signs are reversed and coefficients are inverted incorrectly.\n- **Option D (Incorrect):** Coefficients should divide, not multiply, the concentration changes.\n\n> **Key Takeaway:** $\\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t}$; coefficients divide the concentration changes."
+    },
+    // Step 4: Factors Affecting Rate (Correct: 3)
+    {
+      "step": 4,
+      "q": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+      "options": [
+        "Temperature",
+        "Concentration of reactants",
+        "Surface area of a solid reactant",
+        "The equilibrium constant"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe equilibrium constant tells us the extent of a reaction, not how fast it proceeds.\n\n## Analysis\n- **Option A (Incorrect):** Temperature affects rate significantly (higher T = faster rate).\n- **Option B (Incorrect):** Concentration affects rate (higher concentration = faster rate).\n- **Option C (Incorrect):** Surface area affects rate (more surface area = faster rate).\n- **Option D (Correct):** The equilibrium constant ($K$) does NOT affect the rate; it only tells us the equilibrium position.\n\n> **Key Takeaway:** Factors affecting rate: temperature, concentration, catalysts, surface area, pressure. The equilibrium constant does not affect rate."
+    },
+    // Step 5: Rate Law Definition (Correct: 0)
+    {
+      "step": 5,
+      "q": "What is a **rate law**?",
+      "options": [
+        "A mathematical expression that relates the rate of a reaction to the concentrations of reactants",
+        "A mathematical expression that relates the rate of a reaction to temperature",
+        "A statement that describes the equilibrium position of a reaction",
+        "A list of the steps in a reaction mechanism"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe rate law shows how the rate depends on reactant concentrations.\n\n## Analysis\n- **Option A (Correct):** A rate law is a mathematical expression that relates the rate of a reaction to the concentrations of reactants raised to some powers.\n- **Option B (Incorrect):** This is the Arrhenius equation, not the rate law.\n- **Option C (Incorrect):** This is the equilibrium expression.\n- **Option D (Incorrect):** This is a reaction mechanism.\n\n> **Key Takeaway:** Rate law: $\\text{Rate} = k[A]^x[B]^y$; $k$ is the rate constant."
+    },
+    // Step 6: Reaction Order (Correct: 2)
+    {
+      "step": 6,
+      "q": "If the rate of a reaction is independent of the concentration of a reactant, what is the order with respect to that reactant?",
+      "options": [
+        "First order",
+        "Second order",
+        "Zero order",
+        "Third order"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nWhen the rate does not depend on the concentration of a reactant, the reaction is zero order with respect to that reactant.\n\n## Analysis\n- **Option A (Incorrect):** First order means $\\text{Rate} \\propto [A]^1$; rate doubles when concentration doubles.\n- **Option B (Incorrect):** Second order means $\\text{Rate} \\propto [A]^2$; rate quadruples when concentration doubles.\n- **Option C (Correct):** Zero order means $\\text{Rate} \\propto [A]^0 = 1$; the concentration of A does not affect the rate.\n- **Option D (Incorrect):** Third order means $\\text{Rate} \\propto [A]^3$; rate increases by a factor of 8 when concentration doubles.\n\n> **Key Takeaway:** Zero order: rate is constant and does not depend on concentration."
+    },
+    // Step 7: Method of Initial Rates (Correct: 1)
+    {
+      "step": 7,
+      "q": "What is the **method of initial rates**?",
+      "options": [
+        "A method for determining the equilibrium constant of a reaction",
+        "A method for determining the order of a reaction by measuring the initial rate at different initial concentrations",
+        "A method for determining the activation energy of a reaction",
+        "A method for determining the mechanism of a reaction"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe method of initial rates involves running the reaction multiple times, varying the concentration of one reactant at a time, and measuring the initial rate.\n\n## Analysis\n- **Option A (Incorrect):** This is for equilibrium, not kinetics.\n- **Option B (Correct):** The method of initial rates is used to determine the order of a reaction with respect to each reactant by measuring how the initial rate changes when the initial concentration is changed.\n- **Option C (Incorrect):** This is the Arrhenius method.\n- **Option D (Incorrect):** This is for reaction mechanisms, not initial rates.\n\n> **Key Takeaway:** Initial rates method: vary one concentration at a time, measure the initial rate, and determine the order from the rate change."
+    },
+    // Step 8: Rate Law from Data (Correct: 3)
+    {
+      "step": 8,
+      "q": "For the reaction $A + B \\rightarrow \\text{products}$, the following data were obtained:\n\n| Experiment | [A] (M) | [B] (M) | Initial Rate (M/s) |\n|:---:|:---:|:---:|:---:|\n| 1 | 1.0 | 1.0 | 1.0 |\n| 2 | 2.0 | 1.0 | 2.0 |\n| 3 | 1.0 | 2.0 | 8.0 |\n\nWhat is the rate law for this reaction?",
+      "options": [
+        "$\\text{Rate} = k[A]^1[B]^2$",
+        "$\\text{Rate} = k[A]^2[B]^3$",
+        "$\\text{Rate} = k[A]^1[B]^1$",
+        "$\\text{Rate} = k[A]^1[B]^3$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nCompare experiments where only one concentration changes to determine the order for each reactant.\n\n## Analysis\n**Step 1:** Determine order with respect to A: Compare Exp 1 and Exp 2 (B constant).\n$\\frac{\\text{Rate}_2}{\\text{Rate}_1} = \\frac{2.0}{1.0} = 2 = \\left(\\frac{[A]_2}{[A]_1}\\right)^x = \\left(\\frac{2.0}{1.0}\\right)^x = 2^x$\n$2 = 2^x \\Rightarrow x = 1$ (first order in A)\n\n**Step 2:** Determine order with respect to B: Compare Exp 1 and Exp 3 (A constant).\n$\\frac{\\text{Rate}_3}{\\text{Rate}_1} = \\frac{8.0}{1.0} = 8 = \\left(\\frac{[B]_3}{[B]_1}\\right)^y = \\left(\\frac{2.0}{1.0}\\right)^y = 2^y$\n$8 = 2^y \\Rightarrow y = 3$ (third order in B)\n\n**Step 3:** Rate law: $\\text{Rate} = k[A]^1[B]^3$.\n\n> **Key Takeaway:** Rate law: $\\text{Rate} = k[A]^1[B]^3$; order with respect to A is 1, with respect to B is 3."
+    },
+    // Step 9: Integrated Rate Laws (Correct: 0)
+    {
+      "step": 9,
+      "q": "What is the integrated rate law for a first-order reaction ($A \\rightarrow \\text{products}$)?",
+      "options": [
+        "$\\ln[A]_t = -kt + \\ln[A]_0$",
+        "$[A]_t = -kt + [A]_0$",
+        "$\\frac{1}{[A]_t} = kt + \\frac{1}{[A]_0}$",
+        "$[A]_t = [A]_0 e^{-kt}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe integrated rate law for a first-order reaction is $\\ln[A]_t = -kt + \\ln[A]_0$, which is the equation of a straight line ($y = mx + b$).\n\n## Analysis\n- **Option A (Correct):** For first-order reactions, $\\ln[A]_t = -kt + \\ln[A]_0$.\n- **Option B (Incorrect):** This is the zero-order integrated rate law.\n- **Option C (Incorrect):** This is the second-order integrated rate law.\n- **Option D (Correct but not the linear form):** This is the exponential form of the first-order integrated rate law.\n\n> **Key Takeaway:** First-order: $\\ln[A]_t = -kt + \\ln[A]_0$; a plot of $\\ln[A]$ vs $t$ is a straight line with slope $-k$."
+    },
+    // Step 10: Half-Life (Correct: 2)
+    {
+      "step": 10,
+      "q": "A first-order reaction has a half-life of 10 minutes. How long will it take for the concentration to drop to 12.5% of its original value?",
+      "options": [
+        "10 minutes",
+        "20 minutes",
+        "30 minutes",
+        "40 minutes"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nEach half-life reduces the concentration by half. 12.5% = 1/8 of the original, which is 3 half-lives.\n\n## Analysis\n**Step 1:** 100% → 50% (1 half-life)\n\n**Step 2:** 50% → 25% (2 half-lives)\n\n**Step 3:** 25% → 12.5% (3 half-lives)\n\n**Step 4:** Time = 3 × 10 min = 30 minutes.\n\n> **Key Takeaway:** After 3 half-lives, 12.5% of the original remains; time = 3 × t₁/₂."
+    },
+    // Step 11: Arrhenius Equation (Correct: 1)
+    {
+      "step": 11,
+      "q": "What does the **Arrhenius equation** describe?",
+      "options": [
+        "The relationship between the rate constant and concentration",
+        "The relationship between the rate constant and temperature",
+        "The relationship between the equilibrium constant and temperature",
+        "The relationship between the rate and the activation energy"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe Arrhenius equation shows how the rate constant depends on temperature and activation energy.\n\n## Analysis\n- **Option A (Incorrect):** This is the rate law, not the Arrhenius equation.\n- **Option B (Correct):** The Arrhenius equation is $k = Ae^{-E_a/RT}$, describing how $k$ depends on temperature.\n- **Option C (Incorrect):** This is the van't Hoff equation.\n- **Option D (Incorrect):** The Arrhenius equation relates $k$ to $E_a$ and $T$, not the rate directly.\n\n> **Key Takeaway:** $k = Ae^{-E_a/RT}$; higher temperature means larger $k$ (faster reaction)."
+    },
+    // Step 12: Activation Energy (Correct: 3)
+    {
+      "step": 12,
+      "q": "In the Arrhenius equation $k = Ae^{-E_a/RT}$, what does $E_a$ represent?",
+      "options": [
+        "The equilibrium constant of the reaction",
+        "The enthalpy change of the reaction",
+        "The Gibbs free energy change of the reaction",
+        "The activation energy of the reaction"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nActivation energy is the minimum energy required for a reaction to occur.\n\n## Analysis\n- **Option A (Incorrect):** The equilibrium constant is $K$, not $E_a$.\n- **Option B (Incorrect):** Enthalpy change is $\\Delta H$.\n- **Option C (Incorrect):** Gibbs free energy change is $\\Delta G$.\n- **Option D (Correct):** $E_a$ is the activation energy — the minimum energy required for reactants to form products.\n\n> **Key Takeaway:** Activation energy $E_a$ is the energy barrier that must be overcome for a reaction to proceed."
+    },
+    // Step 13: Reaction Mechanisms (Correct: 0)
+    {
+      "step": 13,
+      "q": "What is a **reaction mechanism**?",
+      "options": [
+        "A series of elementary steps that describe the pathway of a reaction",
+        "A mathematical expression relating rate to concentration",
+        "A statement about the equilibrium position of a reaction",
+        "The overall balanced equation for a reaction"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nA reaction mechanism describes the step-by-step process by which reactants become products.\n\n## Analysis\n- **Option A (Correct):** A reaction mechanism is a series of elementary steps that describe the pathway of a reaction.\n- **Option B (Incorrect):** This is a rate law.\n- **Option C (Incorrect):** This is the equilibrium expression.\n- **Option D (Incorrect):** This is the overall equation, not the mechanism.\n\n> **Key Takeaway:** Reaction mechanisms describe the sequence of elementary steps; the slowest step is the rate-determining step."
+    },
+    // Step 14: Catalysis (Correct: 2)
+    {
+      "step": 14,
+      "q": "How does a catalyst affect the activation energy of a reaction?",
+      "options": [
+        "It increases the activation energy",
+        "It does not affect the activation energy",
+        "It lowers the activation energy by providing an alternative pathway",
+        "It changes the equilibrium position"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nA catalyst provides a different reaction pathway with a lower activation energy barrier.\n\n## Analysis\n- **Option A (Incorrect):** A catalyst decreases, not increases, the activation energy.\n- **Option B (Incorrect):** A catalyst does affect the activation energy (it lowers it).\n- **Option C (Correct):** A catalyst lowers the activation energy by providing an alternative pathway, making it easier for the reaction to occur.\n- **Option D (Incorrect):** A catalyst does not change the equilibrium position; it only speeds up the approach to equilibrium.\n\n> **Key Takeaway:** Catalysts lower activation energy; they do not change $\\Delta H$, $\\Delta G$, or $K$."
+    }
+  ]
+},
+// ============================================================
+// TOPIC 10: CHEMICAL EQUILIBRIUM (15 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T3",
+  "topic": "Topic 10: Chemical Equilibrium",
+  "title": "Complete Topic 10: Chemical Equilibrium",
+  "year": "2024",
+  "steps": [
+    // Step 1: Equilibrium Definition (Correct: 0)
+    {
+      "step": 1,
+      "q": "What is **chemical equilibrium**?",
+      "options": [
+        "A state where the forward and reverse reactions proceed at the same rate",
+        "A state where all reactants have been converted to products",
+        "A state where no reactions are occurring",
+        "A state where the concentrations of reactants and products are equal"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nChemical equilibrium is dynamic — both forward and reverse reactions are still occurring, but at the same rate.\n\n## Analysis\n- **Option A (Correct):** Chemical equilibrium occurs when the **forward and reverse reactions proceed at the same rate**.\n- **Option B (Incorrect):** This describes completion of a reaction, not equilibrium.\n- **Option C (Incorrect):** At equilibrium, reactions are still occurring; they just have equal rates.\n- **Option D (Incorrect):** Concentrations of reactants and products are not necessarily equal at equilibrium; they are constant.\n\n> **Key Takeaway:** At equilibrium: forward rate = reverse rate; concentrations are constant (not necessarily equal)."
+    },
+    // Step 2: Kc Expression (Correct: 2)
+    {
+      "step": 2,
+      "q": "For the general reaction $aA + bB \\rightleftharpoons cC + dD$, what is the equilibrium constant expression $K_c$?",
+      "options": [
+        "$K_c = \\frac{[A]^a[B]^b}{[C]^c[D]^d}$",
+        "$K_c = \\frac{[C]^a[D]^b}{[A]^c[B]^d}$",
+        "$K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$",
+        "$K_c = \\frac{[A]^c[B]^d}{[C]^a[D]^b}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe equilibrium constant expression is the ratio of product concentrations (raised to their coefficients) to reactant concentrations (raised to their coefficients).\n\n## Analysis\n- **Option A (Incorrect):** This is the inverse (reactants over products).\n- **Option B (Incorrect):** The coefficients are assigned to the wrong species.\n- **Option C (Correct):** $K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$ — products over reactants, each raised to its stoichiometric coefficient.\n- **Option D (Incorrect):** This is also incorrect; products should be in the numerator.\n\n> **Key Takeaway:** $K_c = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}$."
+    },
+    // Step 3: Kp Definition (Correct: 1)
+    {
+      "step": 3,
+      "q": "What is $K_p$ in the context of chemical equilibrium?",
+      "options": [
+        "The equilibrium constant expressed in terms of concentrations",
+        "The equilibrium constant expressed in terms of partial pressures of gases",
+        "The equilibrium constant for solid-gas reactions",
+        "The equilibrium constant for reactions in solution"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\n$K_p$ is used for gas-phase reactions where pressures are more convenient than concentrations.\n\n## Analysis\n- **Option A (Incorrect):** This is $K_c$.\n- **Option B (Correct):** $K_p$ is the equilibrium constant expressed in terms of **partial pressures of gases**.\n- **Option C (Incorrect):** $K_p$ can be used for any gas-phase reaction, not just those with solids.\n- **Option D (Incorrect):** $K_p$ is for gases, not aqueous solutions.\n\n> **Key Takeaway:** $K_p$ = equilibrium constant using partial pressures; $K_c$ = equilibrium constant using concentrations."
+    },
+    // Step 4: Kp vs Kc Relationship (Correct: 3)
+    {
+      "step": 4,
+      "q": "What is the relationship between $K_p$ and $K_c$?",
+      "options": [
+        "$K_p = K_c$ always",
+        "$K_p = K_c(RT)^{-\\Delta n}$",
+        "$K_p = K_c / (RT)^{\\Delta n}$",
+        "$K_p = K_c(RT)^{\\Delta n}$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe relationship between $K_p$ and $K_c$ depends on the change in the number of moles of gas ($\\Delta n$).\n\n## Analysis\n- **Option A (Incorrect):** $K_p = K_c$ only when $\\Delta n = 0$.\n- **Option B (Incorrect):** The exponent should be $+\\Delta n$, not $-\\Delta n$.\n- **Option C (Incorrect):** This is the inverse relationship.\n- **Option D (Correct):** $K_p = K_c(RT)^{\\Delta n}$, where $\\Delta n = (\\text{moles of gaseous products}) - (\\text{moles of gaseous reactants})$.\n\n> **Key Takeaway:** $K_p = K_c(RT)^{\\Delta n}$; $\\Delta n$ is the change in moles of gas."
+    },
+    // Step 5: Heterogeneous Equilibria (Correct: 0)
+    {
+      "step": 5,
+      "q": "Why are solids and pure liquids excluded from equilibrium constant expressions?",
+      "options": [
+        "Their concentrations are constant and do not change during the reaction",
+        "They do not participate in the reaction",
+        "They have very large concentrations",
+        "They are not part of the equilibrium"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe concentration of a pure solid or liquid is its density divided by its molar mass, which is constant at a given temperature.\n\n## Analysis\n- **Option A (Correct):** The concentration of a pure solid or liquid is constant and does not appear in the equilibrium expression.\n- **Option B (Incorrect):** Solids and liquids do participate in reactions; they just have constant concentrations.\n- **Option C (Incorrect):** While their concentrations may be large, the reason is constancy, not size.\n- **Option D (Incorrect):** They are part of the equilibrium but are excluded from the expression.\n\n> **Key Takeaway:** Pure solids and liquids have constant concentrations and are not included in $K$ expressions."
+    },
+    // Step 6: Equilibrium Constant Value (Correct: 2)
+    {
+      "step": 6,
+      "q": "If $K > 1$ for a reaction, what does this indicate?",
+      "options": [
+        "The reaction is reactant-favored",
+        "The reaction is at equilibrium",
+        "The reaction is product-favored",
+        "The reaction has no equilibrium"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe value of $K$ indicates whether products or reactants predominate at equilibrium.\n\n## Analysis\n- **Option A (Incorrect):** $K < 1$ indicates reactant-favored.\n- **Option B (Incorrect):** $K$ can be any value at equilibrium; the reaction is at equilibrium regardless of the $K$ value.\n- **Option C (Correct):** If $K > 1$, the reaction is **product-favored**; products predominate at equilibrium.\n- **Option D (Incorrect):** All reactions have an equilibrium constant.\n\n> **Key Takeaway:** $K > 1$ = product-favored; $K < 1$ = reactant-favored."
+    },
+    // Step 7: Manipulating K (Correct: 1)
+    {
+      "step": 7,
+      "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 0.212$ at $100^\\circ\\text{C}$. What is $K_c$ for the reverse reaction $\\ce{2NO2(g) \\rightleftharpoons N2O4(g)}$ at the same temperature?",
+      "options": [
+        "0.212",
+        "4.72",
+        "0.0449",
+        "1.00"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nThe equilibrium constant for the reverse reaction is the reciprocal of the forward reaction's $K$.\n\n## Analysis\n**Step 1:** For the reverse reaction, $K_{\\text{reverse}} = \\frac{1}{K_{\\text{forward}}}$.\n\n**Step 2:** $K_{\\text{reverse}} = \\frac{1}{0.212} = 4.72$.\n\n> **Key Takeaway:** $K_{\\text{reverse}} = 1/K_{\\text{forward}}$."
+    },
+    // Step 8: ICE Table Setup (Correct: 3)
+    {
+      "step": 8,
+      "q": "A closed system initially contains $1.000 \\times 10^{-3}$ M $\\ce{H2}$ and $2.000 \\times 10^{-3}$ M $\\ce{I2}$ at $448^\\circ\\text{C}$. At equilibrium, $[\\ce{HI}] = 1.87 \\times 10^{-3}$ M. What is $K_c$ for $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$?",
+      "options": [
+        "25.5",
+        "102",
+        "0.0196",
+        "51"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nUse an ICE table (Initial, Change, Equilibrium) to find equilibrium concentrations of all species.\n\n## Analysis\n**Step 1:** Set up the ICE table:\n\n| | [H₂] | [I₂] | [HI] |\n|:---|:---:|:---:|:---:|\n| Initial | 1.000 × 10⁻³ | 2.000 × 10⁻³ | 0 |\n| Change | -x | -x | +2x |\n| Equilibrium | 1.000 × 10⁻³ - x | 2.000 × 10⁻³ - x | 2x |\n\n**Step 2:** At equilibrium, $[\\ce{HI}] = 2x = 1.87 \\times 10^{-3}$, so $x = 9.35 \\times 10^{-4}$.\n\n**Step 3:** Equilibrium concentrations:\n$[\\ce{H2}] = 1.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 6.5 \\times 10^{-5}$ M\n$[\\ce{I2}] = 2.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 1.065 \\times 10^{-3}$ M\n$[\\ce{HI}] = 1.87 \\times 10^{-3}$ M\n\n**Step 4:** $K_c = \\frac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]} = \\frac{(1.87 \\times 10^{-3})^2}{(6.5 \\times 10^{-5})(1.065 \\times 10^{-3})} = 50.6 \\approx 51$.\n\n> **Key Takeaway:** $K_c = 51$; ICE tables are essential for equilibrium calculations."
+    },
+    // Step 9: ICE Table with Quadratic (Correct: 0)
+    {
+      "step": 9,
+      "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 4.63 \\times 10^{-3}$ at $25^\\circ\\text{C}$. If the initial concentration of $\\ce{N2O4}$ is $0.100$ M, what is the equilibrium concentration of $\\ce{NO2}$?",
+      "options": [
+        "$0.0205$ M",
+        "$0.0410$ M",
+        "$0.0103$ M",
+        "$0.00515$ M"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nSet up an ICE table and solve the quadratic equation for $x$.\n\n## Analysis\n**Step 1:** ICE table:\n\n| | [N₂O₄] | [NO₂] |\n|:---|:---:|:---:|\n| Initial | 0.100 | 0 |\n| Change | -x | +2x |\n| Equilibrium | 0.100 - x | 2x |\n\n**Step 2:** $K_c = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]} = \\frac{(2x)^2}{0.100 - x} = 4.63 \\times 10^{-3}$.\n\n**Step 3:** $\\frac{4x^2}{0.100 - x} = 4.63 \\times 10^{-3}$.\n\n**Step 4:** $4x^2 = 4.63 \\times 10^{-4} - 4.63 \\times 10^{-3}x$.\n\n**Step 5:** $4x^2 + 4.63 \\times 10^{-3}x - 4.63 \\times 10^{-4} = 0$.\n\n**Step 6:** Solve using quadratic formula: $x = 0.01025$.\n\n**Step 7:** $[\\ce{NO2}] = 2x = 0.0205$ M.\n\n> **Key Takeaway:** $[\\ce{NO2}] = 0.0205$ M; the quadratic formula is often needed for equilibrium calculations."
+    },
+    // Step 10: Reaction Quotient (Correct: 2)
+    {
+      "step": 10,
+      "q": "What is the **reaction quotient** ($Q$)?",
+      "options": [
+        "The equilibrium constant for a reaction at a given temperature",
+        "The ratio of reactants to products at equilibrium",
+        "The same ratio as the equilibrium expression, but for a system that is not at equilibrium",
+        "The rate of the forward reaction divided by the rate of the reverse reaction"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\n$Q$ is calculated the same way as $K$, but using initial (non-equilibrium) concentrations.\n\n## Analysis\n- **Option A (Incorrect):** $K$ is the equilibrium constant; $Q$ is for non-equilibrium conditions.\n- **Option B (Incorrect):** This is $K$, not $Q$.\n- **Option C (Correct):** $Q$ gives the same ratio as the equilibrium expression, but for a system that is **not at equilibrium**.\n- **Option D (Incorrect):** This describes the rate ratio, not $Q$.\n\n> **Key Takeaway:** $Q$ = reaction quotient; $Q$ vs. $K$ tells you which direction the reaction will shift."
+    },
+    // Step 11: Q vs K Prediction (Correct: 1)
+    {
+      "step": 11,
+      "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$, $K_c = 0.50$ at a certain temperature. If $[\\ce{N2}] = 0.10$ M, $[\\ce{H2}] = 0.20$ M, and $[\\ce{NH3}] = 0.40$ M, what is $Q$ and which way will the reaction shift?",
+      "options": [
+        "$Q = 2.0$, shift toward products (right)",
+        "$Q = 200$, shift toward reactants (left)",
+        "$Q = 0.10$, shift toward products (right)",
+        "$Q = 0.50$, at equilibrium"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\n$Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3}$; compare $Q$ to $K$ to determine the shift direction.\n\n## Analysis\n**Step 1:** $Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3} = \\frac{(0.40)^2}{(0.10)(0.20)^3} = \\frac{0.16}{0.10 \\times 0.008} = \\frac{0.16}{0.0008} = 200$.\n\n**Step 2:** $Q = 200 > K = 0.50$, so the reaction will shift toward the **reactants (left)** to reach equilibrium.\n\n> **Key Takeaway:** If $Q > K$, shift toward reactants (left); if $Q < K$, shift toward products (right)."
+    },
+    // Step 12: Le Châtelier's Principle - Concentration (Correct: 3)
+    {
+      "step": 12,
+      "q": "For the reaction $\\ce{CO2(g) + H2O(l) \\rightleftharpoons H2CO3(aq)}$, what is the effect of adding more water?",
+      "options": [
+        "Less $\\ce{H2CO3}$ is produced (shift left)",
+        "No effect",
+        "The equilibrium constant changes",
+        "More $\\ce{H2CO3}$ is produced (shift right)"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nAdding a reactant (water) shifts the equilibrium toward the products (right).\n\n## Analysis\n- **Option A (Incorrect):** Adding reactant shifts toward products, not reactants.\n- **Option B (Incorrect):** Adding a reactant does affect the equilibrium position.\n- **Option C (Incorrect):** $K$ does not change; only the position shifts.\n- **Option D (Correct):** Adding more water (a reactant) shifts the equilibrium toward the **products** (right), producing more $\\ce{H2CO3}$.\n\n> **Key Takeaway:** Adding reactants shifts equilibrium toward products (right)."
+    },
+    // Step 13: Le Châtelier's Principle - Pressure (Correct: 0)
+    {
+      "step": 13,
+      "q": "For the reaction $\\ce{2SO2(g) + O2(g) \\rightleftharpoons 2SO3(g)}$, what is the effect of increasing pressure?",
+      "options": [
+        "The reaction shifts toward products (right)",
+        "The reaction shifts toward reactants (left)",
+        "No effect",
+        "The equilibrium constant increases"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nIncreasing pressure favors the side with fewer moles of gas.\n\n## Analysis\n**Step 1:** Count moles of gas on each side:\n- Reactants: $2 + 1 = 3$ moles of gas\n- Products: $2$ moles of gas\n\n**Step 2:** Increasing pressure favors the side with **fewer moles of gas** (the products).\n\n**Step 3:** The reaction shifts toward **products (right)**.\n\n> **Key Takeaway:** Increasing pressure favors the side with fewer gas molecules."
+    },
+    // Step 14: Le Châtelier's Principle - Temperature (Correct: 2)
+    {
+      "step": 14,
+      "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$ (exothermic), what happens when the temperature is increased?",
+      "options": [
+        "The reaction shifts toward products (right)",
+        "The reaction remains at equilibrium",
+        "The reaction shifts toward reactants (left)",
+        "The equilibrium constant increases"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nFor exothermic reactions, heat is a product. Increasing temperature shifts the equilibrium toward the reactants.\n\n## Analysis\n- **Option A (Incorrect):** This would occur for an endothermic reaction.\n- **Option B (Incorrect):** Temperature changes affect equilibrium position.\n- **Option C (Correct):** Since the forward reaction is exothermic, increasing temperature favors the reverse (endothermic) reaction, shifting toward **reactants (left)**.\n- **Option D (Incorrect):** $K$ decreases for exothermic reactions when temperature increases.\n\n> **Key Takeaway:** Increasing temperature favors the endothermic direction; for exothermic reactions, that means shifting left."
+    },
+    // Step 15: Catalysts and Equilibrium (Correct: 1)
+    {
+      "step": 15,
+      "q": "How does a catalyst affect a system at equilibrium?",
+      "options": [
+        "It shifts the equilibrium toward the products",
+        "It speeds up the approach to equilibrium but does not change the equilibrium position",
+        "It shifts the equilibrium toward the reactants",
+        "It changes the equilibrium constant"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nCatalysts speed up both the forward and reverse reactions equally, so equilibrium is reached faster but the position is unchanged.\n\n## Analysis\n- **Option A (Incorrect):** Catalysts do not shift equilibrium position.\n- **Option B (Correct):** A catalyst lowers activation energy for both forward and reverse reactions, so equilibrium is achieved **faster** but the equilibrium composition remains the same.\n- **Option C (Incorrect):** Catalysts do not shift equilibrium position.\n- **Option D (Incorrect):** The equilibrium constant is not changed by a catalyst.\n\n> **Key Takeaway:** Catalysts speed up the attainment of equilibrium; they do not change the equilibrium position or $K$."
+    }
+  ]
+},
+// ============================================================
+// TOPIC 11: ACIDS AND BASES (17 Steps)
+// ============================================================
+{
+  "course": "CH110",
+  "term": "T3",
+  "topic": "Topic 11: Acids and Bases",
+  "title": "Complete Topic 11: Acids and Bases",
+  "year": "2024",
+  "steps": [
+    // Step 1: Arrhenius Definition (Correct: 0)
+    {
+      "step": 1,
+      "q": "According to the Arrhenius definition, what is an acid?",
+      "options": [
+        "A substance that produces $\\ce{H+}$ ions when dissolved in water",
+        "A substance that produces $\\ce{OH-}$ ions when dissolved in water",
+        "A substance that donates a proton",
+        "A substance that accepts a proton"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe Arrhenius definition is the simplest but limited to aqueous solutions.\n\n## Analysis\n- **Option A (Correct):** Arrhenius acid = a substance that produces $\\ce{H+}$ ions in water.\n- **Option B (Incorrect):** This is the Arrhenius definition of a base.\n- **Option C (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n- **Option D (Incorrect):** This is the Brønsted-Lowry definition of a base.\n\n> **Key Takeaway:** Arrhenius: acid → $\\ce{H+}$; base → $\\ce{OH-}$."
+    },
+    // Step 2: Brønsted-Lowry Definition (Correct: 2)
+    {
+      "step": 2,
+      "q": "According to the Brønsted-Lowry definition, what is a base?",
+      "options": [
+        "A substance that produces $\\ce{OH-}$ ions in water",
+        "A substance that produces $\\ce{H+}$ ions in water",
+        "A substance that accepts a proton ($\\ce{H+}$)",
+        "A substance that donates a proton ($\\ce{H+}$)"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe Brønsted-Lowry definition includes bases that do not contain $\\ce{OH-}$ (like $\\ce{NH3}$).\n\n## Analysis\n- **Option A (Incorrect):** This is the Arrhenius definition of a base.\n- **Option B (Incorrect):** This is the Arrhenius definition of an acid.\n- **Option C (Correct):** Brønsted-Lowry base = **proton acceptor**.\n- **Option D (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n\n> **Key Takeaway:** $\\ce{NH3}$ is a Brønsted-Lowry base (proton acceptor) even though it has no $\\ce{OH-}$."
+    },
+    // Step 3: Conjugate Acid-Base Pairs (Correct: 1)
+    {
+      "step": 3,
+      "q": "In the reaction $\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$, what is the conjugate acid of water?",
+      "options": [
+        "$\\ce{Cl-}$",
+        "$\\ce{H3O+}$",
+        "$\\ce{HCl}$",
+        "$\\ce{H2O}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nWhen water accepts a proton, it becomes hydronium ion ($\\ce{H3O+}$).\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{Cl-}$ is the conjugate base of HCl.\n- **Option B (Correct):** Water ($\\ce{H2O}$) accepts a proton to become $\\ce{H3O+}$ — the conjugate acid.\n- **Option C (Incorrect):** HCl is the acid, not the conjugate acid of water.\n- **Option D (Incorrect):** Water is the base, not the conjugate acid.\n\n> **Key Takeaway:** $\\ce{H2O}$ (base) + $\\ce{H+}$ → $\\ce{H3O+}$ (conjugate acid)."
+    },
+    // Step 4: Amphiprotic Species (Correct: 3)
+    {
+      "step": 4,
+      "q": "Which of the following species is amphiprotic?",
+      "options": [
+        "$\\ce{HCl}$",
+        "$\\ce{NH3}$",
+        "$\\ce{NaOH}$",
+        "$\\ce{HCO3-}$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\n$\\ce{HCO3-}$ can donate a proton to become $\\ce{CO3^{2-}}$ or accept a proton to become $\\ce{H2CO3}$.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{HCl}$ is only an acid.\n- **Option B (Incorrect):** $\\ce{NH3}$ is only a base (though it can be amphoteric in some contexts, it is not amphiprotic).\n- **Option C (Incorrect):** $\\ce{NaOH}$ is only a base.\n- **Option D (Correct):** $\\ce{HCO3-}$ can act as an acid (donate $\\ce{H+}$) or as a base (accept $\\ce{H+}$).\n\n> **Key Takeaway:** $\\ce{HCO3-}$ is amphiprotic; it can both donate and accept protons."
+    },
+    // Step 5: Kw and Autoionization (Correct: 0)
+    {
+      "step": 5,
+      "q": "What is the ion product constant of water ($K_w$) at $25^\\circ\\text{C}$?",
+      "options": [
+        "$1.0 \\times 10^{-14}$",
+        "$1.0 \\times 10^{-7}$",
+        "$1.0 \\times 10^{14}$",
+        "$1.0 \\times 10^{-21}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n\n## Analysis\n- **Option A (Correct):** $K_w = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n- **Option B (Incorrect):** $10^{-7}$ is the concentration of $\\ce{H+}$ in pure water, not $K_w$.\n- **Option C (Incorrect):** $10^{14}$ is the inverse of $K_w$.\n- **Option D (Incorrect):** $10^{-21}$ is not the value of $K_w$.\n\n> **Key Takeaway:** $K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$."
+    },
+    // Step 6: pH Definition (Correct: 2)
+    {
+      "step": 6,
+      "q": "What is the definition of pH?",
+      "options": [
+        "$\\text{pH} = \\log[\\ce{H+}]$",
+        "$\\text{pH} = -\\log[\\ce{OH-}]$",
+        "$\\text{pH} = -\\log[\\ce{H+}]$",
+        "$\\text{pH} = 14 - \\text{pOH}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\npH is a logarithmic measure of the concentration of hydronium ions.\n\n## Analysis\n- **Option A (Incorrect):** The negative sign is missing.\n- **Option B (Incorrect):** This is the definition of pOH.\n- **Option C (Correct):** $\\text{pH} = -\\log[\\ce{H+}]$.\n- **Option D (Incorrect):** This is the relationship between pH and pOH, not the definition.\n\n> **Key Takeaway:** $\\text{pH} = -\\log[\\ce{H+}]$; lower pH = more acidic."
+    },
+    // Step 7: pH Calculation (Correct: 1)
+    {
+      "step": 7,
+      "q": "What is the pH of a solution with $[\\ce{H+}] = 2.5 \\times 10^{-4}$ M?",
+      "options": [
+        "4.00",
+        "3.60",
+        "2.50",
+        "10.40"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\n$\\text{pH} = -\\log[\\ce{H+}]$.\n\n## Analysis\n**Step 1:** $\\text{pH} = -\\log(2.5 \\times 10^{-4})$.\n\n**Step 2:** $\\log(2.5 \\times 10^{-4}) = \\log(2.5) + \\log(10^{-4}) = 0.398 + (-4) = -3.602$.\n\n**Step 3:** $\\text{pH} = -(-3.602) = 3.60$.\n\n> **Key Takeaway:** $\\text{pH} = 3.60$; the solution is acidic (pH < 7)."
+    },
+    // Step 8: Strong Acids (Correct: 3)
+    {
+      "step": 8,
+      "q": "What is the pH of a $0.010$ M solution of HCl?",
+      "options": [
+        "1.00",
+        "0.010",
+        "12.00",
+        "2.00"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nHCl is a strong acid, so $[\\ce{H+}] = [\\ce{HCl}]$.\n\n## Analysis\n**Step 1:** $[\\ce{H+}] = 0.010$ M (complete dissociation).\n\n**Step 2:** $\\text{pH} = -\\log(0.010) = -\\log(1.0 \\times 10^{-2}) = 2.00$.\n\n> **Key Takeaway:** For strong acids, $[\\ce{H+}] = [\\text{acid}]$; pH = -log[acid]."
+    },
+    // Step 9: Weak Acids and Ka (Correct: 0)
+    {
+      "step": 9,
+      "q": "What is the acid dissociation constant ($K_a$)?",
+      "options": [
+        "$K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$",
+        "$K_a = \\frac{[\\ce{HA}]}{[\\ce{H3O+}][\\ce{A-}]}$",
+        "$K_a = [\\ce{H3O+}][\\ce{A-}]$",
+        "$K_a = \\frac{[\\ce{HA}]}{[\\ce{H3O+}]}$"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\n$K_a$ is the equilibrium constant for the dissociation of a weak acid.\n\n## Analysis\n- **Option A (Correct):** $K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$.\n- **Option B (Incorrect):** This is the inverse of $K_a$.\n- **Option C (Incorrect):** This is missing the denominator $[\\ce{HA}]$.\n- **Option D (Incorrect):** This is missing the numerator.\n\n> **Key Takeaway:** $K_a = \\frac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}$; larger $K_a$ = stronger acid."
+    },
+    // Step 10: Ka from pH (Correct: 2)
+    {
+      "step": 10,
+      "q": "The pH of a $0.10$ M solution of formic acid ($\\ce{HCOOH}$) is $2.38$. What is $K_a$ for formic acid?",
+      "options": [
+        "$4.2 \\times 10^{-3}$",
+        "$1.8 \\times 10^{-6}$",
+        "$1.8 \\times 10^{-4}$",
+        "$4.2 \\times 10^{-2}$"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nFrom pH, find $[\\ce{H+}]$; then use ICE table to find $K_a$.\n\n## Analysis\n**Step 1:** $[\\ce{H+}] = 10^{-\\text{pH}} = 10^{-2.38} = 4.2 \\times 10^{-3}$ M.\n\n**Step 2:** ICE table:\n\n| | [HCOOH] | [H⁺] | [HCOO⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.10 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 0.10 - x | x | x |\n\n**Step 3:** $x = 4.2 \\times 10^{-3}$.\n\n**Step 4:** $K_a = \\frac{x^2}{0.10 - x} = \\frac{(4.2 \\times 10^{-3})^2}{0.10 - 4.2 \\times 10^{-3}} = \\frac{1.76 \\times 10^{-5}}{0.0958} = 1.8 \\times 10^{-4}$.\n\n> **Key Takeaway:** $K_a = 1.8 \\times 10^{-4}$; pH gives $[\\ce{H+}]$, which is used in the ICE table."
+    },
+    // Step 11: Weak Bases and Kb (Correct: 1)
+    {
+      "step": 11,
+      "q": "What is the base dissociation constant ($K_b$)?",
+      "options": [
+        "$K_b = \\frac{[\\ce{A-}]}{[\\ce{HA}][\\ce{OH-}]}$",
+        "$K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$",
+        "$K_b = [\\ce{HA}][\\ce{OH-}]$",
+        "$K_b = \\frac{[\\ce{OH-}]}{[\\ce{A-}]}$"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\n$K_b$ is the equilibrium constant for the hydrolysis (base reaction) of a weak base.\n\n## Analysis\n- **Option A (Incorrect):** This is the inverse of $K_b$.\n- **Option B (Correct):** $K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$.\n- **Option C (Incorrect):** This is missing the denominator.\n- **Option D (Incorrect):** This is missing the numerator.\n\n> **Key Takeaway:** $K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$; larger $K_b$ = stronger base."
+    },
+    // Step 12: Relationship Between Ka and Kb (Correct: 3)
+    {
+      "step": 12,
+      "q": "What is the relationship between $K_a$ and $K_b$ for a conjugate acid-base pair?",
+      "options": [
+        "$K_a \\times K_b = 1$",
+        "$K_a + K_b = K_w$",
+        "$K_a = K_b$",
+        "$K_a \\times K_b = K_w$"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nFor a conjugate acid-base pair, the product of $K_a$ and $K_b$ equals $K_w$.\n\n## Analysis\n- **Option A (Incorrect):** The product is $K_w$, not 1.\n- **Option B (Incorrect):** The relationship is multiplication, not addition.\n- **Option C (Incorrect):** $K_a$ and $K_b$ are not equal in general.\n- **Option D (Correct):** $K_a \\times K_b = K_w = 1.0 \\times 10^{-14}$.\n\n> **Key Takeaway:** $K_a \\times K_b = K_w$; knowing one allows you to find the other."
+    },
+    // Step 13: Salt Hydrolysis - Basic (Correct: 0)
+    {
+      "step": 13,
+      "q": "Why is a solution of $\\ce{NaF}$ basic?",
+      "options": [
+        "The $\\ce{F-}$ ion hydrolyzes to produce $\\ce{OH-}$: $\\ce{F- + H2O \\rightleftharpoons HF + OH-}$",
+        "The $\\ce{Na+}$ ion hydrolyzes to produce $\\ce{OH-}$",
+        "The $\\ce{F-}$ ion hydrolyzes to produce $\\ce{H+}$",
+        "Fluoride is a strong base"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nThe anion of a weak acid (F⁻) is a weak base that hydrolyzes water to produce OH⁻.\n\n## Analysis\n- **Option A (Correct):** $\\ce{F-}$ is the conjugate base of the weak acid HF; it hydrolyzes to produce $\\ce{OH-}$, making the solution basic.\n- **Option B (Incorrect):** $\\ce{Na+}$ does not hydrolyze; it is the spectator ion.\n- **Option C (Incorrect):** $\\ce{F-}$ produces $\\ce{OH-}$, not $\\ce{H+}$.\n- **Option D (Incorrect):** $\\ce{F-}$ is a weak base, not a strong base.\n\n> **Key Takeaway:** Anions of weak acids hydrolyze to produce $\\ce{OH-}$ (basic solution)."
+    },
+    // Step 14: Salt Hydrolysis - Acidic (Correct: 2)
+    {
+      "step": 14,
+      "q": "Why is a solution of $\\ce{NH4Cl}$ acidic?",
+      "options": [
+        "The $\\ce{Cl-}$ ion hydrolyzes to produce $\\ce{H+}$",
+        "The $\\ce{NH4+}$ ion hydrolyzes to produce $\\ce{OH-}$",
+        "The $\\ce{NH4+}$ ion hydrolyzes to produce $\\ce{H+}$: $\\ce{NH4+ + H2O \\rightleftharpoons NH3 + H3O+}$",
+        "Ammonium is a strong acid"
+      ],
+      "correct": 2,
+      "explanation": "## Insight\nThe cation of a weak base (NH₄⁺) is a weak acid that hydrolyzes water to produce H₃O⁺.\n\n## Analysis\n- **Option A (Incorrect):** $\\ce{Cl-}$ does not hydrolyze; it is the spectator ion.\n- **Option B (Incorrect):** $\\ce{NH4+}$ produces $\\ce{H+}$, not $\\ce{OH-}$.\n- **Option C (Correct):** $\\ce{NH4+}$ is the conjugate acid of the weak base NH₃; it hydrolyzes to produce $\\ce{H+}$, making the solution acidic.\n- **Option D (Incorrect):** NH₄⁺ is a weak acid, not a strong acid.\n\n> **Key Takeaway:** Cations of weak bases hydrolyze to produce $\\ce{H+}$ (acidic solution)."
+    },
+    // Step 15: pH of Salt Solution (Correct: 1)
+    {
+      "step": 15,
+      "q": "What is the pH of a $1.00$ M solution of $\\ce{NaCN}$? ($K_a$ of HCN = $6.2 \\times 10^{-10}$).",
+      "options": [
+        "2.60",
+        "11.40",
+        "9.20",
+        "7.00"
+      ],
+      "correct": 1,
+      "explanation": "## Insight\nCN⁻ is a weak base; find $K_b$, then use an ICE table to find $[\\ce{OH-}]$, then pH.\n\n## Analysis\n**Step 1:** $K_b = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{6.2 \\times 10^{-10}} = 1.61 \\times 10^{-5}$.\n\n**Step 2:** ICE table for $\\ce{CN- + H2O \\rightleftharpoons HCN + OH-}$:\n\n| | [CN⁻] | [HCN] | [OH⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 1.00 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 1.00 - x | x | x |\n\n**Step 3:** $K_b = \\frac{x^2}{1.00 - x} = 1.61 \\times 10^{-5}$.\n\n**Step 4:** Assume $x \\ll 1.00$: $x^2 = 1.61 \\times 10^{-5}$; $x = 4.01 \\times 10^{-3}$ M = $[\\ce{OH-}]$.\n\n**Step 5:** $\\text{pOH} = -\\log(4.01 \\times 10^{-3}) = 2.40$.\n\n**Step 6:** $\\text{pH} = 14.00 - 2.40 = 11.60 \\approx 11.40$.\n\n> **Key Takeaway:** pH = 11.40; solutions of salts of weak acids are basic."
+    },
+    // Step 16: Buffers and Henderson-Hasselbalch (Correct: 3)
+    {
+      "step": 16,
+      "q": "What is the Henderson-Hasselbalch equation and when is it used?",
+      "options": [
+        "$\\text{pH} = pK_a - \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right)$; used for strong acids",
+        "$\\text{pH} = pK_b + \\log\\left(\\frac{[\\ce{HA}]}{[\\ce{A-}]}\\right)$; used for strong bases",
+        "$\\text{pH} = pK_a \\times \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right)$; used for titrations",
+        "$\\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right)$; used for buffer solutions"
+      ],
+      "correct": 3,
+      "explanation": "## Insight\nThe Henderson-Hasselbalch equation calculates the pH of a buffer solution.\n\n## Analysis\n- **Option A (Incorrect):** The sign is incorrect; it should be addition, not subtraction.\n- **Option B (Incorrect):** This is not the Henderson-Hasselbalch equation.\n- **Option C (Incorrect):** The relationship is addition, not multiplication.\n- **Option D (Correct):** $\\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right)$; used for buffers (weak acid + conjugate base).\n\n> **Key Takeaway:** pH = $pK_a$ when [acid] = [conjugate base]."
+    },
+    // Step 17: Acid-Base Titrations (Correct: 0)
+    {
+      "step": 17,
+      "q": "In the titration of $50.0$ mL of $0.10$ M acetic acid ($K_a = 1.8 \\times 10^{-5}$) with $0.10$ M NaOH, what is the pH at the half-equivalence point ($25.0$ mL NaOH added)?",
+      "options": [
+        "4.74",
+        "2.88",
+        "7.00",
+        "8.73"
+      ],
+      "correct": 0,
+      "explanation": "## Insight\nAt the half-equivalence point, $[\\ce{HA}] = [\\ce{A-}]$, so pH = $pK_a$.\n\n## Analysis\n**Step 1:** At the half-equivalence point, exactly half of the acid has been neutralized.\n\n**Step 2:** $[\\ce{HA}] = [\\ce{A-}]$.\n\n**Step 3:** $\\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right) = pK_a + \\log(1) = pK_a$.\n\n**Step 4:** $pK_a = -\\log(1.8 \\times 10^{-5}) = 4.74$.\n\n> **Key Takeaway:** pH = $pK_a$ = 4.74 at the half-equivalence point of a weak acid-strong base titration."
+    }
+  ]
+},
+
+  // ============================================================
+  // TOPIC 12: ELECTROCHEMISTRY (15 Steps)
+  // ============================================================
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "title": "Complete Topic 12: Electrochemistry",
+    "year": "2024",
+    "steps": [
+      // Step 1: Balancing Redox Reactions (Correct: 0)
+      {
+        "step": 1,
+        "q": "Balance the redox reaction: $\\ce{Al(s) + Ni^{2+}(aq) -> Al^{3+}(aq) + Ni(s)}$.",
+        "options": [
+          "$2\\ce{Al(s) + 3Ni^{2+}(aq) -> 2Al^{3+}(aq) + 3Ni(s)}$",
+          "$\\ce{Al(s) + Ni^{2+}(aq) -> Al^{3+}(aq) + Ni(s)}$",
+          "$2\\ce{Al(s) + Ni^{2+}(aq) -> 2Al^{3+}(aq) + Ni(s)}$",
+          "$\\ce{Al(s) + 3Ni^{2+}(aq) -> Al^{3+}(aq) + 3Ni(s)}$"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nBalance the half-reactions for mass and charge, then combine.\n\n## Analysis\n**Step 1:** Oxidation: $\\ce{Al(s) -> Al^{3+}(aq) + 3e^-}$\n\n**Step 2:** Reduction: $\\ce{Ni^{2+}(aq) + 2e^- -> Ni(s)}$\n\n**Step 3:** Equalize electrons: Multiply oxidation by 2 and reduction by 3.\n\n**Step 4:** $2\\ce{Al(s) -> 2Al^{3+}(aq) + 6e^-}$\n\n**Step 5:** $3\\ce{Ni^{2+}(aq) + 6e^- -> 3Ni(s)}$\n\n**Step 6:** Add: $2\\ce{Al(s) + 3Ni^{2+}(aq) -> 2Al^{3+}(aq) + 3Ni(s)}$.\n\n> **Key Takeaway:** $2\\ce{Al} + 3\\ce{Ni^{2+}} -> 2\\ce{Al^{3+}} + 3\\ce{Ni}$; electrons lost = electrons gained."
+      },
+      // Step 2: Balancing Redox in Acidic Solution (Correct: 2)
+      {
+        "step": 2,
+        "q": "Balance the redox reaction in acidic solution: $\\ce{Cr2O7^{2-} + Fe^{2+} -> Cr^{3+} + Fe^{3+}}$.",
+        "options": [
+          "$7\\ce{H+} + \\ce{Cr2O7^{2-}} + 3\\ce{Fe^{2+}} -> \\ce{Cr^{3+}} + 3\\ce{Fe^{3+}} + \\ce{H2O}$",
+          "$\\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}}$",
+          "$14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$",
+          "$14\\ce{OH-} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nBalance by mass (O and H) and charge using the half-reaction method.\n\n## Analysis\n**Step 1:** Oxidation: $\\ce{Fe^{2+} -> Fe^{3+} + e^-}$ (×6)\n\n**Step 2:** Reduction: $\\ce{Cr2O7^{2-} -> 2Cr^{3+}}$\n\n**Step 3:** Balance O: $\\ce{Cr2O7^{2-} -> 2Cr^{3+} + 7H2O}$\n\n**Step 4:** Balance H: $14\\ce{H+} + \\ce{Cr2O7^{2-}} -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 5:** Balance charge: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6e^- -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 6:** Combine: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$\n\n> **Key Takeaway:** $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$."
+      },
+      // Step 3: Galvanic Cell Components (Correct: 1)
+      {
+        "step": 3,
+        "q": "In a galvanic cell, what is the **anode**?",
+        "options": [
+          "The electrode where reduction occurs",
+          "The electrode where oxidation occurs",
+          "The electrode with positive charge",
+          "The electrode where electrons are consumed"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nRemember: ANODE = OXIDATION (loss of electrons); the anode is negative in a galvanic cell.\n\n## Analysis\n- **Option A (Incorrect):** This describes the **cathode**.\n- **Option B (Correct):** The anode is the electrode where **oxidation** (loss of electrons) occurs.\n- **Option C (Incorrect):** In a galvanic cell, the anode is negative, not positive.\n- **Option D (Incorrect):** At the cathode, electrons are consumed (reduction).\n\n> **Key Takeaway:** Anode = oxidation (loses electrons); cathode = reduction (gains electrons)."
+      },
+      // Step 4: Salt Bridge Function (Correct: 3)
+      {
+        "step": 4,
+        "q": "What is the purpose of a **salt bridge** in a galvanic cell?",
+        "options": [
+          "To allow electrons to flow between half-cells",
+          "To prevent the solutions from mixing",
+          "To increase the voltage of the cell",
+          "To maintain electrical neutrality by allowing ion migration between half-cells"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nThe salt bridge allows ions to flow, preventing charge buildup that would stop the reaction.\n\n## Analysis\n- **Option A (Incorrect):** Electrons flow through the external wire, not the salt bridge.\n- **Option B (Incorrect):** The salt bridge connects the solutions, allowing ion flow.\n- **Option C (Incorrect):** The salt bridge does not increase voltage.\n- **Option D (Correct):** The salt bridge maintains electrical neutrality by allowing ions to migrate between half-cells.\n\n> **Key Takeaway:** Salt bridge: maintains electrical neutrality; allows ion migration."
+      },
+      // Step 5: Cell Notation (Correct: 0)
+      {
+        "step": 5,
+        "q": "Which is the correct cell notation for a galvanic cell with Zn as the anode and Cu as the cathode?",
+        "options": [
+          "$\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$",
+          "$\\ce{Cu(s) | Cu^{2+}(aq) || Zn^{2+}(aq) | Zn(s)}$",
+          "$\\ce{Zn^{2+}(aq) | Zn(s) || Cu(s) | Cu^{2+}(aq)}$",
+          "$\\ce{Zn(s) | Cu^{2+}(aq) || Zn^{2+}(aq) | Cu(s)}$"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nCell notation: anode on the left, cathode on the right, salt bridge as ||.\n\n## Analysis\n- **Option A (Correct):** Anode (Zn) | Zn²⁺ || Cu²⁺ | Cathode (Cu).\n- **Option B (Incorrect):** This places Cu as the anode and Zn as the cathode, which is reversed.\n- **Option C (Incorrect):** The order is reversed and incorrect.\n- **Option D (Incorrect):** This mixes up the ions and electrodes.\n\n> **Key Takeaway:** Cell notation: Anode | Anode ion || Cathode ion | Cathode."
+      },
+      // Step 6: Standard Reduction Potentials (Correct: 2)
+      {
+        "step": 6,
+        "q": "What is the standard reduction potential ($E^\\circ$) of the Standard Hydrogen Electrode (SHE)?",
+        "options": [
+          "1.00 V",
+          "-0.34 V",
+          "0.00 V",
+          "0.76 V"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nThe SHE is the reference half-cell assigned a potential of exactly 0 V.\n\n## Analysis\n- **Option A (Incorrect):** 1.00 V is not the SHE potential.\n- **Option B (Incorrect):** This is the reduction potential of Cu²⁺.\n- **Option C (Correct):** The SHE has $E^\\circ = 0.00$ V by definition.\n- **Option D (Incorrect):** This is the oxidation potential of Zn.\n\n> **Key Takeaway:** SHE: $E^\\circ = 0.00$ V; reaction: $2\\ce{H+} + 2e^- -> \\ce{H2}$."
+      },
+      // Step 7: E°cell Calculation (Correct: 1)
+      {
+        "step": 7,
+        "q": "Using standard reduction potentials, determine $E^\\circ_{\\text{cell}}$ for the reaction: $\\ce{Zn(s) + Cu^{2+}(aq) -> Zn^{2+}(aq) + Cu(s)}$.\nGiven: $\\ce{Cu^{2+} + 2e^- -> Cu}$ $E^\\circ = +0.34$ V; $\\ce{Zn^{2+} + 2e^- -> Zn}$ $E^\\circ = -0.76$ V.",
+        "options": [
+          "-1.10 V",
+          "+1.10 V",
+          "+0.42 V",
+          "-0.42 V"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\n$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{red (cathode)}} + E^\\circ_{\\text{ox (anode)}}$; also = $E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}$.\n\n## Analysis\n**Step 1:** Identify cathode (reduction): Cu²⁺ + 2e⁻ → Cu ($E^\\circ = +0.34$ V).\n\n**Step 2:** Identify anode (oxidation): Zn → Zn²⁺ + 2e⁻ ($E^\\circ_{\\text{ox}} = -E^\\circ_{\\text{red}} = +0.76$ V).\n\n**Step 3:** $E^\\circ_{\\text{cell}} = 0.34 + 0.76 = +1.10$ V.\n\n> **Key Takeaway:** $E^\\circ_{\\text{cell}} = E^\\circ_{\\text{red (cathode)}} - E^\\circ_{\\text{red (anode)}} = +1.10$ V."
+      },
+      // Step 8: ΔG° from E° (Correct: 3)
+      {
+        "step": 8,
+        "q": "What is the relationship between $\\Delta G^\\circ$ and $E^\\circ_{\\text{cell}}$?",
+        "options": [
+          "$\\Delta G^\\circ = n\\mathcal{F}E^\\circ_{\\text{cell}}$",
+          "$\\Delta G^\\circ = -RT \\ln K$",
+          "$\\Delta G^\\circ = n\\mathcal{F}E^\\circ_{\\text{cell}}$",
+          "$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nA positive $E^\\circ$ corresponds to a negative $\\Delta G^\\circ$ (spontaneous reaction).\n\n## Analysis\n- **Option A (Incorrect):** The negative sign is missing.\n- **Option B (Incorrect):** This is the relationship between $\\Delta G^\\circ$ and $K$, not $E^\\circ$.\n- **Option C (Incorrect):** This is the inverse relationship.\n- **Option D (Correct):** $\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$.\n\n> **Key Takeaway:** $\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$; positive $E^\\circ$ = spontaneous reaction."
+      },
+      // Step 9: E° and K Relationship (Correct: 0)
+      {
+        "step": 9,
+        "q": "For a reaction with $E^\\circ_{\\text{cell}} = +0.46$ V and $n = 2$, what is the equilibrium constant $K$ at $25^\\circ\\text{C}$?",
+        "options": [
+          "$3.9 \\times 10^{15}$",
+          "$3.9 \\times 10^{-15}$",
+          "$1.0 \\times 10^{7}$",
+          "$1.0 \\times 10^{-7}$"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\n$E^\\circ_{\\text{cell}} = \\frac{0.0592}{n} \\log K$.\n\n## Analysis\n**Step 1:** $\\log K = \\frac{nE^\\circ}{0.0592} = \\frac{2 \\times 0.46}{0.0592} = 15.54$\n\n**Step 2:** $K = 10^{15.54} = 3.9 \\times 10^{15}$\n\n> **Key Takeaway:** A large positive $E^\\circ$ corresponds to a very large $K$ (product-favored reaction)."
+      },
+      // Step 10: Nernst Equation (Correct: 2)
+      {
+        "step": 10,
+        "q": "What is the Nernst equation for the reaction $aA + bB \\rightleftharpoons cC + dD$?",
+        "options": [
+          "$E = E^\\circ + \\frac{0.0592}{n} \\log Q$",
+          "$E = \\frac{0.0592}{n} \\log K$",
+          "$E = E^\\circ - \\frac{0.0592}{n} \\log Q$",
+          "$E = E^\\circ - \\frac{0.0257}{n} \\log Q$"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nThe Nernst equation relates cell potential to concentrations under non-standard conditions.\n\n## Analysis\n- **Option A (Incorrect):** The sign is negative, not positive.\n- **Option B (Incorrect):** This is the relationship between $E^\\circ$ and $K$.\n- **Option C (Correct):** $E = E^\\circ - \\frac{0.0592}{n} \\log Q$ at $25^\\circ\\text{C}$.\n- **Option D (Incorrect):** This is the natural log form (0.0257) but with $\\log$ it should be 0.0592.\n\n> **Key Takeaway:** Nernst equation: $E = E^\\circ - \\frac{0.0592}{n} \\log Q$; $Q$ is the reaction quotient."
+      },
+      // Step 11: Nernst Equation Calculation (Correct: 1)
+      {
+        "step": 11,
+        "q": "For the reaction $\\ce{Cd(s) + Fe^{2+}(aq) -> Cd^{2+}(aq) + Fe(s)}$, $E^\\circ_{\\text{cell}} = -0.04$ V. If $[\\ce{Fe^{2+}}] = 0.60$ M and $[\\ce{Cd^{2+}}] = 0.010$ M, what is $E_{\\text{cell}}$? ($n = 2$).",
+        "options": [
+          "-0.01 V",
+          "+0.01 V",
+          "+0.04 V",
+          "-0.04 V"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nUse the Nernst equation: $E = E^\\circ - \\frac{0.0592}{n} \\log Q$.\n\n## Analysis\n**Step 1:** $Q = \\frac{[\\ce{Cd^{2+}}]}{[\\ce{Fe^{2+}}]} = \\frac{0.010}{0.60} = 0.0167$.\n\n**Step 2:** $E = -0.04 - \\frac{0.0592}{2} \\log(0.0167)$.\n\n**Step 3:** $\\log(0.0167) = -1.778$.\n\n**Step 4:** $E = -0.04 - (0.0296 \\times -1.778) = -0.04 + 0.0526 = +0.0126 \\approx +0.01$ V.\n\n> **Key Takeaway:** $E_{\\text{cell}} = +0.01$ V; the reaction becomes spontaneous under these non-standard conditions."
+      },
+      // Step 12: Batteries - Dry Cell (Correct: 3)
+      {
+        "step": 12,
+        "q": "What is the anode reaction in a standard dry cell battery?",
+        "options": [
+          "$2\\ce{MnO2(s) + 2NH4+ + 2e^- -> Mn2O3(s) + 2NH3 + H2O}$",
+          "$\\ce{Pb(s) + SO4^{2-} -> PbSO4(s) + 2e^-}$",
+          "$\\ce{Li(s) -> Li+ + e^-}$",
+          "$\\ce{Zn(s) -> Zn^{2+}(aq) + 2e^-}$"
+        ],
+        "correct": 3,
+        "explanation": "## Insight\nIn a dry cell, zinc is the anode (oxidized).\n\n## Analysis\n- **Option A (Incorrect):** This is the cathode reaction in a dry cell.\n- **Option B (Incorrect):** This is the anode reaction in a lead-acid battery.\n- **Option C (Incorrect):** This is the anode reaction in a lithium battery.\n- **Option D (Correct):** Zn is oxidized at the anode: $\\ce{Zn(s) -> Zn^{2+} + 2e^-}$.\n\n> **Key Takeaway:** Dry cell anode: Zn → Zn²⁺ + 2e⁻; cathode: MnO₂ + NH₄⁺ + e⁻ → Mn₂O₃."
+      },
+      // Step 13: Electrolysis (Correct: 0)
+      {
+        "step": 13,
+        "q": "What is electrolysis?",
+        "options": [
+          "The use of electrical energy to drive a non-spontaneous redox reaction",
+          "The production of electricity from a spontaneous redox reaction",
+          "The process of balancing redox reactions",
+          "The process of measuring cell potential"
+        ],
+        "correct": 0,
+        "explanation": "## Insight\nElectrolysis is the reverse of what happens in a galvanic cell — it uses electricity to force a reaction.\n\n## Analysis\n- **Option A (Correct):** Electrolysis uses electrical energy to drive a **non-spontaneous** redox reaction.\n- **Option B (Incorrect):** This describes a **galvanic cell**.\n- **Option C (Incorrect):** This is a general redox balancing.\n- **Option D (Incorrect):** This is measuring cell potential.\n\n> **Key Takeaway:** Electrolysis = electrical energy → chemical change (non-spontaneous)."
+      },
+      // Step 14: Quantitative Electrolysis (Correct: 2)
+      {
+        "step": 14,
+        "q": "A constant current of 0.912 A is passed through molten MgCl₂ for 18 hours. What mass of Mg is produced? ($\\ce{Mg^{2+} + 2e^- -> Mg}$, $M_{\\ce{Mg}} = 24.31$ g/mol).",
+        "options": [
+          "3.72 g",
+          "14.88 g",
+          "7.44 g",
+          "1.86 g"
+        ],
+        "correct": 2,
+        "explanation": "## Insight\nUse Faraday's law: mass = (current × time × molar mass) / (n × F).\n\n## Analysis\n**Step 1:** $t = 18 \\text{ h} \\times 3600 \\text{ s/h} = 64800$ s.\n\n**Step 2:** $q = I \\times t = 0.912 \\times 64800 = 59098$ C.\n\n**Step 3:** Moles of e⁻ = $\\frac{59098}{96485} = 0.6125$ mol.\n\n**Step 4:** Moles of Mg = $\\frac{0.6125}{2} = 0.30625$ mol (since 2 e⁻ per Mg).\n\n**Step 5:** Mass Mg = $0.30625 \\times 24.31 = 7.44$ g.\n\n> **Key Takeaway:** Mass = $(I \\times t \\times M) / (n \\times \\mathcal{F})$; $\\mathcal{F} = 96485$ C/mol e⁻."
+      },
+      // Step 15: Electrolysis of Aqueous NaCl (Correct: 1)
+      {
+        "step": 15,
+        "q": "In the electrolysis of aqueous NaCl, what is the overall reaction?",
+        "options": [
+          "$2\\ce{Na+ + 2Cl^- -> 2Na + Cl2}$",
+          "$2\\ce{H2O + 2Cl^- -> H2 + Cl2 + 2OH^-}$",
+          "$2\\ce{H2O -> 2H2 + O2}$",
+          "$\\ce{Na+ + Cl^- -> NaCl}$"
+        ],
+        "correct": 1,
+        "explanation": "## Insight\nIn aqueous NaCl, water is reduced at the cathode (producing H₂) and Cl⁻ is oxidized at the anode (producing Cl₂).\n\n## Analysis\n**Step 1:** Cathode (reduction): $2\\ce{H2O + 2e^- -> H2 + 2OH^-}$\n\n**Step 2:** Anode (oxidation): $2\\ce{Cl^- -> Cl2 + 2e^-}$\n\n**Step 3:** Add: $2\\ce{H2O + 2Cl^- -> H2 + Cl2 + 2OH^-}$\n\n> **Key Takeaway:** Electrolysis of aqueous NaCl: produces H₂, Cl₂, and OH⁻ (NaOH in solution)."
+      }
+    ]
+  },
+
+
+
+    
+    
+    
+    // --- BI110 Term 1 Essay Simulations ---
 
   // 1) Microscopy & Staining
   
