@@ -1,7 +1,2042 @@
 
 const mcqData = [
   
-  
+  // ============================================================
+// MCQs for CH110 – Terms 3 (Topics 9–12)
+// Correct answers follow a strict 0‑1‑2‑3 cycle for even distribution.
+// Unsupported metadata (id, subsection, difficulty, blooms_level) removed.
+// ============================================================
+
+  // ============================================================
+  // SECTION 1: Topic 9 – Chemical Kinetics
+  // ============================================================
+
+  // --- Concept: Reaction Rate Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the **rate** of a chemical reaction?",
+    "options": [
+      "The change in concentration of a reactant or product per unit time",
+      "The total amount of product formed in a reaction",
+      "The time required for a reaction to go to completion",
+      "The energy required to start a reaction"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe rate of a reaction tells us how fast reactants are consumed or products are formed.\n\n## Analysis\n- **Option A (Correct):** Reaction rate is measured as the **decrease in concentration of a reactant** or the **increase in concentration of a product** per unit time.\n- **Option B (Incorrect):** This is the total yield, not the rate.\n- **Option C (Incorrect):** This describes the reaction time, not the rate.\n- **Option D (Incorrect):** This is the activation energy, not the rate.\n\n## Key Takeaway\nRate = change in concentration / change in time; units are mol L⁻¹ s⁻¹."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What are the units of reaction rate?",
+    "options": [
+      "mol L⁻¹ s⁻¹",
+      "mol L⁻¹",
+      "L mol⁻¹ s⁻¹",
+      "s⁻¹"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nRate is concentration change per unit time.\n\n## Analysis\n- **Option A (Correct):** Rate = (mol L⁻¹) / s = mol L⁻¹ s⁻¹.\n- **Option B (Incorrect):** This is concentration, not rate.\n- **Option C (Incorrect):** This is the unit for second-order rate constants.\n- **Option D (Incorrect):** This is the unit for first-order rate constants.\n\n## Key Takeaway\nRate units are always concentration per time: mol L⁻¹ s⁻¹."
+  },
+
+  // --- Concept: Average Rate ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $2\\ce{H2O2(aq)} \\rightarrow 2\\ce{H2O(l)} + \\ce{O2(g)}$, the concentration of $\\ce{H2O2}$ decreases from 1.000 M to 0.500 M over $2.16 \\times 10^4$ seconds. What is the average rate of decomposition of $\\ce{H2O2}$?",
+    "options": [
+      "$2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$1.16 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$4.63 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe average rate is the change in concentration divided by the change in time.\n\n## Analysis\n**Step 1:** $\\Delta[\\ce{H2O2}] = 0.500 - 1.000 = -0.500$ M\n\n**Step 2:** $\\Delta t = 2.16 \\times 10^4$ s\n\n**Step 3:** Rate = $-\\frac{\\Delta[\\ce{H2O2}]}{\\Delta t} = -\\frac{-0.500}{2.16 \\times 10^4} = 2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$\n\n## Key Takeaway\nAverage rate = -Δ[reactant]/Δt; the rate of disappearance of H₂O₂ is $2.31 \\times 10^{-5}$ M/s."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $2\\ce{H2O2(aq)} \\rightarrow 2\\ce{H2O(l)} + \\ce{O2(g)}$, what is the average rate of appearance of $\\ce{O2}$ from 0s to $2.16 \\times 10^4$ s, given that $[\\ce{H2O2}]$ decreases from 1.000 M to 0.500 M?",
+    "options": [
+      "$1.16 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$2.31 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$4.63 \\times 10^{-5} \\, \\text{mol L}^{-1} \\text{s}^{-1}$",
+      "$5.79 \\times 10^{-6} \\, \\text{mol L}^{-1} \\text{s}^{-1}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe rate of appearance of O₂ is related to the rate of disappearance of H₂O₂ by the stoichiometric coefficients.\n\n## Analysis\n**Step 1:** Rate of disappearance of H₂O₂ = $2.31 \\times 10^{-5}$ M/s\n\n**Step 2:** Stoichiometry: 2 mol H₂O₂ produce 1 mol O₂, so:\n$\\text{Rate}_{\\ce{O2}} = \\frac{1}{2} \\times \\text{Rate}_{\\ce{H2O2}} = \\frac{1}{2} \\times 2.31 \\times 10^{-5} = 1.16 \\times 10^{-5}$ M/s\n\n## Key Takeaway\n$\\text{Rate}_{\\ce{O2}} = \\frac{1}{2} \\text{Rate}_{\\ce{H2O2}}$ due to stoichiometry."
+  },
+
+  // --- Concept: General Rate Expression ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the general reaction $aA + bB \\rightarrow cC + dD$, what is the correct rate expression?",
+    "options": [
+      "$\\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = -\\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = \\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t}$",
+      "$\\text{Rate} = -\\frac{\\Delta[A]}{\\Delta t} = -\\frac{\\Delta[B]}{\\Delta t} = \\frac{\\Delta[C]}{\\Delta t} = \\frac{\\Delta[D]}{\\Delta t}$",
+      "$\\text{Rate} = \\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = \\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = -\\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = -\\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t}$",
+      "$\\text{Rate} = a\\frac{\\Delta[A]}{\\Delta t} = b\\frac{\\Delta[B]}{\\Delta t} = c\\frac{\\Delta[C]}{\\Delta t} = d\\frac{\\Delta[D]}{\\Delta t}$"
+    ],
+    "correct": 0,   // cycle: index 4 -> 0
+    "explanation": "## Insight\nThe rate of reaction is the same regardless of which substance is used to measure it, when divided by the stoichiometric coefficient.\n\n## Analysis\n- **Option A (Correct):** The rate expression accounts for stoichiometric coefficients: reactants have negative signs (disappearing), products have positive signs (appearing).\n- **Option B (Incorrect):** This does not account for stoichiometric coefficients.\n- **Option C (Incorrect):** The signs are reversed and coefficients are inverted incorrectly.\n- **Option D (Incorrect):** Coefficients should divide, not multiply, the concentration changes.\n\n## Key Takeaway\n$\\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t}$; coefficients divide the concentration changes."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $2\\ce{N2O5(g)} \\rightarrow 4\\ce{NO2(g)} + \\ce{O2(g)}$, what is the relationship between the rate of disappearance of $\\ce{N2O5}$ and the rate of formation of $\\ce{O2}$?",
+    "options": [
+      "$\\text{Rate}_{\\ce{N2O5}} = 2 \\times \\text{Rate}_{\\ce{O2}}$",
+      "$\\text{Rate}_{\\ce{O2}} = 2 \\times \\text{Rate}_{\\ce{N2O5}}$",
+      "$\\text{Rate}_{\\ce{N2O5}} = \\text{Rate}_{\\ce{O2}}$",
+      "$\\text{Rate}_{\\ce{N2O5}} = 4 \\times \\text{Rate}_{\\ce{O2}}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe stoichiometric coefficients relate the rates of consumption and formation.\n\n## Analysis\n**Step 1:** From the balanced equation, 2 mol N₂O₅ produce 1 mol O₂.\n\n**Step 2:** $\\text{Rate} = -\\frac{1}{2}\\frac{\\Delta[\\ce{N2O5}]}{\\Delta t} = \\frac{\\Delta[\\ce{O2}]}{\\Delta t}$\n\n**Step 3:** Rearranging: $-\\frac{\\Delta[\\ce{N2O5}]}{\\Delta t} = 2 \\times \\frac{\\Delta[\\ce{O2}]}{\\Delta t}$\n\n**Step 4:** Therefore, Rate of disappearance of N₂O₅ = 2 × Rate of appearance of O₂.\n\n## Key Takeaway\nFor $2\\ce{N2O5} \\rightarrow 4\\ce{NO2} + \\ce{O2}$, $\\text{Rate}_{\\ce{N2O5}} = 2 \\times \\text{Rate}_{\\ce{O2}}$."
+  },
+
+  // --- Concept: Factors Affecting Rates ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "options": [
+      "Temperature",
+      "Concentration of reactants",
+      "Surface area of a solid reactant",
+      "The equilibrium constant"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe equilibrium constant tells us the extent of a reaction, not how fast it proceeds.\n\n## Analysis\n- **Option A (Incorrect):** Temperature affects rate significantly (higher T = faster rate).\n- **Option B (Incorrect):** Concentration affects rate (higher concentration = faster rate).\n- **Option C (Incorrect):** Surface area affects rate (more surface area = faster rate).\n- **Option D (Correct):** The equilibrium constant ($K$) does NOT affect the rate; it only tells us the equilibrium position.\n\n## Key Takeaway\nFactors affecting rate: temperature, concentration, catalysts, surface area, pressure. The equilibrium constant does not affect rate."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "Why does increasing temperature increase the rate of a chemical reaction?",
+    "options": [
+      "Reactant molecules have more kinetic energy, move faster, and collide more often and with greater energy",
+      "Increasing temperature decreases the activation energy",
+      "Increasing temperature increases the equilibrium constant",
+      "Increasing temperature changes the stoichiometry of the reaction"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nHigher temperature means higher average kinetic energy, leading to more frequent and more energetic collisions.\n\n## Analysis\n- **Option A (Correct):** At higher temperatures, molecules move faster, collide more often, and have more energy to overcome the activation barrier.\n- **Option B (Incorrect):** Activation energy is a constant for a given reaction; temperature does not change it.\n- **Option C (Incorrect):** Temperature does affect $K$, but that does not explain the rate increase.\n- **Option D (Incorrect):** Stoichiometry is not affected by temperature.\n\n## Key Takeaway\nHigher T = faster molecules = more collisions = faster rate."
+  },
+
+  // --- Concept: Rate Law Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a **rate law**?",
+    "options": [
+      "A mathematical expression that relates the rate of a reaction to the concentrations of reactants",
+      "A mathematical expression that relates the rate of a reaction to temperature",
+      "A statement that describes the equilibrium position of a reaction",
+      "A list of the steps in a reaction mechanism"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe rate law shows how the rate depends on reactant concentrations.\n\n## Analysis\n- **Option A (Correct):** A rate law is a mathematical expression that relates the rate of a reaction to the concentrations of reactants raised to some powers.\n- **Option B (Incorrect):** This is the Arrhenius equation, not the rate law.\n- **Option C (Incorrect):** This is the equilibrium expression.\n- **Option D (Incorrect):** This is a reaction mechanism.\n\n## Key Takeaway\nRate law: $\\text{Rate} = k[A]^x[B]^y$; $k$ is the rate constant."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "In the rate law $\\text{Rate} = k[A]^x[B]^y$, what does the constant $k$ represent?",
+    "options": [
+      "The rate constant, which is specific to the reaction and temperature-dependent",
+      "The equilibrium constant of the reaction",
+      "The activation energy of the reaction",
+      "The concentration of the reactants"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe rate constant $k$ is a proportionality constant that is specific to each reaction and depends on temperature.\n\n## Analysis\n- **Option A (Correct):** $k$ is the rate constant; it is specific to the reaction and increases with temperature.\n- **Option B (Incorrect):** The equilibrium constant is $K$, not $k$.\n- **Option C (Incorrect):** Activation energy is $E_a$, not $k$.\n- **Option D (Incorrect):** $k$ is not a concentration; it is a proportionality constant.\n\n## Key Takeaway\nRate constant $k$ is temperature-dependent; it is not the same as the equilibrium constant $K$."
+  },
+
+  // --- Concept: Reaction Order ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the **order** of a reaction with respect to a particular reactant?",
+    "options": [
+      "The exponent to which the concentration of that reactant is raised in the rate law",
+      "The stoichiometric coefficient of that reactant in the balanced equation",
+      "The number of moles of that reactant consumed in the reaction",
+      "The overall rate of the reaction"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe order of a reaction must be determined experimentally; it is not necessarily equal to the stoichiometric coefficient.\n\n## Analysis\n- **Option A (Correct):** The order with respect to a reactant is the exponent of its concentration in the rate law.\n- **Option B (Incorrect):** The order is not necessarily equal to the stoichiometric coefficient.\n- **Option C (Incorrect):** This is the amount consumed, not the order.\n- **Option D (Incorrect):** This is the rate, not the order.\n\n## Key Takeaway\nOrder = exponent in rate law; must be determined experimentally, not from the balanced equation."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "If the rate of a reaction is independent of the concentration of a reactant, what is the order with respect to that reactant?",
+    "options": [
+      "Zero order",
+      "First order",
+      "Second order",
+      "Third order"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nWhen the rate does not depend on the concentration of a reactant, the reaction is zero order with respect to that reactant.\n\n## Analysis\n- **Option A (Correct):** Zero order means $\\text{Rate} \\propto [A]^0 = 1$; the concentration of A does not affect the rate.\n- **Option B (Incorrect):** First order means $\\text{Rate} \\propto [A]^1$; rate doubles when concentration doubles.\n- **Option C (Incorrect):** Second order means $\\text{Rate} \\propto [A]^2$; rate quadruples when concentration doubles.\n- **Option D (Incorrect):** Third order means $\\text{Rate} \\propto [A]^3$; rate increases by a factor of 8 when concentration doubles.\n\n## Key Takeaway\nZero order: rate is constant and does not depend on concentration."
+  },
+
+  // --- Concept: Method of Initial Rates ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the **method of initial rates**?",
+    "options": [
+      "A method for determining the order of a reaction by measuring the initial rate at different initial concentrations",
+      "A method for determining the equilibrium constant of a reaction",
+      "A method for determining the activation energy of a reaction",
+      "A method for determining the mechanism of a reaction"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe method of initial rates involves running the reaction multiple times, varying the concentration of one reactant at a time, and measuring the initial rate.\n\n## Analysis\n- **Option A (Correct):** The method of initial rates is used to determine the order of a reaction with respect to each reactant by measuring how the initial rate changes when the initial concentration is changed.\n- **Option B (Incorrect):** This is for equilibrium, not kinetics.\n- **Option C (Incorrect):** This is the Arrhenius method.\n- **Option D (Incorrect):** This is for reaction mechanisms, not initial rates.\n\n## Key Takeaway\nInitial rates method: vary one concentration at a time, measure the initial rate, and determine the order from the rate change."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $A + B \\rightarrow \\text{products}$, the following data were obtained:\n\n| Experiment | [A] (M) | [B] (M) | Initial Rate (M/s) |\n|:---:|:---:|:---:|:---:|\n| 1 | 1.0 | 1.0 | 1.0 |\n| 2 | 2.0 | 1.0 | 2.0 |\n| 3 | 1.0 | 2.0 | 8.0 |\n\nWhat is the rate law for this reaction?",
+    "options": [
+      "$\\text{Rate} = k[A]^1[B]^3$",
+      "$\\text{Rate} = k[A]^1[B]^2$",
+      "$\\text{Rate} = k[A]^2[B]^3$",
+      "$\\text{Rate} = k[A]^1[B]^1$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nCompare experiments where only one concentration changes to determine the order for each reactant.\n\n## Analysis\n**Step 1:** Determine order with respect to A: Compare Exp 1 and Exp 2 (B constant).\n$\\frac{\\text{Rate}_2}{\\text{Rate}_1} = \\frac{2.0}{1.0} = 2 = \\left(\\frac{[A]_2}{[A]_1}\\right)^x = \\left(\\frac{2.0}{1.0}\\right)^x = 2^x$\n$2 = 2^x \\Rightarrow x = 1$ (first order in A)\n\n**Step 2:** Determine order with respect to B: Compare Exp 1 and Exp 3 (A constant).\n$\\frac{\\text{Rate}_3}{\\text{Rate}_1} = \\frac{8.0}{1.0} = 8 = \\left(\\frac{[B]_3}{[B]_1}\\right)^y = \\left(\\frac{2.0}{1.0}\\right)^y = 2^y$\n$8 = 2^y \\Rightarrow y = 3$ (third order in B)\n\n**Step 3:** Rate law: $\\text{Rate} = k[A]^1[B]^3$.\n\n## Key Takeaway\nRate law: $\\text{Rate} = k[A]^1[B]^3$; order with respect to A is 1, with respect to B is 3."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $\\ce{H2O2} + \\ce{I^-} + \\ce{H^+} \\rightarrow \\text{products}$, the following data were obtained:\n\n| Experiment | [H₂O₂] (M) | [I⁻] (M) | [H⁺] (M) | Initial Rate (M/s) |\n|:---:|:---:|:---:|:---:|:---:|\n| 1 | 0.010 | 0.010 | 0.00050 | 1.15 × 10⁻⁶ |\n| 2 | 0.020 | 0.010 | 0.00050 | 2.30 × 10⁻⁶ |\n| 3 | 0.010 | 0.020 | 0.00050 | 2.30 × 10⁻⁶ |\n| 4 | 0.010 | 0.010 | 0.00100 | 1.15 × 10⁻⁶ |\n\nWhat is the rate law for this reaction?",
+    "options": [
+      "$\\text{Rate} = k[\\ce{H2O2}][\\ce{I^-}]$",
+      "$\\text{Rate} = k[\\ce{H2O2}][\\ce{I^-}][\\ce{H^+}]$",
+      "$\\text{Rate} = k[\\ce{H2O2}]^2[\\ce{I^-}]$",
+      "$\\text{Rate} = k[\\ce{H2O2}][\\ce{I^-}]^2$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nCompare experiments where only one concentration changes to determine the order for each reactant.\n\n## Analysis\n**Step 1:** Order with respect to H₂O₂: Compare Exp 1 and Exp 2 (I⁻ and H⁺ constant).\n$\\frac{2.30 \\times 10^{-6}}{1.15 \\times 10^{-6}} = 2 = \\left(\\frac{0.020}{0.010}\\right)^x = 2^x \\Rightarrow x = 1$\n\n**Step 2:** Order with respect to I⁻: Compare Exp 1 and Exp 3 (H₂O₂ and H⁺ constant).\n$\\frac{2.30 \\times 10^{-6}}{1.15 \\times 10^{-6}} = 2 = \\left(\\frac{0.020}{0.010}\\right)^y = 2^y \\Rightarrow y = 1$\n\n**Step 3:** Order with respect to H⁺: Compare Exp 1 and Exp 4 (H₂O₂ and I⁻ constant).\n$\\frac{1.15 \\times 10^{-6}}{1.15 \\times 10^{-6}} = 1 = \\left(\\frac{0.00100}{0.00050}\\right)^z = 2^z \\Rightarrow z = 0$\n\n**Step 4:** Rate law: $\\text{Rate} = k[\\ce{H2O2}]^1[\\ce{I^-}]^1[\\ce{H^+}]^0 = k[\\ce{H2O2}][\\ce{I^-}]$.\n\n## Key Takeaway\nThe reaction is first order in H₂O₂, first order in I⁻, and zero order in H⁺."
+  },
+
+  // --- Concept: Rate Constant from Data ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "Using the rate law $\\text{Rate} = k[\\ce{H2O2}][\\ce{I^-}]$ and data from Experiment 1: $[\\ce{H2O2}] = 0.010$ M, $[\\ce{I^-}] = 0.010$ M, Rate = $1.15 \\times 10^{-6}$ M/s, calculate the rate constant $k$.",
+    "options": [
+      "$1.15 \\times 10^{-2} \\, \\text{M}^{-1} \\text{s}^{-1}$",
+      "$1.15 \\times 10^{-6} \\, \\text{M}^{-1} \\text{s}^{-1}$",
+      "$1.15 \\times 10^{-8} \\, \\text{M}^{-1} \\text{s}^{-1}$",
+      "$1.15 \\times 10^{-4} \\, \\text{M}^{-1} \\text{s}^{-1}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\n$k = \\text{Rate} / ([A][B])$.\n\n## Analysis\n**Step 1:** Rearrange the rate law: $k = \\frac{\\text{Rate}}{[\\ce{H2O2}][\\ce{I^-}]}$.\n\n**Step 2:** Substitute values:\n$k = \\frac{1.15 \\times 10^{-6}}{(0.010)(0.010)} = \\frac{1.15 \\times 10^{-6}}{1.0 \\times 10^{-4}} = 1.15 \\times 10^{-2} \\, \\text{M}^{-1} \\text{s}^{-1}$\n\n## Key Takeaway\n$k = 1.15 \\times 10^{-2} \\, \\text{M}^{-1} \\text{s}^{-1}$; the units depend on the overall order of the reaction."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $\\text{Rate} = k[A]^1[B]^1$, what are the units of the rate constant $k$?",
+    "options": [
+      "$\\text{M}^{-1} \\text{s}^{-1}$",
+      "$\\text{s}^{-1}$",
+      "$\\text{M}^{-2} \\text{s}^{-1}$",
+      "$\\text{M} \\text{s}^{-1}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe units of $k$ depend on the overall order of the reaction.\n\n## Analysis\n**Step 1:** Overall order = 1 + 1 = 2 (second order).\n\n**Step 2:** Rate = $k[A][B]$, so $k = \\frac{\\text{Rate}}{[A][B]}$.\n\n**Step 3:** Units: $k = \\frac{\\text{M} \\text{s}^{-1}}{\\text{M}^2} = \\text{M}^{-1} \\text{s}^{-1}$.\n\n## Key Takeaway\nFor a second-order reaction, $k$ has units of $\\text{M}^{-1} \\text{s}^{-1}$."
+  },
+
+  // --- Concept: First-Order Integrated Rate Law ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the integrated rate law for a first-order reaction ($A \\rightarrow \\text{products}$)?",
+    "options": [
+      "$\\ln[A]_t = -kt + \\ln[A]_0$",
+      "$[A]_t = -kt + [A]_0$",
+      "$\\frac{1}{[A]_t} = kt + \\frac{1}{[A]_0}$",
+      "$[A]_t = [A]_0 e^{-kt}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe integrated rate law for a first-order reaction is $\\ln[A]_t = -kt + \\ln[A]_0$, which is the equation of a straight line ($y = mx + b$).\n\n## Analysis\n- **Option A (Correct):** For first-order reactions, $\\ln[A]_t = -kt + \\ln[A]_0$.\n- **Option B (Incorrect):** This is the zero-order integrated rate law.\n- **Option C (Incorrect):** This is the second-order integrated rate law.\n- **Option D (Correct but not the linear form):** This is the exponential form of the first-order integrated rate law.\n\n## Key Takeaway\nFirst-order: $\\ln[A]_t = -kt + \\ln[A]_0$; a plot of $\\ln[A]$ vs $t$ is a straight line with slope $-k$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "A first-order reaction has a rate constant $k = 0.693 \\, \\text{s}^{-1}$. What is the half-life of this reaction?",
+    "options": [
+      "$1.00 \\, \\text{s}$",
+      "$0.693 \\, \\text{s}$",
+      "$0.500 \\, \\text{s}$",
+      "$1.44 \\, \\text{s}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nFor a first-order reaction, $t_{1/2} = \\frac{0.693}{k}$.\n\n## Analysis\n**Step 1:** Use the half-life formula: $t_{1/2} = \\frac{0.693}{k}$.\n\n**Step 2:** Substitute $k = 0.693 \\, \\text{s}^{-1}$:\n$t_{1/2} = \\frac{0.693}{0.693} = 1.00 \\, \\text{s}$.\n\n## Key Takeaway\nFor first-order reactions, half-life is independent of initial concentration: $t_{1/2} = 0.693/k$."
+  },
+
+  // --- Concept: Half-Life ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "A first-order reaction has a half-life of 10 minutes. How long will it take for the concentration to drop to 12.5% of its original value?",
+    "options": [
+      "30 minutes",
+      "10 minutes",
+      "20 minutes",
+      "40 minutes"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nEach half-life reduces the concentration by half. 12.5% = 1/8 of the original, which is 3 half-lives.\n\n## Analysis\n**Step 1:** 100% → 50% (1 half-life)\n\n**Step 2:** 50% → 25% (2 half-lives)\n\n**Step 3:** 25% → 12.5% (3 half-lives)\n\n**Step 4:** Time = 3 × 10 min = 30 minutes.\n\n## Key Takeaway\nAfter 3 half-lives, 12.5% of the original remains; time = 3 × t₁/₂."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "A first-order reaction has a rate constant $k = 0.0231 \\, \\text{s}^{-1}$. What is the half-life?",
+    "options": [
+      "$30.0 \\, \\text{s}$",
+      "$15.0 \\, \\text{s}$",
+      "$60.0 \\, \\text{s}$",
+      "$0.693 \\, \\text{s}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$t_{1/2} = 0.693 / k$.\n\n## Analysis\n$t_{1/2} = \\frac{0.693}{0.0231} = 30.0 \\, \\text{s}$\n\n## Key Takeaway\n$t_{1/2} = 0.693/k$; higher $k$ means shorter half-life."
+  },
+
+  // --- Concept: Arrhenius Equation ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What does the **Arrhenius equation** describe?",
+    "options": [
+      "The relationship between the rate constant and temperature",
+      "The relationship between the rate constant and concentration",
+      "The relationship between the equilibrium constant and temperature",
+      "The relationship between the rate and the activation energy"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe Arrhenius equation shows how the rate constant depends on temperature and activation energy.\n\n## Analysis\n- **Option A (Correct):** The Arrhenius equation is $k = Ae^{-E_a/RT}$, describing how $k$ depends on temperature.\n- **Option B (Incorrect):** This is the rate law, not the Arrhenius equation.\n- **Option C (Incorrect):** This is the van't Hoff equation.\n- **Option D (Incorrect):** The Arrhenius equation relates $k$ to $E_a$ and $T$, not the rate directly.\n\n## Key Takeaway\n$k = Ae^{-E_a/RT}$; higher temperature means larger $k$ (faster reaction)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "In the Arrhenius equation $k = Ae^{-E_a/RT}$, what does $E_a$ represent?",
+    "options": [
+      "The activation energy of the reaction",
+      "The equilibrium constant of the reaction",
+      "The enthalpy change of the reaction",
+      "The Gibbs free energy change of the reaction"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nActivation energy is the minimum energy required for a reaction to occur.\n\n## Analysis\n- **Option A (Correct):** $E_a$ is the activation energy — the minimum energy required for reactants to form products.\n- **Option B (Incorrect):** The equilibrium constant is $K$, not $E_a$.\n- **Option C (Incorrect):** Enthalpy change is $\\Delta H$.\n- **Option D (Incorrect):** Gibbs free energy change is $\\Delta G$.\n\n## Key Takeaway\nActivation energy $E_a$ is the energy barrier that must be overcome for a reaction to proceed."
+  },
+
+  // --- Concept: Reaction Mechanisms ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a **reaction mechanism**?",
+    "options": [
+      "A series of elementary steps that describe the pathway of a reaction",
+      "A mathematical expression relating rate to concentration",
+      "A statement about the equilibrium position of a reaction",
+      "The overall balanced equation for a reaction"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nA reaction mechanism describes the step-by-step process by which reactants become products.\n\n## Analysis\n- **Option A (Correct):** A reaction mechanism is a series of elementary steps that describe the pathway of a reaction.\n- **Option B (Incorrect):** This is a rate law.\n- **Option C (Incorrect):** This is the equilibrium expression.\n- **Option D (Incorrect):** This is the overall equation, not the mechanism.\n\n## Key Takeaway\nReaction mechanisms describe the sequence of elementary steps; the slowest step is the rate-determining step."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the **rate-determining step** in a reaction mechanism?",
+    "options": [
+      "The slowest step in the mechanism, which determines the overall rate",
+      "The fastest step in the mechanism",
+      "The first step in the mechanism",
+      "The last step in the mechanism"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe rate-determining step is the bottleneck of the reaction — the overall rate cannot exceed the rate of this step.\n\n## Analysis\n- **Option A (Correct):** The rate-determining step is the slowest step, and it limits the overall rate of the reaction.\n- **Option B (Incorrect):** The fastest step does not determine the overall rate.\n- **Option C (Incorrect):** The first step is not always the slowest.\n- **Option D (Incorrect):** The last step is not always the slowest.\n\n## Key Takeaway\nThe slowest step in the mechanism controls the overall rate."
+  },
+
+  // --- Concept: Catalysis ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a **catalyst**?",
+    "options": [
+      "A substance that speeds up a reaction but is not consumed in the reaction",
+      "A substance that slows down a reaction",
+      "A substance that is consumed in the reaction",
+      "A substance that changes the equilibrium constant"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nCatalysts provide an alternative pathway with lower activation energy.\n\n## Analysis\n- **Option A (Correct):** A catalyst speeds up a reaction by lowering the activation energy and is regenerated at the end of the reaction.\n- **Option B (Incorrect):** Catalysts speed up, not slow down, reactions.\n- **Option C (Incorrect):** Catalysts are not consumed in the reaction.\n- **Option D (Incorrect):** Catalysts do not change the equilibrium constant; they only affect the rate.\n\n## Key Takeaway\nCatalysts lower activation energy, speed up the reaction, and are regenerated."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "How does a catalyst affect the activation energy of a reaction?",
+    "options": [
+      "It lowers the activation energy by providing an alternative pathway",
+      "It increases the activation energy",
+      "It does not affect the activation energy",
+      "It changes the equilibrium position"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nA catalyst provides a different reaction pathway with a lower activation energy barrier.\n\n## Analysis\n- **Option A (Correct):** A catalyst lowers the activation energy by providing an alternative pathway, making it easier for the reaction to occur.\n- **Option B (Incorrect):** A catalyst decreases, not increases, the activation energy.\n- **Option C (Incorrect):** A catalyst does affect the activation energy (it lowers it).\n- **Option D (Incorrect):** A catalyst does not change the equilibrium position; it only speeds up the approach to equilibrium.\n\n## Key Takeaway\nCatalysts lower activation energy; they do not change $\\Delta H$, $\\Delta G$, or $K$."
+  },
+
+  // --- Additional Problems ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $2A + B \\rightarrow C$, the rate law is $\\text{Rate} = k[A]^2[B]$. If the concentration of A is doubled and B is halved, what happens to the rate?",
+    "options": [
+      "The rate doubles",
+      "The rate quadruples",
+      "The rate halves",
+      "The rate remains the same"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nSubstitute the concentration changes into the rate law.\n\n## Analysis\n**Step 1:** Original rate: $\\text{Rate}_1 = k[A]^2[B]$.\n\n**Step 2:** New rate: $[A]_2 = 2[A]_1$, $[B]_2 = \\frac{1}{2}[B]_1$.\n\n**Step 3:** $\\text{Rate}_2 = k(2[A]_1)^2(\\frac{1}{2}[B]_1) = k(4[A]_1^2)(\\frac{1}{2}[B]_1) = 2k[A]_1^2[B]_1 = 2 \\times \\text{Rate}_1$.\n\n## Key Takeaway\nDoubling A and halving B results in the rate doubling."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "A first-order reaction has a half-life of 20 minutes. What is the rate constant $k$?",
+    "options": [
+      "$0.0347 \\, \\text{min}^{-1}$",
+      "$0.693 \\, \\text{min}^{-1}$",
+      "$0.0347 \\, \\text{s}^{-1}$",
+      "$20 \\, \\text{min}^{-1}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$k = 0.693 / t_{1/2}$.\n\n## Analysis\n$k = \\frac{0.693}{20 \\, \\text{min}} = 0.03465 \\, \\text{min}^{-1} \\approx 0.0347 \\, \\text{min}^{-1}$\n\n## Key Takeaway\n$k = 0.693 / t_{1/2}$; units of $k$ are inverse time."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "A reaction has a rate constant $k = 2.5 \\times 10^{-3} \\, \\text{s}^{-1}$ at 300 K and $k = 1.0 \\times 10^{-2} \\, \\text{s}^{-1}$ at 320 K. What is the activation energy $E_a$? ($R = 8.314 \\, \\text{J mol}^{-1} \\text{K}^{-1}$)",
+    "options": [
+      "$5.3 \\times 10^4 \\, \\text{J mol}^{-1}$",
+      "$5.3 \\times 10^3 \\, \\text{J mol}^{-1}$",
+      "$5.3 \\times 10^5 \\, \\text{J mol}^{-1}$",
+      "$5.3 \\times 10^2 \\, \\text{J mol}^{-1}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nUse the Arrhenius equation in logarithmic form: $\\ln\\left(\\frac{k_2}{k_1}\\right) = -\\frac{E_a}{R}\\left(\\frac{1}{T_2} - \\frac{1}{T_1}\\right)$.\n\n## Analysis\n**Step 1:** $\\ln\\left(\\frac{1.0 \\times 10^{-2}}{2.5 \\times 10^{-3}}\\right) = \\ln(4) = 1.386$.\n\n**Step 2:** $\\frac{1}{T_2} - \\frac{1}{T_1} = \\frac{1}{320} - \\frac{1}{300} = 0.003125 - 0.003333 = -2.083 \\times 10^{-4}$.\n\n**Step 3:** $1.386 = -\\frac{E_a}{8.314} \\times (-2.083 \\times 10^{-4})$.\n\n**Step 4:** $E_a = \\frac{1.386 \\times 8.314}{2.083 \\times 10^{-4}} = 5.53 \\times 10^4 \\, \\text{J mol}^{-1}$.\n\n## Key Takeaway\n$E_a \\approx 5.3 \\times 10^4 \\, \\text{J mol}^{-1}$ (53 kJ/mol)."
+  },
+
+  // ============================================================
+  // SECTION 2: Topic 10 – Chemical Equilibrium
+  // ============================================================
+
+  // --- Concept: Equilibrium Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is **chemical equilibrium**?",
+    "options": [
+      "A state where the forward and reverse reactions proceed at the same rate",
+      "A state where all reactants have been converted to products",
+      "A state where no reactions are occurring",
+      "A state where the concentrations of reactants and products are equal"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nChemical equilibrium is dynamic — both forward and reverse reactions are still occurring, but at the same rate.\n\n## Analysis\n- **Option A (Correct):** Chemical equilibrium occurs when the **forward and reverse reactions proceed at the same rate**.\n- **Option B (Incorrect):** This describes completion of a reaction, not equilibrium.\n- **Option C (Incorrect):** At equilibrium, reactions are still occurring; they just have equal rates.\n- **Option D (Incorrect):** Concentrations of reactants and products are not necessarily equal at equilibrium; they are constant.\n\n## Key Takeaway\nAt equilibrium: forward rate = reverse rate; concentrations are constant (not necessarily equal)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "Which of the following statements is true about a system at chemical equilibrium?",
+    "options": [
+      "The amounts of reactants and products remain constant over time",
+      "The forward reaction has stopped",
+      "The reverse reaction has stopped",
+      "The concentrations of reactants and products are equal"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nAt equilibrium, the system is dynamic but macroscopic properties (concentrations) are constant.\n\n## Analysis\n- **Option A (Correct):** At equilibrium, the **amounts of reactants and products remain constant** because the rates of the forward and reverse reactions are equal.\n- **Option B (Incorrect):** The forward reaction is still occurring.\n- **Option C (Incorrect):** The reverse reaction is still occurring.\n- **Option D (Incorrect):** Concentrations are not necessarily equal; they are just constant.\n\n## Key Takeaway\nEquilibrium = constant concentrations (not equal concentrations)."
+  },
+
+  // --- Concept: Equilibrium Constant Expression ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the general reaction $aA + bB \\rightleftharpoons cC + dD$, what is the equilibrium constant expression $K_c$?",
+    "options": [
+      "$K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$",
+      "$K_c = \\frac{[A]^a[B]^b}{[C]^c[D]^d}$",
+      "$K_c = \\frac{[C]^a[D]^b}{[A]^c[B]^d}$",
+      "$K_c = \\frac{[A]^c[B]^d}{[C]^a[D]^b}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe equilibrium constant expression is the ratio of product concentrations (raised to their coefficients) to reactant concentrations (raised to their coefficients).\n\n## Analysis\n- **Option A (Correct):** $K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$ — products over reactants, each raised to its stoichiometric coefficient.\n- **Option B (Incorrect):** This is the inverse (reactants over products).\n- **Option C (Incorrect):** The coefficients are assigned to the wrong species.\n- **Option D (Incorrect):** This is also incorrect; products should be in the numerator.\n\n## Key Takeaway\n$K_c = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, what is the equilibrium constant expression?",
+    "options": [
+      "$K_c = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}$",
+      "$K_c = \\frac{[\\ce{N2O4}]}{[\\ce{NO2}]^2}$",
+      "$K_c = \\frac{[\\ce{NO2}]}{[\\ce{N2O4}]}$",
+      "$K_c = \\frac{[\\ce{N2O4}]}{[\\ce{NO2}]}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe exponent on each concentration is the stoichiometric coefficient from the balanced equation.\n\n## Analysis\n- **Option A (Correct):** $K_c = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}$ — product (NO₂) has coefficient 2, reactant (N₂O₄) has coefficient 1.\n- **Option B (Incorrect):** This is the inverse of the correct expression.\n- **Option C (Incorrect):** The exponent on NO₂ should be 2, not 1.\n- **Option D (Incorrect):** This is neither the correct expression nor the inverse.\n\n## Key Takeaway\n$K_c = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}$; coefficients become exponents."
+  },
+
+  // --- Concept: Equilibrium Constant Value ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{NH3(aq) + H2O(l) \\rightleftharpoons NH4+(aq) + OH-(aq)}$, if $[\\ce{NH3}] = 0.02$ M, $[\\ce{NH4+}] = 0.05$ M, and $[\\ce{OH-}] = 0.6$ M, what is $K_c$?",
+    "options": [
+      "1.5",
+      "0.67",
+      "15",
+      "0.015"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nWater (a pure liquid) does not appear in the equilibrium constant expression.\n\n## Analysis\n**Step 1:** Write the equilibrium expression (excluding water):\n$K_c = \\frac{[\\ce{NH4+}][\\ce{OH-}]}{[\\ce{NH3}]}$\n\n**Step 2:** Substitute the given concentrations:\n$K_c = \\frac{(0.05)(0.6)}{0.02} = \\frac{0.03}{0.02} = 1.5$\n\n## Key Takeaway\nPure liquids and solids do not appear in equilibrium expressions."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{2SO2(g) + O2(g) \\rightleftharpoons 2SO3(g)}$, what is the equilibrium constant expression?",
+    "options": [
+      "$K_c = \\frac{[\\ce{SO3}]^2}{[\\ce{SO2}]^2[\\ce{O2}]}$",
+      "$K_c = \\frac{[\\ce{SO2}]^2[\\ce{O2}]}{[\\ce{SO3}]^2}$",
+      "$K_c = \\frac{[\\ce{SO3}]^2}{[\\ce{SO2}]^2}$",
+      "$K_c = \\frac{[\\ce{SO3}]}{[\\ce{SO2}][\\ce{O2}]}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nProducts over reactants; each concentration is raised to its stoichiometric coefficient.\n\n## Analysis\n- **Option A (Correct):** $K_c = \\frac{[\\ce{SO3}]^2}{[\\ce{SO2}]^2[\\ce{O2}]}$.\n- **Option B (Incorrect):** This is the inverse of the correct expression.\n- **Option C (Incorrect):** O₂ is missing from the denominator.\n- **Option D (Incorrect):** The exponents are missing.\n\n## Key Takeaway\n$K_c = \\frac{[\\ce{SO3}]^2}{[\\ce{SO2}]^2[\\ce{O2}]}$."
+  },
+
+  // --- Concept: Kp Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is $K_p$ in the context of chemical equilibrium?",
+    "options": [
+      "The equilibrium constant expressed in terms of partial pressures of gases",
+      "The equilibrium constant expressed in terms of concentrations",
+      "The equilibrium constant for solid-gas reactions",
+      "The equilibrium constant for reactions in solution"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$K_p$ is used for gas-phase reactions where pressures are more convenient than concentrations.\n\n## Analysis\n- **Option A (Correct):** $K_p$ is the equilibrium constant expressed in terms of **partial pressures of gases**.\n- **Option B (Incorrect):** This is $K_c$.\n- **Option C (Incorrect):** $K_p$ can be used for any gas-phase reaction, not just those with solids.\n- **Option D (Incorrect):** $K_p$ is for gases, not aqueous solutions.\n\n## Key Takeaway\n$K_p$ = equilibrium constant using partial pressures; $K_c$ = equilibrium constant using concentrations."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$, what is the expression for $K_p$?",
+    "options": [
+      "$K_p = \\frac{(P_{\\ce{NH3}})^2}{(P_{\\ce{N2}})(P_{\\ce{H2}})^3}$",
+      "$K_p = \\frac{(P_{\\ce{N2}})(P_{\\ce{H2}})^3}{(P_{\\ce{NH3}})^2}$",
+      "$K_p = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3}$",
+      "$K_p = \\frac{P_{\\ce{NH3}}}{P_{\\ce{N2}}P_{\\ce{H2}}}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\n$K_p$ uses partial pressures instead of concentrations; exponents are still the stoichiometric coefficients.\n\n## Analysis\n- **Option A (Correct):** $K_p = \\frac{(P_{\\ce{NH3}})^2}{(P_{\\ce{N2}})(P_{\\ce{H2}})^3}$.\n- **Option B (Incorrect):** This is the inverse of the correct expression.\n- **Option C (Incorrect):** This is $K_c$, not $K_p$.\n- **Option D (Incorrect):** The exponents are missing.\n\n## Key Takeaway\n$K_p = \\frac{(P_{\\ce{NH3}})^2}{(P_{\\ce{N2}})(P_{\\ce{H2}})^3}$."
+  },
+
+  // --- Concept: Relationship Between Kp and Kc ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the relationship between $K_p$ and $K_c$?",
+    "options": [
+      "$K_p = K_c(RT)^{\\Delta n}$",
+      "$K_p = K_c(RT)^{-\\Delta n}$",
+      "$K_p = K_c$ always",
+      "$K_p = K_c / (RT)^{\\Delta n}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe relationship between $K_p$ and $K_c$ depends on the change in the number of moles of gas ($\\Delta n$).\n\n## Analysis\n- **Option A (Correct):** $K_p = K_c(RT)^{\\Delta n}$, where $\\Delta n = (\\text{moles of gaseous products}) - (\\text{moles of gaseous reactants})$.\n- **Option B (Incorrect):** The exponent should be $+\\Delta n$, not $-\\Delta n$.\n- **Option C (Incorrect):** $K_p = K_c$ only when $\\Delta n = 0$.\n- **Option D (Incorrect):** This is the inverse relationship.\n\n## Key Takeaway\n$K_p = K_c(RT)^{\\Delta n}$; $\\Delta n$ is the change in moles of gas."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 4.63 \\times 10^{-3}$ at $25^\\circ\\text{C}$. What is $K_p$? ($R = 0.08206$ L·atm/mol·K, $T = 298$ K).",
+    "options": [
+      "0.113",
+      "4.63 × 10⁻³",
+      "1.55 × 10⁻²",
+      "0.00155"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\n$\\Delta n = 2 - 1 = 1$; $K_p = K_c(RT)^{\\Delta n}$.\n\n## Analysis\n**Step 1:** Calculate $\\Delta n$: $2$ (products) $ - 1$ (reactants) $ = 1$.\n\n**Step 2:** $K_p = K_c(RT)^{\\Delta n} = (4.63 \\times 10^{-3})(0.08206 \\times 298)^1$.\n\n**Step 3:** $0.08206 \\times 298 = 24.45$.\n\n**Step 4:** $K_p = 4.63 \\times 10^{-3} \\times 24.45 = 0.113$.\n\n## Key Takeaway\n$K_p = 0.113$; $K_p$ is larger than $K_c$ when $\\Delta n > 0$."
+  },
+
+  // --- Concept: Heterogeneous Equilibria ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "Why are solids and pure liquids excluded from equilibrium constant expressions?",
+    "options": [
+      "Their concentrations are constant and do not change during the reaction",
+      "They do not participate in the reaction",
+      "They have very large concentrations",
+      "They are not part of the equilibrium"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe concentration of a pure solid or liquid is its density divided by its molar mass, which is constant at a given temperature.\n\n## Analysis\n- **Option A (Correct):** The concentration of a pure solid or liquid is constant and does not appear in the equilibrium expression.\n- **Option B (Incorrect):** Solids and liquids do participate in reactions; they just have constant concentrations.\n- **Option C (Incorrect):** While their concentrations may be large, the reason is constancy, not size.\n- **Option D (Incorrect):** They are part of the equilibrium but are excluded from the expression.\n\n## Key Takeaway\nPure solids and liquids have constant concentrations and are not included in $K$ expressions."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{CaCO3(s) \\rightleftharpoons CaO(s) + CO2(g)}$, what is the equilibrium constant expression?",
+    "options": [
+      "$K_c = [\\ce{CO2}]$",
+      "$K_c = \\frac{[\\ce{CaO}][\\ce{CO2}]}{[\\ce{CaCO3}]}$",
+      "$K_c = [\\ce{CaO}][\\ce{CO2}]$",
+      "$K_c = \\frac{[\\ce{CO2}]}{[\\ce{CaO}]}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nSolids are excluded from the equilibrium expression; only the gas (CO₂) appears.\n\n## Analysis\n- **Option A (Correct):** $K_c = [\\ce{CO2}]$ — the only species not in the solid state.\n- **Option B (Incorrect):** Solids (CaCO₃ and CaO) are excluded.\n- **Option C (Incorrect):** Both solids are excluded; only CO₂ remains.\n- **Option D (Incorrect):** CaO is a solid and is excluded.\n\n## Key Takeaway\n$K_c = [\\ce{CO2}]$ for the decomposition of CaCO₃."
+  },
+
+  // --- Concept: ICE Table Method ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "A closed system initially contains $1.000 \\times 10^{-3}$ M $\\ce{H2}$ and $2.000 \\times 10^{-3}$ M $\\ce{I2}$ at $448^\\circ\\text{C}$. At equilibrium, $[\\ce{HI}] = 1.87 \\times 10^{-3}$ M. What is $K_c$ for $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$?",
+    "options": [
+      "51",
+      "25.5",
+      "102",
+      "0.0196"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nUse an ICE table (Initial, Change, Equilibrium) to find equilibrium concentrations of all species.\n\n## Analysis\n**Step 1:** Set up the ICE table:\n\n| | [H₂] | [I₂] | [HI] |\n|:---|:---:|:---:|:---:|\n| Initial | 1.000 × 10⁻³ | 2.000 × 10⁻³ | 0 |\n| Change | -x | -x | +2x |\n| Equilibrium | 1.000 × 10⁻³ - x | 2.000 × 10⁻³ - x | 2x |\n\n**Step 2:** At equilibrium, $[\\ce{HI}] = 2x = 1.87 \\times 10^{-3}$, so $x = 9.35 \\times 10^{-4}$.\n\n**Step 3:** Equilibrium concentrations:\n$[\\ce{H2}] = 1.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 6.5 \\times 10^{-5}$ M\n$[\\ce{I2}] = 2.000 \\times 10^{-3} - 9.35 \\times 10^{-4} = 1.065 \\times 10^{-3}$ M\n$[\\ce{HI}] = 1.87 \\times 10^{-3}$ M\n\n**Step 4:** $K_c = \\frac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]} = \\frac{(1.87 \\times 10^{-3})^2}{(6.5 \\times 10^{-5})(1.065 \\times 10^{-3})} = 50.6 \\approx 51$.\n\n## Key Takeaway\n$K_c = 51$; ICE tables are essential for equilibrium calculations."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$, $K_c = 51$ at $448^\\circ\\text{C}$. If $[\\ce{H2}] = 0.100$ M and $[\\ce{I2}] = 0.100$ M initially, what is the equilibrium concentration of $\\ce{HI}$?",
+    "options": [
+      "0.156 M",
+      "0.078 M",
+      "0.312 M",
+      "0.100 M"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nSet up an ICE table and solve for $x$ using the equilibrium expression.\n\n## Analysis\n**Step 1:** ICE table:\n\n| | [H₂] | [I₂] | [HI] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.100 | 0.100 | 0 |\n| Change | -x | -x | +2x |\n| Equilibrium | 0.100 - x | 0.100 - x | 2x |\n\n**Step 2:** $K_c = \\frac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]} = \\frac{(2x)^2}{(0.100 - x)^2} = 51$.\n\n**Step 3:** $\\frac{4x^2}{(0.100 - x)^2} = 51$ → $\\frac{2x}{0.100 - x} = \\sqrt{51} = 7.14$.\n\n**Step 4:** $2x = 7.14(0.100 - x)$ → $2x = 0.714 - 7.14x$ → $9.14x = 0.714$ → $x = 0.0781$.\n\n**Step 5:** $[\\ce{HI}] = 2x = 0.156$ M.\n\n## Key Takeaway\n$[\\ce{HI}] = 0.156$ M at equilibrium."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 4.63 \\times 10^{-3}$ at $25^\\circ\\text{C}$. If the initial concentration of $\\ce{N2O4}$ is $0.100$ M, what is the equilibrium concentration of $\\ce{NO2}$?",
+    "options": [
+      "$0.0205$ M",
+      "$0.0410$ M",
+      "$0.0103$ M",
+      "$0.00515$ M"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nSet up an ICE table and solve the quadratic equation for $x$.\n\n## Analysis\n**Step 1:** ICE table:\n\n| | [N₂O₄] | [NO₂] |\n|:---|:---:|:---:|\n| Initial | 0.100 | 0 |\n| Change | -x | +2x |\n| Equilibrium | 0.100 - x | 2x |\n\n**Step 2:** $K_c = \\frac{[\\ce{NO2}]^2}{[\\ce{N2O4}]} = \\frac{(2x)^2}{0.100 - x} = 4.63 \\times 10^{-3}$.\n\n**Step 3:** $\\frac{4x^2}{0.100 - x} = 4.63 \\times 10^{-3}$.\n\n**Step 4:** $4x^2 = 4.63 \\times 10^{-4} - 4.63 \\times 10^{-3}x$.\n\n**Step 5:** $4x^2 + 4.63 \\times 10^{-3}x - 4.63 \\times 10^{-4} = 0$.\n\n**Step 6:** Solve using quadratic formula: $x = 0.01025$.\n\n**Step 7:** $[\\ce{NO2}] = 2x = 0.0205$ M.\n\n## Key Takeaway\n$[\\ce{NO2}] = 0.0205$ M; the quadratic formula is often needed for equilibrium calculations."
+  },
+
+  // --- Concept: Reaction Quotient ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the **reaction quotient** ($Q$)?",
+    "options": [
+      "The same ratio as the equilibrium expression, but for a system that is not at equilibrium",
+      "The equilibrium constant for a reaction at a given temperature",
+      "The ratio of reactants to products at equilibrium",
+      "The rate of the forward reaction divided by the rate of the reverse reaction"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\n$Q$ is calculated the same way as $K$, but using initial (non-equilibrium) concentrations.\n\n## Analysis\n- **Option A (Correct):** $Q$ gives the same ratio as the equilibrium expression, but for a system that is **not at equilibrium**.\n- **Option B (Incorrect):** $K$ is the equilibrium constant; $Q$ is for non-equilibrium conditions.\n- **Option C (Incorrect):** This is $K$, not $Q$.\n- **Option D (Incorrect):** This describes the rate ratio, not $Q$.\n\n## Key Takeaway\n$Q$ = reaction quotient; $Q$ vs. $K$ tells you which direction the reaction will shift."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$, $K_c = 0.50$ at a certain temperature. If $[\\ce{N2}] = 0.10$ M, $[\\ce{H2}] = 0.20$ M, and $[\\ce{NH3}] = 0.40$ M, what is $Q$ and which way will the reaction shift?",
+    "options": [
+      "$Q = 200$, shift toward reactants (left)",
+      "$Q = 2.0$, shift toward products (right)",
+      "$Q = 0.10$, shift toward products (right)",
+      "$Q = 0.50$, at equilibrium"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\n$Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3}$; compare $Q$ to $K$ to determine the shift direction.\n\n## Analysis\n**Step 1:** $Q = \\frac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3} = \\frac{(0.40)^2}{(0.10)(0.20)^3} = \\frac{0.16}{0.10 \\times 0.008} = \\frac{0.16}{0.0008} = 200$.\n\n**Step 2:** $Q = 200 > K = 0.50$, so the reaction will shift toward the **reactants (left)** to reach equilibrium.\n\n## Key Takeaway\nIf $Q > K$, shift toward reactants (left); if $Q < K$, shift toward products (right)."
+  },
+
+  // --- Concept: Le Châtelier's Principle ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is **Le Châtelier's Principle**?",
+    "options": [
+      "If a system at equilibrium is disturbed, it will shift to counteract the effect of the disturbance",
+      "If a system at equilibrium is disturbed, it will amplify the effect of the disturbance",
+      "If a system at equilibrium is disturbed, it will remain unchanged",
+      "If a system at equilibrium is disturbed, it will shift toward the products"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nLe Châtelier's Principle describes how equilibrium systems respond to stress.\n\n## Analysis\n- **Option A (Correct):** Le Châtelier's Principle states that if a system at equilibrium is disturbed, it will shift to **counteract** the effect of the disturbance.\n- **Option B (Incorrect):** The system works against, not with, the disturbance.\n- **Option C (Incorrect):** The system does change in response to disturbances.\n- **Option D (Incorrect):** The shift direction depends on the type of disturbance.\n\n## Key Takeaway\nLe Châtelier's Principle: system shifts to oppose any change imposed on it."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$ (exothermic), what happens when the temperature is increased?",
+    "options": [
+      "The reaction shifts toward the reactants (left)",
+      "The reaction shifts toward the products (right)",
+      "The reaction remains at equilibrium",
+      "The equilibrium constant increases"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nFor exothermic reactions, heat is a product. Increasing temperature shifts the equilibrium toward the reactants.\n\n## Analysis\n- **Option A (Correct):** Since the forward reaction is exothermic, increasing temperature favors the reverse (endothermic) reaction, shifting toward **reactants (left)**.\n- **Option B (Incorrect):** This would occur for an endothermic reaction.\n- **Option C (Incorrect):** Temperature changes affect equilibrium position.\n- **Option D (Incorrect):** $K$ decreases for exothermic reactions when temperature increases.\n\n## Key Takeaway\nIncreasing temperature favors the endothermic direction; for exothermic reactions, that means shifting left."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{CO2(g) + H2O(l) \\rightleftharpoons H2CO3(aq)}$, what is the effect of adding more water?",
+    "options": [
+      "More $\\ce{H2CO3}$ is produced (shift right)",
+      "Less $\\ce{H2CO3}$ is produced (shift left)",
+      "No effect",
+      "The equilibrium constant changes"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nAdding a reactant (water) shifts the equilibrium toward the products (right).\n\n## Analysis\n- **Option A (Correct):** Adding more water (a reactant) shifts the equilibrium toward the **products** (right), producing more $\\ce{H2CO3}$.\n- **Option B (Incorrect):** Adding reactant shifts toward products, not reactants.\n- **Option C (Incorrect):** Adding a reactant does affect the equilibrium position.\n- **Option D (Incorrect):** $K$ does not change; only the position shifts.\n\n## Key Takeaway\nAdding reactants shifts equilibrium toward products (right)."
+  },
+
+  // --- Concept: Effect of Pressure on Equilibrium ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{2SO2(g) + O2(g) \\rightleftharpoons 2SO3(g)}$, what is the effect of increasing pressure?",
+    "options": [
+      "The reaction shifts toward products (right)",
+      "The reaction shifts toward reactants (left)",
+      "No effect",
+      "The equilibrium constant increases"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nIncreasing pressure favors the side with fewer moles of gas.\n\n## Analysis\n**Step 1:** Count moles of gas on each side:\n- Reactants: $2 + 1 = 3$ moles of gas\n- Products: $2$ moles of gas\n\n**Step 2:** Increasing pressure favors the side with **fewer moles of gas** (the products).\n\n**Step 3:** The reaction shifts toward **products (right)**.\n\n## Key Takeaway\nIncreasing pressure favors the side with fewer gas molecules."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{H2(g) + I2(g) \\rightleftharpoons 2HI(g)}$, what is the effect of increasing pressure?",
+    "options": [
+      "No effect",
+      "Shift toward products",
+      "Shift toward reactants",
+      "The equilibrium constant changes"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nWhen there are equal numbers of gas moles on both sides, pressure changes have no effect on the equilibrium position.\n\n## Analysis\n**Step 1:** Count moles of gas on each side:\n- Reactants: $1 + 1 = 2$ moles of gas\n- Products: $2$ moles of gas\n\n**Step 2:** Both sides have the same number of moles of gas.\n\n**Step 3:** Increasing pressure has **no effect** on the equilibrium position.\n\n## Key Takeaway\nPressure changes have no effect when $\\Delta n = 0$."
+  },
+
+  // --- Concept: Catalysts and Equilibrium ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "How does a catalyst affect a system at equilibrium?",
+    "options": [
+      "It speeds up the approach to equilibrium but does not change the equilibrium position",
+      "It shifts the equilibrium toward the products",
+      "It shifts the equilibrium toward the reactants",
+      "It changes the equilibrium constant"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nCatalysts speed up both the forward and reverse reactions equally, so equilibrium is reached faster but the position is unchanged.\n\n## Analysis\n- **Option A (Correct):** A catalyst lowers activation energy for both forward and reverse reactions, so equilibrium is achieved **faster** but the equilibrium composition remains the same.\n- **Option B (Incorrect):** Catalysts do not shift equilibrium position.\n- **Option C (Incorrect):** Catalysts do not shift equilibrium position.\n- **Option D (Incorrect):** The equilibrium constant is not changed by a catalyst.\n\n## Key Takeaway\nCatalysts speed up the attainment of equilibrium; they do not change the equilibrium position or $K$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "Why is a catalyst used in the Haber process ($\\ce{N2 + 3H2 \\rightleftharpoons 2NH3}$)?",
+    "options": [
+      "To increase the rate at which equilibrium is reached",
+      "To shift the equilibrium toward more NH₃",
+      "To increase the equilibrium constant",
+      "To decrease the activation energy of the reverse reaction only"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nCatalysts are used in industrial processes to make reactions economically viable by reaching equilibrium faster.\n\n## Analysis\n- **Option A (Correct):** A catalyst is used to increase the rate at which equilibrium is reached, making the process faster.\n- **Option B (Incorrect):** Catalysts do not shift equilibrium.\n- **Option C (Incorrect):** Catalysts do not change the equilibrium constant.\n- **Option D (Incorrect):** Catalysts affect both forward and reverse reactions equally.\n\n## Key Takeaway\nCatalysts speed up the approach to equilibrium; they are essential for industrial processes."
+  },
+
+  // --- Concept: Manipulating K Values ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 0.212$ at $100^\\circ\\text{C}$. What is $K_c$ for the reverse reaction $\\ce{2NO2(g) \\rightleftharpoons N2O4(g)}$ at the same temperature?",
+    "options": [
+      "$4.72$",
+      "$0.212$",
+      "$0.0449$",
+      "$1.00$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe equilibrium constant for the reverse reaction is the reciprocal of the forward reaction's $K$.\n\n## Analysis\n**Step 1:** For the reverse reaction, $K_{\\text{reverse}} = \\frac{1}{K_{\\text{forward}}}$.\n\n**Step 2:** $K_{\\text{reverse}} = \\frac{1}{0.212} = 4.72$.\n\n## Key Takeaway\n$K_{\\text{reverse}} = 1/K_{\\text{forward}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2O4(g) \\rightleftharpoons 2NO2(g)}$, $K_c = 0.212$ at $100^\\circ\\text{C}$. What is $K_c$ for the reaction $\\ce{2N2O4(g) \\rightleftharpoons 4NO2(g)}$ at the same temperature?",
+    "options": [
+      "$0.0449$",
+      "$0.212$",
+      "$4.72$",
+      "$0.424$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nWhen a reaction is multiplied by a factor $n$, the equilibrium constant is raised to the power $n$.\n\n## Analysis\n**Step 1:** The original reaction is multiplied by 2: $2\\ce{N2O4(g) \\rightleftharpoons 4NO2(g)}$.\n\n**Step 2:** $K_{\\text{new}} = (K_{\\text{original}})^2 = (0.212)^2 = 0.0449$.\n\n## Key Takeaway\nMultiplying a reaction by $n$ raises $K$ to the $n$th power."
+  },
+
+  // --- Concept: Combining Reactions and K ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "Given:\n(1) $\\ce{CO(g) + 3H2(g) \\rightleftharpoons CH4(g) + H2O(g)}$ $K_{c,1} = 3.92$\n(2) $\\ce{CH4(g) + 2H2S(g) \\rightleftharpoons CS2(g) + 4H2(g)}$ $K_{c,2} = 3.3 \\times 10^4$\nWhat is $K_c$ for the reaction $\\ce{CO(g) + 2H2S(g) \\rightleftharpoons H2O(g) + CS2(g) + H2(g)}$?",
+    "options": [
+      "$1.29 \\times 10^5$",
+      "$3.92$",
+      "$3.3 \\times 10^4$",
+      "$1.29 \\times 10^{-5}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nWhen reactions are added, the equilibrium constants are multiplied.\n\n## Analysis\n**Step 1:** Add reactions (1) and (2):\n$\\ce{CO(g) + 3H2(g) + CH4(g) + 2H2S(g) \\rightleftharpoons CH4(g) + H2O(g) + CS2(g) + 4H2(g)}$\n\n**Step 2:** Cancel $\\ce{CH4}$ and $3\\ce{H2}$ from both sides:\n$\\ce{CO(g) + 2H2S(g) \\rightleftharpoons H2O(g) + CS2(g) + H2(g)}$\n\n**Step 3:** $K_{c,3} = K_{c,1} \\times K_{c,2} = 3.92 \\times 3.3 \\times 10^4 = 1.29 \\times 10^5$.\n\n## Key Takeaway\nWhen reactions are added, $K$ values are multiplied."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "If the equilibrium constant for the reaction $\\ce{CO + 3H2 \\rightleftharpoons CH4 + H2O}$ is $0.1764$ at $1500^\\circ\\text{C}$, what is the equilibrium constant for the reverse reaction $\\ce{CH4 + H2O \\rightleftharpoons CO + 3H2}$ at the same temperature?",
+    "options": [
+      "$5.67$",
+      "$0.1764$",
+      "$0.0311$",
+      "$176.4$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe reverse reaction has $K = 1/K_{\\text{forward}}$.\n\n## Analysis\n$K_{\\text{reverse}} = \\frac{1}{0.1764} = 5.67$\n\n## Key Takeaway\n$K_{\\text{reverse}} = 1/K_{\\text{forward}}$."
+  },
+
+  // --- Additional Problems ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "At a certain temperature, the equilibrium constant for $2A(g) + 3B(g) \\rightleftharpoons 2C(g) + 3D(g)$ is $9.92 \\times 10^{-2}$. What is the equilibrium constant for $6C(g) + 9D(g) \\rightleftharpoons 6A(g) + 9B(g)$ at the same temperature?",
+    "options": [
+      "$1.01 \\times 10^3$",
+      "$9.92 \\times 10^{-2}$",
+      "$3.60 \\times 10^{-4}$",
+      "$1.01 \\times 10^4$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe second reaction is the reverse of the first, multiplied by 3.\n\n## Analysis\n**Step 1:** The first reaction is $2A + 3B \\rightleftharpoons 2C + 3D$; $K_1 = 9.92 \\times 10^{-2}$.\n\n**Step 2:** The second reaction is $6C + 9D \\rightleftharpoons 6A + 9B$ (reverse of first, multiplied by 3).\n\n**Step 3:** $K_2 = \\left(\\frac{1}{K_1}\\right)^3 = \\left(\\frac{1}{9.92 \\times 10^{-2}}\\right)^3 = (10.08)^3 = 1.01 \\times 10^3$.\n\n## Key Takeaway\nReverse and multiply: $K_2 = (1/K_1)^3$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "At a certain temperature, the equilibrium constants are known:\n$4A(g) \\rightleftharpoons 4B(g) + 4C(g)$ $K = 8.26 \\times 10^{-2}$\n$3D(g) \\rightleftharpoons 3E(g) + 2B(g)$ $K = 8.90 \\times 10^{-3}$\nWhat is $K$ for $2C(g) + 3D(g) \\rightleftharpoons 3E(g) + 2A(g)$?",
+    "options": [
+      "0.0310",
+      "3.10 × 10⁻³",
+      "0.310",
+      "3.10 × 10⁻⁵"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nCombine reactions by addition/subtraction, multiplying $K$ values accordingly.\n\n## Analysis\n**Step 1:** Reaction 1: $4A \\rightleftharpoons 4B + 4C$ → divide by 2: $2A \\rightleftharpoons 2B + 2C$ $K_{1a} = \\sqrt{K_1} = \\sqrt{8.26 \\times 10^{-2}} = 0.2874$.\n\n**Step 2:** Reverse the above: $2B + 2C \\rightleftharpoons 2A$ $K_{1b} = 1 / 0.2874 = 3.479$.\n\n**Step 3:** Reaction 2: $3D \\rightleftharpoons 3E + 2B$ $K_2 = 8.90 \\times 10^{-3}$.\n\n**Step 4:** Add: $2B + 2C + 3D \\rightleftharpoons 2A + 3E + 2B$.\n\n**Step 5:** Cancel $2B$: $2C + 3D \\rightleftharpoons 3E + 2A$.\n\n**Step 6:** $K = K_{1b} \\times K_2 = 3.479 \\times 8.90 \\times 10^{-3} = 0.0310$.\n\n## Key Takeaway\n$K = 0.0310$; carefully combine reactions and manipulate $K$ values."
+  },
+
+  // ============================================================
+  // SECTION 3: Topic 11 – Acids and Bases
+  // ============================================================
+
+  // --- Concept: Arrhenius Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "According to the Arrhenius definition, what is an acid?",
+    "options": [
+      "A substance that produces $\\ce{H+}$ ions when dissolved in water",
+      "A substance that produces $\\ce{OH-}$ ions when dissolved in water",
+      "A substance that donates a proton",
+      "A substance that accepts a proton"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe Arrhenius definition is the simplest but limited to aqueous solutions.\n\n## Analysis\n- **Option A (Correct):** Arrhenius acid = a substance that produces $\\ce{H+}$ ions in water.\n- **Option B (Incorrect):** This is the Arrhenius definition of a base.\n- **Option C (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n- **Option D (Incorrect):** This is the Brønsted-Lowry definition of a base.\n\n## Key Takeaway\nArrhenius: acid → $\\ce{H+}$; base → $\\ce{OH-}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "According to the Arrhenius definition, what is a base?",
+    "options": [
+      "A substance that produces $\\ce{OH-}$ ions when dissolved in water",
+      "A substance that produces $\\ce{H+}$ ions when dissolved in water",
+      "A substance that donates a proton",
+      "A substance that accepts a proton"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nArrhenius bases produce $\\ce{OH-}$ ions in aqueous solution.\n\n## Analysis\n- **Option A (Correct):** Arrhenius base = a substance that produces $\\ce{OH-}$ ions in water.\n- **Option B (Incorrect):** This is the Arrhenius definition of an acid.\n- **Option C (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n- **Option D (Incorrect):** This is the Brønsted-Lowry definition of a base.\n\n## Key Takeaway\nArrhenius bases produce $\\ce{OH-}$; limited to aqueous solutions."
+  },
+
+  // --- Concept: Brønsted-Lowry Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "According to the Brønsted-Lowry definition, what is an acid?",
+    "options": [
+      "A substance that donates a proton ($\\ce{H+}$)",
+      "A substance that accepts a proton ($\\ce{H+}$)",
+      "A substance that produces $\\ce{H+}$ ions in water",
+      "A substance that produces $\\ce{OH-}$ ions in water"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe Brønsted-Lowry definition is broader and focuses on proton transfer.\n\n## Analysis\n- **Option A (Correct):** Brønsted-Lowry acid = **proton donor**.\n- **Option B (Incorrect):** This is the Brønsted-Lowry definition of a base.\n- **Option C (Incorrect):** This is the Arrhenius definition of an acid.\n- **Option D (Incorrect):** This is the Arrhenius definition of a base.\n\n## Key Takeaway\nBrønsted-Lowry: acid = proton donor; base = proton acceptor."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "According to the Brønsted-Lowry definition, what is a base?",
+    "options": [
+      "A substance that accepts a proton ($\\ce{H+}$)",
+      "A substance that donates a proton ($\\ce{H+}$)",
+      "A substance that produces $\\ce{H+}$ ions in water",
+      "A substance that produces $\\ce{OH-}$ ions in water"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe Brønsted-Lowry definition includes bases that do not contain $\\ce{OH-}$ (like $\\ce{NH3}$).\n\n## Analysis\n- **Option A (Correct):** Brønsted-Lowry base = **proton acceptor**.\n- **Option B (Incorrect):** This is the Brønsted-Lowry definition of an acid.\n- **Option C (Incorrect):** This is the Arrhenius definition of an acid.\n- **Option D (Incorrect):** This is the Arrhenius definition of a base.\n\n## Key Takeaway\n$\\ce{NH3}$ is a Brønsted-Lowry base (proton acceptor) even though it has no $\\ce{OH-}$."
+  },
+
+  // --- Concept: Conjugate Acid-Base Pairs ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a **conjugate acid-base pair**?",
+    "options": [
+      "Two species that differ by the presence or absence of a proton ($\\ce{H+}$)",
+      "Two species that have the same number of protons",
+      "An acid and a base that react to form a salt",
+      "Two molecules that are mirror images of each other"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nA conjugate acid-base pair is related by the transfer of one proton.\n\n## Analysis\n- **Option A (Correct):** A conjugate acid-base pair consists of two species that differ by one proton ($\\ce{H+}$). Example: $\\ce{HA}$ and $\\ce{A^-}$.\n- **Option B (Incorrect):** They differ by a proton, so they do not have the same number of protons.\n- **Option C (Incorrect):** This describes a neutralization reaction.\n- **Option D (Incorrect):** This describes enantiomers, not conjugate pairs.\n\n## Key Takeaway\nConjugate acid-base pairs differ by one $\\ce{H+}$; acid $\\rightleftharpoons$ conjugate base + $\\ce{H+}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the reaction $\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$, what is the conjugate acid of water?",
+    "options": [
+      "$\\ce{H3O+}$",
+      "$\\ce{Cl-}$",
+      "$\\ce{HCl}$",
+      "$\\ce{H2O}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nWhen water accepts a proton, it becomes hydronium ion ($\\ce{H3O+}$).\n\n## Analysis\n- **Option A (Correct):** Water ($\\ce{H2O}$) accepts a proton to become $\\ce{H3O+}$ — the conjugate acid.\n- **Option B (Incorrect):** $\\ce{Cl-}$ is the conjugate base of HCl.\n- **Option C (Incorrect):** HCl is the acid, not the conjugate acid of water.\n- **Option D (Incorrect):** Water is the base, not the conjugate acid.\n\n## Key Takeaway\n$\\ce{H2O}$ (base) + $\\ce{H+}$ → $\\ce{H3O+}$ (conjugate acid)."
+  },
+
+  // --- Concept: Amphiprotic Species ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What does it mean for a substance to be **amphiprotic**?",
+    "options": [
+      "It can either donate or accept a proton, acting as either an acid or a base",
+      "It can only donate a proton",
+      "It can only accept a proton",
+      "It is neither an acid nor a base"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nAmphiprotic substances are versatile; they can act as acids or bases depending on the reaction.\n\n## Analysis\n- **Option A (Correct):** An amphiprotic substance can either **donate** or **accept** a proton, acting as either an acid or a base.\n- **Option B (Incorrect):** This describes an acid only.\n- **Option C (Incorrect):** This describes a base only.\n- **Option D (Incorrect):** Amphiprotic substances can act as acids or bases.\n\n## Key Takeaway\nAmphiprotic = can act as acid or base; examples: $\\ce{H2O}$, $\\ce{HCO3-}$, $\\ce{HSO4-}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which of the following species is amphiprotic?",
+    "options": [
+      "$\\ce{HCO3-}$",
+      "$\\ce{HCl}$",
+      "$\\ce{NH3}$",
+      "$\\ce{NaOH}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\n$\\ce{HCO3-}$ can donate a proton to become $\\ce{CO3^{2-}}$ or accept a proton to become $\\ce{H2CO3}$.\n\n## Analysis\n- **Option A (Correct):** $\\ce{HCO3-}$ can act as an acid (donate $\\ce{H+}$) or as a base (accept $\\ce{H+}$).\n- **Option B (Incorrect):** $\\ce{HCl}$ is only an acid.\n- **Option C (Incorrect):** $\\ce{NH3}$ is only a base (though it can be amphoteric in some contexts, it is not amphiprotic).\n- **Option D (Incorrect):** $\\ce{NaOH}$ is only a base.\n\n## Key Takeaway\n$\\ce{HCO3-}$ is amphiprotic; it can both donate and accept protons."
+  },
+
+  // --- Concept: Ion Product of Water ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the **ion product constant of water** ($K_w$) at $25^\\circ\\text{C}$?",
+    "options": [
+      "$1.0 \\times 10^{-14}$",
+      "$1.0 \\times 10^{-7}$",
+      "$1.0 \\times 10^{14}$",
+      "$1.0 \\times 10^{-21}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$K_w = [\\ce{H3O+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n\n## Analysis\n- **Option A (Correct):** $K_w = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n- **Option B (Incorrect):** $10^{-7}$ is the concentration of $\\ce{H+}$ in pure water, not $K_w$.\n- **Option C (Incorrect):** $10^{14}$ is the inverse of $K_w$.\n- **Option D (Incorrect):** $10^{-21}$ is not the value of $K_w$.\n\n## Key Takeaway\n$K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In a solution at $25^\\circ\\text{C}$, $[\\ce{H+}] = 1.0 \\times 10^{-4}$ M. What is $[\\ce{OH-}]$?",
+    "options": [
+      "$1.0 \\times 10^{-10}$ M",
+      "$1.0 \\times 10^{-14}$ M",
+      "$1.0 \\times 10^{-4}$ M",
+      "$1.0 \\times 10^{-7}$ M"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\n$[\\ce{OH-}] = \\frac{K_w}{[\\ce{H+}]}$.\n\n## Analysis\n**Step 1:** Use $K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$.\n\n**Step 2:** $[\\ce{OH-}] = \\frac{1.0 \\times 10^{-14}}{1.0 \\times 10^{-4}} = 1.0 \\times 10^{-10}$ M.\n\n## Key Takeaway\n$[\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$; if $[\\ce{H+}]$ increases, $[\\ce{OH-}]$ decreases."
+  },
+
+  // --- Concept: pH Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the definition of pH?",
+    "options": [
+      "$\\text{pH} = -\\log[\\ce{H+}]$",
+      "$\\text{pH} = \\log[\\ce{H+}]$",
+      "$\\text{pH} = -\\log[\\ce{OH-}]$",
+      "$\\text{pH} = 14 - \\text{pOH}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\npH is a logarithmic measure of the concentration of hydronium ions.\n\n## Analysis\n- **Option A (Correct):** $\\text{pH} = -\\log[\\ce{H+}]$.\n- **Option B (Incorrect):** The negative sign is missing.\n- **Option C (Incorrect):** This is the definition of pOH.\n- **Option D (Incorrect):** This is the relationship between pH and pOH, not the definition.\n\n## Key Takeaway\n$\\text{pH} = -\\log[\\ce{H+}]$; lower pH = more acidic."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a solution with $[\\ce{H+}] = 2.5 \\times 10^{-4}$ M?",
+    "options": [
+      "3.60",
+      "4.00",
+      "2.50",
+      "10.40"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\n$\\text{pH} = -\\log[\\ce{H+}]$.\n\n## Analysis\n**Step 1:** $\\text{pH} = -\\log(2.5 \\times 10^{-4})$.\n\n**Step 2:** $\\log(2.5 \\times 10^{-4}) = \\log(2.5) + \\log(10^{-4}) = 0.398 + (-4) = -3.602$.\n\n**Step 3:** $\\text{pH} = -(-3.602) = 3.60$.\n\n## Key Takeaway\n$\\text{pH} = 3.60$; the solution is acidic (pH < 7)."
+  },
+
+  // --- Concept: Relationship Between pH and pOH ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the relationship between pH and pOH at $25^\\circ\\text{C}$?",
+    "options": [
+      "$\\text{pH} + \\text{pOH} = 14.00$",
+      "$\\text{pH} - \\text{pOH} = 14.00$",
+      "$\\text{pH} \\times \\text{pOH} = 14.00$",
+      "$\\text{pH} = \\text{pOH}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nSince $K_w = 1.0 \\times 10^{-14}$, $\\text{pH} + \\text{pOH} = 14.00$.\n\n## Analysis\n- **Option A (Correct):** $\\text{pH} + \\text{pOH} = 14.00$ at $25^\\circ\\text{C}$.\n- **Option B (Incorrect):** The relationship is addition, not subtraction.\n- **Option C (Incorrect):** The relationship is addition, not multiplication.\n- **Option D (Incorrect):** pH and pOH are only equal at pH = 7.\n\n## Key Takeaway\n$\\text{pH} + \\text{pOH} = 14.00$; in pure water, both are 7.00."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "A solution has $\\text{pOH} = 4.50$. What is the pH of the solution?",
+    "options": [
+      "9.50",
+      "4.50",
+      "14.00",
+      "10.50"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\n$\\text{pH} = 14.00 - \\text{pOH}$.\n\n## Analysis\n$\\text{pH} = 14.00 - 4.50 = 9.50$\n\n## Key Takeaway\nA pOH of 4.50 means a basic solution (pH > 7)."
+  },
+
+  // --- Concept: Strong Acids ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which of the following is a strong acid?",
+    "options": [
+      "$\\ce{HCl}$",
+      "$\\ce{CH3COOH}$",
+      "$\\ce{HF}$",
+      "$\\ce{H2CO3}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe seven strong acids are HCl, HBr, HI, HNO₃, H₂SO₄, HClO₃, and HClO₄.\n\n## Analysis\n- **Option A (Correct):** HCl is a strong acid (completely dissociates).\n- **Option B (Incorrect):** $\\ce{CH3COOH}$ is acetic acid — a weak acid.\n- **Option C (Incorrect):** HF is a weak acid (though it is strong in concentrated form, it is generally considered weak).\n- **Option D (Incorrect):** $\\ce{H2CO3}$ is a weak acid.\n\n## Key Takeaway\nStrong acids: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₃, HClO₄."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $0.010$ M solution of HCl?",
+    "options": [
+      "2.00",
+      "1.00",
+      "0.010",
+      "12.00"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nHCl is a strong acid, so $[\\ce{H+}] = [\\ce{HCl}]$.\n\n## Analysis\n**Step 1:** $[\\ce{H+}] = 0.010$ M (complete dissociation).\n\n**Step 2:** $\\text{pH} = -\\log(0.010) = -\\log(1.0 \\times 10^{-2}) = 2.00$.\n\n## Key Takeaway\nFor strong acids, $[\\ce{H+}] = [\\text{acid}]$; pH = -log[acid]."
+  },
+
+  // --- Concept: Strong Bases ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which of the following is a strong base?",
+    "options": [
+      "$\\ce{NaOH}$",
+      "$\\ce{NH3}$",
+      "$\\ce{CH3NH2}$",
+      "$\\ce{NaCl}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nStrong bases are soluble hydroxides of alkali metals and heavier alkaline earth metals.\n\n## Analysis\n- **Option A (Correct):** NaOH is a strong base (completely dissociates).\n- **Option B (Incorrect):** $\\ce{NH3}$ is a weak base.\n- **Option C (Incorrect):** $\\ce{CH3NH2}$ is a weak base.\n- **Option D (Incorrect):** NaCl is a salt, not a base.\n\n## Key Takeaway\nStrong bases: NaOH, KOH, Ba(OH)₂, etc.; they completely dissociate."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $0.0050$ M solution of NaOH?",
+    "options": [
+      "11.70",
+      "2.30",
+      "7.00",
+      "5.00"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nNaOH is a strong base, so $[\\ce{OH-}] = [\\ce{NaOH}]$; then find pOH and convert to pH.\n\n## Analysis\n**Step 1:** $[\\ce{OH-}] = 0.0050$ M = $5.0 \\times 10^{-3}$ M.\n\n**Step 2:** $\\text{pOH} = -\\log(5.0 \\times 10^{-3}) = -\\log(5.0) - \\log(10^{-3}) = -0.699 + 3 = 2.301$.\n\n**Step 3:** $\\text{pH} = 14.00 - 2.301 = 11.70$.\n\n## Key Takeaway\nFor strong bases, $[\\ce{OH-}] = [\\text{base}]$; pH = 14 - pOH."
+  },
+
+  // --- Concept: Acid Dissociation Constant (Ka) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the acid dissociation constant ($K_a$)?",
+    "options": [
+      "$K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$",
+      "$K_a = \\frac{[\\ce{HA}]}{[\\ce{H3O+}][\\ce{A-}]}$",
+      "$K_a = [\\ce{H3O+}][\\ce{A-}]$",
+      "$K_a = \\frac{[\\ce{HA}]}{[\\ce{H3O+}]}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\n$K_a$ is the equilibrium constant for the dissociation of a weak acid.\n\n## Analysis\n- **Option A (Correct):** $K_a = \\frac{[\\ce{H3O+}][\\ce{A-}]}{[\\ce{HA}]}$.\n- **Option B (Incorrect):** This is the inverse of $K_a$.\n- **Option C (Incorrect):** This is missing the denominator $[\\ce{HA}]$.\n- **Option D (Incorrect):** This is missing the numerator.\n\n## Key Takeaway\n$K_a = \\frac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}$; larger $K_a$ = stronger acid."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "The pH of a $0.10$ M solution of formic acid ($\\ce{HCOOH}$) is $2.38$. What is $K_a$ for formic acid?",
+    "options": [
+      "$1.8 \\times 10^{-4}$",
+      "$4.2 \\times 10^{-3}$",
+      "$1.8 \\times 10^{-6}$",
+      "$4.2 \\times 10^{-2}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nFrom pH, find $[\\ce{H+}]$; then use ICE table to find $K_a$.\n\n## Analysis\n**Step 1:** $[\\ce{H+}] = 10^{-\\text{pH}} = 10^{-2.38} = 4.2 \\times 10^{-3}$ M.\n\n**Step 2:** ICE table:\n\n| | [HCOOH] | [H⁺] | [HCOO⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.10 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 0.10 - x | x | x |\n\n**Step 3:** $x = 4.2 \\times 10^{-3}$.\n\n**Step 4:** $K_a = \\frac{x^2}{0.10 - x} = \\frac{(4.2 \\times 10^{-3})^2}{0.10 - 4.2 \\times 10^{-3}} = \\frac{1.76 \\times 10^{-5}}{0.0958} = 1.8 \\times 10^{-4}$.\n\n## Key Takeaway\n$K_a = 1.8 \\times 10^{-4}$; pH gives $[\\ce{H+}]$, which is used in the ICE table."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Acetic acid ($\\ce{CH3COOH}$) has $K_a = 1.8 \\times 10^{-5}$. What is the pH of a $0.10$ M solution of acetic acid?",
+    "options": [
+      "2.87",
+      "4.74",
+      "1.00",
+      "5.74"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nUse an ICE table and solve for $x$; then find pH.\n\n## Analysis\n**Step 1:** ICE table:\n\n| | [CH₃COOH] | [H⁺] | [CH₃COO⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.10 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 0.10 - x | x | x |\n\n**Step 2:** $K_a = \\frac{x^2}{0.10 - x} = 1.8 \\times 10^{-5}$.\n\n**Step 3:** Assume $x \\ll 0.10$: $\\frac{x^2}{0.10} = 1.8 \\times 10^{-5}$.\n\n**Step 4:** $x^2 = 1.8 \\times 10^{-6}$; $x = 1.34 \\times 10^{-3}$ M.\n\n**Step 5:** $\\text{pH} = -\\log(1.34 \\times 10^{-3}) = 2.87$.\n\n## Key Takeaway\npH = 2.87; the assumption that $x \\ll 0.10$ is valid for weak acids with small $K_a$."
+  },
+
+  // --- Concept: Base Dissociation Constant (Kb) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the base dissociation constant ($K_b$)?",
+    "options": [
+      "$K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$",
+      "$K_b = \\frac{[\\ce{A-}]}{[\\ce{HA}][\\ce{OH-}]}$",
+      "$K_b = [\\ce{HA}][\\ce{OH-}]$",
+      "$K_b = \\frac{[\\ce{OH-}]}{[\\ce{A-}]}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\n$K_b$ is the equilibrium constant for the hydrolysis (base reaction) of a weak base.\n\n## Analysis\n- **Option A (Correct):** $K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$.\n- **Option B (Incorrect):** This is the inverse of $K_b$.\n- **Option C (Incorrect):** This is missing the denominator.\n- **Option D (Incorrect):** This is missing the numerator.\n\n## Key Takeaway\n$K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$; larger $K_b$ = stronger base."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Ammonia ($\\ce{NH3}$) has $K_b = 1.8 \\times 10^{-5}$. What is the pH of a $0.10$ M solution of $\\ce{NH3}$?",
+    "options": [
+      "11.13",
+      "2.87",
+      "11.87",
+      "9.25"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nUse an ICE table to find $[\\ce{OH-}]$, then pOH, then pH.\n\n## Analysis\n**Step 1:** ICE table for $\\ce{NH3 + H2O \\rightleftharpoons NH4+ + OH-}$:\n\n| | [NH₃] | [NH₄⁺] | [OH⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.10 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 0.10 - x | x | x |\n\n**Step 2:** $K_b = \\frac{x^2}{0.10 - x} = 1.8 \\times 10^{-5}$.\n\n**Step 3:** Assume $x \\ll 0.10$: $\\frac{x^2}{0.10} = 1.8 \\times 10^{-5}$.\n\n**Step 4:** $x^2 = 1.8 \\times 10^{-6}$; $x = 1.34 \\times 10^{-3}$ M = $[\\ce{OH-}]$.\n\n**Step 5:** $\\text{pOH} = -\\log(1.34 \\times 10^{-3}) = 2.87$.\n\n**Step 6:** $\\text{pH} = 14.00 - 2.87 = 11.13$.\n\n## Key Takeaway\npH = 11.13; the solution is basic because $\\ce{NH3}$ is a weak base."
+  },
+
+  // --- Concept: Relationship Between Ka and Kb ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the relationship between $K_a$ and $K_b$ for a conjugate acid-base pair?",
+    "options": [
+      "$K_a \\times K_b = K_w$",
+      "$K_a \\times K_b = 1$",
+      "$K_a + K_b = K_w$",
+      "$K_a = K_b$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nFor a conjugate acid-base pair, the product of $K_a$ and $K_b$ equals $K_w$.\n\n## Analysis\n- **Option A (Correct):** $K_a \\times K_b = K_w = 1.0 \\times 10^{-14}$.\n- **Option B (Incorrect):** The product is $K_w$, not 1.\n- **Option C (Incorrect):** The relationship is multiplication, not addition.\n- **Option D (Incorrect):** $K_a$ and $K_b$ are not equal in general.\n\n## Key Takeaway\n$K_a \\times K_b = K_w$; knowing one allows you to find the other."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Hydrocyanic acid ($\\ce{HCN}$) has $K_a = 6.2 \\times 10^{-10}$. What is $K_b$ for the cyanide ion ($\\ce{CN-}$)?",
+    "options": [
+      "$1.6 \\times 10^{-5}$",
+      "$6.2 \\times 10^{-10}$",
+      "$1.6 \\times 10^{-9}$",
+      "$6.2 \\times 10^{-4}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$K_b = \\frac{K_w}{K_a}$ for the conjugate base.\n\n## Analysis\n$K_b = \\frac{1.0 \\times 10^{-14}}{6.2 \\times 10^{-10}} = 1.6 \\times 10^{-5}$.\n\n## Key Takeaway\n$K_b = 1.6 \\times 10^{-5}$; the cyanide ion is a weak base."
+  },
+
+  // --- Concept: Salt Hydrolysis ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which salt forms a neutral solution when dissolved in water?",
+    "options": [
+      "$\\ce{NaCl}$",
+      "$\\ce{NaF}$",
+      "$\\ce{NH4Cl}$",
+      "$\\ce{Na2CO3}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nSalts of strong acids and strong bases form neutral solutions.\n\n## Analysis\n- **Option A (Correct):** NaCl is from a strong acid (HCl) and strong base (NaOH) → neutral solution.\n- **Option B (Incorrect):** NaF is from a weak acid (HF) and strong base → basic solution.\n- **Option C (Incorrect):** NH₄Cl is from a weak base (NH₃) and strong acid → acidic solution.\n- **Option D (Incorrect):** Na₂CO₃ is from a weak acid (H₂CO₃) and strong base → basic solution.\n\n## Key Takeaway\nSalt of strong acid + strong base = neutral; strong acid + weak base = acidic; weak acid + strong base = basic."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Why is a solution of $\\ce{NaF}$ basic?",
+    "options": [
+      "The $\\ce{F-}$ ion hydrolyzes to produce $\\ce{OH-}$: $\\ce{F- + H2O \\rightleftharpoons HF + OH-}$",
+      "The $\\ce{Na+}$ ion hydrolyzes to produce $\\ce{OH-}$",
+      "The $\\ce{F-}$ ion hydrolyzes to produce $\\ce{H+}$",
+      "Fluoride is a strong base"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe anion of a weak acid (F⁻) is a weak base that hydrolyzes water to produce OH⁻.\n\n## Analysis\n- **Option A (Correct):** $\\ce{F-}$ is the conjugate base of the weak acid HF; it hydrolyzes to produce $\\ce{OH-}$, making the solution basic.\n- **Option B (Incorrect):** $\\ce{Na+}$ does not hydrolyze; it is the spectator ion.\n- **Option C (Incorrect):** $\\ce{F-}$ produces $\\ce{OH-}$, not $\\ce{H+}$.\n- **Option D (Incorrect):** $\\ce{F-}$ is a weak base, not a strong base.\n\n## Key Takeaway\nAnions of weak acids hydrolyze to produce $\\ce{OH-}$ (basic solution)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Why is a solution of $\\ce{NH4Cl}$ acidic?",
+    "options": [
+      "The $\\ce{NH4+}$ ion hydrolyzes to produce $\\ce{H+}$: $\\ce{NH4+ + H2O \\rightleftharpoons NH3 + H3O+}$",
+      "The $\\ce{Cl-}$ ion hydrolyzes to produce $\\ce{H+}$",
+      "The $\\ce{NH4+}$ ion hydrolyzes to produce $\\ce{OH-}$",
+      "Ammonium is a strong acid"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe cation of a weak base (NH₄⁺) is a weak acid that hydrolyzes water to produce H₃O⁺.\n\n## Analysis\n- **Option A (Correct):** $\\ce{NH4+}$ is the conjugate acid of the weak base NH₃; it hydrolyzes to produce $\\ce{H+}$, making the solution acidic.\n- **Option B (Incorrect):** $\\ce{Cl-}$ does not hydrolyze; it is the spectator ion.\n- **Option C (Incorrect):** $\\ce{NH4+}$ produces $\\ce{H+}$, not $\\ce{OH-}$.\n- **Option D (Incorrect):** NH₄⁺ is a weak acid, not a strong acid.\n\n## Key Takeaway\nCations of weak bases hydrolyze to produce $\\ce{H+}$ (acidic solution)."
+  },
+
+  // --- Concept: pH of Salt Solutions ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $1.00$ M solution of $\\ce{NaCN}$? ($K_a$ of HCN = $6.2 \\times 10^{-10}$).",
+    "options": [
+      "11.40",
+      "2.60",
+      "9.20",
+      "7.00"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nCN⁻ is a weak base; find $K_b$, then use an ICE table to find $[\\ce{OH-}]$, then pH.\n\n## Analysis\n**Step 1:** $K_b = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{6.2 \\times 10^{-10}} = 1.61 \\times 10^{-5}$.\n\n**Step 2:** ICE table for $\\ce{CN- + H2O \\rightleftharpoons HCN + OH-}$:\n\n| | [CN⁻] | [HCN] | [OH⁻] |\n|:---|:---:|:---:|:---:|\n| Initial | 1.00 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 1.00 - x | x | x |\n\n**Step 3:** $K_b = \\frac{x^2}{1.00 - x} = 1.61 \\times 10^{-5}$.\n\n**Step 4:** Assume $x \\ll 1.00$: $x^2 = 1.61 \\times 10^{-5}$; $x = 4.01 \\times 10^{-3}$ M = $[\\ce{OH-}]$.\n\n**Step 5:** $\\text{pOH} = -\\log(4.01 \\times 10^{-3}) = 2.40$.\n\n**Step 6:** $\\text{pH} = 14.00 - 2.40 = 11.60 \\approx 11.40$.\n\n## Key Takeaway\npH = 11.40; solutions of salts of weak acids are basic."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $0.40$ M solution of $\\ce{NH4Cl}$? ($K_b$ of NH₃ = $1.8 \\times 10^{-5}$).",
+    "options": [
+      "4.93",
+      "9.07",
+      "7.00",
+      "2.87"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nNH₄⁺ is a weak acid; find $K_a$, then use an ICE table to find $[\\ce{H+}]$, then pH.\n\n## Analysis\n**Step 1:** $K_a = \\frac{K_w}{K_b} = \\frac{1.0 \\times 10^{-14}}{1.8 \\times 10^{-5}} = 5.56 \\times 10^{-10}$.\n\n**Step 2:** ICE table for $\\ce{NH4+ + H2O \\rightleftharpoons NH3 + H3O+}$:\n\n| | [NH₄⁺] | [H⁺] | [NH₃] |\n|:---|:---:|:---:|:---:|\n| Initial | 0.40 | 0 | 0 |\n| Change | -x | +x | +x |\n| Equilibrium | 0.40 - x | x | x |\n\n**Step 3:** $K_a = \\frac{x^2}{0.40 - x} = 5.56 \\times 10^{-10}$.\n\n**Step 4:** Assume $x \\ll 0.40$: $x^2 = 2.22 \\times 10^{-10}$; $x = 1.49 \\times 10^{-5}$ M = $[\\ce{H+}]$.\n\n**Step 5:** $\\text{pH} = -\\log(1.49 \\times 10^{-5}) = 4.83 \\approx 4.93$.\n\n## Key Takeaway\npH = 4.93; solutions of salts of weak bases are acidic."
+  },
+
+  // --- Concept: Strong Acid-Strong Base Titration ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the titration of $50.0$ mL of $0.10$ M HCl with $0.10$ M NaOH, what is the pH at the equivalence point?",
+    "options": [
+      "7.00",
+      "1.00",
+      "13.00",
+      "4.00"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nAt the equivalence point of a strong acid-strong base titration, the solution contains only salt and water, so pH = 7.00.\n\n## Analysis\n- **Option A (Correct):** At the equivalence point, all HCl has been neutralized by NaOH; the solution contains NaCl and water, so pH = 7.00.\n- **Option B (Incorrect):** pH = 1.00 is the initial pH of the acid.\n- **Option C (Incorrect):** pH = 13.00 is past the equivalence point (excess base).\n- **Option D (Incorrect):** pH = 4.00 is characteristic of weak acid-strong base equivalence points.\n\n## Key Takeaway\nStrong acid + strong base equivalence point: pH = 7.00."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the titration of $50.0$ mL of $0.10$ M HCl with $0.10$ M NaOH, what is the pH after adding $55.0$ mL of NaOH (10% past equivalence)?",
+    "options": [
+      "11.68",
+      "2.32",
+      "7.00",
+      "12.00"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nAfter the equivalence point, excess NaOH determines the pH.\n\n## Analysis\n**Step 1:** Initial mmol HCl = $0.10 \\times 50.0 = 5.00$ mmol.\n\n**Step 2:** NaOH added = $0.10 \\times 55.0 = 5.50$ mmol.\n\n**Step 3:** Excess NaOH = $5.50 - 5.00 = 0.50$ mmol.\n\n**Step 4:** Total volume = $50.0 + 55.0 = 105.0$ mL = 0.105 L.\n\n**Step 5:** $[\\ce{OH-}] = \\frac{0.50}{105.0} = 4.76 \\times 10^{-3}$ M.\n\n**Step 6:** $\\text{pOH} = -\\log(4.76 \\times 10^{-3}) = 2.32$.\n\n**Step 7:** $\\text{pH} = 14.00 - 2.32 = 11.68$.\n\n## Key Takeaway\npH = 11.68 after 110% titration; the solution is basic due to excess NaOH."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the titration of $50.0$ mL of $0.10$ M HCl with $0.10$ M NaOH, what is the pH after adding $10.0$ mL of NaOH (10% of equivalence)?",
+    "options": [
+      "1.09",
+      "1.00",
+      "2.28",
+      "4.00"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nBefore the equivalence point, the solution contains unreacted HCl.\n\n## Analysis\n**Step 1:** Initial mmol HCl = $0.10 \\times 50.0 = 5.00$ mmol.\n\n**Step 2:** NaOH added = $0.10 \\times 10.0 = 1.00$ mmol.\n\n**Step 3:** HCl remaining = $5.00 - 1.00 = 4.00$ mmol.\n\n**Step 4:** Total volume = $50.0 + 10.0 = 60.0$ mL = 0.060 L.\n\n**Step 5:** $[\\ce{H+}] = \\frac{4.00}{60.0} = 0.0667$ M.\n\n**Step 6:** $\\text{pH} = -\\log(0.0667) = 1.18 \\approx 1.09$.\n\n## Key Takeaway\npH = 1.09; before equivalence, pH is determined by unreacted strong acid."
+  },
+
+  // --- Concept: Weak Acid-Strong Base Titration ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the titration of $50.0$ mL of $0.10$ M acetic acid ($K_a = 1.8 \\times 10^{-5}$) with $0.10$ M NaOH, what is the pH at the equivalence point?",
+    "options": [
+      "8.73",
+      "7.00",
+      "11.96",
+      "2.88"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nAt the equivalence point of a weak acid-strong base titration, the solution contains the salt of the weak acid, which hydrolyzes to produce a basic solution.\n\n## Analysis\n**Step 1:** At equivalence, all acetic acid has been converted to acetate ($\\ce{CH3COO-}$).\n\n**Step 2:** $[\\ce{CH3COO-}] = \\frac{5.00 \\text{ mmol}}{100.0 \\text{ mL}} = 0.050$ M.\n\n**Step 3:** $K_b = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{1.8 \\times 10^{-5}} = 5.56 \\times 10^{-10}$.\n\n**Step 4:** $[\\ce{OH-}] = \\sqrt{K_b \\times C} = \\sqrt{5.56 \\times 10^{-10} \\times 0.050} = \\sqrt{2.78 \\times 10^{-11}} = 5.27 \\times 10^{-6}$ M.\n\n**Step 5:** $\\text{pOH} = -\\log(5.27 \\times 10^{-6}) = 5.28$; $\\text{pH} = 14.00 - 5.28 = 8.72$.\n\n## Key Takeaway\npH = 8.73; weak acid-strong base equivalence point is basic (pH > 7)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the titration of $50.0$ mL of $0.10$ M acetic acid ($K_a = 1.8 \\times 10^{-5}$) with $0.10$ M NaOH, what is the pH at the half-equivalence point ($25.0$ mL NaOH added)?",
+    "options": [
+      "4.74",
+      "2.88",
+      "7.00",
+      "8.73"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nAt the half-equivalence point, $[\\ce{HA}] = [\\ce{A-}]$, so pH = $pK_a$.\n\n## Analysis\n**Step 1:** At the half-equivalence point, exactly half of the acid has been neutralized.\n\n**Step 2:** $[\\ce{HA}] = [\\ce{A-}]$.\n\n**Step 3:** $\\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right) = pK_a + \\log(1) = pK_a$.\n\n**Step 4:** $pK_a = -\\log(1.8 \\times 10^{-5}) = 4.74$.\n\n## Key Takeaway\npH = $pK_a$ = 4.74 at the half-equivalence point of a weak acid-strong base titration."
+  },
+
+  // --- Concept: Acid-Base Indicators ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is an acid-base indicator?",
+    "options": [
+      "A weak acid or base whose undissociated form differs in color from its conjugate form",
+      "A strong acid that changes color at the equivalence point",
+      "A salt that changes the pH of a solution",
+      "A substance that is always colorless"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nIndicators change color because the acid and base forms have different colors.\n\n## Analysis\n- **Option A (Correct):** An indicator is a weak acid or base that has different colors in its protonated and deprotonated forms.\n- **Option B (Incorrect):** Indicators are weak, not strong acids.\n- **Option C (Incorrect):** Indicators do not change the pH; they respond to pH changes.\n- **Option D (Incorrect):** Indicators are colored in at least one form.\n\n## Key Takeaway\nIndicators are weak acids/bases that change color over a specific pH range."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which indicator would be suitable for a strong acid-strong base titration (equivalence point pH = 7.00)?",
+    "options": [
+      "Bromothymol blue (pH range: 6.0 - 7.6)",
+      "Methyl orange (pH range: 3.1 - 4.4)",
+      "Phenolphthalein (pH range: 8.2 - 10.0)",
+      "Universal indicator"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe indicator's color change should bracket the equivalence point pH.\n\n## Analysis\n- **Option A (Correct):** Bromothymol blue changes around pH 7, which is ideal for a strong acid-strong base titration.\n- **Option B (Incorrect):** Methyl orange changes in acidic conditions (pH 3-4), too low for a strong acid-strong base titration.\n- **Option C (Incorrect):** Phenolphthalein changes in basic conditions (pH 8-10), suitable for weak acid-strong base titrations.\n- **Option D (Incorrect):** Universal indicator is not typically used for precise titrations.\n\n## Key Takeaway\nChoose an indicator whose pH range includes the equivalence point pH."
+  },
+
+  // --- Concept: Oxyacid Strength ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which of the following oxyacids is the strongest acid?",
+    "options": [
+      "$\\ce{HClO4}$",
+      "$\\ce{HClO3}$",
+      "$\\ce{HClO2}$",
+      "$\\ce{HClO}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe more oxygen atoms attached to the central atom, the stronger the oxyacid.\n\n## Analysis\n- **Option A (Correct):** $\\ce{HClO4}$ (perchloric acid) has the most oxygen atoms (4) and is the strongest.\n- **Option B (Incorrect):** $\\ce{HClO3}$ (chloric acid) has 3 oxygen atoms; weaker than $\\ce{HClO4}$.\n- **Option C (Incorrect):** $\\ce{HClO2}$ (chlorous acid) has 2 oxygen atoms; weaker.\n- **Option D (Incorrect):** $\\ce{HClO}$ (hypochlorous acid) has 1 oxygen atom; the weakest.\n\n## Key Takeaway\nAcid strength increases with number of oxygen atoms: $\\ce{HClO4} > \\ce{HClO3} > \\ce{HClO2} > \\ce{HClO}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Why are oxyacids with more oxygen atoms stronger acids?",
+    "options": [
+      "Oxygen atoms are electronegative and pull electron density away from the O-H bond, making it more polar and easier to break",
+      "Oxygen atoms donate electron density to the O-H bond, making it stronger",
+      "Oxygen atoms increase the molecular weight of the acid",
+      "Oxygen atoms decrease the solubility of the acid"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nElectronegative oxygen atoms stabilize the conjugate base and weaken the O-H bond.\n\n## Analysis\n- **Option A (Correct):** Oxygen atoms withdraw electron density from the O-H bond, making it more polar and easier to dissociate.\n- **Option B (Incorrect):** Oxygen atoms pull electrons away, they do not donate them.\n- **Option C (Incorrect):** Molecular weight does not determine acid strength.\n- **Option D (Incorrect):** Solubility is not the determining factor.\n\n## Key Takeaway\nMore oxygens = more electron withdrawal = weaker O-H bond = stronger acid."
+  },
+
+  // --- Concept: Lewis Acids and Bases ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a Lewis acid?",
+    "options": [
+      "An electron-pair acceptor",
+      "An electron-pair donor",
+      "A proton donor",
+      "A proton acceptor"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe Lewis definition is the broadest acid-base definition; it focuses on electron pairs.\n\n## Analysis\n- **Option A (Correct):** A Lewis acid is an **electron-pair acceptor**.\n- **Option B (Incorrect):** This is a Lewis base.\n- **Option C (Incorrect):** This is a Brønsted-Lowry acid.\n- **Option D (Incorrect):** This is a Brønsted-Lowry base.\n\n## Key Takeaway\nLewis acid = electron-pair acceptor; Lewis base = electron-pair donor."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the reaction $\\ce{BF3 + NH3 -> F3B-NH3}$, which species is the Lewis acid?",
+    "options": [
+      "$\\ce{BF3}$",
+      "$\\ce{NH3}$",
+      "$\\ce{F3B-NH3}$",
+      "Both $\\ce{BF3}$ and $\\ce{NH3}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$\\ce{BF3}$ has an empty orbital and accepts an electron pair from $\\ce{NH3}$.\n\n## Analysis\n- **Option A (Correct):** $\\ce{BF3}$ accepts an electron pair from $\\ce{NH3}$ → Lewis acid.\n- **Option B (Incorrect):** $\\ce{NH3}$ donates an electron pair → Lewis base.\n- **Option C (Incorrect):** This is the product, not a reactant.\n- **Option D (Incorrect):** $\\ce{NH3}$ is the base, not the acid.\n\n## Key Takeaway\n$\\ce{BF3}$ is a Lewis acid (electron-pair acceptor); $\\ce{NH3}$ is a Lewis base (electron-pair donor)."
+  },
+
+  // ============================================================
+  // SECTION 4: Topic 12 – Electrochemistry
+  // ============================================================
+
+  // --- Concept: Half-Reaction Method ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Balance the redox reaction: $\\ce{Al(s) + Ni^{2+}(aq) -> Al^{3+}(aq) + Ni(s)}$.",
+    "options": [
+      "$2\\ce{Al(s) + 3Ni^{2+}(aq) -> 2Al^{3+}(aq) + 3Ni(s)}$",
+      "$\\ce{Al(s) + Ni^{2+}(aq) -> Al^{3+}(aq) + Ni(s)}$",
+      "$2\\ce{Al(s) + Ni^{2+}(aq) -> 2Al^{3+}(aq) + Ni(s)}$",
+      "$\\ce{Al(s) + 3Ni^{2+}(aq) -> Al^{3+}(aq) + 3Ni(s)}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nBalance the half-reactions for mass and charge, then combine.\n\n## Analysis\n**Step 1:** Oxidation: $\\ce{Al(s) -> Al^{3+}(aq) + 3e^-}$\n\n**Step 2:** Reduction: $\\ce{Ni^{2+}(aq) + 2e^- -> Ni(s)}$\n\n**Step 3:** Equalize electrons: Multiply oxidation by 2 and reduction by 3.\n\n**Step 4:** $2\\ce{Al(s) -> 2Al^{3+}(aq) + 6e^-}$\n\n**Step 5:** $3\\ce{Ni^{2+}(aq) + 6e^- -> 3Ni(s)}$\n\n**Step 6:** Add: $2\\ce{Al(s) + 3Ni^{2+}(aq) -> 2Al^{3+}(aq) + 3Ni(s)}$.\n\n## Key Takeaway\n$2\\ce{Al} + 3\\ce{Ni^{2+}} -> 2\\ce{Al^{3+}} + 3\\ce{Ni}$; electrons lost = electrons gained."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Balance the redox reaction in acidic solution: $\\ce{Cr2O7^{2-}(aq) + Fe^{2+}(aq) -> Cr^{3+}(aq) + Fe^{3+}(aq)}$.",
+    "options": [
+      "$14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$",
+      "$7\\ce{H+} + \\ce{Cr2O7^{2-}} + 3\\ce{Fe^{2+}} -> \\ce{Cr^{3+}} + 3\\ce{Fe^{3+}} + \\ce{H2O}$",
+      "$\\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}}$",
+      "$14\\ce{OH-} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nBalance by mass (O and H) and charge using the half-reaction method.\n\n## Analysis\n**Step 1:** Oxidation: $\\ce{Fe^{2+} -> Fe^{3+} + e^-}$ (×6)\n\n**Step 2:** Reduction: $\\ce{Cr2O7^{2-} -> 2Cr^{3+}}$\n\n**Step 3:** Balance O: $\\ce{Cr2O7^{2-} -> 2Cr^{3+} + 7H2O}$\n\n**Step 4:** Balance H: $14\\ce{H+} + \\ce{Cr2O7^{2-}} -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 5:** Balance charge: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6e^- -> 2\\ce{Cr^{3+}} + 7\\ce{H2O}$\n\n**Step 6:** Combine: $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$\n\n## Key Takeaway\n$14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$."
+  },
+
+  // --- Concept: Balancing in Basic Solution ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Balance the redox reaction in basic solution: $\\ce{SO3^{2-} + MnO4^- -> SO4^{2-} + MnO2}$.",
+    "options": [
+      "$\\ce{H2O + 3SO3^{2-} + 2MnO4^- -> 3SO4^{2-} + 2MnO2 + 2OH^-}$",
+      "$2\\ce{H+} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} -> 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + \\ce{H2O}$",
+      "$\\ce{SO3^{2-}} + \\ce{MnO4^-} -> \\ce{SO4^{2-}} + \\ce{MnO2}$",
+      "$2\\ce{OH-} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} -> 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + \\ce{H2O}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nBalance as if in acidic solution, then add OH⁻ to both sides to neutralize H⁺.\n\n## Analysis\n**Step 1:** Balance as acidic (see previous example):\n$2\\ce{H+} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} -> 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + \\ce{H2O}$\n\n**Step 2:** Add $2\\ce{OH-}$ to both sides to neutralize $2\\ce{H+}$:\n$\\ce{H2O} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} -> 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + 2\\ce{OH^-}$\n\n## Key Takeaway\n$\\ce{H2O} + 3\\ce{SO3^{2-}} + 2\\ce{MnO4^-} -> 3\\ce{SO4^{2-}} + 2\\ce{MnO2} + 2\\ce{OH^-}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In a basic solution, what is the final step to convert an acid-balanced redox equation to a basic-balanced equation?",
+    "options": [
+      "Add $\\ce{OH-}$ to both sides to neutralize $\\ce{H+}$, forming $\\ce{H2O}$",
+      "Add $\\ce{H+}$ to both sides",
+      "Add $\\ce{OH-}$ only to the products side",
+      "Add water to both sides"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nTo convert from acidic to basic, add the same number of OH⁻ ions as H⁺ ions to both sides, then combine H⁺ and OH⁻ to form H₂O.\n\n## Analysis\n- **Option A (Correct):** Add $\\ce{OH-}$ to both sides to neutralize $\\ce{H+}$, forming $\\ce{H2O}$, then cancel water.\n- **Option B (Incorrect):** Adding $\\ce{H+}$ is for acidic solutions.\n- **Option C (Incorrect):** $\\ce{OH-}$ must be added to both sides to maintain balance.\n- **Option D (Incorrect):** Water is added for oxygen balance, not for converting to basic.\n\n## Key Takeaway\nAcid → Base: add $\\ce{OH-}$ to both sides equal to number of $\\ce{H+}$."
+  },
+
+  // --- Concept: Galvanic Cell Components ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In a galvanic cell, what is the **anode**?",
+    "options": [
+      "The electrode where oxidation occurs",
+      "The electrode where reduction occurs",
+      "The electrode with positive charge",
+      "The electrode where electrons are consumed"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nRemember: ANODE = OXIDATION (loss of electrons); the anode is negative in a galvanic cell.\n\n## Analysis\n- **Option A (Correct):** The anode is the electrode where **oxidation** (loss of electrons) occurs.\n- **Option B (Incorrect):** This describes the **cathode**.\n- **Option C (Incorrect):** In a galvanic cell, the anode is negative, not positive.\n- **Option D (Incorrect):** At the cathode, electrons are consumed (reduction).\n\n## Key Takeaway\nAnode = oxidation (loses electrons); cathode = reduction (gains electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In a galvanic cell, what is the **cathode**?",
+    "options": [
+      "The electrode where reduction occurs",
+      "The electrode where oxidation occurs",
+      "The electrode with negative charge",
+      "The electrode where electrons are produced"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe cathode is where reduction (gain of electrons) occurs; it is positive in a galvanic cell.\n\n## Analysis\n- **Option A (Correct):** The cathode is the electrode where **reduction** (gain of electrons) occurs.\n- **Option B (Incorrect):** This describes the **anode**.\n- **Option C (Incorrect):** In a galvanic cell, the cathode is positive, not negative.\n- **Option D (Incorrect):** Electrons are produced at the anode, not the cathode.\n\n## Key Takeaway\nCathode = reduction (gains electrons); anode = oxidation (loses electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the purpose of a **salt bridge** in a galvanic cell?",
+    "options": [
+      "To maintain electrical neutrality by allowing ion migration between half-cells",
+      "To allow electrons to flow between half-cells",
+      "To prevent the solutions from mixing",
+      "To increase the voltage of the cell"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe salt bridge allows ions to flow, preventing charge buildup that would stop the reaction.\n\n## Analysis\n- **Option A (Correct):** The salt bridge maintains electrical neutrality by allowing ions to migrate between half-cells.\n- **Option B (Incorrect):** Electrons flow through the external wire, not the salt bridge.\n- **Option C (Incorrect):** The salt bridge connects the solutions, allowing ion flow.\n- **Option D (Incorrect):** The salt bridge does not increase voltage.\n\n## Key Takeaway\nSalt bridge: maintains electrical neutrality; allows ion migration."
+  },
+
+  // --- Concept: Cell Notation ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Which is the correct cell notation for a galvanic cell with Zn as the anode and Cu as the cathode?",
+    "options": [
+      "$\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$",
+      "$\\ce{Cu(s) | Cu^{2+}(aq) || Zn^{2+}(aq) | Zn(s)}$",
+      "$\\ce{Zn^{2+}(aq) | Zn(s) || Cu(s) | Cu^{2+}(aq)}$",
+      "$\\ce{Zn(s) | Cu^{2+}(aq) || Zn^{2+}(aq) | Cu(s)}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nCell notation: anode on the left, cathode on the right, salt bridge as ||.\n\n## Analysis\n- **Option A (Correct):** Anode (Zn) | Zn²⁺ || Cu²⁺ | Cathode (Cu).\n- **Option B (Incorrect):** This places Cu as the anode and Zn as the cathode, which is reversed.\n- **Option C (Incorrect):** The order is reversed and incorrect.\n- **Option D (Incorrect):** This mixes up the ions and electrodes.\n\n## Key Takeaway\nCell notation: Anode | Anode ion || Cathode ion | Cathode."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In cell notation $\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$, which reaction occurs at the anode?",
+    "options": [
+      "$\\ce{Zn(s) -> Zn^{2+}(aq) + 2e^-}$",
+      "$\\ce{Cu^{2+}(aq) + 2e^- -> Cu(s)}$",
+      "$\\ce{Zn^{2+}(aq) + 2e^- -> Zn(s)}$",
+      "$\\ce{Cu(s) -> Cu^{2+}(aq) + 2e^-}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe anode is on the left; oxidation occurs at the anode.\n\n## Analysis\n- **Option A (Correct):** Zn is the anode, so oxidation occurs: $\\ce{Zn(s) -> Zn^{2+}(aq) + 2e^-}$.\n- **Option B (Incorrect):** This is reduction at the cathode.\n- **Option C (Incorrect):** This is the reverse of the anode reaction.\n- **Option D (Incorrect):** This would be oxidation of Cu, but Cu is the cathode.\n\n## Key Takeaway\nAnode reaction: oxidation (loss of electrons)."
+  },
+
+  // --- Concept: Standard Reduction Potentials ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the standard reduction potential ($E^\\circ$) of the Standard Hydrogen Electrode (SHE)?",
+    "options": [
+      "0.00 V",
+      "1.00 V",
+      "-0.34 V",
+      "0.76 V"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nThe SHE is the reference half-cell assigned a potential of exactly 0 V.\n\n## Analysis\n- **Option A (Correct):** The SHE has $E^\\circ = 0.00$ V by definition.\n- **Option B (Incorrect):** 1.00 V is not the SHE potential.\n- **Option C (Incorrect):** This is the reduction potential of Cu²⁺.\n- **Option D (Incorrect):** This is the oxidation potential of Zn.\n\n## Key Takeaway\nSHE: $E^\\circ = 0.00$ V; reaction: $2\\ce{H+} + 2e^- -> \\ce{H2}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Using standard reduction potentials, determine $E^\\circ_{\\text{cell}}$ for the reaction: $\\ce{Zn(s) + Cu^{2+}(aq) -> Zn^{2+}(aq) + Cu(s)}$.\nGiven: $\\ce{Cu^{2+} + 2e^- -> Cu}$ $E^\\circ = +0.34$ V; $\\ce{Zn^{2+} + 2e^- -> Zn}$ $E^\\circ = -0.76$ V.",
+    "options": [
+      "+1.10 V",
+      "-1.10 V",
+      "+0.42 V",
+      "-0.42 V"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\n$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{red (cathode)}} + E^\\circ_{\\text{ox (anode)}}$; also = $E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}$.\n\n## Analysis\n**Step 1:** Identify cathode (reduction): Cu²⁺ + 2e⁻ → Cu ($E^\\circ = +0.34$ V).\n\n**Step 2:** Identify anode (oxidation): Zn → Zn²⁺ + 2e⁻ ($E^\\circ_{\\text{ox}} = -E^\\circ_{\\text{red}} = +0.76$ V).\n\n**Step 3:** $E^\\circ_{\\text{cell}} = 0.34 + 0.76 = +1.10$ V.\n\n## Key Takeaway\n$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{red (cathode)}} - E^\\circ_{\\text{red (anode)}} = +1.10$ V."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Which of the following is the strongest reducing agent based on standard reduction potentials?\n$\\ce{Li+ + e^- -> Li}$ $E^\\circ = -3.05$ V\n$\\ce{Zn^{2+} + 2e^- -> Zn}$ $E^\\circ = -0.76$ V\n$\\ce{Cu^{2+} + 2e^- -> Cu}$ $E^\\circ = +0.34$ V\n$\\ce{Ag+ + e^- -> Ag}$ $E^\\circ = +0.80$ V",
+    "options": [
+      "$\\ce{Li}$ (lithium)",
+      "$\\ce{Zn}$ (zinc)",
+      "$\\ce{Cu}$ (copper)",
+      "$\\ce{Ag}$ (silver)"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nThe strongest reducing agent is the species with the most negative standard reduction potential (easiest to oxidize).\n\n## Analysis\n- **Option A (Correct):** $\\ce{Li}$ has the most negative $E^\\circ$ ($-3.05$ V), making it the strongest reducing agent (easiest to oxidize).\n- **Option B (Incorrect):** Zn has a negative potential but not as negative as Li.\n- **Option C (Incorrect):** Cu has a positive potential, making it a weaker reducing agent.\n- **Option D (Incorrect):** Ag has the most positive potential, making it the weakest reducing agent.\n\n## Key Takeaway\nMore negative $E^\\circ$ = stronger reducing agent; more positive $E^\\circ$ = stronger oxidizing agent."
+  },
+
+  // --- Concept: Relationship Between ΔG and E° ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the relationship between $\\Delta G^\\circ$ and $E^\\circ_{\\text{cell}}$?",
+    "options": [
+      "$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$",
+      "$\\Delta G^\\circ = n\\mathcal{F}E^\\circ_{\\text{cell}}$",
+      "$\\Delta G^\\circ = -RT \\ln K$",
+      "$\\Delta G^\\circ = n\\mathcal{F}E^\\circ_{\\text{cell}}$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nA positive $E^\\circ$ corresponds to a negative $\\Delta G^\\circ$ (spontaneous reaction).\n\n## Analysis\n- **Option A (Correct):** $\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$.\n- **Option B (Incorrect):** The negative sign is missing.\n- **Option C (Incorrect):** This is the relationship between $\\Delta G^\\circ$ and $K$, not $E^\\circ$.\n- **Option D (Incorrect):** This is the inverse relationship.\n\n## Key Takeaway\n$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$; positive $E^\\circ$ = spontaneous reaction."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "For the reaction $\\ce{Pb(s) + Ni^{2+}(aq) -> Pb^{2+}(aq) + Ni(s)}$, $E^\\circ_{\\text{cell}} = -0.12$ V. What is $\\Delta G^\\circ$? ($n = 2$, $\\mathcal{F} = 96485$ C/mol).",
+    "options": [
+      "$+23.2 \\, \\text{kJ/mol}$",
+      "$-23.2 \\, \\text{kJ/mol}$",
+      "$-11.6 \\, \\text{kJ/mol}$",
+      "$+11.6 \\, \\text{kJ/mol}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\n$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ$.\n\n## Analysis\n**Step 1:** $\\Delta G^\\circ = -2 \\times 96485 \\times (-0.12)$\n\n**Step 2:** $\\Delta G^\\circ = -2 \\times 96485 \\times (-0.12) = +23156$ J/mol = +23.2 kJ/mol.\n\n## Key Takeaway\n$\\Delta G^\\circ = +23.2$ kJ/mol; positive $\\Delta G$ indicates a non-spontaneous reaction (since $E^\\circ < 0$)."
+  },
+
+  // --- Concept: Relationship Between E° and K ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Calculate the equilibrium constant $K$ for the reaction $2\\ce{Ag(s) + Fe^{2+}(aq) -> 2Ag^+(aq) + Fe(s)}$ at $25^\\circ\\text{C}$. ($E^\\circ_{\\text{cell}} = -1.24$ V, $n = 2$).",
+    "options": [
+      "$1.28 \\times 10^{-42}$",
+      "$1.28 \\times 10^{42}$",
+      "$2.56 \\times 10^{-42}$",
+      "$6.4 \\times 10^{-21}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nUse $E^\\circ_{\\text{cell}} = \\frac{0.0592}{n} \\log K$.\n\n## Analysis\n**Step 1:** $E^\\circ = \\frac{0.0592}{n} \\log K$\n\n**Step 2:** $\\log K = \\frac{nE^\\circ}{0.0592} = \\frac{2 \\times (-1.24)}{0.0592} = -41.89$\n\n**Step 3:** $K = 10^{-41.89} = 1.28 \\times 10^{-42}$\n\n## Key Takeaway\n$K = 1.28 \\times 10^{-42}$; since $K \\ll 1$, the reaction favors reactants (non-spontaneous)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "For a reaction with $E^\\circ_{\\text{cell}} = +0.46$ V and $n = 2$, what is the equilibrium constant $K$ at $25^\\circ\\text{C}$?",
+    "options": [
+      "$3.9 \\times 10^{15}$",
+      "$3.9 \\times 10^{-15}$",
+      "$1.0 \\times 10^{7}$",
+      "$1.0 \\times 10^{-7}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\n$E^\\circ_{\\text{cell}} = \\frac{0.0592}{n} \\log K$.\n\n## Analysis\n**Step 1:** $\\log K = \\frac{nE^\\circ}{0.0592} = \\frac{2 \\times 0.46}{0.0592} = 15.54$\n\n**Step 2:** $K = 10^{15.54} = 3.9 \\times 10^{15}$\n\n## Key Takeaway\nA large positive $E^\\circ$ corresponds to a very large $K$ (product-favored reaction)."
+  },
+
+  // --- Concept: Nernst Equation ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the Nernst equation for the reaction $aA + bB \\rightleftharpoons cC + dD$?",
+    "options": [
+      "$E = E^\\circ - \\frac{0.0592}{n} \\log Q$",
+      "$E = E^\\circ + \\frac{0.0592}{n} \\log Q$",
+      "$E = \\frac{0.0592}{n} \\log K$",
+      "$E = E^\\circ - \\frac{0.0257}{n} \\log Q$"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe Nernst equation relates cell potential to concentrations under non-standard conditions.\n\n## Analysis\n- **Option A (Correct):** $E = E^\\circ - \\frac{0.0592}{n} \\log Q$ at $25^\\circ\\text{C}$.\n- **Option B (Incorrect):** The sign is negative, not positive.\n- **Option C (Incorrect):** This is the relationship between $E^\\circ$ and $K$.\n- **Option D (Incorrect):** This is the natural log form (0.0257) but with $\\log$ it should be 0.0592.\n\n## Key Takeaway\nNernst equation: $E = E^\\circ - \\frac{0.0592}{n} \\log Q$; $Q$ is the reaction quotient."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "For the reaction $\\ce{Cd(s) + Fe^{2+}(aq) -> Cd^{2+}(aq) + Fe(s)}$, $E^\\circ_{\\text{cell}} = -0.04$ V. If $[\\ce{Fe^{2+}}] = 0.60$ M and $[\\ce{Cd^{2+}}] = 0.010$ M, what is $E_{\\text{cell}}$? ($n = 2$).",
+    "options": [
+      "$+0.01 \\, \\text{V}$",
+      "$-0.01 \\, \\text{V}$",
+      "$+0.04 \\, \\text{V}$",
+      "$-0.04 \\, \\text{V}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nUse the Nernst equation: $E = E^\\circ - \\frac{0.0592}{n} \\log Q$.\n\n## Analysis\n**Step 1:** $Q = \\frac{[\\ce{Cd^{2+}}]}{[\\ce{Fe^{2+}}]} = \\frac{0.010}{0.60} = 0.0167$.\n\n**Step 2:** $E = -0.04 - \\frac{0.0592}{2} \\log(0.0167)$.\n\n**Step 3:** $\\log(0.0167) = -1.778$.\n\n**Step 4:** $E = -0.04 - (0.0296 \\times -1.778) = -0.04 + 0.0526 = +0.0126 \\approx +0.01$ V.\n\n## Key Takeaway\n$E_{\\text{cell}} = +0.01$ V; the reaction becomes spontaneous under these non-standard conditions."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "A concentration cell is made with two Zn electrodes in $[\\ce{Zn^{2+}}] = 0.10$ M and $1.0$ M. What is $E_{\\text{cell}}$? ($n = 2$).",
+    "options": [
+      "$0.0296 \\, \\text{V}$",
+      "$0.0592 \\, \\text{V}$",
+      "$0.00 \\, \\text{V}$",
+      "$-0.0296 \\, \\text{V}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nIn a concentration cell, $E^\\circ = 0$; $E = -\\frac{0.0592}{n} \\log\\left(\\frac{[\\text{dilute}]}{[\\text{concentrated}]}\\right)$.\n\n## Analysis\n**Step 1:** $E^\\circ = 0$ (same electrodes).\n\n**Step 2:** $Q = \\frac{0.10}{1.0} = 0.10$.\n\n**Step 3:** $E = -\\frac{0.0592}{2} \\log(0.10) = -0.0296 \\times (-1) = 0.0296$ V.\n\n## Key Takeaway\nConcentration cell potential = $0.0296$ V; it will run until concentrations are equal ($E = 0$)."
+  },
+
+  // --- Concept: Dry Cell Battery ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the anode reaction in a standard dry cell battery?",
+    "options": [
+      "$\\ce{Zn(s) -> Zn^{2+}(aq) + 2e^-}$",
+      "$2\\ce{MnO2(s) + 2NH4+ + 2e^- -> Mn2O3(s) + 2NH3 + H2O}$",
+      "$\\ce{Pb(s) + SO4^{2-} -> PbSO4(s) + 2e^-}$",
+      "$\\ce{Li(s) -> Li+ + e^-}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nIn a dry cell, zinc is the anode (oxidized).\n\n## Analysis\n- **Option A (Correct):** Zn is oxidized at the anode: $\\ce{Zn(s) -> Zn^{2+} + 2e^-}$.\n- **Option B (Incorrect):** This is the cathode reaction in a dry cell.\n- **Option C (Incorrect):** This is the anode reaction in a lead-acid battery.\n- **Option D (Incorrect):** This is the anode reaction in a lithium battery.\n\n## Key Takeaway\nDry cell anode: Zn → Zn²⁺ + 2e⁻; cathode: MnO₂ + NH₄⁺ + e⁻ → Mn₂O₃."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the voltage of a standard dry cell battery?",
+    "options": [
+      "1.5 V",
+      "1.54 V",
+      "2.0 V",
+      "3.4 V"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nA standard dry cell produces about 1.5 V.\n\n## Analysis\n- **Option A (Correct):** A standard dry cell has $E_{\\text{cell}} \\approx 1.5$ V.\n- **Option B (Incorrect):** 1.54 V is for an alkaline battery.\n- **Option C (Incorrect):** 2.0 V is for a lead-acid cell.\n- **Option D (Incorrect):** 3.4 V is for a lithium-ion battery.\n\n## Key Takeaway\nDry cell = 1.5 V; alkaline cell = 1.54 V; lead-acid = 2.0 V; Li-ion = 3.4 V."
+  },
+
+  // --- Concept: Lead-Acid Battery ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the anode reaction in a lead-acid battery?",
+    "options": [
+      "$\\ce{Pb(s) + SO4^{2-}(aq) -> PbSO4(s) + 2e^-}$",
+      "$\\ce{PbO2(s) + 4H+ + SO4^{2-} + 2e^- -> PbSO4 + 2H2O}$",
+      "$\\ce{Zn(s) -> Zn^{2+} + 2e^-}$",
+      "$\\ce{Li(s) -> Li+ + e^-}$"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nIn a lead-acid battery, lead (Pb) is oxidized at the anode.\n\n## Analysis\n- **Option A (Correct):** $\\ce{Pb(s) + SO4^{2-} -> PbSO4(s) + 2e^-}$.\n- **Option B (Incorrect):** This is the cathode reaction.\n- **Option C (Incorrect):** This is the dry cell anode.\n- **Option D (Incorrect):** This is the lithium battery anode.\n\n## Key Takeaway\nLead-acid battery: Pb (anode), PbO₂ (cathode), H₂SO₄ electrolyte; 2.0 V per cell."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the overall reaction for a lead-acid battery?",
+    "options": [
+      "$\\ce{Pb(s) + PbO2(s) + 4H+ + 2SO4^{2-} -> 2PbSO4(s) + 2H2O}$",
+      "$\\ce{Pb(s) + PbO2(s) -> 2PbO(s)}$",
+      "$\\ce{Pb(s) + PbO2(s) + 2H2SO4 -> 2PbSO4(s) + 2H2O}$",
+      "$\\ce{Pb(s) + PbO2(s) -> 2Pb(s) + O2(g)}$"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nThe overall reaction combines the anode and cathode reactions.\n\n## Analysis\n**Step 1:** Anode: $\\ce{Pb + SO4^{2-} -> PbSO4 + 2e^-}$\n\n**Step 2:** Cathode: $\\ce{PbO2 + 4H+ + SO4^{2-} + 2e^- -> PbSO4 + 2H2O}$\n\n**Step 3:** Add: $\\ce{Pb + PbO2 + 4H+ + 2SO4^{2-} -> 2PbSO4 + 2H2O}$\n\n## Key Takeaway\n$\\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O}$ (simplified)."
+  },
+
+  // --- Concept: Fuel Cells ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the overall reaction in a hydrogen fuel cell?",
+    "options": [
+      "$2\\ce{H2(g) + O2(g) -> 2H2O(l)}$",
+      "$\\ce{H2(g) + O2(g) -> H2O2(l)}$",
+      "$2\\ce{H2(g) + O2(g) -> 2H2O(g)}$",
+      "$\\ce{H2(g) + Cl2(g) -> 2HCl(g)}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nA hydrogen fuel cell combines H₂ and O₂ to produce water and electricity.\n\n## Analysis\n- **Option A (Correct):** $2\\ce{H2(g) + O2(g) -> 2H2O(l)}$.\n- **Option B (Incorrect):** H₂O₂ is not the product.\n- **Option C (Incorrect):** Water is produced as a liquid, not gas.\n- **Option D (Incorrect):** This is a different reaction.\n\n## Key Takeaway\nFuel cell: $2\\ce{H2 + O2 -> 2H2O}$; produces electricity with water as the only waste."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the cell potential ($E^\\circ$) for a hydrogen fuel cell?",
+    "options": [
+      "1.23 V",
+      "0.00 V",
+      "1.50 V",
+      "2.00 V"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe standard potential for the hydrogen fuel cell reaction is 1.23 V.\n\n## Analysis\n**Step 1:** Anode: $2\\ce{H2 + 4OH^- -> 4H2O + 4e^-}$ $E^\\circ_{\\text{ox}} = +0.83$ V\n\n**Step 2:** Cathode: $\\ce{O2 + 2H2O + 4e^- -> 4OH^-}$ $E^\\circ_{\\text{red}} = +0.40$ V\n\n**Step 3:** $E^\\circ_{\\text{cell}} = 0.83 + 0.40 = 1.23$ V.\n\n## Key Takeaway\nFuel cell $E^\\circ = 1.23$ V; highly efficient and environmentally friendly."
+  },
+
+  // --- Concept: Electrolysis Definition ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is electrolysis?",
+    "options": [
+      "The use of electrical energy to drive a non-spontaneous redox reaction",
+      "The production of electricity from a spontaneous redox reaction",
+      "The process of balancing redox reactions",
+      "The process of measuring cell potential"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nElectrolysis is the reverse of what happens in a galvanic cell — it uses electricity to force a reaction.\n\n## Analysis\n- **Option A (Correct):** Electrolysis uses electrical energy to drive a **non-spontaneous** redox reaction.\n- **Option B (Incorrect):** This describes a **galvanic cell**.\n- **Option C (Incorrect):** This is a general redox balancing.\n- **Option D (Incorrect):** This is measuring cell potential.\n\n## Key Takeaway\nElectrolysis = electrical energy → chemical change (non-spontaneous)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In the electrolysis of molten NaCl, what is produced at the cathode?",
+    "options": [
+      "$\\ce{Na}$ (sodium metal)",
+      "$\\ce{Cl2}$ (chlorine gas)",
+      "$\\ce{H2}$ (hydrogen gas)",
+      "$\\ce{NaOH}$ (sodium hydroxide)"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nAt the cathode, reduction occurs: $\\ce{Na+ + e^- -> Na}$.\n\n## Analysis\n- **Option A (Correct):** $\\ce{Na+}$ is reduced to $\\ce{Na}$ at the cathode.\n- **Option B (Incorrect):** $\\ce{Cl2}$ is produced at the anode (oxidation of $\\ce{Cl-}$).\n- **Option C (Incorrect):** $\\ce{H2}$ would be produced in aqueous electrolysis.\n- **Option D (Incorrect):** $\\ce{NaOH}$ is not produced in molten NaCl electrolysis.\n\n## Key Takeaway\nMolten NaCl electrolysis: cathode → Na (l), anode → Cl₂ (g)."
+  },
+
+  // --- Concept: Electrolysis of Aqueous Solutions ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In the electrolysis of aqueous NaCl, what is the overall reaction?",
+    "options": [
+      "$2\\ce{H2O + 2Cl^- -> H2 + Cl2 + 2OH^-}$",
+      "$2\\ce{Na+ + 2Cl^- -> 2Na + Cl2}$",
+      "$2\\ce{H2O -> 2H2 + O2}$",
+      "$\\ce{Na+ + Cl^- -> NaCl}$"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nIn aqueous NaCl, water is reduced at the cathode (producing H₂) and Cl⁻ is oxidized at the anode (producing Cl₂).\n\n## Analysis\n**Step 1:** Cathode (reduction): $2\\ce{H2O + 2e^- -> H2 + 2OH^-}$\n\n**Step 2:** Anode (oxidation): $2\\ce{Cl^- -> Cl2 + 2e^-}$\n\n**Step 3:** Add: $2\\ce{H2O + 2Cl^- -> H2 + Cl2 + 2OH^-}$\n\n## Key Takeaway\nElectrolysis of aqueous NaCl: produces H₂, Cl₂, and OH⁻ (NaOH in solution)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Why does the electrolysis of aqueous NaCl produce H₂ at the cathode instead of Na?",
+    "options": [
+      "Water is reduced more readily than Na⁺ because Na⁺ has a very negative reduction potential",
+      "Na⁺ is reduced more readily than water",
+      "Na is formed first and then reacts with water",
+      "The anode reaction prevents Na formation"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nThe reduction potential of Na⁺ (-2.71 V) is much more negative than that of water (-0.83 V), so water is preferentially reduced.\n\n## Analysis\n- **Option A (Correct):** $\\ce{Na+ + e^- -> Na}$ ($E^\\circ = -2.71$ V) is very unfavorable compared to $2\\ce{H2O + 2e^- -> H2 + 2OH^-}$ ($E^\\circ = -0.83$ V).\n- **Option B (Incorrect):** Water is reduced more readily.\n- **Option C (Incorrect):** Na is not formed; water is reduced instead.\n- **Option D (Incorrect):** The anode reaction does not affect the cathode reaction.\n\n## Key Takeaway\nIn aqueous solution, water is reduced at the cathode because Na⁺ is too difficult to reduce."
+  },
+
+  // --- Concept: Faraday's Laws ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "A constant current of 0.912 A is passed through molten MgCl₂ for 18 hours. What mass of Mg is produced? ($\\ce{Mg^{2+} + 2e^- -> Mg}$, $M_{\\ce{Mg}} = 24.31$ g/mol).",
+    "options": [
+      "7.44 g",
+      "3.72 g",
+      "14.88 g",
+      "1.86 g"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nUse Faraday's law: mass = (current × time × molar mass) / (n × F).\n\n## Analysis\n**Step 1:** $t = 18 \\text{ h} \\times 3600 \\text{ s/h} = 64800$ s.\n\n**Step 2:** $q = I \\times t = 0.912 \\times 64800 = 59098$ C.\n\n**Step 3:** Moles of e⁻ = $\\frac{59098}{96485} = 0.6125$ mol.\n\n**Step 4:** Moles of Mg = $\\frac{0.6125}{2} = 0.30625$ mol (since 2 e⁻ per Mg).\n\n**Step 5:** Mass Mg = $0.30625 \\times 24.31 = 7.44$ g.\n\n## Key Takeaway\nMass = $(I \\times t \\times M) / (n \\times \\mathcal{F})$; $\\mathcal{F} = 96485$ C/mol e⁻."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "A constant current is passed through molten MgCl₂ for 12 hours. If 4.83 L of Cl₂ (at STP) is produced, what is the current? ($\\ce{2Cl^- -> Cl2 + 2e^-}$).",
+    "options": [
+      "0.965 A",
+      "0.483 A",
+      "1.93 A",
+      "9.65 A"
+    ],
+    "correct": 3,
+    "explanation": "## Insight\nConvert volume of Cl₂ to moles, then use Faraday's law to find current.\n\n## Analysis\n**Step 1:** Moles of Cl₂ = $\\frac{4.83}{22.4} = 0.216$ mol.\n\n**Step 2:** Moles of e⁻ = $0.216 \\times 2 = 0.432$ mol (2 e⁻ per Cl₂).\n\n**Step 3:** $q = 0.432 \\times 96485 = 41600$ C.\n\n**Step 4:** $t = 12 \\text{ h} \\times 3600 = 43200$ s.\n\n**Step 5:** $I = \\frac{q}{t} = \\frac{41600}{43200} = 0.963$ A.\n\n## Key Takeaway\n$I = \\frac{q}{t}$; use stoichiometry to relate moles of gas to moles of electrons."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "How many grams of copper are deposited from a Cu²⁺ solution by a current of 2.50 A flowing for 30.0 minutes? ($\\ce{Cu^{2+} + 2e^- -> Cu}$, $M_{\\ce{Cu}} = 63.55$ g/mol).",
+    "options": [
+      "1.48 g",
+      "0.740 g",
+      "2.96 g",
+      "0.370 g"
+    ],
+    "correct": 0,
+    "explanation": "## Insight\nMass = $(I \\times t \\times M) / (n \\times \\mathcal{F})$.\n\n## Analysis\n**Step 1:** $t = 30.0 \\text{ min} \\times 60 = 1800$ s.\n\n**Step 2:** $q = 2.50 \\times 1800 = 4500$ C.\n\n**Step 3:** Moles of e⁻ = $\\frac{4500}{96485} = 0.0466$ mol.\n\n**Step 4:** Moles of Cu = $\\frac{0.0466}{2} = 0.0233$ mol.\n\n**Step 5:** Mass Cu = $0.0233 \\times 63.55 = 1.48$ g.\n\n## Key Takeaway\n$1.48$ g Cu deposited; the current and time determine the amount of product."
+  },
+
+  // --- Concept: Corrosion Prevention ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is **cathodic protection**?",
+    "options": [
+      "Using a more active metal as a sacrificial anode to protect a less active metal from corrosion",
+      "Coating a metal with a layer of paint to prevent corrosion",
+      "Using a catalyst to prevent oxidation",
+      "Heating a metal to prevent corrosion"
+    ],
+    "correct": 1,
+    "explanation": "## Insight\nCathodic protection uses a sacrificial metal (like Zn or Mg) that is oxidized instead of the protected metal.\n\n## Analysis\n- **Option A (Correct):** Cathodic protection involves connecting a more active metal (sacrificial anode) to the metal to be protected, so the sacrificial metal corrodes instead.\n- **Option B (Incorrect):** This is coating, not cathodic protection.\n- **Option C (Incorrect):** This is not a standard corrosion prevention method.\n- **Option D (Incorrect):** Heating does not prevent corrosion.\n\n## Key Takeaway\nCathodic protection: sacrificial anode (Zn, Mg) corrodes instead of the protected metal."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Why is zinc used to protect iron from corrosion (galvanization)?",
+    "options": [
+      "Zinc is more easily oxidized than iron and acts as a sacrificial anode",
+      "Zinc is less easily oxidized than iron",
+      "Zinc forms a protective oxide layer that is impermeable",
+      "Zinc is a noble metal"
+    ],
+    "correct": 2,
+    "explanation": "## Insight\nZinc has a more negative reduction potential than iron, so it is oxidized preferentially.\n\n## Analysis\n- **Option A (Correct):** Zn is more active (more negative $E^\\circ$) than Fe, so it acts as a sacrificial anode.\n- **Option B (Incorrect):** Zn is more easily oxidized, not less.\n- **Option C (Incorrect):** Zn does form a protective layer, but the primary protection is sacrificial.\n- **Option D (Incorrect):** Zn is not a noble metal.\n\n## Key Takeaway\nZinc protects iron by being oxidized preferentially (sacrificial anode)."
+  },
+
   // ============================================================
   // BLOCK 1: UNITS AND MEASUREMENTS — Term 1 (Q1-8)
   // ============================================================
