@@ -1,5 +1,2312 @@
 const shortData = [
   
+  // ============================================================
+  // TOPIC 1: INTRODUCTION TO CHEMISTRY (50 Questions)
+  // ============================================================
+
+  // --- SECTION A: SCIENTIFIC METHOD & FOUNDATIONS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the formal definition of chemistry?",
+    "keywords": ["matter", "composition", "properties", "changes"],
+    "explanation": "## Insight\nChemistry is often called the 'central science' because it bridges physics and biology.\n\n## Analysis\nChemistry is the study of **matter** (anything with mass and volume), its **composition** (what it is made of), its **properties** (how it behaves), and the **changes** it undergoes.\n\n> **Key Takeaway:** Chemistry is the study of matter — what it is made of, how it behaves, and how it changes."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "In the scientific method, what is a hypothesis?",
+    "keywords": ["tentative", "testable", "explanation", "observations"],
+    "explanation": "## Insight\nA hypothesis is an educated guess — an informed statement that must be capable of being proven wrong.\n\n## Analysis\nA hypothesis is a **tentative**, **testable explanation** for a set of **observations**. It must be falsifiable — an experiment must be able to disprove it.\n\n> **Key Takeaway:** A hypothesis is a testable explanation that must be falsifiable."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a scientific law?",
+    "keywords": ["concise", "relationship", "conditions", "observed"],
+    "explanation": "## Insight\nA law tells us *what* happens every time under specific conditions, but it does not explain *why* it happens.\n\n## Analysis\nA scientific law is a **concise** verbal or mathematical statement of a **relationship** between phenomena that is always the same under the same **conditions**. It is **observed** to be true repeatedly.\n\n> **Key Takeaway:** Laws describe *what* happens; theories explain *why* it happens."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "How does a scientific theory differ from a law?",
+    "keywords": ["explains", "describes", "mechanism", "unifying"],
+    "explanation": "## Insight\nA law tells us *what* happens; a theory explains *why* it happens.\n\n## Analysis\nA **theory** is a well-substantiated, **unifying principle** that **explains** a body of facts and laws. It provides the **mechanism** or model for observations. A **law describes** what happens under specific conditions.\n\n> **Key Takeaway:** Laws describe *what* happens; theories explain *why* it happens."
+  },
+
+  // --- SECTION B: CLASSIFICATION OF MATTER (8 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the strict scientific definition of matter?",
+    "keywords": ["mass", "volume", "space", "occupies"],
+    "explanation": "## Insight\nMatter includes everything we can touch, feel, and measure — but also invisible things like air.\n\n## Analysis\nMatter is anything that has **mass** (the quantity of matter) and **occupies space** (has **volume**).\n\n> **Key Takeaway:** Matter = anything with mass and volume; energy is not matter."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a pure substance?",
+    "keywords": ["definite", "composition", "properties", "constant"],
+    "explanation": "## Insight\nA pure substance is like a 'single ingredient' — it has a fixed recipe.\n\n## Analysis\nA pure substance has a **definite** (constant) **composition** and distinct **properties**. It cannot be separated by physical processes.\n\n> **Key Takeaway:** Pure substances have fixed composition and distinct properties."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is an element?",
+    "keywords": ["cannot", "broken", "chemically", "atoms"],
+    "explanation": "## Insight\nAn element is the simplest form of matter — it consists of only one type of atom.\n\n## Analysis\nAn element is a pure substance that **cannot** be **broken down** into simpler substances by ordinary **chemical** means. It consists of **atoms** that all have the same number of protons.\n\n> **Key Takeaway:** An element is a pure substance that cannot be broken down chemically."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a compound?",
+    "keywords": ["elements", "chemically", "fixed", "proportions"],
+    "explanation": "## Insight\nCompounds are like new materials made by combining elements in a specific recipe.\n\n## Analysis\nA compound is a pure substance composed of two or more different **elements** **chemically** combined in **fixed** **proportions** by mass.\n\n> **Key Takeaway:** A compound is chemically bonded in fixed proportions; it can only be separated by chemical reactions."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a mixture?",
+    "keywords": ["combination", "substances", "identities", "physical"],
+    "explanation": "## Insight\nIn a mixture, ingredients keep their own identity — they are just 'sitting next to each other.'\n\n## Analysis\nA mixture is a **physical combination** of two or more **substances** in which each substance retains its individual chemical **identities**.\n\n> **Key Takeaway:** Mixtures are physical combinations where components retain their identities."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a homogeneous mixture?",
+    "keywords": ["uniform", "composition", "solution", "throughout"],
+    "explanation": "## Insight\nA homogeneous mixture is also called a 'solution' — you cannot see the separate components.\n\n## Analysis\nA homogeneous mixture has a **uniform composition** **throughout** — you cannot see the separate components. It is also called a **solution**.\n\n> **Key Takeaway:** Homogeneous mixtures are uniform throughout; they are also called solutions."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a heterogeneous mixture?",
+    "keywords": ["non-uniform", "components", "visible", "distinguishable"],
+    "explanation": "## Insight\nIf you can see different parts or phases, it is heterogeneous.\n\n## Analysis\nA heterogeneous mixture has a **non-uniform composition** with **components** that are **visibly distinguishable**.\n\n> **Key Takeaway:** Heterogeneous mixtures have visible different parts; they are not uniform."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Can a compound be separated by physical methods? Explain.",
+    "keywords": ["cannot", "physical", "chemical", "reaction"],
+    "explanation": "## Insight\nA compound can only be separated by chemical means because its components are chemically bonded.\n\n## Analysis\nNo. A compound can only be separated into its elements through **chemical reactions** that break chemical bonds. Physical methods (like filtering, boiling, magnetism) only work on mixtures.\n\n> **Key Takeaway:** Compounds require chemical separation; mixtures can be separated physically."
+  },
+
+  // --- SECTION C: PROPERTIES OF MATTER (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a physical property?",
+    "keywords": ["observed", "composition", "identity", "measured"],
+    "explanation": "## Insight\nIf you can measure it and still have the same substance at the end, it is a physical property.\n\n## Analysis\nA physical property can be **observed** or **measured** without changing the chemical **identity** or **composition** of the substance.\n\n> **Key Takeaway:** Physical properties are measured without changing the substance's identity."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a chemical property?",
+    "keywords": ["chemical", "change", "reaction", "new substance"],
+    "explanation": "## Insight\nChemical properties describe a substance's potential to transform into something entirely new.\n\n## Analysis\nA chemical property describes a substance's ability to undergo a **chemical change** or **reaction**, forming an entirely **new substance**.\n\n> **Key Takeaway:** Chemical properties describe how a substance reacts to form new substances."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is an extensive property?",
+    "keywords": ["amount", "matter", "depends", "mass"],
+    "explanation": "## Insight\nExtensive properties are 'additive' — if you have more, the value is bigger.\n\n## Analysis\nAn extensive property depends on the **amount of matter** present. Examples: **mass**, volume.\n\n> **Key Takeaway:** Extensive properties depend on amount; mass and volume are examples."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is an intensive property?",
+    "keywords": ["independent", "amount", "substance", "density"],
+    "explanation": "## Insight\nIntensive properties are like a substance's 'fingerprint' — they stay the same regardless of sample size.\n\n## Analysis\nAn intensive property is **independent** of the **amount** of matter present. It is characteristic of the **substance** itself. Examples: **density**, temperature.\n\n> **Key Takeaway:** Intensive properties are sample-size independent; density and temperature are examples."
+  },
+
+  // --- SECTION D: SI UNITS & MEASUREMENTS (6 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the SI base unit for length?",
+    "keywords": ["metre", "m", "meter"],
+    "explanation": "## Insight\nThe metre is the standard unit for measuring distance in the SI system.\n\n## Analysis\nThe SI base unit for **length** is the **metre (m)**.\n\n> **Key Takeaway:** Length = metre (m)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the SI base unit for mass?",
+    "keywords": ["kilogram", "kg"],
+    "explanation": "## Insight\nThe kilogram is the only SI base unit with a prefix built into its name.\n\n## Analysis\nThe SI base unit for **mass** is the **kilogram (kg)**.\n\n> **Key Takeaway:** Mass = kilogram (kg)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the SI base unit for temperature?",
+    "keywords": ["Kelvin", "K"],
+    "explanation": "## Insight\nThe Kelvin is the absolute temperature scale used in all scientific calculations.\n\n## Analysis\nThe SI base unit for **temperature** is the **Kelvin (K)**.\n\n> **Key Takeaway:** Temperature = Kelvin (K); never use the degree symbol."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the SI base unit for amount of substance?",
+    "keywords": ["mole", "mol"],
+    "explanation": "## Insight\nThe mole is the counting unit for atoms and molecules — it represents $6.022 \\times 10^{23}$ particles.\n\n## Analysis\nThe SI base unit for **amount of substance** is the **mole (mol)**.\n\n> **Key Takeaway:** Amount of substance = mole (mol)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the SI derived unit for volume?",
+    "keywords": ["cubic", "metre", "m³"],
+    "explanation": "## Insight\nThe SI unit for volume is the cubic metre, but chemists usually use litres and millilitres.\n\n## Analysis\nThe SI derived unit for **volume** is the **cubic metre (m³)**.\n\n> **Key Takeaway:** Volume = m³; chemists use L and mL."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the exact relationship between 1 mL and 1 cm³?",
+    "keywords": ["equal", "1 mL", "1 cm³", "same"],
+    "explanation": "## Insight\nThis is a direct metric equivalence — you can swap mL and cm³ without any math.\n\n## Analysis\n$1 \\, \\text{mL}$ is exactly equal to $1 \\, \\text{cm}^3$.\n\n> **Key Takeaway:** $1 \\, \\text{mL} = 1 \\, \\text{cm}^3$; essential for density and volume calculations."
+  },
+
+  // --- SECTION E: SI PREFIXES & CONVERSIONS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What does the SI prefix 'kilo' mean?",
+    "keywords": ["1000", "10³", "thousand"],
+    "explanation": "## Insight\nKilo means 1,000 — it is used for measuring large quantities.\n\n## Analysis\n**Kilo (k)** = **1000** = $10^3$.\n\n> **Key Takeaway:** Kilo = $10^3$ (1,000)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What does the SI prefix 'milli' mean?",
+    "keywords": ["0.001", "10⁻³", "thousandth"],
+    "explanation": "## Insight\nMilli means one-thousandth.\n\n## Analysis\n**Milli (m)** = **0.001** = $10^{-3}$.\n\n> **Key Takeaway:** Milli = $10^{-3}$ (0.001)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What does the SI prefix 'nano' mean?",
+    "keywords": ["10⁻⁹", "billionth", "0.000000001"],
+    "explanation": "## Insight\nNano means one-billionth — the scale of atoms and molecules.\n\n## Analysis\n**Nano (n)** = **$10^{-9}$** = 0.000000001.\n\n> **Key Takeaway:** Nano = $10^{-9}$; used for atomic-scale measurements."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What does the SI prefix 'micro' mean?",
+    "keywords": ["10⁻⁶", "millionth", "0.000001", "μ"],
+    "explanation": "## Insight\nMicro means one-millionth — often used in biology and medicine.\n\n## Analysis\n**Micro (μ)** = **$10^{-6}$** = 0.000001.\n\n> **Key Takeaway:** Micro = $10^{-6}$; symbol is the Greek letter μ."
+  },
+
+  // --- SECTION F: DENSITY (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the formula for density?",
+    "keywords": ["mass", "volume", "d = m/V"],
+    "explanation": "## Insight\nDensity is mass per unit volume — how much matter is packed into a given space.\n\n## Analysis\nDensity = $\\frac{\\text{mass}}{\\text{volume}}$ or $d = \\frac{m}{V}$.\n\n> **Key Takeaway:** $d = m/V$; density is an intensive property."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "A liquid has a density of $0.798 \\, \\text{g/mL}$ and a mass of $25.0 \\, \\text{g}$. What is its volume?",
+    "keywords": ["31.3 mL", "volume", "mass/density", "V = m/d"],
+    "explanation": "## Insight\n$V = \\frac{m}{d}$; rearrange the density formula.\n\n## Analysis\n**Step 1:** $V = \\frac{m}{d} = \\frac{25.0 \\, \\text{g}}{0.798 \\, \\text{g/mL}} = 31.3 \\, \\text{mL}$\n\n> **Key Takeaway:** $V = m/d$; ensure units cancel to leave mL."
+  },
+
+  // --- SECTION G: TEMPERATURE SCALES (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the formula to convert Celsius to Kelvin?",
+    "keywords": ["+273.15", "add", "273", "K = °C + 273"],
+    "explanation": "## Insight\nKelvin is the absolute scale; 0 K is absolute zero ($-273.15^\\circ\\text{C}$).\n\n## Analysis\n$K = ^\\circ\\text{C} + 273.15$.\n\n> **Key Takeaway:** $K = ^\\circ\\text{C} + 273.15$; Kelvin never uses the degree symbol."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the formula to convert Celsius to Fahrenheit?",
+    "keywords": ["°F", "(°C × 9/5) + 32", "multiply", "add 32"],
+    "explanation": "## Insight\nThe Fahrenheit scale is used in the US; the conversion formula scales and shifts.\n\n## Analysis\n${}^\\circ\\text{F} = ({}^\\circ\\text{C} \\times \\frac{9}{5}) + 32$.\n\n> **Key Takeaway:** °F = (°C × 9/5) + 32; °C = (°F − 32) × 5/9."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Convert $77 \\, \\text{K}$ to degrees Celsius.",
+    "keywords": ["-196°C", "-196", "subtract 273", "K - 273"],
+    "explanation": "## Insight\n$77 \\, \\text{K}$ is extremely cold, so the Celsius value should be negative.\n\n## Analysis\n${}^\\circ\\text{C} = K - 273.15 = 77 - 273.15 = -196.15^\\circ\\text{C} \\approx -196^\\circ\\text{C}$.\n\n> **Key Takeaway:** ${}^\\circ\\text{C} = K - 273.15$; liquid nitrogen is very cold."
+  },
+
+  // --- SECTION H: SCIENTIFIC NOTATION (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Express 568.762 in scientific notation.",
+    "keywords": ["5.68762 × 10²", "5.68762", "10²", "positive"],
+    "explanation": "## Insight\nMoving the decimal left gives a positive exponent.\n\n## Analysis\n$568.762 = 5.68762 \\times 10^2$.\n\n> **Key Takeaway:** $568.762 = 5.68762 \\times 10^2$; coefficient must be between 1 and 10."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Express 0.00000772 in scientific notation.",
+    "keywords": ["7.72 × 10⁻⁶", "7.72", "10⁻⁶", "negative"],
+    "explanation": "## Insight\nSmall numbers have negative exponents; move the decimal 6 places right.\n\n## Analysis\n$0.00000772 = 7.72 \\times 10^{-6}$.\n\n> **Key Takeaway:** $0.00000772 = 7.72 \\times 10^{-6}$; move decimal right = negative exponent."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Multiply $(8.0 \\times 10^4) \\times (5.0 \\times 10^2)$ and express in scientific notation.",
+    "keywords": ["4.0 × 10⁷", "4.0", "10⁷", "multiply"],
+    "explanation": "## Insight\nMultiply coefficients and add exponents.\n\n## Analysis\n$(8.0 \\times 5.0) \\times 10^{4+2} = 40 \\times 10^6 = 4.0 \\times 10^7$.\n\n> **Key Takeaway:** $4.0 \\times 10^7$; always adjust the coefficient to be between 1 and 10."
+  },
+
+  // --- SECTION I: SIGNIFICANT FIGURES (5 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "How many significant figures are in 0.043 kg?",
+    "keywords": ["2", "two", "four", "three"],
+    "explanation": "## Insight\nLeading zeros are not significant; only the digits 4 and 3 count.\n\n## Analysis\n$0.043$ has **2** significant figures (4 and 3). The leading zeros (0.0) are placeholders.\n\n> **Key Takeaway:** Leading zeros are never significant; 0.043 kg = 2 sig figs."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "How many significant figures are in 6.01 g?",
+    "keywords": ["3", "three", "zero", "captive"],
+    "explanation": "## Insight\nZeros between non-zero digits (captive zeros) are always significant.\n\n## Analysis\n$6.01$ has **3** significant figures (6, 0, and 1).\n\n> **Key Takeaway:** Captive zeros (between non-zero digits) are significant; 6.01 g = 3 sig figs."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "How many significant figures are in 100. mL?",
+    "keywords": ["3", "three", "decimal", "trailing"],
+    "explanation": "## Insight\nTrailing zeros after a decimal point are significant; the decimal point is the clue.\n\n## Analysis\n$100.$ has **3** significant figures (1, 0, and 0) because the decimal indicates the zeros are measured.\n\n> **Key Takeaway:** 100. mL = 3 sig figs; the decimal point makes trailing zeros significant."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Round 8.727 to two decimal places.",
+    "keywords": ["8.73", "round", "up", "7"],
+    "explanation": "## Insight\nThe first digit to drop is 7 (≥ 5), so the preceding digit increases by 1.\n\n## Analysis\n$8.727$ rounded to 2 decimal places is **8.73**.\n\n> **Key Takeaway:** If the digit to drop is ≥ 5, increase the preceding digit by 1."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Add 4.51 and 3.2 and report the answer with the correct number of significant figures.",
+    "keywords": ["7.7", "one", "decimal", "place"],
+    "explanation": "## Insight\nFor addition, the answer must have the same number of decimal places as the least precise measurement.\n\n## Analysis\n$4.51 + 3.2 = 7.71$. 3.2 has 1 decimal place, so the answer must have 1 decimal place: **7.7**.\n\n> **Key Takeaway:** Addition/Subtraction: least number of decimal places."
+  },
+
+  // --- SECTION J: ACCURACY, PRECISION & ERRORS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the difference between accuracy and precision?",
+    "keywords": ["accuracy", "true", "precision", "reproducibility"],
+    "explanation": "## Insight\nAccuracy is about 'hitting the bullseye' — getting the correct answer. Precision is about consistency.\n\n## Analysis\n**Accuracy** is how close a measurement is to the **true** value. **Precision** is how closely repeated measurements agree with one another (**reproducibility**).\n\n> **Key Takeaway:** Accuracy = closeness to the true value; precision = closeness of repeated measurements."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a systematic error?",
+    "keywords": ["consistent", "direction", "same", "always"],
+    "explanation": "## Insight\nSystematic errors are consistent and always occur in the same direction — they affect accuracy.\n\n## Analysis\nA systematic error occurs in the **same direction** every time (always too high or always too low).\n\n> **Key Takeaway:** Systematic errors affect accuracy; they are consistent and require fixing the instrument or method."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a random error?",
+    "keywords": ["fluctuates", "high", "low", "unpredictable"],
+    "explanation": "## Insight\nRandom errors are unpredictable fluctuations that average out with repeated measurements.\n\n## Analysis\nA random error has an equal chance of being too high or too low; it affects **precision**.\n\n> **Key Takeaway:** Random errors affect precision; they average out with repeated measurements."
+  },
+
+  // --- SECTION K: DIMENSIONAL ANALYSIS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the first step in dimensional analysis?",
+    "keywords": ["conversion", "factor", "unit", "cancel"],
+    "explanation": "## Insight\nDimensional analysis uses conversion factors to cancel unwanted units and leave the desired unit.\n\n## Analysis\nThe first step is to identify the **conversion factor** that will cancel the unwanted **unit** and leave the desired unit.\n\n> **Key Takeaway:** Put the unit you want to cancel on the bottom; put the unit you want on top."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Convert 1.25 miles to furlongs. (8 furlongs = 1 mile).",
+    "keywords": ["10.0", "furlongs", "1.25 × 8", "10"],
+    "explanation": "## Insight\nFurlongs are smaller than miles, so the number of furlongs should be larger.\n\n## Analysis\n$1.25 \\, \\text{miles} \\times \\frac{8 \\, \\text{furlongs}}{1 \\, \\text{mile}} = 10.0 \\, \\text{furlongs}$.\n\n> **Key Takeaway:** $1.25$ miles = $10.0$ furlongs; the 'miles' unit cancels."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Convert 400 rods to yards. (11 yards = 2 rods).",
+    "keywords": ["2200", "yards", "400 × 11 / 2", "2.20 × 10³"],
+    "explanation": "## Insight\nA yard is smaller than a rod, so the number of yards should be larger than rods.\n\n## Analysis\n$400 \\, \\text{rods} \\times \\frac{11 \\, \\text{yds}}{2 \\, \\text{rods}} = 2200 \\, \\text{yds} = 2.20 \\times 10^3 \\, \\text{yds}$.\n\n> **Key Takeaway:** 400 rods = 2200 yards; use the correct conversion factor to cancel 'rods'."
+  },
+
+  // --- SECTION L: DALTON'S ATOMIC THEORY (5 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is Dalton's first postulate?",
+    "keywords": ["indivisible", "atoms", "matter"],
+    "explanation": "## Insight\nDalton's first postulate is now known to be technically false (atoms are divisible), but it works for chemical reactions.\n\n## Analysis\nDalton's First Postulate: All matter is composed of extremely small, **indivisible particles** called **atoms**.\n\n> **Key Takeaway:** Atoms are the fundamental, indestructible units of chemical change."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is Dalton's second postulate?",
+    "keywords": ["identical", "mass", "element", "atoms"],
+    "explanation": "## Insight\nThis postulate is now known to be false because of **isotopes** (e.g., Carbon-12 vs Carbon-14).\n\n## Analysis\nDalton's Second Postulate: All atoms of a given element are identical in **mass** and properties; atoms of different elements have different masses.\n\n> **Key Takeaway:** Isotopes challenge this postulate."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is Dalton's third postulate?",
+    "keywords": ["fixed", "proportions", "compound", "ratio"],
+    "explanation": "## Insight\nThis explains the Law of Definite Proportions.\n\n## Analysis\nDalton's Third Postulate: A compound is formed by atoms of two or more elements chemically combined in fixed, **simple whole-number ratios**.\n\n> **Key Takeaway:** $\\ce{H2O}$ always has exactly 2 H for every 1 O."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is Dalton's fourth postulate?",
+    "keywords": ["rearranged", "created", "destroyed", "conservation"],
+    "explanation": "## Insight\nThis is the foundation of the Law of Conservation of Mass.\n\n## Analysis\nDalton's Fourth Postulate: In a chemical reaction, atoms are merely **rearranged** — they are neither created nor destroyed.\n\n> **Key Takeaway:** Atoms are conserved in chemical reactions."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the Law of Conservation of Mass?",
+    "keywords": ["mass", "conserved", "reactants", "products"],
+    "explanation": "## Insight\nThis law means that in a closed system, the mass before and after a reaction is exactly the same.\n\n## Analysis\nThe Law of Conservation of Mass states that mass is neither created nor destroyed during a chemical reaction. Total mass of reactants = total mass of products.\n\n> **Key Takeaway:** This is the foundation of balancing chemical equations."
+  },
+
+  // --- SECTION M: ATOMIC STRUCTURE (9 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What did J.J. Thomson discover?",
+    "keywords": ["electron", "negative", "charge", "cathode ray"],
+    "explanation": "## Insight\nThomson used cathode ray tubes to discover the electron, proving atoms were divisible.\n\n## Analysis\nThomson discovered the **electron** — a subatomic particle with a **negative charge**.\n\n> **Key Takeaway:** Thomson discovered the electron using cathode ray tubes."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What did Millikan's oil drop experiment determine?",
+    "keywords": ["charge", "electron", "Millikan", "1.602 × 10⁻¹⁹"],
+    "explanation": "## Insight\nMillikan determined the fundamental charge of a single electron.\n\n## Analysis\nMillikan found the charge of an electron to be $1.602 \\times 10^{-19}$ Coulombs.\n\n> **Key Takeaway:** Millikan's experiment determined the electron's charge."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What did Rutherford's gold foil experiment conclude?",
+    "keywords": ["nucleus", "positive", "dense", "empty space"],
+    "explanation": "## Insight\nRutherford's conclusion was that the atom is mostly empty space, with a dense positive nucleus at the centre.\n\n## Analysis\nRutherford concluded the atom is mostly **empty space** with a tiny, dense, **positively charged nucleus** at the centre.\n\n> **Key Takeaway:** Rutherford established the nuclear model: mostly empty space with a positive nucleus."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the relative mass and charge of a proton?",
+    "keywords": ["1 amu", "+1", "positive", "mass"],
+    "explanation": "## Insight\nProtons define the identity of an element (atomic number).\n\n## Analysis\nProton: mass = **≈ 1 amu**; charge = **+1**.\n\n> **Key Takeaway:** Proton: mass ≈ 1 amu, charge +1; located in the nucleus."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the relative mass and charge of a neutron?",
+    "keywords": ["1 amu", "0", "neutral", "no charge"],
+    "explanation": "## Insight\nNeutrons hold the nucleus together by overcoming proton-proton repulsion.\n\n## Analysis\nNeutron: mass = **≈ 1 amu**; charge = **0** (neutral).\n\n> **Key Takeaway:** Neutron: mass ≈ 1 amu, charge 0; located in the nucleus."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the relative mass and charge of an electron?",
+    "keywords": ["1/1840", "-1", "negative", "negligible"],
+    "explanation": "## Insight\nElectrons are so light that they barely contribute to atomic mass.\n\n## Analysis\nElectron: mass = **$\\frac{1}{1840}$ amu** (negligible); charge = **-1**.\n\n> **Key Takeaway:** Electron: mass ≈ 1/1840 amu, charge -1; orbits the nucleus."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the atomic number (Z)?",
+    "keywords": ["protons", "nucleus", "identity", "element"],
+    "explanation": "## Insight\nThe atomic number is the identity card for an element — if Z changes, the element changes.\n\n## Analysis\nThe atomic number ($Z$) is the **number of protons** in the **nucleus**.\n\n> **Key Takeaway:** Atomic number = number of protons; it identifies the element."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the mass number (A)?",
+    "keywords": ["protons", "neutrons", "nucleons", "total"],
+    "explanation": "## Insight\nThe mass number is always a whole number — it counts nucleons, not electrons.\n\n## Analysis\nThe mass number ($A$) is the **total number of protons and neutrons** in the nucleus.\n\n> **Key Takeaway:** Mass number = protons + neutrons; $A = Z + N$."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What are isotopes?",
+    "keywords": ["same", "element", "neutrons", "mass"],
+    "explanation": "## Insight\nIsotopes have the same 'ID' (protons) but different 'weights' (neutrons).\n\n## Analysis\nIsotopes are atoms of the **same element** (same number of protons) that have a different number of **neutrons** and therefore different **mass numbers**.\n\n> **Key Takeaway:** Isotopes are chemically identical but physically different."
+  },
+
+  // --- SECTION N: PERIODIC TABLE (5 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a period on the periodic table?",
+    "keywords": ["horizontal", "row", "across"],
+    "explanation": "## Insight\nPeriods are horizontal rows; elements in the same period have the same number of electron shells.\n\n## Analysis\nA period is a **horizontal row** of elements.\n\n> **Key Takeaway:** Periods = horizontal rows; groups = vertical columns."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a group on the periodic table?",
+    "keywords": ["vertical", "column", "similar", "properties"],
+    "explanation": "## Insight\nElements in the same group have similar chemical properties due to the same number of valence electrons.\n\n## Analysis\nA group is a **vertical column** of elements. Elements in the same group have **similar chemical properties**.\n\n> **Key Takeaway:** Groups = vertical columns; elements in the same group have similar chemical properties."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What are the elements in Group 1 called?",
+    "keywords": ["alkali", "metals", "Group 1", "IA"],
+    "explanation": "## Insight\nAlkali metals are soft, highly reactive metals with 1 valence electron.\n\n## Analysis\nGroup 1 = **Alkali metals** (Li, Na, K, Rb, Cs, Fr).\n\n> **Key Takeaway:** Group 1 = Alkali metals (1 valence electron, highly reactive)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What are the elements in Group 17 called?",
+    "keywords": ["halogens", "Group 17", "VIIA"],
+    "explanation": "## Insight\nHalogens are highly reactive non-metals with 7 valence electrons.\n\n## Analysis\nGroup 17 = **Halogens** (F, Cl, Br, I, At).\n\n> **Key Takeaway:** Group 17 = Halogens (7 valence electrons, highly reactive non-metals)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What are the elements in Group 18 called?",
+    "keywords": ["noble", "gases", "Group 18", "VIIIA"],
+    "explanation": "## Insight\nNoble gases have a full outer shell, making them inert and stable.\n\n## Analysis\nGroup 18 = **Noble gases** (He, Ne, Ar, Kr, Xe, Rn).\n\n> **Key Takeaway:** Group 18 = Noble gases (full outer shell, inert)."
+  },
+
+  // --- SECTION O: MOLECULES, IONS & COMPOUNDS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a molecule?",
+    "keywords": ["covalent", "bonds", "atoms", "neutral"],
+    "explanation": "## Insight\nMolecules are discrete, independent particles held together by covalent bonds.\n\n## Analysis\nA molecule is a neutral group of **two or more atoms** held together by **covalent** (shared) bonds.\n\n> **Key Takeaway:** Molecules = covalent bonds; ions = charged particles."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is an ion?",
+    "keywords": ["charged", "gained", "lost", "electrons"],
+    "explanation": "## Insight\nIons form when atoms gain or lose electrons to achieve a stable electron configuration.\n\n## Analysis\nAn ion is a **charged particle** formed when an atom or group of atoms **gains** or **loses electrons**.\n\n> **Key Takeaway:** Ions = charged particles; cations (+), anions (-)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a cation?",
+    "keywords": ["positive", "loses", "electrons", "+"],
+    "explanation": "## Insight\nCations are formed by losing electrons; they are positive.\n\n## Analysis\nA cation is a **positively charged ion** (formed by **losing electrons**).\n\n> **Key Takeaway:** Cation = positive (lost electrons); anion = negative (gained electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is a polyatomic ion?",
+    "keywords": ["group", "covalent", "charge", "atoms"],
+    "explanation": "## Insight\nPolyatomic ions are covalently bonded groups that act as a single charged unit.\n\n## Analysis\nA polyatomic ion is a group of covalently bonded atoms that carries an **overall charge**.\n\n> **Key Takeaway:** Polyatomic ions = charged groups of atoms (e.g., $\\ce{SO4^{2-}}$, $\\ce{NH4+}$)."
+  },
+
+  // --- SECTION P: NOMENCLATURE (7 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "How do you name a monatomic anion?",
+    "keywords": ["-ide", "root", "suffix"],
+    "explanation": "## Insight\nThe '-ide' suffix is used for monatomic anions.\n\n## Analysis\nTake the root of the non-metal name and add **'-ide'**.\n\n> **Key Takeaway:** Anions: root + '-ide' (e.g., Cl⁻ → chloride)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "When are Roman numerals required in naming an ionic compound?",
+    "keywords": ["transition", "metals", "variable", "charge"],
+    "explanation": "## Insight\nRoman numerals are used for transition metals with variable charges.\n\n## Analysis\nRoman numerals are required when the metal cation can exhibit **more than one possible charge** (variable oxidation state).\n\n> **Key Takeaway:** Roman numerals indicate the charge of the metal ion (e.g., Iron(II) = Fe²⁺)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Name the compound FeCl₂.",
+    "keywords": ["Iron", "II", "chloride", "Fe²⁺"],
+    "explanation": "## Insight\nChloride is -1; two chlorides mean iron is +2 → Iron(II).\n\n## Analysis\n$\\ce{FeCl2}$ = **Iron(II) chloride** (Fe²⁺ + 2Cl⁻).\n\n> **Key Takeaway:** $\\ce{FeCl2}$ = Iron(II) chloride; Roman numeral II indicates Fe²⁺."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the prefix for 'two' in covalent compound names?",
+    "keywords": ["di", "2", "two"],
+    "explanation": "## Insight\nGreek prefixes count the number of atoms in a covalent molecule.\n\n## Analysis\nThe prefix for **2** is **Di-**.\n\n> **Key Takeaway:** Di- = 2 (e.g., CO₂ = carbon dioxide)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "What is the rule for the prefix 'mono-' in covalent names?",
+    "keywords": ["never", "first", "element", "mono"],
+    "explanation": "## Insight\n'Mono' is redundant on the first element.\n\n## Analysis\nThe prefix 'mono-' is **never used for the first element** in the formula.\n\n> **Key Takeaway:** CO = Carbon monoxide (not monocarbon monoxide)."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Name the acid HCl(aq).",
+    "keywords": ["hydrochloric", "acid", "HCl", "hydro-"],
+    "explanation": "## Insight\n$-ide$ anions become $hydro$-$ic$ acids.\n\n## Analysis\n$\\ce{HCl_{(aq)}}$ = **Hydrochloric acid**.\n\n> **Key Takeaway:** $-ide$ $\\rightarrow$ $hydro$...$ic$ acid."
+  },
+  {
+    "course": "CH110",
+    "term": "T1",
+    "topic": "Topic 1: Introduction to Chemistry",
+    "q": "Name the acid HNO₃.",
+    "keywords": ["nitric", "acid", "nitrate", "-ic"],
+    "explanation": "## Insight\n$-ate$ anions become $-ic$ acids.\n\n## Analysis\n$\\ce{HNO3}$ = **Nitric acid**.\n\n> **Key Takeaway:** $-ate$ $\\rightarrow$ $-ic$ acid."
+  },
+
+  // ============================================================
+  // TOPIC 5: THERMOCHEMISTRY (20 Questions)
+  // ============================================================
+
+  // --- SECTION A: INTRODUCTION & COMMONLY USED TERMS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is Thermodynamics?",
+    "keywords": ["energy", "changes", "transformations", "heat"],
+    "explanation": "## Insight\nThermo = heat; Dynamics = movement or change.\n\n## Analysis\nThermodynamics is the study of **energy** and its **changes** or **transformations**.\n\n> **Key Takeaway:** Thermodynamics = Energy; Thermochemistry = Heat in reactions."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the difference between a system and its surroundings?",
+    "keywords": ["system", "surroundings", "boundary", "focus"],
+    "explanation": "## Insight\nThe system is what we study; the surroundings are everything else.\n\n## Analysis\nThe **system** is the portion of the universe on which we focus our attention. The **surroundings** are everything outside the system.\n\n> **Key Takeaway:** System = what we study; surroundings = everything else."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is an adiabatic process?",
+    "keywords": ["heat", "transferred", "insulated", "q = 0"],
+    "explanation": "## Insight\nIn an adiabatic process, heat cannot enter or leave the system.\n\n## Analysis\nAn adiabatic process is a process in which **heat cannot be transferred** across the interface between the system and its surroundings.\n\n> **Key Takeaway:** Adiabatic = No heat flow ($q = 0$)."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is a state function?",
+    "keywords": ["path", "independent", "current", "state"],
+    "explanation": "## Insight\nState functions depend only on the current state, not on how the system got there.\n\n## Analysis\nA state function is a property whose value does **not depend on the path** taken to reach that state. It depends only on the current state of the system.\n\n> **Key Takeaway:** State functions are path-independent; $q$ and $w$ are path-dependent."
+  },
+
+  // --- SECTION B: FIRST LAW OF THERMODYNAMICS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "State the First Law of Thermodynamics.",
+    "keywords": ["energy", "conserved", "ΔE = q + w", "created"],
+    "explanation": "## Insight\nEnergy is never created or destroyed — it is only transformed.\n\n## Analysis\nThe First Law of Thermodynamics states that if a system undergoes a series of changes that brings it back to its original state, the **net energy change is zero**.\n\n> **Key Takeaway:** Energy is conserved; $\\Delta E = q + w$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the formula for pressure-volume work ($P\\Delta V$)?",
+    "keywords": ["PΔV", "work", "expansion", "gas"],
+    "explanation": "## Insight\nWhen a gas expands against an external pressure, it does work on the surroundings.\n\n## Analysis\n$w = -P_{\\text{ext}} \\Delta V$ (for a system doing work on surroundings).\n\n> **Key Takeaway:** $w = -P\\Delta V$ for gas expansion; units are Joules."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the relationship between ΔE and heat at constant volume?",
+    "keywords": ["ΔE = q_v", "constant volume", "no work"],
+    "explanation": "## Insight\nIn a bomb calorimeter, the volume is fixed, so no $P\\Delta V$ work is done.\n\n## Analysis\nAt constant volume, $\\Delta V = 0$, so $w = -P\\Delta V = 0$. Therefore, $\\Delta E = q_v$.\n\n> **Key Takeaway:** At constant volume, $\\Delta E = q_v$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the relationship between ΔH and heat at constant pressure?",
+    "keywords": ["ΔH = q_p", "constant pressure", "enthalpy"],
+    "explanation": "## Insight\nMost chemical reactions occur in open containers at constant pressure.\n\n## Analysis\nAt constant pressure, the heat absorbed or evolved is the **enthalpy change** ($\\Delta H$): $\\Delta H = q_p$.\n\n> **Key Takeaway:** At constant pressure, $\\Delta H = q_p$."
+  },
+
+  // --- SECTION C: HEATS OF REACTION & CALORIMETRY (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is enthalpy ($H$) and how is it defined?",
+    "keywords": ["H = E + PV", "enthalpy", "heat content"],
+    "explanation": "## Insight\nEnthalpy is a state function that accounts for both internal energy and $P\\Delta V$ work.\n\n## Analysis\nEnthalpy ($H$) is defined as $H = E + PV$.\n\n> **Key Takeaway:** $H = E + PV$; $\\Delta H = q_p$ at constant pressure."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the difference between exothermic and endothermic reactions?",
+    "keywords": ["exothermic", "endothermic", "ΔH < 0", "ΔH > 0"],
+    "explanation": "## Insight\nExothermic reactions release heat; endothermic reactions absorb heat.\n\n## Analysis\n- **Exothermic:** Heat is **released** by the system ($\\Delta H < 0$).\n- **Endothermic:** Heat is **absorbed** by the system ($\\Delta H > 0$).\n\n> **Key Takeaway:** Exothermic = $\\Delta H < 0$; Endothermic = $\\Delta H > 0$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What does a bomb calorimeter measure and what is the equation used?",
+    "keywords": ["bomb calorimeter", "constant volume", "ΔE = q_v", "C × ΔT"],
+    "explanation": "## Insight\nThe bomb calorimeter is a sealed steel vessel where reactants are ignited; the heat released warms a surrounding water bath.\n\n## Analysis\nA bomb calorimeter measures the heat of reaction at constant volume ($q_v$).\n$q_{\\text{rxn}} = -C_{\\text{cal}} \\times \\Delta T$\n\n> **Key Takeaway:** Bomb calorimeter measures $q_v$; $\\Delta E = q_v$."
+  },
+
+  // --- SECTION D: HESS'S LAW (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "State Hess's Law of Heat Summation.",
+    "keywords": ["state function", "sum", "steps", "ΔH"],
+    "explanation": "## Insight\nHess's Law works because enthalpy is a state function.\n\n## Analysis\nHess's Law states that if a reaction is carried out in a series of steps, the $\\Delta H$ for the overall reaction is equal to the **sum of the enthalpy changes** for the individual steps.\n\n> **Key Takeaway:** $\\Delta H_{\\text{overall}} = \\sum \\Delta H_{\\text{steps}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is a thermochemical equation?",
+    "keywords": ["balanced", "ΔH", "heat", "reaction"],
+    "explanation": "## Insight\nThermochemical equations show both the chemical change and the associated energy change.\n\n## Analysis\nA thermochemical equation is a balanced chemical equation that includes the **enthalpy change** ($\\Delta H$) for the reaction.\n\n> **Key Takeaway:** Thermochemical equations include $\\Delta H$; fractional coefficients are allowed."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What happens to ΔH when you reverse a chemical equation?",
+    "keywords": ["reverse", "sign", "changes", "ΔH"],
+    "explanation": "## Insight\nReversing a reaction changes the sign of $\\Delta H$.\n\n## Analysis\nWhen you reverse a chemical equation, the sign of $\\Delta H$ changes. If the forward reaction is exothermic, the reverse reaction is endothermic.\n\n> **Key Takeaway:** Reversing an equation changes the sign of $\\Delta H$."
+  },
+
+  // --- SECTION E: STANDARD ENTHALPIES OF FORMATION (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the standard heat of formation ($\\Delta H_f^\\circ$)?",
+    "keywords": ["1 mole", "elements", "standard states", "formation"],
+    "explanation": "## Insight\nThe heat of formation tells you the energy change when a compound is made from its elements.\n\n## Analysis\nThe standard heat of formation ($\\Delta H_f^\\circ$) is the enthalpy change when **1 mole** of a compound is formed from its elements in their **standard states**.\n\n> **Key Takeaway:** $\\Delta H_f^\\circ$ = 1 mole of compound from elements."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is the standard heat of formation of a pure element?",
+    "keywords": ["0", "zero", "element", "standard state"],
+    "explanation": "## Insight\nPure elements in their most stable form at standard conditions are defined as having $\\Delta H_f^\\circ = 0$.\n\n## Analysis\nThe standard heat of formation of a pure element in its standard state is **0 kJ/mol**.\n\n> **Key Takeaway:** $\\Delta H_f^\\circ = 0$ for pure elements."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "How do you calculate the standard enthalpy of a reaction using formation enthalpies?",
+    "keywords": ["ΔH° = ΣΔH_f°(products) - ΣΔH_f°(reactants)", "products", "reactants"],
+    "explanation": "## Insight\nThe enthalpy of reaction is the difference between the sum of product enthalpies and the sum of reactant enthalpies.\n\n## Analysis\n$\\Delta H^\\circ_{\\text{rxn}} = \\sum n \\Delta H_f^\\circ(\\text{products}) - \\sum n \\Delta H_f^\\circ(\\text{reactants})$\n\n> **Key Takeaway:** $\\Delta H^\\circ = \\Sigma \\Delta H_f^\\circ(\\text{products}) - \\Sigma \\Delta H_f^\\circ(\\text{reactants})$."
+  },
+
+  // --- SECTION F: BOND ENERGIES (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is bond energy?",
+    "keywords": ["break", "1 mole", "bonds", "gas phase"],
+    "explanation": "## Insight\nBond breaking requires energy; bond formation releases energy.\n\n## Analysis\nBond energy is the energy required to break **1 mole** of a specific type of bond in the gas phase.\n\n> **Key Takeaway:** Bond breaking is endothermic; bond formation is exothermic."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "How do you estimate ΔH for a reaction using bond energies?",
+    "keywords": ["Σ bonds broken", "- Σ bonds formed", "ΔH"],
+    "explanation": "## Insight\nThe enthalpy change is the energy to break bonds minus the energy released when bonds form.\n\n## Analysis\n$\\Delta H = \\Sigma n \\times D(\\text{bonds broken}) - \\Sigma n \\times D(\\text{bonds formed})$\n\n> **Key Takeaway:** $\\Delta H = \\Sigma D_{\\text{broken}} - \\Sigma D_{\\text{formed}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 5: Thermochemistry",
+    "q": "What is atomisation energy?",
+    "keywords": ["all bonds", "gaseous atoms", "sum", "bond energies"],
+    "explanation": "## Insight\nThe energy to break a molecule into individual atoms is the sum of all its bond energies.\n\n## Analysis\nAtomisation energy is the energy required to break **all the bonds** in a molecule and reduce it to neutral gaseous atoms.\n\n> **Key Takeaway:** Atomisation energy = sum of bond energies in a molecule."
+  },
+
+  // ============================================================
+  // TOPIC 6: ATOMIC STRUCTURE AND PERIODICITY (20 Questions)
+  // ============================================================
+
+  // --- SECTION A: ELECTROMAGNETIC RADIATION (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the relationship between wavelength, frequency, and the speed of light?",
+    "keywords": ["c = λν", "wavelength", "frequency", "speed of light"],
+    "explanation": "## Insight\nAll electromagnetic radiation travels at the same speed in a vacuum.\n\n## Analysis\n$c = \\lambda \\nu$, where $c = 3.00 \\times 10^8$ m/s.\n\n> **Key Takeaway:** $c = \\lambda \\nu$; frequency and wavelength are inversely proportional."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the difference between a continuous spectrum and a line spectrum?",
+    "keywords": ["continuous", "line", "wavelengths", "discrete"],
+    "explanation": "## Insight\nA continuous spectrum shows all wavelengths; a line spectrum shows only discrete lines.\n\n## Analysis\nA **continuous spectrum** shows all wavelengths of visible light. A **line spectrum** consists of only a few discrete coloured lines unique to each element.\n\n> **Key Takeaway:** Continuous = all wavelengths; line = discrete lines."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What did Max Planck propose about energy emission?",
+    "keywords": ["quanta", "discrete", "E = hν", "quantized"],
+    "explanation": "## Insight\nEnergy is not continuous; it comes in discrete packets called quanta.\n\n## Analysis\nPlanck proposed that atoms can emit or absorb energy only in **discrete quantities** called **quanta**.\n\n> **Key Takeaway:** $E = h\\nu$; energy is quantized."
+  },
+
+  // --- SECTION B: BOHR MODEL (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the energy of an electron in the hydrogen atom according to the Bohr model?",
+    "keywords": ["E_n = -A/n²", "quantized", "n", "energy levels"],
+    "explanation": "## Insight\nThe energy levels in hydrogen are quantized and inversely proportional to $n^2$.\n\n## Analysis\n$E_n = -A \\times \\frac{1}{n^2}$, where $A = 2.18 \\times 10^{-18}$ J and $n = 1, 2, 3, ...$\n\n> **Key Takeaway:** $E_n = -A/n^2$; energy is quantized by the principal quantum number $n$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What were the limitations of the Bohr model?",
+    "keywords": ["multi-electron", "failed", "He", "Zeeman effect"],
+    "explanation": "## Insight\nBohr's model was a stepping stone but failed for multi-electron atoms.\n\n## Analysis\nLimitations: failed for multi-electron atoms, failed to explain extra lines in magnetic fields, couldn't justify quantization, and didn't account for wave-like properties of electrons.\n\n> **Key Takeaway:** Bohr model works for hydrogen only; it was replaced by quantum mechanics."
+  },
+
+  // --- SECTION C: QUANTUM MECHANICAL MODEL (5 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the de Broglie relation and what does it imply?",
+    "keywords": ["λ = h/mu", "wave", "particle", "electron"],
+    "explanation": "## Insight\nde Broglie proposed that particles like electrons can exhibit wave properties.\n\n## Analysis\n$\\lambda = \\frac{h}{mu}$; it implies that electrons have wave-like properties.\n\n> **Key Takeaway:** $\\lambda = h/mu$; electrons have wave-like properties."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "State the Heisenberg Uncertainty Principle.",
+    "keywords": ["Δx · Δp ≥ h/4π", "position", "momentum", "uncertainty"],
+    "explanation": "## Insight\nIt is impossible to know both the position and momentum of a particle with perfect accuracy.\n\n## Analysis\n$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$; position and momentum cannot both be known exactly.\n\n> **Key Takeaway:** $\\Delta x \\cdot \\Delta p \\geq h/4\\pi$."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What are the four quantum numbers and what do they describe?",
+    "keywords": ["n", "ℓ", "mℓ", "ms", "energy", "shape", "orientation", "spin"],
+    "explanation": "## Insight\nQuantum numbers are like the address of an electron in an atom.\n\n## Analysis\n- $n$: principal (energy/shell/size)\n- $\\ell$: azimuthal (shape)\n- $m_\\ell$: magnetic (orientation)\n- $m_s$: spin (direction)\n\n> **Key Takeaway:** $n$ (size), $\\ell$ (shape), $m_\\ell$ (orientation), $m_s$ (spin)."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "State the Pauli Exclusion Principle.",
+    "keywords": ["no two", "same", "four quantum numbers", "electrons"],
+    "explanation": "## Insight\nNo two electrons in the same atom can have all four quantum numbers identical.\n\n## Analysis\nThe Pauli Exclusion Principle states that **no two electrons in any atom may have all four quantum numbers the same**.\n\n> **Key Takeaway:** Max 2 electrons per orbital; opposite spins required."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the maximum number of electrons in a p subshell?",
+    "keywords": ["6", "p subshell", "2l+1", "orbitals"],
+    "explanation": "## Insight\nA p subshell has 3 orbitals, each holding 2 electrons.\n\n## Analysis\nA p subshell ($\\ell = 1$) has $2\\ell + 1 = 3$ orbitals, each with 2 electrons → max 6 electrons.\n\n> **Key Takeaway:** p subshell = 6 electrons max."
+  },
+
+  // --- SECTION D: ELECTRONIC CONFIGURATION (6 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is Hund's Rule?",
+    "keywords": ["orbitals", "singly", "parallel", "unpaired"],
+    "explanation": "## Insight\nHund's Rule minimizes electron-electron repulsion by keeping electrons in separate orbitals.\n\n## Analysis\nHund's Rule states that the most stable arrangement of electrons in a subshell is the one with the **maximum number of unpaired electrons** with **parallel spins**.\n\n> **Key Takeaway:** Fill orbitals singly first; maximum unpaired electrons = most stable."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "Write the electron configuration for oxygen (Z = 8).",
+    "keywords": ["1s² 2s² 2p⁴", "[He] 2s² 2p⁴", "O"],
+    "explanation": "## Insight\nOxygen has 8 electrons; fill in order: 1s, 2s, 2p.\n\n## Analysis\nFull: $1s^2 2s^2 2p^4$\nAbbreviated: $[\\ce{He}] 2s^2 2p^4$\n\n> **Key Takeaway:** Oxygen: $1s^2 2s^2 2p^4$; paramagnetic with 2 unpaired electrons."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "Write the electron configuration for chromium (Z = 24).",
+    "keywords": ["[Ar] 4s¹ 3d⁵", "Cr", "half-filled", "exception"],
+    "explanation": "## Insight\nChromium has $4s^1 3d^5$ because a half-filled $d$ subshell is exceptionally stable.\n\n## Analysis\nExpected: $[\\ce{Ar}] 4s^2 3d^4$\nActual: $[\\ce{Ar}] 4s^1 3d^5$\n\n> **Key Takeaway:** Chromium: $[\\ce{Ar}] 4s^1 3d^5$; half-filled $d$ subshell is unusually stable."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "Write the electron configuration for copper (Z = 29).",
+    "keywords": ["[Ar] 4s¹ 3d¹⁰", "Cu", "filled", "exception"],
+    "explanation": "## Insight\nCopper has $4s^1 3d^{10}$ because a completely filled $d$ subshell is exceptionally stable.\n\n## Analysis\nExpected: $[\\ce{Ar}] 4s^2 3d^9$\nActual: $[\\ce{Ar}] 4s^1 3d^{10}$\n\n> **Key Takeaway:** Copper: $[\\ce{Ar}] 4s^1 3d^{10}$; fully filled $d$ subshell is unusually stable."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What are valence electrons?",
+    "keywords": ["outermost", "shell", "bonding", "chemical"],
+    "explanation": "## Insight\nValence electrons are the most important for chemical bonding.\n\n## Analysis\nValence electrons are the electrons in the **outermost principal quantum level** (shell) of an atom. They are involved in chemical bonding.\n\n> **Key Takeaway:** Valence electrons = outermost shell; involved in bonding."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the electron configuration of Na⁺?",
+    "keywords": ["[Ne]", "Na⁺", "lost", "electron"],
+    "explanation": "## Insight\nWhen forming cations, electrons are removed from the highest $n$ shell first.\n\n## Analysis\nNa: $[\\ce{Ne}] 3s^1$\nNa⁺: Remove the $3s^1$ electron → $[\\ce{Ne}]$\n\n> **Key Takeaway:** Cations lose valence electrons first; $\\ce{Na+}$ = $[\\ce{Ne}]$."
+  },
+
+  // --- SECTION E: PERIODIC TRENDS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the trend for atomic radius across a period and down a group?",
+    "keywords": ["decreases", "period", "increases", "group"],
+    "explanation": "## Insight\nAtomic radius decreases across a period and increases down a group.\n\n## Analysis\n- **Across a period:** Atomic radius **decreases** (effective nuclear charge increases).\n- **Down a group:** Atomic radius **increases** (higher shells).\n\n> **Key Takeaway:** Atomic radius: decreases across a period; increases down a group."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is the trend for ionization energy across a period and down a group?",
+    "keywords": ["increases", "period", "decreases", "group"],
+    "explanation": "## Insight\nIonization energy increases across a period and decreases down a group.\n\n## Analysis\n- **Across a period:** Ionization energy **increases** (electrons held more tightly).\n- **Down a group:** Ionization energy **decreases** (electrons farther from nucleus).\n\n> **Key Takeaway:** IE increases across a period; decreases down a group."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "What is electron affinity and what is its trend?",
+    "keywords": ["electron affinity", "accept", "electron", "halogens"],
+    "explanation": "## Insight\nElectron affinity measures how readily an atom accepts an electron.\n\n## Analysis\nElectron affinity is the energy change when an atom in the gaseous state accepts an electron. It becomes more positive across a period; halogens have the highest electron affinities.\n\n> **Key Takeaway:** EA measures ability to accept electrons; halogens have the highest EA."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 6: Atomic Structure and Periodicity",
+    "q": "Arrange O²⁻, F⁻, Na⁺, Mg²⁺ in order of increasing ionic radius.",
+    "keywords": ["isoelectronic", "nuclear charge", "smaller", "larger"],
+    "explanation": "## Insight\nFor isoelectronic ions, higher nuclear charge = smaller radius.\n\n## Analysis\nAll have 10 electrons. Nuclear charges: O²⁻ (8), F⁻ (9), Na⁺ (11), Mg²⁺ (12).\n\nOrder (increasing radius): $\\ce{Mg^{2+}} < \\ce{Na^+} < \\ce{F^-} < \\ce{O^{2-}}$\n\n> **Key Takeaway:** For isoelectronic ions, higher $Z$ = smaller radius."
+  },
+
+  // ============================================================
+  // TOPIC 7: CHEMICAL BONDING AND MOLECULAR GEOMETRY (25 Questions)
+  // ============================================================
+
+  // --- SECTION A: TYPES OF CHEMICAL BONDS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a chemical bond?",
+    "keywords": ["force", "holds", "atoms", "unit"],
+    "explanation": "## Insight\nChemical bonds form because collections of atoms are more stable than separate atoms.\n\n## Analysis\nA chemical bond is a force that holds a group of atoms together so they function as a unit.\n\n> **Key Takeaway:** Bonds form when atoms are more stable together than apart."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is an ionic bond?",
+    "keywords": ["electrostatic", "attraction", "cation", "anion"],
+    "explanation": "## Insight\nIonic bonds form between atoms with very different electronegativities.\n\n## Analysis\nAn ionic bond is formed by the **electrostatic attraction between positive and negative ions**.\n\n> **Key Takeaway:** Ionic bond = electron transfer + electrostatic attraction."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a covalent bond?",
+    "keywords": ["sharing", "electrons", "non-metals", "shared"],
+    "explanation": "## Insight\nCovalent bonds form when atoms share electrons to achieve noble gas configurations.\n\n## Analysis\nA covalent bond is formed when **electrons are shared** between two atoms.\n\n> **Key Takeaway:** Covalent bond = sharing electrons; non-metals with non-metals."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a polar covalent bond?",
+    "keywords": ["unequal", "sharing", "electronegativity", "partial charge"],
+    "explanation": "## Insight\nPolar covalent bonds occur when atoms have different electronegativities.\n\n## Analysis\nA polar covalent bond has **unequal sharing** of electrons because one atom is more electronegative than the other.\n\n> **Key Takeaway:** Polar covalent = unequal sharing; partial charges ($\\delta^+$, $\\delta^-$)."
+  },
+
+  // --- SECTION B: ELECTRONEGATIVITY (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is electronegativity?",
+    "keywords": ["attract", "shared", "electrons", "bond"],
+    "explanation": "## Insight\nElectronegativity is the 'pull' an atom has on shared electrons in a bond.\n\n## Analysis\nElectronegativity is the ability of an atom in a molecule to **attract shared electrons** to itself.\n\n> **Key Takeaway:** Electronegativity = ability to attract electrons in a bond."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "How does electronegativity difference relate to bond type?",
+    "keywords": ["ΔEN = 0", "ΔEN > 2.0", "polar", "ionic"],
+    "explanation": "## Insight\nThe difference in electronegativity determines the bond character.\n\n## Analysis\n- $\\Delta$EN = 0: Pure Covalent\n- $\\Delta$EN between 0 and 2.0: Polar Covalent\n- $\\Delta$EN > 2.0: Ionic\n\n> **Key Takeaway:** $\\Delta$EN = 0 (covalent); $\\Delta$EN > 2.0 (ionic)."
+  },
+
+  // --- SECTION C: LEWIS STRUCTURES (5 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a Lewis structure?",
+    "keywords": ["valence", "electrons", "dots", "molecule"],
+    "explanation": "## Insight\nLewis structures show how valence electrons are arranged among atoms.\n\n## Analysis\nA Lewis structure shows the arrangement of **valence electrons** among atoms in a molecule.\n\n> **Key Takeaway:** Lewis structures show valence electrons; follow octet/duet rules."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "How many valence electrons are in H₂O?",
+    "keywords": ["8", "oxygen", "6", "hydrogen"],
+    "explanation": "## Insight\nO has 6 valence electrons; each H has 1.\n\n## Analysis\nTotal = O:6 + H:1 + H:1 = 8 valence electrons.\n\n> **Key Takeaway:** H₂O has 8 valence electrons."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the correct Lewis structure for CO₂?",
+    "keywords": ["O=C=O", "double bonds", "linear", "16 electrons"],
+    "explanation": "## Insight\nCarbon must share two pairs with each oxygen to achieve an octet for all atoms.\n\n## Analysis\nThe correct Lewis structure is $\\ce{O=C=O}$ with two double bonds.\n\n> **Key Takeaway:** CO₂ has two double bonds; linear structure."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is resonance?",
+    "keywords": ["multiple", "Lewis", "structures", "average"],
+    "explanation": "## Insight\nResonance occurs when more than one valid Lewis structure can be drawn.\n\n## Analysis\nResonance occurs when more than one valid Lewis structure can be drawn for the same molecule; the actual structure is a **hybrid (average)** of all resonance structures.\n\n> **Key Takeaway:** Resonance = multiple valid structures; actual is an average."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "Which elements can have an expanded octet?",
+    "keywords": ["Period 3", "d orbitals", "sulfur", "phosphorus"],
+    "explanation": "## Insight\nElements in Period 3 and below can have expanded octets.\n\n## Analysis\nElements in **Period 3 and below** have empty $d$ orbitals and can accommodate more than 8 electrons.\n\n> **Key Takeaway:** Expanded octet requires empty $d$ orbitals; only Period 3+ elements can expand."
+  },
+
+  // --- SECTION D: VSEPR MODEL (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What does the VSEPR model predict?",
+    "keywords": ["geometry", "electron pairs", "repulsion", "3D"],
+    "explanation": "## Insight\nVSEPR predicts molecular geometry by minimizing electron pair repulsions.\n\n## Analysis\nThe VSEPR model predicts molecular geometry by minimizing repulsions between electron pairs (both bonding and lone pairs) around a central atom.\n\n> **Key Takeaway:** VSEPR = electron pairs arrange to be as far apart as possible."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the molecular geometry of CH₄?",
+    "keywords": ["tetrahedral", "109.5°", "4 bonding pairs", "no lone pairs"],
+    "explanation": "## Insight\nCH₄ has 4 electron pairs around C, all bonding, arranged tetrahedrally.\n\n## Analysis\n4 bonding pairs, no lone pairs → **tetrahedral** (109.5°).\n\n> **Key Takeaway:** CH₄ = tetrahedral."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the molecular geometry of NH₃?",
+    "keywords": ["trigonal pyramidal", "107°", "3 bonding", "1 lone pair"],
+    "explanation": "## Insight\nNH₃ has 4 electron pairs around N (3 bonding + 1 lone pair).\n\n## Analysis\n3 bonding pairs, 1 lone pair → **trigonal pyramidal** (~107°).\n\n> **Key Takeaway:** NH₃ = trigonal pyramidal."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the molecular geometry of H₂O?",
+    "keywords": ["bent", "104.5°", "2 bonding", "2 lone pairs"],
+    "explanation": "## Insight\nH₂O has 4 electron pairs around O (2 bonding + 2 lone pairs).\n\n## Analysis\n2 bonding pairs, 2 lone pairs → **bent** (V-shaped, ~104.5°).\n\n> **Key Takeaway:** H₂O = bent."
+  },
+
+  // --- SECTION E: HYBRIDIZATION (6 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is hybridization?",
+    "keywords": ["mixing", "atomic orbitals", "hybrid", "bonding"],
+    "explanation": "## Insight\nHybridization explains how atoms form identical bonds when their native orbitals are different.\n\n## Analysis\nHybridization is the mixing of native atomic orbitals to form new hybrid orbitals that are identical in shape and energy.\n\n> **Key Takeaway:** Hybridization mixes atomic orbitals to form equivalent hybrid orbitals for bonding."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the hybridization of carbon in CH₄?",
+    "keywords": ["sp³", "4 electron pairs", "tetrahedral"],
+    "explanation": "## Insight\nCH₄ has 4 electron pairs around C, all bonding → sp³ hybridization.\n\n## Analysis\n4 electron pairs → $sp^3$ hybridization; geometry = tetrahedral (109.5°).\n\n> **Key Takeaway:** 4 pairs = sp³; tetrahedral."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the hybridization of carbon in C₂H₄ (ethene)?",
+    "keywords": ["sp²", "3 electron pairs", "trigonal planar"],
+    "explanation": "## Insight\nEach carbon in C₂H₄ has 3 electron pairs → sp² hybridization.\n\n## Analysis\n3 electron pairs → $sp^2$ hybridization; geometry = trigonal planar (120°).\n\n> **Key Takeaway:** 3 pairs = sp²; trigonal planar."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the hybridization of carbon in C₂H₂ (ethyne)?",
+    "keywords": ["sp", "2 electron pairs", "linear"],
+    "explanation": "## Insight\nEach carbon in C₂H₂ has 2 electron pairs → sp hybridization.\n\n## Analysis\n2 electron pairs → $sp$ hybridization; geometry = linear (180°).\n\n> **Key Takeaway:** 2 pairs = sp; linear."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the hybridization of sulfur in SF₆?",
+    "keywords": ["sp³d²", "6 bonding pairs", "octahedral"],
+    "explanation": "## Insight\nSF₆ has 6 electron pairs around S, all bonding → sp³d² hybridization.\n\n## Analysis\n6 electron pairs → $sp^3d^2$ hybridization; geometry = octahedral (90°).\n\n> **Key Takeaway:** 6 pairs = sp³d²; octahedral."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is the hybridization of phosphorus in PCl₅?",
+    "keywords": ["sp³d", "5 bonding pairs", "trigonal bipyramidal"],
+    "explanation": "## Insight\nPCl₅ has 5 electron pairs around P → sp³d hybridization.\n\n## Analysis\n5 electron pairs → $sp^3d$ hybridization; geometry = trigonal bipyramidal (90°, 120°).\n\n> **Key Takeaway:** 5 pairs = sp³d; trigonal bipyramidal."
+  },
+
+  // --- SECTION F: σ AND π BONDS (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a σ (sigma) bond?",
+    "keywords": ["head-on", "overlap", "end-to-end", "bond axis"],
+    "explanation": "## Insight\nσ bonds are formed by end-to-end overlap; electron density is along the bond axis.\n\n## Analysis\nA σ bond is formed by **head-on (end-to-end)** overlap of orbitals.\n\n> **Key Takeaway:** σ = end-to-end overlap."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is a π (pi) bond?",
+    "keywords": ["side-by-side", "parallel", "p orbitals", "above and below"],
+    "explanation": "## Insight\nπ bonds are formed by side-by-side overlap; electron density is above and below the bond axis.\n\n## Analysis\nA π bond is formed by **side-by-side (parallel)** overlap of $p$ orbitals.\n\n> **Key Takeaway:** π = side-by-side overlap."
+  },
+
+  // --- SECTION G: LATTICE ENERGY (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "What is lattice energy?",
+    "keywords": ["gaseous ions", "ionic solid", "energy released", "Coulomb's law"],
+    "explanation": "## Insight\nLattice energy is the energy released when ions pack together to form an ionic solid.\n\n## Analysis\nLattice energy is the **change in energy when separated gaseous ions are packed together to form an ionic solid**.\n\n> **Key Takeaway:** Lattice energy increases with higher charge and smaller size."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 7: Chemical Bonding and Molecular Geometry",
+    "q": "Which compound has the highest lattice energy: NaCl, MgO, or NaF?",
+    "keywords": ["MgO", "higher charge", "smaller ions", "2+ and 2-"],
+    "explanation": "## Insight\nLattice energy increases with higher ion charges and smaller ionic radii.\n\n## Analysis\nMgO has Mg²⁺ and O²⁻ (charges: +2 and -2) → highest lattice energy.\n\n> **Key Takeaway:** Higher charge and smaller size = higher lattice energy."
+  },
+
+  // ============================================================
+  // TOPIC 8: ORGANIC CHEMISTRY (25 Questions)
+  // ============================================================
+
+  // --- SECTION A: INTRODUCTION (1 Question) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is Organic Chemistry?",
+    "keywords": ["carbon", "compounds", "hydrocarbons", "derivatives"],
+    "explanation": "## Insight\nOrganic chemistry is the study of carbon compounds — the chemistry of life and synthetic materials.\n\n## Analysis\nOrganic chemistry is the study of **carbon-containing compounds** and their properties.\n\n> **Key Takeaway:** Organic chemistry = study of carbon compounds."
+  },
+
+  // --- SECTION B: ALKANES (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What are alkanes and what is their general formula?",
+    "keywords": ["saturated", "hydrocarbons", "CₙH₂ₙ₊₂", "single bonds"],
+    "explanation": "## Insight\nAlkanes are the simplest class of hydrocarbons, with only single bonds.\n\n## Analysis\nAlkanes are **saturated hydrocarbons** containing only **carbon-carbon single bonds**.\n\n> **Key Takeaway:** Alkanes = saturated hydrocarbons; formula CₙH₂ₙ₊₂."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is structural isomerism?",
+    "keywords": ["same formula", "different bonds", "connectivity", "isomers"],
+    "explanation": "## Insight\nStructural isomers have the same molecular formula but different bonding arrangements.\n\n## Analysis\nStructural isomerism occurs when molecules have the **same molecular formula** but **different bonding arrangements**.\n\n> **Key Takeaway:** Structural isomers = same atoms, different bonds."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "Name the compound: CH₃CH(CH₃)CH₂CH₂CH₃.",
+    "keywords": ["2-methylpentane", "pentane", "methyl", "C2"],
+    "explanation": "## Insight\nThe longest chain has 5 carbons; a methyl group is on carbon 2.\n\n## Analysis\nLongest chain = 5 carbons → pentane. Methyl at C2 → **2-methylpentane**.\n\n> **Key Takeaway:** 2-methylpentane."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What are cycloalkanes and what is their general formula?",
+    "keywords": ["ring", "CₙH₂ₙ", "cyclic", "cyclo-"],
+    "explanation": "## Insight\nCycloalkanes have carbon atoms arranged in a ring.\n\n## Analysis\nCycloalkanes are alkanes in which carbon atoms form a **ring**; general formula $\\ce{C_nH_{2n}}$.\n\n> **Key Takeaway:** Cycloalkanes = rings; formula CₙH₂ₙ; prefix 'cyclo-'."
+  },
+
+  // --- SECTION C: ALKENES & ALKYNES (6 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What are alkenes and what is their general formula?",
+    "keywords": ["C=C", "double bond", "CₙH₂ₙ", "unsaturated"],
+    "explanation": "## Insight\nAlkenes are unsaturated hydrocarbons with a C=C double bond.\n\n## Analysis\nAlkenes contain at least one **carbon-carbon double bond** ($\\ce{C=C}$).\n\n> **Key Takeaway:** Alkenes = C=C double bond; formula CₙH₂ₙ."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What are alkynes and what is their general formula?",
+    "keywords": ["C≡C", "triple bond", "CₙH₂ₙ₋₂", "unsaturated"],
+    "explanation": "## Insight\nAlkynes contain a C≡C triple bond; they are highly unsaturated.\n\n## Analysis\nAlkynes contain at least one **carbon-carbon triple bond** ($\\ce{C≡C}$).\n\n> **Key Takeaway:** Alkynes = C≡C triple bond; formula CₙH₂ₙ₋₂."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is cis-trans isomerism in alkenes?",
+    "keywords": ["cis", "trans", "same side", "opposite side"],
+    "explanation": "## Insight\nThe C=C double bond prevents rotation, allowing cis-trans isomerism.\n\n## Analysis\n**cis:** substituents on the **same side** of the double bond. **trans:** substituents on **opposite sides**.\n\n> **Key Takeaway:** cis = same side; trans = opposite side."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "Name the compound: CH₃CH₂C≡CCH₃.",
+    "keywords": ["2-pentyne", "pentyne", "triple bond", "C2"],
+    "explanation": "## Insight\nThe longest chain has 5 carbons; the triple bond is at position 2.\n\n## Analysis\nLongest chain = 5 carbons → pentyne. Triple bond at C2 → **2-pentyne**.\n\n> **Key Takeaway:** 2-pentyne."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What type of reaction is characteristic of alkenes and alkynes?",
+    "keywords": ["addition", "π bond", "breaks", "new bonds"],
+    "explanation": "## Insight\nThe π bond in alkenes and alkynes can be broken to add new atoms.\n\n## Analysis\nAlkenes and alkynes undergo **addition reactions** where the $\\pi$ bond breaks and new $\\sigma$ bonds form.\n\n> **Key Takeaway:** Alkenes/alkynes undergo addition reactions; π bonds break."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is Markovnikov's Rule?",
+    "keywords": ["hydrogen", "more H", "halogen", "fewer H"],
+    "explanation": "## Insight\nWhen adding HX to an unsymmetrical alkene, hydrogen adds to the carbon with more H atoms.\n\n## Analysis\nMarkovnikov's Rule: **\"The hydrogen atom adds to the carbon with more hydrogen atoms attached, and the halogen adds to the carbon with fewer hydrogen atoms.\"**\n\n> **Key Takeaway:** Markovnikov = H adds to the carbon with more H atoms."
+  },
+
+  // --- SECTION D: AROMATIC HYDROCARBONS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the structure of benzene?",
+    "keywords": ["planar", "hexagonal", "delocalized", "π electrons"],
+    "explanation": "## Insight\nBenzene is a cyclic, planar molecule with delocalized π electrons.\n\n## Analysis\nBenzene ($\\ce{C6H6}$) is a **planar hexagonal ring** with **delocalized $\\pi$ electrons**.\n\n> **Key Takeaway:** Benzene = planar ring with delocalized π electrons."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What type of reaction is characteristic of benzene?",
+    "keywords": ["substitution", "electrophilic", "aromatic", "hydrogen"],
+    "explanation": "## Insight\nBenzene undergoes substitution reactions that preserve the aromatic ring.\n\n## Analysis\nBenzene undergoes **substitution reactions** where a hydrogen atom is replaced by another atom or group.\n\n> **Key Takeaway:** Benzene undergoes substitution (not addition) to preserve aromaticity."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the product of the nitration of benzene?",
+    "keywords": ["nitrobenzene", "C₆H₅NO₂", "HNO₃", "H₂SO₄"],
+    "explanation": "## Insight\nNitration of benzene replaces a hydrogen atom with a nitro group.\n\n## Analysis\n$\\ce{C6H6 + HNO3 ->[H2SO4] C6H5NO2 + H2O}$\n\n> **Key Takeaway:** Nitration of benzene gives nitrobenzene."
+  },
+
+  // --- SECTION E: FUNCTIONAL GROUPS & DERIVATIVES (11 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is a functional group?",
+    "keywords": ["atom", "group", "characteristic", "properties"],
+    "explanation": "## Insight\nFunctional groups determine the reactivity and properties of organic compounds.\n\n## Analysis\nA functional group is an **atom or group of atoms** that gives a molecule its characteristic chemical properties.\n\n> **Key Takeaway:** Functional groups determine reactivity."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in alcohols?",
+    "keywords": ["-OH", "hydroxyl", "alcohol"],
+    "explanation": "## Insight\nAlcohols contain the hydroxyl group.\n\n## Analysis\nAlcohols contain the **hydroxyl group ($\\ce{-OH}$)**.\n\n> **Key Takeaway:** Alcohols = R-OH."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in carboxylic acids?",
+    "keywords": ["-COOH", "carboxyl", "carboxylic acid"],
+    "explanation": "## Insight\nCarboxylic acids contain the carboxyl group.\n\n## Analysis\nCarboxylic acids contain the **carboxyl group ($\\ce{-COOH}$)**.\n\n> **Key Takeaway:** Carboxylic acids = R-COOH."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in aldehydes?",
+    "keywords": ["-CHO", "carbonyl", "terminal", "aldehyde"],
+    "explanation": "## Insight\nAldehydes have the carbonyl group at the end of the chain.\n\n## Analysis\nAldehydes contain the **carbonyl group ($\\ce{C=O}$)** bonded to at least one hydrogen atom: R-CHO.\n\n> **Key Takeaway:** Aldehydes = R-CHO."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in ketones?",
+    "keywords": ["-CO-", "carbonyl", "middle", "ketone"],
+    "explanation": "## Insight\nKetones have the carbonyl group in the middle of the chain.\n\n## Analysis\nKetones contain the **carbonyl group ($\\ce{C=O}$)** bonded to two carbon atoms: R-CO-R'.\n\n> **Key Takeaway:** Ketones = R-CO-R'."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in amines?",
+    "keywords": ["-NH₂", "amino", "amine"],
+    "explanation": "## Insight\nAmines are derivatives of ammonia.\n\n## Analysis\nAmines contain the **amino group ($\\ce{-NH2}$)**.\n\n> **Key Takeaway:** Amines = R-NH₂."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the functional group in ethers?",
+    "keywords": ["-O-", "R-O-R'", "ether"],
+    "explanation": "## Insight\nEthers have an oxygen atom bonded to two hydrocarbon groups.\n\n## Analysis\nEthers contain the **R-O-R'** linkage.\n\n> **Key Takeaway:** Ethers = R-O-R'."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is esterification?",
+    "keywords": ["carboxylic acid", "alcohol", "ester", "water"],
+    "explanation": "## Insight\nEsterification is the reaction of a carboxylic acid with an alcohol to form an ester.\n\n## Analysis\nEsterification is the reaction of a **carboxylic acid** with an **alcohol** to form an **ester** and water.\n\n> **Key Takeaway:** Esterification = acid + alcohol → ester + water."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the common name for CH₃COOH?",
+    "keywords": ["acetic acid", "vinegar", "ethanoic acid"],
+    "explanation": "## Insight\nCH₃COOH is ethanoic acid, commonly called acetic acid.\n\n## Analysis\nThe common name for $\\ce{CH3COOH}$ is **acetic acid**.\n\n> **Key Takeaway:** Acetic acid = CH₃COOH."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the common name for CH₃CH₂OH?",
+    "keywords": ["ethanol", "ethyl alcohol", "alcohol", "grain alcohol"],
+    "explanation": "## Insight\nCH₃CH₂OH is ethanol, commonly called ethyl alcohol.\n\n## Analysis\nThe common name for $\\ce{CH3CH2OH}$ is **ethanol** or **ethyl alcohol**.\n\n> **Key Takeaway:** Ethanol = CH₃CH₂OH."
+  },
+  {
+    "course": "CH110",
+    "term": "T2",
+    "topic": "Topic 8: Organic Chemistry",
+    "q": "What is the product of esterification of ethanoic acid with ethanol?",
+    "keywords": ["ethyl ethanoate", "ester", "CH₃COOC₂H₅", "fruity"],
+    "explanation": "## Insight\nEsterification of ethanoic acid with ethanol gives ethyl ethanoate.\n\n## Analysis\n$\\ce{CH3COOH + C2H5OH -> CH3COOC2H5 + H2O}$\n\n> **Key Takeaway:** Ethyl ethanoate has a fruity odour."
+  },
+
+  // ============================================================
+  // TOPIC 9: CHEMICAL KINETICS (20 Questions)
+  // ============================================================
+
+  // --- SECTION A: INTRODUCTION TO REACTION RATES (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the rate of a chemical reaction?",
+    "keywords": ["concentration", "change", "time", "reactant", "product"],
+    "explanation": "## Insight\nThe rate of a reaction tells us how fast reactants are consumed or products are formed.\n\n## Analysis\nReaction rate is measured as the **decrease in concentration of a reactant** or the **increase in concentration of a product** per unit time.\n\n> **Key Takeaway:** Rate = change in concentration / change in time; units are mol L⁻¹ s⁻¹."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What are the units of reaction rate?",
+    "keywords": ["mol L⁻¹ s⁻¹", "M/s", "molarity", "per second"],
+    "explanation": "## Insight\nRate is concentration change per unit time.\n\n## Analysis\nRate = (mol L⁻¹) / s = **mol L⁻¹ s⁻¹** (or M/s).\n\n> **Key Takeaway:** Rate units are always concentration per time: mol L⁻¹ s⁻¹."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the difference between average rate and instantaneous rate?",
+    "keywords": ["average", "interval", "instantaneous", "tangent", "slope"],
+    "explanation": "## Insight\nAverage rate is over a time interval; instantaneous rate is at a specific moment.\n\n## Analysis\n**Average rate:** change in concentration over a time interval. **Instantaneous rate:** rate at a specific point in time, measured as the slope of the tangent to the concentration vs. time curve.\n\n> **Key Takeaway:** Instantaneous rate = slope of the tangent to the concentration-time curve."
+  },
+
+  // --- SECTION B: REACTION RATES AND STOICHIOMETRY (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $aA + bB \\rightarrow cC + dD$, what is the general rate expression?",
+    "keywords": ["-1/a", "Δ[A]/Δt", "1/c", "Δ[C]/Δt", "stoichiometric"],
+    "explanation": "## Insight\nThe rate of reaction is the same regardless of which substance is used to measure it.\n\n## Analysis\n$\\text{Rate} = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = -\\frac{1}{b}\\frac{\\Delta[B]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t} = \\frac{1}{d}\\frac{\\Delta[D]}{\\Delta t}$\n\n> **Key Takeaway:** Rate = -1/a Δ[A]/Δt = 1/c Δ[C]/Δt; coefficients divide the concentration changes."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "For the reaction $2\\ce{N2O5(g)} \\rightarrow 4\\ce{NO2(g)} + \\ce{O2(g)}$, what is the relationship between the rate of disappearance of $\\ce{N2O5}$ and the rate of appearance of $\\ce{O2}$?",
+    "keywords": ["2 ×", "rate O₂", "stoichiometric", "ratio"],
+    "explanation": "## Insight\nThe stoichiometric coefficients relate the rates of consumption and formation.\n\n## Analysis\n$\\text{Rate}_{\\ce{N2O5}} = 2 \\times \\text{Rate}_{\\ce{O2}}$ because 2 mol N₂O₅ produce 1 mol O₂.\n\n> **Key Takeaway:** Rate of disappearance of N₂O₅ = 2 × Rate of appearance of O₂."
+  },
+
+  // --- SECTION C: FACTORS AFFECTING REACTION RATES (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What factors affect the rate of a chemical reaction?",
+    "keywords": ["temperature", "concentration", "catalyst", "surface area", "pressure"],
+    "explanation": "## Insight\nReaction rates depend on conditions that affect how often and how effectively reactant particles collide.\n\n## Analysis\nFive factors: **temperature**, **concentration**, **catalysts**, **surface area**, and **pressure**.\n\n> **Key Takeaway:** Temperature, concentration, catalysts, surface area, and pressure all affect reaction rates."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "Why does increasing temperature increase the rate of a reaction?",
+    "keywords": ["kinetic energy", "collisions", "faster", "activation energy"],
+    "explanation": "## Insight\nHigher temperature means higher average kinetic energy, leading to more frequent and more energetic collisions.\n\n## Analysis\nAt higher temperatures, molecules move faster, collide more often, and have more energy to overcome the activation barrier.\n\n> **Key Takeaway:** Higher T = faster molecules = more collisions = faster rate."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a catalyst and how does it affect a reaction?",
+    "keywords": ["speeds up", "lowers activation energy", "regenerated", "not consumed"],
+    "explanation": "## Insight\nCatalysts provide an alternative reaction pathway with a lower activation energy.\n\n## Analysis\nA catalyst speeds up a reaction by **lowering the activation energy**. It is **regenerated** at the end of the reaction.\n\n> **Key Takeaway:** Catalysts lower activation energy, speed up the reaction, and are regenerated."
+  },
+
+  // --- SECTION D: RATE LAWS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a rate law?",
+    "keywords": ["mathematical", "expression", "concentrations", "rate constant"],
+    "explanation": "## Insight\nThe rate law shows how the rate depends on reactant concentrations.\n\n## Analysis\n$\\text{Rate} = k[A]^x[B]^y$, where $k$ is the rate constant, and $x$ and $y$ are orders.\n\n> **Key Takeaway:** Rate law: Rate = k[A]^x[B]^y; orders are determined experimentally."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What does the order of a reaction with respect to a particular reactant mean?",
+    "keywords": ["exponent", "rate law", "concentration", "experimentally"],
+    "explanation": "## Insight\nThe order is the exponent to which the concentration of that reactant is raised in the rate law.\n\n## Analysis\nThe order is the **exponent** of the concentration in the rate law. It must be determined **experimentally**.\n\n> **Key Takeaway:** Order = exponent in rate law; must be determined experimentally."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What does a zero-order reaction mean?",
+    "keywords": ["independent", "concentration", "rate constant", "constant rate"],
+    "explanation": "## Insight\nWhen the rate does not depend on the concentration of a reactant, the reaction is zero order.\n\n## Analysis\nZero order means $\\text{Rate} \\propto [A]^0 = 1$; the concentration of A does not affect the rate.\n\n> **Key Takeaway:** Zero order: rate is constant and does not depend on concentration."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the method of initial rates?",
+    "keywords": ["vary", "concentration", "measure", "initial rate", "order"],
+    "explanation": "## Insight\nThe method of initial rates determines the order of a reaction by measuring how the initial rate changes when the initial concentration is changed.\n\n## Analysis\nRun multiple experiments, vary the concentration of only one reactant at a time, measure the initial rate, and compare to determine the order.\n\n> **Key Takeaway:** Initial rates method: vary one concentration at a time, measure the initial rate, and determine the order."
+  },
+
+  // --- SECTION E: INTEGRATED RATE LAWS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the integrated rate law for a first-order reaction?",
+    "keywords": ["ln[A]ₜ", "-kt", "ln[A]₀", "straight line"],
+    "explanation": "## Insight\nThe integrated rate law for a first-order reaction is $\\ln[A]_t = -kt + \\ln[A]_0$.\n\n## Analysis\n$\\ln[A]_t = -kt + \\ln[A]_0$; a plot of $\\ln[A]$ vs $t$ is a straight line with slope $-k$.\n\n> **Key Takeaway:** First-order: $\\ln[A]_t = -kt + \\ln[A]_0$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the integrated rate law for a second-order reaction?",
+    "keywords": ["1/[A]ₜ", "kt", "1/[A]₀", "straight line"],
+    "explanation": "## Insight\nThe integrated rate law for a second-order reaction is $1/[A]_t = kt + 1/[A]_0$.\n\n## Analysis\n$1/[A]_t = kt + 1/[A]_0$; a plot of $1/[A]$ vs $t$ is a straight line with slope $k$.\n\n> **Key Takeaway:** Second-order: $1/[A]_t = kt + 1/[A]_0$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the half-life of a first-order reaction?",
+    "keywords": ["t₁/₂ = 0.693/k", "independent", "concentration", "constant"],
+    "explanation": "## Insight\nFor a first-order reaction, the half-life is constant and independent of initial concentration.\n\n## Analysis\n$t_{1/2} = \\frac{0.693}{k}$; it does not depend on $[A]_0$.\n\n> **Key Takeaway:** First-order half-life is constant: $t_{1/2} = 0.693/k$."
+  },
+
+  // --- SECTION F: EFFECT OF TEMPERATURE (ARRHENIUS) (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What does the Arrhenius equation describe?",
+    "keywords": ["k = Ae⁻ᴱᵃ/ᴿᵀ", "rate constant", "temperature", "activation energy"],
+    "explanation": "## Insight\nThe Arrhenius equation shows how the rate constant depends on temperature and activation energy.\n\n## Analysis\n$k = Ae^{-E_a/RT}$, where $k$ is the rate constant, $E_a$ is activation energy, $R$ is the gas constant, and $T$ is temperature.\n\n> **Key Takeaway:** $k = Ae^{-E_a/RT}$; higher temperature = larger $k$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is activation energy ($E_a$)?",
+    "keywords": ["minimum", "energy", "required", "reaction", "barrier"],
+    "explanation": "## Insight\nActivation energy is the minimum energy required for reactants to form products.\n\n## Analysis\n$E_a$ is the energy barrier that must be overcome for a reaction to proceed.\n\n> **Key Takeaway:** Activation energy is the energy barrier that must be overcome."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the two-point form of the Arrhenius equation?",
+    "keywords": ["ln(k₂/k₁)", "-Ea/R", "(1/T₂ - 1/T₁)"],
+    "explanation": "## Insight\nThe two-point form of the Arrhenius equation allows calculation of $E_a$ or $k$ at different temperatures.\n\n## Analysis\n$\\ln\\left(\\frac{k_2}{k_1}\\right) = -\\frac{E_a}{R}\\left(\\frac{1}{T_2} - \\frac{1}{T_1}\\right)$\n\n> **Key Takeaway:** $\\ln(k_2/k_1) = -E_a/R (1/T_2 - 1/T_1)$."
+  },
+
+  // --- SECTION G: REACTION MECHANISMS (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is a reaction mechanism?",
+    "keywords": ["elementary", "steps", "pathway", "intermediates"],
+    "explanation": "## Insight\nA reaction mechanism describes the step-by-step process by which reactants become products.\n\n## Analysis\nA reaction mechanism is a series of **elementary steps** that describe the pathway of a reaction.\n\n> **Key Takeaway:** Reaction mechanisms describe the sequence of elementary steps."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the rate-determining step?",
+    "keywords": ["slowest", "controls", "overall rate", "bottleneck"],
+    "explanation": "## Insight\nThe rate-determining step is the slowest step in the mechanism and controls the overall rate.\n\n## Analysis\nThe **slowest step** in the mechanism determines the overall rate; it is called the rate-determining step.\n\n> **Key Takeaway:** The slowest step in the mechanism controls the overall rate."
+  },
+
+  // --- SECTION H: CATALYSIS (1 Question) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 9: Chemical Kinetics",
+    "q": "What is the difference between homogeneous and heterogeneous catalysis?",
+    "keywords": ["same phase", "different phase", "catalyst", "reactants"],
+    "explanation": "## Insight\nThe classification depends on whether the catalyst is in the same phase as the reactants.\n\n## Analysis\n**Homogeneous:** catalyst is in the **same phase** as reactants. **Heterogeneous:** catalyst is in a **different phase** from reactants.\n\n> **Key Takeaway:** Homogeneous = same phase; heterogeneous = different phase."
+  },
+
+  // ============================================================
+  // TOPIC 10: CHEMICAL EQUILIBRIUM (25 Questions)
+  // ============================================================
+
+  // --- SECTION A: THE CONCEPT OF EQUILIBRIUM (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is chemical equilibrium?",
+    "keywords": ["forward", "reverse", "same rate", "constant concentrations"],
+    "explanation": "## Insight\nChemical equilibrium is dynamic — both forward and reverse reactions are still occurring, but at the same rate.\n\n## Analysis\nChemical equilibrium occurs when the **forward and reverse reactions proceed at the same rate**.\n\n> **Key Takeaway:** At equilibrium: forward rate = reverse rate; concentrations are constant."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the difference between equilibrium and completion?",
+    "keywords": ["completion", "all reactants", "products", "equilibrium", "both directions"],
+    "explanation": "## Insight\nCompletion means all reactants are converted to products; equilibrium means both forward and reverse reactions occur.\n\n## Analysis\n**Completion:** reactants are fully converted to products. **Equilibrium:** both forward and reverse reactions occur at equal rates; concentrations are constant.\n\n> **Key Takeaway:** Equilibrium is dynamic; completion is a limiting case."
+  },
+
+  // --- SECTION B: THE EQUILIBRIUM CONSTANT (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the equilibrium constant expression for the general reaction $aA + bB \\rightleftharpoons cC + dD$?",
+    "keywords": ["Kc", "products", "reactants", "coefficients"],
+    "explanation": "## Insight\nThe equilibrium constant expression is the ratio of product concentrations (raised to their coefficients) to reactant concentrations (raised to their coefficients).\n\n## Analysis\n$K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$\n\n> **Key Takeaway:** $K_c = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is $K_p$ and how is it different from $K_c$?",
+    "keywords": ["Kp", "partial pressures", "Kc", "concentrations", "gases"],
+    "explanation": "## Insight\n$K_p$ uses partial pressures for gases; $K_c$ uses concentrations.\n\n## Analysis\n$K_p$ is the equilibrium constant expressed in terms of **partial pressures of gases**; $K_c$ uses **concentrations**.\n\n> **Key Takeaway:** $K_p$ = partial pressures; $K_c$ = concentrations."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the relationship between $K_p$ and $K_c$?",
+    "keywords": ["Kp = Kc(RT)^Δn", "Δn", "moles of gas", "difference"],
+    "explanation": "## Insight\nThe relationship depends on the change in the number of moles of gas ($\\Delta n$).\n\n## Analysis\n$K_p = K_c(RT)^{\\Delta n}$, where $\\Delta n = (\\text{moles of gaseous products}) - (\\text{moles of gaseous reactants})$.\n\n> **Key Takeaway:** $K_p = K_c(RT)^{\\Delta n}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What does it mean if $K > 1$?",
+    "keywords": ["product-favored", "products", "predominate", "large K"],
+    "explanation": "## Insight\nThe value of $K$ indicates whether products or reactants predominate at equilibrium.\n\n## Analysis\nIf $K > 1$, the reaction is **product-favored**; products predominate at equilibrium.\n\n> **Key Takeaway:** $K > 1$ = product-favored; $K < 1$ = reactant-favored."
+  },
+
+  // --- SECTION C: HETEROGENEOUS EQUILIBRIA (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "Why are solids and pure liquids excluded from equilibrium constant expressions?",
+    "keywords": ["solids", "liquids", "constant", "concentration", "excluded"],
+    "explanation": "## Insight\nThe concentration of a pure solid or liquid is constant at a given temperature.\n\n## Analysis\nPure solids and liquids have **constant concentrations** and are not included in $K$ expressions.\n\n> **Key Takeaway:** Pure solids and liquids have constant concentrations and are not included in $K$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the equilibrium constant expression for $\\ce{CaCO3(s)} \\rightleftharpoons \\ce{CaO(s)} + \\ce{CO2(g)}$?",
+    "keywords": ["Kc = [CO₂]", "solids", "excluded", "gas only"],
+    "explanation": "## Insight\nSolids are excluded; only the gas (CO₂) appears in the expression.\n\n## Analysis\n$K_c = [\\ce{CO2}]$ — the only species not in the solid state.\n\n> **Key Takeaway:** $K_c = [\\ce{CO2}]$ for the decomposition of CaCO₃."
+  },
+
+  // --- SECTION D: EQUILIBRIUM CALCULATIONS (ICE TABLES) (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What does ICE stand for in equilibrium calculations?",
+    "keywords": ["Initial", "Change", "Equilibrium", "ICE table"],
+    "explanation": "## Insight\nICE tables are used to organize equilibrium concentration calculations.\n\n## Analysis\n**I** = Initial concentrations, **C** = Change in concentrations, **E** = Equilibrium concentrations.\n\n> **Key Takeaway:** ICE = Initial, Change, Equilibrium."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the first step in using an ICE table?",
+    "keywords": ["initial", "concentrations", "table", "set up"],
+    "explanation": "## Insight\nThe first step is to set up the table with initial concentrations.\n\n## Analysis\nThe first step is to **set up the ICE table** with the initial concentrations of all species.\n\n> **Key Takeaway:** Start by writing the initial concentrations."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "When do you need to use the quadratic formula in equilibrium calculations?",
+    "keywords": ["quadratic", "x", "K", "non-negligible", "approximation"],
+    "explanation": "## Insight\nWhen the approximation $x \\ll$ initial concentration is not valid, the quadratic formula is needed.\n\n## Analysis\nIf $x$ is more than 5% of the initial concentration, the approximation $x \\ll [A]_0$ is not valid; use the quadratic formula.\n\n> **Key Takeaway:** Use the quadratic formula when $x$ is not negligible compared to initial concentration."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the 5% rule in equilibrium calculations?",
+    "keywords": ["5%", "approximation", "valid", "x", "initial"],
+    "explanation": "## Insight\nThe 5% rule checks whether the approximation $x \\ll [A]_0$ is valid.\n\n## Analysis\nIf $\\frac{x}{[A]_0} \\times 100\\% < 5\\%$, the approximation is valid; otherwise, the quadratic formula must be used.\n\n> **Key Takeaway:** The 5% rule checks the validity of the approximation."
+  },
+
+  // --- SECTION E: THE REACTION QUOTIENT (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the reaction quotient ($Q$)?",
+    "keywords": ["Q", "same", "ratio", "not at equilibrium", "initial"],
+    "explanation": "## Insight\n$Q$ is calculated the same way as $K$, but using initial (non-equilibrium) concentrations.\n\n## Analysis\n$Q$ gives the same ratio as the equilibrium expression, but for a system that is **not at equilibrium**.\n\n> **Key Takeaway:** $Q$ = reaction quotient; $Q$ vs. $K$ tells you which direction the reaction will shift."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "If $Q > K$, in which direction will the reaction shift?",
+    "keywords": ["Q > K", "shift", "reactants", "left", "reverse"],
+    "explanation": "## Insight\nIf $Q > K$, the reaction will shift toward the reactants (left) to reach equilibrium.\n\n## Analysis\n$Q > K$ means there are too many products; the reaction shifts toward **reactants (left)**.\n\n> **Key Takeaway:** If $Q > K$, shift toward reactants (left); if $Q < K$, shift toward products (right)."
+  },
+
+  // --- SECTION F: LE CHÂTELIER'S PRINCIPLE (6 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is Le Châtelier's Principle?",
+    "keywords": ["equilibrium", "disturbance", "counteract", "shift"],
+    "explanation": "## Insight\nLe Châtelier's Principle describes how equilibrium systems respond to stress.\n\n## Analysis\nIf a system at equilibrium is disturbed, it will shift to **counteract** the effect of the disturbance.\n\n> **Key Takeaway:** System shifts to oppose any change imposed on it."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What happens when you add more reactant to a system at equilibrium?",
+    "keywords": ["reactant", "added", "shift", "products", "right"],
+    "explanation": "## Insight\nAdding a reactant shifts the equilibrium toward the products (right).\n\n## Analysis\nAdding a reactant increases the concentration, so the system shifts toward the **products** to consume the added reactant.\n\n> **Key Takeaway:** Adding reactants shifts equilibrium toward products (right)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What happens when you increase pressure on a gas-phase equilibrium?",
+    "keywords": ["pressure", "increase", "fewer", "moles", "gas"],
+    "explanation": "## Insight\nIncreasing pressure favors the side with fewer moles of gas.\n\n## Analysis\nIncreasing pressure shifts equilibrium toward the side with **fewer moles of gas**.\n\n> **Key Takeaway:** Increasing pressure favors the side with fewer gas molecules."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{N2(g) + 3H2(g) \\rightleftharpoons 2NH3(g)}$ (exothermic), what happens when temperature is increased?",
+    "keywords": ["exothermic", "temperature", "increase", "shift", "reactants"],
+    "explanation": "## Insight\nFor exothermic reactions, heat is a product. Increasing temperature shifts equilibrium toward the reactants.\n\n## Analysis\nIncreasing temperature favors the **reverse (endothermic)** direction, shifting toward **reactants (left)**.\n\n> **Key Takeaway:** Increasing temperature favors the endothermic direction; for exothermic reactions, that means shifting left."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the effect of a catalyst on equilibrium?",
+    "keywords": ["catalyst", "no shift", "faster", "unchanged"],
+    "explanation": "## Insight\nCatalysts speed up the approach to equilibrium but do not change the equilibrium position.\n\n## Analysis\nA catalyst speeds up both the forward and reverse reactions equally; it does **not** change the equilibrium position or $K$.\n\n> **Key Takeaway:** Catalysts speed up the attainment of equilibrium; they do not change the equilibrium position."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "For the reaction $\\ce{2SO2(g) + O2(g) \\rightleftharpoons 2SO3(g)}$, how many moles of gas are on each side and what is the effect of increasing pressure?",
+    "keywords": ["3 moles", "reactants", "2 moles", "products", "shift right"],
+    "explanation": "## Insight\nIncreasing pressure favors the side with fewer moles of gas.\n\n## Analysis\nReactants: 3 moles of gas; Products: 2 moles of gas. Increasing pressure shifts equilibrium toward **products (right)**.\n\n> **Key Takeaway:** Increasing pressure favors the side with fewer gas molecules."
+  },
+
+  // --- SECTION G: MANIPULATING K (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What is the equilibrium constant for the reverse reaction if $K_{\\text{forward}} = 0.212$?",
+    "keywords": ["reverse", "reciprocal", "1/K", "4.72"],
+    "explanation": "## Insight\nThe equilibrium constant for the reverse reaction is the reciprocal of the forward reaction's $K$.\n\n## Analysis\n$K_{\\text{reverse}} = \\frac{1}{K_{\\text{forward}}} = \\frac{1}{0.212} = 4.72$.\n\n> **Key Takeaway:** $K_{\\text{reverse}} = 1/K_{\\text{forward}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "What happens to $K$ when a reaction is multiplied by a factor $n$?",
+    "keywords": ["multiplied", "factor", "K^n", "raised to power"],
+    "explanation": "## Insight\nWhen a reaction is multiplied by a factor $n$, the equilibrium constant is raised to the power $n$.\n\n## Analysis\n$K_{\\text{new}} = (K_{\\text{original}})^n$.\n\n> **Key Takeaway:** Multiplying a reaction by $n$ raises $K$ to the $n$th power."
+  },
+
+  // --- SECTION H: MULTIPLE EQUILIBRIA (1 Question) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 10: Chemical Equilibrium",
+    "q": "When adding two reactions together, how do you calculate the new equilibrium constant?",
+    "keywords": ["add", "multiply", "K values", "combined", "reactions"],
+    "explanation": "## Insight\nWhen reactions are added, the equilibrium constants are multiplied.\n\n## Analysis\n$K_{\\text{combined}} = K_1 \\times K_2$.\n\n> **Key Takeaway:** When reactions are added, $K$ values are multiplied."
+  },
+
+  // ============================================================
+  // TOPIC 11: ACIDS AND BASES (30 Questions)
+  // ============================================================
+
+  // --- SECTION A: ACID-BASE DEFINITIONS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is an Arrhenius acid?",
+    "keywords": ["H⁺", "hydrogen ions", "water", "produces"],
+    "explanation": "## Insight\nThe Arrhenius definition is the simplest but limited to aqueous solutions.\n\n## Analysis\nArrhenius acid = a substance that produces $\\ce{H+}$ ions in water.\n\n> **Key Takeaway:** Arrhenius: acid → H⁺; base → OH⁻."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is an Arrhenius base?",
+    "keywords": ["OH⁻", "hydroxide ions", "water", "produces"],
+    "explanation": "## Insight\nArrhenius bases produce OH⁻ ions in aqueous solution.\n\n## Analysis\nArrhenius base = a substance that produces $\\ce{OH-}$ ions in water.\n\n> **Key Takeaway:** Arrhenius bases produce OH⁻; limited to aqueous solutions."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a Brønsted-Lowry acid?",
+    "keywords": ["proton", "donor", "H⁺", "donates"],
+    "explanation": "## Insight\nThe Brønsted-Lowry definition focuses on proton transfer.\n\n## Analysis\nBrønsted-Lowry acid = **proton donor** (donates $\\ce{H+}$).\n\n> **Key Takeaway:** Brønsted-Lowry: acid = proton donor; base = proton acceptor."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a Brønsted-Lowry base?",
+    "keywords": ["proton", "acceptor", "H⁺", "accepts"],
+    "explanation": "## Insight\nThe Brønsted-Lowry definition includes bases that do not contain OH⁻.\n\n## Analysis\nBrønsted-Lowry base = **proton acceptor** (accepts $\\ce{H+}$).\n\n> **Key Takeaway:** NH₃ is a Brønsted-Lowry base even though it has no OH⁻."
+  },
+
+  // --- SECTION B: CONJUGATE ACID-BASE PAIRS (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a conjugate acid-base pair?",
+    "keywords": ["differ", "by one", "H⁺", "proton", "pair"],
+    "explanation": "## Insight\nA conjugate acid-base pair is related by the transfer of one proton.\n\n## Analysis\nTwo species that differ by the presence or absence of one $\\ce{H+}$ (proton).\n\n> **Key Takeaway:** Conjugate acid-base pairs differ by one H⁺."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In the reaction $\\ce{HCl(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)}$, what is the conjugate acid of water?",
+    "keywords": ["H₃O⁺", "hydronium", "conjugate acid", "water"],
+    "explanation": "## Insight\nWhen water accepts a proton, it becomes hydronium ion.\n\n## Analysis\nWater ($\\ce{H2O}$) accepts a proton to become $\\ce{H3O+}$ — the conjugate acid.\n\n> **Key Takeaway:** H₂O + H⁺ → H₃O⁺ (conjugate acid)."
+  },
+
+  // --- SECTION C: AMPHIPROTIC SPECIES (1 Question) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What does it mean for a substance to be amphiprotic?",
+    "keywords": ["donate", "accept", "proton", "both", "acid", "base"],
+    "explanation": "## Insight\nAmphiprotic substances can act as acids or bases.\n\n## Analysis\nAn amphiprotic substance can either **donate** or **accept** a proton, acting as either an acid or a base.\n\n> **Key Takeaway:** Amphiprotic = can act as acid or base; examples: H₂O, HCO₃⁻."
+  },
+
+  // --- SECTION D: AUTOIONIZATION OF WATER AND Kw (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the ion product constant of water ($K_w$) at $25^\\circ\\text{C}$?",
+    "keywords": ["1.0 × 10⁻¹⁴", "Kw", "H⁺", "OH⁻"],
+    "explanation": "## Insight\n$K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n\n## Analysis\n$K_w = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$.\n\n> **Key Takeaway:** $K_w = [\\ce{H+}][\\ce{OH-}] = 1.0 \\times 10^{-14}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In pure water at $25^\\circ\\text{C}$, what are $[\\ce{H+}]$ and $[\\ce{OH-}]$?",
+    "keywords": ["1.0 × 10⁻⁷", "equal", "neutral", "pure water"],
+    "explanation": "## Insight\nIn pure water, [H⁺] = [OH⁻] = 1.0 × 10⁻⁷ M.\n\n## Analysis\n$[\\ce{H+}] = [\\ce{OH-}] = \\sqrt{K_w} = \\sqrt{1.0 \\times 10^{-14}} = 1.0 \\times 10^{-7}$ M.\n\n> **Key Takeaway:** In pure water, [H⁺] = [OH⁻] = 1.0 × 10⁻⁷ M."
+  },
+
+  // --- SECTION E: pH AND pOH (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the definition of pH?",
+    "keywords": ["-log", "H⁺", "concentration", "negative logarithm"],
+    "explanation": "## Insight\npH is a logarithmic measure of the concentration of hydronium ions.\n\n## Analysis\n$\\text{pH} = -\\log[\\ce{H+}]$.\n\n> **Key Takeaway:** pH = -log[H⁺]; lower pH = more acidic."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the relationship between pH and pOH at $25^\\circ\\text{C}$?",
+    "keywords": ["pH + pOH = 14", "sum", "14.00", "Kw"],
+    "explanation": "## Insight\nSince $K_w = 1.0 \\times 10^{-14}$, $\\text{pH} + \\text{pOH} = 14.00$.\n\n## Analysis\n$\\text{pH} + \\text{pOH} = 14.00$ at $25^\\circ\\text{C}$.\n\n> **Key Takeaway:** pH + pOH = 14.00."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a solution with $[\\ce{H+}] = 2.5 \\times 10^{-4}$ M?",
+    "keywords": ["3.60", "-log", "calculate", "acidic"],
+    "explanation": "## Insight\n$\\text{pH} = -\\log[\\ce{H+}]$.\n\n## Analysis\n$\\text{pH} = -\\log(2.5 \\times 10^{-4}) = 3.60$.\n\n> **Key Takeaway:** pH = 3.60; the solution is acidic (pH < 7)."
+  },
+
+  // --- SECTION F: STRONG ACIDS AND STRONG BASES (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What are the seven strong acids?",
+    "keywords": ["HCl", "HBr", "HI", "HNO₃", "H₂SO₄", "HClO₃", "HClO₄"],
+    "explanation": "## Insight\nThe seven strong acids completely dissociate in water.\n\n## Analysis\nHCl, HBr, HI, HNO₃, H₂SO₄, HClO₃, HClO₄.\n\n> **Key Takeaway:** Strong acids: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₃, HClO₄."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $0.010$ M solution of HCl?",
+    "keywords": ["2.00", "strong acid", "[H+] = 0.010", "-log"],
+    "explanation": "## Insight\nHCl is a strong acid, so [H⁺] = [HCl].\n\n## Analysis\n$[\\ce{H+}] = 0.010$ M; pH = -log(0.010) = 2.00.\n\n> **Key Takeaway:** For strong acids, [H⁺] = [acid]; pH = -log[acid]."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the pH of a $0.0050$ M solution of NaOH?",
+    "keywords": ["11.70", "strong base", "[OH⁻] = 0.0050", "pOH"],
+    "explanation": "## Insight\nNaOH is a strong base, so [OH⁻] = [NaOH]; find pOH then pH.\n\n## Analysis\n$[\\ce{OH-}] = 0.0050$ M; pOH = -log(0.0050) = 2.30; pH = 14.00 - 2.30 = 11.70.\n\n> **Key Takeaway:** For strong bases, [OH⁻] = [base]; pH = 14 - pOH."
+  },
+
+  // --- SECTION G: WEAK ACIDS AND Ka (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the acid dissociation constant ($K_a$)?",
+    "keywords": ["Ka = [H⁺][A⁻]/[HA]", "acid", "dissociation", "weak"],
+    "explanation": "## Insight\n$K_a$ is the equilibrium constant for the dissociation of a weak acid.\n\n## Analysis\n$K_a = \\frac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}$; larger $K_a$ = stronger acid.\n\n> **Key Takeaway:** $K_a = \\frac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Acetic acid ($\\ce{CH3COOH}$) has $K_a = 1.8 \\times 10^{-5}$. What is the pH of a $0.10$ M solution?",
+    "keywords": ["2.87", "ICE table", "x", "assumption", "Ka"],
+    "explanation": "## Insight\nUse an ICE table and solve for $x$; then find pH.\n\n## Analysis\n$K_a = \\frac{x^2}{0.10 - x} = 1.8 \\times 10^{-5}$; $x = 1.34 \\times 10^{-3}$; pH = -log(1.34 × 10⁻³) = 2.87.\n\n> **Key Takeaway:** pH = 2.87; the approximation x << 0.10 is valid."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "The pH of a $0.10$ M solution of formic acid is $2.38$. What is $K_a$?",
+    "keywords": ["1.8 × 10⁻⁴", "from pH", "ICE", "x = [H⁺]"],
+    "explanation": "## Insight\nFrom pH, find [H⁺]; then use ICE table to find Kₐ.\n\n## Analysis\n$[\\ce{H+}] = 10^{-2.38} = 4.2 \\times 10^{-3}$; $K_a = \\frac{x^2}{0.10 - x} = \\frac{(4.2 \\times 10^{-3})^2}{0.10 - 4.2 \\times 10^{-3}} = 1.8 \\times 10^{-4}$.\n\n> **Key Takeaway:** $K_a = 1.8 \\times 10^{-4}$."
+  },
+
+  // --- SECTION H: WEAK BASES AND Kb (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the base dissociation constant ($K_b$)?",
+    "keywords": ["Kb = [HA][OH⁻]/[A⁻]", "base", "dissociation", "weak"],
+    "explanation": "## Insight\n$K_b$ is the equilibrium constant for the hydrolysis of a weak base.\n\n## Analysis\n$K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$; larger $K_b$ = stronger base.\n\n> **Key Takeaway:** $K_b = \\frac{[\\ce{HA}][\\ce{OH-}]}{[\\ce{A-}]}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Ammonia ($\\ce{NH3}$) has $K_b = 1.8 \\times 10^{-5}$. What is the pH of a $0.10$ M solution?",
+    "keywords": ["11.13", "ICE table", "x = [OH⁻]", "Kb"],
+    "explanation": "## Insight\nUse an ICE table to find [OH⁻], then pOH, then pH.\n\n## Analysis\n$K_b = \\frac{x^2}{0.10 - x} = 1.8 \\times 10^{-5}$; $x = 1.34 \\times 10^{-3}$ = [OH⁻]; pOH = 2.87; pH = 11.13.\n\n> **Key Takeaway:** pH = 11.13; the solution is basic because NH₃ is a weak base."
+  },
+
+  // --- SECTION I: RELATIONSHIP BETWEEN Ka AND Kb (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the relationship between $K_a$ and $K_b$ for a conjugate acid-base pair?",
+    "keywords": ["Ka × Kb = Kw", "product", "1.0 × 10⁻¹⁴", "conjugate"],
+    "explanation": "## Insight\nFor a conjugate acid-base pair, the product of $K_a$ and $K_b$ equals $K_w$.\n\n## Analysis\n$K_a \\times K_b = K_w = 1.0 \\times 10^{-14}$.\n\n> **Key Takeaway:** $K_a \\times K_b = K_w$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Hydrocyanic acid ($\\ce{HCN}$) has $K_a = 6.2 \\times 10^{-10}$. What is $K_b$ for $\\ce{CN-}$?",
+    "keywords": ["1.6 × 10⁻⁵", "Kb = Kw/Ka", "conjugate base"],
+    "explanation": "## Insight\n$K_b = \\frac{K_w}{K_a}$ for the conjugate base.\n\n## Analysis\n$K_b = \\frac{1.0 \\times 10^{-14}}{6.2 \\times 10^{-10}} = 1.6 \\times 10^{-5}$.\n\n> **Key Takeaway:** $K_b = 1.6 \\times 10^{-5}$; the cyanide ion is a weak base."
+  },
+
+  // --- SECTION J: SALT HYDROLYSIS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Why is a solution of $\\ce{NaF}$ basic?",
+    "keywords": ["F⁻", "hydrolyzes", "OH⁻", "conjugate base", "weak acid"],
+    "explanation": "## Insight\nThe anion of a weak acid (F⁻) hydrolyzes to produce OH⁻.\n\n## Analysis\n$\\ce{F- + H2O \\rightleftharpoons HF + OH-}$; the solution is basic.\n\n> **Key Takeaway:** Anions of weak acids hydrolyze to produce OH⁻ (basic solution)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Why is a solution of $\\ce{NH4Cl}$ acidic?",
+    "keywords": ["NH₄⁺", "hydrolyzes", "H⁺", "conjugate acid", "weak base"],
+    "explanation": "## Insight\nThe cation of a weak base (NH₄⁺) hydrolyzes to produce H⁺.\n\n## Analysis\n$\\ce{NH4+ + H2O \\rightleftharpoons NH3 + H3O+}$; the solution is acidic.\n\n> **Key Takeaway:** Cations of weak bases hydrolyze to produce H⁺ (acidic solution)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "Which salt forms a neutral solution?",
+    "keywords": ["NaCl", "strong acid", "strong base", "neutral"],
+    "explanation": "## Insight\nSalts of strong acids and strong bases form neutral solutions.\n\n## Analysis\nNaCl is from a strong acid (HCl) and strong base (NaOH) → neutral solution.\n\n> **Key Takeaway:** Salt of strong acid + strong base = neutral."
+  },
+
+  // --- SECTION K: BUFFERS AND HENDERSON-HASSELBALCH (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is a buffer solution?",
+    "keywords": ["resists", "pH", "change", "weak acid", "conjugate base"],
+    "explanation": "## Insight\nA buffer resists pH changes when small amounts of acid or base are added.\n\n## Analysis\nA buffer is a solution containing a **weak acid and its conjugate base** (or a weak base and its conjugate acid) that resists pH changes.\n\n> **Key Takeaway:** Buffers resist pH changes; contain weak acid + conjugate base."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "What is the Henderson-Hasselbalch equation?",
+    "keywords": ["pH = pKa + log([A⁻]/[HA])", "buffer", "pH", "ratio"],
+    "explanation": "## Insight\nThe Henderson-Hasselbalch equation calculates the pH of a buffer solution.\n\n## Analysis\n$\\text{pH} = pK_a + \\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right)$.\n\n> **Key Takeaway:** pH = pKₐ + log([A⁻]/[HA])."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "At the half-equivalence point of a titration, what is the relationship between pH and pKₐ?",
+    "keywords": ["pH = pKa", "half-equivalence", "equal", "concentrations"],
+    "explanation": "## Insight\nAt the half-equivalence point, [HA] = [A⁻], so pH = pKₐ.\n\n## Analysis\nWhen $[\\ce{HA}] = [\\ce{A-}]$, $\\log\\left(\\frac{[\\ce{A-}]}{[\\ce{HA}]}\\right) = \\log(1) = 0$, so pH = pKₐ.\n\n> **Key Takeaway:** pH = pKₐ at the half-equivalence point."
+  },
+
+  // --- SECTION L: ACID-BASE TITRATIONS (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In a strong acid-strong base titration, what is the pH at the equivalence point?",
+    "keywords": ["7.00", "neutral", "strong acid", "strong base"],
+    "explanation": "## Insight\nAt the equivalence point of a strong acid-strong base titration, the solution contains only salt and water.\n\n## Analysis\npH = 7.00 at the equivalence point of a strong acid-strong base titration.\n\n> **Key Takeaway:** Strong acid + strong base equivalence point: pH = 7.00."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 11: Acids and Bases",
+    "q": "In a weak acid-strong base titration, why is the equivalence point pH > 7?",
+    "keywords": ["> 7", "basic", "conjugate base", "hydrolysis", "salt"],
+    "explanation": "## Insight\nThe salt of a weak acid and strong base hydrolyzes to produce OH⁻, making the solution basic.\n\n## Analysis\nAt the equivalence point, the solution contains the salt of the weak acid, which hydrolyzes to produce OH⁻, so pH > 7.\n\n> **Key Takeaway:** Weak acid-strong base equivalence point is basic (pH > 7)."
+  },
+
+  // ============================================================
+  // TOPIC 12: ELECTROCHEMISTRY (25 Questions)
+  // ============================================================
+
+  // --- SECTION A: BALANCING REDOX REACTIONS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Balance the redox reaction: $\\ce{Al(s) + Ni^{2+}(aq) -> Al^{3+}(aq) + Ni(s)}$.",
+    "keywords": ["2Al + 3Ni²⁺ -> 2Al³⁺ + 3Ni", "electrons", "balanced"],
+    "explanation": "## Insight\nBalance the half-reactions for mass and charge, then combine.\n\n## Analysis\n$2\\ce{Al(s) + 3Ni^{2+}(aq) -> 2Al^{3+}(aq) + 3Ni(s)}$.\n\n> **Key Takeaway:** $2\\ce{Al} + 3\\ce{Ni^{2+}} -> 2\\ce{Al^{3+}} + 3\\ce{Ni}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Balance the redox reaction in acidic solution: $\\ce{Cr2O7^{2-} + Fe^{2+} -> Cr^{3+} + Fe^{3+}}$.",
+    "keywords": ["14H⁺ + Cr₂O₇²⁻ + 6Fe²⁺ -> 2Cr³⁺ + 6Fe³⁺ + 7H₂O"],
+    "explanation": "## Insight\nBalance by mass (O and H) and charge using the half-reaction method.\n\n## Analysis\n$14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$.\n\n> **Key Takeaway:** $14\\ce{H+} + \\ce{Cr2O7^{2-}} + 6\\ce{Fe^{2+}} -> 2\\ce{Cr^{3+}} + 6\\ce{Fe^{3+}} + 7\\ce{H2O}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "How do you convert an acid-balanced redox equation to a basic-balanced equation?",
+    "keywords": ["OH⁻", "add to both sides", "neutralize H⁺", "H₂O"],
+    "explanation": "## Insight\nAdd OH⁻ to both sides to neutralize H⁺, forming H₂O.\n\n## Analysis\nAdd $\\ce{OH-}$ to both sides equal to the number of $\\ce{H+}$; combine $\\ce{H+}$ and $\\ce{OH-}$ to form $\\ce{H2O}$; cancel water.\n\n> **Key Takeaway:** Acid → Base: add OH⁻ to both sides equal to number of H⁺."
+  },
+
+  // --- SECTION B: GALVANIC CELLS (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In a galvanic cell, what is the anode?",
+    "keywords": ["oxidation", "loses electrons", "negative", "anode"],
+    "explanation": "## Insight\nThe anode is where oxidation occurs; it is negative in a galvanic cell.\n\n## Analysis\nThe anode is the electrode where **oxidation** (loss of electrons) occurs.\n\n> **Key Takeaway:** Anode = oxidation (loses electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In a galvanic cell, what is the cathode?",
+    "keywords": ["reduction", "gains electrons", "positive", "cathode"],
+    "explanation": "## Insight\nThe cathode is where reduction occurs; it is positive in a galvanic cell.\n\n## Analysis\nThe cathode is the electrode where **reduction** (gain of electrons) occurs.\n\n> **Key Takeaway:** Cathode = reduction (gains electrons)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the purpose of a salt bridge?",
+    "keywords": ["electrical neutrality", "ion migration", "salt bridge"],
+    "explanation": "## Insight\nThe salt bridge maintains electrical neutrality by allowing ion migration between half-cells.\n\n## Analysis\nThe salt bridge allows ions to flow, preventing charge buildup that would stop the reaction.\n\n> **Key Takeaway:** Salt bridge: maintains electrical neutrality; allows ion migration."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the correct cell notation for a galvanic cell with Zn as the anode and Cu as the cathode?",
+    "keywords": ["Zn | Zn²⁺ || Cu²⁺ | Cu", "anode", "cathode"],
+    "explanation": "## Insight\nCell notation: anode on the left, cathode on the right, salt bridge as ||.\n\n## Analysis\n$\\ce{Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)}$.\n\n> **Key Takeaway:** Cell notation: Anode | Anode ion || Cathode ion | Cathode."
+  },
+
+  // --- SECTION C: STANDARD REDUCTION POTENTIALS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the standard reduction potential of the Standard Hydrogen Electrode (SHE)?",
+    "keywords": ["0.00 V", "SHE", "reference", "zero"],
+    "explanation": "## Insight\nThe SHE is the reference half-cell assigned a potential of exactly 0 V.\n\n## Analysis\nThe SHE has $E^\\circ = 0.00$ V by definition.\n\n> **Key Takeaway:** SHE: E° = 0.00 V."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Calculate $E^\\circ_{\\text{cell}}$ for the reaction: $\\ce{Zn(s) + Cu^{2+}(aq) -> Zn^{2+}(aq) + Cu(s)}$.",
+    "keywords": ["+1.10 V", "E°cathode - E°anode", "0.34 - (-0.76)"],
+    "explanation": "## Insight\n$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}$.\n\n## Analysis\n$E^\\circ_{\\text{cell}} = 0.34 - (-0.76) = +1.10$ V.\n\n> **Key Takeaway:** $E^\\circ_{\\text{cell}} = +1.10$ V."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "Which is the stronger reducing agent: Li (E° = -3.05 V) or Cu (E° = +0.34 V)?",
+    "keywords": ["Li", "more negative", "stronger reducing agent", "E°"],
+    "explanation": "## Insight\nThe stronger reducing agent has the more negative standard reduction potential.\n\n## Analysis\nLi has the more negative $E^\\circ$ ($-3.05$ V), making it the stronger reducing agent.\n\n> **Key Takeaway:** More negative E° = stronger reducing agent."
+  },
+
+  // --- SECTION D: SPONTANEITY, ΔG, AND K (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the relationship between $\\Delta G^\\circ$ and $E^\\circ_{\\text{cell}}$?",
+    "keywords": ["ΔG° = -nFE°", "negative", "spontaneous", "positive E°"],
+    "explanation": "## Insight\nA positive $E^\\circ$ corresponds to a negative $\\Delta G^\\circ$ (spontaneous reaction).\n\n## Analysis\n$\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$.\n\n> **Key Takeaway:** $\\Delta G^\\circ = -n\\mathcal{F}E^\\circ_{\\text{cell}}$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the relationship between $E^\\circ_{\\text{cell}}$ and $K$?",
+    "keywords": ["E° = (0.0592/n) log K", "equilibrium", "constant"],
+    "explanation": "## Insight\n$E^\\circ_{\\text{cell}}$ is related to the equilibrium constant $K$.\n\n## Analysis\n$E^\\circ_{\\text{cell}} = \\frac{0.0592}{n} \\log K$ at $25^\\circ\\text{C}$.\n\n> **Key Takeaway:** $E^\\circ = \\frac{0.0592}{n} \\log K$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "If $E^\\circ_{\\text{cell}} = +0.46$ V and $n = 2$, what is $K$?",
+    "keywords": ["3.9 × 10¹⁵", "log K", "large K", "product-favored"],
+    "explanation": "## Insight\nA large positive $E^\\circ$ corresponds to a very large $K$.\n\n## Analysis\n$\\log K = \\frac{nE^\\circ}{0.0592} = \\frac{2 \\times 0.46}{0.0592} = 15.54$; $K = 10^{15.54} = 3.9 \\times 10^{15}$.\n\n> **Key Takeaway:** $K = 3.9 \\times 10^{15}$; product-favored reaction."
+  },
+
+  // --- SECTION E: THE NERNST EQUATION (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the Nernst equation?",
+    "keywords": ["E = E° - (0.0592/n) log Q", "non-standard", "concentrations"],
+    "explanation": "## Insight\nThe Nernst equation relates cell potential to concentrations under non-standard conditions.\n\n## Analysis\n$E = E^\\circ - \\frac{0.0592}{n} \\log Q$ at $25^\\circ\\text{C}$.\n\n> **Key Takeaway:** $E = E^\\circ - \\frac{0.0592}{n} \\log Q$."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "For the reaction $\\ce{Cd(s) + Fe^{2+}(aq) -> Cd^{2+}(aq) + Fe(s)}$, what is $E_{\\text{cell}}$ if $[\\ce{Cd^{2+}}] = 0.010$ M and $[\\ce{Fe^{2+}}] = 0.60$ M?",
+    "keywords": ["+0.01 V", "Nernst", "Q = 0.0167", "spontaneous"],
+    "explanation": "## Insight\nUse the Nernst equation: $E = E^\\circ - (0.0592/n) \\log Q$.\n\n## Analysis\n$E^\\circ = -0.04$ V; $Q = 0.010/0.60 = 0.0167$; $E = -0.04 - (0.0592/2) \\log(0.0167) = +0.01$ V.\n\n> **Key Takeaway:** $E_{\\text{cell}} = +0.01$ V; the reaction becomes spontaneous."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the cell potential of a concentration cell?",
+    "keywords": ["E° = 0", "concentration cell", "same electrodes", "different concentrations"],
+    "explanation": "## Insight\nIn a concentration cell, $E^\\circ = 0$; the potential comes from concentration differences.\n\n## Analysis\n$E = -\\frac{0.0592}{n} \\log\\left(\\frac{[\\text{dilute}]}{[\\text{concentrated}]}\\right)$.\n\n> **Key Takeaway:** Concentration cell potential comes from concentration differences."
+  },
+
+  // --- SECTION F: BATTERIES (4 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the anode reaction in a dry cell?",
+    "keywords": ["Zn → Zn²⁺ + 2e⁻", "zinc", "anode", "oxidized"],
+    "explanation": "## Insight\nIn a dry cell, zinc is the anode (oxidized).\n\n## Analysis\n$\\ce{Zn(s) -> Zn^{2+}(aq) + 2e^-}$.\n\n> **Key Takeaway:** Dry cell anode: Zn → Zn²⁺ + 2e⁻."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the voltage of a standard dry cell?",
+    "keywords": ["1.5 V", "dry cell", "voltage"],
+    "explanation": "## Insight\nA standard dry cell produces about 1.5 V.\n\n## Analysis\nA standard dry cell has $E_{\\text{cell}} \\approx 1.5$ V.\n\n> **Key Takeaway:** Dry cell = 1.5 V."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the anode reaction in a lead-acid battery?",
+    "keywords": ["Pb + SO₄²⁻ -> PbSO₄ + 2e⁻", "lead", "anode"],
+    "explanation": "## Insight\nIn a lead-acid battery, lead (Pb) is oxidized at the anode.\n\n## Analysis\n$\\ce{Pb(s) + SO4^{2-}(aq) -> PbSO4(s) + 2e^-}$.\n\n> **Key Takeaway:** Lead-acid battery: Pb (anode), PbO₂ (cathode)."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is the overall reaction in a hydrogen fuel cell?",
+    "keywords": ["2H₂ + O₂ -> 2H₂O", "fuel cell", "water", "electricity"],
+    "explanation": "## Insight\nA hydrogen fuel cell combines H₂ and O₂ to produce water and electricity.\n\n## Analysis\n$2\\ce{H2(g) + O2(g) -> 2H2O(l)}$.\n\n> **Key Takeaway:** Fuel cell: 2H₂ + O₂ -> 2H₂O; produces electricity."
+  },
+
+  // --- SECTION G: ELECTROLYSIS (3 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is electrolysis?",
+    "keywords": ["electrical energy", "non-spontaneous", "redox", "forced"],
+    "explanation": "## Insight\nElectrolysis uses electrical energy to drive a non-spontaneous reaction.\n\n## Analysis\nElectrolysis is the use of electrical energy to drive a **non-spontaneous** redox reaction.\n\n> **Key Takeaway:** Electrolysis = electrical energy → chemical change."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In the electrolysis of molten NaCl, what is produced at the cathode?",
+    "keywords": ["Na", "sodium", "reduction", "cathode"],
+    "explanation": "## Insight\nAt the cathode, reduction occurs: Na⁺ + e⁻ → Na.\n\n## Analysis\n$\\ce{Na+}$ is reduced to $\\ce{Na}$ at the cathode.\n\n> **Key Takeaway:** Molten NaCl electrolysis: cathode → Na."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "In the electrolysis of aqueous NaCl, why is H₂ produced at the cathode instead of Na?",
+    "keywords": ["water", "reduced", "Na⁺", "difficult", "E°"],
+    "explanation": "## Insight\nWater is reduced more readily than Na⁺ because Na⁺ has a very negative reduction potential.\n\n## Analysis\nNa⁺ + e⁻ → Na (E° = -2.71 V) is very unfavorable; water is reduced instead.\n\n> **Key Takeaway:** In aqueous solution, water is reduced at the cathode."
+  },
+
+  // --- SECTION H: QUANTITATIVE ELECTROLYSIS (2 Questions) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is Faraday's constant and what does it represent?",
+    "keywords": ["96485 C/mol", "Faraday", "1 mole e⁻", "charge"],
+    "explanation": "## Insight\nFaraday's constant is the electric charge contained in one mole of electrons.\n\n## Analysis\n$\\mathcal{F} = 96485$ C/mol e⁻.\n\n> **Key Takeaway:** $\\mathcal{F} = 96485$ C/mol e⁻."
+  },
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What mass of copper is deposited from Cu²⁺ solution by a current of 2.50 A for 30.0 minutes?",
+    "keywords": ["1.48 g", "I × t", "q", "moles", "Cu"],
+    "explanation": "## Insight\nMass = (I × t × M) / (n × F).\n\n## Analysis\n$t = 1800$ s; $q = 2.50 \\times 1800 = 4500$ C; moles e⁻ = 4500/96485 = 0.0466; moles Cu = 0.0233; mass = 0.0233 × 63.55 = 1.48 g.\n\n> **Key Takeaway:** 1.48 g Cu deposited."
+  },
+
+  // --- SECTION I: CORROSION (1 Question) ---
+  {
+    "course": "CH110",
+    "term": "T3",
+    "topic": "Topic 12: Electrochemistry",
+    "q": "What is cathodic protection?",
+    "keywords": ["sacrificial anode", "more active metal", "corrosion", "protected"],
+    "explanation": "## Insight\nCathodic protection uses a sacrificial metal that is oxidized instead of the protected metal.\n\n## Analysis\nCathodic protection connects a more active metal (sacrificial anode) to the metal to be protected, so the sacrificial metal corrodes instead.\n\n> **Key Takeaway:** Cathodic protection: sacrificial anode (Zn, Mg) corrodes instead of the protected metal."
+  },
   //BI110 TAXONOMY NEW CONTENT 
   
   
