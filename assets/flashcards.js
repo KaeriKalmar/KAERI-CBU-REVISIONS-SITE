@@ -1,13 +1,17 @@
 
 const flashcards = {
-  
+  // ============================================================
+// COMPLETE FLASHCARD DATASET – CS110 INTRODUCTION TO PROGRAMMING
+// MAIN TOPIC: NEW PROGRAMING FLASHCARDS
+// (Units 11, 12, 13, 14, 15 – Term 3)
+// =========================================================
   "NEW PROGRAMING FLASHCARDS": [
     // ============================================================
     // UNIT 11: INTRODUCTION TO PROGRAMMING
     // ============================================================
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Programming Fundamentals",
       front: "What is computer programming?",
       back: `
@@ -25,7 +29,7 @@ Computer programming is the art of writing instructions (code) in a formal langu
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Programming History",
       front: "Describe the evolution of computer languages from machine language to high-level languages.",
       back: `
@@ -44,7 +48,7 @@ Programming languages evolved from cryptic machine code (1s and 0s) to assembler
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Compilers vs Interpreters",
       front: "What is the difference between a compiler and an interpreter?",
       back: `
@@ -69,7 +73,7 @@ Interpreters execute code line-by-line (easier, slower). Compilers translate the
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Programming Evolution",
       front: "How have programming priorities changed over the years?",
       back: `
@@ -93,7 +97,7 @@ Programming priorities shifted from saving expensive hardware (small/fast code) 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Programs & Source Code",
       front: "What is the distinction between a 'program' (source code) and an 'executable'?",
       back: `
@@ -111,7 +115,7 @@ A "program" can mean the human-written source code or the machine-executable sof
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Software Design",
       front: "Why is program design and planning critical before writing code?",
       back: `
@@ -130,7 +134,7 @@ Good design is critical. It reduces the massive costs of debugging and maintenan
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "IDEs & Development",
       front: "What is an Integrated Development Environment (IDE) and why is it useful?",
       back: `
@@ -153,7 +157,7 @@ An IDE integrates editing, compiling, debugging, and execution into one interfac
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Hello World Program",
       front: "What is the standard first program in C++, and what does it do?",
       back: `
@@ -184,7 +188,7 @@ int main() {
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Development Cycle",
       front: "What is the typical development cycle for a C++ program?",
       back: `
@@ -209,7 +213,7 @@ The development cycle is: Edit → Compile → Link → Run. If a bug is found, 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Compile Errors",
       front: "What are compile errors, and how does the compiler help locate them?",
       back: `
@@ -231,7 +235,7 @@ Compilers detect syntax errors and usually report the line number. However, the 
     // ============================================================
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "C++ Program Structure",
       front: "What are the essential parts of a simple C++ program, like HELLO.CPP?",
       back: `
@@ -251,7 +255,7 @@ A C++ program consists of preprocessor directives (\`#include\`), a \`main()\` f
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Preprocessor",
       front: "What does the \`#include <iostream.h>\` directive do, and what is the preprocessor?",
       back: `
@@ -270,7 +274,7 @@ The preprocessor runs before the compiler. \`#include\` is a preprocessor instru
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "main() Function",
       front: "What is the \`main()\` function in C++?",
       back: `
@@ -291,7 +295,7 @@ The preprocessor runs before the compiler. \`#include\` is a preprocessor instru
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "cout Object",
       front: "What is \`cout\` and how is it used to print to the screen?",
       back: `
@@ -313,7 +317,7 @@ The preprocessor runs before the compiler. \`#include\` is a preprocessor instru
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Comments in C++",
       front: "What are the two types of comments in C++, and what is their purpose?",
       back: `
@@ -337,7 +341,7 @@ Use \`//\` for single-line comments and \`/* ... */\` for multi-line comments. A
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Comment Headers",
       front: "What information should be included in a comment header at the top of a file?",
       back: `
@@ -365,7 +369,7 @@ File headers should include the program name, file name, description, author, an
     // ============================================================
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Variables & Memory",
       front: "What is a variable in C++ and how is it stored in memory?",
       back: `
@@ -384,7 +388,7 @@ A variable is a named container in RAM that holds data. Defining its type tells 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Data Types & sizeof",
       front: "How do you determine the size (in bytes) of a data type on your computer?",
       back: `
@@ -412,7 +416,7 @@ Use \`sizeof(type)\` to determine the exact number of bytes a variable type occu
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "signed vs unsigned",
       front: "What is the difference between \`signed\` and \`unsigned\` integers?",
       back: `
@@ -436,7 +440,7 @@ By default, integers are \`signed\` (can hold negative or positive values). \`un
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Integer Overflow",
       front: "What happens when you put a number too large for a variable type into an integer?",
       back: `
@@ -458,7 +462,7 @@ Integer overflow happens when a value exceeds its maximum. Unsigned integers wra
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Variable Naming",
       front: "What are the rules and best practices for naming variables in C++?",
       back: `
@@ -482,7 +486,7 @@ Use clear, descriptive names like \`studentCount\` (camel-case). Avoid C++ keywo
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Constants",
       front: "What is the difference between \`#define\` and \`const\` for symbolic constants?",
       back: `
@@ -507,7 +511,7 @@ Always prefer \`const\` over \`#define\` for constants. \`const\` provides type 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "ASCII Characters",
       front: "How does C++ handle characters, and what is the ASCII standard?",
       back: `
@@ -529,7 +533,7 @@ The \`char\` type stores integers that represent characters according to the ASC
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Escape Characters",
       front: "What are escape characters in C++ and what are the common ones?",
       back: `
@@ -558,7 +562,7 @@ Escape sequences (starting with \`\\\`) let you format output with newlines (\`\
     // ============================================================
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Statements & Blocks",
       front: "What is a statement in C++, and what is a block (compound statement)?",
       back: `
@@ -589,7 +593,7 @@ A statement performs an action and ends with a semicolon. A block (\`{ ... }\`) 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Expressions & lvalue/rvalue",
       front: "What is an expression, and what is the difference between an lvalue and an rvalue?",
       back: `
@@ -610,7 +614,7 @@ An expression yields a value. lvalues have memory addresses (variables), rvalues
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Combined Assignment",
       front: "What are the combined assignment operators (e.g., \`+=\`, \`-=\`) in C++?",
       back: `
@@ -640,7 +644,7 @@ Combined assignment operators like \`+=\`, \`-=\`, and \`*=\` provide a concise 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Increment & Decrement",
       front: "What is the difference between prefix (\`++x\`) and postfix (\`x++\`) increment?",
       back: `
@@ -666,7 +670,7 @@ Both add 1 to the variable, but they differ in when the value is fetched for use
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Operator Precedence",
       front: "How does C++ determine which operation to perform first in a complex expression like \`5 + 3 * 8\`?",
       back: `
@@ -689,7 +693,7 @@ Multiplication/division/modulus have higher precedence than addition/subtraction
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Truth Values",
       front: "How does C++ treat truth (boolean) values?",
       back: `
@@ -711,7 +715,7 @@ In C++, 0 is false. Any non-zero value (usually 1) is true. This numeric truth s
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Relational Operators",
       front: "List the six relational operators in C++ and give an example of each.",
       back: `
@@ -744,7 +748,7 @@ The relational operators (\`==\`, \`!=\`, \`>\`, \`<\`, \`>=\`, \`<=\`) compare 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Dangling Else Problem",
       front: "What is the 'dangling else' problem in C++, and how is it fixed?",
       back: `
@@ -777,7 +781,7 @@ An \`else\` always attaches to the nearest preceding \`if\`. To avoid confusing 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Logical Operators",
       front: "What are the three logical operators in C++ and how do they work?",
       back: `
@@ -802,7 +806,7 @@ Logical operators (\`&&\`, \`||\`, \`!\`) allow you to combine multiple relation
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "if-else Statement",
       front: "What is the syntax of the \`if-else\` statement and how does it work?",
       back: `
@@ -838,7 +842,7 @@ if (redSoxScore > yankeeScore) {
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Common Bug: Assignment vs Equality",
       front: "What is the common bug caused by using \`=\` instead of \`==\` inside an \`if\` condition?",
       back: `
@@ -871,7 +875,7 @@ if (c == (a - b)) { // Tests if c is equal to (a-b).
     // ============================================================
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Loops",
       front: "What is a loop in C++ and why are they useful?",
       back: `
@@ -898,7 +902,7 @@ Loops repeat a block of code while a condition is true. C++ provides \`while\`, 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "while Loop",
       front: "What is the syntax and flow of a \`while\` loop in C++?",
       back: `
@@ -933,7 +937,7 @@ The \`while\` loop checks the condition *before* each execution. If the conditio
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "do-while Loop",
       front: "What is the syntax and flow of a \`do-while\` loop, and how does it differ from \`while\`?",
       back: `
@@ -970,7 +974,7 @@ do {
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "for Loop",
       front: "What is the syntax and flow of a \`for\` loop in C++?",
       back: `
@@ -1007,7 +1011,7 @@ The \`for\` loop combines initialization, condition, and increment in one line. 
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Infinite Loops",
       front: "What is an infinite loop, and how can you avoid it?",
       back: `
@@ -1044,7 +1048,7 @@ An infinite loop occurs when the condition never becomes false. Always verify th
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "break Statement",
       front: "What does the \`break\` statement do inside a loop?",
       back: `
@@ -1076,7 +1080,7 @@ for (int i = 0; i < 10; i++) {
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "continue Statement",
       front: "What does the \`continue\` statement do inside a loop, and how is it different from \`break\`?",
       back: `
@@ -1109,7 +1113,7 @@ for (int i = 0; i < 5; i++) {
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Nested Loops",
       front: "What are nested loops, and how do they work in C++?",
       back: `
@@ -1149,7 +1153,7 @@ A nested loop is a loop inside another loop. The inner loop completes all its it
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Loop Scope",
       front: "What is the scope of a loop control variable declared inside a \`for\` loop's initialization?",
       back: `
@@ -1182,7 +1186,7 @@ Variables declared in the \`for\` loop initialization have block scope limited t
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Which Loop to Use?",
       front: "When should you use a \`while\` loop versus a \`for\` loop versus a \`do-while\` loop?",
       back: `
@@ -1210,7 +1214,7 @@ Use \`for\` for counting, \`while\` for unknown iterations, and \`do-while\` for
     },
     {
       course: "CS110",
-      term: "Term 3",
+      term: "T3",
       topic: "Common Loop Mistakes",
       front: "What are the most common mistakes beginners make with loops in C++?",
       back: `
@@ -1239,9 +1243,6 @@ Most loop bugs are off-by-one errors, infinite loops, or logical errors with sem
       `
     }
   ],
-  
-  
-  
   // ============================================================
 // COMPLETE FLASHCARD DATASET – CH110, TERM 3
 // TOPICS 9, 10, 11, 12
