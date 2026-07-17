@@ -1,6 +1,1249 @@
 
 const flashcards = {
-  
+  // ============================================================
+// COMPLETE FLASHCARD DATASET – CS110 INTRODUCTION TO PROGRAMMING
+// MAIN TOPIC: NEW PROGRAMING FLASHCARDS
+// (Units 11, 12, 13, 14, 15 – Complete Intelligent Coverage)
+// ============================================================
+
+  "NEW PROGRAMING FLASHCARDS": [
+    // ============================================================
+    // UNIT 11: INTRODUCTION TO PROGRAMMING
+    // ============================================================
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Programming Fundamentals",
+      front: "What is computer programming?",
+      back: `
+## Insight
+Programming is the act of giving instructions to a computer. It is the bridge between human logic and machine operations.
+
+## Analysis
+- **Definition:** The process of designing and writing instructions (code) that a computer can execute to perform specific tasks.
+- **The Tool:** Programming languages (like Python, Java, C++, JavaScript) provide a structured way to write these instructions.
+- **The Goal:** To create software, control hardware, and solve problems by expressing logic in a form machines can process.
+
+## Key Takeaway
+Computer programming is the art of writing instructions (code) in a formal language to tell a computer exactly what to do.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Programming History",
+      front: "Describe the evolution of computer languages from machine language to high-level languages.",
+      back: `
+## Insight
+Early computers were programmed in machine language (1s and 0s). To make programming easier, we invented assemblers, and later, high-level languages that resemble human language.
+
+## Analysis
+- **Machine Language:** The most primitive instructions, represented by long strings of ones and zeroes. Extremely difficult for humans.
+- **Assemblers:** Invented to map machine instructions to human-readable mnemonics like \`ADD\` and \`MOV\`.
+- **High-Level Languages:** Evolved later (e.g., BASIC, COBOL, C++). These use words and sentences (e.g., \`Let I = 100\`).
+- **Translation:** High-level code is translated back into machine language by **Interpreters** (translates and executes on the spot) or **Compilers** (translates the entire program into an executable file).
+
+## Key Takeaway
+Programming languages evolved from cryptic machine code (1s and 0s) to assemblers (mnemonics) to high-level languages (human-readable words), making programming exponentially easier.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Compilers vs Interpreters",
+      front: "What is the difference between a compiler and an interpreter?",
+      back: `
+## Insight
+Both convert human-readable source code into machine code, but they do it at different times and in different ways.
+
+## Analysis
+- **Interpreter:**
+  - Translates and executes the program line-by-line as it reads it.
+  - **Pros:** Easy for programmers to work with (immediate feedback).
+  - **Cons:** Slower execution because translation happens every time the program runs.
+- **Compiler:**
+  - Translates the entire source code into an intermediary form (object file) all at once.
+  - A linker then turns the object file into an executable program.
+  - **Pros:** Much faster execution once compiled (translation is already done).
+  - **Cons:** Requires extra steps (compiling and linking).
+- **Distribution:** Compiled languages (like C++) allow you to distribute the executable to people who don't have the compiler. Interpreted languages require the interpreter to be installed.
+
+## Key Takeaway
+Interpreters execute code line-by-line (easier, slower). Compilers translate the whole program at once into a standalone executable (harder to set up, much faster to run).
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Programming Evolution",
+      front: "How have programming priorities changed over the years?",
+      back: `
+## Insight
+In the past, memory and processing power were expensive, so code had to be small and fast. Today, hardware is cheap, but programmer time is expensive.
+
+## Analysis
+- **Old Priorities:**
+  - Write short code.
+  - Execute quickly.
+  - Conserve expensive memory.
+- **New Priorities:**
+  - **Maintainability:** Code must be easy to read and modify.
+  - **Cost-Effective:** The cost of a programmer's time now far outweighs the cost of hardware.
+  - **Usability:** Programs must have user-friendly interfaces for non-experts.
+- **Result:** Well-written, easy-to-maintain code is highly valued.
+
+## Key Takeaway
+Programming priorities shifted from saving expensive hardware (small/fast code) to saving expensive programmer time (readable/maintainable code).
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Programs & Source Code",
+      front: "What is the distinction between a 'program' (source code) and an 'executable'?",
+      back: `
+## Insight
+The term "program" is often used ambiguously. It can refer to the human-readable instructions or the finished software that runs on a computer.
+
+## Analysis
+- **Source Code:** The set of written instructions created by the programmer (e.g., \`main.cpp\`). It is human-readable but cannot be run directly by the computer.
+- **Executable:** The finished piece of software that the computer can run (e.g., \`main.exe\` on Windows). It is produced by the compiler/linker.
+- **The Process:** Source code is translated (compiled) into an executable program.
+
+## Key Takeaway
+A "program" can mean the human-written source code or the machine-executable software. Compilers turn the former into the latter.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Software Design",
+      front: "Why is program design and planning critical before writing code?",
+      back: `
+## Insight
+C++ requires thorough design. While simple problems need little design, complex professional problems demand it. A good design saves massive costs on debugging and maintenance.
+
+## Analysis
+- **The Statistic:** Fully 90% of software costs are debugging and maintenance.
+- **The First Question:** "What is the problem I'm trying to solve?"
+- **The Second Question:** "Can this be solved without writing custom software?" (Reuse, pen/paper, off-the-shelf).
+- **The Benefit:** Good design leads to fewer bugs, easier maintenance, and projects that finish on time and on budget.
+
+## Key Takeaway
+Good design is critical. It reduces the massive costs of debugging and maintenance and ensures the software actually solves the intended problem.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "IDEs & Development",
+      front: "What is an Integrated Development Environment (IDE) and why is it useful?",
+      back: `
+## Insight
+An IDE is a "one-stop-shop" for programming. It combines all the tools a programmer needs into a single application.
+
+## Analysis
+- **Definition:** A software application that provides a comprehensive interface for writing, compiling, and executing programs.
+- **Key Components:**
+  - **Code Editor:** For writing source code.
+  - **Compiler/Interpreter:** To translate the code.
+  - **Debugger:** To find and fix errors.
+  - **GUI Builder:** (sometimes) For designing interfaces.
+- **Benefits:** Simplifies the programming process, reduces the complexity of switching between different tools, and enhances productivity.
+- **Examples:** Code::Blocks, Visual Studio Code, Dev-C++, NetBeans.
+
+## Key Takeaway
+An IDE integrates editing, compiling, debugging, and execution into one interface, making development significantly easier and more productive.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Hello World Program",
+      front: "What is the standard first program in C++, and what does it do?",
+      back: `
+## Insight
+The "Hello World" program is a time-honored tradition. It prints text to the screen and serves as an introduction to the development cycle.
+
+## Analysis
+- **Code:**
+\`\`\`cpp
+#include <iostream.h>
+int main() {
+  cout << "Hello World!\n";
+  return 0;
+}
+\`\`\`
+- **Steps:**
+  1. Type the code exactly (pay attention to punctuation like \`<<\` and semicolons).
+  2. Save the file (usually with a \`.cpp\` extension).
+  3. Compile it.
+  4. Link it (if not automatic).
+  5. Run it.
+- **Output:** It prints "Hello World!" to the screen.
+- **Warning:** The line numbers in listings are for reference only and should not be typed into your editor.
+
+## Key Takeaway
+"Hello World" is the traditional introductory program used to get comfortable with the development cycle of writing, compiling, and running C++ code.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Development Cycle",
+      front: "What is the typical development cycle for a C++ program?",
+      back: `
+## Insight
+The cycle is iterative: Write, Compile, Link, Run. If there are errors (bugs), you fix them and repeat the cycle.
+
+## Analysis
+- **Steps:**
+  1. **Write:** Create/edit the source code (e.g., \`HELLO.CPP\`).
+  2. **Compile:** Translate source code into an object file.
+  3. **Link:** Combine object files into a single executable program.
+  4. **Run:** Execute the program.
+- **Errors (Bugs):**
+  - Can cause the compile to fail.
+  - Can cause the link to fail.
+  - Can appear only when you run the program.
+- **The Fix:** Edit the source code to fix the error, then recompile, relink, and rerun.
+
+## Key Takeaway
+The development cycle is: Edit → Compile → Link → Run. If a bug is found, you must go back to the Edit step and repeat the process.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Compile Errors",
+      front: "What are compile errors, and how does the compiler help locate them?",
+      back: `
+## Insight
+Compile-time errors are usually typos or minor mistakes. Good compilers point you to the exact line where the mistake was made.
+
+## Analysis
+- **Common Causes:** Typos, missing semicolons, unclosed braces, misspelled keywords.
+- **Compiler Messages:** Tell you the file and line number of the problem (e.g., \`Hello.cpp, line 5: Compound statement missing terminating }\`).
+- **Important Note:** The error message might point to the line *after* the actual mistake (e.g., missing a closing brace on line 4 might be reported on line 5). The error gets you to the general vicinity.
+
+## Key Takeaway
+Compilers detect syntax errors and usually report the line number. However, the error may be slightly before the reported line, so check the surrounding code.
+      `
+    },
+
+    // ============================================================
+    // UNIT 12: THE PARTS OF A C++ PROGRAM
+    // ============================================================
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "C++ Program Structure",
+      front: "What are the essential parts of a simple C++ program, like HELLO.CPP?",
+      back: `
+## Insight
+A basic C++ program has several key parts: preprocessor directives, a main function, and statements.
+
+## Analysis
+- **Preprocessor Directive (\`#include\`):** Instructs the compiler to include a header file (e.g., \`iostream.h\`). The \`#\` symbol signals the preprocessor.
+- **main() Function:** The entry point of every C++ program. It is called automatically when the program starts.
+- **Braces (\`{} \`):** Mark the beginning and end of the function body.
+- **Statement (\`cout << "Hello World!\\n";\`):** Uses the \`cout\` object to print text to the screen.
+- **Return Statement (\`return 0;\`):** Ends the program and returns a value (often 0 to indicate success) to the operating system.
+
+## Key Takeaway
+A C++ program consists of preprocessor directives (\`#include\`), a \`main()\` function, statements within braces, and a \`return 0;\` statement.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Preprocessor",
+      front: "What does the \`#include <iostream.h>\` directive do, and what is the preprocessor?",
+      back: `
+## Insight
+The preprocessor runs before the compiler. \`#include\` is a preprocessor instruction that tells it to insert the contents of another file into your source code.
+
+## Analysis
+- **Preprocessor:** A program that runs before the compiler. It reads through your source code looking for lines that start with \`#\`.
+- **\`#include\`:** Instructs the preprocessor to find and read a specific file.
+- **Angle Brackets (\`< >\`):** Tell the preprocessor to look for the file in the usual system directories (e.g., where the compiler keeps its standard library files).
+- **\`iostream.h\`:** Stands for Input-Output Stream. It contains definitions for \`cout\` (used to print to the screen) and \`cin\` (used to read input).
+
+## Key Takeaway
+\`#include <iostream.h>\` tells the preprocessor to insert the Input-Output Stream library into your code, which is required for using \`cout\` and \`cin\`.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "main() Function",
+      front: "What is the \`main()\` function in C++?",
+      back: `
+## Insight
+\`main()\` is the most important function in a C++ program. It is the starting point.
+
+## Analysis
+- **Definition:** A function is a block of code that performs one or more actions. \`main()\` is the function where the program begins.
+- **Special Nature:** It is automatically called when your program starts. Other functions are usually called by \`main()\`.
+- **Return Type:** \`main()\` must state what kind of value it returns. In standard C++, it returns an integer (\`int\`) to the operating system.
+  - Returning \`0\` usually signals that the program ran successfully.
+  - Returning a non-zero value often signals an error.
+- **Braces:** The opening brace \`{\` begins the body of the function, and the closing brace \`}\` ends it.
+
+## Key Takeaway
+\`main()\` is the entry point for every C++ program. It should return an \`int\` (usually \`0\` for success) and contains the program's core logic.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "cout Object",
+      front: "What is \`cout\` and how is it used to print to the screen?",
+      back: `
+## Insight
+\`cout\` is the standard C++ object for outputting text and data to the console (screen).
+
+## Analysis
+- **Definition:** \`cout\` (pronounced "see out") stands for character output.
+- **The Insertion Operator (\`<<\`):** Also called the output redirection operator. It sends data from the right side to \`cout\` on the left side.
+- **Usage:** \`cout << "Your text here";\`
+- **Manipulators:**
+  - **\`\\n\`:** Inserts a newline character.
+  - **\`endl\`:** Inserts a newline and flushes the output buffer (often used to ensure text is printed immediately).
+- **Concatenation:** You can chain multiple things to \`cout\` using multiple \`<<\` operators. Example: \`cout << "Here is 5: " << 5 << "\\n";\`
+
+## Key Takeaway
+\`cout\` is the output stream object used with the insertion operator \`<<\` to print text, variables, and calculated values to the screen.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Comments in C++",
+      front: "What are the two types of comments in C++, and what is their purpose?",
+      back: `
+## Insight
+Comments are text ignored by the compiler, meant for humans reading the code. They explain *why* the code does something, not just *what* it does.
+
+## Analysis
+- **C++-Style Comments (\`//\`):**
+  - Tells the compiler to ignore everything that follows it on that same line.
+  - Introduced in C++ (not in standard C).
+- **C-Style Comments (\`/* ... */\`):**
+  - Tells the compiler to ignore everything between the \`/*\` and \`*/\`.
+  - Can span multiple lines.
+  - Originated in the C language.
+- **Purpose:** To explain the program's logic, identify the author, describe functions, and make the code maintainable.
+- **Golden Rule:** Comments should say **why** it is happening, not what is happening (the code itself shows that).
+
+## Key Takeaway
+Use \`//\` for single-line comments and \`/* ... */\` for multi-line comments. Always explain *why* the code is written, not *what* it does.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Comment Headers",
+      front: "What information should be included in a comment header at the top of a file?",
+      back: `
+## Insight
+A header comment block at the top of a file acts as a roadmap and history log for the program.
+
+## Analysis
+**Essential Information:**
+- Program/Function name.
+- File name.
+- Description of what the program does.
+- Author's name.
+- Revision history (notes on changes made).
+- Compilers/linkers/tools used.
+- Additional notes as needed.
+- **Crucial Note:** Headers must be kept up-to-date! An outdated, misleading header is worse than no header at all.
+
+## Key Takeaway
+File headers should include the program name, file name, description, author, and revision history to guide developers. Always keep this information current.
+      `
+    },
+
+    // ============================================================
+    // UNIT 13: VARIABLES AND CONSTANTS
+    // ============================================================
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Variables & Memory",
+      front: "What is a variable in C++ and how is it stored in memory?",
+      back: `
+## Insight
+A variable is a named location in your computer's memory (RAM) where you can store and retrieve data.
+
+## Analysis
+- **Physical Representation:** Memory can be viewed as a series of "cubbyholes" (bytes), each with a unique number called a **memory address**.
+- **Variable Name:** A label (e.g., \`myAge\`) attached to one or more cubbyholes. It lets you access the data without knowing the exact memory address.
+- **Definition:** You must tell the compiler the variable's **type** (e.g., \`int\`, \`char\`). The type tells the compiler how many bytes to reserve (e.g., an \`int\` might be 2 or 4 bytes).
+- **RAM:** When you run your program, it is loaded into RAM, and variables are created there.
+
+## Key Takeaway
+A variable is a named container in RAM that holds data. Defining its type tells the compiler how much memory (how many bytes) to reserve for it.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Data Types & sizeof",
+      front: "How do you determine the size (in bytes) of a data type on your computer?",
+      back: `
+## Insight
+You don't have to guess. C++ provides the \`sizeof()\` operator to tell you exactly how many bytes a type consumes on your specific system.
+
+## Analysis
+- **The Operator:** \`sizeof(type)\`
+- **Example:**
+\`\`\`cpp
+cout << "Size of int: " << sizeof(int) << " bytes.\\n";
+\`\`\`
+- **Common Sizes (Typical 32-bit systems):**
+  - \`char\`: 1 byte
+  - \`short int\`: 2 bytes
+  - \`int\`: 4 bytes (or 2 on older systems)
+  - \`long int\`: 4 bytes
+  - \`float\`: 4 bytes
+  - \`double\`: 8 bytes
+- **Why it matters:** The size determines the range of values the variable can hold.
+
+## Key Takeaway
+Use \`sizeof(type)\` to determine the exact number of bytes a variable type occupies on your computer.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "signed vs unsigned",
+      front: "What is the difference between \`signed\` and \`unsigned\` integers?",
+      back: `
+## Insight
+By default, integers are \`signed\` (can hold negative or positive values). \`unsigned\` integers can only hold positive values (including zero), but they can hold a larger maximum positive value.
+
+## Analysis
+- **Signed Integers:**
+  - Can represent negative and positive numbers.
+  - Half the range is dedicated to negative numbers.
+  - Example: a \`signed short\` (2 bytes) ranges from -32,768 to 32,767.
+- **Unsigned Integers:**
+  - Can only represent zero and positive numbers.
+  - The largest number is twice as big as the max positive signed number (because no bits are reserved for the sign).
+  - Example: an \`unsigned short\` (2 bytes) ranges from 0 to 65,535.
+- **Rule of Thumb:** Use \`unsigned\` when you know the value should never be negative (e.g., age, length).
+
+## Key Takeaway
+\`signed\` integers hold negative and positive numbers. \`unsigned\` integers hold only positive numbers (and zero) but have twice the positive range.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Integer Overflow",
+      front: "What happens when you put a number too large for a variable type into an integer?",
+      back: `
+## Insight
+When an integer exceeds its maximum value, it "wraps around" to the opposite end of its range. This is called overflow.
+
+## Analysis
+- **Unsigned Overflow:** (Like a car odometer)
+  - An \`unsigned short\` (max 65535) incremented from 65535 wraps to 0.
+  - Example: 65535 → 0 → 1.
+- **Signed Overflow:**
+  - A \`signed short\` (max 32767) incremented wraps to the largest negative number.
+  - Example: 32767 → -32768 → -32767.
+- **The Bug:** Overflow does not crash the program. It silently produces completely incorrect results, making it a dangerous and sneaky bug.
+
+## Key Takeaway
+Integer overflow happens when a value exceeds its maximum. Unsigned integers wrap to 0, while signed integers wrap to the largest negative number. Always ensure your data type is large enough for the expected values.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Variable Naming",
+      front: "What are the rules and best practices for naming variables in C++?",
+      back: `
+## Insight
+Variable names are arbitrary, but good names make code understandable. C++ is case-sensitive, and certain keywords are reserved.
+
+## Analysis
+- **Rules:**
+  - Cannot contain spaces.
+  - Cannot be C++ keywords (e.g., \`int\`, \`if\`, \`while\`).
+  - Case-sensitive (\`myAge\`, \`myage\`, \`MYAGE\` are all different).
+- **Best Practices:**
+  - Use **meaningful, expressive names** (e.g., \`studentsPerClass\` instead of \`s\`).
+  - **Camel-Case Notation:** Start with lowercase, capitalize subsequent words (e.g., \`myCar\`, \`theQuickBrownFox\`).
+  - Avoid single-letter names except for temporary loops (e.g., \`i\`, \`x\`).
+- **Hungarian Notation (Advanced):** Prefixing variable names with type indicators (e.g., \`iAge\` for integer). This is more common in C but less enforced in modern C++.
+
+## Key Takeaway
+Use clear, descriptive names like \`studentCount\` (camel-case). Avoid C++ keywords and remember that C++ is case-sensitive.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Constants",
+      front: "What is the difference between \`#define\` and \`const\` for symbolic constants?",
+      back: `
+## Insight
+Both define constants, but \`const\` is a modern, type-safe way, while \`#define\` is an older preprocessor macro.
+
+## Analysis
+- **\`#define\` (Preprocessor directive):**
+  - Example: \`#define STUDENTS_PER_CLASS 15\`
+  - It does a simple text substitution (finds \`STUDENTS_PER_CLASS\` and replaces it with \`15\`).
+  - No type checking. The compiler never sees the constant name.
+  - Considered obsolete for defining constants in C++.
+- **\`const\` (Modern C++):**
+  - Example: \`const unsigned short int STUDENTS_PER_CLASS = 15;\`
+  - Declares a constant with a specific type.
+  - The compiler enforces type rules, preventing bugs.
+  - **Must be initialized** when declared and cannot be changed later.
+
+## Key Takeaway
+Always prefer \`const\` over \`#define\` for constants. \`const\` provides type safety and better integration with the compiler's error-checking.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "ASCII Characters",
+      front: "How does C++ handle characters, and what is the ASCII standard?",
+      back: `
+## Insight
+Computers only understand numbers. The ASCII (American Standard Code for Information Interchange) standard maps numbers to letters, punctuation, and symbols.
+
+## Analysis
+- **\`char\` Type:** Typically 1 byte (8 bits), capable of holding 256 different values (0-255).
+- **ASCII Encoding:**
+  - Assigns specific numbers to characters.
+  - Example: 'a' is 97, 'A' is 65, '0' is 48.
+  - Letters and punctuation are just numbers to the computer.
+- **Implication:** A \`char\` variable can be treated as a small number or a character. \`cout << (char) 97;\` prints the letter 'a'.
+- **Extended ASCII:** Values 128-255 are often used for special symbols or international characters.
+
+## Key Takeaway
+The \`char\` type stores integers that represent characters according to the ASCII standard (e.g., 'a' is 97). This is how the computer interprets text.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Escape Characters",
+      front: "What are escape characters in C++ and what are the common ones?",
+      back: `
+## Insight
+Escape sequences begin with a backslash (\`\\\`) and change the meaning of the following character, allowing you to print special formatting characters that can't be typed directly.
+
+## Analysis
+- **Escape Character:** \`\\\`
+- **Common Escape Sequences:**
+  - **\`\\n\`:** Newline (moves cursor to the start of the next line).
+  - **\`\\t\`:** Tab (inserts a horizontal tab).
+  - **\`\\b\`:** Backspace.
+  - **\`\\"\`:** Double quote (used to print a quotation mark inside a string).
+  - **\`\\'\`:** Single quote.
+  - **\`\\?\`:** Question mark.
+  - **\`\\\\\`:** Backslash (prints a single backslash).
+- **Usage:** \`cout << "Hello\\nWorld";\` prints \`Hello\` on one line and \`World\` on the next.
+
+## Key Takeaway
+Escape sequences (starting with \`\\\`) let you format output with newlines (\`\\n\`), tabs (\`\\t\`), and special characters (like quotes \`\\"\`).
+      `
+    },
+
+    // ============================================================
+    // UNIT 14: EXPRESSIONS AND STATEMENTS
+    // ============================================================
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Statements & Blocks",
+      front: "What is a statement in C++, and what is a block (compound statement)?",
+      back: `
+## Insight
+A statement is the fundamental unit of execution. A block is a group of statements treated as a single statement.
+
+## Analysis
+- **Statement:** Controls the sequence of execution, evaluates an expression, or does nothing (null statement).
+  - All statements end with a semicolon (;).
+  - Example: \`x = a + b;\`
+- **Null Statement:** Just a semicolon \`;\`. It does nothing.
+- **Block (Compound Statement):**
+  - A group of statements enclosed by opening and closing braces (\`{ }\`).
+  - Can be used anywhere a single statement is allowed.
+  - **No semicolon** after the closing brace.
+  - Example:
+\`\`\`cpp
+{
+  temp = a;
+  a = b;
+  b = temp;
+}
+\`\`\`
+
+## Key Takeaway
+A statement performs an action and ends with a semicolon. A block (\`{ ... }\`) groups multiple statements into one, allowing complex logic in places that expect a single statement.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Expressions & lvalue/rvalue",
+      front: "What is an expression, and what is the difference between an lvalue and an rvalue?",
+      back: `
+## Insight
+Anything that evaluates to a value is an expression. \`lvalue\` stands for "left value" (can appear on the left of an assignment), and \`rvalue\` stands for "right value" (can appear on the right).
+
+## Analysis
+- **Expression:** Returns a value. Examples:
+  - \`3 + 2\` returns 5.
+  - \`x = a + b\` returns the value of \`x\` after assignment.
+- **lvalue:** An operand that can legally appear on the left side of an assignment operator. It represents a memory location (e.g., a variable). Example: \`x\`, \`myAge\`.
+- **rvalue:** An operand that can legally appear on the right side of an assignment operator. It represents a value. Example: \`35\`, \`a + b\`.
+- **Golden Rule:** All lvalues are rvalues, but not all rvalues are lvalues (e.g., \`5\` is an rvalue but not an lvalue). You can't write \`5 = x;\`.
+
+## Key Takeaway
+An expression yields a value. lvalues have memory addresses (variables), rvalues are just values (literals). Assignments require an lvalue on the left.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Combined Assignment",
+      front: "What are the combined assignment operators (e.g., \`+=\`, \`-=\`) in C++?",
+      back: `
+## Insight
+Combined assignment operators are shorthand for performing an operation and an assignment in a single step.
+
+## Analysis
+- **Purpose:** To modify the value of a variable using its current value.
+- **Verbose Method:** \`myAge = myAge + 2;\`
+- **Shorthand Method:** \`myAge += 2;\` (read as "myAge plus-equals 2").
+- **Available Operators:**
+  - \`+=\` (addition)
+  - \`-=\` (subtraction)
+  - \`*=\` (multiplication)
+  - \`/=\` (division)
+  - \`%=\` (modulus)
+- **Example:**
+\`\`\`cpp
+int x = 10;
+x += 5; // x becomes 15
+x *= 2; // x becomes 30
+\`\`\`
+
+## Key Takeaway
+Combined assignment operators like \`+=\`, \`-=\`, and \`*=\` provide a concise way to update a variable's value by applying an operation to its current value.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Increment & Decrement",
+      front: "What is the difference between prefix (\`++x\`) and postfix (\`x++\`) increment?",
+      back: `
+## Insight
+Both add 1 to the variable, but they differ in when the value is fetched for use in an expression. Prefix increments first, then fetches. Postfix fetches first, then increments.
+
+## Analysis
+- **Prefix Increment (\`++x\`):**
+  - Semantics: "Increment the value, and then fetch it."
+  - The variable is increased by 1 before the expression is evaluated.
+  - Example: \`a = ++x;\` (if \`x=5\`, \`x\` becomes 6, then \`a\` is set to 6).
+- **Postfix Increment (\`x++\`):**
+  - Semantics: "Fetch the value, and then increment the original."
+  - The original value is used in the expression, and then the variable is increased.
+  - Example: \`a = x++;\` (if \`x=5\`, \`a\` is set to 5, then \`x\` becomes 6).
+- **Decrement (\`--\`):** Works exactly the same way for subtraction.
+  - Prefix: \`--x\` (decrement, then fetch).
+  - Postfix: \`x--\` (fetch, then decrement).
+
+## Key Takeaway
+\`++x\` increments before use. \`x++\` increments after use. The same rule applies to decrement (\`--\`). Be careful when using them inside complex expressions.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Operator Precedence",
+      front: "How does C++ determine which operation to perform first in a complex expression like \`5 + 3 * 8\`?",
+      back: `
+## Insight
+C++ uses a strict set of precedence rules to determine the order of operations. Multiplication and division have higher precedence than addition and subtraction.
+
+## Analysis
+- **Precedence Rules:**
+  - \`* / %\` (Multiplication, Division, Modulus) are evaluated before \`+ -\` (Addition, Subtraction).
+  - Example: \`5 + 3 * 8\` is evaluated as \`5 + (3*8) = 29\`, not \`(5+3)*8 = 64\`.
+- **Left-to-Right for Same Precedence:** Operators of equal precedence are evaluated left to right.
+- **Changing Precedence:**
+  - Use parentheses \`( )\` to force a specific order.
+  - Example: \`(5 + 3) * 8\` forces the addition first, evaluating to 64.
+- **Readability:** Complex nested parentheses can make code unreadable. It's better to break complex expressions into multiple statements using temporary variables.
+
+## Key Takeaway
+Multiplication/division/modulus have higher precedence than addition/subtraction. Use parentheses to override precedence and make your intent clear.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Truth Values",
+      front: "How does C++ treat truth (boolean) values?",
+      back: `
+## Insight
+C++ does not have a built-in boolean type in its early standard (though it does now with \`bool\`). However, numerically, zero means false, and any nonzero value means true.
+
+## Analysis
+- **Zero is False:** The integer \`0\` represents the logical value \`false\`.
+- **Non-Zero is True:** Any integer other than \`0\` represents \`true\` (usually represented by \`1\`).
+- **Relational Operators:** Expressions like \`(x == 5)\` return \`1\` if true and \`0\` if false.
+- **Implications:**
+  - \`if (x)\` is shorthand for \`if (x != 0)\`.
+  - \`if (!x)\` is shorthand for \`if (x == 0)\`.
+- **Best Practice:** While \`if (x)\` is legal, using \`if (x != 0)\` is generally clearer and less error-prone.
+
+## Key Takeaway
+In C++, 0 is false. Any non-zero value (usually 1) is true. This numeric truth system is the basis for all conditional logic.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Relational Operators",
+      front: "List the six relational operators in C++ and give an example of each.",
+      back: `
+## Insight
+Relational operators compare two values. They evaluate to 1 (true) if the relationship holds, and 0 (false) if it doesn't.
+
+## Analysis
+- **Equals (\`==\`):** Tests if two values are equal.
+  - \`10 == 5\` → false (0).
+  - \`5 == 5\` → true (1).
+- **Not Equals (\`!=\`):** Tests if two values are not equal.
+  - \`10 != 5\` → true (1).
+  - \`5 != 5\` → false (0).
+- **Greater Than (\`>\`):** Tests if the left is greater than the right.
+  - \`10 > 5\` → true (1).
+  - \`5 > 10\` → false (0).
+- **Less Than (\`<\`):** Tests if the left is less than the right.
+  - \`10 < 5\` → false (0).
+  - \`5 < 10\` → true (1).
+- **Greater Than or Equal To (\`>=\`):**
+  - \`10 >= 5\` → true (1).
+  - \`5 >= 5\` → true (1).
+- **Less Than or Equal To (\`<=\`):**
+  - \`10 <= 5\` → false (0).
+  - \`5 <= 5\` → true (1).
+
+## Key Takeaway
+The relational operators (\`==\`, \`!=\`, \`>\`, \`<\`, \`>=\`, \`<=\`) compare values and return 1 (true) or 0 (false). Never confuse the assignment operator (\`=\`) with the equality operator (\`==\`) – it's a very common bug!
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Dangling Else Problem",
+      front: "What is the 'dangling else' problem in C++, and how is it fixed?",
+      back: `
+## Insight
+The "dangling else" problem occurs when an \`else\` clause is accidentally attached to a nested \`if\` statement rather than the outer \`if\`. It is fixed by using braces to define the scope clearly.
+
+## Analysis
+- **The Problem:**
+\`\`\`cpp
+if (x > 10)
+  if (x > 100)
+    cout << "More than 100";
+else // This else attaches to the inner if!
+  cout << "Less than 10";
+\`\`\`
+- **Why it happens:** The compiler ignores indentation and follows the rule: an \`else\` attaches to the nearest unmatched \`if\`.
+- **The Fix:** Use braces to explicitly define the scope of the outer \`if\`.
+\`\`\`cpp
+if (x > 10) {
+  if (x > 100)
+    cout << "More than 100";
+} else { // Now this else attaches to the outer if
+  cout << "Less than 10";
+}
+\`\`\`
+
+## Key Takeaway
+An \`else\` always attaches to the nearest preceding \`if\`. To avoid confusing bugs, always use braces \`{ }\` to explicitly define the scope of your nested \`if\` statements.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Logical Operators",
+      front: "What are the three logical operators in C++ and how do they work?",
+      back: `
+## Insight
+Logical operators (\`&&\`, \`||\`, \`!\`) allow you to combine multiple relational tests into a single condition.
+
+## Analysis
+- **Logical AND (\`&&\`):**
+  - Evaluates to true ONLY IF BOTH operands are true.
+  - Example: \`(x == 5 && y == 5)\` is true only if both \`x\` and \`y\` are 5.
+- **Logical OR (\`||\`):**
+  - Evaluates to true IF AT LEAST ONE of the operands is true.
+  - Example: \`(x == 5 || y == 5)\` is true if \`x\` is 5, or \`y\` is 5, or both.
+- **Logical NOT (\`!\`):**
+  - Reverses the truth value. \`!x\` is true if \`x\` is false.
+  - Example: \`if (!x)\` runs if \`x\` is zero.
+- **Precedence:** Parentheses are highly recommended to make the order of evaluation clear (e.g., \`if ((x > 5) && (y > 5 || z > 5))\`).
+
+## Key Takeaway
+\`&&\` requires both conditions to be true. \`||\` requires only one. \`!\` flips true to false. Use parentheses to make complex logical tests readable.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "if-else Statement",
+      front: "What is the syntax of the \`if-else\` statement and how does it work?",
+      back: `
+## Insight
+The \`if-else\` statement provides a choice: execute one block of code if a condition is true, and a different block if it is false.
+
+## Analysis
+- **Syntax:**
+\`\`\`cpp
+if (expression) {
+  // Statements to run if expression is true
+} else {
+  // Statements to run if expression is false
+}
+\`\`\`
+- **How it works:**
+  - The \`expression\` is evaluated.
+  - If it is non-zero (true), the code inside the first block is executed.
+  - If it is zero (false), the code inside the \`else\` block is executed.
+- **Single Statement Shortcut:** If only one statement is in the block, you can omit the braces (though it is risky for nesting).
+- **Example:**
+\`\`\`cpp
+if (redSoxScore > yankeeScore) {
+  cout << "Go Sox!";
+} else {
+  cout << "Go Yanks!";
+}
+\`\`\`
+
+## Key Takeaway
+\`if-else\` lets your program branch: one path for true, a different path for false. It is the fundamental decision-making tool in C++.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Common Bug: Assignment vs Equality",
+      front: "What is the common bug caused by using \`=\` instead of \`==\` inside an \`if\` condition?",
+      back: `
+## Insight
+Using \`=\` (assignment) instead of \`==\` (equality) inside an \`if\` statement is one of the most common C++ mistakes. It assigns the right value to the left variable and often makes the condition always true.
+
+## Analysis
+- **The Bug:**
+\`\`\`cpp
+if (c = (a - b)) { // WRONG! This assigns (a-b) to c, then checks if c is non-zero.
+  // This block will run if a-b is not 0.
+}
+\`\`\`
+- **Why it happens:** The compiler sees this as syntactically correct. It evaluates \`(a - b)\`, assigns it to \`c\`, and then tests the result of the assignment (which is the value of \`c\`). If the result is non-zero, the condition is true.
+- **The Intended Code:**
+\`\`\`cpp
+if (c == (a - b)) { // Tests if c is equal to (a-b).
+  // Runs only if they are equal.
+}
+\`\`\`
+- **Prevention:** Some compilers warn about this. Always double-check your conditions, and consider writing \`if (0 == c)\` (Yoda conditions) to catch the error (since you can't assign to a constant).
+
+## Key Takeaway
+\`=\` is assignment, \`==\` is comparison. Accidentally using \`=\` inside an \`if\` condition is a common and sneaky bug that usually makes the condition evaluate to true.
+      `
+    },
+
+    // ============================================================
+    // UNIT 15: LOOPS – ITERATION IN C++
+    // ============================================================
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Loops",
+      front: "What is a loop in C++ and why are they useful?",
+      back: `
+## Insight
+A loop allows a block of code to be executed repeatedly based on a condition. They are essential for automating repetitive tasks and processing large amounts of data.
+
+## Analysis
+- **Definition:** A loop is a control structure that repeats a statement or block of statements multiple times.
+- **Why use loops?**
+  - Avoid writing the same code over and over (DRY principle).
+  - Process arrays, lists, or user input efficiently.
+  - Perform calculations that require many iterations.
+- **Three types in C++:**
+  1. \`while\` loop – checks condition at the beginning.
+  2. \`do-while\` loop – checks condition at the end (always runs at least once).
+  3. \`for\` loop – combines initialization, condition, and increment in one line.
+- **Common Terms:**
+  - **Iteration:** One execution of the loop body.
+  - **Loop Control Variable:** The variable that changes each iteration and eventually makes the condition false.
+
+## Key Takeaway
+Loops repeat a block of code while a condition is true. C++ provides \`while\`, \`do-while\`, and \`for\` loops to handle different iteration needs.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "while Loop",
+      front: "What is the syntax and flow of a \`while\` loop in C++?",
+      back: `
+## Insight
+A \`while\` loop evaluates its condition at the start. If the condition is true, it executes the body; then it checks the condition again. It repeats until the condition becomes false.
+
+## Analysis
+- **Syntax:**
+\`\`\`cpp
+while (condition) {
+  // Body of the loop (statements to repeat)
+}
+\`\`\`
+- **Flow Chart:**
+  1. Evaluate \`condition\`.
+  2. If true → execute body.
+  3. Go back to step 1.
+  4. If false → skip the loop and continue with the next statement after the loop.
+- **Critical Rule:** The condition must eventually become false, or the loop will run forever (infinite loop). Something inside the body must change the loop control variable.
+- **Example:**
+\`\`\`cpp
+int i = 0;
+while (i < 5) {
+  cout << i << endl;
+  i++; // Without this, the loop would never end!
+}
+\`\`\`
+
+## Key Takeaway
+The \`while\` loop checks the condition *before* each execution. If the condition is initially false, the body never runs.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "do-while Loop",
+      front: "What is the syntax and flow of a \`do-while\` loop, and how does it differ from \`while\`?",
+      back: `
+## Insight
+A \`do-while\` loop checks its condition at the *end* of the body. This guarantees that the body runs at least once, even if the condition is false initially.
+
+## Analysis
+- **Syntax:**
+\`\`\`cpp
+do {
+  // Body of the loop (runs at least once)
+} while (condition);
+\`\`\`
+- **Flow Chart:**
+  1. Execute the body.
+  2. Evaluate \`condition\`.
+  3. If true → go back to step 1.
+  4. If false → exit the loop.
+- **Key Difference from \`while\`:**
+  - \`while\`: condition checked *before* execution → may run zero times.
+  - \`do-while\`: condition checked *after* execution → always runs at least once.
+- **Example:**
+\`\`\`cpp
+int x = 10;
+do {
+  cout << "This will print once even though 10 is not < 5.";
+  x++;
+} while (x < 5);
+\`\`\`
+
+## Key Takeaway
+\`do-while\` executes the body first, then checks the condition. Use it when you know the block must execute at least once (e.g., displaying a menu before reading user choice).
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "for Loop",
+      front: "What is the syntax and flow of a \`for\` loop in C++?",
+      back: `
+## Insight
+A \`for\` loop is the most compact loop structure. It gathers the initialization, condition, and increment into a single line, making it ideal for counting and iterating over known ranges.
+
+## Analysis
+- **Syntax:**
+\`\`\`cpp
+for (initialization; condition; increment) {
+  // Body of the loop
+}
+\`\`\`
+- **Components:**
+  1. **Initialization:** Runs once before the loop starts. Declares and sets the loop control variable (e.g., \`int i = 0;\`).
+  2. **Condition:** Checked before each iteration. If true, the body runs. If false, the loop exits.
+  3. **Increment:** Runs after the body of each iteration. Updates the loop control variable (e.g., \`i++\`).
+- **Flow Chart:**
+  1. Initialize.
+  2. Check condition → if false, skip.
+  3. Execute body.
+  4. Execute increment.
+  5. Go back to step 2.
+- **Example:**
+\`\`\`cpp
+for (int i = 0; i < 5; i++) {
+  cout << "Iteration: " << i << endl;
+}
+\`\`\`
+
+## Key Takeaway
+The \`for\` loop combines initialization, condition, and increment in one line. It's the preferred loop for counting and iterating over arrays because it keeps the loop control logic centralized.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Infinite Loops",
+      front: "What is an infinite loop, and how can you avoid it?",
+      back: `
+## Insight
+An infinite loop runs forever because its condition never becomes false. This usually happens when the loop control variable is not updated correctly inside the body.
+
+## Analysis
+- **Definition:** A loop whose termination condition is never met.
+- **Common Causes:**
+  - Forgetting to update the loop control variable.
+  - Using a condition that can never be false (e.g., \`while (1)\`).
+  - Using \`==\` instead of \`=\` in the update logic.
+- **Examples:**
+\`\`\`cpp
+// Infinite while (missing increment)
+int i = 0;
+while (i < 5) {
+  cout << i; // i never changes!
+}
+
+// Infinite for (missing increment)
+for (int i = 0; i < 5; ) {
+  cout << i; // i never changes!
+}
+\`\`\`
+- **How to Avoid:**
+  - Always ensure the loop control variable changes each iteration.
+  - Double-check the condition and the update step.
+  - Use \`break\` statements cautiously to exit if something goes wrong.
+
+## Key Takeaway
+An infinite loop occurs when the condition never becomes false. Always verify that your loop control variable is properly updated inside the body to avoid freezing your program.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "break Statement",
+      front: "What does the \`break\` statement do inside a loop?",
+      back: `
+## Insight
+\`break\` forces an immediate exit from the loop, regardless of the loop condition. It skips the rest of the current iteration and jumps to the code after the loop.
+
+## Analysis
+- **Usage:** Inside any loop (\`while\`, \`do-while\`, \`for\`).
+- **Effect:**
+  - Terminates the loop immediately.
+  - Program execution continues with the first statement after the loop's closing brace.
+- **Common Use Cases:**
+  - Exiting when a specific value is found (searching).
+  - Preventing infinite loops when an error occurs.
+  - Simplifying complex exit conditions.
+- **Example:**
+\`\`\`cpp
+for (int i = 0; i < 10; i++) {
+  if (i == 5) {
+    break; // Exit the loop when i reaches 5
+  }
+  cout << i; // Prints 0 1 2 3 4
+}
+\`\`\`
+
+## Key Takeaway
+\`break\` immediately exits the loop, even if the loop condition is still true. It's useful for early termination when a specific condition is met.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "continue Statement",
+      front: "What does the \`continue\` statement do inside a loop, and how is it different from \`break\`?",
+      back: `
+## Insight
+\`continue\` skips the current iteration and jumps to the next one. It does not exit the loop entirely; it just bypasses the remaining code in the body.
+
+## Analysis
+- **Usage:** Inside any loop (\`while\`, \`do-while\`, \`for\`).
+- **Effect:**
+  - Skips the rest of the body for the current iteration.
+  - Moves directly to the next iteration.
+  - For \`for\` loops: jumps to the increment step, then the condition.
+  - For \`while\` loops: jumps to the condition check.
+- **Common Use Cases:**
+  - Skipping invalid input.
+  - Ignoring specific values in a series.
+- **Example:**
+\`\`\`cpp
+for (int i = 0; i < 5; i++) {
+  if (i == 2) {
+    continue; // Skip printing 2
+  }
+  cout << i; // Prints 0 1 3 4
+}
+\`\`\`
+
+## Key Takeaway
+\`break\` exits the loop entirely. \`continue\` skips only the current iteration and moves to the next one. Use \`continue\` when you want to ignore certain conditions but keep the loop running.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Nested Loops",
+      front: "What are nested loops, and how do they work in C++?",
+      back: `
+## Insight
+Nested loops are loops inside other loops. The inner loop completes all its iterations for each single iteration of the outer loop.
+
+## Analysis
+- **Definition:** A loop inside another loop. The outer loop controls the inner loop's execution count.
+- **Mechanism:**
+  - The outer loop runs once.
+  - The inner loop runs from start to finish.
+  - The outer loop runs again.
+  - This repeats until the outer loop finishes.
+- **Common Use Cases:**
+  - Processing 2D arrays (rows and columns).
+  - Multiplication tables.
+  - Generating patterns (e.g., triangles, grids).
+- **Example (Multiplication Table):**
+\`\`\`cpp
+for (int i = 1; i <= 3; i++) {
+  for (int j = 1; j <= 3; j++) {
+    cout << i << "x" << j << "=" << i*j << " ";
+  }
+  cout << endl; // New line after each row
+}
+\`\`\`
+- **Output:**
+\`\`\`
+1x1=1 1x2=2 1x3=3
+2x1=2 2x2=4 2x3=6
+3x1=3 3x2=6 3x3=9
+\`\`\`
+
+## Key Takeaway
+A nested loop is a loop inside another loop. The inner loop completes all its iterations for each single iteration of the outer loop. It's essential for multi-dimensional data processing.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Loop Scope",
+      front: "What is the scope of a loop control variable declared inside a \`for\` loop's initialization?",
+      back: `
+## Insight
+In C++, a variable declared inside the \`for\` loop initialization is local to the loop body and cannot be accessed outside it. This is a key difference from older C-style code.
+
+## Analysis
+- **Scope:** The variable exists only within the \`for\` loop.
+- **Example:**
+\`\`\`cpp
+for (int i = 0; i < 5; i++) {
+  cout << i; // i is accessible here
+}
+cout << i; // ERROR! i is not defined here
+\`\`\`
+- **Why it matters:**
+  - Prevents accidental reuse of the loop counter variable elsewhere.
+  - Encourages cleaner, more modular code.
+  - The variable is destroyed after the loop ends.
+- **Workaround:** If you need \`i\` after the loop, declare it before the loop:
+\`\`\`cpp
+int i;
+for (i = 0; i < 5; i++) { /* ... */ }
+cout << i; // Now i is accessible
+\`\`\`
+
+## Key Takeaway
+Variables declared in the \`for\` loop initialization have block scope limited to the loop. They are not accessible outside the loop body.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Which Loop to Use?",
+      front: "When should you use a \`while\` loop versus a \`for\` loop versus a \`do-while\` loop?",
+      back: `
+## Insight
+Choose the loop type based on how well you know the number of iterations and when the condition should be checked.
+
+## Analysis
+- **\`for\` Loop:** Best when you know exactly how many times to iterate (counting).
+  - Example: Iterating through an array of size 10.
+  - \`for (int i = 0; i < 10; i++)\`
+- **\`while\` Loop:** Best when you don't know the number of iterations in advance, but the condition depends on some changing state.
+  - Example: Reading input until the user enters a sentinel value (like -1).
+  - \`while (userInput != -1) { cin >> userInput; }\`
+- **\`do-while\` Loop:** Best when the loop body must run at least once before checking the condition.
+  - Example: Displaying a menu and asking for a choice until a valid option is selected.
+  - \`do { showMenu(); getChoice(); } while (choice != 5);\`
+- **General Rule:**
+  - If you have a counter → use \`for\`.
+  - If you need to check the condition at the end → use \`do-while\`.
+  - For everything else (and most cases) → use \`while\`.
+
+## Key Takeaway
+Use \`for\` for counting, \`while\` for unknown iterations, and \`do-while\` for at-least-once execution. Choose the clearest and most readable option for your specific logic.
+      `
+    },
+    {
+      course: "CS110",
+      term: "T1",
+      topic: "Common Loop Mistakes",
+      front: "What are the most common mistakes beginners make with loops in C++?",
+      back: `
+## Insight
+Loop bugs can be subtle and frustrating. The most frequent ones involve off-by-one errors, infinite loops, and improper update logic.
+
+## Analysis
+- **Off-by-One Errors:**
+  - Loop runs one too many or one too few times.
+  - Fix: Carefully check the condition, especially \`<\` vs \`<=\`.
+  - Example: \`for (int i = 0; i <= 10; i++)\` runs 11 times (0 to 10). If you meant 10 times, use \`i < 10\`.
+- **Infinite Loops:**
+  - Forgetting to update the loop control variable.
+  - Fix: Ensure the variable changes inside the body.
+- **Semicolon After Condition:**
+  - \`while (i < 5); { /* body */ }\` creates an infinite loop because the semicolon ends the while statement, and the body is never executed.
+  - Fix: Remove the semicolon after the while condition.
+- **Using Assignment Instead of Equality:**
+  - \`if (x = 5) break;\` – This sets \`x\` to 5 (always true) instead of testing equality.
+  - Fix: Use \`==\` for comparison.
+- **Increment Inside the Condition:**
+  - \`while (i++ < 5)\` – This increments \`i\` before checking the condition, which can lead to off-by-one errors. Use \`while (i < 5) { i++; }\` for clarity.
+
+## Key Takeaway
+Most loop bugs are off-by-one errors, infinite loops, or logical errors with semicolons or assignment. Always test your loop with small counts and verify the loop control variable updates correctly.
+      `
+    }
+  ],
   // ============================================================
 // COMPLETE FLASHCARD DATASET – CH110, TERM 3
 // TOPICS 9, 10, 11, 12
