@@ -81,6 +81,12 @@ function parseKaeriMarkdown(text) {
 // === 1. INITIALIZATION & DATA LOADING ===
 // ============================================================
 
+// ── PAYMENT CONFIGURATION & STATE (ADDED) ──
+const PAYMENT_API_URL = "https://script.google.com/macros/s/AKfycbx-XEmKaXLLionX1r0LoumRhpbzpUwliyBIImpYjBoN4VyxT2C6B5_yXWsNNwsJqHSghg/exec";
+let inventory = {};
+let isSubmitting = false;
+let isChecking = false;
+
 function loadGlobalData() {
     if (typeof mcqData !== 'undefined') allMcqData = mcqData; 
     else if (typeof mcqDa !== 'undefined') allMcqData = mcqDa; 
@@ -1098,44 +1104,41 @@ function toggleTerms(courseId) {
     }
 }
 
+// ============================================================
+// === REPLACED: openPaymentModal (with auto-load) ===
+// ============================================================
 function openPaymentModal() {
-    document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
-    document.getElementById('pay-amount').textContent = `K${currentPrice}`;
-    document.getElementById('payment-modal').classList.add('show');
-    updateBuyNowLink(currentCourse, currentTerm, currentPrice);
-
+    const modal = document.getElementById('payment-modal');
+    if (modal) modal.classList.add('show');
+    
+    // Set course/term display
+    const termName = document.getElementById('pay-term-name');
+    if (termName) termName.textContent = `${currentCourse || 'Course'} ${currentTerm || ''}`;
+    
+    // Set price display (fallback)
+    const amountEl = document.getElementById('pay-amount');
+    if (amountEl) amountEl.textContent = `K${currentPrice || 0}`;
+    
+    // Load pricing data and auto-fill the dropdowns
+    loadCourses();
+    
+    // Focus the code input after a short delay
     setTimeout(() => {
         const input = document.getElementById('access-code-input');
         if(input) input.focus();
-    }, 300);
+    }, 400);
 }
 
 // ============================================================
-// === MODIFIED: closePaymentModal with idempotency reset for subscription guide ===
+// === REPLACED: closePaymentModal with idempotency reset ===
 // ============================================================
 function closePaymentModal() {
     const modal = document.getElementById('payment-modal');
     if (modal) modal.classList.remove('show');
     
-    // ADDITIVE: Close the subscription guide if it exists (idempotency reset)
+    // Reset the subscription guide (idempotency)
     const guide = document.getElementById('subscription-guide');
-    if (guide) {
-        guide.removeAttribute('open');
-    }
-}
-
-function updateBuyNowLink(course, term, price) {
-  const buyNowLink = document.getElementById('buy-now-link');
-  const buyPriceElement = document.getElementById('buy-price');
-  if (buyNowLink && buyPriceElement) {
-    buyPriceElement.textContent = `K${price}`;
-    const paymentUrl = `${PAYMENT_SCRIPT_URL}?course=${course}&term=${term}`;
-    buyNowLink.href = paymentUrl;
-    const buyButton = buyNowLink.querySelector('button');
-    if (buyButton) {
-      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
-    }
-  }
+    if (guide) guide.removeAttribute('open');
 }
 
 function updateModeBanner(message) {
@@ -1188,6 +1191,380 @@ function clearDemoLocks() {
 // ============================================================
 function showExtraPlanInfo(plan, price) {
     showAppNotification(`ℹ️ ${plan} (${price}) – coming soon! For now, use "Buy Now" for single term.`, "info", 4000);
+}
+
+// ============================================================
+// === NEW: PAYMENT API FUNCTIONS (SERVER 3) ===
+// ============================================================
+
+function callPaymentApi(action, payload = {}, retries = 2) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+
+    return fetch(PAYMENT_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action, ...payload }),
+        signal: controller.signal
+    })
+    .then(res => {
+        clearTimeout(timeout);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+    })
+    .catch(err => {
+        clearTimeout(timeout);
+        if (retries > 0) {
+            return new Promise(resolve => setTimeout(resolve, 1000))
+                .then(() => callPaymentApi(action, payload, retries - 1));
+        }
+        throw err;
+    });
+}
+
+function showAlert(icon, title, text) {
+    return Swal.fire({
+        icon, title, text,
+        background: '#1b263b',
+        color: '#e0e6ed',
+        confirmButtonColor: '#007bff',
+        confirmButtonText: 'OK',
+        backdrop: 'rgba(13,27,42,0.85)'
+    });
+}
+
+function loadCourses() {
+    const loader = document.getElementById('init-loader');
+    const form = document.getElementById('paymentForm');
+    if (!loader || !form) return;
+
+    loader.classList.remove('hidden');
+    form.classList.add('hidden');
+
+    callPaymentApi('getSystemConfig')
+        .then(res => {
+            loader.classList.add('hidden');
+            if (res.success) {
+                inventory = res.inventory || {};
+                populateCourseDropdown();
+                form.classList.remove('hidden');
+
+                const courseSelect = document.getElementById('courseSelect');
+                const termSelect = document.getElementById('termSelect');
+                if (courseSelect && currentCourse) {
+                    courseSelect.value = currentCourse;
+                    updateTerms();
+                    setTimeout(() => {
+                        if (termSelect && currentTerm) {
+                            termSelect.value = currentTerm;
+                            updatePrice();
+                        }
+                    }, 50);
+                }
+            } else {
+                showAlert('error', 'Connection Error', res.message || 'Could not load courses.');
+            }
+        })
+        .catch(() => {
+            loader.classList.add('hidden');
+            showAlert('error', 'Network Error', 'Could not reach the server.');
+        });
+}
+
+function populateCourseDropdown() {
+    const courseSelect = document.getElementById('courseSelect');
+    if (!courseSelect) return;
+    const courses = Object.keys(inventory);
+    courseSelect.innerHTML = '<option value="" disabled selected>Select Course...</option>';
+    courses.forEach(code => {
+        const opt = document.createElement('option');
+        opt.value = code;
+        opt.textContent = code;
+        courseSelect.appendChild(opt);
+    });
+    const termSelect = document.getElementById('termSelect');
+    if (termSelect) {
+        termSelect.innerHTML = '<option value="" disabled selected>Select Course First</option>';
+        termSelect.disabled = true;
+    }
+    updatePrice();
+}
+
+function updateTerms() {
+    const course = document.getElementById('courseSelect')?.value;
+    const terms = inventory[course] || {};
+    const termSelect = document.getElementById('termSelect');
+    if (!termSelect) return;
+    termSelect.innerHTML = '<option value="" disabled selected>Select Term...</option>';
+    termSelect.disabled = true;
+    const termKeys = Object.keys(terms).sort();
+    if (termKeys.length === 0) {
+        termSelect.innerHTML = '<option value="" disabled>No terms</option>';
+        updatePrice();
+        return;
+    }
+    termKeys.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        termSelect.appendChild(opt);
+    });
+    termSelect.disabled = false;
+    updatePrice();
+}
+
+function updatePrice() {
+    const course = document.getElementById('courseSelect')?.value;
+    const term = document.getElementById('termSelect')?.value;
+    const display = document.getElementById('priceDisplay');
+    if (!display) return;
+    if (course && term && inventory[course] && inventory[course][term] !== undefined) {
+        display.textContent = 'K' + inventory[course][term].toFixed(2);
+    } else {
+        display.textContent = 'K0.00';
+    }
+}
+
+function handleFile(input) {
+    const fileName = document.getElementById('fileName');
+    const dropZone = document.getElementById('dropZone');
+    if (!fileName || !dropZone) return;
+
+    if (input.files && input.files.length > 0) {
+        const file = input.files[0];
+        const maxSize = 5 * 1024 * 1024;
+        if (file.size > maxSize) {
+            showAlert('warning', 'File Too Large', 'Please upload an image smaller than 5MB.');
+            input.value = '';
+            fileName.textContent = 'Tap to upload screenshot';
+            dropZone.classList.remove('has-file');
+            return;
+        }
+        if (!file.type.startsWith('image/')) {
+            showAlert('warning', 'Invalid File', 'Please upload an image file (PNG, JPG, WEBP).');
+            input.value = '';
+            fileName.textContent = 'Tap to upload screenshot';
+            dropZone.classList.remove('has-file');
+            return;
+        }
+        fileName.innerHTML = `<span style="color:#72efdd;">${file.name}</span>`;
+        dropZone.classList.add('has-file');
+    } else {
+        fileName.textContent = 'Tap to upload screenshot';
+        dropZone.classList.remove('has-file');
+    }
+}
+
+function handleSubmit() {
+    if (isSubmitting) return;
+
+    const form = document.getElementById('paymentForm');
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput?.files[0];
+
+    const fullName = form?.querySelector('input[name="fullName"]')?.value.trim();
+    const email = form?.querySelector('input[name="email"]')?.value.trim();
+    const course = document.getElementById('courseSelect')?.value;
+    const term = document.getElementById('termSelect')?.value;
+    const momoNumber = form?.querySelector('input[name="momoNumber"]')?.value.trim();
+    const transRef = form?.querySelector('input[name="transRef"]')?.value.trim();
+
+    if (!fullName) return showAlert('warning', 'Missing Field', 'Please enter your full name.');
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showAlert('warning', 'Invalid Email', 'Please enter a valid email address.');
+    if (!course) return showAlert('warning', 'Missing Course', 'Please select a course.');
+    if (!term) return showAlert('warning', 'Missing Term', 'Please select a term.');
+    if (!momoNumber || momoNumber.length < 9) return showAlert('warning', 'Invalid Phone', 'Please enter a valid Mobile Money number.');
+    if (!transRef) return showAlert('warning', 'Missing Reference', 'Please enter your transaction reference.');
+    if (!file) return showAlert('warning', 'Proof Required', 'Please upload a screenshot of your payment.');
+
+    isSubmitting = true;
+    const submitBtn = document.getElementById('paySubmitBtn');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner"></span> Processing...';
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        const payload = {
+            fullName, email, course, term,
+            phone: momoNumber,
+            txnRef: transRef,
+            screenshotBase64: evt.target.result
+        };
+
+        callPaymentApi('submitPayment', { payload }, 3)
+            .then(res => {
+                if (res.success) {
+                    showAlert('success', 'Submitted!', res.message || 'Payment submitted successfully! Verification takes ~24 hours.')
+                        .then(() => {
+                            form?.reset();
+                            const fn = document.getElementById('fileName');
+                            const dz = document.getElementById('dropZone');
+                            if (fn) fn.textContent = 'Tap to upload screenshot';
+                            if (dz) dz.classList.remove('has-file');
+                            updatePrice();
+                            closePaymentModal();
+                        });
+                } else {
+                    showAlert('error', 'Submission Failed', res.message || 'An error occurred. Please try again.');
+                }
+            })
+            .catch(() => {
+                showAlert('error', 'Network Error', 'Could not reach the server. Please check your connection.');
+            })
+            .finally(() => {
+                isSubmitting = false;
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '✅ Submit Payment';
+                }
+            });
+    };
+
+    reader.onerror = function() {
+        showAlert('error', 'File Error', 'Failed to read the image file. Please try again.');
+        isSubmitting = false;
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '✅ Submit Payment';
+        }
+    };
+
+    reader.readAsDataURL(file);
+}
+
+function checkHistory() {
+    if (isChecking) return;
+    const email = document.getElementById('checkEmail')?.value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return showAlert('warning', 'Invalid Email', 'Please enter a valid email address.');
+    }
+
+    isChecking = true;
+    const historyList = document.getElementById('historyList');
+    if (historyList) {
+        historyList.innerHTML = '<div class="skeleton" style="height:60px;"></div><div class="skeleton" style="height:60px;"></div>';
+    }
+
+    callPaymentApi('getStudentPurchaseHistory', { email }, 2)
+        .then(res => {
+            if (!historyList) return;
+            historyList.innerHTML = '';
+            if (!res.success) {
+                historyList.innerHTML = `<p style="text-align:center;color:#8899a6;padding:20px;">${res.message || 'Could not fetch history.'}</p>`;
+                return;
+            }
+            const data = res.data || [];
+            if (data.length === 0) {
+                historyList.innerHTML = '<p style="text-align:center;color:#8899a6;padding:20px;">No records found for this email.</p>';
+                return;
+            }
+            data.forEach(item => {
+                const badgeClass = item.status === 'Completed' ? 'badge-success' :
+                                   item.status === 'Failed' ? 'badge-danger' : 'badge-warning';
+                let contentHtml = '';
+                if (item.status === 'Completed' && item.accessCode) {
+                    contentHtml = `
+                        <div class="code-with-copy">
+                            <span class="code-text">${escapeHtml(item.accessCode)}</span>
+                            <button class="copy-btn" onclick="copyCode('${escapeHtml(item.accessCode)}', this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    `;
+                } else if (item.status === 'Failed') {
+                    contentHtml = `<div style="color:#8899a6;font-size:0.85rem;margin-top:5px;">${escapeHtml(item.verificationNotes || 'Failed')}</div>`;
+                } else {
+                    contentHtml = `<div style="color:#8899a6;font-size:0.85rem;margin-top:5px;">${escapeHtml(item.verificationNotes || 'Pending...')}</div>`;
+                }
+
+                historyList.innerHTML += `
+                    <div class="history-item">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
+                            <span style="font-weight:700">${escapeHtml(item.course)} ${escapeHtml(item.term)}</span>
+                            <span class="badge ${badgeClass}">${escapeHtml(item.status)}</span>
+                        </div>
+                        <div style="color:#8899a6;font-size:0.85rem;">${escapeHtml(item.date)} • Ref: ${escapeHtml(item.transactionRef || '-')}</div>
+                        ${contentHtml}
+                    </div>
+                `;
+            });
+        })
+        .catch(() => {
+            if (historyList) {
+                historyList.innerHTML = `<p style="text-align:center;color:#8899a6;padding:20px;">Network error. Please try again later.</p>`;
+            }
+        })
+        .finally(() => {
+            isChecking = false;
+        });
+}
+
+function copyCode(text, btnElement) {
+    if (!text) return;
+    const original = btnElement.innerHTML;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                btnElement.innerHTML = '✅ Copied!';
+                btnElement.classList.add('copied');
+                setTimeout(() => {
+                    btnElement.innerHTML = original;
+                    btnElement.classList.remove('copied');
+                }, 2500);
+            })
+            .catch(() => fallbackCopy(text, btnElement));
+    } else {
+        fallbackCopy(text, btnElement);
+    }
+}
+
+function fallbackCopy(text, btnElement) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+        btnElement.innerHTML = '✅ Copied!';
+        btnElement.classList.add('copied');
+        setTimeout(() => {
+            btnElement.innerHTML = '<i class="fas fa-copy"></i> Copy';
+            btnElement.classList.remove('copied');
+        }, 2500);
+    } catch (e) {
+        showAlert('warning', 'Copy Failed', 'Could not copy. Please select and copy manually.');
+    }
+    document.body.removeChild(textarea);
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function switchPayTab(tab) {
+    const payView = document.getElementById('pay-view');
+    const statusView = document.getElementById('status-view');
+    const tabs = document.querySelectorAll('.tab-btn');
+    
+    tabs.forEach(b => b.classList.remove('active'));
+    if (payView) payView.classList.add('hidden');
+    if (statusView) statusView.classList.add('hidden');
+
+    if (tab === 'pay') {
+        tabs[0]?.classList.add('active');
+        if (payView) payView.classList.remove('hidden');
+    } else {
+        tabs[1]?.classList.add('active');
+        if (statusView) statusView.classList.remove('hidden');
+    }
 }
 
 // ============================================================
@@ -3009,6 +3386,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     setTimeout(renderStudentBoard, 100);
+
+    // ============================================================
+    // --- NEW: PAYMENT FORM EVENT BINDINGS & GLOBAL EXPORTS ---
+    // ============================================================
+
+    // 1. Bind Submit button
+    const payBtn = document.getElementById('paySubmitBtn');
+    if (payBtn) payBtn.addEventListener('click', handleSubmit);
+
+    // 2. Bind File input change
+    const fileInput = document.getElementById('fileInput');
+    if (fileInput) fileInput.addEventListener('change', function() { handleFile(this); });
+
+    // 3. Bind Course & Term dropdowns
+    const courseSelect = document.getElementById('courseSelect');
+    const termSelect = document.getElementById('termSelect');
+    if (courseSelect) courseSelect.addEventListener('change', updateTerms);
+    if (termSelect) termSelect.addEventListener('change', updatePrice);
+
+    // 4. Expose new functions globally so inline onclick attributes work
+    window.switchPayTab = switchPayTab;
+    window.checkHistory = checkHistory;
+    window.copyCode = copyCode;
+    window.handleSubmit = handleSubmit;
+    window.handleFile = handleFile;
+    window.loadCourses = loadCourses;
+    window.showAlert = showAlert;
+    window.openPaymentModal = openPaymentModal;
+    window.closePaymentModal = closePaymentModal;
+
+    // 5. CRITICAL: Expose the existing verifyCodeFromModal() so the "Activate Code" button works
+    window.verifyCodeFromModal = verifyCodeFromModal;
 });
 
 // ============================================================

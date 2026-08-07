@@ -1259,6 +1259,169 @@
 .flashcard {
     overflow: visible;
 }
+
+/* ── NEW PAYMENT UI STYLES (DARK THEME) ── */
+/* Dark Modal Overrides */
+.modal-content {
+  background: #1b263b;
+  color: #e0e6ed;
+  border: 1px solid #3e506e;
+}
+.pay-header {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b) !important;
+  border-bottom: 3px solid #72efdd;
+}
+.pay-header h2 { color: #72efdd; }
+.pay-header p { color: #a0a8b4; }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  background: #0d1b2a;
+  padding: 4px;
+  border-radius: 10px;
+}
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e0e6ed;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.tab-btn.active { background-color: #007bff; color: white; }
+
+/* Dark Form Inputs */
+.pay-input {
+  width: 100%;
+  background-color: #0d1b2a;
+  border: 1px solid #3e506e;
+  color: #e0e6ed;
+  padding: 10px 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+.pay-input:focus { outline: none; border-color: #007bff; }
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #3e506e;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0d1b2a;
+  transition: 0.2s;
+}
+.upload-box.has-file { border-color: #28a745; }
+.upload-box:hover { border-color: #72efdd; }
+
+/* Price Box */
+.price-box {
+  background: #0d1b2a;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #72efdd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* History & Badges */
+.history-item {
+  background-color: #0d1b2a;
+  border: 1px solid #3e506e;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.badge-success { background: #28a745; color: white; }
+.badge-warning { background: #ffc107; color: #333; }
+.badge-danger { background: #dc3545; color: white; }
+
+/* Code Copy Box */
+.code-with-copy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1b263b;
+  border: 1px solid #72efdd;
+  border-radius: 6px;
+  padding: 6px 6px 6px 12px;
+  margin-top: 8px;
+}
+.code-with-copy .code-text {
+  flex: 1;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #72efdd;
+  word-break: break-all;
+}
+.copy-btn {
+  background: transparent;
+  border: none;
+  color: #8892b0;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+.copy-btn:hover { background: rgba(114, 239, 221, 0.1); color: #72efdd; }
+.copy-btn.copied { color: #28a745; }
+
+/* Cancel Button */
+.cancel-pay-btn {
+  background: transparent;
+  border: none;
+  color: #8892b0;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.cancel-pay-btn:hover { color: #e0e6ed; }
+
+/* Skeleton loader for init */
+.skeleton {
+  background: linear-gradient(90deg, #2b3a55 25%, #3e506e 50%, #2b3a55 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.hidden { display: none; }
+
+/* Spinner for submit button */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 0.7s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
@@ -1415,100 +1578,164 @@
   <!-- FLOATING WHATSAPP -->
   <a href="https://wa.me/260964312504" target="_blank" class="landing-whatsapp-button">💬</a>
 
-  <!-- ==================== ORIGINAL PAYMENT MODAL (UNCHANGED) ==================== -->
-  <div id="payment-modal" class="modal">
-    <div class="modal-content">
-      <button class="close-modal" onclick="closePaymentModal()">&times;</button>
-      <div class="pay-header">
-        <h2>🔓 Unlock Access</h2>
-        <p id="pay-term-name">Course</p>
-      </div>
-      <div class="pay-body">
-        <span class="pay-price" id="pay-amount">K15</span>
+ <!-- ==================== PAYMENT MODAL (TABBED + INTERNAL FORM) ==================== -->
+<div id="payment-modal" class="modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closePaymentModal()">&times;</button>
+    <div class="pay-header">
+      <h2>🔓 Unlock Access</h2>
+      <p id="pay-term-name">Loading...</p>
+      <span id="pay-amount" style="display:block; margin-top:6px; font-size:1.1rem; color:#72efdd;">K0.00</span>
+    </div>
+    <div class="pay-body">
 
-        <!-- PAYMENT OPTIONS SECTION (ORIGINAL) -->
-        <div style="margin-bottom: 20px; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden;">
-          <div style="background: #f8f9fa; padding: 15px; border-bottom: 1px solid #dee2e6;">
-            <h4 style="margin: 0 0 10px 0; color: #007bff;">Option 1: Buy New Access</h4>
-            <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #495057;">
-              Purchase fresh access for <strong id="buy-price">K15</strong>
-            </p>
-            
-                    <!-- ========== ADDITIVE: SUBSCRIPTION GUIDE & EXTRA PRICE CARDS (NON-BREAKING) ========== -->
-        <div class="subscription-guide-addon">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchPayTab('pay')">📝 Submit Payment</button>
+        <button class="tab-btn" onclick="switchPayTab('status')">📋 Check Status</button>
+      </div>
+
+      <!-- Tab 1: Submit Payment -->
+      <div id="pay-view">
+        <!-- Loading skeleton -->
+        <div id="init-loader"><div class="skeleton" style="height:80px;"></div></div>
+
+        <form id="paymentForm" class="hidden" novalidate>
+          <!-- Name & Email -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Full Name</label>
+              <input type="text" name="fullName" class="pay-input" placeholder="e.g. Chanda Bwalya" required>
+            </div>
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Email Address</label>
+              <input type="email" name="email" class="pay-input" placeholder="student@email.com" required>
+            </div>
+          </div>
+
+          <!-- Course & Term (auto-filled) -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Course</label>
+              <select name="courseCode" id="courseSelect" class="pay-input" required>
+                <option value="" disabled selected>Loading...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Term</label>
+              <select name="term" id="termSelect" class="pay-input" required disabled>
+                <option value="" disabled selected>Select Course First</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Price box -->
+          <div class="price-box">
+            <span style="color:#a0a8b4;">Amount Due:</span>
+            <span id="priceDisplay" style="font-weight:700; color:#72efdd; font-size:1.2rem;">K0.00</span>
+          </div>
+
+          <!-- Phone & Ref -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Mobile Money Number</label>
+              <input type="tel" name="momoNumber" class="pay-input" placeholder="097xxxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label style="color:#a0a8b4; font-size:0.85rem;">Transaction Reference</label>
+              <input type="text" name="transRef" class="pay-input" placeholder="e.g. TX12345678" required>
+            </div>
+          </div>
+
+          <!-- File Upload -->
+          <div class="form-group">
+            <label style="color:#a0a8b4; font-size:0.85rem;">Proof of Payment (Screenshot)</label>
+            <div class="upload-box" id="dropZone" onclick="document.getElementById('fileInput').click()">
+              <i class="fas fa-cloud-upload-alt" style="font-size:24px; color:#3e506e;"></i>
+              <div id="fileName" style="color:#8899a6; margin-top:5px;">Tap to upload screenshot</div>
+              <input type="file" id="fileInput" accept="image/*" hidden required>
+            </div>
+          </div>
+
+          <button type="button" class="btn pay-btn" id="paySubmitBtn" style="background:#28a745; margin-top:10px;">
+            ✅ Submit Payment
+          </button>
+        </form>
+
+        <!-- Subscription Guide & Extra Price Cards (kept for info) -->
+        <div class="subscription-guide-addon" style="border-top-color:#3e506e; margin-top:25px;">
           <details id="subscription-guide">
-            <summary>How to subscribe (7 steps)</summary>
-            <div class="guide-content">
+            <summary>📘 How to subscribe (7 steps)</summary>
+            <div class="guide-content" style="color:#a0a8b4;">
               <p>1️⃣ <strong>Send money:</strong> Use details listed below.</p>
-                <div class="payment-info-box">
-          <strong>Send Payment to:</strong><br>
-          • MTN: 0961005406<br>
-          • Airtel: 0974784161<br>
-          • Zanaco: 4584568100159 (Kaluluma Kaumbu)<br>
-          
-        </div>
+              <div class="payment-info-box" style="background:#0d1b2a; border-color:#3e506e; color:#a0a8b4;">
+                <strong>Send Payment to:</strong><br>
+                • MTN: 0961005406<br>
+                • Airtel: 0974784161<br>
+                • Zanaco: 4584568100159 (Kaluluma Kaumbu)
+              </div>
               <p>2️⃣ <strong>Screenshot:</strong> Save your payment proof.</p>
-              <p>3️⃣ <strong>Click Buy Now:</strong> Open the official form.</p>
-              <p>4️⃣ <strong>Fill form:</strong> Upload your info & screenshot.</p>
-              <p>5️⃣ <strong>Submit:</strong> Wait for admin verification.</p>
-              <p>6️⃣ <strong>Check Email/Status (on the Payment form):</strong> Your code arrives shortly. once received, copy it</p>
-              <p>7️⃣ <strong>Activate:</strong> Paste the code in Option 2 above.</p>
-              <p class="guide-confirm-line">✅ Valid code gives 20 days of full access.</p>
+              <p>3️⃣ <strong>Fill the form above:</strong> Upload your details & screenshot.</p>
+              <p>4️⃣ <strong>Submit:</strong> Wait for admin verification.</p>
+              <p>5️⃣ <strong>Check status:</strong> Use the "Check Status" tab above — your code appears once approved, with a one‑tap copy button.</p>
+              <p>6️⃣ <strong>Activate:</strong> Paste the code in the "Already have a Code?" section below.</p>
+              <p class="guide-confirm-line" style="color:#72efdd;">✅ Valid code gives 20 days of full access.</p>
             </div>
           </details>
-
           <div class="extra-price-cards">
             <div class="price-card-addon" onclick="showExtraPlanInfo('Full Course', 'K50')">
-              <span class="plan-name">Full Course (use Buy Button)</span>
+              <span class="plan-name">Full Course</span>
               <span class="plan-price">K50</span>
               <span class="plan-desc">Best for exams</span>
             </div>
             <div class="price-card-addon featured" onclick="showExtraPlanInfo('Global Access', 'K300')">
-              <span class="plan-name">Global Access (use Buy Button)</span>
+              <span class="plan-name">Global Access</span>
               <span class="plan-price">K300</span>
-              <span class="plan-desc">All Courses and terms</span>
+              <span class="plan-desc">All Courses & terms</span>
             </div>
           </div>
           <div class="note-text">💡 Click on any price card to learn more – coming soon!</div>
         </div>
-            <a id="buy-now-link" href="#" target="_blank" style="text-decoration: none;">
-              <button style="width: 100%; background: linear-gradient(135deg, #007bff, #0056b3); color: white; border: none; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
-                🛒 Buy Now (K15)
-              </button>
-            </a>
-          </div>
-          
-          <div style="padding: 15px;">
-            <h4 style="margin: 0 0 10px 0; color: #28a745;">Option 2: Activate Code</h4>
-            <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #495057;">
-              Already paid? Enter your access code below
-            </p>
-            <input type="text" id="access-code-input" class="pay-input" placeholder="Enter Access Code">
-            <button class="pay-btn" onclick="verifyCodeFromModal()">✅ Activate Code</button>
-          </div>
+      </div> <!-- /pay-view -->
+
+      <!-- Tab 2: Check Status -->
+      <div id="status-view" class="hidden">
+        <div style="display: flex; gap: 10px; margin: 15px 0;">
+          <input type="email" id="checkEmail" class="pay-input" placeholder="Enter your email address" style="flex:1;">
+          <button class="btn" onclick="checkHistory()" style="width:auto; background:#007bff; margin-top:0;">🔍 Check</button>
         </div>
-
-        <!-- OPTION 3: BECOME AN AMBASSADOR (ORIGINAL) -->
-        <div style="margin-bottom: 20px; background: #f0f7ff; border: 1px solid #dee2e6; border-radius: 8px; padding: 15px;">
-          <h4 style="margin: 0 0 8px 0; color: #28a745;">Option 3: Join for Free</h4>
-          <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #495057;">
-            <strong>Become an ambassador</strong><br>
-            <span style="font-size: 0.9em;">Earn rewards & free access by sharing</span>
-          </p>
-          <a href="https://script.google.com/macros/s/AKfycbwXfwx4deFFL_e3Bu9xklzGvyggglreRrJCOAM3edpMZ66MFOJ-H9-zGPzdZ-GbQeCAOA/exec?page=ambassador" target="_blank" style="text-decoration: none;">
-            <button style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
-              🚀 Become an Ambassador →
-            </button>
-          </a>
+        <div id="historyList">
+          <p style="color:#8899a6; text-align:center;">Enter your email to see your purchases.</p>
         </div>
-        
-        
-
-                <button class="cancel-pay-btn" onclick="closePaymentModal()">Maybe Later (Use Demo)</button>
-
       </div>
-    </div>
-  </div>
+
+      <!-- Already have a Code? (Always visible) -->
+      <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #3e506e;">
+        <h4 style="color: #28a745; margin: 0 0 8px 0;">✅ Already have a Code?</h4>
+        <div style="display: flex; gap: 10px;">
+          <input type="text" id="access-code-input" class="pay-input" placeholder="Enter Access Code" style="flex:2;">
+          <button class="btn" onclick="verifyCodeFromModal()" style="flex:1; background:#007bff; margin-top:0;">Activate</button>
+        </div>
+      </div>
+
+      <!-- Become an Ambassador (kept) -->
+      <div style="margin-top:20px; background:#0d1b2a; border:1px solid #3e506e; border-radius:8px; padding:15px;">
+        <h4 style="margin:0 0 8px 0; color:#28a745;">🚀 Become an Ambassador</h4>
+        <p style="margin:0 0 12px 0; font-size:0.9em; color:#a0a8b4;">
+          Earn rewards & free access by sharing
+        </p>
+        <a href="https://script.google.com/macros/s/AKfycbwXfwx4deFFL_e3Bu9xklzGvyggglreRrJCOAM3edpMZ66MFOJ-H9-zGPzdZ-GbQeCAOA/exec?page=ambassador" target="_blank" style="text-decoration:none;">
+          <button style="width:100%; background:#28a745; color:white; border:none; padding:12px; border-radius:6px; font-weight:bold; cursor:pointer; transition:0.3s;">
+            Join Now – It's Free →
+          </button>
+        </a>
+      </div>
+
+      <button class="cancel-pay-btn" onclick="closePaymentModal()">Maybe Later (Use Demo)</button>
+
+    </div> <!-- /pay-body -->
+  </div> <!-- /modal-content -->
+</div> <!-- /payment-modal -->
 
   <!-- PRINT PREVIEW MODAL (UNCHANGED) -->
   <div id="print-preview-modal" class="print-modal">
