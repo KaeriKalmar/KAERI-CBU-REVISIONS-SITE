@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaeri EdTech — Ambassador Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0d1b2a; font-family: 'Roboto', sans-serif; color: #e0e6ed; padding: 20px; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    .card { background: #1b263b; border-radius: 16px; padding: 40px 30px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
+
+    .logo { font-size: 2.2rem; font-weight: 900; color: #64ffda; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 0 15px rgba(100, 255, 218, 0.3); text-align: center; }
+    .logo span { color: #ffffff; }
+    .tagline { text-align: center; color: #a0a8b4; margin: 8px 0 30px; font-size: 1rem; font-style: italic; }
+
+    .tabs { display: flex; gap: 10px; margin-bottom: 30px; border-bottom: 1px solid #3e506e; justify-content: center; }
+    .tab { padding: 12px 25px; background: transparent; border: none; color: #8892b0; font-weight: 700; cursor: pointer; font-size: 16px; transition: all 0.3s ease; }
+    .tab:hover { color: #e0e6ed; }
+    .tab.active { color: #72efdd; border-bottom: 3px solid #72efdd; }
+
+    .auth-form { max-width: 400px; margin: 0 auto; background: #0d1b2a; padding: 30px; border-radius: 12px; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 8px; color: #a0a8b4; font-size: 0.9em; font-weight: 500; }
+    input, select { width: 100%; padding: 12px 15px; background: #1b263b; border: 1px solid #3e506e; border-radius: 8px; color: #fff; font-size: 1em; transition: all 0.3s ease; }
+    input:focus, select:focus { border-color: #007bff; outline: none; box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); }
+
+    .btn { background: #007bff; color: #fff; border: none; padding: 14px 20px; border-radius: 8px; font-weight: 700; font-size: 1em; width: 100%; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .btn:hover:not(:disabled) { background: #0056b3; transform: translateY(-2px); }
+    .btn:disabled { background: #6c757d; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    .dashboard { display: none; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+
+    .profile-card { background: #0d1b2a; border-radius: 12px; padding: 25px; border-left: 5px solid #72efdd; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); }
+    .profile-row { display: flex; justify-content: space-between; margin: 12px 0; border-bottom: 1px solid #1b263b; padding-bottom: 8px; }
+    .profile-row span { color: #a0a8b4; }
+
+    .referral-box { background: #0d1b2a; border: 2px dashed #ffc107; border-radius: 12px; padding: 20px; margin: 20px 0; text-align: center; }
+
+    .progress-bar { background: #3e506e; height: 12px; border-radius: 6px; margin: 15px 0; overflow: hidden; }
+    .progress-fill { background: #28a745; height: 100%; border-radius: 6px; width: 0%; transition: width 0.5s ease; }
+
+    .leaderboard { background: #0d1b2a; border-radius: 12px; padding: 20px; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); }
+    .leaderboard-item { display: grid; grid-template-columns: 40px 1fr 80px; padding: 12px 10px; border-bottom: 1px solid #3e506e; align-items: center; border-radius: 6px; transition: background 0.2s; }
+    .leaderboard-item:hover { background: #1b263b; }
+    .leaderboard-item.you { background: rgba(114, 239, 221, 0.15); border: 1px solid #72efdd; margin: 5px 0; }
+    .rank { font-weight: 700; font-size: 1.2em; text-align: center; }
+    .gold { color: #ffc107; text-shadow: 0 0 5px rgba(255, 193, 7, 0.5); } .silver { color: #c0c0c0; } .bronze { color: #cd7f32; }
+
+    .thresholds { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .threshold { background: #0d1b2a; border-radius: 10px; padding: 15px; display: flex; align-items: center; gap: 15px; border: 1px solid #3e506e; transition: all 0.3s ease; }
+    .threshold.unlocked { border-color: #28a745; background: rgba(40, 167, 69, 0.05); }
+    .threshold.claimed { opacity: 0.6; border-color: #6c757d; }
+    .threshold-badge { width: 50px; height: 50px; border-radius: 50%; background: #2b3a55; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; font-size: 1.2em; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .threshold.unlocked .threshold-badge { background: #28a745; }
+    .threshold.claimed .threshold-badge { background: #6c757d; box-shadow: none; }
+
+    .claim-btn { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 8px; margin-left: auto; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }
+    .claim-btn:hover:not(:disabled) { background: #0056b3; transform: translateY(-2px); }
+    .claim-btn:disabled { background: #4a5460; cursor: not-allowed; color: #a0a8b4; }
+
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; z-index: 1000; backdrop-filter: blur(5px); }
+    .modal.show { display: flex; }
+    .modal-content { background: #1b263b; border-radius: 15px; padding: 30px; max-width: 500px; width: 90%; border: 2px solid #72efdd; box-shadow: 0 10px 40px rgba(0,0,0,0.5); position: relative; }
+    .close { position: absolute; top: 15px; right: 20px; font-size: 28px; cursor: pointer; color: #a0a8b4; transition: 0.2s; }
+    .close:hover { color: #fff; }
+
+    .notification { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 12px 25px; border-radius: 8px; z-index: 2000; display: none; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); font-weight: 500; }
+    .notification.show { display: block; animation: slideDown 0.3s ease-out; }
+    .notification.success { background: #28a745; }
+    .notification.error { background: #dc3545; }
+    .notification.info { background: #17a2b8; }
+
+    /* === SKELETON LOADERS === */
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    .skeleton {
+        background: linear-gradient(90deg, #1b263b 25%, #2b3a55 50%, #1b263b 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 8px;
+    }
+    .skeleton-text { height: 20px; margin-bottom: 10px; width: 100%; }
+    .skeleton-box { height: 80px; width: 100%; margin-bottom: 15px; }
+
+    @keyframes slideDown { from { top: -50px; opacity: 0; } to { top: 20px; opacity: 1; } }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .card { padding: 25px 15px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">Kaeri <span>EdTech</span></div>
+      <div class="tagline">Ambassador Portal — Empower Students, Earn Rewards</div>
+
+      <!-- Auth View -->
+      <div id="authView" class="auth-view">
+        <div class="tabs">
+          <button id="tabLogin" class="tab active" onclick="switchTab('login')">Sign In</button>
+          <button id="tabRegister" class="tab" onclick="switchTab('register')">Join Now</button>
+        </div>
+
+        <div id="loginForm" class="auth-form">
+          <div class="form-group"><label>Ambassador ID</label><input type="text" id="loginId" placeholder="e.g. AMER001"></div>
+          <div class="form-group"><label>Email</label><input type="email" id="loginEmail" placeholder="you@example.com"></div>
+          <button class="btn" id="loginBtn" onclick="ambassadorLogin()">Sign In ➡️</button>
+        </div>
+
+        <div id="registerForm" class="auth-form" style="display: none;">
+          <div class="form-group"><label>Full Name</label><input type="text" id="regName" placeholder="e.g. Chanda Mutale"></div>
+          <div class="form-group"><label>Email</label><input type="email" id="regEmail" placeholder="you@example.com"></div>
+          <button class="btn" id="regBtn" onclick="registerAmbassador()">Become an Ambassador ➡️</button>
+        </div>
+      </div>
+
+      <!-- Dashboard View -->
+      <div id="dashboardView" class="dashboard">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap: 15px;">
+          <h2 style="color:#72efdd; margin: 0;">Welcome, <span id="ambName"></span>!</h2>
+          <button onclick="logout()" style="background: #6c757d; padding: 10px 20px; border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">⬅️ Logout</button>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <div class="profile-card">
+              <div class="profile-row"><span>Ambassador ID</span><strong id="ambId" style="color:#fff;"></strong></div>
+              <div class="profile-row"><span>People Reached</span><strong id="peopleReached" style="color:#72efdd; font-size:1.1em;"></strong></div>
+              <div class="profile-row"><span>Commission Rate</span><strong id="commissionRate" style="color:#28a745;"></strong></div>
+              <div class="profile-row"><span>Total Commission</span><strong id="totalCommission" style="color:#ffc107;"></strong></div>
+            </div>
+
+            <div class="referral-box" id="referralLinkBox"></div>
+
+            <div style="margin-top: 25px; background: #0d1b2a; padding: 20px; border-radius: 12px;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9em; color: #a0a8b4;">
+                <span>Progress to next reward</span>
+                <strong id="nextRewardLabel" style="color: #fff;"></strong>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            </div>
+
+            <h3 style="margin-top: 30px; color: #fff; border-bottom: 2px solid #3e506e; padding-bottom: 10px;">🎁 Reward Thresholds</h3>
+            <div id="thresholdsList" class="thresholds">
+              <!-- Skeletons injected here initially -->
+              <div class="skeleton skeleton-box"></div>
+              <div class="skeleton skeleton-box"></div>
+              <div class="skeleton skeleton-box"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="leaderboard">
+              <h3 style="margin-bottom: 20px; color: #ffc107; text-align: center;">🏆 Top Ambassadors</h3>
+              <div id="leaderboardContainer">
+                <div class="skeleton skeleton-text" style="height:45px;"></div>
+                <div class="skeleton skeleton-text" style="height:45px;"></div>
+                <div class="skeleton skeleton-text" style="height:45px;"></div>
+                <div class="skeleton skeleton-text" style="height:45px;"></div>
+                <div class="skeleton skeleton-text" style="height:45px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 25px; background: #0d1b2a; border-radius: 12px; padding: 20px; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
+              <h4 style="color: #72efdd; margin-bottom: 15px;">Recent Referrals</h4>
+              <div id="recentRefs" style="font-size: 0.9em; color: #a0a8b4;">
+                <div class="skeleton skeleton-text" style="height:30px;"></div>
+                <div class="skeleton skeleton-text" style="height:30px;"></div>
+                <div class="skeleton skeleton-text" style="height:30px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="claimModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeClaimModal()">&times;</span>
+      <h2 style="color:#72efdd; margin-bottom: 20px; text-align: center;">🎁 Claim Your Reward</h2>
+      <div id="claimModalBody"></div>
+    </div>
+  </div>
+
+  <div id="notification" class="notification"></div>
+
+  <script>
+    // ── CONFIG: set this to your deployed Ambassador Web App's /exec URL ──
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxQ1S-u4xHfKxDN44ya0Crvrd7xnrMLJT5mFuo0bAwT1YhhCCo8NxIcEMCpAhmeHGweDw/exec';
+
+    let currentAmbassador = null;
+    let courseOptions = null;
+    let currentThreshold = null;
+
+    const THRESHOLD_CONFIG = {
+      10:  { type: 'term', allowedTerms: ['T1', 'T2'] },
+      20:  { type: 'term', allowedTerms: ['T1', 'T2', 'T3'] },
+      30:  { type: 'full_course', allowedTerms: ['ALL'] },
+      50:  { type: 'global', allowedTerms: ['ALL'] },
+      70:  { type: 'commission', allowedTerms: [] },
+      100: { type: 'commission', allowedTerms: [] }
+    };
+
+    // ----- API helper: replaces google.script.run everywhere -----
+    // Uses text/plain to avoid a CORS preflight against the Apps Script
+    // Web App (which doesn't reliably answer OPTIONS requests). The server
+    // parses the body as JSON regardless of the declared content type.
+    async function callAPI(action, payload = {}) {
+      try {
+        const res = await fetch(WEB_APP_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action, ...payload })
+        });
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(`Server returned ${res.status}: ${errText.substring(0, 200)}`);
+        }
+        return await res.json();
+      } catch (e) {
+        console.error(`[API ERROR] ${action}:`, e);
+        return { success: false, message: 'Network error: ' + e.message };
+      }
+    }
+
+    // ----- Notification helper -----
+    function showNotification(msg, type = 'info') {
+      const notif = document.getElementById('notification');
+      notif.textContent = msg;
+      notif.className = `notification show ${type}`;
+      setTimeout(() => notif.classList.remove('show'), 4000);
+    }
+
+    // ----- Tab switching -----
+    function switchTab(tab) {
+      document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
+      document.getElementById('tabRegister').classList.toggle('active', tab === 'register');
+      document.getElementById('loginForm').style.display = tab === 'login' ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = tab === 'register' ? 'block' : 'none';
+    }
+
+    // ----- Button state helper -----
+    function toggleButtonState(btnId, isProcessing, text) {
+      const btn = document.getElementById(btnId);
+      if (btn) {
+        btn.disabled = isProcessing;
+        btn.textContent = text;
+      }
+    }
+
+    // ----- Copy referral link -----
+    function copyReferralLink(link) {
+      navigator.clipboard.writeText(link).then(() => {
+        const btn = document.getElementById('copyLinkBtn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✅ Copied!';
+        btn.style.background = '#28a745';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '#007bff';
+        }, 2000);
+      }).catch(() => {
+        showNotification('Failed to copy link', 'error');
+      });
+    }
+
+    // ----- Registration -----
+    async function registerAmbassador() {
+      const name = document.getElementById('regName').value.trim();
+      const email = document.getElementById('regEmail').value.trim();
+      if (!name || !email) return showNotification('Please fill all fields', 'warning');
+
+      toggleButtonState('regBtn', true, 'Processing...');
+      const data = await callAPI('registerAmbassador', { name, email });
+      if (data.success) {
+        showNotification(data.message, 'success');
+        ambassadorLoginWithData(data.email, data.ambassadorId);
+      } else {
+        showNotification(data.message, 'error');
+        toggleButtonState('regBtn', false, 'Become an Ambassador ➡️');
+      }
+    }
+
+    // ----- Login -----
+    async function ambassadorLogin() {
+      const id = document.getElementById('loginId').value.trim().toUpperCase();
+      const email = document.getElementById('loginEmail').value.trim().toLowerCase();
+      if (!id || !email) return showNotification('Enter ID and email', 'warning');
+
+      toggleButtonState('loginBtn', true, 'Authenticating...');
+      await ambassadorLoginWithData(email, id);
+    }
+
+    async function ambassadorLoginWithData(email, id) {
+      const data = await callAPI('ambassadorLogin', { email, ambassadorId: id });
+      if (data.success) {
+        currentAmbassador = data.ambassador;
+        sessionStorage.setItem('kaeri_ambassador', JSON.stringify({ email, id }));
+        showDashboard();
+        loadDashboard();
+      } else {
+        showNotification(data.message, 'error');
+        toggleButtonState('loginBtn', false, 'Sign In ➡️');
+        toggleButtonState('regBtn', false, 'Become an Ambassador ➡️');
+      }
+    }
+
+    // ----- Logout -----
+    function logout() {
+      sessionStorage.removeItem('kaeri_ambassador');
+      currentAmbassador = null;
+      document.getElementById('authView').style.display = 'block';
+      document.getElementById('dashboardView').style.display = 'none';
+      toggleButtonState('loginBtn', false, 'Sign In ➡️');
+      toggleButtonState('regBtn', false, 'Become an Ambassador ➡️');
+    }
+
+    function showDashboard() {
+      document.getElementById('authView').style.display = 'none';
+      document.getElementById('dashboardView').style.display = 'block';
+    }
+
+    // ----- Load dashboard data -----
+    async function loadDashboard() {
+      if (!currentAmbassador) return;
+
+      document.getElementById('thresholdsList').innerHTML = '<div class="skeleton skeleton-box"></div><div class="skeleton skeleton-box"></div><div class="skeleton skeleton-box"></div>';
+      document.getElementById('leaderboardContainer').innerHTML = '<div class="skeleton skeleton-text" style="height:45px;"></div>'.repeat(5);
+      document.getElementById('recentRefs').innerHTML = '<div class="skeleton skeleton-text" style="height:30px;"></div>'.repeat(3);
+
+      const data = await callAPI('getAmbassadorDashboard', { ambassadorId: currentAmbassador.id });
+      if (data.success) updateDashboard(data);
+      else showNotification(data.message, 'error');
+    }
+
+    function updateDashboard(data) {
+      const p = data.profile;
+      document.getElementById('ambName').textContent = p.name.split(' ')[0];
+      document.getElementById('ambId').textContent = p.id;
+      document.getElementById('peopleReached').textContent = p.peopleReached;
+      document.getElementById('commissionRate').textContent = (p.commissionRate * 100) + '%';
+      document.getElementById('totalCommission').textContent = 'K' + p.totalCommission.toFixed(2);
+
+      // Referral link box with copy button
+      document.getElementById('referralLinkBox').innerHTML = `
+        <div style="font-size:0.85em; color:#a0a8b4; margin-bottom:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Your Unique Referral Link</div>
+        <div style="display:flex; gap:10px; align-items:center; background:#1b263b; padding:12px 15px; border-radius:8px; border:1px solid #3e506e;">
+          <div style="flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#72efdd; text-align:left; font-family:monospace; font-size:1.1em;" id="refLinkText">${p.referralLink}</div>
+          <button onclick="copyReferralLink('${p.referralLink}')" id="copyLinkBtn" style="background:#007bff; color:white; border:none; padding:10px 15px; border-radius:6px; font-weight:bold; cursor:pointer; transition:0.3s; box-shadow:0 2px 5px rgba(0,0,0,0.2);">📋 Copy</button>
+        </div>
+      `;
+
+      // Progress bar
+      const next = p.nextThreshold;
+      if (next) {
+        document.getElementById('nextRewardLabel').textContent = p.nextReward;
+        document.getElementById('progressFill').style.width = p.progressToNext + '%';
+      } else {
+        document.getElementById('nextRewardLabel').textContent = 'All unlocked!';
+        document.getElementById('progressFill').style.width = '100%';
+      }
+
+      // Thresholds
+      document.getElementById('thresholdsList').innerHTML = data.thresholds.map(t => {
+        let statusClass = '', buttonDisabled = true, buttonText = '🔒 Locked';
+        if (t.unlocked) {
+          if (t.claimed) { statusClass = 'claimed'; buttonText = '✓ Claimed'; }
+          else { statusClass = 'unlocked'; buttonDisabled = false; buttonText = 'Claim ➡️'; }
+        }
+        return `<div class="threshold ${statusClass}">
+          <div class="threshold-badge">${t.count}</div>
+          <div style="flex:1"><strong style="color:#fff;">${t.label}</strong></div>
+          <button class="claim-btn" onclick="openClaimModal(${t.count}, '${t.label}')" ${buttonDisabled ? 'disabled' : ''}>${buttonText}</button>
+        </div>`;
+      }).join('');
+
+      // Leaderboard
+      let lbHtml = data.leaderboard.map((a, idx) => {
+        const rankClass = idx === 0 ? 'gold' : idx === 1 ? 'silver' : idx === 2 ? 'bronze' : '';
+        const youClass = a.id === p.id ? 'you' : '';
+        return `<div class="leaderboard-item ${youClass}">
+          <span class="rank ${rankClass}">${idx+1}</span>
+          <span style="color:#e0e6ed;">${a.name}</span>
+          <span style="font-weight:bold; color:#72efdd; text-align:right;">${a.count}</span>
+        </div>`;
+      }).join('');
+      if (data.rank && data.rank > 10) {
+        lbHtml += `<div class="leaderboard-item you"><span class="rank">${data.rank}</span><span style="color:#fff;">YOU</span><span style="font-weight:bold; color:#72efdd; text-align:right;">${p.peopleReached}</span></div>`;
+      }
+      document.getElementById('leaderboardContainer').innerHTML = lbHtml;
+
+      // Recent referrals
+      document.getElementById('recentRefs').innerHTML = data.recentRefs.map(r =>
+        `<div style="padding:8px 0; border-bottom:1px solid #1b263b; display:flex; justify-content:space-between;">
+          <span>${r.date}</span><span style="color:#fff;">${r.email}</span>
+        </div>`
+      ).join('') || 'No referrals yet.';
+    }
+
+    // ----- Claim modal (threshold-aware branching) -----
+
+    async function openClaimModal(threshold, label) {
+      currentThreshold = threshold;
+      const config = THRESHOLD_CONFIG[threshold];
+      if (!config) return showNotification('Invalid threshold.', 'error');
+
+      let html = `<p style="text-align:center; margin-bottom:20px; color:#a0a8b4;">
+                    You unlocked: <strong style="color:#fff;">${label}</strong>
+                  </p>`;
+
+      // ── 1. COMMISSION REWARDS (70 & 100) ──
+      if (config.type === 'commission') {
+        html += `
+          <div style="background:#0d1b2a; padding:15px; border-radius:8px; border:1px solid #3e506e; margin-bottom:20px; text-align:center;">
+            <p style="margin:0; color:#28a745;">Your commission rate will be updated to <strong>${threshold === 70 ? '5%' : '10%'}</strong>.</p>
+            <p style="margin:5px 0 0 0; font-size:0.8em; color:#8892b0;">(If your current rate is higher, it will remain unchanged.)</p>
+          </div>
+          <button class="btn" id="claimBtnAction" onclick="claimCommission(${threshold})" style="background:#28a745;">
+            ✅ Confirm Commission
+          </button>
+        `;
+        document.getElementById('claimModalBody').innerHTML = html;
+        document.getElementById('claimModal').classList.add('show');
+        return;
+      }
+
+      // ── 2. GLOBAL ACCESS (50) ──
+      if (config.type === 'global') {
+        html += `
+          <div style="background:#0d1b2a; padding:15px; border-radius:8px; border:1px solid #ffc107; margin-bottom:20px; text-align:center;">
+            <p style="margin:0; color:#ffc107; font-size:1.1em;">🌍 All Courses & All Terms</p>
+          </div>
+          <button class="btn" id="claimBtnAction" onclick="claimGlobalAccess(${threshold})" style="background:#28a745;">
+            ✅ Claim Global Access
+          </button>
+        `;
+        document.getElementById('claimModalBody').innerHTML = html;
+        document.getElementById('claimModal').classList.add('show');
+        return;
+      }
+
+      // ── 3. LOAD COURSE OPTIONS (needed for 10, 20, 30) ──
+      if (!courseOptions) {
+        document.getElementById('claimModalBody').innerHTML = html + `<div class="skeleton skeleton-box"></div>`;
+        document.getElementById('claimModal').classList.add('show');
+        const res = await callAPI('getCourseOptions');
+        if (res.success) courseOptions = res.courses;
+        else {
+          document.getElementById('claimModalBody').innerHTML = `<p>Error loading courses. Please try again.</p>`;
+          return;
+        }
+      }
+
+      // ── 4. FULL COURSE (30) ──
+      if (config.type === 'full_course') {
+        let courseDropdown = buildCourseDropdown();
+        html += `
+          <div class="form-group">
+            <label style="color:#a0a8b4; font-size:0.85rem;">Course</label>
+            ${courseDropdown}
+          </div>
+          <div class="form-group">
+            <label style="color:#a0a8b4; font-size:0.85rem;">Term</label>
+            <input type="text" class="pay-input" value="ALL (Full Course)" disabled style="color:#72efdd; font-weight:bold;">
+            <input type="hidden" id="claimTerm" value="ALL">
+          </div>
+          <button class="btn" id="claimBtnAction" style="background:#28a745;" onclick="claimAccessCode(${threshold})">
+            ✅ Claim Access Code
+          </button>
+        `;
+        document.getElementById('claimModalBody').innerHTML = html;
+        document.getElementById('claimModal').classList.add('show');
+        return;
+      }
+
+      // ── 5. TERM REWARDS (10 & 20) ──
+      if (config.type === 'term') {
+        let courseDropdown = buildCourseDropdown();
+        html += `
+          <div class="form-group">
+            <label style="color:#a0a8b4; font-size:0.85rem;">Course</label>
+            ${courseDropdown}
+          </div>
+          <div class="form-group">
+            <label style="color:#a0a8b4; font-size:0.85rem;">Term</label>
+            <select id="claimTerm" class="pay-input" disabled>
+              <option value="">First select course</option>
+            </select>
+          </div>
+          <button class="btn" id="claimBtnAction" style="background:#28a745;" onclick="claimAccessCode(${threshold})">
+            ✅ Claim Access Code
+          </button>
+        `;
+        document.getElementById('claimModalBody').innerHTML = html;
+        document.getElementById('claimModal').classList.add('show');
+        return;
+      }
+    }
+
+    function buildCourseDropdown() {
+      let html = `<select id="claimCourse" class="pay-input" onchange="populateTerms(${currentThreshold})">`;
+      html += `<option value="">-- Choose Course --</option>`;
+      for (const course in courseOptions) {
+        html += `<option value="${course}">${course}</option>`;
+      }
+      html += `</select>`;
+      return html;
+    }
+
+    function populateTerms(threshold) {
+      const course = document.getElementById('claimCourse').value;
+      const termSelect = document.getElementById('claimTerm');
+      const config = THRESHOLD_CONFIG[threshold];
+
+      termSelect.innerHTML = '<option value="">-- Choose Term --</option>';
+      termSelect.disabled = true;
+
+      if (course && courseOptions[course]) {
+        const available = courseOptions[course].map(t => t.term);
+        const filtered = available.filter(t => config.allowedTerms.includes(t));
+
+        if (filtered.length === 0) {
+          termSelect.innerHTML = `<option value="" disabled>No allowed terms for this reward</option>`;
+          return;
+        }
+
+        filtered.forEach(term => {
+          const opt = document.createElement('option');
+          opt.value = term;
+          opt.textContent = term;
+          termSelect.appendChild(opt);
+        });
+        termSelect.disabled = false;
+      }
+    }
+
+    function closeClaimModal() {
+      document.getElementById('claimModal').classList.remove('show');
+    }
+
+    // ----- Claim handlers (one per reward type) -----
+
+    async function claimAccessCode(threshold) {
+      const course = document.getElementById('claimCourse').value;
+      let term = document.getElementById('claimTerm').value;
+
+      if (!course || !term) {
+        showNotification('Please select a course and term.', 'warning');
+        return;
+      }
+
+      toggleButtonState('claimBtnAction', true, 'Processing...');
+      const data = await callAPI('claimReward', { ambassadorId: currentAmbassador.id, course, term, threshold });
+      if (data.success) {
+        showNotification(data.message, 'success');
+        closeClaimModal();
+        loadDashboard();
+      } else {
+        showNotification(data.message, 'error');
+        toggleButtonState('claimBtnAction', false, '✅ Claim Access Code');
+      }
+    }
+
+    async function claimGlobalAccess(threshold) {
+      toggleButtonState('claimBtnAction', true, 'Processing...');
+      const data = await callAPI('claimReward', { ambassadorId: currentAmbassador.id, course: 'ALL', term: 'ALL', threshold });
+      if (data.success) {
+        showNotification(data.message, 'success');
+        closeClaimModal();
+        loadDashboard();
+      } else {
+        showNotification(data.message, 'error');
+        toggleButtonState('claimBtnAction', false, '✅ Claim Global Access');
+      }
+    }
+
+    async function claimCommission(threshold) {
+      toggleButtonState('claimBtnAction', true, 'Processing...');
+      const data = await callAPI('claimReward', { ambassadorId: currentAmbassador.id, course: null, term: null, threshold });
+      if (data.success) {
+        showNotification(data.message, 'success');
+        closeClaimModal();
+        loadDashboard();
+      } else {
+        showNotification(data.message, 'error');
+        toggleButtonState('claimBtnAction', false, '✅ Confirm Commission');
+      }
+    }
+
+    // ----- Auto-login on page load -----
+    window.onload = function() {
+      const saved = sessionStorage.getItem('kaeri_ambassador');
+      if (saved) {
+        const { email, id } = JSON.parse(saved);
+        ambassadorLoginWithData(email, id);
+      }
+    };
+  </script>
+</body>
+</html>
