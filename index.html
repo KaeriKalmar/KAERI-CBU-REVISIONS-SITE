@@ -762,6 +762,11 @@
     #app-notification.warning { background-color: #ffc107; color: #333; }
     #app-notification.error { background-color: #dc3545; }
 
+    /* === FIX: Ensure SweetAlert2 popups render above the payment modal backdrop === */
+    .swal2-container {
+        z-index: 100000 !important;
+    }
+
     /* === COMPACT PAYMENT MODAL (ORIGINAL - UNCHANGED) === */
     .modal { 
         display: none; 
@@ -1422,6 +1427,8 @@
   vertical-align: middle;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+
   </style>
 </head>
 <body>
@@ -1755,6 +1762,7 @@
   <div id="printable-summary"></div>
 
   <!-- EXTERNAL ASSETS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script src="assets/mcqDa.js"></script>
   <script src="assets/shortDa.js"></script>
