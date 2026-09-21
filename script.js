@@ -81,6 +81,12 @@ function parseKaeriMarkdown(text) {
 // === 1. INITIALIZATION & DATA LOADING ===
 // ============================================================
 
+// ── PAYMENT CONFIGURATION & STATE (ADDED) ──
+const PAYMENT_API_URL = "https://script.google.com/macros/s/AKfycbx-XEmKaXLLionX1r0LoumRhpbzpUwliyBIImpYjBoN4VyxT2C6B5_yXWsNNwsJqHSghg/exec";
+let inventory = {};
+let isSubmitting = false;
+let isChecking = false;
+
 function loadGlobalData() {
     if (typeof mcqData !== 'undefined') allMcqData = mcqData; 
     else if (typeof mcqDa !== 'undefined') allMcqData = mcqDa; 
@@ -463,7 +469,7 @@ async function renderDocuments() {
         documents.forEach(doc => {
     const shortDesc = doc.description ? (doc.description.length > 80 ? doc.description.substring(0, 80) + '...' : doc.description) : '';
     
-    // ── NEW: Determine fallback icon based on file type ──
+    // ── Determine fallback icon based on file type ──
     let fallbackIcon = '📄';
     const fileType = (doc.type || '').toLowerCase();
     if (fileType.includes('pdf')) fallbackIcon = '📕';
@@ -480,7 +486,7 @@ async function renderDocuments() {
          style="background:#2b3a55; padding:15px; border-radius:10px; border-left:5px solid ${lockColor}; 
                 cursor:pointer; transition:0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.2); opacity: ${cardOpacity};">
 
-        <!-- ── NEW: THUMBNAIL CONTAINER ── -->
+        <!-- ── THUMBNAIL CONTAINER ── -->
         <div style="width:100%; height:140px; background:linear-gradient(135deg, #1b263b, #0d1b2a); border-radius:8px; margin-bottom:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; border:1px solid #3e506e; position:relative;">
             <img src="https://drive.google.com/thumbnail?id=${doc.fileId}&sz=w400" 
                  alt="${doc.title}"
@@ -1098,44 +1104,41 @@ function toggleTerms(courseId) {
     }
 }
 
+// ============================================================
+// === REPLACED: openPaymentModal (with auto-load) ===
+// ============================================================
 function openPaymentModal() {
-    document.getElementById('pay-term-name').textContent = `${currentCourse} ${currentTerm}`;
-    document.getElementById('pay-amount').textContent = `K${currentPrice}`;
-    document.getElementById('payment-modal').classList.add('show');
-    updateBuyNowLink(currentCourse, currentTerm, currentPrice);
-
+    const modal = document.getElementById('payment-modal');
+    if (modal) modal.classList.add('show');
+    
+    // Set course/term display
+    const termName = document.getElementById('pay-term-name');
+    if (termName) termName.textContent = `${currentCourse || 'Course'} ${currentTerm || ''}`;
+    
+    // Set price display (fallback)
+    const amountEl = document.getElementById('pay-amount');
+    if (amountEl) amountEl.textContent = `K${currentPrice || 0}`;
+    
+    // Load pricing data and auto-fill the dropdowns
+    loadCourses();
+    
+    // Focus the code input after a short delay
     setTimeout(() => {
         const input = document.getElementById('access-code-input');
         if(input) input.focus();
-    }, 300);
+    }, 400);
 }
 
 // ============================================================
-// === MODIFIED: closePaymentModal with idempotency reset for subscription guide ===
+// === REPLACED: closePaymentModal with idempotency reset ===
 // ============================================================
 function closePaymentModal() {
     const modal = document.getElementById('payment-modal');
     if (modal) modal.classList.remove('show');
     
-    // ADDITIVE: Close the subscription guide if it exists (idempotency reset)
+    // Reset the subscription guide (idempotency)
     const guide = document.getElementById('subscription-guide');
-    if (guide) {
-        guide.removeAttribute('open');
-    }
-}
-
-function updateBuyNowLink(course, term, price) {
-  const buyNowLink = document.getElementById('buy-now-link');
-  const buyPriceElement = document.getElementById('buy-price');
-  if (buyNowLink && buyPriceElement) {
-    buyPriceElement.textContent = `K${price}`;
-    const paymentUrl = `${PAYMENT_SCRIPT_URL}?course=${course}&term=${term}`;
-    buyNowLink.href = paymentUrl;
-    const buyButton = buyNowLink.querySelector('button');
-    if (buyButton) {
-      buyButton.innerHTML = `🛒 Buy ${course} ${term} (K${price})`;
-    }
-  }
+    if (guide) guide.removeAttribute('open');
 }
 
 function updateModeBanner(message) {
@@ -1188,6 +1191,380 @@ function clearDemoLocks() {
 // ============================================================
 function showExtraPlanInfo(plan, price) {
     showAppNotification(`ℹ️ ${plan} (${price}) – coming soon! For now, use "Buy Now" for single term.`, "info", 4000);
+}
+
+// ============================================================
+// === NEW: PAYMENT API FUNCTIONS (SERVER 3) ===
+// ============================================================
+
+function callPaymentApi(action, payload = {}, retries = 2) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+
+    return fetch(PAYMENT_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action, ...payload }),
+        signal: controller.signal
+    })
+    .then(res => {
+        clearTimeout(timeout);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+    })
+    .catch(err => {
+        clearTimeout(timeout);
+        if (retries > 0) {
+            return new Promise(resolve => setTimeout(resolve, 1000))
+                .then(() => callPaymentApi(action, payload, retries - 1));
+        }
+        throw err;
+    });
+}
+
+function showAlert(icon, title, text) {
+    return Swal.fire({
+        icon, title, text,
+        background: '#1b263b',
+        color: '#e0e6ed',
+        confirmButtonColor: '#007bff',
+        confirmButtonText: 'OK',
+        backdrop: 'rgba(13,27,42,0.85)'
+    });
+}
+
+function loadCourses() {
+    const loader = document.getElementById('init-loader');
+    const form = document.getElementById('paymentForm');
+    if (!loader || !form) return;
+
+    loader.classList.remove('hidden');
+    form.classList.add('hidden');
+
+    callPaymentApi('getSystemConfig')
+        .then(res => {
+            loader.classList.add('hidden');
+            if (res.success) {
+                inventory = res.inventory || {};
+                populateCourseDropdown();
+                form.classList.remove('hidden');
+
+                const courseSelect = document.getElementById('courseSelect');
+                const termSelect = document.getElementById('termSelect');
+                if (courseSelect && currentCourse) {
+                    courseSelect.value = currentCourse;
+                    updateTerms();
+                    setTimeout(() => {
+                        if (termSelect && currentTerm) {
+                            termSelect.value = currentTerm;
+                            updatePrice();
+                        }
+                    }, 50);
+                }
+            } else {
+                showAlert('error', 'Connection Error', res.message || 'Could not load courses.');
+            }
+        })
+        .catch(() => {
+            loader.classList.add('hidden');
+            showAlert('error', 'Network Error', 'Could not reach the server.');
+        });
+}
+
+function populateCourseDropdown() {
+    const courseSelect = document.getElementById('courseSelect');
+    if (!courseSelect) return;
+    const courses = Object.keys(inventory);
+    courseSelect.innerHTML = '<option value="" disabled selected>Select Course...</option>';
+    courses.forEach(code => {
+        const opt = document.createElement('option');
+        opt.value = code;
+        opt.textContent = code;
+        courseSelect.appendChild(opt);
+    });
+    const termSelect = document.getElementById('termSelect');
+    if (termSelect) {
+        termSelect.innerHTML = '<option value="" disabled selected>Select Course First</option>';
+        termSelect.disabled = true;
+    }
+    updatePrice();
+}
+
+function updateTerms() {
+    const course = document.getElementById('courseSelect')?.value;
+    const terms = inventory[course] || {};
+    const termSelect = document.getElementById('termSelect');
+    if (!termSelect) return;
+    termSelect.innerHTML = '<option value="" disabled selected>Select Term...</option>';
+    termSelect.disabled = true;
+    const termKeys = Object.keys(terms).sort();
+    if (termKeys.length === 0) {
+        termSelect.innerHTML = '<option value="" disabled>No terms</option>';
+        updatePrice();
+        return;
+    }
+    termKeys.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        termSelect.appendChild(opt);
+    });
+    termSelect.disabled = false;
+    updatePrice();
+}
+
+function updatePrice() {
+    const course = document.getElementById('courseSelect')?.value;
+    const term = document.getElementById('termSelect')?.value;
+    const display = document.getElementById('priceDisplay');
+    if (!display) return;
+    if (course && term && inventory[course] && inventory[course][term] !== undefined) {
+        display.textContent = 'K' + inventory[course][term].toFixed(2);
+    } else {
+        display.textContent = 'K0.00';
+    }
+}
+
+function handleFile(input) {
+    const fileName = document.getElementById('fileName');
+    const dropZone = document.getElementById('dropZone');
+    if (!fileName || !dropZone) return;
+
+    if (input.files && input.files.length > 0) {
+        const file = input.files[0];
+        const maxSize = 5 * 1024 * 1024;
+        if (file.size > maxSize) {
+            showAlert('warning', 'File Too Large', 'Please upload an image smaller than 5MB.');
+            input.value = '';
+            fileName.textContent = 'Tap to upload screenshot';
+            dropZone.classList.remove('has-file');
+            return;
+        }
+        if (!file.type.startsWith('image/')) {
+            showAlert('warning', 'Invalid File', 'Please upload an image file (PNG, JPG, WEBP).');
+            input.value = '';
+            fileName.textContent = 'Tap to upload screenshot';
+            dropZone.classList.remove('has-file');
+            return;
+        }
+        fileName.innerHTML = `<span style="color:#72efdd;">${file.name}</span>`;
+        dropZone.classList.add('has-file');
+    } else {
+        fileName.textContent = 'Tap to upload screenshot';
+        dropZone.classList.remove('has-file');
+    }
+}
+
+function handleSubmit() {
+    if (isSubmitting) return;
+
+    const form = document.getElementById('paymentForm');
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput?.files[0];
+
+    const fullName = form?.querySelector('input[name="fullName"]')?.value.trim();
+    const email = form?.querySelector('input[name="email"]')?.value.trim();
+    const course = document.getElementById('courseSelect')?.value;
+    const term = document.getElementById('termSelect')?.value;
+    const momoNumber = form?.querySelector('input[name="momoNumber"]')?.value.trim();
+    const transRef = form?.querySelector('input[name="transRef"]')?.value.trim();
+
+    if (!fullName) return showAlert('warning', 'Missing Field', 'Please enter your full name.');
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showAlert('warning', 'Invalid Email', 'Please enter a valid email address.');
+    if (!course) return showAlert('warning', 'Missing Course', 'Please select a course.');
+    if (!term) return showAlert('warning', 'Missing Term', 'Please select a term.');
+    if (!momoNumber || momoNumber.length < 9) return showAlert('warning', 'Invalid Phone', 'Please enter a valid Mobile Money number.');
+    if (!transRef) return showAlert('warning', 'Missing Reference', 'Please enter your transaction reference.');
+    if (!file) return showAlert('warning', 'Proof Required', 'Please upload a screenshot of your payment.');
+
+    isSubmitting = true;
+    const submitBtn = document.getElementById('paySubmitBtn');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner"></span> Processing...';
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        const payload = {
+            fullName, email, course, term,
+            phone: momoNumber,
+            txnRef: transRef,
+            screenshotBase64: evt.target.result
+        };
+
+        callPaymentApi('submitPayment', { payload }, 3)
+            .then(res => {
+                if (res.success) {
+                    showAlert('success', 'Submitted!', res.message || 'Payment submitted successfully! Verification takes ~24 hours.')
+                        .then(() => {
+                            form?.reset();
+                            const fn = document.getElementById('fileName');
+                            const dz = document.getElementById('dropZone');
+                            if (fn) fn.textContent = 'Tap to upload screenshot';
+                            if (dz) dz.classList.remove('has-file');
+                            updatePrice();
+                            closePaymentModal();
+                        });
+                } else {
+                    showAlert('error', 'Submission Failed', res.message || 'An error occurred. Please try again.');
+                }
+            })
+            .catch(() => {
+                showAlert('error', 'Network Error', 'Could not reach the server. Please check your connection.');
+            })
+            .finally(() => {
+                isSubmitting = false;
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '✅ Submit Payment';
+                }
+            });
+    };
+
+    reader.onerror = function() {
+        showAlert('error', 'File Error', 'Failed to read the image file. Please try again.');
+        isSubmitting = false;
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '✅ Submit Payment';
+        }
+    };
+
+    reader.readAsDataURL(file);
+}
+
+function checkHistory() {
+    if (isChecking) return;
+    const email = document.getElementById('checkEmail')?.value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return showAlert('warning', 'Invalid Email', 'Please enter a valid email address.');
+    }
+
+    isChecking = true;
+    const historyList = document.getElementById('historyList');
+    if (historyList) {
+        historyList.innerHTML = '<div class="skeleton" style="height:60px;"></div><div class="skeleton" style="height:60px;"></div>';
+    }
+
+    callPaymentApi('getStudentPurchaseHistory', { email }, 2)
+        .then(res => {
+            if (!historyList) return;
+            historyList.innerHTML = '';
+            if (!res.success) {
+                historyList.innerHTML = `<p style="text-align:center;color:#8899a6;padding:20px;">${res.message || 'Could not fetch history.'}</p>`;
+                return;
+            }
+            const data = res.data || [];
+            if (data.length === 0) {
+                historyList.innerHTML = '<p style="text-align:center;color:#8899a6;padding:20px;">No records found for this email.</p>';
+                return;
+            }
+            data.forEach(item => {
+                const badgeClass = item.status === 'Completed' ? 'badge-success' :
+                                   item.status === 'Failed' ? 'badge-danger' : 'badge-warning';
+                let contentHtml = '';
+                if (item.status === 'Completed' && item.accessCode) {
+                    contentHtml = `
+                        <div class="code-with-copy">
+                            <span class="code-text">${escapeHtml(item.accessCode)}</span>
+                            <button class="copy-btn" onclick="copyCode('${escapeHtml(item.accessCode)}', this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    `;
+                } else if (item.status === 'Failed') {
+                    contentHtml = `<div style="color:#8899a6;font-size:0.85rem;margin-top:5px;">${escapeHtml(item.verificationNotes || 'Failed')}</div>`;
+                } else {
+                    contentHtml = `<div style="color:#8899a6;font-size:0.85rem;margin-top:5px;">${escapeHtml(item.verificationNotes || 'Pending...')}</div>`;
+                }
+
+                historyList.innerHTML += `
+                    <div class="history-item">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
+                            <span style="font-weight:700">${escapeHtml(item.course)} ${escapeHtml(item.term)}</span>
+                            <span class="badge ${badgeClass}">${escapeHtml(item.status)}</span>
+                        </div>
+                        <div style="color:#8899a6;font-size:0.85rem;">${escapeHtml(item.date)} • Ref: ${escapeHtml(item.transactionRef || '-')}</div>
+                        ${contentHtml}
+                    </div>
+                `;
+            });
+        })
+        .catch(() => {
+            if (historyList) {
+                historyList.innerHTML = `<p style="text-align:center;color:#8899a6;padding:20px;">Network error. Please try again later.</p>`;
+            }
+        })
+        .finally(() => {
+            isChecking = false;
+        });
+}
+
+function copyCode(text, btnElement) {
+    if (!text) return;
+    const original = btnElement.innerHTML;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                btnElement.innerHTML = '✅ Copied!';
+                btnElement.classList.add('copied');
+                setTimeout(() => {
+                    btnElement.innerHTML = original;
+                    btnElement.classList.remove('copied');
+                }, 2500);
+            })
+            .catch(() => fallbackCopy(text, btnElement));
+    } else {
+        fallbackCopy(text, btnElement);
+    }
+}
+
+function fallbackCopy(text, btnElement) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+        btnElement.innerHTML = '✅ Copied!';
+        btnElement.classList.add('copied');
+        setTimeout(() => {
+            btnElement.innerHTML = '<i class="fas fa-copy"></i> Copy';
+            btnElement.classList.remove('copied');
+        }, 2500);
+    } catch (e) {
+        showAlert('warning', 'Copy Failed', 'Could not copy. Please select and copy manually.');
+    }
+    document.body.removeChild(textarea);
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function switchPayTab(tab) {
+    const payView = document.getElementById('pay-view');
+    const statusView = document.getElementById('status-view');
+    const tabs = document.querySelectorAll('.tab-btn');
+    
+    tabs.forEach(b => b.classList.remove('active'));
+    if (payView) payView.classList.add('hidden');
+    if (statusView) statusView.classList.add('hidden');
+
+    if (tab === 'pay') {
+        tabs[0]?.classList.add('active');
+        if (payView) payView.classList.remove('hidden');
+    } else {
+        tabs[1]?.classList.add('active');
+        if (statusView) statusView.classList.remove('hidden');
+    }
 }
 
 // ============================================================
@@ -2177,14 +2554,7 @@ function challengeFriend(score, total, modeName) {
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
 }
 
-// ── PRINT HELPERS (KAERI STANDARD REVISION KIT ENGINE v2.0) ──────────────
-// Replaces the old flat _buildPrintItemHTML / _buildPrintDocHTML system.
-// On preview: clean card list, no cover.
-// On print:   full branded A4 document — front cover, TOC, JS-paginated
-//             content pages (no card bleeds), back cover with QR code.
-// ─────────────────────────────────────────────────────────────────────────
-
-// ── COURSE IDENTITY MAP ───────────────────────────────────────────────────
+// ── BRAND CONSTANTS (unchanged) ─────────────────────────────────────────
 const COURSE_IDENTITY = {
     'CS110': { accent: '#00bcd4', name: 'Introduction to Computing' },
     'MA110': { accent: '#42a5f5', name: 'Mathematics' },
@@ -2195,7 +2565,6 @@ const COURSE_IDENTITY = {
     'MT221': { accent: '#26a69a', name: 'Mineral Processing' },
 };
 
-// ── SECTION COLOUR PALETTE (9 rotating slots) ────────────────────────────
 const SECTION_PALETTE = [
     { bg: '#f1f8e9', acc: '#7cb342' },
     { bg: '#e0f7fa', acc: '#00bcd4' },
@@ -2208,7 +2577,6 @@ const SECTION_PALETTE = [
     { bg: '#f9fbe7', acc: '#c0ca33' },
 ];
 
-// ── SESSION LABELS ────────────────────────────────────────────────────────
 const SESSION_LABELS = {
     mcq:         { title: 'Multiple Choice',    icon: '📋' },
     shortAnswer: { title: 'Short Answer',       icon: '✍️'  },
@@ -2216,7 +2584,6 @@ const SESSION_LABELS = {
     flashcard:   { title: 'Flashcard Glossary', icon: '🃏' },
 };
 
-// ── HELPERS ───────────────────────────────────────────────────────────────
 function _courseIdentity(course) {
     return COURSE_IDENTITY[course] || { accent: '#111435', name: course };
 }
@@ -2224,7 +2591,6 @@ function _termLabel(term) {
     return term ? 'Term ' + term.replace('T', '') : '';
 }
 
-// ── GROUP SESSION DATA INTO SECTIONS ─────────────────────────────────────
 function _buildSectionsFromSession() {
     const type = currentQuizType;
     const sections = [];
@@ -2244,7 +2610,6 @@ function _buildSectionsFromSession() {
                 items: groups[topic],
             });
         });
-
     } else if (type === 'essay' && currentEssay) {
         sections.push({
             num:   1,
@@ -2252,7 +2617,6 @@ function _buildSectionsFromSession() {
             pal:   SECTION_PALETTE[0],
             items: currentEssay.steps,
         });
-
     } else if (type === 'flashcard') {
         sections.push({
             num:   1,
@@ -2264,7 +2628,6 @@ function _buildSectionsFromSession() {
     return sections;
 }
 
-// ── SINGLE CARD HTML (used in both preview and print doc) ─────────────────
 function _itemCardHTML(item, sectionName, type, idx, pal) {
     const acc = pal.acc;
     let labelText = '', qHTML = '', aHTML = '', eHTML = '';
@@ -2310,290 +2673,7 @@ function _itemCardHTML(item, sectionName, type, idx, pal) {
     </div>`;
 }
 
-// ── FULL BRANDED A4 PRINT DOCUMENT ────────────────────────────────────────
-function _buildFullPrintDocument(course, term, sessionType, sections, date) {
-    const identity  = _courseIdentity(course);
-    const termLabel = _termLabel(term);
-    const sessInfo  = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
-    const qrUrl     = 'https://quickchart.io/qr?text=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbCc0hEL7UVMs55diC3i&dark=111435&size=300';
-
-    let totalItems = 0;
-    sections.forEach(s => { totalItems += s.items.length; });
-
-    // TOC rows
-    let tocRows = '';
-    sections.forEach(s => {
-        const typePrefix = sessionType === 'flashcard' ? 'Card' : sessionType === 'essay' ? 'Step' : 'Q';
-        tocRows += `
-        <div style="display:flex;align-items:center;padding:11px 18px;border-radius:4px;
-                    font-size:12px;font-weight:500;background:${s.pal.bg};margin-bottom:6px;
-                    page-break-inside:avoid;break-inside:avoid;">
-            <span style="font-weight:800;color:${s.pal.acc};margin-right:18px;min-width:22px;">${String(s.num).padStart(2,'0')}</span>
-            <span style="flex-grow:1;color:#222;">${s.name}</span>
-            <span style="color:#666;margin-right:14px;font-size:10px;">${typePrefix}1 – ${typePrefix}${s.items.length}</span>
-            <span style="font-weight:700;color:${s.pal.acc};">${s.items.length} items</span>
-        </div>`;
-    });
-
-    // Sections data serialised for the in-iframe pagination engine
-    const sectionsJSON = JSON.stringify(sections.map(s => ({
-        num: s.num, name: s.name, pal: s.pal,
-        items: s.items,
-    })));
-
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-    :root { --primary:#111435; --yellow:#fccb00; }
-    *{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-    body{ margin:0; padding:0; background:#e6e6e6; font-family:'Inter',Arial,sans-serif; }
-    @page{ size:A4; margin:0; }
-    .sheet{ width:210mm; height:297mm; background:white; margin:20px auto;
-            position:relative; overflow:hidden; page-break-after:always;
-            box-shadow:0 0 15px rgba(0,0,0,0.25); }
-    @media print{ body{background:none;} .sheet{margin:0;box-shadow:none;} }
-    .pg-header{ position:absolute; top:13mm; left:14mm; right:14mm; height:14mm;
-                border-bottom:2px solid var(--primary); display:flex;
-                justify-content:space-between; align-items:flex-end;
-                padding-bottom:5px; color:var(--primary); }
-    .pg-footer{ position:absolute; bottom:13mm; left:14mm; right:14mm; height:10mm;
-                border-top:1px solid #ccc; display:flex; justify-content:space-between;
-                align-items:center; font-size:9px; color:#888; padding-top:4px; }
-    .pg-content{ position:absolute; top:32mm; bottom:27mm; left:14mm; right:14mm;
-                 overflow:hidden; display:flex; flex-direction:column; }
-    .brand{ font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
-    .meta { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
-    .pg-num{ font-weight:700; color:var(--primary); }
-    .sheet.cover{ background:var(--primary); color:white; display:flex;
-                  flex-direction:column; justify-content:center; padding:18mm; }
-    .cover-graphics{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
-    .diag{ position:absolute; top:-50%; right:-20%; width:150%; height:150%;
-           background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.13) 45%,rgba(252,203,0,0.13) 55%,transparent 55%);
-           transform:rotate(25deg); }
-    .circ{ position:absolute; bottom:-150px; left:-150px; width:400px; height:400px;
-           border-radius:50%; background:rgba(26,32,85,0.75); }
-    .cover-inner{ position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; }
-    .stats-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:36px 0; max-width:72%; }
-    .stat-num{ font-size:40px; font-weight:800; color:var(--yellow); display:block; line-height:1; }
-    .stat-lbl{ font-size:10px; text-transform:uppercase; color:#ddd; letter-spacing:1px; }
-    .cover-rule{ border-top:1px solid var(--yellow); padding-top:18px; margin-top:auto; }
-    .sec-title{ font-size:13px; font-weight:800; color:var(--primary);
-                border-bottom:3px solid var(--yellow); padding-bottom:8px; margin-bottom:14px; }
-</style>
-</head>
-<body>
-
-<!-- FRONT COVER -->
-<div class="sheet cover">
-    <div class="cover-graphics"><div class="diag"></div><div class="circ"></div></div>
-    <div class="cover-inner">
-        <div style="color:var(--yellow);font-weight:700;font-size:11px;letter-spacing:2px;margin-bottom:18px;">
-            ${course} · ${identity.name.toUpperCase()}
-        </div>
-        <h1 style="font-size:46px;font-weight:800;line-height:1.1;margin:0 0 16px 0;">
-            ${termLabel}<br>${sessInfo.icon} ${sessInfo.title}
-        </h1>
-        <p style="font-size:16px;font-weight:300;color:#ddd;line-height:1.5;margin:0;">
-            Complete Study Kit &mdash; ${totalItems} Items
-        </p>
-        <div class="stats-grid">
-            <div><span class="stat-num">${totalItems}</span><span class="stat-lbl">ITEMS</span></div>
-            <div><span class="stat-num">${sections.length}</span><span class="stat-lbl">SECTIONS</span></div>
-            <div><span class="stat-num" style="font-size:22px;">${course}</span><span class="stat-lbl">COURSE</span></div>
-            <div><span class="stat-num">A4</span><span class="stat-lbl">FORMAT</span></div>
-        </div>
-        <div class="cover-rule">
-            <h3 style="color:var(--yellow);margin:0;">KAERI EDTECH</h3>
-            <p style="font-size:10px;opacity:0.75;margin-top:4px;">${identity.name} · ${termLabel} · ${date}</p>
-        </div>
-    </div>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<div class="sheet">
-    <div class="pg-header">
-        <span class="brand">KAERI EDTECH</span>
-        <span class="meta">${course} · ${termLabel}</span>
-    </div>
-    <div class="pg-footer">
-        <span>&copy; 2026 Kaeri EdTech</span><span class="pg-num">Page 2</span>
-    </div>
-    <div class="pg-content">
-        <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
-        ${tocRows}
-        <div style="margin-top:16px;padding:12px 16px;background:#f8f9fc;border-radius:6px;font-size:12px;color:#444;line-height:1.6;">
-            <strong style="color:var(--primary);">How to use this kit:</strong>
-            Cover the answer, attempt the question, then reveal and read the explanation.
-            This kit contains <strong>${totalItems} items</strong> across <strong>${sections.length} section${sections.length !== 1 ? 's' : ''}</strong>.
-        </div>
-    </div>
-</div>
-
-<!-- CONTENT PAGES (filled by pagination engine below) -->
-<div id="dynamic-content"></div>
-
-<!-- BACK COVER -->
-<div class="sheet cover" style="justify-content:flex-start;">
-    <div class="cover-graphics">
-        <div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div>
-    </div>
-    <div class="cover-inner" style="justify-content:space-between;">
-        <div>
-            <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
-            <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.05);border-left:5px solid var(--yellow);padding:22px;border-radius:8px;">
-            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
-                <div style="flex:1;">
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">CALL / WHATSAPP</div>
-                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:3px;">096-100-5406</div>
-                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:18px;">096-431-2504</div>
-                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:4px;">FOLLOW OUR WHATSAPP CHANNEL</div>
-                    <div style="font-size:11px;color:#aaa;">Scan to join the official Kaeri EdTech community.</div>
-                </div>
-                <img src="${qrUrl}" style="width:110px;height:110px;border:2px solid white;border-radius:8px;">
-            </div>
-        </div>
-        <div style="font-size:10px;color:#aaa;line-height:1.7;border-top:1px solid #333;padding-top:16px;">
-            <strong>Document:</strong> ${course} · ${identity.name} · ${termLabel} · ${sessInfo.title}<br>
-            <strong>Generated:</strong> ${date} &nbsp;&nbsp;
-            <strong>&copy; 2026 Kaeri EdTech. All rights reserved.</strong>
-        </div>
-    </div>
-</div>
-
-<!-- PAGINATION ENGINE: measures every card before placing it -->
-<script>
-(function(){
-    const MM=3.7795275591,PAGE_H=297*MM,TOP=32*MM,BOT=27*MM,SIDE=14*MM,BUF=22;
-    const CONTENT_H=PAGE_H-TOP-BOT-BUF, CONTENT_W=(210-14-14)*MM, GAP=10;
-    const root=document.getElementById('dynamic-content');
-    const sb=document.createElement('div');
-    sb.style.cssText='position:fixed;top:-9999px;left:-9999px;width:'+CONTENT_W+'px;visibility:hidden;pointer-events:none;font-family:Inter,Arial,sans-serif;';
-    document.body.appendChild(sb);
-
-    const TYPE=${JSON.stringify(sessionType)};
-    const COURSE=${JSON.stringify(course)};
-    const TERM=${JSON.stringify(termLabel)};
-    const SESS_TITLE=${JSON.stringify(sessInfo.title)};
-    const SECS=${sectionsJSON};
-
-    let pageCount=2;
-
-    function measure(el){
-        sb.innerHTML='';
-        const cl=el.cloneNode(true);
-        sb.appendChild(cl);
-        const st=window.getComputedStyle(cl);
-        return cl.offsetHeight+(parseFloat(st.marginTop)||0)+(parseFloat(st.marginBottom)||0);
-    }
-
-    function newPage(){
-        pageCount++;
-        const sheet=document.createElement('div');
-        sheet.className='sheet';
-        sheet.innerHTML=
-            '<div class="pg-header"><span class="brand">KAERI EDTECH</span>'+
-            '<span class="meta">'+COURSE+' \xB7 '+TERM+' \xB7 '+SESS_TITLE+'</span></div>'+
-            '<div class="pg-footer"><span>\u00A9 2026 Kaeri EdTech</span>'+
-            '<span class="pg-num">Page '+pageCount+'</span></div>'+
-            '<div class="pg-content" id="pg-'+pageCount+'"></div>';
-        root.appendChild(sheet);
-        return {el:sheet.querySelector('#pg-'+pageCount),used:0};
-    }
-
-    function place(el,state,gap){
-        gap=(gap===undefined)?GAP:gap;
-        const h=measure(el),g=state.used>0?gap:0;
-        if(state.used+h+g>CONTENT_H) state=newPage();
-        if(state.used>0){const sp=document.createElement('div');sp.style.height=GAP+'px';state.el.appendChild(sp);}
-        state.el.appendChild(el);
-        state.used+=h+(state.used>0?GAP:0);
-        return state;
-    }
-
-    function banner(sec){
-        const d=document.createElement('div');
-        d.style.cssText='background:'+sec.pal.bg+';color:'+sec.pal.acc+';padding:8px 14px;'+
-            'border-left:6px solid '+sec.pal.acc+';display:flex;align-items:center;'+
-            'font-weight:700;font-size:12px;font-family:Inter,Arial,sans-serif;'+
-            'page-break-inside:avoid;break-inside:avoid;';
-        d.textContent='SECTION '+sec.num+' \xB7 '+sec.name.toUpperCase();
-        return d;
-    }
-
-    function cardEl(item,secName,idx,pal){
-        const acc=pal.acc;
-        let lbl='',qH='',aH='',eH='';
-        function md(t){
-            if(!t)return'';
-            return t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
-                     .replace(/__(.*?)__/g,'<u>$1</u>')
-                     .replace(/\n/g,'<br>');
-        }
-        if(TYPE==='mcq'){
-            lbl='Q'+(idx+1);
-            qH=md(item.q||'');
-            const o=(item.options&&item.options[item.correct]!==undefined)
-                ?String.fromCharCode(65+item.correct)+'. '+md(item.options[item.correct]):'—';
-            aH='<strong>Answer:</strong> '+o;
-            eH=md(item.explanation||'No additional explanation.');
-        } else if(TYPE==='shortAnswer'){
-            lbl='Q'+(idx+1);
-            qH=md(item.q||'');
-            aH='<strong>Keywords:</strong> '+(item.keywords||[]).join(', ');
-            eH=md(item.explanation||'No additional explanation.');
-        } else if(TYPE==='essay'){
-            lbl='Step '+(idx+1);
-            qH=md(item.q||'');
-            const o=(item.options&&item.options[item.correct]!==undefined)
-                ?String.fromCharCode(65+item.correct)+'. '+md(item.options[item.correct]):'—';
-            aH='<strong>Correct:</strong> '+o;
-            eH=md(item.explanation||'No additional explanation.');
-        } else {
-            lbl='Card '+(idx+1);
-            qH=md(item.front||'');
-            aH=md(item.back||'');
-            eH='';
-        }
-        const d=document.createElement('div');
-        d.innerHTML='<div style="border:1px solid #ddd;border-left:5px solid '+acc+
-            ';border-radius:6px;background:#fff;padding:13px 15px;'+
-            'box-shadow:0 2px 5px rgba(0,0,0,0.05);page-break-inside:avoid;break-inside:avoid;">'+
-            '<div style="font-size:10px;font-weight:800;color:'+acc+';letter-spacing:0.5px;margin-bottom:3px;text-transform:uppercase;">'+lbl+'</div>'+
-            '<div style="font-size:9px;font-weight:600;color:'+acc+';text-transform:uppercase;letter-spacing:0.3px;margin-bottom:5px;">'+secName+'</div>'+
-            '<div style="font-size:13px;font-weight:700;color:#111435;margin-bottom:9px;line-height:1.4;">'+qH+'</div>'+
-            '<div style="font-size:12px;font-weight:500;color:#1e3a2f;background:#f0faf4;padding:6px 10px;border-radius:4px;margin-bottom:6px;">'+aH+'</div>'+
-            (eH?'<div style="background:#f9f9f9;padding:6px 10px;font-size:11px;color:#333;line-height:1.45;border-left:4px solid '+acc+';border-radius:0 4px 4px 0;">'+
-            '<span style="font-weight:800;color:'+acc+';text-transform:uppercase;font-size:10px;margin-right:4px;">EXPLANATION</span>'+eH+'</div>':'')+
-            '</div>';
-        return d.firstElementChild;
-    }
-
-    function build(){
-        SECS.forEach(function(sec){
-            var state=newPage();
-            state=place(banner(sec),state,0);
-            sec.items.forEach(function(item,idx){
-                state=place(cardEl(item,sec.name,idx,sec.pal),state,10);
-            });
-        });
-    }
-
-    if(document.fonts&&document.fonts.ready) document.fonts.ready.then(build);
-    else window.addEventListener('load',build);
-})();
-</script>
-</body>
-</html>`;
-}
-
-// ── IN-APP PREVIEW (no cover — clean scannable list) ─────────────────────
+// ── IN-APP PREVIEW (unchanged) ─────────────────────────────────────────────
 function generatePrintPreview() {
     const sections = _buildSectionsFromSession();
     const date     = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
@@ -2635,7 +2715,6 @@ function generatePrintPreview() {
         </div>
     </div>`;
 
-    // Store for proceedToPrint
     printContentData = {
         sections,
         date,
@@ -2654,44 +2733,45 @@ function generatePrintPreview() {
     document.body.style.overflow = 'hidden';
 }
 
-// ── PROCEED TO PRINT (full branded A4 in hidden iframe) ───────────────────
+// ── PROCEED TO PRINT (with access guard, analytics, modal behaviour) ──
 function proceedToPrint() {
+    // Free users: close preview, notify, open payment modal, log attempt
+    if (!hasFullAccess) {
+        closePrintPreview();
+        showAppNotification("🔒 Unlock Full Access To Print The Revision Kits", "warning", 5000);
+        openPaymentModal();
+        logAnalyticsEvent('print_attempt_blocked', `${currentCourse} ${currentTerm} - ${currentQuizType}`);
+        return;
+    }
+
+    // Paid users: proceed
     if (!printContentData) return;
     closePrintPreview();
 
     const { sections, date, course, term, sessionType } = printContentData;
+    const totalItems = sections.reduce((sum, s) => sum + s.items.length, 0);
+    
+    // Log successful print generation
+    logAnalyticsEvent('print_pdf_generated', `${course} ${term} | ${sessionType} | ${totalItems} items`);
+
     const fullHTML = _buildFullPrintDocument(course, term, sessionType, sections, date);
 
-    const iframe = document.createElement('iframe');
-    iframe.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:210mm;height:297mm;border:none;visibility:hidden;';
-    document.body.appendChild(iframe);
-
-    const iDoc = iframe.contentDocument || iframe.contentWindow.document;
-    iDoc.open();
-    iDoc.write(fullHTML);
-    iDoc.close();
-
-    // KaTeX inside iframe (physics/maths courses)
-    if (typeof renderMathInElement === 'function') {
-        try {
-            renderMathInElement(iDoc.body, {
-                delimiters: [
-                    { left: '$$', right: '$$', display: true  },
-                    { left: '$',  right: '$',  display: false },
-                    { left: '\\(', right: '\\)', display: false },
-                    { left: '\\[', right: '\\]', display: true  },
-                ],
-                throwOnError: false,
-            });
-        } catch(e) { console.warn('KaTeX in print iframe:', e); }
+    const printWin = window.open('', '_blank');
+    if (!printWin) {
+        showAppNotification('⚠️ Pop-up blocked. Allow pop-ups for this site, then tap Print again.', 'warning', 5000);
+        const blob = new Blob([fullHTML], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 60000);
+        return;
     }
 
-    // 1200ms: fonts load + pagination engine runs before print dialog opens
-    setTimeout(() => {
-        try { iframe.contentWindow.focus(); iframe.contentWindow.print(); }
-        catch(e) { console.warn('Print failed:', e); }
-        setTimeout(() => { if (iframe.parentNode) document.body.removeChild(iframe); }, 3000);
-    }, 1200);
+    printWin.document.open();
+    printWin.document.write(fullHTML);
+    printWin.document.close();
 }
 
 function closePrintPreview() {
@@ -2700,6 +2780,343 @@ function closePrintPreview() {
     document.body.style.overflow = 'auto';
 }
 
+// ── FULL BRANDED A4 PRINT DOCUMENT (GENERIC DESIGN + ALL IMPROVEMENTS) ──
+function _buildFullPrintDocument(course, term, sessionType, sections, date) {
+    const identity  = _courseIdentity(course);
+    const termLabel = _termLabel(term);
+    const sessInfo  = SESSION_LABELS[sessionType] || { title: sessionType, icon: '📄' };
+    
+    // ✅ QR code points to REVISION PLATFORM (not WhatsApp)
+    const qrUrl = 'https://quickchart.io/qr?text=https%3A%2F%2Fkaerikalmar.github.io%2FKAERI-CBU-REVISIONS-SITE%2F&dark=111435&size=300';
+
+    let totalItems = 0;
+    sections.forEach(s => { totalItems += s.items.length; });
+
+    // Build TOC rows
+    let tocRows = '';
+    sections.forEach(s => {
+        const typePrefix = sessionType === 'flashcard' ? 'Card' : sessionType === 'essay' ? 'Step' : 'Q';
+        tocRows += `
+        <div style="display:flex;align-items:center;padding:11px 18px;border-radius:4px;
+                    font-size:12px;font-weight:500;background:${s.pal.bg};margin-bottom:6px;
+                    page-break-inside:avoid;break-inside:avoid;">
+            <span style="font-weight:800;color:${s.pal.acc};margin-right:18px;min-width:22px;">${String(s.num).padStart(2, '0')}</span>
+            <span style="flex-grow:1;color:#222;">${s.name}</span>
+            <span style="color:#666;margin-right:14px;font-size:10px;">${typePrefix}1 – ${typePrefix}${s.items.length}</span>
+            <span style="font-weight:700;color:${s.pal.acc};">${s.items.length} items</span>
+        </div>`;
+    });
+
+    const sectionsJSON = JSON.stringify(sections);
+    const currentYear = new Date().getFullYear();
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaeri EdTech · ${course} ${termLabel} · ${sessInfo.title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- KaTeX CSS + JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+<style>
+    :root { --primary:#111435; --yellow:#fccb00; }
+    *, *::before, *::after { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    body { margin:0; padding:0; background:#e6e6e6; font-family:'Inter',Arial,sans-serif; }
+    @page { size:A4; margin:0; }
+    .sheet { width:210mm; height:297mm; background:white; margin:20px auto; position:relative; overflow:hidden; page-break-after:always; box-shadow:0 0 15px rgba(0,0,0,0.25); }
+    @media print { body { background:none; } .sheet { margin:0; box-shadow:none; } }
+    .pg-header { position:absolute; top:13mm; left:14mm; right:14mm; height:14mm; border-bottom:2px solid var(--primary); display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:5px; color:var(--primary); }
+    .pg-footer { position:absolute; bottom:13mm; left:14mm; right:14mm; height:10mm; border-top:1px solid #ccc; display:flex; justify-content:space-between; align-items:center; font-size:9px; color:#888; padding-top:4px; }
+    .pg-content { position:absolute; top:32mm; bottom:27mm; left:14mm; right:14mm; overflow:hidden; display:flex; flex-direction:column; }
+    .brand { font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
+    .meta { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
+    .pg-num { font-weight:700; color:var(--primary); }
+    .sheet.cover { background:var(--primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:18mm; }
+    .cover-graphics { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+    .diag { position:absolute; top:-50%; right:-20%; width:150%; height:150%; background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.13) 45%,rgba(252,203,0,0.13) 55%,transparent 55%); transform:rotate(25deg); }
+    .circ { position:absolute; bottom:-150px; left:-150px; width:400px; height:400px; border-radius:50%; background:rgba(26,32,85,0.75); }
+    .cover-inner { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; }
+    .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:36px 0; max-width:72%; }
+    .stat-num { font-size:40px; font-weight:800; color:var(--yellow); display:block; line-height:1; }
+    .stat-lbl { font-size:10px; text-transform:uppercase; color:#ddd; letter-spacing:1px; }
+    .cover-rule { border-top:1px solid var(--yellow); padding-top:18px; margin-top:auto; }
+    .sec-title { font-size:13px; font-weight:800; color:var(--primary); border-bottom:3px solid var(--yellow); padding-bottom:8px; margin-bottom:14px; }
+    #kaeri-loading { position:fixed; inset:0; background:rgba(17,20,53,0.92); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:9999; color:white; font-family:'Inter',Arial,sans-serif; gap:18px; }
+    .kaeri-spinner { width:48px; height:48px; border:4px solid rgba(252,203,0,0.2); border-top-color:#fccb00; border-radius:50%; animation:spin 0.8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #kaeri-loading p { font-size:14px; color:#fccb00; font-weight:600; margin:0; }
+    .how-to-box { background:#e8eaf6; border-left:5px solid #1a237e; padding:12px 16px; border-radius:0 8px 8px 0; margin:15px 0; }
+    .how-to-step { display:flex; gap:10px; margin-bottom:7px; }
+    .step-num { width:20px; height:20px; border-radius:50%; background:#1a237e; color:white; font-size:10px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .toc-item { display:flex; align-items:center; padding:10px 16px; border-radius:5px; font-size:12px; font-weight:500; margin-bottom:5px; background:#f4f4fa; }
+    .toc-num { font-weight:800; margin-right:16px; width:22px; }
+    .q-card { border:1px solid #c0c0e0; padding:12px 14px; border-radius:7px; background:white; margin-bottom:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .q-head { font-size:10.5px; font-weight:800; margin-bottom:4px; }
+    .q-text { font-size:14px; font-weight:700; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+    .ans { font-size:12px; font-weight:500; background:#f0faf4; padding:7px 11px; border-radius:6px; margin-bottom:7px; border-left:4px solid var(--acc); }
+    .expl { background:#f4f4fa; padding:6px 10px; font-size:11px; border-left:3px solid var(--acc); border-radius:0 5px 5px 0; }
+    .topic-banner { background:var(--bg); color:var(--acc); padding:8px 13px; border-left:6px solid var(--acc); font-weight:700; margin-bottom:12px; }
+    .katex-display { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<div id="kaeri-loading">
+    <div class="kaeri-spinner"></div>
+    <p>Building your revision kit…</p>
+    <small>Print dialog will open automatically</small>
+</div>
+
+<!-- FRONT COVER -->
+<div class="sheet cover">
+    <div class="cover-graphics"><div class="diag"></div><div class="circ"></div></div>
+    <div class="cover-inner">
+        <div style="color:var(--yellow);font-weight:700;font-size:11px;letter-spacing:2px;margin-bottom:18px;">
+            ${course} · ${identity.name.toUpperCase()}
+        </div>
+        <h1 style="font-size:46px;font-weight:800;line-height:1.1;margin:0 0 16px 0;">
+            ${termLabel}<br>${sessInfo.icon} ${sessInfo.title}
+        </h1>
+        <p style="font-size:16px;font-weight:300;color:#ddd;line-height:1.5;margin:0;">
+            Complete Study Kit &mdash; ${totalItems} Items
+        </p>
+        <div class="stats-grid">
+            <div><span class="stat-num">${totalItems}</span><span class="stat-lbl">ITEMS</span></div>
+            <div><span class="stat-num">${sections.length}</span><span class="stat-lbl">SECTIONS</span></div>
+            <div><span class="stat-num" style="font-size:22px;">${course}</span><span class="stat-lbl">COURSE</span></div>
+            <div><span class="stat-num">A4</span><span class="stat-lbl">FORMAT</span></div>
+        </div>
+        <div class="cover-rule">
+            <h3 style="color:var(--yellow);margin:0;">KAERI EDTECH</h3>
+            <p style="font-size:10px;opacity:0.75;margin-top:4px;">${identity.name} · ${termLabel} · ${date}</p>
+        </div>
+    </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="sheet">
+    <div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
+    <div class="pg-footer"><span>© ${currentYear} Kaeri EdTech</span><span class="pg-num">Page 2</span></div>
+    <div class="pg-content">
+        <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
+        ${tocRows}
+        <div class="how-to-box">
+            <div class="how-to-step"><div class="step-num">1</div><div><strong>Study the Question.</strong> Read each as a learning objective.</div></div>
+            <div class="how-to-step"><div class="step-num">2</div><div><strong>Memorize the Answer.</strong> These are the direct facts for the exam.</div></div>
+            <div class="how-to-step"><div class="step-num">3</div><div><strong>Internalize the Explanation.</strong> This is the standalone teaching.</div></div>
+        </div>
+    </div>
+</div>
+
+<div id="dynamic-content"></div>
+
+<!-- BACK COVER (with QR code pointing to REVISION PLATFORM) -->
+<div class="sheet cover" style="justify-content:flex-start;">
+    <div class="cover-graphics"><div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div></div>
+    <div class="cover-inner" style="justify-content:space-between;">
+        <div>
+            <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
+            <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-left:5px solid var(--yellow);padding:22px;border-radius:8px;">
+            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+                <div style="flex:1;">
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">CALL / WHATSAPP</div>
+                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:3px;">096-100-5406</div>
+                    <div style="font-size:22px;font-weight:800;color:white;margin-bottom:18px;">096-431-2504</div>
+                    <div style="font-size:10px;font-weight:800;color:var(--yellow);letter-spacing:1px;margin-bottom:4px;">ACCESS OUR REVISION PLATFORM</div>
+                    <div style="font-size:11px;color:#aaa;">Scan to access the official Kaeri EdTech revision site for ${course} resources, past papers, and more.</div>
+                </div>
+                <img src="${qrUrl}" width="110" height="110" style="border:2px solid white;border-radius:8px;">
+            </div>
+        </div>
+        <div style="font-size:10px;color:#aaa;line-height:1.7;border-top:1px solid #333;padding-top:16px;">
+            <strong>Document:</strong> ${course} · ${identity.name} · ${termLabel} · ${sessInfo.title}<br>
+            <strong>Generated:</strong> ${date} &nbsp;&nbsp;
+            <strong>© ${currentYear} Kaeri EdTech. All rights reserved.</strong>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    'use strict';
+    const sectionsData = ${sectionsJSON};
+    const sessionType = '${sessionType}';
+    const courseName = '${course}';
+    const termLabel = '${termLabel}';
+    const sessTitle = '${sessInfo.title}';
+
+    // Full Markdown parser (same as main engine)
+    function parseKaeriMarkdown(text) {
+        if (!text) return "";
+        let t = text;
+        t = t.replace(/^## (.*$)/gim, "<h3 style='margin:10px 0; color:#72efdd;'>$1</h3>");
+        t = t.replace(/^# (.*$)/gim, "<h2 style='margin:15px 0; color:#fff;'>$1</h2>");
+        t = t.replace(/^> (.*$)/gim, "<blockquote style='border-left:4px solid #72efdd; margin:10px 0; padding-left:15px; color:#a0a8b4; font-style:italic;'>$1</blockquote>");
+        t = t.replace(/^- (.*$)/gim, "<li style='margin-left:20px;'>$1</li>");
+        t = t.replace(/\\*\\*(.*?)\\*\\*/g, "<strong>$1</strong>");
+        t = t.replace(/__(.*?)__/g, "<u>$1</u>");
+        t = t.replace(/(?<!\\\\)\\*([^\\s].*?)(?<!\\\\)\\*/g, "<em>$1</em>");
+        t = t.replace(/\\n/g, "<br>");
+        return t;
+    }
+
+    // Pagination setup
+    const MM = 3.7795275591;
+    const PAGE_H = 297 * MM;
+    const TOP = 32 * MM;
+    const BOT = 27 * MM;
+    const CONT_H = PAGE_H - TOP - BOT - 22;
+    const CONT_W = (210 - 28) * MM;
+    const GAP = 10;
+
+    const root = document.getElementById('dynamic-content');
+    const sb = document.createElement('div');
+    sb.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:' + CONT_W + 'px;visibility:hidden;pointer-events:none;font-family:Inter,Arial,sans-serif;';
+    document.body.appendChild(sb);
+
+    let pageCount = 2; // cover=1, TOC=2
+    function newPage() {
+        pageCount++;
+        const sheet = document.createElement('div');
+        sheet.className = 'sheet';
+        sheet.innerHTML = '<div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
+                          '<div class="pg-footer"><span>© ${currentYear} Kaeri EdTech. All rights reserved.</span><span class="pg-num">Page ' + pageCount + '</span></div>' +
+                          '<div class="pg-content" id="pg-' + pageCount + '"></div>';
+        root.appendChild(sheet);
+        return { el: sheet.querySelector('#pg-' + pageCount), used: 0 };
+    }
+
+    function measure(el) {
+        sb.innerHTML = '';
+        const clone = el.cloneNode(true);
+        clone.style.width = '100%';
+        sb.appendChild(clone);
+        return clone.offsetHeight + 5;
+    }
+
+    function place(el, state, gap = GAP) {
+        const h = measure(el);
+        const g = state.used > 0 ? gap : 0;
+        if (state.used + h + g > CONT_H) state = newPage();
+        if (state.used > 0) {
+            const spacer = document.createElement('div');
+            spacer.style.height = gap + 'px';
+            state.el.appendChild(spacer);
+        }
+        state.el.appendChild(el);
+        state.used += h + (state.used > 0 ? gap : 0);
+        return state;
+    }
+
+    function createCard(item, secName, idx, pal) {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.style.setProperty('--acc', pal.acc);
+        card.style.setProperty('--bg', pal.bg);
+
+        let qText = '', ansHtml = '', explHtml = '';
+        if (sessionType === 'mcq') {
+            qText = parseKaeriMarkdown(item.q || '');
+            const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
+            ansHtml = '<strong>Answer:</strong> ' + parseKaeriMarkdown(correctOpt);
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
+        } else if (sessionType === 'shortAnswer') {
+            qText = parseKaeriMarkdown(item.q || '');
+            ansHtml = '<strong>Keywords:</strong> ' + (item.keywords || []).join(', ');
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
+        } else if (sessionType === 'essay') {
+            qText = parseKaeriMarkdown(item.q || '');
+            const correctOpt = (item.options && item.options[item.correct]) ? item.options[item.correct] : '—';
+            ansHtml = '<strong>Correct:</strong> ' + parseKaeriMarkdown(correctOpt);
+            explHtml = parseKaeriMarkdown(item.explanation || 'No additional explanation.');
+        } else { // flashcard
+            qText = parseKaeriMarkdown(item.front || '');
+            ansHtml = parseKaeriMarkdown(item.back || '');
+            explHtml = '';
+        }
+
+        card.innerHTML = \`
+            <div class="q-head" style="color:\${pal.acc}">\${secName} · Item \${idx+1}</div>
+            <div class="q-text">\${qText}</div>
+            <div class="ans" style="border-left-color:\${pal.acc}">\${ansHtml}</div>
+            \${explHtml ? '<div class="expl" style="border-left-color:\${pal.acc}"><span class="expl-label" style="color:\${pal.acc}">📖 Explanation</span> ' + explHtml + '</div>' : ''}
+        \`;
+        return card;
+    }
+
+    function build() {
+        let state = newPage();
+        for (let sec of sectionsData) {
+            const banner = document.createElement('div');
+            banner.className = 'topic-banner';
+            banner.style.backgroundColor = sec.pal.bg;
+            banner.style.color = sec.pal.acc;
+            banner.style.borderLeftColor = sec.pal.acc;
+            banner.innerHTML = '<div class="banner-text">SECTION ' + sec.num + ': ' + sec.name.toUpperCase() + '</div>';
+            state = place(banner, state, 0);
+            sec.items.forEach((item, idx) => {
+                const card = createCard(item, sec.name, idx, sec.pal);
+                state = place(card, state, 10);
+            });
+        }
+    }
+
+    function renderMathAndPrint() {
+        if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\\\(', right: '\\\\)', display: false},
+                    {left: '\\\\[', right: '\\\\]', display: true}
+                ],
+                throwOnError: false
+            });
+        }
+        setTimeout(() => {
+            const loading = document.getElementById('kaeri-loading');
+            if (loading) loading.style.display = 'none';
+            if (sb.parentNode) sb.parentNode.removeChild(sb);
+            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+        }, 200);
+    }
+
+    let timeoutId = setTimeout(() => {
+        console.warn('Font loading timeout – forcing print');
+        renderMathAndPrint();
+    }, 3000);
+
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => {
+            clearTimeout(timeoutId);
+            build();
+            renderMathAndPrint();
+        }).catch(err => {
+            console.warn(err);
+            clearTimeout(timeoutId);
+            build();
+            renderMathAndPrint();
+        });
+    } else {
+        window.addEventListener('load', () => {
+            clearTimeout(timeoutId);
+            build();
+            renderMathAndPrint();
+        });
+    }
+})();
+</script>
+</body>
+</html>`;
+}
 // ============================================================
 // === 10. UTILITIES ===
 // ============================================================
@@ -2969,6 +3386,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     setTimeout(renderStudentBoard, 100);
+
+    // ============================================================
+    // --- NEW: PAYMENT FORM EVENT BINDINGS & GLOBAL EXPORTS ---
+    // ============================================================
+
+    // 1. Bind Submit button
+    const payBtn = document.getElementById('paySubmitBtn');
+    if (payBtn) payBtn.addEventListener('click', handleSubmit);
+
+    // 2. Bind File input change
+    const fileInput = document.getElementById('fileInput');
+    if (fileInput) fileInput.addEventListener('change', function() { handleFile(this); });
+
+    // 3. Bind Course & Term dropdowns
+    const courseSelect = document.getElementById('courseSelect');
+    const termSelect = document.getElementById('termSelect');
+    if (courseSelect) courseSelect.addEventListener('change', updateTerms);
+    if (termSelect) termSelect.addEventListener('change', updatePrice);
+
+    // 4. Expose new functions globally so inline onclick attributes work
+    window.switchPayTab = switchPayTab;
+    window.checkHistory = checkHistory;
+    window.copyCode = copyCode;
+    window.handleSubmit = handleSubmit;
+    window.handleFile = handleFile;
+    window.loadCourses = loadCourses;
+    window.showAlert = showAlert;
+    window.openPaymentModal = openPaymentModal;
+    window.closePaymentModal = closePaymentModal;
+
+    // 5. CRITICAL: Expose the existing verifyCodeFromModal() so the "Activate Code" button works
+    window.verifyCodeFromModal = verifyCodeFromModal;
 });
 
 // ============================================================
