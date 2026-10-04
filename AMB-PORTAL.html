@@ -830,7 +830,7 @@ input:focus, select:focus {
 /* ═══════════════════════════════════════════════════════════════════
    CONFIG
    ═══════════════════════════════════════════════════════════════════ */
-var API_URL = 'https://script.google.com/macros/s/AKfycbywe-_fKOtv7PlyGhuMB0FxGWPxwXQ8iwHnYI4llrLO2blcxggOShm0j0VaUVn7XV5QpQ/exec';
+var API_URL = 'https://script.google.com/macros/s/AKfycbwhpVvSUvlOX-mGViy3BcBR887t-2Wm38xQj4i3Jxkk_bpvg057EpszbdZ9Ill_oqGF6w/exec';
 var PLATFORM_URL = 'https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/';
 var SESSION_KEY = 'kaeri_ambassador_session';
 
@@ -1511,7 +1511,7 @@ function shareLink() {
   var link = currentProfile.referralLink;
   var text = 'Join me on the Kaeri EdTech Revision Platform! ' + link;
   if (navigator.share) {
-    navigator.share({ title: 'Kaeri EdTech', text: text, url: link }).catch(function () {});
+    navigator.share({ title: 'Kaeri EdTech', text: text }).catch(function () {});
   } else copyLink();
 }
 
