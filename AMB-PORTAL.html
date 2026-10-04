@@ -500,6 +500,11 @@ input:focus, select:focus {
   font-family: inherit; font-size: 0.95em; margin-bottom: 14px;
 }
 .modal select:focus { outline: none; border-color: #007bff; box-shadow: 0 0 6px rgba(0,123,255,0.35); }
+.claim-code { background: #0d1b2a; border: 2px dashed #72efdd; border-radius: 10px; padding: 16px; text-align: center; margin: 12px 0; }
+.claim-code .code-val { font-family: 'Courier New', monospace; font-size: 1.35em; font-weight: 800; color: #72efdd; letter-spacing: 1.5px; word-break: break-all; user-select: all; }
+.claim-code .code-meta { color: #a0a8b4; font-size: 0.82em; margin-top: 6px; }
+.copy-code-btn { margin-top: 12px; background: #72efdd; color: #0d1b2a; border: none; border-radius: 8px; padding: 10px 18px; font-weight: 800; font-size: 0.95em; cursor: pointer; font-family: inherit; }
+.copy-code-btn.copied { background: #28a745; color: #fff; }
 .modal-actions { display: flex; gap: 10px; margin-top: 8px; }
 .modal-actions button {
   flex: 1; padding: 13px 20px; border: none; border-radius: 8px;
@@ -825,7 +830,7 @@ input:focus, select:focus {
 /* ═══════════════════════════════════════════════════════════════════
    CONFIG
    ═══════════════════════════════════════════════════════════════════ */
-var API_URL = 'https://script.google.com/macros/s/AKfycbzqUj4JOMeM8E5fUcNXOwmjWyg1xDRNQTkkeuucgYjX2PJDQoOr3sXTWaq3fuH1iFyipw/exec';
+var API_URL = 'https://script.google.com/macros/s/AKfycbywe-_fKOtv7PlyGhuMB0FxGWPxwXQ8iwHnYI4llrLO2blcxggOShm0j0VaUVn7XV5QpQ/exec';
 var PLATFORM_URL = 'https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/';
 var SESSION_KEY = 'kaeri_ambassador_session';
 
@@ -838,6 +843,24 @@ var currentThresholds = [];
 var availableCourses = {};
 var pendingClaim = null;
 var notifTimer = null;
+
+/* ═══════════════════════════════════════════════════════════════════
+   DEEP LINKS FROM EMAIL CTAs
+     ?id=AMEK1001      → pre-fills the Ambassador ID on the sign-in form
+     ?claim=30         → auto-opens the claim modal for tier 30 (if unlocked)
+     ?go=balance       → scrolls to a section after sign-in:
+                         balance | share | rewards | referrals
+   ═══════════════════════════════════════════════════════════════════ */
+var deepLink = (function () {
+  var p = new URLSearchParams(window.location.search);
+  var c = parseInt(p.get('claim'), 10);
+  return {
+    id: String(p.get('id') || '').trim().toUpperCase(),
+    claim: isFinite(c) ? c : null,
+    go: String(p.get('go') || '').toLowerCase(),
+    done: false
+  };
+})();
 
 /* ═══════════════════════════════════════════════════════════════════
    BRIDGE
@@ -1051,7 +1074,7 @@ function submitReferral() {
         var msg = res.message || 'Thanks — continuing to the platform…';
         if (reason === 'self_email') msg = 'You cannot refer yourself. Continuing…';
         else if (reason === 'duplicate') msg = 'This email was already counted. Continuing…';
-        else if (reason === 'device_limit') msg = 'Device limit reached. Continuing…';
+        else if (reason === 'device_reuse' || reason === 'device_limit' || reason === 'self_device') msg = 'This device has already been used for referrals. Continuing…';
         else if (reason === 'invalid_ambassador') msg = 'Invalid referral link. Continuing…';
         else if (reason === 'inactive') msg = 'This ambassador link is inactive. Continuing…';
         showMsg('info', msg);
@@ -1121,7 +1144,7 @@ function renderPublicLeaderboard(data, total) {
     var tieMark = a.tied ? ' <span style="color:#8892b0;font-size:0.75em;">(tie)</span>' : '';
     html += '<div class="leaderboard-item">' +
       '<div class="rank ' + rankCls + '">' + displayRank + '</div>' +
-      '<div class="name">' + escapeHtml(name) + level + '</div>' +
+      '<div class="name">' + escapeHtml(name) + tieMark + level + '</div>' +
       '<div class="clicks">' + reach + '</div>' +
       '<div class="count">' + conv + '</div>' +
     '</div>';
@@ -1146,6 +1169,11 @@ function bootPortal() {
     var btn = document.getElementById('portalLoginBtn');
     btn.disabled = false;
     btn.textContent = 'Sign In ➡️';
+    // Deep link pre-fill (overrides nothing if user already typed something)
+    if (deepLink.id) {
+      var idEl = document.getElementById('portalId');
+      if (idEl && !idEl.value) idEl.value = deepLink.id;
+    }
   }
 }
 
@@ -1180,7 +1208,14 @@ function registerAmbassador() {
       switchAuthTab('login');
       login();
     } else {
-      toast((res && res.message) || 'Registration failed', 'error');
+      if (res && res.ambassadorId) {
+        document.getElementById('portalId').value = String(res.ambassadorId).toUpperCase();
+        document.getElementById('portalEmail').value = email;
+        switchAuthTab('login');
+        toast('This email is already registered. Your Ambassador ID is filled in. Tap Sign In.', 'warning');
+      } else {
+        toast((res && res.message) || 'Registration failed', 'error');
+      }
       btn.disabled = false;
       btn.textContent = 'Become an Ambassador ➡️';
     }
@@ -1250,7 +1285,7 @@ function renderProfile() {
   document.getElementById('pNameInline').textContent = (p.name || '').split(' ')[0] || 'Ambassador';
   document.getElementById('pId').textContent = p.id || '—';
   document.getElementById('pStatus').textContent = p.status || 'Active';
-  document.getElementById('pJoined').textContent = p.joinDate || '—';
+  document.getElementById('pJoined').textContent = formatDateShort(p.joinDate);
   document.getElementById('pClicksRow').textContent = p.peopleReached || 0;
   document.getElementById('pClicks').textContent = p.peopleReached || 0;
   document.getElementById('pConv').textContent = p.conversionsConfirmed || 0;
@@ -1314,9 +1349,55 @@ function loadFullDashboard() {
       renderProfile();
       renderThresholds();
       renderRefs(res.recentRefs || []);
-      renderPortalLeaderboard(res.leaderboard || [], res.rank, res.profile, res.tied);
+      renderPortalLeaderboard(res.leaderboard || [], res.rank, res.profile, res.rankTied);
+
+      /* Deep link: scroll to section / auto-open claim now that data is ready */
+      applyDeepLink();
     })
     .catch(function () { toast('Could not refresh dashboard', 'error'); });
+}
+
+/**
+ * Acts on ?go= and ?claim= once the dashboard has loaded and
+ * currentThresholds is populated. Runs at most once per page load.
+ */
+function applyDeepLink() {
+  if (deepLink.done) return;
+  deepLink.done = true;
+
+  // ?go=scroll-to-section
+  var sections = {
+    balance:   'commissionCardWrap',
+    share:     'pLink',
+    rewards:   'pThresholds',
+    referrals: 'pRefs'
+  };
+  if (sections[deepLink.go]) {
+    var el = document.getElementById(sections[deepLink.go]);
+    if (!el || el.offsetParent === null) el = document.getElementById('pId');
+    if (el) {
+      setTimeout(function () {
+        try { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        catch (e) { el.scrollIntoView(); }
+      }, 300);
+    }
+  }
+
+  // ?claim=threshold — open the claim modal if the tier is unlocked and unclaimed
+  if (deepLink.claim) {
+    var idx = -1;
+    for (var i = 0; i < currentThresholds.length; i++) {
+      if (currentThresholds[i].count === deepLink.claim) { idx = i; break; }
+    }
+    var tier = idx >= 0 ? currentThresholds[idx] : null;
+    if (tier && tier.unlocked && !tier.claimed) {
+      setTimeout(function () { openClaimModalByIndex(idx); }, 400);
+    } else if (tier && tier.claimed) {
+      toast('That reward is already claimed.', 'warning');
+    } else if (tier && !tier.unlocked) {
+      toast('Keep sharing — that reward unlocks at ' + tier.count + ' people.', 'info');
+    }
+  }
 }
 
 function renderThresholds() {
@@ -1468,7 +1549,12 @@ function openClaimModalByIndex(index) {
   openClaimModal(currentThresholds[index]);
 }
 
+var claimResultMode = false;
+
 function openClaimModal(tier) {
+  claimResultMode = false;
+  var cancelBtn = document.querySelector('#claimModal .modal-actions .cancel');
+  if (cancelBtn) cancelBtn.style.display = '';
   pendingClaim = tier;
   document.getElementById('claimTitle').textContent = '🎁 Claim: ' + tier.label;
   var body = document.getElementById('claimBody');
@@ -1549,9 +1635,57 @@ function onCourseChange(tier) {
 function closeClaimModal() {
   document.getElementById('claimModal').classList.remove('show');
   pendingClaim = null;
+  claimResultMode = false;
+}
+
+function showClaimResult(res) {
+  claimResultMode = true;
+  pendingClaim = null;
+  var scope = (res.course && res.course !== 'ALL')
+    ? escapeHtml(res.course) + (res.term && res.term !== 'ALL' ? ' · ' + escapeHtml(res.term) : ' · all terms')
+    : 'All courses · all terms';
+  document.getElementById('claimTitle').textContent = '🎉 Reward claimed!';
+  document.getElementById('claimBody').innerHTML =
+    '<p style="color:#a0a8b4; font-size:0.9em; text-align:center;">Your access code (also emailed to you):</p>' +
+    '<div class="claim-code"><div class="code-val" id="claimCodeVal">' + escapeHtml(String(res.code)) + '</div>' +
+    '<div class="code-meta">' + scope + '</div>' +
+    '<button type="button" class="copy-code-btn" id="copyCodeBtn" onclick="copyClaimCode()">📋 Copy code</button></div>';
+  var cb = document.getElementById('claimConfirmBtn');
+  cb.disabled = false;
+  cb.textContent = 'Done';
+  var cancelBtn = document.querySelector('#claimModal .modal-actions .cancel');
+  if (cancelBtn) cancelBtn.style.display = 'none';
+  document.getElementById('claimModal').classList.add('show');
+}
+
+function copyClaimCode() {
+  var el = document.getElementById('claimCodeVal');
+  var btn = document.getElementById('copyCodeBtn');
+  if (!el || !btn) return;
+  var code = el.textContent;
+  function done(ok) {
+    btn.textContent = ok ? '✅ Copied!' : 'Press and hold the code to copy';
+    if (ok) btn.classList.add('copied');
+    setTimeout(function () { btn.textContent = '📋 Copy code'; btn.classList.remove('copied'); }, 2200);
+  }
+  function legacy() {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = code; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, code.length);
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      done(ok);
+    } catch (e) { done(false); }
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(code).then(function () { done(true); }, legacy);
+  } else { legacy(); }
 }
 
 function submitClaim() {
+  if (claimResultMode) return closeClaimModal();
   if (!pendingClaim || !currentProfile) return;
   var tier = pendingClaim;
   var course = '', term = '';
@@ -1580,9 +1714,9 @@ function submitClaim() {
       btn.disabled = false;
       btn.textContent = orig;
       if (res && res.success) {
-        closeClaimModal();
-        toast(res.message || 'Reward claimed!', 'success');
         availableCourses = {};
+        if (res.code) { showClaimResult(res); toast(res.message || 'Reward claimed!', 'success'); }
+        else { closeClaimModal(); toast(res.message || 'Reward claimed!', 'success'); }
         loadFullDashboard();
       } else if (res && res.deferred) {
         closeClaimModal();
@@ -1615,6 +1749,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
   /* Route */
   renderView(pickView());
+
+  /* Deep link: pre-fill Ambassador ID and focus email field */
+  if (deepLink.id) {
+    var idEl = document.getElementById('portalId');
+    var emEl = document.getElementById('portalEmail');
+    if (idEl && !idEl.value) idEl.value = deepLink.id;
+    if (emEl && !emEl.value) {
+      setTimeout(function () { try { emEl.focus(); } catch (e) {} }, 250);
+    }
+  }
 
   /* Keyboard handlers */
   setTimeout(function () {
