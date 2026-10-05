@@ -1780,45 +1780,19 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/* ===== Back to the Revision Platform (product site) ===== */
-(function () {
-  // Same folder as the portal. Use 'index.html' to open the welcome page instead.
-  var PRODUCT_PAGE = 'index.html?view=courses';
-
-  window.goToRevisionPlatform = function () {
-    window.location.assign(PRODUCT_PAGE);
-  };
-
-  function injectBackButton() {
-    if (document.getElementById('back-to-platform')) return;
-
-    var css = document.createElement('style');
-    css.textContent =
-      '#back-to-platform{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));' +
-      'z-index:900;display:flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;' +
-      'border:1px solid rgba(100,255,218,.55);background:rgba(13,27,42,.92);color:#64ffda;' +
-      'font:600 14px/1 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;cursor:pointer;' +
-      'box-shadow:0 6px 18px rgba(0,0,0,.35);-webkit-tap-highlight-color:transparent;}' +
-      '#back-to-platform:active{transform:scale(.97);}' +
-      '@media (min-width:700px){#back-to-platform{left:24px;bottom:24px;}}';
-    document.head.appendChild(css);
-
-    var btn = document.createElement('button');
-    btn.id = 'back-to-platform';
-    btn.type = 'button';
-    btn.setAttribute('aria-label', 'Back to Revision Platform');
-    btn.textContent = '📚 Back to Revision Platform';
-    btn.addEventListener('click', window.goToRevisionPlatform);
-    document.body.appendChild(btn);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectBackButton);
-  } else {
-    injectBackButton();
-  }
-})();
-
 </script>
+<style>
+  .back-platform{
+    position:fixed; left:12px; bottom:calc(12px + env(safe-area-inset-bottom,0px));
+    z-index:900; display:inline-flex; align-items:center; gap:6px;
+    padding:9px 13px; border-radius:999px; text-decoration:none;
+    background:rgba(13,27,42,.85); color:#64ffda; border:1px solid rgba(100,255,218,.5);
+    font:600 13px/1 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    box-shadow:0 4px 14px rgba(0,0,0,.35); -webkit-tap-highlight-color:transparent;
+  }
+  .back-platform:active{ transform:scale(.97); }
+</style>
+
+<a class="back-platform" href="index.html?view=courses" aria-label="Back to Revision Platform">📚 Revision Platform</a>
 </body>
 </html>
