@@ -1492,6 +1492,19 @@
     #qs-bar { position:absolute; left:0; right:0; bottom:0; height:3px; background:var(--brand-line); }
     #qs-fill { height:100%; width:0; background:var(--brand-success); transition:width .35s ease; }
 
+    /* ===== FOCUS MODE: any mode screen open (setup, quiz, results, docs, progress)
+       -> hide the course shell; show only the current screen + top navigation strip ===== */
+    body.in-mode { padding-top:calc(var(--strip-h) + env(safe-area-inset-top,0px) + 8px); }
+    body.in-mode #quiz-strip { display:flex; }
+    body.in-mode #fixed-header { display:none !important; }
+    body.in-mode #course-title,
+    body.in-mode #course-view > .info-card,
+    body.in-mode #course-view > .mode-buttons,
+    body.in-mode #course-view > .back-button,
+    body.in-mode #course-view > .course-footer,
+    body.in-mode #draggable-wa { display:none !important; }
+    body.in-mode .quiz-container { margin:0 auto; padding:14px 10px 28px; box-shadow:none; }
+
     /* Welcome */
     #welcome-view { display:flex; flex-direction:column; justify-content:center; min-height:calc(100vh - 170px); }
     @supports (height:100dvh) { #welcome-view { min-height:calc(100dvh - 170px); } }

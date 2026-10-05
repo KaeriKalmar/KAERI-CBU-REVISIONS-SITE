@@ -452,7 +452,7 @@ async function renderDocuments() {
         const success = data.success || false;
         
         if (!success || documents.length === 0) {
-            container.innerHTML = `<div style="text-align:center; padding:30px;"><h3>📂 Library Empty</h3><p>No active documents found.</p><button class="restart-button" onclick="backToMenu()">Back to Menu</button></div>`;
+            container.innerHTML = `<div style="text-align:center; padding:30px;"><h3>📂 Library Empty</h3><p>No active documents found.</p><button class="restart-button" onclick="exitQuiz()">Back to Menu</button></div>`;
             return;
         }
 
@@ -511,7 +511,7 @@ async function renderDocuments() {
     </div>`;
 });
         html += `</div>`;
-        html += `<div style="text-align:center; margin-top:20px;"><button class="restart-button" onclick="backToMenu()">⬅ Back to Menu</button></div>`;
+        html += `<div style="text-align:center; margin-top:20px;"><button class="restart-button" onclick="exitQuiz()">⬅ Back to Menu</button></div>`;
         container.innerHTML = html;
 
     } catch (e) {
@@ -1000,7 +1000,7 @@ function renderProgressDashboard() {
         </div>
 
         <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:10px;">
-            <button onclick="backToMenu()" class="back-button" style="margin:0;">\u2B05\uFE0F Back to Course</button>
+            <button onclick="exitQuiz()" class="back-button" style="margin:0;">\u2B05\uFE0F Back to Course</button>
             <button onclick="_confirmResetProgress()"
                 style="background:transparent;color:#ef4444;border:1px solid #ef4444;
                        padding:10px 16px;border-radius:8px;cursor:pointer;font-size:0.85em;">
@@ -1076,6 +1076,7 @@ function backToMenu() {
     document.getElementById('price-banner').style.display = 'none';
     document.body.classList.remove('view-course');
     document.body.classList.remove('quiz-running');
+    document.body.classList.remove('in-mode');
     showCourses(true);
 
     document.getElementById('quiz-form').innerHTML = '';
@@ -1637,7 +1638,7 @@ function renderQuiz() {
             </div>
             
             <div style="margin-top:20px;">
-                <button onclick="backToMenu()" class="back-button" style="margin-top:0;">⬅️ Back</button>
+                <button onclick="exitQuiz()" class="back-button" style="margin-top:0;">⬅️ Back</button>
             </div>
         </div>
     `;
@@ -1700,7 +1701,7 @@ function renderShortAnswers() {
             </div>
             
             <div style="margin-top:20px;">
-                <button onclick="backToMenu()" class="back-button" style="margin-top:0;">⬅️ Back</button>
+                <button onclick="exitQuiz()" class="back-button" style="margin-top:0;">⬅️ Back</button>
             </div>
         </div>
     `;
@@ -3565,6 +3566,34 @@ function hideCourses() {
 // ---------- Quiz strip ----------
 let _stripState = { current: 0, total: 0 };
 
+// Focus mode: whenever a mode screen is open (anything inside #quiz-form / #result),
+// the course shell is hidden by CSS (body.in-mode) and the top strip is the navigation.
+function _syncFocusMode() {
+    const qf = document.getElementById('quiz-form');
+    const rs = document.getElementById('result');
+    const inCourse = !!document.body.getAttribute('data-course');
+    const open = inCourse && ((qf && qf.childNodes.length > 0) || (rs && rs.childNodes.length > 0));
+    const was = document.body.classList.contains('in-mode');
+    document.body.classList.toggle('in-mode', !!open);
+    if (!!open !== was) window.scrollTo(0, 0);
+    // Setup / list / dashboard screens (no running quiz): strip shows the course + term
+    if (open && !document.body.classList.contains('quiz-running')) {
+        const c = document.getElementById('qs-count');
+        const f = document.getElementById('qs-fill');
+        const t = String(currentTerm || '').replace('T', '');
+        if (c) c.textContent = `${currentCourse || ''} · Term ${t}`;
+        if (f) f.style.width = '0%';
+        _syncStripTts();
+    }
+}
+(function () {
+    const mo = new MutationObserver(_syncFocusMode);
+    ['quiz-form', 'result'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) mo.observe(el, { childList: true });
+    });
+})();
+
 function _syncStripTts() {
     const b = document.getElementById('qs-tts');
     if (b) b.textContent = ttsEnabled ? '🔊' : '🔇';
@@ -3574,7 +3603,8 @@ function _syncQuizStrip(current, total, percent) {
     _stripState = { current, total };
     const running = total > 0 && !!document.body.getAttribute('data-course');
     document.body.classList.toggle('quiz-running', running);
-    if (!running) return;
+    if (!running) { _syncFocusMode(); return; }
+    _syncFocusMode();
     const prefix = { mcq: 'Q', shortAnswer: 'S', essay: 'E', flashcard: 'C' }[currentQuizType] || 'Q';
     const c = document.getElementById('qs-count');
     const f = document.getElementById('qs-fill');
