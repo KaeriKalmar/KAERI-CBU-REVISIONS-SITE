@@ -1505,6 +1505,27 @@
     body.in-mode #draggable-wa { display:none !important; }
     body.in-mode .quiz-container { margin:0 auto; padding:14px 10px 28px; box-shadow:none; }
 
+    /* ===== FOCUS SCREEN: locked horizontally, scrolls vertically only ===== */
+    body.in-mode { overflow-x:hidden; overscroll-behavior-x:none; max-width:100vw; }
+    body.in-mode .quiz-container { width:100%; max-width:100%; box-sizing:border-box; overflow-x:hidden; }
+    body.in-mode #quiz-form, body.in-mode #result {
+      max-width:100%; box-sizing:border-box; overflow-wrap:break-word;
+      scroll-margin-top:calc(var(--strip-h) + env(safe-area-inset-top,0px) + 8px);
+    }
+    body.in-mode #quiz-form img, body.in-mode #quiz-form video, body.in-mode #quiz-form iframe,
+    body.in-mode #quiz-form svg, body.in-mode #result img { max-width:100%; height:auto; }
+    body.in-mode #quiz-form table, body.in-mode #result table { display:block; max-width:100%; overflow-x:auto; }
+    body.in-mode #quiz-form pre, body.in-mode #result pre { max-width:100%; white-space:pre-wrap; overflow-x:auto; }
+    body.in-mode .katex-display { max-width:100%; overflow-x:auto; overflow-y:hidden; }
+    body.in-mode #quiz-form textarea, body.in-mode #quiz-form input[type=text] { width:100%; max-width:100%; box-sizing:border-box; }
+    body.in-mode .options label { max-width:100%; box-sizing:border-box; }
+
+    /* ===== FINAL SCREEN: only the score card ===== */
+    #final-anchor { display:block; height:0; overflow:hidden; }
+    body.final-screen #result { display:none !important; }
+    body.final-screen #quiz-form { text-align:center; padding-top:8px; }
+    body.final-screen #quiz-form h2 { font-size:1.7rem; color:var(--brand-mint-alt); margin:6px 0 12px; }
+
     /* Welcome */
     #welcome-view { display:flex; flex-direction:column; justify-content:center; min-height:calc(100vh - 170px); }
     @supports (height:100dvh) { #welcome-view { min-height:calc(100dvh - 170px); } }
@@ -1656,7 +1677,7 @@
 
         <div class="cta-stack">
           <button type="button" class="cta-btn cta-primary" onclick="showCourses()">📚 Courses</button>
-          <a class="cta-btn cta-outline" href="https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/Ambassador-Portal-HYBRID-LIVE.html" target="_blank" rel="noopener">🚀 Ambassador Program</a>
+          <a data-amb-link class="cta-btn cta-outline" href="AMB-PORTAL.html" target="_blank" rel="noopener">🚀 Ambassador Program</a>
         </div>
 
         <div class="social-row">
@@ -1748,7 +1769,7 @@
           <a class="pill-link" href="https://chat.whatsapp.com/GB4UZVkxgwUGa5R4nqfDMR" target="_blank" rel="noopener" style="background:#25D366; color:#fff;">👥 Discussion Group 2</a>
         </div>
         <hr>
-        <a class="pill-link pill-amb" href="https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/Ambassador-Portal-HYBRID-LIVE.html" target="_blank" rel="noopener">🚀 Become an Ambassador →</a>
+        <a data-amb-link class="pill-link pill-amb" href="AMB-PORTAL.html" target="_blank" rel="noopener">🚀 Become an Ambassador →</a>
         <p class="signoff" style="margin:0;">Kaeri EdTech · Study Smarter. Grow Confident.</p>
       </div>
     </div>

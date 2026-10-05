@@ -16,8 +16,10 @@ const DOCS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6Zm
 
 const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
 
-// Cross-app link + ambassador backend (referral capture only)
-const AMBASSADOR_PORTAL_URL = "https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/Ambassador-Portal-HYBRID-LIVE.html";
+// Cross-app link to the Ambassador Portal (single source of truth for every Ambassador button).
+// The portal now handles referral tracking itself and redirects back to this site,
+// so product-side capture below stays OFF (AMBASSADOR_API_URL empty) to avoid double-counting.
+const AMBASSADOR_PORTAL_URL = "https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/AMB-PORTAL.html";
 const AMBASSADOR_API_URL = ""; // TODO: paste the ambassador backend /exec URL. While empty, referral capture stays off.
 
 let ttsEnabled = false;
@@ -1077,6 +1079,7 @@ function backToMenu() {
     document.body.classList.remove('view-course');
     document.body.classList.remove('quiz-running');
     document.body.classList.remove('in-mode');
+    document.body.classList.remove('final-screen');
     showCourses(true);
 
     document.getElementById('quiz-form').innerHTML = '';
@@ -1731,7 +1734,7 @@ function displayMcqQuestion() {
     
     renderMath();
     document.getElementById("result").innerHTML = "";
-    container.scrollIntoView({ behavior: "smooth" });
+    _focusScreen();
     readCurrentQuestion();
 }
 
@@ -1844,7 +1847,7 @@ function displayShortAnswerQuestion() {
     
     renderMath();
     document.getElementById("result").innerHTML = "";
-    container.scrollIntoView({ behavior: "smooth" });
+    _focusScreen();
     readCurrentQuestion();
 }
 
@@ -2015,7 +2018,7 @@ function showEssayStep(index) {
     
     renderMath();
     document.getElementById("result").innerHTML = "";
-    container.scrollIntoView({ behavior: "smooth" });
+    _focusScreen();
     readCurrentQuestion();
 }
 
@@ -2442,7 +2445,7 @@ function displayFlashcard() {
     container.innerHTML = html;
     
     renderMath(); // KaTeX
-    container.scrollIntoView({ behavior: "smooth" });
+    _focusScreen();
     readFlashcard(); // Smart TTS
 }
 
@@ -3575,6 +3578,7 @@ function _syncFocusMode() {
     const open = inCourse && ((qf && qf.childNodes.length > 0) || (rs && rs.childNodes.length > 0));
     const was = document.body.classList.contains('in-mode');
     document.body.classList.toggle('in-mode', !!open);
+    document.body.classList.toggle('final-screen', !!open && !!document.getElementById('final-anchor'));
     if (!!open !== was) window.scrollTo(0, 0);
     // Setup / list / dashboard screens (no running quiz): strip shows the course + term
     if (open && !document.body.classList.contains('quiz-running')) {
@@ -3650,7 +3654,7 @@ function confirmExitQuiz() {
 ['renderQuiz', 'renderShortAnswers', 'renderEssaySimulation', 'renderFlashcardTopics'].forEach(name => {
     const orig = window[name];
     if (typeof orig !== 'function') return;
-    window[name] = function () { updateProgress(0, 0); return orig.apply(this, arguments); };
+    window[name] = function () { updateProgress(0, 0); const out = orig.apply(this, arguments); _focusScreen(); return out; };
 });
 
 // Soft ambassador pitch on completion screens
@@ -3694,6 +3698,88 @@ function _addSoftPitch() {
         return out;
     };
 })();
+
+// ============================================================
+// === FOCUS SCROLLER (auto-scroll into focus) ===
+// ============================================================
+function _stripOffset() {
+    const st = document.getElementById('quiz-strip');
+    const h = st && st.offsetHeight ? st.offsetHeight : 44;
+    return h + 8;
+}
+function _scrollBehavior() { return _reducedMotion() ? 'auto' : 'smooth'; }
+
+// Put the top of `el` just under the top strip
+function _scrollToTop(el) {
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - _stripOffset();
+    window.scrollTo({ top: Math.max(0, y), behavior: _scrollBehavior() });
+}
+
+// Scroll the minimum needed so `el` (feedback + Next button) is on screen
+function _ensureVisible(el) {
+    if (!el || !el.childNodes.length) return;
+    const top = _stripOffset(), vh = window.innerHeight, pad = 16;
+    const r = el.getBoundingClientRect();
+    let dy = 0;
+    if (r.height > vh - top - pad) dy = r.top - top;            // taller than screen: start at its top
+    else if (r.bottom > vh - pad) dy = r.bottom - (vh - pad);   // bring the Next/Finish button into view
+    else if (r.top < top) dy = r.top - top;
+    if (Math.abs(dy) > 2) window.scrollBy({ top: dy, behavior: _scrollBehavior() });
+}
+
+// New screen (setup, question, card, list): align it under the strip
+function _focusScreen() {
+    _syncFocusMode();
+    const qf = document.getElementById('quiz-form');
+    if (!qf || !qf.childNodes.length) return;
+    const delta = qf.getBoundingClientRect().top - _stripOffset();
+    if (Math.abs(delta) > 6) _scrollToTop(qf);
+}
+
+// After answering: bring the verdict, explanation and Next button into focus
+(function () {
+    const rs = document.getElementById('result');
+    if (!rs) return;
+    new MutationObserver(() => {
+        if (!rs.childNodes.length || document.getElementById('final-anchor')) return;
+        requestAnimationFrame(() => _ensureVisible(rs));
+        setTimeout(() => { if (rs.childNodes.length) _ensureVisible(rs); }, 350); // after KaTeX/images settle
+    }).observe(rs, { childList: true });
+})();
+
+// Final screen: show only the score card, fixed, and scroll the score into focus
+function _enterFinalScreen() {
+    const qf = document.getElementById('quiz-form');
+    const rs = document.getElementById('result');
+    if (!qf) return;
+    if (rs) rs.innerHTML = '';
+    if (!document.getElementById('final-anchor')) {
+        const a = document.createElement('span');
+        a.id = 'final-anchor';
+        a.setAttribute('aria-hidden', 'true');
+        qf.insertBefore(a, qf.firstChild);
+    }
+    _syncFocusMode();
+    const c = document.getElementById('qs-count');
+    const f = document.getElementById('qs-fill');
+    if (c) c.textContent = '🏁 Results';
+    if (f) f.style.width = '100%';
+    _scrollToTop(qf);
+    setTimeout(() => { if (document.getElementById('final-anchor')) _scrollToTop(qf); }, 300);
+}
+['showFinalMcqScore', 'showFinalShortAnswerScore', 'showFinalEssayScore', 'showFlashcardCompletion'].forEach(name => {
+    const orig = window[name];
+    if (typeof orig !== 'function') return;
+    window[name] = function () { const out = orig.apply(this, arguments); _enterFinalScreen(); return out; };
+});
+
+// Other screens that replace the content in place: align them too
+['showFlashcardModeSelection', 'renderProgressDashboard'].forEach(name => {
+    const orig = window[name];
+    if (typeof orig !== 'function') return;
+    window[name] = function () { const out = orig.apply(this, arguments); _focusScreen(); return out; };
+});
 
 // ---------- Reset modal ----------
 function closeResetModal() {
@@ -3821,6 +3907,7 @@ function submitAmbassadorReferral() {
 // ---------- Boot ----------
 document.addEventListener('DOMContentLoaded', function () {
     initDraggableWhatsApp();
+    document.querySelectorAll('[data-amb-link]').forEach(a => { a.href = AMBASSADOR_PORTAL_URL; });
     checkForReferral();
 
     // Deep link: ?view=courses (unknown values fall back to Welcome)
