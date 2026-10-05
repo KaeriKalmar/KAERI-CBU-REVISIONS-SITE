@@ -19,7 +19,7 @@ const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlU
 // Cross-app link to the Ambassador Portal (single source of truth for every Ambassador button).
 // The portal now handles referral tracking itself and redirects back to this site,
 // so product-side capture below stays OFF (AMBASSADOR_API_URL empty) to avoid double-counting.
-const AMBASSADOR_PORTAL_URL = "https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/AMB-PORTAL.html";
+const AMBASSADOR_PORTAL_URL = "AMB-PORTAL.html"; // relative: portal sits in the same folder as index.html
 const AMBASSADOR_API_URL = ""; // TODO: paste the ambassador backend /exec URL. While empty, referral capture stays off.
 
 let ttsEnabled = false;
