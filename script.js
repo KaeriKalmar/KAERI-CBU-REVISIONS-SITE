@@ -16,6 +16,10 @@ const DOCS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhbrFtkTCj-6Zm
 
 const PAYMENT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2g3G6nxVlUW3afcHFpvKY360Qd-XoAKkJ7Jz20pznebDrpBHGKjgkhgC4DMXijnN_/exec";
 
+// Cross-app link + ambassador backend (referral capture only)
+const AMBASSADOR_PORTAL_URL = "https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/Ambassador-Portal-HYBRID-LIVE.html";
+const AMBASSADOR_API_URL = ""; // TODO: paste the ambassador backend /exec URL. While empty, referral capture stays off.
+
 let ttsEnabled = false;
 let printContentData = null;
 let hasFullAccess = false;
@@ -175,7 +179,6 @@ async function initializeCourseLogic() {
     // Security Check
     await checkAccessStatus();
 }
-
 // ============================================================
 // === 2. UNIVERSAL RENDERING ENGINE (KaTeX) ===
 // ============================================================
@@ -832,11 +835,8 @@ function _timeAgo(ts) {
 }
 
 function _confirmResetProgress() {
-    if (confirm('Reset all progress data for this course/term? This cannot be undone.')) {
-        localStorage.removeItem(_progressKey());
-        showAppNotification('\u{1F5D1}\uFE0F Progress reset.', 'info', 2000);
-        setTimeout(renderProgressDashboard, 300);
-    }
+    const m = document.getElementById('reset-modal');
+    if (m) m.classList.add('show');
 }
 
 function renderProgressDashboard() {
@@ -1000,7 +1000,7 @@ function renderProgressDashboard() {
         </div>
 
         <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:10px;">
-            <button onclick="backToMenu()" class="back-button" style="margin:0;">\u2B05\uFE0F Back to Menu</button>
+            <button onclick="backToMenu()" class="back-button" style="margin:0;">\u2B05\uFE0F Back to Course</button>
             <button onclick="_confirmResetProgress()"
                 style="background:transparent;color:#ef4444;border:1px solid #ef4444;
                        padding:10px 16px;border-radius:8px;cursor:pointer;font-size:0.85em;">
@@ -1009,7 +1009,6 @@ function renderProgressDashboard() {
         </div>
     </div>`;
 }
-
 // ============================================================
 // === 5b. UI & NAVIGATION ===
 // ============================================================
@@ -1024,6 +1023,8 @@ function enableFullAccessUI() {
     }
     const unlockBtn = document.getElementById('unlock-btn');
     if(unlockBtn) unlockBtn.style.display = 'none';
+    const priceChip = document.getElementById('price-banner');
+    if(priceChip) priceChip.style.display = 'none';
     clearDemoLocks();
 }
 
@@ -1037,6 +1038,8 @@ function enableDemoUI() {
     }
     const unlockBtn = document.getElementById('unlock-btn');
     if(unlockBtn) unlockBtn.style.display = 'block';
+    const priceChip = document.getElementById('price-banner');
+    if(priceChip) priceChip.style.display = 'block';
 }
 
 function loadCourse(course, term, price) {
@@ -1058,8 +1061,10 @@ function loadCourse(course, term, price) {
     window.scrollTo(0,0);
     
     setTimeout(() => {
+        document.getElementById('quiz-form').innerHTML = '';
+        document.getElementById('result').innerHTML = '';
+        updateProgress(0, 0);
         initializeCourseLogic();
-        renderQuiz(); 
     }, 100);
 }
 
@@ -1070,6 +1075,8 @@ function backToMenu() {
     document.getElementById('fixed-header').style.display = 'none';
     document.getElementById('price-banner').style.display = 'none';
     document.body.classList.remove('view-course');
+    document.body.classList.remove('quiz-running');
+    showCourses(true);
 
     document.getElementById('quiz-form').innerHTML = '';
     document.getElementById('result').innerHTML = '';
@@ -1178,6 +1185,9 @@ function updateProgress(current, total) {
     const percent = total === 0 ? 0 : (current / total) * 100;
     if (fill) fill.style.width = `${percent}%`;
     if (text) text.textContent = `Progress: ${current} of ${total}`;
+    const wrap = document.getElementById("progress-wrap");
+    if (wrap) wrap.classList.toggle('on', total > 0);
+    _syncQuizStrip(current, total, percent);
 }
 
 function clearDemoLocks() {
@@ -1192,7 +1202,6 @@ function clearDemoLocks() {
 function showExtraPlanInfo(plan, price) {
     showAppNotification(`ℹ️ ${plan} (${price}) – coming soon! For now, use "Buy Now" for single term.`, "info", 4000);
 }
-
 // ============================================================
 // === NEW: PAYMENT API FUNCTIONS (SERVER 3) ===
 // ============================================================
@@ -2687,6 +2696,7 @@ function generatePrintPreview() {
     let previewHTML = `
     <div style="font-family:Arial,sans-serif;color:#1a1a1a;font-size:10pt;">
         <div style="border-bottom:3px solid #111435;padding-bottom:10px;margin-bottom:18px;">
+            <div style="margin-bottom:8px;">${_brandLogoImg(40, 8)}</div>
             <div style="font-size:9px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">
                 ${currentCourse} · ${identity.name} · ${termLbl}
             </div>
@@ -2834,7 +2844,12 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     .pg-header { position:absolute; top:13mm; left:14mm; right:14mm; height:14mm; border-bottom:2px solid var(--primary); display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:5px; color:var(--primary); }
     .pg-footer { position:absolute; bottom:13mm; left:14mm; right:14mm; height:10mm; border-top:1px solid #ccc; display:flex; justify-content:space-between; align-items:center; font-size:9px; color:#888; padding-top:4px; }
     .pg-content { position:absolute; top:32mm; bottom:27mm; left:14mm; right:14mm; overflow:hidden; display:flex; flex-direction:column; }
-    .brand { font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
+    :root { --brand-logo: url('${_brandLogoURI()}'); }
+    .brand-mark { display:inline-block; flex:none; background-image:var(--brand-logo); background-size:contain; background-repeat:no-repeat; background-position:center; }
+    .brand-mark.hd { width:9mm; height:9mm; border-radius:2mm; }
+    .brand-mark.cv { width:22mm; height:22mm; border-radius:4mm; }
+    .brand-mark.bk { width:30mm; height:30mm; border-radius:5mm; }
+    .brand { display:inline-flex; align-items:center; gap:7px; font-weight:800; font-size:13px; letter-spacing:0.5px; text-transform:uppercase; color:var(--primary); }
     .meta { font-size:9px; font-weight:600; color:#666; text-transform:uppercase; }
     .pg-num { font-weight:700; color:var(--primary); }
     .sheet.cover { background:var(--primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:18mm; }
@@ -2893,6 +2908,7 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
             <div><span class="stat-num">A4</span><span class="stat-lbl">FORMAT</span></div>
         </div>
         <div class="cover-rule">
+            <div style="margin-bottom:10px;"><i class="brand-mark cv"></i></div>
             <h3 style="color:var(--yellow);margin:0;">KAERI EDTECH</h3>
             <p style="font-size:10px;opacity:0.75;margin-top:4px;">${identity.name} · ${termLabel} · ${date}</p>
         </div>
@@ -2901,7 +2917,7 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
 
 <!-- TABLE OF CONTENTS -->
 <div class="sheet">
-    <div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
+    <div class="pg-header"><span class="brand"><i class="brand-mark hd"></i>KAERI EDTECH</span><span class="meta">${course} · ${termLabel}</span></div>
     <div class="pg-footer"><span>© ${currentYear} Kaeri EdTech</span><span class="pg-num">Page 2</span></div>
     <div class="pg-content">
         <div class="sec-title">Table of Contents &mdash; ${sections.length} Section${sections.length !== 1 ? 's' : ''}</div>
@@ -2921,6 +2937,7 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
     <div class="cover-graphics"><div class="diag" style="background:linear-gradient(135deg,transparent 45%,rgba(252,203,0,0.08) 45%,rgba(252,203,0,0.08) 55%,transparent 55%);"></div></div>
     <div class="cover-inner" style="justify-content:space-between;">
         <div>
+            <div style="margin-bottom:14px;"><i class="brand-mark bk"></i></div>
             <h1 style="color:white;font-size:44px;margin-bottom:8px;">KAERI EDTECH</h1>
             <p style="color:#ddd;font-weight:300;font-size:16px;">Empowering Learners Through Smart Educational Technology</p>
         </div>
@@ -2987,7 +3004,7 @@ function _buildFullPrintDocument(course, term, sessionType, sections, date) {
         pageCount++;
         const sheet = document.createElement('div');
         sheet.className = 'sheet';
-        sheet.innerHTML = '<div class="pg-header"><span class="brand">KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
+        sheet.innerHTML = '<div class="pg-header"><span class="brand"><i class="brand-mark hd"></i>KAERI EDTECH</span><span class="meta">' + courseName + ' · ' + termLabel + ' · ' + sessTitle + '</span></div>' +
                           '<div class="pg-footer"><span>© ${currentYear} Kaeri EdTech. All rights reserved.</span><span class="pg-num">Page ' + pageCount + '</span></div>' +
                           '<div class="pg-content" id="pg-' + pageCount + '"></div>';
         root.appendChild(sheet);
@@ -3494,4 +3511,363 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+})();
+
+// ============================================================
+// === REORGANISATION LAYER (navigation, quiz strip, referral) ===
+// ============================================================
+
+// ---------- Welcome <-> Courses ----------
+function _reducedMotion() {
+    return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function collapseAllTerms() {
+    document.querySelectorAll('.term-buttons').forEach(s => {
+        s.style.display = 'none';
+        if (s.previousElementSibling) s.previousElementSibling.classList.remove('active');
+    });
+}
+
+function _swapViews(outEl, inEl, instant) {
+    if (!outEl || !inEl) return;
+    outEl.style.transition = '';
+    inEl.style.transition = '';
+    if (instant || _reducedMotion()) {
+        outEl.style.display = 'none';
+        inEl.style.display = 'block';
+        outEl.style.opacity = '';
+        inEl.style.opacity = '';
+    } else {
+        outEl.style.transition = 'opacity 0.25s ease';
+        outEl.style.opacity = '0';
+        setTimeout(() => {
+            outEl.style.display = 'none';
+            outEl.style.opacity = '';
+            inEl.style.opacity = '0';
+            inEl.style.display = inEl.dataset.display || 'block';
+            inEl.style.transition = 'opacity 0.35s ease';
+            requestAnimationFrame(() => { inEl.style.opacity = '1'; });
+        }, 250);
+    }
+    window.scrollTo(0, 0);
+}
+
+function showCourses(instant) {
+    _swapViews(document.getElementById('welcome-view'), document.getElementById('courses-view'), instant);
+}
+
+function hideCourses() {
+    collapseAllTerms();
+    _swapViews(document.getElementById('courses-view'), document.getElementById('welcome-view'), false);
+}
+
+// ---------- Quiz strip ----------
+let _stripState = { current: 0, total: 0 };
+
+function _syncStripTts() {
+    const b = document.getElementById('qs-tts');
+    if (b) b.textContent = ttsEnabled ? '🔊' : '🔇';
+}
+
+function _syncQuizStrip(current, total, percent) {
+    _stripState = { current, total };
+    const running = total > 0 && !!document.body.getAttribute('data-course');
+    document.body.classList.toggle('quiz-running', running);
+    if (!running) return;
+    const prefix = { mcq: 'Q', shortAnswer: 'S', essay: 'E', flashcard: 'C' }[currentQuizType] || 'Q';
+    const c = document.getElementById('qs-count');
+    const f = document.getElementById('qs-fill');
+    if (c) c.textContent = `${prefix} ${current} / ${total}`;
+    if (f) f.style.width = `${percent}%`;
+    _syncStripTts();
+}
+
+function _leaveQuiz() {
+    stopReading();
+    document.getElementById('quiz-form').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
+    updateProgress(0, 0);
+    window.scrollTo(0, 0);
+}
+
+function exitQuiz() {
+    const inProgress = _stripState.total > 0 && _stripState.current < _stripState.total && currentQuizType !== 'dashboard';
+    if (inProgress) {
+        const m = document.getElementById('exit-modal');
+        if (m) { m.classList.add('show'); return; }
+    }
+    _leaveQuiz();
+}
+function closeExitModal() {
+    const m = document.getElementById('exit-modal');
+    if (m) m.classList.remove('show');
+}
+function confirmExitQuiz() {
+    closeExitModal();
+    _leaveQuiz();
+}
+
+// Keep the strip's TTS icon in sync with the existing reader toggle
+(function () {
+    const orig = window.updateTtsButtonText;
+    if (typeof orig === 'function') {
+        window.updateTtsButtonText = function () { orig.apply(this, arguments); _syncStripTts(); };
+    }
+})();
+
+// Setup screens always start from "no quiz running" (hides the strip), then run the original
+['renderQuiz', 'renderShortAnswers', 'renderEssaySimulation', 'renderFlashcardTopics'].forEach(name => {
+    const orig = window[name];
+    if (typeof orig !== 'function') return;
+    window[name] = function () { updateProgress(0, 0); return orig.apply(this, arguments); };
+});
+
+// Soft ambassador pitch on completion screens
+function _addSoftPitch() {
+    const r = document.getElementById('result');
+    const host = (r && r.children.length) ? r : document.getElementById('quiz-form');
+    if (!host || host.querySelector('.soft-pitch')) return;
+    const d = document.createElement('div');
+    d.className = 'soft-pitch';
+    d.innerHTML = `Enjoying the quiz? <a href="${AMBASSADOR_PORTAL_URL}" target="_blank" rel="noopener">🚀 Become an Ambassador →</a>`;
+    host.appendChild(d);
+}
+['showFinalMcqScore', 'showFinalShortAnswerScore', 'showFinalEssayScore', 'showFlashcardCompletion'].forEach(name => {
+    const orig = window[name];
+    if (typeof orig !== 'function') return;
+    window[name] = function () { const out = orig.apply(this, arguments); setTimeout(_addSoftPitch, 0); return out; };
+});
+
+// ---------- Progress dashboard: empty state ----------
+(function () {
+    const orig = window.renderProgressDashboard;
+    if (typeof orig !== 'function') return;
+    window.renderProgressDashboard = function () {
+        const out = orig.apply(this, arguments);
+        try {
+            const d = _loadProgress();
+            if (currentTermKey && (!d.sessions || d.sessions.length === 0)) {
+                document.getElementById('quiz-form').innerHTML = `
+                    <div class="empty-progress">
+                        <div style="font-size:2.6rem;">📊</div>
+                        <h3 style="margin:8px 0;">No Progress Yet</h3>
+                        <p style="color:#a0a8b4; margin:0;">Finish a quiz or review some flashcards and your stats will show up here.</p>
+                        <div class="ep-actions">
+                            <button type="button" onclick="renderQuiz()" style="background:#007bff;color:#fff;border:none;padding:12px 18px;border-radius:8px;">Start MCQ Quiz</button>
+                            <button type="button" onclick="renderFlashcardTopics()" style="background:#6f42c1;color:#fff;border:none;padding:12px 18px;border-radius:8px;">Study Flashcards</button>
+                        </div>
+                        <button type="button" onclick="exitQuiz()" class="back-button">⬅️ Back to Course</button>
+                    </div>`;
+            }
+        } catch (e) { /* keep the original dashboard */ }
+        return out;
+    };
+})();
+
+// ---------- Reset modal ----------
+function closeResetModal() {
+    const m = document.getElementById('reset-modal');
+    if (m) m.classList.remove('show');
+}
+function confirmResetProgress() {
+    closeResetModal();
+    try { localStorage.removeItem(_progressKey()); } catch (e) {}
+    showAppNotification('\u{1F5D1}\uFE0F Progress reset.', 'info', 2000);
+    setTimeout(renderProgressDashboard, 300);
+}
+
+// ---------- Draggable WhatsApp (position saved; double-click or long-press resets) ----------
+function initDraggableWhatsApp() {
+    const el = document.getElementById('draggable-wa');
+    if (!el) return;
+    const KEY = 'wa_position_v1';
+    let dragging = false, moved = false, sx = 0, sy = 0, ox = 0, oy = 0, pressTimer = null, longPressed = false;
+
+    const clamp = (x, y) => ({
+        x: Math.min(Math.max(8, x), window.innerWidth - el.offsetWidth - 8),
+        y: Math.min(Math.max(8, y), window.innerHeight - el.offsetHeight - 8)
+    });
+    const place = (x, y) => {
+        const p = clamp(x, y);
+        el.style.left = p.x + 'px'; el.style.top = p.y + 'px';
+        el.style.right = 'auto'; el.style.bottom = 'auto';
+    };
+    const reset = () => {
+        el.style.left = el.style.top = el.style.right = el.style.bottom = '';
+        try { localStorage.removeItem(KEY); } catch (e) {}
+    };
+
+    try {
+        const s = JSON.parse(localStorage.getItem(KEY) || 'null');
+        if (s && isFinite(s.x) && isFinite(s.y)) place(s.x, s.y);
+    } catch (e) {}
+    window.addEventListener('resize', () => { if (el.style.left) place(parseFloat(el.style.left), parseFloat(el.style.top)); });
+
+    el.addEventListener('pointerdown', e => {
+        dragging = true; moved = false; longPressed = false;
+        sx = e.clientX; sy = e.clientY;
+        const r = el.getBoundingClientRect(); ox = r.left; oy = r.top;
+        try { el.setPointerCapture(e.pointerId); } catch (_) {}
+        pressTimer = setTimeout(() => {
+            if (!moved) { longPressed = true; reset(); showAppNotification('WhatsApp button reset to default position.', 'info', 2000); }
+        }, 700);
+    });
+    el.addEventListener('pointermove', e => {
+        if (!dragging) return;
+        const dx = e.clientX - sx, dy = e.clientY - sy;
+        if (!moved && Math.hypot(dx, dy) < 8) return;
+        moved = true; clearTimeout(pressTimer);
+        place(ox + dx, oy + dy);
+    });
+    el.addEventListener('pointerup', () => {
+        if (!dragging) return;
+        dragging = false; clearTimeout(pressTimer);
+        if (moved) {
+            const r = el.getBoundingClientRect();
+            try { localStorage.setItem(KEY, JSON.stringify({ x: r.left, y: r.top })); } catch (e) {}
+        }
+    });
+    el.addEventListener('pointercancel', () => { dragging = false; clearTimeout(pressTimer); });
+    el.addEventListener('click', e => { if (moved || longPressed) { e.preventDefault(); moved = false; longPressed = false; } });
+    el.addEventListener('dblclick', e => { e.preventDefault(); reset(); });
+}
+
+// ---------- Ambassador referral capture (?ref=) ----------
+let _pendingRef = null;
+const _REF_FLAG = 'kaeri_amb_tracked';
+
+function _validRef(r) { return typeof r === 'string' && /^[A-Za-z0-9_-]{1,64}$/.test(r); }
+
+function checkForReferral() {
+    if (!AMBASSADOR_API_URL) return;
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (!_validRef(ref)) return;
+    try { if (localStorage.getItem(_REF_FLAG) === ref) return; } catch (e) {}
+    _pendingRef = ref;
+    const m = document.getElementById('referral-modal');
+    if (m) m.classList.add('show');
+}
+
+function _closeReferral(markDone) {
+    const m = document.getElementById('referral-modal');
+    if (m) m.classList.remove('show');
+    if (markDone && _pendingRef) { try { localStorage.setItem(_REF_FLAG, _pendingRef); } catch (e) {} }
+}
+
+function skipAmbassadorTracking() { _closeReferral(true); }
+
+function submitAmbassadorReferral() {
+    const input = document.getElementById('referral-email');
+    const err = document.getElementById('referral-error');
+    const btn = document.getElementById('referral-submit');
+    const email = (input.value || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { err.textContent = 'Please enter a valid email address.'; return; }
+    err.textContent = '';
+    btn.disabled = true; btn.textContent = 'Sending...';
+
+    let fp = localStorage.getItem('device_fp');
+    if (!fp) { fp = navigator.userAgent + '_' + Math.random().toString(36).substring(7); localStorage.setItem('device_fp', fp); }
+
+    fetch(AMBASSADOR_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action: 'logReferral', ref: _pendingRef, visitorEmail: email, ip: '', deviceFingerprint: fp })
+    })
+    .then(res => res.text())
+    .then(t => {
+        let data = null;
+        try { data = JSON.parse(t); } catch (e) { throw new Error('bad-response'); }
+        if (data && data.success === false) throw new Error(data.message || 'failed');
+        _closeReferral(true);
+        showAppNotification('✅ Thanks! Your friend has been credited.', 'success', 3000);
+    })
+    .catch(() => {
+        err.textContent = 'Could not send right now. Check your connection and try again.';
+    })
+    .finally(() => { btn.disabled = false; btn.textContent = 'Continue'; });
+}
+
+// ---------- Boot ----------
+document.addEventListener('DOMContentLoaded', function () {
+    initDraggableWhatsApp();
+    checkForReferral();
+
+    // Deep link: ?view=courses (unknown values fall back to Welcome)
+    const view = new URLSearchParams(window.location.search).get('view');
+    if (view === 'courses') showCourses(true);
+
+    // Escape / backdrop close for the custom modals
+    function _closeCustomModal(m) {
+        if (m.id === 'reset-modal') closeResetModal();
+        else if (m.id === 'exit-modal') closeExitModal();
+        else if (m.id === 'referral-modal') skipAmbassadorTracking();
+    }
+    document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+        document.querySelectorAll('.r-modal.show').forEach(_closeCustomModal);
+    });
+    document.querySelectorAll('.r-modal').forEach(m => m.addEventListener('click', e => {
+        if (e.target === m) _closeCustomModal(m);
+    }));
+
+    // body.modal-open: lock scroll + hide floating WhatsApp whenever ANY modal is open
+    function syncModalOpen() {
+        const doc = document.getElementById('smart-doc-viewer');
+        const open = ['payment-modal', 'print-preview-modal'].some(id => {
+            const el = document.getElementById(id); return el && el.classList.contains('show');
+        }) || !!document.querySelector('.r-modal.show')
+          || !!(doc && doc.style.display && doc.style.display !== 'none');
+        document.body.classList.toggle('modal-open', open);
+    }
+    const mo = new MutationObserver(syncModalOpen);
+    ['payment-modal', 'print-preview-modal'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) mo.observe(el, { attributes: true, attributeFilter: ['class'] });
+    });
+    document.querySelectorAll('.r-modal').forEach(el => mo.observe(el, { attributes: true, attributeFilter: ['class'] }));
+
+    // Initial sync — catches the rare case where the browser restores
+    // a page from back-forward cache with a modal already open.
+    syncModalOpen();
+
+    // the document viewer is injected on demand
+    const _inject = window.injectDocViewerHTML;
+    if (typeof _inject === 'function') {
+        window.injectDocViewerHTML = function () {
+            const out = _inject.apply(this, arguments);
+            const dv = document.getElementById('smart-doc-viewer');
+            if (dv) mo.observe(dv, { attributes: true, attributeFilter: ['style'] });
+            return out;
+        };
+    }
+});
+// ---------- Brand logo: one source (--brand-logo in index.html) ----------
+function _brandLogoURI() {
+    try {
+        const v = getComputedStyle(document.documentElement).getPropertyValue('--brand-logo') || '';
+        const m = v.match(/url\(\s*['"]?(data:[^'")]+)['"]?\s*\)/);
+        return m ? m[1] : '';
+    } catch (e) { return ''; }
+}
+function _brandLogoImg(px, radius) {
+    const u = _brandLogoURI();
+    return u ? `<img src="${u}" alt="Kaeri EdTech" style="width:${px}px;height:${px}px;border-radius:${radius}px;object-fit:contain;display:block;">` : '';
+}
+(function () {
+    function applyFavicon() {
+        const u = _brandLogoURI();
+        if (!u) return;
+        let l = document.querySelector('link[rel="icon"]');
+        if (!l) {
+            l = document.createElement('link');
+            l.rel = 'icon';
+            document.head.appendChild(l);
+        }
+        if (l.href !== u) l.href = u;
+    }
+    applyFavicon();
+    // Retry on window load in case the stylesheet resolved after this
+    // script parsed. Cheap insurance, runs once.
+    window.addEventListener('load', applyFavicon);
 })();
