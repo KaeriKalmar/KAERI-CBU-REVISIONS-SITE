@@ -830,7 +830,7 @@ input:focus, select:focus {
 /* ═══════════════════════════════════════════════════════════════════
    CONFIG
    ═══════════════════════════════════════════════════════════════════ */
-var API_URL = 'https://script.google.com/macros/s/AKfycbwhpVvSUvlOX-mGViy3BcBR887t-2Wm38xQj4i3Jxkk_bpvg057EpszbdZ9Ill_oqGF6w/exec';
+var API_URL = 'https://script.google.com/macros/s/AKfycbxMKcD2omQSPbJDiBrbsr7UGzdCyOzdPb53MXqJrXhWylIRguzgC5nsdjLroc855ewRSg/exec';
 var PLATFORM_URL = 'https://kaerikalmar.github.io/KAERI-CBU-REVISIONS-SITE/';
 var SESSION_KEY = 'kaeri_ambassador_session';
 
@@ -1073,6 +1073,7 @@ function submitReferral() {
         var reason = res.reason || '';
         var msg = res.message || 'Thanks — continuing to the platform…';
         if (reason === 'self_email') msg = 'You cannot refer yourself. Continuing…';
+        else if (reason === 'already_referred') msg = 'This email has already been counted for another ambassador. Continuing…';
         else if (reason === 'duplicate') msg = 'This email was already counted. Continuing…';
         else if (reason === 'device_reuse' || reason === 'device_limit' || reason === 'self_device') msg = 'This device has already been used for referrals. Continuing…';
         else if (reason === 'invalid_ambassador') msg = 'Invalid referral link. Continuing…';
@@ -1625,8 +1626,13 @@ function onCourseChange(tier) {
   var count = 0;
   (availableCourses[course] || []).forEach(function (t) {
     if (allowed && allowed.indexOf(t.term) === -1) return;
-    if ((t.inStock || 0) <= 0) return;
-    opts += '<option value="' + escapeHtml(t.term) + '">' + escapeHtml(t.term) + ' (' + t.inStock + ')</option>';
+    // Tier 3: inStock -1 = unbounded; only real 0 is out of stock
+    var stock = (t.inStock === undefined || t.inStock === null) ? 0 : Number(t.inStock);
+    if (stock === 0) return;
+    var label = stock < 0
+      ? escapeHtml(t.term) + ' (available)'
+      : escapeHtml(t.term) + ' (' + stock + ')';
+    opts += '<option value="' + escapeHtml(t.term) + '">' + label + '</option>';
     count++;
   });
   termSel.innerHTML = count ? opts : '<option value="" disabled>No terms in stock for this course</option>';
@@ -1788,7 +1794,7 @@ window.addEventListener('DOMContentLoaded', function () {
     padding:9px 13px; border-radius:999px; text-decoration:none;
     background:rgba(13,27,42,.85); color:#64ffda; border:1px solid rgba(100,255,218,.5);
     font:600 13px/1 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    box-shadow:0 4px 14px rgba(0,0,0,.35); -webkit-tap-highlight-color:transparent;
+    box-shadow:0 4px 14px rgba(0,0,0,.35); -webkit-tap-highlight-color:transparent; 
   }
   .back-platform:active{ transform:scale(.97); }
 </style>
